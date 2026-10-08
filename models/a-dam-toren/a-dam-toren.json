@@ -1,0 +1,63 @@
+{
+  "name": "A'DAM Toren",
+  "file": "a-dam-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121972.75,
+    488554.5
+  ],
+  "xAxis": [
+    0.8086,
+    0.58836
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -17
+    ],
+    [
+      15,
+      -23
+    ],
+    [
+      -13,
+      20
+    ],
+    [
+      12,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012071204"
+  ],
+  "description": "Romp met blind gevelraster, vier V-pylonen, kern, lage vleugel en brandtrap; ronde tussenbouw en 45 graden gedraaide kroon met hellende gevel, terras, balustrade, dakopbouw, ventilatiemast met drie blinde Andreaskruizen en twee schommels. Het echte kroonvolume staat in de GLB; de zelfstandige STL heeft een 45 graden kraag voor steunvrij printen. Onderkant 0,7 m onder maaiveld.",
+  "realWorld": {
+    "maaiveldNapM": 1.8,
+    "rompTopM": 64.8,
+    "kroonDekM": 76.3,
+    "mastTopM": 94.9,
+    "tussenbouwDiameterM": 22,
+    "rotatieKroonGraden": 45,
+    "schattingen": [
+      "blinde raamnissen 0,33 m",
+      "pylonen 2 m",
+      "brandtrap 1,45 x 2,7 m",
+      "vorm dakopbouw",
+      "schommelportalen verbreed tot 0,9 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012071204; AHN4 DSM/DTM 0,5 m bbox 121900,488495,122060,488655; actuele orthoHR; 2026-10-08",
+    "https://arcam.nl/architectuur-gids/adam-toren/",
+    "https://www.staalmakers.nl/projecten/adam-toren-amsterdam/",
+    "https://commons.wikimedia.org/wiki/File:Top_A%27DAM_Toren.JPG",
+    "https://commons.wikimedia.org/wiki/File:Shell_Tower_Amsterdam-Noord_from_tour_boat_2016-09-12.jpg"
+  ],
+  "printFiles": [
+    "a-dam-toren-1-1000.stl"
+  ]
+}
