@@ -1,0 +1,101 @@
+{
+  "name": "Parkstad Limburg Stadion",
+  "file": "parkstad-limburg-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    198561.67,
+    318762.52
+  ],
+  "xAxis": [
+    0.886204,
+    0.463296
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 216.29,
+  "groundSamplePoints": [
+    [
+      -114,
+      30
+    ],
+    [
+      -114,
+      -30
+    ],
+    [
+      130,
+      35
+    ],
+    [
+      130,
+      -35
+    ],
+    [
+      45,
+      88
+    ],
+    [
+      -45,
+      88
+    ],
+    [
+      50,
+      -98
+    ],
+    [
+      -50,
+      -98
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0928100000125190",
+    "NL.IMBAG.Pand.0928100000125458",
+    "NL.IMBAG.Pand.0928100000125612",
+    "NL.IMBAG.Pand.0928100000126245"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (198561,67, 318762,52) in het hart van de veldopening, op het laagste maaiveld rond het stadion (groundHeight 216,29 m ellipsoïdisch, circa NAP +170,4 m; het veld ligt 1,91 m hoger), +X langs het veld naar het oostnoordoosten (27,6 graden) en +Y naar het noordnoordwesten (hoofdtribune). Eén node building:stadion: vier tribunes rond de veldopening (128,8 bij 86,1 m), elk met een zitrang in treden die onder het dak open blijft, een achterwand met donkere band en een dakplaat van 1,8 m met witte membraantonnen per vak van 10,75 m tussen radiale spanten en een vakwerkligger langs de voorrand (+19 tot +20 m); vier gesloten hoeken met een kegelvormige tent (+24,9 m) boven een meedraaiende zitrang; vier lichtmasten met een schuine vakwerkgiek vanaf een pijler op de buitenhoek en een lampenkop boven de hoek van het veld (+44,9 m); de aanbouwen: west de bakstenen gevel tot +22,9 m met glazen gewelf (+25,9 m), oost de lage strook met twee hellingbanen en het winkelgebouw (+22,9 m, middendeel +26,1 m) met entree, zuid de vleugels (+19,4 m) en het hotel (+23,8 m), noord de strook achter de skyboxen (+16,8 m) met het gebogen middendeel (+20,0 m); raamnissen in de gevels. Onderkant op 0,5 m onder het maaiveld; de dakplaten, tenten, giek en lampenkoppen hangen uit (de export vult ze op). Het maaiveld wordt op acht punten rond het stadion bemonsterd; groundHeight is de laagste PDOK-terreinhoogte daar (ellipsoïdisch). Vervangt de PDOK-reconstructie van de vier BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "parkstad-limburg-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 220.6,
+    "widthM": 160.6,
+    "highestPointM": 44.91,
+    "capacity": 19979,
+    "fieldOpeningM": [
+      128.8,
+      86.1
+    ],
+    "pitchM": 1.91,
+    "roofFrontM": [
+      19.01,
+      20.11
+    ],
+    "roofDepthM": [
+      25,
+      19.5
+    ],
+    "tentTopM": 25.21,
+    "mastTopM": 44.91,
+    "westFacadeM": [
+      22.91,
+      25.91
+    ],
+    "eastShopM": [
+      22.91,
+      26.11
+    ],
+    "hotelM": 23.81,
+    "northCentreM": 20.01,
+    "groundHeightEllipsoidM": 216.29,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Parkstad_Limburg_Stadion",
+    "PDOK BAG panden van het stadion en de drie aanbouwen (zie replacesBuildings), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: voorranden en dakprofiel, membraantonnen en spanten, hoeken en tenten, lichtmasten, aanbouwen, gracht en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): membraantonnen, spanten, tenten en giek",
+    "Wikimedia Commons: Parkstad Limburg Stadion, augustus 2016; Parkstad Limburg Stadion Kerkrade 19-02-2020; Kerkrade, Parkstad Limburg stadion van Roda JC IMG 2091; Voetbalstadion Kerkrade; Parkstad Limbug Stadion - panoramio; Parkstad Limburg Stadion.JPG; Roda JC - panoramio; Nieuwbouw Parkstad Limburg Stadion - panoramio (vijf foto's, 1999-2000)"
+  ]
+}
