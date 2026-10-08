@@ -1,0 +1,67 @@
+{
+  "name": "Amerikaanse Begraafplaats (Margraten)",
+  "file": "nederlandse-amerikaanse-begraafplaats.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    184420.5,
+    314275.4
+  ],
+  "xAxis": [
+    0.980855,
+    -0.19474
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -70,
+      0
+    ],
+    [
+      -30,
+      8
+    ],
+    [
+      -30,
+      -8
+    ],
+    [
+      -8,
+      5
+    ],
+    [
+      -8,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0936100000006577",
+    "NL.IMBAG.Pand.0936100000006576",
+    "NL.IMBAG.Pand.0936100000006578"
+  ],
+  "description": "Toren met kapel, twee toegangspaviljoens, naamwanden, stenen vijverrand en schematische rouwende vrouw; Z omhoog vóór glTF-omzetting, lokale +X langs het hof naar het oosten. BAG-contouren, doorlopende vlakke daken en blinde portalen; onderkant 0,8 m verankerd onder hofniveau. De vijver en het hofterrein blijven PDOK.",
+  "realWorld": {
+    "torenHoogteM": 30.7848,
+    "torenNapM": 189.2,
+    "hofNapM": 158.4,
+    "paviljoenHoogteM": 3.95,
+    "naamwandHoogteM": 4,
+    "schattingen": [
+      "naamwanddikte en vijverrand 0,9 m voor 1:1000",
+      "blinde portalen en zijopening",
+      "schematisch vrouwbeeld 3,9 m"
+    ]
+  },
+  "sources": [
+    "https://www.abmc.gov/sites/default/files/2024-11/EN_NEAC_Brochure_2024-07_0.pdf",
+    "https://www.abmc.gov/history/discover-the-history-of-netherlands-american-cemetery/",
+    "PDOK BAG WFS: 0936100000006576/6577/6578; BGT waterdeel 79dfe474-068e-5521-a519-b0cf792b6fef",
+    "PDOK AHN4 DSM 0,5 m; bbox 184300,314150,184600,314450; geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:NET-Margraten-American_Cemetery_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_grafstenen_met_toren_annex_kapel_op_de_achtergrond_-_Margraten_-_20355736_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "nederlandse-amerikaanse-begraafplaats-1-1000.stl"
+  ]
+}
