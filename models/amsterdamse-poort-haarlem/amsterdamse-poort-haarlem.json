@@ -1,0 +1,67 @@
+{
+  "name": "Amsterdamse Poort (Haarlem)",
+  "file": "amsterdamse-poort-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104559.6,
+    488339.2
+  ],
+  "xAxis": [
+    0.965926,
+    0.258819
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      0
+    ],
+    [
+      -3,
+      -6
+    ],
+    [
+      -3,
+      6
+    ],
+    [
+      14,
+      -6
+    ],
+    [
+      14,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000036575"
+  ],
+  "description": "Hoofdpoort met zadeldak en westelijke trapgevel, twee hoge achtkante traptorens, twee lage ronde/achtkante veldtorens en overdekte weergangen. +X naar de veldzijde (oostnoordoost). Doorgangen met steil printbaar profiel; waterbogen blind. Onderkant -2 m onder straatniveau.",
+  "realWorld": {
+    "maaiveldNapM": 1,
+    "hoofdpoortTopM": 21.2,
+    "veldtorenTopM": 13.5,
+    "hoofdgebouwM": [
+      9.4,
+      8.85,
+      15.1
+    ],
+    "schattingen": [
+      "dakvorm en geledinghoogtes uit AHN en schuine foto’s",
+      "steile boogdaken in plaats van ronde gewelven voor steunvrij 1:1000",
+      "vensters, klok en pinakels vereenvoudigd",
+      "hoekprofielen en baksteenfriezen weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0392100000036575; AHN4 DSM/DTM 0,5 m bbox 104520,488290,104620,488390; actuele orthoHR; 2026-10-08",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19771",
+    "https://commons.wikimedia.org/wiki/File:Amsterdamse_Poort_in_Haarlem_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdamse_Poort_2011_BS_Amsterdam_Netherlands_(2).jpg"
+  ],
+  "printFiles": [
+    "amsterdamse-poort-haarlem-1-1000.stl"
+  ]
+}
