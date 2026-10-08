@@ -1,0 +1,86 @@
+{
+  "name": "Koning Willem II Stadion",
+  "file": "koning-willem-ii-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    132774.37,
+    394904.76
+  ],
+  "xAxis": [
+    -0.100188,
+    0.994969
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 59.44,
+  "groundSamplePoints": [
+    [
+      100,
+      0
+    ],
+    [
+      95,
+      -80
+    ],
+    [
+      0,
+      -76
+    ],
+    [
+      -95,
+      -70
+    ],
+    [
+      -98,
+      0
+    ],
+    [
+      0,
+      92
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000283413",
+    "NL.IMBAG.Pand.0855100000196810",
+    "NL.IMBAG.Pand.0855100000705438",
+    "NL.IMBAG.Pand.0855100000818422"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (132774,37, 394904,76) in het hart van het veld op het maaiveld rond het stadion (NAP circa +15,7 m), +X langs het veld naar het noordnoordwesten (KingSide, RD-richting 95,75 graden) en +Y naar het westzuidwesten (hoofdtribune). Eén node building:stadion: de ring van de KingSide, de lange zijde, de Goirlese kant en de vier hoeken als één doorsnede langs een afgeronde rechthoek (dakvoorrand u ±63,45 en v -45,95 m, buitenrand van de luifel u ±84,15 en v -66,65 m), met een zitrang van acht treden (+1,0 tot +7,6 m) die onder het dak open blijft, de achterwand met een glazen pui onder de luifel en een golvend dak (voorrand +13,65 m, hoge vakken van 8,7 m en holle bogen die 1,4 m doorhangen) op 54 betonnen pylonen met tuivinnen tot +16,2 m; de hoofdtribune met zes treden, de glazen gevel van de businessboxen, een licht gebogen dak (+14,4 m in het midden) met kilgoot en 14 pylonen tot +17,4 m, en het bakstenen hoofdgebouw (+12,8 m) met raamnissen en installaties; twee schermen aan de voorrand; vier vakwerk-lichtmasten van +44,4 m op de hoeken; de overdekte loopbrug met trappenhuis aan de noordoosthoek, de poorten, aanbouwen en kiosken achter de tribunes. Onderkant op 2,5 m onder het maaiveld, omdat het veld en de gracht ervoor tot 2,1 m lager liggen; de daken, luifels en schermen hangen uit (de export vult ze op). Vervangt de PDOK-reconstructie van de vier BAG-panden van het stadion. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "koning-willem-ii-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 177.73,
+    "widthM": 159.95,
+    "highestPointM": 44.4,
+    "capacity": 15220,
+    "fieldOpeningM": [
+      126.9,
+      91.9
+    ],
+    "roofFrontM": 13.65,
+    "roofSagM": 1.4,
+    "mainStandRoofM": [
+      13.6,
+      14.4,
+      12.6,
+      14
+    ],
+    "mainBuildingM": 12.8,
+    "pylonTopM": [
+      16.2,
+      17.4
+    ],
+    "mastTopM": 44.4,
+    "groundHeightEllipsoidM": 59.44,
+    "baseM": -2.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Koning_Willem_II_Stadion",
+    "PDOK BAG panden van het stadion (zie replacesBuildings), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: veldopening, gracht, dakprofiel en golf, achtergevel, pylonen, hoofdtribune, hoofdgebouw, lichtmasten, loopbrug en aanbouwen",
+    "PDOK luchtfoto (Actueel_orthoHR, 8 cm): pylonen, tuien, hoekwaaiers, dakopbouwen",
+    "Wikimedia Commons: Willem II stadion.jpg en Willem II Stadion - tribunes.jpg; foto's op stadiumguide.com, stadiumdb.com en eredivisie.nl (Marco Magielse, 2018): pylonen met stalen tuien, golvende fascia, zitrang onder het dak, businessboxen, hoofdgebouw, schermen en lichtmasten"
+  ]
+}
