@@ -1,0 +1,60 @@
+{
+  "name": "Pieterskerk",
+  "file": "pieterskerk-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93462.3,
+    463655.35
+  ],
+  "xAxis": [
+    0.9842,
+    0.17708
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -53.2,
+      0
+    ],
+    [
+      -23.2,
+      28
+    ],
+    [
+      -23.2,
+      -27
+    ],
+    [
+      44.8,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000040806"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93462,30, 463655,35) in het hart van de kruising op het maaiveld (NAP +1,9 m), +X langs de as van de westgevel naar het koor (RD-richting 10,2 graden) en +Y naar het noorden. De vlakke onderkant ligt 0,5 m onder het maaiveld; dat wordt op het plein en de straten rondom bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0546100000040806. Daken en hoogtes uit het AHN; vensters als spitsboognissen. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "pieterskerk-leiden-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 90,
+    "transeptLengthM": 62,
+    "naveEaveNapM": 26.6,
+    "naveRidgeNapM": 35.4,
+    "transeptRidgeNapM": 35.2,
+    "aisleEaveNapM": 16,
+    "aisleRidgeNapM": 19.4,
+    "roofTurretTipNapM": 47,
+    "westTurretTipNapM": 35,
+    "groundNapM": 1.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Pieterskerk_(Leiden)",
+    "PDOK BAG pand 0546100000040806 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de dakprofielen, de dakruiter, de traptorens en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Leiden; Pieterskerk a.jpg, Leiden; Pieterskerk b.jpg, Leiden; Pieterskerk d.jpg, Leiden, prot gem Pieterskerk Zijkant noordzij 2173.jpg"
+  ]
+}

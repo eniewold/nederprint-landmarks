@@ -1,0 +1,59 @@
+{
+  "name": "Goffertstadion",
+  "file": "goffertstadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186026.6,
+    426077.5
+  ],
+  "xAxis": [
+    0.73052,
+    -0.682891
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      0
+    ],
+    [
+      -85,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000026111"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (186026,60, 426077,50) in het hart van de veldopening op het niveau van het veld (NAP +17,4 m), +X langs het veld naar het zuidoosten (-43,07 graden) en +Y naar het noordoosten. Eén node building:stadion: de afgeronde ring van het dak (122 bij 82 m binnenrand, 159 bij 117 m buitenrand) dat van +13,0 m aan de veldkant naar +11,3 m aan de buitenrand daalt, vier lichtmasten van 2,6 × 2,6 m tot +33 tot +39 m en het hoofdgebouw met de kantine aan de zuidwestkant (+11,6 en +13,2 m, liftopbouw +21,7 m). Onderkant op 0,5 m onder het veld; alle vlakken wijzen omhoog of staan verticaal. Het stadion is geen BAG-pand; vervangt alleen het hoofdgebouw. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "goffertstadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 159.04,
+    "widthM": 146.82,
+    "highestPointM": 39.2,
+    "capacity": 12500,
+    "fieldOpeningM": [
+      122,
+      82
+    ],
+    "roofInnerM": 13,
+    "roofOuterM": 11.3,
+    "mastTopM": [
+      39.2,
+      32.8,
+      33.7,
+      35.2
+    ],
+    "fieldNapM": 17.45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Goffertstadion",
+    "PDOK BAG pand 0268100000026111 (hoofdgebouw), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de ring van het dak, de lichtmasten, het hoofdgebouw en het veld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

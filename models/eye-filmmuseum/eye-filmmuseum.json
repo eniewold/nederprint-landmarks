@@ -1,0 +1,68 @@
+{
+  "name": "Eye Filmmuseum",
+  "file": "eye-filmmuseum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121895,
+    488615
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      5,
+      -32
+    ],
+    [
+      50,
+      -38
+    ],
+    [
+      58,
+      -23
+    ],
+    [
+      17,
+      10.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012237838"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121895, 488615), midden in de dakomtrek, op het maaiveld van terras en plein (NAP +1,6 m), +X naar het oosten en +Y naar het noorden. Node building: het witte volume met het gefacetteerde dak uit het AHN (twaalf vlakken, van NAP +5,44 m op het terras aan de westpunt tot +25,7 m op de kop), de schuine gevels boven de kleinere voet, de glazen band aan de IJ-zijde en de uitkragende kop aan de oostkant; node road: de entreetrappen onder de kop. Vereenvoudigd om op 1:1000 zonder losse steunconstructie te printen: alle onderkanten hangen onder 46 graden of steiler (de kop in werkelijkheid onder circa 15 graden), op de vlakke bovenkant van de glazen band na. Vervangt de PDOK-reconstructie van BAG-pand 0363100012237838; er liggen geen andere panden onder het model. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "eye-filmmuseum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 110.45,
+    "widthM": 77.08,
+    "topNapM": 25.68,
+    "terraceNapM": 5.44,
+    "prowUndersideNapM": 17.2,
+    "prowOverhangM": {
+      "real": 31.5,
+      "model": 15.04
+    },
+    "undersideDegrees": {
+      "min": 46
+    },
+    "glassBandDepthM": 2.5,
+    "stairsTopNapM": [
+      5,
+      3.3
+    ],
+    "groundNapM": 1.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Eye_Filmmuseum",
+    "PDOK BAG pand 0363100012237838 (dakomtrek met entreetrappen) en BGT pand (voetafdruk op het maaiveld), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: twaalf dakvlakken (RANSAC), steile randvlakken van de gevels, terras, entreetrappen en maaiveld",
+    "PDOK BGT overbruggingsdeel en onbegroeidterreindeel bij de entreetrappen; PDOK luchtfoto (Actueel_orthoHR) voor terras en trappen",
+    "Wikimedia Commons: EYE Film Institute Amsterdam from tour boat 2016-09-12-6548.jpg, EYE museum building 20180701.jpg, Eye Amsterdam 2014.JPG, Eye film instituut 1.JPG, Eye film instituut 2.JPG, Amsterdam-overhoeks Eye Film Institute IMG 8011.JPG, Eye met constructie op de achtergrond.JPG"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Grote of Sint-Bavokerk",
+  "file": "grote-kerk-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103933,
+    488399.2
+  ],
+  "xAxis": [
+    0.99926,
+    0.03839
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -58,
+      0
+    ],
+    [
+      0,
+      31
+    ],
+    [
+      72,
+      0
+    ],
+    [
+      0,
+      -33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000065734"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (103933, 488399,2), op de viering onder de toren, op het maaiveld aan de zuidkant (NAP +1,5 m), +X langs de as van de westgevel aan de Grote Markt naar het koor in het oosten (RD-richting 2,2 graden) en +Y naar het noorden. Eén node building: lage aanbouwen (NAP +7 m), zijbeuken en kooromgang onder lessenaarsdaken (van +22,3 tot +24,4 m tegen de hoge muur naar circa +14,3 m aan de buitenmuur, rond de koorsluiting vijf vlakke dakvlakken met hoekkepers), kapellen met dwarse zadeldaken en twee tentdaken langs koor en schip (nok en top +15 tot +22 m), schip en koor onder één zadeldak (goot +30,8 m, nok +43,2 m) met afgeschilde koorsluiting, het transept met topgevels (nok +43,1 m) en de vieringtoren: vierkante voet tot +49 m, drie achtkantige geledingen en de lantaarn met kroon tot +69 m en de spits tot +80 m. Alles staat recht op of loopt schuin omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0392100000065734. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "grote-kerk-haarlem-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 118.9,
+    "widthM": 59.3,
+    "naveRidgeNapM": 43.2,
+    "naveEaveNapM": 30.8,
+    "transeptRidgeNapM": 43.1,
+    "towerBaseNapM": 49,
+    "towerCrownNapM": 69,
+    "towerTipNapM": 80,
+    "groundNapM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Bavokerk",
+    "PDOK BAG pand 0392100000065734 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van schip, zijbeuken, transept, koor en kooromgang, vlakfit van de lessenaarsdaken, kapellen, omhullende van de vieringtoren en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "https://commons.wikimedia.org/wiki/File:Grote-Kerk-Haarlem.jpg",
+    "https://commons.wikimedia.org/wiki/File:St._Bavochurch_Haarlem_steeple.jpg"
+  ]
+}

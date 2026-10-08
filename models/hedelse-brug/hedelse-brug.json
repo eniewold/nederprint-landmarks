@@ -1,0 +1,81 @@
+{
+  "name": "Hedelse brug",
+  "file": "hedelse-brug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    146802.1,
+    416790.88
+  ],
+  "xAxis": [
+    -0.16176,
+    0.98683
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.64,
+  "groundSamplePoints": [
+    [
+      -40,
+      25
+    ],
+    [
+      -40,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      40,
+      25
+    ],
+    [
+      40,
+      -25
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 99,31 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek en de landhoofden met de BGT-attributen in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de functies van de wegdelen op de landhoofden, want op het dek ligt in de BGT geen wegdeel), met de fietspaden aan weerszijden van de dekrand tot 4,65 m (oost) en 4,9 m (west) van de as, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 16,5 m breed over de aanbruggen en 18,2 m onder de boog van het zuidelijke landhoofd (x = -163) tot het noordelijke (x = 297), met het wegdek op NAP +13,1 tot +14,4 m; de twee rivierpijlers van 5,5 × 26 m met ronde koppen; de boog met trekband van 124,8 m tussen de opleggingen als twee boogribben van 1,2 m op de randen van het dek met de top op NAP +34,1 m en de 11 hangers als een scherm met spitse openingen tussen dek en rib; twee aanbruggen aan de zuidkant en vijf aan de noordkant op pijlers van 4,7 × 17 m. Het windverband tussen de ribben, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hedelse-brug-1-1250.stl"
+  ],
+  "realWorld": {
+    "lengthM": 460,
+    "deckLengthM": 435.7,
+    "deckWidthM": [
+      16.5,
+      18.2,
+      16.6
+    ],
+    "mainSpanBearingsM": 124.76,
+    "archCrownNapM": 34.1,
+    "archRiseAboveDeckM": 20,
+    "hangerPanelM": 10.4,
+    "approachPierCentresM": [
+      -106.14,
+      110.84,
+      153.88,
+      198.85,
+      236.85
+    ],
+    "deckNapM": {
+      "south": 13.14,
+      "crest": 14.43,
+      "north": 12.87
+    },
+    "waterNapM": 1.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hedelse_brug",
+    "https://en.wikipedia.org/wiki/Hedel_Bridge",
+    "https://structurae.net/structures/hedel-road-bridge",
+    "PDOK BGT overbruggingsdeel (dek, rivierpijlers, aanbrugpijlers), EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor het wegdek en de boogribben; PDOK-luchtfoto voor de hangers",
+    "Wikimedia Commons: Zichtopbrughedel.jpg"
+  ]
+}

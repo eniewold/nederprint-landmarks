@@ -1,0 +1,53 @@
+{
+  "name": "Evoluon",
+  "file": "evoluon.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    159147.75,
+    383826.25
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      45
+    ],
+    [
+      22.5,
+      39
+    ],
+    [
+      -22.5,
+      39
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000294873"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de schotel op het maaiveld (NAP +18,8 m) in de oorsprong, +X naar het oosten en +Y naar het noorden. Eén node met schotel, dakkapellen, trommel en kolommen. De onderschaal heeft de echte, flauwe vorm; de export zet er met de optie Printbare overhang een kraag onder. Vervangt de PDOK-reconstructie van BAG-pand 0772100000294873.",
+  "printFiles": [
+    "evoluon-1-1000.stl"
+  ],
+  "realWorld": {
+    "diameterM": 77.5,
+    "topNapM": 49.7,
+    "rimTopNapM": 35,
+    "undersideNapM": 27.7,
+    "dormers": 48,
+    "columns": 10,
+    "drumDiameterM": 30
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Evoluon",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/532277",
+    "PDOK BAG pand 0772100000294873, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: hart, koepelprofiel, kapje, dakkapellen, rand en maaiveld",
+    "Wikimedia Commons: Cmglee Evoluon side.jpg, 532277 Eindhoven Evoluon.jpg"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Magere Brug",
+  "file": "magere-brug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121976.08,
+    486298.51
+  ],
+  "xAxis": [
+    0.95732,
+    0.28903
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      17.75,
+      9
+    ],
+    [
+      -17.75,
+      -9
+    ],
+    [
+      25.75,
+      -9
+    ],
+    [
+      -25.75,
+      9
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dichte onderbouw met blinde bogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek, de portalen, balansplaten met ballastkisten, hangstangen en steunen; het model is vereenvoudigd om op 1:1000 zonder losse steunconstructie te printen.",
+  "printFiles": [
+    "magere-brug-1-300.stl"
+  ],
+  "realWorld": {
+    "lengthM": 74,
+    "widthM": 10,
+    "leafWidthM": 4.9,
+    "passageWidthM": 10,
+    "openings": 9,
+    "deckAboveWaterM": {
+      "centre": 3.8,
+      "piers": 3.3,
+      "ends": 2.2
+    },
+    "portalTopAboveWaterM": 9.8,
+    "beamTipAboveWaterM": 11.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Magere_Brug",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518383",
+    "PDOK BGT overbruggingsdeel (dek 74 x 10 m, kleppen 4,9 m, acht pijlers van 1,5 m), EPSG:28992",
+    "PDOK BGT wegdeel (OGC API), fietspaden op het dek: G0363.2e7d4263001c4b0f99f56542d0f264fb, G0363.4f373ba742624507a7fc7c680027d98f (open verharding), G0363.dc5ccd30dd254a56b67b708b8f9bfbba (gesloten verharding, kleppen)",
+    "PDOK AHN DSM 0,5 m via WCS voor het dek, de portalen, de balansen en de ballastkisten",
+    "Wikimedia Commons: Magere Brug.jpg, Amsterdam, brug 242, Magere Brug 2007.jpg, Magere brug 2010 08 28.jpg"
+  ]
+}

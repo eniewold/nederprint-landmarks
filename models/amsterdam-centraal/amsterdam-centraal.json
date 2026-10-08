@@ -1,0 +1,97 @@
+{
+  "name": "Amsterdam Centraal",
+  "file": "amsterdam-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121827.4,
+    487936.51
+  ],
+  "xAxis": [
+    0.85618,
+    -0.51668
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -51.6,
+      -6.4
+    ],
+    [
+      0,
+      -6.4
+    ],
+    [
+      48.4,
+      -6.4
+    ],
+    [
+      108.4,
+      5.6
+    ],
+    [
+      148.4,
+      5.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012185598",
+    "NL.IMBAG.Pand.0363100012185599",
+    "NL.IMBAG.Pand.0363100012240304",
+    "NL.IMBAG.Pand.0363100012240311",
+    "NL.IMBAG.Pand.0363100012242112",
+    "NL.IMBAG.Pand.0363100012245758",
+    "NL.IMBAG.Pand.0363100012245759",
+    "NL.IMBAG.Pand.0363100012246251"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de voorgevel van de middenpartij (tussen de torens) in de oorsprong, +X langs de sporen naar het oosten (RD-azimut 121 graden) en +Y naar het IJ; de voorgevel aan het Stationsplein ligt richting -Y. Het maaiveld wordt op het Stationsplein bemonsterd. Vervangt de PDOK-reconstructie van het stationspand (een LoD1.1-blok), de IJ-hal en de tunnels. Nodenamen klasse:label bepalen de materiaalklasse.",
+  "printFiles": [
+    "amsterdam-centraal-1-2000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 430.3,
+    "depthM": 187.1,
+    "stationBuildingLengthM": 373.4,
+    "wingEavesNapM": 20.7,
+    "wingRidgeNapM": 26,
+    "centralRidgeNapM": 34.2,
+    "towerTopsNapM": [
+      43.7,
+      42.8
+    ],
+    "halls": [
+      {
+        "label": "eerste kap",
+        "spanM": 45.4,
+        "lengthM": 308.5,
+        "topNapM": 29.05
+      },
+      {
+        "label": "middenkap",
+        "spanM": 19,
+        "lengthM": 358,
+        "topNapM": 19.45
+      },
+      {
+        "label": "tweede kap",
+        "spanM": 38,
+        "lengthM": 355,
+        "topNapM": 29.1
+      },
+      {
+        "label": "busstationkap",
+        "spanM": 53.5,
+        "lengthM": 360.8,
+        "topNapM": 22.85
+      }
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Station_Amsterdam_Centraal",
+    "https://en.wikipedia.org/wiki/Amsterdam_Centraal_station",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/5681",
+    "PDOK BAG panden en BGT pand 0363100012185598 (contour stationsgebouw), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor alle hoogtes en de boogprofielen van de vier kappen"
+  ]
+}

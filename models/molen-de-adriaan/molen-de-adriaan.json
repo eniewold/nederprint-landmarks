@@ -1,0 +1,55 @@
+{
+  "name": "De Adriaan",
+  "file": "molen-de-adriaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104310.15,
+    488700.05
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      8,
+      -3
+    ],
+    [
+      4,
+      -10
+    ],
+    [
+      -5,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000036506"
+  ],
+  "description": "Oorsprong in het hart van de BAG-voet, RD-assen; voet 1 m onder het kademaaiveld. Achtkant op ronde stenen onderbouw, acht steunberen, stelling op 50 graden kraag, kap en wieken naar het noordoosten, staart en stenen aanbouw met zadeldak. Kapvorm, ashoogte, richting en vensters geschat uit AHN en foto; wieken in printvriendelijke X-stand.",
+  "printFiles": [
+    "molen-de-adriaan-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 24.3,
+    "stageM": 12,
+    "capM": 25.6,
+    "axleM": 24,
+    "baseRadiusM": 4.85,
+    "stageApothemM": 7,
+    "sailThicknessM": 1,
+    "sailWidthM": 2.4
+  },
+  "sources": [
+    "https://www.smzk.nl/adriaan/",
+    "https://www.molenadriaan.nl/nl/",
+    "https://legacy.molendatabase.nl/nederland/molen.php?nummer=1163",
+    "https://nl.wikipedia.org/wiki/De_Adriaan_(Haarlem)",
+    "PDOK BAG pand 0392100000036506; AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Haarlem,_molen_de_Adriaan_foto2_2015-01-04_09.37.jpg"
+  ]
+}

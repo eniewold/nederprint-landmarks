@@ -1,0 +1,61 @@
+{
+  "name": "Nieuwe Kerk",
+  "file": "nieuwe-kerk-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    84543.63,
+    447609.12
+  ],
+  "xAxis": [
+    0.85118,
+    0.52488
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -72,
+      0
+    ],
+    [
+      0,
+      -24
+    ],
+    [
+      -30,
+      -22
+    ],
+    [
+      20,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000000209"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (84543,63, 447609,12), op de viering, op het maaiveld (NAP +0,3 m), +X langs de as van de toren naar het koor in het oostnoordoosten (RD-richting 31,66 graden) en +Y naar het noordnoordwesten; de toren staat aan de -X-kant, aan de Markt. Eén node building: lage delen tot de steunberen (NAP +9 m), het schip onder een zadeldak (goot +20 m, nok +30,5 m), de zijbeuken langs het schip onder zadeldaken evenwijdig aan de as (nok +17,5 en +17,7 m), het transept (nok +31 m) met topgevel en twee traptorentjes aan de zuidkant en een afgewolfd noordeind met portaal, het hogere koor (goot +25 m, nok +36 m) met afgeschilde koorsluiting, de koorzijbeuken en de kooromgang onder lessenaarsdaken (+20,6 naar +13 m) met pinakels op de steunberen, de sacristie aan de zuidoostkant, de traptoren op de zuidwesthoek van de toren, en de westtoren met de bakstenen onderbouw tot +39,5 m met steunberen, portaal en spitsboognissen en een borstwering tot +40,7 m, de vierkante geleding tot +57 m met vier hoektorentjes (+60,5 m), de achtkantige klokkengeleding tot +75,5 m met galmgaten en pinakels, en de achtkantige spits met een naald tot +108,75 m. Alles staat recht op of loopt schuin omhoog, behalve de borstwering boven de onderbouw die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0503100000000209. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "nieuwe-kerk-delft-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 113.4,
+    "widthM": 36.1,
+    "naveRidgeNapM": 30.5,
+    "choirRidgeNapM": 36,
+    "transeptRidgeNapM": 30.6,
+    "towerBaseNapM": 39.5,
+    "towerSquareNapM": 52,
+    "towerOctagonNapM": 75.5,
+    "towerTipNapM": 108.75,
+    "groundNapM": 0.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_Kerk_(Delft)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11872",
+    "PDOK BAG pand 0503100000000209 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van schip, zijbeuken, transept, koor, koorzijbeuken en kooromgang, omhullende van de toren per hoogte, maaiveld",
+    "Wikimedia Commons: foto's van de Rijksdienst voor het Cultureel Erfgoed (overzicht toren, zuidgevel)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

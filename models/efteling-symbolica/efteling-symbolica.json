@@ -1,0 +1,73 @@
+{
+  "name": "Symbolica (Efteling)",
+  "file": "efteling-symbolica.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131675,
+    406851
+  ],
+  "xAxis": [
+    0.99572,
+    0.09237
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -38,
+      0
+    ],
+    [
+      -38,
+      15
+    ],
+    [
+      -15,
+      35
+    ],
+    [
+      31,
+      -8
+    ],
+    [
+      31,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000019177"
+  ],
+  "description": "Symbolica, het Paleis der Fantasie (2017): oorsprong midden in de hoofdhal op RD (131675, 406851) op het maaiveld (NAP +9,9 m), +X langs de gebouwas 5,3 graden linksom van RD-oost, de voorgevel met de torens aan de westkant (-X); hallen, torens en koepels op de AHN-hoogtes, gevelreliëf en dakornament naar foto's en de luchtfoto.",
+  "realWorld": {
+    "hoofdhalM": [
+      47.4,
+      46.3
+    ],
+    "dakHoofdhalNapM": 19.1,
+    "dakZuidhalNapM": 15.4,
+    "dakPaleisNapM": 21.2,
+    "maaiveldNapM": 9.9,
+    "hoofdtorenTopNapM": 38.7,
+    "hogeVierkanteTorenTopNapM": 34.4,
+    "klokkentorenTopNapM": 29.2,
+    "nokSchilddakNapM": 26.6,
+    "totaalM": [
+      57.7,
+      66.2
+    ],
+    "geopend": 2017
+  },
+  "sources": [
+    "BAG pand 0809100000019177 (PDOK BAG WFS)",
+    "AHN DSM/DTM 0,5 m (PDOK WCS)",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)",
+    "PDOK 3D-tegels (gebouwen en terrein) voor vervangen panden en maaiveld",
+    "Wikimedia Commons, Category:Symbolica (Efteling): Symbolica (Efteling) 20170521, Symbolica voorzijde, Symbolica2018, Symbolica Palace Efteling, Symbolica vanaf Pagode",
+    "Wikipedia: Symbolica (attractie)"
+  ],
+  "groundHeight": 53.56,
+  "printFiles": [
+    "efteling-symbolica-1-1000.stl"
+  ]
+}

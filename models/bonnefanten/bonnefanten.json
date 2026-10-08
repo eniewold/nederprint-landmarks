@@ -1,0 +1,75 @@
+{
+  "name": "Bonnefantenmuseum",
+  "file": "bonnefanten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177140.234,
+    317008.108
+  ],
+  "xAxis": [
+    0.98878,
+    0.14936
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -41,
+      -9
+    ],
+    [
+      -41,
+      9
+    ],
+    [
+      0,
+      -43
+    ],
+    [
+      0,
+      43
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000023799"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de BAG-contour op het maaiveld van de Maaskade (NAP +49,0 m) in de oorsprong, +X langs de vleugels van de toren aan de Maas naar de rug aan de oostkant (RD-richting 8,59 graden linksom vanaf het oosten) en +Y naar het noorden. Eén node zonder vrije overhang: de E-vormige plattegrond op een hardstenen plint met de zinken band op een kraag, de glazen lichtstraten als schilddak op de zijvleugels, de middenvleugel met borstwering, dwarsmuur, verzonken glazen zadeldak boven de grote trap, installatiekasten en spitse lisenen aan de binnenhoven, de entree tussen twee pylonen met de verdiepte glasstrook en de portaalnis, en de koepeltoren met de witte voet met lisenen en kroonlijst, de zinken raket met acht ribben, het balkon en de achtkante kap met dakkapellen, met twee trappentorens, de loopbrug en de glazen verbinding; vensters en deuren als blinde nissen. Vervangt de PDOK-reconstructie van BAG-pand 0935100000023799, dat het hele museum met de toren omvat.",
+  "printFiles": [
+    "bonnefanten-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 78.24,
+    "widthM": 77.28,
+    "wingWidthM": 14.68,
+    "middleWingWidthM": 16.64,
+    "plinthM": 2.5,
+    "eaveM": 16.2,
+    "lanternRidgeM": 18.52,
+    "middleWingM": 20.6,
+    "middleRoofM": 19.4,
+    "headM": 22.75,
+    "stairRoofRidgeM": 19.6,
+    "finSpacingM": 4,
+    "finTipM": 16.4,
+    "pylonsM": 21,
+    "towerRadiusM": 7.3,
+    "towerFootM": 10.4,
+    "rocketMaxRadiusM": 7,
+    "balconyRadiusM": 7.1,
+    "balconyDeckM": 23.6,
+    "towerTopM": 28.9,
+    "stairTowersM": 28.25,
+    "bridgeM": 21.8,
+    "groundNapM": 49,
+    "courtsM": 0.9,
+    "entranceTerraceM": 1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Bonnefantenmuseum",
+    "PDOK BAG pand 0935100000023799, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS als raster langs de as: goot en lichtstraten van de zijvleugels, dak van de rug, borstwering, verzonken dak, dwarsmuur, glasstrook en installatiekasten van de middenvleugel, lisenen, pylonen, trappentorens, loopbrug, balkon en kap van de toren, maaiveld, binnenhoven en entreebordes",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: 20150312 Maastricht; Bonnefantenmuseum seen from Kennedybrug 04.jpg, 20150312 Maastricht; Bonnefantenmuseum seen from Kennedybrug 08.jpg, 20130504 Maastricht Céramique seen from West bank of the Meuse 01 Bonnefantenmuseum.JPG, Two short towers of the Bonnefantenmuseum.jpg, 20150312 Maastricht; Front of Bonnefantenmuseum seen from the east 01.jpg, Bonnefantenmuseum (Maastricht) 20-06-2018 11-04-22.jpg, Bonnefantenmuseum (Maastricht) 20-06-2018 11-55-33.jpg, 20150312 Maastricht; Southside of Bonnefantenmuseum seen from the southeast 03.jpg, Maastricht Bonnefantenmuseum 2.jpg, Maastricht - panoramio (4).jpg, View from the rooftop of the Bonnefantenmuseum - 14918328928.jpg, 2023 Maastricht, Bonnefantenmuseum, maquette (2).jpg, Bonnefantenmuseum, Maastricht, Schnittmodell.jpg"
+  ]
+}

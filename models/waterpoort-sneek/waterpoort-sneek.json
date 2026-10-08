@@ -1,0 +1,67 @@
+{
+  "name": "Waterpoort",
+  "file": "waterpoort-sneek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173239.79,
+    560300.33
+  ],
+  "xAxis": [
+    0.49924,
+    -0.86646
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      8
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      13,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0091100000004105"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (173239,79, 560300,33), midden tussen de twee torens, op het maaiveld van de kades (NAP +1,0 m), +X langs de torens naar het zuidzuidoosten (-60,05 graden vanaf het oosten) en +Y naar het oostnoordoosten, de stadszijde; -Y is de waterzijde aan De Kolk. Eén node building:poort met twee achtkante torens (straal 2,27 m) met blinde vensters, een kraag van 45 graden op NAP +11,6 m en een achtkante spits tot NAP +24 m, en daartussen het middendeel met de waterboog van 4,2 m breed (spitse top op NAP +2,9 m), de doorloop van het looppad langs X achter de torens met aan elke zijgevel twee bogen van 1,8 m (vloer NAP +3,8 m, top +7,4 m), aan de waterzijde de galerij met twee kleinere bogen van 1,5 m boven een borstwering (+4,6 m, top +7,0 m) die in de doorloop uitkomen, en de poortwachterswoning met een steil zadeldak (goot +8,8 m, nok +13,6 m) tussen twee trapgevels tot NAP +15,2 m. Alles begint op NAP -2,0 m, onder het water, dat in het PDOK-terrein zit; de waterboog is tot de onderkant open. Alles staat recht op of loopt schuin omhoog, behalve de vlakke bovenkant van de vensternissen, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand van de poort. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "waterpoort-sneek-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 15.88,
+    "widthM": 10.3,
+    "highestPointNapM": 24,
+    "towerRadiusM": 2.27,
+    "towerCollarNapM": 11.6,
+    "spireTipNapM": 24,
+    "roofEaveNapM": 8.8,
+    "roofRidgeNapM": 13.6,
+    "gableTopNapM": 15.2,
+    "waterArchWidthM": 4.2,
+    "waterArchApexNapM": 2.9,
+    "galleryArchWidthM": 1.5,
+    "galleryFloorNapM": 4.6,
+    "galleryApexNapM": 7,
+    "walkwayArchWidthM": 1.8,
+    "walkwayFloorNapM": 3.8,
+    "walkwayApexNapM": 7.4,
+    "groundNapM": 1,
+    "waterNapM": -0.5,
+    "baseNapM": -2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Waterpoort_(Sneek)",
+    "PDOK BAG pand 0091100000004105 (de poort met beide torens), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nok, torens, kades en water",
+    "Straatfoto vanaf het looppad op de westoever (Google Maps, Rob Groenen, september 2020) en foto vanaf De Kolk, aangeleverd door de gebruiker: doorloop en galerijbogen",
+    "Wikimedia Commons: Sneek Waterpoort 06.jpg, Waterpoort Sneek 1.jpg (waterzijde); Waterpoort, stadszicht - Sneek - 20201723 - RCE.jpg, Sneek, watergate.jpg, 20190529 Waterpoort1 Sneek.jpg (stadszijde)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

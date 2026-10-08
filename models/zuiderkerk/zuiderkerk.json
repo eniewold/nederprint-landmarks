@@ -1,0 +1,56 @@
+{
+  "name": "Zuiderkerk",
+  "file": "zuiderkerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121805,
+    487050
+  ],
+  "xAxis": [
+    0.495459,
+    0.868632
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      0
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      0,
+      19
+    ]
+  ],
+  "groundHeight": 44.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012171559"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121805, 487050), in het middenschip, op het maaiveld (NAP +1,2 m), +X langs de nok naar het oosten (60,3 graden vanaf de RD-X-as) en +Y loodrecht daarop. Een node building:kerk uit dakvlakken en bouwdelen: middenschip onder een zadeldak met de nok op +24 m en topgevels, zijbeuken met een plat dak op +13,2 m en een schuine rand, dwarse topgevels per travee, pilasters en het zuidportaal, en de Zuidertoren op de noordwesthoek met een bakstenen onderbouw tot +30,5 m, drie achtkanten, een koepel en een spits tot +64,4 m. Onderkant 0,6 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van kerk en toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "zuiderkerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44.2,
+    "widthM": 34,
+    "highestPointM": 64.4,
+    "towerTopM": 64.4,
+    "naveRidgeM": 24,
+    "aisleRoofM": 13.2,
+    "groundNapM": 1.2,
+    "baseM": -0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Zuiderkerk_%28Amsterdam%29",
+    "https://nl.wikipedia.org/wiki/Zuidertoren",
+    "PDOK BAG pand 0363100012171559 (kerk met toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nok, zijbeuken, toren en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

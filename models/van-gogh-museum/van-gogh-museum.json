@@ -1,0 +1,64 @@
+{
+  "name": "Van Gogh Museum",
+  "file": "van-gogh-museum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120520.94,
+    485729.13
+  ],
+  "xAxis": [
+    0.918791,
+    0.394744
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      40,
+      -30
+    ],
+    [
+      30,
+      -80
+    ],
+    [
+      0,
+      -85
+    ],
+    [
+      -35,
+      -40
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012098679",
+    "NL.IMBAG.Pand.0363100012211564"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (120520,94, 485729,13), het zwaartepunt van het hoofdgebouw, op het maaiveld van het Museumplein (NAP +0,6 m), +X langs de gevels van het hoofdgebouw naar het noordoosten (23,25 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:museum: het hoofdgebouw van Rietveld als stapeling van platte daken (+7,1 m terrassen en oostelijke aanbouw, +13,0 m westvleugel, +18,8 m zuidwestblok met vier zaagtanden, +21,0 m centraal dak, +24,0 m trappenhuiskern, +26,5 m liftkern, een verhoogde rand en een strook langs de gevels) en de ovale Kurokawavleugel ten zuiden ervan: een bolvormig titaniumdak (kapje van een bol, straal 128 m, top +14,5 m) met overstekende dakrand en een verticale snede, een lager noordelijk dak als halve cilinder (+4 tot +9 m), een driehoekige lichtkoker (+11,3 m) en een richel (+9,6 m), afgesneden op de BAG-contouren (de ellips van de Kurokawavleugel, het dak steekt tot 1,4 m uit). Onderkant op 0,5 m onder het maaiveld; alleen de dakrand van de Kurokawavleugel hangt over, alle andere vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van beide panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "van-gogh-museum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 57.55,
+    "widthM": 99.42,
+    "highestPointM": 26.5,
+    "mainRoofM": [
+      7.1,
+      26.5
+    ],
+    "kurokawaRoofM": [
+      4,
+      14.5
+    ],
+    "groundNapM": 0.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Van_Gogh_Museum",
+    "https://www.heeswijk.nl/media/pers/pers-mauritshuis/entreegebouw-van-gogh-museum&lang=en",
+    "PDOK BAG panden 0363100012098679 en 0363100012211564, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,25 m via WCS: de dakhoogtes, het bolvlak en het cilindervlak van de Kurokawavleugel en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

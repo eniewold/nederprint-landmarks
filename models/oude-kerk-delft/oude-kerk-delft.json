@@ -1,0 +1,55 @@
+{
+  "name": "Oude Kerk",
+  "file": "oude-kerk-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    84192.5,
+    447635.2
+  ],
+  "xAxis": [
+    0.989526,
+    0.144356
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38,
+      0
+    ],
+    [
+      -10,
+      26
+    ],
+    [
+      52,
+      0
+    ]
+  ],
+  "groundHeight": 45.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000022523"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (84192,5, 447635,2), in het schip, op het maaiveld (NAP +1,7 m), +X langs de nok van schip en koor naar het oosten (8,3 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Een node building:kerk uit dakvlakken en bouwdelen: schip en koor onder één nok op +31,8 m met een borstwering en een vijfzijdige sluiting, een dwarsdak met dakruiter over de viering, zijbeuken met eigen zadeldaken en topgevels, het onvoltooide noordelijke dwarsschip met een plat dak op +27 m, kapellen en portalen, en de scheve toren: tot de knik op +33 m 0,8 m naar het westen hellend, daarboven recht, met galmgaten, vier hoektorentjes en een achtkantige spits tot +76,1 m, 2,1 m ten westen van het hart van de voet. Onderkant 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan (bijna) verticaal. Vervangt de PDOK-reconstructie van de kerk en de toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "oude-kerk-delft-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 84.57,
+    "widthM": 61.7,
+    "highestPointM": 76.1,
+    "naveRidgeM": 31.8,
+    "towerTopM": 76.1,
+    "towerOutOfPlumbM": 2.1,
+    "groundNapM": 1.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Oude_Kerk_%28Delft%29",
+    "PDOK BAG pand 0503100000022523 (kerk met toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, de toren en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van alle zijden"
+  ]
+}

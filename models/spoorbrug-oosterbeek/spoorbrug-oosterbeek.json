@@ -1,0 +1,77 @@
+{
+  "name": "Spoorbrug Oosterbeek",
+  "file": "spoorbrug-oosterbeek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187103.53,
+    442490.13
+  ],
+  "xAxis": [
+    0.351617,
+    0.936144
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 51.79,
+  "groundSamplePoints": [
+    [
+      -35,
+      20
+    ],
+    [
+      -35,
+      -20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      35,
+      20
+    ],
+    [
+      35,
+      -20
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers van de boog op de waterspiegel van de Nederrijn (z = 0, NAP +8,25 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Oosterbeek, RD-richting 69,41 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Drie nodes. Node road:spoor: de bovenste 0,5 m van het dek op de twaalf BGT-wegdelen spoorbaan van de stalen brug van 1952 (per veld één per spoor, 0,7 tot 3,3 m naast de as) met de attributen van die wegdelen in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding). Node road:spoor-ballastbed: idem op de BGT-wegdelen spoorbaan, half verhard, van het zuidelijke landhoofd met het korte veld (L0004.abb9ac25...) en de aanbrug van 2004 (L0004.a86b2b33..., circa 8 m breed), met bgt_fysiekvoorkomen half verhard; zo werken de kleurregels van een thema op het dek. Node building:spoorbrug-oosterbeek: de rest van het kunstwerk: de stalen boogbrug van 132,6 m tussen de pijlermiddens (eindstijlen op x = ±66,3) met twee vakwerkbogen 4,75 m naast de as als plaat van 1,0 m met randen van 1,2 m, bovenrand tot NAP +48,9 m in de top en +31,9 m op de eindstijlen, onderrand 6,0 m lager in de top en 6,5 m binnen de eindstijlen op het dek, 24 velden van 5,525 m met doorgaande driehoekige openingen (flanken van minstens 50 graden) en blinde nissen, 21 hangers met spitse openingen ertussen, het windverband van kruisende diagonalen met portaalregels tussen de bovenranden, het brugdek met trekbalken en looppaden tot 6,3 m naast de as; de twee rivierpijlers met ronde koppen (BGT), metselwerk tot NAP +12,5 m met kraag en betonnen blok; zes aanbruggen van 1952 (één zuid, vijf noord, circa 58 m) als dekplaat van 10,5 m op twee vakwerkliggers tot NAP +16,25 m met vijf V-velden (doorgaande spitse openingen, blinde nissen) op pijlers met spitse koppen; het zuidelijke landhoofd met een kort veld en een brede pijler met bordes; de overgangspijler met bordes (x = 352,7 tot 359,7) en de aanbrug van 2004 tot het noordelijke landhoofd (x = 714,1 tot 717): betonnen dek van 12,15 m op twee naar buiten hellende vakwerken met V-openingen, zeven velden van 49,7 m. Spoor op NAP +22,45 m (stalen brug), +22,3 m (zuidelijk landhoofd) en +22,2 m (aanbrug 2004). Bovenleiding met portalen, leuningen, ladders, kabelgoten en het onderste windverband zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Nederrijn naast de boog bemonsterd; groundHeight is de PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "spoorbrug-oosterbeek-1-2500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 861.7,
+    "archSpanPiersM": 132.65,
+    "archCrownNapM": 48.9,
+    "archEndPostNapM": 31.9,
+    "archRibsFromAxisM": 4.75,
+    "archPanels": 24,
+    "approachSpansM": [
+      60.1,
+      58.1,
+      57.6,
+      57.6,
+      57.5,
+      58.5
+    ],
+    "newApproachSpansM": 49.72,
+    "railNapM": {
+      "south": 22.3,
+      "steelBridge": 22.45,
+      "approach2004": 22.2
+    },
+    "waterNapM": 8.25
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorbrug_Oosterbeek",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, landhoofden), wegdeel (spoorbaan) en spoor, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de spoorhoogte, de bogen, het portaal en de aanbruggen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de plattegrond",
+    "Wikimedia Commons: Spoorbrug over de Nederrijn ter hoogte van Oosterbeek.jpg, Arnhem-Meinerswijk, Spoorbrug Oosterbeek tijdens hoogwater en ijs IMG 8164 2021-02-14 09.05.jpg, Railway bridge Arnhem (2).JPG, Railway bridge Arnhem (3).JPG, 2007-01-14 12.14 Arnhem, spoorbrug.JPG, Arnhem-Zuid Neder-Rijn NS 1764 met DD-AR 7374 Sprinter 7635 Zutphen (29423434454).jpg, Modern railwaybridge architecture gives rather nice shaped structures - panoramio.jpg, VIRM Rijnbrug Oosterbeek.JPG"
+  ]
+}

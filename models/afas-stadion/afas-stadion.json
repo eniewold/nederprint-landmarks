@@ -1,0 +1,76 @@
+{
+  "name": "AFAS Stadion",
+  "file": "afas-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    111304.05,
+    514113.22
+  ],
+  "xAxis": [
+    0.705624,
+    -0.708586
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -95
+    ],
+    [
+      -100,
+      -70
+    ],
+    [
+      100,
+      -70
+    ],
+    [
+      -100,
+      70
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000106554",
+    "NL.IMBAG.Pand.0361100000206467"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (111304,05, 514113,22) in het hart van de veldopening op het maaiveld (NAP -0,26 m), +X langs het veld naar het zuidoosten (-45,12 graden) en +Y naar het noordoosten. Eén node building:stadion: de afgeronde ring van tribunes (rang van +1,5 m aan de veldkant tot +14 à +20 m achter) met daarboven het doorlopende dak van 2,5 m dik: over de drie lage tribunes van +27,5 m aan de veldkant naar +23 m aan de dakgoot, gedragen door 20 kraanspanten (masten tot +30 m met een schoor), en boven de hoofdtribune in het zuidwesten op +27 tot +29 m met de megatruss als boog tot +40,5 m en een gesloten achtergevel. De rang blijft onder het dak zichtbaar; de vier lichtmasten zijn weg. Onderkant op -0,5 m onder het maaiveld; onder het dak, de lippen, de schoren en de boog zitten bedoelde ondervlakken, daar vult de export onder 45 graden op. Vervangt de PDOK-reconstructie van de twee BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "afas-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 190.68,
+    "widthM": 154.42,
+    "highestPointM": 40.5,
+    "capacity": 19500,
+    "fieldOpeningM": [
+      138,
+      94
+    ],
+    "tierSlope": 0.65,
+    "roofThicknessM": 2.5,
+    "sideRoofTopM": [
+      27.5,
+      23
+    ],
+    "mainStandRoofTopM": [
+      27,
+      29
+    ],
+    "archCrownM": 40.5,
+    "craneMasts": 20,
+    "mastTopM": 30,
+    "groundNapM": -0.26,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/AFAS_Stadion",
+    "https://www.zja.nl/en/stadion-AZ-Alkmaar",
+    "https://www.cobouw.nl/288647/nieuw-dak-op-afas-stadion-vereist-integrale-aanpak",
+    "https://betonenstaalbouw.nl/projecten/2-500-ton-staal-voor-nieuw-dak-afas-stadion-in-alkmaar/",
+    "PDOK BAG panden 0361100000106554 en 0361100000206467, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de veldopening en de rang van de drie tribunes",
+    "PDOK luchtfoto (Actueel_orthoHR en de jaargangen 2020 tot 2026): plattegrond en schaduwen van het dak"
+  ]
+}

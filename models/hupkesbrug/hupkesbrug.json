@@ -1,0 +1,100 @@
+{
+  "name": "Dr. W. Hupkesbrug",
+  "file": "hupkesbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    146323.06,
+    425598.58
+  ],
+  "xAxis": [
+    -0.11022,
+    0.99391
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.51,
+  "groundSamplePoints": [
+    [
+      -170,
+      25
+    ],
+    [
+      -170,
+      -25
+    ],
+    [
+      -120,
+      25
+    ],
+    [
+      -120,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      50,
+      25
+    ],
+    [
+      50,
+      -25
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee sporen midden in de middelste rivieroverspanning op de waterspiegel van de Waal (z = 0, NAP +2,9 m) in de oorsprong, +X langs de brug naar het noorden (Waardenburg, RD-richting 96,33 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,6 m) met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee enkelsporige spoorbruggen naast elkaar met samen een dek van 15,7 m breed van het zuidelijke landhoofd in Zaltbommel (x = -194,7) tot het noordelijke (x = 680,2), met de spoorstaaf op NAP +17,9 tot +18,5 m over de rivier, dalend naar +14,3 m; vier vakwerkliggers (6,6 en 1,0 m oostelijk, 0,8 en 6,5 m westelijk van de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen: drie rivieroverspanningen van circa 124 m met een gebogen bovenrand tot NAP +31,0 m en korte steile eindstijlen, en acht velden van circa 60 m over de uiterwaard met evenwijdige randen 6,6 m boven de spoorstaaf, alle met verticalen; drie stenen rivierpijlers en zeven pijlers in de uiterwaard met spitse en ronde koppen (BGT). Windverbanden en portalen tussen de liggers, bovenleiding, leuningen en de Martinus Nijhoffbrug (75 m stroomafwaarts) zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de rivieroverspanningen bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hupkesbrug-1-2500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 874.9,
+    "deckWidthM": 15.7,
+    "riverSpansM": [
+      126.3,
+      123,
+      124.4
+    ],
+    "floodplainSpansM": [
+      61.2,
+      59.6,
+      60,
+      59.9,
+      59.3,
+      59.9,
+      59.8,
+      59.1
+    ],
+    "riverPierCentresM": [
+      -62.9,
+      62.9,
+      190.1
+    ],
+    "trussLinesFromAxisM": [
+      -6.6,
+      -1,
+      0.8,
+      6.5
+    ],
+    "riverTrussCrownNapM": 31,
+    "floodplainTrussAboveRailM": 6.6,
+    "railNapM": {
+      "south": 17.88,
+      "river": 18.48,
+      "north": 14.3
+    },
+    "waterNapM": 2.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Dr._W._Hupkesbrug",
+    "PDOK BGT overbruggingsdeel (dekken, pijlers, landhoofden) en spoor, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de spoorstaaf, de vakwerklijnen en hun bovenrand",
+    "PDOK Luchtfoto RGB (Actueel_orthoHR) voor de twee bruggen en de vakverdeling",
+    "Wikimedia Commons: Zaltbommel Waalbruggen 001.jpg, Bommelse brug en Dr. W. Hupkesbrug.jpg, The cable stayed 256 m span Waalbridge at Zaltbommel from 1992-1996. Behind it the old steel railway bridges - panoramio.jpg, Spoorbrug bij Zaltbommel 001.jpg, Spoorbrug bij Zaltbommel 002.jpg"
+  ]
+}

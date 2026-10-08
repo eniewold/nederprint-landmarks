@@ -1,0 +1,60 @@
+{
+  "name": "Paradiso",
+  "file": "paradiso.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120710.058,
+    486149.966
+  ],
+  "xAxis": [
+    -0.61978,
+    -0.78478
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -22,
+      -6
+    ],
+    [
+      -22,
+      6
+    ],
+    [
+      -12,
+      -14
+    ],
+    [
+      -6,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012169473"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de BAG-contour op het maaiveld (NAP +1,4 m) in de oorsprong, +X langs de as van de zaal van de voorgevel aan de Weteringschans naar de halfronde achterzijde aan de Singelgracht (RD-richting -128,3 graden) en +Y naar de tuin aan de zuidoostkant. Eén node zonder vrije overhang. Vervangt de PDOK-reconstructie van BAG-pand 0363100012169473; de lage aanbouwen aan de tuinzijde liggen buiten de BAG-contour.",
+  "printFiles": [
+    "paradiso-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.63,
+    "widthM": 20.64,
+    "frontRidgeM": 20,
+    "gableApexM": 20.05,
+    "hallEaveM": 12.9,
+    "hallRidgeM": 18.15,
+    "lanternTipM": 20.7,
+    "apseEaveM": 12.6,
+    "groundNapM": 1.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paradiso_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6400",
+    "PDOK BAG pand 0363100012169473, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goot- en nokhoogtes, middenstrook, dakruiters, kegeldak, aanbouwen en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Amsterdam_Paradiso.jpg, Voor_en_linker_zijgevel_-_Amsterdam_-_20021777_-_RCE.jpg"
+  ]
+}

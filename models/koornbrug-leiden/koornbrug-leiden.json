@@ -1,0 +1,45 @@
+{
+  "name": "Koornbrug",
+  "file": "koornbrug-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93741.6,
+    463689.5
+  ],
+  "xAxis": [
+    0.842,
+    0.539
+  ],
+  "groundOffsetMetres": 0,
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het brugdek op de waterspiegel van de Nieuwe Rijn (z = 0, circa -0,6 m NAP), +X loopt langs de overspanning naar de Burgsteeg (noordoost) en +Y langs het water naar het noordwesten. De lader bemonstert het laagste maaiveld rond de voetafdruk en vindt hier het water, vandaar geen verzinking. Vijf nodes: road:rijbaan, road:rijbaan-klinkers en road:voetpad, de bovenste 0,5 m van het wegdek op het dek en de hellingen met de attributen van de BGT-wegdelen in extras.attributes (bgt_functie rijbaan lokale weg of voetpad, bgt_fysiekvoorkomen open verharding, plus_fysiekvoorkomen sierbestrating voor het midden van de rijweg en gebakken klinkers voor de randstrook in het zuidoosten, de randen van de hellingen en de voetpaden onder de galerijen), zodat de kleurregels van een thema erop werken; building:boogbrug, de rest van de stenen brug met de drie gewelven; en building:galerijen, de twee galerijen met zuilen, borstweringen, bordessen en daken (de zuilen, borstweringen en bordessen blijven met 2 cm rondom buiten de wegdelen). Nodenamen klasse:label bepalen de materiaalklasse.",
+  "printFiles": [
+    "koornbrug-leiden-1-100.stl"
+  ],
+  "realWorld": {
+    "deckLengthM": 16.7,
+    "deckWidthM": 18.9,
+    "archSpansM": [
+      3.2,
+      5.3,
+      3.1
+    ],
+    "crownAboveWaterM": 3.4,
+    "quayAboveWaterM": 2.45,
+    "galleryLengthM": 24,
+    "galleryWidthM": 6.800000000000001,
+    "entablatureTopAboveWaterM": 7.1,
+    "ridgeAboveWaterM": 9.5,
+    "columnsPerGallery": 18
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Koornbrug",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25673",
+    "PDOK BGT overbruggingsdeel (dek, landhoofd, pijler), EPSG:28992",
+    "PDOK BGT wegdeel (OGC API): rijweg en voetpaden op het dek en de hellingen, met functie en fysiek voorkomen",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor dek-, kade-, kroonlijst- en nokhoogte",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de dakplattegrond van de galerijen",
+    "Wikimedia Commons: Leiden Koornbrug.jpg, Leiden - Koornbrug2.JPG, Aanzicht - Leiden - 20137477 - RCE.jpg, Overzicht exterieur - Leiden - 20134856 - RCE.jpg, Leiden - Koornbrug1.JPG"
+  ]
+}

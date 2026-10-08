@@ -1,0 +1,55 @@
+{
+  "name": "Stadhuis van Leiden",
+  "file": "stadhuis-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93664.1,
+    463711.4
+  ],
+  "xAxis": [
+    0.61222,
+    -0.79069
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -23
+    ],
+    [
+      0,
+      -23
+    ],
+    [
+      30,
+      -23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000042247"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93664,10, 463711,40), het zwaartepunt van de BAG-contour, op het maaiveld van de Breestraat (NAP +3,5 m), +X langs de Breestraat naar het zuidoosten (RD-richting -52,25 graden) en +Y naar de Vismarkt. Het maaiveld wordt alleen aan de Breestraat bemonsterd; de vlakke onderkant ligt op NAP +0,8 m, onder het lagere maaiveld aan de Vismarkt. Vervangt de PDOK-reconstructie van BAG-pand 0546100000042247. Vleugels met zadeldaken, dwarse topgevels, een trapgevel en dakkapellen en platte delen rond de open binnenhof, de toren met koepel en spits, hoogtes uit het AHN. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stadhuis-leiden-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 96,
+    "widthM": 48,
+    "breestraatEaveNapM": 13.2,
+    "breestraatRidgeNapM": 20.4,
+    "vismarktRidgeNapM": 30.3,
+    "towerBodyTopNapM": 28.5,
+    "towerTipNapM": 51.5,
+    "groundBreestraatNapM": 3.5,
+    "groundVismarktNapM": 1.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadhuis_van_Leiden",
+    "PDOK BAG pand 0546100000042247 (contour met binnenhof), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de dakprofielen, de toren en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de open binnenhof, de dakkapellen en het koepeltje",
+    "Wikimedia Commons: Leiden - Ayuntamiento (Breestraat) 20060716.jpg, Stadhuis van Leiden in Breestraat.jpg, Leiden - Breestraat met zicht op het stadhuis.jpg"
+  ]
+}

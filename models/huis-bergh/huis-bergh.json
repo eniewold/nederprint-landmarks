@@ -1,0 +1,55 @@
+{
+  "name": "Huis Bergh",
+  "file": "huis-bergh.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    213827,
+    432079
+  ],
+  "xAxis": [
+    0.93358,
+    0.358368
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      0
+    ],
+    [
+      -20,
+      -15
+    ],
+    [
+      -10,
+      0
+    ]
+  ],
+  "groundHeight": 63.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1955100000024260"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (213827, 432079), midden in het hoofdkasteel, op het maaiveld van het kasteeleiland (NAP +19,8 m), +X langs de noordvleugel (21 graden vanaf de RD-X-as) en +Y loodrecht daarop. Een node building:kasteel uit dakvlakken en bouwdelen: de donjon met kantelen en vier hoektorentjes, de west-, noord- en oostvleugel met zadeldaken, dakkapellen en schoorstenen, de schuine zuidoostvleugel, de binnenplaats met een glazen dak en een achtkantig traptorentje met spits, de lage zuidvleugel en een vierkant traptorentje. Onderkant 6,2 m onder het eiland, tot in de slotgracht; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het hoofdkasteel. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "huis-bergh-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 37.3,
+    "widthM": 52.7,
+    "highestPointM": 29,
+    "keepTopM": 21.4,
+    "ridgeM": 18,
+    "stairTowerTopM": 29,
+    "groundNapM": 19.8,
+    "baseM": -6.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Huis_Bergh",
+    "PDOK BAG pand 1955100000024260 (het hoofdkasteel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: vleugels, donjon, gracht en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de zuid- en westkant"
+  ]
+}

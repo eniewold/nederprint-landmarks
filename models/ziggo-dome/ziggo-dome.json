@@ -1,0 +1,63 @@
+{
+  "name": "Ziggo Dome",
+  "file": "ziggo-dome.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124311.987,
+    480705.199
+  ],
+  "xAxis": [
+    0.48206,
+    -0.87614
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -30,
+      -70
+    ],
+    [
+      0,
+      -70
+    ],
+    [
+      30,
+      -70
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012238052"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de doos op het straatniveau aan de laadzijde (NAP -3,0 m) in de oorsprong, +X langs de korte zijde naar het zuidzuidoosten (RD-richting -61,18 graden, evenwijdig aan de ArenA) en +Y naar de entree aan De Passage. Eén node zonder vrije overhang: de zwarte doos van 91 × 115 m tot NAP +28,0 m met een lage nok en vier installatiekasten met schuine kopse kanten, ledlamellen als groeven van 0,3 m om de 3 m, een glazen plint onder het ledveld (NAP +5,8 m) en aan de entreezijde twee bouwlagen glas tot NAP +10,8 m, drie rijen ramen in de laadgevel, de twee hoeken aan de entreezijde die boven het plein uitkragen met een schuine onderkant, en de luifel boven de laaddocks aan de zuidwestkant met twaalf laaddocks. De onderbouw tot het dek (NAP +2,1 m) verdwijnt aan drie zijden in het terrein. Vervangt de PDOK-reconstructie van BAG-pand 0363100012238052.",
+  "printFiles": [
+    "ziggo-dome-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 120.63,
+    "widthM": 90.96,
+    "boxM": [
+      90.96,
+      114.9
+    ],
+    "eaveNapM": 28,
+    "ridgeNapM": 28.7,
+    "plantTopNapM": 30.85,
+    "deckNapM": 2.1,
+    "streetNapM": -3,
+    "cantileverBottomNapM": 10.8,
+    "ledFieldBottomNapM": 5.8,
+    "entranceGlazingTopNapM": 10.8,
+    "ledGroovePitchM": 3,
+    "loadingDocks": 12,
+    "canopyDepthM": 5.73
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Ziggo_Dome",
+    "PDOK BAG en BGT pand 0363100012238052, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakrand, dakhoogte en nok, installatiekasten (raster per 0,5 m), dek, luifel en straatniveau",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: 2020 Ziggodome.jpg, Ziggo Dome.JPG, Ziggodome Amsterdam - panoramio.jpg, ZiggoDome2012.jpg"
+  ]
+}

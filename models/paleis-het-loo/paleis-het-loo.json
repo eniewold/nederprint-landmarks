@@ -1,0 +1,59 @@
+{
+  "name": "Paleis Het Loo",
+  "file": "paleis-het-loo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    193174.6,
+    471890.07
+  ],
+  "xAxis": [
+    0.999877,
+    0.015707
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -25
+    ],
+    [
+      20,
+      -25
+    ],
+    [
+      0,
+      20
+    ]
+  ],
+  "groundHeight": 61.44,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0200100000085665",
+    "NL.IMBAG.Pand.0200100000800424",
+    "NL.IMBAG.Pand.0200100000800425"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (193174,6, 471890,07), op de symmetrieas midden op het voorplein, op het maaiveld van het voorplein (NAP +17,7 m), +X langs de gevels naar het oosten (0,9 graden vanaf de RD-X-as) en +Y naar de tuin. Een node building:paleis uit dakvlakken en bouwdelen: het hoofdgebouw (goot +15,6 m, schilddak tot het platte dak op +21,3 m met balustrade, dakopbouw tot +24 m en zes schoorstenen tot +23,8 m, frontons aan voorplein en tuin, dakkapellen, bordes), twee binnenpaviljoens (goot +12,2 m, plat bovenvlak +17,4 m), twee buitenpaviljoens (nok +17,7 m, gebogen frontons), de zijvleugels om het voorplein (goot +8 m, nok +13,1 m, negen dakkapellen naar het voorplein) met kopse paviljoens (tentdak tot +15,2 m) het oostelijke complex rond een binnenhof met twee hoekpaviljoens en de lage vleugel langs de straat ten westen (goot +7,8 m, nok +12,8 m, zes dakkapellen, paviljoen met tentdak tot +15,2 m, entreegebouw +4,2 m); kroonlijsten en vensternissen in de gevels. Onderkant 0,5 m onder het voorplein; alle vlakken wijzen omhoog, staan verticaal of hangen niet vlakker dan 48 graden. Vervangt de PDOK-reconstructie van de drie panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "paleis-het-loo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 214.5,
+    "widthM": 122.3,
+    "highestPointM": 24,
+    "mainEaveM": 15.6,
+    "mainFlatRoofM": 21.3,
+    "mainChimneyTopM": 23.8,
+    "wingRidgeM": 13.1,
+    "groundNapM": 17.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paleis_Het_Loo",
+    "PDOK BAG pand 0200100000085665 (paleis, vleugels, oostelijk complex en de ondergrondse uitbreiding onder het voorplein), EPSG:28992",
+    "PDOK BAG panden 0200100000800424 en 0200100000800425 (de lage vleugel langs de straat met het westpaviljoen en het entreegebouw)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (ook op 0,25 m): goten, nokken, platte daken, schoorstenen, dakkapellen en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): dakvlakken, hellingen en de contouren van de paviljoens",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van het voorplein, de tuinzijde en de vleugels"
+  ]
+}

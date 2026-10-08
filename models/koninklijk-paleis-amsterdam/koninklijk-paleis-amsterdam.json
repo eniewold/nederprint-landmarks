@@ -1,0 +1,73 @@
+{
+  "name": "Koninklijk Paleis",
+  "file": "koninklijk-paleis-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121232.11,
+    487368.47
+  ],
+  "xAxis": [
+    0.99939,
+    -0.0349
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      38,
+      0
+    ],
+    [
+      -37,
+      0
+    ],
+    [
+      0,
+      44
+    ],
+    [
+      0,
+      -44
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012167579"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121232,11, 487368,47), in het midden van de BAG-contour (midden in de Burgerzaal), op het maaiveld (NAP +1,8 m), +X naar de voorgevel aan de Dam (RD-richting -2,0 graden, net ten zuiden van oost) en +Y naar het noorden; de koepeltoren staat aan de +X-kant boven de voorgevel, de achtergevel met Atlas aan de Nieuwezijds Voorburgwal. Eén node building: het blok van 80 bij 57 m binnen de BAG-contour met de hoekpaviljoens en de middenrisalieten tot de kroonlijst (NAP +28,3 m) die 0,3 m uitkraagt, het rondgaande schilddak met de nokken op +33,7 m, schoorstenen tot +37,4 m en kroonornamenten op de hoeken tot +39 m, het gebroken zadeldak van de Burgerzaal (goot +30 m, knik +33,7 m, nok +35,8 m) met de galerijen ernaast tot +28,3 m, de dwarsvleugel naar de achtergevel tot +33,75 m, de lessenaarsdaken (van +22 m naar +17,5 m) rond de twee open binnenplaatsen (vloer op +2,75 m), de frontons op beide risalieten (top +33,3 m) met de Vrede tot +37 m aan de Dam, Atlas met de hemelbol tot +41,4 m aan de achterzijde en de hoekbeelden, gevelreliëf rondom (pilasters op de gevellijn met de velden ertussen 0,3 m terug, de tussenlijst op +17,3 tot +18,6 m die 0,3 m uitspringt, per travee een kelderraam en per orde een hoog venster en een mezzaninevenster als blinde nis van 0,35 m in de velden, 23 traveeën aan de Dam en de achtergevel, 15 aan de zijgevels met oeils-de-boeuf in de tussenstukken) en zeven spitse poortbogen van 0,6 m diep in de risaliet aan de Dam, en de koepeltoren met de vierkante voet tot +36,2 m, de achtkantige omgang tot +41 m, de achtkantige trommel met de bogen van het klokkenspel tot +50,4 m, de koepel tot +53,2 m, de lantaarn tot +56,2 m en de naald met de windvaan tot NAP +61,2 m. Alles staat recht op of loopt schuin omhoog, behalve de kroonlijst die rondom 0,3 m uitkraagt en de vlakke bovenkanten van de vensternissen (0,35 m), zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0363100012167579. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "koninklijk-paleis-amsterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 65.68,
+    "widthM": 80.78,
+    "corniceNapM": 28.3,
+    "roofRidgeNapM": 33.7,
+    "hallRidgeNapM": 35.8,
+    "pedimentNapM": 33.3,
+    "atlasNapM": 41.4,
+    "towerFootNapM": 36.2,
+    "towerGalleryNapM": 41,
+    "towerDrumNapM": 50.4,
+    "domeNapM": 53.2,
+    "towerTipNapM": 61.2,
+    "groundNapM": 1.8,
+    "intermediateCorniceNapM": [
+      17.3,
+      18.6
+    ],
+    "windowNicheDepthM": 0.35,
+    "panelRecessM": 0.3,
+    "baysDamFacade": 23,
+    "baysSideFacade": 15
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paleis_op_de_Dam",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/5941",
+    "PDOK BAG pand 0363100012167579 (contour met de twee binnenplaatsen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goot en nokken van de daken, frontons, beelden, schoorstenen, omhullende van de koepeltoren per hoogte, maaiveld",
+    "Wikimedia Commons: frontale foto van de voorgevel (Royal Palace of Amsterdam.jpg)",
+    "Wikimedia Commons: achtergevel (Overzicht Koninklijk Paleis Amsterdam, zijde Nieuwezijds Voorburgwal - Amsterdam - 20528557 - RCE.jpg) en zijgevels (Voor- en zijgevel - Amsterdam - 20011607 - RCE.jpg, Zijgevel - Amsterdam - 20011608 - RCE.jpg)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

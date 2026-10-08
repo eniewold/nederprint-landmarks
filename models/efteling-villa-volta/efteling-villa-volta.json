@@ -1,0 +1,78 @@
+{
+  "name": "Villa Volta (Efteling)",
+  "file": "efteling-villa-volta.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131477.9,
+    407200.02
+  ],
+  "xAxis": [
+    0.97992,
+    -0.19937
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -20
+    ],
+    [
+      -11,
+      -12
+    ],
+    [
+      11,
+      -12
+    ],
+    [
+      -12,
+      4
+    ],
+    [
+      14,
+      8
+    ],
+    [
+      0,
+      23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017595"
+  ],
+  "description": "Villa Volta in de Efteling (1996): oorsprong op de middenas van de villa, midden in het hoge blok, op het maaiveld (NAP +8,4 m); +X langs de voorgevel naar het oost-zuidoosten, de voorgevel met het bordes kijkt naar -Y (zuid-zuidwest). Villa met mansardedak tot NAP +19,3 m, risaliet met portiek en balkon, dakkapel met fronton en beeld tot circa NAP +22,8 m, platte hal erachter (+13,4 m) en ingangsoverkapping aan de oostkant (+12,2 m); vensters als nissen, hek en balusters weggelaten.",
+  "realWorld": {
+    "villaWidthMetres": 13.4,
+    "villaDepthMetres": 18.1,
+    "risalitWidthMetres": 8.2,
+    "balconyProjectionMetres": 5.1,
+    "eaveHeightMetres": 8.8,
+    "roofTopHeightMetres": 10.9,
+    "dormerPedimentHeightMetres": 12.3,
+    "statueTopHeightMetres": 14.6,
+    "hallFootprintMetres": [
+      16.2,
+      11.7
+    ],
+    "hallHeightMetres": 5,
+    "entranceCanopyFootprintMetres": [
+      5.4,
+      23.1
+    ],
+    "entranceCanopyHeightMetres": 3.8,
+    "terraceHeightMetres": 0.8,
+    "groundNapMetres": 8.4
+  },
+  "sources": [
+    "BAG-pand 0809100000017595 (contour, bouwjaar 1996)",
+    "AHN DSM/DTM 0,5 m (PDOK WCS): goot NAP +17,2 m, dakvlak +19,3 m, fronton +20,7 m, balkon +14,5 m, hal +13,4 m, overkapping +12,2 m, bordes +9,2 m, maaiveld +8,4 m",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)",
+    "Wikimedia Commons, Category:Villa Volta (frontale foto's en een foto van het zuidoosten)"
+  ],
+  "groundHeight": 52.16,
+  "printFiles": [
+    "efteling-villa-volta-1-1000.stl"
+  ]
+}

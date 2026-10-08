@@ -1,0 +1,60 @@
+{
+  "name": "Onze-Lieve-Vrouwetoren",
+  "file": "onze-lieve-vrouwetoren-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    154999.97,
+    463000.13
+  ],
+  "xAxis": [
+    0.90259,
+    0.43051
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000333887"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (154999,97, 463000,13), in het hart van de vierkante onderbouw op het maaiveld ten noorden en zuiden van de toren (NAP +3,4 m), +X loodrecht op de gevel met het portaal aan het Lieve Vrouwekerkhof (RD-richting 25,5 graden, oostnoordoost) en +Y naar het noordnoordwesten. building:toren is de vrijstaande toren: de vierkante onderbouw van 14 m met acht hoeksteunberen en blinde spitsboognissen tot 31,1 m, de tweede geleding met drie hoge nissen per gevel en de omgang met hoekpinakels tot 52,6 m, de achtkantige zandstenen lantaarn met steunberen en pinakels tot 73,5 m en de houten bekroning (open lantaarn dicht, peer, bovenste lantaarn, kroon en spits) tot 98,33 m boven het maaiveld; elke geleding springt alleen naar boven terug en de toren print op 1:1000 zonder steun. Vervangt de PDOK-reconstructie van BAG-pand 0307100000333887. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "onze-lieve-vrouwetoren-amersfoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "heightM": 98.33,
+    "stage1TopM": 31.1,
+    "galleryTopM": 52.6,
+    "lanternTopM": 73.5,
+    "baseFootprintM": [
+      14,
+      14
+    ],
+    "buttressReachM": 8.17,
+    "stage2FootprintM": [
+      12.4,
+      12.4
+    ],
+    "lanternApothemM": [
+      5.1,
+      4.9
+    ],
+    "groundNapM": 3.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Onze_Lieve_Vrouwetoren_(Amersfoort)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7940",
+    "PDOK BAG pand 0307100000333887 (vierkante onderbouw van 14 x 14 m met acht hoeksteunberen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: breedte per hoogte, omgang, lantaarn, bekroning, maaiveld",
+    "Wikimedia Commons: Amersfoort - Onze-Lieve-Vrouwetoren vanaf het Lieve Vrouwekerkhof - 01.jpg, Onze-Lieve-Vrouwetoren Amersfoort, 2007.jpg, Amersfoort Onze-Lieve-Vrouwetoren seen from the northeast.jpg"
+  ]
+}

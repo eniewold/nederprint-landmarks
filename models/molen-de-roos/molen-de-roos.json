@@ -1,0 +1,58 @@
+{
+  "name": "De Roos",
+  "file": "molen-de-roos.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83883.98,
+    447791.58
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      -8,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000009662"
+  ],
+  "description": "Zeskante stenen onderbouw met ronde bovenromp, stelling op 12 m, kap met langsnok, staart en verdikte wieken in X-stand aan de oostkant; beide lage aanbouwen van hetzelfde BAG-pand met zadeldaken. RD-assen, voet 1 m onder het maaiveld. Vlucht 25,35 m uit Molendatabase. Oorsprong uit de BAG-boog, dakhoogtes uit AHN; vorm/maten zeskant, kap, ashoogte/asrichting en vensters geschat. Historische scheefstand van de onderbouw niet nagebootst.",
+  "printFiles": [
+    "molen-de-roos-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 25.35,
+    "stageM": 12,
+    "hexTopM": 10.8,
+    "hexRadiusM": 6.7,
+    "rompTopM": 23,
+    "capM": 25.7,
+    "axleM": 24.4,
+    "stageRadiusM": 8.2,
+    "annexRoofsM": [
+      7.2,
+      7
+    ]
+  },
+  "sources": [
+    "https://legacy.molendatabase.nl/nederland/molen.php?nummer=959",
+    "https://molenderoos.nl/stichting-molen-de-roos/",
+    "PDOK BAG 0503100000009662, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Delft_De_Roos_seen_from_the_northwest.jpg",
+    "https://commons.wikimedia.org/wiki/File:Delft,_Molen_de_Roos_RM12159_IMG_0495_2024-04-07_13.06.jpg"
+  ]
+}

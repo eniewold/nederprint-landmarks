@@ -1,0 +1,24 @@
+NederPrint-landmarks
+Copyright (c) 2026 Edward Niewold (NederPrint, https://nederprint.nl)
+
+This work, including the models, the generator scripts and the documentation,
+is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License (CC BY-NC-SA 4.0). To view a copy of this license, visit
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Dit werk, inclusief de modellen, de generatorscripts en de documentatie, valt
+onder de licentie Creative Commons Naamsvermelding-NietCommercieel-GelijkDelen
+4.0 Internationaal (CC BY-NC-SA 4.0). Een samenvatting staat op
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl
+
+Commercial use, such as selling prints or models made from this work, requires
+prior written permission from the copyright holder.
+Commercieel gebruik, zoals het verkopen van prints of modellen die van dit werk
+zijn gemaakt, kan alleen met voorafgaande schriftelijke toestemming.
+
+Third-party material / Materiaal van derden:
+- The reconstruction of the abbey complex in scripts/generate-lange-jan.mjs is
+  derived from the PDOK 3D Basisvoorziening, (c) Kadaster, licensed under
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+- BAG, BGT and AHN data used to derive footprints and heights are published
+  under CC0 by Kadaster and Rijkswaterstaat/Het Waterschapshuis.

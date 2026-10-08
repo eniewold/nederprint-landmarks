@@ -1,0 +1,67 @@
+{
+  "name": "Essalam-moskee",
+  "file": "essalam-moskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    94880.4,
+    434824.33
+  ],
+  "xAxis": [
+    0.86017,
+    -0.51003
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0.5,
+      -16.3
+    ],
+    [
+      0.5,
+      15.7
+    ],
+    [
+      -29.5,
+      -0.3
+    ],
+    [
+      24.5,
+      -0.3
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000753081"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong onder het hart van de hoofdkoepel op RD (94880,4, 434824,33), op het maaiveld (NAP +1,5 m), +X langs de lengteas naar de mihrab in het zuidoosten (RD-richting -30,66 graden) en +Y naar het noordoosten. Eén node building: gebedszaal (NAP +16,5 m) met de hoofdkoepel op een trommel (top +26,6 m), het portaal met de kleine koepel (+21,6 m), de mihrab met zijn koepel (+19,5 m) en de twee minaretten van drie trommels met een spits (top +50,0 en +49,3 m). Alles wordt naar boven toe smaller, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0599100000753081. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "essalam-moskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 48.35,
+    "widthM": 27.38,
+    "hallRoofNapM": 16.5,
+    "mainDome": {
+      "radiusM": 6.6,
+      "drumNapM": 22,
+      "topNapM": 26.6
+    },
+    "minaretTopsNapM": [
+      50,
+      49.3
+    ],
+    "minaretDiametersM": [
+      5.8,
+      3.8,
+      3
+    ],
+    "groundNapM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Essalammoskee",
+    "PDOK BAG pand 0599100000753081 (contour met de voeten van de minaretten), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken, radiaal profiel van de hoofdkoepel, kleine koepels, omhullende per hoogte van de minaretten, maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

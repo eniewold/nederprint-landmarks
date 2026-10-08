@@ -1,0 +1,73 @@
+{
+  "name": "Aquaduct Veluwemeer",
+  "file": "aquaduct-veluwemeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    170754.742,
+    485919.072
+  ],
+  "xAxis": [
+    0.70711,
+    0.70711
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 34.616,
+  "groundSamplePoints": [
+    [
+      -5.1,
+      14.5
+    ],
+    [
+      5.06,
+      14.5
+    ],
+    [
+      0.02,
+      -14.5
+    ],
+    [
+      10.17,
+      -14.5
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden in de waterbak op het snijpunt van de vaargeul en de N302, z = 0 op het laagste PDOK-wegdek naast de bak (NAP -8,41 m), +X langs de vaargeul naar het noordoosten (het Wolderwijd, RD-richting 45 graden) en +Y naar het noordwesten; de weg kruist scheef onder RD -35 graden. Vier nodes: building:aquaduct, de bak over de verdiepte weg (dwars over de weg 27,5 m tot de buitenkant van de buitenste tunnelwanden, kopgevels op y = ±12,75, vaargeul 19,3 m breed, wanden tot NAP +1,52 m) met drie kokers (fietskoker op NAP -5,95 m en twee rijbaankokers op NAP -8,23 m, plafond NAP -3,5 m), randbalken, een verdiepte gevelstrook en schuine kolommen in beide portalen, en de vier lensvormige vleugelwanden (BGT) tot x = -42,9 en 42,9; water:waterbak, het water in de bak tot 7 cm boven het PDOK-water (NAP -0,33 m), met bgt_type watervlakte; road:rijbaan en road:fietspad, de bovenste 0,5 m van de kokervloeren met de attributen van de BGT-wegdelen onder de bak (rijbaan regionale weg en fietspad, gesloten verharding, asfalt) in extras.attributes. Het maaiveld wordt op de rijbanen net buiten de portalen bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "aquaduct-veluwemeer-1-1000.stl"
+  ],
+  "realWorld": {
+    "tunnelLengthAlongRoadM": 24,
+    "bakAcrossRoadM": 27.46,
+    "channelWidthM": {
+      "wikipedia": 19,
+      "bgt": 19.3
+    },
+    "waterDepthM": {
+      "wikipedia": 3,
+      "model": 2.27
+    },
+    "wallTopNapM": 1.52,
+    "waterNapM": {
+      "pdok": -0.43,
+      "model": -0.33
+    },
+    "roadNapM": -8.23,
+    "bikePathNapM": -5.95,
+    "ceilingNapM": {
+      "estimate": -3.5
+    },
+    "wingTipsM": {
+      "west": -42.9,
+      "east": 42.85
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Aquaduct_Veluwemeer",
+    "PDOK BGT kunstwerkdeel P0025.7da7890b, P0025.17a5a4c0, P0025.95534231, P0025.6ac5668d (bakwanden), P0025.5a75dd90, P0025.8eccf91b, P0025.2ca6f3c4, P0025.a33789d5 (tunnelwanden), P0025.a687a76658fa4b4f95802a3c34390ef2 en P0025.37ef7a184e764a52bfb7ed01845ed8dd (vleugelwanden), EPSG:28992",
+    "PDOK BGT wegdeel P0025.fd1d608460f548c2e04014ac0e2861a4 (fietspad), P0025.fd1d608460f748c2e04014ac0e2861a4, P0025.fd1d608460fa48c2e04014ac0e2861a4, P0025.fd1d608460fc48c2e04014ac0e2861a4 en P0025.fd1d6084610048c2e04014ac0e2861a4 (rijbaan regionale weg), alle gesloten verharding, asfalt, relatieve hoogteligging -1; BGT waterdeel L0002.86f5ff7b9ed64c4096308b058ca34656 (watervlakte)",
+    "PDOK AHN DSM en DTM 0,5 m via WCS voor de wandkoppen, de rijbaan en het fietspad",
+    "PDOK 3D-terreintegels voor het water, het wegdek en de scheidingen in en naast de bak",
+    "Wikimedia Commons: Aquaduct Veluwemeer (1).jpg, (2).jpg, (3).jpg en Veluwemeer Aquaduct.jpg"
+  ]
+}

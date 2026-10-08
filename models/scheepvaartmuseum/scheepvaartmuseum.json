@@ -1,0 +1,60 @@
+{
+  "name": "Het Scheepvaartmuseum",
+  "file": "scheepvaartmuseum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122829.07,
+    487196.97
+  ],
+  "xAxis": [
+    0.884988,
+    0.465615
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      30,
+      -40
+    ],
+    [
+      20,
+      -45
+    ],
+    [
+      50,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012170236"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (122829,07, 487196,97), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +2,3 m), +X langs de gevels naar het noordoosten (27,75 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:zeemagazijn: 's Lands Zeemagazijn uit dakvlakken (vier vleugels onder een omlopend schilddak met nokken op +20,2 m, een goot op +18,8 m tussen de nokken, een tweede nok langs de binnenhof en een bolle glazen koepel op een massieve onderbouw), vier risalieten met zadeldak en fronton, 36 dakkapellen, vier schoorstenen, installatiekappen op de goot en een gevel met sokkel, kroonlijst en vensternissen, afgesneden op de BAG-contour. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal of steiler dan 45 graden. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "scheepvaartmuseum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 70.1,
+    "widthM": 64.1,
+    "highestPointM": 23,
+    "squareM": [
+      70,
+      64
+    ],
+    "eaveM": 15.5,
+    "ridgeM": 20.2,
+    "domeM": 20.3,
+    "chimneyM": 23,
+    "groundNapM": 2.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Het_Scheepvaartmuseum",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/2205",
+    "https://dokarchitecten.nl/project/pdf/56f2ae76332fa6082c23c219.en.pdf/Maritime-Museum-Amsterdam",
+    "PDOK BAG pand 0363100012170236, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: vlakfits per dakvlak, de koepel, de dakkapellen en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Fata Morgana (Efteling)",
+  "file": "efteling-fata-morgana.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131365,
+    406522
+  ],
+  "xAxis": [
+    0.993575,
+    -0.113178
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      18,
+      4
+    ],
+    [
+      -45,
+      -25
+    ],
+    [
+      40,
+      -30
+    ],
+    [
+      -94,
+      -8
+    ],
+    [
+      66,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017609",
+    "NL.IMBAG.Pand.0809100000017608"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131365,0, 406522,0), midden op het BAG-pand van Fata Morgana, op het maaiveld (NAP +8,65 m); +X loopt langs de lange zuidgevel naar het oost-zuidoosten (6,5 graden rechtsom van het oosten), +Y naar de Vonderplas. Node building:paleis: de daken per zone op de BAG-contour (+11,4 tot +18,8 m) met gekanteelde borstweringen, de tonhal, de hoektoren, het erkertorentje, de grote poorttoren met blauwe uikoepel (+27,4 m), de arcade met het groene dak, de grijze koepel op de zeshoekige trommel, de gouden koepel met het poortpaviljoen, de witte koepeltoren en de koepels op de bazaar en de zuidhoeken, met spitse nissen. Node building:minaret: de minaret op het plein tot +34,3 m (top +35 m). Node building:kade: de balustrade langs het water. Node building:oase: het paviljoen met het tentdak op het terras. Onderkant op NAP +7,65 m, onder het water. Vervangt de PDOK-reconstructie van de twee BAG-panden. Het water zit in het PDOK-terrein.",
+  "realWorld": {
+    "lengthM": 183.8,
+    "widthM": 83.78,
+    "highestPointNapM": 35,
+    "minaretDomeNapM": 34.3,
+    "gateTowerDomeNapM": 27.4,
+    "roofHeightsNapM": {
+      "westhal": 16.9,
+      "zuidwestblok": 18.8,
+      "middendeel": 14.1,
+      "oostelijke hallen": 13.3,
+      "zuidstrook": 11.6,
+      "doorgang minaret": 11.5,
+      "bazaar west": 11.4,
+      "bazaar oost": 12.3,
+      "oostvleugel noord": 11.8
+    },
+    "barrelHallCrownNapM": 19.05,
+    "groundNapM": 8.65,
+    "baseNapM": 7.65
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Fata_Morgana_(Efteling)",
+    "https://commons.wikimedia.org/wiki/Category:Fata_Morgana_(Efteling)",
+    "PDOK BAG panden 0809100000017609 (Fata Morgana) en 0809100000017608 (paviljoen op het terras), EPSG:28992",
+    "PDOK BGT waterdeel (oever van de Vonderplas)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakhoogtes per zone, tonhal, torens, koepels en minaret",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ],
+  "groundHeight": 52.31,
+  "printFiles": [
+    "efteling-fata-morgana-1-1000.stl"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Mevlana Moskee",
+  "file": "mevlana-moskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    89956.73,
+    437396.58
+  ],
+  "xAxis": [
+    0.598325,
+    0.801254
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -16,
+      0
+    ],
+    [
+      -16,
+      -12
+    ],
+    [
+      0,
+      -24
+    ],
+    [
+      0,
+      26
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000652535"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (89956,73, 437396,58), het zwaartepunt van het BAG-pand, op het maaiveld (NAP -1,0 m), +X naar het noordoosten (53,25 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:moskee: de gebedszaal met een vlak dak op +10,55 m en een dakrand, de grote koepel (19,2 m doorsnee, top +21,6 m) op een achthoekige tamboer met kroonlijst, hals en vier halve koepels, vier kleine koepels op trommels in ronde uitsparingen, de gebogen voorgevel met een galerij, een terras en een rij bolkoepeltjes, twee zijtorens van +14,5 m met een schuin toelopende top en twee minaretten van +40 m met balkons op 27,5 en 33 m. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog, staan verticaal of hellen onder 45 graden. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "mevlana-moskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.7,
+    "widthM": 38.1,
+    "highestPointM": 40,
+    "hallRoofM": 10.55,
+    "domeTopM": 21.6,
+    "domeDiameterM": 16.4,
+    "tamboerTopM": 12.9,
+    "smallDomeTopM": 13.3,
+    "terraceM": 3,
+    "towerM": 14.5,
+    "minaretTopM": 40,
+    "minaretBalconyM": 27.5,
+    "groundNapM": -1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Mevlana_Moskee",
+    "PDOK BAG pand 0599100000652535, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,25 m via WCS: het dak, de koepels, de tamboer, het terras, de zijtorens, de minaretten en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Olympisch Stadion",
+  "file": "olympisch-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    118673.178,
+    484086.631
+  ],
+  "xAxis": [
+    -0.20791,
+    0.97815
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -86
+    ],
+    [
+      0,
+      94
+    ],
+    [
+      127,
+      25
+    ],
+    [
+      -127,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012076088",
+    "NL.IMBAG.Pand.0363100012250984"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het veld op straatniveau (NAP +1,1 m) in de oorsprong, +X langs de lengteas van het veld naar het noordnoordwesten (RD-richting 102 graden) en +Y dwars daarop naar de hoofdtribune in het westzuidwesten. Het stadion is opgebouwd uit gladde vormen die op het AHN zijn gefit: de ovale kom met de tribunering als hellend vlak tussen de binnenrand en de BAG-gevel, de overdekte hoofdtribune en Marathontribune langs de rechte zijden, de hoekbouwdelen, de entree en het scorebord. De Marathontoren is een eigen node met voet, schacht, uitkragende balkonplaat (luifel, in de STL's op een console) en de schaal met bol tot NAP +45,9 m. Vervangt de PDOK-reconstructie van BAG-panden 0363100012076088 (stadion) en 0363100012250984 (toren).",
+  "printFiles": [
+    "olympisch-stadion-1-1000.stl",
+    "olympisch-stadion-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "footprintM": [
+      242,
+      168.5
+    ],
+    "innerEdgeM": [
+      204.6,
+      120.1
+    ],
+    "outerFacade": {
+      "a": 121.004,
+      "b": 82.375,
+      "n": 2.19
+    },
+    "bowlNapM": {
+      "innerEdge": 4.79,
+      "facade": 13.38
+    },
+    "mainStandRoofNapM": [
+      18.83,
+      19.5
+    ],
+    "marathonStandRoofNapM": 14.05,
+    "scoreboardNapM": 20.1,
+    "marathonTowerTopNapM": 45.9,
+    "marathonTowerHeightM": 46,
+    "marathonTowerBalconyNapM": 37,
+    "streetNapM": 1.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Olympisch_Stadion_(Amsterdam)",
+    "PDOK BAG panden 0363100012076088 (stadion) en 0363100012250984 (Marathontoren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: binnenrand en tribunering van de kom, tribunedaken, hoekbouwdelen, entree, scorebord, hoogte van de Marathontoren en straatniveau",
+    "Wikimedia Commons: Marathontoren 2018.jpg en Amsterdam Marathonturm am Olympiastadion E 9074 201810.jpg (opbouw van de toren)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

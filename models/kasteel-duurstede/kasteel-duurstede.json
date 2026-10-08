@@ -1,0 +1,60 @@
+{
+  "name": "Kasteel Duurstede",
+  "file": "kasteel-duurstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    151995,
+    442345
+  ],
+  "xAxis": [
+    0.87462,
+    0.48481
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      -8
+    ],
+    [
+      -6,
+      2
+    ]
+  ],
+  "groundHeight": 48,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0352100000000780",
+    "NL.IMBAG.Pand.0352100000015442"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (151995, 442345), midden op de binnenplaats, op het maaiveld (NAP +4,6 m), +X langs de zuidmuur en de gevels van de donjon (29 graden vanaf de RD-X-as) en +Y loodrecht daarop. Node building:kasteel uit bouwdelen en dakvlakken: de ronde Bourgondische toren met een kraag onder de mezekouwen, het ringdak, de bovenste trommel met kroonlijst, een kegeldak met uitlopende voet, een achtkantige lantaarn en spits (+43 m), een traptorentje met kegeldak, twee schoorstenen, een dakkapel en de aanbouw aan de zuidoostkant; de vierkante donjon met een borstwering, een laag tentdak, een schoorsteen en een aanbouw met lessenaarsdak; de ruïnemuren in de gracht (lage kademuur, hoge westmuur, ronde hoektoren met holle bovenkant, zuidmuur met bres) en de muur naast de poort, met vensternissen. Node road:brug: de brug van de poort naar de zuidoever (dek +0,3 m). Onderkant 1 m onder het water van de slotgracht; alle vlakken wijzen omhoog of staan verticaal, op de kragen (49 tot 51 graden) en de nissen na. Vervangt de PDOK-reconstructie van de toren met de muren en van de donjon. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-duurstede-1-1000.stl",
+    "kasteel-duurstede-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.97,
+    "widthM": 66.44,
+    "highestPointM": 43,
+    "spireTopM": 43,
+    "coneEaveM": 25.3,
+    "ringRoofEaveM": 17.6,
+    "turretTopM": 33.8,
+    "donjonTopM": 21.6,
+    "groundNapM": 4.6,
+    "waterNapM": 3.3,
+    "baseM": -2.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Duurstede",
+    "PDOK BAG panden 0352100000000780 (Bourgondische toren met de muren) en 0352100000015442 (donjon), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: toren, kegeldak, donjon, muren, brugdek, water en maaiveld",
+    "PDOK BGT overbruggingsdeel (de brug) en scheiding muur (de muur naast de poort)",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de zuid-, zuidwest-, zuidoost- en oostkant"
+  ]
+}

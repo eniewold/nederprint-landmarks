@@ -1,0 +1,54 @@
+{
+  "name": "De Rotterdam",
+  "file": "de-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93136.02,
+    435733.86
+  ],
+  "xAxis": [
+    0.77605,
+    0.63068
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -40,
+      -28
+    ],
+    [
+      0,
+      -28
+    ],
+    [
+      40,
+      -28
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100002429"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93136,02, 435733,86), het midden van het BAG-pand, op het maaiveld van de pier (NAP +3,5 m), +X langs de lange as naar het noordoosten (39,1 graden vanaf het oosten) en +Y naar het noordwesten, de Nieuwe Maas. Eén node building:de-rotterdam met de plint (NAP +31 m) over de hele kavel van 107 bij 50 m, de onderdelen van de drie torens tot de verspringing (NAP +88 m, aan de straatzijde richels op +74 m) met de nis tot op de plint aan de rivierzijde tussen west- en middentoren, de drie verspringende bovendelen tot NAP +149 m en de dakopbouwen tot +155 m, afgelezen in het AHN-DSM. Waar een bovendeel boven een smaller onderdeel uitkraagt, loopt het model recht door; alle blokken staan op het blok eronder, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "de-rotterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 107.1,
+    "widthM": 49.6,
+    "highestPointNapM": 155,
+    "plinthNapM": 31,
+    "setbackNapM": 88,
+    "towerTopNapM": 149,
+    "roofStructuresNapM": 155,
+    "groundNapM": 3.5,
+    "baseNapM": 3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Rotterdam",
+    "PDOK BAG pand 0599100100002429, EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS, per 1 m in het stelsel van het gebouw bemonsterd en gekwantiseerd naar +31, +74, +88, +149 en +155 m",
+    "Wikimedia Commons: De Rotterdam across the Nieuwe Maas.jpg, De Rotterdam south side.jpg, De Rotterdam, September 2019 - 01.jpg"
+  ]
+}

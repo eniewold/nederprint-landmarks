@@ -1,0 +1,60 @@
+{
+  "name": "Martinitoren",
+  "file": "martinitoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233884.04,
+    582065.19
+  ],
+  "xAxis": [
+    0.94409,
+    0.32969
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -13,
+      0
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      0,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010924795"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de onderbouw op het maaiveld van de Grote Markt in de oorsprong, +X langs de gevels naar de Martinikerk (RD-richting 19,25 graden) en +Y 90 graden linksom; de doorgangsnissen liggen aan -X (Grote Markt), +Y en -Y. Het maaiveld wordt op 13 m uit het hart bemonsterd aan de drie vrije zijden. Vervangt de PDOK-reconstructie van BAG-pand 0014100010924795. Nodenaam klasse:label bepaalt de materiaalklasse; building:lantaarn is de koperen bovenbouw.",
+  "printFiles": [
+    "martinitoren-1-1000.stl"
+  ],
+  "realWorld": {
+    "totalHeightM": 96.8,
+    "baseFootprintM": [
+      16.5,
+      17
+    ],
+    "firstGalleryM": 41.3,
+    "secondGalleryM": 57.4,
+    "thirdStageTopM": 70,
+    "lanternTopM": 84.5,
+    "lanternAcrossFlatsM": [
+      7.5,
+      5.2
+    ],
+    "portalWidthM": 2.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Martinitoren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18553",
+    "PDOK BAG pand 0014100010924795 (voetafdruk 16,5 x 17 m met drie doorgangsnissen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de omhullende en het hart per geleding, de omgangen, de lantaarn en de kroon",
+    "Wikimedia Commons: Groningen, Martinitoren RM-18553-WLM.jpg, Martinitoren in Groningen, bezien vanuit NOK, op de bovenste verdieping van Forum.jpg, Martinitoren from Grote Markt.jpg"
+  ]
+}

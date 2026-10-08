@@ -1,0 +1,65 @@
+{
+  "name": "Sint-Servaasbasiliek",
+  "file": "sint-servaasbasiliek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176166.22,
+    317708.25
+  ],
+  "xAxis": [
+    0.97113,
+    0.23853
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      0,
+      -17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000017126"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (176166,22, 317708,25), in het hart van de apsis, op het maaiveld aan het Vrijthof (NAP +52,3 m), +X langs de as van het westwerk naar de apsis (RD-richting 13,8 graden, ten noorden van oost) en +Y naar het noordnoordwesten; het westwerk staat aan de -X-kant aan de Sint Servaasklooster, de pandhof aan de +Y-kant. Eén node building: alles binnen de BAG-contour tot NAP +60 m met de kloostergang rond de pandhof (de dubbele westvleugel met nokken op +67 en +64,2 m, de noordvleugel +66,1 m, de oostgalerij +64,1 m, de zuidgalerij onder een lessenaarsdak, spitse vensters naar de pandhof en in de straatgevels), het pand ten noorden van het transept (nok +65,8 m), het smalle pand ten noorden van de noordvleugel en de aanbouwen ten oosten van het transept (lessenaarsdaken +66,6 naar +64,6 m, plat +69,2 m); het middenschip en het koor onder één zadeldak (goot +74,6 m, nok +82 m) met vensternissen in de lichtbeuk, de zijbeuken met een lessenaarsdak (+68,6 naar +65,2 m), vier luchtbogen per kant als steunberen met pinakels, de gotische kapellen met zes (zuid, nok +68,7 m) en zeven (noord, +67,5 m) dwarse zadeldaken met topgevels, aan de zuidkant met een borstwering, pinakels en spitse vensters tussen steunberen; het Bergportaal onder een dwars zadeldak (nok +70 m) met een spitse poortopening van 6 m breed en 1,5 m diep en drie vensters erboven, en de kapel ernaast (+68,6 m); het transept (goot +73,6 m, nok +82 m) met vensternissen in de topgevels; de apsis met twee rijen van zeven blinde bogen tussen lisenen, drie vensters, de dwerggalerij als band van tien nissen en een kegeldak (goot +70,8 m); de twee oosttorens met drie geledingen tussen hoeklisenen, een dakvoet op een kraag (+88,3 m) en een vierzijdige piramidespits tot +92,6 m; en het westwerk: het blok met een laag schilddak (goot +74,6 m, +76,6 m), de westgevel met de toegang onder een groot roosvenster, zeven blinde bogen in twee rijen en zeven rondvensters, de zuidgevel met vier blinde bogen, een kort zadeldak met een roosvenster naar het westen (+80 m) en een dwars zadeldak tussen de torens (+83,8 m), en de twee westtorens van 10 × 7,4 m met drie geledingen tussen hoeklisenen met gekoppelde nissen, een kroonlijst op een kraag op +93 m die 0,3 m uitkraagt, een steil tentdak, de leien lantaarn met twee galmgaten per zijde, vier topgevels (+101,8 m) en een vierzijdige ruitspits tot NAP +108 m (56 m boven het Vrijthof). Alles staat recht op of loopt schuin omhoog; nissen, bogen en poorten hebben een spitse bovenkant van 50 tot 60 graden en kraag en velden een schuine onderkant van 53 tot 55 graden, zodat geen vlak vlakker dan 45 graden naar beneden wijst en het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0935100000017126. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "sint-servaasbasiliek-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 91.2,
+    "widthM": 110.93,
+    "naveRidgeNapM": 82,
+    "naveEaveNapM": 74.6,
+    "transeptRidgeNapM": 82,
+    "chapelRidgesNapM": [
+      68.7,
+      67.5
+    ],
+    "bergportaalRidgeNapM": 70,
+    "apseEaveNapM": 70.8,
+    "westworkNapM": 76.6,
+    "westTowerShaftNapM": 93,
+    "westTowerGablesNapM": 101.8,
+    "westTowerTipNapM": 108,
+    "eastTowerEaveNapM": 88.3,
+    "eastTowerTipNapM": 92.6,
+    "groundNapM": 52.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Servaasbasiliek_(Maastricht)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/27168",
+    "PDOK BAG pand 0935100000017126 (contour met de pandhof), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS, als raster per 0,5 m in het stelsel langs de as: nok en goten van schip, koor en transept, lessenaarsdak van de zijbeuken, nokken en kilgoten van de kapeldaken, luchtbogen, Bergportaal, apsis, oosttorens, daken van het westwerk, raster van de westtorens, daken van de kloostervleugels, maaiveld",
+    "Wikimedia Commons: Kerk, overzicht vanaf de toren Sint Janskerk (RCE 20146024); Maastricht Sint Janskerk Blick vom Turm auf die Servaasbasiliek 2 tot 4; Exterieur lichtbeuk van het schip zuid-zijde (RCE 20146027); 2016 Maastricht, St-Servaasbasiliek, oostpartij 01 tot 05 en westwerk 01 tot 05; 2018 Maastricht, St-Servaasbasiliek, zuidfaçade; St-Servaasbasiliek, zuidelijke zijkapellen 01 en 03; St-Servaasbasiliek, pandhof, noordelijke zijkapellen 02; Maastricht Basiliek Sint Servaas 05 en Türme; 2010.07.20.125743 St. Servaasbasiliek Maastricht; Maastricht RK Servaasbasiliek Buitenzijde West 1474, Noord 7689, Zuid 7651, Zuidwest 1476",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

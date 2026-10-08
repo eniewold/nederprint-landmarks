@@ -1,0 +1,99 @@
+{
+  "name": "Stadion Feijenoord (De Kuip)",
+  "file": "stadion-feijenoord.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95527.1,
+    434280.49
+  ],
+  "xAxis": [
+    0.45309,
+    -0.89147
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      108,
+      0
+    ],
+    [
+      -108,
+      0
+    ],
+    [
+      0,
+      91
+    ],
+    [
+      0,
+      -91
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100005153",
+    "NL.IMBAG.Pand.0599100110026028"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het veld op straatniveau (NAP +2,0 m) in de oorsprong, +X langs de lengteas van het veld naar het zuidzuidoosten (RD-richting -63,06 graden) en +Y dwars daarop naar het noordnoordoosten. Node building:stadion bevat de open kom met de onderste ring in treden, de ringgang langs de lange zijden, de tweede ring met voorkant en treden, het ringvormige dak (binnenrand, nok en buitenrand als superellipsen, de dakgoot per richting uit het AHN), de gevel met glazen band, galerij, 60 kolommen, kruisverbanden in de hoeken en 22 trappentorens met bordessen en trappen; node building:lichtmasten de vier vakwerkmasten op de hoeken. Het dak en de tweede ring hangen in werkelijkheid los; hier lopen hun onderkanten onder 50 en 45 graden schuin terug tot op de tribune eronder. Vervangt de PDOK-reconstructie van BAG-panden 0599100100005153 en 0599100110026028; de kom zelf is geen BAG-pand.",
+  "printFiles": [
+    "stadion-feijenoord-1-1000.stl"
+  ],
+  "realWorld": {
+    "pitchM": [
+      105,
+      68
+    ],
+    "pitchSurroundM": [
+      128,
+      88
+    ],
+    "roofInnerEdgeM": [
+      161.2,
+      120.4
+    ],
+    "roofRidgeM": [
+      190,
+      154.9
+    ],
+    "eaveM": [
+      205.3,
+      166.9
+    ],
+    "footprintM": [
+      214.3,
+      175.8
+    ],
+    "roofRidgeNapM": 34.45,
+    "roofInnerEdgeNapM": [
+      23.37,
+      26.05
+    ],
+    "lowerTierTreadM": [
+      2,
+      0.38
+    ],
+    "upperTierFrontNapM": [
+      14,
+      17
+    ],
+    "upperTierTreadM": [
+      1.2,
+      0.8
+    ],
+    "galleryNapM": 19.5,
+    "columns": 60,
+    "stairTowers": 22,
+    "floodlightMasts": 4,
+    "floodlightTopNapM": 53.5,
+    "streetNapM": 2,
+    "capacity": 47500
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadion_Feijenoord",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: veldomranding, dakranden, nok, dakhoogte, dakgoot, voorkant tweede ring, onderste ring, ringgang, galerij, trappentorens, lichtmasten en straatniveau",
+    "PDOK BAG panden 0599100100005153 en 0599100110026028, EPSG:28992",
+    "PDOK luchtfoto (Actueel_orthoHR): dak, tribunes en trappentorens",
+    "Wikimedia Commons: Overzicht vanaf de straat - Rotterdam - 20349851 - RCE.jpg, De Kuip bij zonnig daglicht.jpg, Stadion Feyenoord Rotterdam.jpg, Overzicht buitenzijde voetbalstadion, trapopgang tribunes - Rotterdam - 20191829 - RCE.jpg, Stadion Feijenoord (47370311861).jpg"
+  ]
+}

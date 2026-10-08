@@ -1,0 +1,55 @@
+{
+  "name": "Mauritshuis",
+  "file": "mauritshuis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81461.19,
+    455227.58
+  ],
+  "xAxis": [
+    0.880891,
+    0.47332
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      9,
+      -8
+    ],
+    [
+      10,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000300401"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (81461,19, 455227,58), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +1,5 m), +X langs de gevels naar het noordoosten (28,25 graden vanaf de RD-X-as) en +Y loodrecht daarop naar de Hofvijver. Eén node building:mauritshuis: het blok van 26,3 bij 24,4 m met hoge sokkel (+2,6 m), pilasters van 1,2 m breed op de gevel met teruggelegde baaien en vensternissen ertussen, een middenrisaliet aan de noord- en zuidzijde, een kroonlijst die 0,65 m uitkraagt (bovenkant +14,6 m, aan de vijverzijde +15,2 m) en een trap met wangen aan de zuidoostzijde; daarboven het ingezwenkte schilddak als vlakken (flauw dakvoetvlak tot +15,9 m, steil vlak van 55 tot 60 graden naar het platte bovenvlak van 16,8 bij 14,2 m op +20,6 m) met een fronton op de noord- en zuidzijde (nok +18,2 en +17,1 m), vier dakkapellen met plat dak (+17,8 m), vier schoorstenen (+23,6 m) en de technische put met twee units. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog, staan verticaal of hangen niet vlakker dan 50 graden. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "mauritshuis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 27.61,
+    "widthM": 28.01,
+    "highestPointM": 23.6,
+    "eaveM": 14.6,
+    "roofTopM": 20.6,
+    "chimneyTopM": 23.6,
+    "groundNapM": 1.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Mauritshuis",
+    "PDOK BAG pand 0518100000300401, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, frontons, dakkapellen, schoorstenen, put en maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): dakvlakken bij de dakvoet",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de gevels (ritme van pilasters en baaien, kroonlijst, frontons)"
+  ]
+}

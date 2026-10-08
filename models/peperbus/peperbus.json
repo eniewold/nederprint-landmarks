@@ -1,0 +1,60 @@
+{
+  "name": "Peperbus",
+  "file": "peperbus.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202696,
+    502952
+  ],
+  "xAxis": [
+    0.939693,
+    -0.34202
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      0
+    ],
+    [
+      0,
+      -12
+    ],
+    [
+      30,
+      -12
+    ],
+    [
+      72,
+      0
+    ]
+  ],
+  "groundHeight": 45.58,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000000171"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (202696, 502952), het midden van de toren, op het maaiveld (NAP +2,9 m), +X van de toren langs de nok van de kerk naar het koor (-20 graden vanaf de RD-X-as) en +Y loodrecht daarop. Een node building:kerk: de Peperbus (vierkante onderbouw in drie geledingen tot de eerste omgang op +52 m, achtkant tot de tweede omgang op +65 m, koepel met lantaarn en bol tot +75 m) en de Onze-Lieve-Vrouwebasiliek (schip, dwarsschip en koor onder één nok op +28,5 m, 3/8-sluiting, steunberen en kapellen). Onderkant 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "peperbus-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 73,
+    "widthM": 29.1,
+    "highestPointM": 75,
+    "towerTopM": 75,
+    "gallery1M": 52,
+    "gallery2M": 65,
+    "churchRidgeM": 28.5,
+    "groundNapM": 2.93,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Peperbus_%28Zwolle%29",
+    "PDOK BAG pand 0193100000000171 (toren en Onze-Lieve-Vrouwebasiliek), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: geledingen en koepel van de toren, nokken en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's"
+  ]
+}

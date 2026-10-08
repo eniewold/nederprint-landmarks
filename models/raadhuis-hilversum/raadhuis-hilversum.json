@@ -1,0 +1,64 @@
+{
+  "name": "Raadhuis Hilversum",
+  "file": "raadhuis-hilversum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    140148.5,
+    471250.75
+  ],
+  "xAxis": [
+    0.99912,
+    0.04188
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      48
+    ],
+    [
+      15,
+      20
+    ],
+    [
+      -20,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0402100001495707",
+    "NL.IMBAG.Pand.0402100001525323",
+    "NL.IMBAG.Pand.0402100001519068",
+    "NL.IMBAG.Pand.0402100001494252"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (140148,50, 471250,75), het midden van de klokkentoren, op het maaiveld (NAP +14,0 m), +X naar het oosten (2,4 graden vanaf het oosten, evenwijdig aan de gevels) en +Y naar het noorden; de vijver ligt aan de zuidkant. Eén node building:raadhuis met de kubische bouwdelen van Dudok als blokken met vlakke daken op de BAG-contour, met de dakhoogtes uit het AHN: de raadzaal aan de vijver (NAP +31 m, achterrand +36 m) met vijf hoge blinde vensters, de pyloon (+38 m), de vleugels rond de grote binnenplaats (+25 tot +28 m) met de lage galerij (+19 m), de noordoosthoek (+31 m), de lage vleugels aan de vijver en de oostelijke binnenplaats (+18 tot +23 m) met vensterbanden, de dienstvleugels in het oosten (+17,5 tot +21 m) en de klokkentoren tot NAP +61 m met twee lagere steunberen, drie spleten per gevel onder de top en de klok. De overstekende dakplaten zijn weggelaten, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van de vier BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "raadhuis-hilversum-1-1000.stl",
+    "raadhuis-hilversum-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 119.93,
+    "widthM": 99.71,
+    "highestPointNapM": 61,
+    "towerTopNapM": 61,
+    "towerHeightAboveGroundM": 47,
+    "councilHallRoofNapM": 31,
+    "pylonTopNapM": 38,
+    "courtWingsRoofNapM": [
+      25,
+      28
+    ],
+    "groundNapM": 14,
+    "pondNapM": 13,
+    "baseNapM": 13.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Raadhuis_van_Hilversum",
+    "PDOK BAG panden 0402100001495707 (raadhuis), 0402100001525323, 0402100001494252 en 0402100001519068 (oostelijke vleugels), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakhoogte per bouwdeel, toren, maaiveld en vijver",
+    "Wikimedia Commons: Raadhuis Hilversum Dudok A.jpg, B.jpg en C.jpg (zuidzijde met vijver en toren), Dudok Raadhuis Hilversum 05.JPG",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

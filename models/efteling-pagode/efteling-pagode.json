@@ -1,0 +1,82 @@
+{
+  "name": "Pagode (Efteling)",
+  "file": "efteling-pagode.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131685,
+    406905.36
+  ],
+  "xAxis": [
+    0.96126,
+    -0.27564
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -8
+    ],
+    [
+      -12,
+      -8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      6,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017641",
+    "NL.IMBAG.Pand.0809100000017642"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131685,0, 406905,36), recht onder het hart van de geheven tempel op het maaiveld (NAP +10,0 m), +X langs de arm van het scharnier naar de landingskuil aan de Siervijver (-16 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noord-noordoosten. Node building:pagode: de Thaise tempel (16,1 m doorsnede, dek op +36,5 m, spits tot +49,7 m) met twintig puntgevels met hoorns, twee trommels met puntdaken en de gouden spits, in de hoogste stand aan de geknikte arm (2,4 x 1,6 m, 55 graden) met de staart en het tegengewicht; node building:machinekuil: de afdekking van de kuil met de scharnierkap en het machinehuis. Onderkant 1 m onder het maaiveld. Vervangt de PDOK-reconstructie van de machinekuil en het machinehuis; de landingskuil en de vijver zitten in het terrein. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "opening": 1987,
+    "type": "Intamin Flying Island (observatietoren met hydraulische arm)",
+    "tempelDoorsnedeM": 16.1,
+    "dekHoogteM": 36.5,
+    "topSpitsM": 49.7,
+    "topSpitsNapM": 59.7,
+    "aantalGevels": 20,
+    "armDoorsnedeM": [
+      2.4,
+      1.6
+    ],
+    "armHoekGraden": 54.8,
+    "scharnier": {
+      "x": -15.5,
+      "z": 4
+    },
+    "knik": {
+      "x": 2.5,
+      "z": 29.5
+    },
+    "machinekuilM": [
+      25.1,
+      6.3
+    ],
+    "machinehuisM": [
+      7.1,
+      12.4
+    ],
+    "maaiveldNapM": 10
+  },
+  "sources": [
+    "BAG-panden 0809100000017641 en 0809100000017642 (PDOK BAG WFS)",
+    "AHN DSM/DTM 0,5 m (PDOK WCS): geheven tempel, arm, staart, kuil en machinehuis",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)",
+    "nl.wikipedia.org/wiki/Pagode_(Efteling) en en.wikipedia.org/wiki/Pagoda_(Efteling)",
+    "efteling.com: blog 'Wonder: opstarten Pagode' (2019)",
+    "Wikimedia Commons: Category:Pagode (Efteling)"
+  ],
+  "groundHeight": 53.68,
+  "printFiles": [
+    "efteling-pagode-1-1000.stl"
+  ]
+}

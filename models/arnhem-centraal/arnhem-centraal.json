@@ -1,0 +1,58 @@
+{
+  "name": "Arnhem Centraal",
+  "file": "arnhem-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    190303,
+    444065
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -60,
+      -40
+    ],
+    [
+      -20,
+      -40
+    ],
+    [
+      15,
+      -36
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000223614"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (190303, 444065), midden in de transferhal, op het maaiveld van de straat aan de zuidkant (NAP +24,0 m), +X naar het oosten en +Y naar het noorden. Eén node building:transferhal: vier perronkappen ten noorden van de OV-terminal (vlakke daken op NAP +33,2 m van 12 m breed en 176 m lang, 13 graden gedraaid, met elk zes ellipsvormige glaspanelen als nissen en vijf kolommen), in het westen de plint met de parkeergarage als recht blok binnen de BAG-contour (plat dak op NAP +44 m, een verhoogd deel op +47 m met de glazen lichtstraat op +49 m, een dakrand van 0,8 m en vijf banden in de zuid- en westgevel om de 3,5 m), in het oosten de transferhal met het vrijgevormde dak dat naar het busstation afloopt, als gefacetteerd vlak op knopen van 5 m uit het AHN-DSM, met het glazen oog als verdieping van 2 m. De onderkant ligt op NAP +21,5 m en de wanden staan recht op de contour; alleen de onderkant van de perronkappen (NAP +32 m) is vlak, daar zet de export steun onder. Vervangt de PDOK-reconstructie van de OV-terminal; de perronkappen en de kantoortorens blijven uit PDOK. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "arnhem-centraal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 178.3,
+    "widthM": 216.22,
+    "highestPointNapM": 49,
+    "hallNodeStepM": 5,
+    "platformCanopyRoofNapM": 33.2,
+    "platformCanopyCount": 4,
+    "garageRoofNapM": 44,
+    "garageRaisedNapM": 47,
+    "skylightNapM": 49,
+    "groundNapM": 24,
+    "platformLevelNapM": 31,
+    "busStationNapM": 22,
+    "baseNapM": 21.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Station_Arnhem_Centraal",
+    "PDOK BAG pand 0202100000223614 (OV-terminal), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: het hoogteveld van dak en plint, straat, plein en busstation",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

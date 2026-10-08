@@ -1,0 +1,84 @@
+{
+  "name": "Hedelse spoorbrug",
+  "file": "hedelse-spoorbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    147197.04,
+    416821.9
+  ],
+  "xAxis": [
+    -0.06925,
+    0.9976
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.63,
+  "groundSamplePoints": [
+    [
+      -30,
+      25
+    ],
+    [
+      -30,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      30,
+      -25
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 93,97 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,2 m) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard; op het dek ligt geen actueel BGT-wegdeel, dus die van de landhoofden), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee gelijke spoorbruggen naast elkaar (sinds 1978), samen een dek van 15,4 m breed van het zuidelijke landhoofd (x = -186,8) tot het noordelijke (x = 308,7) met de spoorstaaf op NAP +10,2 tot +12,25 m; vier vakwerkliggers (6,25 en 1,0 m naast de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen voor de driehoeken met een vlakke bovenkant: een doorgaande ligger over de rivier (61,8, 106,1 en 59,9 m) met de bovenrand op NAP +24,7 m naast de rivierpijlers en +21,1 m in het midden, en vier velden van 61 tot 63 m met evenwijdige randen 5,9 m boven de spoorstaaf; de twee stenen rivierpijlers van 8 × 29,6 m met spitse koppen en vier pijlers in de uiterwaarden (BGT). Windverbanden, portalen, bovenleiding, leuningen en loopbruggen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de hoofdoverspanning bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hedelse-spoorbrug-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 495.5,
+    "deckWidthM": 15.4,
+    "spansM": [
+      61.35,
+      61.77,
+      106.08,
+      59.92,
+      61.08,
+      61.25,
+      63.25
+    ],
+    "mainSpanM": 106.08,
+    "trussLinesFromAxisM": [
+      -6.25,
+      -1,
+      1,
+      6.25
+    ],
+    "trussTopNapM": {
+      "besideRiverPiers": 24.7,
+      "mainMid": 21.1,
+      "floodplainAboveRail": 5.9
+    },
+    "railNapM": {
+      "south": 11.6,
+      "river": 12.25,
+      "north": 10.2
+    },
+    "waterNapM": 1.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hedelse_spoorbrug",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, sloven, landhoofden), EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor de spoorstaaf en de bovenrand van de vakwerkliggers",
+    "Wikimedia Commons: Hedel spoorbrug 1.jpg, Hedel spoorbrug 2.jpg, Hedel spoorbrug 3.jpg, Hedelse spoorbrug.jpg, Hedelse Brug.jpg, HUA-170350-Gezicht op de spoorbrug over de Maas bij Hedel, na de verdubbeling van de brug.jpg"
+  ]
+}

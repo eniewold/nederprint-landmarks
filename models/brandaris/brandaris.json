@@ -1,0 +1,60 @@
+{
+  "name": "Brandaris",
+  "file": "brandaris.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143484.02,
+    597117.75
+  ],
+  "xAxis": [
+    0.9892,
+    -0.1466
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0093100000215019"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (143484,02, 597117,75), in het hart van de vierkante BAG-voetafdruk op het maaiveld ten noorden en zuiden van de toren (NAP +5,5 m), +X evenwijdig aan de gevels (RD-richting -8,43 graden, oost-zuidoost) en +Y naar het noord-noordoosten. building:toren is de vuurtoren: de vierkante bakstenen toren van vier geledingen, licht taps van 10,5 × 10,2 m bij de voet naar 8,9 × 8,6 m onder het dak, met het rondboogportaal in de zuidgevel en kleine vensters als blinde nissen tot het terras op 46,1 m, de glazen verkeerspost tot 49,15 m zonder de zuidoosthoek en de lantaarn met koepel tot 53,7 m boven het maaiveld; elke geleding springt alleen naar boven terug en de toren print op 1:1000 zonder steun. Vervangt de PDOK-reconstructie van BAG-pand 0093100000215019. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "brandaris-1-1000.stl"
+  ],
+  "realWorld": {
+    "heightM": 53.7,
+    "terraceM": 46.1,
+    "roomTopM": 49.15,
+    "bandsM": [
+      13.2,
+      25.2,
+      37
+    ],
+    "baseFootprintM": [
+      10.46,
+      10.17
+    ],
+    "roofFootprintM": [
+      8.92,
+      8.58
+    ],
+    "lanternRadiusM": 1.9,
+    "groundNapM": 5.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Brandaris_(vuurtoren)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35032",
+    "PDOK BAG pand 0093100000215019 (vierkant van 10,1 x 10,15 m, bouwjaar 1594), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: breedte per hoogte, terras, verkeerspost, lantaarn, maaiveld",
+    "Wikimedia Commons: Overzicht zuidgevel - West-Terschelling - 20254727 - RCE.jpg, Brandaris in West-Terschelling -01.jpg"
+  ]
+}

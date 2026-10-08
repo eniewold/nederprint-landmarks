@@ -1,0 +1,75 @@
+{
+  "name": "Python (Efteling)",
+  "file": "efteling-python.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131906,
+    406497
+  ],
+  "xAxis": [
+    0,
+    1
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      0
+    ],
+    [
+      3,
+      21
+    ],
+    [
+      -27,
+      23
+    ],
+    [
+      53,
+      22
+    ],
+    [
+      63,
+      -1
+    ],
+    [
+      33,
+      -19
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131906, 406497), het midden van het station, op het maaiveld (NAP ca. +9,3 m), +X naar het noorden langs de baan door het station en de lift, +Y naar het westen. Node building:baan: de baan als dichte band van 1,4 m breed met een driehoekige kiel tot 1,0 m diep (station en remsectie +1 m, lift tot +29 m, keerbocht +24 m, eerste val van 22 m, twee verticale loopings tot +18 en +17,5 m, de dubbele kurkentrekker tot +13 m, de helix van +1,8 tot +8 m) op een steunwand van 0,9 m met spitse openingen om de ~6 m (het vakwerk en de kolommen), met zware kolommen naast de loopings en onder de kurkentrekkers en een doorlopende voet onder de lage delen. Node building:station: het station (plat dak +8,1 m, rood zadeldak tot +9,6 m, aanbouw +4,4 m) met spitse nissen waar de trein in- en uitrijdt en de geluidsschermen langs de remsectie (+3,9 m). Onderkant op 0,5 m onder het maaiveld; de export zet onder de bovenkant van de loopings en kurkentrekkers een wig. Het station is geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "lengthM": 124,
+    "widthM": 52.5,
+    "highestPointM": 29.06,
+    "trackLengthM": 676,
+    "liftHeightM": 29,
+    "dropM": 22,
+    "loopTopsM": [
+      18,
+      17.5
+    ],
+    "corkscrewTopM": 13,
+    "trackWidthM": 1.4,
+    "trackDepthM": 1,
+    "stationRoofM": [
+      8.1,
+      9.6
+    ],
+    "groundNapM": 9.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Python_(Efteling)",
+    "https://en.wikipedia.org/wiki/Python_(Efteling)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: ligging van de baandelen, hoogtes als maxima langs het pad, station en maaiveld",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): tracé en volgorde van de elementen",
+    "Wikimedia Commons, Category:Python (Efteling): lift, keerbocht, loopings, kurkentrekkers en station"
+  ],
+  "groundHeight": 52.97,
+  "printFiles": [
+    "efteling-python-1-1000.stl"
+  ]
+}

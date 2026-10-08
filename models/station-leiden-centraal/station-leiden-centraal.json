@@ -1,0 +1,59 @@
+{
+  "name": "Leiden Centraal",
+  "file": "station-leiden-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93084.9,
+    464616.2
+  ],
+  "xAxis": [
+    0.64279,
+    0.76604
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -60
+    ],
+    [
+      20,
+      -58
+    ],
+    [
+      -20,
+      -58
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000051298"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93084,9, 464616,2), het zwaartepunt van de stationshal, op het maaiveld van het Stationsplein (NAP +0,9 m), +X langs de sporen naar het noordoosten (RD-richting 50 graden) en +Y naar de zeezijde. De vlakke onderkant ligt 0,5 m onder het maaiveld; dat wordt op het Stationsplein bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0546100000051298. De stationshal met de kap over de sporen als flauw zadeldak, de acht spanten die als pijlpunten vanaf de punten van de perronkappen over de kap naar de nok lopen (node building:spanten) en de drie perronkappen met een parapluprofiel op een middenkolom, hoogtes uit het AHN. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "station-leiden-centraal-1-2000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 350,
+    "hallRoofRidgeNapM": 19.2,
+    "hallRoofEavesNapM": [
+      13,
+      13.5
+    ],
+    "citySideNapM": 13.3,
+    "canopyTopsNapM": [
+      10.4,
+      10.3,
+      10.5
+    ],
+    "railLevelNapM": 5.3,
+    "groundNapM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Station_Leiden_Centraal",
+    "PDOK BAG pand 0546100000051298 (contour van de stationshal), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de kap over de sporen, de perronkappen, het spoorniveau en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

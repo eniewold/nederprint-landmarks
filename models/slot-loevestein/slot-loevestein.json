@@ -1,0 +1,60 @@
+{
+  "name": "Slot Loevestein",
+  "file": "slot-loevestein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    129774,
+    425374
+  ],
+  "xAxis": [
+    0.6435,
+    0.7655
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      2,
+      -34
+    ],
+    [
+      -38,
+      -10
+    ],
+    [
+      0,
+      36
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0297100000000371"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (129774, 425374), midden in het slot, op het maaiveld van de vesting (NAP +3,8 m), +X langs de zaalbouw naar het noordoosten (xAxis, 49,95 graden linksom vanaf het oosten) en +Y naar het noordwesten. Twee nodes: building:slot met de zaalbouw van 32,6 bij 11,3 m onder een zadeldak (nok NAP +29,8 m, schild tegen de Riddertoren, rechte topgevel aan de zuidwestkant met de schoorsteen op de top, een dakkapel aan elke kant en een schoorsteen op de nok), de Riddertoren aan de noordoostkant (12,4 bij 13,4 m, tentdak met een knik op NAP +27,4 m tot +36,75 m, vier dakkapellen op de hoekkepers, twee schoorstenen) en de Keukentoren aan de zuidwestkant (10 bij 10,5 m, knik op +27,4 m met daarboven een achtkantige spits met hoekschilden tot +35 m, een dakkapel, twee schoorstenen, een dwarskap naar het zaaldak) met een dakoverstek van 0,3 m op NAP +26 m, de poorttoren aan de zuidoostkant met zadeldak (nok NAP +28,4 m), topgevels voor en achter, een dakruiter en schoorstenen, en een spitse doorgang in een spitse nis naar de binnenplaats (NAP +4,6 m), de lage muur langs de binnenplaats (NAP +20,5 m) en de aanbouw aan de noordwestgevel met zadeldak (nok NAP +26,5 m) en topgevel met pinakel; topgevels steken 0,4 m boven het dakvlak uit; vensters als blinde nissen van 0,35 m in alle buitengevels; road:bruggen, de brug van de poorttoren naar de voorburcht (dek NAP +4,4 m) en de brug van de aanbouw naar het pad in het noordwesten (dek NAP +2,6 m). Alle onderdelen beginnen op NAP 0 m, onder het water van de binnengracht, die met de wallen en de andere gebouwen van de vesting in PDOK zit. Alles staat recht op of loopt schuin omhoog, behalve de dakoverstekken van de torens die 0,3 m uitkragen en de vlakke bovenkanten van de vensternissen (0,35 m), zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand van het slot. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "slot-loevestein-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthAlongXM": 38,
+    "widthAlongYM": 32.06,
+    "hallRidgeNapM": 29.8,
+    "knightsTowerTipNapM": 36.75,
+    "kitchenTowerTipNapM": 35,
+    "towerEaveNapM": 26,
+    "gateTowerRidgeNapM": 28.4,
+    "courtyardNapM": 4.6,
+    "southEastBridgeDeckNapM": 4.4,
+    "northWestBridgeDeckNapM": 2.6,
+    "groundNapM": 3.8,
+    "baseNapM": 0
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Slot_Loevestein",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10081",
+    "PDOK BAG pand 0297100000000371 (slot), EPSG:28992",
+    "PDOK BGT overbruggingsdeel: de bruggen over de binnengracht naar de voorburcht en naar het pad in het noordwesten",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (raster per 0,5 m): nok en goten van de zaalbouw, toppen, goten en knik van de torendaken, dwarskap bij de Keukentoren, dak van de poorttoren en de aanbouw, schoorstenen, binnenplaats, brugdekken en maaiveld",
+    "Wikimedia Commons: 10081 slot loevestein (2).jpg en (3).jpg; 2024-08-14 Slot Loevestein ZvD 31, 40, 49, 52, 55 en 58 (alle kanten, dakvormen, topgevels, dakkapellen, schoorstenen, dakruiter, vensters); 5307 Poederoijen, Netherlands - panoramio (22).jpg (poorttoren vanuit het oosten)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

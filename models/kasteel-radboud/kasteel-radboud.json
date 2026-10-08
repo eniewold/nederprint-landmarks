@@ -1,0 +1,57 @@
+{
+  "name": "Kasteel Radboud",
+  "file": "kasteel-radboud.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136500,
+    531715
+  ],
+  "xAxis": [
+    0.898794,
+    0.438371
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      4,
+      15
+    ],
+    [
+      -7,
+      24
+    ],
+    [
+      16,
+      17
+    ]
+  ],
+  "groundHeight": 44.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0420100000015201"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (136500, 531715), in de binnenhoek van het kasteel, op het maaiveld van het kasteeleiland (NAP +2,1 m), +X langs de nokken van de oostvleugel (26 graden linksom vanaf de RD-X-as) en +Y loodrecht daarop. Twee nodes: building:kasteel uit dakvlakken en bouwdelen (de westvleugel met de Ridderzaal, een trapgevel met schoorsteen aan de binnenplaats en een schild aan de zuidkant, de oostvleugel in twee delen met een tussengevel, een trapgevel aan de oostkant en een geknikte noordhelling over de lage aanbouw, gekanteelde borstweringen op een kraag aan de west-, zuid- en noordkant, de vierkante noordwesttoren en zuidtoren met tentdaken, de ronde zuidwesttoren met kantelen en een achtkante spits, schoorstenen, dakkapellen en vensternissen) en road:brug, de brug over de slotgracht naar de Oosterdijk met borstweringen, poortpijlers en spitse nissen voor de bogen. Onderkant 1 m onder het water van de slotgracht; alle vlakken wijzen omhoog of staan verticaal op de nissen en kragen na. Vervangt de PDOK-reconstructie van het kasteel. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-radboud-1-1000.stl",
+    "kasteel-radboud-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.95,
+    "widthM": 62.9,
+    "highestPointM": 16.9,
+    "westRidgeNapM": 16.2,
+    "eastRidgeNapM": 15.9,
+    "midRidgeNapM": 14.9,
+    "roundTowerApexNapM": 18.2,
+    "groundNapM": 2.1,
+    "baseNapM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Radboud",
+    "PDOK BAG pand 0420100000015201 (het kasteel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, nokken, torens, borstweringen, schoorstenen en het maaiveld",
+    "PDOK BGT overbruggingsdeel: de brug over de slotgracht",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de noord-, noordoost-, oost-, zuid- en westkant"
+  ]
+}

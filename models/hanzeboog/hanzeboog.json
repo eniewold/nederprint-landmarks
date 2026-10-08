@@ -1,0 +1,77 @@
+{
+  "name": "Hanzeboog",
+  "file": "hanzeboog.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    200833.13,
+    500456.87
+  ],
+  "xAxis": [
+    0.93105,
+    0.36489
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.18,
+  "groundSamplePoints": [
+    [
+      -40,
+      30
+    ],
+    [
+      -40,
+      -30
+    ],
+    [
+      0,
+      30
+    ],
+    [
+      0,
+      -30
+    ],
+    [
+      40,
+      30
+    ],
+    [
+      40,
+      -30
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het spoor midden boven de hoofdoverspanning op de waterspiegel van de IJssel (z = 0, NAP +1,4 m zoals het PDOK-terrein) in de oorsprong, +X langs de rechte hoofdoverspanning naar het oosten (Zwolle, RD-richting 21,40 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. De brug is tot x = 118 recht en buigt daarna naar links (straal circa 1300 m, 17,3 graden aan het oostelijke landhoofd). Drie nodes: road:spoor, de bovenste 0,5 m van het spoordek en van de landhoofden binnen het BGT-wegdeel spoorbaan (circa 8 m breed rond de as, van x = -347 tot het oostelijke landhoofd), en road:fietspad, de bovenste 0,5 m van het fietspad en van de landhoofden binnen de twee BGT-wegdelen fietspad, met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan of fietspad, bgt_fysiekvoorkomen half verhard of gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het spoordek van 13 tot 19 m breed van het westelijke landhoofd bij Hattem (x = -350 tot -334) tot het oostelijke bij Zwolle (langs de as 581 tot 589), met het spoor op NAP +11,6 tot +15,3 m en +7,7 m aan het oosteinde (AHN); de vakwerkligger van 300 m over de pijlers op x = -150, -75, 75 en 150 als twee vakwerken die 14,3 graden naar binnen hellen (8,8 m naast de as op spoorhoogte, 5,05 m in de top), met de gebogen bovenrand tot NAP +30,0 m in het midden en op het dek bij de eindpijlers, als platen van 1,2 m met doorgaande spitse openingen in de driehoeken met de punt omhoog (velden van 30 m) en blinde nissen; de betonnen aanbruggen met velden van 40 m (vier aan de westkant, tien aan de oostkant) als plaat van 1,4 m op een koker; achttien V-vormige pijlers dwars op de brug; het fietspad van 3,6 m aan de zuidkant, 0,7 tot 0,95 m lager dan het spoor, met een spleet naar het spoordek. Bovenleiding, hekwerken, leuningen en het stenen pijlerrestant van de oude spoorbrug in de rivier zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de hoofdoverspanning bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hanzeboog-1-2500.stl"
+  ],
+  "realWorld": {
+    "lengthAlongAxisM": 939,
+    "trussSpansM": [
+      75,
+      150,
+      75
+    ],
+    "trussPanelM": 30,
+    "trussCrownNapM": 30.01,
+    "trussHeightAboveRailM": 14.7,
+    "trussLeanDeg": 14.3,
+    "approachSpansM": 40,
+    "piers": 18,
+    "railNapM": {
+      "west": 11.59,
+      "crest": 15.31,
+      "east": 7.66
+    },
+    "cyclePathWidthM": 3.6,
+    "waterNapM": 1.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hanzeboog",
+    "https://www.nationalestaalprijs.nl/sites/default/files/imported_files/396/projectbeschrijving.pdf",
+    "PDOK BGT overbruggingsdeel (dek, pijlervoeten, sloof, landhoofden), EPSG:28992",
+    "PDOK BGT wegdeel (OGC API, actuele versies met relatieve hoogteligging 1): spoorbaan L0004.02e1f991b8964282ab0022f4498a7749, fietspad G0244.3f20b822907e4b64b585a571a15f08dd en G0193.ea6ec72403ab4a1d87e3b75f934d51a6",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de as, het spoor, het fietspad, de randen van het dek en de vakwerken",
+    "PDOK luchtfoto 2021 (Actueel en 2021_orthoHR) voor de velden van het vakwerk (schaduw op het water)",
+    "Wikimedia Commons: Hanzeboog.jpg; Hanzeboog vanuit de lucht.jpg; New bridge, Zwolle, Overijssel.jpg; 20151027 Hanzeboog1 IJssel Zwolle.jpg; Spoorbrug Hanzelijn IJssel.jpg; Zwolle Hanzeboog IRM 9450 richting Zwolle (20294000598).jpg; New built 75-150-75 m mainspan railwaybridge in the Hanzelijn ... - panoramio.jpg"
+  ]
+}

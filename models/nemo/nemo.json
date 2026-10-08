@@ -1,0 +1,60 @@
+{
+  "name": "NEMO Science Museum",
+  "file": "nemo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122660,
+    487475
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      -55
+    ],
+    [
+      -10,
+      -52
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012164988"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (122660, 487475) op straatniveau aan de zuidkant (NAP +1,5 m), +X naar het oosten en +Y naar het noorden, de boeg. Het model loopt door tot NAP -2 m, onder de kade en het water. Het maaiveld wordt op de straat ten zuidwesten bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0363100012164988. Vereenvoudigd om op 1:1000 zonder losse steunconstructie te printen: de onderkant van de boeg loopt onder 47 graden op in plaats van circa 30. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "nemo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 117.3,
+    "widthM": 45.3,
+    "bowTopNapM": 30,
+    "plazaNapM": [
+      13.7,
+      22
+    ],
+    "plazaSteps": 9,
+    "middleVolumeNapM": [
+      24.9,
+      27
+    ],
+    "entranceHallTopNapM": 9.3,
+    "towerTopNapM": 23,
+    "prowUndersideDegrees": {
+      "real": 30,
+      "model": 47
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/NEMO_(museum)",
+    "PDOK BAG pand 0363100012164988 (dakomtrek, boeg, trappenhuizen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor dakprofiel, middenvolume, toren en straatniveau",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de indeling van het dak",
+    "Wikimedia Commons: NEMO science center from tour boat 2016-09-12-6565.jpg, A view on the NEMO-museum, located above the entrance of the IJ-tunnel, in Amsterdam, FotoDutch, 2013.jpg, 2018 - NEMO Science Museum, Amsterdam, Netherlands ( Ank Kumar ) 01.jpg, NEMO and area.jpg"
+  ]
+}

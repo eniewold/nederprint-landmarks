@@ -1,0 +1,100 @@
+{
+  "name": "John S. Thompsonbrug",
+  "file": "john-s-thompsonbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    179049.05,
+    420081.79
+  ],
+  "xAxis": [
+    0.87705,
+    0.4804
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 48.88,
+  "groundSamplePoints": [
+    [
+      -35,
+      22
+    ],
+    [
+      -15,
+      22
+    ],
+    [
+      20,
+      22
+    ],
+    [
+      45,
+      22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0786100000132726"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de rijbaan boven het hart van de stroompijler tussen de twee stuwvakken op de waterspiegel benedenstrooms van de stuw (z = 0, NAP +5,2 m) in de oorsprong, +X langs de brug naar het oostnoordoosten (Nederasselt, RD-richting 28,71 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de rijbaan tussen de vakwerkwanden en van het fietspad met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18 m breed van het Graafse landhoofd (x = -227,8) tot dat van Nederasselt (x = 302,5) met de rijbaan op NAP +16,1 tot +17,65 m (1:80 naar de vlakke stuwvakken), het fietspad aan de stroomafwaartse en het dienstpad aan de stroomopwaartse zijde; negen vakwerkoverspanningen (50 tot 67 m) met twee wanden van 1,0 m, 9,25 m hart op hart, als dichte platen met elliptische, veelhoekige bovenranden 7,7 tot 10,6 m boven de rijbaan, schuine eindstijlen, doorgaande driehoekige openingen met de punt omhoog naast elke verticaal en blinde nissen voor de driehoeken met een vlakke bovenkant; acht pijlers met ronde koppen (BGT, de achtste uit het AHN), de koppen tot NAP +12,3 m; onder de twee stuwvakken de wand van schuiven tot NAP +9,6 m met 20 jukken tot onder het bordes, twee kraanwagens op het bordes en het bedieningshuis op de stroompijler. Windverbanden en portalen tussen de wanden, lantaarns, leuningen en de schildersbruggen onder het dek zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water benedenstrooms van de stuw bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Vervangt het bedieningshuis (BAG-pand) op de stroompijler. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "john-s-thompsonbrug-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthBetweenAbutmentsM": 515,
+    "modelLengthM": 530.3,
+    "deckWidthM": 17.96,
+    "trussCentresM": 9.26,
+    "spansM": [
+      52.04,
+      53.99,
+      53.78,
+      55.22,
+      66.63,
+      65.03,
+      63.3,
+      54.72,
+      50.29
+    ],
+    "trussHeightAboveRoadM": [
+      8,
+      7.7,
+      8.8,
+      8.7,
+      10.6,
+      9.2,
+      9.2,
+      7.8,
+      8
+    ],
+    "panels": [
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      5,
+      5
+    ],
+    "roadNapM": {
+      "grave": 16.13,
+      "weir": 17.65,
+      "nederasselt": 14.75
+    },
+    "weirPosts": 20,
+    "craneTopNapM": 24.4,
+    "waterNapM": {
+      "downstream": 5.2,
+      "upstream": 7.8
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/John_S._Thompsonbrug",
+    "https://nl.wikipedia.org/wiki/Stuw-_en_sluizencomplex_Grave",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514153",
+    "PDOK BGT overbruggingsdeel (dek, landhoofden, pijlers), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de rijbaan, de vakwerkwanden en hun bovenranden, de achtste pijler, de kraanwagens en het bedieningshuis",
+    "Wikimedia Commons: Bridge grave1.jpg, Bridge grave2.jpg, 2006-05-17 13.37 Grave, brug over de Maas.JPG, Grave brug schip michelangelo.jpg, Nederasselt (Heumen) Rijksmonument 523934 verkeersbrug met stuw en sluis.JPG, Grave (N-Br, NL) fietspad van de Maasbrug.JPG, Overzicht verkeersbrug met stuw- en sluizencomplex - Grave - 20346217 - RCE.jpg, Overzicht verkeersbrug met stuw- en sluiscomplex - Grave - 20346254 - RCE.jpg, Overzicht verkeersbrug, gezien vanaf de weg voor de brug - Grave - 20346256 - RCE.jpg, Overzicht verkeersbrug met stuw- en sluiscomplex - Grave - 20346260 - RCE.jpg"
+  ]
+}

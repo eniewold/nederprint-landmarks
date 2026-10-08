@@ -1,0 +1,65 @@
+{
+  "name": "De Vliegende Hollander (Efteling)",
+  "file": "efteling-vliegende-hollander.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131782.45,
+    406568.49
+  ],
+  "xAxis": [
+    0.96858,
+    -0.24869
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      -8,
+      -6
+    ],
+    [
+      8,
+      -9
+    ],
+    [
+      16,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017610"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131782,45, 406568,49), het hart van de liftoren, op het maaiveld bij de toren (NAP +10,4 m), +X langs de gevel aan het plein (RD-richting -14,4°) en +Y de hal in. Node building:havenstad: de showhal op het BAG-pand (dak +17,3 m en +15,8 m) met kantelen, de stadsmuur met pilasters en leeuwen, vijf havenhuisjes met klok-, trap- en spitse houten gevels, het huis Van der Decken met trapgevels en dakkapel en de kademuur met bogen langs de vijver. Node building:toren: de liftoren (+29,3 m) met mezekouwen, kantelen, vier hoektorentjes (spitsen tot +32,8 m), de houten bak waar de baan uitkomt en de schuine lifthuisbak. Node building:baan: de band van 1,5 bij 0,9 m van de val uit de toren tot het wrak met het 'mistige gat' en van de uitgang in het duin over de luchtheuvel, de overhelde bocht, het duinhuisje op palen (tussenrem), de tweede val en de bocht over het water tot de plons, op kolommen en een doorlopende voet. Onderkant op NAP +7,3 m, onder het water van de vijver; de vijver zelf is niet gemodelleerd. Vervangt de PDOK-reconstructie van de hal. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "lengthM": 109.1,
+    "widthM": 79.2,
+    "highestPointNapM": 32.8,
+    "liftHeightM": 22.5,
+    "trackLengthM": 420,
+    "towerRoofNapM": 29.299999999999997,
+    "hallRoofNapM": 17.3,
+    "duneHouseRidgeNapM": 22.6,
+    "splashNapM": 8.2,
+    "groundNapM": 10.4,
+    "waterNapM": 7.9,
+    "baseNapM": 7.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Vliegende_Hollander_(Efteling)",
+    "https://en.wikipedia.org/wiki/De_Vliegende_Hollander",
+    "PDOK BAG pand 0809100000017610 (showhal met liftoren), EPSG:28992",
+    "PDOK BGT waterdeel (oever van de vijver: ligging van de kademuur)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken, toren, lifthuisbak, duinhuisje en baanhoogtes",
+    "PDOK luchtfoto (Actueel_orthoHR): tracé van de baan, kademuur, wrak",
+    "Wikimedia Commons, Category:De Vliegende Hollander (toren, gevels, kademuur, duinhuisje, plons)"
+  ],
+  "groundHeight": 54.18,
+  "printFiles": [
+    "efteling-vliegende-hollander-1-1000.stl"
+  ]
+}

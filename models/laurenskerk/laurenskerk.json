@@ -1,0 +1,59 @@
+{
+  "name": "Grote of Sint-Laurenskerk",
+  "file": "laurenskerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92975.1,
+    437394.4
+  ],
+  "xAxis": [
+    0.96547,
+    0.2605
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -58,
+      0
+    ],
+    [
+      0,
+      34
+    ],
+    [
+      0,
+      -34
+    ],
+    [
+      50,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000702379"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (92975,1, 437394,4), op de viering onder de dakruiter, op het maaiveld (NAP +0,7 m), +X langs de as van de toren naar het koor in het oostnoordoosten (RD-richting 15,1 graden) en +Y naar het noordnoordwesten; de toren staat aan de -X-kant. Eén node building: lage delen tot de steunberen (NAP +13,5 m), de zijbeuken langs schip en koor onder eigen zadeldaken (nok +24,7 en +25,2 m) met balustrades en pinakels op de steunberen, de kooromgang onder een lessenaarsdak met balustrade, kapellen in de oksels van transept en koor, schip en koor onder één zadeldak (goot +24,5 m, nok +35,1 m) met afgeschilde koorsluiting, het transept met topgevels en vier traptorentjes, de dakruiter (+49,5 m), en de westtoren in vier geledingen met diagonale hoeksteunberen, portaal, westvenster en spitsboognissen, de omloop op +51,6 m met hoekpinakels, de vierde geleding tot +62,8 m met balustrade (+64,1 m) en hoekpinakels, en de bekroning tot +69,8 m. Alles staat recht op of loopt schuin omhoog, behalve de balustrade van de vierde geleding die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0599100000702379. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "laurenskerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 95.8,
+    "widthM": 55.9,
+    "naveRidgeNapM": 35.1,
+    "dakruiterNapM": 49.5,
+    "towerGalleryNapM": 51.6,
+    "towerBalustradeNapM": 64.1,
+    "towerCapNapM": 69.8,
+    "groundNapM": 0.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Laurenskerk_(Rotterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32783",
+    "PDOK BAG pand 0599100000702379 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van schip, zijbeuken, transept, koor en kooromgang, raster van de toren en de dakruiter, maaiveld",
+    "Wikimedia Commons: foto's van de toren, de noordoostzijde, het koor en de kooromgang",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

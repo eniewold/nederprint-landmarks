@@ -1,0 +1,60 @@
+{
+  "name": "Ulu Moskee",
+  "file": "ulu-moskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135611.34,
+    456003.35
+  ],
+  "xAxis": [
+    0.605294,
+    0.796002
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -24
+    ],
+    [
+      -24,
+      0
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      0,
+      22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000084943"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (135611,34, 456003,35), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +1,95 m), +X langs de gevels naar het noordoosten (52,75 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:moskee: de moskee op de BAG-contour met lage daken op +14,5 m, een schilddak (+17,4 tot +21 m), een koepel met top op +24,1 m en twee minaretten van +40 m met een balkon op 27,5 m. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog, staan verticaal of hellen onder 45 graden. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ulu-moskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33.8,
+    "widthM": 30.4,
+    "highestPointM": 40,
+    "lowRoofM": 14.5,
+    "hipEaveM": 17.4,
+    "domeBaseM": 21,
+    "domeTopM": 24.1,
+    "minaretTopM": 40,
+    "minaretBalconyM": 27.5,
+    "groundNapM": 1.95,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Ulu-moskee_%28Utrecht%29",
+    "PDOK BAG pand 0344100000084943, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de daken, de koepel, de minaretten en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

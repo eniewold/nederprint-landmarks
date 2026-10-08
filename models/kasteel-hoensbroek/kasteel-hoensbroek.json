@@ -1,0 +1,60 @@
+{
+  "name": "Kasteel Hoensbroek",
+  "file": "kasteel-hoensbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    192348,
+    325340
+  ],
+  "xAxis": [
+    0.779338,
+    -0.626604
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -22
+    ],
+    [
+      -40,
+      -10
+    ],
+    [
+      30,
+      0
+    ]
+  ],
+  "groundHeight": 114.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0917100000006365",
+    "NL.IMBAG.Pand.0917100000006362",
+    "NL.IMBAG.Pand.0917100000006363"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (192348, 325340), midden in de hoofdburcht, op het water van de slotgracht (NAP +69,2 m), +X langs de noordoostgevel van de hoofdburcht (38,8 graden rechtsom vanaf de RD-X-as) en +Y loodrecht daarop naar de voorburcht. Node building:kasteel: de hoofdburcht uit dakvlakken en bouwdelen met de ronde toren (klokvormige spits, lantaarn en uitje tot +44,5 m), de vierkante zuidtoren, de twee poorttorens met een koepel en lantaarn, het westpaviljoen en de oostvleugel met schilddaken, de noordoost- en zuidwestvleugel, het lage ronde torentje, de binnenplaats, het portaal en de brug. Node building:voorburcht: de vleugels om de twee pleinen met zadeldaken, schilden en een topgevel, de lage doorgang, de poorttoren met uitje in de middenvleugel, de gedraaide zuidvleugel, de poorttoren op de zuidwesthoek en de buitenste brug, met dakkapellen, schoorstenen, vensternissen en poortbogen. Onderkant 1 m onder het water; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de hoofdburcht en de voorburcht. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-hoensbroek-1-1000.stl",
+    "kasteel-hoensbroek-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 126.9,
+    "widthM": 85,
+    "highestPointM": 44.5,
+    "roundTowerTopM": 44.5,
+    "southTowerTopM": 39.6,
+    "eastWingRidgeM": 22.2,
+    "westPavilionRidgeM": 21.8,
+    "forecourtNorthRidgeM": 18.4,
+    "groundNapM": 69.2,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Hoensbroek",
+    "PDOK BAG panden 0917100000006365 (hoofdburcht), 0917100000006362 en 0917100000006363 (voorburcht), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, torens, binnenplaats, bruggen en het water van de gracht",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de zuidwest-, zuid-, oost-, noordoost- en noordkant en van de pleinen"
+  ]
+}

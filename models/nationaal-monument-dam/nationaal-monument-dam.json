@@ -1,0 +1,39 @@
+{
+  "name": "Nationaal Monument op de Dam",
+  "file": "nationaal-monument-dam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121391.68,
+    487330.33
+  ],
+  "xAxis": [
+    -0.453,
+    -0.892
+  ],
+  "groundOffsetMetres": -0.3,
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het pyloonhart op pleinniveau in de oorsprong en wijst de voorzijde (Paleis, leeuwen) naar -Y. RD = origin + x*xAxis + y*yAxis met yAxis = xAxis 90 graden linksom. Nodenamen klasse:label bepalen de materiaalklasse.",
+  "printFiles": [
+    "nationaal-monument-dam-1-100.stl",
+    "nationaal-monument-dam-grondplaat-1-100.stl"
+  ],
+  "realWorld": {
+    "pylonHeightM": 22,
+    "outerStepRadiusM": 18.54,
+    "steps": 6,
+    "wallRadiusM": [
+      6.5,
+      7.2
+    ],
+    "wallHeightM": 3.2,
+    "niches": 14,
+    "lionPedestalDiameterM": 7,
+    "lionSpacingM": 34.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nationaal_Monument_op_de_Dam",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/530906",
+    "PDOK BGT (wegdeel/straatmeubilair) en luchtfoto, EPSG:28992"
+  ]
+}

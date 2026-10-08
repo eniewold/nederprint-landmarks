@@ -1,0 +1,136 @@
+{
+  "name": "Van Brienenoordbrug",
+  "file": "van-brienenoordbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    96917.61,
+    435328.02
+  ],
+  "xAxis": [
+    -0.38774,
+    0.92177
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.67,
+  "groundSamplePoints": [
+    [
+      -330,
+      40.8
+    ],
+    [
+      -330,
+      -52.7
+    ],
+    [
+      -80,
+      45.5
+    ],
+    [
+      -80,
+      -48.8
+    ],
+    [
+      60,
+      45.9
+    ],
+    [
+      60,
+      -48.3
+    ],
+    [
+      200,
+      45.3
+    ],
+    [
+      200,
+      -48
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000670512"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden onder de bogen op de voeg tussen de twee bruggen op NAP 0 (z = NAP-hoogte, het water van de Nieuwe Maas) in de oorsprong, +X langs de brug naar het noorden (Kralingen, RD-richting 112,81 graden vanaf het oosten) en +Y naar het westen-zuidwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het schuine zuidelijke landhoofd in IJsselmonde (x = -636) tot het noordelijke in Kralingen (x = 716,7). Twee boogbruggen met trekband naast elkaar (westboog 1990 op y = 0 tot 30,9, oostboog 1965 met het fietspad op y = 0 tot -33,6), elk met twee verticale ribben van 2,0 m breed met de top op NAP +68,0 m en het netwerk van kruisende schuine hangers (twintig velden, van elke dekknoop twee hangers naar de boog) als scherm met stroken van 1,0 m en spitse openingen; de rivierpijlers met ronde koppen; de basculekleppen van 54 m in gesloten stand met voegen; de basculekelder met plint, raambanden als nissen en de ronde trapkoker; de bedieningstoren met de kanzel tot NAP +49,6 m (BAG-pand); de zuidelijke aanbrug met de bocht naar het zuidoosten op sloven met ronde kolommen, de noordelijke op wandkolommen, beide met twee kokers per brug. Het wegdek ligt op NAP +12,3 tot +14,6 m (zuid, dwarshelling) tot +28,6 m (bogen) en +10,8 m (noord), met 4 % dwarshelling in de bocht. Schampkanten en geleiderails in de middenbermen in plaats van leuningen. Het windverband tussen de ribben (vrije horizontale overspanningen van 24 tot 27 m), de portaalborden boven de rijbanen, lantaarns, slagbomen, het geluidsscherm langs het fietspad en de open stand van de kleppen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft een printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "van-brienenoordbrug-1-3500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 1352.7,
+    "archSpanM": 296.6,
+    "archCrownNapM": 68,
+    "archRiseAboveDeckM": 39.38,
+    "archRibsFromJointM": {
+      "westArch": [
+        2.6,
+        29.6
+      ],
+      "eastArch": [
+        -3.4,
+        -27.4
+      ]
+    },
+    "hangerDeckNodesX": [
+      -133.47,
+      -118.64,
+      -103.81,
+      -88.98,
+      -74.15,
+      -59.32,
+      -44.49,
+      -29.66,
+      -14.83,
+      0,
+      14.83,
+      29.66,
+      44.49,
+      59.32,
+      74.15,
+      88.98,
+      103.81,
+      118.64,
+      133.47
+    ],
+    "basculeLeavesM": 54,
+    "basculeCellarM": 35,
+    "deckWidthM": {
+      "arch": 64.34,
+      "northApproach": 64.29
+    },
+    "southPierX": [
+      -565,
+      -514.4,
+      -463.3,
+      -411.6,
+      -359.7,
+      -307.7,
+      -256.4,
+      -205.4
+    ],
+    "northPierX": [
+      290.2,
+      341,
+      391.7,
+      442.4,
+      493.2,
+      543.9,
+      594.7,
+      645.4
+    ],
+    "deckNapM": {
+      "south": 14.14,
+      "crest": 28.61,
+      "north": 10.92
+    },
+    "towerTopNapM": 49.6,
+    "waterNapM": 0
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Van_Brienenoordbrug",
+    "PDOK BGT overbruggingsdeel (dekrand, landhoofden, sloven van de zuidelijke aanbrug, wandkolommen van de noordelijke aanbrug, rivierpijlers), wegdeel (rijbanen en fietspad), scheiding (muren op de kelder) en pand, EPSG:28992",
+    "PDOK BAG pand 0599100000670512 (bedieningstoren)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de boogribben, de toren, de trapkoker en de pijlerkoppen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de voegen van de kleppen, de rijbanen en de middenbermen",
+    "Wikimedia Commons: Rotterdam - Oud-IJsselmonde - Eiland van Brienenoord - View of Van Brienenoordbrug from southeast.jpg en from southwest.jpg, Rotterdam Van Brienenoordbrug seen from Capelle ad IJssel Rivium ferry terminal.jpg, Van Brienenoordbrug - Rotterdam - Basement for bascule from the east.jpg, Bridge operator's house from the east.jpg, Open bascule bridge - View from the bridge towards the west.jpg, Van Brienenoordbrug Rotterdam 2018 1 en 2.jpg, Van Brienenoordbrug (2025)-1 en -2.jpg, Van Brienenoordbrug dubbele boog.jpg, Van Brienenoordbrug Rotterdam 2020.jpg, Van brienenoordbrug - Kralingen - Rotterdam - Bonn-Mees' Sheerlegs Matador IMO 8639364 passing opened bascule bridge.jpg, Vessel traffic service Rotterdam nr 24 - Van Brienenoordbrug-West - 2024 - pic1.jpg, Van Brienenoordbrug.jpg, 1e Eiland van Brienoordbrug - View of the bridge from the northeast.jpg"
+  ]
+}

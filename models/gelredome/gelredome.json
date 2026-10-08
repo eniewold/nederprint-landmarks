@@ -1,0 +1,72 @@
+{
+  "name": "GelreDome",
+  "file": "gelredome.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    189755.563,
+    441720.155
+  ],
+  "xAxis": [
+    0.3371,
+    0.94147
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -90
+    ],
+    [
+      0,
+      96
+    ],
+    [
+      108,
+      0
+    ],
+    [
+      -90,
+      70
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000222215"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het veld op straatniveau (NAP +10,6 m) in de oorsprong, +X langs de lengteas van het veld en de tongewelven naar het noordnoordoosten (RD-richting 70,3 graden) en +Y dwars daarop. Het stadion is opgebouwd uit gladde vormen die op het AHN zijn gefit: de vier tribunedaken met schuine dakrand, het schuifdak als twee cirkelvormige tongewelven in de gesloten stand van het AHN, de rails en vakwerkspanten, de hoekbouwdelen en de uitbouw uit de BAG-contour. Vervangt de PDOK-reconstructie van BAG-pand 0202100000222215.",
+  "printFiles": [
+    "gelredome-1-1000.stl"
+  ],
+  "realWorld": {
+    "pitchM": [
+      105,
+      68
+    ],
+    "footprintM": [
+      202,
+      174
+    ],
+    "roofState": "dicht (AHN)",
+    "vaultTopNapM": 53.35,
+    "vaultArc": {
+      "yc": 22.95,
+      "zc": 32.22,
+      "r": 21.13
+    },
+    "vaultSpanM": 37.72,
+    "vaultLengthM": 124,
+    "standRoofNapM": [
+      36.27,
+      37.21
+    ],
+    "cornerTopNapM": 21.8,
+    "streetNapM": 10.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/GelreDome",
+    "PDOK BAG pand 0202100000222215, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: tongewelven, tribunedaken, dakranden, rails, spanten, hoekbouwdelen, uitbouw en straatniveau",
+    "PDOK luchtfoto (Actueel_orthoHR): rails, vakwerkspanten en de open stand van het schuifdak"
+  ]
+}

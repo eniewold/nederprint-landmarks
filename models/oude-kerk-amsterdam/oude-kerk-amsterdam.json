@@ -1,0 +1,57 @@
+{
+  "name": "Oude Kerk",
+  "file": "oude-kerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121656.59,
+    487499.92
+  ],
+  "xAxis": [
+    0.99881,
+    0.04885
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -9,
+      0
+    ],
+    [
+      20,
+      32
+    ],
+    [
+      20,
+      -35
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012178469"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121656,59, 487499,92), bij de toren (het hart van de onderbouw ligt 0,3 m oostelijker), op het maaiveld (NAP +1,4 m), +X langs de as van de toren naar het koor (RD-richting 2,8 graden, net ten noorden van oost) en +Y naar het noorden; de toren staat aan de -X-kant, aan het Oudekerksplein. Eén node building: alles binnen de BAG-contour tot NAP +5 m (de kerkhuisjes en aanbouwen), het middenschip onder een zadeldak (goot +20,5 m, nok +27,7 m, oostelijk van de viering +27 m) met dwarse kruiskappen per travee, de zijbeuken onder zadeldaken langs de as (nok +23,3 en +23,5 m) met daarachter de kapellen onder dwarse zadeldaken (nok +23,8 tot +24 m) met topgevels en vensternissen naar buiten, het transept (nok +24 m) met topgevels aan de noord- en zuidkant, de koorsluiting en de kooromgang (+17 m), de zuidkant van het koor onder een zadeldak, de lagere kapellen en het portaal aan de zuidkant, de dakruiter op de viering tot +37 m, en de westtoren met de bakstenen onderbouw tot +36 m met portaal en nissen, een borstwering met hoekpinakels tot +37 m die 0,3 m uitkraagt, de loden uurwerkgeleding tot +45,5 m, de achtkantige klokkenlantaarn tot +52,5 m met pinakels op de omgang, de peer, de bovenste lantaarn tot +60,5 m, de kap en de naald tot 67 m boven het maaiveld (NAP +68,4 m). Alles staat recht op of loopt schuin omhoog, behalve de borstwering die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0363100012178469. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "oude-kerk-amsterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 81.66,
+    "widthM": 65.72,
+    "naveRidgeNapM": 27.7,
+    "aisleRidgeNapM": 23.5,
+    "transeptRidgeNapM": 24,
+    "towerBaseNapM": 37,
+    "towerClockNapM": 45.5,
+    "towerLanternNapM": 52.5,
+    "towerTipNapM": 68.4,
+    "groundNapM": 1.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Oude_Kerk_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/3990",
+    "PDOK BAG pand 0363100012178469 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van middenschip, zijbeuken, kapellen, transept en koor, omhullende van de toren per hoogte, maaiveld",
+    "Wikimedia Commons: foto's van de toren (Amsterdam, Oude Kerk, toren 09; Oudezijds Voorburgwal 2011)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

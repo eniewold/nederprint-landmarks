@@ -1,0 +1,62 @@
+{
+  "name": "Westermoskee",
+  "file": "westermoskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119135.7,
+    486609.86
+  ],
+  "xAxis": [
+    0.61786,
+    0.78629
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      0
+    ],
+    [
+      20,
+      4
+    ],
+    [
+      0,
+      27
+    ],
+    [
+      -20,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012241498"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong onder het hart van de koepel op RD (119135,7, 486609,86), op het maaiveld (NAP +0,65 m), +X naar het noordoosten (RD-richting 51,84 graden) en +Y naar het noordwesten, het Piri Reisplein; de Kostverlorenvaart ligt aan de -Y-kant. Eén node building: de gebedszaal (goot NAP +9,6 m) met getrapte hoeken (+12,2 m), de kruisvormige onderbouw (+18,5 m) en de koepel (top +26,8 m), de noordwestvleugel met het portaal, de minaret op de oosthoek (top +42,9 m) en de twee zuilengangen met koepeltjes. Alles wordt naar boven toe smaller, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0363100012241498. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "westermoskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "hallM": [
+      28.3,
+      28.3
+    ],
+    "dome": {
+      "baseRadiusM": 11.5,
+      "baseNapM": 18.5,
+      "topNapM": 26.8
+    },
+    "minaretTopNapM": 42.9,
+    "arcadeTopNapM": 8.3,
+    "groundNapM": 0.65
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Westermoskee",
+    "PDOK BAG pand 0363100012241498 (contour van zaal, noordwestvleugel en voet van de minaret), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goot, getrapte hoeken, onderbouw, koepelprofiel, minaret, zuilengangen en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Westermoskee Aya Sofya (Amsterdam, The Netherlands 2017).jpg, Westermoskee - Amsterdam (26579109769).jpg, Westermoskee @ Schinkel canal @ Amsterdam - 23743717542.jpg, Minaret @ Westermoskee Ayasofya Camii @ Amsterdam West (21947158531).jpg"
+  ]
+}

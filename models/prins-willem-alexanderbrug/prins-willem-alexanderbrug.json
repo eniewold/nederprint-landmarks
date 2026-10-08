@@ -1,0 +1,120 @@
+{
+  "name": "Prins Willem-Alexanderbrug",
+  "file": "prins-willem-alexanderbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    162596.26,
+    433401.25
+  ],
+  "xAxis": [
+    -0.009425,
+    0.999956
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 48.06,
+  "groundSamplePoints": [
+    [
+      -100,
+      30
+    ],
+    [
+      -100,
+      -30
+    ],
+    [
+      -50,
+      30
+    ],
+    [
+      -50,
+      -30
+    ],
+    [
+      0,
+      30
+    ],
+    [
+      0,
+      -30
+    ],
+    [
+      50,
+      30
+    ],
+    [
+      50,
+      -30
+    ],
+    [
+      100,
+      30
+    ],
+    [
+      100,
+      -30
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee pylonen op de waterspiegel van de Waal (z = 0, NAP +4,46 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs het rechte deel van de brug naar het noorden (Echteld, RD-richting 90,54 graden vanaf het oosten) en +Y naar het westen; vanaf x = 306 buigt de as van de aanbrug naar het westen af (y = (x - 306)² / 11940). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg voor de 2 × 2 rijstroken van de N323 in het midden, rijbaan lokale weg voor de parallelle rijbanen langs de randen; bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 31,2 m breed op het tuibruggedeelte en 27,3 m op de aanbrug, van het zuidelijke landhoofd op de dijk bij Wamel (x = -306,4, wegdek NAP +21,4 m) over de Waal (NAP +23,5 m midden in de hoofdoverspanning) en de noordelijke uiterwaard naar het noordelijke landhoofd bij Echteld (x = 1110, NAP +15,1 m), met een schampkant langs de randen en een koker van 3,6 m onder het dek (twee kokers onder de aanbrug); de twee pylonen op x = ±133,5 van elk twee kolommen van 5 × 2,6 m, 10,7 m naast de as, met een afgeronde kap tot NAP +69,0 m en een dwarsregel van NAP +50 tot +54,5 m; per kolom vier tuien naar ankerblokken op het dek op 45,9 en 92,6 m van de pylon, als tuivlakken van 0,9 m dik met de tuien als ribben en driehoekige openingen met een spitse top; de pylonpijlers en zijpijlers (x = ±228,4) met caissons tot NAP +13 m en kolommen onder het dek, de overgangspijler op x = 306 en tien steunpunten van de aanbrug met elk twee wandpijlers. Leuningen, lantaarns, geleiderails en bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Waal naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "prins-willem-alexanderbrug-1-3600.stl"
+  ],
+  "realWorld": {
+    "lengthM": 1416.4,
+    "spansM": [
+      77.5,
+      95,
+      267,
+      95,
+      77.5
+    ],
+    "pylonsX": [
+      -133.5,
+      133.5
+    ],
+    "deckWidthM": {
+      "cableStayed": 31.24,
+      "approach": 27.3
+    },
+    "approachCurveRadiusM": 5970,
+    "columnTopNapM": 69,
+    "crossbeamNapM": [
+      50,
+      54.5
+    ],
+    "stayAnchorsFromPylonM": [
+      45.9,
+      92.6
+    ],
+    "stayAnglesDeg": [
+      44.8,
+      25.9
+    ],
+    "deckNapM": {
+      "south": 21.41,
+      "crest": 23.52,
+      "north": 15.098
+    },
+    "approachPierX": [
+      384.8,
+      462.5,
+      541.4,
+      619.7,
+      698,
+      776.3,
+      854.5,
+      932.8,
+      1010.8,
+      1088.5
+    ],
+    "waterNapM": 4.46
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Prins_Willem-Alexanderbrug",
+    "PDOK BGT overbruggingsdeel (dek, landhoofden, pylonkolommen, tuiankers, pijlers), wegdeel en ondersteunend wegdeel, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de kolommen, de dwarsregel en de tuien",
+    "PDOK luchtfoto (Actueel_orthoHR) voor kolommen, dwarsregel, caissons en voegen",
+    "Wikimedia Commons: Alexanderbrug 073.jpg, Alexanderbrug 075.jpg, Bij Beneden Leeuwen, brug foto10 2010-08-01 15.17.JPG, Bij Beneden Leeuwen, de Prins Willem Alexanderbrug IMG 2693 2019-10-26 13.07.jpg, Detailview of the Prins (since 2013, King^^) Willem Alexander bridge (built 1973) near Tiel - panoramio.jpg, The first all concrete cable stayed bridge (1973) of Holland over the Waal river - panoramio.jpg"
+  ]
+}

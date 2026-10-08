@@ -1,0 +1,69 @@
+{
+  "name": "Hooglandse Kerk",
+  "file": "hooglandse-kerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93892.93,
+    463687.05
+  ],
+  "xAxis": [
+    0.97237,
+    0.23345
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -44,
+      0
+    ],
+    [
+      -24,
+      -24
+    ],
+    [
+      -14,
+      36
+    ],
+    [
+      16,
+      24
+    ],
+    [
+      46,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000038521"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93892,93, 463687,05) in het hart van de kruising op het maaiveld (NAP +1,5 m), +X langs de as van de toren naar het koor (RD-richting 13,5 graden) en +Y naar het noorden. De vlakke onderkant ligt 0,5 m onder het maaiveld; dat wordt op de straten en het plein rondom bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0546100000038521. Laag schip en lage torenstomp tegen de hoge dwarsbeuk en het hoge koor, zijbeuken met dwarse daken, kooromgang en dakruiter, het noord- en zuidportaal met boven het dak uitstekende topgevels, pinakels, traptorens met spitsen en nissen voor venster en portaal; daken en hoogtes uit het AHN. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hooglandse-kerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 81,
+    "transeptLengthM": 68,
+    "naveRidgeNapM": 22.7,
+    "transeptRidgeNapM": 38.6,
+    "choirRidgeNapM": 38.4,
+    "aisleRidgeNapM": 19.5,
+    "towerTopNapM": 28.3,
+    "towerTipNapM": 33,
+    "roofTurretTipNapM": 51,
+    "portalFinialNapM": 41,
+    "portalTurretSpiresNapM": [
+      36.7,
+      38.5
+    ],
+    "groundNapM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hooglandse_Kerk",
+    "PDOK BAG pand 0546100000038521 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de dakprofielen, de toren, de dakruiter, de aanbouwen en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Hooglandse Kerk; Noordportaal.jpg, Hooglandse Kerk; Zuidportaal.jpg"
+  ]
+}

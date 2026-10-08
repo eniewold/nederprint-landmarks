@@ -1,0 +1,55 @@
+{
+  "name": "De Palmboom",
+  "file": "molen-de-palmboom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86999.7,
+    437379.46
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      8,
+      -8
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      -8,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000007621"
+  ],
+  "description": "Vrijstaande ronde stenen molen op de BAG-cirkel, stelling op 16,92 m op een kraag van 50 graden, houten langskap, staart, water- en landpoort, rechthoekige venster- en gevelsteennissen en verdikte wieken in X-stand. RD-assen, voet 1 m onder het maaiveld, grondpunten op de zuidelijke kade. Buitenroede 26,70 m uit het actuele molenpaspoort, kaphoogte uit AHN; romphelling, kapvorm, ashoogte, asrichting (251 graden zuidzuidwest in de AHN-opname), stellingradius en gevelindeling geschat. De kap draait, waardoor de stand op de luchtfoto afwijkt; geen aanbouw, buren raken het model niet.",
+  "printFiles": [
+    "molen-de-palmboom-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 26.7,
+    "stageM": 16.92,
+    "rompTopM": 29.2,
+    "capM": 32,
+    "axleM": 30.85,
+    "baseRadiusM": 6.221,
+    "stageRadiusM": 8.1,
+    "axisDegrees": 251
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-12213",
+    "https://www.deschiedamsemolens.nl/de-palmboom/",
+    "https://www.schiedam.nl/ruimtelijkeplannen/NL.IMRO.0606.BP0026-0002/t_NL.IMRO.0606.BP0026-0002.html",
+    "PDOK BAG 0606100000007621, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Schiedam_molen_De_Nieuwe_Palmboom.jpg",
+    "https://commons.wikimedia.org/wiki/File:Denieuwepalmboom01.jpg"
+  ]
+}

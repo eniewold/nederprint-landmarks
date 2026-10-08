@@ -1,0 +1,150 @@
+{
+  "name": "Molens van Kinderdijk",
+  "file": "molens-kinderdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104070,
+    432835
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -541.5,
+      339.5
+    ],
+    [
+      -496.5,
+      187.5
+    ],
+    [
+      -401.5,
+      78.5
+    ],
+    [
+      -369.5,
+      -59.5
+    ],
+    [
+      -279.5,
+      -183.5
+    ],
+    [
+      -434.5,
+      -214.5
+    ],
+    [
+      -532.5,
+      -302.5
+    ],
+    [
+      -587.5,
+      -409.5
+    ],
+    [
+      -442.5,
+      233.5
+    ],
+    [
+      -304.5,
+      -23.5
+    ],
+    [
+      -219.5,
+      -179.5
+    ],
+    [
+      -74.5,
+      -314.5
+    ],
+    [
+      75.5,
+      -366.5
+    ],
+    [
+      249.5,
+      -424.5
+    ],
+    [
+      417.5,
+      -486.5
+    ],
+    [
+      556.5,
+      -534.5
+    ],
+    [
+      -73.5,
+      -351.5
+    ]
+  ],
+  "groundHeight": 42.49,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0571100000001018",
+    "NL.IMBAG.Pand.0571100000001581",
+    "NL.IMBAG.Pand.0571100000000241",
+    "NL.IMBAG.Pand.0571100000000460",
+    "NL.IMBAG.Pand.0571100000001489",
+    "NL.IMBAG.Pand.0571100000000418",
+    "NL.IMBAG.Pand.0571100000000105",
+    "NL.IMBAG.Pand.0571100000001406",
+    "NL.IMBAG.Pand.0571100000000222",
+    "NL.IMBAG.Pand.0571100000001592",
+    "NL.IMBAG.Pand.0571100000001583",
+    "NL.IMBAG.Pand.0571100000000462",
+    "NL.IMBAG.Pand.0571100000001129",
+    "NL.IMBAG.Pand.0571100000000125",
+    "NL.IMBAG.Pand.0571100000000969",
+    "NL.IMBAG.Pand.0571100000000514",
+    "NL.IMBAG.Pand.0571100000001196",
+    "NL.IMBAG.Pand.0571100000000668",
+    "NL.IMBAG.Pand.0482100001254237"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong centraal tussen de molengangen van de Nederwaard en de Overwaard (RD 104070, 432835) op het water van de Nederwaardboezem (z = 0, NAP -1,10 m volgens het PDOK-terrein), +X naar het oosten en +Y naar het noorden. Negentien nodes building:<molen>, één per molen: de acht ronde stenen grondzeilers van de Nederwaard aan de westkant (twee gangen langs de boezem, nummer 1 in het noorden), de acht achtkante grondzeilers van de Overwaard aan de oostkant (nummer 1 in het noorden, nummer 8 in het zuidoosten), de Hoge en de Kleine Molen van Nieuw-Lekkerland in het noordoosten en de wipmolen De Blokker van de Blokweer in het zuiden. Elke molen staat op zijn eigen voet (PDOK-maaiveld, z = 0,7 tot 2,6 m) met een fundering tot 1,5 m daaronder, en heeft een romp (kegel of achtkant op de BAG-contour), een rietgedekte kap, een staart naar het maaiveld en een wiekenkruis als plaat van 1,0 m dik en 2,4 m breed in X-stand onder 50 graden, voor de kap in de richting van de as uit het AHN. Het maaiveld wordt op het water van de Nederwaardboezem bemonsterd. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "molens-kinderdijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "molens": 19,
+    "vluchtM": {
+      "rond": 27.8,
+      "achtkant": 29,
+      "hoog": 28,
+      "klein": 27,
+      "wip": 25
+    },
+    "kapBovenVoetM": {
+      "rond": 15.9,
+      "achtkant": 16.1,
+      "hoog": 16.3,
+      "klein": 15.4,
+      "wip": 14.9
+    },
+    "asBovenVoetM": {
+      "rond": 13.9,
+      "achtkant": 14.1,
+      "hoog": 14.3,
+      "klein": 13.4,
+      "wip": 12.9
+    },
+    "wiekStandGraden": 50,
+    "wiekPlaatM": {
+      "breedte": 2.4,
+      "dikte": 1
+    },
+    "boezempeilNapM": -1.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kinderdijkse_molens",
+    "https://en.wikipedia.org/wiki/Kinderdijk_windmills",
+    "PDOK BAG (panden en adressen van de negentien molens), EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor romp, kap, asrichting en wiekenvlak",
+    "PDOK 3D Basisvoorziening-terrein voor de voet per molen en het boezempeil",
+    "Wikimedia Commons: Kinderdijk - Molen Nederwaard 3.jpg, Kinderdijk, Overwaard molens no8tm3 RM30558tm3 en Nederwaard molens no5en4 RM30547+6 IMG 9372 2021-06-13 11.20.jpg, Wipmolen van de Blokweer, van de polder Alblasserdam - Kinderdijk - 20125314 - RCE.jpg"
+  ]
+}

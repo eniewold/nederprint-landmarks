@@ -1,0 +1,75 @@
+{
+  "name": "Carnaval Festival (Efteling)",
+  "file": "efteling-carnaval-festival.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131817,
+    407108
+  ],
+  "xAxis": [
+    0.97933,
+    0.20227
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38,
+      -26
+    ],
+    [
+      -24,
+      -22
+    ],
+    [
+      -12,
+      -21
+    ],
+    [
+      -2,
+      -22
+    ],
+    [
+      -48,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017621"
+  ],
+  "description": "Carnaval Festival in de Efteling (1984, entree 1998): oorsprong in de westhoek van de showhal op het maaiveld van het plein (NAP +9,45 m); +X langs de zuidgevel van de hal naar het oost-noordoosten, de entreegevel kijkt naar -Y (het plein). Vlakke showhal tot NAP +17,55 m met lichtstraten, ronde opstaphal (+16,45 m), entreegevel (+15,05 m) met het rode doek, de reuzenkop met hoge hoed tot circa NAP +18,45 m en Jokie, lage wachtrij en winkel Jokies Wereld (+14,15 m) met markies en kuif; onderkant 1,8 m onder het plein omdat het terrein achter de hal lager ligt; beschildering weggelaten.",
+  "realWorld": {
+    "hallFootprintMetres": [
+      50.5,
+      35
+    ],
+    "hallHeightMetres": 8.1,
+    "stationHeightMetres": 7,
+    "facadeWidthMetres": 20.8,
+    "facadeHeightMetres": 5.6,
+    "curtainWidthMetres": 6.4,
+    "curtainHeightMetres": [
+      4,
+      6.2
+    ],
+    "clownHatTopMetres": 9,
+    "queueAndShopHeightMetres": 4.7,
+    "shopCrestTopMetres": 7.1,
+    "awningDepthMetres": 1.3,
+    "exitBuildingHeightMetres": 2.8,
+    "plazaNapMetres": 9.45,
+    "rearGroundNapMetres": 7.8
+  },
+  "sources": [
+    "BAG-pand 0809100000017621 (contour, bouwjaar 1998)",
+    "AHN DSM/DTM 0,5 m (PDOK WCS): plein NAP +9,45 m, hal +17,55 m, opstaphal +16,45 m, entreegevel +15,05 m, wachtrij en winkel +14,15 m, uitgangsgebouwtje +12,25 m, kuif winkel circa +16,5 m, hoed +18,3 m, terrein achter de hal +7,8 m",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): lichtstraten, ventilatoren, luchtkanalen, lichtkoepels, markies, positie van hoed en Jokie",
+    "Wikimedia Commons, Category:Carnaval Festival en Category:Jokie (gevel), Reizenrijk - Jokies Wereld shop en Jokies Wereld P1660060 (winkel), Reizenrijk (2024) (hal van het zuiden)",
+    "Eftepedia, lemma Carnaval Festival (opbouw entree, wachtrij met boom door het dak, ronde opstaphal)"
+  ],
+  "groundHeight": 53.12,
+  "printFiles": [
+    "efteling-carnaval-festival-1-1000.stl"
+  ]
+}

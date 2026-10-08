@@ -1,0 +1,62 @@
+{
+  "name": "Kasteel Doornenburg",
+  "file": "kasteel-doornenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    197103.2,
+    434088
+  ],
+  "xAxis": [
+    0.961262,
+    -0.275637
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -13
+    ],
+    [
+      -11,
+      -12.5
+    ],
+    [
+      -11.5,
+      0
+    ],
+    [
+      5,
+      12.5
+    ]
+  ],
+  "groundHeight": 52.9,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1705100000019617"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (197103,2, 434088,0), midden in de hoofdburcht, op het maaiveld van het kasteeleiland (NAP +9,1 m), +X langs de zuidgevel (16 graden rechtsom vanaf de RD-X-as) en +Y loodrecht daarop naar de voorburcht. Een node building:kasteel uit dakvlakken en bouwdelen: muren tot de weergang met borstweringen en kantelen (noord en oost op een kraag), de zuidelijke dwarsvleugel met een trapgevel en een schild, twee noordelijke schilddaken, de toren in de westgevel met een steil schilddak, drie ronde hoektorentjes met achtkantige spitsen, dakkapellen, schoorstenen, erkers, vensternissen en de houten noord- en oostbrug op jukken. Onderkant 1 m onder het eiland; alle vlakken wijzen omhoog of staan verticaal, op het brugdek na. Vervangt de PDOK-reconstructie van de hoofdburcht. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-doornenburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 30.65,
+    "widthM": 38.8,
+    "highestPointM": 32.9,
+    "walkM": 17.4,
+    "southRidgeM": 25.2,
+    "northRidgesM": 24.1,
+    "towerRidgeM": 32.9,
+    "southEastSpireM": 27.5,
+    "northBridgeDeckM": 5.9,
+    "groundNapM": 9.1,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Doornenburg",
+    "PDOK BAG pand 1705100000019617 (de hoofdburcht), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken, weergang, torens, bruggen en het maaiveld van het eiland",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken, toren en spitsen",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de west-, zuidoost-, oost- en noordkant"
+  ]
+}

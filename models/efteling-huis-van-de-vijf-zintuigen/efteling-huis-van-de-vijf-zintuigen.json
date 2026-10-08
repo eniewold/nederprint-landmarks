@@ -1,0 +1,82 @@
+{
+  "name": "Huis van de Vijf Zintuigen (Efteling)",
+  "file": "efteling-huis-van-de-vijf-zintuigen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131227.3,
+    406805.1
+  ],
+  "xAxis": [
+    0.98629,
+    0.16505
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      19
+    ],
+    [
+      0,
+      21
+    ],
+    [
+      15,
+      19
+    ],
+    [
+      -14,
+      -19
+    ],
+    [
+      14,
+      -19
+    ],
+    [
+      -16,
+      -41
+    ],
+    [
+      16,
+      -41
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017169",
+    "NL.IMBAG.Pand.0809100000017876",
+    "NL.IMBAG.Pand.0809100000017878",
+    "NL.IMBAG.Pand.0809100000017880",
+    "NL.IMBAG.Pand.0809100000017882",
+    "NL.IMBAG.Pand.0809100000017883"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131227,3, 406805,1), op het snijpunt van de hoofdas met de lijn tussen de hoorns, op het maaiveld (NAP +8,9 m), +X dwars op de hoofdas naar de oosthoorn (9,5 graden vanaf de RD-X-as) en +Y langs de hoofdas naar de ingang aan de parkeerkant (noord-noordwest). Node building:entreegebouw: het rieten dak (61 x 37 m) met het middenschip tussen de voorpunt (+32,2 m) en de achterpunt boven de glasgevel (+27,2 m), de west- en oosthoorn (+31,9 en +28,4 m) met rietbanden, de muren met rondboognissen onder de dakrand (+4,4 m), de ingang met de houten boom en de glazen puntgevel; node building:winkel: de ronde winkel met de vijfde punt (+25,2 m) en dakkapellen en de verbindingsvleugel. Onderkant 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van de winkel en van de kassa- en poorthuisjes onder het dak. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "opening": 1996,
+    "ontwerper": "Ton van de Ven",
+    "rietdakM2": 4500,
+    "lengteM": 74.3,
+    "breedteM": 61.1,
+    "dakrandM": 4.4,
+    "voorpuntM": 32.2,
+    "achterpuntM": 27.2,
+    "westhoornM": 31.9,
+    "oosthoornM": 28.4,
+    "winkelpuntM": 25.2,
+    "nokSchipMinM": 18.9,
+    "winkelStraalM": 12.6,
+    "maaiveldNapM": 8.9
+  },
+  "sources": [
+    "AHN DSM/DTM 0,5 m (PDOK WCS): toppen, dakrand, dwarsprofielen van schip, hoorns, winkel en vleugel",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)",
+    "BAG-panden 0809100000017169 (winkel) en 0809100000017876, -17878, -17880, -17882, -17883 (kassa- en poorthuisjes onder het dak) via PDOK BAG WFS; PDOK 3D-gebouwtegels",
+    "nl.wikipedia.org/wiki/Huis_van_de_Vijf_Zintuigen",
+    "Wikimedia Commons: Category:The House of the Five Senses"
+  ],
+  "groundHeight": 52.63,
+  "printFiles": [
+    "efteling-huis-van-de-vijf-zintuigen-1-1000.stl"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Inntel Hotel Zaandam",
+  "file": "inntel-zaandam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    116158.79,
+    494630.03
+  ],
+  "xAxis": [
+    0.93909,
+    0.34366
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      -6
+    ],
+    [
+      -35,
+      -6
+    ],
+    [
+      -48,
+      -4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000080433"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (116158,79, 494630,03), in de toren, op het maaiveld (NAP +1,0 m), +X langs de vleugel naar het oostnoordoosten (20,1 graden vanaf het oosten) en +Y naar het noordnoordwesten. Eén node building:hotel met de hoteltoren op de BAG-contour tot de goot op NAP +34 m, een mansardedak rondom tot +38 m met de liftopbouw tot +40 m, en op de gevels vier rijen gestapelde huisgevels met een puntgevel (zo'n 5 m breed, per rij een halve breedte verspringend, 0,3 tot 0,9 m uit de gevel op een onderkant van 50 graden; de bovenste puntgevels tot +37 m voor het mansardedak), en de lage vleugel tot de goot op +11 m met per huisje een zadeldak dwars op de vleugel tot +15 m, met de puntgevel naar beide straten. Alles staat recht op of loopt onder 45 graden of steiler omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "inntel-zaandam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 71.58,
+    "widthM": 31.12,
+    "highestPointNapM": 40,
+    "towerEaveNapM": 34,
+    "towerRidgeNapM": 38,
+    "liftTopNapM": 40,
+    "wingEaveNapM": 11,
+    "wingRidgeNapM": 15,
+    "houseFronts": 78,
+    "groundNapM": 1,
+    "baseNapM": 0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Inntel_Hotel_Zaandam",
+    "PDOK BAG pand 0479100000080433, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goot, nok en liftopbouw van de toren, nokken van de vleugel, maaiveld",
+    "Wikimedia Commons: Inntel Hotels Amsterdam Zaandam.jpg, Zaanstad Inntel Hotel 01.jpg, 07.jpg en 10.jpg, Zaandam - Provincialeweg - View NNW on Inntel Hotel 2010 by Wilfried van Winden.jpg",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

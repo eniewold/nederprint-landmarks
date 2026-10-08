@@ -1,0 +1,71 @@
+{
+  "name": "Euromast",
+  "file": "euromast.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91651.25,
+    435615.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      13,
+      0
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      -13,
+      0
+    ],
+    [
+      0,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000661084"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de schacht op de vloer van het entreepaviljoen in de oorsprong, +X oost en +Y noord. Het Kraaiennest steekt het verst uit naar het zuiden en zuidwesten, de scheepsbrug op 32 m wijst naar het zuiden. Het maaiveld wordt op 13 m uit het hart bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0599100000661084. Nodenamen klasse:label bepalen de materiaalklasse.",
+  "printFiles": [
+    "euromast-1-1000.stl"
+  ],
+  "realWorld": {
+    "totalHeightM": 185,
+    "shaftDiameterM": 9,
+    "shipBridgeFloorM": 32,
+    "crowsNestUndersideM": 81.75,
+    "crowsNestRoofM": 92.95,
+    "crowsNestExtentM": [
+      28.3,
+      24.3
+    ],
+    "upperDeckTopM": 96.5,
+    "platformTopM": 107.3,
+    "spaceTowerDiameterM": 2.5,
+    "topHousingM": [
+      162,
+      167
+    ],
+    "antennaFrameTopM": 172.3,
+    "pavilionRadiusM": 11.8,
+    "pavilionHeightM": 4.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Euromast",
+    "https://en.wikipedia.org/wiki/Euromast",
+    "https://www.architectuur.org/bouwwerk/321/Euromast.html",
+    "https://wederopbouwrotterdam.nl/en/articles/euromast",
+    "PDOK BAG pand 0599100000661084 en BGT pand (voetafdruk paviljoen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor maaiveld, Kraaiennest, bovenverdieping, platform en top",
+    "Wikimedia Commons: Euromast @ Rotterdam (30546199846).jpg, Euromast @ Parkhaven @ Rotterdam (30604597745).jpg, Euromast @ Rotterdam (29972520534).jpg, Euromast @ Rotterdam (29970699683).jpg"
+  ]
+}

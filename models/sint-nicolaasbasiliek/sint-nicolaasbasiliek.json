@@ -1,0 +1,56 @@
+{
+  "name": "Sint-Nicolaasbasiliek",
+  "file": "sint-nicolaasbasiliek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121907.25,
+    487722.25
+  ],
+  "xAxis": [
+    0.490904,
+    -0.871214
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -40,
+      0
+    ],
+    [
+      -38,
+      -10
+    ],
+    [
+      -38,
+      10
+    ]
+  ],
+  "groundHeight": 45.23,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012165691",
+    "NL.IMBAG.Pand.0363100012182894"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121907,25, 487722,25), het midden van de vieringtoren, op het maaiveld (NAP +2,25 m), +X van het front aan de Prins Hendrikkade naar het koor (-60,6 graden vanaf de RD-X-as) en +Y loodrecht daarop. Node building:kerk: driebeukige kruiskerk onder één nok op +31,1 m met dakkapellen, zijbeuken en kapellen met eigen zadeldaken, een 3/8-sluiting, de achtkantige vieringtoren met koepel, lantaarn en kruis tot +58,5 m, en twee westtorens met klokkenverdieping, koepel en lantaarn tot +48,2 m. Node building:buurpand: het pand aan de zuidkant met twee zadeldaken. Onderkant 0,6 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van beide panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "sint-nicolaasbasiliek-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.6,
+    "widthM": 30.3,
+    "highestPointM": 58.5,
+    "domeTopM": 58.5,
+    "towerTopM": 48.2,
+    "ridgeM": 31.1,
+    "groundNapM": 2.25,
+    "baseM": -0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Co-kathedrale_basiliek_van_de_Heilige_Nicolaas",
+    "PDOK BAG panden 0363100012165691 (basiliek) en 0363100012182894 (buurpand aan de zuidkant), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, koepel, torens en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

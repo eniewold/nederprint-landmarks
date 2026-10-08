@@ -1,0 +1,55 @@
+{
+  "name": "Sint-Janskerk",
+  "file": "sint-janskerk-gouda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108610,
+    447146.5
+  ],
+  "xAxis": [
+    0.999391,
+    0.034899
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -70,
+      0
+    ],
+    [
+      -20,
+      31
+    ],
+    [
+      40,
+      22
+    ]
+  ],
+  "groundHeight": 43.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0513100011121085"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (108610, 447146,5), in het schip vlak voor het dwarsschip, op het maaiveld (NAP +0,1 m), +X langs de nok van schip en koor naar het oosten (2 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Een node building:kerk uit dakvlakken en bouwdelen: schip en koor onder één nok op +28,4 m met een 3/8-sluiting, dwarsschip met topgevels en dakruiter, rijen dwarse kappen (zadeldaken met een schild naar het schip en een topgevel naar buiten) op de zijbeuken, een kooromgang met straalsgewijze kappen, lage kapellen en bijgebouwen, en de westtoren met lantaarn en spits tot +49 m. Onderkant 0,8 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kerk. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "sint-janskerk-gouda-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 141.3,
+    "widthM": 52,
+    "highestPointM": 49,
+    "naveRidgeM": 28.4,
+    "aisleGableRidgeM": 19.8,
+    "towerTopM": 49,
+    "groundNapM": 0.1,
+    "baseM": -0.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Janskerk_%28Gouda%29",
+    "PDOK BAG pand 0513100011121085 (kerk met toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, kappen, toren en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

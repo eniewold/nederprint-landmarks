@@ -1,0 +1,68 @@
+{
+  "name": "Grote of Onze-Lieve-Vrouwekerk",
+  "file": "grote-kerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112595,
+    400194.2
+  ],
+  "xAxis": [
+    0.99919,
+    0.04013
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      30
+    ],
+    [
+      0,
+      -32
+    ],
+    [
+      50,
+      0
+    ],
+    [
+      -50,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000024659"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (112595, 400194,2), midden in het schip, op het maaiveld aan de westkant (NAP +3,3 m), +X langs de as naar het koor in het oosten (RD-richting 2,3 graden) en +Y naar het noorden; de toren staat aan de -X-kant. Eén node building: de kapellen (NAP +16,8 m) met een kapelgevel per travee (+19,8 m) en pinakels, de zijbeuken met lessenaarsdaken (+19,0 tot +17,8 m), luchtbogen langs het koor, de kooromgang met vijf straalkapellen, schip en koor onder één zadeldak (goot +24,5 m, nok +35,4 m) met vensternissen, het transept (nok +35,0 m) met hoekpinakels en vensters, de dakruiter met een uitje (+44 m) en de westtoren met vier geledingen tot +66 m met hoekpinakels en galmgaten, de achtkantige lantaarn tot +77 m en de bekroning met twee uien tot +97,6 m. Alles staat recht op of loopt schuin omhoog, behalve de omgang rond de lantaarn die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0758100000024659. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "grote-kerk-breda-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 83.8,
+    "widthM": 44.9,
+    "naveRidgeNapM": 35.4,
+    "aisleTopNapM": 19,
+    "chapelGableNapM": 19.8,
+    "towerTopNapM": 97.6,
+    "lanternNapM": [
+      66,
+      77
+    ],
+    "towerStagesNapM": [
+      34,
+      42,
+      58,
+      66
+    ],
+    "groundNapM": 3.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Breda)",
+    "PDOK BAG pand 0758100000024659 (contour en steunberen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen, rasters van de kapellen, omhullende van toren, lantaarn en bekroning, maaiveld",
+    "PDOK 3D Basisvoorziening gebouwen (LoD2.2), ter vergelijking",
+    "Wikimedia Commons: foto's van de toren, het koor en de kapellen (RCE en anderen)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

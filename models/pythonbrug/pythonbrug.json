@@ -1,0 +1,71 @@
+{
+  "name": "Pythonbrug",
+  "file": "pythonbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    125151.08,
+    487327.5
+  ],
+  "xAxis": [
+    -0.17219,
+    0.98506
+  ],
+  "groundOffsetMetres": -0.4,
+  "groundSamplePoints": [
+    [
+      -30.73,
+      10
+    ],
+    [
+      -30.73,
+      -10
+    ],
+    [
+      -0.73,
+      10
+    ],
+    [
+      -0.73,
+      -10
+    ],
+    [
+      29.27,
+      10
+    ],
+    [
+      29.27,
+      -10
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de as van het BGT-dek op de waterspiegel van het Spoorwegbassin (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de Panamakade op Sporenburg (RD-richting 99,9 graden vanaf het oosten) en +Y naar het westzuidwesten. Twee nodes: road:voetpad, de bovenste 0,5 m van het looppad tussen de wanden van kade tot kade met de attributen van het BGT-wegdeel op de brug in extras.attributes (bgt_functie voetpad op trap, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, de trog van twee naar boven uitwaaierende liggers (4,2 m breed aan de kades, 5 m in het midden) met het looppad ertussen, dat van de Stuurmankade (x = -45,7) over een lage boog op NAP +4,7 m en de poer naar de top op NAP +10,4 m (x = 6) en terug naar de Panamakade golft, de balustraden 1,1 m boven het looppad, de onderrand 1,3 m eronder en bij de poer en de landhoofden afbuigend tot op het beton, plus de ovale poer en de twee landhoofden. Het vakwerk is dicht (wanden van 0,9 tot 1,1 m) en de lantaarns zijn weggelaten; de export vult onder de vrije overspanningen een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; het PDOK-terrein legt dat op circa NAP 0,0 m, vandaar een verzinking van 0,4 m. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "pythonbrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 91.47,
+    "deckWidthM": 3.7,
+    "widthOverBalustradesM": {
+      "ends": 4.2,
+      "middle": 5
+    },
+    "walkwayTopNapM": 10.39,
+    "lowArchNapM": 4.7,
+    "clearanceAboveWaterM": 9.49,
+    "balustradeAboveWalkwayM": 1.1,
+    "pierFromSouthQuayM": 26,
+    "pierSizeM": [
+      9.6,
+      4.6
+    ],
+    "waterNapM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Pythonbrug",
+    "PDOK BGT overbruggingsdeel (dek 91,5 x 3,7 m, poer, landhoofden), EPSG:28992",
+    "PDOK BGT wegdeel G0363.ea9911faf7f643fbb1a0f44a50ccc507 (voetpad op trap, gesloten verharding, relatieve hoogteligging 1) voor het looppad",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het looppad, de balustraden, de poer en de kades",
+    "Wikimedia Commons: Pythonbrug, Amsterdam.jpg, 2021 Brug 1998 Pythonbrug, Asd (1).jpg, Pythonbrug.JPG"
+  ]
+}

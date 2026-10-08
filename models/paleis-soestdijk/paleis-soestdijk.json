@@ -1,0 +1,74 @@
+{
+  "name": "Paleis Soestdijk",
+  "file": "paleis-soestdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    147658.087,
+    467275.253
+  ],
+  "xAxis": [
+    -0.440879,
+    0.897566
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      22
+    ],
+    [
+      -60,
+      8
+    ],
+    [
+      60,
+      8
+    ],
+    [
+      -30,
+      57
+    ],
+    [
+      50,
+      58
+    ],
+    [
+      -80,
+      -16
+    ],
+    [
+      81,
+      -16
+    ]
+  ],
+  "groundHeight": 46.35,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0308100000022041"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (147658,09, 467275,25), op de symmetrieas midden op het voorplein tussen de middelpunten van de halfronde vleugels, op NAP +3,3 m, +X langs de voorgevel naar de Baarnse vleugel (116,16 graden vanaf de RD-X-as) en +Y naar de tuin. Een node building:paleis uit dakvlakken en bouwdelen: het corps de logis (voorgevel op y 34,6 m, goot +14,4 m, afgeknot schilddak tot +17,1 m, belvedère tot +22,4 m, achterbouw met mansardedak tot +18,9 m, schoorstenen tot +19,7 m, pilasters, portiek met balkon en bordes), de tussenvleugels (Soester kant dubbel zadeldak tot +10,6 m, Baarnse kant mansarde tot +11,5 m met drie dakkapellen en een portaal), de hoekpaviljoens (zadeldak tot +14,1 m met frontons), de halfronde vleugels (goot +8 m, plat dak +10,8 m, colonnade als zuilen voor een terugliggende gevel) en de eindpaviljoens (zadeldak tot +14,1 m met frontons); kroonlijsten en vensternissen in de gevels, lage terrassen aan de tuinzijde. Onderkant 1 m onder het nulpunt; alle vlakken wijzen omhoog, staan verticaal of hangen niet vlakker dan 51 graden. Vervangt de PDOK-reconstructie van het paleis. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "paleis-soestdijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 172.1,
+    "widthM": 63.95,
+    "highestPointM": 23.4,
+    "corpsEaveM": 14.4,
+    "corpsFlatRoofM": 17.1,
+    "belvedereTopM": 22.4,
+    "rearRoofTopM": 18.9,
+    "wingEaveM": 8,
+    "wingFlatRoofM": 10.8,
+    "pavilionRidgeM": 14.1,
+    "zeroNapM": 3.3,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paleis_Soestdijk",
+    "PDOK BAG pand 0308100000022041 (het hele paleis: corps de logis, tussenvleugels, paviljoens, halfronde vleugels en de aanbouwen aan de tuinzijde), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goten, nokken, platte daken, belvedère, schoorstenen, dakkapellen, portiek, bordes en het maaiveld; de cirkels van de halfronde vleugels uit de BAG-gevels en de randen van het platte dak",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van het voorplein, de colonnade, het portiek en de tuinzijde vanaf de vijver"
+  ]
+}

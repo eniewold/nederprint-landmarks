@@ -1,0 +1,65 @@
+{
+  "name": "Euroborg",
+  "file": "euroborg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    235474.5,
+    580618.3
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      100,
+      0
+    ],
+    [
+      0,
+      105
+    ],
+    [
+      -120,
+      0
+    ],
+    [
+      0,
+      -105
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010953806",
+    "NL.IMBAG.Pand.0014100010940730",
+    "NL.IMBAG.Pand.0014100010982616"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (235474,50, 580618,30) in het hart van de veldopening op het niveau van het plein rond het stadion (NAP +7,2 m), +X naar het oosten en +Y naar het noorden. Twee nodes: building:stadion, de achthoekige kom met één dak van negen vlakke facetten dat van +18,5 m aan de veldkant naar +14 m aan de buitenrand afloopt (de oostkant met een vleugel op +12,7 m), plus acht lichtramen tot +24,3 m, en building:torens, de twee kantoortorens van 71,2 m achter het zuideinde met verticale raamstroken van 0,35 m diep. Onderkant op 0,5 m onder het plein; alleen de bovenkant van de raamstroken is vlak. Vervangt de PDOK-reconstructie van de drie BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "euroborg-1-1000.stl",
+    "euroborg-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 206.54,
+    "widthM": 248.92,
+    "highestPointM": 71.2,
+    "capacity": 22500,
+    "fieldOpeningM": [
+      89.7,
+      124.2
+    ],
+    "roofInnerM": 18.5,
+    "roofOuterM": 14.6,
+    "towerHeightM": 71.2,
+    "plazaNapM": 7.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Euroborg",
+    "PDOK BAG panden 0014100010953806, 0014100010940730 en 0014100010982616, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de binnen- en buitenrand van het dak, de hoogtes, de lichtramen, de torens en het plein",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Baron 1898 (Efteling)",
+  "file": "efteling-baron-1898.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131693.83,
+    406620.01
+  ],
+  "xAxis": [
+    0.681998,
+    0.731354
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      9
+    ],
+    [
+      16,
+      -10
+    ],
+    [
+      40,
+      -18
+    ],
+    [
+      36,
+      20
+    ],
+    [
+      66,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000019756",
+    "NL.IMBAG.Pand.0809100000019757"
+  ],
+  "description": "Baron 1898 in de Efteling (B&M-duikachtbaan, 2015): oorsprong in het hart van de schachttoren op RD (131693,83, 406620,01), op het maaiveld (circa NAP +9,7 m); +X 47 graden linksom van de RD-x-as langs het station, de lift en de tunnel naar het noordoosten, +Y naar het noordwesten (plein). Schachttoren 14,5 bij 10 m met het dek op +28,8 m, seinpaal tot +31,8 m en twee rode schijven met medaillon; lift onder 45 graden naar +29,6 m, val van 87 graden in de schacht, Immelmann tot +24 m, zero-g-roll over het plein tot +14 m, scherpe spiraal, camelback tot +12,5 m, keerbocht en remmen; mijncomplex met ophaalgebouw (17,6 m), tongewelfhal (12,4 m), aanbouwen, directeurswoning met torentje en de schoorsteen tot +22 m. Baanhoogtes buiten de toren geschat uit foto's.",
+  "realWorld": {
+    "opened": "2015-07-01",
+    "manufacturer": "Bolliger & Mabillard (Dive Coaster)",
+    "trackLengthMetres": 501,
+    "liftHeightMetres": 30,
+    "dropMetres": 37.5,
+    "dropAngleDegrees": 87,
+    "speedKmh": 90,
+    "inversions": 2,
+    "towerDeckMetres": 28.8,
+    "towerFootprintMetres": [
+      14.5,
+      10
+    ],
+    "immelmannTopMetres": 24.2,
+    "zeroGRollTopMetres": 14,
+    "helixRadiusMetres": 9.5,
+    "chimneyMetres": 22,
+    "liftHouseRidgeMetres": 17.6,
+    "modelFootprintMetres": [
+      178,
+      52
+    ]
+  },
+  "sources": [
+    "BAG-panden 0809100000019756 (mijncomplex, bouwjaar 2015, 874 m²) en 0809100000019757 (schoorsteenhuisje, 2015, 36 m²) via de PDOK BAG-WFS",
+    "AHN DSM/DTM 0,5 m (PDOK WCS dsm_05m/dtm_05m): toren, dek, lift, gebouwhoogtes, schoorsteen, valschacht, tunnelput, lage baandelen en maaiveld (NAP +9,1 tot +10,5 m)",
+    "PDOK-luchtfoto 8 cm (Actueel_orthoHR): baanverloop, spiraal (straal 9,5 m), remmen, schijven en daken",
+    "https://nl.wikipedia.org/wiki/Baron_1898 (rit: lift van 45 graden naar 30 m, val van 37,5 m onder 87 graden, tunnel, Immelmann, zero-g-roll over het plein, spiraal, camelback, remmen; schachttoren, Melkhuysje, schoorsteenhuisje)",
+    "https://en.wikipedia.org/wiki/Baron_1898 (hoogte 30 m, val 37,5 m, lengte 501 m, 90 km/u, 2 inversies)",
+    "https://commons.wikimedia.org/wiki/Category:Baron_1898 (foto's van alle kanten)"
+  ],
+  "groundHeight": 53.36,
+  "printFiles": [
+    "efteling-baron-1898-1-1000.stl"
+  ]
+}

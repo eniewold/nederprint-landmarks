@@ -1,0 +1,59 @@
+{
+  "name": "De Valk",
+  "file": "molen-de-valk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93369.48,
+    464418.24
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      0,
+      -10
+    ],
+    [
+      -10,
+      -3
+    ],
+    [
+      8,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000044130"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93369,48, 464418,24) in het hart van de romp op het maaiveld van het bolwerk (NAP +3,3 m), +X naar het oosten en +Y naar het noorden. De molen loopt 1 m onder het maaiveld door; dat wordt op het bolwerk rond de molen bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0546100000044130. Ronde stenen romp, achtkante stelling als dichte plaat op een kraag van 50 graden, rietgedekte kap, staart, wiekenkruis als plaat in X-stand aan de oostkant en de aanbouw met zadeldak. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "molen-de-valk-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 27,
+    "rompRadiusBaseM": 6.36,
+    "rompRadiusTopM": 3.8,
+    "rompTopNapM": 27.5,
+    "stellingNapM": 16.4,
+    "stellingApothemM": 8.5,
+    "capTopNapM": 32.2,
+    "axleNapM": 29.8,
+    "groundNapM": 3.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Valk_(Leiden)",
+    "PDOK BAG pand 0546100000044130 (romp en aanbouw), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de kap, de stelling, de aanbouw en het maaiveld op het bolwerk",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de stand van kap en wieken",
+    "Wikimedia Commons: Leiden-Windmill-DeValk.JPG, Close-up van ronde stenen stellingmolen met aanbouw - AMR Molenfoto - 20540486 - RCE.jpg"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Mozesbrug",
+  "file": "mozesbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79635.82,
+    393875.645
+  ],
+  "xAxis": [
+    0.95473,
+    -0.29746
+  ],
+  "groundOffsetMetres": 0.671,
+  "groundHeight": 44.309,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      8,
+      0
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de trog midden boven de vestinggracht van Fort de Roovere op de waterspiegel (z = 0, NAP +0,5 m) in de oorsprong, +X langs de brug naar de buitenoever in het oostzuidoosten (RD-richting -17,3 graden vanaf het oosten) en +Y naar het noordnoordoosten. Drie nodes: building, de trog van twee damwanden van 51,6 m (x = -32,5 tot 19,1; binnen 1,0 m uit elkaar, voor het printen 0,9 m dik in plaats van 0,15 m) met de bovenkant over de gracht op NAP +0,85 m en langs de trappen evenwijdig aan de trap net boven de glooiing, plus de treden; road:voetpad, de bovenste 0,5 m van het bovenbordes in de wal (NAP +8,8 m) en het benedenbordes aan de gracht, en road:voetpad-op-trap, die van de westtrap (14 treden van 0,95 m), het looppad door de gracht en de oosttrap naar het pad op de buitenoever (NAP +3,4 m), elk met de attributen van het BGT-wegdeel in extras.attributes (voetpad of voetpad op trap, onverhard). Omdat het model niet in het PDOK-terrein kan snijden en dat de trog al als wegvlakken en dunne wanden bevat, ligt elke trede 6 cm boven het hoogste PDOK-wegvlak eronder (het looppad door de gracht op NAP +0,08 m in plaats van -0,30 volgens het AHN) en staan de wanden boven het PDOK-terrein en de PDOK-scheidingswanden. Het maaiveld wordt op het PDOK-looppad in de trog bemonsterd (laagste punt NAP -0,17 m), vandaar groundOffsetMetres 0,67. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "mozesbrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 51.62,
+    "walkwayWidthBgtM": 1.12,
+    "wallThicknessM": {
+      "real": 0.15,
+      "model": 0.9
+    },
+    "waterNapM": 0.5,
+    "walkwayNapM": {
+      "ahn": -0.3,
+      "model": 0.08
+    },
+    "wallTopOverWaterNapM": {
+      "ahn": 0.72,
+      "model": 0.85
+    },
+    "upperLandingNapM": 8.8,
+    "eastPathNapM": 3.4,
+    "westStairM": {
+      "length": 13.29,
+      "rise": 7.06,
+      "treads": 14
+    },
+    "eastStairM": {
+      "length": 7.9,
+      "rise": 3.32,
+      "treads": 8
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Fort_De_Roovere",
+    "PDOK BGT scheiding G0748.04144a2ebf0041298210402fd12035e0 en G0748.2586284ea06d42a4ba50de300fd1efec (muren van de trog), EPSG:28992",
+    "PDOK BGT wegdeel G0748.e3db4a2532a44f0e831b044cb51516e3 en G0748.fe36048e48d54f07ac20b5d53df84ca9 (voetpad, onverhard); G0748.fa354147176e46e0a42f1b8aa02dd80f, G0748.09de3f503e60415386bedc62dc21e028, G0748.bc4b29aebe6f4a5aa9a649ca399a62f5, G0748.95430c6cf6e549d094a2fd88c8cc92d7, G0748.98c14b789ae34752b45f48659b646522 en G0748.5cd326599fcf44948d64a759441f0670 (voetpad op trap, onverhard); alle met relatieve hoogteligging 0",
+    "PDOK AHN DSM 0,5 m via WCS voor de waterspiegel, het looppad, de wanden en de trappen",
+    "PDOK 3D-terreintegels voor de hoogte van de wegvlakken, de scheidingswanden en het terrein in en naast de trog",
+    "Wikimedia Commons: Digital Eye 2015 Moses's Bridge at Fort de Roovere-1.jpg en -7.jpg, Loopgraafbrug.JPG, SaillantZOBastionNOBastionGrachtLoopgraafbrugBuitenwerk.JPG"
+  ]
+}

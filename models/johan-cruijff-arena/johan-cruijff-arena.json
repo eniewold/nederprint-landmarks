@@ -1,0 +1,60 @@
+{
+  "name": "Johan Cruijff ArenA",
+  "file": "johan-cruijff-arena.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124633.636,
+    480804.44
+  ],
+  "xAxis": [
+    0.48481,
+    -0.87462
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -126.5,
+      35.4
+    ],
+    [
+      -96.3,
+      94.1
+    ],
+    [
+      51.5,
+      95.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012075730"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het veld op straatniveau (NAP -3,4 m) in de oorsprong, +X langs de lengteas van het veld (RD-richting -61 graden) en +Y dwars daarop. Het stadion is opgebouwd uit gladde vormen die op het AHN zijn gefit: superellips als dakrand, polynoom als dakvlak, de veldopening, de dakdelen, de spanten op vier torens en de bijgebouwen uit de BAG-contour. Vervangt de PDOK-reconstructie van BAG-pand 0363100012075730, een LoD1.1-blok zonder veldopening.",
+  "printFiles": [
+    "johan-cruijff-arena-1-1000.stl"
+  ],
+  "realWorld": {
+    "pitchM": [
+      105,
+      68
+    ],
+    "pitchNapM": 7.4,
+    "roofTopNapM": 56.2,
+    "oval": {
+      "a": 116,
+      "b": 88,
+      "n": 2.8
+    },
+    "trussTopNapM": 69.4,
+    "trussSpacingM": 118,
+    "towerTopNapM": 51.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Johan_Cruijff_ArenA",
+    "PDOK BAG pand 0363100012075730, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakrand, dakvlak, veldopening, dakdelen, spanten, torens, bijgebouwen en straatniveau",
+    "Mapbox Standard-landmarkmodel: alleen visueel vergeleken (dakvorm, spanten op torens), geen geometrie overgenomen",
+    "PDOK luchtfoto (Actueel_orthoHR): veld, spanten en dakdelen"
+  ]
+}

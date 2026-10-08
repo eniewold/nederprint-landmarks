@@ -1,0 +1,58 @@
+{
+  "name": "Grote of Sint-Jacobskerk",
+  "file": "grote-kerk-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    80961.3,
+    454897.72
+  ],
+  "xAxis": [
+    0.979045,
+    0.203642
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -50,
+      0
+    ],
+    [
+      -50,
+      15
+    ],
+    [
+      0,
+      -22
+    ],
+    [
+      40,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000269743"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (80961,30, 454897,72), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +3,2 m), +X naar het oosten (11,75 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden; de kerk zelf ligt 2,7 graden rechtsom van die as. Eén node building:kerk uit dakvlakken en bouwdelen: de hallenkerk met kruisdaken (langsnok en drie dwarse zadeldaken tot +23,7 m, goten op +13,9 m) en westtravee, het hoge koor met vijfzijdige sluiting (nok +34 m) met kooromgang en twee kapellen, de zeskantige toren in het westen met schaftdak, lantaarn en spits (tot +80,4 m), steunberen, dakruiter en lage aanbouwen. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "grote-kerk-den-haag-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 96.94,
+    "widthM": 44.98,
+    "highestPointM": 80.4,
+    "naveRidgeM": 23.65,
+    "choirRidgeM": 34.05,
+    "towerTopM": 80.4,
+    "groundNapM": 3.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Jacobskerk_%28Den_Haag%29",
+    "PDOK BAG pand 0518100000269743, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nok-, goot- en hellingsvlakken, torenprofiel en maaiveld",
+    "3D BAG (api.3dbag.nl) LoD2.2-daken van het pand voor de lage aanbouwen",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

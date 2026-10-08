@@ -1,0 +1,70 @@
+{
+  "name": "Muiderslot",
+  "file": "muiderslot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133468,
+    482984
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      40,
+      -13
+    ],
+    [
+      48,
+      0
+    ],
+    [
+      -48,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0424100000004154"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (133468, 482984), midden in het slot, op het maaiveld van de oever (NAP +1,3 m), +X naar het oosten en +Y naar het noorden. Twee nodes: building:slot met een plint rondom, de westvleugel met een geknikt zadeldak (nok +22 m, knik +18,1 m, goot +16,4 m), trapgevels aan de zuidkant en halverwege (brandmuur met schoorsteen, +24 m) en een schild aan de noordkant, de noordvleugel met een geknikt zadeldak (nok +15,4 m, goot +12,2 m), de oostvleugel met zadeldak (nok +12,8 m), een traptorentje met tentdak (+18,6 m), dakkapellen en schoorstenen, kroonlijsten op een schuine kraag, schoorsteenlisenen en vensternissen in de buitengevels, de gekanteelde weermuren aan de zuid- en oostkant (weergang +7,9 m, kantelen van 1,6 m breed en 1 m hoog op een uitkragende borstwering met schuine kraag, schietgaten als nissen), het vooruitspringende poortgebouw met de poortpartij (spitse doorgang in een sponning, sleuf van de ophaalbrug, spitse nissen onder de borstwering), een borstwering op een schuine kraag en een tentdak (nok +19,2 m) met twee dakkapellen, de vier ronde hoektorens met een borstwering op een schuine kraag en geknikte kegelspitsen (zuidwest tot +27,8 m met een traptorentje tot +25,6 m, zuidoost +24,5 m, noordwest +23 m) en de noordoosttoren met kantelen en een kegeldak (+20,8 m), rond de open binnenplaats (+2,1 m); road:brug, de brug van het poortgebouw naar de oostoever (dek +1,6 m) met borstweringen op de vaste delen. Alle onderdelen beginnen op NAP -1,5 m, onder het water van de slotgracht, die in het PDOK-terrein zit. Alles staat recht op, loopt schuin omhoog of rust op een kraag van 51 graden; alleen de vensternissen hebben een vlakke bovenkant van 0,35 m diep, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand van het slot. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "muiderslot-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthEastWestM": 58.88,
+    "lengthNorthSouthM": 48.54,
+    "wallWalkNapM": 7.9,
+    "merlonTopNapM": 8.9,
+    "merlonWidthM": 1.6,
+    "merlonCount": 21,
+    "courtyardNapM": 2.1,
+    "westWingRidgeNapM": 22,
+    "westWingKneeNapM": 18.11,
+    "stepGableTopNapM": 24,
+    "northWingRidgeNapM": 15.4,
+    "eastWingRidgeNapM": 12.8,
+    "gatehouseRidgeNapM": 19.2,
+    "gatehouseEaveNapM": 14.8,
+    "southWestTowerTipNapM": 27.8,
+    "southWestTurretTipNapM": 25.6,
+    "southEastTowerTipNapM": 24.5,
+    "northWestTowerTipNapM": 23,
+    "northEastTowerTipNapM": 20.8,
+    "bridgeDeckNapM": 1.6,
+    "groundNapM": 1.3,
+    "baseNapM": -1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Muiderslot",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30107",
+    "PDOK BAG pand 0424100000004154 (slot), EPSG:28992",
+    "PDOK BGT overbruggingsdeel: de brug van het poortgebouw naar de oostoever",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: geknikte dakprofielen per vleugel, trapgevels, schild, schoorstenen en dakkapellen, weermuren en kantelen, torens per straal, poortgebouw, binnenplaats en maaiveld",
+    "Wikimedia Commons: 20141028 Muiderslot vanuit het westen gezien.jpg; 20141028 Muiderslot vanuit het zuidoosten gezien.jpg; Muiden, Muiderslot. 09-05-2022. (actm.) 01, 03, 05 en 07; Muiderslot castle 2018 1 en 3; Exterieur OVERZICHT VOORGEVEL - Muiden - 20287199 - RCE.jpg (poortpartij); Muiderslot vanuit de polder.JPG; Muiderslot 2015.jpg",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)"
+  ]
+}

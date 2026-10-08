@@ -1,0 +1,66 @@
+{
+  "name": "Museum de Fundatie",
+  "file": "museum-de-fundatie.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202809.43,
+    502730.95
+  ],
+  "xAxis": [
+    0.85077,
+    -0.52547
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0.036,
+      18.534
+    ],
+    [
+      -0.004,
+      -20.983
+    ],
+    [
+      -21.962,
+      -9.98
+    ],
+    [
+      21.498,
+      6.05
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000042204"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong in het hart van de Wolk op RD (202809,43, 502730,95), op het maaiveld aan de Blijmarkt (NAP +3,2 m), +X langs de lengteas van het paleis naar het zuidoosten (RD-richting -31,7 graden) en +Y naar het noordoosten, de Blijmarkt. Eén node building: het Paleis aan de Blijmarkt (dak NAP +15,0 m) met de twee portieken onder het fronton (nok +16,4 m) en de aanbouw aan de noordwestkant, en de Wolk als ellipsoïde op het dak (evenaar +21,05 m, halve assen 17,69 en 12,16 m, top +29,0 m). De onderhelft van de Wolk hangt hooguit 42 graden over, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0193100000042204. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "museum-de-fundatie-1-1000.stl"
+  ],
+  "realWorld": {
+    "palaceM": [
+      38.14,
+      25.09
+    ],
+    "palaceRoofNapM": 15,
+    "pedimentRidgeNapM": 16.4,
+    "cloud": {
+      "lengthM": 35.38,
+      "widthM": 24.32,
+      "equatorNapM": 21.05,
+      "topNapM": 29.02,
+      "lowerSemiAxisM": {
+        "estimated": 12
+      }
+    },
+    "groundNapM": 3.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Museum_de_Fundatie",
+    "PDOK BAG pand 0193100000042204 (contour van paleis, portieken en aanbouw), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak, frontons, aanbouw, maaiveld en de bovenhelft van de Wolk (ellipsoïde-fit, rms 0,11 m)",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Museum de Fundatie Zwolle in 2021.jpg, De Fundatie, Zwolle.jpg, Basiliek van Onze-Lieve-Vrouw-Tenhemelopneming - Zwolle - View from the tower towards the southeast - De Fundatie.jpg"
+  ]
+}

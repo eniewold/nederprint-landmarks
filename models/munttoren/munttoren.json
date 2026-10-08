@@ -1,0 +1,68 @@
+{
+  "name": "Munttoren",
+  "file": "munttoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121354.79,
+    486689.1
+  ],
+  "xAxis": [
+    0.99939,
+    0.0349
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      6
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012168045",
+    "NL.IMBAG.Pand.0363100012253928"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121354,79, 486689,10), het hart van de ronde toren, op het maaiveld van het Muntplein (NAP +2,2 m), +X langs het wachthuis naar het oosten (2,0 graden vanaf het oosten) en +Y naar het noorden, het Muntplein. Node building:toren: de ronde bakstenen toren (straal 3,0 m) tot 14,4 m met de band, het aanbouwsel aan de noordwestkant en het portaaltje aan de zuidoostkant, de achtkante bovenbouw met spitsboognissen en de gootlijst op 20,4 m, de uurwerkgeleding met vier wijzerplaten, de lantaarn (dicht, met galmnissen) tot 28,5 m, de kroon, de bol en de windvaan tot 35,2 m (NAP +37,4 m). Node building:wachthuis aan -X: het wachthuis met zadeldak (goot 8,3 m, nok 13,2 m) en de tussenvleugel naar de toren (goot 6,8 m, nok 9,4 m) met de voetgangersdoorgang van 3,2 m breed. Alles begint 2,5 m onder het maaiveld; de doorgang is tot de onderkant open. Vervangt de PDOK-reconstructie van de twee BAG-panden van toren en wachthuis. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "munttoren-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 28.54,
+    "widthM": 8.18,
+    "totalHeightM": 35.2,
+    "highestPointNapM": 37.4,
+    "towerRadiusM": 3,
+    "brickTopM": 14.4,
+    "octagonCorniceM": 20.4,
+    "octagonAcrossFlatsM": 5.3,
+    "clockDialDiameterM": 2,
+    "lanternTopM": 28.5,
+    "lanternAcrossFlatsM": 3.6,
+    "guardhouseEaveM": 8.3,
+    "guardhouseRidgeM": 13.2,
+    "linkEaveM": 6.8,
+    "linkRidgeM": 9.4,
+    "passageWidthM": 3.2,
+    "passageApexM": 3.6,
+    "groundNapM": 2.2,
+    "baseM": -2.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Munttoren_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/3729",
+    "PDOK BAG panden 0363100012168045 (de toren) en 0363100012253928 (het wachthuis met de tussenvleugel), EPSG:28992",
+    "PDOK BGT pand en wegdeel: het wachthuis zonder de tussenvleugel en het voetpad door de doorgang",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: metselwerk, bovenbouw, lantaarn, kroon, daken en maaiveld",
+    "Wikimedia Commons: Amsterdam, Munttoren RM-3729-WLM.jpg, Amsterdam - Muntplein - View SW on Munttoren.jpg, Amsterdam - Vijzelstraat - View North on Munttoren.jpg",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

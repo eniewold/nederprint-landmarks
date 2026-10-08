@@ -1,0 +1,55 @@
+{
+  "name": "Paleis Huis ten Bosch",
+  "file": "huis-ten-bosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83497.4,
+    456603.5
+  ],
+  "xAxis": [
+    0.886204,
+    0.463296
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -16
+    ],
+    [
+      -22,
+      -8
+    ],
+    [
+      22,
+      -8
+    ]
+  ],
+  "groundHeight": 43.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000204917"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (83497,4, 456603,5), het hart van de koepel boven de Oranjezaal, op het maaiveld aan de tuinzijde (NAP +0,3 m), +X langs de gevels van het hoofdgebouw (27,6 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het voorplein. Een node building:paleis uit dakvlakken en bouwdelen: het hoofdgebouw met de hoekrisalieten, het fronton en de bordes aan de tuinzijde, het dakplat met vier schoorstenen en de achtkantige koepel met trommel, lantaarn en kroon (+28,4 m), het voorhuis met pilasters, kroonlijst, balustrade en bordestrap, de zijkamers, en per kant een binnenpaviljoen, een schuine vleugel en een eindpaviljoen met schilddaken, dakkapellen, schoorstenen, kroonlijsten en vensternissen. Onderkant 0,5 m onder het maaiveld; alle vlakken wijzen omhoog, staan verticaal of hangen niet vlakker dan 50 graden. Vervangt de PDOK-reconstructie van het paleis. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "huis-ten-bosch-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 116.1,
+    "widthM": 43.6,
+    "highestPointM": 28.4,
+    "domeTopM": 28.4,
+    "deckM": 18.7,
+    "wingRidgeM": 15.5,
+    "groundNapM": 0.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paleis_Huis_ten_Bosch",
+    "PDOK BAG pand 0518100000204917 (het paleis), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, dakplat, schoorstenen, koepel, voorhuis, vleugels en maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen van de leien daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van het voorplein, de tuinzijde en de koepel"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Kathedrale Basiliek Sint Bavo",
+  "file": "kathedraal-sint-bavo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102902.83,
+    487903.14
+  ],
+  "xAxis": [
+    0.981627,
+    -0.190809
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -62,
+      0
+    ],
+    [
+      10,
+      -38
+    ],
+    [
+      0,
+      42
+    ],
+    [
+      60,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000020499"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (102902,83, 487903,14), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +0,5 m), +X langs de as van het schip naar het oostzuidoosten (-11 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noordnoordoosten. Eén node building:kathedraal uit dakvlakken en bouwdelen: schip, dwarsschip en koor onder zadeldaken van 50 graden (nok +32 m), zijbeuken en buitenbeuken onder lessenaarsdaken, de koepel boven de viering met trommel (tot +58 m), vier torentjes op de viering en de dwarsschipgevels, het koor met de apsis onder een kegeldak, zeven straalkapellen met kegelvormige uiteinden en steunberen, de twee platte westtorens (+53,5 m) met het westwerk en het bisschoppelijk huis aan de zuidoostzijde. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kathedraal-sint-bavo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 109.55,
+    "widthM": 68.95,
+    "highestPointM": 58.3,
+    "naveRidgeM": 32.15,
+    "naveEaveM": 22.5,
+    "aisleRoofM": [
+      7,
+      18
+    ],
+    "towersTopM": 53.5,
+    "domeTopM": 58.3,
+    "groundNapM": 0.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kathedrale_basiliek_Sint_Bavo",
+    "PDOK BAG pand 0392100000020499, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: vlakfits van de dakvlakken, het radiale profiel van de koepel en de maaiveldhoogte",
+    "PDOK luchtfoto (Actueel_orthoHR) en foto's van Wikimedia Commons (o.a. RCE) voor de opbouw van het koor en de kapellen"
+  ]
+}

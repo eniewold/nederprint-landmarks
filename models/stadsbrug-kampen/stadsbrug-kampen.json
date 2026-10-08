@@ -1,0 +1,96 @@
+{
+  "name": "Stadsbrug Kampen",
+  "file": "stadsbrug-kampen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191081.64,
+    508147.19
+  ],
+  "xAxis": [
+    0.81379,
+    0.58111
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.31,
+  "groundSamplePoints": [
+    [
+      -100,
+      25
+    ],
+    [
+      -100,
+      -25
+    ],
+    [
+      -60,
+      25
+    ],
+    [
+      -60,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      40,
+      25
+    ],
+    [
+      40,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0166100000030487"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de IJssel (NAP -0,31 m zoals het PDOK-terrein die legt, z = NAP + 0,31) in de oorsprong, +X langs de brug naar het noordoosten (de oostoever bij het station, RD-richting 35,53 graden vanaf het oosten) en +Y naar het noordwesten, stroomafwaarts. Vier nodes: road:rijbaan, road:fietspad en road:voetpad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van de hefbrug van de IJsselkade (x = -140,2) tot de dijk aan de oostkant (x = 79,2). De vier heftorens van 4,0 × 4,25 m schrijlings op de dekranden als raamwerk met nissen, een spitse doorgang voor het voetpad, een kop met twee wielen van 3,6 m met acht spaken (top NAP +22,9 m) en het contragewicht aan de landzijde in gesloten stand; het hefdeel van 31 m tussen de voegen op x = ±15,5; de rivierpijlers (BGT) tot NAP +3,9 m met de bovenbouw onder de aanbruggen, het bedieningsgebouw (BAG-pand) op de noordwestpunt van de oostelijke pijler met glazen band, dakrand en koepel tot NAP +13,36 m en drie dienstplatforms op de andere pijlerpunten; de aanbruggen als plaat met liggers op kolompijlers met een kesp en vier ronde kolommen (vier velden aan de westkant, twee aan de oostkant); de vijf schanscaissons in de rivier (BGT). Het wegdek ligt op NAP +4,05 m aan de IJsselkade, +7,33 m bij de westelijke pijler, +6,67 m bij de oostelijke en +4,66 m op de dijk. Schampkanten in plaats van de glazen leuningen. Lantaarns, verkeerslichten, slagbomen, portalen, de kabels, de stalen frames op de pijlerpunten, het houten remmingwerk en de meerpalen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stadsbrug-kampen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 219.4,
+    "deckWidthM": 20.2,
+    "liftSpanM": 31,
+    "towerTopNapM": 22.9,
+    "towerFootprintM": [
+      4,
+      4.25
+    ],
+    "wheelDiameterM": 3.6,
+    "counterweightNapM": [
+      15.3,
+      18.6
+    ],
+    "cabinTopNapM": 13.36,
+    "pierTopNapM": 3.9,
+    "columnPierX": [
+      -110.3,
+      -80.4,
+      -50.5,
+      46
+    ],
+    "deckNapM": {
+      "westNap": 4.05,
+      "westPierNap": 7.33,
+      "eastPierNap": 6.67,
+      "eastNap": 4.66
+    },
+    "waterNapM": -0.31
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadsbrug_(Kampen)",
+    "PDOK BGT overbruggingsdeel (dek, rivierpijlers), wegdeel (rijbaan, fietspaden, voetpaden op het dek), kunstwerkdeel (schanscaissons), EPSG:28992",
+    "PDOK BAG pand 0166100000030487 (bedieningsgebouw)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de torens, de contragewichten, de pijlers, de platforms en het bedieningsgebouw",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de wielen, contragewichten, platforms en het dak van het bedieningsgebouw",
+    "Wikimedia Commons: Kampen, stadsbrug. 10-01-2022. (actm.) 01 en 02.jpg, Kampen, de Stadsbrug foto10 2016-02-17 10.35.jpg, Kampen - stadsbrug - 2017.jpg, Stadsbrug bridge Kampen 2019.jpg, 2019 3.jpg en 2019 5.jpg, Kampen stadsbrug hefgedeelte.jpg, Kampen Hefbrug.jpg, Kampen - stadsbrug.JPG, Stadsbrug Kampen - schanscaissons oostzijde.jpg, Stadbrug Kampen - Schanscaisson - westzijde.jpg"
+  ]
+}

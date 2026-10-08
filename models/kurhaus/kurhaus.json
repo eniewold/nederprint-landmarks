@@ -1,0 +1,57 @@
+{
+  "name": "Kurhaus",
+  "file": "kurhaus.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79287.66,
+    458896
+  ],
+  "xAxis": [
+    0.68962,
+    0.72417
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -40,
+      -20
+    ],
+    [
+      30,
+      -20
+    ],
+    [
+      -6,
+      -32
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000205738"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (79287,66, 458896,00), in het middenblok, op het maaiveld van het Gevers Deynootplein (NAP +9,0 m), +X langs de hoofdvleugel naar het noordoosten (46,4 graden vanaf het oosten) en +Y naar het noordwesten, de zee. Eén node building:kurhaus: de hoofdvleugel (goot NAP +29 m, flauw schilddak met plat bovendak op +33 m) met blinde vensters op drie verdiepingen in de pleingevel, de twee kopvleugels naar zee (zadeldak tot +34 m), het middenblok (+31,5 m) met de achtkante koepel (tambour tot +39,5 m, koepel tot +45,5 m, lantaarn tot +51 m en spits tot +56 m) en vier hoektorentjes (tot +37,5 m), het portaal aan het plein en de lage vleugels en het paviljoen naar zee op de BAG-contour (+10,5 tot +16,5 m). Alles staat recht op of loopt omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kurhaus-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 141.53,
+    "widthM": 84.09,
+    "highestPointNapM": 56,
+    "mainEaveNapM": 29,
+    "mainRoofNapM": 33,
+    "endWingRidgeNapM": 34,
+    "domeDrumNapM": 39.5,
+    "lanternTopNapM": 51,
+    "spireNapM": 56,
+    "turretTopNapM": 37.5,
+    "groundNapM": 9,
+    "baseNapM": 8.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kurhaus_(Scheveningen)",
+    "PDOK BAG pand 0518100000205738, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goten, nokken, koepel, torentjes, lage vleugels en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

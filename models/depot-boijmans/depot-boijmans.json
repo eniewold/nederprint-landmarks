@@ -1,0 +1,67 @@
+{
+  "name": "Depot Boijmans Van Beuningen",
+  "file": "depot-boijmans.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91976.83,
+    436543.305
+  ],
+  "xAxis": [
+    0.94609,
+    0.32392
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      23.33,
+      23.33
+    ],
+    [
+      -23.33,
+      23.33
+    ],
+    [
+      -23.33,
+      -23.33
+    ],
+    [
+      23.33,
+      -23.33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100015964"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de kom op het maaiveld van het Museumpark (NAP -1,1 m) in de oorsprong, +X langs de lange balk van het kruisvormige dakpaviljoen naar het oostnoordoosten (RD-richting 18,9 graden linksom vanaf het oosten) en +Y naar het noordnoordwesten. Node building: de spiegelende kom die van 41,6 m aan de voet uitbolt tot 60,1 m, het platte dak met de borstwering, het kruisvormige dakpaviljoen met de glazen gevel onder de dakrand, de schuine lichtkap en vijf installatiekasten, en de hoofdingang aan de noordkant als nis van 10 m breed en 0,8 m diep tot 4 m hoog, met een trede van 0,4 m tot 4,4 m. Node vegetation: de plantvakken van de daktuin, 0,5 m boven het dak, met een verborgen kern binnen de kom waarop ze in de export steunen; de berken zelf zijn weggelaten. Vervangt de PDOK-reconstructie van BAG-pand 0599100100015964; de parkeergarage Museumpark (0599100000423762) ligt er ondergronds naast en raakt de omtrek over 11 m2.",
+  "printFiles": [
+    "depot-boijmans-1-1000.stl"
+  ],
+  "realWorld": {
+    "footDiameterM": 41.6,
+    "topDiameterM": 60.1,
+    "parapetM": 35.3,
+    "roofM": 34.05,
+    "gardenTopM": 34.55,
+    "gardenAreaM2": 762,
+    "pavilionM": [
+      45.8,
+      44.8
+    ],
+    "pavilionTopM": 40.05,
+    "skylightTopM": 40.95,
+    "plantTopM": 41.9,
+    "maxFacadeLeanDeg": 37.3,
+    "entranceAzimuthDeg": 95,
+    "groundNapM": -1.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Depot_Boijmans_Van_Beuningen",
+    "https://www.mvrdv.com/projects/10/depot-boijmans-van-beuningen",
+    "PDOK BAG pand 0599100100015964 (grootste omtrek) en BGT pand (voet), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak, borstwering, dakpaviljoen met lichtkap en installatiekasten, maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): plantvakken, terrassen en paden van de daktuin, dakrand en details van het paviljoen",
+    "Wikimedia Commons: Depot Boijmans van Beuningen 2025 (Osten).jpg, 2025DepotBoijmans.jpg, Rotterdam Depot Boijmans Van Beuningen seen from the south.jpg, Depot Boijmans van Beuningen von Westen 2025.jpg, Boijmans Depot, Rotterdam, September 2024 01.jpg en 06.jpg (hoofdingang), Depot Boijmans Van Beuningen in aanbouw 08.jpg"
+  ]
+}

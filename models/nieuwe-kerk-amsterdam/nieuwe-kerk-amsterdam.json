@@ -1,0 +1,61 @@
+{
+  "name": "Nieuwe Kerk",
+  "file": "nieuwe-kerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121259.4,
+    487454.3
+  ],
+  "xAxis": [
+    0.953717,
+    0.300706
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -52,
+      0
+    ],
+    [
+      -50,
+      -12
+    ],
+    [
+      -12,
+      -28
+    ],
+    [
+      0,
+      -36
+    ]
+  ],
+  "groundHeight": 44.88,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012169079",
+    "NL.IMBAG.Pand.0363100012169014"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121259,4, 487454,3), het midden van de viering, op het maaiveld aan de Dam (NAP +1,9 m), +X langs de nok van schip en koor naar het oosten (17,5 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Node building:kerk uit dakvlakken en bouwdelen: schip, dwarsschip en koor onder één nok op +35,4 m (57 graden) met een borstwering en pinakels, een koorsluiting van vijf zijden van een twaalfhoek met kooromgang en vijf straalkapellen, zijbeuken en kapellen met lessenaars- en schilddaken, topgevels, twee hoektorens met spitsen tot +37 m en het westportaal, het zuidportaal en de dakruiter tot +56,2 m. Node building:kerkmeesterskamer: het aangebouwde pand aan de Dam met schilddak en dakkapellen. Onderkant 0,8 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van beide panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "nieuwe-kerk-amsterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 95.9,
+    "widthM": 63.6,
+    "highestPointM": 56.2,
+    "naveRidgeM": 35.4,
+    "eaveM": 22.77,
+    "parapetM": 25.8,
+    "flecheTopM": 56.2,
+    "groundNapM": 1.9,
+    "baseM": -0.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_Kerk_%28Amsterdam%29",
+    "PDOK BAG panden 0363100012169079 (kerk) en 0363100012169014 (kerkmeesterskamer), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, kapellen en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van de Dam, de Nieuwezijds Voorburgwal en de Eggertstraat"
+  ]
+}

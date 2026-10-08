@@ -1,0 +1,77 @@
+{
+  "name": "Danse Macabre (Efteling)",
+  "file": "efteling-danse-macabre.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131558.2,
+    406711.5
+  ],
+  "xAxis": [
+    0.993572,
+    0.113203
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -20
+    ],
+    [
+      -10,
+      -17.3
+    ],
+    [
+      10,
+      -17.3
+    ],
+    [
+      -17.3,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000020767"
+  ],
+  "description": "Danse Macabre in de Efteling (2024, op de plek van het Spookslot): oorsprong in het hart van de tienhoekige showhal op RD (131558,20, 406711,50), op het maaiveld (circa NAP +9,2 m); +X 6,5 graden linksom van de RD-x-as, de voorzijde met de grote puntgevel en het maaswerkvenster kijkt naar -Y (zuid-zuidoost, Abdijplein). Tienhoekige onderbouw (33,3 m) met rondboogfries tot 10 m, terugliggende lichtbeuk (27,4 m) met spitsboognissen, steunberen en kroonlijst tot 15,6 m, laag piramidedak tot 18,3 m, pinakels tot 21,2 m; gevels van de oude Spookslot-entree aan de voet, platte bijgebouwen binnen het BAG-pand en een geruïneerde ronde toren ten noorden. Hoogtes geschat uit foto's (het AHN is van voor de bouw).",
+  "realWorld": {
+    "lowerAcrossFlatsMetres": 33.3,
+    "lowerSideMetres": 10.8,
+    "lowerHeightMetres": 10,
+    "clerestoryAcrossFlatsMetres": 27.4,
+    "clerestoryHeightMetres": 15.6,
+    "roofApexMetres": 18.3,
+    "cornerCapMetres": 17.8,
+    "pinnacleTopMetres": 21.2,
+    "frontGableMetres": [
+      9,
+      8.2
+    ],
+    "annexHeightsMetres": {
+      "oost": 8.6,
+      "noord": 6,
+      "noordwest": [
+        7,
+        5
+      ]
+    },
+    "ruinTowerDiameterMetres": 5.4,
+    "ruinTowerHeightMetres": 12.5,
+    "turntableDiameterMetres": 18,
+    "groundNapMetres": 9.2,
+    "baseMetres": -0.5
+  },
+  "sources": [
+    "BAG-pand 0809100000020767 (contour, bouwjaar 2025, 1201 m²): tienhoekfit, hart RD (131558,20, 406711,50), apothema 16,67 m, restfout 7 cm",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): lichtbeuk, dakring, naaf, bijgebouwen, ruïnetoren",
+    "PDOK 3D-gebouwtegel: LoD1.1-blok van 16 m voor pand 0809100000020767",
+    "AHN DTM 0,5 m (PDOK WCS, van voor de bouw): maaiveld NAP +9,1 tot +9,3 m aan de zuid- en westkant",
+    "https://nl.wikipedia.org/wiki/Danse_Macabre_(Efteling)",
+    "Wikimedia Commons, Category:Danse Macabre (Efteling): Danse Macabre (2024).jpg, Danse Macabre.jpg, Efteling Danse Macabre (5) en (7), bouwfoto's Danse Macabre (Efteling) (1)–(4)"
+  ],
+  "groundHeight": 52.82,
+  "printFiles": [
+    "efteling-danse-macabre-1-1000.stl"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Kasteel Heeswijk",
+  "file": "kasteel-heeswijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    158752,
+    407454
+  ],
+  "xAxis": [
+    0.97437,
+    0.224951
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -21
+    ],
+    [
+      -20,
+      -10
+    ],
+    [
+      22,
+      -8
+    ],
+    [
+      0,
+      25
+    ]
+  ],
+  "groundHeight": 49.59,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1721100000001582"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (158752, 407454), midden in het hoofdgebouw, op het water van de slotgracht (NAP +5,6 m), +X langs de nokken van het hoofdgebouw (13 graden linksom vanaf de RD-X-as) en +Y loodrecht daarop. Een node building:kasteel uit dakvlakken en bouwdelen: het hoofdgebouw met twee evenwijdige schilddaken en een arm naar de noordoosttoren, de oostvleugel, de galerij met topgeveltjes, de zeskante IJzertoren met traptorentje, de ronde noordwest- en noordoosttoren met kegelspitsen, vijf torentjes, dakkapellen, schoorstenen, de erker, het kasteeleiland met borstweringen en de gemetselde boogbrug naar het voorplein. Onderkant 1 m onder het water; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het kasteel; de voorburcht blijft PDOK-model. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-heeswijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.45,
+    "widthM": 41.44,
+    "highestPointM": 31.4,
+    "frontRidgeNapM": 27,
+    "rearRidgeNapM": 30.5,
+    "eastRidgeNapM": 20.7,
+    "ijzertorenTopNapM": 35.4,
+    "northWestTowerTopNapM": 37,
+    "waterNapM": 5.6,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Heeswijk",
+    "PDOK BAG pand 1721100000001582 (het kasteel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, torens, binnenplaats, brug en het water van de gracht",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken, de zeskante spits van de IJzertoren",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de zuid-, zuidwest-, zuidoost-, west- en noordwestkant"
+  ]
+}

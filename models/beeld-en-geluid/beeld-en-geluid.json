@@ -1,0 +1,61 @@
+{
+  "name": "Beeld en Geluid",
+  "file": "beeld-en-geluid.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    140373.47,
+    471950.63
+  ],
+  "xAxis": [
+    0.964095,
+    0.265556
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -31,
+      -15
+    ],
+    [
+      -31,
+      0
+    ],
+    [
+      -4,
+      -42
+    ],
+    [
+      11,
+      -42
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0402100001624069",
+    "NL.IMBAG.Pand.0402100001617959"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (140373,47, 471950,63), het hart van de kubus, op het maaiveld (NAP +5,1 m), +X langs de gevels naar het oosten (15,4 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:kubus: de vierkante kubus van 55,2 m met een vlak dak op +28,4 m, een lage rand van 2 m breed tegen de zuidoosthoek (+9,2 m) en vier dakopstanden. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kubus en van het ondergrondse pand eromheen. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "beeld-en-geluid-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 57.3,
+    "widthM": 57.4,
+    "highestPointM": 30.4,
+    "cubeM": [
+      55.2,
+      55.2
+    ],
+    "roofM": 28.4,
+    "rimM": 9.2,
+    "groundNapM": 5.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nederlands_Instituut_voor_Beeld_en_Geluid",
+    "PDOK BAG panden 0402100001624069 en 0402100001617959, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: het dak, de zijden en het maaiveld rond de voet",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

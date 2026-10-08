@@ -1,0 +1,58 @@
+{
+  "name": "Ridderzaal",
+  "file": "ridderzaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81364.57,
+    455124.3
+  ],
+  "xAxis": [
+    0.86541,
+    0.50106
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      20,
+      13.5
+    ],
+    [
+      28,
+      -13.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000211472"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (81364,57, 455124,30), midden op de voorgevel van de Ridderzaal, op het maaiveld (NAP +2,7 m), +X langs de as van de zaal van de voorgevel naar achteren (RD-richting 30,07 graden, naar het oostnoordoosten) en +Y naar het noordnoordwesten; de voorgevel met de twee torens kijkt naar het Binnenhof (west-zuidwest), de noordtoren met het uurwerk staat aan de +Y-kant. Eén node building: alles binnen de BAG-contour tot NAP +5 m, de zaal van 40,8 bij 20,3 m onder een zadeldak van 59 graden (goot +14,2 m, nok +31,3 m) met twee rijen dakkapellen per dakvlak en de steunberen langs de zijgevels, de voorgevel met de topgevel, het roosvenster, twee spitsboognissen en twee vensters als nissen en het portaal met zadeldakje tot +12 m, de noordtoren (rond, 4,4 m, bovenrand die 0,3 m uitkraagt tot +29,8 m, spits en naald tot NAP +38,8 m) en de zuidtoren (rond, 4,4 m, rand onder 45 graden tot +26,4 m, kegelspits en naald tot +37,9 m) op de hoeken van de voorgevel, de lage vleugels naast de torens met schilddaken (nok +15,7 en +11,3 m), en achter de zaal de tussenbouw met een hoge noordvleugel (nok +27,5 m), het ronde traptorentje met spits tot +35,9 m, de dwarsvleugel (nok +27 m) en de vleugel langs de as (nok +25,4 m) die binnen hetzelfde BAG-pand liggen. Alles staat recht op of loopt schuin omhoog, behalve de bovenrand van de noordtoren die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0518100000211472; de rest van het Binnenhof blijft PDOK. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ridderzaal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 75.88,
+    "widthM": 35.37,
+    "hallLengthM": 40.8,
+    "hallWidthM": 20.3,
+    "hallEaveNapM": 14.2,
+    "hallRidgeNapM": 31.3,
+    "northTowerTipNapM": 38.8,
+    "southTowerTipNapM": 37.9,
+    "stairTowerTipNapM": 35.9,
+    "crossWingRidgeNapM": 27,
+    "groundNapM": 2.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Ridderzaal",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17475",
+    "PDOK BAG pand 0518100000211472 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofiel van het zaaldak, dakkapellen, portaal, toppen van de torens, daken achter de zaal, maaiveld",
+    "Wikimedia Commons: frontale foto's van de voorgevel (Denhaag ridderzaal.jpg; The Hague Binnenhof - Ridderzaal.jpg)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

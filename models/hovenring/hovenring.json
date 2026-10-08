@@ -1,0 +1,62 @@
+{
+  "name": "Hovenring",
+  "file": "hovenring.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    157232.38,
+    382695.58
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      11.27,
+      16.52
+    ],
+    [
+      -16.52,
+      11.27
+    ],
+    [
+      -11.27,
+      -16.52
+    ],
+    [
+      16.52,
+      -11.27
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (157232,38, 382695,58), in het hart van de ring aan de voet van de pyloon, op het verdiepte wegdek onder de ring (NAP +18,9 m), +X naar het oosten en +Y naar het noorden. Twee nodes: road:fietspad, de bovenste 0,5 m van het dek op het BGT-fietspad (ring van straal 31,0 tot 35,45 m en de vier aanbruggen, buiten straal 32,6 m het hele dek waar dat dunner is dan 0,5 m) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest, met de binnenrand van het dek en de randstroken die geen wegdeel zijn. Samen: het ringvormige dek (binnenstraal 27,15 m, buitenstraal 36 m, fietspad op +5,75 m, NAP +24,65 m) met een onderkant die naar binnen toe van 0,2 tot 1,33 m dik wordt, vier aanbruggen van 5,45 m breed naar de landhoofden op 50 m uit het hart in de richtingen 10,7 + k·90 graden, de pyloon van 70 m met een ronde barrière aan de voet, en 24 tuien als staven van 1 m naar de pyloon op 54 en 57 m. Het dek zweeft 4,4 m boven het wegdek; de export vult daaronder een wig van 45 graden met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Leuningen, het lamellenvlak, de M-vormige steunpunten en de trillingsdempers zijn weggelaten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hovenring-1-1000.stl"
+  ],
+  "realWorld": {
+    "ringOuterDiameterM": 72,
+    "ringInnerDiameterM": 54.3,
+    "deckWidthM": 8.85,
+    "deckNapM": 24.65,
+    "clearanceM": 4.42,
+    "armWidthM": 5.45,
+    "armEndRadiusM": 50,
+    "pylonHeightM": 70,
+    "cableAnchorHeightsM": [
+      54,
+      57
+    ],
+    "cables": 24,
+    "groundNapM": 18.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hovenring",
+    "https://en.wikipedia.org/wiki/Hovenring",
+    "Infosteel, Staalbouwwedstrijd 2012, laureaat categorie E: Fietsrotonde Hovenring in Eindhoven (dwarsdoorsnede van het dek, overzicht met pyloon, tuien, aanbruggen en landhoofden)",
+    "PDOK BGT overbruggingsdeel (dek: ring en vier aanbruggen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dek, aanbruggen, wegdek onder de ring, pyloon",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de richtingen van de tuien en de barrière rond de pyloon"
+  ]
+}

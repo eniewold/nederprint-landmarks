@@ -1,0 +1,62 @@
+{
+  "name": "Eusebiuskerk",
+  "file": "eusebiuskerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    190932,
+    443533.5
+  ],
+  "xAxis": [
+    0.99985,
+    -0.01745
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      32
+    ],
+    [
+      0,
+      -32
+    ],
+    [
+      48,
+      -4
+    ],
+    [
+      -50,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000253372"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (190932, 443533,5), midden in het schip, op het maaiveld aan de oostkant (NAP +12,7 m), +X langs de as naar het koor in het oosten (RD-richting -1,0 graad) en +Y naar het noorden; de toren staat aan de -X-kant. Eén node building: zijbeuken met lessenaarsdaken (NAP +28,5 tot +33,3 m), middenschip en koor onder één zadeldak (goot +40,5 m, nok +49,6 m) met afgeschilde koorsluiting, transept (nok +50,0 m) met dakruiter, lage kapellen en portalen, en de westtoren in vier geledingen tot +108,4 m. Alles staat recht op of loopt schuin omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0202100000253372. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "eusebiuskerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 84.4,
+    "widthM": 52.8,
+    "naveRidgeNapM": 49.6,
+    "aisleEaveNapM": 28.5,
+    "towerTopNapM": 108.4,
+    "towerStagesNapM": [
+      52,
+      64,
+      72,
+      95,
+      99
+    ],
+    "groundNapM": 12.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Eusebiuskerk",
+    "PDOK BAG pand 0202100000253372 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van schip, zijbeuken, transept en koor, omhullende per hoogte van de toren, kapellen, portalen en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

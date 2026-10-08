@@ -1,0 +1,60 @@
+{
+  "name": "Grote of Onze-Lieve-Vrouwekerk",
+  "file": "grote-kerk-dordrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104898.5,
+    425308.7
+  ],
+  "xAxis": [
+    0.98294,
+    -0.18395
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      32
+    ],
+    [
+      -64,
+      0
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      16,
+      -24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0505100000013404",
+    "NL.IMBAG.Pand.0505100000013971"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (104898,5, 425308,7), midden in de kerk, op het maaiveld aan de zuidkant (NAP +2,6 m), +X langs de as naar het koor in het oostzuidoosten (RD-richting -10,6 graden) en +Y naar het noordnoordoosten; de toren staat aan de -X-kant. Eén node building: lage kapellen en aanbouwen (NAP +9,5 m), zijbeuken met lessenaarsdaken en een topgevel per travee, luchtbogen met pinakels, kapellen langs het koor, de kooromgang met vijf straalkapellen onder tentdaken, schip en koor onder één zadeldak (goot +28,8 m, nok +39,0 m) met afgeschilde koorsluiting, het transept met hoekpinakels (nok +38,0 m) en de dakruiter (+56 m), het Mariakoor (nok +29,2 m) en de stompe westtoren met verspringende hoeksteunberen, nissen voor westvenster en galmgaten, het platform op +55,4 m met balustrade en hoekpinakels en de uurwerkstoel met vier uurwerkpaviljoens tot +66 m. Alles staat recht op of loopt schuin omhoog, behalve de frontons van de paviljoens die 0,3 m uitkragen, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-panden 0505100000013404 (kerk) en 0505100000013971 (toren). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "grote-kerk-dordrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 108.5,
+    "widthM": 47.4,
+    "naveRidgeNapM": 39,
+    "transeptRidgeNapM": 38,
+    "dakruiterNapM": 56,
+    "towerPlatformNapM": 55.4,
+    "clockPavilionsNapM": 66,
+    "groundNapM": 2.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Onze-Lieve-Vrouwekerk_(Dordrecht)",
+    "PDOK BAG panden 0505100000013404 en 0505100000013971 (contouren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van schip, zijbeuken, koor en Mariakoor, lengteprofielen langs de zijbeuken, pieken van straalkapellen en pinakels, raster van de torenbekroning en maaiveld",
+    "PDOK 3D Basisvoorziening gebouwen (LoD2.2) van beide panden, ter vergelijking",
+    "Wikimedia Commons: RCE-foto's van de luchtbogen, het koor en de toren",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

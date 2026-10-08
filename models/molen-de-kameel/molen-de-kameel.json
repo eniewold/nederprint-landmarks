@@ -1,0 +1,57 @@
+{
+  "name": "De Kameel",
+  "file": "molen-de-kameel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    87170.84,
+    437237.86
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      8
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      -8,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000021161"
+  ],
+  "description": "Herbouwde molen uit 2011 op de exacte BAG-cirkel, met ronde romp, stelling 15,80 m, houten langskap 30,50 m, staart en vlucht 25,95 m uit de actuele Vaags-roedentabel. De watergrot op 350 graden en de westelijke ingangsboog zijn blinde nissen. AS 28,31 m afgeleid van AHN-bovenste verticale wiekpunt 41,28 m minus halve vlucht; kapvorm, bovenstraal, romphelling, stellingradius 7,55 m, kaprichting 190 graden, 6 graden ashelling en gevelindeling geschat uit AHN, ortho en schuine fotos. RD-assen en voet 1 m onder maaiveld, grondpunten uitsluitend op het westelijke land; geen aangebouwde woning in BAG.",
+  "printFiles": [
+    "molen-de-kameel-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 25.95,
+    "stageM": 15.8,
+    "rompTopM": 27.8,
+    "capM": 30.5,
+    "axleM": 28.31,
+    "baseRadiusM": 4.54,
+    "stageRadiusM": 7.55,
+    "axisDegrees": 190,
+    "sailTiltDegrees": 6,
+    "boatNicheDegrees": 350
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-12207",
+    "https://www.deschiedamsemolens.nl/de-kameel/",
+    "PDOK BAG 0606100000021161, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Schiedam_De_Kameel.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Kameel.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kameel10.jpg"
+  ]
+}

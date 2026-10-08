@@ -1,0 +1,68 @@
+{
+  "name": "Fenix",
+  "file": "fenix.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92862.65,
+    435227.87
+  ],
+  "xAxis": [
+    0.990866,
+    -0.134851
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -53,
+      -7
+    ],
+    [
+      37,
+      -9
+    ],
+    [
+      93,
+      22
+    ],
+    [
+      17,
+      32
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100010056978"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (92862,65, 435227,87), het hart van de Fenixloods, op het maaiveld (NAP +3,4 m), +X langs de lange gevel naar het oosten (-7,75 graden vanaf de RD-X-as) en +Y naar het noorden. Eén node building:fenixloods: de loods van 173 bij 49 m met een licht hellend dak (+11,9 m in het zuiden, +13,3 m in het noorden, de noordrand over de laatste 3 m afgeschuind), een rij van 16 dakramen (zaagtandkappen van 3,1 m breed en 2,1 m hoog), vier opbouwen op het dak en de Tornado: een scheve, uitwaaierende trechter uit de glaskoker in het dak tot een schuin afgesneden platformring op +20 tot +25 m met drie trapkuilen, het uitkijkplatform op +24 m met de zwarte kern en een schotelkap tot +30 m (geschat uit luchtfoto, bouwfoto's en persmaten, zonder helixtrap). Onderkant op 0,5 m onder het maaiveld; de wand van de trechter blijft 30 graden of steiler, alleen de schotelkap hangt over. Vervangt de PDOK-reconstructie van de loods. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "fenix-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 173.7,
+    "widthM": 48.7,
+    "highestPointM": 30,
+    "hallM": [
+      173,
+      49
+    ],
+    "roofM": [
+      11.9,
+      13.3
+    ],
+    "dormers": 16,
+    "tornadoPlatformM": 24,
+    "tornadoTopM": 30,
+    "groundNapM": 3.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Fenix_%28museum%29",
+    "https://en.wikipedia.org/wiki/FENIX_Museum_of_Migration",
+    "PDOK BAG pand 0599100010056978, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (op 0,25 m herbemonsterd): het dakvlak, de dakramen, de opbouwen, de noordrand en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): de omtrek en trapkuilen van de Tornado",
+    "https://www.dezeen.com/2024/09/09/fenix-museum-rotterdam-mad-tornado-steel-staircase/",
+    "https://www.designboom.com/architecture/mad-architects-fenix-museum-completion-double-helix-staircase-rotterdam-10-03-2024/"
+  ]
+}

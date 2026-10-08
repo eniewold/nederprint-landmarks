@@ -1,0 +1,59 @@
+{
+  "name": "De Drie Koornbloemen",
+  "file": "molen-de-drie-koornbloemen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86575.71,
+    437039.28
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      8,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000018782"
+  ],
+  "description": "Ronde molen op de BAG-cirkel met de aangebouwde molenaarswoning aan de zuidoostzijde, twee vlakke dakhellingen en schoorsteen; stelling 16 m, vlucht 26,4 m uit het actuele molenpaspoort. As 29,39 m boven maaiveld afgeleid van de gemeentelijke verticale wiekpunt op NAP 17,59 m en de vlucht, met maaiveld NAP 1,4 m. Kaphoogte 30,5 m uit AHN; romphelling, kapvorm, stellingradius, draaiende kaprichting 250,2 graden en gevelindeling geschat. RD-assen; voet 1 m onder maaiveld, grondpunten op het land, woninggoot 4,9 m en nok 7,5 m uit AHN geschat.",
+  "printFiles": [
+    "molen-de-drie-koornbloemen-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 26.4,
+    "stageM": 16,
+    "rompTopM": 27.7,
+    "capM": 30.5,
+    "axleM": 29.39,
+    "baseRadiusM": 6.052,
+    "stageRadiusM": 8.1,
+    "axisDegrees": 250.2,
+    "houseEaveM": 4.9,
+    "houseRidgeM": 7.5,
+    "chimneyM": 8.9
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-01172",
+    "https://www.deschiedamsemolens.nl/de-drie-koornbloemen/",
+    "https://www.schiedam.nl/ruimtelijkeplannen/NL.IMRO.0606.BP0026-0002/t_NL.IMRO.0606.BP0026-0002.html",
+    "PDOK BAG 0606100000018782, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:De_Drie_Koornbloemen_mill_Schiedam_2018_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Driekorenbloemen04.jpg",
+    "https://commons.wikimedia.org/wiki/File:Korenmolen_de_drie_koornbloemen,_aan_de_Vellevest_van_uit_het_noord-oosten_-_Schiedam_-_20197215_-_RCE.jpg"
+  ]
+}

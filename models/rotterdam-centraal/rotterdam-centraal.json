@@ -1,0 +1,82 @@
+{
+  "name": "Rotterdam Centraal",
+  "file": "rotterdam-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91911,
+    437670
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -80,
+      0
+    ],
+    [
+      -60,
+      -15
+    ],
+    [
+      -30,
+      -30
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100007430",
+    "NL.IMBAG.Pand.0599100000700024"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (91911, 437670), midden in de stationshal, op het maaiveld van het Stationsplein (NAP 0 m), +X naar het oosten en +Y naar het noorden. Eén node building:station: de stationshal met de puntige kap tot circa NAP +31 m, opgebouwd uit drie grote dakvlakken (west, midden en oost, planvergelijkingen uit het AHN-DSM) met zeven piramidevormige ramen in het middenvlak, en de perronkap over de sporen als rechthoek van 244 bij 156 m (draaiend 17,6 graden) met een zaagtand van schuine ramen dwars op de lange as (ribben van 0,7 m hoog om de 5,4 m boven een basis op NAP +16,6 m), binnen een contour met rechte randen. De perronkap is dicht tot de onderkant (in werkelijkheid open boven de sporen), de onderkant ligt op NAP -2,5 m en de wanden staan recht op de contour, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van de stationshal en van een klein pand onder de perronkap. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "rotterdam-centraal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 282.5,
+    "widthM": 292,
+    "highestPointNapM": 31.04,
+    "platformRibPitchM": 5.4,
+    "platformRibHeightM": 0.7,
+    "facets": [
+      {
+        "name": "west",
+        "plane": [
+          -0.017,
+          0.058,
+          18.11
+        ]
+      },
+      {
+        "name": "midden",
+        "plane": [
+          0.238,
+          0.041,
+          15.99
+        ]
+      },
+      {
+        "name": "oost",
+        "plane": [
+          0.106,
+          0.175,
+          20.71
+        ]
+      }
+    ],
+    "windowCount": 7,
+    "groundNapM": 0,
+    "platformRoofNapM": 17,
+    "tracksNapM": 3,
+    "baseNapM": -2.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Station_Rotterdam_Centraal",
+    "PDOK BAG panden 0599100100007430 (stationshal) en 0599100000700024, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de rechthoek, de ribben en de dakvlakken van hal en perronkap, plein, sporen en straat",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

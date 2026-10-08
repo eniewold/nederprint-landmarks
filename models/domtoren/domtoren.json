@@ -1,0 +1,65 @@
+{
+  "name": "Domtoren",
+  "file": "domtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136777.48,
+    455854.92
+  ],
+  "xAxis": [
+    0.94832,
+    0.3173
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      15,
+      0
+    ],
+    [
+      0,
+      15
+    ],
+    [
+      -15,
+      0
+    ],
+    [
+      0,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000039864",
+    "NL.IMBAG.Pand.0344100000051237",
+    "NL.IMBAG.Pand.0344100000039778",
+    "NL.IMBAG.Pand.0344100000005581"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de toren op het maaiveld van het Domplein in de oorsprong, +X langs de doorgang (RD-richting 18,5 graden) en +Y 90 graden linksom. De doorgang loopt door het eerste vierkant langs X. Het maaiveld wordt op 15 m uit het hart bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0344100000039864 en van drie kleine aanbouwen (0344100000051237, 0344100000039778, 0344100000005581) waarvan de AHN-daken door de steunberen van de toren omhoog getrokken zijn; de twee aanbouwen die deels buiten de omhullende liggen zijn als eenvoudig blok (node building:aanbouwen) teruggezet. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "domtoren-1-1000.stl"
+  ],
+  "realWorld": {
+    "totalHeightM": 112.32,
+    "heightWithSpireM": 106.75,
+    "firstSquareTopM": 38.6,
+    "secondSquareTopM": 68.08,
+    "lanternTopM": 98.4,
+    "baseWidthM": 24.8,
+    "gateWidthM": 4.1,
+    "lanternAcrossFlatsM": [
+      18.8,
+      16.6
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Domtoren_(Utrecht)",
+    "https://erfgoed.utrecht.nl/de-bouw-van-de-domtoren",
+    "https://rijksmonumenten.nl/monument/36075/domtoren/utrecht/",
+    "PDOK BAG pand 0344100000039864 en BGT pand/wegdeel (muren 19,5 m, doorgang 4,1 m), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de omhullende per hoogte, het dakplatform, het dak en de spits",
+    "Wikimedia Commons: Domtoren Utrecht - 1.jpg, Utrecht, domtoren 01.jpg, Domtoren Utrecht - 2.jpg"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Alexander Ver Huellbrug",
+  "file": "alexander-ver-huellbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205964.41,
+    448145.6
+  ],
+  "xAxis": [
+    0.88248,
+    -0.47034
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -30,
+      15
+    ],
+    [
+      -30,
+      -15
+    ],
+    [
+      0,
+      15
+    ],
+    [
+      0,
+      -15
+    ],
+    [
+      30,
+      15
+    ],
+    [
+      30,
+      -15
+    ]
+  ],
+  "groundHeight": 50.23,
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +6,25 m volgens het AHN) in de oorsprong, +X langs de brug naar Doesburg (oostzuidoost, RD-richting -28,06 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg tussen de hoofdliggers of fietspad aan beide kanten daarbuiten tot de randbalk, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk. Het dek van 140,9 m tussen het westelijke landhoofd (Ellecom, x = -70,6) en het oostelijke (Doesburg, x = 70,2), 16,2 m breed, met het wegdek op NAP +18,4 tot +19,34 m, de twee hoofdliggers 4,35 m naast de as 0,9 m boven het wegdek en de fiets- en voetpaden daarbuiten op consoles; de twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde koppen en twee betonnen kolommen onder de hoofdliggers, 89,2 m hart op hart; de twee bogen van de hoofdoverspanning als kokers van 1 × 1,4 m op de hoofdliggers, met de top op NAP +32,2 m, en de tien hangers per boog als een scherm met spitse openingen tussen ligger en boog. Het windverband en de eindportalen tussen de bogen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "alexander-ver-huellbrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 140.9,
+    "deckWidthM": 16.22,
+    "mainSpanPierCentresM": 89.24,
+    "sideSpansM": [
+      21.7,
+      21.9
+    ],
+    "archCrownNapM": 32.2,
+    "archRadiusM": 85.5,
+    "archRibsFromAxisM": 4.35,
+    "hangerPanelM": 8.11,
+    "deckNapM": {
+      "west": 18.43,
+      "crest": 19.34,
+      "east": 18.42
+    },
+    "deckDepthM": 1.9,
+    "waterNapM": 6.25,
+    "opened": "1952-01-26 (gebouwd 1951)"
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_oeververbindingen_over_de_(Gelderse)_IJssel",
+    "https://nl.wikipedia.org/wiki/Alexander_Ver_Huell",
+    "https://structurae.net/en/structures/doesburg-bridge",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, landhoofden), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de paden, de bogen en de waterspiegel; PDOK-luchtfoto voor de hangerafstand",
+    "Wikimedia Commons: IJsselbrug Doesburg.jpg, Brug Doesburg.jpg, Provinciale weg 317 (brug Doesburg).jpg, Nieuwe brug in Doesburg, Bestanddeelnr 904-9107.jpg, Nieuwe brug in Doesburg, Bestanddeelnr 904-9110.jpg"
+  ]
+}

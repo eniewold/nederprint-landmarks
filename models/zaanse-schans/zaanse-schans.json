@@ -1,0 +1,99 @@
+{
+  "name": "Zaanse Schans",
+  "file": "zaanse-schans.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    116160,
+    498810
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      82.3,
+      -259.2
+    ],
+    [
+      150.2,
+      -165.4
+    ],
+    [
+      148.2,
+      -77.5
+    ],
+    [
+      130.1,
+      31.1
+    ],
+    [
+      80.8,
+      53.6
+    ],
+    [
+      -154.8,
+      255.8
+    ]
+  ],
+  "groundHeight": 42.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000003293",
+    "NL.IMBAG.Pand.0479100000004691",
+    "NL.IMBAG.Pand.0479100000002702",
+    "NL.IMBAG.Pand.0479100000002971",
+    "NL.IMBAG.Pand.0479100000002959",
+    "NL.IMBAG.Pand.0479100000003084"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op de Zaan voor de molenrij van de Zaanse Schans (RD 116160, 498810) op maaiveldhoogte bij de molens (z = 0, circa NAP 0,0 m), +X naar het oosten en +Y naar het noorden. Zes nodes building:<molen>, één per molen langs de Kalverringdijk van zuid naar noord: De Huisman, de paltrok De Gekroonde Poelenburg, De Kat, De Zoeker, Het Jonge Schaap en, 330 m noordwestelijker, De Bonte Hen. Elke stellingmolen heeft een onderbouw, een stelling als dichte plaat op een kraag van 50 graden, een achtkant (Het Jonge Schaap een zeskant), een rietgedekte kap, een staart naar de stelling, een wiekenkruis als plaat van 1,0 m dik in X-stand onder 50 graden voor de kap in de asrichting uit het AHN, en de schuur uit hetzelfde BAG-pand met een zadeldak; de paltrok heeft een voet op de BAG-contour, de onderkast met rokken en het bovenhuis. Alles begint op z = -1,0 m. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "zaanse-schans-1-1000.stl"
+  ],
+  "realWorld": {
+    "molens": 6,
+    "vluchtM": {
+      "De Huisman": 11.4,
+      "De Gekroonde Poelenburg": 20.36,
+      "De Kat": 21.8,
+      "De Zoeker": 22.5,
+      "Het Jonge Schaap": 20.6,
+      "De Bonte Hen": 23
+    },
+    "stellingBovenMaaiveldM": {
+      "De Huisman": 7.5,
+      "De Kat": 7.2,
+      "De Zoeker": 4.3,
+      "Het Jonge Schaap": 5.9,
+      "De Bonte Hen": 4.9
+    },
+    "kapBovenMaaiveldM": {
+      "De Huisman": 13.9,
+      "De Gekroonde Poelenburg": 15.2,
+      "De Kat": 19,
+      "De Zoeker": 16.9,
+      "Het Jonge Schaap": 17.4,
+      "De Bonte Hen": 17.3
+    },
+    "asBovenMaaiveldM": {
+      "De Huisman": 12.9,
+      "De Gekroonde Poelenburg": 13.6,
+      "De Kat": 17,
+      "De Zoeker": 14.9,
+      "Het Jonge Schaap": 15.4,
+      "De Bonte Hen": 15.3
+    },
+    "wiekStandGraden": 50,
+    "stellingKraagGraden": 50
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Zaanse_Schans",
+    "https://www.molendatabase.nl (De Huisman, De Gekroonde Poelenburg, De Kat, De Zoeker, Het Jonge Schaap, De Bonte Hen: type, vlucht, stellinghoogte)",
+    "https://www.zaanschemolen.nl (adressen en bouwjaren)",
+    "PDOK BAG (panden en adressen van de zes molens), EPSG:28992",
+    "PDOK AHN DSM en DTM 0,5 m via WCS voor stelling, schuur, kap, asrichting, wiekenvlak en maaiveld",
+    "PDOK luchtfoto (stelling en asrichting van De Huisman)"
+  ]
+}

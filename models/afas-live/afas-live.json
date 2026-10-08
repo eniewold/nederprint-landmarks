@@ -1,0 +1,67 @@
+{
+  "name": "AFAS Live",
+  "file": "afas-live.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124803,
+    480487.5
+  ],
+  "xAxis": [
+    0.878817,
+    0.477159
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      30,
+      -12
+    ],
+    [
+      90,
+      -10
+    ],
+    [
+      135,
+      10
+    ],
+    [
+      -15,
+      60
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012123240",
+    "NL.IMBAG.Pand.0363100012100092"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (124803,00, 480487,50), de zuidwesthoek van het complex, op het maaiveld (NAP -3,3 m), +X langs de zuidzijde naar het noordoosten (28,5 graden) en +Y langs de westgevel naar het noordwesten. Een node building:complex: het westelijke pand (achterdek +16,3 m met kanalen, luchtbehandeling en een opstaande rand langs de kade, lage voorstrook +11 m met technieklokaal en kanalen, de hoge zaal +23,6 m en het blok erachter +19,7 m, samen met 20 dakramen), de oostvleugel (installatieblok +18 m met ventilatorunits en een net van kanalen, platform +19,55 m met drie ronde lichtkoepels), de lage verbinding (+7,3 m) als plaat boven de open spleet van 3,2 m tussen beide panden, de buitentrap en in de noordhoek de stalen vakwerkgevel met een loopbrug. Onderkant op 0,5 m onder het maaiveld; de verbinding, de loopbrug en de dakplaat in de noordhoek hangen boven het maaiveld (de export vult de ruimte eronder op). Vervangt de PDOK-reconstructie van de twee BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "afas-live-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 133,
+    "widthM": 131.1,
+    "highestPointM": 24.3,
+    "hallRoofM": 23.6,
+    "backRoofM": [
+      16.3,
+      19.7
+    ],
+    "eastRoofM": [
+      18,
+      19.55
+    ],
+    "gapWidthM": 3.2,
+    "linkTopM": 7.3,
+    "trussBeamTopM": 17.9,
+    "groundNapM": -3.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/AFAS_Live",
+    "PDOK BAG panden 0363100012123240 en 0363100012100092, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,25 m via WCS (uit 0,5 m herberekend): dakhoogtes, dakramen, kasten, kanalen, dakranden en de open gevel in de noordhoek",
+    "PDOK luchtfoto 2026 (Actueel_orthoHR) en 2021 tot 2025_orthoHR: de kanalen en luchtbehandeling op het achterdek zijn van 2023"
+  ]
+}

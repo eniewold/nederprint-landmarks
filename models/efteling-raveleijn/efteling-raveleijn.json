@@ -1,0 +1,83 @@
+{
+  "name": "Raveleijn (Efteling)",
+  "file": "efteling-raveleijn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131367.5,
+    407214.5
+  ],
+  "xAxis": [
+    0.667833,
+    -0.744312
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      29.54,
+      3.72
+    ],
+    [
+      -6.52,
+      -36.47
+    ],
+    [
+      1.24,
+      42.56
+    ],
+    [
+      50.15,
+      41.66
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017646"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131367,5, 407214,5), het hart van de Belforttoren, op het maaiveld (NAP +8,0 m), +X langs de symmetrie-as van de toren door de arena naar de middelste tribunetoren (48,1 graden rechtsom vanaf de RD-X-as, naar het zuidoosten) en +Y naar het noordoosten. Nodes: building:kantoor (de kantoorvleugels volgens de BAG-contour met mansarde en dakkapellen, +15,3 m, het oostblok, het hoektorentje en de vijfhoekige hoektoren tot +23,4 m), building:gevelrij (de huisgevels aan de arena met galerij), building:belfort (de Belforttoren tot +32,8 m), building:tribune (het overdekte halfronde tribunegebouw met open front, omloop en drie torens), building:stadspoort (de Magische Stadspoort) en road:brug. De arena blijft PDOK-terrein. Onderkant op 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van het BAG-pand; tribune en poort zijn geen BAG-pand.",
+  "realWorld": {
+    "officeRoofM": 15.3,
+    "mansardFootM": 10.5,
+    "belfortPlanM": [
+      12.6,
+      16.8
+    ],
+    "belfortEaveM": 20.5,
+    "belfortRidgeM": 30,
+    "belfortTopM": 32.8,
+    "cornerTowerTopM": 23.4,
+    "tribuneInnerRadiusM": 39.4,
+    "tribuneOuterRadiusM": 55.3,
+    "tribuneRoofM": [
+      10.2,
+      12.8
+    ],
+    "tribuneTowerTopsM": {
+      "midden": 17.6,
+      "noord": 15.95,
+      "zuid": 15.3
+    },
+    "gatePassageM": [
+      2.9,
+      4.8
+    ],
+    "gateTopM": 10.4,
+    "bridgeLengthM": 22,
+    "groundNapM": 8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Raveleijn_(attractie)",
+    "https://www.eftepedia.nl/lemma/Raveleijn_(gebouw)",
+    "https://www.eftepedia.nl/lemma/Magische_Stadspoort",
+    "https://commons.wikimedia.org/wiki/Category:Raveleijn (foto's van de arena, de Belforttoren, de stadspoort en de tribune-achterzijde)",
+    "PDOK BAG pand 0809100000017646, EPSG:28992",
+    "PDOK BGT overigbouwwerk (overkapping van de tribune, de poort)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken van de vleugels, de toren, de hoektoren, de tribune en de torens, het maaiveld",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): vijfhoekige hoektoren, torendaken, poort en brug"
+  ],
+  "groundHeight": 51.61,
+  "printFiles": [
+    "efteling-raveleijn-1-1000.stl"
+  ]
+}

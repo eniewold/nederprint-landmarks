@@ -1,0 +1,127 @@
+{
+  "name": "Merwedebrug (Boven-Merwede)",
+  "file": "merwedebrug-gorinchem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124340,
+    426609.4
+  ],
+  "xAxis": [
+    0.22495,
+    0.97437
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.07,
+  "groundSamplePoints": [
+    [
+      -280,
+      25
+    ],
+    [
+      -280,
+      -25
+    ],
+    [
+      -170,
+      25
+    ],
+    [
+      -170,
+      -25
+    ],
+    [
+      -85,
+      25
+    ],
+    [
+      -85,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      85,
+      25
+    ],
+    [
+      85,
+      -25
+    ],
+    [
+      170,
+      25
+    ],
+    [
+      170,
+      -25
+    ],
+    [
+      320,
+      -25
+    ],
+    [
+      380,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0512100000046976"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek boven de middelste rivierpijler op de waterspiegel van de Boven-Merwede (z = 0, NAP +0,55 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Gorinchem, RD-richting 77,0 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding; het fietspad aan beide kanten buiten de rijbaan, onder de bogen buiten de ribben), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 24,5 tot 25,5 m breed van het zuidelijke landhoofd bij Sleeuwijk (x = -380) tot het noordelijke bij Gorinchem (x = 442), met het wegdek op NAP +12,4 tot +17,6 m en een kokerligger onder de uitkragende fiets- en voetpaden; twee bogen met trekband van 173,2 m tussen de pijlerharten x = -173,2, 0 en 173,2, elk met twee boogribben van 1,4 m boven de hoofdliggers en de top op NAP +40,8 m, en per boog 15 hangers als een scherm met spitse openingen tussen dek en rib; de drie rivierpijlers met caissons tot NAP +6,4 m en een smallere schacht; vier aanbruggen aan de zuidkant en vijf aan de noordkant op wandpijlers; de basculeklep van 30,9 m, de basculekelder en het bedieningshuis (BAG-pand, dak op NAP +21,5 m). Het windverband en de portalen tussen de ribben, de seinportalen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "merwedebrug-gorinchem-1-2250.stl"
+  ],
+  "realWorld": {
+    "lengthM": 822,
+    "deckLengthM": 787.5,
+    "deckWidthM": [
+      24.55,
+      25.55,
+      25.45,
+      25.5,
+      24.6
+    ],
+    "archSpanPierCentresM": 173.2,
+    "archCrownNapM": 40.8,
+    "ribsFromDeckCentreM": 8.4,
+    "hangerPanelM": 10.82,
+    "bascule": {
+      "fromM": 178.6,
+      "toM": 209.5
+    },
+    "pierCentresM": [
+      -314,
+      -267.3,
+      -222.2,
+      -173.2,
+      0.2,
+      173.1,
+      276.3,
+      321.8,
+      366.8,
+      413
+    ],
+    "deckNapM": {
+      "south": 12.37,
+      "crest": 17.6,
+      "north": 10.69
+    },
+    "cabinRoofNapM": 21.5,
+    "waterNapM": 0.55
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Merwedebrug_(Boven-Merwede)",
+    "PDOK BGT overbruggingsdeel (dek, rivierpijlers, aanbrugpijlers, liggers van de basculeklep), EPSG:28992",
+    "PDOK BAG pand 0512100000046976 (bedieningshuis)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de boogribben, de pijlerkoppen en het bedieningshuis; PDOK-luchtfoto voor de voegen en de kelder",
+    "Wikimedia Commons: Merwedebrug - RWS 364426.jpg, Merwedebrug bridge Gorinchem 1.JPG, Merwedebrug bridge Gorinchem 2.JPG, Merwedebrug (01).JPG, Merwede, Merwedebrug.jpg, Merwedebrug Sleeuwijk.jpg"
+  ]
+}

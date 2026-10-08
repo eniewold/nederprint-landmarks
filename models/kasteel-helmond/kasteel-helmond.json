@@ -1,0 +1,58 @@
+{
+  "name": "Kasteel Helmond",
+  "file": "kasteel-helmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173473.5,
+    387595
+  ],
+  "xAxis": [
+    0.994151,
+    0.108002
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      9
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "groundHeight": 62,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000389999"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (173473,5, 387595), midden in het kasteel, op het maaiveld van de binnenplaats (NAP +18,2 m), +X langs de noord- en zuidgevel (6,2 graden linksom vanaf de RD-X-as) en +Y loodrecht daarop naar de poort. Node building:kasteel uit dakvlakken en bouwdelen: de zuidvleugel onder één nok met trapgevels, gevelkapellen en schoorstenen, de west- en oostvleugel met zadeldaken en trapgevels, de noordvleugel met het poortgebouw (trapgevels en spitse poortnissen) tussen twee vierkante torens met tentdaken, de galerij met een dwarskap, de gangen en het ronde traptorentje aan de binnenplaats, vier ronde hoektorens met een kraag, een rok en een achtkantige spits, en vensternissen. Node road:dam: de dam met borstweringen van de voorhof naar de poort. Onderkant 2,8 m onder de binnenplaats, in de slotgracht; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het kasteel. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-helmond-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44.01,
+    "widthM": 57.47,
+    "highestPointM": 23.8,
+    "southRidgeM": 15.8,
+    "eastRidgeM": 15,
+    "northRidgeM": 11.9,
+    "towerEaveM": 12.7,
+    "northEastSpireM": 23.8,
+    "groundNapM": 18.2,
+    "baseM": -2.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Helmond",
+    "PDOK BAG pand 0794100000389999 (het kasteel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, torens, schoorstenen, binnenplaats en dam",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK BGT (overbruggingsdeel, waterdeel): de dam naar de voorhof",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's van de noord-, west-, zuid- en oostkant en de binnenplaats"
+  ]
+}

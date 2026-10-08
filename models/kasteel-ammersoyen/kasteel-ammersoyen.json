@@ -1,0 +1,56 @@
+{
+  "name": "Kasteel Ammersoyen",
+  "file": "kasteel-ammersoyen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    144102,
+    418104
+  ],
+  "xAxis": [
+    0.999534,
+    -0.030538
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -15.5
+    ],
+    [
+      -17,
+      -14
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "groundHeight": 45.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0263100000009351"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (144102, 418104), midden in het kasteel, op het water van de slotgracht (NAP +1,6 m), +X langs de zuidgevel (1,75 graden rechtsom vanaf de RD-X-as) en +Y loodrecht daarop. Een node building:kasteel uit dakvlakken en bouwdelen: de zuidvleugel onder één nok met schilden, de west- en oostvleugel met zadeldaken, de lage noordvleugels met een weergang, het poortgebouw met een trapgevel, de binnenplaats, vier ronde hoektorens (de noordwesttoren met een lantaarn en een uitje, de noordoosttoren met een kegeldak, de zuidtorens met een rok en een slanke spits), dakkapellen, schoorstenen en vensternissen. Onderkant 1 m onder het water; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het kasteel. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-ammersoyen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.55,
+    "widthM": 36.8,
+    "highestPointM": 26.8,
+    "southRidgeM": 24.3,
+    "westRidgeM": 21.6,
+    "eastRidgeM": 16.3,
+    "northWestTowerTopM": 26.8,
+    "groundNapM": 1.6,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Ammersoyen",
+    "PDOK BAG pand 0263100000009351 (het kasteel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, torens, binnenplaats en het water van de gracht",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de noordoost-, west- en noordkant"
+  ]
+}

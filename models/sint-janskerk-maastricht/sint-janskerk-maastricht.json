@@ -1,0 +1,57 @@
+{
+  "name": "Sint-Janskerk",
+  "file": "sint-janskerk-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176160,
+    317660
+  ],
+  "xAxis": [
+    0.969016,
+    0.246999
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      -11
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      -15,
+      13
+    ]
+  ],
+  "groundHeight": 97.91,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000017447"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (176160, 317660), in het schip, op het maaiveld (NAP +52,3 m), +X langs de nokken naar het koor (14,3 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Een node building:kerk uit dakvlakken en bouwdelen: basilicaal schip (nok +19,3 m) met zijbeuken, een hoger koor (nok +25,8 m) met 3/8-sluiting en steunberen, en de rode toren met getrapte hoeksteunberen, omgangen op +41 en +58 m, hoekspitsen, galmgaten en een achtkantige spits tot +71,8 m. Onderkant 1,8 m onder het maaiveld omdat het terrein van west naar oost 3 m daalt; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kerk. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "sint-janskerk-maastricht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.9,
+    "widthM": 21.3,
+    "highestPointM": 71.8,
+    "towerTopM": 71.8,
+    "gallery1M": 41,
+    "gallery2M": 58,
+    "naveRidgeM": 19.3,
+    "choirRidgeM": 25.8,
+    "groundNapM": 52.3,
+    "baseM": -1.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Janskerk_%28Maastricht%29",
+    "PDOK BAG pand 0935100000017447 (kerk met toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: geledingen van de toren, nokken en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf het Vrijthof en het Henric van Veldekeplein"
+  ]
+}

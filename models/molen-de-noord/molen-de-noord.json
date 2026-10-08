@@ -1,0 +1,54 @@
+{
+  "name": "De Noord",
+  "file": "molen-de-noord.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86880.8,
+    437356.2
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -10
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      10,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000008982"
+  ],
+  "description": "Ronde stenen romp op de BAG-voet, hoge stelling met 50 graden kraag, kap met langsnok, zuidzuidoostelijke bovenas en vier verdikte wieken in X-stand; voet 1 m onder het maaiveld op de zuidelijke kade, RD-assen. Stelling 18,5 m en vlucht 26,6 m uit Molendatabase; kap 33,3 m, romp 30,6 m en as 31,8 m afgestemd op AHN/fotos. Kapvorm, asrichting, stellingradius en vensters geschat. Naburige PDOK-panden raken de stelling niet.",
+  "printFiles": [
+    "molen-de-noord-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 26.6,
+    "stageM": 18.5,
+    "rompTopM": 30.6,
+    "capM": 33.3,
+    "axleM": 31.8,
+    "baseRadiusM": 6.65,
+    "stageRadiusM": 8.35,
+    "axisDegrees": -75
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-01174",
+    "https://www.sdam.nl/zien-doen/ct/molens-en-monumenten/info/molen-de-noord",
+    "PDOK BAG 0606100000008982, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Schiedam_molen_De_Noord.jpg",
+    "https://commons.wikimedia.org/wiki/File:Schiedam,_molen_De_Noord_foto4_2008-05-12_12.17.JPG"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Cunerakerk",
+  "file": "cunerakerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    167186.79,
+    440957.91
+  ],
+  "xAxis": [
+    0.994969,
+    -0.100188
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      -20
+    ],
+    [
+      5,
+      -20
+    ],
+    [
+      20,
+      -20
+    ],
+    [
+      -30,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0340100000331050",
+    "NL.IMBAG.Pand.0340100000332237"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (167186,79, 440957,91), het gezamenlijke zwaartepunt van de kerk en de toren, op het maaiveld aan de zuidzijde (NAP +11,5 m), +X langs de as van het schip naar het oosten (-5,75 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Een node building:kerk uit dakvlakken en bouwdelen: een middenschip met nok op +21,1 m (60 graden), zijbeuken met dwarsdaken per travee (goot +14,7 m, 55 graden), een dwarsschip met topgevels, een koor met driezijdige sluiting, steunberen met pinakels, een dakruiter, aanbouwen en de Cuneratoren in het westen (twee vierkante geledingen met diagonale steunberen en hoekpinakels, een achtkantige lantaarn en een naaldspits tot +81,8 m). Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kerk en de toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "cunerakerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 61.8,
+    "widthM": 36.1,
+    "highestPointM": 81.8,
+    "naveRidgeM": 21.1,
+    "aisleGutterM": 14.7,
+    "towerTopM": 81.8,
+    "groundNapM": 11.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Cunerakerk_%28Rhenen%29",
+    "PDOK BAG panden 0340100000331050 (kerk) en 0340100000332237 (toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en dakvlakken",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

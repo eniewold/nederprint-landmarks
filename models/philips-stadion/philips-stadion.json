@@ -1,0 +1,75 @@
+{
+  "name": "Philips Stadion",
+  "file": "philips-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    160577.885,
+    383628.23
+  ],
+  "xAxis": [
+    0.8,
+    -0.6
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      84
+    ],
+    [
+      -35,
+      -86
+    ],
+    [
+      -110,
+      0
+    ],
+    [
+      110,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000950002"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het veld op straatniveau (NAP +17,6 m) in de oorsprong, +X langs de lengteas van het veld naar het zuidoosten (RD-richting -36,87 graden) en +Y dwars daarop naar het noordoosten. Het stadion is opgebouwd uit gladde vormen die op het AHN zijn gefit: het doorlopende dak over de vier tribunes met de veldopening en de afgeschuinde dakrand, de zadeldaken van de korte tribunes, de vier hoeken als lage koepels met een schuine rand, de zestien spanten op de noordoosttribune en de lagere bouwdelen aan de buitenkant. Vervangt de PDOK-reconstructie van BAG-pand 0772100000950002.",
+  "printFiles": [
+    "philips-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "pitchM": [
+      105,
+      68
+    ],
+    "roofOpeningM": [
+      126.25,
+      73.2
+    ],
+    "footprintM": [
+      216.1,
+      165.6
+    ],
+    "cornerTopNapM": 51.12,
+    "northEastRoofNapM": [
+      46.95,
+      47.48
+    ],
+    "southWestRoofNapM": [
+      47.26,
+      50.35
+    ],
+    "shortStandRidgeNapM": 44.95,
+    "trussTopNapM": 50.25,
+    "trusses": 16,
+    "streetNapM": 17.6,
+    "capacity": 35000
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Philips_Stadion",
+    "PDOK BAG pand 0772100000950002, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: veldopening, dakvlakken, hoeken, dakranden, spanten, lagere bouwdelen en straatniveau",
+    "PDOK luchtfoto (Actueel_orthoHR): dakrand langs het veld, spanten en hoeken"
+  ]
+}

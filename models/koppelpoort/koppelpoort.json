@@ -1,0 +1,66 @@
+{
+  "name": "Koppelpoort",
+  "file": "koppelpoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    154869.26,
+    463423.65
+  ],
+  "xAxis": [
+    0.67559,
+    0.73728
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      15.8,
+      8
+    ],
+    [
+      15.8,
+      -8
+    ],
+    [
+      -20,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000334171",
+    "NL.IMBAG.Pand.0307100000522091"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (154869,26, 463423,65), het zwaartepunt van het BAG-pand, op het maaiveld van de kade en de straat (NAP +2,5 m), +X langs de poort naar het noordoosten (47,5 graden vanaf het oosten) en +Y naar het noordwesten, de veldzijde aan de kom van de Eem. Eén node building:poort met van noordoost naar zuidwest de landpoort (poortlichaam tot +8,5 m met kantelen, aan de veldzijde twee achtkante torentjes met een 0,3 m uitkragende bovenbouw en een naald tot +15,5 m) met de landdoorgang van 3,4 m breed (spitse top op +7,3 m), de weermuur met weergang (+7,9 m) en kantelen en het aanbouwtje aan de veldzijde, het poortgebouw van de waterpoort met schilddak (goot +10,8 m, nok +14,6 m), de mezekouw en de waterboog van 6,6 m breed (spitse top op +4,0 m) over de Eem, de zuidwestvleugel met schilddak (nok +13,5 m) en het zuidwesttorentje tot +18 m. Alles begint op NAP -1,5 m, onder het water, dat in het PDOK-terrein zit; beide doorgangen zijn tot de onderkant open. Alles staat recht op of loopt schuin omhoog, behalve de bovenbouw van de drie torentjes die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van de twee BAG-panden van de poort. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "koppelpoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 41.15,
+    "widthM": 9.04,
+    "highestPointNapM": 18,
+    "landGateTopNapM": 8.5,
+    "curtainWallTopNapM": 7.9,
+    "waterGateEaveNapM": 10.8,
+    "waterGateRidgeNapM": 14.6,
+    "southWingRidgeNapM": 13.5,
+    "landGateTowerTipNapM": 15.5,
+    "southWestTowerTipNapM": 18,
+    "waterArchWidthM": 6.6,
+    "waterArchApexNapM": 4,
+    "landArchWidthM": 3.4,
+    "landArchApexNapM": 7.3,
+    "groundNapM": 2.5,
+    "waterNapM": 0,
+    "baseNapM": -1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Koppelpoort",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7928",
+    "PDOK BAG panden 0307100000334171 (poort) en 0307100000522091 (noordoostkant van de landpoort), EPSG:28992",
+    "PDOK BGT waterdeel en overbruggingsdeel: de waterloop onder de poort (7,3 m breed)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak-, muur- en torenhoogtes, kade, straat en water",
+    "Wikimedia Commons: Amersfoort Koppelpoort seen from the southeast.jpg, 7928 Koppelpoort.jpg, Aanzicht veldzijde Koppelpoort - Amersfoort - 20009015 - RCE.jpg (veldzijde); Aanzicht stadszijde Koppelpoort - Amersfoort - 20009017 - RCE.jpg (stadszijde)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "De Vrijheid",
+  "file": "molen-de-vrijheid.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86728.99,
+    437268.81
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -10
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      10,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000002769"
+  ],
+  "description": "Vrijstaande ronde stenen molen op de BAG-cirkel, stelling op 18,5 m op een kraag van 50 graden, houten langskap, staart, water- en landpoort, venster- en gevelsteennissen en verdikte wieken in X-stand. RD-assen, voet 1 m onder het maaiveld, grondpunten op de zuidelijke kade. Vlucht 26,6 m uit Molendatabase, kaphoogte uit AHN; romphelling, kapvorm, ashoogte/richting (160 graden westnoordwest), stellingradius en gevelindeling geschat. Geen aanbouw aan de molen; naburige panden raken het model niet.",
+  "printFiles": [
+    "molen-de-vrijheid-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 26.6,
+    "stageM": 18.5,
+    "rompTopM": 29.6,
+    "capM": 32.7,
+    "axleM": 31.1,
+    "baseRadiusM": 6.543,
+    "stageRadiusM": 8.3,
+    "axisDegrees": 160
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-01173",
+    "https://legacy.molendatabase.nl/nederland/molen.php?nummer=1108",
+    "https://www.deschiedamsemolens.nl/de-vrijheid/",
+    "PDOK BAG 0606100000002769, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Schiedam_molen_De_Vrijheid.jpg",
+    "https://commons.wikimedia.org/wiki/File:33268_Molen_de_vrijheid.jpg",
+    "https://commons.wikimedia.org/wiki/File:Devrijheid02.jpg"
+  ]
+}

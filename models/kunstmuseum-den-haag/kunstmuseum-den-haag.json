@@ -1,0 +1,57 @@
+{
+  "name": "Kunstmuseum Den Haag",
+  "file": "kunstmuseum-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79170.43,
+    456286.21
+  ],
+  "xAxis": [
+    0.962692,
+    0.2706
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      76
+    ],
+    [
+      -30,
+      76
+    ],
+    [
+      40,
+      -20
+    ],
+    [
+      -35,
+      -45
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001640602"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (79170,43, 456286,21), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +2,8 m), +X langs de gevels van het hoofdgebouw naar het oosten (15,7 graden vanaf de RD-X-as) en +Y loodrecht daarop. Eén node building:museum: het hoofdgebouw van Berlage met de platte glazen lichtkap (+12,45 m) in een gootring (+10,8 m), omringd door vier beuken van glazen zadeldaken van 8,6 m breed (nok +13,4 m, kilgoot +11,2 m, 27 graden) met kilgoten in de kruisingen, een afgewalmde noordwesthoek, twee dwarsdaken met afgewalmd eind (noord +15,2 m, zuid +14,6 m), lage glaskappen en een dwarsvleugel met drie lantaarns met piramidedak; het hoge blok (+17,2 m) aan de zuidwestzijde; de aanbouw met platte daken, een afgewalmde glaskap, twee vijfhoekige vleugels (+15,8 m) en twee schoorstenen (+26,7 m); de aaneengeschakelde platdaksblokken van het zuidelijk deel (+3,8 tot +13,9 m); en de galerij over de vijver met een licht hellend zadeldak (+5,15 m). Afgesneden op de BAG-contour; onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kunstmuseum-den-haag-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 139.33,
+    "widthM": 114.91,
+    "highestPointM": 26.7,
+    "ridgeM": 13.4,
+    "lichtkapM": 12.45,
+    "chimneyM": 26.7,
+    "groundNapM": 2.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kunstmuseum_Den_Haag",
+    "PDOK BAG pand 0518100001640602, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nok-, goot- en dakhoogtes en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): de indeling van de daken"
+  ]
+}

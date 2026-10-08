@@ -1,0 +1,84 @@
+{
+  "name": "Brug bij Keizersveer",
+  "file": "brug-bij-keizersveer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120686.35,
+    414657.15
+  ],
+  "xAxis": [
+    0.23769,
+    0.97134
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.95,
+  "groundSamplePoints": [
+    [
+      -30,
+      32
+    ],
+    [
+      -30,
+      -32
+    ],
+    [
+      0,
+      32
+    ],
+    [
+      0,
+      -32
+    ],
+    [
+      30,
+      32
+    ],
+    [
+      30,
+      -32
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op de as van het BGT-dek (midden tussen de twee bruggen) midden tussen de twee rivierpijlers op de waterspiegel van de Bergsche Maas (z = 0, NAP +0,55 m), +X langs de brug naar het noordnoordoosten (Land van Altena, RD-richting 76,25 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vier nodes: road:rijbaan (de rijbanen van de A27 op beide bruggen tussen de vakwerkwanden, bgt_functie rijbaan autosnelweg), road:rijbaan-lokaal (de dienstweg tussen de twee bruggen, rijbaan lokale weg) en road:fietspad (de fietspaden buiten de wanden aan beide kanten, fietspad), elk de bovenste 0,5 m van het dek met bgt_fysiekvoorkomen gesloten verharding in extras.attributes, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 37,8 m breed van x = -148,4 tot 148,6 (boven de landhoofden doorgetrokken tot x = -153,6 en 153,9) met de rijbanen op NAP +12,2 m in het midden en +11,8 m bij de landhoofden, de dienstweg 0,08 m en de fietspaden 0,24 m lager; twee bruggen naast elkaar met elk drie vakwerkoverspanningen van de oude Moerdijkbrug (100, 87,2 en 100 m, acht, zeven en acht velden van 12,5 m) met evenwijdige randen 11,45 m boven de rijbaan (NAP +23,7 m), verticale eindstijlen en per veld een kruis van diagonalen, als dichte wanden van 1,0 m (y = -15,15, -2,55, 3,9 en 16,6) met doorgaande driehoekige openingen met zijden van 56 graden en blinde nissen; twee betonnen rivierpijlers van 6,4 m met spitse koppen tot 21,7 m naast de as (NAP +4,2 tot +3,0 m) en een schacht tot onder het dek; de landhoofden tot onder het dek. Portalen, dwarsregels en windverbanden tussen de wanden, leuningen, geleiderails, lantaarns en borden zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "brug-bij-keizersveer-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 307.5,
+    "deckLengthM": 297,
+    "deckWidthM": 37.78,
+    "spansM": [
+      100,
+      87.2,
+      100
+    ],
+    "panels": [
+      8,
+      7,
+      8
+    ],
+    "trussCentresM": [
+      12.6,
+      12.7
+    ],
+    "trussHeightAboveRoadM": 11.45,
+    "trussTopNapM": 23.67,
+    "roadNapM": {
+      "middle": 12.22,
+      "abutments": 11.80616
+    },
+    "pierNoseNapM": [
+      3,
+      4.2
+    ],
+    "waterNapM": 0.55
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Brug_bij_Keizersveer",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, landhoofden) en wegdeel (rijbanen, dienstweg, fietspaden), EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor het dek, de vakwerklijnen, de bovenrand, de knopen en de pijlerkoppen",
+    "PDOK Luchtfoto RGB (Actueel_orthoHR) voor de plattegrond",
+    "Wikimedia Commons: Keizersveersebrug.jpg, Old bridge by Raamsdonksveer (9415010697).jpg, Vernieuwde brug over Bergse Maas open voor verkeer, Bestanddeelnr 930-0247.jpg en 930-0248.jpg, Bergsemaas.jpg, Keizersveer, brug over de Bergsche Maas bij Raamsdonkveer.jpg"
+  ]
+}

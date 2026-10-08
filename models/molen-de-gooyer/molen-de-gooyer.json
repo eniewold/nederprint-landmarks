@@ -1,0 +1,62 @@
+{
+  "name": "De Gooyer",
+  "file": "molen-de-gooyer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    123599.57,
+    486646.85
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      0
+    ],
+    [
+      -8,
+      -8
+    ],
+    [
+      0,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012169758",
+    "NL.IMBAG.Pand.0363100012169757"
+  ],
+  "description": "Twee houten achtkanten op de vierkante stenen BAG-voet; RD-assen, voet 1 m onder het maaiveld, kap/as naar het noorden geschat uit AHN en luchtfoto. Het afzonderlijke badhuis met dakdelen op AHN-hoogte vervangt tevens zijn te hoge PDOK-reconstructie tegen de stelling. Kap, ashoogte, octantknik en vensterverdeling geschat; wieken en stelling printvriendelijk verdikt.",
+  "printFiles": [
+    "molen-de-gooyer-1-1000.stl",
+    "molen-de-gooyer-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 26.6,
+    "stageM": 17.8,
+    "stoneTopM": 7.8,
+    "rompTopM": 30.7,
+    "capM": 33.2,
+    "axleM": 31.8,
+    "baseSideM": 11,
+    "stageApothemM": 9.2,
+    "bathRoofM": [
+      3.65,
+      6.9,
+      7.2,
+      9.5
+    ]
+  },
+  "sources": [
+    "https://stadsherstel.nl/monumenten/funenkade-5-molen-de-gooyer/",
+    "https://nl.wikipedia.org/wiki/De_Gooyer_(Amsterdam)",
+    "PDOK BAG 0363100012169758 en 0363100012169757, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_De_Gooyer_04.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_De_Gooyer_08.jpg"
+  ]
+}

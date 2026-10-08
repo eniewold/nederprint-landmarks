@@ -1,0 +1,73 @@
+{
+  "name": "TivoliVredenburg",
+  "file": "tivolivredenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136218.306,
+    456063.155
+  ],
+  "xAxis": [
+    0.49394,
+    -0.86949
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -50,
+      -28
+    ],
+    [
+      0,
+      -38
+    ],
+    [
+      0,
+      38
+    ],
+    [
+      49,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000047923"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de BAG-contour op het maaiveld (NAP +3,7 m) in de oorsprong, +X langs de westgevel aan de Catharijnesingel van het Vredenburg naar Hoog Catharijne (RD-richting -60,4 graden) en +Y naar het Vredenburgplein. Eén node zonder vrije overhang: de doos met de gestapelde zalen tot 45 m met de twee noppengevels (ronde schotels van 1,3 m in een raster van 1,72 bij 1,7 m) op een terugliggende plint, de terugliggende glazen noordgevel, het overstekende dak aan de zuidkant met een schuine onderkant en daaronder het witte zaalvolume, de cilinderzaal en een buitentrap, de uitkragende zalen, de Ronda met een naar buiten hellende gevel, de installaties en kanalen op het dak, en de bewaarde onderbouw van het oude Vredenburg met de Grote Zaal. Vervangt de PDOK-reconstructie van BAG-pand 0344100000047923, dat het hele complex omvat.",
+  "printFiles": [
+    "tivolivredenburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 91.43,
+    "widthM": 68.1,
+    "boxWidthM": 66.45,
+    "boxDepthM": 48.22,
+    "roofM": 45,
+    "plantTopM": 47.8,
+    "dimpleDiameterM": 1.3,
+    "dimpleDepthM": 0.35,
+    "dimplePitchM": [
+      1.72,
+      1.7
+    ],
+    "dimples": 924,
+    "northGlassSetbackM": 1,
+    "whiteHallBottomM": 29.5,
+    "overhangM": 6,
+    "rondaM": 21,
+    "drumTopM": 39,
+    "oldStripM": 14,
+    "oldMainM": 15.3,
+    "pyramidM": 18.5,
+    "lanternM": 23.2,
+    "groundNapM": 3.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/TivoliVredenburg",
+    "PDOK BAG pand 0344100000047923, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakhoogte en dakranden van de doos, installaties en kanalen op het dak, Ronda-volume, piramidedak, lantaarn, lichtsleuf, terras, lage vleugel en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: TivoliVredenburg-2014-08.JPG, TivoliVredenburg.jpg, TivoliVredenburg-20160810.jpg, TivoliVredenburg-westzijde.jpg, TivoliVredenburg from Utrecht Dom Tower.JPG, TivoliVredenburg in Utrecht (34278259525).jpg, TivoliVredenburg in Utrecht (33894441310).jpg, Utrecht (08.08.2025) 10.jpg en 11.jpg (schotels en plint van onderen)"
+  ]
+}

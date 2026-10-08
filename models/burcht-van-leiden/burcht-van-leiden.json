@@ -1,0 +1,59 @@
+{
+  "name": "Burcht van Leiden",
+  "file": "burcht-van-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93773.2,
+    463802.2
+  ],
+  "xAxis": [
+    0.515,
+    0.857
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      20,
+      0
+    ],
+    [
+      -20,
+      0
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      0,
+      -20
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de ringmuur op de muurvoet (het plateau van de motte, NAP +11,45 m) in de oorsprong op z = 0 (de motte zelf zit niet in de GLB; die komt uit het PDOK-terrein), de trap loopt over de helling af tot z = -9,75 (straatniveau rond de heuvelvoet) en de hoofdpoort wijst naar -Y (azimut 329 graden, zuidoost) en de trap loopt daarvandaan 17 graden gedraaid (azimut 312 graden) naar de voorpoort aan de Burgsteeg. Het maaiveld wordt op het rondpad (straal 20 m) bemonsterd, zodat de muurvoet op het PDOK-plateau staat. RD = origin + x*xAxis + y*yAxis met yAxis = xAxis 90 graden linksom. Nodenamen klasse:label bepalen de materiaalklasse.",
+  "printFiles": [
+    "burcht-van-leiden-1-100.stl",
+    "burcht-van-leiden-heuvel-1-250.stl"
+  ],
+  "realWorld": {
+    "wallInnerDiameterM": 35.5,
+    "wallOuterDiameterM": 37.2,
+    "wallThicknessM": 0.85,
+    "wallHeightM": 6.6,
+    "merlons": 44,
+    "arches": 20,
+    "gateHeightM": 8.6,
+    "plateauAboveStreetM": 9.75,
+    "motteFootRadiusM": 37.5,
+    "courtyardPlatformM": 1.1,
+    "stairSteps": 27,
+    "stairDropM": 8.39
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Burcht_van_Leiden",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/532258",
+    "PDOK BGT (wegdeel/onbegroeidterreindeel), AHN dtm/dsm 0,5 m en luchtfoto, EPSG:28992",
+    "Wikimedia Commons: Category:Burcht van Leiden"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Abe Lenstra Stadion",
+  "file": "abe-lenstra-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191883.55,
+    552546
+  ],
+  "xAxis": [
+    0.592013,
+    -0.805928
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -85
+    ],
+    [
+      -70,
+      -85
+    ],
+    [
+      100,
+      -50
+    ],
+    [
+      -110,
+      60
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0074100000349206",
+    "NL.IMBAG.Pand.0074100000355314",
+    "NL.IMBAG.Pand.0074100000342112",
+    "NL.IMBAG.Pand.0074100000335067"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (191883,55, 552546,00) in het hart van de veldopening op het maaiveld (NAP +0,1 m), +X langs het veld naar het zuidoosten (-53,7 graden) en +Y naar de hoofdtribune in het noordoosten. Eén node building:stadion: de hoofdtribune (dwarsprofiel met een dak van +24,8 naar +22,2 m en drie raamstroken), de zuidwesttribune (+18,4 tot +20,5 m), de kopse tribunes met een zadeldak tot +26,4 m, de vier hoeken met een vlak dak (+20,0 en +18,5 m), vier lichtmasten als schuine staven tot +32 tot +39 m en de aangebouwde hallen aan de zuidoostkant (+14 tot +17,4 m) met lage aanbouwen. Onderkant op -0,5 m onder het maaiveld; alleen de bovenkant van de raamstroken is vlak. Vervangt de PDOK-reconstructie van de vier panden van het stadion en de hallen. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "abe-lenstra-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 297.2,
+    "widthM": 160.6,
+    "highestPointM": 38.69,
+    "capacity": 26800,
+    "fieldOpeningM": [
+      116.5,
+      81
+    ],
+    "noordoostRoofM": [
+      24.8,
+      22.15
+    ],
+    "zuidwestRoofM": [
+      18.3,
+      20.5
+    ],
+    "cornerRoofM": [
+      20,
+      18.5
+    ],
+    "mastTopM": [
+      31.8,
+      38.7,
+      32.9,
+      36
+    ],
+    "groundNapM": 0.11,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Abe_Lenstra_Stadion",
+    "PDOK BAG panden 0074100000349206, 0074100000355314, 0074100000342112 en 0074100000335067, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de daken per tribune, de hoeken, de lichtmasten en de hallen",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "De Grolsch Veste",
+  "file": "grolsch-veste.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    254087.7,
+    473044.7
+  ],
+  "xAxis": [
+    0.714961,
+    -0.699164
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      85
+    ],
+    [
+      -90,
+      80
+    ],
+    [
+      -120,
+      -70
+    ],
+    [
+      120,
+      60
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0153100000257703"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (254087,70, 473044,70) in het hart van de veldopening op het maaiveld (NAP +27,5 m), +X langs het veld naar het zuidoosten (-44,36 graden) en +Y naar het noordoosten. Eén node building:stadion: het hoefijzer met het hoge dak over de westkop, de zuidkant en de oostkop (dakplaat van +30,8 m aan de veldkant tot +33,8 m aan de buitenrand, met waaiervormige hoeken en de dakspanten als ribben tot circa +37 m), daaronder de tribunes met onderring (+2,6 tot +9,8 m), gang (+10,8 m) en bovenring (+12,6 tot +19 m) tegen een achterwand die het dak draagt; de noordoosttribune met één ring en een V-dak (+19,5, +17,3 en +18,8 m); twee lagere hoektribunes op kolommen onder een aflopend schilddak (+17,5 tot +14 m), twee loopbruggen rond de noordhoeken (+11 tot +12,6 m) en zes torens aan de buitenrand (+22 m). Onderkant op 0,5 m onder het maaiveld; de daken kragen over de rangen uit. Vervangt de PDOK-reconstructie van het stadionpand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "grolsch-veste-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 218.4,
+    "widthM": 160.8,
+    "highestPointM": 37.34,
+    "capacity": 30205,
+    "fieldOpeningM": [
+      121,
+      83.8
+    ],
+    "horseshoeRoofM": [
+      30.8,
+      33.8
+    ],
+    "northEastStandM": [
+      19.45,
+      17.27,
+      18.83
+    ],
+    "lowerRingM": [
+      2.6,
+      9.8
+    ],
+    "promenadeM": 10.8,
+    "upperRingM": [
+      12.6,
+      19
+    ],
+    "groundNapM": 27.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Grolsch_Veste",
+    "PDOK BAG pand 0153100000257703, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 en 0,25 m via WCS: het dak van het hoefijzer en de spanten, de noordoosttribune, de hoektribunes en de torens",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

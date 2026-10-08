@@ -1,0 +1,71 @@
+{
+  "name": "Het Spoorwegmuseum",
+  "file": "spoorwegmuseum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137483.05,
+    455450.11
+  ],
+  "xAxis": [
+    0.390731,
+    0.920505
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -70,
+      40
+    ],
+    [
+      -40,
+      45
+    ],
+    [
+      40,
+      -45
+    ],
+    [
+      -90,
+      -45
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000128112",
+    "NL.IMBAG.Pand.0344100000028153"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (137483,05, 455450,11), het gezamenlijke zwaartepunt van de twee BAG-panden, op het maaiveld (NAP +2,9 m), +X langs de lange as van de hal naar het noordnoordoosten (67 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het westnoordwesten. Eén node building:spoorwegmuseum uit dakvlakken: de grote museumhal (182 bij 50 tot 100 m) als flauw zadeldak van twee vlakken met de lichtstraat langs de nok, drie plat afgedekte opbouwen (+10,1 m) en twee dakdozen (+11,6 m), en station Maliebaan met twee vleugels met zadeldak en topgevels (nok +8,8 m), het entreegebouw als schilddak (nok +16,05 m) met twee lagere zijdelen met zadeldak (nok +14,7 m) en de uitkragende luifel boven de ingang (+4,7 tot +6,2 m), afgesneden op de BAG-contouren. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal, behalve de onderkant van de luifel. Vervangt de PDOK-reconstructie van beide panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "spoorwegmuseum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 206.2,
+    "widthM": 147.5,
+    "highestPointM": 16.05,
+    "hallM": [
+      182,
+      100
+    ],
+    "hallRoofM": [
+      5,
+      11.6
+    ],
+    "stationM": [
+      86,
+      26
+    ],
+    "stationRoofM": [
+      6.8,
+      16.05
+    ],
+    "groundNapM": 2.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorwegmuseum_%28Utrecht%29",
+    "PDOK BAG panden 0344100000128112 en 0344100000028153, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,25 en 0,5 m via WCS: de dakvlakken, nok- en goothoogtes en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

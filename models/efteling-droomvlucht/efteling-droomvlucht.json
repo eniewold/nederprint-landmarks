@@ -1,0 +1,75 @@
+{
+  "name": "Droomvlucht (Efteling)",
+  "file": "efteling-droomvlucht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131364,
+    407123
+  ],
+  "xAxis": [
+    0.999565,
+    0.029492
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      -35
+    ],
+    [
+      20,
+      -35
+    ],
+    [
+      45,
+      -5
+    ],
+    [
+      -20,
+      35
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017596"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131364, 407123), midden in de showhal op het maaiveld (NAP +8,1 m), +X langs de lange gevels naar het oosten (1,69 graden linksom vanaf de RD-X-as) en +Y naar het noorden. Nodes: building:showhal (hal +10,3 m, oosthal +5,5/+4,5 m, achtkant met piramidedak, plateau op +14 m, lantaarn en spits tot +25 m), building:wachtrij (gewelfde entreehal en wachtrijgang), building:entree (de sprookjesgevel aan het water met spitse poortnis, drie spitsen tot +11,9 m, bladwaaiers, tulpzuilen, bloemschalen en tulpen) en road:brug (de brug naar het Ton van de Venplein). Onderkant op 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van de hal.",
+  "realWorld": {
+    "hallLengthM": 81.9,
+    "hallWidthM": 62.5,
+    "hallRoofM": 10.3,
+    "eastHallRoofM": [
+      4.5,
+      5.5
+    ],
+    "octagonSideM": 10,
+    "octagonEaveM": 10.6,
+    "octagonPlateauM": 14,
+    "lanternSpireTopM": 25,
+    "entranceWallLengthM": 24.4,
+    "entranceWallHeightM": 5.9,
+    "gateOpeningM": [
+      3,
+      7.1
+    ],
+    "centralSpireTopM": 11.9,
+    "sideSpireTopM": 10.1,
+    "vaultHallRidgeM": 8.5,
+    "groundNapM": 8.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Droomvlucht_(darkride)",
+    "https://www.eftepedia.nl/lemma/Droomvlucht",
+    "https://www.eftepedia.nl/lemma/Ton_van_de_Venplein",
+    "https://commons.wikimedia.org/wiki/Category:Droomvlucht_(Efteling) (entreefoto's)",
+    "PDOK BAG pand 0809100000017596, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken van de hal, de achtkant en de lantaarn, de entreehal, de wachtrijgang, de muur en het maaiveld",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): lantaarn, muur, gang en brug"
+  ],
+  "groundHeight": 51.66,
+  "printFiles": [
+    "efteling-droomvlucht-1-1000.stl"
+  ]
+}

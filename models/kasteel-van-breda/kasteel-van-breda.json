@@ -1,0 +1,59 @@
+{
+  "name": "Kasteel van Breda",
+  "file": "kasteel-van-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112576,
+    400456
+  ],
+  "xAxis": [
+    0.979925,
+    0.199368
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -45,
+      0
+    ],
+    [
+      -45,
+      -8
+    ],
+    [
+      0,
+      -36
+    ]
+  ],
+  "groundHeight": 46.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000023912",
+    "NL.IMBAG.Pand.0758100000023913",
+    "NL.IMBAG.Pand.0758100000023914",
+    "NL.IMBAG.Pand.0758100000024029",
+    "NL.IMBAG.Pand.0758100000024027"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (112576, 400456), midden op de binnenplaats, op het maaiveld van het voorplein tussen de westvleugels (NAP +2,3 m), +X langs de noord- en zuidvleugel (11,5 graden vanaf de RD-X-as) en +Y loodrecht daarop. Drie nodes uit dakvlakken en bouwdelen: building:paleis, het renaissancepaleis van Hendrik III rond de binnenplaats (vier vleugels met schilddaken van 45 graden en een opgewipte dakvoet, kroonlijst op een kraag, plint, de twee achtkantige hoektorentjes met spits en bol aan de Parade, de Henricuspoort, schoorstenen, drie vensterrijen en arcaden op de binnenplaats); building:voorgebouw, het voorgebouw aan de zuidelijke gracht met de Stadhouderspoort (fronton, pilasters, dakkapel), de vierkante toren met tentdak, de schuine vleugel met een steil zadeldak en het hoekpaviljoen in de gracht met een dak rond een lichthof; building:torentje, het achtkantige torentje op de hoek van de Parade. Onderkant op NAP -0,5 m, onder het water van de slotgracht; alle vlakken wijzen omhoog of staan verticaal, op de kraag onder de kroonlijst na. Vervangt de PDOK-reconstructie van vijf BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-van-breda-1-1000.stl",
+    "kasteel-van-breda-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 164.74,
+    "widthM": 118.75,
+    "highestPointM": 25.1,
+    "ridgeNapM": 24.25,
+    "eaveNapM": 18.45,
+    "turretTopNapM": 27.3,
+    "groundNapM": 2.3,
+    "baseM": -2.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_van_Breda",
+    "PDOK BAG panden 0758100000023912 (paleis), 0758100000023913 (voorgebouw), 0758100000023914 (toren en schuine vleugel), 0758100000024029 (hoekpaviljoen), 0758100000024027 (achtkantig torentje), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, nokken, goten, torentjes, schoorstenen en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR) en Wikimedia Commons-foto's vanaf de oostkant (Parade), de binnenplaats, het Kasteelplein en de westelijke gracht"
+  ]
+}

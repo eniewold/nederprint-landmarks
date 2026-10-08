@@ -1,0 +1,60 @@
+{
+  "name": "Lebuïnuskerk",
+  "file": "lebuinuskerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    207439.04,
+    474048.45
+  ],
+  "xAxis": [
+    0.908143,
+    0.41866
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -70,
+      -20
+    ],
+    [
+      -45,
+      -28
+    ],
+    [
+      10,
+      -30
+    ],
+    [
+      64,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0150100000001106",
+    "NL.IMBAG.Pand.0150100000002210"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (207439,04, 474048,45), het zwaartepunt van het BAG-pand, op het maaiveld (NAP +7,8 m), +X langs de as van het schip naar het noordoosten (24,75 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noordwesten. Eén node building:kerk: de Lebuïnuskerk uit dakvlakken en bouwdelen: het schip met zijn steile zadeldak (nok +28,05 m), de dwarse, afgewolfde zadeldaken boven de beide zijbeuken (nok +22,8 m), het dwarsschip (nok +28,15 m) met zuidportaal en dakruiter, de straalkapellenkrans van het koor, de noordwestelijke hal, de steunberen met verdiepte vensternissen en de toren in het zuidwesten met achthoekige lantaarn, koepel en kroon (tot +67 m). Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kerk en de toren (twee panden). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "lebuinuskerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 132.73,
+    "widthM": 44.91,
+    "highestPointM": 67.2,
+    "aisleRoofM": 22.8,
+    "naveRoofM": 28.05,
+    "transeptRoofM": 28.15,
+    "towerTopM": 67.2,
+    "groundNapM": 7.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Lebuinuskerk",
+    "PDOK BAG panden 0150100000001106 (kerk) en 0150100000002210 (toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, kilgoten, goten en torenhoogtes, en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de toren en de lantaarn (Hendrick de Keyser, 1613)"
+  ]
+}

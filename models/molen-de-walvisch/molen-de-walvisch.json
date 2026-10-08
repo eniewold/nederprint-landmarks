@@ -1,0 +1,55 @@
+{
+  "name": "De Walvisch",
+  "file": "molen-de-walvisch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86747.77,
+    436817.6
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      8,
+      8
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      12,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000001688"
+  ],
+  "description": "Ronde stenen molen op de BAG-cirkel met stelling 16,95 m, houten kap, staart, winkelpoort, straatpoort, waterheul en gevelsteen als blinde nissen. Vlucht 27,00 m uit de actuele Beijk-roedentabel (2023), kap 31,65 m boven maaiveld uit AHN; as 30,49 m afgeleid van gemeentelijke wiekpunt NAP 18,99 m plus halve vlucht minus circa 2 m maaiveld. Romphelling, kapvorm, stellingradius, draaiende kaprichting 254 graden en gevelindeling geschat. RD-assen, voet 1 m onder maaiveld, grondpunten uitsluitend op de oostelijke kade; geen aanbouw in actuele BAG of ortho.",
+  "printFiles": [
+    "molen-de-walvisch-1-1000.stl"
+  ],
+  "realWorld": {
+    "flightM": 27,
+    "stageM": 16.95,
+    "rompTopM": 28.7,
+    "capM": 31.65,
+    "axleM": 30.49,
+    "baseRadiusM": 6.412,
+    "stageRadiusM": 8.5,
+    "axisDegrees": 254
+  },
+  "sources": [
+    "https://www.molendatabase.nl/molens/ten-bruggencate-nr-01171",
+    "https://www.deschiedamsemolens.nl/de-walvisch/",
+    "https://www.schiedam.nl/ruimtelijkeplannen/NL.IMRO.0606.BP0026-0002/t_NL.IMRO.0606.BP0026-0002.html",
+    "PDOK BAG 0606100000001688, AHN DSM/DTM 0,5 m en Actueel_orthoHR, geraadpleegd 2026-10-08",
+    "https://commons.wikimedia.org/wiki/File:De-walvisch05.jpg",
+    "https://commons.wikimedia.org/wiki/File:Molen_De_Walvisch.jpg"
+  ]
+}

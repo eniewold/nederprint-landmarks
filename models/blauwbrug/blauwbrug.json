@@ -1,0 +1,79 @@
+{
+  "name": "Blauwbrug",
+  "file": "blauwbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121876.64,
+    486608.2
+  ],
+  "xAxis": [
+    0.9321,
+    0.3622
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      14.5
+    ],
+    [
+      0,
+      -14.5
+    ],
+    [
+      16.5,
+      14.5
+    ],
+    [
+      -16.5,
+      -14.5
+    ],
+    [
+      16.5,
+      -14.5
+    ],
+    [
+      -16.5,
+      14.5
+    ]
+  ],
+  "groundHeight": 43.02,
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het BGT-dek op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar het Waterlooplein (RD-richting 21,2 graden boven het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Vijf nodes: road:rijbaan, road:ov-baan, road:fietspad en road:voetpad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, OV-baan, fietspad of voetpad; bgt_fysiekvoorkomen gesloten verharding, voor de voetpaden open verharding), zodat de kleurregels van een thema erop werken (van het midden naar buiten de OV-baan van de tram, de rijbanen met de bermen, de fietspaden en de voetpaden tot de balustrade); en building:blauwbrug, de rest van de brug: het dek van 49 × 20,9 m met een wegdek van NAP +3,53 m in het midden tot +2,94 m aan de einden, drie segmentbogen van 14,2 tot 14,3 m als blinde bogen met een rib (nissen met een plafond van 45 graden, zodat ze op 1:1000 zonder steun printen), de lijst en de balustrade van 1,0 m met blinde vakken, twee pijlers met getrapte voet en spitse koppen met een scheepsboeg en krul, en acht pylonen (vier op de pijlers, vier op de eindblokken aan de kades) met voetstuk, zuil, twee lantaarns op een arm langs de brug, kapiteel en keizerskroon tot 6,5 m boven het wegdek. Het maaiveld wordt op het water naast de brug bemonsterd (groundHeight is de ellipsoïdische waterhoogte als terugval). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "blauwbrug-1-300.stl"
+  ],
+  "realWorld": {
+    "deckLengthM": 49,
+    "deckWidthM": 20.9,
+    "overallLengthM": 54.4,
+    "overallWidthM": 26.2,
+    "archSpansM": [
+      14.32,
+      14.24,
+      14.32
+    ],
+    "archCrownsNapM": [
+      1.95,
+      2.33,
+      1.95
+    ],
+    "deckNapM": {
+      "centre": 3.53,
+      "ends": 2.93
+    },
+    "parapetM": 1,
+    "pylons": 8,
+    "pylonTopAboveDeckM": 6.5,
+    "pierPylonTopNapM": 9.9,
+    "waterNapM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Blauwbrug",
+    "PDOK BGT overbruggingsdeel (dek G0363.c6a9ce7c02a34df1934c2efa0aaa351f, pijlers G0363.593d3c79... en G0363.a8d8eac9...), scheiding (muur, kademuur), EPSG:28992",
+    "PDOK BGT wegdeel en ondersteunend wegdeel (OGC API) op het dek: OV-baan G0363.379fb9a415cd414cb01ae9c903dc7ae8, rijbanen G0363.ba9ae59f7f274c73bc542154a8c455f8 en G0363.e28d6fe618a542daa70853c36c143d01, fietspaden G0363.2f44751d94934318b1322a051611c437 en G0363.ff6ad275cbb1453d856752f891271f6a, voetpaden G0363.4d0ec58c0d6149e5a6f51ac1e0fe66dc en G0363.6740aa61a71d450794ad9a1508aab5db",
+    "PDOK AHN DSM 0,5 m via WCS voor het dek, de balustrade, de boegen en de pylonen",
+    "Wikimedia Commons: Blauwbrug NW side from river Amstel 2016-09-12-6577.jpg, Column Blauwbrug Amstel 2016-09-12-6584.jpg, Amsterdam, Blauwbrug in 2007.jpg, De Blauwbrug over de Amstel (2020).jpg, Amsterdam - Blauwbrug 1883 B.de Greef & W.Springer - View West.jpg, Blauwbrug over de Amstel (1884) - Amsterdam - 20011031 - RCE.jpg"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Sint-Janskathedraal",
+  "file": "sint-janskathedraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    149555.494,
+    411035.624
+  ],
+  "xAxis": [
+    0.99297,
+    0.1184
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      -45
+    ],
+    [
+      20,
+      -45
+    ],
+    [
+      -70,
+      -30
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000237576"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de BAG-contour op het maaiveld (NAP +6,2 m) in de oorsprong, +X langs de as van de kerk naar het koor (RD-richting 6,8 graden) en +Y naar het noorden. Eén node zonder vrije overhang. Vervangt de PDOK-reconstructie van BAG-pand 0796100000237576.",
+  "printFiles": [
+    "sint-janskathedraal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 115.8,
+    "westTowerTopM": 69.5,
+    "crossingTowerTopM": 59.6,
+    "naveRidgeM": 37,
+    "aisleTopM": 16,
+    "pinnacles": 20
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Janskathedraal_(%27s-Hertogenbosch)",
+    "PDOK BAG pand 0796100000237576, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goot- en nokhoogtes, zijbeuken, pinakels, omhullende van beide torens, maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

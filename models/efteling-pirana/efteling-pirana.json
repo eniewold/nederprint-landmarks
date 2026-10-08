@@ -1,0 +1,86 @@
+{
+  "name": "Piraña (Efteling)",
+  "file": "efteling-pirana.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131592.1,
+    406524.68
+  ],
+  "xAxis": [
+    0.771625,
+    -0.636078
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      22
+    ],
+    [
+      -25,
+      16
+    ],
+    [
+      -12,
+      26
+    ],
+    [
+      10,
+      -16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017607",
+    "NL.IMBAG.Pand.0809100000017604",
+    "NL.IMBAG.Pand.0809100000017605"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131592,1, 406524,68), het middelpunt van de ronde hal van het station, met z = 0 op het plein (NAP +9,97 m); +X loopt langs de tunnelvleugel naar het oost-zuidoosten (39,5 graden met de klok mee vanaf de RD-X-as), +Y naar het plein en de Kanovijver. Node building:station: BAG-pand 0809100000017607 met daken per zone uit het AHN (ronde hal en aansluitend blok +17,4 m, poortgebouw +19,3 m met de trapeziumvormige uitgang, liftblok +15,2 m met borstweringen +17,7 m en torens +18,6 m, kloofstrook +14,3 m, noordwesthoek +12,2 m, noordoostblok +14,0 m, tunnelvleugel +13,8 m met toren +18,4 m, binnenplaatsblok met torens +17,5 m, tunnelmond met torens +17,3 m), getrapte kantelen, lisenen en trapeziumnissen. Node building:huisjes: de twee themahuisjes op het plein. Node building:beelden: de Tolteekse krijgers en de kwijlbeelden op het rotseiland. Node building:rotsen: de kunstrots met de hoge waterval, de kloof en het rotseiland. Node building:rivier: kademuren van 0,9 m langs de stroombedding (bovenkant +8,3 tot +12,2 m, volgt het maaiveld). Node building:brug: de houten brug over de Karpervijver. Onderkant op NAP +6,4 m, onder het water van de baan; het water zit in het PDOK-terrein. Vervangt de PDOK-reconstructie van de drie BAG-panden.",
+  "realWorld": {
+    "lengthM": 230.14,
+    "widthM": 123.02,
+    "highestPointNapM": 20.18,
+    "hallRadiusM": 13.14,
+    "turntableDiameterM": 18,
+    "roofHeightsNapM": {
+      "hal": 17.4,
+      "poortgebouw": 19.3,
+      "liftblok": 15.2,
+      "liftblokTorens": 18.6,
+      "kloofstrook": 14.3,
+      "noordwesthoek": 12.2,
+      "noordoostblok": 14,
+      "tunnelvleugel": 13.8,
+      "torenVleugel": 18.4,
+      "binnenplaatsTorens": 17.5,
+      "tunnelmondTorens": 17.3
+    },
+    "waterfallRockTopNapM": 16.6,
+    "riverWallTopNapM": [
+      8.3,
+      12.2
+    ],
+    "bridgeDeckNapM": [
+      13.7,
+      9.6
+    ],
+    "groundNapM": 9.97,
+    "pdokRiverWaterNapM": 6.9,
+    "baseNapM": 6.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Pira%C3%B1a_(Efteling)",
+    "https://www.eftepedia.nl/lemma/Pira%C3%B1a",
+    "https://commons.wikimedia.org/wiki/Category:Pira%C3%B1a",
+    "PDOK BAG panden 0809100000017607 (station), 0809100000017604 en 0809100000017605 (themahuisjes), EPSG:28992",
+    "PDOK BGT overbruggingsdeel (de brug over de Karpervijver)",
+    "PDOK 3D-basisvoorziening terrein: water van de baan (NAP +6,9 m) en maaiveld langs de oevers",
+    "PDOK AHN DSM 0,5 m via WCS: dakhoogtes per zone, torens, rotshoogtes en het brugdek",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): kunstrots, rotseiland, krijgers (schaduw), gevels"
+  ],
+  "groundHeight": 53.7,
+  "printFiles": [
+    "efteling-pirana-1-1000.stl"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Kubuswoningen",
+  "file": "kubuswoningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93306.5,
+    437251.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -4.5,
+      -43.5
+    ],
+    [
+      -54.5,
+      -11.5
+    ],
+    [
+      -31.5,
+      -21.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701291",
+    "NL.IMBAG.Pand.0599100000764949"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93306,5, 437251,5), een punt van Bloms raster, op straatniveau (NAP +3,8 m), +X naar het oosten en +Y naar het noorden. Eén node met onderbouw, pijlers en kubussen, zodat de export het geheel laag voor laag opvult. Het maaiveld wordt op de straat bemonsterd. Vervangt de PDOK-reconstructie van BAG-panden 0599100000701291 en 0599100000764949.",
+  "printFiles": [
+    "kubuswoningen-1-1000.stl"
+  ],
+  "realWorld": {
+    "houseCubes": 46,
+    "largeCubes": 3,
+    "gridSpacingM": 8.66,
+    "gridRotationDegrees": 2.2,
+    "cubeEdgeM": 5.5,
+    "cubeApexNapM": 24.8,
+    "largeCubeEdgeM": 11,
+    "largeCubeApexNapM": [
+      31,
+      30.8,
+      30.8
+    ],
+    "deckNapM": 10.3,
+    "lowPodiumNapM": 7.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kubuswoningen_(Rotterdam)",
+    "https://en.wikipedia.org/wiki/Cube_house",
+    "PDOK BAG panden 0599100000701291 en 0599100000764949, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: raster, toppen, ribbe, draaiing, dek en onderbouw",
+    "PDOK BGT overbruggingsdeel (dek over de Blaak)",
+    "Wikimedia Commons: Overzicht kubuswoningen - Rotterdam - 20359748 - RCE.jpg, Cube Houses @ Oudehaven @ Rotterdam (29948985423).jpg"
+  ]
+}

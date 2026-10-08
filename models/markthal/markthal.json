@@ -1,0 +1,56 @@
+{
+  "name": "Markthal",
+  "file": "markthal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93068.75,
+    437230.84
+  ],
+  "xAxis": [
+    0.96231,
+    0.27194
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -40,
+      -40
+    ],
+    [
+      40,
+      -40
+    ],
+    [
+      0,
+      40
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100007493"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93068,75, 437230,84), het midden van de boog, op het maaiveld (NAP +3,5 m), +X langs de as naar het oostnoordoosten (15,78 graden vanaf het oosten) en +Y naar het noordnoordwesten. Eén node building:markthal: de boog van 118,2 bij 71,7 m met het dwarsprofiel uit het AHN langs de as geëxtrudeerd (zijwanden recht op tot NAP +15 m, de bocht van de boog, een richel op +40,4 m en de nok op +43,9 m), en in beide kopgevels het glas 3 m achter de voorkant, in een opening in de vorm van een afgeronde rechthoek (halve breedte 20,8 m, top op NAP +36,3 m, hoeken van 13 bij 17,8 m, de woningen aan de zijkanten circa 15 m dik en erboven circa 7,5 m) met een rand onder circa 50 graden. Het dak loopt vanaf de zijwanden alleen omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "markthal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 118.24,
+    "widthM": 71.6,
+    "highestPointNapM": 43.9,
+    "ridgeNapM": 43.9,
+    "ledgeNapM": 40.4,
+    "sideWallTopNapM": 15,
+    "sideRingThicknessM": 15,
+    "openingHalfWidthM": 20.8,
+    "openingTopNapM": 36.3,
+    "glassRecessM": 3,
+    "groundNapM": 3.5,
+    "baseNapM": 3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Markthal_(Rotterdam)",
+    "PDOK BAG pand 0599100100007493, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: rechthoek en dwarsprofiel van de boog (90e percentiel per meter over vijf blokken van 20 m), maaiveld"
+  ]
+}

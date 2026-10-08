@@ -1,0 +1,92 @@
+{
+  "name": "Berlagebrug",
+  "file": "berlagebrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122668,
+    484486.3
+  ],
+  "xAxis": [
+    0.97603,
+    0.21764
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.69,
+  "groundSamplePoints": [
+    [
+      -31.6,
+      17
+    ],
+    [
+      -18.4,
+      -17
+    ],
+    [
+      3.2,
+      17
+    ],
+    [
+      3.2,
+      -17
+    ],
+    [
+      18.1,
+      17
+    ],
+    [
+      31.4,
+      -17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012197554"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek (de tramsporen), 3,2 m ten westen van het hart van de basculedoorvaart, op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (Mr. Treublaan, RD-richting 12,57 graden) en +Y stroomafwaarts naar het noorden (de stadszijde met de toren). Nodenaam klasse:label bepaalt de materiaalklasse: road:rijbaan, road:ov-baan, road:fietspad, road:voetpad en road:voetpad-open zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan, fietspad of voetpad; bgt_fysiekvoorkomen gesloten verharding, de oostelijke voetpaden open verharding), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dek van 73,7 × 24,2 m met rand en liggers, landhoofden, vier bakstenen pijlers met voorkoppen en pilasters, pijlerkoppen boven het dek, balkon, keldermuur en bordes aan de noordzijde van de middenpijler), building:basculeklep de klep van 11,9 × 23,2 m onder het wegdek, building:brugwachtershuis de toren (BAG-pand) met de kern tot NAP +13,9 m, zijdelen tot NAP +11,5 m, ramen als nissen en de Genius van Amsterdam als reliëf. De vijf doorvaarten (vier vaste overspanningen van 10,7 m en de basculedoorvaart van 11,9 m) zijn aan beide gevels diepe nissen met een plafond dat onder 50 graden naar binnen afloopt, zodat het model op 1:1000 zonder opvulling print; daartussen is de onderbouw dicht. Leuningen, lichtmasten, bovenleiding, vlaggenmasten en de trappen op het bordes zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de PDOK-waterspiegel (ellipsoïdisch).",
+  "printFiles": [
+    "berlagebrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 73.66,
+    "widthM": 24.2,
+    "leafM": {
+      "length": 11.86,
+      "width": 23.2
+    },
+    "openingsRecessDepthAtWaterM": [
+      1.85,
+      2.09,
+      2.46,
+      2.21,
+      1.98
+    ],
+    "spansM": [
+      10.23,
+      10.7,
+      11.86,
+      10.77,
+      10.18
+    ],
+    "deckNapM": {
+      "westNap": 3.3,
+      "crownNap": 4.1,
+      "eastNap": 3.45
+    },
+    "towerTopNapM": {
+      "core": 13.9,
+      "sides": 11.5
+    },
+    "waterNapM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Berlagebrug_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/530055",
+    "PDOK BGT overbruggingsdeel (dek, klep, pijlers met voorkoppen), EPSG:28992",
+    "PDOK BGT wegdeel (OGC API), relatieve hoogteligging 1: rijbaan regionale weg, OV-baan, fietspad, voetpad (gesloten en open verharding)",
+    "PDOK BAG pand 0363100012197554 (brugwachtershuis)",
+    "PDOK AHN DSM 0,5 m via WCS voor het wegdek, de toren, de pijlerkoppen, het bordes en de voorkoppen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de plattegrond",
+    "Wikimedia Commons: Amsterdam Berlagebrug 001.JPG, 002.JPG, Berlagebrug opened.JPG, Berlagebrug.jpg, 2023 Genius van Amsterdam, Berlagebrug, Asd.jpg, Overzicht Berlagebrug over de Amstel en een bedieningshuisje - Amsterdam - 20409346 - RCE.jpg, 2023 Berlagebrug, Asd (05).jpg"
+  ]
+}

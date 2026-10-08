@@ -1,0 +1,58 @@
+{
+  "name": "Concertgebouw",
+  "file": "concertgebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120386.78,
+    485497.13
+  ],
+  "xAxis": [
+    0.92119,
+    0.38912
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      33
+    ],
+    [
+      10,
+      -33
+    ],
+    [
+      37,
+      4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012233435",
+    "NL.IMBAG.Pand.0363100012237012"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (120386,78, 485497,13), in de Grote Zaal, op het maaiveld (NAP +0,5 m), +X langs de as naar het oostnoordoosten (22,9 graden vanaf het oosten), naar de voorgevel, en +Y naar het noordnoordwesten. Eén node building:concertgebouw: de Grote Zaal (goten NAP +19,5 m, zadeldak met de nok op +26 m langs de as) met topgevels aan beide kopse kanten tot +28,3 m (pinakel en lier), de vleugels rondom op de BAG-contour (+16 m) met vier hoekpaviljoens (goot +20,5 m, tentdak tot +22,5 m), de voorbouw aan de oostkant (schilddak tot +23 m) met drie blinde hoge vensters, de ronde zaal aan de westkant (zestienkant, muur +22,5 m, kegeldak tot +26,5 m), de glazen aanbouw aan de zuidkant (+10,5 m) en het bijgebouw in het westen. Alles staat recht op of loopt schuin omhoog, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van de twee BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "concertgebouw-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 101.09,
+    "widthM": 69.1,
+    "highestPointNapM": 28.3,
+    "hallEaveNapM": 19.5,
+    "hallRidgeNapM": 26,
+    "gableTopNapM": 28.3,
+    "wingsNapM": 16,
+    "pavilionTopNapM": 22.5,
+    "roundHallTopNapM": 26.5,
+    "glassAnnexNapM": 10.5,
+    "groundNapM": 0.5,
+    "baseNapM": 0
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Concertgebouw_(Amsterdam)",
+    "PDOK BAG panden 0363100012233435 en 0363100012237012, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goten, nokken, topgevels, paviljoens, ronde zaal, aanbouw en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

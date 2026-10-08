@@ -1,0 +1,82 @@
+{
+  "name": "Stadion Galgenwaard",
+  "file": "stadion-galgenwaard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138454.9,
+    454482.7
+  ],
+  "xAxis": [
+    0.926002,
+    -0.377518
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      95
+    ],
+    [
+      -115,
+      0
+    ],
+    [
+      115,
+      0
+    ],
+    [
+      -100,
+      60
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000056854"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (138454,90, 454482,70) in het hart van de veldopening op het maaiveld (NAP +2,0 m), +X langs het veld naar het oostzuidoosten (-22,18 graden) en +Y naar het noordnoordoosten. Eén node building:stadion: de vier tribunedaken als gewelfde platen (+27 tot +31,3 m, 1,6 tot 3,2 m dik, de noordtribune met een verzonken dakveld van 105 bij 14,5 m op +25,5 m) met de tribunes eronder (onderrang van +1 tot +9 m, gang, bovenrang tot +22 m of een glazen blok, achterwand), de witte vakwerkbogen langs de veldkant van het zuid-, west- en oostdak (kruin +35,6 m), vier lagere hoekgebouwen (+14,6 en drie keer +11,2 m) met de daktippen als overhang erboven, schuine hoekzuilen en het gewelfde dak van het hoofdgebouw aan de zuidkant (+24,2 m dalend naar +20,6 m). Onderkant op 0,5 m onder het maaiveld; de dakplaten, de bogen en de daktippen hangen vrij boven de rang en de hoekgebouwen (ondervlakken boven +8,5 m), alle andere vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van het stadionpand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stadion-galgenwaard-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 209,
+    "widthM": 209.6,
+    "highestPointM": 35.6,
+    "capacity": 23750,
+    "fieldOpeningM": [
+      123.5,
+      85.6
+    ],
+    "roofM": [
+      27,
+      31.3
+    ],
+    "cornerRoofM": [
+      14.6,
+      11.2
+    ],
+    "roofPlateThicknessM": [
+      1.6,
+      3.2
+    ],
+    "archCrestM": 35.6,
+    "standTiersTopM": [
+      9,
+      22
+    ],
+    "annexRoofM": [
+      24.2,
+      20.6
+    ],
+    "groundNapM": 2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadion_Galgenwaard",
+    "PDOK BAG pand 0344100000056854, EPSG:28992",
+    "https://www.zja.nl/en/Stadion-Galgenwaard-Utrecht",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de vier daken, de bogen, de hoeken, het gewelfde dak van het hoofdgebouw en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de tribunes en daken (rang, gang, glazen blok, daktippen)"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Slauerhoffbrug",
+  "file": "slauerhoffbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    180304.75,
+    579176.5
+  ],
+  "xAxis": [
+    0.03438,
+    0.99941
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 40.96,
+  "groundSamplePoints": [
+    [
+      0,
+      13
+    ],
+    [
+      -3,
+      13
+    ],
+    [
+      0,
+      -13
+    ],
+    [
+      3,
+      -13
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden op de klep op de waterspiegel van de Harlingervaart (z = 0, NAP -0,36 m volgens het PDOK-terrein) in de oorsprong, +X langs de brug naar het noorden (RD-richting 88,03 graden vanaf het oosten) en +Y naar het westen. Vliegende ophaalbrug (staartbrug) in gesloten stand: de klep van 14,6 x 16,5 m tussen twee pijlers, vaste overspanningen van 13,3 m, het wegdek op NAP +3,9 m. Op de zuidwestoever twee betonnen pyloonpoten met ronde vensters (nissen), 10 m boven het water, en de scharnieras op NAP +8,6 m; de gebogen ladderarm (twee zijliggers van 1,5 m, drie dwarsdragers) staat 45 graden op de as en loopt van het contragewicht, een liggende trommel van 3,8 m met gele randen (bovenkant NAP +12,1 m), over het scharnier omlaag tot op dekhoogte naast de zuidelijke overspanning, met de noordelijke voorarm over het water tot de westrand van de klep. Nodes: road:rijbaan, road:fietspad en road:voetpad zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding); building:brug de vaste brug (overspanningen onder het wegdek, schampkanten, pijlers, landhoofden met vleugelmuren, geleidewerken); building:ophaalbrug de klep onder het wegdek met haar schampkanten, de arm en de trommel; building:pyloon de poten met de fundering. Leuningen, lantaarns, slagbomen, seinen, de hydraulische cilinders en de open stand zijn weggelaten; de export vult onder de klep, de arm en de trommel op. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "slauerhoffbrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44.6,
+    "deckWidthM": 16.55,
+    "leafLengthM": 14.58,
+    "deckTopNapM": 3.89,
+    "drumTopNapM": 12.14,
+    "drumDiameterM": 3.8,
+    "pivotNapM": 8.64,
+    "armAngleToAxisDeg": 45,
+    "waterNapM": -0.36
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Slauerhoffbrug",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, landhoofden) en wegdeel/ondersteunend wegdeel op het dek (OGC API), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de trommel, het scharnier, de arm en de fundering",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de plattegrond van de arm, de trommel, de poten en de geleidewerken",
+    "Wikimedia Commons: 20190419 Slauerhoffbrug1 Leeuwarden.jpg, 20190419 Slauerhoffbrug2 Leeuwarden.jpg, De Slauwerhoffbrug Leeuwarden.JPG, Slauerhoffbrug - wegaanzicht - Bert Kaufmann.jpg, Slauerhoffbrug.JPG, Slauerhoffbrug \"Flying\" Drawbridge by Hindrik 1.jpg en 2.jpg"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Wilhelminabrug Deventer",
+  "file": "wilhelminabrug-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    207635.67,
+    473734.91
+  ],
+  "xAxis": [
+    0.82254,
+    0.56871
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.36,
+  "groundSamplePoints": [
+    [
+      -241.25,
+      -24.425
+    ],
+    [
+      -241.25,
+      20.575
+    ],
+    [
+      -201.25,
+      -24.425
+    ],
+    [
+      -201.25,
+      20.575
+    ],
+    [
+      -46.25,
+      -24.425
+    ],
+    [
+      -46.25,
+      20.575
+    ],
+    [
+      -21.25,
+      -24.425
+    ],
+    [
+      -21.25,
+      20.575
+    ],
+    [
+      18.75,
+      -24.425
+    ],
+    [
+      18.75,
+      20.575
+    ],
+    [
+      38.75,
+      -24.425
+    ],
+    [
+      38.75,
+      20.575
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee hoofdliggers midden tussen de opleggingen van de boog op de waterspiegel van de IJssel (z = 0, NAP +3,08 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oostnoordoosten (de binnenstad, RD-richting 34,66 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten; vanaf x = 66,25 buigt de betonnen aanbrug met een straal van 1300 m naar rechts af. Zeven nodes: road:rijbaan, road:fietspad, road:voetpad, road:fietspad-aanbrug, road:voetpad-aanbrug en road:trap, de bovenste 0,5 m van het wegdek en van de twee trappen met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad, voetpad of voetpad op trap, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt op de rijbaan en op fietspad en voetpad van de betonnen aanbrug; de rijbaan tussen de hoofdliggers of de scheidingen, de fietspaden erbuiten tot 1,45 m van de dekranden, de voetpaden langs de randen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Worp (x = -351,55) tot het eind van de gesloten toerit achter het landhoofd aan de stadskant (x = 274,35 langs de boog), met het wegdek op NAP +10,2 tot +16,1 m (AHN). De stalen aanbrug over uiterwaard en nevengeul met twee doorgaande hoofdliggers (1,0 m boven het wegdek) en consoles voor fietspad en voetpad, op twee wandpijlers en drie brede pijlers met ronde koppen (BGT) met betonnen opleggingen; de boogbrug van 121 m als twee boogribben van 1,6 m op de liggers met de top op NAP +33,3 m, de 14 hangers als stijlen van 1,0 m tussen spitse openingen, portalen met knieschoren op de tweede knoop van elk eind en het ruitvormige windverband tussen de ribben als staven met een V-onderkant; de westelijke rivierpijler met ronde koppen, metselwerk en betonnen kap; de scheve oostelijke rivierpijler aan de Welle met de twee trappen op de koppen; de gebogen betonnen aanbrug met plaat, middenkoker, lage scheidingen en acht ronde kolommen met kapiteel; het oostelijke landhoofd met de toerit tussen keermuren (40 m, wegdek NAP +11,5 tot +10,7 m), die boven het lagere PDOK-wegdek uitkomt. Leuningen, lantaarns, de onderhoudsbordessen onder het dek bij de westelijke rivierpijler en de doorgang door de oostelijke pijler zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de nevengeul en de IJssel bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van de nevengeul. Geen BAG-pand: het pand onder de betonnen aanbrug (0150100000059728) blijft onder het dek staan. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "wilhelminabrug-deventer-1-1600.stl"
+  ],
+  "realWorld": {
+    "lengthM": 625.3,
+    "deckWidthM": 18.8,
+    "archSpanBearingsM": 121,
+    "archCrownNapM": 33.3,
+    "archRibsApartM": 10.05,
+    "hangerPanelM": 8.067,
+    "approachSpansM": [
+      38.6,
+      40.1,
+      40,
+      40,
+      39.9,
+      81.3
+    ],
+    "concreteSpanM": 20.17,
+    "bendRadiusM": 1300,
+    "roadNapM": {
+      "west": 10.29,
+      "crest": 16.14,
+      "east": 10.7
+    },
+    "waterNapM": 3.08
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Wilhelminabrug_(Deventer)",
+    "PDOK BGT overbruggingsdeel (dek, landhoofd, pijlers, kolommen) en wegdeel (rijbaan, fietspad, voetpad, voetpad op trap), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de hoofdliggers, de boogribben, de trappen en de westelijke rivierpijler",
+    "PDOK Luchtfoto RGB (Actueel_orthoHR) voor het windverband, de portalen en de trapkoppen",
+    "Wikimedia Commons: Wilhelminabrug Deventer.jpg; Wilhelminabrug Deventer 2019.jpg; Wilhelminabrug Deventer, 2024.jpg; Wilhelminabrug - Deventer.jpg; Deventer-Bridge.jpg; Deventer-Bridge-Structure.jpg; Deventer, de Wilhelminabrug foto14 2013-08-01 12.58.jpg; Wilhelminabrugdeven.jpg; Molen Bolwerksmolen Wilhelminabrug.jpg; Onderzijde van N344 over de uiterwaard - Deventer - 20430074 - RCE.jpg; Detail van onderzijde van N344 over de uiterwaard - Deventer - 20430073 - RCE.jpg"
+  ]
+}

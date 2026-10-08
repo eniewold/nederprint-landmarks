@@ -1,0 +1,55 @@
+{
+  "name": "Stevenskerk",
+  "file": "stevenskerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187768,
+    428930
+  ],
+  "xAxis": [
+    0.99863,
+    0.052336
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -42,
+      0
+    ],
+    [
+      45,
+      0
+    ],
+    [
+      25,
+      -25
+    ]
+  ],
+  "groundHeight": 72.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000009359"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (187768, 428930), de viering, op het maaiveld (NAP +28,5 m), +X langs de nok van schip en koor naar het oosten (3 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Een node building:kerk uit dakvlakken en bouwdelen: hallenkerk onder één nok op +24,6 m met dakruiter, beuken met eigen zadeldaken en dwarse kappen, een vijfzijdige koorsluiting met kooromgang en zeven straalkapellen, kapellen en portalen, en de westtoren met omgang op +38 m, achtkant, twee lantaarns en spits tot +65,2 m. Onderkant 2,2 m onder het maaiveld omdat het terrein naar de Grote Markt daalt; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de kerk. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stevenskerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 79.3,
+    "widthM": 55.1,
+    "highestPointM": 65.2,
+    "towerTopM": 65.2,
+    "galleryM": 38,
+    "ridgeM": 24.6,
+    "groundNapM": 28.5,
+    "baseM": -2.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Stevenskerk",
+    "PDOK BAG pand 0268100000009359 (kerk met toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, kappen, toren en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "John Frostbrug",
+  "file": "john-frostbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191034.7,
+    443068.4
+  ],
+  "xAxis": [
+    0.50843,
+    0.8611
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 51.86,
+  "groundSamplePoints": [
+    [
+      -45,
+      22
+    ],
+    [
+      -45,
+      -22
+    ],
+    [
+      -15,
+      22
+    ],
+    [
+      -15,
+      -22
+    ],
+    [
+      15,
+      22
+    ],
+    [
+      15,
+      -22
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Rijn (z = 0, NAP +8,25 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het noordnoordoosten (de binnenstad, RD-richting 59,43 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vijf nodes: road:rijbaan, road:ov-baan, road:fietspad en road:fietspad-viaduct, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan of fietspad; bgt_fysiekvoorkomen gesloten verharding; plus_fysiekvoorkomen asfalt, behalve op het fietspad aan de westkant van landhoofd en viaduct, waar de BGT geen materiaal geeft), zodat de kleurregels van een thema erop werken (het fietspad is over de stalen brug alles buiten de hoofdliggers, de OV-baan de busbaan aan de oostkant van de rijweg); en building: de rest van de brug, met het stalen dek van 22,6 tot 23,7 m breed van het zuidelijke landhoofd (x = -378) tot het noordelijke landhoofd aan de Rijnkade (x = 109 tot 117), met de twee hoofdliggers als ribbels van 0,9 m boven het wegdek en de fiets- en voetpaden op consoles erbuiten, het wegdek op NAP +17,2 tot +25,4 m (AHN); de verstijfde staafboog van 120 m tussen de rivierpijlers als twee bogen van 1,2 m op de liggers met de top op NAP +42,5 m en de 15 hangers als scherm met spitse openingen tussen ligger en boog; de twee rivierpijlers met spitse koppen (BGT) en stalen opleggingen; aan de zuidkant zes velden van 42 m op vijf aanbrugpijlers met opleggingen (twee op een funderingsplaat in de strang) en de overgangspijler met halfronde bordestrappen; op het noordelijke landhoofd de twee vierkante torens tot NAP +28,6 m met de trappen naar het dek en het bordes van de herdenkingsplaats; het betonnen viaduct over de Rijnkade en de Oranjewachtstraat met vier liggers, dwarsbalken en vierkante kolommen (BGT) tot x = 231. Het windverband tussen de bogen, de eindportalen, leuningen, lantaarns en de S-vormige trappen achter het viaduct zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de Rijn bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "john-frostbrug-1-1600.stl"
+  ],
+  "realWorld": {
+    "lengthM": 609.1,
+    "deckWidthM": [
+      22.6,
+      23.7,
+      23.8
+    ],
+    "spansM": {
+      "approach": "6 × 42",
+      "side": 54,
+      "main": 119.6,
+      "northSide": 53
+    },
+    "archCrownNapM": 42.5,
+    "archRiseAboveDeckM": 17.1,
+    "archRibsFromAxisM": 6.85,
+    "hangerPanelM": 7.47,
+    "riverPierTopNapM": 18.9,
+    "towerTopNapM": 28.6,
+    "deckNapM": {
+      "south": 17.23,
+      "crest": 25.42,
+      "north": 20.79
+    },
+    "waterNapM": 8.25
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/John_Frostbrug",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/529907",
+    "PDOK BGT overbruggingsdeel (dek, rivierpijlers, overgangspijler, aanbrugpijlers met funderingsplaten, landhoofden, kolommen en wand van het viaduct), EPSG:28992",
+    "PDOK BGT wegdeel (OGC API, actuele versies met relatieve hoogteligging 1): rijbaan regionale weg, OV-baan en fietspaden op het dek, met hun attributen op de road-nodes",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de liggers, de bogen, de rivierpijlers, de torens, de trappen en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de torens, de trappen en de funderingsplaten; PDOK-terrein voor de waterspiegel",
+    "Wikimedia Commons: Arnhem, de John Frostbrug RM529907 vanaf Arnhem Zuid IMG 8947 2019-03-31 20.13.jpg; Arnhem, de John Frostbrug RM529907 met uiterwaarden IMG 3811 2024-07-15 13.08.jpg; John Frostbrug Arnhem vanaf het noorden 22-04-2019.jpg; Overzicht van de brug met brugwachtershuizen - Arnhem - 20420259 - RCE.jpg; Overzicht van de John Frostbrug over de Nederrijn - Arnhem - 20420263 - RCE.jpg; Arnhem, John Frost Bridge 2025-07-09 01.jpg"
+  ]
+}

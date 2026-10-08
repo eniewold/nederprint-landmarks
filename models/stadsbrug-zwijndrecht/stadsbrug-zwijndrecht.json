@@ -1,0 +1,90 @@
+{
+  "name": "Stadsbrug Zwijndrecht",
+  "file": "stadsbrug-zwijndrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104264.74,
+    424905.05
+  ],
+  "xAxis": [
+    0.80479021,
+    -0.59355936
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.66,
+  "groundSamplePoints": [
+    [
+      -160,
+      -22
+    ],
+    [
+      -160,
+      17
+    ],
+    [
+      -80,
+      -22
+    ],
+    [
+      -80,
+      17
+    ],
+    [
+      -5,
+      -22
+    ],
+    [
+      -5,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0505100000013841"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de basculebrug (waar de twee kleppen elkaar raken) op de as tussen de vakwerkliggers in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -36,41 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts, naar de spoorbrug). Vijf nodes. road:rijbaan, road:fietspad, road:fietspad-cementbeton en road:voetpad: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan lokale weg in asfalt; fietspad in asfalt op het Zwijndrechtse deel en in cementbeton op het Dordtse deel; voetpad in cementbeton), buiten de liggers, geleiders, schampkanten en gebouwtjes, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:stadsbrug-zwijndrecht: de rest van de verkeersbrug van 1939: het dek van 23,2 m breed (rijbaan op NAP +13,5 tot +13,9 m, trottoirs 0,17 m hoger, schampkanten langs de rand); twee vakwerkliggers met evenwijdige randen op y = ±6,45 (bovenrand NAP +21,4 m, schuine eindstijlen, tien vakken van 15,3 m met verticalen, Warren-diagonalen) over twee velden tussen de pijlers op x = -204,6, -115 en de basculepijler, als dichte platen van 1,0 m met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de dubbele basculebrug in gesloten stand met twee blauwe plaatliggers van 1,0 m (tot 2,0 m boven het wegdek bij de draaipunten, 1,4 m midden op de klep, 2,45 m waar de kleppen elkaar raken, schuine uiteinden); de basculepijler met halfronde kop, bordes op trottoirhoogte, kraag tot NAP +5,5 m en het huisje op het bordes (BAG-pand 0505100000013841, tot NAP +17,7 m); de basculekelder op de Dordtse kade met het machinehuis (tot NAP +20,7 m); de pijlers met ronde koppen en driehoekige neuzen aan de zuidwestkant (NAP +3,4 m) en de aanbrug met geleiders tot de voeg op x = -263,35. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 12,9 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen), de trappen naast de Dordtse kelder en de rest van de aanbruggen en de fly-over zijn weggelaten; de Spoorbrug Dordrecht en de koffiefilter (BAG-pand 0505100000067669) zijn eigen modellen of blijven de PDOK-reconstructie. De export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stadsbrug-zwijndrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthInModelM": 308.15,
+    "deckWidthM": 23.2,
+    "trussLinesM": [
+      -6.45,
+      6.45
+    ],
+    "trussTopNapM": 21.4,
+    "trussPanels": 10,
+    "trussPanelM": 15.3,
+    "spansM": {
+      "river": [
+        89.7,
+        77.2
+      ],
+      "basculeClearWidth": 49
+    },
+    "roadNapM": {
+      "west": 13.526499999999999,
+      "river": 13.89,
+      "bascule": 13.785,
+      "east": 13.849
+    },
+    "girderAboveRoadM": {
+      "pivots": 2.05,
+      "mid": 1.4,
+      "tips": 2.45
+    },
+    "houseNapM": 17.7,
+    "machineHouseNapM": 20.7,
+    "waterNapM": 0
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadsbrug_Zwijndrecht",
+    "PDOK BGT overbruggingsdeel (dek, basculepijler en bordessen), scheiding (pijlers, kademuren, klepliggers), wegdeel en ondersteunend wegdeel (rijbaan, fietspaden, voetpaden, stroken van de liggers), EPSG:28992",
+    "PDOK BAG pand 0505100000013841 (huisje op het bordes) en 0505100000067669 (koffiefilter, niet gemodelleerd)",
+    "PDOK AHN DSM 0,5 m via WCS voor wegdek, trottoirs, vakwerkliggers, klepliggers, geleiders, pijlerneuzen, huisje en machinehuis",
+    "PDOK luchtfoto (Actueel_orthoHR) voor het windverband, de voegen, de pijlerneuzen en de bordessen",
+    "Wikimedia Commons: Brugweg in Dordrecht rijbaan.jpg, Autobrug over de Oude Maas, Zwijndrechtsebrug, Dordtsebrug, Dordrecht (12171579566).jpg, Brug in A16 tussen Zwijndrecht en Dordrecht - luchtfoto.jpg, Brugwachter Oude Maas (Koffiefilter) , Zwijndrechtsebrug, Dordtsebrug bij Dordrecht (12171172804).jpg, Dordrecht Maas.JPG, Dordrecht View Spoorbrug 017 9686.jpg"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "name": "Merwedebrug (Beneden-Merwede)",
+  "file": "merwedebrug-papendrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108025.67,
+    426267.5
+  ],
+  "xAxis": [
+    -0.07665,
+    0.99706
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.64,
+  "groundSamplePoints": [
+    [
+      -490,
+      22
+    ],
+    [
+      -440,
+      22
+    ],
+    [
+      -60,
+      25
+    ],
+    [
+      -60,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      60,
+      25
+    ],
+    [
+      60,
+      -25
+    ],
+    [
+      180,
+      25
+    ],
+    [
+      180,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0590100000018081"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op NAP 0 (z = NAP-hoogte, het water van de Beneden-Merwede) in de oorsprong, +X langs de brug naar het noorden (Papendrecht, RD-richting 94,40 graden vanaf het oosten) en +Y naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd in Dordrecht (x = -568) tot het noordelijke in Papendrecht (x = 482,9). De boogbrug met trekband van 203 m als twee verticale ribben van 1,8 m breed (6,4 m ten oosten en 10,1 m ten westen van de as, het fietspad buiten de oostelijke rib) met de top op NAP +43,0 m en het netwerk van schuine hangers (acht knopen op het dek, van elke knoop twee hangers naar de boog) als een scherm met stroken van 1,0 m en spitse openingen; de twee rivierpijlers met ronde koppen tot NAP +6,2 m en drie kolommen; de basculeklep van 34,3 m in gesloten stand met voegen; de basculekelder (BAG-pand) met plint, ramen als nissen en de toren van het bedieningsgebouw tot NAP +20,0 m; de zuidelijke aanbrug als kokerligger op tien velden van circa 45 m met een bocht naar het zuidoosten, zes kolommen per pijler en poeren in de Wantijhaven, met het lager liggende fietsdek dat vanaf x = -122 afdaalt en ten zuiden van x = -335 losraakt; de noordelijke aanbrug op zes velden. Het wegdek ligt op NAP +10,6 m (Dordrecht) tot +14,9 m (boog) en +6,1 m (Papendrecht). Schampkanten in plaats van leuningen. Het windverband en de portalen tussen de ribben (vrije horizontale overspanningen van 16,5 m), lantaarns, de seinpalen en slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de haven en de rivier bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "merwedebrug-papendrecht-1-3000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 1050.9,
+    "archSpanM": 203,
+    "archCrownNapM": 43,
+    "archRiseAboveDeckM": 28.13,
+    "archRibsFromAxisM": {
+      "east": -6.4,
+      "west": 10.1
+    },
+    "hangerDeckNodesX": [
+      -78.94,
+      -56.39,
+      -33.83,
+      -11.28,
+      11.28,
+      33.83,
+      56.39,
+      78.94
+    ],
+    "basculeLeafM": 34.26,
+    "deckWidthM": {
+      "approach": 20.82,
+      "arch": 21.62
+    },
+    "southPierX": [
+      -511.5,
+      -466.6,
+      -421.3,
+      -375.7,
+      -330.5,
+      -285.3,
+      -240.1,
+      -194.85,
+      -149.4
+    ],
+    "northPierX": [
+      209.68,
+      258.82,
+      307.97,
+      357.11,
+      406.25
+    ],
+    "deckNapM": {
+      "south": 10.61,
+      "crest": 14.87,
+      "north": 6.1
+    },
+    "towerTopNapM": 20,
+    "waterNapM": 0
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Merwedebrug_(Beneden-Merwede)",
+    "https://structurae.net/en/structures/merwede-bridge-papendrecht",
+    "PDOK BGT overbruggingsdeel (dekranden, fietsdek, pijlers met kolommen, poeren, rivierpijler, landhoofden), EPSG:28992",
+    "PDOK BAG pand 0590100000018081 (basculekelder met bedieningsgebouw)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, het fietsdek, de boogribben, de pijlerkoppen en de toren",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de klep, de kelder en het fietspad",
+    "Wikimedia Commons: Papendrecht, brug tussen Papendrecht en Dordrecht foto5 2010-06-27 17.06.JPG, Papendreschtsebrug over de Beneden Merwede, gezien van noord naar zuid.JPG, Papendrechtse brug 2018 1, 2 en 3.jpg, PapendrechtMerwedebrug01 tot en met 04.JPG"
+  ]
+}

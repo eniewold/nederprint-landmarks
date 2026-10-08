@@ -1,0 +1,75 @@
+{
+  "name": "Nesciobrug",
+  "file": "nesciobrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    126542.98,
+    485475.68
+  ],
+  "xAxis": [
+    0.73349,
+    0.6797
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -40,
+      -22
+    ],
+    [
+      -40,
+      28
+    ],
+    [
+      0,
+      -22
+    ],
+    [
+      0,
+      28
+    ],
+    [
+      40,
+      -22
+    ],
+    [
+      40,
+      28
+    ]
+  ],
+  "groundHeight": 42.46,
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de voeten van de twee pylonen in de oorsprong op de waterspiegel van het Amsterdam-Rijnkanaal (z = 0, NAP -0,5 m), +X van pylon naar pylon naar het noordoosten (RD-richting 42,8 graden vanaf het oosten) en +Y naar het noordwesten. Vijf nodes: road:fietspad, road:voetpad, road:voetpad-op-trap-zuid en road:voetpad-op-trap-noord, de bovenste 0,5 m van dek en trappen binnen de BGT-wegdelen met hun attributen in extras.attributes, en building:nesciobrug met de rest: het slingerende kokerdek (fietsdek met in het midden het voetpad ernaast, 53 m uit het midden gesplitst) met de parabool van NAP +10,5 m bij de pylonen naar +11,95 m in het midden, de lus van 270 graden op kolommen aan de zuidkant (begin op NAP +1,9 m) en de helling langs de noordoever (eind op +3,55 m), de twee pylonen (x = ±83,56, top NAP +35,8 m), de hoofdkabel boven de zuidoostrand van het dek met een hangerscherm met spitse openingen naar de buitenrand van het fietsdek, de vier tuien, de ovale trappen aan het eind van het voetdek, 36 kolommen, twee zware steunpunten en de landhoofden. Kabel en hangers zijn een scherm van 0,95 m, de tuien staven van 0,9 m; het hekwerk en de lantaarns zijn weggelaten. Het maaiveld wordt op het kanaal naast de hoofdoverspanning bemonsterd; groundHeight (ellipsoïdisch, PDOK-water) is de terugval voor een uitsnede zonder kanaal. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "nesciobrug-1-2500.stl"
+  ],
+  "realWorld": {
+    "mainSpanM": 167.12,
+    "lengthAlongCycleAxisM": 730.4,
+    "deckCrestNapM": 11.95,
+    "deckAtPylonsNapM": 9.97,
+    "cableMidNapM": 16,
+    "pylonTopNapM": 35.8,
+    "pylonDiameterM": [
+      1.8,
+      1
+    ],
+    "hangerSpacingM": 6.96,
+    "loopStartNapM": 1.86,
+    "northEndNapM": 3.55,
+    "stairOvalM": [
+      10.4,
+      8.4
+    ],
+    "waterNapM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nesciobrug",
+    "PDOK BGT wegdeel op de brug (relatieve hoogteligging 2: fietspad G0363.293837356f464d01a489f7c71035c6e8, G0363.22cee56329b74430b9bfe89df3082bdd, G0363.c92a17218bbb4651826088d83823545d, G0363.db10d2efe3a1472ebffe565c6b2e81da, G0363.5f2a1d53d8984df49d22231296ae9912, G0363.97c496fd01034b5892ec0694e0a37dd1; voetpad G0363.6bd66cf0451f48bb8f97459403714dc5, G0363.f5857352a3584beba30b8dbff75a4609; relatieve hoogteligging 1: voetpad op trap G0363.b1cf75f04eb84fa6ac4668157c41b8c2, G0363.d579833168d6434caf84540f71523788, G0363.d944871e1996401e9a71f1c036f795eb, G0363.5e219ae571ce4fb9aef8662655689ca0), EPSG:28992",
+    "PDOK BGT overbruggingsdeel (pijlers: pylon, kolommen, steunpunten)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het lengteprofiel van fiets- en voetdek, de hoofdkabel en de pylonen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de pylonvoeten, de tuien en de trappen",
+    "Wikimedia Commons: Nesciobrug 2.jpg, Nesciobrug 3.jpg, Nesciobrug 4.jpg, Nesciobrug Amsterdam 2017 1.jpg, Nesciobrug - panoramio.jpg en andere (opbouw, hangers, trappen)"
+  ]
+}

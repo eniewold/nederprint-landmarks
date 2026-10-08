@@ -1,0 +1,100 @@
+{
+  "name": "Het Kasteel",
+  "file": "het-kasteel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    89395.2,
+    437202.8
+  ],
+  "xAxis": [
+    0.871214,
+    0.490904
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      85,
+      0
+    ],
+    [
+      0,
+      78
+    ],
+    [
+      0,
+      -70
+    ],
+    [
+      -85,
+      50
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000675996",
+    "NL.IMBAG.Pand.0599100000675997",
+    "NL.IMBAG.Pand.0599100000675998",
+    "NL.IMBAG.Pand.0599100000676003"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (89395,20, 437202,80) in het hart van de veldopening op het maaiveld (NAP -1,2 m), +X langs het veld naar het noordoosten (29,4 graden) en +Y naar het noordwesten. Eén node building:stadion: de ring van tribunes (voorrand 127 bij 87 m, achterwand 152 bij 115 m) met per zijde een eigen dakdoorsnede (een dakplaat van 1,7 tot 3,2 m dik met een aflopende voorrand, op een achterwand met steunberen en consoles) boven een zitrang van zes treden die onder het dak zichtbaar blijft, vijf waaiervormige dakvakken per hoek, het trapsgewijze dak van de noordtribune (+15,1 m) en de zuidtribune (+11,7 m), de nis met hal in de zuidtribune, het Kasteel (bakstenen poortgebouw met twee tentdaken tot +14,7 m, twee torentjes, spits, poort en kantelen), het clubgebouw (+19,4 m in de vleugels, +22,7 m in het midden met schuin dak, houten volume op kolommen boven een glazen onderbouw, glazen toren, 28 raamnissen, dakranden en dakopbouwen) en vier vakwerk-lichtmasten buiten de hoeken. Onderkant op 0,5 m onder het maaiveld; de dakplaten en overstekken hangen uit (de export vult ze op). Vervangt de PDOK-reconstructie van de BAG-panden van het stadion. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "het-kasteel-1-1000.stl",
+    "het-kasteel-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 186.81,
+    "widthM": 136.4,
+    "highestPointM": 24.2,
+    "capacity": 11000,
+    "fieldOpeningM": [
+      127,
+      87
+    ],
+    "roofM": {
+      "east": [
+        8.4,
+        11.8,
+        10.85
+      ],
+      "north": [
+        10.3,
+        15.1,
+        14.3
+      ],
+      "west": [
+        7.9,
+        11.8,
+        10.85
+      ],
+      "south": [
+        7.8,
+        11.7,
+        10.35
+      ]
+    },
+    "clubBuildingM": [
+      19.4,
+      22.7
+    ],
+    "castleM": [
+      null,
+      14.9
+    ],
+    "mastTopM": [
+      24.2,
+      23.9,
+      23.9,
+      22.1
+    ],
+    "groundNapM": -1.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spartastadion_Het_Kasteel",
+    "PDOK BAG panden van het stadion (zie replacesBuildings), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (ook op 0,25 m opgevraagd): de ring, de dakprofielen per zijde, het clubgebouw, het Kasteel, de hal en de lichtmasten",
+    "PDOK luchtfoto (Actueel_orthoHR): dakvakken, hoekvakken en dakopbouwen",
+    "Wikimedia Commons: Sparta Stadion Het Kasteel 01 tot 05 en Sparta stadion Spangen 2020 (zitrang onder het dak, achterwand, poortgebouw, houten gevel, consoles)"
+  ]
+}

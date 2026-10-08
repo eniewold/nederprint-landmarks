@@ -1,0 +1,65 @@
+{
+  "name": "Pier van Scheveningen",
+  "file": "pier-scheveningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79166.88,
+    459355.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      30,
+      40
+    ],
+    [
+      -80,
+      10
+    ],
+    [
+      0,
+      -40
+    ],
+    [
+      30,
+      -60
+    ],
+    [
+      100,
+      -120
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001644879",
+    "NL.IMBAG.Pand.0518100001647057",
+    "NL.IMBAG.Pand.0518100000255328"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (79166,88, 459355,50), bij de kop van de pier, op het zeeoppervlak van het PDOK-terrein (NAP -0,45 m), +X naar het oosten en +Y naar het noorden. Node building:pier: het dek op de BAG-contour (onderkant NAP +11 m, dek +13,5 m) met het middendeel van 7 m breed (+17 m bij de kop, +15,5 en +14,5 m naar het strand) op pijlerjukken van 1,2 m om de 20 m, de kiosk op de kop, de loopbrug naar het zuidereiland en de tak naar het torenreiland (dekken +12,5 m), het zuidereiland op de BAG-contour (rand +12,3 m, gebouw tot +15,5 m en het dak tot +20 m), het torenreiland (+15 m) met de kiosk en de uitkijktoren (tot +42 m, cabine tot +48 m, mast tot +53 m) en het platform met de aanloop voor het reuzenrad (+8 en +9 m). Node building:reuzenrad: het rad van 40 m met acht spaken (naaf +28,5 m, top +48,5 m) op een A-bok. Onderkant op NAP -1 m; de export zet onder de dekken en de bovenkant van het rad een wig met een wandje. Vervangt de PDOK-reconstructie van de drie BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "pier-scheveningen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 285.26,
+    "widthM": 281.39,
+    "highestPointNapM": 53,
+    "pierLengthM": 294.6,
+    "deckNapM": 13.5,
+    "towerTopNapM": 53,
+    "wheelTopNapM": 48.5,
+    "wheelDiameterM": 40,
+    "groundNapM": -0.45,
+    "baseNapM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Pier_van_Scheveningen",
+    "PDOK BAG panden 0518100001644879 (pier), 0518100001647057 (zuidereiland) en 0518100000255328 (torenreiland), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dekken, gebouwen, toren, reuzenrad en strand",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

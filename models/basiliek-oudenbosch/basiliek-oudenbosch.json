@@ -1,0 +1,69 @@
+{
+  "name": "Basiliek van de HH. Agatha en Barbara",
+  "file": "basiliek-oudenbosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95519.15,
+    400427.87
+  ],
+  "xAxis": [
+    0.99619,
+    -0.08716
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      34
+    ],
+    [
+      -32,
+      12
+    ],
+    [
+      31,
+      6
+    ],
+    [
+      -32,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1655100000541882"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong onder het hart van de koepel op RD (95519,15, 400427,87), op het maaiveld aan de koorzijde (NAP +2,0 m), +Y langs de as naar het koor in het noorden (RD-richting 85 graden) en +X naar het oosten; de voorgevel ligt aan de -Y-kant. Eén node building: de voorgevel met halfzuilen, vijf boognissen, de kroonlijst (NAP +29,5 m), de attiek (+34 m) met het fronton (+38 m), het middenblok (+39 m) en elf beelden (tot +42 m); het schip (nok +30,6 m) met balustrade, piedestals en vensternissen; de viering (+31,0 m) met balustrade; de trommel (+45 m) met zestien steunberen en vensters; de koepel (+58,7 m) met zestien ribben en dakkapellen en de lantaarn (+67 m); de drie armen met apsissen en vensters (nok +30,5 m), de hoekvolumes (+27,0 m) en de sacristieën (+13,5 m). Het terrein loopt naar het voorplein op tot NAP +6,0 m; daar zakt de vlakke onderkant in het terrein. Alles staat recht op of wordt naar boven toe smaller, behalve de kroonlijst die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 1655100000541882. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "basiliek-oudenbosch-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 83.1,
+    "widthM": 55.4,
+    "naveRidgeNapM": 30.6,
+    "facadeTopNapM": 34,
+    "mainStatueNapM": 42,
+    "dome": {
+      "drumRadiusM": 11,
+      "drumButtressRadiusM": 12.7,
+      "drumTopNapM": 45,
+      "domeTopNapM": 58.7,
+      "lanternTopNapM": 67,
+      "crossNapM": 69.8
+    },
+    "groundNapM": {
+      "north": 2,
+      "forecourt": 6
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Basiliek_van_de_H.H._Agatha_en_Barbara",
+    "PDOK BAG pand 1655100000541882 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: schip, voorgevel, viering, armen, apsissen, radiaal profiel van trommel, koepel en lantaarn, maaiveld",
+    "PDOK AHN DSM 0,5 m: pieken van beelden en piedestals, ringen rond de trommel (steunberen) en de koepel (ribben)",
+    "PDOK 3D Basisvoorziening gebouwen (LoD2.2), ter vergelijking",
+    "Wikimedia Commons: foto's van de voorgevel, de koepel en de trommel (RCE en anderen)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

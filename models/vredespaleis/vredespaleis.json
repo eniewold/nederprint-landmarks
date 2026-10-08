@@ -1,0 +1,60 @@
+{
+  "name": "Vredespaleis",
+  "file": "vredespaleis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    80201.12,
+    455937.92
+  ],
+  "xAxis": [
+    0.95697,
+    0.2902
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -46,
+      -37
+    ],
+    [
+      -84,
+      0
+    ],
+    [
+      -86,
+      -72
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000210611"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (80201,12, 455937,92), midden op de voorgevel van het Vredespaleis in de as van de ingang en de dakruiter, op het maaiveld (NAP +3,4 m), +X van de achtergevel naar de voorgevel (RD-richting 16,87 graden, naar het oostnoordoosten) en +Y naar het noordnoordwesten; de voorgevel kijkt naar het Carnegieplein, de hoge klokkentoren staat op de zuidhoek (-Y), de kleine toren aan de noordgevel (+Y), de bibliotheek en het Academiegebouw liggen achter het paleis (-X). Eén node building: het paleis van circa 80 bij 77 m binnen de BAG-contour met de vloer van de binnenplaats op +3,9 m en het verhoogde middendeel op +5,9 m, de voorvleugel onder een zadeldak met schilden (goot +20 tot +21,5 m, nok +35,8 m) met de dakruiter tot +48,5 m en twee schoorstenen, de hogere blokken op de noord- en zuidhoek (+32,8 en +33,3 m) met het paviljoen op de noordhoek (nok +33,7 m), de noord-, zuid- en achtervleugel onder gebroken daken (goot +19,7 tot +22 m, bovenkant +29,4 tot +30,5 m), de twee uitbouwen in de binnenplaats, de klokkentoren (schacht 10,6 m tot +42,3 m, klokkenverdieping die 0,3 m uitkraagt tot +50,5 m met vier hoektorentjes tot +58,5 m, bovengeleding van 6,2 m tot +63 m, achtkantige spits tot +80 m en windvaan tot NAP +83 m) en de kleine achtkantige toren aan de noordgevel (4,2 m, tot +40 m, spits en naald tot +52,4 m); daarachter binnen hetzelfde BAG-pand de bibliotheekvleugel (+19,9 m), de ovale zaal (+13,8 m), het tussenlid (+12,8 m) en het Academiegebouw (+14,4 tot +22 m) als blokken met een vlak dak of een lessenaarsdak. Alles staat recht op of loopt schuin omhoog, behalve de klokkenverdieping die 0,3 m uitkraagt, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van BAG-pand 0518100000210611. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "vredespaleis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 156.04,
+    "widthM": 161.63,
+    "palaceLengthM": 79.5,
+    "palaceWidthM": 76.6,
+    "frontRidgeNapM": 35.8,
+    "flecheTipNapM": 48.5,
+    "clockTowerShaftM": 10.6,
+    "clockTowerBelfryNapM": 50.5,
+    "clockTowerTipNapM": 83,
+    "smallTowerTipNapM": 52.4,
+    "libraryRoofNapM": 19.9,
+    "courtyardFloorNapM": 3.9,
+    "groundNapM": 3.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Vredespaleis",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/333074",
+    "PDOK BAG pand 0518100000210611 (contour van paleis, binnenplaats en uitbreidingen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dwarsprofielen van de vleugels, omhullende van de torens per hoogte, dakruiter, schoorstenen, daken van de uitbreidingen, maaiveld",
+    "Wikimedia Commons: Friedenspalast Den Haag.jpg (frontaal), Den Haag Peace Palace.jpg, Peace Palace (side view).JPG, Peace Palace back side 04152014.JPG",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

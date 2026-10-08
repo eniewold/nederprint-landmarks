@@ -1,0 +1,55 @@
+{
+  "name": "Lange Jan",
+  "file": "lange-jan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    31935.8,
+    391557
+  ],
+  "xAxis": [
+    0.97318,
+    0.23005
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -11
+    ],
+    [
+      -8,
+      -8
+    ],
+    [
+      8,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0687100000029292"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (31935,8, 391557,0), in het hart van de achtkantige onderbouw op het maaiveld van Onder den Toren (NAP +4,5 m), +X loodrecht op de oostgevel van de achtkant (RD-richting 13,3 graden) en -Y naar het plein (zuidzuidoosten). building:toren is de stenen achtkant met steunberen, nissen, omloop en pinakels tot +60,8 m, de opbouw en de twee lantaarntjes tot +80,6 m en de keizerskroon met de windvaan tot +90,4 m boven het maaiveld; alles staat recht op of kraagt onder hooguit 40 graden uit, zodat de toren op 1:1000 zonder steun print. De toren hoort bij BAG-pand 0687100000029292, het hele abdijcomplex; dat pand wordt vervangen en building:abdij is de PDOK-reconstructie (3D Basisvoorziening, CC BY 4.0) van de rest ervan, zonder de toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "lange-jan-1-1000.stl"
+  ],
+  "realWorld": {
+    "totalHeightM": 90.4,
+    "octagonAcrossFlatsM": 12.6,
+    "buttressTipRadiusM": 8.45,
+    "galleryTopM": 60.8,
+    "firstLanternTopM": 71.8,
+    "secondLanternTopM": 76.4,
+    "crownTopM": 85.2,
+    "groundNapM": 4.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Abdijtoren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28674",
+    "PDOK BAG pand 0687100000029292 (achtkant en steunberen van de toren binnen de contour van het abdijcomplex), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: omhullende per richting en hoogte, hoogtes van omloop, lantaarns en kroon, maaiveld",
+    "PDOK 3D Basisvoorziening, gebouwtegel t/10/131/283 (CC BY 4.0, Kadaster): reconstructie van de rest van het abdijcomplex",
+    "Wikimedia Commons: 2017-06-05 Middelburg Abdijtoren.jpg, Middelburg - View West on 90.5 m high Abdijtoren, nicknamed 'Lange Jan'.jpg"
+  ]
+}

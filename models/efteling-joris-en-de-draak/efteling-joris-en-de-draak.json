@@ -1,0 +1,79 @@
+{
+  "name": "Joris en de Draak (Efteling)",
+  "file": "efteling-joris-en-de-draak.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131780,
+    406490
+  ],
+  "xAxis": [
+    0.96363,
+    0.26724
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      28.4,
+      -47.3
+    ],
+    [
+      13.9,
+      -43.3
+    ],
+    [
+      43.6,
+      -48.4
+    ],
+    [
+      -2.1,
+      -45.1
+    ],
+    [
+      -58.9,
+      -6.5
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131780, 406490), midden tussen de twee lift-heuvels, op het maaiveld (NAP +9,0 m), +X langs de lifts naar het oost-noordoosten (15,5° linksom van RD-oost), +Y 90° linksom daarop. Node building:baan: de twee banen Water en Vuur (elk ca. 790 m in het model) als dichte band van 1,6 m breed en 0,8 m dik, in bochten gekanteld tot 55°, op een dichte vakwerkwand (1,0 m breed onder de baan, per kant 0,12 m per meter breder naar onderen) met portalen om de 4 m en vakwerkreliëf per vak (kruisschoren en regels van 0,5 m, blinde nissen van 0,35 m diep): de lifts naast elkaar tot +22,6 m, de keerbochten boven op de lift (+17 tot +20 m), de drops tussen de lifts door (laagste punt +1,4 m) en over het station (+11,5 m), de grote bocht bij de Python, de doorgang door de lift, de keerbochten op palen in de Kanovijver (+1,6 tot +5,8 m) en de terugweg onder de keerbochten door naar de eindremmen (+4,3 m). Node building:station: het station (Tuyghuys, 15,5 × 18,5 m, gevels 7,0 m, nok 8,8 m, galerij aan de vijverkant, poort, spitsboognissen en drakenschilden) en de overkapte remise (20 × 12 m, nok 8,4 m). Node building:draak: de draak Edna in haar vijvertje, kop ca. 9 m boven het water. Onderkant op NAP +7,3 m (1,7 m onder het maaiveld, onder het water). Geen BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "lengthM": 174.1,
+    "widthM": 146.9,
+    "highestPointM": 22.56,
+    "highestPointNapM": 31.56,
+    "trackLengthWaterM": 795,
+    "trackLengthVuurM": 775,
+    "liftTopM": [
+      22.22,
+      22.43
+    ],
+    "trackWidthM": 1.6,
+    "trackDepthM": 0.8,
+    "stationM": [
+      15.5,
+      18.5,
+      8.8
+    ],
+    "remiseM": [
+      20,
+      12,
+      8.4
+    ],
+    "dragonHeadAboveWaterM": 9.6,
+    "groundNapM": 9,
+    "waterNapM": 7.9,
+    "baseM": -1.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Joris_en_de_Draak",
+    "https://www.eftepedia.nl/lemma/Joris_en_de_Draak",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: ligging van lifts en keerbochten, hoogtes als maxima langs het pad, station- en remisedak, maaiveld en waterpeil",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): tracé van de lage baandelen, station, remise en draak (hoge delen ca. 0,3 m per meter hoogte naar het noorden verschoven)",
+    "OpenStreetMap (ODbL), railway/roller_coaster-wegen: volgorde en verbindingen van de baandelen",
+    "Wikimedia Commons, Category:Joris en de Draak: lifts, keerbochten, palen in de vijver, station, draak"
+  ],
+  "groundHeight": 52.72,
+  "printFiles": [
+    "efteling-joris-en-de-draak-1-1000.stl"
+  ]
+}

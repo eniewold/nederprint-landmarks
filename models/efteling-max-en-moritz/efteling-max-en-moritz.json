@@ -1,0 +1,87 @@
+{
+  "name": "Max & Moritz (Efteling)",
+  "file": "efteling-max-en-moritz.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131483,
+    406637
+  ],
+  "xAxis": [
+    0.95882,
+    -0.28402
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      -12
+    ],
+    [
+      0,
+      -12
+    ],
+    [
+      10,
+      -13
+    ],
+    [
+      24,
+      -2
+    ],
+    [
+      -22,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017602"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (131483, 406637), het midden van het stationsgebouw, op het maaiveld van het Max & Moritz Plein (NAP +9,25 m), +X langs de lengteas van het station en de sporen erin naar het oost-zuidoosten (16,5° rechtsom van RD-oost), +Y 90° linksom daarop (naar de baan). Node building:baan: de twee banen Max en Moritz (elk ca. 300 m) als dichte band van 1,3 m breed met een driehoekige kiel tot 0,9 m, in bochten tot 9° gekanteld, op een steunwand van 0,9 m dik met spitse openingen om de ~3 m (de kolommen); drie opgaande helixen met de bovenste gang op kolommen met een console, vijf kruisingen, hoogste punt van de rails ca. 5,2 m boven het plein. Node building:station: het stationsgebouw rond het oude Bob-station (BAG-pand 0809100000017602): oud station met balkon en flauw zadeldak (nok 9,4 m), de hal aan de baankant (6,1 m) met vakwerk, het middendeel met schilddak (8,5 m), de Schmetterling-puntgevel (9,4 m) met erker en vogel, het vakwerkblok (6,0 m) met de uitrit van Moritz en de school van meester Lämpel (nok 9,8 m) met de uitrit van Max en het klokkentorentje (13,2 m). Node building:wachtrij: het paviljoen met schilddak, de overkapte meandering achter het station (2,5 m) en de overkapping onder de banen. Onderkant op 0,6 m onder het plein. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "realWorld": {
+    "opened": "2020-06-20",
+    "manufacturer": "MACK Rides (powered coaster, twee banen)",
+    "lengthM": 82.2,
+    "widthM": 67.3,
+    "highestPointM": 13.2,
+    "highestPointNapM": 22.45,
+    "trackLengthMaxM": 275,
+    "trackLengthMoritzM": 275,
+    "highestRailM": [
+      5.17,
+      4.94
+    ],
+    "trackWidthM": 1.3,
+    "trackDepthM": 0.9,
+    "stationRailM": 2.25,
+    "stationM": [
+      32.1,
+      14.899999999999999
+    ],
+    "roofHeightsM": {
+      "bobStation": 9.4,
+      "hal": 6.1,
+      "schilddak": 8.5,
+      "schmetterlingGevel": 9.4,
+      "vakwerkblok": 6,
+      "school": 9.8,
+      "torentje": 13.2
+    },
+    "groundNapM": 9.25,
+    "baseM": -0.6
+  },
+  "sources": [
+    "https://www.eftepedia.nl/lemma/Max_%26_Moritz",
+    "https://www.eftepedia.nl/lemma/Max_%26_Moritz_Plein",
+    "https://nl.wikipedia.org/wiki/Max_%26_Moritz_(Efteling)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (opname na 2020, met de banen van Max & Moritz): ligging van alle baandelen, railhoogtes als maxima langs het pad, maaiveld en heuvels, daken van het station en de wachtrijoverkappingen",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR): tracé en kleur van de banen en de volgorde aan de kruisingen (hoge delen ca. 0,35 m per meter hoogte naar het zuiden verschoven; per punt gecorrigeerd)",
+    "BAG-pand 0809100000017602 (oud Bob-station, 1985)",
+    "Wikimedia Commons, Category:Max & Moritz (Efteling): station van alle kanten, bouwfoto's met de kolommen"
+  ],
+  "groundHeight": 52.81,
+  "printFiles": [
+    "efteling-max-en-moritz-1-1000.stl"
+  ]
+}

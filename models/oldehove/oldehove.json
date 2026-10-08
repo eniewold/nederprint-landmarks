@@ -1,0 +1,60 @@
+{
+  "name": "Oldehove",
+  "file": "oldehove.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181895.64,
+    579667.21
+  ],
+  "xAxis": [
+    0.99619,
+    -0.08716
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000356999"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (181895,64, 579667,21), in het hart van de vierkante onderbouw op het maaiveld ten noorden en zuiden van de toren (NAP +2,75 m), +X loodrecht op de oostgevel met de ingang aan het Oldehoofsterkerkhof (RD-richting -5 graden) en +Y naar het noordnoordoosten. building:toren is de scheve bakstenen toren met acht steunberen, drie geledingen met blinde spitsboognissen, hoekpijlers met schuine kappen en het vlakke dak op 39 m, plus de glazen uitkijkpost en de mast tot 45,7 m boven het maaiveld; de toren helt lineair over tot 0,9 m naar -X en 0,9 m naar +Y op het dak (AHN), springt verder alleen naar boven terug en print op 1:1000 zonder steun. Vervangt de PDOK-reconstructie van BAG-pand 0080100000356999. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "oldehove-1-1000.stl"
+  ],
+  "realWorld": {
+    "roofHeightM": 39.05,
+    "mastTopM": 45.7,
+    "baseFootprintM": [
+      13.5,
+      13.76
+    ],
+    "belfryFootprintM": [
+      11.7,
+      11.5
+    ],
+    "buttressReachM": 9.4,
+    "leanAtRoofM": [
+      -0.9,
+      0.9
+    ],
+    "leanDegrees": 1.87,
+    "groundNapM": 2.75
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Oldehove_(gebouw)",
+    "https://en.wikipedia.org/wiki/Oldehove_(tower)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24331",
+    "PDOK BAG pand 0080100000356999 (vierkante onderbouw van 13,5 x 13,75 m met acht steunberen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakhoogte, bovenvlak en scheefstand, mast, maaiveld",
+    "Wikimedia Commons: Leeuwarden, de Oldehove RM24331 IMG 3650 2018-05-21 11.29.jpg, 20140531 Oldehove (Aldehou) Leeuwarden NL.jpg, Zicht vanuit het oosten - Leeuwarden - 20326062 - RCE.jpg"
+  ]
+}

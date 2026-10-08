@@ -1,0 +1,80 @@
+{
+  "name": "Baanhoekbrug",
+  "file": "baanhoekbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    110500.73,
+    426163.54
+  ],
+  "xAxis": [
+    -0.02644,
+    0.99965
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.67,
+  "groundSamplePoints": [
+    [
+      -60,
+      25
+    ],
+    [
+      -60,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      60,
+      25
+    ],
+    [
+      60,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0505100000001555"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste stenen pijler op het water van de Beneden-Merwede (z = 0, NAP +0,07 m) in de oorsprong, +X langs de brug naar het noorden (Sliedrecht, RD-richting 91,52 graden vanaf het oosten) en +Y naar het westen; het fietspad ligt aan de oostkant (y < 0). Drie nodes: road:spoor en road:fietspad, de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug met hun attributen in extras.attributes (spoorbaan, gesloten verharding; fietspad, gesloten verharding, asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd (x = -290,95) tot het noordelijke (x = 182,3), 473 m. Twee gelijke vakwerkliggers van 110,7 m over de rivier (7 vakken, evenwijdige randen 10,8 m boven de spoorstaaf tot NAP +25,0 m, schuine eindstijlen, stijlen bij de bovenknopen) als dichte platen van 1,0 m met doorgaande driehoekige openingen en blinde nissen; drie stenen pijlers met voet en kraag tot NAP +12,3 m met lagere aanbouwen; de basculebrug met de klep (x = -152,4 tot -119), het vaste deel met plaatliggers op de basculekelder en het machinehuis, het bedieningshuis (BAG-pand) op een kolom met loopbrug en negen dukdalven; de aanbruggen als kokerligger met uitkragend fietsdek op pijlers met ronde koppen; schampkant tussen spoor en fietspad en borstweringen. Spoorstaaf NAP +13,07 m (zuid) tot +14,3 m (middelste pijler) en +13,58 m (noord). Windverbanden, portalen, bovenleiding, leuningen en de open stand van de klep zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de vakwerkliggers bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "baanhoekbrug-1-1250.stl"
+  ],
+  "realWorld": {
+    "lengthM": 473.25,
+    "trussSpansM": [
+      110.7,
+      110.7
+    ],
+    "trussPanels": 7,
+    "trussHeightAboveRailM": 10.8,
+    "trussLinesFromAxisM": [
+      -2.5,
+      2.75
+    ],
+    "leafM": 33.4,
+    "railNapM": {
+      "south": 13.07,
+      "middlePier": 14.3,
+      "north": 13.58
+    },
+    "stonePierTopNapM": 12.3,
+    "cabinRoofNapM": 22.4,
+    "waterNapM": 0.07
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Baanhoekbrug",
+    "PDOK BGT overbruggingsdeel, wegdeel en spoor (dekken, pijlers, landhoofd, spoorbaan en fietspad), EPSG:28992",
+    "PDOK AHN DSM en DTM 0,5 m via WCS voor spoorstaaf, fietspad, vakwerk, pijlerkoppen, kelder, bedieningshuis en dukdalven",
+    "PDOK BAG pand 0505100000001555 (bedieningshuis)",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Sliedrecht Baanhoekbrug 002.jpg tot 006.jpg, Open baanhoekbrug (01).JPG en (02).JPG, Spoorbrug Sliedrecht - panoramio.jpg, Trein over de Baanhoekbrug in 2020.jpg, Spoorbrug bij Biesbosch.jpg, Beneden-Merwede Sliedrecht 004.jpg, ENI 02320501 STOLT MOSEL (02).JPG"
+  ]
+}

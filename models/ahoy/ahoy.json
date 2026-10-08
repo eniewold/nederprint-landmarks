@@ -1,0 +1,78 @@
+{
+  "name": "Rotterdam Ahoy",
+  "file": "ahoy.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93100,
+    433080
+  ],
+  "xAxis": [
+    0.999229,
+    -0.03926
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -160
+    ],
+    [
+      60,
+      -155
+    ],
+    [
+      110,
+      -60
+    ],
+    [
+      60,
+      100
+    ],
+    [
+      -240,
+      -60
+    ],
+    [
+      -70,
+      -150
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000232364",
+    "NL.IMBAG.Pand.0599100100018688"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93100,00, 433080,00), het hart van de Ahoy Arena, op het maaiveld (NAP -0,9 m), +X langs de hallen naar het oosten (-2,25 graden vanaf de RD-X-as) en +Y naar het noorden. Eén node building:complex: de Arena met een gewelfd dak van +30,7 m (het AHN-profiel), een dakrand met verdiepte goot en een schuin aflopende muur, de oostkop met een hol dakveld (+17,7 tot +22 m), de evenementenhallen in het westen met twee tonvormige beuken (+12,6 m, 32 en 33 m breed), holle dakvelden (+10 m) en ruggen met smalle dakgoten, de lange westhal (+12,5 tot +12,8 m), het nieuwe deel in het noordwesten (+6 tot +28,5 m), de zuidhal als tongewelf (+16 tot +20 m), de noordkant van de Arena met een verdiept dakveld en een aflopend dak, en de lage bouwdelen en dakranden ertussen, alles afgesneden op de BAG-contouren. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal. Vervangt de PDOK-reconstructie van de twee BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ahoy-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 362.2,
+    "widthM": 298.4,
+    "highestPointM": 30.7,
+    "arenaRoofM": 30.7,
+    "westHallsM": [
+      12.85,
+      12.6,
+      10.05
+    ],
+    "newWingM": [
+      28.5,
+      25,
+      22
+    ],
+    "southHallM": [
+      20,
+      16
+    ],
+    "groundNapM": -0.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Rotterdam_Ahoy",
+    "PDOK BAG panden 0599100000232364 en 0599100100018688, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 en 0,25 m via WCS: de dwarsprofielen van de gebogen daken, de dakhoogtes per blok, het dak van de Arena en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

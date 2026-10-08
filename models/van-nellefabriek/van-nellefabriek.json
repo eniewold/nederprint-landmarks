@@ -1,0 +1,82 @@
+{
+  "name": "Van Nellefabriek",
+  "file": "van-nellefabriek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    89323.24,
+    437704.44
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      75,
+      -60
+    ],
+    [
+      60,
+      -30
+    ],
+    [
+      20,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000763317",
+    "NL.IMBAG.Pand.0599100000763318",
+    "NL.IMBAG.Pand.0599100000763319",
+    "NL.IMBAG.Pand.0599100000763320"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (89323,24, 437704,44), tussen de fabriek en het expeditiegebouw, op het maaiveld (NAP 0 m), +X naar het oosten en +Y naar het noorden. Eén node building:fabriek: de fabriek met de tabaksfabriek (NAP +31 m), de koffie- en theefabriek en de lage hallen, het expeditiegebouw, het gebogen kantoorgebouw en het ketelhuis als 18 blokken met een vaste dakhoogte (uit het AHN-DSM) op hun BAG-contouren, met de verdiepingen als groeven van 0,35 m in de lange gevels van de fabriek; de theekoepel op de tabaksfabriek (cilinder van 5,6 m straal tot +36,5 m met een dakrand onder 45 graden tot +37,2 m en de trapopbouw tot +40 m) en de drie loopbruggen naar het expeditiegebouw als kokers met een kiel van 50 graden. Onderkant op NAP -0,5 m; alleen de bovenkant van de groeven is vlak, de bruggen hangen tussen de gebouwen. Vervangt de PDOK-reconstructie van de vier BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "van-nellefabriek-1-1000.stl",
+    "van-nellefabriek-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 266.68,
+    "widthM": 240,
+    "highestPointNapM": 40,
+    "blockCount": 20,
+    "rotationDeg": 37.5,
+    "tobaccoFactoryRoofNapM": 31,
+    "teaRoomTopNapM": 37.2,
+    "teaRoomRadiusM": 5.6,
+    "bridges": [
+      {
+        "name": "koffiefabriek noord",
+        "topNapM": [
+          10.5,
+          10.5
+        ]
+      },
+      {
+        "name": "koffiefabriek zuid",
+        "topNapM": [
+          10.5,
+          10.5
+        ]
+      },
+      {
+        "name": "tabaksfabriek",
+        "topNapM": [
+          22,
+          14
+        ]
+      }
+    ],
+    "groundNapM": 0,
+    "baseNapM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Van_Nellefabriek",
+    "PDOK BAG panden 0599100000763318 (fabriek en hallen), 0599100000763320 (expeditiegebouw), 0599100000763317 (kantoor), 0599100000763319 (ketelhuis), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de dakhoogtes en blokgrenzen, de theekoepel, de loopbruggen en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

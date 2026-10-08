@@ -1,0 +1,58 @@
+{
+  "name": "Paleis Noordeinde",
+  "file": "paleis-noordeinde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    80913.2,
+    455283.4
+  ],
+  "xAxis": [
+    0.58269,
+    -0.812694
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -30
+    ],
+    [
+      -8,
+      -25
+    ],
+    [
+      8,
+      -40
+    ]
+  ],
+  "groundHeight": 44.9,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000279145",
+    "NL.IMBAG.Pand.0518100001640004"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (80913,2, 455283,4), midden in het paleis achter het hoofdgebouw, op het maaiveld van de binnenplaats aan de tuinzijde (NAP +1,5 m), +X langs de voorgevel naar het zuidoosten (-54,36 graden vanaf de RD-X-as, evenwijdig aan het Noordeinde) en +Y loodrecht daarop naar het Noordeinde. Node building:paleis uit dakvlakken en bouwdelen: het hoofdgebouw aan het voorplein met het schilddak (nok NAP +23,3 m), fronton, pilasters, portiek met balkon en schoorstenen; de twee vleugels om het voorplein met lage zadeldaken, arcadebogen en frontons aan de koppen; daarachter het platte dak en het middenblok met een afgeknot schilddak (NAP +25,75 m); de achterbouw van vier bouwlagen met kroonlijst en afgeknotte schilddaken (NAP +22,45 m), de middenrisaliet met reuzenpilasters en attiek, de achtervleugels en tuinpaviljoens. Node building:hekpijlers: de zes pijlers van het hek langs het Noordeinde. Onderkant op NAP 0 m, 1,5 m onder de binnenplaats; alle vlakken wijzen omhoog, staan verticaal of hangen niet vlakker dan 53 graden. Vervangt de PDOK-reconstructie van het paleis en het rechter tuinpaviljoen. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "paleis-noordeinde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 107.2,
+    "widthM": 103.9,
+    "highestPointM": 27.8,
+    "mainRidgeNapM": 23.3,
+    "middleTopNapM": 25.75,
+    "rearCorniceNapM": 19.45,
+    "frontCorniceNapM": 14.8,
+    "groundNapM": 1.5,
+    "baseM": -1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Paleis_Noordeinde",
+    "PDOK BAG panden 0518100000279145 (het paleis) en 0518100001640004 (het rechter tuinpaviljoen), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakvlakken, nokken, kroonlijsten, schoorstenen, hekpijlers en maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en hoogtes van de dakvlakken",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van het voorplein, de voorgevel en de binnenplaats aan de tuinzijde"
+  ]
+}

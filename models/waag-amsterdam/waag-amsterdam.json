@@ -1,0 +1,65 @@
+{
+  "name": "De Waag",
+  "file": "waag-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121842.13,
+    487324.42
+  ],
+  "xAxis": [
+    0.90259,
+    0.43051
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -4.5
+    ],
+    [
+      15,
+      -4.5
+    ],
+    [
+      0,
+      -18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012171850"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (121842,13, 487324,42), het hart van de achtkante middentoren, op het maaiveld van de Nieuwmarkt (NAP +2,2 m), +X langs de lange gevels naar het oost-noordoosten (25,5 graden vanaf het oosten) en +Y naar het noord-noordwesten. Eén node building:waag met het hoofdblok met plat dak (NAP +15,0 m) en daarop de achtkante middentoren (10,6 m over de vlakken, muren tot +16,8 m, spits tot +28,0 m), de twee grote ronde torens aan de west- en oostkant (straal 3,5 m, gootlijst 0,25 m uitkragend tot +14,3 m, achtkante spits tot +22,6 m), het zuidblok met schilddak (goot +12,5 m, nok +18,5 m) tussen de twee kleine ronde zuidtorens (straal 1,7 m, gootlijst tot +12,0 m, achtkante spits tot +19,0 m) en de twee achtkante traptorentjes aan de noordkant (spits tot +17,2 m). Alles begint 0,5 m onder het maaiveld; alles staat recht op of loopt schuin omhoog, behalve de gootlijsten van de vier ronde torens, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand van de Waag. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "waag-amsterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.25,
+    "widthM": 26.49,
+    "highestPointNapM": 28,
+    "flatRoofNapM": 15,
+    "centralTowerAcrossFlatsM": 10.6,
+    "centralTowerWallNapM": 16.8,
+    "centralTowerTipNapM": 28,
+    "largeTowerRadiusM": 3.47,
+    "largeTowerEaveNapM": 14.3,
+    "largeTowerTipNapM": 22.6,
+    "smallTowerRadiusM": 1.74,
+    "smallTowerEaveNapM": 12,
+    "smallTowerTipNapM": 19,
+    "stairTurretTipNapM": 17.2,
+    "southBlockEaveNapM": 12.5,
+    "southBlockRidgeNapM": 18.5,
+    "groundNapM": 2.2,
+    "baseNapM": 1.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Waag_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/3848",
+    "PDOK BAG pand 0363100012171850 (contour met de zes buitentorens), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: plat dak, middentoren, kegels van de torens, schilddak van het zuidblok en maaiveld",
+    "Wikimedia Commons: Amsterdam - Waag.jpg (zuid- en westkant vanaf de Nieuwmarkt)",
+    "PDOK luchtfoto (Actueel_orthoHR)"
+  ]
+}

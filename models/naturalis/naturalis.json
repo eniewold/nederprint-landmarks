@@ -1,0 +1,76 @@
+{
+  "name": "Naturalis",
+  "file": "naturalis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92442.03,
+    464470.42
+  ],
+  "xAxis": [
+    0.99872,
+    0.05059
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -46,
+      -30
+    ],
+    [
+      -48,
+      30
+    ],
+    [
+      0,
+      58
+    ],
+    [
+      40,
+      56
+    ],
+    [
+      50,
+      30
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000011596"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (92442,03, 464470,42) tussen de collectietoren en de atriumdoos op het maaiveld (NAP +0,5 m), +X langs de gevels van 1998 (RD-richting 2,9 graden) en +Y naar het noorden, naar de nieuwbouw. De vlakke onderkant ligt 0,5 m onder het maaiveld; dat wordt op de straten ten westen, noorden en noordoosten bemonsterd. Vervangt de PDOK-reconstructie van BAG-pand 0546100000011596. Hoogtes per deel uit het AHN; de strata zijn vijf platen (tot NAP +10,8, +16,5, +22,5, +24,8 en +31,4 m) die aan de noord- en oostkant per plaat terugspringen (onder het dak 3,3 en 2 m) en aan de westkant van de noordwestvleugel elk een eigen, tot 3 graden gedraaide gevel hebben (dak 4 m binnen de BAG-gevel), en het opengewerkte gevelpatroon van de atriumdoos is een raster van blinde ruitnissen. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "naturalis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 92,
+    "depthM": 121,
+    "collectionTowerTopNapM": 61.6,
+    "shaftTopNapM": 65.2,
+    "atriumTopNapM": 41.9,
+    "strataTopNapM": 31.4,
+    "strataSlabTopsNapM": [
+      10.8,
+      16.5,
+      22.5,
+      24.8,
+      31.4
+    ],
+    "strataSetbackM": {
+      "west": 4,
+      "north": 3.3,
+      "east": 2
+    },
+    "westWingNapM": 16.4,
+    "middleNapM": 25.2,
+    "officeSlabNapM": 21.4,
+    "groundNapM": 0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Naturalis_Biodiversity_Center",
+    "PDOK BAG pand 0546100000011596 (contour), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de hoogte per deel, de gevel van elke strataplaat en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Nieuwbouw Naturalis Biodiversity Center.jpg, Naturalis-Leiden-2019-1.jpg, Naturalis Leiden gebouw.jpg, Naturalis Biodiversity Center - Museum - Exterior 06 - Museum with collection tower, corner Pesthuis.jpg"
+  ]
+}

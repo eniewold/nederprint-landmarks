@@ -1,0 +1,100 @@
+{
+  "name": "Kuilenburgse spoorbrug",
+  "file": "kuilenburgse-spoorbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143059.41,
+    441367.07
+  ],
+  "xAxis": [
+    -0.51024,
+    0.86003
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.26,
+  "groundSamplePoints": [
+    [
+      -40,
+      25
+    ],
+    [
+      -40,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      40,
+      25
+    ],
+    [
+      40,
+      -25
+    ],
+    [
+      501.6,
+      16.6
+    ],
+    [
+      501.6,
+      -18.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0216100000016391"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Lek (z = 0, NAP +2,8 m) in de oorsprong, +X langs de brug naar het noorden (Schalkwijk, RD-richting 120,68 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Drie nodes. Node road:spoor: de bovenste 0,5 m van het dek op het BGT-wegdeel van de brug (spoorbaan L0004.fdf547dd99eb49ae993f3f716cf44ea0: over de boog de twee sporen tussen de bogen met een gat ertussen, daarbuiten tot 4,3 m en op het zuidelijke landhoofd 5,8 m naast de as) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; de bogen met het hangerscherm blijven constructie. Node building:kuilenburgse-spoorbrug: de rest van de stalen boogbrug van 1983 met het dek van 14 m breed over de hoofdoverspanning tussen de gemetselde rivierpijlers (x = -83,1 tot -73,4 en 73,8 tot 82,2, ronde koppen, zware kraag op NAP +9,0 m, blok en oplegbank), twee kokerbogen van 2 m breed 4,85 m naast de as met de top op NAP +42,8 m, de twaalf hangers om de 11,18 m als scherm met spitse openingen tegen het binnenvlak van de bogen, het windverband van kruisende diagonalen tussen de bogen; de betonnen kokerligger van 10,8 m breed en 4,0 m hoog over tien velden (43 en 61 m) op de oude pijlers met spitse koppen, kraag, betonnen blok en kop tot het noordelijke landhoofd (x = 592,2), en het gemetselde zuidelijke landhoofd vanaf x = -100,4; spoorstaaf NAP +17,3 tot +17,8 m en dalend tot +12,9 m. Node building:monument-oude-spoorbrug: het monument van 1983 op (-77,4, -26,95) met een stuk van de vakwerkligger uit 1868 op een kolom (BAG-pand 0216100000016391, top NAP +24,5 m). Bovenleiding, seinen, leuningen, looprails en de geribde afwerking van de kolom zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Lek naast de hoofdoverspanning en op de geul onder de aanbrug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kuilenburgse-spoorbrug-1-2000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 692.6,
+    "deckWidthM": {
+      "main": 14,
+      "approach": 10.8
+    },
+    "spansM": [
+      156.7,
+      43.1,
+      42.6,
+      61.5,
+      61,
+      61.2,
+      61.1,
+      60.9,
+      61,
+      60
+    ],
+    "mainSpanBearingsM": 152.8,
+    "archCrownNapM": 42.8,
+    "archRibsFromAxisM": 4.85,
+    "archBoxM": {
+      "width": 2,
+      "depthCrown": 3,
+      "depthEnds": 5
+    },
+    "hangerPanelM": 11.18,
+    "railNapM": {
+      "south": 17.32,
+      "crown": 17.8,
+      "north": 12.91
+    },
+    "monumentTopNapM": 24.5,
+    "waterNapM": 2.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kuilenburgse_spoorbrug",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, noordelijk landhoofd), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de spoorstaaf, de bogen, het windverband en het monument",
+    "PDOK BAG pand 0216100000016391 (monument)",
+    "Wikimedia Commons: Kuilenburgse spoorbrug 1-9.jpg, Culemborg - Kuilenburgse spoorbrug 2018 (42943756821).jpg, Culemborg - Kuilenburgse spoorbrug 2018 (28083500957).jpg, Spoorbrug Culemborg1.jpg, NS 1757; Lekbrug Culemborg.jpg, Oude Kuilenburge spoorbrug monument 1-3.jpg"
+  ]
+}

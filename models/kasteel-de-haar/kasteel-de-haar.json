@@ -1,0 +1,74 @@
+{
+  "name": "Kasteel De Haar",
+  "file": "kasteel-de-haar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    127540,
+    459320
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -15,
+      45
+    ],
+    [
+      35,
+      28
+    ],
+    [
+      -70,
+      30
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000022989",
+    "NL.IMBAG.Pand.0344100000037638",
+    "NL.IMBAG.Pand.0344100000100346",
+    "NL.IMBAG.Pand.0344100000104054",
+    "NL.IMBAG.Pand.0344100000104055"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (127540, 459320), midden in het kasteel, op het maaiveld van de voorhof (NAP +0,8 m), +X naar het oosten en +Y naar het noorden. Vier nodes: building:kasteel met een plint rondom en de vleugels onder eigen zadeldaken die elkaar in kilgoten raken (de zuidvleugel, nok +24,6 m, met een trapgevel aan de oostkant, een getrapte topgevel boven de zuidgevel en zeven dakkapellen; de oostvleugel, +24,3 m; het dak over de overdekte binnenplaats, +23,2 m met een schild; de westvleugel, +24,6 m met een trapgevel aan de noordkant; de vleugel langs de westgevel, +22,5 m; de noordwestvleugel langs de voorhof, +24 en +22 m), dakkapellen en schoorstenen, kroonlijsten op een schuine kraag en vensternissen in de zuid-, oost- en noordwestgevel, de drie ronde hoektorens met een borstwering met nissen op een schuine kraag rond een open weergang en een steile kegelspits op een kern (noord tot +40,3 m met vier dakkapelletjes, zuidoost +33,8 m, zuidwest +31,5 m), vier vierkante torens met een lijst op een kraag onder het tentdak (+27,3 tot +32,3 m), twee slanke traptorens met spits (+26,8 en +28,3 m) en een achtkantig torentje tegen de zuidgevel; building:voorburcht, de lange vleugel ten westen van het kasteel (daken naar het AHN, nok +15,5 m, tussen de vierkante torens +20 m) met de galerij langs de voorhof, de ronde zuidtoren met een rand op een kraag en een spits tot +21,6 m, twee vierkante torens met een lijst onder het tentdak tot +24,2 m, een rond noordtorentje, een traptorentje met een geknikte spits en lantaarn tot +23,3 m, schoorstenen, en de overdekte galerijbrug naar het kasteel met een zadeldak, vensternissen en vier spitse doorgangen boven het water; building:chatelet, de toegangspoort 70 m ten noorden van het kasteel: het poortgebouw met een spitse doorgang in een spitse sponning, drie vensternissen, een borstwering op een schuine kraag met zes kantelen tot +8,7 m, een ronde zuidtoren en een noordtorentje met een lijst op een kraag en achtkantige spitsen tot +12,3 m; road:bruggen, de brug naar het châtelet (dek +1,3 m) met borstweringen en drie spitse bogen, en de brug naar de oostingang met borstweringen en een spitse boog. Alle onderdelen beginnen op NAP -1,5 m, onder het water van de slotgracht, die in het PDOK-terrein zit. Alles staat recht op, loopt schuin omhoog of rust op een kraag van 51 graden; alleen de vensternissen hebben een vlakke bovenkant van 0,3 tot 0,35 m diep, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructies van de BAG-panden van het kasteel, de voorburcht en het châtelet; de kapel blijft PDOK. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kasteel-de-haar-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthEastWestM": 91.72,
+    "lengthNorthSouthM": 96.22,
+    "southWingRidgeNapM": 24.6,
+    "eastWingRidgeNapM": 24.3,
+    "hallRidgeNapM": 23.2,
+    "westWingRidgeNapM": 24.6,
+    "northWestWingRidgeNapM": 24,
+    "stepGableCrownNapM": [
+      25.4,
+      25.8
+    ],
+    "northTowerWalkNapM": 25.7,
+    "northTowerTipNapM": 40.3,
+    "southEastTowerTipNapM": 33.8,
+    "southWestTowerTipNapM": 31.5,
+    "voorburchtSouthTowerTipNapM": 21.6,
+    "chateletWalkNapM": 7.9,
+    "chateletMerlonTopNapM": 8.8,
+    "chateletTipNapM": 12.3,
+    "northBridgeDeckNapM": 1.3,
+    "groundNapM": 0.8,
+    "baseNapM": -1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_de_Haar",
+    "https://monumentenregister.cultureelerfgoed.nl/complexen/527891",
+    "PDOK BAG panden 0344100000022989 (kasteel), 0344100000037638 (voorburcht), 0344100000100346, 0344100000104054 en 0344100000104055 (châtelet), EPSG:28992",
+    "PDOK BGT overbruggingsdeel en waterdeel: dekken en pijlers van de galerijbrug, de oostbrug en de brug naar het châtelet",
+    "PDOK AHN DSM/DTM 0,5 m via WCS, als raster per 0,5 m in het stelsel van elke vleugel: nokken, kilgoten en goten per vleugel, trapgevels, schoorstenen, dakkapellen, de omhullende van de torens per straal, het châtelet en het maaiveld",
+    "Wikimedia Commons: Kasteel de Haar. Luchtfoto 1 tot 8.jpg; De Haar Castle Drone.jpg; De Haar Castle South in the Netherlands.jpg; De Haar Castle in the Netherlands.jpg (met het châtelet en de brug); Overzicht van het kasteel en chatelet - Haarzuilens - 20314106 - RCE.jpg; Kasteel de Haar Châtelet rear view.jpg (de voorburcht vanaf de voorhof); Kasteel de Haar - Châtelet tower.jpg (galerijbrug); Kasteel de Haar - Châtelet corner view.jpg (noordtoren)",
+    "PDOK luchtfoto 8 cm (Actueel_orthoHR)"
+  ]
+}
