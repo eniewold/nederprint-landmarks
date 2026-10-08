@@ -1,0 +1,132 @@
+{
+  "name": "IJsselbrug A12",
+  "file": "ijsselbrug-a12.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    196332.97,
+    443156.92
+  ],
+  "xAxis": [
+    0.61418,
+    -0.78916
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 51.3,
+  "groundSamplePoints": [
+    [
+      90,
+      -29
+    ],
+    [
+      115,
+      -29
+    ],
+    [
+      140,
+      -29
+    ],
+    [
+      115,
+      41
+    ],
+    [
+      140,
+      41
+    ],
+    [
+      165,
+      41
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden op de lengte van de brug op de as van de middelste (oostelijke stalen) brug op de waterspiegel van de IJssel (z = 0, NAP +7,47 m), +X langs de brug naar het zuidoosten (Westervoort/Duiven, RD-richting -52,11 graden vanaf het oosten) en +Y naar het noordoosten (stroomafwaarts, de kant van de betonnen brug). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg op de drie dekken en rijbaan lokale weg aan de noordoostrand van de betonnen brug, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, drie bruggen naast elkaar van landhoofd tot landhoofd (538 m, wegdek NAP +19,8 m bij het noordwestelijke landhoofd, top +24,6 m boven de rivier en +24,0 m bij het zuidoostelijke): twee stalen liggerbruggen (10,7 en 9,5 m breed) met elk twee hoofdliggers, 2,6 m hoog over de aanbruggen en met een boogvormige onderkant van 5,8 m boven de rivierpijlers naar 3,0 m in het midden van de rivieroverspanning van 105 m, op bakstenen pijlers met ronde koppen, betonnen kappen en opleggingsblokken; en de betonnen brug (26,2 m breed, dwarshelling 2,5 %) met een kokerligger van 2,4 m, met vouten tot 6,5 m boven de betonnen rivierschijven, op dwarsregels met vijf ronde kolommen over de uiterwaarden; schouwpaden, schampkanten, geleiders, de scheiding met de lokale weg en de randbalken; de landhoofden met vleugelwanden. Lantaarnpalen, leuningen, de seinportalen en de voegen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de IJssel naast de rivieroverspanningen bemonsterd; groundHeight is de PDOK-waterspiegel daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ijsselbrug-a12-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 538.9,
+    "deckLengthBgtM": 537.1,
+    "deckWidthsM": {
+      "steelSouthWest": 10.7,
+      "steelMiddle": 9.5,
+      "concrete": 26.22
+    },
+    "totalWidthM": 50.4,
+    "pierLinesM": {
+      "nw": [
+        -228.3,
+        -188.18,
+        -148.06,
+        -107.94,
+        -67.82,
+        -27.7
+      ],
+      "riverNw": 18,
+      "steelRiver": [
+        67.7,
+        172.6
+      ],
+      "concreteRiver": [
+        84.2,
+        189.5
+      ],
+      "se": 223.2
+    },
+    "riverSpansM": {
+      "steel": 104.9,
+      "concrete": 105.3
+    },
+    "approachSpanM": 40.12,
+    "profile": {
+      "crestNap": 24.6,
+      "crestX": 125,
+      "radius": 16000,
+      "gradeNw": 0.0235,
+      "gradeSe": 0.01
+    },
+    "crossFall": {
+      "ref": 17,
+      "grade": 0.025
+    },
+    "steelDepthM": {
+      "approach": 2.6,
+      "pier": 5.8,
+      "mid": 3
+    },
+    "concreteDepthM": {
+      "approach": 2.4,
+      "pier": 6.5,
+      "mid": 2.8
+    },
+    "brickPier": {
+      "thick": 4,
+      "y": [
+        -20.3,
+        7.8
+      ],
+      "cap": 1.05,
+      "capGrow": 0.2,
+      "seat": 1.55,
+      "seatSize": [
+        2,
+        1.8
+      ]
+    },
+    "waterNapM": 7.47,
+    "built": {
+      "abutmentsStarted": 1941,
+      "steelEast": 1961,
+      "steelWest": 1964,
+      "concrete": "circa 1970"
+    }
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_oeververbindingen_over_de_(Gelderse)_IJssel",
+    "https://imsafe.wikixl.nl/index.php/IJsselbrug_Arnhem",
+    "https://www.rijkswaterstaat.nl/wegen/projectenoverzicht/a12-groot-onderhoud-aan-betonnen-ijsselbrug-in-2026",
+    "PDOK BGT overbruggingsdeel (dekken, rivierpijlers L0002.61324ffd2670441c915e7ff76176fda5, L0002.33ce51bfed9540bdaec2fdaff8a2a179, L0002.75a746717ba0454eb9639b55f324f86f, L0002.a434af09335d46aebee5430dd38383aa, landhoofden L0002.60d70d0401184ce2ad91a7f4a1e6c011 en L0002.eda9b58469e14d6e94d2ca56c0eddc3a) en wegdeel, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het lengte- en dwarsprofiel van het wegdek, de pijlerlijnen en de uiterwaarden; PDOK-luchtfoto voor de voegen en de indeling van de dekken",
+    "Wikimedia Commons: IJsselbrug A12 Velp.jpg (Apdency, CC0), Brug A12.jpg (Koos de Geest, CC BY-SA 3.0), Old steel girderbridge across the IJsselriver at Arnhem-Westervoort - panoramio.jpg en twee panoramio-foto's van de betonnen brug (Henk Monster, CC BY 3.0)"
+  ]
+}
