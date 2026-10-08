@@ -1,0 +1,94 @@
+{
+  "name": "Stadion Woudestein",
+  "file": "stadion-woudestein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95375.87,
+    436864.47
+  ],
+  "xAxis": [
+    0.38832,
+    0.921525
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.38,
+  "groundSamplePoints": [
+    [
+      30,
+      -55
+    ],
+    [
+      85,
+      0
+    ],
+    [
+      0,
+      68
+    ],
+    [
+      -76,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100010029704",
+    "NL.IMBAG.Pand.0599100100015795",
+    "NL.IMBAG.Pand.0599100010033787",
+    "NL.IMBAG.Pand.0599100010014268",
+    "NL.IMBAG.Pand.0599100100015796"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (95375,87, 436864,47) in het hart van de veldopening, op het maaiveld van het park ten oosten van het stadion (NAP -1,2 m; het veld ligt 2,2 m hoger), +X langs het veld naar het noordnoordoosten (67,15 graden) en +Y naar het westnoordwesten, naar de hoofdtribune. Eén node building:stadion: de hoofdtribune (Henk Zon-tribune) met een zitrang van zes treden onder een dakplaat van +11,0 naar +10,75 m, de glazen band van de lounges, het bakstenen achtergebouw (+9,5 m) met het zwarte glazen volume boven de ingang, raamnissen en installaties; de zuid- en oosttribune als één L met de overkapte zuidoosthoek, elk met vijf treden onder een dak op +9,65 m, de aanbouw met binnenplaatsen achter de zuidtribune, de zuilengang en buitentrap van de oosttribune; de noordtribune met scorebord en de lage aanbouw in de noordwesthoek; betonnen pylonen met twee tuidraden achter elk dak; dug-outs en vier vakwerk-lichtmasten (+33,5 tot +35,4 m) op de hoeken. Onderkant op 0,5 m onder het parkmaaiveld; de dakplaten en uitkragingen hangen uit (de export vult ze op). Vervangt de PDOK-reconstructie van de hoofdtribune en de panden onder de zuidtribune. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "stadion-woudestein-1-1000.stl",
+    "stadion-woudestein-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 136.1,
+    "widthM": 115.2,
+    "highestPointM": 35.4,
+    "capacity": 4700,
+    "fieldLevelM": 2.2,
+    "roofM": {
+      "main": [
+        11,
+        10.75
+      ],
+      "east": [
+        9.65,
+        9.4
+      ],
+      "south": [
+        9.65,
+        9.43
+      ],
+      "north": [
+        9.6,
+        9.45
+      ]
+    },
+    "rearBuildingM": 9.5,
+    "pylonTopM": {
+      "main": 13.4,
+      "east": 11.6,
+      "south": 11.65,
+      "north": 11.65
+    },
+    "mastTopM": [
+      35.4,
+      34.4,
+      33.5,
+      33.5
+    ],
+    "groundNapM": -1.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stadion_Woudestein",
+    "PDOK BAG panden van het stadion (zie replacesBuildings), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de hoofdas, de voorranden en dakhoogtes per tribune, het achtergebouw, de aanbouw, de pylonen en de lichtmasten",
+    "PDOK luchtfoto (Actueel_orthoHR): pylonen, dug-outs, scorebord en de zuidoosthoek",
+    "Wikimedia Commons: Rotterdam stadion woudestein, Van Dongen de Roo Stadion en KNVB finale vrouwen 18-19 (gevel, zitrang, pylonen met tuidraden, masten); foto's op stadiumdb.com (zuilengang en buitentrap van de oosttribune)"
+  ]
+}
