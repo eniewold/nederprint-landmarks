@@ -1,0 +1,61 @@
+{
+  "name": "Westkapelle Hoog",
+  "file": "westkapelle-hoog.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    20387.1,
+    395149.14
+  ],
+  "xAxis": [
+    0.99124,
+    -0.13208
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      0,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000010360"
+  ],
+  "description": "Bakstenen kerktoren met vier geledingen, acht versnijdende steunberen, blinde spitsboognissen en westdeur; ronde ijzeren opbouw, omgang, lichthuis en koepel. +X is vrijwel oost, onderkant 0,6 m onder maaiveld.",
+  "realWorld": {
+    "maaiveldNapM": 1.6,
+    "kerktorenHoogteM": 38,
+    "totaleHoogteM": 51.7,
+    "rompBreedteM": 9.45,
+    "rompDiepteM": 9.55,
+    "schattingen": [
+      "geledinghoogtes en steunbeerprofielen uit schuine foto’s",
+      "blind reliëf 0,25–0,4 m",
+      "afmetingen lichtopbouw en koepel uit AHN en foto’s",
+      "hekwerken en bekroning verdikt tot 0,9 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0717100000010360; AHN4 DSM/DTM 0,5 m bbox 20300,395080,20440,395220; actuele orthoHR; 2026-10-08",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/38855",
+    "https://www.rijkswaterstaat.nl/over-ons/onze-organisatie/onze-historie/onze-monumenten/vuurtoren-hoge-licht",
+    "https://commons.wikimedia.org/wiki/File:Lighthouse_Westkapelle_Hoog_R01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lighthouse_Westkapelle_Hoog_R03.jpg"
+  ],
+  "printFiles": [
+    "westkapelle-hoog-1-1000.stl"
+  ]
+}
