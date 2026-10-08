@@ -1,0 +1,80 @@
+{
+  "name": "WerkTalent Stadion",
+  "file": "bingoal-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86139.5,
+    453195.1
+  ],
+  "xAxis": [
+    -0.059829,
+    0.998209
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 41.04,
+  "groundSamplePoints": [
+    [
+      0,
+      -75
+    ],
+    [
+      88,
+      0
+    ],
+    [
+      -94,
+      0
+    ],
+    [
+      0,
+      92
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000273015"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (86139,50, 453195,10) in het hart van de veldopening op het maaiveld rond het stadion (NAP -2,4 m; het veld ligt 1,9 m hoger in het PDOK-terrein), +X langs het veld naar het noorden (93,43 graden) en +Y naar het westen, naar de hoofdtribune. Eén node building:stadion: het stadion van ADO Den Haag in het Forepark (sinds 2025 WerkTalent Stadion, eerder onder meer Kyocera, Cars Jeans en Bingoal Stadion). De ring van de oost-, noord- en zuidtribune (voorrand 126 bij 88,5 m, gevel 161 bij 122 m) met afgeronde, dichte hoeken en per zijde een eigen doorsnede: een zitrang van zeven treden (+2,5 tot +11,5 m) die onder het dak open blijft, een dakplaat van 2,2 m die over de rang uitkraagt (voorrand +17,5 tot +17,9 m, nok +18,65 m) en de afgeronde dakrol die 2 m buiten de gevel uitbolt, een terugliggende plint, raamstroken, kleine vensters en ingangen; de hoofdtribune aan de westkant met een dak dat als vlak oploopt van +17,65 m en als boog over de nok (+24,5 m) naar de dakrol aan de licht gebogen westgevel gaat, een zitrang van negen treden (+2,6 tot +14,6 m) met de skyboxen erachter, schuine zwarte kopgevels met raamstroken, de glazen entreehal en de letters van de stadionnaam op het dak; vier schuine lichtmasten (66 graden) met lampenbanken op een trechter tot +41,8 m op de hoeken. Onderkant op 0,5 m onder het maaiveld; de dakplaten en de dakrol hangen uit (de export vult ze op). Vervangt de PDOK-reconstructie van het BAG-pand van het stadion. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "bingoal-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 165.26,
+    "widthM": 143.45,
+    "highestPointM": 41.8,
+    "capacity": 15000,
+    "fieldOpeningM": [
+      126,
+      88.5
+    ],
+    "roofEdgeAndRidgeM": {
+      "east": [
+        17.7,
+        18.65
+      ],
+      "north": [
+        17.5,
+        18.64
+      ],
+      "south": [
+        17.88,
+        18.65
+      ],
+      "west": [
+        17.65,
+        24.53
+      ]
+    },
+    "mastTopM": 41.8,
+    "groundNapM": -2.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/WerkTalent_Stadion",
+    "PDOK BAG pand 0518100000273015 (contour van de gevel), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: voorranden en dakprofielen per zijde, dak van de hoofdtribune, kopgevels, letters, lichtmasten en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): hoeken, goten, entreehal en lichtmasten",
+    "Wikimedia Commons: Cars Jeans Stadion, Den Haag (NED); Cars Jeans Stadion (36995264265); ADO Den Haag Stadion, Forepark; Stadium at The Hague, Forepark, the Netherlands img.nr. 01 tot 30; Panorama ADO Den Haag Stadium 15-8-2019; ADO Den Haag v Vitesse 2019 (dakrol, gevel, kopgevels, entreehal, letters, masten, zitrang onder het dak)"
+  ]
+}
