@@ -1,0 +1,85 @@
+{
+  "name": "Rat Verlegh Stadion",
+  "file": "rat-verlegh-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    110872.29,
+    400846.31
+  ],
+  "xAxis": [
+    0.656059,
+    0.75471
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 47.12,
+  "groundSamplePoints": [
+    [
+      0,
+      84
+    ],
+    [
+      0,
+      -80
+    ],
+    [
+      100,
+      0
+    ],
+    [
+      -96,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000070836",
+    "NL.IMBAG.Pand.0758100000070840",
+    "NL.IMBAG.Pand.0758100000070842",
+    "NL.IMBAG.Pand.0758100000096090",
+    "NL.IMBAG.Pand.0758100000070833",
+    "NL.IMBAG.Pand.0758100000070841",
+    "NL.IMBAG.Pand.0758100000095930",
+    "NL.IMBAG.Pand.0758100000096089"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (110872,29, 400846,31) in het hart van de veldopening op het maaiveld (NAP +3,25 m), +X langs het veld naar het noordoosten (49,0 graden) en +Y naar het noordwesten (de hoofdingang). Eén node building:stadion: een gesloten ring van vier tribunes met verstekhoeken onder één dak (+20,55 m aan de veldkant tot +19,9 m aan de achterrand, 19,4 m diep) met de vakwerkligger langs de veldopening en dakspanten eronder, boven een zitrang van tien treden (+3,0 tot +13,3 m, aan de lange zijden een extra voorste rij van 2025) en een achterwand met een glazen band; de schuine onderkant van de rang boven de bakstenen aanbouwen, betonspanten met groen vakwerk om de 10,9 m, de gebogen aanbouwen (noordwest +12,6 m met de hoofdingang, zuidoost +11,8 m, noordoost en zuidwest +7,9 m) met raamnissen, vier hoektorens (+16,4 m) met raamnissen waarboven het dak op kolommen rust, vier lichtmasten op de dakhoeken (+34,0 m), de dug-outs en een buitentrap. Onderkant op 0,5 m onder het maaiveld; het dak en de onderkant van de rang hangen uit (de export vult ze op). Het maaiveld wordt op vier punten rond het stadion bemonsterd; groundHeight is de laagste PDOK-terreinhoogte daar (ellipsoïdisch). Vervangt de PDOK-reconstructie van de acht BAG-panden van het stadion. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "rat-verlegh-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 178.6,
+    "widthM": 139.8,
+    "highestPointM": 34,
+    "capacity": 20500,
+    "fieldOpeningM": [
+      128.6,
+      83.3
+    ],
+    "roofM": [
+      20.55,
+      19.9
+    ],
+    "roofDepthM": 19.4,
+    "rakeM": [
+      3,
+      13.3
+    ],
+    "annexM": {
+      "northWest": 12.6,
+      "southEast": 11.8,
+      "northEast": 7.9,
+      "southWest": 7.9
+    },
+    "cornerTowerM": 16.4,
+    "mastTopM": 34,
+    "groundNapM": 3.25,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Rat_Verlegh_Stadion",
+    "PDOK BAG panden van het stadion (zie replacesBuildings), EPSG:28992: contouren van de gebogen gevels en de hoektorens",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: veldopening, dakprofiel, aanbouwen, lichtmasten, buitentrap en dug-outs",
+    "PDOK luchtfoto (2024_orthoHR en 2026_orthoHR): traveelijnen, zonnepanelen en de voorste rijen van 2025",
+    "Wikimedia Commons: NAC Breda DSCF4040 tot 4071, Rat Verlegh Stadion P1030371 tot 386 en DSCF9251 tot 9258, NAC stadium inside, Rat Verleghstadium 2 en 3 (zitrang, glazen band, vakwerkligger, betonspanten met groen vakwerk, aanbouwen, hoektorens, lichtmasten)"
+  ]
+}
