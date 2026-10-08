@@ -7,7 +7,7 @@ Generator: `scripts/generate-nederlandse-amerikaanse-begraafplaats.mjs`.
 
 Oorsprong RD **184420,50; 314275,40**, in de toren op hofniveau. Lokale +X
 wijst langs het hof naar de begraafplaats, 11,23° rechtsom vanaf RD-oost;
-+Y staat hier loodrecht op. Hof circa NAP +158,4 m, onderkant −0,8 m.
++Y staat hier loodrecht op. Hof circa NAP +158,4 m, onderkant −2,7 m. De fundering loopt door onder het ruwe PDOK-terrein bij de buitenhoeken van de paviljoens; de gemeten bovenzijden blijven gelijk. Romp en hoofd van het kleine beeld zijn verdikt tot ten minste 0,9 mm op 1:1000.
 De eigen bemonsteringspunten liggen op het hof en naast de toren.
 
 Onderdelen: de langgerekte toren met kapel en verlaagd dakvlak, blinde

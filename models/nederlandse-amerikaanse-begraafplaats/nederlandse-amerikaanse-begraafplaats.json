@@ -40,7 +40,7 @@
     "NL.IMBAG.Pand.0936100000006576",
     "NL.IMBAG.Pand.0936100000006578"
   ],
-  "description": "Toren met kapel, twee toegangspaviljoens, naamwanden, stenen vijverrand en schematische rouwende vrouw; Z omhoog vóór glTF-omzetting, lokale +X langs het hof naar het oosten. BAG-contouren, doorlopende vlakke daken en blinde portalen; onderkant 0,8 m verankerd onder hofniveau. De vijver en het hofterrein blijven PDOK.",
+  "description": "Toren met kapel, twee toegangspaviljoens, naamwanden, stenen vijverrand en schematische rouwende vrouw; Z omhoog vóór glTF-omzetting, lokale +X langs het hof naar het oosten. BAG-contouren, doorlopende vlakke daken en blinde portalen; onderkant 2,7 m verankerd onder hofniveau en de buitenhoeken van de paviljoens. De vijver en het hofterrein blijven PDOK.",
   "realWorld": {
     "torenHoogteM": 30.7848,
     "torenNapM": 189.2,
