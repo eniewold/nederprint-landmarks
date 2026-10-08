@@ -1,0 +1,61 @@
+{
+  "name": "Lange Jaap",
+  "file": "lange-jaap.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    110593.9,
+    552253.3
+  ],
+  "xAxis": [
+    0,
+    -1
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0400100000024142"
+  ],
+  "description": "RD-zuid is +X; deur aan westzijde (-Y), zestienzijdige conische romp met twee omgangen, lichthuis, koepel en radar. Onderkant -0,5 m, gesloten omgangranden en schuine printkraag.",
+  "realWorld": {
+    "maaiveldNapM": 0.8,
+    "rompTopM": 54.55,
+    "kapTopM": 62.4,
+    "radarTopM": 64.6,
+    "voetDiameterM": 10.9,
+    "schattingen": [
+      "hoogtes omgangen en lichthuis",
+      "vensterritme en oriëntatie",
+      "koepelprofiel",
+      "radarbalk verbreed tot 0,9 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0400100000024142; AHN4 DSM/DTM 0,5 m bbox 110555,552210,110635,552290; actuele orthoHR; 2026-10-08",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/335626",
+    "https://heldersehistorischevereniging.nl/wp-content/uploads/2022/01/Beschrijving-en-waardering-vuurtoren-Lange-Jaap-1-december-2021.pdf",
+    "https://www.rijkswaterstaat.nl/nieuws/archief/2024/07/gietijzeren-vuurtorens-groot-onderhoud-succesvol-aanbesteed",
+    "https://www.zeilen.nl/actueel/nieuws/hoogste-vuurtoren-van-nederland-staat-op-instorten"
+  ],
+  "printFiles": [
+    "lange-jaap-1-1000.stl"
+  ]
+}
