@@ -1,0 +1,135 @@
+{
+  "name": "Haringvlietbrug",
+  "file": "haringvlietbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86831.685,
+    414573.372
+  ],
+  "xAxis": [
+    0.37436,
+    0.92728
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.04,
+  "groundSamplePoints": [
+    [
+      -583.7,
+      25
+    ],
+    [
+      -583.7,
+      -25
+    ],
+    [
+      -371.5,
+      25
+    ],
+    [
+      -371.5,
+      -25
+    ],
+    [
+      -159.2,
+      25
+    ],
+    [
+      -159.2,
+      -25
+    ],
+    [
+      53.1,
+      25
+    ],
+    [
+      53.1,
+      -25
+    ],
+    [
+      265.3,
+      25
+    ],
+    [
+      265.3,
+      -25
+    ],
+    [
+      444.5,
+      25
+    ],
+    [
+      444.5,
+      -25
+    ],
+    [
+      515,
+      25
+    ],
+    [
+      515,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0611100000614366"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek in het hart van de middelste (zesde) rivierpijler op de waterspiegel van het Haringvliet (z = 0, NAP +0,7 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Numansdorp, RD-richting 68,01 graden vanaf het oosten) en +Y naar het westnoordwesten (het Haringvliet). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van de BGT-wegdelen in extras.attributes (bgt_functie rijbaan autosnelweg of rijbaan lokale weg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van de A29-brug van het zuidelijke landhoofd op de Hellegatsdam (x = -648,2) tot het noordelijke op de dijk bij Numansdorp (x = 580,2). Tien vaste velden van 106,13 m als stalen kokerligger van 11,8 m breed met de rijvloer van 25,6 m op schuine schoren (als dichte plaat), de onderkant 5,6 m onder het wegdek; negen rivierpijlers met een caisson van 3,5 × 24,6 m met ronde koppen tot NAP +6,0 m en twee verlopende schachten; de rustpijler van de klep met een caisson van 31,4 m tot NAP +6,0 m en een wand tot onder de rijvloer; de basculeklep van 38,1 m in gesloten stand met twee hoofdliggers en voegen; de basculekelder van 24,4 × 27,9 m met plint, verdiepte vakken en sleuven voor de hoofdliggers; de toren van het bedieningsgebouw (BAG-pand) met de cabine op een kraag van 45 graden tot NAP +23,35 m; het noordelijke veld van 81,2 m; de landhoofden. Het wegdek ligt op NAP +14,3 m bij het Hellegatsplein, +19,4 m in het midden en +13,6 m bij Numansdorp (AHN). Schampkanten en geleiderails als stroken. Lantaarns, portalen, slagbomen, seinen, de gele werkbordessen bij de klep, het remmingwerk en de dukdalven en de open stand van de klep zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-waterhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "haringvlietbrug-1-3500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 1228.4,
+    "deckWidthM": 25.6,
+    "spansM": [
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      106.13,
+      38.1,
+      81.2
+    ],
+    "pierX": [
+      -530.67,
+      -424.54,
+      -318.41,
+      -212.28,
+      -106.15,
+      -0.02,
+      106.11,
+      212.24,
+      318.37,
+      424.5
+    ],
+    "girderDepthM": 5.6,
+    "boxWidthM": 11.8,
+    "basculeLeafM": 38.1,
+    "kelderM": [
+      24.4,
+      27.9
+    ],
+    "towerTopNapM": 23.35,
+    "deckNapM": {
+      "south": 14.28,
+      "crest": 19.44,
+      "north": 13.64
+    },
+    "waterNapM": 0.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Haringvlietbrug",
+    "PDOK BGT overbruggingsdeel (dekranden, landhoofden, pijlercaissons, basculekelder), wegdeel en ondersteunend wegdeel, EPSG:28992",
+    "PDOK BAG pand 0611100000614366 (toren van het bedieningsgebouw)",
+    "PDOK AHN DSM 0,5 m via WCS voor het wegdek, de rustpijler en de toren; PDOK-terrein voor de waterspiegel",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de klep, de kelder en de toren",
+    "Nationaal Archief / Anefo (CC0): Brug over het Haringvliet bij Numansdorp, Bestanddeelnr 914-3033, 914-3034, 914-3038, 914-3040 (bouw 1962)",
+    "Wikimedia Commons: Haringvlietbrug (48566257631).jpg, Haringvlietbrug (48566259211).jpg, Haringvlietbrug (48566259466).jpg, Haringvlietbrug (48566401637).jpg, 2009-09-05 Route A29 at the bridge over Haringvliet 03.jpg"
+  ]
+}
