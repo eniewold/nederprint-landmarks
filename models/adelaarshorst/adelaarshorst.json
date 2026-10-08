@@ -1,0 +1,85 @@
+{
+  "name": "De Adelaarshorst",
+  "file": "adelaarshorst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    208622.1,
+    474998.6
+  ],
+  "xAxis": [
+    0.711045,
+    -0.703147
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 49.34,
+  "groundSamplePoints": [
+    [
+      0,
+      -82
+    ],
+    [
+      74,
+      -62
+    ],
+    [
+      -84,
+      -8
+    ],
+    [
+      -30,
+      66
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0150100000056207",
+    "NL.IMBAG.Pand.0150100000062379",
+    "NL.IMBAG.Pand.0150100000056456"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (208622,10, 474998,60) in het hart van de veldopening op het maaiveld (NAP +6,4 m), +X langs het veld naar het zuidoosten (de Vetkampstraat, -44,68 graden) en +Y naar het noordoosten (de IJsseltribune). Eén node building:stadion: de hoofdtribune (zuidwest) met een vakwerkdak van +11,25 m aan de veldkant via de nok op +12,45 m naar +10,95 m boven een zitrang van tien treden, getrapte eindwanden met bakstenen kopblok en raamnissen, het frontje (+13,3 m), open dakspanten boven het achtergebouw (+8,45 m) met de entree; de tribune aan de Vetkampstraat (zuidoost) met een vakwerkdak tot +16,1 m boven twaalf treden tot +9,8 m, een achterblok met schuin onderstek en getrapte eindwanden; de IJssel- en Brinkgreverwegtribune met lessenaarsdaken van +8,3 naar +7,0 m op kolommen boven een staanrang van tien treden tegen de aarden wal (die in het PDOK-terrein zit), samen met de gesloten noordhoek; vier vakwerk-lichtmasten met lampkop (+40,3 tot +42,1 m); het lage gebouw met tent in de westhoek, de containerwand in de oosthoek en de muur aan de Vetkampstraat met kiosken en poort. In de kopse kanten van de vakwerkdaken zitten blinde driehoeken. Onderkant op 0,5 m onder het maaiveld; de dakplaten hangen uit (de export vult ze op). Het maaiveld wordt op vier punten rond het stadion bemonsterd; groundHeight is de laagste PDOK-terreinhoogte daar (ellipsoïdisch). Vervangt de PDOK-reconstructie van de drie BAG-panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "adelaarshorst-1-1000.stl",
+    "adelaarshorst-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 155.64,
+    "widthM": 149.4,
+    "highestPointM": 42.1,
+    "capacity": 10400,
+    "fieldOpeningM": [
+      116.15,
+      77.45
+    ],
+    "mainStandRoofM": [
+      11.25,
+      12.45,
+      10.95
+    ],
+    "vetkampstraatRoofM": [
+      13.2,
+      14.6,
+      16.1,
+      14.9
+    ],
+    "northStandRoofM": [
+      8.3,
+      7
+    ],
+    "mastTopM": [
+      41.6,
+      40.3,
+      42.1,
+      41.5
+    ],
+    "groundNapM": 6.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Adelaarshorst",
+    "PDOK BAG-panden van het stadion (zie replacesBuildings), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: voorranden, dakprofielen, frontje, achtergebouw, aarden wal, westhoek, containerwand en drie lichtmasten",
+    "PDOK luchtfoto (Actueel_orthoHR): plattegrond, noordhoek, dakspanten, de noordmast en de muur aan de Vetkampstraat",
+    "Wikimedia Commons: De Adelaarshorst, Deventer (2019) 01, 02 en 05, Stadion de Adelaarshorst, Adelaarshorst-uitvak, De Adelaarshorst in Deventer (Detail)"
+  ]
+}
