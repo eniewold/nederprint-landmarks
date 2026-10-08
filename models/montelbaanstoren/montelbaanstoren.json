@@ -1,0 +1,63 @@
+{
+  "name": "Montelbaanstoren",
+  "file": "montelbaanstoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122206.3,
+    487237.8
+  ],
+  "xAxis": [
+    0.97815,
+    -0.20791
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6.5,
+      -2
+    ],
+    [
+      -6.5,
+      2
+    ],
+    [
+      -2,
+      6.5
+    ],
+    [
+      2,
+      6.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012181906"
+  ],
+  "description": "Ronde bakstenen ondertoren op veelhoekige voet, stenen achtkant, vier uurwerken en twee versmallende houten klokkengeledingen met blinde boognissen, omgang en koepel. +X oostzuidoost, entree westzijde. Onderkant -1,8 m; hoogste dunne bekroning uit foto’s geschat.",
+  "realWorld": {
+    "maaiveldNapM": 2,
+    "rondeRompTopM": 12.6,
+    "stenenAchtkantTopM": 21.3,
+    "houtenKapTopM": 41.5,
+    "totaleHoogteGeschatM": 45,
+    "literatuurHoogteM": 48,
+    "schattingen": [
+      "windwijzer 45 m boven lokale voet: AHN mist de dunne hoogste delen; literatuur noemt 48 m zonder sluitend meetpunt",
+      "geledingen en koepelprofiel uit AHN/foto’s",
+      "open belforten als 0,38 m diepe blinde nissen",
+      "klokschijven en raamritme",
+      "windwijzer en balustrade minimaal 0,9 m breed"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0363100012181906; AHN4 DSM/DTM 0,5 m bbox 122150,487180,122260,487290; actuele orthoHR; 2026-10-08",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/4025",
+    "https://www.amsterdam-monumentenstad.nl/database/grachtenboek_objecten.php?id=5391",
+    "https://commons.wikimedia.org/wiki/File:2024_Montelbaanstoren_gf99.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_ronde_bakstenen_toren_met_een_achtzijdige_houten_bovenbouw_en_bekroning,_gezien_vanaf_de_brug_-_Amsterdam_-_20408352_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "montelbaanstoren-1-1000.stl"
+  ]
+}
