@@ -1,0 +1,61 @@
+{
+  "name": "Vuurtoren Bornrif",
+  "file": "vuurtoren-ameland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    170846.4,
+    607024.9
+  ],
+  "xAxis": [
+    0.996195,
+    -0.087156
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0060100000125111"
+  ],
+  "description": "Lokale +X volgt RD-oost -5 graden; ingang op -Y aan de zuidzijde. Ronde taps toelopende romp met twee omgangen, blinde vensters, koepel en radar; geen reliëf voor geschilderde kleurbanden.",
+  "realWorld": {
+    "maaiveldNapM": 9.28,
+    "totalHeightM": 55.3,
+    "rompTopM": 46.55,
+    "voetDiameterM": 9.44,
+    "paintBands": "rood-wit; schildering, geen geometrische ribben",
+    "schattingen": [
+      "overgangs- en omganghoogtes",
+      "blind vensterritme en nisdiepte 0,35 m",
+      "koepel/radarvorm",
+      "portaal 2,8 x 1,25 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0060100000125111; AHN4 DSM/DTM 0,5 m bbox 170800,606980,170890,607070; actuele orthoHR; 2026-10-08",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7693",
+    "https://www.vuurtorens.org/vuurtorenoverzicht-ameland/",
+    "https://www.vuurtorens.org/wp-content/uploads/2023/08/De-vuurtoren-van-Ameland-juni-2023.pdf",
+    "https://www.ameland-site.nl/een-adembenemend-uitzicht-vanaf-de-bornrif"
+  ],
+  "printFiles": [
+    "vuurtoren-ameland-1-1000.stl"
+  ]
+}
