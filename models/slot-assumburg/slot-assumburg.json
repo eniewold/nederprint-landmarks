@@ -1,0 +1,58 @@
+{
+  "name": "Slot Assumburg",
+  "file": "slot-assumburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    107334,
+    502168
+  ],
+  "xAxis": [
+    0.802817475,
+    0.596224875
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      0
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      10,
+      17
+    ]
+  ],
+  "groundHeight": 41.895,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0396100000091556"
+  ],
+  "description": "Vier afzonderlijke dakvleugels rond een open BAG-hof, twee vierkante hoektorens met borstwering en piramidedak, achtzijdige hoektoren en twee kleine traptorens, kapelgevel, galerij, dakkapellen, vijf schoorstenen en klassieke entree. Stenen voorbrug met drie printbare spitsbogen en lage aflopende tuinbrug; elk dek afzonderlijk 0,5 m, functie bij gebrek aan BGT-dek overgenomen van aansluitende landhoofden.",
+  "printFiles": [
+    "slot-assumburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.19,
+    "widthM": 56.7,
+    "highestPointM": 25.35,
+    "waterNapM": -0.95,
+    "westRidgeNapM": 16.9,
+    "northRidgeNapM": 14.5,
+    "southRidgeNapM": 12.6,
+    "southwestTowerTopNapM": 24.4,
+    "northwestTowerTopNapM": 21.1,
+    "octagonalTowerTopNapM": 21.35,
+    "stairTowerTopNapM": 23.9,
+    "frontBridgeNapM": 1.65,
+    "rearBridgeEndNapM": -0.6
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21210",
+    "https://commons.wikimedia.org/wiki/Category:Slot_Assumburg",
+    "PDOK BAG 0396100000091556, AHN DSM/DTM 0,5 m, Actueel_orthoHR, BGT aansluitingen G0396.2181055e5602e99de050020a6b000e5e en G0396.2181055e5603e99de050020a6b000e5e, 9 oktober 2026"
+  ]
+}
