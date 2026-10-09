@@ -1,0 +1,61 @@
+{
+  "name": "Den Haag Centraal (Den Haag)",
+  "file": "den-haag-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82114,
+    455294
+  ],
+  "xAxis": [
+    0.6065,
+    -0.79508
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -63,
+      -54
+    ],
+    [
+      -65,
+      85
+    ],
+    [
+      0,
+      -55
+    ],
+    [
+      10,
+      87
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000271819"
+  ],
+  "description": "Stationshal met BGT-contour en afzonderlijke ruitdakvlakken; +X naar de treinsporen, Stichthage aan -X. Volle kern achter blinde glasnissen voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 0.85,
+    "hallEaveM": 22.28,
+    "cupolaM": 22.72,
+    "officeRoofM": 59.61,
+    "officePlantM": 61.35,
+    "schattingen": [
+      "ruitvormige koepels op regelmatige 8x12m module; randdelen vereenvoudigd en ventilatiedeksels gesloten",
+      "raamverdeling, glasnissen, dakinstallaties en borstwering naar fotos; kozijnen verdikt",
+      "model omvat de vernieuwde stationshal en aangebouwd Stichthage; afzonderlijke busoverkapping, metroviaduct en perronkappen buiten de hal blijven bestaande kaartgeometrie"
+    ]
+  },
+  "sources": [
+    "PDOK BGT overigbouwwerk 8cc96185-9d1a-5b72-8567-b371e7847b47; BAG 0518100000271819; AHN DSM/DTM .5m en Actueel_orthoHR bbox 82000,455000,82400,455440; 2026-10-09",
+    "https://www.prorail.nl/nieuws/de-wybertjes-van-den-haag-centraal",
+    "https://www.benthemcrouwel.com/projects/the-hague-central-station",
+    "https://commons.wikimedia.org/wiki/File:Station_Den_Haag_Centraal_2017_(Rijnstraat).jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Hague_Central_Station,_Anna_van_Buerenplein_entrance,_2018.jpg",
+    "https://commons.wikimedia.org/wiki/File:Het_nieuwe_dak.JPG"
+  ],
+  "printFiles": [
+    "den-haag-centraal-1-1000.stl"
+  ]
+}
