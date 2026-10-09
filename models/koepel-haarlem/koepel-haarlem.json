@@ -1,0 +1,141 @@
+{
+  "name": "Koepelgevangenis (Haarlem)",
+  "file": "koepel-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104535.491,
+    488662.722
+  ],
+  "xAxis": [
+    0.9762960071199334,
+    -0.21643961393810288
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -36
+    ],
+    [
+      16,
+      -33
+    ],
+    [
+      -16,
+      -33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000039278"
+  ],
+  "description": "Hart uit BAG-cirkelfit; +X -12.5 graden in RD, hoofdtoegang west. Complete rondbouw met binnenring, aankapping en lichtlantaarn; losse administratie en overige bijgebouwen blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 0.47745,
+    "diameterM": 62.26,
+    "topNapM": 36.161243,
+    "radialRoofProfileNap": [
+      [
+        31.13,
+        13.93
+      ],
+      [
+        30.5,
+        14.02
+      ],
+      [
+        28.5,
+        14.393
+      ],
+      [
+        27.55,
+        14.535
+      ],
+      [
+        27.35,
+        14.59
+      ],
+      [
+        27.35,
+        17.3
+      ],
+      [
+        26.5,
+        17.509
+      ],
+      [
+        25.5,
+        18.561
+      ],
+      [
+        24.5,
+        20.35
+      ],
+      [
+        23.5,
+        21.748
+      ],
+      [
+        22.5,
+        22.91
+      ],
+      [
+        20.5,
+        24.766
+      ],
+      [
+        18.5,
+        26.348
+      ],
+      [
+        16.5,
+        27.65
+      ],
+      [
+        14.5,
+        28.678
+      ],
+      [
+        12.5,
+        29.546
+      ],
+      [
+        10.5,
+        30.32
+      ],
+      [
+        8.5,
+        30.846
+      ],
+      [
+        6.5,
+        31.359
+      ],
+      [
+        4.5,
+        31.812
+      ],
+      [
+        0,
+        31.88
+      ]
+    ],
+    "schattingen": [
+      "raamvormen, lisenen en portaal vereenvoudigd uit restauratiefoto; nissen .35m diep",
+      "hoofdroeven verdikt tot .9m, fijne naden niet meegenomen",
+      "28 historische daklichten samengevat in 14 paneelgroepen naar huidige ortho; ruiten en kozijnpatroon vereenvoudigd",
+      "ringgoot en overgang binnenmuur uit AHN radiale medianen; piron op gemeten AHN-top"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0392100000039278; AHN DSM/DTM .5m en Actueel_orthoHR bbox 104424.24,488554.56,104664.24,488794.56; 2026-10-09",
+    "BGT G0392.ebc749e04c18473d9e504596c18e1fec, actuele versie eaae6c05-b2d3-6b54-90e2-3a5a2dce6f8e van 2023-12-18",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513315",
+    "https://burovanstigt.nl/de-koepel/",
+    "https://commons.wikimedia.org/wiki/File:Close-up_Koepel_Haarlem.jpg"
+  ],
+  "printFiles": [
+    "koepel-haarlem-1-1000.stl"
+  ]
+}
