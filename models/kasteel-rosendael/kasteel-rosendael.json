@@ -1,0 +1,54 @@
+{
+  "name": "Kasteel Rosendael",
+  "file": "kasteel-rosendael.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    194570,
+    446941
+  ],
+  "xAxis": [
+    0.9793288555667261,
+    -0.20227454771761694
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -13
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      -7,
+      10
+    ]
+  ],
+  "groundHeight": 80.36,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0277100000000922"
+  ],
+  "description": "Donjon en L-vormig hoofdgebouw met afzonderlijke dakvlakken, lagere noordvleugel, klokkentorentje, huidige achthoekige lichtlantaarn, nissen, ingangstrap en vereenvoudigde veranda. Waterreferentie NAP 36,86 m afgeleid van PDOK minus lokale AHN-offset; noordelijk dakeinde en fijne geveldetails uit fotos geschat; veranda-openingen versmald met puntige printgewelven en fijne metalen elementen weggelaten.",
+  "printFiles": [
+    "kasteel-rosendael-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.4,
+    "widthM": 55.05,
+    "highestPointM": 27.94,
+    "waterNapM": 36.86,
+    "eaveNapM": 51.6,
+    "mainRoofNapM": 53.95,
+    "towerWallNapM": 55.85,
+    "towerTopNapM": 64.8,
+    "northRoofNapM": 48.45
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/528472",
+    "https://commons.wikimedia.org/wiki/Category:Kasteel_Rosendael",
+    "PDOK BAG 0277100000000922, AHN DSM/DTM 0,5 m, Actueel_orthoHR en BGT, 9 oktober 2026"
+  ]
+}
