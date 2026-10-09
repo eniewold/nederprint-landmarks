@@ -1,0 +1,66 @@
+{
+  "name": "De Haagse Toren (Strijkijzer)",
+  "file": "haagse-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82121.46,
+    454232.43
+  ],
+  "xAxis": [
+    0.9833501910751581,
+    -0.1817206694695185
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -19
+    ],
+    [
+      -17,
+      0
+    ],
+    [
+      17,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000225439"
+  ],
+  "description": "L-vormige woontoren met ronde glashoeken, twee serres en driehoekige kroon; vlakken en bouwdelen uit BAG/AHN, gevelritme uit foto geschat. Schuine gedragen onderzijden onder serres en spitse kroondoorgangen voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 0.9,
+    "topNapM": 132.9,
+    "terraceNapM": 123.73,
+    "crownNapM": 130.4,
+    "serreTopNapM": [
+      51.8,
+      94.86
+    ],
+    "storeyPitchM": 3,
+    "axisDegrees": -10.47,
+    "estimates": [
+      "vensterbaaien, glasspui en verdiepingsteek regelmatig uit fotos",
+      "onderzijde serres als schuine printbare invulling",
+      "vakwerkkroon als dikke rand met spitse doorgangen, fijne staalstaven en antennes weggelaten",
+      "bovenste publieke lagen115.6m en eerste serre51.8m uit fotos geschat; overige hoogteankers AHN/3D BAG"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0518100000225439, BGT, AHN DSM/DTM0.5m en Actueel_orthoHR;2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000225439 (3D BAG CC BY4.0)",
+    "https://aaarchitecten.nl/projecten/het-strijkijzer-den-haag/",
+    "https://www.boele.nl/nl/projecten/het-strijkijzer",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Het_Strijkijzer_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Het_Strijkijzer_5.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Het_Strijkijzer_7.jpg",
+    "https://commons.wikimedia.org/wiki/File:Het_Strijkijzer_vanaf_HS.jpg",
+    "https://commons.wikimedia.org/wiki/File:Het_Strijkijzer_The_Hague_2015.JPG"
+  ],
+  "printFiles": [
+    "haagse-toren-1-1000.stl"
+  ]
+}
