@@ -1,0 +1,57 @@
+{
+  "name": "Rietveld Schröderhuis",
+  "file": "rietveld-schroderhuis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138575,
+    455256
+  ],
+  "xAxis": [
+    0.8703556959398997,
+    -0.49242356010346705
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -7
+    ],
+    [
+      1,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000059839"
+  ],
+  "description": "Schroderhuis met complete BAG-voet, terugliggende glasnissen, losse gevelvlakken, twee balkons, oostelijk dakvlak, lichtkap en schoorsteen. Platen verdikt voor 1:1000 en aan de onderzijde afgeschuind; hekjes en dunne balken weggelaten.",
+  "realWorld": {
+    "groundNapM": 2.08,
+    "mainRoofNapM": 8.38,
+    "chimneyTopNapM": 10.18,
+    "axisDegrees": -29.5,
+    "estimates": [
+      "venster-, balkon- en gevelplaatmaten uit schuine fotos geschat",
+      "daklicht en schoorsteen uit AHN pieken en fotos geschat",
+      "dakplaten 1.5 m dik voor printbaarheid; ondersnijdingen schuiner en kleiner; glas blind en roeden grover; fijne balken, hekjes en kleur weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0344100000059839 BGT AHN DSM/DTM0.5m en orthofoto 2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000059839 (CC BY4.0)",
+    "https://whc.unesco.org/en/list/965/",
+    "https://www.rietveldschroderhuis.nl/nl/ontdek/ruimtelijk-archief",
+    "https://commons.wikimedia.org/wiki/File:Voor_en_zijgevel_-_Utrecht_-_20231596_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_vanuit_het_zuiden_-_Utrecht_-_20231592_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Casa_Rietveld_Schr%C3%B6der_07.jpg"
+  ],
+  "printFiles": [
+    "rietveld-schroderhuis-1-1000.stl"
+  ]
+}
