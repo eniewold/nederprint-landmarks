@@ -1,0 +1,60 @@
+{
+  "name": "De Blob",
+  "file": "de-blob.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161172.8,
+    383525
+  ],
+  "xAxis": [
+    0.12186934340514749,
+    0.992546151641322
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      14
+    ],
+    [
+      -22,
+      12
+    ],
+    [
+      25,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001003308"
+  ],
+  "description": "Doorlopende asymmetrische schil met driehoekige glas- en paneelnissen, twee afgeronde koppen en blinde deurportalen; vaste maatstations uit BAG en AHN, vrije vorm en glasvelden uit schuine foto’s geschat. Alle gevels gesloten en gedragen op 1:1000; geen hoogteveld of losse vakwerkstaven.",
+  "realWorld": {
+    "groundNapM": 16.4,
+    "topNapM": 41.3,
+    "lengthM": 59.77,
+    "widthM": 22.02,
+    "axisDegrees": 83,
+    "glassPanels": 766,
+    "whitePanels": 644,
+    "glassReliefM": 0.35,
+    "whiteReliefM": 0.1
+  },
+  "sources": [
+    "PDOK BAG pand 0772100001003308, EPSG:28992; afgeronde contour en lengterichting",
+    "PDOK AHN DSM/DTM 0,5m WCS; maatstations dakmantel en maaiveld; glazen koppen gedeeltelijk ontbrekend",
+    "PDOK BGT en luchtfoto actueel; glasvelden en aansluiting plein/Nieuwe Emmasingel",
+    "https://fuksas.com/admirant-entrance-building/",
+    "https://www.knippershelbig.com/en/projects/de-blob/",
+    "https://www.wb-sg.com/projects/blob/",
+    "https://commons.wikimedia.org/wiki/File:The_Blob_in_Eindhoven,_Netherlands.jpg",
+    "https://commons.wikimedia.org/wiki/File:Binnenstad,_5611_Eindhoven,_Netherlands_-_panoramio_(16).jpg",
+    "https://commons.wikimedia.org/wiki/File:13-06-30-eindhoven-03.jpg",
+    "https://commons.wikimedia.org/wiki/File:%27The_Blob%27_Eindhoven_(6564785833).jpg"
+  ],
+  "printFiles": [
+    "de-blob-1-1000.stl"
+  ]
+}
