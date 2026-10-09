@@ -1,0 +1,61 @@
+{
+  "name": "Portugese Synagoge",
+  "file": "portugese-synagoge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122179.747,
+    486737.966
+  ],
+  "xAxis": [
+    0.87467,
+    -0.48472
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -26,
+      0
+    ],
+    [
+      -25,
+      -10
+    ],
+    [
+      -25,
+      10
+    ]
+  ],
+  "groundHeight": 44.784,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012170255",
+    "NL.IMBAG.Pand.0363100012170253",
+    "NL.IMBAG.Pand.0363100012170258",
+    "NL.IMBAG.Pand.0363100012170254"
+  ],
+  "description": "Vier doorlopende daknokken met schildvlakken, gevelnissen, steunberen, kroonlijst, dakurnen, entree en alle drie dienstvleugels rondom het voorhof. Hoogtes uit AHN en LoD2.2; geveldetails naar RCE-foto’s.",
+  "realWorld": {
+    "groundNapM": 1.85,
+    "ridgeNapM": 25.1,
+    "mainLengthM": 37.1,
+    "mainWidthM": 28.7,
+    "estimated": [
+      "vensternissen 0,35 m diep",
+      "urnen verdikt tot 0,9 m",
+      "gevelritme en poort",
+      "daklichten westvleugel",
+      "hoogte kroonlijst en parapet"
+    ]
+  },
+  "sources": [
+    "PDOK BAG en AHN DSM/DTM 0,5 m, bbox 122115,486700,122225,486810",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012170255",
+    "https://commons.wikimedia.org/wiki/File:Portuguese_synagogue_west.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achtergevel_-_Amsterdam_-_20013939_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Binnengevel_op_het_plein_-_Amsterdam_-_20021428_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "portugese-synagoge-1-1000.stl"
+  ]
+}
