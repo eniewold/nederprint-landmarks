@@ -1,0 +1,59 @@
+{
+  "name": "Koninklijk Theater Carré",
+  "file": "carre.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122103,
+    486160
+  ],
+  "xAxis": [
+    0.958819734868193,
+    0.28401534470392265
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      0
+    ],
+    [
+      -30,
+      18
+    ],
+    [
+      33,
+      37
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012165489"
+  ],
+  "description": "Complete BAG-voet: historische zaal met doorlopende gekromde schildkap, middenrisaliet en dakruiter, toneelgebouw en lagere grachtvleugels. Gevelrelief en blinde glasnissen op 1:1000.",
+  "realWorld": {
+    "groundNapM": 1,
+    "eaveNapM": 20.35,
+    "curvedRoofNapM": 29.3,
+    "roofLanternNapM": 32.87,
+    "stageRoofNapM": 29.15,
+    "rearWingNapM": 22.82,
+    "axisDegrees": 16.5,
+    "estimates": [
+      "interpolatie tussen AHN-dakprofielen en frontonprofiel geschat uit schuine fotos",
+      "venstermaten, pilasters, balkon en vier toneelgevelvinnen vereenvoudigd uit fotos",
+      "dunne roeven, gevelbeelden, letters, hekwerk, vlaggen en installaties weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0363100012165489 BGT AHN DSM/DTM0.5m orthofoto 2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012165489 (CC BY4.0)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/185",
+    "https://commons.wikimedia.org/wiki/File:Carre_amsterdam_facade.jpg",
+    "https://commons.wikimedia.org/wiki/File:Carre_Theatre_2038.jpg",
+    "https://commons.wikimedia.org/wiki/File:Onbekendegracht_carre.jpg"
+  ],
+  "printFiles": [
+    "carre-1-1000.stl"
+  ]
+}
