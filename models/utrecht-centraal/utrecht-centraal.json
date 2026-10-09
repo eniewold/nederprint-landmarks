@@ -1,0 +1,67 @@
+{
+  "name": "Utrecht Centraal (Utrecht)",
+  "file": "utrecht-centraal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136000,
+    455710
+  ],
+  "xAxis": [
+    0.869,
+    0.495
+  ],
+  "groundSamplePoints": [
+    [
+      -155,
+      -60
+    ],
+    [
+      -150,
+      -65
+    ],
+    [
+      -160,
+      -70
+    ]
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000139915",
+    "NL.IMBAG.Pand.0344100000148778"
+  ],
+  "description": "Lange terminalas 29.67 graden RD, Jaarbeurszijde naar -X; drie analytische dubbele dakgolven, blinde glasgevels, lichtstraten en perrontrappen. Katreinetoren, Stadskantoor, bollendak en perronkappen blijven apart.",
+  "realWorld": {
+    "groundNapM": 2.47,
+    "roofEnvelopeM": [
+      251,
+      95
+    ],
+    "roofCrestNapM": [
+      26.75,
+      27.92,
+      26.75
+    ],
+    "roofTroughNapM": [
+      21.25,
+      21.4
+    ],
+    "schattingen": [
+      "analytische cosinusinterpolatie tussen gemeten langsprofielextrema en parabolische dwarskromming; geen hoogteveld",
+      "glasritme, trapkappen en grove aankomsttrap naar fotos; spooropeningen als blind reliëf op volle printkern",
+      "lichte noordstrook vereenvoudigd tot verlaagde daknis; ondergrondse tunnels blijven buiten vervanging"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0344100000139915 en 0344100000148778; AHN DSM/DTM .5m en Actueel_orthoHR bbox 135760,455460,136220,455980; 2026-10-09",
+    "https://www.benthemcrouwel.com/projects/utrecht-central-station",
+    "https://commons.wikimedia.org/wiki/File:Exterior_of_Utrecht_Centraal_(2019)_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Central_station_and_Stadskantoor_Utrecht_seen_from_Moreelsebrug.jpg",
+    "https://cms.benthemcrouwel.com/dynamic/images/483_OVT_Utrecht_Centraal_N58_a4.jpg",
+    "https://cms.benthemcrouwel.com/dynamic/images/483_OVT_Utrecht_Centraal_N19_a4.jpg"
+  ],
+  "printFiles": [
+    "utrecht-centraal-1-1000.stl"
+  ]
+}
