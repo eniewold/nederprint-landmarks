@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `maasbrug-gennep.glb` | Catalogusbron in meters met vier nodes: `road:rijbaan` (`bgt_functie` rijbaan regionale weg, gesloten verharding, asfalt), `road:fietspad` (fietspad, gesloten verharding, asfalt: het Limburgse deel vanaf x = 32,7) en `road:fietspad-cementbeton` (fietspad, gesloten verharding, cementbeton: het Brabantse deel), de bovenste 0,5 m van het dek met de attributen in `extras.attributes`; en `building:maasbrug-gennep` met de rest: het dek met de band en de schampkant, de vijf vakwerkliggers, de vier pijlers van de oude spoorbrug en de landhoofden |
-| `maasbrug-gennep-1-1000.stl` | De brug in één stuk (constructie en wegdek samen) op 1:1000 met een printvoet onder het dek, met de onderkant (1 m onder de waterspiegel) op het printbed (315 × 24 × 18 mm) |
+| `maasbrug-gennep-1-1000.stl` | De brug in één stuk (constructie en wegdek samen) op 1:1000 met een printvoet onder het dek, met de onderkant (1 m onder de waterspiegel) op het printbed (382 × 24 × 18 mm, met de doorloop over de dijken) |
 | `maasbrug-gennep.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (194494,52, 411755,37) (WGS84
@@ -17,7 +17,8 @@ oosten, naar Gennep (`xAxis` (0,99402, 0,10921), 6,27 graden vanaf het
 oosten, langs de randen van het BGT-dek), +Y naar het noorden
 (stroomafwaarts). De liggers staan op y = ±4,05, het dek loopt van y = -4,6
 tot 7,02 en van x = -157,03 (landhoofd bij Oeffelt, BGT) tot 158,02 (einde
-van het BGT-dek bij Gennep). De pijlers staan op x = -93,3, -30,6, 32,1 en
+van het BGT-dek bij Gennep); met de doorloop over de dijken loopt het model
+van x = -192 tot 190. De pijlers staan op x = -93,3, -30,6, 32,1 en
 94,8. Het maaiveld wordt op zes punten op het water van de Maas bemonsterd
 (`groundSamplePoints`: 20 m ten zuiden en 14 m ten noorden van de as, op
 x = -15, 12 en 60); `groundOffsetMetres` is 0, want het PDOK-terrein legt de
@@ -71,7 +72,39 @@ Onderdelen in het model (hoogtes in NAP):
   en 0,6 m hoog dwars over de pijler op y = -10,65 en -5,65 (AHN). Onder het
   dek een betonnen oplegging tot in het dek (foto, maten geschat).
 - De landhoofden: bij Oeffelt het BGT-landhoofd van x = -157,03 tot -154,3,
-  bij Gennep gespiegeld van 154,3 tot het einde van het dek, tot in het dek.
+  bij Gennep gespiegeld vanaf 154,3, tot in het dek en tot het einde van de
+  doorloop.
+- Doorloop over de dijk: in het PDOK-terrein ligt de rijbaan achter de
+  landhoofden eerst 4 tot 6 m lager dan het dek (het PDOK-wegvlak zakt naar
+  de uiterwaard) en komt pas bij x = -181 en 182 op dekhoogte; het fietspad
+  ligt aan de westkant direct achter het landhoofd op dekhoogte en stijgt
+  aan de oostkant voorbij x = 177 tot 1,8 m boven het dek. Zonder doorloop
+  bleef op de kaart een spleet tussen het PDOK-wegdek op de dijk en het
+  einde van de brug. Daarom lopen dek, wegdeklagen en landhoofden door tot
+  x = -192 en 190 (eerst -157,03 en 158,02), en zakt het wegdek voorbij de
+  einden van het BGT-dek stuksgewijs lineair onder het profiel: de rijbaan
+  0,4 m (west) en 0,6 m (oost), tot NAP +19,03 en +18,83 m op de einden; het
+  fietspad aan de westkant eerst 0,35 m over 6 m (anders ligt het over een
+  lange strook gelijk met het PDOK-fietspad) en dan tot 0,9 m, aan de
+  oostkant 0,3 m, tot NAP +18,7 en +19,3 m. De band en de schampkant houden
+  op bij de einden van het BGT-dek; de stroken van de liggers blijven over de
+  hele lengte constructie. In een verse PDOK-dump ligt het wegdek op de
+  einden 0,4 tot 1,0 m onder het PDOK-wegvlak (rijbaan west 0,6 tot 1,0 m,
+  fietspad west 0,4 m; rijbaan oost noordelijke rijstrook 0,45 tot 1,0 m,
+  fietspad oost 0,9 tot 1,8 m, want het PDOK-fietspad stijgt daar steil),
+  en duikt het over 11 tot 16 m (west, rijbaan; het fietspad vrijwel vanaf
+  het landhoofd) en 4 tot 16 m (oost) onder het PDOK-wegvlak. Waar wegdek en
+  PDOK-wegvlak elkaar kruisen, wisselen ze over een paar meter af. Eén
+  uitzondering: de zuidelijke rijstrook ten oosten van het landhoofd ligt in
+  PDOK als scheef vlak tot 2 m lager dan de dijk in het AHN (NAP +19,2 m)
+  en blijft dat tot voorbij x = 200; daar staat het einde van het model 0,3
+  tot 1,0 m boven het PDOK-wegvlak (een opstap, geen doorkijk: het landhoofd
+  loopt tot de onderkant door). Verder doorlopen helpt daar niet. De
+  BGT-dekvlakken in `replacesTerrain` (G0907.1aa6aed7c0ab4fa29342740d022cc2f2,
+  L0002.da67a67fa2cb49fda010818167dc0b36,
+  P0031.3cdce6dd392b437fe053160d000a328b) zijn met
+  `scripts/replaces-terrain.mjs` opnieuw bepaald en ongewijzigd; de
+  wegdelen op de dijk zijn geen overbruggingsdeel en blijven staan.
 - Het wegdek als eigen nodes: de strook van 0,5 m onder tot 1 m boven het dek
   (rijbaan en fietspad elk op hun eigen hoogte), min de hele strook van de
   liggers (ook onder de openingen en boven de pijlers, en de zuidelijke tot
@@ -96,7 +129,8 @@ lantaarns en borden (dunner dan 0,9 m), de dwarsdragers, consoles en het
 onderste windverband onder het dek (de export vult onder het dek op), de
 beschildering van de portalen (kleur, geen vorm), de bouwplaats en de
 steigers bij het oostelijke landhoofd (BGT kunstwerkdeel steiger, tijdelijk
-of op maaiveld) en de dijken achter de landhoofden (PDOK-terrein).
+of op maaiveld) en de dijken achter de landhoofden (PDOK-terrein; alleen het
+dek met wegdek en landhoofden loopt er 35 en 32 m overheen).
 
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke grijze wegstrook die van de dijken naar het water afloopt, zonder
@@ -121,11 +155,13 @@ van 0,9 m; elke doorgaande opening heeft een plafond van 52 graden (het script
 controleert dat), de driehoeken met een vlakke bovenkant zijn blinde nissen.
 Alleen het ondervlak van het dek hangt vrij; in de printversie met voet
 blijven alleen de nisplafonds van 138 m² over (0,35 m diep, op de wand).
-Alles begint op dezelfde onderkant. Printcheck op 1:1000 (uitsnede van
-344 m): status NoError voor alle vier onderdelen, de constructie van 37,5
-naar 21,6 cm³ (de printbare opvulling is 42,5 % minder dan de rechte
-opvulling tot de onderplaat), de `road:`-onderdelen zonder eigen opvulling
-(`extraPct` 0), 21,2 s; de vakwerkopeningen blijven open. De STL heeft een
+Alles begint op dezelfde onderkant. Printcheck met de doorloop: de uitsnede
+rond het hele model is 411 m en past op 1:1000 niet in 400 mm, dus op
+1:1027 (de STL zelf is op 1:1000 382 mm lang): status NoError voor alle
+vier onderdelen, de constructie van 44,7 naar 28,8 cm³ (de printbare
+opvulling is 35,6 % minder dan de rechte opvulling tot de onderplaat), de
+`road:`-onderdelen zonder eigen opvulling (`extraPct` 0), 23,1 s; de
+vakwerkopeningen blijven open. De STL heeft een
 printvoet: een wig van 50 graden onder beide dekranden op een scherm van
 0,9 m tot de onderplaat. Controle op samenvallende vlakken (30 000 verticale
 stralen over het dek en 60 000 over het hele model): geen samenvallende
@@ -147,7 +183,9 @@ breedte van de staven (0,9 m) en de dikte van de liggerplaten (1,0 m), de
 onderrand tot 0,6 m boven het wegdek, de constructiehoogte van het dek
 (1,5 m, uitkraging 1,2 tot 0,6 m), de vorm van de pijler op x = -93,3, de
 kraag om de pijlers, de betonnen oplegging onder het dek, het oostelijke
-landhoofd (gespiegeld) en de schampkant langs het fietspad.
+landhoofd (gespiegeld), de schampkant langs het fietspad, en de doorloop
+over de dijken (lengte en zakking afgestemd op het PDOK-wegvlak, niet op de
+werkelijke dijk).
 
 Gegevens: BGT, AHN en luchtfoto van PDOK (CC0/CC BY 4.0); foto's van
 Wikimedia Commons alleen als referentie, niet in het model opgenomen.

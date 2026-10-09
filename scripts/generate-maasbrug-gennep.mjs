@@ -11,7 +11,7 @@
 // één node per onderdeel met de materiaalklasse in de nodenaam) als
 // catalogusbron voor de export en de kaart, plus een binaire STL in
 // millimeters op 1:<schaal> met een printvoet onder het dek. De brug is 315 m
-// lang en past op 1:1000 in 400 mm.
+// lang, met de doorloop over de dijken 382 m, en past op 1:1000 in 400 mm.
 //
 //   node scripts/generate-maasbrug-gennep.mjs              # 1:1000 (standaard)
 //   node scripts/generate-maasbrug-gennep.mjs --scale 1250
@@ -23,7 +23,8 @@
 // graden vanaf het oosten, langs de randen van het BGT-dek), +Y naar het
 // noorden (stroomafwaarts). De liggers staan op y = ±4,05; het dek loopt van
 // y = -4,6 tot 7,02 en van x = -157,03 (landhoofd Oeffelt) tot 158,02
-// (landhoofd Gennep). De pijlers staan op x = -93,3, -30,6, 32,1 en 94,8.
+// (landhoofd Gennep), met de doorloop over de dijken tot x = -192 en 190. De
+// pijlers staan op x = -93,3, -30,6, 32,1 en 94,8.
 //
 // Bronnen: BGT overbruggingsdeel (het dek en zijn randen, het westelijke
 // landhoofd, de pijlers op x = -30,6, 32,1 en 94,8 met ronde koppen), BGT
@@ -151,6 +152,31 @@ const X_AXIS = [0.99402, 0.10921];
 
 const X_WEST = -157.03; // einde van het BGT-dek en voorkant van het landhoofd bij Oeffelt
 const X_EAST = 158.02; // einde van het BGT-dek bij Gennep
+// Doorloop over de dijk: dek, wegdek en landhoofden lopen door tot x = -192
+// en 190. In het PDOK-terrein ligt de rijbaan achter de landhoofden eerst 4
+// tot 6 m lager dan het dek en komt pas bij x = -181 en 182 op dekhoogte; het
+// fietspad ligt aan de westkant direct achter het landhoofd op dekhoogte en
+// stijgt aan de oostkant voorbij x = 177 tot 1,8 m boven het dek. Voorbij de
+// einden van het BGT-dek zakt het wegdek stuksgewijs lineair onder het profiel
+// (`DROP`: [x, zakking]); het fietspad aan de westkant eerst snel (0,35 m over
+// 6 m), zodat het niet over een lange strook gelijk met het PDOK-fietspad
+// ligt. Op de einden ligt het wegdek 0,4 tot 1,0 m onder het PDOK-wegvlak.
+// Zonder doorloop bleef op de kaart een spleet tussen het PDOK-wegdek op de
+// dijk en het einde van de brug.
+const END = { w: -192.0, e: 190.0 };
+const DROP = {
+  road: [[END.w, 0.4], [X_WEST, 0], [X_EAST, 0], [END.e, 0.6]],
+  bike: [[END.w, 0.9], [-163.0, 0.35], [X_WEST, 0], [X_EAST, 0], [END.e, 0.3]],
+};
+// Stuksgewijs lineair, buiten de tabel doorgetrokken met de laatste helling.
+function ramp(x, rows) {
+  let i = 0;
+  if (x > rows[rows.length - 1][0]) i = rows.length - 2;
+  else while (i < rows.length - 2 && x > rows[i + 1][0]) i++;
+  const [x0, a] = rows[i];
+  const [x1, b] = rows[i + 1];
+  return a + ((b - a) * (x - x0)) / (x1 - x0);
+}
 
 // Rijbaan in NAP (AHN-DSM, 25e percentiel per 5 m over het midden van de
 // rijbaan): een flauwe bolling, symmetrisch rond het midden (aan de oostkant
@@ -158,7 +184,7 @@ const X_EAST = 158.02; // einde van het BGT-dek bij Gennep
 const ROAD_NAP = [
   [0, 20.235], [20, 20.22], [40, 20.19], [60, 20.13], [80, 20.04], [100, 19.92], [120, 19.78], [140, 19.62], [160, 19.43],
 ];
-function road(x) {
+function profile(x) {
   const a = Math.abs(x);
   const pts = ROAD_NAP;
   for (let i = 0; i + 1 < pts.length; i++) {
@@ -179,7 +205,8 @@ const WALLS = [
 ];
 const KERB = { y0: 3.15, y1: 3.55, height: 0.25 }; // band tussen rijbaan en ligger
 const EDGE = { y0: 6.32, y1: DECK.n, height: 0.45 }; // schampkant langs het fietspad
-const walk = (x) => road(x) + DECK.curb;
+const road = (x) => profile(x) - ramp(x, DROP.road);
+const walk = (x) => profile(x) + DECK.curb - ramp(x, DROP.bike);
 const deckBottom = (x) => road(x) - DECK.depth;
 
 // Vakwerk (hoogtes boven de rijbaan): vijf losse liggers, elk acht vakken
@@ -230,20 +257,30 @@ const COPING = { below: 1.2, out: 0.25, rise: 0.3, band: 0.35 }; // kraag: 50 gr
 const OLD_BEARINGS = { ys: [-10.65, -5.65], width: 1.0, height: 0.6 };
 const PIER_INTO = 0.9; // betonnen oplegging tot 0,6 m onder het wegdek
 // Landhoofden (BGT P0030.8abeacd5439b7599bf30bbb191c2a3be bij Oeffelt; bij
-// Gennep gespiegeld tot het einde van het dek).
+// Gennep gespiegeld), met de doorloop over de dijk tot het einde van het model.
 const ABUTMENTS = [
-  [X_WEST, -154.3],
-  [154.3, X_EAST],
+  [END.w, -154.3],
+  [154.3, END.e],
 ];
+// Stations om de `step` meter met de knikken van het wegdek (einden van het
+// BGT-dek) exact erin.
+const KINKS = [...new Set([...DROP.road, ...DROP.bike].map(([x]) => x))].sort((a, b) => a - b);
+function stationsK(x0, x1, step = 2) {
+  const cuts = [x0, ...KINKS.filter((k) => k > x0 + 0.05 && k < x1 - 0.05), x1];
+  const xs = [];
+  for (let i = 0; i + 1 < cuts.length; i++) xs.push(...stationsX(cuts[i], cuts[i + 1], step).slice(i === 0 ? 0 : 1));
+  return xs;
+}
 
 // ---------- dek, band en schampkant ----------
-const deckXs = stationsX(X_WEST, X_EAST, 2);
+const deckXs = stationsK(END.w, END.e);
 const deckMain = loftX(
   deckXs.map((x) => {
     const zt = road(x);
     return { x, section: [[DECK.s, zt - DECK.depth], [WALLS[1].y0 + 0.01, zt - DECK.depth], [WALLS[1].y0 + 0.01, zt], [DECK.s, zt]] };
   }),
 );
+// Band en schampkant houden op bij de einden van het BGT-dek.
 // Uitkraging met het fietspad: onderkant van 1,2 m onder het fietspad aan de
 // ligger tot 0,6 m aan de rand.
 const deckArm = loftX(
@@ -258,7 +295,7 @@ const deckArm = loftX(
 // Strook langs x van y0 tot y1 van zb(x) tot zt(x), met `margin` rondom groter.
 function band(x0, x1, y0, y1, zb, zt, margin = 0, step = 2) {
   return loftX(
-    stationsX(x0 - margin, x1 + margin, step).map((x) => ({
+    stationsK(x0 - margin, x1 + margin, step).map((x) => ({
       x,
       section: [[y0 - margin, zb(x) - margin], [y1 + margin, zb(x) - margin], [y1 + margin, zt(x) + margin], [y0 - margin, zt(x) + margin]],
     })),
@@ -419,8 +456,8 @@ const piers = PIERS.map(pier);
 // onder de uitkraging tot 0,55 m onder het fietspad.
 const abutments = ABUTMENTS.map(([x0, x1]) =>
   union([
-    boxFromTo(x0, x1, DECK.s, WALLS[1].y0 + 0.01, BASE, Math.min(road(x0), road(x1)) - DECK.depth + PIER_INTO),
-    boxFromTo(x0, x1, WALLS[1].y0, DECK.n, BASE, Math.min(walk(x0), walk(x1)) - 0.55),
+    loftX(stationsK(x0, x1).map((x) => ({ x, section: [[DECK.s, BASE], [WALLS[1].y0 + 0.01, BASE], [WALLS[1].y0 + 0.01, road(x) - DECK.depth + PIER_INTO], [DECK.s, road(x) - DECK.depth + PIER_INTO]] }))),
+    loftX(stationsK(x0, x1).map((x) => ({ x, section: [[WALLS[1].y0, BASE], [DECK.n, BASE], [DECK.n, walk(x) - 0.55], [WALLS[1].y0, walk(x) - 0.55]] }))),
   ]),
 );
 
@@ -566,7 +603,7 @@ const BIKE_ASPHALT = [
     for (const y of [4.7, 5.5, 6.3]) if (!bike.some((r) => inRing([x, y], r))) throw new Error(`fietspad: (${x}, ${y}) buiten de BGT`);
   }
 }
-const stripXs = [X_WEST - 0.5, ...deckXs, X_EAST + 0.5];
+const stripXs = [END.w - 0.5, ...deckXs, END.e + 0.5];
 const roadStrip = loftX(
   stripXs.map((x) => ({ x, section: [[DECK.s - 0.5, road(x) - LAYER], [WALLS[1].y0, road(x) - LAYER], [WALLS[1].y0, road(x) + ABOVE], [DECK.s - 0.5, road(x) + ABOVE]] })),
 );
@@ -578,9 +615,9 @@ const walkStrip = loftX(
 // onder de wegdeklaag.
 const notLayer = union([
   // de zuidelijke ligger tot voorbij de dekrand
-  ...WALLS.map(({ y0, y1 }, i) => band(X_WEST - 1, X_EAST + 1, i === 0 ? DECK.s - 1 : y0, y1, (x) => road(x) - LAYER - 0.1, (x) => walk(x) + ABOVE + 0.1, GUARD)),
-  band(X_WEST - 1, X_EAST + 1, KERB.y0, KERB.y1, (x) => road(x) - LAYER - 0.1, (x) => road(x) + KERB.height, GUARD),
-  band(X_WEST - 1, X_EAST + 1, EDGE.y0, EDGE.y1 + 1, (x) => walk(x) - LAYER - 0.1, (x) => walk(x) + EDGE.height, GUARD),
+  ...WALLS.map(({ y0, y1 }, i) => band(END.w - 1, END.e + 1, i === 0 ? DECK.s - 1 : y0, y1, (x) => Math.min(road(x), walk(x)) - LAYER - 0.1, (x) => Math.max(road(x), walk(x)) + ABOVE + 0.1, GUARD)),
+  band(X_WEST, X_EAST, KERB.y0, KERB.y1, (x) => road(x) - LAYER - 0.1, (x) => road(x) + KERB.height, GUARD),
+  band(X_WEST, X_EAST, EDGE.y0, EDGE.y1 + 1, (x) => walk(x) - LAYER - 0.1, (x) => walk(x) + EDGE.height, GUARD),
 ]);
 const area = (polys) => union(polys.map((poly) => prism(poly, BASE - 1, 100)));
 const roadCut = roadStrip.subtract(notLayer);
@@ -791,10 +828,12 @@ await writeFile(
         "P0031.3cdce6dd392b437fe053160d000a328b",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden, de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot onder het dek. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 7,1 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen) en de dwarsdragers en consoles onder het dek zijn weggelaten; de export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden (dek, wegdek en landhoofden lopen over de dijken door tot x = -192 en 190, waar de rijbaan tot NAP +19,03 en +18,83 m en het fietspad tot +18,7 en +19,3 m zakt, zodat het einde 0,4 tot 1,0 m onder het PDOK-wegvlak op de dijk ligt), de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot in het dek en tot het einde van de doorloop. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 7,1 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen) en de dwarsdragers en consoles onder het dek zijn weggelaten; de export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
-        lengthM: +(X_EAST - X_WEST).toFixed(2),
+        lengthM: +(END.e - END.w).toFixed(2),
+        deckLengthBgtM: +(X_EAST - X_WEST).toFixed(2),
+        dikeExtension: { ...END, drop: DROP },
         deckWidthM: +(DECK.n - DECK.s).toFixed(2),
         trussLinesM: [-4.05, 4.05],
         trussAboveRoadM: TRUSS.top,
@@ -802,7 +841,7 @@ await writeFile(
         spans: trussStats.map(({ lengthM, panelM }) => ({ lengthM, panelM })),
         piersX: PIER_X,
         pierTopNapM: PIERS.map(({ top }) => top),
-        roadNapM: { middle: +(road(0) + WATER_NAP).toFixed(2), abutments: +(road(X_WEST) + WATER_NAP).toFixed(2) },
+        roadNapM: { middle: +(road(0) + WATER_NAP).toFixed(2), abutments: +(road(X_WEST) + WATER_NAP).toFixed(2), westEnd: +(road(END.w) + WATER_NAP).toFixed(2), eastEnd: +(road(END.e) + WATER_NAP).toFixed(2), bikeWestEnd: +(walk(END.w) + WATER_NAP).toFixed(2), bikeEastEnd: +(walk(END.e) + WATER_NAP).toFixed(2) },
         bikeAboveRoadM: DECK.curb,
         waterNapM: WATER_NAP,
       },

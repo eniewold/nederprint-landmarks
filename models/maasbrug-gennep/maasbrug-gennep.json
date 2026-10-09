@@ -45,12 +45,59 @@
     "L0002.da67a67fa2cb49fda010818167dc0b36",
     "P0031.3cdce6dd392b437fe053160d000a328b"
   ],
-  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden, de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot onder het dek. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 7,1 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen) en de dwarsdragers en consoles onder het dek zijn weggelaten; de export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden (dek, wegdek en landhoofden lopen over de dijken door tot x = -192 en 190, waar de rijbaan tot NAP +19,03 en +18,83 m en het fietspad tot +18,7 en +19,3 m zakt, zodat het einde 0,4 tot 1,0 m onder het PDOK-wegvlak op de dijk ligt), de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot in het dek en tot het einde van de doorloop. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 7,1 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen) en de dwarsdragers en consoles onder het dek zijn weggelaten; de export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "maasbrug-gennep-1-1000.stl"
   ],
   "realWorld": {
-    "lengthM": 315.05,
+    "lengthM": 382,
+    "deckLengthBgtM": 315.05,
+    "dikeExtension": {
+      "w": -192,
+      "e": 190,
+      "drop": {
+        "road": [
+          [
+            -192,
+            0.4
+          ],
+          [
+            -157.03,
+            0
+          ],
+          [
+            158.02,
+            0
+          ],
+          [
+            190,
+            0.6
+          ]
+        ],
+        "bike": [
+          [
+            -192,
+            0.9
+          ],
+          [
+            -163,
+            0.35
+          ],
+          [
+            -157.03,
+            0
+          ],
+          [
+            158.02,
+            0
+          ],
+          [
+            190,
+            0.3
+          ]
+        ]
+      }
+    },
     "deckWidthM": 11.62,
     "trussLinesM": [
       -4.05,
@@ -94,7 +141,11 @@
     ],
     "roadNapM": {
       "middle": 20.23,
-      "abutments": 19.46
+      "abutments": 19.46,
+      "westEnd": 19.03,
+      "eastEnd": 18.83,
+      "bikeWestEnd": 18.7,
+      "bikeEastEnd": 19.3
     },
     "bikeAboveRoadM": 0.17,
     "waterNapM": 8.13
