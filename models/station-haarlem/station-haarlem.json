@@ -1,0 +1,62 @@
+{
+  "name": "Station Haarlem (Haarlem)",
+  "file": "station-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104057,
+    489144
+  ],
+  "xAxis": [
+    0.985,
+    -0.173
+  ],
+  "groundSamplePoints": [
+    [
+      -90,
+      -25
+    ],
+    [
+      30,
+      -27
+    ],
+    [
+      65,
+      -25
+    ],
+    [
+      -45,
+      -20
+    ]
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000039313"
+  ],
+  "description": "Stationsplein naar -Y, spooras -9.96 graden RD; twee bakstenen entrees, vier hoge gebogen kapvakken en beide lange uitlopers. Moderne Kennemerpleinbouw blijft PDOK.",
+  "realWorld": {
+    "groundNapM": 1.2,
+    "westMainRoofM": 23.63,
+    "eastMainRoofM": 20.93,
+    "westNorthRoofM": 21.65,
+    "eastNorthRoofM": 18.95,
+    "schattingen": [
+      "glas en spooropeningen als blinde nissen op volle kern; vensterritme, entreefrontons, dakdetails naar fotos",
+      "westelijke dakranden volgen BAG; oostelijke smalle kap als lage vlakke uitloper",
+      "moderne BAG 0392100000037572 aan Kennemerplein blijft apart, spoorstaal en rails onder .9m ontbreken"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0392100000039313, Actueel_orthoHR en AHN DSM/DTM .5m bbox 103760,489050,104360,489310; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19786",
+    "https://commons.wikimedia.org/wiki/File:Haarlem_station_buiten.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haarlem_Central_Station_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:StationHaarlem-APR2018.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achterzijde_-_Haarlem_-_20095942_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Station_Haarlem_2024_3.jpg"
+  ],
+  "printFiles": [
+    "station-haarlem-1-2000.stl"
+  ]
+}
