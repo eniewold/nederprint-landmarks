@@ -831,6 +831,13 @@ await writeFile(
       groundOffsetMetres: GROUND_OFFSET,
       groundHeight: GROUND_HEIGHT,
       groundSamplePoints: samplePoints,
+      replacesTerrain: [
+        "L0004.1c2b1f7c19674ef6bf65cf976243a4eb",
+        "L0004.6b66f7dd0a494d3ea0551d14e7973ada",
+        "L0004.749113f20549410bbade74afe89fa603",
+        "L0004.9e5667d5858a40e084cfa89f86e2daef",
+        "L0004.a9fc9dede36f4172a3a864f8cf1bc479",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de twee vakwerkliggers onder de top van de bovenrand op de waterspiegel van de IJssel (z = 0, NAP +5,2 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zutphen, RD-richting 21,32 graden vanaf het oosten, dezelfde as als het model van de Oude IJsselbrug) en +Y naar het noordnoordwesten; de verkeersbrug ligt ten zuiden (y < -5,4) en zit niet in dit model. Twee nodes: road:spoor, de bovenste 0,5 m van het dek binnen de drie actuele BGT-spoorbaanvlakken op de brug met hun attributen in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Hoven (x = -285) tot het landhoofd in Zutphen (x = 58,7), met het spoor op NAP +11,96 tot +12,32 m (AHN). De betonnen aanbrug over de uiterwaard op zes velden van 32,9 m met wandpijlers en pijlerkoppen en schampkanten langs de randen; een stalen veld met plaatliggers langs het spoor tot de westelijke hefbrugpijler; de hefbrug met voegen, plaatliggers en twee heftorens tot NAP +22,4 en +22,7 m, met spitse zijramen in de poten, het contragewicht als dwarsbalk met een V-onderkant tussen de poten en langsliggers met een V-onderkant tussen de torens; de vakwerkbrug met gebogen bovenrand (opleggingen 87 m uit elkaar, top NAP +25,0 m) als twee platen van 1,0 m, 9,25 m uit elkaar, met 13 vakken van 5,97 m: Warren-vakwerk met stijlen op de bovenknopen en een kruis in het middelste vak, doorgaande openingen met een spits plafond en blinde nissen, het windverband tussen de bovenranden als staven met een V-onderkant en een looppad aan de noordkant; het korte betonnen veld naar Zutphen; de pijlers van hefbrug en vakwerkbrug met ronde koppen (BGT), aan de zuidkant afgesneden bij de verkeersbrug. Bovenleiding, leuningen, seinen en de trappen op de torens zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de uiterwaard en het water naast de brug bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van het water. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],

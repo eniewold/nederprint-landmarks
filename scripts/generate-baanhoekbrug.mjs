@@ -931,6 +931,12 @@ await writeFile(
       // Op het water van de Beneden-Merwede naast de vakwerkliggers, aan beide zijden.
       groundSamplePoints: samplePoints,
       replacesBuildings: ["NL.IMBAG.Pand.0505100000001555"],
+      replacesTerrain: [
+        "G0505.95be55cfafc041ea9fc4742e1d47d6db",
+        "L0004.6ec2d23265e9468e8e7eb712c27a07c8",
+        "L0004.74cdd74dd01240a4a5f35dede8146a4e",
+        "L0004.f6810264513d4a39b6e8867ca566f71a",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste stenen pijler op het water van de Beneden-Merwede (z = 0, NAP +0,07 m) in de oorsprong, +X langs de brug naar het noorden (Sliedrecht, RD-richting 91,52 graden vanaf het oosten) en +Y naar het westen; het fietspad ligt aan de oostkant (y < 0). Drie nodes: road:spoor en road:fietspad, de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug met hun attributen in extras.attributes (spoorbaan, gesloten verharding; fietspad, gesloten verharding, asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd (x = -290,95) tot het noordelijke (x = 182,3), 473 m. Twee gelijke vakwerkliggers van 110,7 m over de rivier (7 vakken, evenwijdige randen 10,8 m boven de spoorstaaf tot NAP +25,0 m, schuine eindstijlen, stijlen bij de bovenknopen) als dichte platen van 1,0 m met doorgaande driehoekige openingen en blinde nissen; drie stenen pijlers met voet en kraag tot NAP +12,3 m met lagere aanbouwen; de basculebrug met de klep (x = -152,4 tot -119), het vaste deel met plaatliggers op de basculekelder en het machinehuis, het bedieningshuis (BAG-pand) op een kolom met loopbrug en negen dukdalven; de aanbruggen als kokerligger met uitkragend fietsdek op pijlers met ronde koppen; schampkant tussen spoor en fietspad en borstweringen. Spoorstaaf NAP +13,07 m (zuid) tot +14,3 m (middelste pijler) en +13,58 m (noord). Windverbanden, portalen, bovenleiding, leuningen en de open stand van de klep zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de vakwerkliggers bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],

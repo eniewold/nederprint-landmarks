@@ -280,6 +280,15 @@ eigen node van klasse `road` met de BGT-attributen, zodat de kleurregels van de
    stralen over het hele dek en vergelijk per punt de treffers van alle nodes.
    Ook een boven- en ondervlak van hetzelfde wegdeel op dezelfde hoogte (een
    vlak zonder dikte) is fout.
+5. **Verberg het PDOK-brugdek**: PDOK legt het BGT-overbruggingsdeel van het
+   dek plat op het water of de uiterwaard. Draai na het genereren
+   `node scripts/replaces-terrain.mjs <slug> --write`: dat zet de
+   `lokaal_id`'s van de overbruggingsdelen met `relatieve_hoogteligging` ≥ 1
+   die voor minstens 90 % onder het model liggen in `replacesTerrain` (JSON
+   én generator), zodat kaart en export ze verbergen. Het maaiveld eronder
+   (water, terrein, pijlervoeten op hoogteligging 0) blijft staan. Meldt het
+   script een deel dat maar half onder het model ligt, laat het model dan tot
+   het einde van dat dek doorlopen of laat het deel staan.
 
 Een brug zonder leuningen maar met schampkanten is printbaar; onder een zwevend
 dek hoort de steun een doorlopende wand te worden, geen kam van losse lamellen.

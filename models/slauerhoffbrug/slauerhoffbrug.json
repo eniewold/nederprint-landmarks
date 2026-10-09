@@ -32,6 +32,26 @@
       -13
     ]
   ],
+  "replacesTerrain": [
+    "G0080.24e907a53d573789e0530d0957918266",
+    "G0080.24e907a5d8c23789e0530d0957918266",
+    "G0080.24e907a5f0923789e0530d0957918266",
+    "G0080.24e907a6fe513789e0530d0957918266",
+    "G0080.24e907a6fe523789e0530d0957918266",
+    "G0080.24e907a6fe533789e0530d0957918266",
+    "G0080.24e907a7c84e3789e0530d0957918266",
+    "G0080.24e907a7c84f3789e0530d0957918266",
+    "G0080.24e907a7c8503789e0530d0957918266",
+    "G0080.24e907a88e7a3789e0530d0957918266",
+    "G0080.24e907a88e7b3789e0530d0957918266",
+    "G0080.24e907a892673789e0530d0957918266",
+    "G0080.24e907a956db3789e0530d0957918266",
+    "G0080.24e907a956dc3789e0530d0957918266",
+    "G0080.24e907a956dd3789e0530d0957918266",
+    "G0080.24e907a95abd3789e0530d0957918266",
+    "G0080.24e907aa23473789e0530d0957918266",
+    "G0080.24e907aaed673789e0530d0957918266"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden op de klep op de waterspiegel van de Harlingervaart (z = 0, NAP -0,36 m volgens het PDOK-terrein) in de oorsprong, +X langs de brug naar het noorden (RD-richting 88,03 graden vanaf het oosten) en +Y naar het westen. Vliegende ophaalbrug (staartbrug) in gesloten stand: de klep van 14,6 x 16,5 m tussen twee pijlers, vaste overspanningen van 13,3 m, het wegdek op NAP +3,9 m. Op de zuidwestoever twee betonnen pyloonpoten met ronde vensters (nissen), 10 m boven het water, en de scharnieras op NAP +8,6 m; de gebogen ladderarm (twee zijliggers van 1,5 m, drie dwarsdragers) staat 45 graden op de as en loopt van het contragewicht, een liggende trommel van 3,8 m met gele randen (bovenkant NAP +12,1 m), over het scharnier omlaag tot op dekhoogte naast de zuidelijke overspanning, met de noordelijke voorarm over het water tot de westrand van de klep. Nodes: road:rijbaan, road:fietspad en road:voetpad zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding); building:brug de vaste brug (overspanningen onder het wegdek, schampkanten, pijlers, landhoofden met vleugelmuren, geleidewerken); building:ophaalbrug de klep onder het wegdek met haar schampkanten, de arm en de trommel; building:pyloon de poten met de fundering. Leuningen, lantaarns, slagbomen, seinen, de hydraulische cilinders en de open stand zijn weggelaten; de export vult onder de klep, de arm en de trommel op. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "slauerhoffbrug-1-1000.stl"

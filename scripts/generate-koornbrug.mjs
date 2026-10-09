@@ -627,6 +627,9 @@ await writeFile(
       origin: [93741.6, 463689.5],
       xAxis: [0.842, 0.539],
       groundOffsetMetres: 0,
+      replacesTerrain: [
+        "G0546.1ce41d19bf124d7a8a6ab7e3209c7c23",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het brugdek op de waterspiegel van de Nieuwe Rijn (z = 0, circa -0,6 m NAP), +X loopt langs de overspanning naar de Burgsteeg (noordoost) en +Y langs het water naar het noordwesten. De lader bemonstert het laagste maaiveld rond de voetafdruk en vindt hier het water, vandaar geen verzinking. Vijf nodes: road:rijbaan, road:rijbaan-klinkers en road:voetpad, de bovenste 0,5 m van het wegdek op het dek en de hellingen met de attributen van de BGT-wegdelen in extras.attributes (bgt_functie rijbaan lokale weg of voetpad, bgt_fysiekvoorkomen open verharding, plus_fysiekvoorkomen sierbestrating voor het midden van de rijweg en gebakken klinkers voor de randstrook in het zuidoosten, de randen van de hellingen en de voetpaden onder de galerijen), zodat de kleurregels van een thema erop werken; building:boogbrug, de rest van de stenen brug met de drie gewelven; en building:galerijen, de twee galerijen met zuilen, borstweringen, bordessen en daken (de zuilen, borstweringen en bordessen blijven met 2 cm rondom buiten de wegdelen). Nodenamen klasse:label bepalen de materiaalklasse.",
       printFiles: [`koornbrug-leiden-1-${scale}.stl`],

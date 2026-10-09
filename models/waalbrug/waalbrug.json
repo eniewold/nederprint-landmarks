@@ -39,6 +39,9 @@
       -25
     ]
   ],
+  "replacesTerrain": [
+    "G0268.42ff08b3a4965775e0530100007f0cc2"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de Waal (z = 0, NAP +8,0 m) in de oorsprong, +X langs de brug naar het noorden (Lent, RD-richting 108,15 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Twee nodes: road:rijbaan, de bovenste 0,5 m van het wegdek over de hele lengte en breedte behalve de strook van de twee bogen met hun hangerscherm, met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de BGT heeft op de brug geen apart fietspad of voetpad), zodat de kleurregels van een thema erop werken; en building:waalbrug, de rest van het kunstwerk: het dek van 23 tot 25,5 m breed van het zuidelijke landhoofd aan het Keizer Traianusplein (x = -332) tot het oude landhoofd op Veur-Lent (x = 322,6), met het wegdek op NAP +26,2 tot +27,3 m; de twee rivierpijlers van 10,8 × 32 m op 252 m hart op hart; de hoofdboog van 244 m tussen de opleggingen als twee dichte vakwerkbanden van 1,2 m dik, 7 m naast de as, met de top op NAP +59,3 m en de hangers als een scherm met spitse openingen tussen dek en boog; onder het dek een knie van 50 graden naar de pijlers; aan beide zijden twee aanbruggen met dichte bogen onder het dek op een tussenpijler. De Verlengde Waalbrug over de Spiegelwaal (2013-2015), de windverbanden tussen de bogen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "waalbrug-1-1000.stl"

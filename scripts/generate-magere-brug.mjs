@@ -607,6 +607,9 @@ await writeFile(
         [25.75, -9],
         [-25.75, 9],
       ],
+      replacesTerrain: [
+        "G0363.874043cee9314281a048ff1aa45f82c8",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dichte onderbouw met blinde bogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek, de portalen, balansplaten met ballastkisten, hangstangen en steunen; het model is vereenvoudigd om op 1:1000 zonder losse steunconstructie te printen.",
       printFiles: [`magere-brug-1-${scale}.stl`],

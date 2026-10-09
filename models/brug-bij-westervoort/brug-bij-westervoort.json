@@ -40,6 +40,14 @@
       -30
     ]
   ],
+  "replacesTerrain": [
+    "L0002.18f045ad1db04f3db6bc24bef0972877",
+    "L0002.48f2f853f675499eb2d1e6224aa49f76",
+    "L0002.52bd3d5999e94d2990fdb1dcdd063d9e",
+    "L0002.57e72f7301ac4a51a87759166f3bc2c7",
+    "L0002.aed50856ddba407b960116f1edb83703",
+    "L0002.c3d8f660562748589355fb93effaf65c"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden tussen de twee rivierpijlers op de grens tussen de verkeersbrug en de zuidelijke spoorbrug, op de waterspiegel van de IJssel (z = 0, NAP +8,3 m), +X langs de brug naar Westervoort (RD-richting -46,9 graden vanaf het oosten) en +Y stroomafwaarts naar het noordoosten. Vier bruggen naast elkaar, elk een eigen node: twee enkelsporige spoorbruggen (y = 0,6 tot 7 en 7,4 tot 14) en de verkeersbrug (y = -12,3 tot -0,5), elk met een vakwerkligger van 117 m over de rivier (spoorbruggen gebogen tot NAP +34,0 m, verkeersbrug veelhoekig tot +33,3 m, acht velden met verticalen), en de fietsbrug (y = -18,5 tot -12,6) als A-vakwerk met een vlakke top op NAP +31,3 m waar het fietspad doorheen loopt; de vakwerken zijn dichte wanden van 1 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen. Aanbruggen over de uiterwaarden van x = -210 tot 345: betonnen liggers onder de sporen, stalen vakwerkliggers onder het wegdek en een plaat op smalle wanden voor het fietspad. De node pijlers heeft de twee gemetselde rivierpijlers, negen aanbrugpijlers met betonnen opleggers en de landhoofden. Drie road-nodes zijn de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel erop in extras.attributes, zodat de kleurregels van een thema erop werken: road:spoor (beide spoordekken tussen de vakwerkwanden, bgt_functie spoorbaan, gesloten verharding), road:rijbaan (het wegdek van de verkeersbrug tussen de vakwerkwanden; het inspectiepad buiten de zuidelijke wand blijft constructie; rijbaan regionale weg, gesloten verharding, asfalt) en road:fietspad (het dek van de fietsbrug tussen de zijvlakken van het A-vakwerk; fietspad, gesloten verharding, asfalt); de vakwerkwanden blijven met 2 cm vrij constructie. Windverbanden en portalen tussen de vakwerkwanden, loopbruggen met leuningen, bovenleiding, lantaarns en leuningen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "brug-bij-westervoort-1-2500.stl"

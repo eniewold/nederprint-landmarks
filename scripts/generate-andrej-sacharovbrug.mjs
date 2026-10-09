@@ -615,6 +615,10 @@ await writeFile(
       groundOffsetMetres: GROUND_OFFSET,
       groundHeight: GROUND_HEIGHT,
       groundSamplePoints: samplePoints,
+      replacesTerrain: [
+        "P0025.533a27f4388b44bfb501ea5188bc4e5d",
+        "P0025.98afc1c078bc4528b6090e4430c65a6e",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden in de hoofdoverspanning op de waterspiegel van de Nederrijn (z = 0, NAP +8,17 m) in de oorsprong, +X langs het rechte middendeel naar het oostnoordoosten (Huissen, RD-richting 27,39 graden vanaf het oosten) en +Y naar het noordnoordwesten (de kant van het fietspad); buiten x = ±122 buigt het dek in een boog met een straal van 2447 m naar +Y af. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; het fietspad aan de noordwestrand achter de scheiding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers naast elkaar (samen 28,36 m breed) van landhoofd tot landhoofd (764 m, wegdek NAP +22,0 m aan de einden en +28,2 m in het midden), met schampkanten, de scheiding tussen fietspad en rijbaan en de geleiderrail in de middenberm; de hoofdoverspanning van 133 m op twee V-pijlers aan de oevers (per ligger een V van 18 m breed op een gezamenlijke poer) met een toog van 4,6 m boven de V's naar 2,6 m in het midden; zijoverspanningen van 80 m en aan elke kant vijf aanbrugvelden van 49 m op schijfpijlers (per ligger een schijf van 1,4 m dik); de landhoofden met de koppen van de vleugelwanden. Lantaarnpalen, leuningen, het seinportaal en de dilatatievoegen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de rivier naast de hoofdoverspanning bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
