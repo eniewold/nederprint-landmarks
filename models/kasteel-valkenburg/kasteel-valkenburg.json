@@ -1,0 +1,50 @@
+{
+  "name": "Kasteelruïne Valkenburg",
+  "file": "kasteel-valkenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186235,
+    319219
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      10
+    ],
+    [
+      -17,
+      3
+    ],
+    [
+      -18,
+      -8
+    ]
+  ],
+  "groundHeight": 145.76,
+  "description": "Bewaarde ruïnemuurvakken en kapel op het PDOK-heuvelplateau, met gemeten onregelmatige muurprofielen, steile openingen, donjonfundament en lagere dwingel. Geen dak of volledig kasteel gereconstrueerd; heuvel blijft PDOK-terrein. Planlijnen, erosieprofielen en openingposities vereenvoudigd voor 1:1000.",
+  "printFiles": [
+    "kasteel-valkenburg-1-1000.stl",
+    "kasteel-valkenburg-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 63.84,
+    "widthM": 101.64,
+    "highestPointM": 12.45,
+    "groundNapM": 100.3,
+    "highestWallNapM": 112.75,
+    "minimumWallThicknessM": 1.3
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36769",
+    "https://www.kasteelvalkenburg.nl/ontdek-onze-locaties/kasteelruine/",
+    "https://commons.wikimedia.org/wiki/Category:Valkenburg_Castle",
+    "PDOK AHN DSM/DTM 0,5 m, Actueel_orthoHR, BAG en 3D Basisvoorziening; 9 oktober 2026"
+  ]
+}
