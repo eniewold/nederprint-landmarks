@@ -1,0 +1,135 @@
+{
+  "name": "Koepelgevangenis (Breda)",
+  "file": "koepel-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    113424.789,
+    400331.152
+  ],
+  "xAxis": [
+    0.9304175679820246,
+    -0.36650122672429725
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      -35
+    ],
+    [
+      12,
+      -35
+    ],
+    [
+      0,
+      -39
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000038514"
+  ],
+  "description": "Hart uit cirkelfit BAG; +X langs oostelijke verbindingsgang op -21.5 graden in RD; volledige koepel met westelijk dienstgebouw en lage U-aanbouw. Afzonderlijke poort, kapel en administratie blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 3.072,
+    "diameterM": 62.922,
+    "topNapM": 39.7689,
+    "radialRoofProfileNap": [
+      [
+        31.461,
+        16.92
+      ],
+      [
+        30.5,
+        17.551
+      ],
+      [
+        28.5,
+        18.747
+      ],
+      [
+        27.5,
+        19.656
+      ],
+      [
+        26.5,
+        20.864
+      ],
+      [
+        25.5,
+        22.804
+      ],
+      [
+        24.5,
+        24.51
+      ],
+      [
+        23.5,
+        25.855
+      ],
+      [
+        22.5,
+        27.004
+      ],
+      [
+        20.5,
+        28.928
+      ],
+      [
+        18.5,
+        30.18
+      ],
+      [
+        16.5,
+        31.263
+      ],
+      [
+        14.5,
+        32.195
+      ],
+      [
+        12.5,
+        32.986
+      ],
+      [
+        10.5,
+        33.701
+      ],
+      [
+        8.5,
+        34.21
+      ],
+      [
+        6.5,
+        34.538
+      ],
+      [
+        4.5,
+        34.797
+      ],
+      [
+        0,
+        34.82
+      ]
+    ],
+    "schattingen": [
+      "venstervormen en kantelen vereenvoudigd uit RCE/Commons, dakroeven verdikt tot .9 m",
+      "gevelvensters .35 m diepe blinde nissen; daklichten schematisch",
+      "daknok dienstgebouw NAP17.11 en goot NAP11.81 uit AHN, raamposities uit traveeritme",
+      "lantaarn facetten en piron vereenvoudigd; totale AHN-hoogte 36.70 m wijkt af van historische registermaat 37.90 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0758100000038514; AHN DSM/DTM .5m en Actueel_orthoHR bbox 113302.374,400203.561,113542.374,400443.561; 2026-10-09",
+    "BGT pand G0758.5df91bb155564028893d365ff4136c3c, actuele versie 9c21367c-f302-08bd-8857-69c7965bb84d",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526096",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526095",
+    "https://commons.wikimedia.org/wiki/File:P1010275copyKoepelgevangenis_Breda.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achter_aanzicht_-_Breda_-_20040751_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zijaanzicht_-_Breda_-_20040750_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "koepel-breda-1-1000.stl"
+  ]
+}
