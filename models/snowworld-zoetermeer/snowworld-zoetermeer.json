@@ -1,0 +1,47 @@
+{
+  "name": "SnowWorld Zoetermeer",
+  "file": "snowworld-zoetermeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91270,
+    453890
+  ],
+  "xAxis": [
+    -0.4052,
+    0.9142
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 40.530596,
+  "groundSamplePoints": [
+    [
+      -25,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0637100000171219"
+  ],
+  "description": "Twee lagere skihallen met ondiep gewelfde daken, doorlopend tonvormig dak van de verlengde derde baan, staalvakwerk en zijtrap met uitzichtpunt; voorcomplex met afzonderlijke zadeldaken.",
+  "realWorld": {
+    "longHallTopNapM": 66.73,
+    "ahnMaximumNapM": 67.4737,
+    "oldHallsTopNapM": 16.86,
+    "estimated": [
+      "dakinterpolatie door ontbrekende AHN-returns",
+      "staalprofielen en trapgroepen verdikt",
+      "entreeglas en dakoverstekken"
+    ]
+  },
+  "sources": [
+    "https://www.zoetermeer.nl/_flysystem/media/7.-beeldkwaliteitsplan-snowworld.pdf",
+    "https://www.zoetermeer.nl/uitbreidingsnowworld",
+    "PDOK BAG en AHN DSM/DTM 0,5m, bbox 90900,453800,91450,454350",
+    "https://commons.wikimedia.org/wiki/File:Snowworld_Zoetermeer_(36995235085).jpg",
+    "https://commons.wikimedia.org/wiki/File:Zoetermeer_Meerzicht_Snowworld_(02).JPG"
+  ],
+  "printFiles": [
+    "snowworld-zoetermeer-1-1000.stl"
+  ]
+}
