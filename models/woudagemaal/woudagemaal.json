@@ -1,0 +1,51 @@
+{
+  "name": "Ir. D.F. Woudagemaal",
+  "file": "woudagemaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    174730,
+    539927
+  ],
+  "xAxis": [
+    0.8886,
+    -0.4587
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.729549,
+  "groundSamplePoints": [
+    [
+      0,
+      -7.5
+    ],
+    [
+      20,
+      -7.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0082100000149207",
+    "NL.IMBAG.Pand.0082100000155861"
+  ],
+  "description": "Machinehal met doorlopend zadeldak en zes lagere dwarskappen, haaks ketelhuis met verhoogde lichtkap en taps toelopende gemetselde schoorsteen; raamritme als blinde nissen.",
+  "realWorld": {
+    "hallRidgeNapM": 16.52,
+    "boilerRidgeNapM": 14.37,
+    "chimneyTopNapM": 61.27,
+    "estimated": [
+      "venster- en natuursteenmaten",
+      "schoorsteenprofiel tussen AHN-top en BAG-voet",
+      "entreeportalen en nisdiepte"
+    ]
+  },
+  "sources": [
+    "https://www.woudagemaal.nl/over-ons/ir-d-f-woudagemaal/architectuur",
+    "https://wiki.woudagemaal.nl/w/index.php/Ontwerp_en_inrichting_gebouw",
+    "PDOK BAG, AHN DSM/DTM 0,5 m en luchtfoto 0,25 m, bbox 174650,539880,174800,540010",
+    "https://commons.wikimedia.org/wiki/File:Ir._D.F._Woudagemaal_1.jpg"
+  ],
+  "printFiles": [
+    "woudagemaal-1-1000.stl"
+  ]
+}
