@@ -29,7 +29,7 @@ windvaan; vrijstaande delen zijn smaller dan 0,9 m. Geen hoogteplakken.
 
 Nodes: `building:kasteel`, `building:brug` en `road:voetpad`. De bovenste
 0,5 m van het centrale voetpad is uit de brugconstructie gesneden; geen
-dubbele bovenvlakken. De actuele BGT levert geen verhoogd wegdeel op deze
+dubbele bovenvlakken. Op 1.935 verticale teststralen is het dek overal minimaal 0,49999988 m dik; geen samenvallende bovenvlakken. De booghalvebreedte is 1,75 m, waardoor de spits onder het dek blijft. De actuele BGT levert geen verhoogd wegdeel op deze
 brug: attributen `voetpad` / `open verharding` komen van aansluitend voetpad
 `G0758.745908b813744758a6b26923d291c4a5`. Het volledig bedekte
 overbruggingsdeel `G0758.4c9db7c56d8a4228b136cc656dc411fd` wordt verborgen.
@@ -41,9 +41,9 @@ toe; gedeelde ondersteuning laat brug en voetpad ongewijzigd. De wijziging
 van het eerste onderdeel is -0,06% doordat de overlap met de brug aan het
 portaal wordt verwijderd. De echte preview/export beslaat 80 × 80 m, met
 het hele kasteel en de brug binnen de uitsnede. De monumenttest controleert
-plaatsing, torentop, dakplat, drie gewelfpunten, waterbemonstering en dekklasse.
-AHN-check: 1.090 geldige cellen boven water +3 m; 57,1% binnen 1 m,
-84,6% binnen 2 m. Afwijkingen vooral langs toren, dakkapellen en dakranden.
+plaatsing, torentop, dakplat, drie gewelfpunten, waterbemonstering, dekklasse, twee doorlopende dekvlakken en vrije ruimte onder het dek. De 307 landmarktests slagen.
+AHN-check: 1.090 geldige cellen boven water +3 m; 56,9% binnen 1 m,
+84,4% binnen 2 m; mediane absolute afwijking 0,78 m. Afwijkingen vooral langs toren, dakkapellen en dakranden.
 Vier schuine controles tegenover PDOK: noordzijde heeft dakkapellen en
 torengeledingen; oostzijde de afwijkende nissenindeling en schoorstenen;
 zuidzijde het portaal en de driegewelvenbrug; westzijde nissen, plint en

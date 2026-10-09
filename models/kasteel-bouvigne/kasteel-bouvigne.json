@@ -46,7 +46,9 @@
     "eaveNapM": 11.82,
     "roofTopNapM": 15.65,
     "towerTopNapM": 25.1,
-    "bridgeTopNapM": 3.24
+    "bridgeTopNapM": 3.24,
+    "bridgeArchHalfspanM": 1.75,
+    "bridgeArchTipNapM": 2.69
   },
   "sources": [
     "https://nl.wikipedia.org/wiki/Kasteel_Bouvigne",

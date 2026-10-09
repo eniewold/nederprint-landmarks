@@ -155,7 +155,7 @@ solids.push(roofed(rect(-1.93,1.46,-9.42,-9.04),ridgeU(-.235,Z(6.9),1.5)));
 // borstweringen van 0,9 m; dunne ijzeren leuning vervalt op 1:1000.
 let bridge=prism(rect(-1.65,1.35,-26.7,-9.10),BASE,Z(3.24));
 const arches=[];
-for(const y of [-12.1,-17.5,-22.9]) arches.push(profileX([[y-1.85,BASE-1],[y+1.85,BASE-1],[y+1.85,Z(.10)],[y,Z(.10)+1.48*1.85],[y-1.85,Z(.10)]],-2,2));
+for(const y of [-12.1,-17.5,-22.9]) arches.push(profileX([[y-1.75,BASE-1],[y+1.75,BASE-1],[y+1.75,Z(.10)],[y,Z(.10)+1.48*1.75],[y-1.75,Z(.10)]],-2,2));
 bridge=bridge.subtract(Manifold.union(arches));
 // De daadwerkelijke brug heeft een lage dekstrook, geen gemetselde
 // borstweringen; alleen de eindpijlers zijn 0,9 m dik gemaakt.
@@ -197,7 +197,7 @@ const META={
  groundSamplePoints:[[-17,0],[17,0],[0,17]],groundHeight:45.6,
  replacesBuildings:["0758100000069496"],plate:false,
  description:"Oorsprong midden in het kasteel op het waterniveau NAP +1,16 m; +X langs de zuidgevel (11,23 graden in RD), +Y noordwaarts; gebouw met vijf schilddakvlakken, achthoekige toren met holle spits en peer, portaal, schoorstenen, dakkapellen, gevelnissen en driegewelvenbrug; torenpeer en geveldetails geschat uit foto's, vlaggenstok en ijzeren leuningen weggelaten.",
- realWorld:{waterNapM:WATER_NAP,eaveNapM:HALL.eave,roofTopNapM:HALL.top,towerTopNapM:TOWER.tip,bridgeTopNapM:3.24},
+ realWorld:{waterNapM:WATER_NAP,eaveNapM:HALL.eave,roofTopNapM:HALL.top,towerTopNapM:TOWER.tip,bridgeTopNapM:3.24,bridgeArchHalfspanM:1.75,bridgeArchTipNapM:2.69},
  sources:["https://nl.wikipedia.org/wiki/Kasteel_Bouvigne","https://monumentenregister.cultureelerfgoed.nl/monumenten/529854","https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000069496","PDOK BAG/AHN DSM-DTM 0,5 m/Actueel_orthoHR, geraadpleegd 9 oktober 2026","https://commons.wikimedia.org/wiki/File:Breda_Kasteel_Bouvigne_2025-06-30-1.jpg","https://commons.wikimedia.org/wiki/Category:Kasteel_Bouvigne"]
 };
 // Ondervlakken zijn uitsluitend de kleine vensterdagkanten (max. 0,5 m);
