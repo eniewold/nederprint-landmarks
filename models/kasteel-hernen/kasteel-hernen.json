@@ -1,0 +1,55 @@
+{
+  "name": "Kasteel Hernen",
+  "file": "kasteel-hernen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    174926,
+    427378
+  ],
+  "xAxis": [
+    0.9819587126964436,
+    -0.1890954429898913
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      -5
+    ]
+  ],
+  "groundHeight": 52.06,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000025272"
+  ],
+  "description": "Hof op NAP +8,41 m als referentie; +X -10,9 graden in RD; vier afzonderlijke dakvleugels rond de BAG-binnenplaats, ronde zuidwesttoren, twee uitkragende arkeltorens, trapgevels, erker, kapellen, schoorstenen, nissen, printbare poort en lage donjonrest; details en spitsen uit RCE-foto geschat, geen verdwenen donjon gereconstrueerd.",
+  "printFiles": [
+    "kasteel-hernen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 32.97,
+    "widthM": 43.66,
+    "highestPointM": 20.59,
+    "groundNapM": 8.41,
+    "westRidgeNapM": 19.65,
+    "northRidgeNapM": 23.45,
+    "eastRidgeNapM": 26.05,
+    "southRidgeNapM": 20.65,
+    "roundTowerTopNapM": 26.55
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9318",
+    "https://commons.wikimedia.org/wiki/Category:Hernen_Castle",
+    "https://nl.wikipedia.org/wiki/Kasteel_Hernen",
+    "PDOK BAG 0296100000025272, Actueel_orthoHR, AHN DSM/DTM 0,5 m, 9 oktober 2026"
+  ]
+}
