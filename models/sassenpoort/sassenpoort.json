@@ -1,0 +1,62 @@
+{
+  "name": "Sassenpoort (Zwolle)",
+  "file": "sassenpoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    203085.58,
+    502710.86
+  ],
+  "xAxis": [
+    0.6,
+    -0.8
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -7,
+      -6
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      5,
+      -11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000041732"
+  ],
+  "description": "Sassenpoort met ronde veldtorenvoeten, achtkante bovenbouw, uitgekraagde stadszijdetorens, schilddak, weergang met kantelen, mezekouw, dakruiter en het aangebouwde huis in hetzelfde BAG-pand. Onderkant .8 m onder straat; gewelf steil vereenvoudigd voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 2.86,
+    "clockTipM": 43.85,
+    "fieldSpireM": 33.45,
+    "citySpireM": 31.25,
+    "roofRidgeM": 30.32,
+    "schattingen": [
+      "torenspitsen en dakruiter boven de hoogste AHN-rasterpunten naar spitsvlakken en fotos geëxtrapoleerd",
+      "vensters, spaarbogen, kantelen, dakkapellen, kraagstenen en huisgevel uit fotos en historische doorsneden vereenvoudigd",
+      "doorgaand gewelf en mezekouwkraag steil gemaakt; windvanen, raamroeden en beeldhouwwerk onder .9 m weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG WFS 0193100000041732, actuele orthoHR en AHN DSM/DTM .5 m bbox 203040,502660,203150,502770; 2026-10-09",
+    "https://www.dbnl.org/tekst/kuil005noor01_01/kuil005noor01_01_0016.php (Ter Kuile, fig.21, plattegronden en dwarsdoorsneden)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41788",
+    "https://commons.wikimedia.org/wiki/File:Sassenpoort_in_Zwolle.jpg",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_Sassenpoort_-_Zwolle_-_20228707_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sassenpoort,_stadszijde_-_Zwolle_-_20228716_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zwolle_-_Sassenpoort_v1.jpg"
+  ],
+  "printFiles": [
+    "sassenpoort-1-1000.stl"
+  ]
+}
