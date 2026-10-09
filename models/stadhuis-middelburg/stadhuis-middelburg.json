@@ -1,0 +1,62 @@
+{
+  "name": "Stadhuis (Middelburg)",
+  "file": "stadhuis-middelburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    31675,
+    391496
+  ],
+  "xAxis": [
+    0.929,
+    0.37
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -25
+    ],
+    [
+      5,
+      -25
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      12,
+      29
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0687100000029116"
+  ],
+  "description": "Marktgevel langs +X, Noordstraat langs +Y; Vleeshal, dwarszaal, lagere achtervleugel en achtkante kloktoren met bekroning, opgebouwd uit muren en dakvlakken. Voet .8m onder straat.",
+  "realWorld": {
+    "groundNapM": 4.33,
+    "vleeshalRidgeM": 23.55,
+    "frontRidgeM": 22.47,
+    "rearRidgeM": 18.12,
+    "towerTopM": 52.05,
+    "schattingen": [
+      "torenbekroning, pinakels, topgevels, kapelletjes, koertoren en vensters naar fotos vereenvoudigd; smalle metalen top/windvaan weggelaten",
+      "achterbouw en kleine binnenplaats op AHN/ortho vereenvoudigd binnen BAG-contour; goten en raamroeden onder .9m weggelaten",
+      "galerijen en maaswerk blinde nissen, bordes volle draagkern voor 1:1000"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0687100000029116, orthoHR, AHN DSM/DTM .5m bbox 31590,391400,31760,391610; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29284",
+    "https://www.openmonumentendag.nl/wp-content/uploads/2019/01/Stadhuis-van-Middelburg-informatieblad.pdf",
+    "https://commons.wikimedia.org/wiki/File:2023_Stadhuis_Middelburg_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:2023_Stadhuis_Middelburg_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Achtergevel_en_gevel_Noordstraat_-_Middelburg_-_20154835_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_Bodenplaats_in_de_richting_van_het_Stadhuis_-_Middelburg_-_20154212_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "stadhuis-middelburg-1-1000.stl"
+  ]
+}
