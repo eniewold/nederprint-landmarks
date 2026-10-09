@@ -1,0 +1,56 @@
+{
+  "name": "Kasteel Middachten",
+  "file": "kasteel-middachten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    201850,
+    448073
+  ],
+  "xAxis": [
+    0.984807753012208,
+    -0.17364817766693033
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -21,
+      0
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      0,
+      -22
+    ]
+  ],
+  "groundHeight": 53.8,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000018888"
+  ],
+  "description": "Oorsprong op het grachtwater NAP +10,19 m (PDOK-water minus lokale geoid-offset, geen AHN-waterretour); +X -10 graden in RD; blokhuis met vier risalieten, afgeplat schilddak, zijparapetten, centrale lichtkoepel, ingangspilasters en fronton, vensternissen, kapellen, acht schoorstenen en boogbrug; bordes verhoogd tot NAP 19 m om hoger PDOK-terrein af te dekken; brede brugopening versmald tot 55 graden voor steunvrij printen, fijne ornamenten en metalen brughek weggelaten.",
+  "printFiles": [
+    "kasteel-middachten-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.28,
+    "widthM": 56.83,
+    "highestPointM": 24.31,
+    "waterNapM": 10.19,
+    "flatRoofNapM": 32.12,
+    "eaveNapM": 27.7,
+    "glassRoofTopNapM": 33.7,
+    "chimneyTopNapM": 34.5,
+    "bridgeTopNapM": 19,
+    "bridgeAhnTopNapM": 16.7
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515228",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515235",
+    "https://commons.wikimedia.org/wiki/Category:Kasteel_Middachten",
+    "PDOK BAG 0275100000018888, AHN DSM/DTM 0,5 m, Actueel_orthoHR, BGT erf G0275.fa324ffa3ff3471c9e82ee2e353e0f79, 9 oktober 2026"
+  ]
+}
