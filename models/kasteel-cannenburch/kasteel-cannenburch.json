@@ -1,0 +1,56 @@
+{
+  "name": "Kasteel Cannenburch",
+  "file": "kasteel-cannenburch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    194435,
+    478398.5
+  ],
+  "xAxis": [
+    0.9992562012543986,
+    -0.03856221278179919
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      0,
+      17
+    ]
+  ],
+  "groundHeight": 56.35,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0232100000014978"
+  ],
+  "replacesTerrain": [
+    "G0232.10b22e04f8a64e2d9047095ea308d189"
+  ],
+  "description": "Oorsprong op het water NAP +13,21 m (PDOK-water minus lokale geoid-offset; geen AHN-waterretour); +X langs de voorgevel (-2,21 graden in RD); twee kruiselings aansluitende schilddaken, drie vierkante torens met schilddak, twee torens met achtkantige uivormige bekroning, vier topgevels op de toegangstoren, ingang met risaliet en fronton, schoorstenen, dakkapellen, gevelnissen, bordes en brug; fijn beeldhouwwerk en balusters kleiner dan 0,9 m weggelaten, bekroningen en details uit foto geschat.",
+  "printFiles": [
+    "kasteel-cannenburch-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 34.64,
+    "widthM": 45.51,
+    "highestPointM": 28.79,
+    "waterNapM": 13.21,
+    "hallRidgeNapM": 36.15,
+    "entranceTopNapM": 42,
+    "northEastTopNapM": 37
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520122",
+    "https://nl.wikipedia.org/wiki/Kasteel_De_Cannenburch",
+    "https://commons.wikimedia.org/wiki/Category:Cannenburgh",
+    "PDOK BAG 0232100000014978, AHN DSM/DTM 0,5 m, Actueel_orthoHR en BGT, 9 oktober 2026"
+  ]
+}
