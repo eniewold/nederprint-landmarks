@@ -1,0 +1,59 @@
+{
+  "name": "Kasteel Bouvigne",
+  "file": "kasteel-bouvigne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    113136.65,
+    397249.62
+  ],
+  "xAxis": [
+    0.980853320018151,
+    0.19474795148953622
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -17,
+      0
+    ],
+    [
+      17,
+      0
+    ],
+    [
+      0,
+      17
+    ]
+  ],
+  "groundHeight": 45.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000069496"
+  ],
+  "replacesTerrain": [
+    "G0758.4c9db7c56d8a4228b136cc656dc411fd"
+  ],
+  "description": "Oorsprong midden in het kasteel op het waterniveau NAP +1,16 m; +X langs de zuidgevel (11,23 graden in RD), +Y noordwaarts; gebouw met vijf schilddakvlakken, achthoekige toren met holle spits en peer, portaal, schoorstenen, dakkapellen, gevelnissen en driegewelvenbrug; torenpeer en geveldetails geschat uit foto's, vlaggenstok en ijzeren leuningen weggelaten.",
+  "printFiles": [
+    "kasteel-bouvigne-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 19.89,
+    "widthM": 36.04,
+    "highestPointM": 23.94,
+    "waterNapM": 1.16,
+    "eaveNapM": 11.82,
+    "roofTopNapM": 15.65,
+    "towerTopNapM": 25.1,
+    "bridgeTopNapM": 3.24
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kasteel_Bouvigne",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/529854",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000069496",
+    "PDOK BAG/AHN DSM-DTM 0,5 m/Actueel_orthoHR, geraadpleegd 9 oktober 2026",
+    "https://commons.wikimedia.org/wiki/File:Breda_Kasteel_Bouvigne_2025-06-30-1.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Kasteel_Bouvigne"
+  ]
+}
