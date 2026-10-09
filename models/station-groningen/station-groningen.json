@@ -1,0 +1,64 @@
+{
+  "name": "Station Groningen (Groningen)",
+  "file": "station-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233623.076,
+    581123.967
+  ],
+  "xAxis": [
+    0.997,
+    0.077
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -50,
+      12
+    ],
+    [
+      48,
+      12
+    ],
+    [
+      -15,
+      11
+    ],
+    [
+      15,
+      11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010938997"
+  ],
+  "description": "Voorkant naar +Y aan Stationsplein; drie mansardepaviljoens, lage galerijen, frontons en aangebouwde perronkap. Volle kern met blinde glasnissen voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 2.5,
+    "centralRoofM": 22.07,
+    "centralFinialM": 26.07,
+    "sideRoofM": [
+      19.17,
+      19.13
+    ],
+    "wingRoofM": 13.41,
+    "schattingen": [
+      "frontons, bekroningen, blind venster- en galerijreliëf en dakkapellen naar fotos; cresting en vlaggenmasten onder .9m weggelaten",
+      "aangebouwde perronkap gebogen profiel uit fotos wegens glasgaten in AHN, winkels onder kap als printkern",
+      "geen kopie van oude traverse of lange vrijstaande perronkappen tijdens emplacementverbouwing; BAG 2025 achter station blijft apart"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0014100010938997, AHN DSM/DTM .5m en Actueel_orthoHR bbox 233480,580960,233780,581190; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18691",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Hauptbahnhof_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Hauptbahnhof_05.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen,_perron_(1)_station,_RM-18691-WLM.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen,_perron_(2)_station,_RM-18691-WLM.jpg"
+  ],
+  "printFiles": [
+    "station-groningen-1-1000.stl"
+  ]
+}
