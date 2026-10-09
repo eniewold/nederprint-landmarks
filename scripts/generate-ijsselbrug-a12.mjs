@@ -32,7 +32,8 @@
 // -148,1, -107,9, -67,8, -27,7 en 18,0 (en 223,2 aan de zuidoostkant); de
 // stalen bruggen staan in de rivier op bakstenen pijlers op x = 67,7 en 172,6,
 // de betonnen brug op betonnen schijven op x = 84,2 en 189,5. De landhoofden
-// staan op x = -266,8 en 266,25 (voorkant).
+// staan op x = -266,8 en 266,25 (voorkant); dekken en landhoofden lopen over de
+// dijk door tot x = -292 en 292, tot ruim over het PDOK-wegvlak.
 //
 // Bronnen: BGT overbruggingsdeel (drie dekken: zuidwest y = -18,65 tot -7,95,
 // midden -4,75 tot 4,75, betonnen brug 5,53 tot 31,75, van x = -268,6 tot
@@ -185,8 +186,17 @@ function road(x) {
   return Z(arc(x));
 }
 const CROSS_FALL = { ref: 17.0, grade: 0.025 };
-const steelTop = (x) => road(x);
-const concreteTop = (x, s) => road(x) + CROSS_FALL.grade * (CROSS_FALL.ref - s);
+// Voorbij de landhoofden lopen dek en wegdek over de dijk door tot ruim over
+// het PDOK-wegvlak (zie END); daar zakt het wegdek lineair tot 0,9 m
+// (noordwest) en 0,8 m (zuidoost) onder het profiel, zodat het einde in het
+// PDOK-wegvlak ligt (dat ligt op de dijk 0,2 tot 0,7 m lager dan het AHN).
+const endDrop = (x) => {
+  if (x < ABUT.nwEnd) return (END.dropNw * (ABUT.nwEnd - x)) / (ABUT.nwEnd - END.nw);
+  if (x > ABUT.seEnd) return (END.dropSe * (x - ABUT.seEnd)) / (END.se - ABUT.seEnd);
+  return 0;
+};
+const steelTop = (x) => road(x) - endDrop(x);
+const concreteTop = (x, s) => road(x) - endDrop(x) + CROSS_FALL.grade * (CROSS_FALL.ref - s);
 
 // ---------- indeling langs de as ----------
 // Pijlerlijnen van de aanbruggen over de noordwestelijke uiterwaard (40,12 m
@@ -197,7 +207,14 @@ const LINE_SE = 223.2; // pijlerlijn op de zuidoostelijke uiterwaard
 const STEEL_RIVER = [67.7, 172.6]; // bakstenen rivierpijlers (BGT)
 const CONCRETE_RIVER = [84.2, 189.5]; // betonnen rivierschijven (BGT)
 const ABUT = { nwFace: -266.8, nwEnd: -269.4, seFace: 266.25, seEnd: 269.5 };
-const DECK = [ABUT.nwEnd, ABUT.seEnd]; // dekken en wegdek over de landhoofden
+// Dekken, wegdek en landhoofden lopen over de dijk door tot x = -292 en 292:
+// het PDOK-wegvlak zakt aan het zuidoosteinde (bij de fabriek) tussen het
+// landhoofd en x = 284 tot 8 m onder het dek naar de uiterwaard en ligt pas
+// daarna op de dijk; aan het noordwesteinde ligt het 0,4 tot 0,7 m lager dan
+// het dek (de lokale weg tot 2,6 m). Zonder doorloop bleef daar op de kaart een
+// spleet tussen het PDOK-wegdek en het einde van de brug.
+const END = { nw: -292.0, se: 292.0, dropNw: 0.9, dropSe: 0.8 };
+const DECK = [END.nw, END.se];
 
 // ---------- dwarsprofiel (BGT) ----------
 const STEEL = [
@@ -272,7 +289,7 @@ const CROSSBEAM = { thick: 2.0, y: [8.8, 30.5], depth: 1.6 };
 const COLUMNS = { y: [10.0, 14.5, 19.0, 23.5, 28.0], d: 1.3 };
 
 const steelLines = [...NW_LINES, LINE_RIVER_NW, LINE_SE];
-const keyXs = [...NW_LINES, LINE_RIVER_NW, ...STEEL_RIVER, ...CONCRETE_RIVER, LINE_SE, ABUT.nwFace, ABUT.seFace, PROFILE.crestX - PROFILE.gradeNw * PROFILE.radius];
+const keyXs = [ABUT.nwEnd, ABUT.seEnd, ...NW_LINES, LINE_RIVER_NW, ...STEEL_RIVER, ...CONCRETE_RIVER, LINE_SE, ABUT.nwFace, ABUT.seFace, PROFILE.crestX - PROFILE.gradeNw * PROFILE.radius];
 const deckXs = stations(DECK[0], DECK[1], 2, keyXs);
 
 // ---------- dekken ----------
@@ -360,11 +377,12 @@ for (const xc of concreteLines) {
     piers.push(Manifold.cylinder(zb - CROSSBEAM.depth + 0.1 - BASE, COLUMNS.d / 2, COLUMNS.d / 2, 24).translate([xc, y, BASE]));
   }
 }
-// Landhoofden: een wand over de volle breedte van de voorkant tot het einde
-// van de dekken, tot onder de dekplaten; vleugelwanden langs de buitenranden
-// in de dijk tot 0,6 m boven het wegdek (BGT).
+// Landhoofden: een blok over de volle breedte van de voorkant (BGT, met de
+// vleugelwanden langs de buitenranden tot x = -282,6 en 282,0) tot het einde
+// van de doorgetrokken dekken op de dijk, tot onder de dekplaten; de spleten
+// tussen de dekken zijn daar tot het wegdek dicht.
 const abutments = [];
-for (const [x0, x1] of [[ABUT.nwEnd, ABUT.nwFace], [ABUT.seFace, ABUT.seEnd]]) {
+for (const [x0, x1] of [[END.nw, ABUT.nwFace], [ABUT.seFace, END.se]]) {
   const xs = stations(x0, x1, 1);
   abutments.push(
     loft(xs, (x) => [[STEEL[0].edge[0], BASE], [STEEL[1].edge[1], BASE], [STEEL[1].edge[1], steelTop(x) - STEEL_SLAB + 0.05], [STEEL[0].edge[0], steelTop(x) - STEEL_SLAB + 0.05]]),
@@ -373,19 +391,12 @@ for (const [x0, x1] of [[ABUT.nwEnd, ABUT.nwFace], [ABUT.seFace, ABUT.seEnd]]) {
       const s0 = STEEL[1].edge[1];
       return [[s0, BASE], [e1, BASE], [e1, concreteTop(x, e1) - CONCRETE_SLAB.edge + 0.05], [s0, concreteTop(x, s0) - CONCRETE_SLAB.edge + 0.05]];
     }),
+    ...[[STEEL[0].edge[1], STEEL[1].edge[0]], [STEEL[1].edge[1], CONCRETE.edge[0]]].map(([s0, s1]) =>
+      loft(xs, (x) => [[s0 - 0.01, BASE], [s1 + 0.01, BASE], [s1 + 0.01, steelTop(x)], [s0 - 0.01, steelTop(x)]]),
+    ),
   );
 }
-const WINGS = [
-  { x: [-282.6, ABUT.nwEnd + 0.01], s: [30.85, 31.75], top: concreteTop },
-  { x: [-278.7, ABUT.nwEnd + 0.01], s: [-18.65, -17.75], top: steelTop },
-  { x: [ABUT.seEnd - 0.01, 282.0], s: [30.85, 31.75], top: concreteTop },
-  { x: [ABUT.seEnd - 0.01, 281.9], s: [-18.65, -17.75], top: steelTop },
-];
-const wings = WINGS.map(({ x: [x0, x1], s: [s0, s1], top }) =>
-  loft(stations(x0, x1, 1), (x) => [[s0, BASE], [s1, BASE], [s1, top(x, s1) + 0.6], [s0, top(x, s0) + 0.6]]),
-);
-
-const bridge = union([...parts, ...kerbs, ...piers, ...abutments, ...wings]);
+const bridge = union([...parts, ...kerbs, ...piers, ...abutments]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // De dekken hangen tussen de pijlers vrij en kragen uit. Net als de
@@ -667,7 +678,7 @@ for (const [name, solid] of namedParts) {
 report.partition = partition;
 const nap = (z) => +(z + WATER_NAP).toFixed(2);
 report.profile = {
-  roadNap: { nwEnd: nap(road(DECK[0])), middle: nap(road(0)), crest: nap(road(PROFILE.crestX)), seEnd: nap(road(DECK[1])) },
+  roadNap: { nwAbutment: nap(road(ABUT.nwEnd)), nwEnd: nap(steelTop(END.nw)), middle: nap(road(0)), crest: nap(road(PROFILE.crestX)), seAbutment: nap(road(ABUT.seEnd)), seEnd: nap(steelTop(END.se)) },
   steelSoffitNap: { approach: nap(steelSoffit(NW_LINES[0])), riverPier: nap(steelSoffit(STEEL_RIVER[0])), mainMid: nap(steelSoffit((STEEL_RIVER[0] + STEEL_RIVER[1]) / 2)) },
   concreteSoffitNap: { approach: nap(concreteSoffit(NW_LINES[0])), riverPier: nap(concreteSoffit(CONCRETE_RIVER[0])), mainMid: nap(concreteSoffit((CONCRETE_RIVER[0] + CONCRETE_RIVER[1]) / 2)) },
   pierLines: { nw: NW_LINES, riverNw: LINE_RIVER_NW, steelRiver: STEEL_RIVER, concreteRiver: CONCRETE_RIVER, se: LINE_SE },
@@ -712,10 +723,12 @@ await writeFile(
       groundHeight: GROUND_HEIGHT,
       groundSamplePoints: samplePoints,
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden op de lengte van de brug op de as van de middelste (oostelijke stalen) brug op de waterspiegel van de IJssel (z = 0, NAP +7,47 m), +X langs de brug naar het zuidoosten (Westervoort/Duiven, RD-richting -52,11 graden vanaf het oosten) en +Y naar het noordoosten (stroomafwaarts, de kant van de betonnen brug). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg op de drie dekken en rijbaan lokale weg aan de noordoostrand van de betonnen brug, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, drie bruggen naast elkaar van landhoofd tot landhoofd (538 m, wegdek NAP +19,8 m bij het noordwestelijke landhoofd, top +24,6 m boven de rivier en +24,0 m bij het zuidoostelijke): twee stalen liggerbruggen (10,7 en 9,5 m breed) met elk twee hoofdliggers, 2,6 m hoog over de aanbruggen en met een boogvormige onderkant van 5,8 m boven de rivierpijlers naar 3,0 m in het midden van de rivieroverspanning van 105 m, op bakstenen pijlers met ronde koppen, betonnen kappen en opleggingsblokken; en de betonnen brug (26,2 m breed, dwarshelling 2,5 %) met een kokerligger van 2,4 m, met vouten tot 6,5 m boven de betonnen rivierschijven, op dwarsregels met vijf ronde kolommen over de uiterwaarden; schouwpaden, schampkanten, geleiders, de scheiding met de lokale weg en de randbalken; de landhoofden met vleugelwanden. Lantaarnpalen, leuningen, de seinportalen en de voegen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de IJssel naast de rivieroverspanningen bemonsterd; groundHeight is de PDOK-waterspiegel daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden op de lengte van de brug op de as van de middelste (oostelijke stalen) brug op de waterspiegel van de IJssel (z = 0, NAP +7,47 m), +X langs de brug naar het zuidoosten (Westervoort/Duiven, RD-richting -52,11 graden vanaf het oosten) en +Y naar het noordoosten (stroomafwaarts, de kant van de betonnen brug). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg op de drie dekken en rijbaan lokale weg aan de noordoostrand van de betonnen brug, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, drie bruggen naast elkaar van landhoofd tot landhoofd (538 m, wegdek NAP +19,8 m bij het noordwestelijke landhoofd, top +24,6 m boven de rivier en +24,0 m bij het zuidoostelijke; dekken en landhoofden lopen over de dijk door tot x = -292 en 292, waar het wegdek lineair tot 0,9 en 0,8 m onder het profiel zakt zodat het in het PDOK-wegvlak eindigt): twee stalen liggerbruggen (10,7 en 9,5 m breed) met elk twee hoofdliggers, 2,6 m hoog over de aanbruggen en met een boogvormige onderkant van 5,8 m boven de rivierpijlers naar 3,0 m in het midden van de rivieroverspanning van 105 m, op bakstenen pijlers met ronde koppen, betonnen kappen en opleggingsblokken; en de betonnen brug (26,2 m breed, dwarshelling 2,5 %) met een kokerligger van 2,4 m, met vouten tot 6,5 m boven de betonnen rivierschijven, op dwarsregels met vijf ronde kolommen over de uiterwaarden; schouwpaden, schampkanten, geleiders, de scheiding met de lokale weg en de randbalken; de landhoofden als blokken tot het einde van de doorloop. Lantaarnpalen, leuningen, de seinportalen en de voegen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de IJssel naast de rivieroverspanningen bemonsterd; groundHeight is de PDOK-waterspiegel daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(DECK[1] - DECK[0]).toFixed(1),
+        abutmentEndsM: [ABUT.nwEnd, ABUT.seEnd],
+        dikeExtension: END,
         deckLengthBgtM: 537.1,
         deckWidthsM: { steelSouthWest: 10.7, steelMiddle: 9.5, concrete: 26.22 },
         totalWidthM: +(CONCRETE.edge[1] - STEEL[0].edge[0]).toFixed(2),
