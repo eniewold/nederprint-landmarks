@@ -1,0 +1,58 @@
+{
+  "name": "Het Witte Huis",
+  "file": "witte-huis-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93395,
+    437083
+  ],
+  "xAxis": [
+    0.9483236552061993,
+    0.31730465640509214
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      12,
+      2
+    ],
+    [
+      0,
+      -13
+    ],
+    [
+      1,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000690521"
+  ],
+  "description": "Complete BAG-voet met drie venstergevels, westelijke vluchttrap-inspringing, afgeplat steil schilddak, drie topgevels, twee ronde hoekerkers met achtkantige kap en centrale dakopbouw. Blinde nissen en gedragen gevelrelief op 1:1000.",
+  "realWorld": {
+    "groundNapM": 2.8,
+    "eaveNapM": 33.85,
+    "flatRoofNapM": 41.8,
+    "coreRoofNapM": 45.6,
+    "turretTopNapM": 45.5,
+    "axisDegrees": 18.5,
+    "estimates": [
+      "hoekerkerradius, arkeltop45.5 en achtkantige kap uit fotos geschat bij AHN-gaten",
+      "topgevelprofiel, vensters, klokdiameter en vast beeldrelief uit fotos geschat",
+      "kleine daklichten, reclameborden, hekwerk, vlaggenmasten en sierballen weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0599100000690521 BGT AHN DSM/DTM0.5m orthofoto 2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000690521 (CC BY4.0)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/334003",
+    "https://stadsarchief.rotterdam.nl/het-witte-huis",
+    "https://commons.wikimedia.org/wiki/File:Halfzijaanzicht_van_het_Witte_Huis_Rotterdam_(2020)_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:00_2440_Witte_Huis_(Rotterdam).jpg"
+  ],
+  "printFiles": [
+    "witte-huis-rotterdam-1-1000.stl"
+  ]
+}
