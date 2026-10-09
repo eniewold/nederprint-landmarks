@@ -1,0 +1,64 @@
+{
+  "name": "Stadhuis (Rotterdam)",
+  "file": "stadhuis-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92580,
+    437529
+  ],
+  "xAxis": [
+    0.959,
+    0.284
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -49,
+      0
+    ],
+    [
+      -20,
+      -36
+    ],
+    [
+      35,
+      -35
+    ],
+    [
+      66,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701897"
+  ],
+  "description": "Coolsingel aan -X; +Y naar Doelwater. Vier vleugels, overkapte hoven, raadzaal en open binnentuin met kloktoren; voet .8m onder straat.",
+  "realWorld": {
+    "groundNapM": 0.45,
+    "towerTopM": 74.5,
+    "outerRoofRidgeM": [
+      31.12,
+      31.83,
+      31.82,
+      31.76
+    ],
+    "schattingen": [
+      "geledingen, klokgevels, koepel en vereenvoudigd Vredesbeeld volgens AHN/fotos; spitsachtige beeldenromp ipv dunne armen",
+      "dakkapellen, vensters, schoorstenen en risalieten naar fotos met regelmatige travees; kapelvensters blind",
+      "balkons en portieken volle kern voor 1:1000; raamroeden, vlaggenmasten, beelden aan gevel en losse tuinsculptuur weggelaten onder .9m",
+      "loopbruggen naar afzonderlijke politiebureau/Timmerhuis blijven PDOK; gebouwen niet vervangen"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0599100000701897, Actueel_orthoHR, AHN DSM/DTM .5m bbox 92460,437400,92700,437650; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513763",
+    "https://commons.wikimedia.org/wiki/File:NL-Rotterdam-rathaus.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_achtergevel_-_Rotterdam_-_20377466_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/Category:City_hall,_Rotterdam"
+  ],
+  "printFiles": [
+    "stadhuis-rotterdam-1-1000.stl"
+  ]
+}
