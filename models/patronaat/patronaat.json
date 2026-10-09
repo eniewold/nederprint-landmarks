@@ -1,0 +1,57 @@
+{
+  "name": "Patronaat",
+  "file": "patronaat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103345,
+    488623
+  ],
+  "xAxis": [
+    0.390731,
+    0.920505
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -10,
+      -25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      10,
+      -25
+    ]
+  ],
+  "groundHeight": 43.95,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000029892"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (103345, 488623) op het maaiveld (NAP +1,0 m) in de oorsprong, +X langs de Zijlsingel (RD-richting 67,0 graden) en +Y naar de Ruychaverstraat. Eén node: de voorbouw met de glazen doos en de gaasband, de grote zaal met de lichtstraat, de hoge strook met installaties en de lagere aanbouwen. Vervangt de PDOK-reconstructie van BAG-pand 0392100000029892.",
+  "realWorld": {
+    "groundNapM": 1,
+    "frontNapM": 18.3,
+    "hallNapM": 13.3,
+    "stripNapM": 18.7,
+    "plantNapM": 20.6,
+    "axisDegrees": 67,
+    "estimates": [
+      "glazen begane grond, entree en glazen kolom in de voorgevel",
+      "glazen doos met kader op de verdieping (0,8 m uitstekend) en de naden in de gaasband"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Patronaat_(Haarlem)",
+    "PDOK BAG pand 0392100000029892, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: voorbouw, zaal, lichtstraat, hoge strook, installaties, aanbouwen en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Haarlem Patronaat.jpg"
+  ],
+  "printFiles": [
+    "patronaat-1-1000.stl"
+  ]
+}
