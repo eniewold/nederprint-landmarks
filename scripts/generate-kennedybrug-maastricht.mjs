@@ -15,7 +15,7 @@
 // met de BGT-attributen) als catalogusbron voor de export en de kaart, plus een
 // binaire STL in millimeters op 1:<schaal> met een printvoet onder het dek.
 //
-//   node scripts/generate-kennedybrug-maastricht.mjs              # STL op 1:1500 (standaard, ca. 400 mm)
+//   node scripts/generate-kennedybrug-maastricht.mjs              # STL op 1:1750 (standaard, 372 mm)
 //   node scripts/generate-kennedybrug-maastricht.mjs --scale 2000
 //
 // Assenstelsel: oorsprong op de as van het dek midden tussen de rivierpijlers
@@ -27,7 +27,9 @@
 // (het middelpunt ligt op (-202,7, -396)); lofts, kolommen en landhoofd volgen
 // die boog. Rivierpijlers op x = -56,1 en 56,1 (scheef, evenwijdig aan de
 // stroom, 20,3 graden uit de dwarsrichting), kolomrijen op ±116,5 en daarna om
-// de 36 m; het dek eindigt op x = 264,4 (oost) en rond x = -331,6 (west).
+// de 36 m; het dek eindigt op x = 264,4 (oost) en rond x = -331,6 (west), de
+// doorlopen naar het PDOK-wegvlak (zie DOORLOOP) op x = 279,4 en -371,6 en bij
+// de krullen 50 m voorbij de BGT-eindlijn.
 //
 // Bronnen: BGT overbruggingsdeel (dek met de aanzetten van de krullen, het dek
 // van de zuidelijke krul, de twee rivierpijlers van 24 × 5 m en 56 ronde
@@ -59,7 +61,7 @@ const flag = (name, fallback) => {
   const i = argv.indexOf(name);
   return i >= 0 && argv[i + 1] ? argv[i + 1] : fallback;
 };
-const scale = Number(flag("--scale", "1500"));
+const scale = Number(flag("--scale", "1750"));
 const outDir = path.join(path.resolve(flag("--out", path.join(import.meta.dirname, "../models"))), "kennedybrug-maastricht");
 const mmPerMetre = 1000 / scale;
 
@@ -184,7 +186,31 @@ function roadNap(x) {
 // x = -215 en -175 teruglopend naar een vlak dwarsprofiel.
 const SUPER = { value: 0.036, full: -215, zero: -175 };
 const superE = (x) => SUPER.value * Math.min(1, Math.max(0, (SUPER.zero - x) / (SUPER.zero - SUPER.full)));
-const zMain = (x, s) => Z(roadNap(x)) + superE(x) * s;
+const zProfile = (x, s) => Z(roadNap(x)) + superE(x) * s;
+// Doorloop aan de einden. Het PDOK-wegvlak voorbij de BGT-eindlijnen ligt veel
+// lager dan het wegdek (AHN): de wegen lopen daar in werkelijkheid op een
+// aarden lichaam met keerwanden verder, maar PDOK legt ze op het maaiveld
+// (gemeten in een PDOK-dump, PDOK = NAP + 45,76 m op de kades): aan de westkant
+// 3,8 tot 4,3 m lager, aan het einde van de krullen 4,3 tot 4,6 m, aan de
+// oostkant de stoepen en fietspaden 0,3 m en de rijstroken 1,5 tot 4 m lager.
+// Het wegdek loopt daarom vanaf 10 m binnen de eindlijn lineair naar een punt
+// 0,3 tot 0,5 m onder het PDOK-wegvlak, op een doorloop van 40 m (west), 15 m
+// (oost, tot de stoepen; de rijstroken van PDOK liggen daar onderling 2,5 m
+// uiteen) en 50 m langs de lus (krullen), met daaronder een massief blok.
+const DOORLOOP = {
+  west: { from: -321.6, to: -371.6, targetNap: (s) => 48.2 - 0.0267 * s },
+  east: { from: 254.4, to: 279.4, targetNap: () => 52.55 },
+};
+function zMain(x, s) {
+  for (const d of [DOORLOOP.west, DOORLOOP.east]) {
+    const t = (x - d.from) / (d.to - d.from);
+    if (t > 0) {
+      const z0 = zProfile(d.from, s);
+      return z0 + Math.min(1, t) * (Z(d.targetNap(s)) - z0);
+    }
+  }
+  return zProfile(x, s);
+}
 
 // Krullen: hoogte als functie van de hoek (graden) rond het middelpunt van de
 // lus (AHN DSM, mediaan per 6 graden, lineair tussen de knopen; bij de
@@ -197,7 +223,16 @@ const phiOf = (ramp, [px, py]) => {
   const a = (Math.atan2(py - ramp.centre[1], px - ramp.centre[0]) * 180) / Math.PI;
   return a < 0 ? a + 360 : a;
 };
-const zRamp = (ramp, phi) => Z(lerpTable(ramp.knots, phi));
+// Doorloop van de krullen: vanaf 10 m binnen de eindlijn (r = 36 m: 15,9
+// graden) lineair over 60 m naar 0,4 m onder het PDOK-wegvlak, langs de lus.
+RAMPS.north.doorloop = { from: 137.4, to: 41.9, targetNap: 47.0 };
+RAMPS.south.doorloop = { from: 213.4, to: 308.9, targetNap: 47.5 };
+function zRamp(ramp, phi) {
+  const d = ramp.doorloop;
+  const t = (phi - d.from) / (d.to - d.from);
+  const base = Z(lerpTable(ramp.knots, t > 0 ? d.from : phi));
+  return t > 0 ? base + Math.min(1, t) * (Z(d.targetNap) - base) : base;
+}
 
 // ---------- plattegrond en gebieden ----------
 // Het hoofddek ligt tussen de randen sS en sN (BGT). Waar de krullen aftakken
@@ -209,15 +244,43 @@ const SPLIT_N = [[-196, 13.62], [-150, 13.62], [-112, 13.8]];
 const SPLIT_S = [[-188, -13.47], [-150, -13.47], [-125, -13.72], [-112, -13.75]];
 const corridorN = (x) => (x < -196 || x > -112 ? 15 : lerpTable(SPLIT_N, x));
 const corridorS = (x) => (x < -188 || x > -112 ? -15 : lerpTable(SPLIT_S, x));
-const X_WEST = -345;
-const X_EAST = 280;
+const X_WEST = -380;
+const X_EAST = 285;
 const corridorXs = stations(X_WEST, X_EAST, 1, [-196, -195.99, -188, -187.99, -150, -125, -112, -111.99]);
 const corridorCS = cs([
   ...corridorXs.map((x) => at(x, corridorS(x))),
   ...[...corridorXs].reverse().map((x) => at(x, corridorN(x))),
 ]);
 // De twee BGT-vlakken sluiten op enkele millimeters na op elkaar aan: dichtzetten.
-const PLAN = csUnion(DATA.plan).offset(0.05, "Miter", 2).offset(-0.05, "Miter", 2);
+const PLAN_BGT = csUnion(DATA.plan).offset(0.05, "Miter", 2).offset(-0.05, "Miter", 2);
+// Doorlopen voorbij de BGT-eindlijnen (zie DOORLOOP): het hoofddek recht door
+// langs de as, de krullen door de eindlijn rond het middelpunt van de lus te
+// draaien.
+const sweep = (ramp, [a, b], phi0, phi1) => {
+  const turn = ([x, y], deg) => {
+    const r = (deg * Math.PI) / 180;
+    const dx = x - ramp.centre[0];
+    const dy = y - ramp.centre[1];
+    return [ramp.centre[0] + dx * Math.cos(r) - dy * Math.sin(r), ramp.centre[1] + dx * Math.sin(r) + dy * Math.cos(r)];
+  };
+  const n = Math.ceil(Math.abs(phi1 - phi0) / 2);
+  const degs = Array.from({ length: n + 1 }, (_, i) => phi0 + ((phi1 - phi0) * i) / n);
+  return cs([...degs.map((d) => turn(a, d)), ...[...degs].reverse().map((d) => turn(b, d))]);
+};
+const EXTENSIONS = CrossSection.union([
+  cs([...stations(DOORLOOP.west.to, -329, 2).map((x) => at(x, DECK_S)), ...stations(DOORLOOP.west.to, -329, 2).reverse().map((x) => at(x, 13.56))]),
+  cs([[262, -13.48], [DOORLOOP.east.to, -13.48], [DOORLOOP.east.to, 13.22], [262, 13.22]]),
+  // eindlijn van de noordelijke krul (hoek 121,5 graden) 1 graad terug in de krul, dan tot 41,9 graden
+  sweep(RAMPS.north, DATA.rampEnds.north, 1, RAMPS.north.doorloop.to - 121.5),
+  sweep(RAMPS.south, DATA.rampEnds.south, -1, RAMPS.south.doorloop.to - 229.3),
+]);
+// Alleen het deel voorbij de eindlijnen; reepjes langs de BGT-randen (waar de
+// rechthoek van een doorloop een paar centimeter buiten het dek valt) vallen
+// weg.
+const DOORLOOP_AREA = CrossSection.union(
+  EXTENSIONS.subtract(PLAN_BGT).offset(-0.1, "Miter", 2).offset(0.1, "Miter", 2).decompose().filter((c) => c.area() > 5),
+);
+const PLAN = CrossSection.union([PLAN_BGT, DOORLOOP_AREA]);
 const MAIN = PLAN.intersect(corridorCS);
 const rampParts = PLAN.subtract(corridorCS).decompose();
 const RAMP_N = CrossSection.union(rampParts.filter((p) => p.bounds().max[1] > 0 && p.bounds().min[1] > -5));
@@ -241,7 +304,7 @@ const RANGE_S = phiRange(RAMPS.south, RAMP_S_OUT);
 // Banden: tussen lo(zt) en hi(zt), met zt de hoogte van het wegdek, over een
 // gebied; per gebied een eigen loft (hoofddek langs de as, krullen rond hun
 // middelpunt).
-const mainXs = stations(X_WEST, X_EAST, 2, [-196, -188, -150, -125, -116.5, -112, -59.1, -53, -40.8, 41.8, 53, 59.1, 116.5, ALIGN.xt]);
+const mainXs = stations(X_WEST, X_EAST, 2, [DOORLOOP.west.to, DOORLOOP.west.from, DOORLOOP.east.from, DOORLOOP.east.to, -196, -188, -150, -125, -116.5, -112, -59.1, -53, -40.8, 41.8, 53, 59.1, 116.5, ALIGN.xt]);
 const mainBand = (lo, hi) =>
   loftAlign(mainXs, (x) => [
     [-20, lo(zMain(x, -20))],
@@ -249,19 +312,75 @@ const mainBand = (lo, hi) =>
     [20, hi(zMain(x, 20))],
     [-20, hi(zMain(x, -20))],
   ]);
+// Waar krul en hoofddek nog aan elkaar vastzitten, ligt het wegdek van de krul
+// in het AHN zonder trede tegen het hoofddek; de hoogte van de krul loopt
+// daarom over 10 m vanaf de rand van het hoofddek naar die van het hoofddek op.
+const BLEND = 10;
+const edgeN = (x) => (x < -196 || x > -112 ? lerpTable(DECK_N, x) : corridorN(x));
+const edgeS = (x) => (x < -188 || x > -112 ? DECK_S : corridorS(x));
+function zRampAt(ramp, p) {
+  const base = zRamp(ramp, phiOf(ramp, p));
+  const [x, s] = stationOf(p);
+  if (x > -112 || x < -260 || Math.sign(s) !== Math.sign(ramp.centre[1])) return base;
+  const e = s > 0 ? edgeN(x) : edgeS(x);
+  const d = Math.abs(s) - Math.abs(e);
+  if (d >= BLEND) return base;
+  const delta = zMain(x, e) - zRamp(ramp, phiOf(ramp, at(x, e)));
+  return base + delta * (1 - Math.max(0, d) / BLEND);
+}
+// Gesloten plaat tussen twee hoogtevlakken boven een raster van stations
+// (rijen) en laterale punten (kolommen): per punt [x, y, zLo, zHi].
+function sheet(rows) {
+  const m = rows.length;
+  const n = rows[0].length;
+  const verts = [];
+  for (const row of rows) for (const [x, y, lo] of row) verts.push(x, y, lo);
+  for (const row of rows) for (const [x, y, , hi] of row) verts.push(x, y, hi);
+  const B = (i, j) => i * n + j;
+  const T = (i, j) => m * n + i * n + j;
+  const tris = [];
+  for (let i = 0; i + 1 < m; i++) {
+    for (let j = 0; j + 1 < n; j++) {
+      tris.push(B(i, j), B(i + 1, j + 1), B(i, j + 1), B(i, j), B(i + 1, j), B(i + 1, j + 1));
+      tris.push(T(i, j), T(i, j + 1), T(i + 1, j + 1), T(i, j), T(i + 1, j + 1), T(i + 1, j));
+    }
+    for (const [j, f] of [[0, 1], [n - 1, -1]]) {
+      const q = [B(i, j), B(i + 1, j), T(i + 1, j), T(i, j)];
+      if (f > 0) tris.push(q[0], q[2], q[1], q[0], q[3], q[2]);
+      else tris.push(q[0], q[1], q[2], q[0], q[2], q[3]);
+    }
+  }
+  for (const [i, f] of [[0, 1], [m - 1, -1]]) {
+    for (let j = 0; j + 1 < n; j++) {
+      const q = [B(i, j), B(i, j + 1), T(i, j + 1), T(i, j)];
+      if (f > 0) tris.push(q[0], q[1], q[2], q[0], q[2], q[3]);
+      else tris.push(q[0], q[2], q[1], q[0], q[3], q[2]);
+    }
+  }
+  const build = (flip) => new Manifold(new Mesh({
+    numProp: 3,
+    vertProperties: Float32Array.from(verts),
+    triVerts: Uint32Array.from(flip ? tris.map((_, k) => tris[k - (k % 3) + 2 - (k % 3)]) : tris),
+  }));
+  let solid = build(false);
+  if (solid.status() !== "NoError" || solid.volume() < 0) solid = build(true);
+  if (solid.status() !== "NoError" || solid.volume() <= 0) throw new Error(`sheet: ${solid.status()}`);
+  return solid;
+}
+// Band rond het middelpunt van een krul: radiaal van 15 tot 102 m, om de 1,5
+// graad en 1,5 m.
 const R0 = 57;
+const RAMP_LATERAL = stations(-45, 42, 1.5);
 function rampBand(ramp, range, lo, hi) {
   const phis = stations(range[0], range[1], 1.5);
-  return loftPath(phis.map((phi) => {
+  return sheet(phis.map((phi) => {
     const a = (phi * Math.PI) / 180;
-    const zt = zRamp(ramp, phi);
-    return {
-      x: ramp.centre[0] + R0 * Math.cos(a),
-      y: ramp.centre[1] + R0 * Math.sin(a),
-      dx: -Math.sin(a),
-      dy: Math.cos(a),
-      section: [[-45, lo(zt)], [42, lo(zt)], [42, hi(zt)], [-45, hi(zt)]],
-    };
+    return RAMP_LATERAL.map((l) => {
+      const r = R0 - l;
+      const p = [ramp.centre[0] + r * Math.cos(a), ramp.centre[1] + r * Math.sin(a)];
+      const zt = zRampAt(ramp, p);
+      return [p[0], p[1], lo(zt), hi(zt)];
+    });
   }));
 }
 const REGIONS = [
@@ -281,7 +400,7 @@ function onDeck(section, lo, hi, key = "area") {
 function zTopAt(p) {
   const [x, s] = stationOf(p);
   if (s <= corridorN(x) && s >= corridorS(x)) return zMain(x, s);
-  return s > 0 ? zRamp(RAMPS.north, phiOf(RAMPS.north, p)) : zRamp(RAMPS.south, phiOf(RAMPS.south, p));
+  return s > 0 ? zRampAt(RAMPS.north, p) : zRampAt(RAMPS.south, p);
 }
 
 // ---------- hoofddek: dekplaat en twee kokerliggers ----------
@@ -331,15 +450,15 @@ const mainBoxes = BOXES.map((c) =>
     [c - BOX.topHalf, zMain(x, c - BOX.topHalf) - 0.6],
   ]),
 );
-const mainDeck = prismCS(MAIN, BASE - 2, 120).intersect(union([...mainSlab, ...mainBoxes]));
+const mainDeck = prismCS(MAIN.intersect(PLAN_BGT), BASE - 2, 120).intersect(union([...mainSlab, ...mainBoxes]));
 
 // ---------- krullen: dekplaat en koker ----------
 // Dekplaat 0,6 m, koker 1,8 m onder het wegdek, 3 m binnen de randen van het
 // krul-gebied (ook binnen de grens met het hoofddek).
 const RAMP = { slab: 0.6, depth: 1.8, inset: 3.0 };
 const rampDecks = [REGIONS[1], REGIONS[2]].map((r) => union([
-  prismCS(r.area, BASE - 2, 120).intersect(r.band((zt) => zt - RAMP.slab, (zt) => zt)),
-  prismCS(r.area.offset(-RAMP.inset, "Miter", 2), BASE - 2, 120).intersect(r.band((zt) => zt - RAMP.depth, (zt) => zt - 0.4)),
+  prismCS(r.area.intersect(PLAN_BGT), BASE - 2, 120).intersect(r.band((zt) => zt - RAMP.slab, (zt) => zt)),
+  prismCS(r.area.intersect(PLAN_BGT).offset(-RAMP.inset, "Miter", 2), BASE - 2, 120).intersect(r.band((zt) => zt - RAMP.depth, (zt) => zt - 0.4)),
 ]));
 
 // ---------- landhoofden ----------
@@ -361,7 +480,7 @@ function endStrip([[x0, y0], [x1, y1]], inward, outward, extend = 2) {
   let nx = -ty;
   let ny = tx;
   const mid = [(x0 + x1) / 2, (y0 + y1) / 2];
-  const inside = PLAN.intersect(cs([
+  const inside = PLAN_BGT.intersect(cs([
     [mid[0] + nx * 0.5 - tx * 0.5, mid[1] + ny * 0.5 - ty * 0.5],
     [mid[0] + nx * 0.5 + tx * 0.5, mid[1] + ny * 0.5 + ty * 0.5],
     [mid[0] + nx * 0.6 + tx * 0.5, mid[1] + ny * 0.6 + ty * 0.5],
@@ -380,7 +499,11 @@ function endStrip([[x0, y0], [x1, y1]], inward, outward, extend = 2) {
     [a[0] + nx * inward, a[1] + ny * inward],
   ]);
 }
-const abutments = ENDS.map(({ line }) => onDeck(endStrip(line, ABUT_DEPTH, 0).intersect(PLAN), () => BASE, (zt) => zt - 0.5));
+const abutments = [
+  ...ENDS.map(({ line }) => onDeck(endStrip(line, ABUT_DEPTH, 0).intersect(PLAN), () => BASE, (zt) => zt - 0.5)),
+  // de doorlopen als massief blok tot het wegdek
+  onDeck(DOORLOOP_AREA, () => BASE, (zt) => zt),
+];
 
 // ---------- kolommen ----------
 // Ronde kolommen van 1,2 m (BGT) van de onderkant tot 0,6 m onder het wegdek.
@@ -424,8 +547,8 @@ const EDGE = { width: 0.9, h: 0.6 };
 const ISLAND_H = 0.3;
 const BERM_H = 0.8;
 const GUARD = 0.02;
-const EXT = CrossSection.union([PLAN, ...ENDS.map(({ line }) => endStrip(line, 0, 5, 0))]);
-const ring = PLAN.subtract(EXT.offset(-EDGE.width, "Miter", 2));
+const EXT = CrossSection.union([PLAN_BGT, ...ENDS.map(({ line }) => endStrip(line, 0, 5, 0))]);
+const ring = PLAN_BGT.subtract(EXT.offset(-EDGE.width, "Miter", 2));
 const islandsCS = csUnion(DATA.roads.island).intersect(PLAN);
 const bermCS = csUnion(DATA.roads.berm).intersect(PLAN);
 const edgeBeams = onDeck(ring, (zt) => zt - 0.6, (zt) => zt + EDGE.h);
@@ -457,13 +580,17 @@ const ABOVE = 1.0;
 const GROUPS = [
   ["road:voetpad", "voetpad", { bgt_functie: "voetpad", bgt_fysiekvoorkomen: "gesloten verharding" }],
   ["road:voetpad-open-verharding", "voetpad-open", { bgt_functie: "voetpad", bgt_fysiekvoorkomen: "open verharding" }],
+  ["road:voetpad-tegels", null, { bgt_functie: "voetpad", bgt_fysiekvoorkomen: "open verharding", plus_fysiekvoorkomen: "tegels" }],
   ["road:fietspad", "fietspad", { bgt_functie: "fietspad", bgt_fysiekvoorkomen: "gesloten verharding" }],
-  ["road:fietspad-krul-zuid", "fietspad-asfalt", { bgt_functie: "fietspad", bgt_fysiekvoorkomen: "gesloten verharding", plus_fysiekvoorkomen: "asfalt" }],
-  ["road:rijbaan-krul-zuid", "rijbaan-asfalt", { bgt_functie: "rijbaan lokale weg", bgt_fysiekvoorkomen: "gesloten verharding", plus_fysiekvoorkomen: "asfalt" }],
+  ["road:fietspad-asfalt", "fietspad-asfalt", { bgt_functie: "fietspad", bgt_fysiekvoorkomen: "gesloten verharding", plus_fysiekvoorkomen: "asfalt" }],
+  ["road:rijbaan-asfalt", "rijbaan-asfalt", { bgt_functie: "rijbaan lokale weg", bgt_fysiekvoorkomen: "gesloten verharding", plus_fysiekvoorkomen: "asfalt" }],
 ];
+// Op de doorlopen de BGT-wegdelen op het maaiveld eronder (voetpaden in tegels,
+// fietspaden en rijbanen in asfalt); de rest daar is rijbaan.
+const extKey = { "road:voetpad-tegels": "voetpad-tegels", "road:fietspad-asfalt": "fietspad-asfalt", "road:rijbaan-asfalt": "rijbaan-asfalt" };
 const ROAD_ATTRIBUTES = { bgt_functie: "rijbaan lokale weg", bgt_fysiekvoorkomen: "gesloten verharding" };
 const strip = onDeck(PLAN_OUT, (zt) => zt - LAYER, (zt) => zt + ABOVE, "out");
-const ringGuard = PLAN.offset(GUARD, "Miter", 2).subtract(EXT.offset(-EDGE.width - GUARD, "Miter", 2));
+const ringGuard = PLAN_BGT.offset(GUARD, "Miter", 2).subtract(EXT.offset(-EDGE.width - GUARD, "Miter", 2));
 const notLayer = union([
   onDeck(ringGuard, (zt) => zt - 0.6 - GUARD, (zt) => zt + EDGE.h + GUARD, "out"),
   onDeck(islandsCS.offset(GUARD, "Miter", 2), (zt) => zt - 0.6 - GUARD, (zt) => zt + ISLAND_H + GUARD, "out"),
@@ -475,7 +602,11 @@ const roadParts = [];
 for (const [name, key, attributes] of GROUPS) {
   // 6 cm groter: zo vallen de naden tussen de vereenvoudigde BGT-contouren
   // niet als smalle reepjes rijbaan tussen voetpad en fietspad.
-  const region = prismCS(csUnion(DATA.roads[key]).offset(0.06, "Miter", 2), BASE - 2, 120);
+  const deck = key ? csUnion(DATA.roads[key]).offset(0.06, "Miter", 2).intersect(PLAN_BGT.offset(0.5, "Miter", 2).subtract(DOORLOOP_AREA)) : null;
+  const onExt = extKey[name] ? csUnion(DATA.roadsExt[extKey[name]]).offset(0.06, "Miter", 2).intersect(DOORLOOP_AREA) : null;
+  const area = CrossSection.union([deck, onExt].filter(Boolean));
+  if (area.isEmpty()) throw new Error(`geen vlak voor ${name}`);
+  const region = prismCS(area, BASE - 2, 120);
   roadParts.push([name, rest.intersect(region).intersect(bridge), attributes]);
   rest = rest.subtract(region);
 }
@@ -560,7 +691,8 @@ const rampFeet = [[RAMPS.north, RANGE_N, RAMP_N], [RAMPS.south, RANGE_S, RAMP_S]
   }
   return union(runs.filter((r) => r.length > 1).map((run) => loftPath(run.map(({ phi, hit: [r0, r1] }) => {
     const a = (phi * Math.PI) / 180;
-    const zb = zRamp(ramp, phi) - RAMP.slab + 0.02;
+    const pt = (r) => [ramp.centre[0] + r * Math.cos(a), ramp.centre[1] + r * Math.sin(a)];
+    const zb = Math.max(...[r0, (r0 + r1) / 2, r1].map((r) => zRampAt(ramp, pt(r)))) - RAMP.slab + 0.02;
     // lateraal l = R0 - r (positief naar het middelpunt)
     const yL = R0 - r1 - 0.5;
     const yR = R0 - r0 + 0.5;
@@ -779,10 +911,12 @@ await writeFile(
         "L0002.119b2bf7ea9640f3ba164b9d9b20246e",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Zeven nodes: road:rijbaan, road:fietspad, road:voetpad, road:voetpad-open-verharding, road:rijbaan-krul-zuid en road:fietspad-krul-zuid, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Acht nodes: road:rijbaan, road:rijbaan-asfalt, road:fietspad, road:fietspad-asfalt, road:voetpad, road:voetpad-open-verharding en road:voetpad-tegels, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul en op de doorlopen, tegels op de voetpaden van de doorlopen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Aan alle vier de einden loopt het wegdek vanaf 10 m binnen de BGT-eindlijn naar een punt 0,3 tot 0,5 m onder het PDOK-wegvlak, dat daar 2 tot 4,6 m lager ligt dan het werkelijke wegdek: op een massief blok 40 m door naar het westen (NAP +48,2 m), 15 m naar het oosten (+52,55 m, de hoogte van de PDOK-stoepen) en 50 m langs de lus bij beide krullen (+47,0 en +47,5 m); waar krul en hoofddek aan elkaar vastzitten, loopt het wegdek van de krul over 10 m zonder trede naar dat van het hoofddek op. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: 596.0,
+        lengthWithDoorloopM: 651.0,
+        doorloop: { west: { fromX: DOORLOOP.west.from, toX: DOORLOOP.west.to, targetNapAtAxis: 48.2 }, east: { fromX: DOORLOOP.east.from, toX: DOORLOOP.east.to, targetNap: 52.55 } },
         deckWidthM: 27.0,
         mainSpanM: 2 * PIER_X,
         sideSpanM: +(DEPTH.side - PIER_X).toFixed(1),
@@ -881,6 +1015,48 @@ function kennedyData() {
       "berm": [
         // L0002.d57683bc72844a6681bf96582e6226da: berm, gesloten verharding
         [[-280.04, -6.84], [-292.59, -9.59], [-306.51, -13.0], [-319.52, -16.89], [-329.64, -20.2], [-329.45, -20.77], [-319.38, -17.6], [-306.33, -13.85], [-292.44, -10.45], [-279.9, -7.71], [-263.47, -4.78], [-249.61, -2.9], [-234.79, -1.47], [-219.19, -0.76], [-199.52, -0.44], [-149.53, -0.43], [-115.28, -0.2], [54.14, -0.25], [187.84, -0.54], [239.32, -0.54], [264.34, -0.64], [264.33, 0.71], [187.32, 0.45], [-3.44, 0.85], [-115.13, 0.8], [-134.54, 0.66], [-210.37, 0.61], [-226.76, -0.06], [-234.86, -0.59], [-249.7, -2.03], [-263.58, -3.91]],
+      ],
+    },
+    // BGT-wegdelen op het maaiveld (relatieve hoogteligging 0) waar de doorlopen
+    // overheen liggen; het script knipt ze op de doorlopen.
+    roadsExt: {
+      "voetpad-tegels": [
+        // G0935.4b8d94f3ab67497299f7077626b49ab0: voetpad, open verharding, tegels
+        [[348.70, -14.61], [338.79, -14.19], [312.83, -11.66], [309.88, -11.56], [256.80, -11.42], [256.81, -13.32], [264.50, -13.30], [270.22, -13.00], [270.21, -13.37], [271.84, -13.38], [271.84, -13.07], [305.24, -12.85], [313.67, -12.98], [320.45, -13.57], [332.55, -15.12], [338.46, -15.64], [344.33, -15.95], [393.24, -15.96], [421.02, -16.18], [421.11, -14.73], [419.64, -14.60]],
+        // G0935.a98fccf9a6ef4154a21a86d29ddc11a8: voetpad, open verharding, tegels
+        [[317.65, 12.12], [340.82, 14.50], [349.75, 14.79], [384.96, 14.71], [417.04, 14.96], [417.03, 16.31], [341.34, 16.20], [317.43, 13.68], [300.61, 13.36], [275.95, 13.22], [275.98, 13.02], [264.57, 13.00], [264.57, 11.45], [310.30, 11.68]],
+        // G0935.cb1a062342d74f77bfd19c4f3266cca8: voetpad, open verharding, tegels
+        [[-343.97, -12.01], [-354.62, -16.24], [-363.39, -20.03], [-363.13, -20.28], [-362.77, -20.29], [-341.64, -12.75], [-342.15, -11.34]],
+        // G0935.cd48b4cc31b54862955c72568aaff17e: voetpad, open verharding, tegels
+        [[-333.08, -9.86], [-333.51, -8.56], [-333.34, -8.50], [-333.52, -7.90], [-338.49, -9.60], [-337.78, -11.58]],
+        // G0935.1a74e9bc723b472fa9325109148e3318: voetpad, open verharding, tegels
+        [[-194.79, -113.46], [-194.52, -112.96], [-195.10, -111.54], [-165.58, -99.70], [-165.77, -99.23], [-195.03, -110.98], [-197.33, -105.34], [-198.87, -109.33], [-198.94, -110.18], [-198.79, -111.02], [-198.43, -111.83], [-197.91, -112.51], [-197.20, -113.06], [-196.39, -113.43], [-195.80, -113.55]],
+      ],
+      "fietspad-asfalt": [
+        // G0935.f0b45dddda1a48e8b97dcd1f2f629a1b: fietspad, gesloten verharding, asfalt
+        [[413.90, 12.54], [416.02, 12.49], [417.07, 12.51], [417.04, 14.96], [384.96, 14.71], [349.75, 14.79], [340.82, 14.50], [317.65, 12.12], [310.30, 11.68], [256.19, 11.41], [256.18, 9.09], [308.86, 9.08], [320.54, 9.76], [338.84, 11.79], [346.60, 12.19], [351.23, 12.32]],
+        // G0935.f27a825530e246df84d67fca414a7115: fietspad, gesloten verharding, asfalt
+        [[421.25, -12.17], [416.49, -12.00], [396.84, -12.22], [345.54, -12.03], [342.47, -11.90], [315.04, -9.19], [307.71, -9.02], [256.64, -8.97], [256.80, -11.42], [309.88, -11.56], [312.83, -11.66], [338.79, -14.19], [348.70, -14.61], [419.64, -14.60], [421.11, -14.73]],
+        // G0935.0e537edc6466474dbf49bacc5031c587: fietspad, gesloten verharding, asfalt
+        [[-340.86, -14.87], [-353.23, -19.20], [-362.65, -22.71], [-369.63, -25.70], [-378.36, -29.88], [-390.17, -35.83], [-402.43, -42.44], [-412.80, -48.44], [-422.70, -54.60], [-431.85, -60.61], [-439.70, -66.04], [-448.33, -72.31], [-454.31, -76.95], [-468.27, -88.22], [-513.12, -125.73], [-516.56, -128.16], [-527.06, -134.54], [-527.50, -134.45], [-527.39, -133.96], [-544.37, -148.95], [-543.77, -149.57], [-539.12, -146.65], [-534.19, -143.91], [-533.66, -143.88], [-533.18, -144.12], [-532.88, -144.56], [-532.84, -145.07], [-518.89, -133.75], [-459.68, -84.53], [-445.15, -73.39], [-434.86, -65.97], [-426.71, -60.40], [-416.38, -53.66], [-405.17, -46.80], [-396.16, -41.68], [-387.77, -37.19], [-366.54, -27.74], [-352.09, -22.36], [-330.89, -16.44], [-332.06, -12.90], [-334.52, -13.81], [-334.82, -12.99], [-340.76, -15.16]],
+        // G0935.7947f3c72e494613adf2f6f89163b243: fietspad, gesloten verharding, asfalt
+        [[-334.82, -12.99], [-332.34, -12.06], [-333.08, -9.86], [-337.78, -11.58], [-337.00, -13.80]],
+        // G0935.efa2208b76c84801a0466c3ae9238331: fietspad, gesloten verharding, asfalt
+        [[-326.71, -28.87], [-337.66, -32.56], [-351.93, -37.94], [-368.67, -44.71], [-375.23, -47.69], [-386.77, -53.44], [-398.19, -59.59], [-407.70, -65.08], [-417.56, -71.16], [-434.88, -83.22], [-440.21, -87.15], [-448.82, -93.84], [-478.64, -118.32], [-500.53, -136.80], [-500.06, -137.40], [-502.63, -139.62], [-504.15, -141.31], [-505.46, -143.17], [-506.47, -145.20], [-506.60, -146.61], [-507.28, -147.98], [-501.73, -144.55], [-502.34, -144.56], [-502.60, -144.27], [-502.70, -143.82], [-502.38, -142.81], [-501.51, -141.50], [-446.89, -96.09], [-438.40, -89.55], [-426.35, -80.65], [-415.93, -73.69], [-406.16, -67.65], [-396.73, -62.21], [-385.39, -56.10], [-373.94, -50.40], [-360.91, -44.49], [-350.97, -40.41], [-338.34, -35.63], [-325.85, -31.41]],
+      ],
+      "rijbaan-asfalt": [
+        // G0935.483e9120be7d45a1b94e15b7837a34b7: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-158.26, 81.55], [-161.37, 87.36], [-164.84, 91.68], [-168.83, 95.38], [-172.74, 98.12], [-176.26, 99.89], [-182.04, 101.81], [-189.95, 102.76], [-196.69, 102.18], [-202.71, 100.47], [-203.75, 99.95], [-203.46, 99.29], [-203.28, 99.36], [-200.88, 93.34], [-196.45, 94.85], [-191.18, 95.62], [-186.72, 95.40], [-181.59, 94.21], [-177.30, 92.39], [-172.78, 89.39], [-168.96, 85.58], [-166.25, 81.67], [-164.50, 78.13], [-163.33, 74.17], [-162.73, 70.01], [-163.08, 63.40], [-164.82, 57.01], [-166.83, 52.69], [-169.86, 48.41], [-174.10, 44.31], [-177.07, 42.18], [-180.76, 40.25], [-184.75, 38.75], [-189.04, 37.80], [-197.52, 37.11], [-220.24, 35.64], [-220.30, 36.71], [-221.59, 36.64], [-221.49, 35.64], [-223.69, 35.66], [-225.55, 35.92], [-227.72, 36.47], [-229.73, 37.45], [-232.66, 39.44], [-233.00, 40.27], [-232.55, 40.90], [-233.42, 40.63], [-232.58, 27.90], [-232.31, 28.21], [-231.98, 28.29], [-222.07, 28.94], [-222.10, 28.49], [-210.19, 29.17], [-188.79, 30.91], [-183.68, 31.73], [-178.76, 33.30], [-172.82, 36.46], [-167.85, 40.29], [-163.57, 44.88], [-159.89, 50.67], [-156.78, 58.70], [-155.72, 65.38], [-155.72, 70.33], [-156.49, 75.90]],
+        // G0935.b21ba741483c4b348595ecb51a8b0e19: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-190.98, -28.65], [-199.42, -28.47], [-223.70, -29.45], [-227.87, -29.85], [-228.51, -29.74], [-228.72, -29.50], [-230.05, -40.23], [-229.70, -40.09], [-218.79, -39.41], [-218.40, -39.68], [-218.23, -40.13], [-216.51, -38.38], [-214.51, -36.89], [-214.00, -36.58], [-214.35, -36.11], [-214.08, -35.74], [-213.69, -35.64], [-206.27, -35.41], [-200.21, -34.99], [-193.54, -34.91], [-187.17, -35.21], [-184.86, -35.62], [-181.77, -36.56], [-178.77, -37.70], [-175.85, -39.04], [-173.05, -40.62], [-170.39, -42.41], [-167.87, -44.40], [-165.52, -46.60], [-163.37, -48.98], [-161.67, -51.15], [-159.62, -54.20], [-158.07, -57.01], [-156.73, -59.96], [-155.79, -63.09], [-155.29, -66.31], [-155.20, -69.10], [-155.43, -72.79], [-156.07, -75.98], [-157.12, -79.07], [-158.55, -81.99], [-160.31, -84.73], [-162.43, -87.21], [-164.86, -89.37], [-167.49, -91.25], [-170.31, -92.88], [-173.37, -94.06], [-176.57, -94.72], [-179.80, -95.01], [-183.03, -94.97], [-186.24, -94.60], [-189.40, -93.94], [-191.95, -93.12], [-194.37, -99.10], [-194.55, -99.03], [-194.61, -99.18], [-190.85, -100.60], [-187.93, -101.32], [-184.96, -101.83], [-181.97, -102.05], [-178.97, -101.90], [-175.98, -101.52], [-173.04, -100.91], [-170.15, -100.06], [-167.37, -98.93], [-164.72, -97.53], [-162.21, -95.87], [-159.83, -94.02], [-157.62, -91.99], [-155.68, -89.71], [-153.93, -87.26], [-152.35, -84.68], [-150.75, -81.43], [-149.84, -79.22], [-149.04, -76.34], [-148.62, -73.38], [-148.47, -70.37], [-148.50, -67.36], [-148.83, -64.37], [-150.10, -58.48], [-151.17, -55.69], [-152.58, -53.03], [-155.95, -48.02], [-159.73, -43.28], [-161.77, -41.04], [-164.08, -38.88], [-166.30, -37.07], [-168.77, -35.35], [-171.38, -33.83], [-174.08, -32.50], [-179.86, -30.10], [-186.39, -29.08]],
+        // G0935.bc4128a087474c1fa074ce54b501c347: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-422.61, -70.46], [-437.75, -81.06], [-451.54, -91.80], [-512.15, -141.69], [-510.12, -144.15], [-500.68, -135.62], [-479.27, -117.55], [-449.44, -93.05], [-440.81, -86.36], [-435.46, -82.41], [-418.10, -70.32], [-408.21, -64.22], [-398.68, -58.72], [-387.23, -52.55], [-375.66, -46.79], [-362.50, -40.82], [-352.44, -36.69], [-339.70, -31.86], [-327.13, -27.62], [-328.36, -24.00], [-345.53, -30.03], [-362.27, -37.52], [-384.16, -47.79], [-406.05, -59.83]],
+        // G0935.e8c112cab03a43d491a559c088aa0e80: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-472.95, -100.08], [-451.40, -82.19], [-430.98, -67.31], [-410.78, -54.29], [-391.49, -43.23], [-368.38, -31.90], [-343.27, -20.48], [-330.89, -16.44], [-352.09, -22.36], [-366.54, -27.74], [-387.77, -37.19], [-396.16, -41.68], [-405.17, -46.80], [-416.38, -53.66], [-426.71, -60.40], [-434.86, -65.97], [-445.15, -73.39], [-459.68, -84.53], [-518.89, -133.75], [-516.86, -136.11]],
+        // G0935.f8cf47d73579415182fd6a7c50409d6c: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-516.86, -136.11], [-514.53, -138.81], [-458.36, -91.69], [-434.98, -73.84], [-414.81, -60.49], [-399.60, -51.24], [-382.44, -42.32], [-364.37, -33.53], [-347.72, -26.75], [-333.20, -21.32], [-329.64, -20.20], [-330.89, -16.44], [-343.27, -20.48], [-368.38, -31.90], [-391.49, -43.23], [-410.78, -54.29], [-430.98, -67.31], [-451.40, -82.19], [-472.95, -100.08]],
+        // G0935.39b9986aae514aa9b3bf79d6d8a561bc: rijbaan lokale weg, gesloten verharding, asfalt
+        [[-363.44, -36.33], [-328.36, -24.00], [-329.45, -20.77], [-333.01, -21.89], [-347.50, -27.33], [-364.12, -34.08], [-382.14, -42.90]],
       ],
     },
     // BGT overbruggingsdeel type pijler: middelpunten van de ronde kolommen (diameter 1,2 m).

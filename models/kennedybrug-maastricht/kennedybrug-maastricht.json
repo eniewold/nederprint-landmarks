@@ -52,12 +52,25 @@
     "G0935.f71ef2ef35924cea9e25a03913abc6c5",
     "L0002.119b2bf7ea9640f3ba164b9d9b20246e"
   ],
-  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Zeven nodes: road:rijbaan, road:fietspad, road:voetpad, road:voetpad-open-verharding, road:rijbaan-krul-zuid en road:fietspad-krul-zuid, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Acht nodes: road:rijbaan, road:rijbaan-asfalt, road:fietspad, road:fietspad-asfalt, road:voetpad, road:voetpad-open-verharding en road:voetpad-tegels, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul en op de doorlopen, tegels op de voetpaden van de doorlopen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Aan alle vier de einden loopt het wegdek vanaf 10 m binnen de BGT-eindlijn naar een punt 0,3 tot 0,5 m onder het PDOK-wegvlak, dat daar 2 tot 4,6 m lager ligt dan het werkelijke wegdek: op een massief blok 40 m door naar het westen (NAP +48,2 m), 15 m naar het oosten (+52,55 m, de hoogte van de PDOK-stoepen) en 50 m langs de lus bij beide krullen (+47,0 en +47,5 m); waar krul en hoofddek aan elkaar vastzitten, loopt het wegdek van de krul over 10 m zonder trede naar dat van het hoofddek op. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
-    "kennedybrug-maastricht-1-1500.stl"
+    "kennedybrug-maastricht-1-1750.stl"
   ],
   "realWorld": {
     "lengthM": 596,
+    "lengthWithDoorloopM": 651,
+    "doorloop": {
+      "west": {
+        "fromX": -321.6,
+        "toX": -371.6,
+        "targetNapAtAxis": 48.2
+      },
+      "east": {
+        "fromX": 254.4,
+        "toX": 279.4,
+        "targetNap": 52.55
+      }
+    },
     "deckWidthM": 27,
     "mainSpanM": 112.1,
     "sideSpanM": 60.5,
@@ -131,7 +144,12 @@
             340,
             57.07
           ]
-        ]
+        ],
+        "doorloop": {
+          "from": 137.4,
+          "to": 41.9,
+          "targetNap": 47
+        }
       },
       "south": {
         "centre": [
@@ -163,7 +181,12 @@
             255,
             51.4
           ]
-        ]
+        ],
+        "doorloop": {
+          "from": 213.4,
+          "to": 308.9,
+          "targetNap": 47.5
+        }
       }
     },
     "waterNapM": 44
