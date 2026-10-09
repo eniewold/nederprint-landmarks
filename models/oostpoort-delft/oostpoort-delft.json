@@ -1,0 +1,67 @@
+{
+  "name": "Oostpoort (Delft)",
+  "file": "oostpoort-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    85070.515,
+    447428.705
+  ],
+  "xAxis": [
+    0.94732,
+    -0.32029
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3.5,
+      -3
+    ],
+    [
+      -3.5,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      -15,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000032633"
+  ],
+  "description": "Hart tussen de twee landpoorttorens op NAP +0,40 m; +X naar de veldzijde (oostzuidoost). Landpoort met dwars zadeldak, ronde torenvoeten, achtkante bovengeledingen en geknikte achtkante spitsen, traptoren, overdekte stadsmuur en haakse waterpoort. Doorgaande bogen steiler gemaakt voor 1:1000; onderkant 0,8 m onder straatniveau. De losstaande ophaalbrug blijft PDOK.",
+  "realWorld": {
+    "groundNapM": 0.4,
+    "torenTopM": 24.92,
+    "torenAfstandM": 7.34,
+    "torenDiameterM": 3.84,
+    "landpoortNokM": 11.45,
+    "waterpoortNokM": 6.63,
+    "schattingen": [
+      "geledinggrens ronde romp/achtkant en dakknik uit fotos en AHN-randpunten",
+      "waterpoortgoot en nok bij bomen uit zichtbare AHN-punten en fotos",
+      "vensters, spaarbogen, steunberen, topgevels en schoorsteen uit fotos",
+      "twee steile doorgangen vervangen ronde gewelven; windvanen, baksteenfriezen, ramenroeden en goten onder .9 m weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG WFS 0503100000032633; actuele orthoHR; AHN4 DSM/DTM 0,5 m bbox 85020,447380,85130,447490; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11968",
+    "https://commons.wikimedia.org/wiki/File:De_Oostpoort,_Delft.jpg",
+    "https://commons.wikimedia.org/wiki/File:Stadspoort_binnenzijde_-_Delft_-_20325391_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_stadspoort_buitenzijde_aan_water_-_Delft_-_20322269_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Oostpoort,_overzicht_Stadszijde_-_Delft_-_20048592_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "oostpoort-delft-1-1000.stl"
+  ]
+}
