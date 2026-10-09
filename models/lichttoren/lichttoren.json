@@ -1,0 +1,59 @@
+{
+  "name": "Lichttoren",
+  "file": "lichttoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161123,
+    383504
+  ],
+  "xAxis": [
+    0.9723699203976766,
+    0.2334453638559054
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      16,
+      15
+    ],
+    [
+      -40,
+      27
+    ],
+    [
+      -114,
+      -12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001003341"
+  ],
+  "description": "Volledige BAG-vorm van Lichttoren en EC/ED-vleugels met zevenzijdige proefruimte, hogere trapkern, zes gevelreeks-lagen, liftkoppen en dakopbouw. Genoemde bouwdelen en vlakken; vensterdetail regelmatig uit fotos geschat. Moderne hotelvleugel op hetzelfde pand inbegrepen.",
+  "realWorld": {
+    "groundNapM": 16.55,
+    "mainRoofNapM": 44.82,
+    "towerRoofNapM": 61.44,
+    "stairRoofNapM": 65.02,
+    "atticRoofNapM": 50.2,
+    "axisDegrees": 13.5,
+    "estimates": [
+      "venstermaten, betonnen roeden en reliefbanden uit fotos regelmatig gemaakt",
+      "moderne hotelvleugel vensterreeksen geschat",
+      "dakinstallaties, reclameletters, vlaggenmasten en hekjes weggelaten; tentdak en dakopbouwen op AHN-ankers vereenvoudigd"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0772100001003341, BGT, AHN DSM/DTM0.5m en Actueel_orthoHR;2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100001003341 (3D BAG CC BY4.0)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518717",
+    "https://commons.wikimedia.org/wiki/File:Lichttoren_Eindhoven_1.JPG",
+    "https://commons.wikimedia.org/wiki/File:13-06-28-eindhoven-by-RalfR-66.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achterzijde_van_gebouw_ED,_gezien_vanaf_de_Emmasingel_-_Eindhoven_-_20338975_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_binnengevel_van_gebouw_EC_en_rechts_een_gedeelte_van_de_zuidgevel_van_gebouw_ED_-_Eindhoven_-_20338982_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "lichttoren-1-1000.stl"
+  ]
+}
