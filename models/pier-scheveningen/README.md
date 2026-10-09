@@ -6,7 +6,7 @@ Bestanden:
 | --- | --- |
 | `pier-scheveningen.glb` | Catalogusbron in meters: nodes `building:pier` (dekken, pijlerjukken, eilanden, toren en platform) en `building:reuzenrad` |
 | `pier-scheveningen-1-1000.stl` | De pier op 1:1000 met de onderkant (NAP -1 m) op het printbed (285 × 281 × 49 mm) |
-| `pier-scheveningen.json` | Catalogusitem met RD-georeferentie, vervangen BAG-panden, hoofdmaten en bronnen |
+| `pier-scheveningen.json` | Catalogusitem met RD-georeferentie, vervangen BAG-panden en BGT-dekvlak, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (79166,88, 459355,50), bij de kop
 van de pier, op het zeeoppervlak van het PDOK-terrein (NAP -0,45 m: 42,95 m
@@ -18,7 +18,13 @@ droge strand bij het begin van de pier; die vielen in een uitsnede rond de
 kop buiten de geladen terreintegels, en dan liet de preview het hele model
 weg. Vervangt de PDOK-reconstructie van `NL.IMBAG.Pand.0518100001644879`
 (pier), `NL.IMBAG.Pand.0518100001647057` (zuidereiland) en
-`NL.IMBAG.Pand.0518100000255328` (torenreiland).
+`NL.IMBAG.Pand.0518100000255328` (torenreiland). Vervangt ook het
+BGT-overbruggingsdeel van het dek (`replacesTerrain`,
+`G0518.08d6e6f0b63d653ae0502a0a313c2ff8`, relatieve hoogteligging 1), dat
+PDOK als vlak over zee en strand legt; het strand en de zee eronder blijven.
+Het vlak valt voor 87 % onder het model: de rest zijn open stukken tussen de
+pierdelen op zeehoogte. Daarom staat het er met
+`node scripts/replaces-terrain.mjs pier-scheveningen --min 0.85 --write` in.
 
 Onderdelen (hoogtes in NAP, uit het AHN-DSM):
 

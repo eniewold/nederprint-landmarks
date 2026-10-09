@@ -4,8 +4,8 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `ijsselbrug-a12.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:rijbaan-lokaal` (de bovenste 0,5 m van het wegdek met de BGT-attributen, zie hieronder) en `building:ijsselbrug-a12` met de rest van het kunstwerk: de dekken van de drie bruggen met schouwpaden, schampkanten, geleiders, scheiding en randbalken, de stalen hoofdliggers, de betonnen koker, de bakstenen pijlers met kappen en opleggingsblokken, de betonnen rivierschijven, de dwarsregels met kolommen en de landhoofden met vleugelwanden |
-| `ijsselbrug-a12-1-1500.stl` | De brug als geheel in één stuk (constructie en wegdelen samen, ongewijzigd) op 1:1500 met een printvoet onder de dekken, met de onderkant (0,8 m onder de waterspiegel) op het printbed (376 × 35 × 13 mm; met `--scale` een andere schaal, op 1:1000 is hij 565 mm lang) |
+| `ijsselbrug-a12.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:rijbaan-lokaal` (de bovenste 0,5 m van het wegdek met de BGT-attributen, zie hieronder) en `building:ijsselbrug-a12` met de rest van het kunstwerk: de dekken van de drie bruggen met schouwpaden, schampkanten, geleiders, scheiding en randbalken, de stalen hoofdliggers, de betonnen koker, de bakstenen pijlers met kappen en opleggingsblokken, de betonnen rivierschijven, de dwarsregels met kolommen en de landhoofden met de doorloop over de dijk |
+| `ijsselbrug-a12-1-1500.stl` | De brug als geheel in één stuk (constructie en wegdelen samen, ongewijzigd) op 1:1500 met een printvoet onder de dekken, met de onderkant (0,8 m onder de waterspiegel) op het printbed (389 × 35 × 13 mm; met `--scale` een andere schaal, op 1:1000 is hij 584 mm lang) |
 | `ijsselbrug-a12.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, ellipsoïdische terughoogte, hoofdmaten en bronnen |
 
 De IJsselbrug in de A12 tussen Arnhem (knooppunt Velperbroek) en
@@ -61,8 +61,8 @@ laag is per dek een snijstrook tussen de dekranden en 0,5 m voorbij de
 dekeinden, van 0,5 m onder tot 1 m boven het wegdek over de stations van de
 dekken (om de 2 m en op elke pijlerlijn); de schampkanten en geleiders
 blijven over hun hele hoogte met 2 cm vrij constructie. De volumes tellen op
-tot die van de brug als geheel (constructie 51.115 m³, rijbaan 9.749 m³,
-lokale weg 838 m³, samen 61.702 m³, geen overlap; het script controleert dat).
+tot die van de brug als geheel (constructie 82.859 m³, rijbaan 10.565 m³,
+lokale weg 908 m³, samen 94.332 m³, geen overlap; het script controleert dat).
 De rijbaan bestaat uit drie stukken, één per brug. Verticale stralen
 (`zfight.py`, 30.000 punten over de dekken) vinden geen samenvallende
 bovenvlakken en geen vlakken zonder dikte. De STL is ongewijzigd: het hele
@@ -71,7 +71,8 @@ brugmodel in één stuk.
 Onderdelen in het model (hoogtes in NAP):
 
 - Drie dekken van landhoofd tot landhoofd (x = -268,6 tot 268,5 tussen de
-  BGT-einden, over de landhoofden doorgetrokken tot -269,4 en 269,5): de
+  BGT-einden, over de landhoofden tot -269,4 en 269,5 en daarna over de dijk
+  doorgetrokken tot -292 en 292, zie hieronder): de
   zuidwestelijke stalen brug 10,7 m breed (y = -18,65 tot -7,95), de
   middelste 9,5 m (-4,75 tot 4,75), de betonnen brug 26,22 m (5,53 tot
   31,75), met spleten van 3,2 en 0,78 m ertussen (BGT). Samen 52,4 m breed.
@@ -115,11 +116,26 @@ Onderdelen in het model (hoogtes in NAP):
 - Onder de betonnen aanbruggen per pijlerlijn een dwarsregel van 2,0 m dik en
   1,6 m hoog over 21,7 m (y = 8,8 tot 30,5) op vijf ronde kolommen van 1,3 m
   (y = 10,0 tot 28,0, 4,5 m hart op hart).
-- De landhoofden als wand over de volle breedte van de voorkant (x = -266,8 en
-  266,25, BGT) tot het einde van de dekken, tot onder de dekplaten, en de
-  vleugelwanden langs de buitenranden in de dijk (BGT, tot x = -282,6 en
-  -278,7 aan de noordwestkant, 282,0 en 281,9 aan de zuidoostkant; 0,9 m dik,
-  0,6 m boven het wegdek).
+- De landhoofden als blok over de volle breedte van de voorkant (x = -266,8 en
+  266,25, BGT) tot het einde van de doorloop, tot onder de dekplaten; de
+  spleten tussen de dekken zijn daar tot het wegdek dicht. Het blok staat
+  op de plaats van het landhoofd met de vleugelwanden (BGT, tot x = -282,6 en
+  282,0) en de dijk erachter; de schampkanten en de randbalk lopen erover
+  door.
+- Doorloop over de dijk: in het PDOK-terrein zakt het wegvlak aan het
+  zuidoosteinde (bij de fabriek met de schoorsteen) tussen het landhoofd en
+  x = 284 tot 8 m onder het dek naar de uiterwaard en ligt het pas daarna op
+  de dijk; aan het noordwesteinde ligt het 0,4 tot 0,7 m lager dan het dek
+  (de lokale weg tot 2,6 m). Zonder doorloop bleef op de kaart een spleet
+  tussen het PDOK-wegdek en het einde van de brug. Daarom lopen dekken,
+  wegdeklagen en landhoofden door tot x = -292 en 292 (eerst -269,4 en
+  269,5), en zakt het wegdek voorbij de landhoofden lineair tot 0,9 m
+  (noordwest) en 0,8 m (zuidoost) onder het profiel: op de einden NAP +18,3 m
+  en +22,9 m. In een verse PDOK-dump ligt het einde van elk wegdeel 0,3 tot
+  0,6 m onder het PDOK-wegvlak, en het wegdek duikt er over 5 tot 13 m
+  (noordwest, de lokale weg 5 m) en 7 tot 9 m (zuidoost) onder. Waar het
+  wegdek het PDOK-wegvlak kruist, wisselen ze over een strook van een paar
+  meter elkaar af; elders ligt geen spleet en geen zwevend einde.
 
 Wat er niet in zit: lantaarnpalen (in een rij op de betonnen brug op y = 14
 en langs de geleiders), leuningen en geleiderails op palen (kleiner dan
@@ -130,8 +146,8 @@ x = -293: vakwerk van buizen dat op 1:1000 niet zonder steun print, en een
 dichte balk over de rijbaan zou de export tot op het wegdek opvullen);
 dilatatievoegen, afwatering, de peilschalen op de rivierpijlers en de
 bekleding van de dijktaluds en de betonnen strook op de uiterwaard naast de
-betonnen brug (PDOK-terrein). De wegdelen sluiten aan beide einden op de
-PDOK-wegdelen op de dijk aan.
+betonnen brug (PDOK-terrein). De wegdelen duiken aan beide einden onder
+de PDOK-wegdelen op de dijk.
 
 Pasvorm op het AHN-DSM (0,5 m, binnen de wegdelen van de drie dekken): boven
 de rivier (x = 70 tot 175) ligt 93 % (zuidwest), 94 % (midden), 96 %
@@ -153,12 +169,12 @@ alle pijlers en wanden staan verticaal, de kappen hebben een onderrand van
 (24.209 m²). Het script controleert dat alles op dezelfde onderkant begint en
 dat de printversie (met per brug een wig van minstens 50 graden vanaf de
 dekranden onder de liggerhoeken door en een scherm van minstens 0,9 m in het
-midden) geen overhang heeft (0 m²). Met 565 m past de brug op 1:1000 niet in
-één uitsnede. In de printcheck (de hele brug in een uitsnede van 506 m op
-1:1266, 400 mm, gesloten solid met overhangopvulling, status `NoError` voor
-alle drie de nodes, 89 s): constructie 182.939 → 87.955 mm³ (−52 %; de
+midden) geen overhang heeft (0 m²). Met 584 m past de brug op 1:1000 niet in
+één uitsnede. In de printcheck (de hele brug in een uitsnede van 522 m op
+1:1305, 400 mm, gesloten solid met overhangopvulling, status `NoError` voor
+alle drie de nodes, 67 s): constructie 183.627 → 97.300 mm³ (−47 %; de
 opgevulde print valt binnen het volume dat zonder opvulling tot de
-onderplaat wordt doorgetrokken), rijbaan +0,8 % en lokale weg +0,1 %: de
+onderplaat wordt doorgetrokken), rijbaan +0,8 % en lokale weg +0,2 %: de
 wegdelen krijgen geen eigen opvulling, de constructie draagt alles.
 
 Bronnen: [Lijst van oeververbindingen over de (Gelderse) IJssel](https://nl.wikipedia.org/wiki/Lijst_van_oeververbindingen_over_de_%28Gelderse%29_IJssel)
@@ -197,6 +213,7 @@ pijlers op de uiterwaarden (4,0 m dik, even lang als de rivierpijlers, kap
 de plaats en de dikte (1,3 m) van de kolommen onder de betonnen aanbruggen,
 op dezelfde pijlerlijnen als de stalen bruggen; de hoogtes van schouwpaden,
 schampkanten, geleiders, scheiding en randbalk (0,6 tot 0,8 m) en de
-vleugelwanden.
+hoogte van de doorloop over de dijk (0,9 en 0,8 m onder het profiel, naar
+het PDOK-wegvlak, niet naar het AHN).
 
 Licentie van het model: eigen werk op basis van open bronnen.

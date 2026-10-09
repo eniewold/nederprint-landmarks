@@ -31,6 +31,9 @@
       -11.27
     ]
   ],
+  "replacesTerrain": [
+    "G0772.967a8a41b98f43d990bdd6146d099ba0"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (157232,38, 382695,58), in het hart van de ring aan de voet van de pyloon, op het verdiepte wegdek onder de ring (NAP +18,9 m), +X naar het oosten en +Y naar het noorden. Twee nodes: road:fietspad, de bovenste 0,5 m van het dek op het BGT-fietspad (ring van straal 31,0 tot 35,45 m en de vier aanbruggen, buiten straal 32,6 m het hele dek waar dat dunner is dan 0,5 m) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest, met de binnenrand van het dek en de randstroken die geen wegdeel zijn. Samen: het ringvormige dek (binnenstraal 27,15 m, buitenstraal 36 m, fietspad op +5,75 m, NAP +24,65 m) met een onderkant die naar binnen toe van 0,2 tot 1,33 m dik wordt, vier aanbruggen van 5,45 m breed naar de landhoofden op 50 m uit het hart in de richtingen 10,7 + k·90 graden, de pyloon van 70 m met een ronde barrière aan de voet, en 24 tuien als staven van 1 m naar de pyloon op 54 en 57 m. Het dek zweeft 4,4 m boven het wegdek; de export vult daaronder een wig van 45 graden met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Leuningen, het lamellenvlak, de M-vormige steunpunten en de trillingsdempers zijn weggelaten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "hovenring-1-1000.stl"

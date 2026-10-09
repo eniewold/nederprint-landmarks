@@ -44,6 +44,9 @@
       -25
     ]
   ],
+  "replacesTerrain": [
+    "L0002.e82d5e2f3b1e48e0891ee13f8d58154c"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden in de hoofdoverspanning op de waterspiegel van de IJssel (z = 0, NAP +3,36 m) in de oorsprong, +X langs de brug naar het oostnoordoosten (Deventer, RD-richting 21,81 graden vanaf het oosten) en +Y naar het noordnoordwesten. Twee nodes: road:rijbaan, de bovenste 0,5 m van beide rijbanen met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan autosnelweg, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, een betonnen kokerliggerbrug van 1107 m van landhoofd tot landhoofd (wegdek NAP +17,5 m bij Twello, +19,4 m boven de rivierpijlers, +18,8 m in het doorgezakte midden en +18,4 m bij Deventer), met een dekplaat van 34,6 m op twee kokers, schampkanten aan de randen en de middenberm als geleider; de hoofdoverspanning van 150,5 m op twee rivierpijlers met spitse koppen, met een toog van 7,5 m boven de pijlers naar 4,2 m in het midden en in de zijoverspanningen van 80,5 m; aanbrugvelden van 74 m (zes aan de westkant, drie aan de oostkant) en eindvelden van 56 m op wandpijlers (per koker een wand van 2,0 x 10,9 m met ronde einden); de landhoofden in de dijken. Lantaarnpalen, leuningen, het seinportaal boven de rijbanen en de dilatatievoegen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de IJssel en de westelijke strang bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "ijsselbrug-deventer-1-3000.stl"

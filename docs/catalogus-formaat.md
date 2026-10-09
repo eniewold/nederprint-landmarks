@@ -41,6 +41,14 @@ lezen geen GLB.
   vervangt, als `NL.IMBAG.Pand.<16 cijfers>` zoals de `identificatie` in de
   PDOK-gebouwtegels. Met de landmarkmodellen aan laten kaart en export de
   automatische PDOK-reconstructie van die panden weg.
+- `replacesTerrain` (optioneel) somt de BGT-objecten in het PDOK-terrein op
+  die het model vervangt, als BGT-`lokaal_id` (bijvoorbeeld
+  `L0004.0eae333b21b242f6bf5da1efd6a50e4d`; in de PDOK-terreintegels het
+  attribuut `gml_id`). Bij een brug zijn dat de overbruggingsdelen met
+  relatieve hoogteligging 1 of hoger onder het model: PDOK legt het brugdek
+  anders plat op het water of de uiterwaard. Het maaiveld eronder
+  (hoogteligging 0) blijft staan. `node scripts/replaces-terrain.mjs <slug>
+  --write` vult het veld in de JSON en in de generator.
 - Overige velden (`description`, `realWorld`, `sources`) zijn documentatie en
   worden door de catalogus genegeerd.
 

@@ -40,6 +40,18 @@
       -25
     ]
   ],
+  "replacesTerrain": [
+    "L0002.4fbac6b4ab1d43ccb9631d400998b23f",
+    "L0002.9634906c50c443bda41b39fcb1cce415",
+    "L0004.4dfdc02bd1b544a0a7a72d3f75ab4ace",
+    "L0004.52bba391ab684da78fd181575c9fc949",
+    "L0004.6813ba0919394e609285fcc31e48c339",
+    "L0004.69bd0178703649b3aed289b3c0e29d63",
+    "L0004.84d94b76983b426d89f20a4470e64bf3",
+    "L0004.a74696b367e14dd68ef84078b9c8359d",
+    "L0004.ef8c32fe66304cf081bc5682badb25f5",
+    "L0004.ffc1341dd7014d229ca276f16bad3839"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de hefbrug op de lijn tussen de twee bruggen in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -34,68 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts). Drie nodes. road:spoor en road:spoor-halfverhard: de bovenste 0,5 m van de twee dekken (y = -14,7 tot -3,2 en 3,2 tot 14,7) buiten de vakwerkliggers, geleidetorens en borstweringen, met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan; bgt_fysiekvoorkomen gesloten verharding over de rivier, de hefbrug en de Dordtse aanbrug, half verhard op de Zwijndrechtse aanbrug), zodat de kleurregels van een thema erop werken. building:spoorbrug-dordrecht: de rest van het kunstwerk van 1991-1994: twee tweesporige bruggen naast elkaar, elk met twee vakwerkliggers (4,4 en 13,5 m naast de middenlijn, bovenrand NAP +21,3 m) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen voor de driehoeken met een vlakke bovenkant, over twee velden (88 m en 77 tot 83 m) tussen de rivierpijlers met pijlerkop op NAP +5 m; de hefbrug van 52 m met twee hefdekken in gesloten stand (spoorstaaf NAP +12,6 tot +12,2 m) tussen het hemelbed: vier witte poten op x = ±28,6 en y = ±24 (ronde voet van 4 m, boven 6 m breed, schuin afgesneden tot NAP +71,5 m, vier groeven), twee dwarsbalken van 6,2 m breed tot NAP +65 m met schoren van 50 graden, vier geleidetorens met kruisverbanden en een spitse doorgang en twee buizen van 5,5 m boven het midden van elke brug; de betonnen aanbruggen op kolommen (BGT aan de Dordtse kant, geschat aan de Zwijndrechtse kant) met borstweringen, de landhoofden en de remmingwerken bij de pijlers (NAP +3,5 m). Bovenleiding, seinen, leuningen, loopbruggen, trappen en het bedieningsgebouw (BAG-pand 0505100000067669, blijft de PDOK-reconstructie) zijn weggelaten, de Stadsbrug Zwijndrecht ernaast is een eigen model. De export vult onder de dekken en de buizen op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "spoorbrug-dordrecht-1-1250.stl"

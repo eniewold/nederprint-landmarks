@@ -800,6 +800,11 @@ await writeFile(
       groundHeight: GROUND_HEIGHT,
       groundSamplePoints: samplePoints,
       replacesBuildings: ["NL.IMBAG.Pand.0512100000046976"],
+      replacesTerrain: [
+        "G0512.1d925003c886210ee0534802010aa4ba",
+        "G0512.1d925003c887210ee0534802010aa4ba",
+        "L0002.e8cec8975dc940e68d58b6e076c684ce",
+      ],
       description:
         "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek boven de middelste rivierpijler op de waterspiegel van de Boven-Merwede (z = 0, NAP +0,55 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Gorinchem, RD-richting 77,0 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding; het fietspad aan beide kanten buiten de rijbaan, onder de bogen buiten de ribben), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 24,5 tot 25,5 m breed van het zuidelijke landhoofd bij Sleeuwijk (x = -380) tot het noordelijke bij Gorinchem (x = 442), met het wegdek op NAP +12,4 tot +17,6 m en een kokerligger onder de uitkragende fiets- en voetpaden; twee bogen met trekband van 173,2 m tussen de pijlerharten x = -173,2, 0 en 173,2, elk met twee boogribben van 1,4 m boven de hoofdliggers en de top op NAP +40,8 m, en per boog 15 hangers als een scherm met spitse openingen tussen dek en rib; de drie rivierpijlers met caissons tot NAP +6,4 m en een smallere schacht; vier aanbruggen aan de zuidkant en vijf aan de noordkant op wandpijlers; de basculeklep van 30,9 m, de basculekelder en het bedieningshuis (BAG-pand, dak op NAP +21,5 m). Het windverband en de portalen tussen de ribben, de seinportalen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],

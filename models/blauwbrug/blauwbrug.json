@@ -40,6 +40,9 @@
     ]
   ],
   "groundHeight": 43.02,
+  "replacesTerrain": [
+    "G0363.c6a9ce7c02a34df1934c2efa0aaa351f"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van het BGT-dek op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar het Waterlooplein (RD-richting 21,2 graden boven het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Vijf nodes: road:rijbaan, road:ov-baan, road:fietspad en road:voetpad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, OV-baan, fietspad of voetpad; bgt_fysiekvoorkomen gesloten verharding, voor de voetpaden open verharding), zodat de kleurregels van een thema erop werken (van het midden naar buiten de OV-baan van de tram, de rijbanen met de bermen, de fietspaden en de voetpaden tot de balustrade); en building:blauwbrug, de rest van de brug: het dek van 49 × 20,9 m met een wegdek van NAP +3,53 m in het midden tot +2,94 m aan de einden, drie segmentbogen van 14,2 tot 14,3 m als blinde bogen met een rib (nissen met een plafond van 45 graden, zodat ze op 1:1000 zonder steun printen), de lijst en de balustrade van 1,0 m met blinde vakken, twee pijlers met getrapte voet en spitse koppen met een scheepsboeg en krul, en acht pylonen (vier op de pijlers, vier op de eindblokken aan de kades) met voetstuk, zuil, twee lantaarns op een arm langs de brug, kapiteel en keizerskroon tot 6,5 m boven het wegdek. Het maaiveld wordt op het water naast de brug bemonsterd (groundHeight is de ellipsoïdische waterhoogte als terugval). Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "blauwbrug-1-300.stl"

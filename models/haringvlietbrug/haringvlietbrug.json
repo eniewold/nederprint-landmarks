@@ -75,6 +75,13 @@
   "replacesBuildings": [
     "NL.IMBAG.Pand.0611100000614366"
   ],
+  "replacesTerrain": [
+    "L0002.04a62049f34f48a9b66a6578f5b6c5e8",
+    "L0002.1a7c684d752c497693558d88183db533",
+    "L0002.4c0c7988ff0e473caefa89b415640f35",
+    "L0002.b751cc2128a543a1a326a8fc3be4893a",
+    "L0002.d9943b6617f64842863cf22e5d5515e5"
+  ],
   "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek in het hart van de middelste (zesde) rivierpijler op de waterspiegel van het Haringvliet (z = 0, NAP +0,7 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Numansdorp, RD-richting 68,01 graden vanaf het oosten) en +Y naar het westnoordwesten (het Haringvliet). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van de BGT-wegdelen in extras.attributes (bgt_functie rijbaan autosnelweg of rijbaan lokale weg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van de A29-brug van het zuidelijke landhoofd op de Hellegatsdam (x = -648,2) tot het noordelijke op de dijk bij Numansdorp (x = 580,2). Tien vaste velden van 106,13 m als stalen kokerligger van 11,8 m breed met de rijvloer van 25,6 m op schuine schoren (als dichte plaat), de onderkant 5,6 m onder het wegdek; negen rivierpijlers met een caisson van 3,5 × 24,6 m met ronde koppen tot NAP +6,0 m en twee verlopende schachten; de rustpijler van de klep met een caisson van 31,4 m tot NAP +6,0 m en een wand tot onder de rijvloer; de basculeklep van 38,1 m in gesloten stand met twee hoofdliggers en voegen; de basculekelder van 24,4 × 27,9 m met plint, verdiepte vakken en sleuven voor de hoofdliggers; de toren van het bedieningsgebouw (BAG-pand) met de cabine op een kraag van 45 graden tot NAP +23,35 m; het noordelijke veld van 81,2 m; de landhoofden. Het wegdek ligt op NAP +14,3 m bij het Hellegatsplein, +19,4 m in het midden en +13,6 m bij Numansdorp (AHN). Schampkanten en geleiderails als stroken. Lantaarns, portalen, slagbomen, seinen, de gele werkbordessen bij de klep, het remmingwerk en de dukdalven en de open stand van de klep zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-waterhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "haringvlietbrug-1-3500.stl"

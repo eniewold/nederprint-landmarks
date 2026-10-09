@@ -40,12 +40,30 @@
       41
     ]
   ],
-  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden op de lengte van de brug op de as van de middelste (oostelijke stalen) brug op de waterspiegel van de IJssel (z = 0, NAP +7,47 m), +X langs de brug naar het zuidoosten (Westervoort/Duiven, RD-richting -52,11 graden vanaf het oosten) en +Y naar het noordoosten (stroomafwaarts, de kant van de betonnen brug). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg op de drie dekken en rijbaan lokale weg aan de noordoostrand van de betonnen brug, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, drie bruggen naast elkaar van landhoofd tot landhoofd (538 m, wegdek NAP +19,8 m bij het noordwestelijke landhoofd, top +24,6 m boven de rivier en +24,0 m bij het zuidoostelijke): twee stalen liggerbruggen (10,7 en 9,5 m breed) met elk twee hoofdliggers, 2,6 m hoog over de aanbruggen en met een boogvormige onderkant van 5,8 m boven de rivierpijlers naar 3,0 m in het midden van de rivieroverspanning van 105 m, op bakstenen pijlers met ronde koppen, betonnen kappen en opleggingsblokken; en de betonnen brug (26,2 m breed, dwarshelling 2,5 %) met een kokerligger van 2,4 m, met vouten tot 6,5 m boven de betonnen rivierschijven, op dwarsregels met vijf ronde kolommen over de uiterwaarden; schouwpaden, schampkanten, geleiders, de scheiding met de lokale weg en de randbalken; de landhoofden met vleugelwanden. Lantaarnpalen, leuningen, de seinportalen en de voegen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de IJssel naast de rivieroverspanningen bemonsterd; groundHeight is de PDOK-waterspiegel daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "replacesTerrain": [
+    "L0002.8250add69805475a89628bb22c9f960d",
+    "L0002.8f20b65efc894ddba965627cfa7dede6",
+    "L0002.9d42293093ee418889f313ec8dcce0b7",
+    "L0002.bae93a9ef66a4b61a6ecc34500f24541",
+    "L0002.c47e11e9c9214a27bce6f34040f31858",
+    "L0002.c7f5990c12f5469e8aaa7f619d72a662"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden op de lengte van de brug op de as van de middelste (oostelijke stalen) brug op de waterspiegel van de IJssel (z = 0, NAP +7,47 m), +X langs de brug naar het zuidoosten (Westervoort/Duiven, RD-richting -52,11 graden vanaf het oosten) en +Y naar het noordoosten (stroomafwaarts, de kant van de betonnen brug). Drie nodes: road:rijbaan en road:rijbaan-lokaal, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg op de drie dekken en rijbaan lokale weg aan de noordoostrand van de betonnen brug, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, drie bruggen naast elkaar van landhoofd tot landhoofd (538 m, wegdek NAP +19,8 m bij het noordwestelijke landhoofd, top +24,6 m boven de rivier en +24,0 m bij het zuidoostelijke; dekken en landhoofden lopen over de dijk door tot x = -292 en 292, waar het wegdek lineair tot 0,9 en 0,8 m onder het profiel zakt zodat het in het PDOK-wegvlak eindigt): twee stalen liggerbruggen (10,7 en 9,5 m breed) met elk twee hoofdliggers, 2,6 m hoog over de aanbruggen en met een boogvormige onderkant van 5,8 m boven de rivierpijlers naar 3,0 m in het midden van de rivieroverspanning van 105 m, op bakstenen pijlers met ronde koppen, betonnen kappen en opleggingsblokken; en de betonnen brug (26,2 m breed, dwarshelling 2,5 %) met een kokerligger van 2,4 m, met vouten tot 6,5 m boven de betonnen rivierschijven, op dwarsregels met vijf ronde kolommen over de uiterwaarden; schouwpaden, schampkanten, geleiders, de scheiding met de lokale weg en de randbalken; de landhoofden als blokken tot het einde van de doorloop. Lantaarnpalen, leuningen, de seinportalen en de voegen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de IJssel naast de rivieroverspanningen bemonsterd; groundHeight is de PDOK-waterspiegel daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
   "printFiles": [
     "ijsselbrug-a12-1-1500.stl"
   ],
   "realWorld": {
-    "lengthM": 538.9,
+    "lengthM": 584,
+    "abutmentEndsM": [
+      -269.4,
+      269.5
+    ],
+    "dikeExtension": {
+      "nw": -292,
+      "se": 292,
+      "dropNw": 0.9,
+      "dropSe": 0.8
+    },
     "deckLengthBgtM": 537.1,
     "deckWidthsM": {
       "steelSouthWest": 10.7,
