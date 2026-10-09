@@ -615,7 +615,38 @@ const structure = bridge.subtract(layer);
 // Splinters zonder volume (waar een krul-gebied als smalle strook langs het
 // hoofddek loopt) vallen weg.
 const clean = (solid) => union(solid.decompose().filter((c) => c.volume() > 0.01));
-const parts = [["building:kennedybrug-maastricht", clean(structure)], ...roadParts.map(([n, solid, a]) => [n, clean(solid), a])];
+// ---------- parkeervlak onder de noordelijke krul ----------
+// Het BGT-wegdeel G0935.56342af3c4334f71800a701f779e4075 (parkeervlak, open
+// verharding, betonstraatstenen, relatieve hoogteligging 0) ligt onder het dek
+// waar de noordelijke krul aftakt. In de PDOK-terreintegel is het kapot: een
+// hoekpunt staat op 120,8 m ellipsoïdisch (27 m boven het maaiveld) en prikt als
+// spits door het dek. `replacesTerrain` verbergt het; omdat het dek er 5 m
+// boven ligt met open ruimte eronder, vult deze plaat het gat: de BGT-omtrek
+// (met het gat in het midden), 0,5 m dik, met de bovenkant in het vlak van het
+// PDOK-maaiveld van de buurvlakken langs de rand (198 punten 0,4 m buiten de
+// rand in een PDOK-dump: 93,57 tot 93,69 m ellipsoïdisch, vlak z = 93,5974 -
+// 0,0036 (X - 176830) - 0,0019 (Y - 317005), restfout 2 cm), omgerekend naar het
+// model, dat op de PDOK-waterspiegel van 89,89 m staat.
+const PARKING = {
+  attributes: { bgt_functie: "parkeervlak", bgt_fysiekvoorkomen: "open verharding", plus_fysiekvoorkomen: "betonstraatstenen" },
+  // z = a x + b y + c in het modelstelsel (z = 0 op 89,89 m ellipsoïdisch)
+  top: [-0.002741, -0.003009, 3.1753],
+  thickness: 0.5,
+};
+const parkingCS = cs(DATA.parking.outer).subtract(cs(DATA.parking.hole));
+const parking = (() => {
+  const [a, b, c] = PARKING.top;
+  const n = Math.hypot(a, b, 1);
+  return prismCS(parkingCS, 0, 6)
+    .trimByPlane([a / n, b / n, -1 / n], -c / n)
+    .trimByPlane([-a / n, -b / n, 1 / n], (c - PARKING.thickness) / n)
+    .subtract(bridge);
+})();
+const parts = [
+  ["building:kennedybrug-maastricht", clean(structure)],
+  ...roadParts.map(([n, solid, a]) => [n, clean(solid), a]),
+  ["road:parkeervlak", parking, PARKING.attributes],
+];
 // De onderdelen tellen op tot de brug als geheel (geen overlap, niets kwijt).
 const partition = {
   bridgeM3: +bridge.volume().toFixed(1),
@@ -623,7 +654,8 @@ const partition = {
 };
 partition.sumM3 = +parts.reduce((sum, [, solid]) => sum + solid.volume(), 0).toFixed(1);
 partition.overlapM3 = +union(parts.slice(1).map(([, solid]) => solid)).intersect(parts[0][1]).volume().toFixed(3);
-if (Math.abs(partition.sumM3 - partition.bridgeM3) > 0.5 || partition.overlapM3 > 0.01) {
+partition.parkingM3 = +parking.volume().toFixed(1);
+if (Math.abs(partition.sumM3 - partition.bridgeM3 - partition.parkingM3) > 0.5 || partition.overlapM3 > 0.01) {
   throw new Error(`onderdelen tellen niet op: ${JSON.stringify(partition)}`);
 }
 console.log("partitie (m3):", JSON.stringify(partition));
@@ -907,11 +939,12 @@ await writeFile(
       groundHeight: GROUND_HEIGHT,
       groundSamplePoints: samplePoints,
       replacesTerrain: [
+        "G0935.56342af3c4334f71800a701f779e4075",
         "G0935.f71ef2ef35924cea9e25a03913abc6c5",
         "L0002.119b2bf7ea9640f3ba164b9d9b20246e",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Acht nodes: road:rijbaan, road:rijbaan-asfalt, road:fietspad, road:fietspad-asfalt, road:voetpad, road:voetpad-open-verharding en road:voetpad-tegels, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul en op de doorlopen, tegels op de voetpaden van de doorlopen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Aan alle vier de einden loopt het wegdek vanaf 10 m binnen de BGT-eindlijn naar een punt 0,3 tot 0,5 m onder het PDOK-wegvlak, dat daar 2 tot 4,6 m lager ligt dan het werkelijke wegdek: op een massief blok 40 m door naar het westen (NAP +48,2 m), 15 m naar het oosten (+52,55 m, de hoogte van de PDOK-stoepen) en 50 m langs de lus bij beide krullen (+47,0 en +47,5 m); waar krul en hoofddek aan elkaar vastzitten, loopt het wegdek van de krul over 10 m zonder trede naar dat van het hoofddek op. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Negen nodes: road:rijbaan, road:rijbaan-asfalt, road:fietspad, road:fietspad-asfalt, road:voetpad, road:voetpad-open-verharding en road:voetpad-tegels, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul en op de doorlopen, tegels op de voetpaden van de doorlopen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Aan alle vier de einden loopt het wegdek vanaf 10 m binnen de BGT-eindlijn naar een punt 0,3 tot 0,5 m onder het PDOK-wegvlak, dat daar 2 tot 4,6 m lager ligt dan het werkelijke wegdek: op een massief blok 40 m door naar het westen (NAP +48,2 m), 15 m naar het oosten (+52,55 m, de hoogte van de PDOK-stoepen) en 50 m langs de lus bij beide krullen (+47,0 en +47,5 m); waar krul en hoofddek aan elkaar vastzitten, loopt het wegdek van de krul over 10 m zonder trede naar dat van het hoofddek op. Onder het dek bij de noordelijke krul ligt road:parkeervlak (bgt_functie parkeervlak, open verharding, betonstraatstenen): een plaat van 0,5 m met de omtrek van BGT-wegdeel G0935.56342af3c4334f71800a701f779e4075 en de bovenkant op het PDOK-maaiveld eromheen; het PDOK-vlak zelf is kapot (een spits tot 120,8 m ellipsoïdisch door het dek) en wordt via replacesTerrain verborgen. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: 596.0,
@@ -1058,6 +1091,13 @@ function kennedyData() {
         // G0935.39b9986aae514aa9b3bf79d6d8a561bc: rijbaan lokale weg, gesloten verharding, asfalt
         [[-363.44, -36.33], [-328.36, -24.00], [-329.45, -20.77], [-333.01, -21.89], [-347.50, -27.33], [-364.12, -34.08], [-382.14, -42.90]],
       ],
+    },
+    // BGT-wegdeel G0935.56342af3c4334f71800a701f779e4075 (parkeervlak, open
+    // verharding, betonstraatstenen, relatieve hoogteligging 0): buitenrand en
+    // gat, lokaal, vereenvoudigd tot 5 cm.
+    parking: {
+      outer: [[-189.42, 2.82], [-189.80, 2.94], [-189.96, 3.25], [-190.46, 10.77], [-190.39, 11.09], [-190.48, 11.51], [-213.11, 9.99], [-212.51, 0.83], [-189.47, 2.43]],
+      hole: [[-191.09, 4.89], [-203.14, 4.08], [-203.49, 10.24], [-201.55, 10.52], [-191.51, 11.23]],
     },
     // BGT overbruggingsdeel type pijler: middelpunten van de ronde kolommen (diameter 1,2 m).
     columns: [[-330.28, -11.17], [-328.54, -15.86], [-325.81, -23.53], [-324.19, -27.99], [-297.53, -1.83], [-296.48, -6.5], [-294.54, -14.92], [-293.44, -19.96], [-261.41, 5.09], [-260.76, 0.2], [-259.62, -8.12], [-259.03, -13.08], [-224.9, 8.81], [-224.61, 3.81], [-224.2, -4.64], [-223.95, -9.64], [-219.59, 77.01], [-216.68, 76.03], [-215.48, 44.37], [-211.6, 46.26], [-210.94, -76.79], [-207.71, -75.97], [-206.22, -44.03], [-202.45, -45.7], [-192.38, 19.82], [-189.26, 25.22], [-188.6, 4.43], [-188.56, -4.19], [-188.53, -9.16], [-188.42, 9.33], [-183.58, -19.49], [-152.53, 11.84], [-152.49, 4.33], [-152.42, -8.89], [-152.38, -13.64], [-152.33, -3.88], [-116.53, -9.07], [-116.53, 4.5], [-116.51, -4.07], [-116.49, 9.36], [115.7, -9.2], [115.79, 4.33], [115.82, 9.93], [115.93, -4.11], [151.86, -9.2], [151.9, -4.21], [151.95, 4.3], [151.98, 9.32], [187.92, 9.29], [187.95, -4.24], [187.97, -9.2], [188.03, 4.31], [223.73, -9.23], [223.77, -4.26], [223.82, 4.24], [223.85, 9.28]],

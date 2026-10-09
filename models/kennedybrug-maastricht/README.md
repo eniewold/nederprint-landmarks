@@ -4,7 +4,7 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `kennedybrug-maastricht.glb` | Catalogusbron in meters: zeven `road:`-nodes (de bovenste 0,5 m van het wegdek met de BGT-attributen, zie hieronder) en `building:kennedybrug-maastricht` met de rest van het kunstwerk: dekplaat en twee kokerliggers van het hoofddek, de aanzetten van de twee krullen met dekplaat en koker, de twee U-vormige rivierpijlers, 56 ronde kolommen, vier landhoofden, de doorlopen naar het PDOK-wegvlak aan alle vier de einden, schampkanten, verkeerseilanden en de middenberm |
+| `kennedybrug-maastricht.glb` | Catalogusbron in meters: zeven `road:`-nodes (de bovenste 0,5 m van het wegdek met de BGT-attributen, zie hieronder), `road:parkeervlak` (een plaat op het maaiveld onder de noordelijke krul, zie onder) en `building:kennedybrug-maastricht` met de rest van het kunstwerk: dekplaat en twee kokerliggers van het hoofddek, de aanzetten van de twee krullen met dekplaat en koker, de twee U-vormige rivierpijlers, 56 ronde kolommen, vier landhoofden, de doorlopen naar het PDOK-wegvlak aan alle vier de einden, schampkanten, verkeerseilanden en de middenberm |
 | `kennedybrug-maastricht-1-1750.stl` | De brug als geheel in één stuk (constructie en wegdelen samen) op 1:1750 met een printvoet onder het dek en dichtgezette doorgangen in de rivierpijlers, met de onderkant (0,8 m onder de waterspiegel) op het printbed (372 × 123 × 8 mm; met `--scale` een andere schaal, op 1:1000 is hij 652 mm lang) |
 | `kennedybrug-maastricht.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, ellipsoïdische terughoogte, hoofdmaten en bronnen |
 
@@ -33,7 +33,30 @@ dek tot NAP +53,0 m, onder de onderkant van de kokers (+53,7 m), en het pand
 zelf blijft staan. PDOK legt de brug zelf als BGT-wegdek plat op de
 waterspiegel en de kades; `replacesTerrain` verbergt de twee
 overbruggingsdelen (`L0002.119b2bf7ea9640f3ba164b9d9b20246e` en
-`G0935.f71ef2ef35924cea9e25a03913abc6c5`) zolang het model zichtbaar is.
+`G0935.f71ef2ef35924cea9e25a03913abc6c5`) zolang het model zichtbaar is, en
+daarnaast handmatig het parkeervlak `G0935.56342af3c4334f71800a701f779e4075`
+(zie onder; `scripts/replaces-terrain.mjs` laat het als handmatig id staan).
+
+Parkeervlak onder de noordelijke krul (`road:parkeervlak`). Onder het dek waar
+de noordelijke krul aftakt (x = -213 tot -189, y = 1 tot 12) ligt BGT-wegdeel
+`G0935.56342af3c4334f71800a701f779e4075` (parkeervlak, open verharding,
+betonstraatstenen, relatieve hoogteligging 0, circa 130 m² met een gat in het
+midden). In de PDOK-terreintegel is dat vlak kapot: één hoekpunt staat op
+120,8 m ellipsoïdisch, 27 m boven het maaiveld, en prikt als spits door het
+dek. Het model verbergt het via `replacesTerrain`, en omdat het dek er 5 m
+boven ligt met open ruimte eronder, vult een eigen plaat het gat: de
+BGT-omtrek met het gat (vereenvoudigd tot 5 cm), 0,5 m dik, met de bovenkant in
+het vlak van het PDOK-maaiveld van de buurvlakken langs de rand (198 punten
+0,4 m buiten de rand in een PDOK-dump, 93,57 tot 93,69 m ellipsoïdisch; vlak
+z = 93,5974 - 0,0036 (X - 176830) - 0,0019 (Y - 317005) in RD, restfout 2 cm),
+omgerekend naar het model op de PDOK-waterspiegel van 89,89 m (bovenkant
+z = 3,16 tot 3,76 in het model, NAP +47,8 m). In een verse dump ligt de
+bovenkant 0,4 m binnen de rand gemiddeld 0,006 m boven het buurvlak 0,4 m
+erbuiten (5 tot 95 % tussen -0,025 en +0,021 m; op één plek 0,14 m lager,
+waar een buurvlak een bult heeft). Attributen: `bgt_functie` parkeervlak,
+`bgt_fysiekvoorkomen` open verharding, `plus_fysiekvoorkomen`
+betonstraatstenen. Er gaan geen kolommen door de plaat; het script trekt de
+brug er toch van af.
 
 Aansluiting op het PDOK-wegvlak (doorlopen). Het model volgt het AHN, maar
 PDOK legt de wegen voorbij de BGT-einden van de brug op het maaiveld, terwijl
@@ -94,6 +117,7 @@ een thema op de brug werken zoals op de PDOK-wegdelen ernaast:
 | `road:voetpad-open-verharding` | voetpad | open verharding | – | `L0002.4f1f861ca7144865bf775239d385262d`, `L0002.6596fbc110e647c7a6720e377a392923`, `L0002.9f876b3b95884987b5dd00aebab26e9c` | langs de randen van het westelijke deel (x < -178) |
 | `road:fietspad-asfalt` | fietspad | gesloten verharding | asfalt | `G0935.26e202459246434692a7fe5bb1940ffe`; op de doorlopen `G0935.7947f3c72e494613adf2f6f89163b243`, `G0935.0e537edc6466474dbf49bacc5031c587`, `G0935.efa2208b76c84801a0466c3ae9238331`, `G0935.f0b45dddda1a48e8b97dcd1f2f629a1b`, `G0935.f27a825530e246df84d67fca414a7115` | op het dek van de zuidelijke krul (eigen BGT-vlak van de gemeente) en de fietspaden op de doorlopen west en oost |
 | `road:rijbaan-asfalt` | rijbaan lokale weg | gesloten verharding | asfalt | `G0935.facfa8e368434c3e9b32422dcbdd403b`; op de doorlopen `G0935.39b9986aae514aa9b3bf79d6d8a561bc`, `G0935.bc4128a087474c1fa074ce54b501c347`, `G0935.e8c112cab03a43d491a559c088aa0e80`, `G0935.f8cf47d73579415182fd6a7c50409d6c`, `G0935.483e9120be7d45a1b94e15b7837a34b7`, `G0935.b21ba741483c4b348595ecb51a8b0e19` | idem, en de rijbanen van de doorlopen (west en de krullen) |
+| `road:parkeervlak` | parkeervlak | open verharding | betonstraatstenen | `G0935.56342af3c4334f71800a701f779e4075` (hoogteligging 0) | de plaat op het maaiveld onder de noordelijke krul (zie boven), geen wegdek |
 | `road:voetpad-tegels` | voetpad | open verharding | tegels | op de doorlopen `G0935.cd48b4cc31b54862955c72568aaff17e`, `G0935.cb1a062342d74f77bfd19c4f3266cca8`, `G0935.4b8d94f3ab67497299f7077626b49ab0`, `G0935.a98fccf9a6ef4154a21a86d29ddc11a8`, `G0935.1a74e9bc723b472fa9325109148e3318` | de stoepen op de doorlopen west en oost |
 
 Eén node per attribuutcombinatie: de voetpaden in open verharding en in
@@ -114,7 +138,8 @@ hoogte met 2 cm vrij constructie. De volumes tellen op tot die van de brug als
 geheel (constructie 47.493 m³, rijbaan 5.683 m³, rijbaan asfalt 611 m³,
 fietspad 1.489 m³, fietspad asfalt 232 m³, voetpad 591 m³, voetpad open
 verharding 185 m³, voetpad tegels 50 m³, samen 56.335 m³, geen overlap; het
-script controleert dat). Verticale stralen (`zfight.py`, 30.000 punten) vinden geen
+script controleert dat; daarnaast het parkeervlak, 66 m³). Verticale stralen
+(`zfight.py`, 30.000 punten over de wegdelen en over het hele model) vinden geen
 samenvallende bovenvlakken en geen vlakken zonder dikte.
 
 Onderdelen in het model (hoogtes in NAP):
@@ -177,7 +202,7 @@ van 50 graden vanaf de dekrand onder de kokerhoeken door tot een scherm van
 dichtgezette doorgangen in de rivierpijlers) houdt 32 m² overhang aan losse
 facetjes over. Met 652 m (met de doorlopen) past de brug op 1:1000 niet in
 één uitsnede. In de printcheck (gesloten solids met overhangopvulling, status
-`NoError` voor alle acht nodes): de hele brug op 1:1638 (400 mm) +29 %
+`NoError` voor alle negen nodes): de hele brug op 1:1638 (400 mm) +29 %
 opvulling voor de constructie (wig en scherm onder het dek en de krullen); de
 wegdelen krijgen vrijwel geen eigen opvulling (0 tot 1,3 %): de constructie
 draagt alles.

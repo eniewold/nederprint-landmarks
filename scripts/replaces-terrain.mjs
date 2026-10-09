@@ -18,7 +18,9 @@
 // deels bedekte delen worden gemeld en niet opgenomen, want daar zou een gat
 // in het dek vallen. Met --write past het script ook de generator aan: de
 // lijst komt als `replacesTerrain` vóór `description` in het catalogusobject,
-// zodat een hergeneratie hem behoudt.
+// zodat een hergeneratie hem behoudt. Ids in de lijst die geen
+// overbruggingsdeel zijn (met de hand toegevoegd, zoals een kapot PDOK-vlak dat
+// het model met een eigen onderdeel vervangt) laat het script staan.
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -205,18 +207,25 @@ for (const slug of slugs) {
   const foot = footprint(entry, nodes);
   const ids = [];
   const partial = [];
+  const bridgeParts = new Set();
   for (const feature of await overbruggingsdelen(foot.bbox)) {
     const p = feature.properties;
+    bridgeParts.add(p.lokaal_id);
     if (p.eind_registratie) continue;
     if (!(Number(p.relatieve_hoogteligging) >= 1)) continue;
     const share = insideShare(feature.geometry, foot);
     if (share >= MIN_INSIDE) ids.push(p.lokaal_id);
     else if (share >= REPORT_INSIDE) partial.push(`${p.lokaal_id} (${Math.round(share * 100)} %)`);
   }
+  // Ids die geen overbruggingsdeel zijn, staan er met de hand in (bijvoorbeeld
+  // een kapot PDOK-vlak dat het model zelf vervangt) en blijven staan.
+  const manual = (entry.replacesTerrain ?? []).filter((id) => !bridgeParts.has(id));
+  const dekvlakken = ids.length;
+  ids.push(...manual);
   ids.sort();
   const before = JSON.stringify(entry.replacesTerrain ?? []);
-  console.log(`${slug}: ${ids.length} dekvlak(ken)${partial.length ? `, deels onder het model: ${partial.join(", ")}` : ""}`);
-  for (const id of ids) console.log(`  ${id}`);
+  console.log(`${slug}: ${dekvlakken} dekvlak(ken)${manual.length ? `, ${manual.length} handmatig behouden` : ""}${partial.length ? `, deels onder het model: ${partial.join(", ")}` : ""}`);
+  for (const id of ids) console.log(`  ${id}${manual.includes(id) ? " (handmatig)" : ""}`);
   summary.push({ slug, ids: ids.length, partial: partial.length });
   if (!write || JSON.stringify(ids) === before) continue;
   // In de JSON na replacesBuildings (of na de maaiveldvelden), de rest ongewijzigd.
