@@ -1,0 +1,113 @@
+{
+  "name": "IJsselspoorbrug (Deventer)",
+  "file": "ijsselspoorbrug-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206809.9,
+    474439.11
+  ],
+  "xAxis": [
+    0.66128,
+    0.75014
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.22,
+  "groundSamplePoints": [
+    [
+      -290,
+      25
+    ],
+    [
+      -290,
+      -25
+    ],
+    [
+      -252,
+      25
+    ],
+    [
+      -252,
+      -25
+    ],
+    [
+      -213,
+      25
+    ],
+    [
+      -213,
+      -25
+    ],
+    [
+      -30,
+      25
+    ],
+    [
+      -30,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      30,
+      -25
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras midden tussen de harten van de twee rivierpijlers op het water van de nevengeul (z = 0, NAP +2,98 m) in de oorsprong, +X langs de brug naar het noordoosten (Deventer, RD-richting 48,60 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts, het voetpad); het fietspad ligt aan de zuidoostkant (y < 0). Zes nodes: road:spoor, road:spoor-ballastbed, road:fietspad, road:voetpad en road:voetpad-op-trap, de bovenste 0,5 m van het dek en van de trap binnen de actuele BGT-wegdelen met hun attributen in extras.attributes (spoorbaan, gesloten verharding of half verhard; fietspad en voetpad, gesloten verharding; voetpad op trap, gesloten verharding, cementbeton), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd op de dijk (x = -416,89) tot het oostelijke landhoofd aan de IJsselkade (x = 102,13), 519 m. De stalen vakwerkbrug van 95,9 m over de IJssel (Warrenligger met negen vakken van 10,65 m, alleen diagonalen, schuine eindstijlen, bovenrand NAP +24,3 m, vakwerklijnen 4,7 m ten zuidoosten en 5,0 m ten noordwesten van de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen (punt omhoog) en blinde nissen; de rivierpijlers met spitse koppen en opleggingen; de betonnen aanbrug als kokerligger (3,6 m) over de uiterwaard en de nevengeul op negen wandpijlers met kop, vier daarvan op achthoekige poeren in de nevengeul; het veld over de weg langs de dijk en het oostelijke veld over de IJsselkade (2,6 m); de landhoofden; schampkanten van 0,9 m tussen spoor en paden en randbalken van 0,6 m aan de buitenranden; de trap van het voetpad naar de uiterwaard bij x = -118,5 als dicht blok met zes treden. Dek op NAP +12,6 m (westelijk landhoofd), +14,9 m (rivierpijler), +15,0 m (vakwerk) en +14,8 m (oostelijk landhoofd). Windverband en portalen tussen de bovenranden, bovenleiding, leuningen, het looppad op de bovenrand en de trappen langs de landhoofden zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de nevengeul en de IJssel bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ijsselspoorbrug-deventer-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 519.02,
+    "trussSpanM": 95.86,
+    "trussPanels": 9,
+    "trussTopNapM": 24.3,
+    "trussLinesFromAxisM": [
+      -4.7,
+      5
+    ],
+    "approachPierX": [
+      -385.6,
+      -347.45,
+      -309.31,
+      -271.12,
+      -232.93,
+      -194.75,
+      -156.76,
+      -118.52,
+      -80.44
+    ],
+    "approachSpanM": 38.2,
+    "deckNapM": {
+      "west": 12.6,
+      "westRiverPier": 14.92,
+      "truss": 15,
+      "east": 14.82
+    },
+    "deckDepthM": {
+      "approach": 3.6,
+      "truss": 1.6,
+      "eastSpan": 2.6,
+      "roadSpan": 2.6
+    },
+    "waterNapM": 2.98
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/IJsselspoorbrug_(Deventer)",
+    "PDOK BGT overbruggingsdeel, wegdeel en spoor (dekrand, landhoofden, pijlers, poeren, spoorbaan, fietspad, voetpad, voetpad op trap), EPSG:28992",
+    "PDOK AHN DSM en DTM 0,5 m via WCS voor het dek, het vakwerk, de schampkanten en de trap",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: IJsselspoorbrug Deventer, 2011.jpg, IJsselspoorbrug Deventer.JPG, IJsselspoorbrug - Deventer.jpg, Spoorbrug rail bridge Deventer 2019.jpg (en 2019 2, 2019 3), Railway bridge across the IJssel river at Deventer from the Northside - panoramio.jpg, Hoogwater Deventer december 2023 03.jpg en 04.jpg, Deventer brug over de IJssel (50143597592).jpg, Spoorviaduct Deventer 2024.jpg, Spoorbrug rail bridge Deventer train 2019 1.jpg, Spoorbrug rail bridge Deventer VIRM train 2019.jpg, Deventer - Ijssel - morning with mist - 8 nov 2020 - DJI mavic mini drone - aerial imagery - break of the day - 20.jpeg"
+  ]
+}
