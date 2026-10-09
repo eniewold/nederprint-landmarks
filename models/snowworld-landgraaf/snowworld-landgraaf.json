@@ -1,0 +1,48 @@
+{
+  "name": "SnowWorld Landgraaf",
+  "file": "snowworld-landgraaf.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    199520,
+    320760
+  ],
+  "xAxis": [
+    0.987786,
+    0.155817
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 197.072499,
+  "groundSamplePoints": [
+    [
+      -40,
+      -45
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0882100000017847"
+  ],
+  "description": "Hoge skihal met vlakke middenstrook, hellende noordzijde en gebogen lagere zuidhal, oefenhal, zonnepaneelvelden, chaletfronten en Alpine Hotel met asymmetrische kap.",
+  "realWorld": {
+    "mainRoofTopNapM": 232.94,
+    "hotelRidgeNapM": 180.55,
+    "roofStepM": 3.1,
+    "estimated": [
+      "dakknikken en zuidhelling geïnterpoleerd tussen AHN-vlakken",
+      "gevelglas en chaletspanten",
+      "installaties en printbare onderbouw"
+    ]
+  },
+  "sources": [
+    "https://www.kokstaal.nl/en/projects/landgraaf-ski-halls/",
+    "https://www.vwarchitectuur.nl/project/skibaan-snowworld-landgraaf/",
+    "https://www.vwarchitectuur.nl/project/sporthotel-snowworld-landgraaf/",
+    "PDOK BAG 0882100000017847, actuele ortho en AHN DSM/DTM 0,5m, bbox 199000,320200,200000,321200",
+    "https://commons.wikimedia.org/wiki/File:Landgraaf-SnowWorld.JPG",
+    "https://commons.wikimedia.org/wiki/File:SnowWorld.JPG"
+  ],
+  "printFiles": [
+    "snowworld-landgraaf-1-1000.stl"
+  ]
+}
