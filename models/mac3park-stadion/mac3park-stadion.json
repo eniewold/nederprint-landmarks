@@ -1,0 +1,101 @@
+{
+  "name": "MAC³PARK Stadion",
+  "file": "mac3park-stadion.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    204799.11,
+    503530.84
+  ],
+  "xAxis": [
+    0.978867,
+    0.204496
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.97,
+  "groundSamplePoints": [
+    [
+      -82,
+      30
+    ],
+    [
+      -84,
+      -50
+    ],
+    [
+      0,
+      90
+    ],
+    [
+      86,
+      0
+    ],
+    [
+      0,
+      -124
+    ],
+    [
+      -60,
+      -140
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000060760"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (204799,11, 503530,84) op de middenstip op straatniveau (NAP +1,3 m; het veld ligt 0,75 m hoger), +X dwars over het veld naar het oostnoordoosten (11,8 graden) en +Y langs het veld naar het noordnoordwesten. Eén node building:stadion: de gesloten ring van kantoren en hoekgebouwen (148,7 bij 192,6 m, dak +11,9 m, raamnissen, winkelpuien, dakranden en installaties) rond vier tribunes, elk met een eigen doorsnede (zitrang in treden, deels open voor het dak, achterwand en een dakplaat van 1,6 m met een voorlip van 2,2 m op +12,4 tot +12,65 m) en stalen spanten op de daken, de gebogen dakkap (+15,4 m) met perskoker boven de hoofdtribune, de glazen rotonde met koepel aan de westgevel, het hotel in de zuidwesthoek (+23,0 m, zuilengang, lichtkap, opbouwen) en vier vakwerk-lichtmasten met reclamebord en lampenbank (+36,4 m) op de binnenhoeken. Onderkant op 0,5 m onder het maaiveld; dakplaten, dakkap en lampenbanken hangen uit (de export vult ze op). Vervangt de PDOK-reconstructie van het BAG-pand van het complex. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "mac3park-stadion-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 155,
+    "widthM": 208.3,
+    "highestPointM": 36.4,
+    "capacity": 14000,
+    "fieldOpeningM": [
+      93.75,
+      129
+    ],
+    "fieldM": 0.75,
+    "ringRoofM": 11.9,
+    "standRoofM": {
+      "west": [
+        12.6,
+        12.33
+      ],
+      "east": [
+        12.65,
+        12.37
+      ],
+      "north": [
+        12.57,
+        12.37
+      ],
+      "south": [
+        12.63,
+        12.37
+      ]
+    },
+    "mainStandCrownM": 15.4,
+    "rotundaM": [
+      15.5,
+      17.4
+    ],
+    "hotelM": 23,
+    "mastTopM": [
+      36.4,
+      36.4,
+      36.4,
+      36.4
+    ],
+    "groundNapM": 1.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/MAC%C2%B3PARK_stadion",
+    "PDOK BAG pand 0193100000060760 (het hele complex), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: buitengevels, voorranden en hoogtes van de dakplaten, ring, dakkap, rotonde, hotel, tussenbouw, installaties, open voorste rijen en lichtmasten",
+    "PDOK luchtfoto (Actueel_orthoHR): dakspanten, zitvakken en dakopbouwen",
+    "Wikimedia Commons: PEC Zwolle 2022 (drone), MAC³PARK stadion, IJsseldelta Stadion PEC Zwolle, PEC Zwolle - PSV 29-09-2019, Panorama IJsseldeltastadion, Zwolle IJsseldeltastadion (spanten, dakkap met perskoker, rotonde met koepel, gevels, hotel, masten, dichte hoeken)"
+  ]
+}

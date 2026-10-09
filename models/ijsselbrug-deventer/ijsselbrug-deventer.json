@@ -1,0 +1,108 @@
+{
+  "name": "IJsselbrug (A1, Deventer)",
+  "file": "ijsselbrug-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    208202.12,
+    471751.05
+  ],
+  "xAxis": [
+    0.92841,
+    0.37155
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.68,
+  "groundSamplePoints": [
+    [
+      -40,
+      25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      -20,
+      -25
+    ],
+    [
+      20,
+      -25
+    ],
+    [
+      60,
+      -35
+    ],
+    [
+      -360,
+      25
+    ],
+    [
+      -360,
+      -25
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden in de hoofdoverspanning op de waterspiegel van de IJssel (z = 0, NAP +3,36 m) in de oorsprong, +X langs de brug naar het oostnoordoosten (Deventer, RD-richting 21,81 graden vanaf het oosten) en +Y naar het noordnoordwesten. Twee nodes: road:rijbaan, de bovenste 0,5 m van beide rijbanen met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan autosnelweg, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, een betonnen kokerliggerbrug van 1107 m van landhoofd tot landhoofd (wegdek NAP +17,5 m bij Twello, +19,4 m boven de rivierpijlers, +18,8 m in het doorgezakte midden en +18,4 m bij Deventer), met een dekplaat van 34,6 m op twee kokers, schampkanten aan de randen en de middenberm als geleider; de hoofdoverspanning van 150,5 m op twee rivierpijlers met spitse koppen, met een toog van 7,5 m boven de pijlers naar 4,2 m in het midden en in de zijoverspanningen van 80,5 m; aanbrugvelden van 74 m (zes aan de westkant, drie aan de oostkant) en eindvelden van 56 m op wandpijlers (per koker een wand van 2,0 x 10,9 m met ronde einden); de landhoofden in de dijken. Lantaarnpalen, leuningen, het seinportaal boven de rijbanen en de dilatatievoegen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de IJssel en de westelijke strang bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "ijsselbrug-deventer-1-3000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 1107.5,
+    "deckWidthM": 34.6,
+    "mainSpanM": 150.54,
+    "sideSpanM": 80.52,
+    "approachSpanM": 74,
+    "endSpanM": {
+      "west": 55.95,
+      "east": 56.07
+    },
+    "riverPierCentresM": [
+      -75.27,
+      75.27
+    ],
+    "wallPierCentresM": {
+      "west": [
+        -155.79,
+        -229.79,
+        -303.79,
+        -377.79,
+        -451.79,
+        -525.79,
+        -599.79
+      ],
+      "river": [
+        -75.27,
+        75.27
+      ],
+      "east": [
+        155.79,
+        229.79,
+        303.79,
+        377.79
+      ]
+    },
+    "depthM": {
+      "approach": 4.2,
+      "pier": 7.5,
+      "mid": 4.2,
+      "flat": 2.5,
+      "haunch": 50
+    },
+    "roadNapM": {
+      "west": 17.47,
+      "riverPier": 19.3,
+      "mid": 18.79,
+      "east": 18.37
+    },
+    "waterNapM": 3.36,
+    "opened": "1972-11-21"
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/IJsselbrug_(Deventer)",
+    "PDOK BGT overbruggingsdeel (dek L0002.e82d5e2f3b1e48e0891ee13f8d58154c, landhoofden, rivierpijlers L0002.3c0a668f97a24b08b80780e50add1d14 en L0002.5401d8f1da534a9b84df892568fe85c1, 22 wandpijlers) en wegdeel (L0002.073cc8ca61de4e57a8e39958ae2b6d92, L0002.c495665a0da444429f3aeb5469e56ff6), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het lengteprofiel van het wegdek en de uiterwaarden; PDOK-luchtfoto voor de indeling van het dek",
+    "Wikimedia Commons: IJsselbrug A1 bij Deventer.jpg, IJsselbrug A1 bij Deventer (2).jpg, IJsselbrug A1.jpg, A1 bij Deventer.jpg"
+  ]
+}

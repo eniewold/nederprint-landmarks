@@ -1,0 +1,88 @@
+{
+  "name": "Edithbrug",
+  "file": "edithbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173425.65,
+    423658.51
+  ],
+  "xAxis": [
+    0.850152,
+    0.526537
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 48.8,
+  "groundSamplePoints": [
+    [
+      -94.42,
+      20
+    ],
+    [
+      -94.42,
+      -20
+    ],
+    [
+      -31.63,
+      20
+    ],
+    [
+      -31.63,
+      -20
+    ],
+    [
+      31.67,
+      20
+    ],
+    [
+      31.67,
+      -20
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste pijler op de waterspiegel van de Maas (z = 0, NAP +5,10 m) in de oorsprong, +X langs de brug naar het noordoosten (Niftrik, RD-richting 31,77 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts). Twee nodes. Node road:spoor: de bovenste 0,5 m van de dekplaat op het BGT-wegdeel spoorbaan van de brug (L0004.9833e744..., 2,9 m breed) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema op het dek werken. Node building:edithbrug: de rest van het kunstwerk van het zuidelijke landhoofd bij Ravenstein (x = -126,9) tot het noordelijke bij Niftrik (x = 214,4): vier gelijke stalen boogbruggen van circa 63 m met een verstijvingsligger, twee volle boogribben 2,8 m naast de as tot 11,07 m boven het spoor (NAP +26,1 m bij de eerste twee bogen), elk met elf platte hangers en spitse openingen ertussen, verstijvers op de liggers, het windverband tussen de ribben (dwarsregels op de hangers, portalen en kruisende diagonalen); twee plaatliggerbruggen van circa 44 m over de uiterwaard met verstijvers; de dekplaat tussen de liggers en het looppad aan de westkant; vijf gemetselde pijlers met spitse koppen (BGT), plint en deklijst, aan de oostkant 10 m breder dan de brug, met oplegblokken; de twee landhoofden. Spoor op NAP +15,03 m over de eerste twee bogen, daarna dalend tot +13,25 m bij Niftrik. Bovenleiding, leuningen en de bordessen op de pijlers zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de eerste drie bogen bemonsterd; groundHeight is de PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "edithbrug-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 341.3,
+    "archSpansM": [
+      62.35,
+      63.25,
+      63.34,
+      63.6
+    ],
+    "archCrownNapM": [
+      26.09,
+      26.06,
+      25.78,
+      25.28
+    ],
+    "archRiseAboveRailM": 11.07,
+    "hangersPerArch": 11,
+    "plateGirderSpansM": [
+      42.7,
+      43.1
+    ],
+    "ribsFromAxisM": 2.8,
+    "pierTopNapM": [
+      12.65,
+      12.7,
+      12.12,
+      11.58,
+      10.75
+    ],
+    "railNapM": {
+      "south": 15.02,
+      "north": 13.25
+    },
+    "waterNapM": 5.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Edithbrug",
+    "PDOK BGT overbruggingsdeel (dek, pijlers, landhoofden), wegdeel (spoorbaan op het dek) en spoor (hartlijn), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor de spoorhoogte, de boogribben, de liggers, het looppad en de pijlerkoppen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor de hangers en het windverband",
+    "Wikimedia Commons: Edithbrug vanaf Niftrik.JPG, Railway bridge Edithbrug on the Niftrik side.jpg, WLM - 23dingenvoormusea - Spoorbrug over de Maas bij Ravenstein.jpg, Tussen Ravenstein en Niftrik, spoorbrug over de Maas foto5 2016-04-20 10.59.jpg"
+  ]
+}
