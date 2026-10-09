@@ -1,0 +1,59 @@
+{
+  "name": "Ruïne van Brederode",
+  "file": "ruine-van-brederode.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102986,
+    493334
+  ],
+  "xAxis": [
+    0.906307787,
+    0.422618262
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      0
+    ],
+    [
+      28,
+      -12
+    ],
+    [
+      0,
+      30
+    ]
+  ],
+  "groundHeight": 47.04,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0453100000414917"
+  ],
+  "replacesTerrain": [
+    "G0453.40dd424045625788e053cc1f0a0a3668"
+  ],
+  "description": "Huidige ruine met open hof, vier ongelijke hoektorens, donjon met piramidedak en kantelen, ronde traptoren, hoge poortzaal, lage muurprofielen en houten binnenbrug. Glasafdekking als massieve lage afdekking, vensters als 0,35 m nissen en brugdragers steil vereenvoudigd voor 1:1000; geen verdwenen westvleugel of daken gereconstrueerd.",
+  "printFiles": [
+    "ruine-van-brederode-1-1000.stl",
+    "ruine-van-brederode-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 56.73,
+    "widthM": 48.47,
+    "highestPointM": 23.05,
+    "waterNapM": 4.1,
+    "donjonRoofNapM": 27,
+    "stairTowerTopNapM": 27.15,
+    "chapelWallNapM": 16.1,
+    "lowTowersNapM": 7.8,
+    "bridgeNapM": 7.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37110",
+    "https://www.ruinevanbrederode.nl/",
+    "https://commons.wikimedia.org/wiki/Category:Ru%C3%AFne_van_Brederode",
+    "PDOK BAG 0453100000414917, AHN DSM/DTM 0,5 m, Actueel_orthoHR, BGT voetpad G0453.40dd423ff9d05788e053cc1f0a0a3668, 9 oktober 2026"
+  ]
+}
