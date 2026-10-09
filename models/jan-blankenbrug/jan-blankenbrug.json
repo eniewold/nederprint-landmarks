@@ -1,0 +1,105 @@
+{
+  "name": "Jan Blankenbrug",
+  "file": "jan-blankenbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133752.26,
+    445509.28
+  ],
+  "xAxis": [
+    -0.32215,
+    0.94669
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.13,
+  "groundSamplePoints": [
+    [
+      -50,
+      40
+    ],
+    [
+      -50,
+      -38
+    ],
+    [
+      0,
+      40
+    ],
+    [
+      0,
+      -38
+    ],
+    [
+      50,
+      40
+    ],
+    [
+      50,
+      -38
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spleet tussen de twee dekken midden in de hoofdoverspanning op de waterspiegel van de Lek (z = 0, NAP -0,27 m) in de oorsprong, +X langs de brug naar het noordnoordwesten (Nieuwegein, RD-richting 108,79 graden vanaf het oosten) en +Y naar het westzuidwesten (stroomafwaarts; de westelijke brug van 2004 op +Y, de oostelijke van 1999 op -Y). Twee nodes: road:rijbaan, de bovenste 0,5 m van beide wegdekken met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee gelijke betonnen uitbouwbruggen van 532,9 m en 29 m breed met een spleet van 0,5 tot 0,9 m ertussen (wegdek NAP +17,6 m aan de dekeinden en +21,2 m in het midden, elk dek 2,5 % aflopend naar de buitenrand), elk met één koker van 13 m breed onder het midden van het dek, aan beide kanten een rij schoren om de 3,6 m onder de uitkragende dekplaat, schampkanten en de koppen van de leuningen op de landhoofden; de hoofdoverspanning van 165 m op twee rivierpijlers met per brug drie kegelvormige kolommen (de middelste omgekeerd taps) op een poer, met een voute van 4,0 m in het midden naar 7,2 m boven de pijlers; zijoverspanningen van 100 m en aan elke kant twee velden van 41,8 m op landpijlers van twee kolommen op een plint; de landhoofden in de dijken. Lantaarnpalen, de aluminium leuningen, de seinportalen, het looprooster in de spleet en de pijlerresten van de gesloopte boogbrug zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Lek naast de hoofdoverspanning bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "jan-blankenbrug-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 532.93,
+    "lengthWithAbutmentsM": 545.6,
+    "deckWidthM": 29,
+    "gapM": {
+      "south": 0.94,
+      "north": 0.48
+    },
+    "mainSpanM": 165.4,
+    "sideSpanM": 99.99999999999999,
+    "approachSpansM": [
+      41.8,
+      41.9
+    ],
+    "riverPierX": [
+      -82.7,
+      82.7
+    ],
+    "landPierX": [
+      -182.7,
+      182.7,
+      -224.5,
+      224.5
+    ],
+    "profileNap": {
+      "a": 21.164,
+      "b": -0.00005454,
+      "c": 6.043e-11
+    },
+    "crossfall": 0.025,
+    "depthM": {
+      "mid": 4,
+      "river": 7.2,
+      "land": 5,
+      "cantilever": 80,
+      "landHaunch": 16
+    },
+    "boxWidthM": 13,
+    "strutStepM": 3.6,
+    "soffitNapM": {
+      "mid": 17.16,
+      "river": 13.59,
+      "channelEdge": 14.34,
+      "land1": 14.41,
+      "approach": 14.57
+    },
+    "waterNapM": -0.27
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Jan_Blankenbrug_(Vianen)",
+    "https://structurae.net/en/structures/vianen-bridge",
+    "Bouwdienst Magazine maart 2003, 'Spiegelbeeld: bouw van de tweede nieuwe Lekbrug Vianen' (open.rijkswaterstaat.nl)",
+    "Nederlandse Bruggenstichting, Bruggen 2021 nr. 4, 'Geschiedenis van de overbrugging van de Lek tussen Vreeswijk en Vianen'",
+    "https://www.zja.nl/en/page/995/bridges-over-the-river-lek-vianen",
+    "PDOK BGT overbruggingsdeel (dekken L0002.2fa7ca7db0104aab9393b5deb0e26f83 en L0002.022e7942000f4293bb6c6d51e8ad026d, poeren van de rivierpijlers, landhoofden) en wegdeel, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het lengteprofiel en het dwarsverval van het wegdek en de uiterwaarden; PDOK-terrein voor de waterspiegel",
+    "Wikimedia Commons: Nice shaped 2 new (1999 and 2006) concrete river bridges, with the old 153 m span steel archbridge (1936) left - panoramio.jpg, Old steelbridge over the Lekriver with the 2 new concrete ones in front - panoramio.jpg, VianenBrug01.JPG, VianenBrug02.JPG, De Lek IJsselstein 01.JPG, A2 - Jan Blankenbrug, Lekbrug - RWS 421287.jpg en 421290.jpg"
+  ]
+}
