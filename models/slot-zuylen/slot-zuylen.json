@@ -1,0 +1,62 @@
+{
+  "name": "Slot Zuylen",
+  "file": "slot-zuylen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133493,
+    459926
+  ],
+  "xAxis": [
+    0.866025403784,
+    0.5
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      0
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      0,
+      22
+    ]
+  ],
+  "groundHeight": 42.936,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0333100000015736"
+  ],
+  "replacesTerrain": [
+    "G1904.7bcb115ebc064389a13bd207b3c72e96"
+  ],
+  "description": "U-vormig slot rond open voorplein met drie afzonderlijke schilddaken, lage achteruitbouw en terras, drie achtkantige arkeltorens met steile spits en westtoren met klokdak, dakkapellen, vier schoorstenen, gootlijsten en klassieke deurpartij. Stenen driebogenbrug heeft eigen 0,5 m dek met gesloten verharding met actuele BGT-classificatie; oorspronkelijke ronde bogen zijn printbare spitsbogen.",
+  "printFiles": [
+    "slot-zuylen-1-1000.stl",
+    "slot-zuylen-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 52.21,
+    "widthM": 49.01,
+    "highestPointM": 24.64,
+    "waterNapM": -0.34,
+    "mainRidgeNapM": 19.3,
+    "westRidgeNapM": 19.25,
+    "eastRidgeNapM": 19.3,
+    "annexRidgeNapM": 17,
+    "bellTowerTopNapM": 21.2,
+    "spireTowerTopNapM": 24.3,
+    "bridgeCrownNapM": 1.7,
+    "terraceNapM": 1.55
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/519611",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/519615",
+    "https://commons.wikimedia.org/wiki/Category:Slot_Zuylen_(exterior)",
+    "PDOK BAG 0333100000015736, AHN DSM/DTM 0,5 m, Actueel_orthoHR, BGT overbruggingsdeel G1904.7bcb115ebc064389a13bd207b3c72e96 en onbegroeidterreindeel G1904.7f655726ff004a20befa6c61e393623a gesloten verharding, 9 oktober 2026"
+  ]
+}
