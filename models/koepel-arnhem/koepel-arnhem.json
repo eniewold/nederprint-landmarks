@@ -1,0 +1,106 @@
+{
+  "name": "Koepelgevangenis (Arnhem)",
+  "file": "koepel-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    188751.822,
+    444225.866
+  ],
+  "xAxis": [
+    0.99994,
+    -0.01095
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      25,
+      -65
+    ],
+    [
+      36,
+      -64
+    ],
+    [
+      43,
+      -65
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000274796"
+  ],
+  "description": "Ronde koepel met lessenaarsring, lantaarn, vier gekanteelde traptorens, circa 200 zichtbare celraamnissen, twee oude vleugels en lage annexen uit de actuele BGT-contour. +X langs de oostelijke verbindingsgang, vrijwel oostwaarts; poort, kerk, ringmuur en afzonderlijke panden blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 31.07,
+    "diameterM": 63.692,
+    "topNapM": 71.734,
+    "radialRoofProfileNap": [
+      [
+        31.846,
+        49.45
+      ],
+      [
+        30.5,
+        50.07
+      ],
+      [
+        28.5,
+        51.22
+      ],
+      [
+        26.5,
+        53.17
+      ],
+      [
+        25.5,
+        55.24
+      ],
+      [
+        23.5,
+        58.34
+      ],
+      [
+        20.5,
+        61.35
+      ],
+      [
+        16.5,
+        63.71
+      ],
+      [
+        12.5,
+        65.41
+      ],
+      [
+        8.5,
+        66.54
+      ],
+      [
+        4.5,
+        67.2
+      ],
+      [
+        0,
+        67.25
+      ]
+    ],
+    "schattingen": [
+      "roeven verdikt tot 0.9 m reliëf, fijn zinkpatroon en hekwerk weggelaten",
+      "vensters, kantelen en lantaarn vereenvoudigd uit schuine fotos; dakvensters als blinde nissen",
+      "vleugeldaken op gemeten AHN-nokken en BAG/BGT-contour; afwijkende historische dakdetails niet gekopieerd",
+      "annexvensters en installaties schematisch; vlakke voet op laagste omringende pad, hoger koepelmaaiveld NAP35.7"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0202100000274796; AHN DSM/DTM .5m en Actueel_orthoHR bbox 188570,444060,188920,444390; 2026-10-09",
+    "BGT pand G0202.2af034b95c7812c4e05343604191f184, actuele versie 393e0716-aece-7f0a-df29-a638c5a51b99; 2026-09-23",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516731",
+    "https://commons.wikimedia.org/wiki/File:Arnhem_-_Wilhelminastraat_bij_16_-_Cellencomplex_-_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bovenaanzicht_vanaf_zendmast_-_Arnhem_-_20365904_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Koepel_Arnhem,_exterieur.jpg"
+  ],
+  "printFiles": [
+    "koepel-arnhem-1-1000.stl"
+  ]
+}
