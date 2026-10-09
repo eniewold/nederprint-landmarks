@@ -1,0 +1,72 @@
+{
+  "name": "Hotel New York",
+  "file": "hotel-new-york.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92885,
+    435458
+  ],
+  "xAxis": [
+    0.7826081568524139,
+    0.6225146366376195
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -36,
+      0
+    ],
+    [
+      0,
+      -26
+    ],
+    [
+      30,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000642881"
+  ],
+  "description": "HAL-kantoor met BAG-grondplan, drie westelijke erkers en topgevels, twee lichtkokers, magazijn en twee achtkantige klokkentorens met gewelfde vierzijdige kappen. Geveldetail uit fotos; vlaggenmasten en windvaan weggelaten voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 3.45,
+    "roofNapM": [
+      22.3,
+      22.6,
+      23.4
+    ],
+    "capTopNapM": 38.8,
+    "towerCentres": [
+      [
+        -9.29,
+        17.46
+      ],
+      [
+        -9.71,
+        -17.98
+      ]
+    ],
+    "axisDegrees": 38.5,
+    "estimates": [
+      "profiel vierzijdige kappen en klokkengrootte uit fotos binnen AHN-hoogte",
+      "vensterritme, erkerconsoles, topgeveldetail en ingangshoogtes uit fotos",
+      "lichte dakhellingen tot vlakke dakvlakken vereenvoudigd; dakinstallaties en smalle masten weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0599100000642881, BGT, AHN DSM/DTM0.5m en Actueel_orthoHR;2026-10-09",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000642881 (3D BAG CC BY4.0)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513872",
+    "https://hotelnewyork.nl/over-hotel-new-york/geschiedenis-hotel-new-york/",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_Hotel_New_York_seen_from_the_northeast.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_Landverhuizersplein_and_Hotel_New_York_seen_from_the_southwest.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hotel_New_York_(Rotterdam)_DSCF3888.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achterkant_Hotel_New_York_(Rotterdam)_DSCF4012.jpg"
+  ],
+  "printFiles": [
+    "hotel-new-york-1-1000.stl"
+  ]
+}
