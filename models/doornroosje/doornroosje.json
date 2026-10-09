@@ -1,0 +1,60 @@
+{
+  "name": "Doornroosje",
+  "file": "doornroosje.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187150,
+    428545
+  ],
+  "xAxis": [
+    0.956814,
+    -0.290702
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -40
+    ],
+    [
+      20,
+      -40
+    ],
+    [
+      43,
+      -20
+    ]
+  ],
+  "groundHeight": 67.74,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000086018"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (187150, 428545) op het Stationsplein (NAP +24,3 m) in de oorsprong, +X langs de gevel aan het Stationsplein (RD-richting -16,9 graden) en +Y langs het spoor naar het noordnoordoosten. Eén node: de witte sokkel van Doornroosje met de uitkragende bakstenen band, het dek, de hoge L-vormige woonschijf van Talia met de witte raamkaders en de balkontoren, en de woonvleugel langs het spoor met de gefacetteerde spoorgevel. De onderkant ligt 9,6 m onder het plein voor de lage weg aan de noordoostkant. Vervangt de PDOK-reconstructie van BAG-pand 0268100000086018.",
+  "realWorld": {
+    "groundNapM": 24.3,
+    "lowRoadNapM": 15,
+    "deckNapM": 38.2,
+    "tallSlabNapM": 68.5,
+    "wingNapM": 59.5,
+    "plinthM": 8.6,
+    "axisDegrees": -16.9,
+    "estimates": [
+      "hoogte van de witte sokkel, de glazen strook en de band, en hoe ver de band uitkraagt",
+      "plaats en maat van de entrees, de driehoekige ramen en de raamstrook",
+      "raamvelden, witte kaders, gekleurde strook en inham aan het Stationsplein (perspectief van één foto)",
+      "balkontoren, galerijen en de facetten van de spoorgevel"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Doornroosje_(Nijmegen)",
+    "PDOK BAG pand 0268100000086018, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dek, woonschijf, woonvleugel, borstwering, opbouw, maaiveld en de lage weg",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Doornroosje Talia 2016.jpg, Doornroosje Nijmegen SSHN Talia.jpg, Talia-Doornroosje, Stationsplein, Nijmegen.jpg, Station Nijmegen Spoor 35.jpg"
+  ],
+  "printFiles": [
+    "doornroosje-1-1000.stl"
+  ]
+}
