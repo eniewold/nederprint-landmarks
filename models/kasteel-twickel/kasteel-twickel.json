@@ -1,0 +1,59 @@
+{
+  "name": "Kasteel Twickel",
+  "file": "kasteel-twickel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    245638,
+    476205
+  ],
+  "xAxis": [
+    0.5000000000000001,
+    -0.8660254037844386
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -35,
+      0
+    ],
+    [
+      35,
+      0
+    ],
+    [
+      25,
+      -35
+    ]
+  ],
+  "groundHeight": 57.83,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1735100000001456"
+  ],
+  "replacesTerrain": [
+    "G1735.45cf62f4959915b2e054002128f9eb56",
+    "G1735.45cf62f4ae8815b2e054002128f9eb56"
+  ],
+  "description": "Drie bouwvleugels rond een open binnenplaats, vierkante oosttoren en slanke noordwesttoren, renaissance-topgevel en erkers, vensternissen, kapellen en zeven schoorstenen. Twee actuele BGT-voetpaddekken afzonderlijk; ronde stenen brugbogen en houten tuinbrugdragers steiler vereenvoudigd voor 1:1000 zonder steun. Fijne balusters, roeden, metalen hekken en beelden vervallen.",
+  "printFiles": [
+    "kasteel-twickel-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.76,
+    "widthM": 81.29,
+    "highestPointM": 29.2,
+    "waterNapM": 14.4,
+    "mainRoofNapM": 33.85,
+    "eastTowerTopNapM": 43.6,
+    "northTowerTopNapM": 42.75,
+    "frontBridgeNapM": 17.76,
+    "rearBridgeNapM": 16.79
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507544",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507550",
+    "https://commons.wikimedia.org/wiki/Category:Twickel_Castle",
+    "PDOK BAG 1735100000001456, AHN DSM/DTM 0,5 m, Actueel_orthoHR, BGT voetpad G1735.45cf62f5725515b2e054002128f9eb56 en G1735.45cf62f4018615b2e054002128f9eb56, 9 oktober 2026"
+  ]
+}
