@@ -1,0 +1,65 @@
+{
+  "name": "013",
+  "file": "013.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134610,
+    396578
+  ],
+  "xAxis": [
+    0.991671,
+    0.128796
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -38,
+      5
+    ],
+    [
+      -24,
+      -30
+    ],
+    [
+      8,
+      -19
+    ],
+    [
+      40,
+      -8
+    ]
+  ],
+  "groundHeight": 58.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000132248"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (134610, 396578) op het maaiveld (NAP +14,5 m) in de oorsprong, +X langs de noordgevel tegen de parkeergarage (RD-richting 7,4 graden) en +Y naar het noorden. Eén node: de zwarte doos met het gebogen dak, de toneeltoren, het oostdeel, de geplooide plint onder een kraag, de entreehoek met kolom en de gouden schijven. Vervangt de PDOK-reconstructie van BAG-pand 0855100000132248; de parkeergarage ernaast (0855100000132247) blijft PDOK.",
+  "realWorld": {
+    "groundNapM": 14.5,
+    "roofCrestNapM": 28.57,
+    "roofCornerNapM": 23.34,
+    "roofRadiusM": 203,
+    "stageTowerNapM": 31.1,
+    "eastRoofNapM": 25.95,
+    "plinthM": 3.4,
+    "axisDegrees": 7.4,
+    "estimates": [
+      "plinthoogte, kraag en plooien van de plint uit foto's",
+      "diepte van de entree en de café-pui, de ronde kolom op de hoek",
+      "plaats, maat en stand van de drie gouden schijven",
+      "vensters en naden tussen de gevelpanelen"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/013",
+    "PDOK BAG pand 0855100000132248, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: gebogen dak, toneeltoren, oostdeel, dakopbouwen, lage strook, gang en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Tilburg poppodium 013.jpg, 013-Gebouw-02022017-JostijnLigtvoetFotografie-33.jpg"
+  ],
+  "printFiles": [
+    "013-1-1000.stl"
+  ]
+}
