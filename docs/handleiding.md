@@ -288,7 +288,10 @@ eigen node van klasse `road` met de BGT-attributen, zodat de kleurregels van de
    én generator), zodat kaart en export ze verbergen. Het maaiveld eronder
    (water, terrein, pijlervoeten op hoogteligging 0) blijft staan. Meldt het
    script een deel dat maar half onder het model ligt, laat het model dan tot
-   het einde van dat dek doorlopen of laat het deel staan.
+   het einde van dat dek doorlopen of laat het deel staan. Bestaat het deel
+   buiten het model alleen uit open stukken op water- of strandhoogte (de
+   armen van de Pier van Scheveningen), verlaag dan de grens met `--min 0.85`
+   en vermeld dat in de README van het model.
 
 Een brug zonder leuningen maar met schampkanten is printbaar; onder een zwevend
 dek hoort de steun een doorlopende wand te worden, geen kam van losse lamellen.

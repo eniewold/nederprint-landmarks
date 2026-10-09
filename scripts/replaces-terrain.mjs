@@ -9,8 +9,11 @@
 //   node scripts/replaces-terrain.mjs edithbrug haringvlietbrug   # alleen rapport
 //   node scripts/replaces-terrain.mjs --all --write                # alle brugmodellen
 //
-// Een brugmodel is een model met een `road:`-node die BGT-attributen heeft.
-// Een overbruggingsdeel telt mee als minstens 90 % van zijn oppervlak binnen
+// Met --all doen de brugmodellen mee: modellen met een `road:`-node die
+// BGT-attributen heeft. Een model dat op de opdrachtregel genoemd wordt doet
+// altijd mee, bijvoorbeeld de Pier van Scheveningen, waarvan het dek ook een
+// overbruggingsdeel is.
+// Een overbruggingsdeel telt mee als minstens 90 % (of --min) van zijn oppervlak binnen
 // de voetafdruk van het model valt (de GLB in bovenaanzicht, 1 m verbreed);
 // deels bedekte delen worden gemeld en niet opgenomen, want daar zou een gat
 // in het dek vallen. Met --write past het script ook de generator aan: de
@@ -23,17 +26,20 @@ const MODELS = path.join(import.meta.dirname, "../models");
 const SCRIPTS = import.meta.dirname;
 const CELL = 0.5;
 const DILATE = 1.0;
-const MIN_INSIDE = 0.9;
+const args = process.argv.slice(2);
+// --min 0.85: lagere grens voor een model waarvan het BGT-vlak ook open stukken
+// tussen de bouwdelen bedekt, bijvoorbeeld tussen de armen van een pier.
+const minIndex = args.indexOf("--min");
+const MIN_INSIDE = minIndex === -1 ? 0.9 : Number(args[minIndex + 1]);
 const REPORT_INSIDE = 0.2;
 const BGT = "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items";
 const RD = "http://www.opengis.net/def/crs/EPSG/0/28992";
 
-const args = process.argv.slice(2);
 const write = args.includes("--write");
 const all = args.includes("--all");
 const slugs = all
   ? (await readdir(MODELS, { withFileTypes: true })).filter((d) => d.isDirectory()).map((d) => d.name).sort()
-  : args.filter((a) => !a.startsWith("--"));
+  : args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--min");
 
 function readGlb(buffer) {
   const jsonLength = buffer.readUInt32LE(12);
@@ -192,11 +198,10 @@ for (const slug of slugs) {
     continue;
   }
   const nodes = readGlb(await readFile(path.join(MODELS, slug, entry.file)));
+  // Met --all alleen brugmodellen; een expliciet genoemd model (zoals een pier
+  // op een overbruggingsdeel) doet altijd mee.
   const isBridge = nodes.some((node) => node.name.startsWith("road:") && node.attributes?.bgt_functie);
-  if (!isBridge) {
-    if (!all) console.log(`${slug}: geen brugmodel (geen road:-node met BGT-attributen), overgeslagen`);
-    continue;
-  }
+  if (all && !isBridge) continue;
   const foot = footprint(entry, nodes);
   const ids = [];
   const partial = [];
