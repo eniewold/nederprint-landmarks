@@ -1,0 +1,61 @@
+{
+  "name": "Stadhuis (Gouda)",
+  "file": "stadhuis-gouda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108544.65,
+    447248.44
+  ],
+  "xAxis": [
+    0.312,
+    0.95008
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      0
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      25,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0513100011122752"
+  ],
+  "description": "Huidige vrijstaande stadhuis met twee trapgevels, geveltoren, arkels, twee grote dakkapellen, één schoorsteen, bordes en schavot; +X langs de nok naar de achtergevel. Bouwdelen en dakvlakken, .8m verzonken voet.",
+  "realWorld": {
+    "groundNapM": 0.1313,
+    "roofEaveM": 12.66,
+    "roofRidgeM": 21.55,
+    "clockTipM": 34.35,
+    "orielSpireM": 25.66,
+    "schattingen": [
+      "puntige toppen geëxtrapoleerd boven AHN-rasterpunten; pinakels, vensters, kapelletjes, klokkenkast en beeldhouwwerk vereenvoudigd naar RCE-fotos",
+      "schavot als vol volume met blinde nissen, baldakijn op dikke zijsteunen en trappen op volle kern voor 1:1000",
+      "windvanen, balusters, roeden en ornamenten smaller dan .9m weggelaten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0513100011122752, actuele orthoHR, AHN DSM/DTM .5m bbox 108450,447180,108570,447310; 2026-10-09",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16843",
+    "https://www.dbnl.org/tekst/dens002goud01_01/dens002goud01_01_0015.php (RCE/Denslagen 2001, fig.121, 131 en 134)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_en_linker_zijgevel_-_Gouda_-_20359142_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_en_rechter_zijgevel_-_Gouda_-_20359148_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_achtergevel_met_trapgevel_-_Gouda_-_20379848_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "stadhuis-gouda-1-1000.stl"
+  ]
+}
