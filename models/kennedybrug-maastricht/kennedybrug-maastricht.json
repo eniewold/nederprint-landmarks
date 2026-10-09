@@ -1,0 +1,173 @@
+{
+  "name": "John F. Kennedybrug",
+  "file": "kennedybrug-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177017,
+    316930.76
+  ],
+  "xAxis": [
+    0.9407,
+    -0.33924
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 89.89,
+  "groundSamplePoints": [
+    [
+      -65,
+      24
+    ],
+    [
+      -65,
+      -24
+    ],
+    [
+      -20,
+      24
+    ],
+    [
+      -20,
+      -24
+    ],
+    [
+      20,
+      24
+    ],
+    [
+      20,
+      -24
+    ],
+    [
+      45,
+      24
+    ],
+    [
+      45,
+      -24
+    ]
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs het rechte oostelijke deel naar Céramique (RD-richting -19,83 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten; westelijk van x = -202,7 buigt het dek in een boog met een straal van 396 m naar -Y. Zeven nodes: road:rijbaan, road:fietspad, road:voetpad, road:voetpad-open-verharding, road:rijbaan-krul-zuid en road:fietspad-krul-zuid, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt op het dek van de zuidelijke krul), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee kokerliggers met een gezamenlijke dekplaat (27 m breed) van landhoofd tot landhoofd (596 m, wegdek NAP +52,4 m aan de westkant, +57,0 m boven de rivier en +53,5 m aan de oostkant), met een toog van 5,6 m boven de rivierpijlers naar 3,0 m midden in het hoofdveld van 112 m; zijvelden van 60 m en aanbrugvelden van 36 m op ronde kolommen (vier per rij); de twee U-vormige rivierpijlers (muur met twee taps toelopende kolommen); de aanzetten van de twee krullen naar de Maasboulevard op de westoever met hun kolommen en landhoofden; schampkanten langs alle randen, verkeerseilanden en de middenberm. Lantaarnpalen, leuningen, geleiderails als staaf en de bebording zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Maas naast de rivierpijlers bemonsterd; groundHeight is de PDOK-waterspiegel daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kennedybrug-maastricht-1-1500.stl"
+  ],
+  "realWorld": {
+    "lengthM": 596,
+    "deckWidthM": 27,
+    "mainSpanM": 112.1,
+    "sideSpanM": 60.5,
+    "approachSpanM": 36,
+    "pierCentresM": [
+      -56.05,
+      56.05
+    ],
+    "alignment": {
+      "xt": -202.68,
+      "radius": 396
+    },
+    "profile": {
+      "crestNap": 57.01,
+      "flat": [
+        -40.8,
+        41.8
+      ],
+      "radius": 4300,
+      "gradeWest": 0.0185,
+      "gradeEast": 0.0194
+    },
+    "superelevation": {
+      "value": 0.036,
+      "full": -215,
+      "zero": -175
+    },
+    "depthM": {
+      "pier": 5.6,
+      "mid": 3,
+      "approach": 2.2,
+      "pierHalf": 3.05,
+      "side": 116.5
+    },
+    "boxes": {
+      "centresM": [
+        -6.8,
+        6.8
+      ],
+      "bottomHalf": 3.1,
+      "topHalf": 4.6
+    },
+    "ramps": {
+      "north": {
+        "centre": [
+          -181.63,
+          64.45
+        ],
+        "knots": [
+          [
+            90,
+            51.53
+          ],
+          [
+            120,
+            52.13
+          ],
+          [
+            234,
+            54.42
+          ],
+          [
+            294,
+            55.36
+          ],
+          [
+            323,
+            56.44
+          ],
+          [
+            340,
+            57.07
+          ]
+        ]
+      },
+      "south": {
+        "centre": [
+          -168.65,
+          -65.88
+        ],
+        "knots": [
+          [
+            30,
+            57
+          ],
+          [
+            44,
+            56.44
+          ],
+          [
+            70,
+            55.35
+          ],
+          [
+            90,
+            54.92
+          ],
+          [
+            222,
+            52.13
+          ],
+          [
+            255,
+            51.4
+          ]
+        ]
+      }
+    },
+    "waterNapM": 44
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/John_F._Kennedybrug_(Maastricht)",
+    "PDOK BGT overbruggingsdeel (L0002.119b2bf7ea9640f3ba164b9d9b20246e, G0935.f71ef2ef35924cea9e25a03913abc6c5, rivierpijlers en kolommen), wegdeel en ondersteunend wegdeel, EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor het lengteprofiel, de verkanting en de hellingen van de krullen; PDOK-luchtfoto voor de indeling van het dek",
+    "Wikimedia Commons: John F. Kennedybrug Maastricht.jpg, Meuse in Maastricht with Kennedybrug and Gouvernement.JPG, 20130504 Maastricht Kennedybrug 01/03/05/07.JPG, 2020 Maastricht, Maaspuntweg, Kennedybrug.jpg, Maastricht, krul Kennedybrug, GAM 6830.jpg"
+  ]
+}
