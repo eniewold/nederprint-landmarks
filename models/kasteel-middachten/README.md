@@ -15,6 +15,8 @@ Oorsprong RD `[201850,448073]`; +X −10° in RD langs de gevel, +Y 90° linksom
 
 Referentie is water NAP +10,19 m. Er zijn geen bruikbare AHN-waterretouren; afgeleid uit PDOK-water 53,80 m minus de lokale mediaan van PDOK-LoD2 versus AHN (43,616 m). De drie waterbemonsteringspunten `[-21,0]`, `[21,0]`, `[0,-22]` geven PDOK 53,79–53,82 m. Terugval 53,80 m; geen extra verticale verschuiving. De onderkant zit 0,80 m onder het water en er is geen dubbel terrein.
 
+Naast het BAG-gebouw bevat PDOK een foutief opgehoogd BGT-pandvlak **G0275.7fdb612465a0483b8ec5712ddfb46d47** (`_3df_id: 01KPKJZYS1HWKF4DWBMDC8ZDHW`). Dat terrein loopt binnen de hoofdgebouwcontour tot ellipsoïdehoogte 74,50 m en stak door de vensternissen en ondergevels. Alleen dit vlak staat in `replacesTerrain`, in JSON én generator. Het doorlopende erf, de voorburg en het grachtwater blijven PDOK-objecten. De geometrie, plaatsing en printbestanden van het kasteel zijn hiervoor niet veranderd.
+
 | Deel | Hoogte NAP | Herkomst |
 | --- | --- | --- |
 | Goot | 27,70 m | AHN 0,5 m / foto |
@@ -44,7 +46,8 @@ De brede ronde brugboog is versmald tot een centrale puntboog van 55° met de aa
 - AHN-vergelijking op 3.671 gebouwcellen: 75,3% binnen 1 m, 87,3% binnen 2 m, mediane afwijking 0,43 m. Printvereenvoudigingen en details uit foto zijn expliciet.
 - Vier gelijke schuine camera's naast PDOK en RCE-foto's gecontroleerd; op elke zijde extra nissen, kapellen, gevelgeleding, parapetten of brugdetails. PDOK mist de hoofdbrug.
 - Echte preview / 3MF 120 × 120 m op 1:1000: geheel past, 120 × 120 mm, hoogte 25,6 mm. Water blijft aanwezig, brug bereikt de voorburg.
-- Monumenttest plus beide landmarksuites: 301 tests groen.
+- Terreinregressie (10 oktober 2026): beide delen van het foutieve pandvlak uit de twee PDOK-terreintegels verdwijnen in de export; grachtwater en noordelijk voorburgerf behouden hun oorspronkelijke objectaantallen. De volledige 120 × 120 mm preview/3MF is opnieuw geëxporteerd en gecontroleerd.
+- Monumenttest plus beide landmarksuites: 307 tests groen, inclusief de terreinvervanging.
 - [Controlekaart](http://localhost:3063/kaart/52.0190283/6.0697280/240/1x1/0): controleer de brugboog en aansluiting op de voorburg, de zijparapetten en de ingang; `landmarks=0` geeft het PDOK-hoofdgebouw terug.
 
 ## Bronnen

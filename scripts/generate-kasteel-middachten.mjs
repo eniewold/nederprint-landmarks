@@ -419,6 +419,9 @@ await writeFile(
       ...(META.groundSamplePoints ? { groundSamplePoints: META.groundSamplePoints } : {}),
       ...(META.groundHeight !== undefined ? { groundHeight: META.groundHeight } : {}),
       ...(META.replacesBuildings?.length ? { replacesBuildings: META.replacesBuildings.map((id) => `NL.IMBAG.Pand.${id}`) } : {}),
+      // PDOK reconstrueert ook het BGT-pand als terrein tot boven de gevelvensters.
+      // Alleen dat pandvlak vervangen; grachtwater en doorlopend voorburgerf blijven.
+      replacesTerrain: ["G0275.7fdb612465a0483b8ec5712ddfb46d47"],
       description: META.description,
       printFiles,
       realWorld: {

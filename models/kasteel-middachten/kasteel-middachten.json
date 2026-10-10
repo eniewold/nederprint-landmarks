@@ -31,6 +31,9 @@
   "replacesBuildings": [
     "NL.IMBAG.Pand.0275100000018888"
   ],
+  "replacesTerrain": [
+    "G0275.7fdb612465a0483b8ec5712ddfb46d47"
+  ],
   "description": "Oorsprong op het grachtwater NAP +10,19 m (PDOK-water minus lokale geoid-offset, geen AHN-waterretour); +X -10 graden in RD; blokhuis met vier risalieten, afgeplat schilddak, zijparapetten, centrale lichtkoepel, ingangspilasters en fronton, vensternissen, kapellen, acht schoorstenen en boogbrug; bordes verhoogd tot NAP 19 m om hoger PDOK-terrein af te dekken; brede brugopening versmald tot 55 graden voor steunvrij printen, fijne ornamenten en metalen brughek weggelaten.",
   "printFiles": [
     "kasteel-middachten-1-1000.stl"
