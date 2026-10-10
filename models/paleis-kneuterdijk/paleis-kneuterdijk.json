@@ -1,0 +1,58 @@
+{
+  "name": "Paleis Kneuterdijk",
+  "file": "paleis-kneuterdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81033,
+    455334
+  ],
+  "xAxis": [
+    0.8660254037844387,
+    0.49999999999999994
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 45.53342207476514,
+  "groundSamplePoints": [
+    [
+      -20,
+      -16
+    ],
+    [
+      15,
+      10
+    ],
+    [
+      -16,
+      44
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000343602"
+  ],
+  "description": "Volledig historisch paleispand met entree en achtzijdige koepel, afgeknotte schilddaken van west- en oostvleugel, Heulstraatvleugel, lage verbindingsvleugel en Gotische zaal met flauw zadeldak, gevelranden en steunberen. Beide tuinen open; blinde vensternissen en roosvensters. Dakvlakken uit BAG/AHN/3D BAG.",
+  "realWorld": {
+    "groundNapM": 2,
+    "palaceRoofNapM": 19.95,
+    "cupolaTipNapM": 22.92,
+    "gothicHallRidgeNapM": 20.3,
+    "connectorRoofNapM": 10.3,
+    "roofAxisDegrees": 30,
+    "minimumFreeStandingM": 1
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000343602",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17626",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17869",
+    "https://www.raadvanstate.nl/actueel/nieuws/augustus/open-monumentendagen-2022/",
+    "https://commons.wikimedia.org/wiki/File:Achterzijde_Paleis_Kneuterdijk.JPG",
+    "https://commons.wikimedia.org/wiki/File:Gotische_zaal_met_tuin.JPG",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel;_middenpartij_heeft_een_achtzijdige_koepelbekroning_-_%27s-Gravenhage_-_20390103_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "paleis-kneuterdijk-1-1000.stl"
+  ]
+}
