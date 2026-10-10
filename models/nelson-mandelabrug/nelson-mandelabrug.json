@@ -1,0 +1,145 @@
+{
+  "name": "Nelson Mandelabrug",
+  "file": "nelson-mandelabrug.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    190231.098,
+    443540.899
+  ],
+  "xAxis": [
+    0.5790130018829376,
+    0.8153183081781675
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      40
+    ],
+    [
+      0,
+      -50
+    ],
+    [
+      50,
+      40
+    ],
+    [
+      50,
+      -50
+    ]
+  ],
+  "replacesTerrain": [
+    "G0202.2af034b7ca6712c4e05343604191f184",
+    "G0202.2af034b8d4ac12c4e05343604191f184"
+  ],
+  "printFiles": [
+    "nelson-mandelabrug-1-1000.stl"
+  ],
+  "description": "Twee betonnen kokerliggers met variabele hoogten boven de rivierpijlers, het volledige noordelijke viaduct met lus en BGT-kolommen, aparte wegdelen met BGT-functies; NAP-hoogten relatief aan Rijnwater +8,25 m, bemonsterd op het water. Dekvlakken en lofts, geen gestapelde hoogtelagen; de STL bevat doorlopende printwanden en 43-graden-schouders. Zie README voor schattingen.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -114,
+        25.1
+      ],
+      [
+        -100,
+        25.2
+      ],
+      [
+        -75,
+        25.6
+      ],
+      [
+        -50,
+        25.9
+      ],
+      [
+        -25,
+        26.05
+      ],
+      [
+        0,
+        26.267
+      ],
+      [
+        25,
+        26.424
+      ],
+      [
+        50,
+        26.45
+      ],
+      [
+        75,
+        26.228
+      ],
+      [
+        100,
+        25.914
+      ],
+      [
+        125,
+        25.53
+      ],
+      [
+        150,
+        24.836
+      ],
+      [
+        175,
+        24.048
+      ],
+      [
+        200,
+        23.22
+      ],
+      [
+        225,
+        22.655
+      ],
+      [
+        250,
+        22.082
+      ],
+      [
+        275,
+        21.495
+      ],
+      [
+        300,
+        20.863
+      ],
+      [
+        325,
+        20.311
+      ],
+      [
+        340,
+        19.96
+      ]
+    ],
+    "waterNapM": 8.25,
+    "slabDepthM": 1.35,
+    "boxDepthM": [
+      2.4,
+      6.2
+    ],
+    "minimumColumnWidthM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nelson_Mandelabrug_(Arnhem)",
+    "https://www.cementonline.nl/artikelen/constructieve-renovatie-nelson-mandelabrug",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Nelson_Mandelabrug.jpg",
+    "https://commons.wikimedia.org/wiki/File:Onder_Nelson_Mandelabrug.jpg",
+    "https://commons.wikimedia.org/wiki/File:Arnhem_Blick_von_der_Grote_Kerk_Sint_Eusebius_02.jpg"
+  ]
+}
+
