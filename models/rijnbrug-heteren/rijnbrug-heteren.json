@@ -1,0 +1,153 @@
+{
+  "name": "Rijnbrug bij Heteren",
+  "file": "rijnbrug-heteren.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    181190,
+    441820
+  ],
+  "xAxis": [
+    0.25498546624262447,
+    0.9669448857122269
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 49.56273,
+  "groundSamplePoints": [
+    [
+      -320,
+      10
+    ],
+    [
+      -320,
+      90
+    ],
+    [
+      -295,
+      10
+    ],
+    [
+      -295,
+      90
+    ]
+  ],
+  "replacesTerrain": [
+    "L0002.dcefac4395a04be091b10ab049db608e"
+  ],
+  "printFiles": [
+    "rijnbrug-heteren-1-1000.stl"
+  ],
+  "description": "Volledige gebogen BGT-dekcontour, AHN-wegprofiel, twee kokerliggers met rivierhaunches, BGT-pijlers en expliciet geschatte ontbrekende pijlers; afzonderlijke 0,5 m BGT-wegdelen. Waterbasis geschat NAP +7,5 m, PDOK ellipsoïde 49,56273 m. Kokeronderzijde en dekdikte geschat; STL met geïntegreerde doorlopende printwanden.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -486,
+        23.9
+      ],
+      [
+        -480,
+        23.952
+      ],
+      [
+        -420,
+        24.55
+      ],
+      [
+        -360,
+        24.852
+      ],
+      [
+        -300,
+        24.85
+      ],
+      [
+        -240,
+        24.837
+      ],
+      [
+        -200,
+        24.886
+      ],
+      [
+        -140,
+        24.478
+      ],
+      [
+        -100,
+        24.224
+      ],
+      [
+        -40,
+        23.958
+      ],
+      [
+        20,
+        23.431
+      ],
+      [
+        80,
+        23.148
+      ],
+      [
+        140,
+        22.811
+      ],
+      [
+        200,
+        22.208
+      ],
+      [
+        260,
+        22.047
+      ],
+      [
+        320,
+        21.394
+      ],
+      [
+        380,
+        20.934
+      ],
+      [
+        440,
+        20.518
+      ],
+      [
+        480,
+        20.38
+      ],
+      [
+        500,
+        20.2
+      ]
+    ],
+    "waterNapM": 7.5,
+    "riverPiersX": [
+      -343.5,
+      -222.8
+    ],
+    "estimatedPiersX": [
+      -343.5,
+      -102.8,
+      235,
+      295,
+      355,
+      415,
+      475
+    ],
+    "estimatedBoxDepthM": [
+      2.1,
+      5.5
+    ],
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Rijnbrug_bij_Heteren",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederrijnbrug_Heteren"
+  ]
+}
