@@ -1,0 +1,168 @@
+{
+  "name": "Nieuwe IJsselbrug",
+  "file": "nieuwe-ijsselbrug-zwolle.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    200268.2018913043,
+    501530.4764130435
+  ],
+  "xAxis": [
+    0.7557147313794453,
+    0.6549009427204185
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      40,
+      -45
+    ],
+    [
+      40,
+      45
+    ],
+    [
+      75,
+      -45
+    ],
+    [
+      75,
+      45
+    ]
+  ],
+  "replacesTerrain": [
+    "L0002.b1b0e31a2cb546b09159ee675288a729"
+  ],
+  "printFiles": [
+    "nieuwe-ijsselbrug-zwolle-1-1000.stl"
+  ],
+  "description": "Volledige BGT-dekcontour met twee betonnen kokerlofts, verdieping boven rivierpijlers, aanbrugsteunen, eigen BGT-autosnelwegnodes en 0,5 m weglaag. NAP-profiel uit AHN; waterbasis +1,35 m geschat uit PDOK/plaatselijke hoogtevergelijking. Onderbouwmaten geschat uit foto’s, zie README. STL met geïntegreerde 1 mm wanden en 43 graden schouders.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -332,
+        13.76
+      ],
+      [
+        -315,
+        14.002
+      ],
+      [
+        -285,
+        14.37
+      ],
+      [
+        -255,
+        14.801
+      ],
+      [
+        -225,
+        15.174
+      ],
+      [
+        -195,
+        15.537
+      ],
+      [
+        -165,
+        15.85
+      ],
+      [
+        -135,
+        16.149
+      ],
+      [
+        -105,
+        16.375
+      ],
+      [
+        -75,
+        16.653
+      ],
+      [
+        -45,
+        16.772
+      ],
+      [
+        -15,
+        16.775
+      ],
+      [
+        15,
+        16.625
+      ],
+      [
+        45,
+        16.578
+      ],
+      [
+        75,
+        16.681
+      ],
+      [
+        105,
+        16.73
+      ],
+      [
+        135,
+        16.67
+      ],
+      [
+        165,
+        16.501
+      ],
+      [
+        195,
+        16.262
+      ],
+      [
+        225,
+        15.859
+      ],
+      [
+        255,
+        15.634
+      ],
+      [
+        285,
+        15.395
+      ],
+      [
+        315,
+        15
+      ],
+      [
+        332,
+        14.81
+      ]
+    ],
+    "waterNapM": 1.35,
+    "boxDepthM": [
+      2.2,
+      6.5
+    ],
+    "riverPiersX": [
+      -38.48,
+      111.5
+    ],
+    "estimatedApproachPiersX": [
+      -275,
+      -220,
+      -165,
+      -110,
+      166.5,
+      221.5,
+      276.5
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_IJsselbrug_(Zwolle)",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Nieuwe_IJsselbrug.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Nieuwe_IJsselbrug_(Zwolle)"
+  ]
+}
