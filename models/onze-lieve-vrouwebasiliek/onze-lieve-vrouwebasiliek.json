@@ -1,0 +1,61 @@
+{
+  "name": "Onze-Lieve-Vrouwebasiliek",
+  "file": "onze-lieve-vrouwebasiliek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176585,
+    317556
+  ],
+  "xAxis": [
+    0.9961946980917455,
+    0.08715574274765817
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 94.15919492867137,
+  "groundSamplePoints": [
+    [
+      -39,
+      -8
+    ],
+    [
+      39,
+      -8
+    ],
+    [
+      -4,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000021253"
+  ],
+  "description": "Basilicaal schip met dwarskappen, rond oostkoor, twee oosttorens met zadeldaken, westwerk met ronde traptorens, kapellen en lage aanbouwen; kloostergangen rondom een open pandhof. Regelmatige bouwdelen en dakvlakken, blinde vensternissen. +X ongeveer oost, Z omhoog.",
+  "realWorld": {
+    "groundNapM": 48.6,
+    "naveRidgeNapM": 73.82,
+    "westworkRidgeNapM": 79.6,
+    "northWestTipNapM": 90.3,
+    "southWestTipNapM": 89.35,
+    "eastTowerRidgeNapM": 77.5,
+    "roofAxisDegrees": 5,
+    "minimumFreeStandingM": 0.95,
+    "courtyardOpen": true
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0935100000021253",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/27454",
+    "https://www.zichtopmaastricht.nl/locaties/onze-lieve-vrouwebasiliek-het-kerkgebouw",
+    "https://commons.wikimedia.org/wiki/File:Maastricht_Basiliek_Onze_Lieve_Vrouwe_ten_Tenhemelopneming_Apsis_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastricht_RK_OLV_basiliek_7905.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastricht_RK_OLV_pandhof_7918.jpg",
+    "https://commons.wikimedia.org/wiki/File:West_toren_en_transept_vanaf_een_punt_pl.m._2_meter_boven_de_nok_van_het_dak_van_de_school_in_de_Stokstraat_-_Maastricht_-_20146457_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "onze-lieve-vrouwebasiliek-1-1000.stl"
+  ]
+}
