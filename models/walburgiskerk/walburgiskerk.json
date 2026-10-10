@@ -1,0 +1,60 @@
+{
+  "name": "Walburgiskerk",
+  "file": "walburgiskerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    210347,
+    461575
+  ],
+  "xAxis": [
+    0.9612616959383189,
+    -0.27563735581699916
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 52.968301959211026,
+  "groundSamplePoints": [
+    [
+      -41,
+      -1
+    ],
+    [
+      0,
+      -38
+    ],
+    [
+      -19,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0301100000003887"
+  ],
+  "description": "Drie langsdaken met westelijke schilden, transept, hoog koor met dakruiter, dwarse koorkapellen en polygonale koorsluiting, Librije, noordportaal en zuidelijke aanbouwen; vierkante toren met achtkant, klokvormige kap en gesloten lantaarn. Steunberen, pinakels, balustradebanden en blinde vensternissen. Dakvlakken uit BAG/AHN/3D BAG.",
+  "realWorld": {
+    "groundNapM": 9.6,
+    "naveRidgeNapM": 35.6,
+    "northAisleRidgeNapM": 33.39,
+    "southAisleRidgeNapM": 32.78,
+    "choirRidgeNapM": 38.65,
+    "towerRoofTipNapM": 80.3,
+    "choirTurretTipNapM": 48,
+    "roofAxisDegrees": -16,
+    "minimumFreeStandingM": 0.95
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0301100000003887",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41195",
+    "https://walburgiskerk.nl/",
+    "https://commons.wikimedia.org/wiki/File:Zutphen_Walburgiskirche.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dak_van_de_St._Walburgskerk_te_Zutphen_gezien_vanaf_de_toren_-_Zutphen_-_20226815_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Het_koor_van_de_St._Walburgskerk_te_Zutphen_gezien_vanuit_het_noorden_-_Zutphen_-_20226529_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "walburgiskerk-1-1000.stl"
+  ]
+}
