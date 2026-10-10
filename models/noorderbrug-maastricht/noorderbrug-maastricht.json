@@ -1,0 +1,143 @@
+{
+  "name": "Noorderbrug",
+  "file": "noorderbrug-maastricht.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    176839.5,
+    318957.5
+  ],
+  "xAxis": [
+    0.9975589671416266,
+    0.06982912769991387
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 89.80904,
+  "groundSamplePoints": [
+    [
+      0,
+      -40
+    ],
+    [
+      0,
+      40
+    ],
+    [
+      30,
+      -40
+    ],
+    [
+      30,
+      40
+    ]
+  ],
+  "replacesTerrain": [
+    "G0935.138d37281e454b438a648fb5129ee536",
+    "G0935.59ccd1f3545f407381055424478e8741"
+  ],
+  "printFiles": [
+    "noorderbrug-maastricht-1-1000.stl"
+  ],
+  "description": "Volledige huidige BGT-dekken, inclusief de westelijke bocht van 2017, AHN-wegprofiel, twee kokerliggers met rivierhaunches en BGT-pijlers; eigen 0,5 m BGT-wegdelen. Oorsprong op Maaswater NAP +44 m, PDOK ellipsoïde 89,809 m. Kokeronderzijde en dekdikte geschat; STL met doorlopende 1 mm printwanden en 43 graden schouders.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -710,
+        57.7
+      ],
+      [
+        -670,
+        57.85
+      ],
+      [
+        -610,
+        58.11
+      ],
+      [
+        -520,
+        58.18
+      ],
+      [
+        -460,
+        58.1
+      ],
+      [
+        -400,
+        58.1
+      ],
+      [
+        -340,
+        58.05
+      ],
+      [
+        -310,
+        57.7
+      ],
+      [
+        -235,
+        57.76
+      ],
+      [
+        -160,
+        57.375
+      ],
+      [
+        -115,
+        57.2
+      ],
+      [
+        -55,
+        57.166
+      ],
+      [
+        5,
+        56.789
+      ],
+      [
+        65,
+        56.595
+      ],
+      [
+        110,
+        56.094
+      ],
+      [
+        155,
+        55.294
+      ],
+      [
+        200,
+        54.184
+      ],
+      [
+        245,
+        52.831
+      ],
+      [
+        286,
+        51.6
+      ]
+    ],
+    "waterNapM": 44,
+    "riverPiersX": [
+      -52.3,
+      69.7
+    ],
+    "estimatedBoxDepthM": [
+      2.1,
+      5.9
+    ],
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Noorderbrug_(Maastricht)",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:2018-Maastricht,_Noorderbrug.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastricht-Noorderbrug_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:2019_Maastricht,_Bosscherweg,_afrit_Noorderbrug.jpg"
+  ]
+}
