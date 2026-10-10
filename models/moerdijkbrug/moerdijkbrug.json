@@ -1,0 +1,61 @@
+{
+  "name": "Moerdijkbrug",
+  "file": "moerdijkbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103133.96263658878,
+    414561.6174078211
+  ],
+  "xAxis": [
+    -0.34287669759172834,
+    0.9393804182803633
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 44.03235065512057,
+  "groundSamplePoints": [
+    [
+      -30,
+      -30
+    ],
+    [
+      30,
+      -30
+    ]
+  ],
+  "replacesBuildings": [],
+  "replacesTerrain": [
+    "L0002.c63bd45d152149c392d8d6050d9ef2e6"
+  ],
+  "description": "Brede trapeziumkoker (bronhoogte 3,50 m), negen letterlijke BGT-rivierpijlerbasissen met dubbele taps toelopende kolommen, gemeten AHN-dekprofiel en twee actuele BGT-autosnelwegdelen als ��n wegdekvolume. Geen afzonderlijk fietspad in de actuele BGT. Kolommen, kokerbreedte en schampkanten geschat. Wegdeklaag .5 m; gezamenlijke opvulling in de constructie. NAP minus .7 m.",
+  "realWorld": {
+    "lengthM": 1042.525,
+    "deckWidthM": 45.57,
+    "deckNapM": [
+      11.064,
+      14.398
+    ],
+    "constructionHeightM": 3.5,
+    "riverPierX": [
+      203.469,
+      101.47,
+      -0.528,
+      -306.656,
+      305.468,
+      -204.667,
+      407.467,
+      -102.527,
+      -408.63
+    ]
+  },
+  "sources": [
+    "https://bruggenstichting.nl/71-bruggen/bruggen-2003/bruggen-juni-2003/530-evolutie-van-de-verschijningsvorm-van-vaste-bruggen-vanaf-1940",
+    "https://commons.wikimedia.org/wiki/File:Road_bridge_motor_way_A16_Moerdijk.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nieuw_brugdeel_Moerdijkbrug_geplaatst_het_nieuwe_deel_tussen_de_twee_oude_brugd,_Bestanddeelnr_928-4998.jpg",
+    "PDOK actuele BGT overbruggingsdeel en wegdelen, AHN DSM/DTM .5 m en actuele luchtfoto"
+  ],
+  "printFiles": [
+    "moerdijkbrug-1-1000.stl"
+  ]
+}
