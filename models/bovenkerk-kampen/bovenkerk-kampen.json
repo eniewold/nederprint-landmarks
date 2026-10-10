@@ -1,0 +1,71 @@
+{
+  "name": "Bovenkerk",
+  "file": "bovenkerk-kampen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191155.25,
+    507617.46
+  ],
+  "xAxis": [
+    0.990748,
+    0.135716
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -52,
+      -12
+    ],
+    [
+      -52,
+      12
+    ],
+    [
+      -20,
+      -24
+    ],
+    [
+      -20,
+      25
+    ],
+    [
+      26,
+      -21
+    ],
+    [
+      26,
+      21
+    ]
+  ],
+  "groundHeight": 45.11,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0166100000016074",
+    "NL.IMBAG.Pand.0166100000016070"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (191155,25, 507617,46), de viering, op het maaiveld (NAP +2,57 m), +X langs de nok van schip en koor naar het oostnoordoosten (7,8 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noordnoordwesten. Eén node building:kerk uit dakvlakken en bouwdelen: schip en koor onder één nok op +33,9 m met een zevenzijdige sluiting, dwarsschip (+34,05 m) met afgewolfde kopgevels en dakruiter, zijbeuken met vijf dwarse kappen per kant, noord- en zuidportaal, kooromgang met dwarse en straalsgewijze kappen, borstwering, steunberen, pinakels, en de westtoren met schilddak en achtzijdige naaldspits tot +72 m. Onderkant 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal, op de spitsbogen na. Vervangt de PDOK-reconstructie van de kerk en de toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "bovenkerk-kampen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 81.61,
+    "widthM": 46.81,
+    "highestPointM": 72,
+    "towerTopM": 72,
+    "towerEaveM": 41.5,
+    "naveRidgeM": 33.9,
+    "transeptRidgeM": 34.05,
+    "aisleRidgeM": 17.5,
+    "groundNapM": 2.57,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Bovenkerk_(Kampen)",
+    "PDOK BAG panden 0166100000016074 (kerk) en 0166100000016070 (toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, kilgoten, toren en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en ligging van de dwarse kappen",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de toren, het koor, de dakruiter en de portalen"
+  ]
+}
