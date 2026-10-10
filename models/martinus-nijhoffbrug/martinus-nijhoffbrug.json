@@ -1,0 +1,63 @@
+{
+  "name": "Martinus Nijhoffbrug",
+  "file": "martinus-nijhoffbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    146235.73278093402,
+    425523.44653571636
+  ],
+  "xAxis": [
+    -0.10906430011234479,
+    0.9940346967993644
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 46.5138441096112,
+  "groundSamplePoints": [
+    [
+      -30,
+      -35
+    ],
+    [
+      30,
+      -35
+    ]
+  ],
+  "replacesBuildings": [],
+  "replacesTerrain": [
+    "L0002.52b681f147c5438a89dd464d42da993c"
+  ],
+  "description": "Vier betonnen pylonen tot NAP +84 m, 120 verdikte tuiribben op .9 m tuivlakken met 50 graden spitsopeningen, betonnen kokerdek met AHN-lengteprofiel en gebogen noordelijke aanbrug volgens BGT. Drie road-nodes met BGT-autosnelweg en twee soorten fietspad. Constructie van de wegdeklaag .5 m gescheiden inclusief guards voor volledige tuivlakken. Geschatte koker- en pijlerdetails, tuianchors en printaanpassingen. NAP minus 3.55 m.",
+  "realWorld": {
+    "lengthM": 996.82,
+    "mainSpanM": 255.031,
+    "pylonX": [
+      -127.51572343,
+      127.51572343
+    ],
+    "pylonYNapM": 18.3,
+    "pylonTopNapM": 84,
+    "cableCount": 120,
+    "approachPierX": [
+      211,
+      281.5,
+      352,
+      422.5,
+      493,
+      563.5,
+      634,
+      704.5
+    ]
+  },
+  "sources": [
+    "https://bruggenstichting.nl/70-bruggen/bruggen-2003/bruggen-september-2003/540-martinus-nijhoffbrug",
+    "https://www.cultureelerfgoed.nl/site/binaries/site-content/collections/documents/2006/01/01/bruggen-categoriaal-onderzoek-wederopbouw-1940-1965/bruggen.pdf",
+    "https://commons.wikimedia.org/wiki/File:20140722_Martinus_Nijhoffbrug_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Martinus_Nijhoffbrug_2016.jpg",
+    "PDOK actuele BGT, AHN DSM/DTM .5 m, actuele luchtfoto"
+  ],
+  "printFiles": [
+    "martinus-nijhoffbrug-1-1000.stl"
+  ]
+}
