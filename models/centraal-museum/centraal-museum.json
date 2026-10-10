@@ -1,0 +1,67 @@
+{
+  "name": "Centraal Museum",
+  "file": "centraal-museum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137085,
+    455070
+  ],
+  "xAxis": [
+    0.838671,
+    0.544639
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.36,
+  "groundSamplePoints": [
+    [
+      0,
+      21
+    ],
+    [
+      -10,
+      21
+    ],
+    [
+      -23,
+      0
+    ],
+    [
+      5,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000029906",
+    "NL.IMBAG.Pand.0344100000081865",
+    "NL.IMBAG.Pand.0344100000081866"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (137085, 455070) in de kloostertuin op het maaiveld (NAP +3,1 m), +X langs de Agnietenstraat naar het noordoosten (33 graden vanaf de RD-X-as) en +Y loodrecht daarop naar de straat. Drie nodes: building:agnietenklooster (het voormalige Agnietenklooster, BAG 0344100000029906: straatvleugel met zadeldak, nok +20,0 m NAP; hoekpaviljoen met topgevels aan straat en plein; westvleugel met twee evenwijdige daken van 61 graden, in het noorden met een plat dak op +20,0 m en in het zuiden met een kilgoot op +17,1 m; middenvleugel met lisenen, nok +20,65 m en tien dakkapellen; kloosterkapel met nok +23,6 m en veelhoekige sluiting; ronde traptoren met lantaarn en spits tot +26,3 m; glazen trapschijf +17,0 m en glazen entreegebouw +8,5 m), building:agnietenstraat-3 (mansardehuis met plat dak +21,2 tot +21,4 m, dakkapellen en schoorstenen, laag achterhuis +12,75 m, glazen gebouw +7,3 m en achtkante paviljoenkap +20,9 m) en building:stallen (de stallen van 1835 onder schilddaken, nok +13,72 m, goot ongeveer +10,2 m, met een steilere glazen strook aan de tuinkant). Vensters als spitse nissen van 0,3 tot 0,4 m. Onderkant 0,5 m onder het maaiveld; het maaiveld wordt op straat, op het Nicolaaskerkhof en in de tuin bemonsterd. Vervangt de PDOK-reconstructie van de drie panden. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "centraal-museum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 151.47,
+    "widthM": 95.21,
+    "highestPointM": 23.2,
+    "groundNapM": 3.1,
+    "streetRidgeNapM": 20,
+    "chapelRidgeNapM": 23.6,
+    "midRidgeNapM": 20.65,
+    "westRidgeNapM": 20,
+    "westValleyNapM": 17.1,
+    "turretTopNapM": 26.3,
+    "houseFlatNapM": 21.2,
+    "stableRidgeNapM": 13.72,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Centraal_Museum",
+    "PDOK BAG panden 0344100000029906, 0344100000081865 en 0344100000081866, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, dakkapellen, schoorstenen, traptoren en maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl, opname 2023): dakhellingen, platte dak van de westvleugel, glazen gebouwen en paviljoenkap",
+    "PDOK luchtfoto (Actueel_orthoHR): indeling van de daken en dakkapellen",
+    "Wikimedia Commons: foto's van de straatgevel, de kapel, de tuingevels en de traptoren"
+  ]
+}
