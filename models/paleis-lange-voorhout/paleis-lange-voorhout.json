@@ -1,0 +1,64 @@
+{
+  "name": "Paleis Lange Voorhout",
+  "file": "paleis-lange-voorhout.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81461,
+    455562
+  ],
+  "xAxis": [
+    0.5000000000000001,
+    -0.8660254037844386
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 44.32157050307381,
+  "groundSamplePoints": [
+    [
+      -7,
+      -16
+    ],
+    [
+      7,
+      -16
+    ],
+    [
+      0,
+      22
+    ],
+    [
+      0,
+      33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000339315",
+    "NL.IMBAG.Pand.0518100000272157"
+  ],
+  "description": "Paleis met steil voordak, gemeten fronton, vlakke en flauwe dakvlakken rond een vierzijdige lichtkap, lage achteraanbouw, vensternissen en gesteund balkon; losstaand U-vormig koetshuis met eigen dakvlakken, fronton, pilasters en poortnissen. De tuin en het koetshuishof blijven open.",
+  "realWorld": {
+    "groundNapM": 0.8,
+    "palaceRoofNapM": 21.2,
+    "centralRoofLightNapM": 22.36,
+    "frontPedimentNapM": 18.63,
+    "coachRoofNapM": 11.6,
+    "roofAxisDegrees": -60,
+    "minimumFreeStandingM": 1
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000339315",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000272157",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17723",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17982",
+    "https://escherinhetpaleis.nl/het-paleis",
+    "https://www.monumentenzorgdenhaag.nl/monumenten/smidswater-13-tm-16",
+    "https://commons.wikimedia.org/wiki/File:17723_EscherMuseum.jpg",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_VOORGEVEL_-_%27s-Gravenhage_-_20276482_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "paleis-lange-voorhout-1-1000.stl"
+  ]
+}
