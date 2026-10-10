@@ -1,0 +1,72 @@
+{
+  "name": "Museum Voorlinden",
+  "file": "museum-voorlinden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83800.53,
+    459510.86
+  ],
+  "xAxis": [
+    0.66197,
+    0.74953
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 45.41,
+  "groundSamplePoints": [
+    [
+      -70,
+      0
+    ],
+    [
+      0,
+      36
+    ],
+    [
+      70,
+      0
+    ],
+    [
+      20,
+      -36
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0629100000021915"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (83800,53, 459510,86), het hart van het BAG-pand (de dakrand), op het maaiveld (NAP +1,95 m), +X langs de lange gevels naar het noordoosten (48,55 graden vanaf de RD-X-as) en +Y naar het noordwesten. Node building:museum: het platte zonnedak van 122,2 bij 54,7 m (bovenkant +8,35 m, dakrand 1,5 m dik, boven de grote zaal aan de noordoostkop +9,13 m) op 34 kolompijlers van 0,9 m (in het echt paren slanke kolommen), het gesloten volume van natuursteen en glas 5,3 m terug van de lange dakranden (wanden tot +6,0 m, glazen vakken 1,2 m terug, entree 4 m diep aan de noordwestzijde) en de Skyspace van Turrell in een opening in het dak (piramidekap tot +7,95 m). Node road:terras: het stenen terras onder het overstek (+0,15 m). Onderkant op 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "museum-voorlinden-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 122.16,
+    "widthM": 54.68,
+    "highestPointM": 9.13,
+    "roofM": [
+      122.2,
+      54.7
+    ],
+    "roofTopM": 8.35,
+    "roofEdgeThicknessM": 1.5,
+    "raisedRoofM": 9.13,
+    "volumeM": [
+      112.6,
+      44
+    ],
+    "wallTopM": 6,
+    "columns": 34,
+    "skyspaceTopM": 7.95,
+    "groundNapM": 1.95,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Museum_Voorlinden",
+    "https://building.co.uk/buildings/voorlinden-museum-a-light-touch/5084715.article",
+    "PDOK BAG pand 0629100000021915, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: het dak, de verhoogde kop, de Skyspace en het maaiveld",
+    "3D BAG NL.IMBAG.Pand.0629100000021915 (dak- en maaiveldhoogte)",
+    "PDOK luchtfoto (Actueel_orthoHR): dakrand, hoofdliggers en Skyspace-opening",
+    "Wikimedia Commons, Category:Museum Voorlinden (foto's van de hoeken en gevels)"
+  ]
+}
