@@ -1,0 +1,63 @@
+{
+  "name": "Kröller-Müller Museum",
+  "file": "kroller-muller.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    184490,
+    456500
+  ],
+  "xAxis": [
+    0.913836,
+    0.406104
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 81.17,
+  "groundSamplePoints": [
+    [
+      -115,
+      -2.5
+    ],
+    [
+      -95,
+      -2.5
+    ],
+    [
+      -60,
+      -2.5
+    ],
+    [
+      -45,
+      -2.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0228100000019793",
+    "NL.IMBAG.Pand.0228100000055941"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (184490, 456500), in het hart van het complex, op NAP +37,8 m (het pad langs de noordgevel), +X langs de gevels van Van de Velde naar het oost-noordoosten (23,96 graden vanaf de RD-X-as) en +Y loodrecht daarop langs de gangen van Quist. Eén node building:museum: het museum van Henry van de Velde (1938) met de westvleugel onder een lessenaarsdak, twee zalen met een flauw glazen zadeldak (goot +5,3/5,4 m, nok +5,9/6,0 m) en lichtkappen, het zalenblok rond de open binnenhof (+6,15 m), een lessenaarsdak naar het oosten, het hoge zalenblok met een afgeknot schilddak en lichtkap (+7,4 m) en de zuidvleugel met drie lichtstraten en een hoge zaal met schilddak (+8,6 m) boven de afgeschuinde kop; de uitbreiding van Wim Quist (1977) met lange glazen gangen onder een dunne dakplaat (+3,75 m, dakrand +4,15 m, gevel 0,6 m terug onder een kraag van 43 graden), de hoge zaal met wit dak (+8,3 m) en goot naast een open hof, het paviljoen (+9,5 m), de zaal met glasdak in het noorden (+7,6 m), de dienstvleugel (+4,3 m) met een hoge strook (+7,6 m) en het depot (+4,5 m) met twee velden van negen rijen zonnepanelen. Afgesneden op de BAG-contour; onderkant 4,2 m onder z = 0 omdat het terrein naar het noorden 3,6 m daalt; alle vlakken wijzen omhoog, staan verticaal of hangen onder hoogstens 43 graden. Vervangt de PDOK-reconstructie van het museum en van het pandje in de hof van Quist. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "kroller-muller-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 190.35,
+    "widthM": 254.15,
+    "highestPointM": 9.5,
+    "vanDeVeldeHighHallM": 8.6,
+    "vanDeVeldeLanternM": 7.4,
+    "quistGalleryRoofM": 3.75,
+    "quistGlassHallM": 8.3,
+    "quistRecessM": 0.6,
+    "pavilionM": 9.5,
+    "groundNapM": 37.8,
+    "baseM": -4.2
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kr%C3%B6ller-M%C3%BCller_Museum",
+    "PDOK BAG panden 0228100000019793 en 0228100000055941, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak- en goothoogtes, profielen van de zadeldaken en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): de indeling van de daken en de lichtkappen",
+    "Wikimedia Commons, categorie Kröller-Müller Museum: de gevels (alleen bekeken)"
+  ]
+}
