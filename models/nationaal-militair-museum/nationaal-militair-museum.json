@@ -1,0 +1,83 @@
+{
+  "name": "Nationaal Militair Museum",
+  "file": "nationaal-militair-museum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    147385.76,
+    460368.97
+  ],
+  "xAxis": [
+    0.780976,
+    -0.624561
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -60,
+      -63
+    ],
+    [
+      60,
+      -63
+    ],
+    [
+      -135,
+      0
+    ],
+    [
+      133,
+      0
+    ],
+    [
+      -60,
+      63
+    ],
+    [
+      60,
+      63
+    ]
+  ],
+  "groundHeight": 59.08,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0342100000026223"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (147385,76, 460368,97), het midden van het dak, op het maaiveld van het platform (NAP +15,85 m), +X langs de lange gevels naar het zuidoosten (-38,65 graden vanaf de RD-X-as) en +Y naar het noordoosten (de entreekant). Node building:museum: het vlakke dak van 250,2 bij 110,3 m (bovenkant +17,94 m, NAP +33,785 m) op een vakwerk van 4,9 m diep met een zichtbare vakwerkrand (driehoekige nissen van 0,4 m), overstekken van 45 m (noordwestkop, met vier kolommen), 14,8, 10 en 9,8 m; de glazen doos van 195,5 bij 85,5 m en 13 m hoog met gevelstijlen op 5 m; de toren boven de zwarte doos (15,3 bij 20 m, +32,7 m) met een teruggezette glazen band onder de kap; het daklicht (15 bij 4,75 m, +18,95 m); het entreeblok onder het terras. Node road:entreeterras en brug: het terras (+5 m) aan de noordoostgevel en de brug naar het wandelpad in het park (+4,6 m). Onderkant op 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van BAG-pand 0342100000026223. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "nationaal-militair-museum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 250.16,
+    "widthM": 161.13,
+    "highestPointM": 32.74,
+    "roofM": [
+      250.16,
+      110.26
+    ],
+    "roofTopNapM": 33.785,
+    "trussDepthM": 4.88,
+    "hallM": [
+      195.46,
+      85.48,
+      13.05
+    ],
+    "overhangM": {
+      "northwest": 44.94,
+      "southwest": 14.78,
+      "northeast": 10,
+      "southeast": 9.76
+    },
+    "towerTopNapM": 48.59,
+    "terraceNapM": 20.9,
+    "groundNapM": 15.85,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nationaal_Militair_Museum",
+    "PDOK BAG pand 0342100000026223, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dakranden, dakvlak, toren, terras en brug, maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons, categorie Buildings of the Nationaal Militair Museum (foto's van alle kanten, alleen ter controle)"
+  ]
+}
