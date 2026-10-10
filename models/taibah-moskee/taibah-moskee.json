@@ -1,0 +1,64 @@
+{
+  "name": "Taibah-moskee",
+  "file": "taibah-moskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    127218.36,
+    480944.6
+  ],
+  "xAxis": [
+    0.69088,
+    0.72297
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 39.85,
+  "groundSamplePoints": [
+    [
+      0,
+      25.5
+    ],
+    [
+      -20,
+      2
+    ],
+    [
+      -4,
+      -27
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012125533"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (127218,36, 480944,60), het hart van de grote koepel, op het maaiveld (NAP -3,05 m), +X langs de voorgevel naar het noordoosten (46,3 graden vanaf de RD-X-as) en +Y loodrecht daarop naar de voorgevel aan de Karspeldreef. Eén node building:moskee: de vierkante gebedszaal en de achterbouw met een vlak dak op +9,3 m en een afdekker, vensternissen met spitsbogen in alle gevels, het verhoogde middenrisaliet met het grote spitsboogvenster en de kleine koepel (top +14,4 m), de grote koepel op een zestienhoekige trommel (top +17,7 m), de opstand tussen zaal en achterbouw, de ronde trapopbouw aan de metrozijde, de hoekkiosk en vier achtkante minaretten met uivormige bekroning: twee aan de voorgevel van +29,2 m met drie balkons en twee achter van +21,9 m met twee balkons. Onderkant op 0,5 m onder het maaiveld; alle vlakken wijzen omhoog, staan verticaal of hellen onder 45 graden. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "taibah-moskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 37.78,
+    "widthM": 46.78,
+    "highestPointM": 29.19,
+    "roofM": 9.3,
+    "risalitM": 10.65,
+    "bigDomeTopM": 17.7,
+    "bigDomeDiameterM": 11.2,
+    "frontDomeTopM": 14.4,
+    "tallMinaretTopM": 29.19,
+    "lowMinaretTopM": 21.87,
+    "minaretBalconiesM": [
+      12.8,
+      19.95,
+      24.55
+    ],
+    "groundNapM": -3.05,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Moskee_Taibah",
+    "PDOK BAG pand 0363100012125533, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: het dak, het risaliet, de koepels, de minaretten, de trapopbouw en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de voorgevel (Karspeldreef), de zuidwestgevel en de achterbouw"
+  ]
+}
