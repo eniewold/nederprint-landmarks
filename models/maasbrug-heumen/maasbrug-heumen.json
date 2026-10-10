@@ -1,0 +1,75 @@
+{
+  "name": "Maasbrug bij Heumen",
+  "file": "maasbrug-heumen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186126.075,
+    419135.265
+  ],
+  "xAxis": [
+    -0.140041,
+    0.990146
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 51.55896552558998,
+  "groundSamplePoints": [
+    [
+      -200,
+      -30
+    ],
+    [
+      -200,
+      30
+    ],
+    [
+      -180,
+      -30
+    ],
+    [
+      -180,
+      30
+    ]
+  ],
+  "replacesBuildings": [],
+  "replacesTerrain": [
+    "L0002.60a1804e97d247e2808a8f3e1d42168e"
+  ],
+  "description": "Twee gescheiden brughelften met variabele kokers van 2,75 tot 7 m boven de Maas, TT-aanbruggen op tien pijlerassen, twee fietspaden en zes schampkanten. BGT-dekranden en actuele wegdelen; AHN-lengteprofiel. De bovenste 0,5 m is road met BGT-attributen; alle opvulling draagt de constructie. STL heeft een interne printvoet. NAP-hoogte minus 7,9 m.",
+  "printFiles": [
+    "maasbrug-heumen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 696,
+    "riverSpanM": 157.5,
+    "deckWidthM": 36.82,
+    "deckNapM": [
+      16.7,
+      20.63
+    ],
+    "boxDepthM": [
+      2.75,
+      7
+    ],
+    "pierX": [
+      -255,
+      -97.5,
+      -7.07,
+      38.08,
+      83.23,
+      128.38,
+      173.53,
+      218.68,
+      263.83,
+      308.98
+    ]
+  },
+  "sources": [
+    "https://www.cementonline.nl/artikelen/brug-over-de-maas-bij-heumen",
+    "https://commons.wikimedia.org/wiki/File:Linden_(Cuijk,_N-Br)_-_Heumen_(Gld)_graffiti,_bridge_of_A73_over_Meuse_river.JPG",
+    "https://www.mookenmiddelaarinbeeld.nl/mooder-maas/bruggen-over-de-maas",
+    "PDOK BGT overbruggingsdeel L0002.60a1804e97d247e2808a8f3e1d42168e en vier actuele wegdelen (2026-09-25)",
+    "PDOK AHN DSM en DTM 0,5 m; PDOK actuele luchtfoto"
+  ]
+}
