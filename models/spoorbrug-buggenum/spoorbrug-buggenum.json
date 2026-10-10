@@ -1,0 +1,95 @@
+{
+  "name": "Spoorbrug Buggenum",
+  "file": "spoorbrug-buggenum.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    196617.8,
+    359621.8
+  ],
+  "xAxis": [
+    0.7199425000503346,
+    -0.694033714326094
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 59.21031,
+  "groundSamplePoints": [
+    [
+      -105,
+      -25
+    ],
+    [
+      -105,
+      25
+    ],
+    [
+      -85,
+      -25
+    ],
+    [
+      -85,
+      25
+    ]
+  ],
+  "replacesTerrain": [
+    "L0004.6410596cb4094f2fb5bc04c90815f526",
+    "L0004.a0cf901e826a464ab352da1ae3d2f2bb"
+  ],
+  "printFiles": [
+    "spoorbrug-buggenum-1-1000.stl"
+  ],
+  "description": "Twee parallelle vakwerkbruggen met vier gebogen velden per spoor, actueel volledig BGT-dek en pijlers, AHN-spoorhoogte NAP +25,8 m en kruinhoogte +34,4 m. Vakwerk met printbare blinde driehoeken en spitse portaalopeningen; afzonderlijke BGT-spoorbanen. Waterbasis NAP +14,65 m, afgestemd op PDOK; staafmaten, onderbouw en veldverdeling vereenvoudigd.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -145,
+        25.78
+      ],
+      [
+        -134,
+        25.8
+      ],
+      [
+        -67,
+        25.8
+      ],
+      [
+        0,
+        25.8
+      ],
+      [
+        66.4,
+        25.8
+      ],
+      [
+        134,
+        25.8
+      ],
+      [
+        145,
+        25.82
+      ]
+    ],
+    "waterNapM": 14.65,
+    "fieldEndsX": [
+      -134,
+      -67,
+      -0.2,
+      66.4,
+      134
+    ],
+    "trussWidthM": 1.5,
+    "crownNapM": 34.4,
+    "estimatedGirderDepthM": 2.1,
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorbrug_Buggenum",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Spoorbrug_bij_Buggenum"
+  ]
+}
