@@ -1,0 +1,95 @@
+{
+  "name": "Spoorbrug Maastricht",
+  "file": "spoorbrug-maastricht.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    176844.5255,
+    318798.42949999997
+  ],
+  "xAxis": [
+    0.948251835419329,
+    -0.31751922244782893
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 89.81573,
+  "groundSamplePoints": [
+    [
+      0,
+      -25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      20,
+      -25
+    ],
+    [
+      20,
+      25
+    ]
+  ],
+  "replacesTerrain": [
+    "L0004.186e17215ab442e4be521be52d123632"
+  ],
+  "printFiles": [
+    "spoorbrug-maastricht-1-1000.stl"
+  ],
+  "description": "Actueel BGT-dek van 216,45 m met afzonderlijke geheven tafelbrug op NAP +53,22 m, spoorvlak circa +51,8 m en boogkruin +64,05 m uit AHN; twee printbare boogschermen met blinde hangernissen, plaatliggers, historische brede pijlers en geschatte bedienhuisjes. Waterbasis NAP +44,15 m, PDOK-ellipsoïde +89,81573 m; diktes en pijleropstand vereenvoudigd.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -109,
+        51.59
+      ],
+      [
+        -90,
+        51.72
+      ],
+      [
+        -61,
+        51.78
+      ],
+      [
+        -27,
+        51.78
+      ],
+      [
+        40,
+        51.8
+      ],
+      [
+        75,
+        51.7
+      ],
+      [
+        100,
+        51.5
+      ],
+      [
+        109,
+        51.4
+      ]
+    ],
+    "tableNapM": 53.22,
+    "archEndsX": [
+      -26.8,
+      39.15
+    ],
+    "archCrownNapM": 64.05,
+    "waterNapM": 44.15,
+    "trussWidthM": 1.5,
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorbrug_Maastricht",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:2021_Maastricht,_F_Romanusweg,_Spoorbrug_(2a)_(cropped).jpg"
+  ]
+}
