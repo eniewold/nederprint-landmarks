@@ -1,0 +1,67 @@
+{
+  "name": "Grote of Sint-Michaëlskerk",
+  "file": "grote-kerk-zwolle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202860,
+    502915
+  ],
+  "xAxis": [
+    0.9999505153082835,
+    0.009948212638374357
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 46.3,
+  "groundSamplePoints": [
+    [
+      -44,
+      0
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      -23,
+      28
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000000169",
+    "NL.IMBAG.Pand.0193100000004645",
+    "NL.IMBAG.Pand.0193100000018194"
+  ],
+  "description": "Drie hallen uit regelmatige dakvlakken met driezijdige koorsluitingen en westelijke schilden; korter zuiderkoor, achtzijdige consistorie, noordportaal met spits en zeszijdige traptoren, catechisatielokaal, Hoofdwacht, zuidportaal, kooraanbouwen, steunberen, dakkapellen en blinde vensternissen. Oorsprong bij het middenschip; +X naar het oosten, Z omhoog.",
+  "realWorld": {
+    "groundNapM": 3.8,
+    "northRidgeNapM": 32.92,
+    "middleRidgeNapM": 32.03,
+    "southRidgeNapM": 32.54,
+    "consistoryTipNapM": 31.45,
+    "portalSpireTipNapM": 31.35,
+    "roofAxisDegrees": 0.57,
+    "minimumFreeStandingM": 1.06
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0193100000000169",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0193100000004645",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0193100000018194",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41666",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Michaëlskerk (schuine referentiefoto’s, geen foto’s opgenomen)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_noord-oost_zijde_-_Zwolle_-_20229095_-_RCE.jpg (A.J. van der Wal/RCE, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Grote_of_Sint-Michaëlskerk_-_BB_-_2.jpg (Ben Bender, CC BY-SA 3.0)",
+    "https://www.dbnl.org/tekst/kuil005noor01_01/kuil005noor01_01_0016.php"
+  ],
+  "printFiles": [
+    "grote-kerk-zwolle-1-1000.stl"
+  ]
+}
