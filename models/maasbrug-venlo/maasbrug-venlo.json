@@ -1,0 +1,57 @@
+{
+  "name": "Maasbrug (Stadsbrug)",
+  "file": "maasbrug-venlo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    208900.3975864089,
+    375794.98474320024
+  ],
+  "xAxis": [
+    0.8774403134966757,
+    -0.4796858307797463
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 57.356541221362235,
+  "groundSamplePoints": [
+    [
+      -30,
+      -25
+    ],
+    [
+      30,
+      -25
+    ]
+  ],
+  "replacesBuildings": [],
+  "replacesTerrain": [
+    "G0983.7aa5d4c01c5f4ddbb1b87015efec2526"
+  ],
+  "description": "Vier staal-betonplaatliggers, drie rivierpijlers en oostelijke oeverpijler met letterlijke BGT-contouren, oplopend AHN-dek en BGT-rijbaan, fietspad en voetpaden per bestrating. Wegdeklaag .5 m; gezamenlijke opvulling in de constructie. Liggereenheden, dekplaatdikte en schampkanten geschat voor 1:1000. NAP minus 10,5 m.",
+  "realWorld": {
+    "lengthM": 257.82,
+    "deckWidthM": 24.55,
+    "deckNapM": [
+      23.02,
+      24.88
+    ],
+    "riverPierX": [
+      4.562,
+      66.071,
+      -56.792
+    ],
+    "watcherHeightM": 9
+  },
+  "sources": [
+    "https://bruggenstichting.nl/tijdschrift/ouder/48-bruggen-2002/588-evolutie-van-de-verschijningsvorm-van-vaste-bruggen-vanaf-1940",
+    "https://commons.wikimedia.org/wiki/File:Bouw_brug_Maas_bij_Venlo,_Bestanddeelnr_908-2438.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nieuwe_verkeersbrug_over_de_Maas_bij_Venlo,_Bestanddeelnr_907-8991.jpg",
+    "PDOK actuele BGT overbruggingsdeel en wegdelen, AHN DSM/DTM .5 m en actuele luchtfoto",
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/3000/venlo-de-wachters",
+    "https://commons.wikimedia.org/wiki/File:Venlo,_sculptuur_��n_van_de_Wachters_ontworpen_door_Shinkichi_Tajiri_IMG_7158_2023-07-10_18.20.jpg"
+  ],
+  "printFiles": [
+    "maasbrug-venlo-1-1000.stl"
+  ]
+}
