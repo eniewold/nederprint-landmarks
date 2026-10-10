@@ -1,0 +1,61 @@
+{
+  "name": "Grote of Sint-Laurenskerk",
+  "file": "grote-kerk-alkmaar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    111453.36,
+    516309.45
+  ],
+  "xAxis": [
+    0.9706325670345273,
+    -0.2405668718089917
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 44.3268556,
+  "groundSamplePoints": [
+    [
+      -55,
+      0
+    ],
+    [
+      -30,
+      -24
+    ],
+    [
+      30,
+      19
+    ],
+    [
+      0,
+      33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000015852"
+  ],
+  "description": "Oorsprong bij de viering, +X langs de nok naar het oosten (RD -13,92 graden), Z omhoog. Middenschip, koor en dwarsschip uit dakvlakken, vijf dwarse kapeldaken per zijbeuk, kooromgang, alle lagere vleugels en portalen, steunberen, pinakels, twee traptorens en achtkantige dakruiter; nissen en pinakels vereenvoudigd voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 1.8,
+    "naveRidgeNapM": 38.02,
+    "transeptRidgeNapM": 37.86,
+    "towerTipNapM": 49.6,
+    "roofAxisDegrees": -13.92,
+    "aisleBays": 5,
+    "minimumFreeStandingM": 1.06
+  },
+  "sources": [
+    "https://commons.wikimedia.org/wiki/Category:Sint_Laurenskerk,_Alkmaar (noordwest-, west-, zuidwest- en zuidoostfoto: Txllxt TxllxT, CC BY-SA 4.0, alleen visuele referentie)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0361100000015852",
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Laurenskerk_(Alkmaar)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7258",
+    "https://commons.wikimedia.org/wiki/File:Alkmaar_-_Kerkplein_-_View_on_Transept_%26_Main_Nave_of_Grote_Sint_Laurens_Kerk.jpg (Txllxt TxllxT, CC BY-SA 4.0, alleen visuele referentie)"
+  ],
+  "printFiles": [
+    "grote-kerk-alkmaar-1-1000.stl"
+  ]
+}
