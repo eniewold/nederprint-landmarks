@@ -1,0 +1,54 @@
+{
+  "name": "Vera",
+  "file": "vera.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234010.5,
+    581807.4
+  ],
+  "xAxis": [
+    0.909236,
+    0.416281
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -4,
+      -4
+    ],
+    [
+      -4,
+      4
+    ]
+  ],
+  "groundHeight": 48.81,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010953685"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (234010.5, 581807.4) midden voor de gevel op de Oosterstraat (NAP +8,2 m) in de oorsprong, +X het perceel in (RD-richting 24,6 graden) en +Y naar het noordnoordwesten. Eén node: het voorhuis met de lijstgevel, de ingangstravee met kuif en stoep, het schilddak en de zalen erachter. De onderkant ligt 2,8 m onder de straat voor de lagere binnenterreinen. Vervangt de PDOK-reconstructie van BAG-pand 0014100010953685.",
+  "realWorld": {
+    "groundNapM": 8.2,
+    "facadeNapM": 20.7,
+    "ridgeNapM": 23,
+    "eaveNapM": 17.5,
+    "midRoofNapM": 16.2,
+    "rearRoofNapM": 15,
+    "axisDegrees": 24.6,
+    "estimates": [
+      "raamassen, verdiepingshoogtes en de deur in de lijstgevel",
+      "kroonlijst, de kuif boven de ingangstravee en de stoep"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Vera_(Groningen)",
+    "PDOK BAG pand 0014100010953685, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nok, goten, gevel, platte daken, installatieblok en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Groningen - Vera.jpg, Vera-Groningen.JPG, Voorgevel - Groningen - 20094105 - RCE.jpg"
+  ],
+  "printFiles": [
+    "vera-1-1000.stl"
+  ]
+}

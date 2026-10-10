@@ -1,0 +1,59 @@
+{
+  "name": "De Oosterpoort",
+  "file": "oosterpoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234420,
+    581465
+  ],
+  "xAxis": [
+    0.722967,
+    0.690882
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -30,
+      52
+    ],
+    [
+      -36,
+      -40
+    ],
+    [
+      32,
+      -40
+    ]
+  ],
+  "groundHeight": 44.53,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010925285"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (234420, 581465) op het maaiveld (NAP +3,85 m) in de oorsprong, +X langs de Trompsingel (RD-richting 43,7 graden) en +Y naar de straat aan de noordwestkant. Eén node: de basismassa, de grote zaal, het gedraaide foyervolume met de schuine strook, de kleine zaal, de binnenhof met de glazen gang, de lagere achterbouw, de entreehoek met het kunstwerk en de ramen in de voorgevel. Vervangt de PDOK-reconstructie van BAG-pand 0014100010925285.",
+  "realWorld": {
+    "groundNapM": 3.85,
+    "massNapM": 12,
+    "hallNapM": 22.6,
+    "foyerNapM": 13.7,
+    "stripNapM": 15.5,
+    "smallHallNapM": 15.1,
+    "rearNapM": 7.9,
+    "axisDegrees": 43.7,
+    "estimates": [
+      "glazen pui en ramen in de voorgevel, de glazen entreehoek",
+      "mast, naamschijf en blauwe bol van het kunstwerk (maten en hoogtes uit foto's)"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Oosterpoort",
+    "PDOK BAG pand 0014100010925285, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken, zalen, foyervolume, binnenhof, gang, achterbouw en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: De Oosterpoort Groningen.jpg, Oosterpoort stad Groningen 2012 (1).jpg, Oosterpoort stad Groningen 2012 (2).jpg, 20100617 Trompsingel 27 (Cultuurcentrum De Oosterpoort) Groningen NL.jpg"
+  ],
+  "printFiles": [
+    "oosterpoort-1-1000.stl"
+  ]
+}

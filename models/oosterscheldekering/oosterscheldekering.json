@@ -1,0 +1,148 @@
+{
+  "name": "Oosterscheldekering — sluitgat Schaar",
+  "file": "oosterscheldekering.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    39393.582,
+    407659.754
+  ],
+  "xAxis": [
+    0.464607984,
+    0.885516472
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.390021981279624,
+  "groundSamplePoints": [
+    [
+      -250,
+      25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      250,
+      25
+    ]
+  ],
+  "replacesBuildings": [],
+  "replacesTerrain": [
+    "L0002.7ca1e1d5f4c34f80bd2fe4b3d1ce1ddf",
+    "L0002.cc0078b5825d426091cac514f39820c9",
+    "L0002.f278045f709242f08d859ad45d23b0c9"
+  ],
+  "description": "Deelmodel: het volledige sluitgat Schaar ten noorden van Neeltje Jans, met zeventien pijlers, zestien schuiven, N57 en werkweg. Doorlopende betonvlakken en afzonderlijke BGT-wegdelen.",
+  "realWorld": {
+    "scope": "sluitgat Schaar, 17 pijlers en 16 schuiven, niet de gehele 9 km kering",
+    "pylonCentres": [
+      [
+        -358.417,
+        -0.311
+      ],
+      [
+        -314.942,
+        0.099
+      ],
+      [
+        -270.018,
+        0.155
+      ],
+      [
+        -225.031,
+        -0.022
+      ],
+      [
+        -180.081,
+        0.096
+      ],
+      [
+        -135.093,
+        0.073
+      ],
+      [
+        -89.971,
+        0.131
+      ],
+      [
+        -45.228,
+        0.091
+      ],
+      [
+        0.041,
+        0.031
+      ],
+      [
+        44.923,
+        0.003
+      ],
+      [
+        89.902,
+        0.004
+      ],
+      [
+        134.936,
+        -0.044
+      ],
+      [
+        179.997,
+        -0.032
+      ],
+      [
+        224.987,
+        -0.016
+      ],
+      [
+        270.002,
+        0.041
+      ],
+      [
+        314.946,
+        -0.003
+      ],
+      [
+        359.93,
+        0.206
+      ]
+    ],
+    "pylonTopNapM": [
+      20.351,
+      19.584,
+      19.405,
+      23.089,
+      23.012,
+      26.435,
+      26.718,
+      25.86,
+      27.242,
+      24.437,
+      23.493,
+      24.564,
+      22.914,
+      19.499,
+      19.829,
+      20.869,
+      21.156
+    ],
+    "deckNapM": 12.17,
+    "workDeckNapM": 5.85,
+    "estimated": [
+      "bovenbouw en cilinderprofiel uit AHN-toppen en foto",
+      "vakwerkstaven minimaal 0,95 m",
+      "blind raamdetail en bordessen",
+      "werkwegfunctie overgenomen van aansluitende BGT-werkwegen",
+      "gesloten schuifkern met circa 0,35 m diepe vakwerknissen"
+    ]
+  },
+  "sources": [
+    "PDOK BGT/BAG, AHN DSM/DTM 0,5 m, EPSG:28992 bbox 39150,407200,39680,408100",
+    "https://www.rijkswaterstaat.nl/water/projectenoverzicht/oosterscheldekering-conserveren-schuiven",
+    "https://commons.wikimedia.org/wiki/File:Oosterscheldekering-vrata.jpg",
+    "https://commons.wikimedia.org/wiki/File:Oosterschelde-Sperrwerk,_Detail.jpg"
+  ],
+  "printFiles": [
+    "oosterscheldekering-1-1000.stl"
+  ]
+}

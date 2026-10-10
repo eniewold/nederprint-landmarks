@@ -1,0 +1,56 @@
+{
+  "name": "Pyramide van Austerlitz",
+  "file": "pyramide-van-austerlitz.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    151956.297,
+    455795.396
+  ],
+  "xAxis": [
+    0.57584,
+    0.81756
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 110.049915,
+  "groundSamplePoints": [
+    [
+      -1.2,
+      1.8
+    ],
+    [
+      1.2,
+      1.8
+    ],
+    [
+      0,
+      2.1
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0351100000008766"
+  ],
+  "description": "Obelisk op de AHN-positie, vierkante bakstenen schacht, blinde vensters, lantaarn, vierzijdig dak en zuidwesttrap; de kaart gebruikt de bestaande grasheuvel.",
+  "realWorld": {
+    "plateauNapM": 66.48,
+    "footNapM": 48.83,
+    "topNapM": 80.334,
+    "baseWidthM": 3.06,
+    "estimated": [
+      "lantaarnhoogte",
+      "raamspleten 0,35 m diep",
+      "81 treden gegroepeerd tot 20",
+      "trapwanden tot 0,9 m verdikt"
+    ]
+  },
+  "sources": [
+    "PDOK AHN DSM/DTM 0,5 m; bbox 151870,455715,152005,455850",
+    "https://www.monumentdepyramidevanausterlitz.nl/",
+    "https://commons.wikimedia.org/wiki/File:Pyramid_of_Austerlitz_oct_2022.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pyramide_van_Austerlitz_P1010572.jpg"
+  ],
+  "printFiles": [
+    "pyramide-van-austerlitz-1-1000.stl"
+  ]
+}

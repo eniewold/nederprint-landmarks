@@ -1,0 +1,55 @@
+{
+  "name": "Stormvloedkering Hollandse IJssel",
+  "file": "kering-hollandse-ijssel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    99433.62,
+    436831.25
+  ],
+  "xAxis": [
+    0.9395,
+    -0.3425
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.455861,
+  "groundSamplePoints": [
+    [
+      -46,
+      0
+    ],
+    [
+      -44,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0542100000650442",
+    "NL.IMBAG.Pand.0542100000652206"
+  ],
+  "replacesTerrain": [
+    "G0502.1d2e2605418a1102e0531f050e0a4efd",
+    "L0002.bf07a1efd1c84ad8aeae19717e2e059f"
+  ],
+  "description": "Vier heftorens, twee geheven stalen schuiven met gebogen vakwerken en Algerabrug met afzonderlijke BGT-wegdelen; doorlopende dak- en dekprofielen.",
+  "realWorld": {
+    "towerNapM": 44.64,
+    "gateHeightM": 11.5,
+    "gateClearanceNapM": 8.4,
+    "gateWidthM": 78,
+    "estimated": [
+      "zigzagtrappen en raamritme",
+      "vakwerkstaven verdikt tot 0,95 m",
+      "laatste tien meter oostelijke dekhelling"
+    ]
+  },
+  "sources": [
+    "PDOK BGT/BAG en AHN DSM 0,5 m, bbox 99200,436660,99630,437020",
+    "https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken/hollandsche-ijsselkering",
+    "https://commons.wikimedia.org/wiki/File:Vogelvluchtperspectief_van_de_stormvloedkering_in_de_Hollandse_IJssel_-_Krimpen_aan_den_IJssel_-_20398120_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "kering-hollandse-ijssel-1-1000.stl"
+  ]
+}

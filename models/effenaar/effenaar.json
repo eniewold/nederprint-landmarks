@@ -1,0 +1,68 @@
+{
+  "name": "Effenaar",
+  "file": "effenaar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161677.5,
+    383632.5
+  ],
+  "xAxis": [
+    0.977416,
+    0.211325
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -25
+    ],
+    [
+      -19,
+      0
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      18,
+      -15
+    ]
+  ],
+  "groundHeight": 59.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000354810"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (161677.5, 383632.5) op het maaiveld (NAP +16,0 m) in de oorsprong, +X langs de gevels aan het plein en de Dommelstraat (RD-richting 12,2 graden) en +Y naar de Dommelstraat. Eén node: de doos met plat dak, de buitentrappen aan de Dommelstraat, de westgevel, het plein en de oostkant, het bordesblok boven de entree, het gevelreliëf en de installaties. Vervangt de PDOK-reconstructie van BAG-pand 0772100000354810.",
+  "realWorld": {
+    "groundNapM": 16,
+    "roofNapM": 37.95,
+    "boxM": [
+      26.55,
+      39.8,
+      21.95
+    ],
+    "northStairTopM": 15.8,
+    "westLandingM": 19.7,
+    "southLandingM": 17.6,
+    "eastFlightTopM": 20.7,
+    "axisDegrees": 12.2,
+    "estimates": [
+      "dikte van de vrije trapvluchten en bordessen (3 m) en het bordesblok boven de entree",
+      "glazen stroken, panelen, het donkere vlak en de entree in de noordgevel (één frontale foto)",
+      "de kleine ramen in de oostgevel"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Effenaar",
+    "PDOK BAG pand 0772100000354810, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak, trappen, bordessen, entreeblok, installaties en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Effenaar - panoramio.jpg, Poppodium De Effenaar.jpg, Effenaar.jpg, Stairs Effenaar Eindhoven.jpg, 13-06-28-eindhoven-by-RalfR-51.jpg"
+  ],
+  "printFiles": [
+    "effenaar-1-1000.stl"
+  ]
+}
