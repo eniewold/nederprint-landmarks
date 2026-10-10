@@ -1,0 +1,153 @@
+{
+  "name": "Rijnbrug bij Rhenen",
+  "file": "rijnbrug-rhenen.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    167993.0835,
+    440403.083
+  ],
+  "xAxis": [
+    0.1726559794192197,
+    0.9849821890627211
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 49.5394,
+  "groundSamplePoints": [
+    [
+      80,
+      -35
+    ],
+    [
+      80,
+      35
+    ],
+    [
+      110,
+      -35
+    ],
+    [
+      110,
+      35
+    ]
+  ],
+  "printFiles": [
+    "rijnbrug-rhenen-1-1000.stl"
+  ],
+  "replacesTerrain": [
+    "P0025.278580eedc0244d488c1c3815437368d",
+    "P0026.2f57ab9229cd3c82e0531221500a01c3"
+  ],
+  "description": "Volledige BGT-brugcontour en afzonderlijke fietspaden/rijbaan, doorlopend AHN-dekprofiel, twee stalen plaatliggers met haunches en BGT-pijlers; noordelijke AHN-gaten tussen meetbare wegvlakken geïnterpoleerd. Waterbasis geschat NAP +6,1 m, PDOK ellipsoïde 49,5394 m; ontbrekende pijlers en liggerdiepten geschat. Noordelijke PDOK-aanloop lager dan het gemeten wegdek.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -268,
+        18.29
+      ],
+      [
+        -260,
+        18.455
+      ],
+      [
+        -220,
+        19.292
+      ],
+      [
+        -180,
+        20.107
+      ],
+      [
+        -140,
+        20.906
+      ],
+      [
+        -100,
+        21.684
+      ],
+      [
+        -60,
+        22.433
+      ],
+      [
+        -20,
+        23.26
+      ],
+      [
+        20,
+        23.932
+      ],
+      [
+        40,
+        24.174
+      ],
+      [
+        60,
+        24.302
+      ],
+      [
+        100,
+        24.256
+      ],
+      [
+        140,
+        24.261
+      ],
+      [
+        150,
+        24.23
+      ],
+      [
+        170,
+        24.05
+      ],
+      [
+        200,
+        23.65
+      ],
+      [
+        220,
+        23.24
+      ],
+      [
+        240,
+        22.87
+      ],
+      [
+        260,
+        22.48
+      ],
+      [
+        268,
+        22.3
+      ]
+    ],
+    "waterNapM": 6.1,
+    "riverPiersX": [
+      27,
+      170.5
+    ],
+    "estimatedPiersX": [
+      -217,
+      170.5,
+      219,
+      266
+    ],
+    "estimatedGirderDepthM": [
+      2.6,
+      4.8
+    ],
+    "girderWidthM": 0.95,
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://repository.officiele-overheidspublicaties.nl/externebijlagen/exb-2019-48859/1/bijlage/exb-2019-48859.pdf",
+    "https://nl.wikipedia.org/wiki/Rijnbrug_bij_Rhenen",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Rijnbrug_Rhenen"
+  ]
+}
