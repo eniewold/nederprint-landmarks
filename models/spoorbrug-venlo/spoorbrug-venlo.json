@@ -1,0 +1,128 @@
+{
+  "name": "Spoorbrug Venlo",
+  "file": "spoorbrug-venlo.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    208940.581,
+    375835.571
+  ],
+  "xAxis": [
+    0.8289754461055852,
+    -0.5592849986849694
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 57.3568327,
+  "groundSamplePoints": [
+    [
+      -10,
+      -25
+    ],
+    [
+      -10,
+      25
+    ],
+    [
+      20,
+      -25
+    ],
+    [
+      20,
+      25
+    ]
+  ],
+  "replacesTerrain": [
+    "L0004.9e7fbcce25a1404887d9c8102aeeb618",
+    "G0983.2a14be6a090a42a99f93d406fe6d5fe8",
+    "L0004.96a508b3f38740dca4f550ce1f3edd08",
+    "L0004.a1f61227f868433f80eb4ff774a1db49"
+  ],
+  "printFiles": [
+    "spoorbrug-venlo-1-1000.stl"
+  ],
+  "description": "Tweesporige plaatliggerbrug met noordelijk fietsdek (+0,14 m), drie ovale BGT-rivierpijlers en brede landhoofden met blinde spitse boognissen. Spoorprofiel AHN NAP +23,33–24,09 m; westelijke AHN-gaten en voertuigen zijn tussen betrouwbare spoor- en fietsmetingen geïnterpoleerd. Plaatbovenrand +1,7 m en haunchdiepte 2,1–4,1 m geschat uit schuine foto’s. Waterbasis NAP +13,21 m gekalibreerd op de oostelijke PDOK-spooraansluiting; ellipsoïdisch +57,35683 m. Losse STL met twee doorlopende 35-graden printwanden; de aangrenzende verkeersbrug blijft staan.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -139,
+        23.33
+      ],
+      [
+        -130,
+        23.4
+      ],
+      [
+        -120,
+        23.48
+      ],
+      [
+        -113.19,
+        23.62
+      ],
+      [
+        -90,
+        23.76
+      ],
+      [
+        -59.11,
+        23.94
+      ],
+      [
+        -30,
+        24.04
+      ],
+      [
+        -0.47,
+        24.09
+      ],
+      [
+        30,
+        24.04
+      ],
+      [
+        58.51,
+        23.98
+      ],
+      [
+        90,
+        23.93
+      ],
+      [
+        113.19,
+        23.88
+      ],
+      [
+        120,
+        23.81
+      ],
+      [
+        132,
+        23.76
+      ]
+    ],
+    "waterNapM": 13.21,
+    "riverPierX": [
+      -59.11,
+      -0.47,
+      58.51
+    ],
+    "girderWidthM": 1,
+    "girderRiseM": 1.7,
+    "estimatedGirderDepthM": [
+      2.1,
+      4.1
+    ],
+    "bikeLiftM": 0.14,
+    "slabM": 1.5,
+    "blindArchDepthM": 0.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorbrug_Venlo",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Spoorbrug_Venlo"
+  ]
+}
