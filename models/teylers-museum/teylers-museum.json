@@ -1,0 +1,72 @@
+{
+  "name": "Teylers Museum",
+  "file": "teylers-museum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104120,
+    488350
+  ],
+  "xAxis": [
+    0.699663,
+    0.714473
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.44,
+  "groundSamplePoints": [
+    [
+      -9.1,
+      -53.5
+    ],
+    [
+      -3.7,
+      -56.1
+    ],
+    [
+      -14.5,
+      -50.9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000065736",
+    "NL.IMBAG.Pand.0392100000037991",
+    "NL.IMBAG.Pand.0392100000063892",
+    "NL.IMBAG.Pand.0392100000037992",
+    "NL.IMBAG.Pand.0392100000037264"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (104120, 488350) op de as van de Fossielenzalen bij de Ovale Zaal, op het maaiveld aan het Spaarne (NAP +0,5 m), +X naar het noordoosten (45,6 graden vanaf de RD-X-as, haaks op de zalen) en +Y langs de zalen naar het noordwesten (de Nauwe Appelaarsteeg); de Spaarnegevel staat aan de -Y-kant. Eén node building:museum met de Spaarnevleugel van Ulrich (gevel van 16,8 m met middenrisaliet, gekoppelde zuilen, portiek en loggia, cordonlijst, kroonlijst op een kraag, balustrade met obelisken, fronton tot NAP +17,0 m met de beeldengroep tot +19,4 m, rotonde met glazen lichtkoepel tot +17,8 m), de Fossielenzalen onder een glazen mansardedak (goot +13,7 m, knik +17,45 m, nok +17,9 m) met lisenen en hoge vensters, de Ovale Zaal (achtzijdige lichtbeuk en schilddak tot +16,4 m, houten blok tot +19,3 m en de belvedère van het observatorium tot +22,6 m, glazen lantaarn), de twee schilderijenzalen met zadeldaken en daklichten (nokken +13,4 en +14,1 m), de uitbreiding van Henket (tentoonstellingszaal, tuinzaal, glazen galerij), het tuinhuis in de tuin, en het Fundatiehuis aan de Damstraat (voorhuis met vlakke gevel tot +18,4 m en zadeldak tot +18,6 m, zij-, achter- en dwarsvleugels met kilgoten, vleugel en prieel aan de open binnenplaats). Onderkant 0,5 m onder het maaiveld aan het Spaarne; het maaiveld wordt op de kade voor de gevel bemonsterd, groundHeight is de laagste PDOK-terreinhoogte daar (ellipsoïdisch). Vervangt de PDOK-reconstructie van de vijf BAG-panden van museum, tuinhuis en Fundatiehuis. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "teylers-museum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 104.77,
+    "widthM": 82.02,
+    "highestPointM": 22.1,
+    "groundNapM": 0.5,
+    "baseM": -0.5,
+    "facadeWidthM": 16.8,
+    "facadeCorniceNapM": 14.5,
+    "frontonTopNapM": 17,
+    "statueTopNapM": 19.4,
+    "domeTopNapM": 17.8,
+    "hallsEaveNapM": 13.7,
+    "hallsRidgeNapM": 17.9,
+    "ovalRoofTopNapM": 16.9,
+    "observatoryBlockNapM": 19.3,
+    "belvedereTopNapM": 22.6,
+    "gallery1RidgeNapM": 13.4,
+    "gallery2RidgeNapM": 14.1,
+    "fundatiehuisParapetNapM": 18.4,
+    "fundatiehuisRidgeNapM": 18.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Teylers_Museum",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513441",
+    "PDOK BAG panden 0392100000065736, 0392100000037991, 0392100000063892, 0392100000037992 en 0392100000037264, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: goten, nokken, knikken, koepel, Ovale Zaal, observatorium, platte daken en maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): dakvlakken van de Ovale Zaal, de schilderijenzalen en het Fundatiehuis",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: foto's van de Spaarnegevel, de zalen met het glazen dak, het dak van de Ovale Zaal met het observatorium, de binnenplaats en de gevel van het Fundatiehuis, de plattegrond van het museum"
+  ]
+}
