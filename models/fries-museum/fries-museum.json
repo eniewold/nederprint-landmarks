@@ -1,0 +1,74 @@
+{
+  "name": "Fries Museum",
+  "file": "fries-museum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    182223.8,
+    579283.8
+  ],
+  "xAxis": [
+    0.992862,
+    -0.11927
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -50,
+      0
+    ],
+    [
+      -48,
+      22
+    ],
+    [
+      -30,
+      -27
+    ],
+    [
+      20,
+      -27
+    ],
+    [
+      -10,
+      45
+    ],
+    [
+      31,
+      5
+    ]
+  ],
+  "groundHeight": 43.04,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100010076276",
+    "NL.IMBAG.Pand.0080100000376229",
+    "NL.IMBAG.Pand.0080100010076275"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (182223,8, 579283,8), het hart van de museumdoos, op het maaiveld van het Wilhelminaplein (NAP +1,95 m), +X naar het oosten langs de gevels (-6,85 graden vanaf de RD-X-as) en +Y loodrecht daarop naar het noorden. Node building:museum: de nieuwbouw van 2013 (Henket & partners) met het grote vlakke dak (bovenkant +22,55 m, 1,5 m dik) dat 14 m over het plein, 10 m naar het noorden en over de doorgang aan de oostkant uitkraagt, met lichtsleuven en dwarsbalken, de dichte doos (+5,3 tot +16,5 m) met de getrapte glaspui als nis, de teruggezette glazen bovenverdieping met ronde noordwesthoek, de teruggezette glazen plint met witte kolommen, vier houten kolommen aan de pleinzijde, de tussenhal (+9 m) en de dakopbouwen (lichtkap met flauw zadeldak tot +25,75 m, installatieblok, schacht). Node building:woonblok-noord: het woonblok aan de noordkant dat tot hetzelfde BAG-pand hoort (+14,85 m, lagere delen +11,85 m). Node building:woonblok-plein: het woonblok aan de noordkant van het plein als eenvoudig blok (+13,55 m, rand +10,65 m, trappenhuizen +14,75 m), omdat PDOK de oosthoek tot het museumdak optrekt. Onderkant op 0,5 m onder het maaiveld; alleen de dakplaat en de onderkant van de doos hangen over. Vervangt de PDOK-reconstructie van beide panden en van de parkeergarage onder het plein, die PDOK tot het museumdak optrekt. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "fries-museum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 116.83,
+    "widthM": 65.35,
+    "highestPointM": 25.75,
+    "roofTopM": 22.55,
+    "soffitM": 21.05,
+    "boxM": [
+      5.3,
+      16.5
+    ],
+    "lanternRidgeM": 25.75,
+    "blockM": 14.85,
+    "groundNapM": 1.95,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Fries_Museum",
+    "PDOK BAG panden 0080100010076276, 0080100010076275 en 0080100000376229 (parkeergarage), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: de dakplaat, de lichtsleuven, de dakopbouwen, het woonblok en het maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons-foto's van de westgevel (verdiepingshoogtes, glaspui, kolommen)"
+  ]
+}
