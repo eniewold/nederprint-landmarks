@@ -1,0 +1,63 @@
+{
+  "name": "Melkweg",
+  "file": "melkweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120540,
+    486440
+  ],
+  "xAxis": [
+    0.636078,
+    -0.771625
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      -29.5
+    ],
+    [
+      0,
+      -29.5
+    ],
+    [
+      15,
+      -29.5
+    ]
+  ],
+  "groundHeight": 44.75,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012168735",
+    "NL.IMBAG.Pand.0363100012173457"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt RD (120540, 486440) op het maaiveld van de Marnixstraat (NAP +1,85 m) in de oorsprong, +X langs de Lijnbaansgracht naar de Stadsschouwburg (RD-richting -50,5 graden) en +Y naar de gracht. Eén node: de grachtpanden aan de Marnixstraat, de lange hal, het pand met de topgevel, de glazen entree, het middendeel en de zaaldoos van The Max en de Rabozaal met de uitkragende glazen doos. Vervangt BAG-panden 0363100012168735 en 0363100012173457; het deel van de zaaldoos op het pand van de Stadsschouwburg blijft PDOK.",
+  "realWorld": {
+    "groundNapM": 1.85,
+    "hallRidgeNapM": 10.6,
+    "gableRidgeNapM": 15.6,
+    "redBoxNapM": 32.3,
+    "highBoxNapM": [
+      35.4,
+      37.5
+    ],
+    "stripNapM": 20,
+    "axisDegrees": -50.5,
+    "estimates": [
+      "onderkant van de uitkragende glazen doos (7 m) en de glazen band erin",
+      "vensters in de topgevel, de glazen entree en de rij ramen in de zaaldoos",
+      "goten van de grachtpanden waar het AHN tussen twee panden valt"
+    ]
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Melkweg_(Amsterdam)",
+    "PDOK BAG panden 0363100012168735 en 0363100012173457, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: daken, nokken, goten, installaties, zalen, glazen strook en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons: Melkweg en Rabozaal.jpg, Amsterdam, Stadsschouwburg en Melkweg, Rabo Zaal.jpg, Amsterdam, Rabozaal Stadsschouwburg vanaf hoek Lijnbaansgracht-Leidsegracht01.JPG, Overzicht voorzijde aan de Lijnbaansgracht - Amsterdam - 20002717 - RCE.jpg"
+  ],
+  "printFiles": [
+    "melkweg-1-1000.stl"
+  ]
+}
