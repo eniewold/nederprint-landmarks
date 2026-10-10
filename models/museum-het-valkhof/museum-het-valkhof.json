@@ -1,0 +1,74 @@
+{
+  "name": "Museum Het Valkhof",
+  "file": "museum-het-valkhof.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    188364.75,
+    428777.5
+  ],
+  "xAxis": [
+    -0.3257,
+    -0.9454
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 77.66,
+  "groundSamplePoints": [
+    [
+      -30,
+      -29
+    ],
+    [
+      0,
+      -30
+    ],
+    [
+      30,
+      -31
+    ],
+    [
+      45,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000045512"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (188364,75, 428777,5), het hart van het BAG-pand, op het maaiveld van het Kelfkensbos (NAP +33,93 m), +X langs de achtergevel naar de zuidkop (RD-richting 251,0 graden) en +Y loodrecht daarop naar het park; de voorgevel aan het plein ligt aan de -Y-kant. Eén node building:museum: de glazen doos (dak +11,8 m) die 2,8 tot 5,2 m uitkraagt boven de teruggezette begane grond op de BAG-contour, met twee gevelbanden, 17 schuine erkers aan de parkzijde, een installatieblok en twee dakputten; node road:trap: de brede trap naar de ingang (vier treden tot +1,0 m). Onderkant 0,5 m onder het maaiveld. Vervangt de PDOK-reconstructie van het pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "museum-het-valkhof-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 80.15,
+    "widthM": 40.58,
+    "highestPointM": 13.07,
+    "roofNapM": 45.7,
+    "roofM": 11.77,
+    "soffitM": 4.07,
+    "frontCantileverM": [
+      2.76,
+      5.22
+    ],
+    "northCantileverM": [
+      2.62,
+      4.38
+    ],
+    "bandsM": [
+      6.87,
+      9.37
+    ],
+    "bays": 17,
+    "bayPitchM": 3.09,
+    "plantM": 13.07,
+    "groundNapM": 33.93,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Valkhof_Museum",
+    "PDOK BAG pand 0268100000045512, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: dak, dakranden, installatieblok, dakputten en maaiveld",
+    "PDOK luchtfoto (Actueel_orthoHR): erkers langs de achtergevel",
+    "Wikimedia Commons: foto's van de voorgevel, de achtergevel en de noordkop (opstand, uitkraging, banden, erkers)"
+  ]
+}
