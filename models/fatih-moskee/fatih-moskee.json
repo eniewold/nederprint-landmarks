@@ -1,0 +1,65 @@
+{
+  "name": "Fatih-moskee",
+  "file": "fatih-moskee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120370.99,
+    487361.78
+  ],
+  "xAxis": [
+    -0.359972,
+    0.932965
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      0
+    ],
+    [
+      -4,
+      -9
+    ],
+    [
+      -4,
+      9
+    ],
+    [
+      51.5,
+      -5
+    ],
+    [
+      51.5,
+      8
+    ]
+  ],
+  "groundHeight": 43.44,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012167944"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (120370,99, 487361,78), het midden van de voorgevel aan de Rozengracht op de as van het schip, op het maaiveld (NAP +0,6 m), +X van de voorgevel naar de Bloemstraat (111,1 graden vanaf de RD-X-as) en +Y loodrecht daarop naar de pastorie. Node building:kerk: de voormalige Sint-Ignatiuskerk met schip onder één zadeldak (nok +20,8 m), lichtbeuk en zijbeuken onder lessenaarsdaken, twee vierkante torens met klokkenverdieping, vierzijdige spits met dakkapellen en makelaar tot +39,6 m, de topgevel met roosvenster, arcade en drie ingangsbogen ertussen, de vierkante koortoren met kantelen en tentdak tot +27,0 m en de vleugels aan de Bloemstraat. Node building:pastorie: de voormalige pastorie met schilddak, dakkapel, plat dak met trappenhuis en achtervleugel. Onderkant 0,5 m onder het maaiveld; alle vlakken wijzen omhoog of staan verticaal, op de nissen en de kragen na. Vervangt de PDOK-reconstructie van het BAG-pand van kerk en pastorie. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "fatih-moskee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 49.59,
+    "widthM": 40.66,
+    "highestPointM": 39.6,
+    "towerTopM": 39.6,
+    "towerEaveM": 27.9,
+    "choirTowerTopM": 27,
+    "ridgeM": 20.82,
+    "groundNapM": 0.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Fatih-moskee_(Amsterdam)",
+    "PDOK BAG pand 0363100012167944 (kerk en pastorie), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS: nokken, goten, torens en het maaiveld",
+    "3D BAG LoD2.2 (api.3dbag.nl): hellingen en richting van de daken",
+    "PDOK luchtfoto (Actueel_orthoHR)",
+    "Wikimedia Commons, categorieën Rozengracht 144-154 en Bloemstraat 147 (Amsterdam): opstand van het front, de torens, de koortoren en de vleugels"
+  ]
+}
