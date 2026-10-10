@@ -1,0 +1,101 @@
+{
+  "name": "Spoorbrug Mook",
+  "file": "spoorbrug-mook.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    188385.7485,
+    418629.58349999995
+  ],
+  "xAxis": [
+    0.6032598870199264,
+    0.797544675057583
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 51.75481,
+  "groundSamplePoints": [
+    [
+      -10,
+      -35
+    ],
+    [
+      -10,
+      35
+    ],
+    [
+      20,
+      -35
+    ],
+    [
+      20,
+      35
+    ]
+  ],
+  "replacesTerrain": [
+    "L0004.a625bfeb89034a1cb3ef616eda0355ae"
+  ],
+  "printFiles": [
+    "spoorbrug-mook-1-1000.stl"
+  ],
+  "description": "Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde driehoeken, vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.",
+  "realWorld": {
+    "deckNapM": [
+      [
+        -182,
+        18.8
+      ],
+      [
+        -173,
+        18.86
+      ],
+      [
+        -139,
+        18.9
+      ],
+      [
+        -106,
+        18.9
+      ],
+      [
+        -72.3,
+        18.9
+      ],
+      [
+        1.6,
+        18.9
+      ],
+      [
+        75.6,
+        18.92
+      ],
+      [
+        149.7,
+        18.9
+      ],
+      [
+        185,
+        18.8
+      ]
+    ],
+    "waterNapM": 8.18,
+    "fieldEndsX": [
+      -72.3,
+      1.6,
+      75.6,
+      149.7
+    ],
+    "trussWidthM": 1.5,
+    "trussTopNapM": 27.02,
+    "estimatedGirderDepthM": 2.1,
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorbrug_Mook",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Spoorbrug_Mook"
+  ]
+}
