@@ -1,0 +1,54 @@
+{
+  "name": "Stadhuis (IJspaleis) Den Haag",
+  "file": "stadhuis-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81650.4103349324,
+    454934.9118856987
+  ],
+  "xAxis": [
+    0.8910065241883679,
+    0.45399049973954675
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -61,
+      -11
+    ],
+    [
+      -55,
+      8
+    ],
+    [
+      96,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000275247",
+    "NL.IMBAG.Pand.0518100001774714"
+  ],
+  "description": "Volledig IJspaleis inclusief ronde bibliotheek met zijvleugel, noord- en zuidkantoren, gesloten glazen atrium met dakroeden, verbindingsvleugel en Forumgebouw met ronde entree. Benoemde bouwdelen en platte/licht hellende dakvlakken, blinde raamstroken, trapkern en gemeten dakopbouwen. +X RD 27 graden, z=0 NAP +0,55 m; voet -0,8 m.",
+  "realWorld": {
+    "groundNapM": 0.55,
+    "northRoofNapM": 42.35,
+    "southRoofNapM": 49.16,
+    "atriumRoofNapM": 46.55,
+    "forumRoofNapM": 49.16,
+    "libraryFrontNapM": 30.27,
+    "highestScreenNapM": 53.17
+  },
+  "sources": [
+    "PDOK BAG/BGT 0518100000275247, 11 oktober 2026",
+    "PDOK AHN DSM/DTM 0,5 m via WCS",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000275247",
+    "https://atriumcityhall.nl/agenda/30-jaar-stadhuis-den-haag-x-atrium-city-hall/",
+    "https://commons.wikimedia.org/wiki/Category:The_Hague_City_Hall"
+  ],
+  "printFiles": [
+    "stadhuis-den-haag-1-1000.stl"
+  ]
+}
