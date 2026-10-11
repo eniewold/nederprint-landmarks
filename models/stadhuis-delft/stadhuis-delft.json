@@ -1,0 +1,55 @@
+{
+  "name": "Stadhuis Delft",
+  "file": "stadhuis-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    84372.0517,
+    447509.6131
+  ],
+  "xAxis": [
+    0.86776545,
+    0.49697396
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      17,
+      -9
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      17,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000014169"
+  ],
+  "description": "Volledig BAG-pand met drie schilddakvleugels, lager overkapt binnenhof, Het Steen met vierkant tentdak en vier klokfrontons, traptoren, dakbalustrade, pilasters, fronton, zijtopgevels, schoorstenen en dakkapellen. Dakvlakken en bouwdelen; geen hoogteplakken. z=0 NAP +1,3 m, +X naar de Markt, RD 29,8 graden; verborgen voet -0,6 m.",
+  "realWorld": {
+    "groundNapM": 1.3,
+    "wingEaveNapM": 12.65,
+    "wingRidgeNapM": 19.5,
+    "towerCollarNapM": 25.12,
+    "towerEaveNapM": 33.85,
+    "towerRoofNapM": 41.15,
+    "finialNapM": 41.85,
+    "sideGableNapM": 22.53
+  },
+  "sources": [
+    "PDOK BAG/BGT 0503100000014169 EPSG:28992, 11 oktober 2026",
+    "PDOK AHN DSM/DTM 0,5 m via WCS",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0503100000014169",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11901",
+    "https://www.indelft.nl/nl/locaties/1181195682/stadhuis-oranje-route",
+    "https://commons.wikimedia.org/wiki/Category:Stadhuis_Delft"
+  ],
+  "printFiles": [
+    "stadhuis-delft-1-1000.stl"
+  ]
+}
