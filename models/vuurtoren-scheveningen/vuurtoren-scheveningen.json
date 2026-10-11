@@ -1,0 +1,68 @@
+{
+  "name": "Vuurtoren van Scheveningen",
+  "file": "vuurtoren-scheveningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    78341.845,
+    457912.531
+  ],
+  "xAxis": [
+    0.7071067811865476,
+    0.7071067811865476
+  ],
+  "groundHeight": 58.24108084164399,
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000303706",
+    "NL.IMBAG.Pand.0518100000214886",
+    "NL.IMBAG.Pand.0518100000280494",
+    "NL.IMBAG.Pand.0518100000221076",
+    "NL.IMBAG.Pand.0518100000337805"
+  ],
+  "description": "Twaalfzijdige taps toelopende gietijzeren schacht met zestien spitsvensters, twee deuren en kustwachtvensters; gesloten schuine galerijkraag, kuipuitbouw, lichthuis en bolkap; twee dubbele wachterswoningen met dakkapellen en schoorstenen. +X richting Vuurbaakstraat (noordoost). AHN-silhouet circa 37,11 m; gepubliceerde objecthoogte 30 m blijft als bronverschil vermeld.",
+  "realWorld": {
+    "publishedObjectHeightM": 30,
+    "ahnGroundNapM": 14.84,
+    "ahnTopNapM": 51.948368,
+    "measuredHeightM": 37.11,
+    "diameterSourceM": [
+      7.3,
+      3
+    ],
+    "roofEaveNapM": 19.05,
+    "roofRidgeNapM": 21.88,
+    "estimatedGalleryTopM": 29.75,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://www.vuurtorens.org/vuurtoren/scheveningen/",
+    "https://www.vuurtorens.org/wp-content/uploads/2024/05/De-vuurtoren-van-Scheveningen-mei-2024.pdf",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18111",
+    "https://www.rijksmuseum.nl/en/collection/object/Model-of-a-Lighthouse--d94f8bc7eea97acea2e251c38a333a39",
+    "https://commons.wikimedia.org/wiki/Category:Vuurtoren_van_Scheveningen",
+    "PDOK BAG/BGT, AHN DSM/DTM 0,5 m, Actueel_orthoHR, 2026-10-11"
+  ],
+  "printFiles": [
+    "vuurtoren-scheveningen-1-1000.stl"
+  ]
+}
