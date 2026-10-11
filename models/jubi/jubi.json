@@ -1,0 +1,102 @@
+{
+  "name": "JuBi",
+  "file": "jubi.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81975,
+    455072
+  ],
+  "xAxis": [
+    0.79441,
+    0.60738
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -39
+    ],
+    [
+      10,
+      -39
+    ],
+    [
+      45,
+      0
+    ],
+    [
+      45,
+      30
+    ],
+    [
+      10,
+      38
+    ],
+    [
+      -25,
+      25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001635181"
+  ],
+  "description": "Oorsprong in het atrium bij de witte toren op straatniveau NAP +0,72 m, +X op 37,4 graden in RD langs de zuidoostgevel, +Y naar het noordwesten; twee torens met elk twee haakse en twee schuine gevels: de witte (BZK) springt op +88,1 (west) en +123,5 (zuidoosthoek) terug, de rode (Justitie) op +105,9 (oostgevel en noordoosthoek); kronen van stenen stijlen tot +147,2 rond een terras op +139,4 met dakopbouwen tot +144,7, +147,3 en +150; onderbouw tot +42,1 (zuidoostkant boven +24 terug) met daktuin en een glazen atrium tot +19,3 aan het plein; vensterritme, lagen, plint en kroonstijlen uit foto's en AHN geschat.",
+  "realWorld": {
+    "groundNapM": 0.72,
+    "atriumNapM": 19.3,
+    "lowNapM": 24,
+    "plinthNapM": 29.3,
+    "podiumNapM": 42.1,
+    "gardenNapM": [
+      45.7,
+      46.4
+    ],
+    "whiteStepNapM": 88.1,
+    "whiteNotchNapM": 123.5,
+    "redStepNapM": 105.9,
+    "terraceNapM": 139.4,
+    "roofNapM": 144.67,
+    "boxNapM": 147.27,
+    "crownTeethNapM": 147.2,
+    "plantNapM": 150,
+    "towerFootprintM2": {
+      "white": 1415,
+      "red": 1397,
+      "whiteTop": 1242,
+      "redTop": 1216
+    },
+    "bayPitchM": 2.7,
+    "storeyPitchM": 3.55,
+    "axisDegrees": 37.4,
+    "estimates": [
+      "37 lagen: begane grond tot +7,4 en 36 lagen van 3,55 m (Wikipedia 37 lagen, 146 m); ramen 1,3 x 2,15 m als nissen van 0,35 m op travees van 2,7 m (AHN-kroonstijlen op 2,75-2,9 m)",
+      "kroon: stijlen van 1,0 m op elke travee tot +147,2 boven een borstwering van 1,2 m; werkelijk slankere stijlen met open hoekportalen",
+      "dakopbouw 2,5 m achter de gevel (AHN: terras 1,5-2,5 m breed); op de zuidgevel van de witte toren staat hij in werkelijkheid dichter op de gevel",
+      "stijlen op de terugsprongen 3,0 m hoog uit foto's",
+      "plint van natuursteen tot circa +29,3 (acht lagen op de foto's) als lijst van 0,3 m",
+      "atrium: glazen dak (geen AHN-punten) 0,6 m verdiept, voorgevel in zeven velden uit foto's",
+      "schuine gevels uit de AHN-rand per meter (pixels 0,5 m); de noordgevel van de witte toren boven +88,1 in twee rechte stukken"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100001635181, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001635181 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes, terugsprongen en opbouwen",
+    "https://nl.wikipedia.org/wiki/JuBi-gebouw",
+    "https://en.wikipedia.org/wiki/JuBi_Building",
+    "https://nl.wikipedia.org/wiki/Wijnhavenkwartier",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Skyscrapers_5.jpg",
+    "https://commons.wikimedia.org/wiki/File:Turfmarkt,_The_Hague_-_high_rise_offices_and_urban_housing_(2017).jpg",
+    "https://commons.wikimedia.org/wiki/File:Government_office_in_The_Hague_housing_the_Dutch_Ministry_of_Justice_and_Security_(2019).jpg",
+    "https://commons.wikimedia.org/wiki/File:Uilebomen,_Den_Haag,_Netherlands_-_panoramio_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Uilebomen,_Den_Haag,_Netherlands_-_panoramio_(38).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Skyscrapers_1a_(Kollhoff).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Skyscrapers_4.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Skyscrapers_6.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag,_straatzicht_Turfmarkt_IMG_8931_2019-03-24_16.04.jpg"
+  ],
+  "printFiles": [
+    "jubi-1-1000.stl"
+  ]
+}
