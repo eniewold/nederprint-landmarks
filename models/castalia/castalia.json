@@ -1,0 +1,76 @@
+{
+  "name": "Castalia",
+  "file": "castalia.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81895.72,
+    455178.52
+  ],
+  "xAxis": [
+    0.80799,
+    0.5892
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      45,
+      -20
+    ],
+    [
+      45,
+      0
+    ],
+    [
+      45,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000234102"
+  ],
+  "description": "Oorsprong midden tussen de twee nokken en de twee topgevels op straatniveau NAP +0,5 m, +X langs de lange gevels (36,1 graden in RD), +Y naar het noordwesten; bakstenen toren van 53,7 x 23,5 m tot NAP +70,4 m met twee zadeldaken van 70,7 graden (nok +101,8 m, topgevelkappen tot +104,0 m), glazen erkers en dakkapellen tot +76,5/+79,35 m en een onderbouw van +17 tot +23,3 m; gevelritme, topgevelsleuven en dakkapellen uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "eaveNapM": 70.4,
+    "ridgeNapM": 101.8,
+    "gableTopNapM": 104,
+    "roofPitchDegrees": 70.7,
+    "middleNapM": 76.5,
+    "innerDormerNapM": 79.35,
+    "podiumNapM": [
+      17,
+      22.8,
+      22.9,
+      23.3
+    ],
+    "towerM": [
+      53.7,
+      23.5
+    ],
+    "ridgeSpacingM": 28.85,
+    "storeyPitchM": 3.4,
+    "axisDegrees": 36.1,
+    "estimates": [
+      "vensters over twee lagen (6,8 m), 6 kolommen op 3,6 m per topgevel en 2 + 2 per kopgevel uit frontale foto's",
+      "topgevelsleuven (6/5/4/3/2/1 op 5 m) uit een frontale foto, vergroot tot 0,9 x 2,0 m",
+      "kleine dakkapellen (4 m breed, +74,8) en ruitvakken van de erkers uit foto's",
+      "lage strook langs de noordwestgevel op +17,0 m: het AHN geeft daar alleen gevelpunten (mediaan 17-20)"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000234102, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000234102 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhelling, nokken, platte delen",
+    "https://nl.wikipedia.org/wiki/Castalia_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:De_Castaliatorens_(de_Puntmutsen).jpg",
+    "https://commons.wikimedia.org/wiki/File:Castalia_The_Hague.JPG",
+    "https://commons.wikimedia.org/wiki/File:MinVWS.jpg",
+    "https://commons.wikimedia.org/wiki/File:Castalia_en_Hoftoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:DeResident1.jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Hague_Government_and_business_buildings_4.JPG"
+  ],
+  "printFiles": [
+    "castalia-1-1000.stl"
+  ]
+}
