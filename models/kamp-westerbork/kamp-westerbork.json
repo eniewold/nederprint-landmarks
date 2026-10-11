@@ -1,0 +1,50 @@
+{
+  "name": "Nationaal Monument Westerbork",
+  "file": "kamp-westerbork.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    237397,
+    548450.7
+  ],
+  "xAxis": [
+    0.999179538,
+    0.0405
+  ],
+  "groundHeight": 57.99769448439919,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -30,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      30,
+      0
+    ]
+  ],
+  "description": "Spoormonument met gekromde opwaartse railuiteinden, stootblok, keienmuur en twee tekstplaten; spoorstaven en liggers verdikt voor 1:1000. Grindbed en paden blijven PDOK.",
+  "realWorld": {
+    "minimumPartsM": 0.9,
+    "representedSleepers": 34,
+    "actualSleepers": 97,
+    "wallHeightM": 2.55,
+    "raisedRailTopM": 2.65,
+    "estimatedRailLengthM": 76.4,
+    "sourceRailLengthM": 40
+  },
+  "sources": [
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/2055/hooghalen-nationaal-monument-westerbork",
+    "https://kampwesterbork.nl/downloads/plattegrond-april-2021.pdf",
+    "https://commons.wikimedia.org/wiki/Category:Westerbork_national_memorial",
+    "PDOK BGT, AHN DSM/DTM 0,5 m en Actueel_orthoHR, 2026-10-11"
+  ],
+  "printFiles": [
+    "kamp-westerbork-1-1000.stl"
+  ]
+}
