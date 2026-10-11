@@ -1,0 +1,97 @@
+{
+  "name": "Achmeatoren",
+  "file": "achmeatoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    182048,
+    579124
+  ],
+  "xAxis": [
+    0.99649,
+    -0.08368
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      20,
+      -5
+    ],
+    [
+      20,
+      5
+    ],
+    [
+      2,
+      18
+    ],
+    [
+      -12,
+      18
+    ],
+    [
+      24,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000352634"
+  ],
+  "description": "Oorsprong in de overlap van beide torens op straatniveau NAP +1,3 m, +X op -4,8 graden in RD (langs de gevels), +Y naar het noorden; zwarte hoofdtoren van 20,4 x 19 m met dak op NAP +112,44 binnen een dakrand tot +116,05, installaties tot +115, glazen band van de observatieruimte (+106,9 tot +111), roosterband en per gevel het eigen vensterritme, open kolommen aan de straat tot +12,2; lagere grijze toren van 18,2 x 17,8 m tot +67,9; glazen hal en strook tot +12,2 en de glazen entreeluifel met een hellende oostwand; vensterritme, banden en luifel uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.3,
+    "parapetNapM": 116.05,
+    "roofNapM": 112.44,
+    "plantNapM": 115,
+    "glassBandNapM": [
+      106.9,
+      111
+    ],
+    "louvreBandNapM": [
+      96.3,
+      97.5
+    ],
+    "lowerTowerNapM": 67.9,
+    "hallNapM": 12.2,
+    "mainTowerPlanM": [
+      20.4,
+      19
+    ],
+    "lowerTowerPlanM": [
+      18.2,
+      17.8
+    ],
+    "storeyPitchM": 3.72,
+    "windowRows": {
+      "main": 22,
+      "lower": 14
+    },
+    "canopyLeanM": 1.6,
+    "axisDegrees": -4.8,
+    "estimates": [
+      "vensterritme per gevel uit foto's: noord- en oostgevel tien vensters van 1,3 m op 1,7 m, zuidgevel twee smalle kolommen en een groep van vier, westgevel twee vensters; lagere toren acht vensters op 1,84 m (noord, west) en twee (zuid, oost); 22 rijen van 3,72 m in de hoofdtoren, 14 in de lagere toren",
+      "glazen band (+106,9 tot +111), roosterband (+96,3 tot +97,5) en bovenste vensterrij (+93,6) gemeten op een frontale foto van de noordkant, geschaald op de dakhoogtes van beide torens",
+      "plaatvoegen per verdieping als groeven van 0,3 m; de verticale voeg in de westgevel uit een foto",
+      "open kolommen aan de straat: 1,2 m terugliggende pui tot +12,2 tussen kolommen van 1,6 m (foto's)",
+      "entreeluifel: dakrand uit de ortho, hoogte uit het AHN-glas (+12,2), helling van de oostwand (1,6 m) en de open kolomzone tot 2,4 m boven de straat uit foto's",
+      "glazen hal: hoogte uit de 3D BAG (+12,2), het AHN ziet door het glas"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0080100000352634, AHN DSM/DTM 0,5 m (WCS, AHN4) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000352634 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes van beide torens, installaties, glazen hal",
+    "https://nl.wikipedia.org/wiki/Achmeatoren",
+    "https://commons.wikimedia.org/wiki/File:Achmeatoren_Leeuwarden_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achmeatoren_FvL.jpg",
+    "https://commons.wikimedia.org/wiki/File:20100707_Sophialaan_2-50_(Achmeatoren)_Leeuwarden_NL.jpg",
+    "https://commons.wikimedia.org/wiki/File:Leeuwarden,_de_Achmeatoren_foto3_2016-06-05_15.57.jpg",
+    "https://commons.wikimedia.org/wiki/File:20180721_545_leeuwarden.jpg",
+    "https://commons.wikimedia.org/wiki/File:Achmeatoren_closeup.JPG",
+    "https://commons.wikimedia.org/wiki/File:Office_buildings_in_the_city_of_Leeuwarden_(2023).jpg",
+    "https://commons.wikimedia.org/wiki/File:Achmeatoren_van_onderen_1.JPG"
+  ],
+  "printFiles": [
+    "achmeatoren-1-1000.stl"
+  ]
+}
