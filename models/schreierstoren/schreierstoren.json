@@ -1,0 +1,55 @@
+{
+  "name": "Schreierstoren",
+  "file": "schreierstoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121976.9943,
+    487726.1361
+  ],
+  "xAxis": [
+    0.93049724,
+    -0.36629891
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -4,
+      0
+    ],
+    [
+      -4,
+      -5
+    ],
+    [
+      0,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012182530"
+  ],
+  "description": "D-vormige verdedigingstoren met vlakke stadszijde u=-2,954, veelhoekige bovenbouw, achtzijdig tentdak, dakkapel, schilddak van de aanbouw en laag terrasgebouw; oorsprong in de BAG-cirkelpassing, +X naar de waterzijde (RD -21,49 graden), z=0 op NAP +2,5 m, ramen en fries als blinde nissen en balustrade verdikt.",
+  "realWorld": {
+    "groundNapM": 2.5,
+    "waterSideRadiusM": 5.9516,
+    "corniceNapM": 11.82,
+    "eaveNapM": 14.385,
+    "roofApexNapM": 22.037,
+    "finialNapM": 22.67,
+    "annexRidgeNapM": 12.825,
+    "terraceNapM": 4.8
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012182530 / BGT pand EPSG:28992, geraadpleegd 11 oktober 2026",
+    "PDOK AHN DSM/DTM 0,5 m, WCS dsm_05m/dtm_05m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012182530",
+    "https://www.amsterdam.nl/nieuws/achtergrond/stenen-schreierstoren/",
+    "https://arcam.nl/architectuur-gids/schreierstoren/",
+    "https://commons.wikimedia.org/wiki/Category:Schreierstoren"
+  ],
+  "printFiles": [
+    "schreierstoren-1-1000.stl"
+  ]
+}
