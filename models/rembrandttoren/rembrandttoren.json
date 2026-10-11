@@ -1,0 +1,75 @@
+{
+  "name": "Rembrandttoren",
+  "file": "rembrandttoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122963.34,
+    484231.45
+  ],
+  "xAxis": [
+    0.93909,
+    0.34366
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      27,
+      -8
+    ],
+    [
+      27,
+      8
+    ],
+    [
+      12,
+      29
+    ],
+    [
+      20,
+      29
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012113758"
+  ],
+  "description": "Oorsprong in het hart van de schacht op straatniveau NAP -0,5 m, +X langs de oostgevel-normaal (20,1 graden in RD), +Y naar het noordnoordwesten; kruisvormige plint tot NAP +21,5 m, ring van uitbouwen tot +36,4 m met middensleuven, vierkante schacht met dubbel verspringende hoeken tot +106,3 m, colonnade tot +109,5 m, vier glazen hoekpaviljoens tot +119,9 m, kruisvormig middenblok tot +131,7 m met rail, giek en mast tot +149,4 m; gevelritme en mastgeleding uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.5,
+    "plazaNapM": 2.8,
+    "podiumNapM": 21.5,
+    "ringNapM": 36.4,
+    "terraceNapM": 106.3,
+    "colonnadeNapM": 109.5,
+    "pavilionNapM": 119.9,
+    "crownNapM": 131.7,
+    "mastTopNapM": 149.4,
+    "shaftWidthM": 33.2,
+    "footprintM": [
+      48.12,
+      48.06
+    ],
+    "storeyPitchM": 3.329,
+    "axisDegrees": 20.1,
+    "estimates": [
+      "vensterritme 1,8 m, 21 kantoorlagen boven de ring en de vensterhoogtes uit frontale foto's",
+      "mastdiameters (voet 3,8 m, middenstuk 2,2 m, naald 1,2 m) en hoogtes van de geledingen uit foto's met de AHN-top als maat",
+      "plintvensters en entree uit foto's; plinthoogte, ring, kroon en paviljoens uit AHN/3D BAG",
+      "pergolabalken van de colonnade als schotten van 0,9 m tot op het terras"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012113758, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012113758 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes",
+    "https://nl.wikipedia.org/wiki/Rembrandttoren",
+    "https://commons.wikimedia.org/wiki/File:Rembrandt_toren_vanuit_het_noordwesten.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rembrandttoren_in_2021.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rembrandttoren_in_2019_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rembrandt_Toren_in_2016.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rembrandttoren3.jpg"
+  ],
+  "printFiles": [
+    "rembrandttoren-1-1000.stl"
+  ]
+}
