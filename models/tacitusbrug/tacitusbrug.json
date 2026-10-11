@@ -1,0 +1,150 @@
+{
+  "name": "Tacitusbrug Ewijk",
+  "file": "tacitusbrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    179108.38446535481,
+    432981.49390949926
+  ],
+  "xAxis": [
+    0.2559008060888088,
+    0.9667030451193882
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 49.75946,
+  "groundSamplePoints": [
+    [
+      20,
+      -60
+    ],
+    [
+      20,
+      60
+    ],
+    [
+      50,
+      -60
+    ],
+    [
+      50,
+      60
+    ]
+  ],
+  "replacesTerrain": [
+    "L0002.a8348e39bb6146c0e05332a1e90aabb9",
+    "L0002.d9940a58dfeb4d199f906047097831b5"
+  ],
+  "description": "Beide volledige BGT-dekken met afzonderlijke AHN-lengteprofielen, zes taps verlopende pylonen, tuiwaaiers en actuele BGT-rijbanen en fietspaden; gesloten tuischermen en schuine onderdekvoeten voor 1:1000.",
+  "realWorld": {
+    "waterNapM": 6,
+    "deckProfileNapM": [
+      [
+        -544,
+        22.5,
+        23.13
+      ],
+      [
+        -500,
+        23.2,
+        23.65
+      ],
+      [
+        -400,
+        24.25,
+        24.82
+      ],
+      [
+        -300,
+        25.25,
+        25.75
+      ],
+      [
+        -200,
+        26.13,
+        26.4
+      ],
+      [
+        -100,
+        26.96,
+        26.8
+      ],
+      [
+        -50,
+        27.1,
+        26.78
+      ],
+      [
+        0,
+        26.96,
+        26.63
+      ],
+      [
+        50,
+        26.9,
+        26.65
+      ],
+      [
+        100,
+        26.92,
+        26.52
+      ],
+      [
+        150,
+        27.05,
+        26.54
+      ],
+      [
+        200,
+        27.01,
+        26.33
+      ],
+      [
+        300,
+        26.03,
+        25.69
+      ],
+      [
+        400,
+        24.61,
+        24.73
+      ],
+      [
+        500,
+        22.74,
+        23.49
+      ],
+      [
+        533,
+        22.06,
+        23.04
+      ]
+    ],
+    "pylonTopNapM": 77.9,
+    "mainSpanM": 270,
+    "estimatedPylonFootM": [
+      2,
+      2.5
+    ],
+    "estimatedPylonShoulderM": [
+      3,
+      3.5
+    ],
+    "estimatedRailingM": 1,
+    "integratedPrintWebM": 0.95,
+    "printFootSlopeDegrees": 47
+  },
+  "sources": [
+    "https://www.cementonline.nl/artikelen/nieuwe-tuibrug-in-a50",
+    "https://www.nationalestaalprijs.nl/project/tacitusbrug",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Tacitusbrug"
+  ],
+  "printFiles": [
+    "tacitusbrug-1-1000.stl"
+  ]
+}
