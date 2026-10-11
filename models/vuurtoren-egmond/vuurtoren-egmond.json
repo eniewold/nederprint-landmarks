@@ -1,0 +1,65 @@
+{
+  "name": "Vuurtoren J.C.J. van Speijk",
+  "file": "vuurtoren-egmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103158.24,
+    514884.4
+  ],
+  "xAxis": [
+    0.97066064,
+    -0.24045358
+  ],
+  "groundHeight": 55.42432220360166,
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0373100000016150"
+  ],
+  "description": "Neoclassicistische tombe met leeuw; ronde taps toelopende schacht met zeezijdige patrijspoorten; veelhoekig kustwachtlokaal, lichthuis en bolkap. Landzijdige ingang naar +X. Gemeten silhouet circa 31,85 m inclusief tombe en makelaar; bron noemt objecthoogte 28 m.",
+  "realWorld": {
+    "publishedObjectHeightM": 28,
+    "ahnTopNapM": 44.59806,
+    "groundNapM": 12.75,
+    "totalModelHeightM": 31.85,
+    "tombWidthM": 10.3,
+    "shaftDiameterM": [
+      6.1,
+      3.8
+    ],
+    "estimatedWatchHeightM": [
+      24.95,
+      27.15
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://www.vuurtorens.org/vuurtoren/egmond-aan-zee/",
+    "https://www.vuurtorens.org/wp-content/uploads/2023/08/De-vuurtoren-van-Egmond-aan-Zee-juni-2023.pdf",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14590",
+    "https://commons.wikimedia.org/wiki/Category:J.C.J._van_Speijk_lighthouse",
+    "PDOK BAG 0373100000016150, AHN DSM/DTM 0,5 m en Actueel_orthoHR, 2026-10-11"
+  ],
+  "printFiles": [
+    "vuurtoren-egmond-1-1000.stl"
+  ]
+}
