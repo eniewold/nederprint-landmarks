@@ -1,0 +1,104 @@
+{
+  "name": "New Orleans",
+  "file": "new-orleans.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93112.96,
+    435563.81
+  ],
+  "xAxis": [
+    0.80386,
+    0.59482
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -20
+    ],
+    [
+      -45,
+      -20
+    ],
+    [
+      0,
+      19
+    ],
+    [
+      -45,
+      19
+    ],
+    [
+      -88,
+      0
+    ],
+    [
+      20,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000753300"
+  ],
+  "description": "Oorsprong midden in de toren op maaiveld NAP +3,5 m, +X op 36,5 graden in RD (langs de lange gevels, van de onderbouw naar de toren), +Y naar de Otto Reuchlinweg en de Maas; vierkante toren van 30,1 x 28,4 m met per gevel drie beuken (loggia's en vensterparen), twee terugliggende sleuven en hoekloggia's, getrapte kroon met hoekzones tot +138,2, sleuven tot +141,5, beuken tot +151,5, tussentreden tot +154,8, kern tot +158,3 (rand +159,6) en opbouw tot +161,8 met installaties tot +163,7; lagere schijf tot +41,7 tegen de zuidwesthoek met een uitkragende snavel en terras; onderbouw van LantarenVenster met glazen foyerstrook (+11,7), stenen massa's (+18,4 en +21,0), zaal (+22,35) en terras aan de westkop (+15,2); gevelritme, snavel en vensters uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 3.5,
+    "towerSizeM": [
+      30.1,
+      28.4
+    ],
+    "cornerTopNapM": 138.2,
+    "slotTopNapM": 141.5,
+    "bayTopNapM": 151.5,
+    "stepTopNapM": 154.8,
+    "coreRoofNapM": 158.3,
+    "coreRimNapM": 159.6,
+    "penthouseNapM": 161.8,
+    "plantTopNapM": 163.7,
+    "slabTopNapM": 41.7,
+    "beakNapM": [
+      34.6,
+      38.3,
+      41.7
+    ],
+    "beakCantileverM": 3.6,
+    "podiumNapM": {
+      "glassBox": 11.7,
+      "stone": 18.4,
+      "raised": 20,
+      "strips": 21,
+      "hall": 22.35,
+      "block": 25.1,
+      "westTerrace": 15.2
+    },
+    "storeyPitchM": 3.26,
+    "axisDegrees": 36.5,
+    "estimates": [
+      "verdeling van elke gevel in hoekzone, beuk, sleuf, middenbeuk, sleuf, beuk en hoekzone uit de AHN-profielen van de kroon; aangenomen dat die verdeling van de grond tot de kroon doorloopt (foto's)",
+      "gevelritme uit foto's: 44 lagen van 3,26 m boven een begane grond van 4,4 m; loggia's in de buitenste beuken en hoekzones, vensterparen in de middenbeuk, een venster per laag in de sleuven (groef van 0,45 m)",
+      "lagere schijf: uitbouw volgens de BAG-contour (2,0 m voor de zuidgevel), hoogte 41,7 uit de 3D BAG, gevel met brede vensters tot x = -2,5 (hoekzone, beuk en sleuf) uit foto's vanaf de Rijnhaven",
+      "snavel: 3,6 m uitkraging voorbij de westgevel (begrensd door het AHN, dat erachter de zaal op +22,35 ziet), onderkant +34,6, terras van 1,2 m diep onder de dakplaat; uit foto's geschat",
+      "onderbouw: dakhoogtes en -vlakken uit het AHN en de 3D BAG; vensters, de glazen entree aan de noordgevel en de parkeeringang aan de westgevel uit foto's geschat"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000753300, AHN DSM/DTM 0,5 m (WCS, AHN4) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000753300 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes van kroon, kern en opbouw, de lagere schijf en de onderbouw",
+    "https://nl.wikipedia.org/wiki/New_Orleans_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_New_Orleans.jpg",
+    "https://commons.wikimedia.org/wiki/File:GraphyArchy_-_Wikipedia_00317.jpg",
+    "https://commons.wikimedia.org/wiki/File:New_Orleans_2010.JPG",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_New_Orleans_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:GraphyArchy_-_Wikipedia_00031.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kop_van_Zuid,_Rotterdam,_Netherlands_-_panoramio_(14).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_New_Orleans_Tower_1_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Architecture_in_Rotterdam_(28384615199).jpg",
+    "https://commons.wikimedia.org/wiki/File:%27New_Orleans%27_Rotterdam_(7657650598).jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_New_Orleans_in_Rotterdam.jpg"
+  ],
+  "printFiles": [
+    "new-orleans-1-1000.stl"
+  ]
+}
