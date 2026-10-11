@@ -1,0 +1,70 @@
+{
+  "name": "Waalsdorpervlakte",
+  "file": "waalsdorpervlakte.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83019.2,
+    459134.5
+  ],
+  "xAxis": [
+    0,
+    1
+  ],
+  "groundHeight": 46.63231170121312,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "description": "Vier bronzen kruisen achter de betonnen rand en de Bourdonklok op de hoger gelegen duintop; frame en kruisen verdikt voor 1:1000.",
+  "realWorld": {
+    "minimumPartM": 0.9,
+    "crossCount": 4,
+    "estimatedCrossTopM": 2.5,
+    "estimatedBellFrameM": [
+      6.2,
+      4,
+      4.5
+    ],
+    "bellM": [
+      2,
+      1.78
+    ],
+    "bellRelativeGroundM": 6.155,
+    "bellLocalPositionM": [
+      -74.744,
+      -10.61,
+      6.155
+    ],
+    "estimatedWallM": [
+      9.2,
+      0.9,
+      0.95
+    ]
+  },
+  "sources": [
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/829/den-haag-waalsdorpervlakte",
+    "https://bkdh.nl/kunstwerken/monument-waalsdorpervlakte/",
+    "https://bkdh.nl/kunstwerken/bourdonklok/",
+    "https://erepeloton.nl/bourdonklok/",
+    "https://www.dewassenaarsekrant.nl/nieuws/algemeen/19373/restauratie-klokkenstoel-grote-bourdonklok-waaldorpervlakte-p",
+    "https://commons.wikimedia.org/wiki/Category:Bourdon_Clock_Waalsdorpervlakte",
+    "https://commons.wikimedia.org/wiki/Category:Memorial_Waalsdorpervlakte",
+    "PDOK BGT, Actueel_orthoHR en AHN 0,5 m, 2026-10-11"
+  ],
+  "printFiles": [
+    "waalsdorpervlakte-1-1000.stl"
+  ]
+}
