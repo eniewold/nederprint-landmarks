@@ -1,0 +1,222 @@
+{
+  "name": "Prins Clausbrug",
+  "file": "prins-clausbrug.glb",
+  "crs": "EPSG:28992",
+  "origin": [
+    134419,
+    453633.5
+  ],
+  "xAxis": [
+    0.8697872915915187,
+    0.4934268612326354
+  ],
+  "unitsPerMetre": 1,
+  "className": "building",
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.18079,
+  "groundSamplePoints": [
+    [
+      80,
+      -50
+    ],
+    [
+      80,
+      50
+    ],
+    [
+      120,
+      -50
+    ],
+    [
+      120,
+      50
+    ]
+  ],
+  "replacesTerrain": [
+    "G0344.0bf07bdaa39143bca810f46a0ba0a9b0",
+    "G0344.328b60827b6a49f1be1a81b298bfb148"
+  ],
+  "printFiles": [
+    "prins-clausbrug-1-1000.stl"
+  ],
+  "description": "Twee rijbanen en afzonderlijke buitenpaden in de volledige BGT-contour, met eigen AHN-profielen en BGT-wegattributen; getordeerde pyloon van 91,4 m, 19 verdikte tuiparen, vier zware achtertuien, paperclipbeugel, liggers en BGT-aanbrugpijlers. Bovenste 15 m van de pyloon, torsie, tuiaansluitingen en onderbouw geschat; GLB en STL met doorlopende printvlakken en gesloten tuiwaaiers.",
+  "realWorld": {
+    "waterNapM": -0.4,
+    "deckNapM": [
+      [
+        -74,
+        7.64,
+        7.22
+      ],
+      [
+        -65,
+        8.037,
+        7.59
+      ],
+      [
+        -55,
+        8.422,
+        7.95
+      ],
+      [
+        -45,
+        8.824,
+        8.28
+      ],
+      [
+        -35,
+        9.236,
+        8.67
+      ],
+      [
+        -25,
+        9.618,
+        9
+      ],
+      [
+        -15,
+        9.968,
+        9.3
+      ],
+      [
+        -5,
+        10.347,
+        9.61
+      ],
+      [
+        5,
+        10.73,
+        9.96
+      ],
+      [
+        15,
+        11.078,
+        10.31
+      ],
+      [
+        25,
+        11.354,
+        10.65
+      ],
+      [
+        35,
+        11.622,
+        10.89
+      ],
+      [
+        45,
+        11.87,
+        11.08
+      ],
+      [
+        55,
+        11.97,
+        11.18
+      ],
+      [
+        65,
+        12.05,
+        11.22
+      ],
+      [
+        75,
+        12.074,
+        11.26
+      ],
+      [
+        85,
+        12.089,
+        11.26
+      ],
+      [
+        95,
+        12.029,
+        11.22
+      ],
+      [
+        105,
+        11.9,
+        11.07
+      ],
+      [
+        115,
+        11.704,
+        10.9
+      ],
+      [
+        125,
+        11.487,
+        10.667
+      ],
+      [
+        135,
+        11.228,
+        10.42
+      ],
+      [
+        145,
+        10.909,
+        10.1
+      ],
+      [
+        155,
+        10.559,
+        9.88
+      ],
+      [
+        165,
+        10.152,
+        9.595
+      ],
+      [
+        175,
+        9.762,
+        9.354
+      ],
+      [
+        185,
+        9.327,
+        9.108
+      ],
+      [
+        195,
+        8.936,
+        8.889
+      ],
+      [
+        205,
+        8.52,
+        8.64
+      ],
+      [
+        215,
+        8.113,
+        8.364
+      ],
+      [
+        230,
+        7.53,
+        7.98
+      ]
+    ],
+    "pylonHeightM": 91.4,
+    "pylonFootAboveWaterM": 2,
+    "estimatedPylonTopSetbackM": 3,
+    "cablePairs": 19,
+    "estimatedCableWidthM": 0.95,
+    "estimatedTieScreenThicknessM": 1.3,
+    "integratedPrintPlanes": true,
+    "glbCoordinateQuantumM": 0.001,
+    "slabM": 1.5
+  },
+  "sources": [
+    "https://www.unstudio.com/projects/further/prince-claus-bridge/",
+    "https://bruggenstichting.nl/78-bruggen/bruggen-2005/bruggen-september-2005/462-de-prins-claus-brug-te-utrecht",
+    "https://nl.wikipedia.org/wiki/Prins_Clausbrug_(Utrecht)",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Prins_Clausbrug_(Utrecht)"
+  ]
+}
