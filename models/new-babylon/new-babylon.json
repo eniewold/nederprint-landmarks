@@ -1,0 +1,100 @@
+{
+  "name": "New Babylon",
+  "file": "new-babylon.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82190.98,
+    455441.11
+  ],
+  "xAxis": [
+    0.79388,
+    0.60807
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      58
+    ],
+    [
+      0,
+      58
+    ],
+    [
+      -63,
+      -24
+    ],
+    [
+      10,
+      -57
+    ],
+    [
+      55,
+      1
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000237257"
+  ],
+  "description": "Oorsprong midden in het complex op straatniveau NAP +0,6 m, +X op 37,45 graden in RD langs de gevels (naar de Park Tower), +Y naar het noordwesten (Bezuidenhoutseweg); City Tower (+142,5, lager L-deel +121,6, inham in de noordhoek) met verspringende verdiepingsbanden en een driehoeksvakwerk over de zuidwestgevel en de kroon, Park Tower (+102,3, schuine oostgevel in het vakwerk, lager L-deel +87,4), kantoorschijf (+33..+45,9) met vakwerk op V-kolommen boven het hotel, en het oude Babylon (+9,4..+54,8) met binnenhof; gevelritme, vakwerkzones en de onderkant van de schijf uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "cityTowerNapM": 142.5,
+    "cityTowerLowNapM": 121.6,
+    "parkTowerNapM": 102.3,
+    "parkTowerLowNapM": 87.4,
+    "slabNapM": [
+      33,
+      45.9
+    ],
+    "oldBabylonNapM": [
+      9.4,
+      12.8,
+      13.4,
+      23,
+      36.6,
+      41.8,
+      50.1,
+      54.8
+    ],
+    "cityTowerPlanM": [
+      18.9,
+      36
+    ],
+    "parkTowerPlanM": [
+      21.8,
+      34.1
+    ],
+    "storeyPitchM": {
+      "city": 3.1,
+      "park": 3.2
+    },
+    "axisDegrees": 37.45,
+    "estimates": [
+      "verdiepingsbanden: 44 lagen van 3,1 m (City Tower) en 30 van 3,2 m (Park Tower) boven een entree tot +5,6, per vak van circa 6 m 0,3 m op en neer verspringend, uit foto's",
+      "driehoeksvakwerk: rijen van twee lagen, driehoeken van circa 6 m breed, staven van 0,9 m; de zone op de zuidwestgevel van de City Tower (onderaan 13-26,5 m vanaf de zuidhoek, vanaf +118 de hele gevel), de kronen vanaf +118 en +84 en de oostgevel van de Park Tower vanaf +18 uit foto's",
+      "kantoorschijf: onderkant +33,0 en twee vakwerklagen van 3,95 m met driehoeken van 4,6 m uit een frontale foto; de gevel eronder 1,5 m terug met V-kolommen van 1,2 m",
+      "open vakwerkkaders op beide smalle einden van het dak van de City Tower als goten van 2 m (AHN 137-139 tegen 142,5)",
+      "vensterbanden van het oude Babylon en de laagbouw: 1,8 m hoog op 3,6 m, vakken van 7,2 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000237257, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000237257 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes en -contouren van alle bouwdelen",
+    "https://nl.wikipedia.org/wiki/Babylon_(Den_Haag)",
+    "https://en.wikipedia.org/wiki/New_Babylon,_The_Hague",
+    "https://commons.wikimedia.org/wiki/File:City_Tower_The_Hague.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Nieuw_Babylon_08.jpg",
+    "https://commons.wikimedia.org/wiki/File:Park_Tower_The_Hague_2026.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_New_Babylon_2025-06-12.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Nieuw_Babylon_05.jpg",
+    "https://commons.wikimedia.org/wiki/File:Park_Tower_Den_Haag.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Nieuw_Babylon_03.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nieuw_Babylon_The_Hague_2017_4.jpg"
+  ],
+  "printFiles": [
+    "new-babylon-1-1000.stl"
+  ]
+}
