@@ -1,0 +1,104 @@
+{
+  "name": "Hoftoren",
+  "file": "hoftoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81975,
+    455237
+  ],
+  "xAxis": [
+    0.79547,
+    0.60599
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      66,
+      0
+    ],
+    [
+      66,
+      20
+    ],
+    [
+      -16,
+      12
+    ],
+    [
+      -16,
+      25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001749878"
+  ],
+  "description": "Oorsprong midden in de toren op straatniveau NAP +0,6 m, +X op 37,3 graden in RD (haaks op de rechte zuidwestgevel), +Y naar de noordwestkop; druppelvormige toren van 26 x 55 m met glazen zuidoostkop, laatste verdieping op NAP +95,5 m en een open kroon onder een dakvlak van 30 graden (+94,7 tot +124 m), een steiler scherm langs de zuidwestgevel dat uitloopt in de punt van +142,4 m en een tweede vin tot +133 m; boemerangvormige vleugel tot +57..+66 m met twee dakvlakken, en een lage strook (+9,2) langs het stationsgebouw; gevelritme en kroonsleuven uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "tipNapM": 142.4,
+    "fin2NapM": 133,
+    "lastFloorNapM": 95.5,
+    "roofPlane": {
+      "nap": "c + a*x + b*y",
+      "a": -0.187,
+      "b": 0.5445,
+      "c": 111.55,
+      "degrees": 29.9
+    },
+    "bladeSlopePerM": 0.8,
+    "crownTerraceNapM": 104.5,
+    "wingRoofPlanes": {
+      "north": {
+        "a": -0.0548,
+        "b": 0.1525,
+        "c": 63.97
+      },
+      "diagonal": {
+        "a": 0.1002,
+        "b": 0.0898,
+        "c": 56.37
+      },
+      "flatNapM": 56.8
+    },
+    "wingRimNapM": 58.6,
+    "wingPlantNapM": 62.8,
+    "canopyNapM": 8,
+    "lowStripNapM": [
+      9.2,
+      52.4
+    ],
+    "towerPlanM": [
+      26.1,
+      55.5
+    ],
+    "storeyPitchM": 3.3,
+    "axisDegrees": 37.3,
+    "estimates": [
+      "vensters per verdieping van 3,3 m (27 lagen boven een entree van 4,5 m, Wikipedia 29 lagen) in travees van 1,8 m uit foto's; de glazen kop en de noordwestkop met bredere ruiten",
+      "open stalen kroon boven +95,5 als verticale sleuven van 0,9 m op 1,8 m (foto's)",
+      "tweede vin: 1,1 m breed, top +133 (AHN 132,6) met een schuine bovenkant uit foto's",
+      "lage strook langs het stationsgebouw op +9,2 m uit de 3D BAG: het AHN heeft in die smalle strook tussen de hoge gebouwen geen punten",
+      "vleugelgevels: vensters van 1,1 m per travee van 1,8 m en 18 verdiepingen van 3,3 m uit een frontale foto van de oostgevel",
+      "luifel langs de Rijnstraat: 4 m diep, bovenkant +8,0 (AHN), 0,9 m dik"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100001749878, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001749878 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhelling, terrassen in de kroon, platte delen en de lage strook",
+    "https://nl.wikipedia.org/wiki/Hoftoren",
+    "https://en.wikipedia.org/wiki/Hoftoren",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Hoftoren_4.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Hoftoren_6.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ministerie_OCW.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag,_Hoftoren_vanaf_Laan_van_Reagan_en_Gorbatsjov_IMG_8945_2019-03-24_17.46_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Hoftoren_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Hoftoren_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_De_Hoftoren_(25949001308).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Hoftoren_%26_Zurichtoren_3.jpg"
+  ],
+  "printFiles": [
+    "hoftoren-1-1000.stl"
+  ]
+}
