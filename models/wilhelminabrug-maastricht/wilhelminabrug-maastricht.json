@@ -1,0 +1,126 @@
+{
+  "name": "Wilhelminabrug Maastricht",
+  "file": "wilhelminabrug-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176740.71801135165,
+    318047.61199252214
+  ],
+  "xAxis": [
+    0.9977496986390081,
+    0.06704877974854134
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 89.82558,
+  "groundSamplePoints": [
+    [
+      0,
+      -35
+    ],
+    [
+      0,
+      35
+    ],
+    [
+      -50,
+      -35
+    ],
+    [
+      -50,
+      35
+    ]
+  ],
+  "replacesTerrain": [
+    "G0935.ca9cb47afd674df795a08b315f0e4f18",
+    "G0935.e6cc289e575f4e78bd2d6fd3fda965aa"
+  ],
+  "description": "Maasdek met AHN-profiel, BGT-vorkoprit en twaalf actuele fiets-, voet- en rijbaanvlakken; rivierpijlers en Wyckse natuurstenen koppen, geïntegreerde printvoet.",
+  "realWorld": {
+    "deckProfileNapM": [
+      [
+        -126,
+        50.1
+      ],
+      [
+        -120,
+        50.27
+      ],
+      [
+        -110,
+        50.6
+      ],
+      [
+        -100,
+        51
+      ],
+      [
+        -84,
+        51.3
+      ],
+      [
+        -80,
+        51.36
+      ],
+      [
+        -60,
+        51.9
+      ],
+      [
+        -40,
+        52.44
+      ],
+      [
+        -20,
+        52.96
+      ],
+      [
+        0,
+        53.48
+      ],
+      [
+        20,
+        53.94
+      ],
+      [
+        40,
+        54.12
+      ],
+      [
+        60,
+        54.12
+      ],
+      [
+        80,
+        54.02
+      ]
+    ],
+    "waterNapM": 44.05,
+    "estimatedDeckThicknessM": 2.1,
+    "estimatedPierTopM": 3.9,
+    "estimatedHeadPlanM": [
+      [
+        6,
+        34
+      ],
+      [
+        5.2,
+        24
+      ]
+    ],
+    "estimatedWingwallThicknessM": 1,
+    "printFootSlopeDegrees": 47
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Wilhelminabrug_(Maastricht)",
+    "https://www.stichting-boogbrug-vianen.nl/BOOGBRUG_VIANEN/RECHTSPRAAK_3_files/22.5%20%20%20%20%20brug%20bij%20Maastricht%2C%20omschrijvingen.pdf",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Wilhelminabrug_(Maastricht)"
+  ],
+  "printFiles": [
+    "wilhelminabrug-maastricht-1-1000.stl"
+  ]
+}
