@@ -1,0 +1,71 @@
+{
+  "name": "Nationaal Monument Kamp Vught",
+  "file": "kamp-vught.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    146100,
+    408600
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 47.49887479820864,
+  "groundSamplePoints": [
+    [
+      0,
+      90
+    ],
+    [
+      0,
+      50
+    ],
+    [
+      13,
+      30
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0865100000009433",
+    "NL.IMBAG.Pand.0865100000019389",
+    "NL.IMBAG.Pand.0865100000019390"
+  ],
+  "description": "Het herinneringscentrum en huidig museale kampterrein: barak, crematorium, drie wachttorens, kindergedenkteken, asputranden en maquette. Buitenliggende fusilladeplaats en Barak 1B niet opgenomen. Dakvlakken uit 3D BAG, nissen en torens voor 1:1000 vereenvoudigd.",
+  "realWorld": {
+    "datumNapM": 3.7,
+    "chimneyTopNapM": 17.25,
+    "towerRoofTopNapM": 11.6,
+    "barakRidgeNapM": 8.88,
+    "crematoriumRidgeNapM": 11.25,
+    "museumRoofNapM": 11.4,
+    "minimumTowerPierM": 0.9,
+    "childPanelCount": 8,
+    "childPanelDepthM": 0.9,
+    "estimates": [
+      "vensterritme en masker",
+      "wachttorenbreedte en cabinhoogtes naar fotos en AHN",
+      "hoogte kindergedenkplaten 2,8 m",
+      "asputranden en maquettehoogtes",
+      "maquettegebouwtjes gegroepeerd uit ortho"
+    ]
+  },
+  "sources": [
+    "https://www.nmkampvught.nl/ontdekken/te-zien/kampterrein/",
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/878/vught-nationaal-monument-kamp-vught",
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/1981/vught-kindergedenkteken",
+    "https://commons.wikimedia.org/wiki/Category:Nationaal_Monument_Kamp_Vught",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0865100000009433 (3D BAG, CC BY 4.0; dakvlakken)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0865100000019389 (3D BAG, CC BY 4.0; dakvlakken)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0865100000019390 (3D BAG, CC BY 4.0; dakvlakken)",
+    "https://www.openstreetmap.org/node/8618912958",
+    "https://www.openstreetmap.org/node/8618912959",
+    "https://www.openstreetmap.org/node/8618912960 (wachttorenposities, OpenStreetMap-bijdragers, ODbL)",
+    "PDOK BGT, BAG, Actueel_orthoHR en AHN DSM/DTM 0,5 m 2026-10-11"
+  ],
+  "printFiles": [
+    "kamp-vught-1-1000.stl"
+  ]
+}
