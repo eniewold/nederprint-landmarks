@@ -1,0 +1,56 @@
+{
+  "name": "SnowWorld Rucphen",
+  "file": "snowworld-rucphen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    98405.11878529674,
+    394737.256133333
+  ],
+  "xAxis": [
+    0.9563047559630354,
+    -0.29237170472273677
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -20,
+      -70
+    ],
+    [
+      12,
+      -80
+    ],
+    [
+      50,
+      -58
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0840100000276424"
+  ],
+  "description": "Hele SnowWorld BAG-contour met smalle oude skihal: doorlopend gebogen spantprofiel met hellingsknik; brede nieuwe hal: doorlopend schuin dakvlak; lage voorkant, horecavleugels, hipdaken en hoge entreefronton. Gesloten printvolumes, blinde raamstroken, paneelnaden, gesloten entree-luifel, buitentrap, verhoogde dakband en dakinstallaties. +X RD -17 graden, z=0 NAP +10,5 m, verborgen voet -2,3 m.",
+  "realWorld": {
+    "groundNapM": 10.5,
+    "oldHallHighNapM": 35.88,
+    "oldHallKinkEstimatedNapM": 22.3,
+    "oldHallLowNapM": 18.6,
+    "newHallHighNapM": 35.33,
+    "newHallLowNapM": 18.33,
+    "frontLowRoofNapM": 14.75,
+    "horecaRoofNapM": 13.6,
+    "entranceRidgeNapM": 18.4
+  },
+  "sources": [
+    "PDOK BAG/BGT 0840100000276424, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0840100000276424",
+    "https://www.snowworld.com/nl/rucphen-breda",
+    "https://www.snowworld.com/en/rucphen-breda/skiing-snowboarding",
+    "https://www.kokstaal.nl/nl/projecten/skihallen-rucphen/",
+    "https://commons.wikimedia.org/wiki/Category:Skid%C3%B4me_Rucphen"
+  ],
+  "printFiles": [
+    "snowworld-rucphen-1-1000.stl"
+  ]
+}
