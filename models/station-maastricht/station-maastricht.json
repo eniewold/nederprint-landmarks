@@ -1,0 +1,54 @@
+{
+  "name": "Station Maastricht",
+  "file": "station-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177425.05411889977,
+    317803.36070443224
+  ],
+  "xAxis": [
+    -0.27563735581699905,
+    0.9612616959383189
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -45,
+      18
+    ],
+    [
+      15,
+      34
+    ],
+    [
+      45,
+      25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000025024"
+  ],
+  "description": "Volledig stationspand: parallelle zadelkappen, vestibule met trapfronton en klok, hoge klokkentoren met trapgevels, zuidkantoren, noordelijke dwarsvleugel, lage kopuitbouwen, dakkapellen, luifel met leeuwenreliëfs en gesloten betonnen perronkap met lichtstrook. Herstelt buurdakbesmetting van de lage kap. +X RD 106 graden, z=0 NAP +47,4 m; voet -0,8 m.",
+  "realWorld": {
+    "groundNapM": 47.4,
+    "canopyNapM": 52.42,
+    "canopyLightRidgeNapM": 54.79,
+    "southRidgeNapM": 64.01,
+    "hallRidgeNapM": 72.18,
+    "hallFrontonNapM": 73.3,
+    "towerRoofNapM": 82.82,
+    "towerGableNapM": 84
+  },
+  "sources": [
+    "PDOK BAG/BGT 0935100000025024, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0935100000025024",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/506688",
+    "https://www.spoorbeeld.nl/databank/maastricht",
+    "https://commons.wikimedia.org/wiki/Category:Station_Maastricht"
+  ],
+  "printFiles": [
+    "station-maastricht-1-1000.stl"
+  ]
+}
