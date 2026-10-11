@@ -30,7 +30,7 @@
   "replacesBuildings": [
     "NL.IMBAG.Pand.0935100000025024"
   ],
-  "description": "Volledig stationspand: parallelle zadelkappen, vestibule met trapfronton en klok, hoge klokkentoren met trapgevels, zuidkantoren, noordelijke dwarsvleugel, lage kopuitbouwen, dakkapellen, luifel met leeuwenreliëfs en gesloten betonnen perronkap met lichtstrook. Herstelt buurdakbesmetting van de lage kap. +X RD 106 graden, z=0 NAP +47,4 m; voet -0,8 m.",
+  "description": "Volledig stationspand: parallelle zadelkappen, vestibule met trapfronton en klok, hoge klokkentoren met trapgevels, zuidkantoren met spoorvensters en negen spoorzijdige dakkapellen, noordelijke dwarsvleugel met breed trapfronton en dakkapellen, lage kopuitbouwen, halvensters, pijlernissen, luifel met leeuwenreliëfs en gesloten betonnen perronkap met lichtstrook. Herstelt buurdakbesmetting van de lage kap. +X RD 106 graden, z=0 NAP +47,4 m; voet -0,8 m.",
   "realWorld": {
     "groundNapM": 47.4,
     "canopyNapM": 52.42,
@@ -39,14 +39,31 @@
     "hallRidgeNapM": 72.18,
     "hallFrontonNapM": 73.3,
     "towerRoofNapM": 82.82,
-    "towerGableNapM": 84
+    "towerGableNapM": 84,
+    "railSouthDormerRidgesNapM": [
+      61.66,
+      61.44,
+      61.62,
+      61.3,
+      61.62,
+      61.54,
+      61.37,
+      61.13,
+      61.21
+    ],
+    "railNorthCrossRidgeNapM": 64.9,
+    "railNorthCrossGableNapM": 65.8,
+    "railFacadeNicheDepthM": 0.35
   },
   "sources": [
     "PDOK BAG/BGT 0935100000025024, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
     "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0935100000025024",
     "https://monumentenregister.cultureelerfgoed.nl/monumenten/506688",
     "https://www.spoorbeeld.nl/databank/maastricht",
-    "https://commons.wikimedia.org/wiki/Category:Station_Maastricht"
+    "https://commons.wikimedia.org/wiki/Category:Station_Maastricht",
+    "https://commons.wikimedia.org/wiki/Category:Platforms_at_Station_Maastricht",
+    "https://www.aerophotostock.com/media/7938f835-2f96-426d-8610-c575f647bd93-maastricht-luchtfoto-stadsdeel-wyck-met-station-maastricht",
+    "Google Maps 3D station Maastricht: uitsluitend visuele kruiscontrole, geen geometrie overgenomen, 11 oktober 2026"
   ],
   "printFiles": [
     "station-maastricht-1-1000.stl"
