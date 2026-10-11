@@ -1,0 +1,53 @@
+{
+  "name": "Muziekgebouw aan 't IJ",
+  "file": "muziekgebouw-aan-t-ij.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122753.33449981491,
+    487918.5885706783
+  ],
+  "xAxis": [
+    0.9602936856769431,
+    -0.2789911060392293
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -60,
+      -34
+    ],
+    [
+      -20,
+      -45
+    ],
+    [
+      8,
+      -32
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012118833"
+  ],
+  "description": "Muziekgebouw met glazen foyer, 19 m dakluifel met gesloten 45-graden onderzijde, Bimhuis op schuin voetvolume, restaurantplint, entreetrappen, glasnissen, daklijst en installaties. Behoudt hotel- en verbindingsvolumes van hetzelfde BAG-pand uit dakvlakken; geen afzonderlijk nieuw skyline-model. +X RD -16,2 graden, z=0 NAP +1,0 m; diepe voet -1,5 m aan de kade.",
+  "realWorld": {
+    "groundNapM": 1,
+    "mainRoofNapM": 26.34,
+    "mainRoofPlantNapM": 27.24,
+    "bimhuisRoofNapM": 21.35,
+    "bimhuisUndersideEstimatedNapM": 8.1,
+    "canopyProjectionM": 19.27,
+    "preservedHotelTopNapM": 71.26
+  },
+  "sources": [
+    "PDOK BAG/BGT 0363100012118833, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012118833",
+    "https://3xn.com/project/muziekgebouw",
+    "https://www.muziekgebouw.nl/nl/ontwerp-gebouw-en-zaal-m98x",
+    "https://commons.wikimedia.org/wiki/Category:Muziekgebouw_aan_'t_IJ"
+  ],
+  "printFiles": [
+    "muziekgebouw-aan-t-ij-1-1000.stl"
+  ]
+}
