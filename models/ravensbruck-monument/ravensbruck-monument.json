@@ -1,0 +1,67 @@
+{
+  "name": "Ravensbrück-monument",
+  "file": "ravensbruck-monument.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120600.2,
+    485570.253
+  ],
+  "xAxis": [
+    0.5666391313203379,
+    -0.823966076277739
+  ],
+  "groundHeight": 43.60990230003792,
+  "groundOffsetMetres": -0.05,
+  "replacesTerrain": [
+    "G0363.0dd3ff8bd0c74c779720fb4eba391678"
+  ],
+  "groundSamplePoints": [
+    [
+      -5,
+      -3
+    ],
+    [
+      0,
+      -4
+    ],
+    [
+      5,
+      -3
+    ]
+  ],
+  "description": "Ronde licht- en geluidzuil met elf steeds hogere panelen in een halve cirkel op het natuurstenen plateau; panelen en zuil verdikt voor 1:1000.",
+  "realWorld": {
+    "columnTopM": 3.4,
+    "plateauM": [
+      10.772,
+      7.632,
+      0.15
+    ],
+    "sourceDimensionsM": [
+      9,
+      7.5
+    ],
+    "plateBgtId": "G0363.0dd3ff8bd0c74c779720fb4eba391678",
+    "panelCount": 11,
+    "panelThicknessM": 0.9,
+    "panelWidthM": 0.9,
+    "estimatedPanelTopsM": [
+      2.1,
+      3.25
+    ],
+    "estimatedPanelRadiusM": 3.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/1439/amsterdam-vrouwen-van-ravensbr%C3%BCck",
+    "https://ravensbruck.nl/a/monument/de-opdracht/",
+    "https://nl.wikipedia.org/wiki/Vrouwen_van_Ravensbr%C3%BCck_1940-1945",
+    "https://commons.wikimedia.org/wiki/Category:Vrouwen_van_Ravensbr%C3%BCck_1940-1945",
+    "PDOK BGT straatmeubilair G0363.26f97db8d0724f9699e58c8e7eef80e2, Actueel_orthoHR, AHN DSM/DTM 0,5 m, 2026-10-11"
+  ],
+  "printFiles": [
+    "ravensbruck-monument-1-1000.stl"
+  ]
+}
