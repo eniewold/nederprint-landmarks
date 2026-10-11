@@ -1,0 +1,60 @@
+{
+  "name": "Eerebegraafplaats Bloemendaal",
+  "file": "erebegraafplaats-bloemendaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    99804,
+    490712
+  ],
+  "xAxis": [
+    0.3924,
+    0.9198
+  ],
+  "groundOffsetMetres": -0.8,
+  "groundHeight": 56.61547,
+  "groundSamplePoints": [
+    [
+      -35,
+      -10
+    ],
+    [
+      0,
+      -10
+    ],
+    [
+      35,
+      -10
+    ]
+  ],
+  "replacesTerrain": [
+    "G0377.cfa0463095e849ddb0d21012a97b2ed9"
+  ],
+  "description": "Het ommuurde grafveld op het duin: verlaagde grafvakken en verhoogde omgang, vier gedenkplaten, urn en klokkenstoel. Houten kruis op het duin en auditorium buiten het grafveld niet opgenomen.",
+  "realWorld": {
+    "groundNapM": 13.6,
+    "graveFieldNapM": 13.1,
+    "bellTopNapM": 18.61,
+    "urnHeightM": 2.5,
+    "gravePlots": 41,
+    "estimatedWallThicknessM": 0.9,
+    "estimatedPlotBordersM": 0.25,
+    "estimatedUrnPositionLocalM": [
+      41.2,
+      -3.9
+    ]
+  },
+  "sources": [
+    "https://www.eerebegraafplaatsbloemendaal.eu/ontwerp-en-architectuur",
+    "https://www.eerebegraafplaatsbloemendaal.eu/klokkenstoel",
+    "https://www.eerebegraafplaatsbloemendaal.eu/urn",
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/1813/overveen-eerebegraafplaats",
+    "https://commons.wikimedia.org/wiki/Category:Erebegraafplaats_Bloemendaal",
+    "https://api.pdok.nl/lv/bgt/ogc/v1/collections/onbegroeidterreindeel/items",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "erebegraafplaats-bloemendaal-1-1000.stl"
+  ]
+}
