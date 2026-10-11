@@ -1,0 +1,67 @@
+{
+  "name": "Helpoort",
+  "file": "helpoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176641.15,
+    317347.25
+  ],
+  "xAxis": [
+    0.9984973589779783,
+    0.05479985505457507
+  ],
+  "groundHeight": 93.55522083349764,
+  "groundOffsetMetres": 0.03,
+  "groundSamplePoints": [
+    [
+      0,
+      -7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      -6,
+      -7
+    ],
+    [
+      6,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000106387"
+  ],
+  "description": "Halfronde veldtorens met vlakke achterkant, ongelijk zadeldak, mezekouw, vensternissen, weermuur met kantelen en Jekertoren. +Y naar Sint Bernardusstraat; poort intern spits 55 graden, ronde mond ondiep. AHN torens circa 21 m verschilt van gepubliceerde 24 m.",
+  "realWorld": {
+    "groundNapM": 48,
+    "towerTopNapM": [
+      69,
+      68.719
+    ],
+    "towerPublishedHeightM": 24,
+    "frontEaveM": 14.72,
+    "rearEaveM": 10.28,
+    "roofRidgeM": 16.1,
+    "gateWidthM": 4,
+    "estimatedGateSpringM": 1.1,
+    "estimatedGateApexM": 3.957,
+    "cornerTopNapM": 63.707,
+    "wallTopNapM": 51.1,
+    "minimumStructuralPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/27997",
+    "https://www.vestingmuseummaastricht.nl/index.php/museum/vestingmuseum",
+    "https://www.zichtopmaastricht.nl/locaties/helpoort",
+    "https://commons.wikimedia.org/wiki/Category:Helpoort",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0935100000106387",
+    "PDOK BAG/BGT 0935100000106387, AHN DSM/DTM 0,5 m en Actueel_orthoHR, 2026-10-11"
+  ],
+  "printFiles": [
+    "helpoort-1-1000.stl"
+  ]
+}
