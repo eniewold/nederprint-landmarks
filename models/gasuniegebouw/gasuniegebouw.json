@@ -1,0 +1,91 @@
+{
+  "name": "Gasuniegebouw",
+  "file": "gasuniegebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    232800,
+    580010
+  ],
+  "xAxis": [
+    0.71203,
+    0.70215
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -35
+    ],
+    [
+      0,
+      -35
+    ],
+    [
+      40,
+      -33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010929941"
+  ],
+  "description": "Oorsprong in de kern op RD (232800, 580010), z = 0 op NAP -0,85 m (maaiveld zuidoost), +X op 44,6 graden in RD langs de zuidwestvleugel naar de kern, +Y naar het noordwesten (entree); geknikte schijf van twee vleugels van 13 m breed (zuidwest tot +76,0, noord op 80,9 graden tot +67,0 met dakopbouw +68,4/+69,2) rond een kern tot +82,0 met dakrand tot +84,8 en een oostpartij op +70,8, schuin uitlopende glazen koppen, gevelkammen die naar de kern opzwaaien en bij de koppen uitlopen in bolle kappen met punten (+81 en +82 zuidwest, +70,4 tot +70,6 noord), schuine steunberen, de glazen stropdas tot +63,5 voor de kern, ponsgevels met vensters per laag van 3,6 m en een laagbouw van lessenaars- en schilddaken (+10 tot +17,3) op een onderbouw tot +6,5 met een schuine rand; hoogtes uit AHN en 3D BAG, vensterritme, stropdas, luifel en entreehal uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.85,
+    "groundWestNapM": -0.3,
+    "groundEastNapM": -1.4,
+    "coreRoofNapM": 82,
+    "coreParapetNapM": 84.8,
+    "eastStepNapM": 70.8,
+    "southwestWingRoofNapM": 76,
+    "northWingRoofNapM": 67,
+    "northWingRoofStripNapM": [
+      68.4,
+      69.2
+    ],
+    "crestPeaksNapM": {
+      "southwestSE": 82,
+      "southwestNW": 81,
+      "northW": 70.6,
+      "northE": 70.4,
+      "northCorner": 70.2,
+      "northEastBump": 73
+    },
+    "tieTopNapM": 63.5,
+    "lowRoofsNapM": [
+      6.5,
+      17.3
+    ],
+    "wingWidthM": 13.1,
+    "storeyPitchM": 3.6,
+    "axisDegrees": 44.6,
+    "northWingAxisDegrees": 80.9,
+    "estimates": [
+      "verdiepingshoogte 3,6 m en vensters van 2,0 x 1,6 m op 3,3 m uit de vensterrijen op de foto's; het werkelijke verspringende patroon is regelmatig gemaakt",
+      "glazen koppen als banden per laag; het profiel van de schuine koppen uit AHN-doorsneden",
+      "steunberen: positie en uitloop uit het AHN (noordvleugel U 46, zuidwestvleugel X -40,6 en -45,5)",
+      "gevelkammen: profiel uit het AHN (maximum per 0,5 m binnen de gevel), regelmatig gemaakt; bolle vorm en dikte van de kappen bij de punten uit de foto's, hoogte begrensd door het AHN",
+      "stropdas: breedte, uitsteek en knoop uit de frontale foto RCE 20365637, top uit het AHN",
+      "entreehal (glas, geen AHN-punten) en luifel uit foto's en de luchtfoto",
+      "laagbouw: dakvlakken regelmatig gemaakt uit AHN en 3D BAG; onderbouw op +6,5 met een rand van 45 graden"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0014100010929941 (bouwjaar 1994), AHN DSM/DTM 0,5 m (WCS, AHN4) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010929941 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes van kern, vleugels en oostpartij en de dakvlakken van de laagbouw",
+    "https://nl.wikipedia.org/wiki/Gasuniegebouw (Alberts en Van Huut, 1994, organische architectuur, 18 verdiepingen, trappenkolom achter een scheve glazen gevel)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_-_Groningen_-_20365637_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_-_Groningen_-_20365462_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gasuniegebouw_Groningen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gasuniegebouw.jpg",
+    "https://commons.wikimedia.org/wiki/File:20090623_Gasuniegebouw_Groningen_NL.jpg",
+    "https://commons.wikimedia.org/wiki/File:6043_Gasunie.Rotonde.VrijheidsPlein.Aanpak.Zuidring.Ring.Zuid.Plan.west.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gasunie,_Groningen_(2012).jpg",
+    "https://commons.wikimedia.org/wiki/File:Gasunie_Luifel.jpg",
+    "https://commons.wikimedia.org/wiki/File:20080129_Gasuniegebouw_Groningen_NL.jpg"
+  ],
+  "printFiles": [
+    "gasuniegebouw-1-1000.stl"
+  ]
+}
