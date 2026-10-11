@@ -1,0 +1,52 @@
+{
+  "name": "Station Breda",
+  "file": "station-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112895.35854881468,
+    400925.37260406057
+  ],
+  "xAxis": [
+    0.996917333733128,
+    0.07845909572784494
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -70,
+      -106
+    ],
+    [
+      -25,
+      -106
+    ],
+    [
+      65,
+      -106
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000101539"
+  ],
+  "description": "Volledige OV-terminal van Koen van Velsen: lagere perronhal met parkeerdek, hogere kantoor- en woonstroken, drie zuidelijke woonhoven, twee noordhoven en negen glazen daklichten. Gesloten volumes en 45-graden binnenprofielen voor de dakuitsparingen, raamvelden en installaties. Ondergrondse BAG-uitlopers verborgen onder straatniveau; +X RD 4,5 graden, z=0 NAP +2,3 m.",
+  "realWorld": {
+    "groundNapM": 2.3,
+    "parkingRoofNapM": 19.64,
+    "northRoofNapM": 23.4,
+    "higherStripsNapM": 23.55,
+    "eastRoofNapM": 22.9,
+    "installationNapM": 24.2
+  },
+  "sources": [
+    "PDOK BAG/BGT 0758100000101539, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000101539",
+    "https://koenvanvelsen.com/nl/projects/87/treinstation-breda",
+    "https://www.octatube.nl/nl_NL/project-item.html/projectitem/105",
+    "https://commons.wikimedia.org/wiki/Category:Breda_station_(2014)"
+  ],
+  "printFiles": [
+    "station-breda-1-1000.stl"
+  ]
+}
