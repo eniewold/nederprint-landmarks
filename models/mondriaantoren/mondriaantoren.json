@@ -1,0 +1,82 @@
+{
+  "name": "Mondriaantoren",
+  "file": "mondriaantoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122993.62,
+    484117.13
+  ],
+  "xAxis": [
+    0.93909,
+    0.34366
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      22,
+      -14
+    ],
+    [
+      25,
+      -10
+    ],
+    [
+      12,
+      -18
+    ],
+    [
+      20,
+      -18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012097541"
+  ],
+  "description": "Oorsprong in het hart van de schacht op straatniveau NAP +0,5 m, +X langs de middenschijf naar het oostnoordoosten (20,1 graden in RD), +Y naar het noordnoordwesten; schacht met glazen hoeken tot NAP +106,5 m, stenen rastererkers noord en zuid tot +101, middenschijf met gelede glazen erker in de oostkop en stenen kroon tot +117,35, glazen opbouw tot +120,6 met gevelonderhoudsinstallatie tot +122,95, westvleugel tot +92,3 met kern tot +94,8 en onderbouw tot +11,3; gevelritme, erkerdelen en kroonvensters uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "deckNapM": 2,
+    "podiumNapM": 11.3,
+    "wingNapM": 92.3,
+    "coreNapM": 94.8,
+    "bayNapM": 101,
+    "shaftNapM": 106.5,
+    "slabNapM": 117.35,
+    "glassNapM": 120.6,
+    "topNapM": 122.95,
+    "shaftM": [
+      27.64,
+      26.2
+    ],
+    "footprintM": [
+      59.24,
+      29.94
+    ],
+    "storeyPitchM": 3.55,
+    "axisDegrees": 20.1,
+    "estimates": [
+      "laaghoogte 3,55 m boven een hal tot NAP +6,2 m en 28 lagen in de schacht, uit foto's en de 31 lagen van Wikipedia",
+      "Mondriaan-raster van vier vakken per laag (2,8 x 2,5 m) op de erkers en één glasvak per laag in de hoeken, uit foto's",
+      "glazen erker in de oostkop: vier delen van zes lagen (NAP +20 tot +104), 7,5 m breed en 1,2 m uit de gevel, uit foto's",
+      "zuidelijke rastererker gespiegeld van de noorderker (BAG), bevestigd door AHN-wandpunten en de luchtfoto; begint boven de hal",
+      "kroonvensters, glazen opbouw en de giek van de gevelonderhoudsinstallatie uit foto's en luchtfoto, hoogtes uit AHN/3D BAG"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012097541, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012097541 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes en dakomtrekken",
+    "https://nl.wikipedia.org/wiki/Mondriaantoren",
+    "https://commons.wikimedia.org/wiki/File:Mondriaantoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Mondriaantoren2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Mondriaantoren_in_2019_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Mondriaantoren_in_2019_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Mondriaan_Tower_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_omval_rembrandt_breitner_mondriaan_toren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amstelplein.jpg"
+  ],
+  "printFiles": [
+    "mondriaantoren-1-1000.stl"
+  ]
+}
