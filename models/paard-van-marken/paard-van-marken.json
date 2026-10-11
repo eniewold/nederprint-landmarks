@@ -1,0 +1,63 @@
+{
+  "name": "Paard van Marken",
+  "file": "paard-van-marken.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138139.2,
+    496921.05
+  ],
+  "xAxis": [
+    0.999860414,
+    -0.016707835
+  ],
+  "groundHeight": 44.36464157914016,
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.5,
+      0
+    ],
+    [
+      0,
+      -4.5
+    ],
+    [
+      0,
+      4.5
+    ],
+    [
+      -17,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0852100000003061"
+  ],
+  "description": "Ronde lichttoren met omgang, lantaarn, koepel en verdikte makelaar; afzonderlijke zadeldaken op wachterswoning en machinekamer, twee noordaanbouwen en vrijstaand schuurtje. Lokale +X volgt de nokken oostwaarts.",
+  "realWorld": {
+    "sourceObjectHeightM": 15.5,
+    "estimatedFinialTopM": 17.1,
+    "towerFootDiameterM": 6.1,
+    "roofRidgesM": [
+      8.67,
+      9.26
+    ],
+    "roofEavesM": [
+      6.36,
+      6.8
+    ],
+    "minimumPartM": 0.9,
+    "hutFootM": -1.69
+  },
+  "sources": [
+    "https://www.vuurtorens.org/vuurtoren/marken/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28274",
+    "https://commons.wikimedia.org/wiki/Category:Marken_lighthouse",
+    "PDOK BAG 0852100000003061; BGT L0002.5dd23c32044344b299e3f7e06ef5fdbf en L0002.69529f4b4a00448abf30fcd5a0d064aa; AHN DSM/DTM 0,5 m; Actueel_orthoHR, 2026-10-11"
+  ],
+  "printFiles": [
+    "paard-van-marken-1-1000.stl"
+  ]
+}
