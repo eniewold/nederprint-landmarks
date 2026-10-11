@@ -1,0 +1,75 @@
+{
+  "name": "Valley",
+  "file": "valley-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120262.5,
+    483407
+  ],
+  "xAxis": [
+    0.99999,
+    -0.00524
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -31,
+      55
+    ],
+    [
+      -31,
+      30
+    ],
+    [
+      -31,
+      0
+    ],
+    [
+      0,
+      -75
+    ],
+    [
+      15,
+      -75
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012250045"
+  ],
+  "description": "Oorsprong midden in de bovengrondse voetafdruk op straatniveau NAP -0,7 m, +X op -0,3 graden in RD langs de noord- en zuidgevel, +Y naar het noorden; drie torens op een gezamenlijke onderbouw: Noordtoren tot NAP +99,4 m (dakopbouw +100,8, gevelonderhoudsmast +103,3), Zuidtoren tot +79,4 m (dakopbouw +82,3), Westtoren aan de Beethovenstraat tot +66,0 m (+67,2); aan de binnenkant een getrapte berg van natuurstenen terrassen op het verdiepingsraster (+6,2 tot +32,8 per 3,8 m, daarboven per 3,3 m) met plantenbakken, uitkragende bakken en vensters, aan de buitenkant glazen gevels met verdiepingsbanden; hoogtes en terrasvlakken uit AHN5 (2023), trappen uit de 3D BAG, gevelritme uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.7,
+    "northTowerNapM": 99.4,
+    "northTowerTopNapM": 100.8,
+    "southTowerNapM": 79.4,
+    "southTowerTopNapM": 82.3,
+    "westTowerNapM": 66,
+    "westTowerTopNapM": 67.2,
+    "officeStoreyM": 3.8,
+    "homeStoreyM": 3.3,
+    "footprintM": [
+      44.6,
+      139.4
+    ],
+    "axisDegrees": -0.3,
+    "terraces": 86,
+    "estimates": [
+      "terrasvlakken per verdieping uit AHN5 (drempel 0,6 m onder de vloer, gaten en uitsteeksels kleiner dan 2 m weggefilterd, facetten vereenvoudigd op 0,5 m)",
+      "bakken op de natuurstenen wanden naar foto's, niet per bak gemeten: naad op elke vloer, op 60 % van de verdiepingen 40 tot 90 % van de wand terugliggend onder een kraag van 45 graden (1,8 m diep), daarnaast grote vensters",
+      "glasbanden en stijlen per 3,0 m op de glazen gevels naar foto's",
+      "grens tussen glas en natuursteen per toren naar foto's",
+      "gevelonderhoudsinstallaties als mast en geparkeerde arm op het dak"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012250045 en Actueel_orthoHR; 2026-10-11",
+    "AHN5 DSM/DTM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; het PDOK-AHN (AHN4) toont het complex nog in aanbouw",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012250045 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes ter controle en de hellende vlakken van de trappen",
+    "https://nl.wikipedia.org/wiki/Valley_(Amsterdam) (100, 66 en 76 m; het AHN5 geeft de Zuidtoren 80 m boven straat, met dakopbouw 83 m)"
+  ],
+  "printFiles": [
+    "valley-amsterdam-1-1000.stl"
+  ]
+}
