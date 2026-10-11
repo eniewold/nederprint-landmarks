@@ -1,0 +1,85 @@
+{
+  "name": "De Zalmhaven (Zalmhaventoren)",
+  "file": "zalmhaven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92632.06,
+    436135.17
+  ],
+  "xAxis": [
+    0.88942,
+    0.4571
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -120,
+      -21
+    ],
+    [
+      -60,
+      -21
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      -60,
+      41
+    ],
+    [
+      0,
+      40
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100020122",
+    "NL.IMBAG.Pand.0599100100020123"
+  ],
+  "description": "Oorsprong in het hart van de schacht van Zalmhaven I op straatniveau NAP +3,0 m, +X langs de gevels op 27,2 graden in RD, +Y naar het noordnoordwesten (Gedempte Zalmhaven), de Houtlaan aan -Y; voet tot NAP +20 m, schacht van 31,7 m met vier rondgedraaide balkonstapels tot +182 m, restaurantlaag tot +191 m (rand +193), technische top tot +206 m (rand +207) en mast tot +218,1 m; Zalmhaven II en III 48 m uit elkaar tot +72/+73 m met balkonstapels tot +63,5 m, op de onderbouw (+16 m) met daktuin, herenhuizen en lagere westkop; hoogtes uit AHN5 (2023), gevelritme uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 3,
+    "podiumNapM": 16,
+    "towerBaseNapM": 20,
+    "shaftNapM": 182,
+    "restaurantNapM": 191,
+    "topNapM": 206,
+    "mastTopNapM": 218.1,
+    "lowTowersNapM": 73,
+    "shaftWidthM": 31.7,
+    "footprintM": [
+      165.1,
+      53.5
+    ],
+    "storeyPitchM": 3.176,
+    "lowStoreyPitchM": 3.111,
+    "axisDegrees": 27.2,
+    "estimates": [
+      "verdiepingshoogte 3,18 m (51 woonlagen tussen voet en schacht) uit de verdiepingtelling (wonen tot de 56e) en foto's",
+      "gevelzones van de schacht (glashoek 3,75 m, balkonstapel 11 m, stenen veld met tien vensters per laag, glasstrook 3,1 m) uit een frontale foto en de AHN-uitbouwen",
+      "bovenste vier woonlagen in glas, glasbanden van restaurantlaag en top uit foto's",
+      "mastdiameters (voet 2,4 m, paal 1,0 m, schroefantenne 1,4 m) uit foto's, dikker dan echt voor 1:1000",
+      "vensterraster van II en III (18 lagen, vakken 2,45 m) en van de onderbouw (drie lagen, vakken 2,75 m) uit foto's"
+    ]
+  },
+  "sources": [
+    "PDOK BAG panden 0599100100020122 en 0599100100020123 en Actueel_orthoHR; 2026-10-11",
+    "AHN5 DSM/DTM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; het PDOK-AHN (AHN4) toont de toren nog in aanbouw",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100020122 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes ter controle",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100020123 (3D BAG, CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/De_Zalmhaven",
+    "Bouwen met Staal, 'Het neusje van de Zalm' (verdiepingsindeling)",
+    "https://commons.wikimedia.org/wiki/File:Zalmhaventoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zalmhaventoren_in_2026.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Zalmhaven_I_-_Rotterdam_-_View_from_the_Veerhaven.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Zalmhaven_I,_II_and_III_-_Rotterdam_-_View_from_the_Veerhaven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_zalmhaven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Model_of_De_Zalmhaven.jpg"
+  ],
+  "printFiles": [
+    "zalmhaven-1-1000.stl"
+  ]
+}
