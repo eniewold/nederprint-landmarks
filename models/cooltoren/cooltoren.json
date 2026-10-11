@@ -1,0 +1,94 @@
+{
+  "name": "Cooltoren",
+  "file": "cooltoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92644.5,
+    436604
+  ],
+  "xAxis": [
+    0.9999,
+    -0.01396
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -21,
+      -30
+    ],
+    [
+      -21,
+      0
+    ],
+    [
+      -21,
+      25
+    ],
+    [
+      0,
+      -30
+    ],
+    [
+      31,
+      -20
+    ],
+    [
+      31,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100017348",
+    "NL.IMBAG.Pand.0599100100017388"
+  ],
+  "description": "Oorsprong in het hart van de schacht op straatniveau NAP +0,5 m, +X langs de gevels op -0,8 graden in RD (oost, naar de garage), +Y naar het noorden; schacht van 28 m met twee uitgebouwde balkonstapels en een gleuf per gevel en terugliggende hoeken, middenkroon als uitkragende band van 32,5 m van NAP +72,8 tot +83,3, de hoeken boven +136,7 weggesneden, dak +151,2 met dakopbouw tot +155,0 en antenne tot +160,5; plint tot +21,7 en parkeergarage met daktuin tot +12,85; hoogtes uit AHN5 (2023), balkon- en vloerritme uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "plinthNapM": 21.7,
+    "garageNapM": 12.85,
+    "crownNapM": [
+      72.84,
+      83.27
+    ],
+    "cornerTerraceNapM": 136.69,
+    "roofNapM": 151.2,
+    "topNapM": 155,
+    "mastTopNapM": 160.5,
+    "coreM": [
+      27.9,
+      27.6
+    ],
+    "crownM": [
+      32.5,
+      32.4
+    ],
+    "storeyPitchM": 2.902,
+    "axisDegrees": -0.8,
+    "estimates": [
+      "verdiepingsteek 2,90 m (49 woonlagen tussen NAP +9,0 en het dak) uit de 51 lagen van Wikipedia en de AHN-hoogtes van kroon, gleufdak en hoekterrassen",
+      "balkonplaat 1,72 m en balkonruimte 1,18 m (0,9 m diep), vloerrand 0,55 m in de hoekzones, uit foto's",
+      "stapels en gleuven onder de kroon gelijk aan die erboven (AHN ziet alleen het bovenste deel), uit foto's van alle kanten",
+      "terrassen tussen de kroonbanden 1,5 m diep, uit foto's",
+      "dakopbouw als 1,0 m teruggezette laag onder de dakplaat, antenne als paal van 1,0 m",
+      "vensterraster van de plint (pui en vier lagen) en de open dekken van de garage"
+    ]
+  },
+  "sources": [
+    "PDOK BAG panden 0599100100017348 en 0599100100017388 en Actueel_orthoHR; 2026-10-11",
+    "AHN5 DSM/DTM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; het PDOK-AHN (AHN4) toont de toren nog in aanbouw",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100017348 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes ter controle",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100017388 (3D BAG, CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/Cooltoren",
+    "https://commons.wikimedia.org/wiki/File:Cooltoren_-_september_2022.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cooltoren_(Rotterdam).jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Cooltoren_in_de_skyline_van_Rotterdam_-_cropped.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cooltoren_gezien_vanaf_Terwenakker.jpg",
+    "https://commons.wikimedia.org/wiki/File:CoolToren_en_BaanTower.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cool_Tower.jpg"
+  ],
+  "printFiles": [
+    "cooltoren-1-1000.stl"
+  ]
+}
