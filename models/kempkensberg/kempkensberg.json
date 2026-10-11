@@ -1,0 +1,107 @@
+{
+  "name": "Rijkskantoor Kempkensberg",
+  "file": "kempkensberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234655,
+    580548
+  ],
+  "xAxis": [
+    -0.55919,
+    0.82904
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -20
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      40,
+      -42
+    ],
+    [
+      10,
+      20
+    ],
+    [
+      -20,
+      26
+    ],
+    [
+      -58,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100022187068"
+  ],
+  "description": "Oorsprong in het hart van de hoge lob op maaiveld NAP +6,2 m, +X op 124 graden in RD langs de lange as van de hoge naar de lage lob (noordwest), +Y naar het zuidwesten; twee eivormige lobben met 24 en 11 verdiepingsbanden (dak +91,27 en +48,26) waarvan de koppen naar boven terugwijken, een glazen tussenlaag op de 11e laag, een uitbouw van 7 lagen (+34,3), een vleugel van 2 lagen (+17,9) en een plint (+10,45) met glazen dakveld; plattegronden gefit op AHN-dakranden, banden en verdiepingsteek uit foto's.",
+  "realWorld": {
+    "groundNapM": 6.2,
+    "plinthNapM": 10.45,
+    "wingNapM": 17.9,
+    "skirtNapM": 34.3,
+    "northRoofNapM": 48.26,
+    "tallRoofNapM": 91.27,
+    "installationsTopNapM": 98.8,
+    "storeyPitchM": 3.372,
+    "floors": {
+      "tall": 24,
+      "north": 11,
+      "skirt": 7,
+      "wing": 2
+    },
+    "tallLobeLengthM": {
+      "roof": [
+        -27.9,
+        25.8
+      ],
+      "below60m": [
+        -32.55,
+        31.05
+      ]
+    },
+    "northLobeLengthM": {
+      "roof": [
+        23.43,
+        73.42
+      ],
+      "atWing": [
+        18.23,
+        79.57
+      ]
+    },
+    "axisDegrees": 124,
+    "estimates": [
+      "verdiepingsteek 3,37 m uit de 24 lagen op foto's en de AHN-hoogtes van plint, uitbouw, lage lob en dak",
+      "witte band van 1,25 m en glas 0,4 m terug, uit foto's; op de 11e laag (glazen tussenlaag met lamellen) een band van 0,9 m en glas 0,6 m terug",
+      "terugwijken van de koppen per laag als gladde functie tussen de AHN/3D BAG-randen; de zijgevels loodrecht",
+      "afronding van 3 m in de holle hoek tussen de lobben, uit foto's",
+      "uitbouw als superellips, vleugel als veelhoek uit het AHN; plint volgens de BAG-contour",
+      "glazen dak bij de zuidkop als veld van 0,35 m diep (AHN zonder waarde, vorm uit de ortho)",
+      "gevelonderhoudsrail met hekwerk als dichte rand van 0,9 m, 1,9 m hoog"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0014100022187068 (toren, lage lob en plint) en 0014100022187265 (ondergrondse parkeergarage, geen 3D-reconstructie), BGT, AHN DSM/DTM 0,5 m en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100022187068 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes en kopvlakken",
+    "https://nl.wikipedia.org/wiki/Kempkensberg_(kantoorgebouw)",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Kempkensberg_04.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Kempkensberg_07.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Kempkensberg_10.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Kempkensberg_12.jpg",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Kempkensberg_03.jpg",
+    "https://commons.wikimedia.org/wiki/File:20120315_Kantorencomplex_Kempkensberg_Groningen_NL.jpg",
+    "https://commons.wikimedia.org/wiki/File:New_Wave_-_Flickr_-_Rob_Oo.jpg"
+  ],
+  "printFiles": [
+    "kempkensberg-1-1000.stl"
+  ]
+}
