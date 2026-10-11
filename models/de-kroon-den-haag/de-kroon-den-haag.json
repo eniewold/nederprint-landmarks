@@ -1,0 +1,106 @@
+{
+  "name": "De Kroon",
+  "file": "de-kroon-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81919.85,
+    455016.24
+  ],
+  "xAxis": [
+    0.60738,
+    -0.79441
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -13
+    ],
+    [
+      0,
+      -13
+    ],
+    [
+      20,
+      -13
+    ],
+    [
+      -49,
+      12
+    ],
+    [
+      28,
+      25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000299585"
+  ],
+  "description": "Oorsprong midden onder de toren op straatniveau NAP +0,75 m, +X langs de lange gevels (-52,6 graden in RD) naar het zuidoosten, +Y naar de binnenhof en JuBi; onderbouw tot NAP +24,3 m met glazen binnenhof, vleugel tot +36,2 en schijf tot +54,1, toren van 35 x 21 m met per lange gevel drie erkers waarvan de vakken ertussen in drie trappen terugspringen (+54,1/+87,1/+105,1), een zaagtandvormige bovenste laag tot +126,1 met terrassen op +123,1 en drie lamellenkronen per gevel tot +132,0; vensterritme, trap-hoogtes en kroonlamellen uit foto's en AHN geschat.",
+  "realWorld": {
+    "groundNapM": 0.75,
+    "podiumNapM": 24.3,
+    "wingNapM": 36.15,
+    "slabNapM": 54.1,
+    "stepNapM": [
+      {
+        "fromNap": 54.1,
+        "recessM": 0.6
+      },
+      {
+        "fromNap": 87.13,
+        "recessM": 1.2
+      },
+      {
+        "fromNap": 105.13,
+        "recessM": 1.8
+      }
+    ],
+    "terraceNapM": 123.13,
+    "roofNapM": 126.06,
+    "plantNapM": 129.07,
+    "crownTopNapM": 132,
+    "towerM": [
+      35,
+      20.9
+    ],
+    "baysX": [
+      -11.5,
+      0,
+      11.5
+    ],
+    "bayFrontM": 3.1,
+    "notchDepthM": {
+      "sw": 6,
+      "ne": 4.3
+    },
+    "storeyPitchM": 3,
+    "axisDegrees": -52.6,
+    "estimates": [
+      "trappen van de inspringende vakken: richels in het AHN op +54, circa +85-90 en +93-106 m, op de vloeren +87,13 en +105,13 gelegd, dieptes 0,6/1,2/1,8 m afgerond (AHN-pixels 0,5 m); erkerzijkanten op 45 graden",
+      "erkers twee ramen breed (3,1 m) met één raam per schuine zijkant, vakken op 1,55 m, uit frontale foto's",
+      "kronen als 1,2 m dikke lamellenwanden op de zaagtand met groeven van 0,3 m; werkelijk losse natuurstenen stijlen met open tussenruimtes",
+      "zaagtand van de bovenste laag: inkeping 6,0 m (zuidwest) en 4,3 m (noordoost, minimaal 45 graden; AHN 3,1 m)",
+      "40 lagen van 3,0 m boven een begane grond tot +6,13 (bovenste vloer op het terras +123,13); ramen 1,0 x 1,9 m als nissen van 0,35 m",
+      "glazen kap van de binnenhof 0,6 m verdiept: het AHN heeft daar geen punten"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000299585, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000299585 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes, terrassen en de zaagtand van de bovenste laag",
+    "https://en.wikipedia.org/wiki/De_Kroon_(The_Hague)",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_De_Kroon_(24952721807).jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Kroon_The_Hague_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag,_de_kantoorgebouwen_aan_de_Turfmarkt_vanaf_de_Nieuwe_Haven_101IMG_8919_2019-03-24_15.35.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_De_Kroon_in_het_Haagse_Wijnhavenkwartier.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Kroon_-_Den_Haag.JPG",
+    "https://commons.wikimedia.org/wiki/File:TheHague-LE-part-deux_(8044146720).jpg",
+    "https://commons.wikimedia.org/wiki/File:Uilebomen,_Den_Haag,_Netherlands_-_panoramio_(36).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_BZK,_J%26V_and_De_Kroon_(24951610687).jpg"
+  ],
+  "printFiles": [
+    "de-kroon-den-haag-1-1000.stl"
+  ]
+}
