@@ -1,0 +1,60 @@
+{
+  "name": "Oorlogsmuseum Overloon",
+  "file": "oorlogsmuseum-overloon.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    194570,
+    398065
+  ],
+  "xAxis": [
+    0.9958685650785236,
+    -0.09080639343373549
+  ],
+  "groundHeight": 67.49262138149382,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -15,
+      -65
+    ],
+    [
+      50,
+      -45
+    ],
+    [
+      95,
+      55
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0756100000000007",
+    "NL.IMBAG.Pand.0756100000000088",
+    "NL.IMBAG.Pand.0756100000003207"
+  ],
+  "description": "Museumcomplex met doorlopende dakvlakken, oudere entreevleugel, vrijstaand paviljoen, lange lichtstraten en glasnissen. Los materieel en bos blijven PDOK.",
+  "realWorld": {
+    "datumNapM": 23.4,
+    "axisDegrees": -5.21,
+    "lightStrips": 11,
+    "lightReliefM": 0.5,
+    "estimatedEntranceNichesM": [
+      4,
+      3.8,
+      0.35
+    ]
+  },
+  "sources": [
+    "https://www.oorlogsmuseum.nl/nl/het-museum/",
+    "https://nl.wikipedia.org/wiki/Oorlogsmuseum_Overloon",
+    "https://commons.wikimedia.org/wiki/Category:Overloon_War_Museum",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000000007 (CC BY 4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000000088 (CC BY 4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000003207 (CC BY 4.0)",
+    "PDOK BAG, BGT, Actueel_orthoHR, AHN DSM/DTM 0,5 m, 2026-10-11"
+  ],
+  "printFiles": [
+    "oorlogsmuseum-overloon-1-1000.stl"
+  ]
+}
