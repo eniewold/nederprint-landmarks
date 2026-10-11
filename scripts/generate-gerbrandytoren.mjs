@@ -1,0 +1,18 @@
+import{Manifold,box,prism,circle,hull,ring3,union,place,writeLandmark}from'./efteling-kit.mjs';
+const ORIGIN=[132092.7,446906],BASE=-.25,R=5.45,TOP=366;
+const fr=(r0,r1,z0,z1,n=64)=>hull([...ring3(circle([0,0],r0,n),z0),...ring3(circle([0,0],r1,n),z1)]);
+const decks=[60,66,72,78,84,90];let shaft=prism(circle([0,0],R,64),BASE,96);
+const openings=[];for(let z=8;z<57;z+=4)for(const a of[0,90,180,270])openings.push(place(box(-.6,-5.8,z,.6,-5.05,z+1.1),{deg:a+17}));openings.push(box(-.9,-5.8,-.1,.9,-5.05,2.6));shaft=shaft.subtract(union(openings));
+const galleries=decks.map(z=>union([fr(R,8.8,z-3.35,z),prism(circle([0,0],8.8),z,z+.9).subtract(prism(circle([0,0],7.9),z+.15,z+1))]));
+let glazed=union([prism(circle([0,0],8.6),60,64),prism(circle([0,0],8.6),86,89.9),fr(R,6.2,93.2,94),prism(circle([0,0],6.2),94,100)]);
+const glassCuts=[];for(let k=0;k<24;k++)for(const[z,h,r]of[[60.5,3,8.6],[86.4,3.1,8.6],[96.2,3.2,6.2]])glassCuts.push(place(box(-.55,-r-.3,z,.55,-r+.35,z+h),{deg:k*15}));glazed=glazed.subtract(union(glassCuts));
+const dishes=[];for(const z of[68,74,80])for(const a of[15,110,190,275])dishes.push(Manifold.cylinder(.9,.8,.8,24).rotate([90,0,0]).translate([0,-5.1,z]).rotate([0,0,a]));
+const concrete=union([shaft,...galleries,glazed,...dishes]);let mast=prism(circle([0,0],1,32),95,356);
+const collars=[226,297,350].map(z=>union([fr(1,2.2,z-1.2,z),prism(circle([0,0],2.2),z,z+.9)]));
+let cabin=union([fr(1,3.6,214.4,217),prism(circle([0,0],3.6,8,Math.PI/8),217,220.5)]);const cabinCuts=Array.from({length:8},(_,k)=>place(box(-.8,-3.7,218,.8,-2.9,219.6),{deg:k*45}));cabin=cabin.subtract(union(cabinCuts));
+const antennaRibs=[0,90,180,270].map(a=>place(box(-.45,-2.05,302,.45,-.65,346),{deg:a}));const lowerRibs=[0,90,180,270].map(a=>place(box(-.45,-1.8,166,.45,-.65,183),{deg:a}));
+mast=union([mast,cabin,...collars,...antennaRibs,...lowerRibs,box(-.6,-.6,355.9,.6,.6,TOP)]);
+const FOOT=[[132046.591,446901.683],[132048.563,446907.968],[132054.935,446905.969],[132056.928,446912.322],[132063.359,446910.305],[132065.325,446916.572],[132060.804,446917.99],[132057.611,446918.992],[132055.674,446912.817],[132049.123,446914.872],[132047.092,446908.397],[132040.818,446910.365],[132040.696,446909.977],[132038.856,446904.11],[132045.641,446901.981]].map(p=>p.map((v,i)=>v-ORIGIN[i]));const annex=union([prism(FOOT,BASE,4.85),box(-49,0,4.7,-45,3,5.8),box(-42,5,4.7,-38,8,5.8),box(-35,10,4.7,-31,13,5.8)]);
+await writeLandmark({slug:'gerbrandytoren',base:BASE,nodes:[['building:betontoren-met-omgangen',concrete],['building:buismast-met-cabine-en-antennes',mast],['building:drie-lage-dienstruimten',annex]],catalog:{name:'Gerbrandytoren',origin:ORIGIN,xAxis:[1,0],groundHeight:44.97523508461232,groundOffsetMetres:-.1,groundSamplePoints:[[12,0],[-12,0],[0,12],[0,-12]],replacesBuildings:['NL.IMBAG.Pand.0353100000007975','NL.IMBAG.Pand.0353100000008108'],description:'Ronde betontoren met zes omgangen, drie glazen ringvolumes, de 2 m buismast, reportagecabine, antennevelden en digitale top; lage dienstruimten op BAG-contour.',realWorld:{totalHeightM:TOP,concreteTopM:100,largestDiameterM:17.6,mastDiameterM:2,mastTopM:356,cabinAtM:218,estimatedGalleryTopsM:decks,minimumPartM:.9,omittedGuyWiresDiameterM:.075},sources:['https://monumentenregister.cultureelerfgoed.nl/monumenten/532229','https://www.saval.nl/cases/gerbrandytoren/','https://www.omroepzendermuseum.nl/nieuws-archief/17-uhf-tv-antenne-gerbrandy-toren-vervangen','https://nl.wikipedia.org/wiki/Gerbrandytoren','https://commons.wikimedia.org/wiki/Category:Gerbrandytoren','PDOK BAG 0353100000007975 / 8108, AHN DSM/DTM 0,5 m en Actueel_orthoHR, 2026-10-11']}});
+
+
