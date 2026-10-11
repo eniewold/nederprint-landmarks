@@ -1,0 +1,97 @@
+{
+  "name": "Delftse Poort",
+  "file": "delftse-poort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92050,
+    437680
+  ],
+  "xAxis": [
+    0.95372,
+    0.30071
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -54
+    ],
+    [
+      20,
+      -54
+    ],
+    [
+      -62,
+      0
+    ],
+    [
+      0,
+      43
+    ],
+    [
+      50,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701251"
+  ],
+  "description": "Oorsprong midden op de plint op straatniveau NAP -0,7 m (Weena), +X langs de gevels op 17,5 graden in RD, +Y naar de spoorzijde, het Weena aan -Y; toren I van 56,5 x 16,1 m tot NAP +149,3 m (rand +150,4) met de lagere schijf tot +69,4 m, toren II van 58,2 x 15-16 m tot +91,75 m (rand +92,9) met het L-blok aan het Weena tot +44,3 m op een zuilengalerij, plint van vier lagen (+15,95) met lage randstroken (+10,9), boogvormige westgevel, glazen blok (+35,25) en koepel, granieten wig voor de zuidwesthoek van toren II (tot +58 m) en een slankere voor de zuidoosthoek van toren I (tot +55 m); hoogtes uit AHN en 3D BAG, gevelraster, roosterbanden, wig en galerij uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.7,
+    "plinthNapM": 15.95,
+    "lowStripNapM": 10.9,
+    "towerINapM": 149.3,
+    "towerIRimNapM": 150.4,
+    "slabINapM": 69.4,
+    "towerIINapM": 91.75,
+    "towerIIRimNapM": 92.9,
+    "weenaBlockNapM": 44.3,
+    "glassBlockNapM": 35.25,
+    "domeTopNapM": 22.87,
+    "wedgeTopNapM": 58,
+    "wedgeITopNapM": 55,
+    "towerIM": [
+      56.5,
+      16.1
+    ],
+    "towerIIM": [
+      58.2,
+      15.2
+    ],
+    "footprintM": [
+      103.2,
+      89.9
+    ],
+    "facadeGridM": 3.6,
+    "storeyPitchM": 3.6,
+    "axisDegrees": 17.5,
+    "estimates": [
+      "gevelraster van 1,8 m (vierkante vakken, twee per laag van 3,6 m) uit foto's; verdiepingen uit Wikipedia (41 en 25 lagen, plint van vier)",
+      "granieten wig van toren II: top NAP +58 m, voet 7,0 x 5,1 m, top 4,5 x 1,9 m uit foto's (het gepolijste graniet geeft geen AHN-punten)",
+      "slanke granieten wig van toren I: top NAP +55 m, op plinthoogte 3,2 x 4,6 m (AHN-gat 2,5 x 3,5 m), top 1,5 x 1,7 m uit foto's vanaf het Weena en het Stationsplein",
+      "roosterbanden in de zuidgevels (toren I u 15,4-40,7, +139,4..+145,7; toren II +81,0..+88,1) uit foto's",
+      "zuilengalerij aan het Weena: 3 m diep tot NAP +9,0 m met 12 zuilen van 1,2 m uit foto's",
+      "terugliggende entree onder toren II (BAG-contour 1,2 m achter de gevel) tot NAP +4,4 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000701251, AHN DSM/DTM 0,5 m (WCS), Actueel_orthoHR en 2021-2024_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000701251 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes en dakopbouwen",
+    "https://nl.wikipedia.org/wiki/Delftse_Poort_(gebouw)",
+    "https://en.wikipedia.org/wiki/Delftse_Poort",
+    "https://commons.wikimedia.org/wiki/File:Kantorencomplex_Delftse_Poort.jpg",
+    "https://commons.wikimedia.org/wiki/File:Delftse_Poort_October_2016.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Weena_-_View_ENE_on_De_Delftse_Poort_1991_Abe_Bonnema_-_151.35_m_(164_with_Pylon).jpg",
+    "https://commons.wikimedia.org/wiki/File:Centraal_Station_en_gebouw_Delftse_Poort_-_City_of_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Delftse_Poort_Skyscraper_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Delftse_Poort.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_Delftse_Poort_Tower_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gebouw_Delftse_Poort,_Rotterdam.jpg"
+  ],
+  "printFiles": [
+    "delftse-poort-1-1000.stl"
+  ]
+}
