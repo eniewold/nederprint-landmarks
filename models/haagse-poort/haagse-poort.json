@@ -1,0 +1,140 @@
+{
+  "name": "Haagse Poort",
+  "file": "haagse-poort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82963.25,
+    454825.61
+  ],
+  "xAxis": [
+    0.81269,
+    0.58269
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -125.5,
+      56.4
+    ],
+    [
+      -82,
+      56.4
+    ],
+    [
+      -39,
+      56.4
+    ],
+    [
+      40,
+      53.4
+    ],
+    [
+      83,
+      53.4
+    ],
+    [
+      40,
+      -55.6
+    ],
+    [
+      83,
+      -55.6
+    ],
+    [
+      -63,
+      -44.6
+    ],
+    [
+      -163,
+      6.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000229788"
+  ],
+  "description": "Oorsprong in het midden van de boog op de as van de schijf, straatniveau NAP +0,7 m; +X op 35,64 graden in RD langs de schijf (naar het hoogbouwdeel), +Y naar het noordwesten (Prinses Beatrixlaan). Schijf van 255 m van 15 m breed: laagbouw +36,6 met spitse zuidwestpunt, brug +35,1 over de Utrechtsebaan met een boog van 55 m (onderzijde tot 21,1 m boven de straat, groene rib), bovenste balk +70,5 over twee torens van +59,9 met scheve punten, atrium +34,7 met rotonde, zuiddeel +18,4..+23,3, drie kamvleugels +31,1 met ronde trappenhuizen en een driehoekige vleugel +16,7 met de glazen koepel (+27,4); boog en gevelritme uit foto's geschat; het echte boogprofiel staat op de ribben en loopt met schuine dagkanten (62 graden) over in een spitsboog van 50 graden door de schijf, zodat de doorgang op 1:1000 open blijft.",
+  "realWorld": {
+    "groundNapM": 0.7,
+    "heightsNapM": {
+      "lowSlab": 36.6,
+      "bridge": 35.1,
+      "highSlab": 70.5,
+      "plantWell": 68.6,
+      "tower": 59.9,
+      "towerRidge": 61.5,
+      "atrium": 34.7,
+      "rotunda": 39,
+      "rotundaDrum": 37,
+      "courtNorth": 23.3,
+      "courtMid": 18.4,
+      "courtSouth": 19.8,
+      "finger": 31.1,
+      "hall": 16.7,
+      "hallBlock": 20.4,
+      "dome": 27.4,
+      "canopy": 5.8,
+      "entranceBay": 9.6,
+      "street": 0.5
+    },
+    "archM": {
+      "feetU": [
+        -24.4,
+        30.4
+      ],
+      "spanM": 54.8,
+      "soffitCrownAboveStreetM": 21.1,
+      "profile": "h (1 - |x/a|^2.38)",
+      "ribWidthM": 1.5,
+      "ribProudM": 0.5
+    },
+    "printableArch": {
+      "revealDegrees": 62,
+      "innerPointedArchDegrees": 50,
+      "innerApexAboveStreetM": 21.1,
+      "innerFeetU": [
+        -14.7,
+        20.7
+      ]
+    },
+    "slabWidthM": 15,
+    "lengthM": 255.4,
+    "towerPlanM": [
+      15,
+      94.4
+    ],
+    "storeyPitchM": {
+      "slab": 3.5,
+      "tower": 3.6
+    },
+    "axisDegrees": 35.64,
+    "estimates": [
+      "boog: voeten, overspanning (54,8 m binnen, 57,8 m buiten) en kruin (21,1 m boven de straat) uit een frontale foto; het profiel tussen parabool en ellips (exponent 2,38) uit vier punten op die foto",
+      "doorgang op 1:1000: het echte boogprofiel staat op de voorkant van de ribben; de onderzijde loopt vandaar onder 62 graden schuin naar binnen omlaag tot een spitsboog van 50 graden (top 21,1 m boven de straat, voeten 35,4 m uit elkaar) die door de hele schijf loopt; het echte tongewelf met vlakke kruin is op deze schaal niet zonder dichte opvulling te printen",
+      "groene boogrib 1,5 m breed en 0,5 m voor de gevel; het stalen vakwerk en de glazen kap in het gewelf als gesloten vlak",
+      "gevelritme uit foto's: schijf met kleine openingen bovenin, hoge vensters over twee lagen en verspringende vierkante vensters, groen-witte banden als groeven per verdieping van 3,5 m; torens vensters per 2,5 m en 3,6 m; vleugels per 3,6 m",
+      "installaties op de daken als blokken uit de 3D BAG en het AHN; verlaagd installatiedek in de bovenste balk (3D BAG 68,6) met vier blokken koelers",
+      "rotonde op het atrium als trommel tot +37,0 met een lage kap tot +39,0 (AHN); entreeluifel 0,9 m dik op +5,8",
+      "koepel van de centrale hal als bolkap op een cilinder van straal 12,2 m (AHN)"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000229788, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000229788 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhoogtes, installatiedek, koepel en rotonde",
+    "https://nl.wikipedia.org/wiki/Haagse_Poort",
+    "https://en.wikipedia.org/wiki/Haagse_Poort",
+    "https://commons.wikimedia.org/wiki/File:Bezuidenhout-West,_2595_Den_Haag,_Netherlands_-_panoramio_(11).jpg",
+    "https://commons.wikimedia.org/wiki/File:Bezuidenhout-West,_2595_Den_Haag,_Netherlands_-_panoramio_(9).jpg",
+    "https://commons.wikimedia.org/wiki/File:.._-_panoramio_(151).jpg",
+    "https://commons.wikimedia.org/wiki/File:Netherlands,_The_Hague,_Utrechtsebaan_(03),_Haagse_Poort.jpg",
+    "https://commons.wikimedia.org/wiki/File:Netherlands,_The_Hague,_Schenkkade_(03),_Haagse_Poort.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haagse_Poort_Den_Haag.jpg",
+    "https://commons.wikimedia.org/wiki/File:Utrechtse_Baan_Haagse_Poort.jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Hague_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haagse_Poort.JPG"
+  ],
+  "printFiles": [
+    "haagse-poort-1-1000.stl"
+  ]
+}
