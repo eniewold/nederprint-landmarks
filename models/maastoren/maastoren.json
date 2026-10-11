@@ -1,0 +1,112 @@
+{
+  "name": "Maastoren",
+  "file": "maastoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93497,
+    435966
+  ],
+  "xAxis": [
+    0.57643,
+    0.81714
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -42,
+      -20
+    ],
+    [
+      -42,
+      10
+    ],
+    [
+      -20,
+      -34
+    ],
+    [
+      0,
+      -34
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000754173"
+  ],
+  "description": "Oorsprong in het zuidelijke deel van de hoge schijf op straatniveau NAP +3,9 m, +X op 54,8 graden in RD (langs de zuidoostgevel), +Y naar de Nieuwe Maas; geknikte schijf (noordelijk deel 21 graden gedraaid) met dak op NAP +162,05 binnen een glazen kroon tot +164,7, glazen liftschacht tot +169,6 met mast tot +177,7, AKD-toren tot +108,9 met glazen kopband, glazen tussenlid tot +45, parkeerplint tot +45, glazen uitbouw met een gevouwen dak van vier vlakken (+11,6 tot +19,5) en de gevouwen luifel met boomkolommen; gevelritme, kroon en luifel uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 3.9,
+    "roofNapM": 162.05,
+    "crownTopNapM": 164.7,
+    "crownBottomNapM": 154,
+    "liftShaftNapM": 169.6,
+    "mastTopNapM": 177.7,
+    "akdRoofNapM": 108.85,
+    "akdBandNapM": 100.4,
+    "plinthNapM": 44.8,
+    "linkNapM": 45,
+    "kinkDegrees": 21,
+    "slabWidthM": 15.5,
+    "slabLengthM": 47.92,
+    "storeyPitchM": {
+      "slab": 3.62,
+      "akd": 3.667
+    },
+    "extensionRoofPlanes": {
+      "nap": "c + a*x + b*y",
+      "A": {
+        "a": -0.1323,
+        "b": -0.0423,
+        "c": 20.01
+      },
+      "S": {
+        "a": -0.0682,
+        "b": -0.0897,
+        "c": 14.31
+      },
+      "B": {
+        "a": 0.1355,
+        "b": -0.2016,
+        "c": 14.75
+      },
+      "C": {
+        "a": -0.1323,
+        "b": -0.4367,
+        "c": 23.56
+      }
+    },
+    "canopyNapM": [
+      8.9,
+      10.2,
+      11.4
+    ],
+    "axisDegrees": 54.8,
+    "estimates": [
+      "gevelritme uit foto's: schijf met vensterkolommen op 3,4 m, een paneelvoeg van 0,5 m midden in elke liseen en een verdiepingsband van 0,4 m per laag (noordwestgevel drie vensterkolommen, het oostelijke derde dicht met alleen voegen), 30 kantoorlagen van 3,62 m boven de parkeerlagen; AKD-toren met lisenen en verdiepte vensterstroken van 1,9 m op 2,95 m (zuidwestgevel, 15 kolommen) en 3,9 m (kopgevels), 15 lagen van 3,67 m",
+      "parkeerlagen als zes rijen roosters van 4 m op 6 m tot +45 en een glazen entreelaag; de verdeling uit een frontale foto van de noordwestgevel",
+      "glazen kroon (+154 tot +164,7) en kopband van de AKD-toren (+100,4 tot +108,9) als ruiten tussen stijlen van 0,6 m",
+      "liftschacht 4,9 x 20,1 m uit ortho en 3D BAG; open frame op de schacht als nissen; mast 1,5/1,0 m dik",
+      "uitbouwdak: vlak B uit de 3D BAG (AHN-gat), vlak C geschat als aansluiting van A en B",
+      "luifel: diepte en glashoogte uit het AHN, vouwen en de zeven boomkolommen (1 m) uit foto's en ortho; de witte masten boven de luifel zijn weggelaten",
+      "glazen tussenlid en liften: hoogte uit 3D BAG en foto's"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000754173, AHN DSM/DTM 0,5 m (WCS) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000754173 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): kroon, liftschacht, dakvlak van de uitbouw langs de schijf, tussenlid",
+    "https://nl.wikipedia.org/wiki/Maastoren",
+    "https://en.wikipedia.org/wiki/Maastoren",
+    "https://commons.wikimedia.org/wiki/File:Bovenkant_van_Maastoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastoren_2012.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastoren_IMG_5117.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_maastoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastoren_entrance.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_(NL),_Maastoren_--_2023_--_0105.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Maastoren_in_Rotterdam_in_2021.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maastoren_Rotterdam.jpg"
+  ],
+  "printFiles": [
+    "maastoren-1-1000.stl"
+  ]
+}
