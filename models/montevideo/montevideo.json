@@ -1,0 +1,115 @@
+{
+  "name": "Montevideo",
+  "file": "montevideo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92950,
+    435440
+  ],
+  "xAxis": [
+    0.80438,
+    0.59412
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      0
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      40,
+      -20
+    ],
+    [
+      40,
+      22
+    ],
+    [
+      85,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000750601"
+  ],
+  "description": "Oorsprong midden in de toren op kadeniveau NAP +3,4 m, +X op 36,45 graden in RD (langs de lange gevels, naar het oostblok), +Y naar de Otto Reuchlinweg en de Maas; toren als stapeling van volumes: rode kolom en witte toren met loggia's tot de rode kubus (+89,5 tot +143,1, 1,7-3,8 m uitkragend naar het westen met een kraag van 45 graden, glazen westgevel in een rood kader, terrassen in het dak), witte toren tot +137,3, donker en glazen volume tot +92,3, rood noordvolume tot +75,4, M-windvaan op voet en arm tot +155,6; strook langs de Rijnhaven (+18,1 en +32,1) en oostblok tot +40,8 dat 16 m over de kade uitkraagt op vier schuine stempels, met dakopbouw, schoorstenen en watertoren; gevelritme, kraag en stempels uit foto's en tekening geschat.",
+  "realWorld": {
+    "groundNapM": 3.4,
+    "cubeRoofNapM": 143.1,
+    "cubeBottomNapM": 89.5,
+    "cubeTerracesNapM": [
+      141.6,
+      140.3,
+      140.7
+    ],
+    "whiteRoofNapM": 137.3,
+    "liftTopNapM": 145.7,
+    "midVolumesNapM": 92.3,
+    "redNorthNapM": 75.4,
+    "vaneArmNapM": [
+      145.6,
+      146.6
+    ],
+    "letterMTopNapM": 155.6,
+    "letterMSizeM": [
+      7.8,
+      9.05,
+      1.6
+    ],
+    "barNapM": [
+      18.1,
+      32.1,
+      21.5
+    ],
+    "eastBlockNapM": 40.8,
+    "eastBlockSoffitNapM": 12.8,
+    "eastBlockRoofNapM": [
+      43.7,
+      45.3,
+      45.9,
+      46.3
+    ],
+    "waterTowerTopNapM": 51.5,
+    "canopyNapM": [
+      8.1,
+      10.6
+    ],
+    "storeyPitchM": 3.12,
+    "axisDegrees": 36.45,
+    "estimates": [
+      "onderkant van de kubus (+89,5) uit de geveltekening en foto's; de kraag van 45 graden eronder volgt de schuine onderkant op de foto's",
+      "grenzen tussen de volumes onder de kubus uit de BAG-contour, het AHN en foto's van alle kanten; de grens tussen het donkere en het glazen volume op de oostgevel (v = -0,5) is geschat",
+      "gevelritme uit foto's: 43 lagen van 3,12 m; verspringende vensters in de bakstenen gevels, loggia's in de witte westgevel, patrijspoorten in de noordgevel, glas in een kader van 1,2-1,4 m (kubus, glazen volume, zuidgevel oostblok)",
+      "windvaan: de M draait met de wind; hier vast in het vlak van de gevel- en doorsnedetekening (naar de Rijnhaven), arm langs X zoals in het AHN; letter 7,8 x 8,3 m, 1,6 m diep, arm 15 m lang",
+      "uitkraging van het oostblok: onderkant +12,8 en vier stempels van 1 m uit foto's",
+      "dakopbouw, schoorstenen (4 x 1 m tot +50,5) en watertoren (diameter 4 m, tot +51,5) uit de 3D BAG, het AHN en foto's"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000750601, AHN DSM/DTM 0,5 m (WCS, AHN4) en Actueel_orthoHR; 2026-10-11",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000750601 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakvlakken van de kubus en de witte toren, het oostblok en de watertoren",
+    "https://nl.wikipedia.org/wiki/Montevideo_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_Residential_Tower_9.jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_Residential_Tower_10.jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo(Rotterdam).jpg",
+    "https://commons.wikimedia.org/wiki/File:Euromast_-_Scheepvaartkwartier_-_Rotterdam_-_View_of_Montevideo.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Montevideo_in_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_2010.JPG",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_montevideotoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Montevideo_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Montevideo_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_Residential_Tower_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_Residential_Tower_4.jpg",
+    "https://commons.wikimedia.org/wiki/File:Montevideo_Residential_Tower_7.jpg",
+    "https://commons.wikimedia.org/wiki/File:Skyscraper_in_Rotterdam_(28384617249).jpg"
+  ],
+  "printFiles": [
+    "montevideo-1-1000.stl"
+  ]
+}
