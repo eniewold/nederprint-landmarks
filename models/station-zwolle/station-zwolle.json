@@ -1,0 +1,54 @@
+{
+  "name": "Station Zwolle",
+  "file": "station-zwolle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202738.58514172834,
+    502228.72691760736
+  ],
+  "xAxis": [
+    0.882947592858927,
+    -0.4694715627858908
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -25,
+      12
+    ],
+    [
+      22,
+      14
+    ],
+    [
+      60,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000060699",
+    "NL.IMBAG.Pand.0193100000064248"
+  ],
+  "description": "Volledige twee BAG-stationsvleugels met hoog middengebouw, klokfronton, kopfrontons, lage zij- en eindvleugels, gesloten gebogen perronkap met lichtstraat, blinde rondboogdeuren, vensters, pilasters en schuine luifel. Vrijstaande kappen en moderne passage blijven afzonderlijk. +X RD -28 graden, z=0 NAP +2,1 m; voet -0,6 m.",
+  "realWorld": {
+    "groundNapM": 2.1,
+    "centralRidgeNapM": 16.06,
+    "sideRidgeNapM": 10.51,
+    "lowEndRidgeNapM": 9.09,
+    "canopyTopNapM": 18.6,
+    "frontonTopNapM": 15.7
+  },
+  "sources": [
+    "PDOK BAG/BGT 0193100000060699 en 0193100000064248, BGT overkapping L0004.d9c42d34173c46f6ab44e87c9a67de1e, AHN DSM/DTM 0,5 m, ortho, 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0193100000060699",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0193100000064248",
+    "https://www.spoorbeeld.nl/databank/zwolle",
+    "https://www.zwolle.nl/erfgoed/station",
+    "https://commons.wikimedia.org/wiki/Category:Zwolle_station_facades"
+  ],
+  "printFiles": [
+    "station-zwolle-1-1000.stl"
+  ]
+}
