@@ -1,0 +1,56 @@
+{
+  "name": "Militair Ereveld Grebbeberg",
+  "file": "ereveld-grebbeberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169662.8,
+    440773.5
+  ],
+  "xAxis": [
+    0.9734,
+    0.2291
+  ],
+  "groundOffsetMetres": -0.2,
+  "groundHeight": 86.02423,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      -3
+    ]
+  ],
+  "description": "De twee centrale onderdelen van het Nationaal Legermonument: kruis met twee tegengestelde leeuwen en de luidklok met gebogen achterwand. Grafstenen en regimentsmonumenten buiten deze voetafdruk niet opgenomen.",
+  "realWorld": {
+    "plinthSizeM": [
+      6,
+      2
+    ],
+    "estimatedCrossTopM": 6.2,
+    "crossMinimumThicknessM": 0.9,
+    "bellGroundNapM": 42.68,
+    "bellTopNapM": 51.48,
+    "bellShaftHeightM": 7,
+    "bellDiameterM": 0.97,
+    "estimatedWallHeightM": 2,
+    "estimatedWallThicknessM": 1
+  },
+  "sources": [
+    "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/1887/rhenen-militair-ereveld-grebbeberg",
+    "https://www.rijksvastgoedbedrijf.nl/actueel/nieuws/2024/04/30/herdenkingsplek-militair-ereveld-grebbeberg-klaar-voor-nationale-dodenherdenking",
+    "https://www.grebbeberg.nl/index.php?page=de-centenklok-op-de-grebbeberg",
+    "https://commons.wikimedia.org/wiki/Category:Grebbeberg_War_Cemetery",
+    "PDOK actuele HR-ortho, AHN DSM/DTM 0,5 m 2026"
+  ],
+  "printFiles": [
+    "ereveld-grebbeberg-1-1000.stl"
+  ]
+}
