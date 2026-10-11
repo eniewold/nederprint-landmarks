@@ -1,0 +1,55 @@
+{
+  "name": "Monument op de Afsluitdijk",
+  "file": "monument-afsluitdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136307.2817742256,
+    553588.7966657182
+  ],
+  "xAxis": [
+    0.7524149088957244,
+    0.6586894601186805
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -12,
+      8
+    ],
+    [
+      12,
+      8
+    ],
+    [
+      0,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0462100000006517"
+  ],
+  "description": "Dudoks D-vormige glazen trappentoren met rechte landzijde, zeshoekige uitkijkpost, tentdak, brede lage luifel, afgeronde bordesplint, balustrade en entree-trap. Glas gesloten en luifels met schuine onderzijde voor steunloos 1:1000. Hele actuele BAG-contour behouden als begraven fundering; nieuwe uitbreiding in de dijk en tijdelijke bouwplaats niet verzonnen. +X RD 41,2 graden; z=0 NAP +4,0 m, voet tot NAP -0,5 m aan het meer.",
+  "realWorld": {
+    "groundNapM": 4,
+    "plintNapM": 5.96,
+    "bordesPrintableNapM": 6.4,
+    "balustradeEstimatedNapM": 7.4,
+    "canopyNapM": 8.96,
+    "shaftEaveNapM": 20.1,
+    "roofPeakNapM": 20.93,
+    "finialEstimatedNapM": 21.53
+  },
+  "sources": [
+    "PDOK BAG/BGT 0462100000006517, AHN DSM/DTM 0,5 m, ortho 11 oktober 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0462100000006517",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510384",
+    "https://deafsluitdijk.nl/projecten/renovatie-vlietermonument-afsluitdijk/",
+    "https://deafsluitdijk.nl/nieuws/vlietermonument-restauratie-bijna-klaar-uitbreiding-eenvoudiger/",
+    "https://commons.wikimedia.org/wiki/Category:Monument_Afsluitdijk"
+  ],
+  "printFiles": [
+    "monument-afsluitdijk-1-1000.stl"
+  ]
+}
