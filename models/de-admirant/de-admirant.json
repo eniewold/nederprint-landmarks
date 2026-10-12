@@ -1,0 +1,88 @@
+{
+  "name": "De Admirant",
+  "file": "de-admirant.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161135,
+    383385
+  ],
+  "xAxis": [
+    0.7615383075367368,
+    -0.6481199010631309
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 60.5967063,
+  "groundSamplePoints": [
+    [
+      -1.5878576906304822,
+      -19.735214920398146
+    ],
+    [
+      22.927177094797205,
+      11.633767681357853
+    ],
+    [
+      -37.121033842629075,
+      23.559050202722247
+    ],
+    [
+      -58.15259161365117,
+      88.38708100517808
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000288644"
+  ],
+  "description": "De Admirant en De Bruine Heer in één BAG-pand, met geknikte woontoren, één continu hellend dakvlak, glazen hoekbanden, blinde vensters, kantoorplint, lange historische vleugel met twee zadeldaklichten, kern, noordkop, installatieblokken en glazen winkelplint. Oorsprong RD (161135,383385), X op -40,4 graden, NAP +16,55 m. Gevelritme, transparante verbindingsdaken en printluifel vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 16.55,
+    "axisDegrees": -40.4,
+    "towerRoofPlaneRD": [
+      0.262424129,
+      0.0659441442,
+      115.714908
+    ],
+    "roofPlaneOriginRD": [
+      161135,
+      383385
+    ],
+    "towerRoofNapRangeM": [
+      112.312,
+      121.107
+    ],
+    "brownRoofNapM": 42.733,
+    "coreNapM": 46.71,
+    "northNapM": 40.445,
+    "skylightRidgeNapM": 44.045,
+    "shopRoofPlaneRD": [
+      -0.09776231,
+      0.02738508,
+      24.86758631
+    ],
+    "nicheDepthM": 0.35,
+    "residentialStoreyM": 3.02,
+    "estimates": [
+      "vensterritme met smalle, brede en enkele hogere vensters uit foto’s; 3,02 m woonlagen",
+      "blinde glasvelden en hoekbanden, 0,35–0,4 m diep",
+      "glazen verbinding tussen toren en Bruine Heer op +23,454: AHN kijkt door glas; steile LoD2.2-uitschieter verworpen",
+      "entreeluifel op +21,3 met 45° ondersnede en minstens 0,9 m dikte",
+      "kleine installatievormen en onderhoudswagen op dak vereenvoudigd",
+      "historische entreeluifel en beeld op de luifel uit foto geschat; lichaam en hoofd minstens 0,9 m breed"
+    ]
+  },
+  "sources": [
+    "https://damenpartners.com/projecten/rond-de-admirant/ (foto’s Luuk Kramer en Mathieu van Ek, alleen referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000288644 (TU Delft/3DGI, CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:De_Admirant_(2025).jpg (S. Perquin, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Emmasingel,_Eindhoven_(2024).jpg (S. Perquin, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Admirant1.jpg (Lempkesfabriek, CC BY-SA 3.0)"
+  ],
+  "printFiles": [
+    "de-admirant-1-1000.stl"
+  ]
+}
