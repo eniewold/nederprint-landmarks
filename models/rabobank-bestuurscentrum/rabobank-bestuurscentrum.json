@@ -1,0 +1,142 @@
+{
+  "name": "Rabobank Bestuurscentrum",
+  "file": "rabobank-bestuurscentrum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135934.345,
+    455317.08
+  ],
+  "xAxis": [
+    0.86768,
+    0.49713
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -50
+    ],
+    [
+      -30,
+      0
+    ],
+    [
+      -30,
+      50
+    ],
+    [
+      -30,
+      90
+    ]
+  ],
+  "groundHeight": 45.65,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000018495"
+  ],
+  "description": "Oorsprong midden tussen de twee kronen op stoepniveau NAP +2,3 m, +X op 29,81 graden in RD langs het raster van het complex, +Y naar het noordnoordwesten (noordtoren); twee elliptische torens van 41,0 x 26,9 m (zuidtoren 26,9 graden gedraaid) met holle tailles en 27 lagen glas tot +97,1, per toren een zinken kroon tot +107,45 met voeg, dak +104,4 en installaties tot +107,9, en daartussen de open uitsparing boven het tailledak (+97,1, rand +98,0); onderbouw van 2011 (+13,9) met 42 ronde daklichten en schuine glazen overgangen naar het kantoor van 1984; glazen hal onder een luifel (+10,2) op kolommen langs de Croeselaan; kantoor van 1984 met terrassen van +41,2 tot +21,15 en schuine glazen overgangen, de kop (+47,0) met lichthof, glasbanden per laag; zuidblok (+17,85) met installatiehuizen (+21,8), loopbrug (+13,7) naar het zuiden, tuindek met glazen piramide (+16,3) en een plint (+5,9) rondom. Lagen, kroonvoeg, luifeldikte, kolommen en de onderkant van de loopbrug uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 2.3,
+    "axisDegrees": 29.81,
+    "towerShaftSemiAxesM": [
+      20.5,
+      13.45
+    ],
+    "crownSemiAxesM": [
+      19.9,
+      12.85
+    ],
+    "towerRotationDegrees": {
+      "north": 29.04,
+      "south": 55.97
+    },
+    "towerCentresM": [
+      [
+        -0.83,
+        20.045
+      ],
+      [
+        0.83,
+        -20.045
+      ]
+    ],
+    "waistArcs": {
+      "east": {
+        "c": [
+          29.733,
+          2.472
+        ],
+        "r": 16.57
+      },
+      "west": {
+        "c": [
+          -24.688,
+          -2.724
+        ],
+        "r": 15.8
+      }
+    },
+    "towerNapM": {
+      "glassTop": 97.1,
+      "waistRim": 98,
+      "crown": 107.45,
+      "crownRoof": 104.4,
+      "plant": 107.94
+    },
+    "towerStoreys": 27,
+    "openNotchBetweenCrownsM": {
+      "from": 97.1,
+      "to": 107.45
+    },
+    "plinthNapM": 13.9,
+    "canopyNapM": 10.2,
+    "socleNapM": 5.9,
+    "officeTerracesNapM": [
+      41.2,
+      37.6,
+      34,
+      30.4,
+      28.6,
+      26.8,
+      25,
+      24.75,
+      21.15
+    ],
+    "kopNapM": 47,
+    "southBlockNapM": {
+      "roof": 17.85,
+      "plant": 21.8
+    },
+    "linkNapM": [
+      12.6,
+      13.7
+    ],
+    "pyramidApexNapM": 16.3,
+    "estimates": [
+      "torenlagen: 27 lagen van 3,51 m van +2,3 tot +97,1 (Wikipedia noemt brand op de 25e en 26e etage); glasbanden 0,35 m diep tussen borstweringsbanden van 0,9 m; de verticale stijlen zijn weggelaten",
+      "kroon 0,6 m terug van de glasgevel (AHN5-contouren), kroonwand 1,2 m, de donkere voeg (+101,4 tot +102,3) uit foto's",
+      "luifelplaat 1,0 m dik en kolommen van 0,9 m op 8,1 m langs de buitenrand uit foto's; de glazen hal onder de luifel als dicht volume met een glasband",
+      "onderbouw en zuidblok: glasbanden per laag geschat; de ronde daklichten zijn 0,9 m hoog gemaakt voor de print (in het AHN ca. 0,4 m)",
+      "kantoor van 1984: terrassen en hun schuine overgangen uit het AHN5, de glasbanden per laag van 3,6 m uit foto's (RCE 20339908); de kleine knik boven aan elke schuine overgang is weggelaten",
+      "schuine glazen overgangen van de onderbouw naar de middenvleugel als vlakken met afgeronde einden (AHN5)",
+      "loopbrug: onderkant +8,0 en twee pijlers geschat; het dak uit het AHN5",
+      "tuindek: dakvlak uit het AHN5 als één vlak; de piramide uit de AHN5-omtrek op +12,8 en de top"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000018495, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS)",
+    "https://nl.wikipedia.org/wiki/Rabobank_Bestuurscentrum",
+    "https://commons.wikimedia.org/wiki/File:Rabotoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rabotoren_Utrecht_in_augustus_2026_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Utrecht,_hoofdkantoor_van_de_Rabobank_foto4_2015-11-01_12.03.jpg",
+    "https://commons.wikimedia.org/wiki/File:Glazen_torens_aan_de_Croeselaan.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rabobank_Bestuurscentrum_Utrecht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Utrecht6.JPG",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_VOORGEVEL_-_Utrecht_-_20339908_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "rabobank-bestuurscentrum-1-1000.stl"
+  ]
+}
