@@ -1,0 +1,105 @@
+{
+  "name": "nhow Amsterdam RAI",
+  "file": "nhow-amsterdam-rai.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121178.6,
+    483505.55
+  ],
+  "xAxis": [
+    0.99803,
+    0.06279
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      21
+    ],
+    [
+      19,
+      8
+    ],
+    [
+      -19,
+      8
+    ],
+    [
+      14,
+      -14
+    ],
+    [
+      -14,
+      -14
+    ]
+  ],
+  "groundHeight": 43.37,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012247941"
+  ],
+  "description": "Oorsprong in het gemeenschappelijke hart van de drie driehoeken op pleinniveau NAP +0,4 m, +X op 3,6 graden in RD langs de noordgevel van het onderste en bovenste volume, hun derde punt naar -Y (de A10); drie gelijkzijdige driehoekige volumes van 59,7 en 59,3 m zijde om één kern: onder (+9,0 tot +36,2) en boven (+64,7 tot +87,9) met dezelfde plattegrond, het middelste (+39,5 tot +59,8, rand +61,0) 30 graden gedraaid met punten die tot 15 m uitkragen en de roze letter n op de zuidoostpunt; daartussen terugliggende zeshoekige glazen tussenlagen, eronder een ronde glazen voet van twee lagen met vijf kolommen, op het dak een installatieopbouw (+90,7) en een verdiept terras (+83,75); gevels met glasvakken per laag. Onderkanten van de volumes en de tussenlagen uit de slagschaduw op de luchtfoto en het aantal lagen op foto's; de voet geschat.",
+  "realWorld": {
+    "groundNapM": 0.4,
+    "sideLowerUpperM": 59.72,
+    "sideMiddleM": 59.33,
+    "middleRotationDegrees": 30,
+    "axisDegrees": 3.6,
+    "plinthTopNapM": 9,
+    "lowerVolumeNapM": [
+      9,
+      36.2
+    ],
+    "middleVolumeNapM": [
+      39.5,
+      59.8
+    ],
+    "middleRimNapM": 61,
+    "upperVolumeNapM": [
+      64.7,
+      87.9
+    ],
+    "roofPlantNapM": [
+      89,
+      90.2,
+      90.7
+    ],
+    "roofTerraceNapM": 83.75,
+    "letterNTopNapM": 64.3,
+    "storeys": {
+      "plinth": 2,
+      "lower": 8,
+      "glassLow": 1,
+      "middle": 6,
+      "glassTop": 1,
+      "upper": 7
+    },
+    "estimates": [
+      "dak van het onderste volume (+36,2) en onderkanten van het middelste (+39,5) en bovenste volume (+64,7) uit een fit van de slagschaduw op de luchtfoto (het DSM ziet alleen de daken; de onderkant van het middelste volume is daarin zwak bepaald, 38-41), gecontroleerd met het aantal lagen op foto's en de constructietekening van OMA",
+      "bovenkant van de glazen voet (+9,0, twee lagen) uit foto's geschat",
+      "letter n: plaats, stand en maat (4 x 4,5 m, 0,9 m dik) uit foto's geschat; de spitse opening en de schuine hoeken zijn vereenvoudigd",
+      "het onderste volume heeft dezelfde plattegrond als het bovenste (Wikipedia, foto's; in het DSM steekt het nergens buiten het bovenste uit)",
+      "zeshoekige tussenlagen 2,0 m terugliggend binnen de doorsnede van de driehoeken (foto's)",
+      "gevelritme vereenvoudigd: per laag glasvakken van 1,2 m op 1,95 m in plaats van de V-lamellen op ca. 1 m",
+      "ronde voet uit de BGT op 0,25 m vereenvoudigd; kolommen 1,0 m rond"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012247941 en BGT-pand G0363.2b6cc0b35634488284232e7570eafed0, Actueel_orthoHR; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS) ter controle",
+    "https://nl.wikipedia.org/wiki/Nhow_Amsterdam_RAI",
+    "https://www.schueco.com/eg/architects/magazine/dynamically-stacked (24 lagen, voet van twee lagen, twee glazen tussenlagen met zeshoekige plattegrond)",
+    "https://www.metalocus.es/en/news/three-shifted-volumes-nhow-amsterdam-rai-hotel-oma (constructietekening van OMA: lagen per volume)",
+    "https://commons.wikimedia.org/wiki/File:NHOW_Hotel_Amsterdam_RAI_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:NHOW_Hotel_Amsterdam_RAI_-_Q64040941.jpg",
+    "https://commons.wikimedia.org/wiki/File:NHOW_Hotel_Amsterdam_RAI_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:NHOW_Hotel_Amsterdam_RAI_(4).jpg",
+    "https://commons.wikimedia.org/wiki/File:NHOW_Hotel_Amsterdam_RAI_(5).jpg",
+    "https://commons.wikimedia.org/wiki/File:Nhow_Amsterdam_RAI.jpg",
+    "https://commons.wikimedia.org/wiki/File:NhowRAI.jpg"
+  ],
+  "printFiles": [
+    "nhow-amsterdam-rai-1-1000.stl"
+  ]
+}
