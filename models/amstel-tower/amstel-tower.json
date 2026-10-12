@@ -1,0 +1,70 @@
+{
+  "name": "Amstel Tower",
+  "file": "amstel-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    123100,
+    484300
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.4537875,
+  "groundSamplePoints": [
+    [
+      0,
+      -30
+    ],
+    [
+      30,
+      10
+    ],
+    [
+      10,
+      30
+    ],
+    [
+      -35,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012246480"
+  ],
+  "description": "Amstel Tower (2018), met doorlopende afgeronde woontorenschacht, 24 balkons, hotel, twee kroontrappen en vier lage bouwdelen van hetzelfde BAG-pand; garage-terrein blijft PDOK. RD (123100,484300), X oost, Y noord, NAP +0,5 m. Gevelritme, balkonprofielen, luifel en glasnissen vereenvoudigd voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "hotelRoofNapM": 25.4,
+    "towerRoofNapM": 98.83,
+    "terraceNapM": 101.03,
+    "plantNapM": 103.75,
+    "topNapM": 104.01,
+    "balconyPitchM": 3.06,
+    "balconyDepthM": 1.2,
+    "balconyPrintThicknessM": 0.9,
+    "nicheDepthM": 0.35,
+    "estimates": [
+      "vloersteek en gevelritme op architectfoto’s",
+      "balkons 1,2 m uitkraging met 45° ondersnede en 0,9 m dikte voor print",
+      "afgeronde gevelcontour gefit op AHN-silhouet",
+      "entreepuien en glasnissen 0,35 m diep",
+      "dakinstallatie en kroonvorm uit AHN, luchtfoto en PDOK LoD2.2"
+    ]
+  },
+  "sources": [
+    "https://www.powerhouse-company.com/amstel-tower (foto’s Sebastian van Damme, referentie)",
+    "https://commons.wikimedia.org/wiki/File:Amstel_Tower_winter_2021.jpg (Choinowski, CC BY-SA 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (DSM/DTM 0,5 m, CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://api.3dbag.nl (dakcontouren via PDOK LoD2.2, TU Delft/3DGI, CC BY 4.0)"
+  ],
+  "printFiles": [
+    "amstel-tower-1-1000.stl",
+    "amstel-tower-grondplaat-1-1000.stl"
+  ]
+}
