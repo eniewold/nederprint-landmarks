@@ -1,0 +1,112 @@
+{
+  "name": "Westpoint",
+  "file": "westpoint-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    132692.5,
+    396853.5
+  ],
+  "xAxis": [
+    0.99577,
+    -0.09185
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      8
+    ],
+    [
+      -20,
+      -2
+    ],
+    [
+      20,
+      15
+    ],
+    [
+      20,
+      -60
+    ],
+    [
+      -44,
+      -65
+    ]
+  ],
+  "groundHeight": 59.25,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000310704"
+  ],
+  "description": "Oorsprong RD (132692,5, 396853,5) bij het hart van de toren op maaiveld NAP +15,4 m, +X op -5,27 graden in RD langs de noordgevel (oost), +Y naar de Hart van Brabantlaan; toren van 30,0 x 27,5 m tot de kroonrand +153,85 (dak +152,5, installaties tot +157,0) op een glazen plint van twee lagen, noord- en zuidgevel met 12 vensters per laag tussen lichte hoekbanden, oost- en westgevel met een wit betonraster van vier traveeën en cellen van twee lagen 1,6 m voor de glasgevel; Wing van 15,4 x 54,8 m tot +50,75 met raambanden en balkons, onderbouw met daktuin op +24,2 en rijstrook op +21,2, glazen passage naar het buurpand op +21,9 (AHN5, BAG). Laaghoogtes, vensters, raster en balkons uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 15.4,
+    "axisDegrees": -5.27,
+    "tower": {
+      "planM": [
+        30,
+        27.5
+      ],
+      "rasterDepthM": 1.6,
+      "bays": 4,
+      "bayM": 5.75,
+      "cells": 22,
+      "cellM": 5.832,
+      "storeys": 44,
+      "storeyM": 2.916,
+      "windowsPerStorey": 12,
+      "cornerBandM": 2.2
+    },
+    "wing": {
+      "planM": [
+        15.35,
+        54.75
+      ],
+      "storeys": 11,
+      "storeyM": 2.614
+    },
+    "napM": {
+      "rim": 153.85,
+      "roof": 152.5,
+      "rasterTop": 152.3,
+      "plant": 157,
+      "lift": 155.9,
+      "towerSoffit": 24,
+      "wingRim": 50.75,
+      "wingRoof": 49.95,
+      "wingStacks": [
+        55.95,
+        56.5,
+        55.4
+      ],
+      "garden": 24.2,
+      "lowDeck": 21.2,
+      "passage": 21.9
+    },
+    "estimates": [
+      "onderkant van de toren (+24,0, gelijk met de daktuin) en de glazen plint van twee lagen uit foto's",
+      "44 woonlagen van 2,92 m in 22 rastercellen van twee lagen tussen +24,0 en de bovenkant van het raster (+152,3); 47 verdiepingen volgens Wikipedia",
+      "betonraster: lisenen en banden 0,9 m in plaats van ca. 0,4 m, de gekleurde schuine wangen per laag weggelaten; glasgevel 0,6 m terug in de doos",
+      "noord- en zuidgevel: 12 vensters van 1,0 x 1,3 m per laag, hoekbanden 2,2 m, vlak 0,3 m terug (foto's)",
+      "Wing: winkelplint tot +21,2, elf lagen van 2,61 m, raambanden, drie balkons per laag en gevel en zes vensters per laag in de kopgevels uit foto's of geschat",
+      "onderbouw: hoge vensters in de zuid- en oostgevel geschat; de glazen passage als gesloten blok tot het buurpand"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0855100000310704, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m, ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DTM 0,5 m (PDOK WCS); 3D BAG",
+    "https://nl.wikipedia.org/wiki/Westpoint_(Tilburg)",
+    "https://commons.wikimedia.org/wiki/File:Tilburg_westpoint.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tilburg_westpoint2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tilburg_westpoint3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Westpoint_toren_Tilburg_2014_-_1.JPG",
+    "https://commons.wikimedia.org/wiki/File:Westpoint_toren_Tilburg_2014_-_2.JPG",
+    "https://commons.wikimedia.org/wiki/File:Westpoint_toren_Tilburg_2014_-_3.JPG",
+    "https://commons.wikimedia.org/wiki/File:Westpoint-woontoren_-_Tilburg_-_2009_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:2022RedheadDays-13.jpg"
+  ],
+  "printFiles": [
+    "westpoint-tilburg-1-1000.stl"
+  ]
+}
