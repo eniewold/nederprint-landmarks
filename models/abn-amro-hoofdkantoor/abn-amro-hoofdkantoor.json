@@ -1,0 +1,57 @@
+{
+  "name": "ABN AMRO-hoofdkantoor",
+  "file": "abn-amro-hoofdkantoor.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120100,
+    483400
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.47959,
+  "groundSamplePoints": [
+    [
+      -72,
+      5
+    ],
+    [
+      -65,
+      -55
+    ],
+    [
+      95,
+      -58
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012146659"
+  ],
+  "description": "Twee granieten torenschijven met gebogen glazen vleugels, vier kantoorvleugels, dealingroom met lichtkappen en ontvangstpaviljoen; oorsprong RD (120100,483400), X oost, Y noord, z=0 op NAP -0,46 m. Gevelraster, techniek en interne spits van de topsleuf vereenvoudigd voor 1:1000.",
+  "realWorld": {
+    "groundNapM": -0.46,
+    "highTowerNapM": 104.04,
+    "highGlazingNapM": 92.61,
+    "lowTowerNapM": 69.86,
+    "lowGlazingNapM": 62.18,
+    "wingNapM": 28.86,
+    "lightCaps": 4
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012146659 (TU Delft/3DGI, CC BY 4.0, AHN5 2023)",
+    "https://www.pcf-p.com/projects/abn-amro-bank-head-office/",
+    "https://commons.wikimedia.org/wiki/File:ABN_AMRO1.jpg",
+    "https://commons.wikimedia.org/wiki/File:ABN_AMRO2.jpg",
+    "https://commons.wikimedia.org/wiki/File:ABN_AMRO4.jpg (Migdejong)",
+    "https://commons.wikimedia.org/wiki/File:ABN_AMRO_Headquarters_Amsterdam.jpg (Steven Lek, CC BY-SA 4.0)"
+  ],
+  "printFiles": [
+    "abn-amro-hoofdkantoor-1-1000.stl"
+  ]
+}
