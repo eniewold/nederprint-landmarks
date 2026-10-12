@@ -1,0 +1,70 @@
+{
+  "name": "Alphatoren",
+  "file": "alphatoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    258432,
+    470895
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 86.66397,
+  "groundSamplePoints": [
+    [
+      -21,
+      -4
+    ],
+    [
+      1,
+      23
+    ],
+    [
+      65,
+      12
+    ],
+    [
+      -37,
+      -53
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0153100000472517"
+  ],
+  "description": "Alphatoren met de vier lagere woongebouwen van De Boulevard, gebouwd in 2008. Oorsprong RD (258432,470895), X oost, Y noord, z=0 op NAP +43,15 m; toren langs -10,3 graden. Benoemde vlakdaken, hoekserres, panoramaverdieping, schoorsteen, vensternissen en entree; gevelritme en printkragen vereenvoudigd.",
+  "realWorld": {
+    "towerAxisDegrees": -10.3,
+    "groundNapM": 43.15,
+    "towerRoofNapM": 127.159,
+    "panoramaRoofNapM": 130.634,
+    "plantRoofNapM": 134.238,
+    "chimneyNapM": 144.42,
+    "chimneyPrintWidthM": 1.6,
+    "lowerWingsNapM": [
+      62.226,
+      56.364,
+      78.353,
+      64.226,
+      59.825,
+      53.968,
+      50.44
+    ]
+  },
+  "sources": [
+    "https://kow.nl/projecten/alphatoren-de-boulevard-enschede/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0153100000472517 (TU Delft/3DGI, CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:20130407_Enschede_60.JPG",
+    "https://commons.wikimedia.org/wiki/File:20130407_Enschede_77.JPG",
+    "https://commons.wikimedia.org/wiki/File:20130407_Enschede_94.JPG",
+    "https://commons.wikimedia.org/wiki/File:Aerial_Twente_(6781751906)_(cropped).jpg"
+  ],
+  "printFiles": [
+    "alphatoren-1-1000.stl"
+  ]
+}
