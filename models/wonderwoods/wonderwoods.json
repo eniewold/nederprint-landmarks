@@ -1,0 +1,204 @@
+{
+  "name": "Wonderwoods",
+  "file": "wonderwoods.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135700,
+    455440
+  ],
+  "xAxis": [
+    0.64412,
+    0.76492
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -40,
+      -33
+    ],
+    [
+      -10,
+      -33
+    ],
+    [
+      -64,
+      -20
+    ],
+    [
+      -64,
+      10
+    ],
+    [
+      -40,
+      37
+    ],
+    [
+      30,
+      38
+    ]
+  ],
+  "groundHeight": 45.45,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000151919"
+  ],
+  "description": "Oorsprong RD (135700, 455440) in de doorgang tussen de twee gebouwen op stoepniveau NAP +2,2 m, +X op 49,9 graden in RD langs de Jaarbeursboulevard naar de Croeselaan, +Y naar het Jaarbeursplein; oost de Introvert (Boeri): onderbouw met plantenbakken tot het parkdak +27, toren op een trapezium van 22,5 m breed met een schuine zuidoostgevel, tot +45,5 aan de zuidoostkant 7,8 m dieper, dak +105,7 met rand +107,2 en installaties, verspringende balkons met bakken op drie gevels, ramen in de vlakke zuidoostgevel en een westvleugel tot +46; west de Extrovert (MVSA): donkere toren met afgeronde hoeken tot +75,2 in een witte kantoorvleugel (+50) die in afgeronde terrassen (+39,5, +33, +28, +23, +20, +15) afloopt naar de boulevard; de doorgang is op parkniveau overkapt. Torenhoogtes gepubliceerd (ca. 105 en 73 m), plattegronden uit AHN5 (bouwfase 2023) en de luchtfoto's 2025-2026; lagen, trede, balkons en dakopbouwen uit foto's of geschat; groen weggelaten.",
+  "realWorld": {
+    "groundNapM": 2.2,
+    "axisDegrees": 49.9,
+    "introvert": {
+      "architect": "Stefano Boeri Architetti",
+      "publishedHeightM": 105,
+      "napM": {
+        "rim": 107.2,
+        "roof": 105.7,
+        "step": 45.5,
+        "wing": 46,
+        "park": 27,
+        "plant": [
+          107.6,
+          108.2,
+          109
+        ]
+      },
+      "upperPlanM": {
+        "sw": 27.5,
+        "ne": 50,
+        "nw": 24,
+        "seEdge": [
+          [
+            26,
+            -13.1
+          ],
+          [
+            51.5,
+            -21.5
+          ]
+        ],
+        "seSlopeDegrees": 18.2
+      },
+      "stepDepthM": 7.8,
+      "storeys": {
+        "podium": 6,
+        "middle": 6,
+        "upper": 19,
+        "middleM": 3.083,
+        "upperM": 3.168
+      },
+      "balconyDepthM": 2.6,
+      "podiumOuter": [
+        [
+          8,
+          -28.3
+        ],
+        [
+          48.25,
+          -42.9
+        ],
+        [
+          76.55,
+          34.2
+        ],
+        [
+          8,
+          34.2
+        ]
+      ],
+      "podiumPlanterDepthM": 3
+    },
+    "extrovert": {
+      "architect": "MVSA Architects",
+      "publishedHeightM": 73,
+      "napM": {
+        "rim": 75.2,
+        "roof": 74,
+        "office": 50,
+        "terraces": [
+          50,
+          39.5,
+          39,
+          33,
+          28,
+          23.5,
+          23,
+          20,
+          19,
+          15
+        ],
+        "park": 27
+      },
+      "towerPlanM": {
+        "u": [
+          -44.5,
+          -11.5
+        ],
+        "v": [
+          -5,
+          23
+        ],
+        "cornerRadius": 4
+      },
+      "officeOuter": {
+        "u": [
+          -58.5,
+          1
+        ],
+        "v": [
+          -27.4,
+          32.8
+        ],
+        "cornerRadius": 3
+      },
+      "officeStoreyM": 3.6,
+      "towerStoreyM": 3.15
+    },
+    "passage": {
+      "u": [
+        1,
+        8
+      ],
+      "coveredV": [
+        15,
+        31
+      ],
+      "soffitNapM": 23.5
+    },
+    "orthoLeanPerMetre": {
+      "2025": [
+        -0.072,
+        -0.093
+      ],
+      "2026": [
+        0.065,
+        0.02
+      ]
+    },
+    "estimates": [
+      "torenhoogtes uit gepubliceerde ronde maten (ca. 105 en 73 m); het AHN5 (2023) toont de torens pas tot ca. +48, het AHN4 een leeg terrein",
+      "plattegrond van de Introvert-toren en de donkere toren uit de daken op de luchtfoto's 2025 en 2026, gecorrigeerd voor de scheefstand van de foto's (ca. +-2 m); de schuine zuidoostrand en de westvleugel uit het AHN5",
+      "trede van de Introvert op +45,5 (AHN5 en de verhouding op de foto van 2024); lagen 6 + 6 + 19 (31 lagen in de vakpers), de verspringende balkons als dambord van 4,2 m brede, 1,2 m dikke platen die 2,0 m uitsteken",
+      "plantenbakken van de onderbouw 3,0 m diep rondom (het AHN5 en de luchtfoto liggen 3,5 tot 5 m buiten de BAG-gevels), per laag als dichte plaat",
+      "terrassen van de kantoorvleugel uit het AHN5; glasbanden per laag van 3,6 m (kantoor) en 3,15 m (donkere toren) geschat",
+      "overkapping van de doorgang een laag dik (onderkant +23,5) geschat; de doorgang eronder open",
+      "dakopbouwen op beide torens uit de luchtfoto 2026, hoogtes geschat"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000151919 (bouwjaar 2025), Actueel_orthoHR, 2025_orthoHR en 2024_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM/DTM 0,5 m (opname 2023, bouwfase), ahn.arcgisonline.nl Hoogtebestand; AHN4 DSM/DTM 0,5 m (PDOK WCS, leeg terrein); 3D BAG (AHN5, bouwfase)",
+    "https://nl.wikipedia.org/wiki/Wonderwoods",
+    "https://stefanoboeriarchitetti.net/en/?p=62973",
+    "https://mvsa-architects.com/project/wonderwoods/",
+    "https://commons.wikimedia.org/wiki/File:Wonderwoods_Utrecht_in_2024.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Introvert_September_2024.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Introvert_Utrecht_2026.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Introvert_Utrecht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Extrovert.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wonderwoods_Utrecht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Balkons_van_woontoren_Introvert_Utrecht.jpg"
+  ],
+  "printFiles": [
+    "wonderwoods-1-1000.stl"
+  ]
+}
