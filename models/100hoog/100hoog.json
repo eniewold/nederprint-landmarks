@@ -1,0 +1,102 @@
+{
+  "name": "100Hoog",
+  "file": "100hoog.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92951.41,
+    436966.04
+  ],
+  "xAxis": [
+    0.95197,
+    0.30619
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -20
+    ],
+    [
+      -18,
+      0
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      25,
+      14
+    ]
+  ],
+  "groundHeight": 46.85,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100004790"
+  ],
+  "description": "Oorsprong RD (92951,41, 436966,04) in het hart van de toren op straatniveau NAP +3,3 m, +X op 17,83 graden in RD langs de Wijnhaven (oost), +Y naar de Wijnstraat (noord); toren van 30 x 24 m tot +105,8 (borstwering +106,45, oostdeel +106,4, installaties +108,5) met bakstenen west-, noord- en oostgevels met verspringende vensters, een zuidgevel met een wit raster van loggia's en glas waarvan het westdeel 2,8 m vooruit staat en, net als een weststrook, eindigt op +96,5; terras +99,2 en zuidwestdak +105,3; open inkepingen op de noordwest- en noordoosthoek vanaf de onderbouw (+25,5) met hoekloggia's tot +71,8 en +90,3; bakstenen onderbouw tot +25,5 met vensterbanden, een dubbelhoge hoekloggia en een open hoek aan de Wijnstraat; blok aan de kade met winkels, twee parkeerlagen, vier woonlagen in een wit raster en een teruggelegen bovenste laag onder uitkragende dakplaten (+28,6) met vier dakterrassen (+25,5); parkeergarage met dakhof +13,9 en dek +16,5. Laaghoogtes, vensters, raster, loggia's en dakplaten uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 3.3,
+    "axisDegrees": 17.83,
+    "bagFootprintM": [
+      84.6,
+      42.6
+    ],
+    "towerPlanM": [
+      30,
+      24.94
+    ],
+    "napM": {
+      "roof": 105.8,
+      "rim": 106.45,
+      "eastHigh": 106.4,
+      "plant": 108.5,
+      "westHigh": 105.3,
+      "westTerrace": 99.2,
+      "step": 96.5,
+      "podium": 25.5,
+      "podiumNorthEast": 22.8,
+      "blockRoof": 28.6,
+      "liftHouse": 30.4,
+      "courtyard": 13.9,
+      "deck": 16.5,
+      "loggiaNE": 90.33,
+      "loggiaNW": 71.81
+    },
+    "storeys": {
+      "total": 33,
+      "towerAbovePodium": 26,
+      "towerStoreyM": 3.087,
+      "blockResidential": 4,
+      "blockStoreyM": 2.9
+    },
+    "estimates": [
+      "laaghoogtes: 23 torenlagen van 3,09 m tussen de onderbouw (+25,5) en de trap (+96,5), drie lagen daarboven; vier woonlagen van 2,9 m in het blok aan de kade tussen de dakhof (+13,9) en +25,5; winkellaag tot +7,8 en twee parkeerlagen (foto's)",
+      "wit raster: kolommen en vloerbanden 0,6..0,9 m, loggia's 1,2 m en glas 0,4 m diep; in het echt slanker en per travee wisselend (foto's)",
+      "vensters in de bakstenen gevels als nissen van 0,35 m in een verspringend patroon; aantal en maat per laag geschat",
+      "hoekloggia's: AHN4 ziet in de noordoostinkeping platen tot +92 (model: bovenste loggia tot +90,3), het AHN5 en de PDOK-tegel zien alleen de onderbouw op +25,5; de bovenste noordwestloggia (+71,8) uit foto's",
+      "open hoek aan de Wijnstraat (buiten het BAG-pand) tot +10,85 en de balkonzone van 1,2 m aan de noordkant tot +22,8 geschat uit foto's en het AHN5",
+      "dakplaten van het blok 0,7 m dik en 1,0 m uitkragend; bovenste laag 0,4 m en bij de terrassen 4,0 m terug (AHN5 en foto's)"
+    ],
+    "omitted": [
+      "bomen op de dakhof en langs de kade: vegetatie, geen onderdeel van het pand",
+      "gevelonderhoudsinstallatie (rails en arm) op het dak: dunner dan 0,9 m",
+      "glazen balkonhekken en de witte stijlen tussen de ramen: dunner dan 0,9 m"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100100004790, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS)",
+    "https://nl.wikipedia.org/wiki/100Hoog",
+    "https://commons.wikimedia.org/wiki/File:100hoog.jpg",
+    "https://commons.wikimedia.org/wiki/File:100HoogRotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_100_Hoog_(26954136536).jpg",
+    "https://commons.wikimedia.org/wiki/File:Pijp_-_Glashaven_Rotterdam_(36352765903).jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_The_Muse_aan_de_Wijnhaven_met_op_de_voorgrond_de_Grote_Wijnbrug,_rechts_de_Zwartehondstraat_en_de_Wijnstraat_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:100_hoog_in_aanbouw_RDAM.JPG"
+  ],
+  "printFiles": [
+    "100hoog-1-1000.stl"
+  ]
+}
