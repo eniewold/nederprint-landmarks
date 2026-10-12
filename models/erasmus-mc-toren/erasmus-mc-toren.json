@@ -1,0 +1,76 @@
+{
+  "name": "Erasmus MC-hoogbouw",
+  "file": "erasmus-mc-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91851,
+    436180
+  ],
+  "xAxis": [
+    0.912120116172273,
+    0.4099230338415728
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.35545937,
+  "groundSamplePoints": [
+    [
+      7.091172094961928,
+      45.05236151767888
+    ],
+    [
+      54.20376915056767,
+      20.590080375558706
+    ],
+    [
+      40.72775624239984,
+      -21.592819905229167
+    ],
+    [
+      -46.10820289094435,
+      21.818194842092485
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100010031236"
+  ],
+  "description": "Uitsluitend het afzonderlijke BAG-pand van de oorspronkelijke faculteitstoren: 79,2 × 33,6 m, kop- en middeninspringingen, driehoekige kolombekleding, afgeronde televisievensters en servicebanden, twee doorlopende schuine dakvlakken en technische middenzone. Nieuw ziekenhuis en laagbouw blijven PDOK.",
+  "realWorld": {
+    "groundNapM": -0.8,
+    "axisDegrees": 24.2,
+    "roofEdgeNapM": 107.88,
+    "roofCoreNapM": 111.84,
+    "technicalNapM": 114.9,
+    "plantNapM": [
+      111.44,
+      111.36,
+      112.65,
+      114.019,
+      116.816
+    ],
+    "bayPitchM": 7.2,
+    "storeyM": 4,
+    "nicheDepthM": 0.35,
+    "estimates": [
+      "Prouvé-vensters en kleine ventilatievelden uit schuine foto’s, 4 m laagritme en 7,2 m hoofdtraveeën",
+      "drie servicebanden, blinde glaspanelen, vensterhoekradius en dakroosters geschat",
+      "driehoekige kolombekleding volgt BAG met 1 m uitsteek",
+      "technische installaties vereenvoudigd tot gemeten dakniveaus",
+      "antennevelden, dakletters, ladderhekwerk en dunne leidingen weggelaten wegens doorsnede kleiner dan 0,9 m"
+    ]
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100010031236 (TU Delft/3DGI CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://wederopbouwrotterdam.nl/artikelen/medische-faculteit (Platform Wederopbouw, foto’s Iris van den Broek / Guido Pijper alleen referentie)",
+    "https://commons.wikimedia.org/wiki/File:Faculteitsgebouw_Erasmus_MC.jpg (Sten van Houwelingen, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Erasmus_MC_2008_hires.JPG (Ricknl, publiek domein)",
+    "https://commons.wikimedia.org/wiki/File:Erasmus_Medical_Center_Rotterdam_view_from_Coolhaven.jpg (Cathrotterdam, CC BY-SA 4.0)"
+  ],
+  "printFiles": [
+    "erasmus-mc-toren-1-1000.stl"
+  ]
+}
