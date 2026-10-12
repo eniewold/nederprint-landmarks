@@ -1,0 +1,122 @@
+{
+  "name": "Provinciehuis Noord-Brabant",
+  "file": "provinciehuis-noord-brabant.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    151052.11,
+    409901.26
+  ],
+  "xAxis": [
+    0.99957,
+    0.02921
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -90,
+      -38
+    ],
+    [
+      -40,
+      -38
+    ],
+    [
+      10,
+      -38
+    ],
+    [
+      40,
+      -25
+    ]
+  ],
+  "groundHeight": 46.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000239857"
+  ],
+  "description": "Oorsprong in het hart van de toren op parkeerniveau NAP +2,65 m, +X op 1,674 graden in RD langs de lange gevels, +Y naar het noorden (oprit en Brabantlaan); laagbouw van 149,9 x 64,05 m (dak +15,5) met twee kantoorlagen achter hoge gevelkolommen, een rondlopende galerij (+7,1) boven een open parkeerlaag met dichte kern, de statenzaal met drie koperen daken (west +19,3 tot +20,3, vlinderdak midden +30,0/+23,55/+25,9 met schijven onder het overstek, oost +20,3 tot +23,95), daklichten, lichthoven en zonnepanelen; toren van 26,9 x 40,9 m met 22 diepe banden tussen vier hoekpijlers, borstwering +95,5 tot +97,15, kroon met glasstrook en dakplaat tot +103,3 en een installatiekast (+104,2); aan de noordzijde de oprit (+5,1 tot +7,2) met luifel (+11,3), aan de oostzijde een terras (+6,6/+7,1) en een loopbrug (+10,0) naar Brabantlaan 3. Galerij, kolommen, laaghoogtes en de kroonopbouw uit foto's.",
+  "realWorld": {
+    "groundNapM": 2.65,
+    "axisDegrees": 1.674,
+    "lowRiseM": [
+      149.94,
+      64.05
+    ],
+    "lowRiseNapM": {
+      "deck": 7.1,
+      "deckSoffit": 5.6,
+      "roofSoffit": 14,
+      "roof": 15.5
+    },
+    "hallRoofNapM": {
+      "west": [
+        19.31,
+        20.31
+      ],
+      "middle": [
+        30,
+        23.55,
+        25.9
+      ],
+      "east": [
+        20.3,
+        23.95
+      ]
+    },
+    "towerM": [
+      26.9,
+      40.9
+    ],
+    "towerNapM": {
+      "firstFloor": 16.2,
+      "roof": 94.4,
+      "parapet": [
+        95.5,
+        97.15
+      ],
+      "crown": 103.3,
+      "crownPlant": 104.2
+    },
+    "crownM": [
+      17.6,
+      31.5
+    ],
+    "storeys": {
+      "tower": 23,
+      "lowRise": 2,
+      "parking": 1
+    },
+    "rampNapM": [
+      5.1,
+      7.2
+    ],
+    "porchNapM": 11.3,
+    "bridgeNapM": 10,
+    "estimates": [
+      "galerij (+5,6 tot +7,1), dakplaat van de laagbouw (+14,0 tot +15,5), de gevel 3,0 m achter de dakrand en de kolommen van 1,2 m op ca. 7,2 m uit foto's (RCE); de bovenkant van de galerij uit het AHN aan de westkop",
+      "torenlagen: 23 lagen van 3,4 m vanaf +16,2 tot het dak +94,4 (Wikipedia: 23 verdiepingen); de bovenste laag als dichte borstwering, de banden met het glas 1,0 m terug en een plafond onder 45 graden (de echte banden zijn dunner en dieper)",
+      "hoekpijlers 6,0 m breed op de kopgevels en 7,45 m langs de lange gevels (AHN-omtrek, foto's); de holle overgang naar de banden is weggelaten",
+      "kroon: dichte wand tot +98,8, glasstrook 1,0 m terug tot +101,3 en dakplaat tot +103,3 uit foto's; alleen de dakhoogte komt uit het AHN",
+      "statenzaal: dakvlakken uit het AHN, overstek van 1,5 m aan de kopgevels, dakplaat 1,0 m en de vier schijven per kopgevel van het middelste dak uit foto's; de zaal zelf als dicht volume onder de daken",
+      "dichte kern van de parkeerlaag op de BGT-omtrek; de open parkeerlaag zonder binnenkolommen",
+      "luifel op vier kolommen, terras en loopbrug: onderkanten en kolommen geschat"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0796100000239857, BGT-pand van dat pand op het maaiveld, Actueel_orthoHR; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS)",
+    "https://nl.wikipedia.org/wiki/Provinciehuis_(Noord-Brabant)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_%27s-Hertogenbosch_-_20413415_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht,_vijver_op_de_voorgrond_-_%27s-Hertogenbosch_-_20413416_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht,_vijver_op_de_voorgrond_-_%27s-Hertogenbosch_-_20413397_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht,_vijver_op_de_voorgrond_-_%27s-Hertogenbosch_-_20413398_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht,_vijver_met_kunstwerk_op_de_voorgrond_-_%27s-Hertogenbosch_-_20413414_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_%27s-Hertogenbosch_-_20348592_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Provinciehuis_Noord-Brabant_vanaf_de_Guido_Gezellelaan.jpg",
+    "https://commons.wikimedia.org/wiki/File:%27s-Hertogenbosch_-_Provinciehuis_Noord-Brabant.jpg"
+  ],
+  "printFiles": [
+    "provinciehuis-noord-brabant-1-1000.stl"
+  ]
+}
