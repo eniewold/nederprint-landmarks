@@ -1,0 +1,98 @@
+{
+  "name": "World Port Center",
+  "file": "world-port-center.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92881.5,
+    435528.7
+  ],
+  "xAxis": [
+    0.77605,
+    0.63068
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      31
+    ],
+    [
+      7,
+      31
+    ],
+    [
+      37,
+      31
+    ],
+    [
+      52,
+      0
+    ],
+    [
+      -28,
+      -21
+    ]
+  ],
+  "groundHeight": 47.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000691020"
+  ],
+  "description": "Oorsprong RD (92881,5, 435528,7) in het middelpunt van de halfronde kop op kadeniveau NAP +3,5 m, +X op 39,1 graden in RD naar het oostblok, +Y naar de Maas; halfronde kop (straal 15,6 m) tot +107,5 met 27 lagen glasbanden 0,35 m diep en een glazen bovenste laag, oostblok tot +86,1 (rand +87,1) met 20 lagen, een dichte bovenrand en twee dakputten met installaties, terugliggende sleuven tussen kop en oostblok in beide lange gevels; donkere schijf van 11 m met halfronde westkop tot +126,0 (rand +126,5) met installatieput, opbouwen en vensters; kroon met trommel, balkonplaat (+114,7), glazen verdieping en ronde dakplaat tot +121,3 (straal 10,0 m); luifel van +14,95 aan de gevel tot +13,35 aan de rand (straal 26 m) op ronde kolommen boven de glazen begane grond; paviljoen +7,6 met een schuine glazen westgevel, terras +4,8 met trap. Laaghoogte, banden, kroon onder de dakplaat, vensters, kolommen en de diepte van de putten uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 3.5,
+    "axisDegrees": 39.1,
+    "architect": "Foster and Partners (1998-2001)",
+    "storeys": 32,
+    "radiusM": {
+      "head": 15.6,
+      "slab": 5.5,
+      "disc": 10,
+      "canopy": 26
+    },
+    "lengthM": {
+      "tower": 54.6,
+      "canopy": 71.4
+    },
+    "napM": {
+      "head": 107.5,
+      "eastRoof": 86.1,
+      "eastRim": 87.1,
+      "slab": 126,
+      "slabRim": 126.5,
+      "slabPlant": 127.1,
+      "disc": 121.3,
+      "balcony": 114.7,
+      "canopyFace": 14.95,
+      "canopyEdge": 13.35,
+      "pavilion": 7.6,
+      "terrace": 4.8
+    },
+    "officeStoreysHead": 27,
+    "storeyM": 3.44,
+    "estimates": [
+      "27 lagen van 3,44 m in de kop boven de luifel (banden geteld op een frontale foto), 20 in het oostblok onder een dichte rand van 3,7 m; glas 2,0 m hoog en 0,35 m diep",
+      "kroon: trommel tot +113,8 met een vensterband, balkonplaat +113,8..+114,7, glazen verdieping (straal 7,5 m) met stijlen om de 3 m en dakplaat van 1,0 m dik onder +121,3 uit foto's; alleen de bovenkant van de dakplaat staat in het AHN",
+      "sleuven tussen kop en oostblok 4,5 m breed en 3,3 m diep uit AHN4/AHN5 en foto's",
+      "luifel 1,0 m dik; ronde kolommen van 1,0 m om de ca. 8 m en de glazen gevel 2,5 m binnen de rand uit foto's; aan de zuidkant volgt de begane grond de BAG-gevel",
+      "installatieput noord op het oostblok (+83,4) en de twee installatieblokken: AHN5 heeft daar geen bruikbare waarden, diepte uit AHN4 en de luchtfoto",
+      "vensters in de schijf: drie kolommen in de oostgevel en één kolom in de lange gevels, maten geschat",
+      "paviljoen: schuine glazen westgevel als één vlak (+4,7 tot +7,6) uit het AHN5, glasband 0,35 m geschat"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000691020, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS)",
+    "https://nl.wikipedia.org/wiki/World_Port_Center",
+    "https://commons.wikimedia.org/wiki/File:(NLD-South_Holland)_Rotterdam_World_Port_Center_2025-06-04.jpg",
+    "https://commons.wikimedia.org/wiki/File:Euromast_-_Scheepvaartkwartier_-_Rotterdam_-_View_of_World_Port_Center.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_worldportcenter.jpg",
+    "https://commons.wikimedia.org/wiki/File:World_Port_Center.JPG",
+    "https://commons.wikimedia.org/wiki/File:Kop_van_Zuid,_Rotterdam,_Netherlands_-_panoramio_(8).jpg",
+    "https://commons.wikimedia.org/wiki/File:Kantoor_PortofRotterdam.jpg"
+  ],
+  "printFiles": [
+    "world-port-center-1-1000.stl"
+  ]
+}
