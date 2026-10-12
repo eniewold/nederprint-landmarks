@@ -1,0 +1,106 @@
+{
+  "name": "Vestedatoren",
+  "file": "vestedatoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161620.19,
+    383171.39
+  ],
+  "xAxis": [
+    -0.61566,
+    0.78801
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      9
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      -24,
+      5
+    ]
+  ],
+  "groundHeight": 60.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000284714",
+    "NL.IMBAG.Pand.0772100001047014"
+  ],
+  "description": "Oorsprong RD (161620,19, 383171,39) in het hart van de ruit op pleinniveau NAP +16,8 m, +X op 128 graden in RD over de lange diagonaal naar de punt richting het centrum, +Y naar het plein; afgeronde ruit van 44,2 x 14,8 m met punten van 30 graden (r 2,5 m) en afgeronde stompe hoeken (BAG), kroonrand +106,88 rondom en dak +105,32 met installaties tot +108,3 en een schoorsteen tot +110,3 (AHN5); stenen plint met hoge vensters, aan de zuidoostpunt teruggelegen onder een uitkragende kop met een luifel op +20,4; 22 woonlagen van 3,15 m en een hogere bovenste laag met op de lange gevels vier loggia's per laag tussen lisenen en vloerbanden, ronde balkons in de punten en stenen banden op de stompe hoeken. Lagen, loggia's, balkons, plinthoogte en de kop uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 16.8,
+    "axisDegrees": 128,
+    "plan": {
+      "lengthM": 44.2,
+      "widthM": 14.77,
+      "tipAngleDegrees": 30.16,
+      "tipRadiusM": 2.5,
+      "cornerRadiusM": 13.66
+    },
+    "napM": {
+      "rim": 106.88,
+      "roof": 105.32,
+      "capBottom": 104.9,
+      "penthouseFloor": 99.5,
+      "firstResidentialFloor": 30.2,
+      "plinthSoffitSE": 28.2,
+      "canopy": 20.4,
+      "plant": [
+        106.45,
+        107.1,
+        107.45,
+        108.3
+      ],
+      "flue": 110.3
+    },
+    "storeys": {
+      "total": 27,
+      "residentialRegular": 22,
+      "storeyM": 3.15,
+      "penthouseM": 5.4,
+      "plinthStoreys": 4
+    },
+    "facade": {
+      "baysPerFace": 4,
+      "bayPitchM": 3.6,
+      "loggiaDepthM": 0.8,
+      "slabM": 0.9,
+      "tipGlassSetbackM": 1.1
+    },
+    "estimates": [
+      "plinthoogte (+30,2) en laaghoogte 3,15 m uit foto's: 22 balkonplaten in de punt tussen de plint en de bovenste laag, die ca. 1,7 keer zo hoog is",
+      "loggia's als nissen van 0,8 m in vier traveeën per gevel; in het echt per travee wisselend glas, panelen en loggia met hekwerk",
+      "balkonplaten en vloerbanden 0,9 m dik in plaats van ca. 0,3 m, zodat ze op 1:1000 printen",
+      "zuidoostpunt: plint 4,6 m teruggelegen (u = -17,5) onder een stenen kop van +28,2 tot +30,2 (foto's); de luifel op +20,4 uit het AHN5, de twee kolommen geschat",
+      "ventilatieroosters op de stompe hoek aan de pleinzijde en de hoge plintvensters: plaats en maat uit foto's",
+      "de noordwestpunt staat tegen het lagere buurpand 0772100001003302 (Smalle Haven) en heeft in het model geen teruggelegen plint"
+    ]
+  },
+  "sources": [
+    "PDOK BAG panden 0772100000284714 en 0772100001047014, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DTM 0,5 m (PDOK WCS); 3D BAG LoD2.2",
+    "https://nl.wikipedia.org/wiki/Vestedatoren",
+    "https://de.wikipedia.org/wiki/Vesteda-Turm",
+    "https://commons.wikimedia.org/wiki/File:Vestedatoren,_Eindhoven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Eindhoven,_de_Vestedatoren_IMG_8577_2019-01-20_10.34.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vestedatoren_2015.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vestedatoren,_Eindhoven_-_zijkant.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vestedatoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Binnenstad,_5611_Eindhoven,_Netherlands_-_panoramio_(30).jpg",
+    "https://commons.wikimedia.org/wiki/File:2007-09-16_09.34_Eindhoven,_modern_bedrijfspand.JPG",
+    "https://commons.wikimedia.org/wiki/File:Strijkijzer_Look_a_Like_(2250918602).jpg"
+  ],
+  "printFiles": [
+    "vestedatoren-1-1000.stl"
+  ]
+}
