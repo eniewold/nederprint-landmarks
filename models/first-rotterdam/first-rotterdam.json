@@ -1,0 +1,72 @@
+{
+  "name": "FIRST Rotterdam",
+  "file": "first-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91817,
+    437479
+  ],
+  "xAxis": [
+    0.9598052919751869,
+    0.2806667089207878
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.26031222,
+  "groundSamplePoints": [
+    [
+      -16.843295440874556,
+      52.85171140740302
+    ],
+    [
+      54.3001013305021,
+      28.922292362418375
+    ],
+    [
+      50.17317792135791,
+      -38.63485754175578
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100006704"
+  ],
+  "description": "FIRST Rotterdam: geknikte schacht met glazen inspringingen, hoog drielagenraster, kroon met blinde framevelden, gemeten dakinstallaties, volledige bovengrondse lange onderbouw en lage oostserre, entree en blinde omlijsting van het kunstpaneel. Achterliggende stadstuin en ongefundeerde ondergrondse BAG-rand blijven open. Benoemde prisma’s en bouwdelen, geen DSM-lagen.",
+  "realWorld": {
+    "groundNapM": -1.25,
+    "axisDegrees": 16.3,
+    "towerRoofNapM": 120.067,
+    "crownNapM": 124.246,
+    "plantNapM": [
+      124.526,
+      126.175
+    ],
+    "podiumNapM": 34.127,
+    "westPlantNapM": [
+      38.563,
+      39.051
+    ],
+    "serreNapM": 8.212,
+    "storeyM": 3.65,
+    "nicheDepthM": 0.45,
+    "estimates": [
+      "gevelraster met verticale traveeën van circa 2,35 m en groepen van drie lagen; laagritme 3,65 m uit foto’s",
+      "glazen inspringingen vereenvoudigd op de union-contour van hoge 3DBAG-dakvlakken",
+      "open kroon als 1,3 m dikke gesloten rand met blinde nissen, permanente profielen minstens 0,9 m",
+      "serre, entree en kunstpaneelomlijsting uit foto’s vereenvoudigd; kleine bakstenen van het kunstwerk niet weergegeven",
+      "fijn dakhekwerk, naamletters, antennes en dunne PV-panelen weggelaten wegens doorsnede onder 0,9 m"
+    ]
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100006704 (TU Delft/3DGI CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://www.cie.nl/first-rotterdam?lang=en (de Architekten Cie.)",
+    "https://www.boele.nl/nl/projecten/first (primaire schuine projectfoto’s, alleen referentie)",
+    "https://commons.wikimedia.org/wiki/Category:FIRST_Tower,_Rotterdam (FIRST Rotterdam 2019 en FIRST Rotterdam.jpg, bronmetadata in README)"
+  ],
+  "printFiles": [
+    "first-rotterdam-1-1000.stl"
+  ]
+}
