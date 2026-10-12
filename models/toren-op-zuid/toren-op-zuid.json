@@ -1,0 +1,115 @@
+{
+  "name": "Toren op Zuid",
+  "file": "toren-op-zuid.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93200,
+    435790
+  ],
+  "xAxis": [
+    0.77605,
+    0.63068
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      25
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      20,
+      25
+    ],
+    [
+      -33,
+      -10
+    ],
+    [
+      -33,
+      10
+    ]
+  ],
+  "groundHeight": 47,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000691009"
+  ],
+  "description": "Oorsprong RD (93200, 435790) midden in het complex op kadeniveau NAP +3,5 m, +X op 39,1 graden in RD langs het raster van plint en schijf, +Y naar de Maas; kantoortoren 17,6 graden gedraaid met de glazen voorgevel naar de Erasmusbrug die 6 graden voorover helt (voet +13,0, 9,1 m uitkraging), dak +85,3 met drie opbouwen, het scherm met rastervakken tot +100,0 en de ligger op staanders, 22 lagen glasvakken in de hellende gevel en verspringende vensters in de zijgevels; schuine stut van 43 m (1,2 tot 2,2 m dik) van een zwarte piramide op het plein tot een nis op +43..+48; kern +91,8, schijf +71,8 met vensters en dakputten, sleuven met rode lisenen (+77,6) en trappenhuizen (+74,8); glazen plint met een uitkragend dak op +13,2 en een inham voor de stut, paviljoen +15,5 met daklichten en een schuine insnijding. Lagen, vensters, stut, nis, plintgevel en de onderkant van het plintdak uit foto's of geschat.",
+  "realWorld": {
+    "groundNapM": 3.5,
+    "axisDegrees": 39.1,
+    "towerAxisDegrees": 56.7,
+    "leaningFacade": {
+      "leanDegrees": 6,
+      "footNapM": 13,
+      "footA": 17.05,
+      "topA": 26.19,
+      "overhangM": 9.14,
+      "widthM": 40.87
+    },
+    "towerNapM": {
+      "roof": 85.3,
+      "roofPlant": 86.6,
+      "screenTop": 100,
+      "girder": [
+        96.6,
+        97.8
+      ],
+      "core": 91.8,
+      "slab": 71.8,
+      "fins": 77.6,
+      "stairs": 74.8
+    },
+    "officeStoreys": 22,
+    "storeyM": 3.114,
+    "strut": {
+      "lengthM": 44.3,
+      "tiltFromVerticalDegrees": 20.5,
+      "diameterM": [
+        1.2,
+        2.2
+      ],
+      "holeNapM": [
+        43,
+        48
+      ]
+    },
+    "plinthNapM": {
+      "roof": 13.2,
+      "soffit": 12.4,
+      "pavilion": 15.5,
+      "pavilionLights": 17
+    },
+    "estimates": [
+      "helling 6 graden (Wikipedia), gecontroleerd met de BAG-voetlijn op +13,0 en de AHN5-bovenrand van het scherm op +100,0",
+      "22 kantoorlagen van 3,114 m boven een donkere band van +13,0 tot +16,8 (Wikipedia: 23 verdiepingen); glasvakken 0,35 m diep in een raster van 12 traveeën in plaats van de 24 echte",
+      "het scherm boven het dak is een open rooster; in het model een plaat van 1,2 m met blinde vakken, de ligger erachter op vijf staanders van 1,0 m",
+      "stut: plaats van de voet uit de luchtfoto en de BAG-uitsparing, de nis uit foto's (+43..+48, 3,2 m breed), de dikte (1,2 tot 2,2 m) uit foto's",
+      "vensters in de witte zijgevels en de schijf: maten en ritme uit foto's",
+      "glazen plint: gevel 1,5 m achter de dakrand en twee glasbanden geschat; het dak 0,8 m dik",
+      "schuine insnijding in het paviljoen als één vlak uit het AHN5 (+13,2 tot +5,0)"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000691009, Actueel_orthoHR; PDOK-gebouwtegels en terrein; 2026-10-12",
+    "AHN5 DSM 0,5 m (opname 2023), ahn.arcgisonline.nl Hoogtebestand/AHN5_DSM_50cm; AHN4 DSM/DTM 0,5 m (PDOK WCS); 3D BAG LoD2.2",
+    "https://nl.wikipedia.org/wiki/Toren_op_Zuid",
+    "https://commons.wikimedia.org/wiki/File:Contrafforte_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:KPN_building_@_Wilhelminapier_@_Kop_van_Zuid_@_Rotterdam_(29933117024).jpg",
+    "https://commons.wikimedia.org/wiki/File:KPN_@_Erasmus_Bridge_@_Rotterdam_(30447721252).jpg",
+    "https://commons.wikimedia.org/wiki/File:KPN_Building_(Rotterdam)_IMG_5109.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_KPN_Tower_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:TorenOpZuid.jpg",
+    "https://commons.wikimedia.org/wiki/File:GraphyArchy_-_Wikipedia_00773.jpg",
+    "https://commons.wikimedia.org/wiki/File:GraphyArchy_-_Wikipedia_00977.jpg",
+    "https://commons.wikimedia.org/wiki/File:KPN_Building_-_Rotterdam,_Holland_-_panoramio.jpg"
+  ],
+  "printFiles": [
+    "toren-op-zuid-1-1000.stl"
+  ]
+}
