@@ -1,0 +1,74 @@
+{
+  "name": "Breitnertoren",
+  "file": "breitnertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122927,
+    484158
+  ],
+  "xAxis": [
+    0.9390942520947091,
+    0.34365969458561607
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.3471287,
+  "groundSamplePoints": [
+    [
+      27.761,
+      -2.705
+    ],
+    [
+      -22.242,
+      -14.222
+    ],
+    [
+      9.418,
+      51.926
+    ],
+    [
+      -4.049,
+      67.503
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012070861"
+  ],
+  "description": "Breitnertoren (SOM/ZZDP, 2001): westvleugel +61,132 NAP, kern +64,876, afgeronde oostvleugel +82,78, glasvolume +92,022, middenschijf +94,528 en dakinstallatie +96,271; lage noordvleugel met erker, glazen tussenhal en gebogen blad tot +16,782. Oorsprong RD (122927,484158), X langs 20,1 graden; glaspuien, dakframe en entree vereenvoudigd met blinde nissen voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 1.2228,
+    "westNapM": 61.132,
+    "westCoreNapM": 64.876,
+    "eastNapM": 82.78,
+    "glassNapM": 92.022,
+    "spineNapM": 94.528,
+    "frameNapM": 94.693,
+    "plantNapM": 96.271,
+    "lowWingNapM": 16.782,
+    "orielNapM": 15.696,
+    "axisDegrees": 20.1,
+    "storeyPitchM": 3.85,
+    "nicheDepthM": 0.35,
+    "estimates": [
+      "gevelraster op 3,85 m vloersteek en 3,45 m travees uit Commons-foto’s",
+      "glazen atriumdak lineair tussen aangrenzende gemeten daken op NAP +16,782, waar AHN door glas meet",
+      "dakframe en penthouse als blinde nissen met ronde kolommen voor 1:1000",
+      "erkeronderkant, entreeluifel, pilaren en 45° printkragen uit foto’s vereenvoudigd"
+    ]
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012070861 (TU Delft/3DGI, CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://www.zzdp.nl/nl/artikel/Ongeevenaard-ensemble (SOM Peter Ellis met ZZDP)",
+    "https://commons.wikimedia.org/wiki/File:Breitnertoren_in_2019_(1).jpg (Ceescamel, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Breitnertoren_in_2019_(2).jpg (Ceescamel, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Breitnertoren_in_2019_(3).jpg (Ceescamel, CC BY-SA 4.0)",
+    "https://commons.wikimedia.org/wiki/File:Breitnertoren_in_2019_(4).jpg (Ceescamel, CC BY-SA 4.0)"
+  ],
+  "printFiles": [
+    "breitnertoren-1-1000.stl"
+  ]
+}
