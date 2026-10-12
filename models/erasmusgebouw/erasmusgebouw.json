@@ -1,0 +1,82 @@
+{
+  "name": "Erasmusgebouw",
+  "file": "erasmusgebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    188020,
+    425726
+  ],
+  "xAxis": [
+    0.9906290290584258,
+    -0.13658011124157354
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 67.79057763,
+  "groundSamplePoints": [
+    [
+      20.701197749352776,
+      10.929794679782024
+    ],
+    [
+      11.2012620120371,
+      -51.95701809513027
+    ],
+    [
+      -75.25662373852909,
+      -61.85822971503032
+    ],
+    [
+      -96.74104101473583,
+      -30.498704618150594
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000087407"
+  ],
+  "description": "Erasmusgebouw inclusief volledige BAG-onderbouw: 25,06 × 48,76 m toren, horizontale blinde glasbanden, centrale dakrug en twee liftkernen, lage zaal met continu gebogen dak, lange zuidelijke onderwijsstrip, westkop, entree en technische opbouwen. Binnenhof open; Refter en afzonderlijke campusbrug blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 24.1,
+    "axisDegrees": -7.85,
+    "towerRoofNapM": 102.455,
+    "spineNapM": 111.367,
+    "roofCoreNapM": [
+      113.388,
+      113.368
+    ],
+    "lowRoofNapM": [
+      29.934,
+      32.635,
+      36.17,
+      36.684,
+      36.696,
+      40.564
+    ],
+    "hallRoofNapM": [
+      32.01,
+      33.73,
+      33.145
+    ],
+    "storeyM": 3.65,
+    "nicheDepthM": 0.32,
+    "estimates": [
+      "21 glasbanden op circa 3,65 m laagritme, blinde nissen .32 m en venstervakken .45 m diep",
+      "gebogen laagbouwdak als continue profielboog door gemeten rand- en middenhoogtes",
+      "lage gevelramen, entree en kleine techniek vereenvoudigd uit foto’s",
+      "dakletters, antennes en fijn hekwerk weggelaten wegens vrijstaande doorsnede onder 0,9 m",
+      "glasverbindingen binnen de eigen BAG-voet als blinde massieve puien; afzonderlijke loopbruggen naar Refter/Gymnasion blijven PDOK"
+    ]
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000087407 (TU Delft/3DGI CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://www.ru.nl/over-ons/de-campus/gebouwen-en-ruimtes/erasmusgebouw",
+    "https://commons.wikimedia.org/wiki/Category:Erasmusgebouw,_Nijmegen (foto’s Nijmegen 01/02/05/07, Hanno Lans CC BY 4.0)"
+  ],
+  "printFiles": [
+    "erasmusgebouw-1-1000.stl"
+  ]
+}
