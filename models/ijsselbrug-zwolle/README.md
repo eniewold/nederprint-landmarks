@@ -58,7 +58,7 @@ Onderdelen in het model (hoogtes in NAP):
   0,5 m onder tot 1 m boven het wegdek over de loftstations van de dekdelen,
   breder dan het dek en voorbij de landhoofden; de constructie houdt zo
   nergens een vlak op het wegdek over. De drie nodes tellen samen op tot het
-  volume van de brug als geheel (26 882 m³: constructie 23 633, rijbaan 1 567,
+  volume van de brug als geheel (26 870 m³: constructie 23 620, rijbaan 1 567,
   fietspad 1 682 m³); de STL is ongewijzigd.
 - De stalen boog van 138 m tussen de rivierpijlers als twee rechtopstaande
   vakwerkbogen 4,3 m naast de as (AHN: de bovenranden liggen op alle hoogtes
@@ -70,9 +70,15 @@ Onderdelen in het model (hoogtes in NAP):
   dek. Elke boog is een plaat van 1,2 m met randen van 1,4 m; tussen dek en
   binnenrand doorgaande openingen met een spitse top van 55 graden (de
   hangers als stijlen van 1,0 m), in het vakwerk doorgaande driehoeken onder
-  de diagonalen met een flank van 53 graden of steiler (samen 36 openingen per
-  boog), en 40 blinde nissen van 0,35 m aan de buitenkant voor de driehoeken
-  onder de bovenrand en de rest van de vakwerkdriehoeken.
+  de diagonalen: over de hele driehoek waar de diagonaal minstens 45 graden
+  steil loopt (in de vier velden tussen 6 en 31 m van elk eind: 45 tot 52
+  graden), anders met een flank van 53 graden of steiler (samen 36 openingen
+  per boog), en 36 blinde nissen van 0,35 m aan de buitenkant voor de
+  driehoeken onder de bovenrand en de rest van de vakwerkdriehoeken onder de
+  vlakkere diagonalen rond de top (37 tot 42 graden).
+- De twee eindportalen tussen de bogen: balken van 0,9 × 0,9 m op de
+  eindstijlen (x = ±69,0) onder de bovenrand, 8,6 m hart op hart en 6,1 m
+  vrij boven het wegdek.
 - Het windverband tussen de bovenranden over de middelste 100 m: dwarsstaven
   op elke knoop en kruisen daartussen (49 staven van 0,9 m met een
   V-onderkant van 50 graden).
@@ -91,13 +97,19 @@ Onderdelen in het model (hoogtes in NAP):
   van 3 × 15 m met ronde koppen (BGT) tot de aanzet.
 - De landhoofden als blokken tot het wegdek.
 
-Wat er niet in zit: het eindportaal tussen de bogen (een horizontale balk van
-8,6 m vrij boven de rijbaan, die de export tot op het dek zou opvullen);
-leuningen, lantaarns en het inspectiebordes onder het dek (dunner dan 0,9 m);
+Wat er niet in zit: leuningen, lantaarns en het inspectiebordes onder het dek (dunner dan 0,9 m);
 de open ruimte onder de betonnen bogen tussen de boogribben (de bogen zijn
 dichte trommels); de dijken achter de landhoofden (die zitten in het
 PDOK-terrein). De PDOK-reconstructie (`?landmarks=0`) heeft van de brug alleen
-een vlakke wegstrook op het maaiveld; die blijft onder het model liggen.
+een vlakke wegstrook op het maaiveld; die blijft onder het model liggen. De
+echte vormen die de export nog niet kan dragen, houden in de GLB hun
+printvorm: de openingen tussen de hangers lopen in het echt tot de onderkant
+van de onderrand, maar met die bovenkant (velden van 5,3 m breed) zette de
+export in de meettest elke opening als volle wand dicht; de driehoeken onder
+de bovenrand en die onder de vlakke diagonalen rond de top zijn in het echt
+open, maar als doorgaande opening lieten ze in de meettest ongedragen lagen
+over waar een printlijn in past (de driehoeken onder de vlakke diagonalen
+alleen al 2,7 mm², vlak naast de top).
 
 Binnen het dek (strook van 14 m, AHN-DSM 0,5 m) ligt 84 % van de cellen binnen
 1 m van het wegdek van het model (86 % binnen 2 m, mediaan +0,01 m); de rest
@@ -108,15 +120,24 @@ hoogste DSM-punt in de strook van elke boog (87 % binnen 1,5 m, mediaan
 
 Printbaarheid op 1:1000: het open vakwerk en de hangers zijn niet als staven
 te printen; elke boog is een plaat met doorgaande openingen waarvan de
-bovenflanken minstens 53 graden steil zijn (de openingen tussen de hangers
+bovenflanken minstens 45 graden steil zijn (de openingen tussen de hangers
 met een spitse top van 55 graden, de driehoeken in het vakwerk onder de
 diagonalen alleen waar die steil genoeg zijn, de rest als nis). De staven van
 het windverband hebben een V-onderkant van 50 graden en printen zonder steun.
-Vrij hangen de onderkant van het dek en de bogen van de aanbruggen (samen
-6 300 m²); de STL heeft daaronder een printvoet (een wig van 50 graden vanaf de
-randen die uitloopt in een scherm van 0,9 m tot de onderplaat, de bovenkant
-volgt de bogen), waarna 221 m² aan nisplafonds en randjes overblijft. In de
-export (printcheck, gesloten solid met overhangopvulling, status NoError): een
+Vrij hangen de onderkant van het dek en de bogen van de aanbruggen en de
+onderkant van de eindportalen (samen 6 302 m²). De portalen laat het model
+aan de export over: in de meettest van de webshop (`scripts/overhang-lab`,
+het model op 1:1000) blijft eronder een spitse opening met schoren tegen de
+eindstijlen, en gaat het volume met "Ondersteuning v2.0" van 26,9 naar
+55,8 cm³ (v1.0: 55,8 cm³; het vorige model zonder portalen: 55,7 cm³),
+zonder ongedragen lagen waar een printlijn in past. De STL op 1:1250, die
+zonder export wordt geprint, heeft geen portalen, in het vakwerk overal de
+spitse openingen met nissen en onder het dek en de bogen een printvoet (een
+wig van 50 graden vanaf de randen die uitloopt in een scherm van 0,9 m tot
+de onderplaat, de bovenkant volgt de bogen), waarna 221 m² aan nisplafonds
+en randjes overblijft; ze is ongewijzigd. Eerder in de printcheck van de
+export (gesloten solid met overhangopvulling, status NoError, zonder
+portalen): een
 uitsnede van 400 × 400 m rond de boog op 1:1000 in 62 s (47,6 naar 52,7 cm³,
 +11 %; de openingen tussen de hangers blijven open), het hele model (420 m,
 1:1051) in 61 s (41,4 naar 48,4 cm³, +17 %; de constructie 38,6 naar

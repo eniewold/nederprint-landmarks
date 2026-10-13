@@ -208,10 +208,13 @@ const SPANS = [
 // Vakwerk: bovenrand als veelhoek door de bovenknopen op een halve ellips
 // (h = H √(1 − u²), past op het AHN binnen een halve meter), de eerste en
 // laatste bovenknoop 3 m van de oplegging op 0,55 H (schuine eindstijl), de
-// overige boven het midden van elk onderveld. Op 1:1000 is elke wand een
-// dichte plaat met doorgaande driehoekige openingen met de punt omhoog (aan
-// weerszijden van elke verticaal) en blinde nissen van 0,35 m voor de
-// driehoeken met de vlakke kant boven.
+// overige boven het midden van elk onderveld. De echte staven (0,5 tot 0,8 m)
+// zijn op 1:1000 te dun; elke wand is een dichte plaat met doorgaande
+// driehoekige openingen: met de punt omhoog (aan weerszijden van elke
+// verticaal) en met de vlakke kant boven (tussen twee Λ's onder de
+// bovenrand). Die vlakke bovenkant print zonder steun niet; dat vult de
+// export op. De STL, die zonder export wordt geprint, heeft voor die
+// driehoeken blinde nissen van 0,35 m.
 const END_NODE = 3.0;
 const END_RISE = 0.55;
 const TC = 1.1; // bovenrand
@@ -368,18 +371,21 @@ function trussSection(k) {
   return { plate, niches: niches.length ? CrossSection.union(niches) : null, holes: holes.length, nicheCount: niches.length };
 }
 const trussStats = [];
-const trusses = SPANS.flatMap((span, k) => {
+const trusses = [];
+const printTrusses = [];
+SPANS.forEach((span, k) => {
   const { plate, niches, holes, nicheCount } = trussSection(k);
   trussStats.push({ span: k + 1, lengthM: +(BEARINGS[k + 1] - BEARINGS[k]).toFixed(2), panels: span.n, heightM: span.H, holes, niches: nicheCount });
-  return [-1, 1].map((side) => {
+  for (const side of [-1, 1]) {
     const y0 = side * TRUSS_Y - TRUSS_T / 2;
     const y1 = side * TRUSS_Y + TRUSS_T / 2;
     let wall = extrudeY(plate, y0, y1);
     if (niches) {
-      wall = wall.subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE)).subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2));
-    }
-    return wall;
-  });
+      printTrusses.push(wall.subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE)).subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2)));
+      wall = wall.subtract(extrudeY(niches, y0 - 0.2, y1 + 0.2));
+    } else printTrusses.push(wall);
+    trusses.push(wall);
+  }
 });
 
 // ---------- dek, paden, landhoofden ----------
@@ -436,6 +442,7 @@ const weir = WEIR.openings.flatMap(([x0, x1]) => {
 const cranes = CRANES.map(({ x0, x1, y0, y1, topNap }) => boxFromTo(x0, x1, y0, y1, southTop(x0) - 0.1, Z(topNap)));
 
 const bridge = union([deck, southWalk, northWalk, ...abutments, ...pierSolids, controlHouse, ...weir, ...cranes, ...trusses]);
+const printBridge = union([deck, southWalk, northWalk, ...abutments, ...pierSolids, controlHouse, ...weir, ...cranes, ...printTrusses]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -487,12 +494,13 @@ const footStations = footXs.map((x) => {
   return { x, section: section.map(([y, z]) => [y + yc, z]) };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek en de paden en de plafonds van de
-// blinde nissen (0,35 m diep); in de printversie alleen die nissen.
+// model alleen de onderkant van het dek en de paden en de vlakke bovenkant
+// van de openingen in de wanden; in de printversie alleen de plafonds van de
+// blinde nissen (0,35 m diep).
 const nicheBand = (y) => {
   const ay = Math.abs(y);
   return ay > TRUSS_Y - TRUSS_T / 2 - 1e-3 && ay < TRUSS_Y + TRUSS_T / 2 + 1e-3;
@@ -536,10 +544,17 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const model = overhangs(bridge);
-  console.log("vrij hangend (m2): dek en paden", Math.round(model.deckArea), "nissen", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
+  console.log(
+    "vrij hangend (m2): dek en paden",
+    Math.round(model.deckArea),
+    "openingen",
+    Math.round(model.nicheArea),
+    "overig",
+    +model.area.toFixed(2),
+  );
   if (model.area > 0.5) {
     console.log(model.other.slice(0, 20));
-    throw new Error("overhang buiten dek en nissen");
+    throw new Error("overhang buiten dek en wanden");
   }
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "overig", +print.area.toFixed(2));
@@ -844,7 +859,7 @@ await writeFile(
         "P0025.c42816a7f22c44cba15a07f7e6fcc1cb",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de rijbaan boven het hart van de stroompijler tussen de twee stuwvakken op de waterspiegel benedenstrooms van de stuw (z = 0, NAP +5,2 m) in de oorsprong, +X langs de brug naar het oostnoordoosten (Nederasselt, RD-richting 28,71 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de rijbaan tussen de vakwerkwanden en van het fietspad met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18 m breed van het Graafse landhoofd (x = -227,8) tot dat van Nederasselt (x = 302,5) met de rijbaan op NAP +16,1 tot +17,65 m (1:80 naar de vlakke stuwvakken), het fietspad aan de stroomafwaartse en het dienstpad aan de stroomopwaartse zijde; negen vakwerkoverspanningen (50 tot 67 m) met twee wanden van 1,0 m, 9,25 m hart op hart, als dichte platen met elliptische, veelhoekige bovenranden 7,7 tot 10,6 m boven de rijbaan, schuine eindstijlen, doorgaande driehoekige openingen met de punt omhoog naast elke verticaal en blinde nissen voor de driehoeken met een vlakke bovenkant; acht pijlers met ronde koppen (BGT, de achtste uit het AHN), de koppen tot NAP +12,3 m; onder de twee stuwvakken de wand van schuiven tot NAP +9,6 m met 20 jukken tot onder het bordes, twee kraanwagens op het bordes en het bedieningshuis op de stroompijler. Windverbanden en portalen tussen de wanden, lantaarns, leuningen en de schildersbruggen onder het dek zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water benedenstrooms van de stuw bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Vervangt het bedieningshuis (BAG-pand) op de stroompijler. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de rijbaan boven het hart van de stroompijler tussen de twee stuwvakken op de waterspiegel benedenstrooms van de stuw (z = 0, NAP +5,2 m) in de oorsprong, +X langs de brug naar het oostnoordoosten (Nederasselt, RD-richting 28,71 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de rijbaan tussen de vakwerkwanden en van het fietspad met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18 m breed van het Graafse landhoofd (x = -227,8) tot dat van Nederasselt (x = 302,5) met de rijbaan op NAP +16,1 tot +17,65 m (1:80 naar de vlakke stuwvakken), het fietspad aan de stroomafwaartse en het dienstpad aan de stroomopwaartse zijde; negen vakwerkoverspanningen (50 tot 67 m) met twee wanden van 1,0 m, 9,25 m hart op hart, als dichte platen met elliptische, veelhoekige bovenranden 7,7 tot 10,6 m boven de rijbaan, schuine eindstijlen en alle vakken als doorgaande driehoekige openingen (met de punt omhoog naast elke verticaal en met een vlakke bovenkant daartussen); acht pijlers met ronde koppen (BGT, de achtste uit het AHN), de koppen tot NAP +12,3 m; onder de twee stuwvakken de wand van schuiven tot NAP +9,6 m met 20 jukken tot onder het bordes, twee kraanwagens op het bordes en het bedieningshuis op de stroompijler. Windverbanden en portalen tussen de wanden, lantaarns, leuningen en de schildersbruggen onder het dek zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water benedenstrooms van de stuw bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Vervangt het bedieningshuis (BAG-pand) op de stroompijler. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthBetweenAbutmentsM: +(BEARINGS[BEARINGS.length - 1] - BEARINGS[0]).toFixed(1),

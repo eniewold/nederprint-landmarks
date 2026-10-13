@@ -4,7 +4,7 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `john-frostbrug.glb` | Catalogusbron in meters: nodes `road:rijbaan`, `road:ov-baan`, `road:fietspad` en `road:fietspad-viaduct` (de bovenste 0,5 m van het wegdek met PDOK-attributen, zie onder) en `building:john-frostbrug` met de rest: het stalen dek (hoofdliggers, rijweg, consoles met fiets- en voetpaden), de verstijfde staafboog met de hangers als scherm met spitse openingen, de twee rivierpijlers met opleggingen, de zuidelijke aanbrug (vijf pijlers met opleggingen, twee op een funderingsplaat), de overgangspijler met bordestrappen, de landhoofden, de twee torens met trappen en bordes op het noordelijke landhoofd, en het betonnen viaduct met liggers, dwarsbalken, kolommen en wand |
+| `john-frostbrug.glb` | Catalogusbron in meters: nodes `road:rijbaan`, `road:ov-baan`, `road:fietspad` en `road:fietspad-viaduct` (de bovenste 0,5 m van het wegdek met PDOK-attributen, zie onder) en `building:john-frostbrug` met de rest: het stalen dek (hoofdliggers, rijweg, consoles met fiets- en voetpaden), de verstijfde staafboog met de hangers als scherm met openingen, de twee rivierpijlers met opleggingen, de zuidelijke aanbrug (vijf pijlers met opleggingen, twee op een funderingsplaat), de overgangspijler met bordestrappen, de landhoofden, de twee torens met trappen en bordes op het noordelijke landhoofd, en het betonnen viaduct met liggers, dwarsbalken, kolommen en wand |
 | `john-frostbrug-1-1600.stl` | De brug in één stuk op 1:1600 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (381 × 27 × 22 mm; met `--scale` een andere schaal, op 1:1000 is hij 609 mm lang) |
 | `john-frostbrug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, ellipsoïdische terughoogte, hoofdmaten en bronnen |
 
@@ -60,8 +60,8 @@ Onderdelen in het model (hoogtes in NAP):
   torens en de trappen naast het dek blijven constructie (2 cm vrij); onder
   het wegdek houdt de constructie op 0,5 m onder het wegdek op. Volumes:
   rijbaan 2 749 m³, OV-baan 1 035 m³, fietspad 2 376 m³, fietspad-viaduct
-  347 m³, constructie 52 019 m³; samen precies het volume van de brug als
-  geheel (58 527 m³).
+  347 m³, constructie 51 898 m³; samen precies het volume van de brug als
+  geheel (58 405 m³).
 - Het stalen dek van 22,6 m breed over de zuidelijke aanbrug en 23,7 m over
   de hoofdbrug (BGT; register 23,2 m), met het wegdek volgens het AHN-DSM om
   de 4 m: +17,2 m bij het zuidelijke landhoofd, met 2,5 % stijgend tot
@@ -77,9 +77,12 @@ Onderdelen in het model (hoogtes in NAP):
   parabool met de top op +42,5 m (17,1 m boven het wegdek; register 17,5 m)
   die bij de rivierpijlers in de ligger uitkomt. De 15 hangers (16 velden
   van 7,5 m, foto's) als stijlen van 1,0 m in een scherm tussen ligger en
-  boog met 12 doorgaande spitse openingen (zijden van 55 graden, top van
-  +33,2 tot +41,2 m); in de twee eindvelden aan elke kant is de ruimte te
-  laag en is het scherm dicht.
+  boog met 12 doorgaande openingen: in de vier middelste velden (x = -15 tot
+  15) tot de onderkant van de boog, zoals in het echt, in de vier velden
+  daarnaast aan elke kant spits (zijden van 55 graden, top van +33,2 tot
+  +40,7 m), omdat de export die bij een steiler oplopende boog grotendeels
+  of helemaal dichtzet (zie printbaarheid); in de twee eindvelden aan elke
+  kant is de ruimte te laag en is het scherm dicht.
 - De twee rivierpijlers met spitse koppen (BGT, "spitsbogig" volgens het
   register): 6,5 en 6,9 m dik, recht tot 9 m naast de as en spits tot 15,9
   en 16,2 m, bovenkant +18,9 m (AHN), met per ligger een stalen oplegging van
@@ -120,7 +123,8 @@ dan 0,9 m), de S-vormige trappen met zeshoekige bordessen achter het viaduct
 (buiten het brugdek en onder bomen, ze liggen in het PDOK-terrein) en de
 toeritten op een dijklichaam achter de landhoofden (PDOK-terrein). De
 hangers zijn in werkelijkheid open staven met rechthoekige velden; op
-1:1000 zijn ze een scherm met spitse openingen.
+1:1000 zijn ze een scherm met openingen, buiten de middelste vier velden
+spits.
 
 Binnen de rijweg (12 m brede strook over 600 m, AHN-DSM 0,5 m) ligt 92 % van
 de cellen binnen 1 m van het wegdek van het model (mediaan +0,01 m). De
@@ -129,15 +133,27 @@ percentiel van het verschil +0,04 m); het DSM is op de dunne bogen dun bezet.
 
 Printbaarheid op 1:1000: de bogen, de ribbels van de liggers, de stijlen van
 het hangerscherm en de kolommen van het viaduct zijn minstens 0,96 m; de
-openingen in het scherm hebben een spitse top van 55 graden en de bekroning
-van de torens een onderkant van 50 graden; de nissen in de torens zijn blinde
-nissen van 0,35 m. Vrij hangen alleen de onderkant van het dek, de consoles,
-de liggers en dwarsbalken van het viaduct (samen circa 13 900 m²); de STL heeft
-daaronder een printvoet (een wig van 50 graden vanaf de randen van het dek
-die uitloopt in een scherm van 0,9 m tot de onderplaat), waarna in de
-printversie alleen de bovenkanten van de nissen in de torens (6,6 m²)
-overblijven. Met 609 m past de brug op 1:1000 niet in één uitsnede. In de
-export (printcheck, gesloten solid met overhangopvulling, status NoError):
+bekroning van de torens heeft een onderkant van 50 graden en de nissen in de
+torens zijn blinde nissen van 0,35 m. In de vier middelste velden lopen de
+openingen in het scherm tot de onderkant van de boog; die bovenkant (52 m²)
+vult de export op. In de velden daarbuiten loopt de boog over een opening
+meer dan 1,0 m op; daar zette de export in de meettest de opening tot onder
+de boog grotendeels of helemaal dicht, dus hebben die openingen in de GLB
+nog hun spitse top van 55 graden. Vrij hangen verder alleen de onderkant van
+het dek, de consoles, de liggers en dwarsbalken van het viaduct (samen
+13 856 m²); de STL heeft daaronder een printvoet (een wig van 50 graden
+vanaf de randen van het dek die uitloopt in een scherm van 0,9 m tot de
+onderplaat), waarna in de printversie alleen de bovenkanten van de nissen
+in de torens (6,6 m²) overblijven. Met 609 m past de brug op 1:1000 niet in
+één uitsnede. In de meettest van de webshop (`scripts/overhang-lab`, het
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 58,4 naar
+116,6 cm³ (v1.0: 117,2 cm³; het vorige model met alleen spitse openingen:
+116,6 cm³), zonder ongedragen lagen waar een printlijn in past: onder de
+boog blijft in de vier middelste openingen alleen een smalle getande strook
+opvulling, de andere openingen blijven open. De STL op 1:1600, die zonder
+export wordt geprint, houdt in alle velden de spitse openingen en is
+ongewijzigd. Eerder in de printcheck van de export (gesloten solid met
+overhangopvulling, status NoError, met alleen spitse openingen):
 het hele model op 1:1416 in 5 s (+13,5 % over alle onderdelen samen; de
 opvulling zit in de constructie, +14,4 % op haar eigen volume, de vier
 wegdelen krijgen niets), een uitsnede van 400 × 400 m rond

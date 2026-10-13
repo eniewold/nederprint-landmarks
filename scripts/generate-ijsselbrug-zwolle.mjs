@@ -289,11 +289,16 @@ parts.push(bandY(-MAIN_PIER.x - 0.1, MAIN_PIER.x + 0.1, (x) => roadZ(x) - MAIN_D
 // top 7,0 m lager en kruist het wegdek 55 m uit het midden (foto's), en loopt
 // onder het dek door naar de oplegging op de rivierpijler. 22 velden van
 // 6,27 m (foto's): op elke knoop een stijl in de boog en een hanger naar het
-// dek. Op 1:1000 is elke boog een plaat van 1,2 m: tussen dek en binnenrand
-// doorgaande openingen met een spitse top van 55 graden (de hangers als
-// stijlen van 1,0 m), in het vakwerk doorgaande driehoeken onder de
-// diagonalen met een flank van minstens 53 graden en blinde nissen van 0,35 m
-// voor de rest.
+// dek. De staven zijn op 1:1000 te dun; elke boog is een plaat van 1,2 m:
+// tussen dek en binnenrand doorgaande openingen met een spitse top van 55
+// graden (de hangers als stijlen van 1,0 m), in het vakwerk doorgaande
+// driehoeken onder de diagonalen met een flank van minstens 53 graden en
+// blinde nissen van 0,35 m voor de rest. In de GLB is de driehoek onder een
+// diagonaal van minstens 45 graden helemaal open, zoals in het echt. De
+// openingen tussen de hangers tot de onderrand en de driehoeken onder de
+// bovenrand en de vlakkere diagonalen houden ook in de GLB hun printvorm: daar
+// zette de export in de meettest volle wanden of liet ze ongedragen lagen
+// over (zie de README).
 const ARCH = { crown: 35.7, k: 0.00357, depth: 7.0, landX: 55, half: 69.6, post: 1.2, chord: 1.4, ribY: 4.3, plate: 1.2, panels: 22, hanger: 1.0, bar: 0.5, flank: 53, pointed: 55, niche: 0.35 };
 const upperTop = (x) => Z(ARCH.crown) - ARCH.k * x * x;
 const LOW_CROWN = Z(ARCH.crown - ARCH.depth);
@@ -304,6 +309,12 @@ const ribXs = Array.from({ length: Math.round((2 * ARCH.half) / 0.5) + 1 }, (_, 
 const ribOutline = [...ribXs.map((x) => [x, roadZ(x) - 1.0]), ...[...ribXs].reverse().map((x) => [x, upperTop(x)])];
 const throughHoles = [];
 const nicheHoles = [];
+// Voor de GLB: de spitse openingen tussen de hangers, doorgaande openingen
+// over de hele driehoek onder de steile diagonalen en verder dezelfde
+// openingen en nissen als in de STL.
+const hangerHoles = [];
+const belowHoles = [];
+const glbNiches = [];
 const flankAngles = [];
 // Openingen tussen dek en binnenrand (hangers).
 for (let k = 0; k < ARCH.panels; k++) {
@@ -318,6 +329,7 @@ for (let k = 0; k < ARCH.panels; k++) {
   if (shoulder < floor + 1.0) continue;
   const apex = shoulder + (Math.tan(rad(ARCH.pointed)) * (b - a)) / 2;
   throughHoles.push([[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]]);
+  hangerHoles.push(throughHoles[throughHoles.length - 1]);
   flankAngles.push(ARCH.pointed);
 }
 // Vakwerk tussen onderrand en bovenrand: stijlen op de knopen, diagonalen van
@@ -330,6 +342,11 @@ for (let k = 0; k < ARCH.panels; k++) {
   const xi = left ? nodeX[k + 1] : nodeX[k]; // binnenkant
   // Onder de diagonaal: top op de buitenste stijl.
   const below = inset([[xo, L(xo)], [xi, L(xi)], [xo, U(xo)]], ARCH.bar);
+  // In de GLB een doorgaande opening over de hele driehoek waar de diagonaal
+  // minstens 45 graden steil loopt; vlakkere diagonalen (rond de top, 37 tot
+  // 42 graden) houden de printvorm.
+  const diagonal = (Math.atan2(U(xo) - L(xi), Math.abs(xo - xi)) * 180) / Math.PI;
+  if (below && polyArea(below) > 1.5 && diagonal >= 45) belowHoles.push(below);
   if (below && polyArea(below) > 1.5) {
     const apex = below.reduce((p, q) => (q[1] > p[1] ? q : p));
     const dir = Math.sign(xi - xo);
@@ -339,20 +356,26 @@ for (let k = 0; k < ARCH.panels; k++) {
     const hole = CrossSection.intersection(new CrossSection([ccw(below)]), new CrossSection([ccw(wedge)])).toPolygons();
     if (hole.length === 1 && polyArea(hole[0]) > 1.0) {
       throughHoles.push(hole[0]);
+      if (diagonal < 45) belowHoles.push(hole[0]);
       const ap = hole[0].reduce((p, q) => (q[1] > p[1] ? q : p));
       // Helling van de schuine flank vanaf de top.
       const far = hole[0].reduce((p, q) => (Math.abs(q[0] - ap[0]) > Math.abs(p[0] - ap[0]) ? q : p));
       flankAngles.push((Math.atan2(ap[1] - far[1], Math.abs(far[0] - ap[0])) * 180) / Math.PI);
       const rest = new CrossSection([ccw(below)]).subtract(new CrossSection([ccw(wedge)])).toPolygons();
       for (const r of rest) if (polyArea(r) > 1.0) nicheHoles.push(r);
-    } else nicheHoles.push(below);
+      if (diagonal < 45) for (const r of rest) if (polyArea(r) > 1.0) glbNiches.push(r);
+    } else {
+      nicheHoles.push(below);
+      if (diagonal < 45) glbNiches.push(below);
+    }
   }
   // Boven de diagonaal: plafond is de bovenrand, dus een blinde nis.
   const above = inset([[xo, U(xo)], [xi, U(xi)], [xi, L(xi)]], ARCH.bar);
   if (above && polyArea(above) > 1.0) nicheHoles.push(above);
+  if (above && polyArea(above) > 1.0) glbNiches.push(above);
 }
 // Eindstijl: de plaat stopt op x = ±69,6 (stijl van 1,2 m breed).
-const ribs = [-1, 1].map((side) => {
+const printRibs = [-1, 1].map((side) => {
   const t = ARCH.plate / 2;
   const yc = side * ARCH.ribY;
   const plate = profileY(ribOutline, yc - t, yc + t);
@@ -363,7 +386,10 @@ const ribs = [-1, 1].map((side) => {
   ];
   return plate.subtract(union(cuts));
 });
-parts.push(...ribs);
+// De constructie zonder de bogen; de GLB krijgt de bogen met de echte
+// openingen, de STL die met de printvormen.
+const baseParts = [...parts];
+parts.push(...printRibs);
 // Onder het dek: per boog een schoor van de oplegging op de rivierpijler naar
 // de eindstijl en een naar het dek binnen de pijler (de doorgetrokken
 // onderrand), staven van 1,2 m.
@@ -407,7 +433,7 @@ for (let i = 0; i + 1 < braceNodes.length; i++) {
 }
 parts.push(...braces);
 
-const bridge = union(parts);
+const printBridge = union(parts);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder het dek en de bogen: een wig van 50 graden vanaf de randen die
@@ -438,7 +464,37 @@ const footStations = footXs
     return { x, section };
   });
 const printFoot = loftX(footStations, "printvoet");
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
+
+// ---------- bogen met de echte openingen (alleen in de GLB) ----------
+// Pas na het printmodel gebouwd, zodat de STL ongewijzigd blijft.
+const ribs = [-1, 1].map((side) => {
+  const t = ARCH.plate / 2;
+  const yc = side * ARCH.ribY;
+  const plate = profileY(ribOutline, yc - t, yc + t);
+  const outer = side > 0 ? [yc + t - ARCH.niche, yc + t + 0.5] : [yc - t - 0.5, yc - t + ARCH.niche];
+  const cuts = [
+    ...[...hangerHoles, ...belowHoles].map((h) => profileY(h, yc - t - 0.5, yc + t + 0.5)),
+    ...glbNiches.map((h) => profileY(h, outer[0], outer[1])),
+  ];
+  return plate.subtract(union(cuts));
+});
+// Eindportalen: tussen de bogen een balk van 0,9 × 0,9 m op de eindstijlen,
+// onder de bovenrand (8,6 m hart op hart, 6,3 m vrij boven het wegdek). De
+// vrije overspanning vult de export op; de STL heeft ze niet.
+const PORTAL = 0.9;
+const portals = [-1, 1].map((e) => {
+  const xc = e * (ARCH.half - ARCH.post / 2);
+  const zt = Math.min(upperTop(xc - PORTAL / 2), upperTop(xc + PORTAL / 2));
+  return { xc, zt, clearance: zt - PORTAL - roadZ(xc) };
+});
+const bridge = union([
+  ...baseParts,
+  ...ribs,
+  ...struts,
+  ...braces,
+  ...portals.map(({ xc, zt }) => Manifold.cube([PORTAL, 2 * ARCH.ribY, PORTAL], false).translate([xc - PORTAL / 2, -ARCH.ribY, zt - PORTAL])),
+]);
 
 // ---------- rijbaan en fietspaden als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is een eigen node per BGT-functie met de
@@ -693,6 +749,9 @@ report.arch = {
   bearingNap: +(lowBot(BEARING_X) + WATER_NAP).toFixed(2),
   hangerOpenings: throughHoles.length,
   niches: nicheHoles.length,
+  glbThroughHoles: hangerHoles.length + belowHoles.length,
+  glbNiches: glbNiches.length,
+  portalClearanceM: portals.map(({ clearance }) => +clearance.toFixed(2)),
   braces: braces.length,
   minFlankDeg: +Math.min(...flankAngles).toFixed(1),
 };
@@ -743,7 +802,7 @@ await writeFile(
         "G0244.f1ac59f63bcf4f4c8b26456f97f97966",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +1,3 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zwolle, RD-richting 28,87 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan beide kanten, onder de boog buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 15 m breed over de aanbruggen en 17,1 m onder de boog van het westelijke landhoofd bij Hattem (x = -262) tot het oostelijke bij Zwolle (x = 175,5), met het wegdek op NAP +8,4 tot +12,05 m (AHN); de stalen boog van 138 m tussen de rivierpijlers als twee rechtopstaande vakwerkbogen 4,3 m naast de as met de top op NAP +35,7 m, als platen van 1,2 m met doorgaande spitse openingen tussen de hangers en in het vakwerk en blinde nissen, eindstijlen op het dek en schoren onder het dek naar de oplegging op de rivierpijlers; het windverband tussen de bovenranden als dwarsstaven en kruisen met een V-onderkant; zes betonnen bogen aan de westkant en drie aan de oostkant onder het dek, met de boogring 0,3 m voor het boogvlak, op pijlers met ronde koppen; de rivierpijlers van 6,1 × 22,6 m met ronde koppen. Het eindportaal tussen de bogen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +1,3 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zwolle, RD-richting 28,87 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan beide kanten, onder de boog buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 15 m breed over de aanbruggen en 17,1 m onder de boog van het westelijke landhoofd bij Hattem (x = -262) tot het oostelijke bij Zwolle (x = 175,5), met het wegdek op NAP +8,4 tot +12,05 m (AHN); de stalen boog van 138 m tussen de rivierpijlers als twee rechtopstaande vakwerkbogen 4,3 m naast de as met de top op NAP +35,7 m, als platen van 1,2 m met doorgaande spitse openingen tussen de hangers en in het vakwerk (onder de diagonalen van minstens 45 graden over de hele driehoek) en blinde nissen, eindstijlen op het dek en schoren onder het dek naar de oplegging op de rivierpijlers; het windverband tussen de bovenranden als dwarsstaven en kruisen met een V-onderkant; zes betonnen bogen aan de westkant en drie aan de oostkant onder het dek, met de boogring 0,3 m voor het boogvlak, op pijlers met ronde koppen; de rivierpijlers van 6,1 × 22,6 m met ronde koppen. Tussen de bogen op de eindstijlen de eindportalen van 0,9 × 0,9 m. Leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de portalen, het dek) vult de export op. De STL heeft geen portalen, in het vakwerk overal de spitse openingen met nissen en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

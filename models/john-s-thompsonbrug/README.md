@@ -54,11 +54,11 @@ Onderdelen in het model (hoogtes in NAP):
   eindstijl, en boven elke pijler vormen de eindstijlen van twee
   overspanningen een V. Vijf velden per overspanning van 50 m en zes per
   overspanning van 60 m, met een verticaal onder elke bovenknoop.
-- In elke wand doorgaande driehoekige openingen met de punt omhoog aan
+- In elke wand doorgaande driehoekige openingen: met de punt omhoog aan
   weerszijden van elke verticaal (96 per wandlijn, flanken minstens 55
-  graden) en blinde nissen van 0,35 m aan beide kanten voor de driehoeken
-  met de vlakke kant boven (39 per wandlijn): het W-patroon van diagonalen
-  met verticalen van de foto's. Bovenrand 1,1 m, diagonalen 1,0 m,
+  graden) en met de vlakke kant boven tussen twee diagonalen onder de
+  bovenrand (39 per wandlijn): het W-patroon van diagonalen met verticalen
+  van de foto's. Bovenrand 1,1 m, diagonalen 1,0 m,
   verticalen 0,9 m, onderrand tot 0,6 m boven de rijbaan.
 - Acht pijlers: zeven uit de BGT, met lange ronde koppen die stroomopwaarts
   4 tot 9 m buiten het dek steken, en de achtste (bij x = 249,7, 3,4 m breed,
@@ -102,18 +102,22 @@ Onderdelen in het model (hoogtes in NAP):
   stroomopwaartse kant hebben geen wegdeel in de BGT en blijven ook
   constructie. Het script controleert dat de as van rijbaan en fietspad in
   die BGT-vlakken ligt en dat de volumes van de drie nodes optellen tot de
-  brug als geheel (32 206 m³: constructie 28 953, rijbaan 2 187, fietspad
+  brug als geheel (31 676 m³: constructie 28 423, rijbaan 2 187, fietspad
   1 066 m³). Geen samenvallende bovenvlakken tussen de nodes (verticale
   stralen over het hele model); de 20 punten met een vlak zonder dikte in de
   constructie liggen in de vakwerkwanden en zaten al in het model zonder
   wegdeklaag.
 
 Wat er niet in zit: de echte staven (geklonken profielen van circa 0,5 tot
-0,8 m, vervangen door de plaat met openingen en nissen; de extra
+0,8 m, vervangen door de plaat met openingen; de extra
 tussendiagonalen en -verticalen van de stuwbruggen zijn op 1:1000 niet te
-onderscheiden), de windverbanden met andreaskruisen en de portalen tussen de
-wanden boven de rijbaan (vrije horizontale overspanningen van 9 m die op
-1:1000 niet zonder steun printen), de verrijdbare schildersbruggen onder het
+onderscheiden), de windverbanden met andreaskruisen tussen de wanden boven
+de rijbaan (vrije horizontale overspanningen van 9 m die op 1:1000 niet
+zonder steun printen), de portalen tussen de wanden (als balken van 0,9 ×
+0,9 m bij de tweede en de voorlaatste bovenknoop van elke overspanning zette
+de export in de meettest onder 12 van de 18 een volle wand tot op het dek;
+alleen onder de andere 6 bleef een spitse opening met schoren tegen de
+verticalen), de verrijdbare schildersbruggen onder het
 dek (vakwerkbakken van circa 2,5 m die vrij onder het dek hangen; de export
 vult daar toch al een wig met een scherm op), leuningen, lantaarnpalen en
 verkeersborden (dunner dan 0,9 m), de vistrap, de stuwvloer en de damwanden
@@ -126,7 +130,7 @@ alleen een grijze strook op maaiveldhoogte onder de brug (het wegdeel van
 de N324, van NAP +15,6 m bij de landhoofden doorhangend tot +7,7 m) met het bedieningshuis als
 kolom; boven de uiterwaarden en de sluizen ontbreekt de brug helemaal. Het
 model heeft van noord en zuid de negen vakwerkoverspanningen met hun
-gebogen bovenranden, schuine eindstijlen, openingen en nissen en de V's boven
+gebogen bovenranden, schuine eindstijlen, openingen en de V's boven
 de pijlers, van de stroomopwaartse kant (zuid) bovendien de stuwwand met
 jukken, de kraanwagens, het bedieningshuis en de lange pijlerkoppen, van de
 stroomafwaartse kant (noord) het fietspad over de volle lengte, en van oost
@@ -140,26 +144,26 @@ het AHN zat de zevende overspanning (boven de sluizen, x = 131,7 tot 195,0)
 onder een steigerkap tot NAP +28,2 m; daar is de hoogte gelijk aan de zesde
 genomen (9,2 m boven de rijbaan), die even lang is.
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de wanden dichte platen van 1,0 m met openingen waarvan de flanken
-minstens 55 graden steil zijn (de andere zijde is de verticaal) en nissen
-van 0,35 m voor de driehoeken met een vlakke bovenkant. Alleen de onderkant
-van het dek en de paden (9104 m²) en de plafonds van de nissen (507 m²)
-hangen vrij; het script controleert dat alleen die naar beneden wijzen, dat
-de openingen steil genoeg zijn, dat alles op dezelfde onderkant begint en dat
-de printversie geen overhang heeft. De kraanwagens staan op het bordes, het
-bedieningshuis op de pijlerkop en de jukken op de schuivenwand, dus zonder
-overhang. Met 530 m past de brug op 1:1000 niet in één uitsnede van 400 mm;
-in een uitsnede van 504 m (1:1259) gaat het model in de printcheck als
-gesloten solid met overhangopvulling door (status NoError voor alle drie
-onderdelen, 14,1 s, samen 36,2 naar 35,5 cm³ ten opzichte van de rechte
-opvulling; rijbaan en fietspad krijgen geen eigen opvulling, `extraPct` 0,
-de constructie draagt alles), en in een uitsnede van 350 m rond de stuw op
-1:1000 ook (NoError, 22,4 s, 60,3 naar 54,2 cm³, rijbaan en fietspad
-`extraPct` 0):
-onder het dek komt een wig met een smal scherm tot de onderplaat, de
-openingen in de wanden blijven open. De STL op 1:1500 heeft dezelfde
-printvoet (wig van 50 graden en een scherm van 0,9 m).
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom zijn
+de wanden dichte platen van 1,0 m met openingen. Wat zonder steun niet
+print, laat het model aan de export over: de vlakke bovenkant van de
+openingen met de vlakke kant boven (724 m² samen met de randen van het
+vakwerk) en de onderkant van het dek en de paden (9104 m²); het script
+controleert dat verder niets naar beneden wijst, dat de openingen met de
+punt omhoog steil genoeg zijn (minstens 55 graden, de andere zijde is de
+verticaal) en dat alles op dezelfde onderkant begint. De kraanwagens staan
+op het bordes, het bedieningshuis op de pijlerkop en de jukken op de
+schuivenwand, dus zonder overhang. Met 530 m past de brug op 1:1000 niet in
+één uitsnede van 400 mm. In de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 31,7 naar 70,3 cm³ (v1.0: 70,9 cm³; het vorige
+model met nissen: 71,0 cm³), zonder ongedragen lagen waar een printlijn in
+past: onder de vlakke bovenkant van de openingen blijft een spitse opening
+met schoren tegen de staven, onder het dek komt een wig met een smal scherm
+tot de onderplaat. De STL op 1:1500, die zonder export wordt geprint, heeft
+printvormen: blinde nissen van 0,35 m aan beide kanten in plaats van de
+openingen met de vlakke kant boven en onder het dek een printvoet (wig van
+50 graden en een scherm van 0,9 m); ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/John_S._Thompsonbrug)
 (1927-1929, 9 overspanningen, 515 m, doorvaarthoogte NAP +15,55 m, in
