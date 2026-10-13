@@ -1,0 +1,67 @@
+{
+  "name": "Le Mirage",
+  "file": "le-mirage.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135896,
+    453079
+  ],
+  "xAxis": [
+    0.4067366430758002,
+    -0.9135454576426009
+  ],
+  "groundHeight": 45.179891,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10.368560419877006,
+      -18.370981324343017
+    ],
+    [
+      31.680322460129826,
+      2.3145558585166075
+    ],
+    [
+      28.645917529840823,
+      20.085104153913623
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000079355",
+    "NL.IMBAG.Pand.0344100000117092"
+  ],
+  "description": "Le Mirage aan Europaplein/Vliegend Hertlaan: hoge geknikte glasvleugel, lagere achtervleugel, westelijke terugloop en verticale panoramaliften met de apart geregistreerde hoge hoekvleugel. Gemeten vrijwel vlakke ongelijke dakniveaus, zilveren blind gearticuleerde kroon en brede glasentree; de naburige C-vleugel en parkeerterrassen blijven behouden.",
+  "realWorld": {
+    "groundNapM": 1.9,
+    "axisDegrees": -66,
+    "frontRoofNapM": 86.774,
+    "backRoofNapM": 76.604,
+    "westReturnNapM": 82.43,
+    "panoramaRoofNapM": 83.95,
+    "cornerRoofNapM": 86.76,
+    "estimates": [
+      "Gevelraster3.6m/2.7m, glasnissen.35m blind en publieke plint.45m geschat uit fotos; circa1.05m materiaal tussen ramen",
+      "Dakvlakkenuit3DBAG/AHN4, geen schuin aflopend dak over hele lengte; westelijke kleine dakovergang82.43NAP vereenvoudigd totvlak",
+      "Panoramaliftgevel vereenvoudigd tot dik gesloten glasvolume en ondiepe zilveren kroonbanden.2m, exacte glas-/metaalprofielen niet afzonderlijk",
+      "Interne terugloopvoeg van maximaal.5m gesloten, overige BAG-voegen binnen.05m vereenvoudigd met eigen foyerverbinding; geen publieke plateau-/straatplaat",
+      "Fijne dakantenne2.5m2 tot89.544NAP weggelaten, geen fictieve grote plantkop; C-vleugel en parkeergarage apart behouden"
+    ]
+  },
+  "sources": [
+    "https://lemirageutrecht.nl/ (gebouwbeheerder,21verdiepingen,KPF)",
+    "https://lemirageutrecht.nl/gebouw/ (4panoramaliften,renovatie2020)",
+    "https://lemirageutrecht.nl/locatie/ (Europaplein)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000079355 (TU Delft/3DGI CC BY4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000117092 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Kantoorgebouw_Mirage_in_Utrecht.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Le_Mirage-01.jpg (T Houdijk publiek domein)"
+  ],
+  "printFiles": [
+    "le-mirage-1-1000.stl"
+  ]
+}
