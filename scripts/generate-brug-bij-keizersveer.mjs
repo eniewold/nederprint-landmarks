@@ -210,14 +210,17 @@ const ABUTMENTS = [
 ];
 
 // ---------- vakwerkwand ----------
-// Een vakwerk is op 1:1000 niet open te printen. Elke wand is daarom een dichte
-// plaat van 1,0 m met per veld (tussen twee verticalen) het kruis van de twee
-// diagonalen: de vier driehoeken tussen kruis, verticalen en randen zijn
-// blinde nissen van 0,35 m aan beide kanten, en binnen de onderste driehoek en
-// de twee zijdriehoeken loopt een opening door met zijden van 56 graden
-// (punt omhoog, of tegen de verticaal met de top aan de verticaal). De
-// doorsnede staat in (x, h) met h boven de rijbaan en wordt daarna langs het
-// lengteprofiel gebogen.
+// De echte staven (circa 0,6 tot 0,8 m) zijn op 1:1000 te dun. Elke wand is
+// daarom een dichte plaat van 1,0 m met staven van 0,9 m en per veld (tussen
+// twee verticalen) het kruis van de twee diagonalen: de vier driehoeken tussen
+// kruis, verticalen en randen zijn doorgaande openingen. De diagonalen staan
+// op 38 graden en de bovenste driehoek heeft een vlakke bovenkant; wat zonder
+// steun niet print, vult de export op. De STL, die zonder export wordt
+// geprint, heeft voor die driehoeken blinde nissen van 0,35 m aan beide kanten
+// en alleen binnen de onderste driehoek en de twee zijdriehoeken een opening
+// die doorloopt met zijden van 56 graden (punt omhoog, of tegen de verticaal
+// met de top aan de verticaal). De doorsnede staat in (x, h) met h boven de
+// rijbaan en wordt daarna langs het lengteprofiel gebogen.
 const BIG = 400;
 const lineThrough = ([xa, za], [xb, zb]) => {
   const m = (zb - za) / (xb - xa);
@@ -258,6 +261,8 @@ function trussSection({ x0, x1, n }) {
   const tanP = Math.tan(POINTED);
   const holes = [];
   const niches = [];
+  // Alle vier driehoeken van het kruis, doorgaand in het model.
+  const openings = [];
   for (let k = 0; k < n; k++) {
     const xa = x0 + k * P;
     const xb = xa + P;
@@ -272,6 +277,7 @@ function trussSection({ x0, x1, n }) {
     const left = rect.intersect(halfPlane(d1, 1, off)).intersect(halfPlane(d2, -1, off));
     const right = rect.intersect(halfPlane(d2, 1, off)).intersect(halfPlane(d1, -1, off));
     for (const tri of [bottom, top, left, right]) if (tri.area() > 0.5) niches.push(tri);
+    for (const tri of [bottom, top, left, right]) if (tri.area() > 0.5) openings.push(tri);
     // Onderste driehoek: opening met de punt op het kruis (onder beide
     // diagonalen) en zijden van 56 graden.
     const v1 = off * Math.sqrt(1 + d1.m * d1.m);
@@ -295,8 +301,10 @@ function trussSection({ x0, x1, n }) {
       }
     }
   }
-  const plate = new CrossSection([ccw(outline)]).subtract(CrossSection.union(holes));
-  return { plate, niches: CrossSection.union(niches), holes: holes.length, nicheCount: niches.length, panel: +P.toFixed(3) };
+  const solid = new CrossSection([ccw(outline)]);
+  const plate = solid.subtract(CrossSection.union(holes));
+  const open = solid.subtract(CrossSection.union([...openings, ...holes]));
+  return { plate, open, niches: CrossSection.union(niches), holes: holes.length, nicheCount: niches.length, panel: +P.toFixed(3) };
 }
 // Buig een solid in (x, y, h) naar (x, y, z) langs het lengteprofiel.
 const alongRoad = (solid) =>
@@ -304,16 +312,18 @@ const alongRoad = (solid) =>
     v[2] += roadZ(v[0]);
   });
 const trussStats = [];
+const printTrussWalls = [];
 const trussWalls = SPANS.flatMap((span, k) => {
-  const { plate, niches, holes, nicheCount, panel } = trussSection(span);
-  trussStats.push({ span: k + 1, lengthM: +(span.x1 - span.x0).toFixed(2), panels: span.n, panelM: panel, holesPerWall: holes, nichesPerWall: nicheCount });
+  const { plate, open, niches, holes, nicheCount, panel } = trussSection(span);
+  trussStats.push({ span: k + 1, lengthM: +(span.x1 - span.x0).toFixed(2), panels: span.n, panelM: panel, openingsPerWall: nicheCount, printHolesPerWall: holes });
   return TRUSS_Y.map((yc) => {
     const y0 = yc - TRUSS_T / 2;
     const y1 = yc + TRUSS_T / 2;
     const wall = extrudeY(plate, y0, y1)
       .subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE))
       .subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2));
-    return alongRoad(wall);
+    printTrussWalls.push(alongRoad(wall));
+    return alongRoad(extrudeY(open, y0, y1));
   });
 });
 
@@ -363,7 +373,9 @@ const pierSolids = PIERS.flatMap((poly) => {
 });
 const abutmentSolids = ABUTMENTS.flatMap(([x0, x1]) => underDeck(x0, x1, BASE));
 
-const bridge = union([...deckParts, ...pierSolids, ...abutmentSolids, ...trussWalls]);
+const common = [...deckParts, ...pierSolids, ...abutmentSolids];
+const bridge = union([...common, ...trussWalls]);
+const printBridge = union([...common, ...printTrussWalls]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen pijlers en landhoofden vrij. Net als de
@@ -408,13 +420,13 @@ const fills = SECTIONS.filter((s) => s.depth < 2.0).map((s) => {
   );
 });
 const printFoot = union([wedge, ...fills]);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek en de koppen van de pijlers niet
-// (die wijzen omhoog), en de plafonds van de blinde nissen (0,35 m diep); in
-// de printversie alleen die nissen.
+// model alleen de onderkant van het dek (de koppen van de pijlers wijzen
+// omhoog) en de plafonds van de openingen in de wanden; in de printversie
+// alleen de plafonds van de blinde nissen (0,35 m diep).
 const inWall = (y) => TRUSS_Y.some((yc) => Math.abs(y - yc) < TRUSS_T / 2 + 1e-3);
 function overhangs(solid) {
   const mesh = solid.getMesh();
@@ -452,10 +464,17 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const model = overhangs(bridge);
-  console.log("vrij hangend (m2): dek", Math.round(model.deckArea), "nissen", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
+  console.log(
+    "vrij hangend (m2): dek",
+    Math.round(model.deckArea),
+    "openingen",
+    Math.round(model.nicheArea),
+    "overig",
+    +model.area.toFixed(2),
+  );
   if (model.area > 0.5) {
     console.log(model.other.slice(0, 20));
-    throw new Error("overhang buiten dek en nissen");
+    throw new Error("overhang buiten dek en wanden");
   }
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "nissen", Math.round(print.nicheArea), "overig", +print.area.toFixed(2));
@@ -464,7 +483,7 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
     throw new Error("printversie heeft overhang");
   }
   const minFlank = flanks.reduce((m, a) => Math.min(m, a), 90);
-  console.log("doorgaande openingen per wandlijn", flanks.length, "steilste plafond min (graden)", +minFlank.toFixed(1));
+  console.log("spitse openingen in de printversie per wandlijn", flanks.length, "vlakste plafond (graden)", +minFlank.toFixed(1));
   if (minFlank < 50) throw new Error("opening met een te vlak plafond");
 }
 
@@ -755,7 +774,7 @@ await writeFile(
         "L0002.82aa8728da9d4f82b71de738a45d8b18",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op de as van het BGT-dek (midden tussen de twee bruggen) midden tussen de twee rivierpijlers op de waterspiegel van de Bergsche Maas (z = 0, NAP +0,55 m), +X langs de brug naar het noordnoordoosten (Land van Altena, RD-richting 76,25 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vier nodes: road:rijbaan (de rijbanen van de A27 op beide bruggen tussen de vakwerkwanden, bgt_functie rijbaan autosnelweg), road:rijbaan-lokaal (de dienstweg tussen de twee bruggen, rijbaan lokale weg) en road:fietspad (de fietspaden buiten de wanden aan beide kanten, fietspad), elk de bovenste 0,5 m van het dek met bgt_fysiekvoorkomen gesloten verharding in extras.attributes, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 37,8 m breed van x = -148,4 tot 148,6 (boven de landhoofden doorgetrokken tot x = -153,6 en 153,9) met de rijbanen op NAP +12,2 m in het midden en +11,8 m bij de landhoofden, de dienstweg 0,08 m en de fietspaden 0,24 m lager; twee bruggen naast elkaar met elk drie vakwerkoverspanningen van de oude Moerdijkbrug (100, 87,2 en 100 m, acht, zeven en acht velden van 12,5 m) met evenwijdige randen 11,45 m boven de rijbaan (NAP +23,7 m), verticale eindstijlen en per veld een kruis van diagonalen, als dichte wanden van 1,0 m (y = -15,15, -2,55, 3,9 en 16,6) met doorgaande driehoekige openingen met zijden van 56 graden en blinde nissen; twee betonnen rivierpijlers van 6,4 m met spitse koppen tot 21,7 m naast de as (NAP +4,2 tot +3,0 m) en een schacht tot onder het dek; de landhoofden tot onder het dek. Portalen, dwarsregels en windverbanden tussen de wanden, leuningen, geleiderails, lantaarns en borden zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op de as van het BGT-dek (midden tussen de twee bruggen) midden tussen de twee rivierpijlers op de waterspiegel van de Bergsche Maas (z = 0, NAP +0,55 m), +X langs de brug naar het noordnoordoosten (Land van Altena, RD-richting 76,25 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vier nodes: road:rijbaan (de rijbanen van de A27 op beide bruggen tussen de vakwerkwanden, bgt_functie rijbaan autosnelweg), road:rijbaan-lokaal (de dienstweg tussen de twee bruggen, rijbaan lokale weg) en road:fietspad (de fietspaden buiten de wanden aan beide kanten, fietspad), elk de bovenste 0,5 m van het dek met bgt_fysiekvoorkomen gesloten verharding in extras.attributes, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 37,8 m breed van x = -148,4 tot 148,6 (boven de landhoofden doorgetrokken tot x = -153,6 en 153,9) met de rijbanen op NAP +12,2 m in het midden en +11,8 m bij de landhoofden, de dienstweg 0,08 m en de fietspaden 0,24 m lager; twee bruggen naast elkaar met elk drie vakwerkoverspanningen van de oude Moerdijkbrug (100, 87,2 en 100 m, acht, zeven en acht velden van 12,5 m) met evenwijdige randen 11,45 m boven de rijbaan (NAP +23,7 m), verticale eindstijlen en per veld een kruis van diagonalen, als dichte wanden van 1,0 m (y = -15,15, -2,55, 3,9 en 16,6) met staven van 0,9 m en alle vier driehoeken van elk kruis als doorgaande openingen; twee betonnen rivierpijlers van 6,4 m met spitse koppen tot 21,7 m naast de as (NAP +4,2 tot +3,0 m) en een schacht tot onder het dek; de landhoofden tot onder het dek. Portalen, dwarsregels en windverbanden tussen de wanden, leuningen, geleiderails, lantaarns en borden zijn weggelaten; wat zonder steun niet print (de plafonds van de openingen, het dek) vult de export op. De STL heeft blinde nissen met alleen spitse openingen van 56 graden en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(all.max[0] - all.min[0]).toFixed(1),

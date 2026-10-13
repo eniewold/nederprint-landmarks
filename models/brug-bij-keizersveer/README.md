@@ -52,11 +52,9 @@ Onderdelen in het model (hoogtes in NAP):
   zeven van 12,46 m in de middelste overspanning; de dwarse bovenregels in het
   AHN) en per veld een kruis van twee diagonalen van 0,9 m. Bovenrand 1,0 m,
   onderrand tot 0,6 m boven de rijbaan.
-- In elke wand per veld de vier driehoeken van het kruis als blinde nissen van
-  0,35 m aan beide kanten (32 per wand in een overspanning van 100 m), en
-  binnen de onderste driehoek en de twee zijdriehoeken een doorgaande opening
-  met plafonds van 56 graden: onder het kruis met de punt omhoog, opzij tegen
-  de verticaal met de top aan de verticaal (69 per wandlijn).
+- In elke wand per veld de vier driehoeken van het kruis als doorgaande
+  openingen (32 per wand in een overspanning van 100 m); de diagonalen staan
+  op 38 graden, de bovenste driehoek heeft een vlakke bovenkant.
 - Twee rivierpijlers uit de BGT, 6,4 m breed met spitse koppen tot 21,7 m
   naast de as; de koppen buiten het dek lopen af van NAP +4,2 m aan het dek
   naar +3,0 m op de punt (AHN), de schacht loopt over de breedte van het dek
@@ -84,17 +82,15 @@ Onderdelen in het model (hoogtes in NAP):
   in een wegdeel van zijn functie ligt en dat de volumes van de vier nodes
   optellen tot de brug als geheel (38 835 m³: constructie 33 839, rijbanen
   3 451, dienstweg 804, fietspaden 742 m³). Geen samenvallende bovenvlakken
-  tussen de nodes (`zfight.py`, 30 000 verticale stralen); de 12 punten met
-  een vlak zonder dikte in de constructie liggen in de scherpe hoeken van de
-  openingen en nissen in de wanden (bijvoorbeeld 3 mm boven de onderrand in
-  de onderhoek van een opening) en raken de wegdelen niet.
+  tussen de nodes (`zfight.py`, 30 000 verticale stralen, gemeten met de
+  vorige versie met nissen).
 
 Wat er niet in zit: de echte staven (geklonken vakwerkstaven met
-uitsparingen van circa 0,6 tot 0,8 m, vervangen door de plaat met openingen en
-nissen), de portalen met schoren boven de eindstijlen, de dwarse bovenregels
-en de windverbanden tussen de wanden (vrije horizontale overspanningen van
-12,6 m op 11 m hoogte die op 1:1000 niet zonder steun printen; de export zou
-er een wand tot het dek onder zetten), de bordessen en kooiladders op de
+uitsparingen van circa 0,6 tot 0,8 m, vervangen door de plaat met
+openingen), de portalen met schoren boven de eindstijlen, de dwarse
+bovenregels en de windverbanden tussen de wanden (de export vond onder een
+balk van 0,9 m tussen de wanden geen dichte wand om tegen te schoren en zette
+er een wand tot het dek onder), de bordessen en kooiladders op de
 portalen, leuningen, geleiderails, betonnen barriers langs de dienstweg,
 lantaarnpalen en verkeersborden (dunner dan 0,9 m), de dwarsdragers onder het
 dek (de export vult daar toch een wig met een scherm op) en de meerpalen bij
@@ -104,8 +100,8 @@ Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug
 alleen een grijze strook wegdeel die van het dek bij de landhoofden
 (NAP +11,8 m) doorhangt naar het water, met losse strepen erboven; er staat
 geen enkel bouwdeel. Het model heeft van oost en west (de lange zijden) de
-drie overspanningen per brug met hun vakwerkwanden, kruisen, openingen en
-nissen en de opening van 4 m boven elke pijler, de fietspaden buiten de wanden
+drie overspanningen per brug met hun vakwerkwanden, kruisen en openingen en
+de opening van 4 m boven elke pijler, de fietspaden buiten de wanden
 en de spitse pijlerkoppen in het water; van noord en zuid (langs de A27) de
 vier wanden met de rechthoekige eindstijlen, de twee rijbanen, de dienstweg
 ertussen en de landhoofden in de dijken.
@@ -115,23 +111,22 @@ in 83 % van de 268 vakken binnen 1 m en in 69 % binnen 0,5 m van de bovenrand
 van het model (mediaan -0,09 m; de dalen zijn cellen tussen de dwarsregels).
 De rijbanen liggen binnen 0,05 m van het 25e percentiel van het DSM per 10 m.
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de wanden dichte platen van 1,0 m met openingen waarvan de plafonds
-56 graden steil zijn (de andere zijde is de vloer of de verticaal) en nissen
-van 0,35 m voor de rest van de driehoeken. Alleen de onderkant van het dek
-(10 509 m²) en de plafonds van de nissen (2 413 m²) hangen vrij; het script
-controleert dat alleen die naar beneden wijzen, dat de openingen steil genoeg
-zijn, dat alles op dezelfde onderkant begint en dat de printversie geen
-overhang heeft. Met 307,5 m past de brug op 1:1000 in één uitsnede: in de
-printcheck (uitsnede van 337,7 m, 1:1000) gaat het model als gesloten solid
-met overhangopvulling door, status NoError voor alle vier onderdelen
-(82,0 s): de constructie gaat van 117,5 naar 113,5 cm³ (-3,4 % ten opzichte
-van de rechte opvulling), de rijbanen, de dienstweg en de fietspaden krijgen
-geen eigen opvulling (`extraPct` 0), de constructie draagt alles. Onder het
-dek komt een wig met een scherm tot de onderplaat, de openingen in de wanden
-blijven open. De STL op 1:1000 heeft dezelfde printvoet (een wig van
-50 graden vanaf de dekranden met blokken tot de hogere onderkant van de
-fietspaden en de dienstweg).
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom zijn
+de wanden dichte platen van 1,0 m met staven van 0,9 m en openingen. Wat
+zonder steun niet print, laat het model aan de export over: de plafonds van
+de openingen (de diagonalen op 38 graden en de vlakke bovenkant van de
+bovenste driehoek, samen met de randen 3 447 m²) en de onderkant van het dek
+(10 509 m²); het script controleert dat verder niets naar beneden wijst. In
+de meettest van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat
+het volume met "Ondersteuning v2.0" van 37,5 naar 116,6 cm³ (v1.0 ook
+116,6 cm³), zonder ongedragen lagen waar een printlijn in past; de export
+vult de openingen onder de flauwe diagonalen grotendeels op en onder het dek
+komt een wig met een scherm tot de onderplaat. De STL op 1:1000, die zonder
+export wordt geprint, heeft printvormen: blinde nissen van 0,35 m voor de
+driehoeken met alleen in de onderste en de zijdriehoeken een opening met
+plafonds van 56 graden, en onder het dek een printvoet (een wig van 50 graden
+vanaf de dekranden met blokken tot de hogere onderkant van de fietspaden en de
+dienstweg); ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Brug_bij_Keizersveer)
 (eerste brug 1931, in de oorlog opgeblazen en hersteld, eind jaren zeventig
