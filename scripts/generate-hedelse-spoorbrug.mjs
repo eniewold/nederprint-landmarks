@@ -173,8 +173,11 @@ const NORTH_FACE = 296.0;
 const BEARINGS = [-176.48, -115.13, -53.36, 52.72, 112.64, 173.72, 234.97, 298.22];
 // Vier vakwerklijnen van 1,0 m dik (AHN: 6,25 m en 1,0 m naast de as); de
 // oostelijke brug heeft y < 0, de westelijke y > 0. Op 1:1000 is het vakwerk
-// een dichte plaat met de driehoeken met de punt omhoog als doorgaande
-// opening en de driehoeken met een vlakke bovenkant als blinde nis van
+// een dichte plaat van staven van 0,9 m (de echte staven van circa 0,5 m zijn
+// te dun) met alle vakken als doorgaande opening: de driehoeken met de punt
+// omhoog en de driehoeken met een vlakke bovenkant, waarvan de vlakke
+// bovenkant zonder steun niet print; dat vult de export op. De STL, die
+// zonder export wordt geprint, heeft voor die driehoeken blinde nissen van
 // 0,35 m (aan de buitenkant van de buitenste en aan de spoorkant van de
 // binnenste ligger).
 const NICHE = 0.35;
@@ -293,6 +296,7 @@ const piers = [
 const openingAngles = [];
 let throughOpenings = 0;
 let blindNiches = 0;
+const printGirderSolids = [];
 const girderSolids = GIRDERS.flatMap((girder) => {
   const bottomX = [];
   for (const [a, b, n] of girder.spans) {
@@ -347,17 +351,25 @@ const girderSolids = GIRDERS.flatMap((girder) => {
   }
   throughOpenings += holes.length;
   blindNiches += niches.length;
-  return TRUSSES.map(({ y0, y1, niche }) => {
+  const solids = TRUSSES.map(({ y0, y1, niche }) => {
     const plate = profileY(outline, y0, y1);
-    const cut = [
-      ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
-      ...niches.map((h) => (niche[0] === y0 ? profileY(h, y0 - 0.3, niche[1]) : profileY(h, niche[0], y1 + 0.3))),
-    ];
-    return plate.subtract(union(cut));
+    const through = (h) => profileY(h, y0 - 0.3, y1 + 0.3);
+    printGirderSolids.push(
+      plate.subtract(
+        union([
+          ...holes.map(through),
+          ...niches.map((h) => (niche[0] === y0 ? profileY(h, y0 - 0.3, niche[1]) : profileY(h, niche[0], y1 + 0.3))),
+        ]),
+      ),
+    );
+    return plate.subtract(union([...holes, ...niches].map(through)));
   });
+  return solids;
 });
 
-const bridge = union([deck, ...abutments, ...piers, ...girderSolids]);
+const common = [deck, ...abutments, ...piers];
+const bridge = union([...common, ...girderSolids]);
+const printBridge = union([...common, ...printGirderSolids]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -382,13 +394,15 @@ const footStations = Array.from({ length: footSteps + 1 }, (_, i) => {
   return { x, section: section.map(([y, z]) => [y + yc, z]) };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek en de plafonds van de blinde nissen
-// (0,35 m diep), in de printversie alleen die nissen.
-const inNiche = (y) => TRUSSES.some(({ niche }) => y > niche[0] - 1e-3 && y < niche[1] + 1e-3);
+// model alleen de onderkant van het dek en de vlakke bovenkant van de
+// openingen in het vakwerk, in de printversie
+// alleen de plafonds van de blinde nissen (0,35 m diep).
+const inNiche = (y) =>
+  TRUSSES.some(({ y0, y1, niche }) => y > Math.min(y0, niche[0]) - 1e-3 && y < Math.max(y1, niche[1]) + 1e-3);
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -423,13 +437,20 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const model = overhangs(bridge);
-  console.log("vrij hangend (m2): dek", Math.round(model.deckArea), "nissen", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
-  if (model.area > 0.5) throw new Error("overhang buiten dek en nissen");
+  console.log(
+    "vrij hangend (m2): dek",
+    Math.round(model.deckArea),
+    "vakwerk",
+    Math.round(model.nicheArea),
+    "overig",
+    +model.area.toFixed(2),
+  );
+  if (model.area > 0.5) throw new Error("overhang buiten dek en vakwerk");
   const print = overhangs(printModel);
-  console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "overig", +print.area.toFixed(2));
+  console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "nissen", Math.round(print.nicheArea), "overig", +print.area.toFixed(2));
   if (print.deckArea + print.area > 0.5) throw new Error("printversie heeft overhang");
   const minAngle = Math.min(...openingAngles);
-  console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "steilste flank min (graden)", +minAngle.toFixed(1));
+  console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "steilste flank min (graden)", +minAngle.toFixed(1));
   if (minAngle < 50) throw new Error("opening met een te vlakke flank");
 }
 
@@ -691,7 +712,7 @@ await writeFile(
         "L0004.4808276fb6564970928bd9902b8f8883",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 93,97 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,2 m) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard; op het dek ligt geen actueel BGT-wegdeel, dus die van de landhoofden), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee gelijke spoorbruggen naast elkaar (sinds 1978), samen een dek van 15,4 m breed van het zuidelijke landhoofd (x = -186,8) tot het noordelijke (x = 308,7) met de spoorstaaf op NAP +10,2 tot +12,25 m; vier vakwerkliggers (6,25 en 1,0 m naast de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen voor de driehoeken met een vlakke bovenkant: een doorgaande ligger over de rivier (61,8, 106,1 en 59,9 m) met de bovenrand op NAP +24,7 m naast de rivierpijlers en +21,1 m in het midden, en vier velden van 61 tot 63 m met evenwijdige randen 5,9 m boven de spoorstaaf; de twee stenen rivierpijlers van 8 × 29,6 m met spitse koppen en vier pijlers in de uiterwaarden (BGT). Windverbanden, portalen, bovenleiding, leuningen en loopbruggen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de hoofdoverspanning bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 93,97 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,2 m) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard; op het dek ligt geen actueel BGT-wegdeel, dus die van de landhoofden), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee gelijke spoorbruggen naast elkaar (sinds 1978), samen een dek van 15,4 m breed van het zuidelijke landhoofd (x = -186,8) tot het noordelijke (x = 308,7) met de spoorstaaf op NAP +10,2 tot +12,25 m; vier vakwerkliggers (6,25 en 1,0 m naast de as) als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen: een doorgaande ligger over de rivier (61,8, 106,1 en 59,9 m) met de bovenrand op NAP +24,7 m naast de rivierpijlers en +21,1 m in het midden, en vier velden van 61 tot 63 m met evenwijdige randen 5,9 m boven de spoorstaaf; de twee stenen rivierpijlers van 8 × 29,6 m met spitse koppen en vier pijlers in de uiterwaarden (BGT). Windverbanden, portalen, bovenleiding, leuningen en loopbruggen zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de hoofdoverspanning bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(DECK.x1 - DECK.x0).toFixed(1),
