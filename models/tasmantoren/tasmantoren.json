@@ -1,0 +1,65 @@
+{
+  "name": "Tasmantoren",
+  "file": "tasmantoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    235921,
+    582706
+  ],
+  "xAxis": [
+    0.7975839288252285,
+    -0.6032079877452825
+  ],
+  "groundHeight": 41.37303118,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -31.86962252797275,
+      17.272149835053305
+    ],
+    [
+      -32.251948706158146,
+      -36.929822700025845
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010982651"
+  ],
+  "description": "Twee verschillend gerichte torens aan de Regattaweg, penthousebrug met open dakframe en blijvend vrije poort, lage glazen entree en volledige lange woonvleugel met zonnepaneelvelden. Platte gemeten daken en benoemde bouwdelen, geen DSM-hoogtelagen.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "axisDegrees": -37.1,
+    "towerRoofNapM": 72.796,
+    "wingRoofNapM": 16.471,
+    "lobbyRoofNapM": 7.771,
+    "machineryNapM": [
+      74.316,
+      74.339,
+      76.205
+    ],
+    "estimates": [
+      "brugonderkant58.2NAP en open dakruimte boven70.1NAP uit bronfoto’s, circa1–2m onzeker",
+      "gevelramen1.9bij1.9m op3.12m laagsteek, glazen serrevelden en entreepuien vereenvoudigd als.38m blinde nissen",
+      "vaste45-graden onderschalen maken de hoge brug zonder losse steun printbaar en verkleinen de bovenste poortzone",
+      "witte dakframebalken op1m verdikt; zonnepaneelprofielen op16.471NAP dak uit de ortho geschat",
+      "lage landschapsplaat rond het gebouw blijft PDOK-terrein; toekomstige Hunzetoren niet opgenomen"
+    ]
+  },
+  "sources": [
+    "https://architectenweb.nl/projecten/project.aspx?id=15950 (Solarlux: twee gedraaide torens en triomfboog)",
+    "https://nieuwinstad.nl/projects/tasmantoren/",
+    "https://www.tasmantoren.nl/contact/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010982651 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:20110521_Tasmantoren_Groningen_NL.jpg (Wutsje CC BY-SA3.0)",
+    "https://commons.wikimedia.org/wiki/File:Groningen_Tasmantoren_5.jpg (Zairon CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Tasmantoren_-_vooraanzicht.jpg (Hardscarf CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "tasmantoren-1-1000.stl"
+  ]
+}
