@@ -1,0 +1,68 @@
+{
+  "name": "Central Park",
+  "file": "central-park-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135822,
+    455819
+  ],
+  "xAxis": [
+    0.8660254,
+    0.5
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 45.8621,
+  "groundSamplePoints": [
+    [
+      -41.480762,
+      -11.846787399999997
+    ],
+    [
+      -9.0692192,
+      80.291651
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000149581"
+  ],
+  "description": "Rechte Central Park-toren met terugliggende golvende glazen binnenparktaille, gebogen Forum-lobby, twee dakinstallatiekernen, de volledige gedeelde woonvleugel en het echte verhoogde garagedak; AHN5 2023 en actuele ortho in plaats van AHN4-bouwfase.",
+  "realWorld": {
+    "groundNapM": 2.8,
+    "roofNapM": 93.061,
+    "largeRoofCoreNapM": 97.319,
+    "smallRoofCoreNapM": 99.25,
+    "gardenLowerEdgeNapM": 50.782,
+    "gardenCeilingNapM": 57.6,
+    "forumRoofNapM": 10.321,
+    "landscapeRoofNapM": 11.119,
+    "housingRoofsNapM": [
+      47.724,
+      47.843,
+      47.84
+    ],
+    "estimates": [
+      "Taillehoogte en de golvende glas- en plafondvlakken uit architectplannen en schuine fotos; 1-3m terugligging en circa 1-3m verticale onzekerheid",
+      "Gevarieerd verticale kozijnritme, vloerbanden en .35m blinde vensters uit fotos; zichtbare materiaalstroken minstens .9m",
+      "Gebogen lobby uit architectplattegrond geschaald op gemeten torenvoet; contour circa .5-1m vereenvoudigd",
+      "Noordelijke woonvleugel, balkon-/raamritme en trappenkop49.4m uit ortho, fotos en 3DBAG samengevoegde dakpatches; gevelnissen .5m",
+      "Hoofdinstallaties op gemeten dakhoogtes, kleinere leidingen/hekwerken onder.9m samengevoegd of weggelaten",
+      "Geen taps toelopende toren met getrapte groene gevelterrassen: bronarchitect en fotos tonen een rechte bronzen gevel met glazen binnenpark"
+    ]
+  },
+  "sources": [
+    "https://groupa.nl/nl/projecten/central-park-utrecht-nl/ (architect, ontwerp en plannen)",
+    "https://groupa.nl/news/straight-building-curvy-edges/ (architect, taille en gebogen plint)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000149581 (TU Delft/3DGI CC BY4.0; AHN5 2023)",
+    "https://www.ahn.nl/dataroom (AHN5 DSM WCS Ellipsis Drive; CC0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0; hier bouwfase)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Hoogebouw_aan_het_Jaarbeursplein_in_Utrecht.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Central_Park_Utrecht_under_construction.jpg (Choinowski CC BY-SA4.0, alleen gevel en taille als referentie)"
+  ],
+  "printFiles": [
+    "central-park-utrecht-1-1000.stl"
+  ]
+}
