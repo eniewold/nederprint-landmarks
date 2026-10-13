@@ -1,0 +1,72 @@
+{
+  "name": "Witte Anna (De Keukenrol)",
+  "file": "witte-anna.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82370,
+    455161
+  ],
+  "xAxis": [
+    0.9904614256966512,
+    -0.13779029068463808
+  ],
+  "groundHeight": 44.190224,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24.865253206033017,
+      -31.72883834936074
+    ],
+    [
+      38.903576183538675,
+      3.392898485307583
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000354187"
+  ],
+  "description": "Volledige gerenoveerde ronde woontoren met glazen kroon, gemeten zeskantige dakopbouw en geknikte lage woonvleugel met galerijen en eindtrappenhuis; hoge passage met schuine gesloten bovenkant. La Fenetre en de aangrenzende afzonderlijke woonpanden blijven behouden.",
+  "realWorld": {
+    "groundNapM": 1.2,
+    "axisDegrees": -7.92,
+    "roundCentreRd": [
+      82344.317363,
+      455153.561161
+    ],
+    "roundRadiusM": 11.09284,
+    "towerRoofNapM": 73.975,
+    "roofHeadNapM": 77.42,
+    "wingRoofNapM": 22.67,
+    "galleryRoofsNapM": [
+      19.996,
+      19.988
+    ],
+    "endCoreNapM": 17.185,
+    "entryRoofNapM": 3.829,
+    "estimates": [
+      "Ronde gevel uit BAG/3DBAG gefit op radius11.09m en96 vlakken; kleine glazen gevelsprongen vereenvoudigd",
+      "Woningvensters1.15m breed/1.55m hoog op2.85m laagsteek, .35m blind; lage vleugel2.7m steek en3m verdiepingen",
+      "Blauwe glazen kop begint geschat68.65NAP circa1m onzeker, als.25m blinde glasvelden",
+      "Hoge passage/trapzone uit schuine fotos geschatcirca1-2m, circa3m diep, deels doorlopend in de lage westelijke vleugel, met1m dikke sokkel en45graden bovenkant; geen losse spiraaltrap of rastervloer",
+      "Hoofd- en bijdaken/voetplannen volgen3DBAG/AHN4, bovenzijde77.42NAP; open dakframe tot gesloten zeskant vereenvoudigd"
+    ]
+  },
+  "sources": [
+    "https://www.dvda-denhaag.nl/portfolio/145/ (Groep5/architectuurdocumentatie)",
+    "https://haagwonen.nl/projecten/iconische-haagse-woontoren-witte-anna-weer-als-nieuw/ (eigenaar,renovatie2024,toren166 enlagevleugel62woningen)",
+    "https://haagwonen.nl/feest-eerste-deel-renovatie-en-verduurzaming-woontoren-witte-anna-klaar/ (vernieuwdegevels)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000354187 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Witte_Anna_2025-06-16-1.jpg (Renee Kools CC BY4.0)",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Witte_Anna_2025-06-16-2.jpg (Renee Kools CC BY4.0)",
+    "https://commons.wikimedia.org/wiki/File:Witte_Anna2.JPG (Steven Lek publicdomain)",
+    "https://commons.wikimedia.org/wiki/File:De_Witte_Anna_(373123617).jpg (FaceMePLS CC BY2.0)"
+  ],
+  "printFiles": [
+    "witte-anna-1-1000.stl"
+  ]
+}
