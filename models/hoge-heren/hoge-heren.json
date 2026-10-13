@@ -1,0 +1,72 @@
+{
+  "name": "De Hoge Heren",
+  "file": "hoge-heren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92642,
+    436268
+  ],
+  "xAxis": [
+    0.9003187714021935,
+    0.4352310993723275
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.8416466,
+  "groundSamplePoints": [
+    [
+      -54.69783155644028,
+      -23.540331837577934
+    ],
+    [
+      10.411068220602285,
+      -42.79730901009975
+    ],
+    [
+      45.88640076885433,
+      -19.96091742581199
+    ],
+    [
+      2.2531077243435043,
+      32.232336334533734
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000627495"
+  ],
+  "description": "De Hoge Heren: rechthoekige gelede westtoren en oosttoren op het stratenpatroon, diepe loggiavelden en vensternissen, open bovenruimte tussen beide torens, gezamenlijk zeslaags podium met glazen begane grond, glasentree en kleine luifel, lifthal en gemeten dakopbouwen; doorlopende prisma’s en vlakke daken, geen DSM-lagen.",
+  "realWorld": {
+    "groundNapM": 3.2,
+    "axisDegrees": 25.8,
+    "towerRoofNapM": [
+      100.618,
+      100.631
+    ],
+    "roofLiftNapM": [
+      105.01,
+      105.107
+    ],
+    "podiumNapM": 18.535,
+    "hallNapM": 20.825,
+    "lowerGlassNapM": 6.735,
+    "storeyM": 2.83,
+    "estimates": [
+      "regelmatige torencontouren uit BAG/3D BAG, lifthalnissen en dakopbouwcontouren circa .5–1 m vereenvoudigd",
+      "brede rechthoekige vensters circa 2.65 × 1.35 m, verdiepingsritme 2.83 m, loggiaposities en 1.1 m diepte uit foto’s geschat",
+      "glazen beganegrondpuien, parkeergevelraster, entreeveld en kleine 45 graden luifel geschat",
+      "kolenstructuur van gevelpanelen, roedes, loggiarelings, groen en onderhoudsgieken kleiner dan .9 m niet vrijstaand opgenomen"
+    ]
+  },
+  "sources": [
+    "https://www.wielaretsarchitects.com/en/projects/hoge_heren/ (architect, 2001, schuine foto’s alleen referentie)",
+    "https://www.bureaubouwkunde.nl/projecten/de-hoge-heren-rotterdam/ (gehele complex, zeslaagse voet)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000627495 (TU Delft/3DGI, CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "hoge-heren-1-1000.stl"
+  ]
+}
