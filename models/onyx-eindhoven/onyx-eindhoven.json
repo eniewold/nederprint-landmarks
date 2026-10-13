@@ -1,0 +1,72 @@
+{
+  "name": "Onyx",
+  "file": "onyx-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    160952,
+    383524
+  ],
+  "xAxis": [
+    0.9727758782093966,
+    0.23174790349415733
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 60.55688738,
+  "groundSamplePoints": [
+    [
+      -1.7109772705943156,
+      23.023304645065828
+    ],
+    [
+      22.745772477338903,
+      4.8610528087166625
+    ],
+    [
+      9.029688489281172,
+      -26.822839629437876
+    ],
+    [
+      -24.96885640148462,
+      -1.2474814636060003
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001022321",
+    "NL.IMBAG.Pand.0772100001047018"
+  ],
+  "description": "Volledige Onyx, 2019: verticale gemetselde gevelvelden met blinde ramen en kleine facetribben, aangesloten balkonbakken, restaurant-/entreeplint, achterste bouwdeel, twee lagere hoekterrassen, open kroon en gemeten dakapparatuur. Het garagepand1047018 levert een tweede torenscan en een dubbel Lighting-deel; Lighting blijft via pand1003342 behouden. Geen garage-/parkplaat en geen gestapelde DSM-lagen.",
+  "realWorld": {
+    "groundNapM": 16.95,
+    "axisDegrees": 13.4,
+    "mainRoofNapM": 94.482,
+    "rearRoofNapM": 95.503,
+    "terraceNapM": [
+      87.689,
+      87.69
+    ],
+    "crownNapM": 99.786,
+    "roofCoreNapM": 98.452,
+    "plantNapM": 98.589,
+    "estimates": [
+      "regelmatige torencontouren, terugliggende hoekterrassen en dakcontouren circa .5–1m vereenvoudigd op BAG/AHN/3D BAG",
+      "vensters1.5×2.7m, laagritme3.15m, facetribben, kroonstijlen en glasslots uit architectfoto’s geschat",
+      "drie balkonvelden metbakken1.4m diep en.9m bovenrand zijn uit foto’s geschat; schuine onderschaal is printvereenvoudiging",
+      "restaurantpuien en entreeveld, fijne roedes/reclame/relings en zonnepanelen smaller dan .9m weggelaten of samengevoegd",
+      "garage1047018 bevat dubbelscans van Onyx en Lighting; Lighting1003342 behouden, oude scans verschillen plaatselijk .3–.8m langs kleine zuidelijke randstroken"
+    ]
+  },
+  "sources": [
+    "https://www.diederendirrix.nl/nl/projecten/woontoren-onyx-eindhoven/ (architect,2019,schuine foto’s Mitchell van Eijk alleen referentie)",
+    "https://www.schoeck.com/nl/detail/onyx-toren (balkonbouwer,84m,balkonbakken)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100001022321 (TU Delft/3DGI,CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "PDOK 3D Tiles: dubbele garage-/torenscan1047018 en afzonderlijk Lighting-pand1003342"
+  ],
+  "printFiles": [
+    "onyx-eindhoven-1-1000.stl"
+  ]
+}
