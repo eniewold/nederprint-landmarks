@@ -1,0 +1,90 @@
+{
+  "name": "Prinsenhof",
+  "file": "prinsenhof-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82965,
+    455108
+  ],
+  "xAxis": [
+    0.8251134982782952,
+    0.5649670034249379
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.97555392,
+  "groundSamplePoints": [
+    [
+      -30.736774329976072,
+      48.9208616419225
+    ],
+    [
+      84.70556257646078,
+      8.658387182685267
+    ],
+    [
+      50.73917559487832,
+      -113.5188797511326
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000267537",
+    "NL.IMBAG.Pand.0518100000352973",
+    "NL.IMBAG.Pand.0518100000207900"
+  ],
+  "description": "Volledige Prinsenhof: kantoor- en hotelbeuken, drie woonvolumes met loggiavelden, complete vijflaagse woon-werkplint en aansluitvleugels, open tuindelen, drie holle glaskappen met spitse entrees en kolommen, gemeten dakliftkernen/techniek, twee hoge schijven en glazen middenstuk met dakmasten; vaste bouwprisma’s en dakschalen, geen DSM-lagen.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "axisDegrees": 34.4,
+    "officeRoofsNapM": [
+      56.604,
+      56.616,
+      56.586
+    ],
+    "hotelRoofNapM": 70.582,
+    "homeRoofsNapM": [
+      71.513,
+      71.518,
+      71.542
+    ],
+    "homeCoresNapM": [
+      76.203,
+      76.223,
+      76.193
+    ],
+    "twinRoofsNapM": [
+      95.555,
+      95.539
+    ],
+    "twinGlassNapM": 102.456,
+    "mastBasesNapM": [
+      110.332,
+      110.321
+    ],
+    "mastTipsNapM": [
+      117.778,
+      117.594
+    ],
+    "estimates": [
+      "regelmatige vaste bouwplannen uit BAG/3D BAG tot .5–1m vereenvoudigd, dunne meetruisstroken kleiner dan .9m weggelaten",
+      "vensters, kantoor-/woonritme, loggiaposities en diepte1.7m uit architectfoto’s geschat",
+      "glaskappen hebben drie zadeldakbeuken: goot12.95/ridge14.35 en kolommen-/glaspui-indeling geschat rond gemeten gemiddelde12.85, circa1m onzeker",
+      "dakcontouren en apparatuurkasten vereenvoudigd op gemeten hoogtes, dakmastenboven110.3 naarcirca117.6–117.8 uitlokaleAHN; schachtbreedte1.4→1.0m voorprint verdikt",
+      "fijne glasroedes, lamellen, dakrelings, daktuingroen en masttuien smaller dan .9m weggelaten; geen garage-/tuinplaat"
+    ]
+  },
+  "sources": [
+    "https://www.atelierpro.nl/projecten/prinsenhof (architect, volledige kantoren/hotel/atria, primaire buitenfoto’s alleenreferentie)",
+    "https://rijnboutt.nl/portfolio/prinsenhof/ (architect, drie woontorens en woon-werkplint)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000267537 (TU Delft/3DGI,CC BY4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000352973 (TU Delft/3DGI,CC BY4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000207900 (TU Delft/3DGI,CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "prinsenhof-den-haag-1-1000.stl"
+  ]
+}
