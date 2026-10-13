@@ -1,0 +1,66 @@
+{
+  "name": "Beurs World Trade Center",
+  "file": "beurs-wtc-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92648,
+    437325
+  ],
+  "xAxis": [
+    0.951,
+    0.309
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.82831,
+  "groundSamplePoints": [
+    [
+      -71.16,
+      -41.04
+    ],
+    [
+      -55.9,
+      73.85
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000617974"
+  ],
+  "description": "Ovale groene WTC-toren met de volledige oude Beurs: gebogen hal, drie kantoorvleugels, lichtcourt, hoofdentree, trappen en kloktoren; bovenbouwen uit benoemde vlakken en bouwdelen.",
+  "realWorld": {
+    "groundNapM": 0.4,
+    "towerRoofNapM": 87.476,
+    "towerPlantNapM": 93.546,
+    "towerPlantHeadNapM": 93.884,
+    "clockNapM": 42.397,
+    "officeRoofsNapM": [
+      27.417,
+      27.433,
+      23.857,
+      20.192
+    ],
+    "hallRidgeNapM": 17.19,
+    "entryRidgeNapM": 23.85,
+    "estimates": [
+      "Torenlens met twee gemeten randbogen vereenvoudigd met Beziercurven; circa 0.5m contourafwijking",
+      "Gevelramen, kozijnritme, traphoogten en zes entreezuilen uit schuine fotos; nissen .3m diep, minimaal .9m brede zichtbare delen",
+      "De vergaderzaal heeft een gekromde kap met gemeten kruin en geschatte boog tussen de dakranden",
+      "Bellstoel als gesloten kap; fijne klokplaat, vlaggen en ornamenten kleiner dan .9m niet apart",
+      "Dakinstallaties samengevoegd tot de gemeten kernen; haldak als één dwarsprofiel, onzichtbaar halinterieur massief"
+    ]
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513765 (RCE, Beurs en Kamer van Koophandel)",
+    "https://groosman.com/beurs-wtc/ (architect)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000617974 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_World_Trade_Center.jpg (Fred Romero CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Beurs-World_Trade_Center.jpg (Edison McCullen CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "beurs-wtc-rotterdam-1-1000.stl"
+  ]
+}
