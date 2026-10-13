@@ -324,8 +324,10 @@ const kerbs = KERBS.map(([x0, x1, y0, y1]) => kerb(x0, x1, y0, y1));
 // Per ligger: onderknopen op de vakgrenzen, bovenknopen midden daartussen
 // (vakwerk met de diagonalen als W). De plaat loopt van de onderkant van het
 // dek tot de bovenrand; bij de uiteinden zakt de bovenrand langs de eindstijl
-// naar 0,9 m boven de spoorstaaf. De driehoeken met de punt omhoog zijn
-// doorgaande openingen, die met een vlakke bovenkant blinde nissen van 0,35 m.
+// naar 0,9 m boven de spoorstaaf. Alle driehoeken zijn doorgaande openingen;
+// de vlakke bovenkant van die met de punt omlaag print niet zonder steun, dat
+// vult de export op. De STL, die zonder export wordt geprint, heeft daar
+// blinde nissen van 0,35 m (printSolids).
 const openingAngles = [];
 let throughOpenings = 0;
 let blindNiches = 0;
@@ -380,18 +382,17 @@ function girder(spans, top, lines) {
   }
   throughOpenings += holes.length * lines.length;
   blindNiches += niches.length * lines.length;
-  return {
-    x0,
-    x1,
-    solids: lines.map(({ y0, y1, niche }) => {
-      const plate = profileY(outline, y0, y1);
-      const cut = [
-        ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
-        ...niches.map((h) => (niche === "low" ? profileY(h, y0 - 0.3, y0 + NICHE) : profileY(h, y1 - NICHE, y1 + 0.3))),
-      ];
-      return plate.subtract(union(cut));
-    }),
-  };
+  const printSolids = [];
+  const solids = lines.map(({ y0, y1, niche }) => {
+    const plate = profileY(outline, y0, y1);
+    const cut = [
+      ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
+      ...niches.map((h) => (niche === "low" ? profileY(h, y0 - 0.3, y0 + NICHE) : profileY(h, y1 - NICHE, y1 + 0.3))),
+    ];
+    printSolids.push(plate.subtract(union(cut)));
+    return plate.subtract(union([...holes, ...niches].map((h) => profileY(h, y0 - 0.3, y1 + 0.3))));
+  });
+  return { x0, x1, solids, printSolids };
 }
 // Lijnen per brug; de nis zit aan de buitenkant van de buitenste ligger en aan
 // de spoorkant van de binnenste.
@@ -527,7 +528,10 @@ function leg(xc, s) {
 const legs = [-1, 1].flatMap((sx) => [-1, 1].map((s) => leg(sx * PORTAL_X, s)));
 // Dwarsbalk met schoren van 50 graden in de openingen eronder (tussen de
 // geleidetorens en tussen toren en poot), zodat er geen vlakke onderkant vrij
-// hangt.
+// hangt. In het echt is de onderkant vlak, maar daaronder kan de export niet
+// genoeg schoren kwijt: met een vlakke onderkant valt de opvulling van het
+// hele model terug op die zonder openingen (in de meettest meer dan drie
+// rondes), dus ook in het model de schoren.
 const TAN_H = Math.tan((HAUNCH_DEG * Math.PI) / 180);
 const legInnerAt = (z) => LEG.y - LEG.r + ((LEG.topIn - (LEG.y - LEG.r)) * (z - BASE)) / (LEG.topZ - BASE);
 function crossbeam(xc) {
@@ -555,7 +559,9 @@ const crossbeams = [-1, 1].map((sx) => crossbeam(sx * PORTAL_X));
 // breedte tussen de liggers, van het dek tot de dwarsbalk, met onderin een
 // doorgang voor de treinen met een spitse bovenkant, op de zijvlakken
 // kruisverbanden met doorgaande openingen en op de kopse vlakken als blinde
-// nissen.
+// nissen. Op de zijvlakken zijn in het model ook de driehoeken boven het kruis
+// (vlakke bovenkant, dat vult de export op) doorgaand; in de STL zijn het
+// blinde nissen (printTowers).
 function xPanelTriangles(a0, a1, z0, z1, n, kinds = ["bottom", "top", "left", "right"]) {
   const tris = [];
   for (let k = 0; k < n; k++) {
@@ -596,7 +602,8 @@ function guideTower(xc, b) {
   }
   // Zijvlakken: zes velden met een kruis over de hele hoogte; de driehoeken
   // onder en naast het kruis zijn doorgaande openingen dwars door de toren
-  // (flanken van 54 graden), die erboven blinde nissen.
+  // (flanken van 54 graden), die erboven in de STL blinde nissen en in het
+  // model ook doorgaand.
   const a0 = xc - TOWER.half + 0.45;
   const a1 = xc + TOWER.half - 0.45;
   const z0 = zr + 0.6;
@@ -606,6 +613,7 @@ function guideTower(xc, b) {
     const apex = t.reduce((p, q) => (q[1] > p[1] ? q : p));
     for (const q of t) if (q !== apex && Math.abs(q[0] - apex[0]) > 1e-6) towerAngles.push((Math.atan2(apex[1] - q[1], Math.abs(apex[0] - q[0])) * 180) / Math.PI);
   }
+  const shared = cuts.length;
   for (const fy of [y0, y1]) {
     const inward = fy < b.c ? 1 : -1;
     for (const t of xPanelTriangles(a0, a1, z0, z1, TOWER.sidePanels, ["top"])) {
@@ -613,11 +621,19 @@ function guideTower(xc, b) {
     }
   }
   towerNiches += cuts.length;
-  return box.subtract(passage).subtract(union(cuts));
+  const print = box.subtract(passage).subtract(union(cuts));
+  const tops = xPanelTriangles(a0, a1, z0, z1, TOWER.sidePanels, ["top"]).map((t) => profileY(t, y0 - 0.5, y1 + 0.5));
+  towerTops += tops.length;
+  return { print, model: box.subtract(passage).subtract(union([...cuts.slice(0, shared), ...tops])) };
 }
-const towers = [-1, 1].flatMap((sx) => BRIDGES.map((b) => guideTower(sx * PORTAL_X, b)));
+let towerTops = 0;
+const towerBoth = [-1, 1].flatMap((sx) => BRIDGES.map((b) => guideTower(sx * PORTAL_X, b)));
+const printTowers = towerBoth.map((t) => t.print);
+const towers = towerBoth.map((t) => t.model);
 // Buizen tussen de portalen boven het midden van elke brug, met een kiel van
-// 50 graden aan de onderkant (de export zet er een scherm onder).
+// 50 graden aan de onderkant (de export zet er schoren naar de torens onder).
+// Een ronde onderkant kreeg in de meettest een scherm tot het hefdek en meer
+// ongedragen lagen, dus ook in het model de kiel.
 function tube(y) {
   const pts = [];
   const n = 24;
@@ -632,11 +648,14 @@ const tubes = [-TUBE.y, TUBE.y].map(tube);
 
 // ---------- de brug als geheel ----------
 const girderSolids = [...fixedGirders, ...liftGirders].flatMap((g) => g.solids);
-const bridge = union([
+const printGirderSolids = [...fixedGirders, ...liftGirders].flatMap((g) => g.printSolids);
+// De printversie voor de STL (blinde nissen) en het model (de catalogusbron,
+// doorgaande openingen).
+const common = (girders, towerSolids) => [
   ...decks,
   ...boxGirders,
   ...kerbs,
-  ...girderSolids,
+  ...girders,
   ...riverPiers,
   ...liftPiers,
   ...seColumns,
@@ -648,9 +667,11 @@ const bridge = union([
   ...fenders,
   ...legs,
   ...crossbeams,
-  ...towers,
+  ...towerSolids,
   ...tubes,
-]);
+];
+const printBridge = union(common(printGirderSolids, printTowers));
+const bridge = union(common(girderSolids, towers));
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder elk dek een wig van 50 graden die uitloopt in een scherm van 0,9 m
@@ -678,10 +699,10 @@ const printFoot = union([
     prismX([[y - SCREEN, rail(0) - 0.3], [y + SCREEN, rail(0) - 0.3], [y + SCREEN, TUBE.z - TUBE.r], [y - SCREEN, TUBE.z - TUBE.r]], -LIFT.x1, LIFT.x1),
   ),
 ]);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
-for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
+for (const [name, solid] of [["model", bridge], ["printversie", printBridge], ["print", printModel]]) {
   if (solid.status() !== "NoError") throw new Error(`${name}: ${solid.status()}`);
   const bb = solid.boundingBox();
   if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
@@ -703,15 +724,26 @@ function overhangs(solid) {
     const zm = (p[0][2] + p[1][2] + p[2][2]) / 3;
     const xm = (p[0][0] + p[1][0] + p[2][0]) / 3;
     const key =
-      zm < rail(xm) + 0.05 ? "dek en kespen" : zm > CROSSBEAM.bottom - 1 ? "dwarsbalken en buizen" : zm > rail(xm) + CHORD_TOP ? "nissen" : "overig";
+      zm < rail(xm) + 0.05 ? "dek en kespen" : zm > CROSSBEAM.bottom - 1 ? "dwarsbalken en buizen" : zm > rail(xm) + CHORD_TOP ? "vakwerk en torens" : "overig";
     buckets[key] = (buckets[key] ?? 0) + len / 2;
   }
   return Object.fromEntries(Object.entries(buckets).map(([k, a]) => [k, +a.toFixed(1)]));
 }
 const minAngle = openingAngles.reduce((m, a) => Math.min(m, a), Infinity);
-console.log("vrij hangend in het model (m2):", overhangs(bridge));
+// In het model hangen de onderkant van de dekken, de vlakke bovenkant van de
+// openingen in liggers en torens en een paar randjes van de dwarsbalken naast
+// de poten vrij; in de printversie in plaats van die bovenkant de plafonds van
+// de nissen.
+{
+  const model = overhangs(bridge);
+  console.log("vrij hangend in het model (m2):", model);
+  if ((model.overig ?? 0) > 0.5 || (model["dwarsbalken en buizen"] ?? 0) > 20) throw new Error("overhang buiten dekken, vakwerk en torens");
+  const print = overhangs(printBridge);
+  console.log("vrij hangend in de printversie (m2):", print);
+  if ((print.overig ?? 0) > 0.5 || (print["dwarsbalken en buizen"] ?? 0) > 20) throw new Error("printversie heeft nieuwe overhang");
+}
 console.log("torenopeningen: steilste plafond min (graden)", +towerAngles.reduce((m, a) => Math.min(m, a), Infinity).toFixed(1));
-console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "torennissen", towerNiches, "steilste flank min (graden)", +minAngle.toFixed(1));
+console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "torennissen (STL)", towerNiches, "waarvan doorgaand in het model", towerTops, "steilste flank min (graden)", +minAngle.toFixed(1));
 if (minAngle < 50) throw new Error("opening met een te vlakke flank");
 
 // ---------- spoor als eigen onderdelen ----------
@@ -973,7 +1005,7 @@ await writeFile(
         "L0004.ffc1341dd7014d229ca276f16bad3839",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de hefbrug op de lijn tussen de twee bruggen in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -34,68 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts). Drie nodes. road:spoor en road:spoor-halfverhard: de bovenste 0,5 m van de twee dekken (y = -14,7 tot -3,2 en 3,2 tot 14,7) buiten de vakwerkliggers, geleidetorens en borstweringen, met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan; bgt_fysiekvoorkomen gesloten verharding over de rivier, de hefbrug en de Dordtse aanbrug, half verhard op de Zwijndrechtse aanbrug), zodat de kleurregels van een thema erop werken. building:spoorbrug-dordrecht: de rest van het kunstwerk van 1991-1994: twee tweesporige bruggen naast elkaar, elk met twee vakwerkliggers (4,4 en 13,5 m naast de middenlijn, bovenrand NAP +21,3 m) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen voor de driehoeken met een vlakke bovenkant, over twee velden (88 m en 77 tot 83 m) tussen de rivierpijlers met pijlerkop op NAP +5 m; de hefbrug van 52 m met twee hefdekken in gesloten stand (spoorstaaf NAP +12,6 tot +12,2 m) tussen het hemelbed: vier witte poten op x = ±28,6 en y = ±24 (ronde voet van 4 m, boven 6 m breed, schuin afgesneden tot NAP +71,5 m, vier groeven), twee dwarsbalken van 6,2 m breed tot NAP +65 m met schoren van 50 graden, vier geleidetorens met kruisverbanden en een spitse doorgang en twee buizen van 5,5 m boven het midden van elke brug; de betonnen aanbruggen op kolommen (BGT aan de Dordtse kant, geschat aan de Zwijndrechtse kant) met borstweringen, de landhoofden en de remmingwerken bij de pijlers (NAP +3,5 m). Bovenleiding, seinen, leuningen, loopbruggen, trappen en het bedieningsgebouw (BAG-pand 0505100000067669, blijft de PDOK-reconstructie) zijn weggelaten, de Stadsbrug Zwijndrecht ernaast is een eigen model. De export vult onder de dekken en de buizen op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de hefbrug op de lijn tussen de twee bruggen in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -34,68 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts). Drie nodes. road:spoor en road:spoor-halfverhard: de bovenste 0,5 m van de twee dekken (y = -14,7 tot -3,2 en 3,2 tot 14,7) buiten de vakwerkliggers, geleidetorens en borstweringen, met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan; bgt_fysiekvoorkomen gesloten verharding over de rivier, de hefbrug en de Dordtse aanbrug, half verhard op de Zwijndrechtse aanbrug), zodat de kleurregels van een thema erop werken. building:spoorbrug-dordrecht: de rest van het kunstwerk van 1991-1994: twee tweesporige bruggen naast elkaar, elk met twee vakwerkliggers (4,4 en 13,5 m naast de middenlijn, bovenrand NAP +21,3 m) als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen, over twee velden (88 m en 77 tot 83 m) tussen de rivierpijlers met pijlerkop op NAP +5 m; de hefbrug van 52 m met twee hefdekken in gesloten stand (spoorstaaf NAP +12,6 tot +12,2 m) tussen het hemelbed: vier witte poten op x = ±28,6 en y = ±24 (ronde voet van 4 m, boven 6 m breed, schuin afgesneden tot NAP +71,5 m, vier groeven), twee dwarsbalken van 6,2 m breed tot NAP +65 m met schoren van 50 graden, vier geleidetorens met kruisverbanden (op de zijvlakken doorgaande openingen, op de kopse vlakken nissen) en een spitse doorgang en twee buizen van 5,5 m boven het midden van elke brug; de betonnen aanbruggen op kolommen (BGT aan de Dordtse kant, geschat aan de Zwijndrechtse kant) met borstweringen, de landhoofden en de remmingwerken bij de pijlers (NAP +3,5 m). Bovenleiding, seinen, leuningen, loopbruggen, trappen en het bedieningsgebouw (BAG-pand 0505100000067669, blijft de PDOK-reconstructie) zijn weggelaten, de Stadsbrug Zwijndrecht ernaast is een eigen model. Wat zonder steun niet print (de vlakke bovenkant van de openingen, de dekken, de buizen) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(BRIDGES[1].xSE - BRIDGES[1].xNW).toFixed(1),

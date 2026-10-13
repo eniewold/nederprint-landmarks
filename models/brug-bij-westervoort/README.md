@@ -63,8 +63,8 @@ aanbrugplaten en de vloer over de rivier; de vakwerkwanden (de hele strook,
 ook onder de openingen) en de zijvlakken van het A-vakwerk (een verticaal
 blok tot 2 cm voorbij de binnenkant van de wand op 1 m boven het wegdek)
 blijven met 2 cm vrij constructie. Per brug tellen constructie en wegdeel op
-tot het volume van de brug als geheel (spoorbruggen 10.737 + 1.545 en
-10.707 + 1.534 m³, verkeersbrug 6.653 + 2.403 m³, fietsbrug 4.313 +
+tot het volume van de brug als geheel (spoorbruggen 10.522 + 1.545 en
+10.492 + 1.534 m³, verkeersbrug 6.342 + 2.403 m³, fietsbrug 4.150 +
 1.485 m³; de pijlers ongewijzigd 19.440 m³), en de stralencontrole vindt
 geen samenvallende bovenvlakken tussen de onderdelen; de enkele vlakken
 zonder dikte in de constructie (voet van de wanden, vakwerkliggers) zaten al
@@ -105,19 +105,21 @@ Onderdelen in het model (hoogtes in NAP):
   koppen (BGT): metselwerk tot +15,2 m en daarop betonnen opleggers onder
   elk spoordek en onder het wegdek. De landhoofden als blokken tot onder de
   dekken.
-- Alle vakwerken zijn dichte wanden met doorgaande driehoekige openingen met
-  de punt omhoog (binnen elke Λ van twee diagonalen, gedeeld door de
-  verticaal) en blinde nissen van 0,35 m aan beide kanten voor de
-  driehoeken met de vlakke kant boven (tussen twee Λ's onder de bovenregel):
-  16 openingen en 14 nissen per wand bij de spoor- en verkeersbrug, 8 en 7
-  per zijvlak bij de fietsbrug, en 98 openingen in de 22 vakwerkliggers
-  onder het wegdek.
+- Alle vakwerken zijn dichte wanden met doorgaande driehoekige openingen:
+  met de punt omhoog (binnen elke Λ van twee diagonalen, gedeeld door de
+  verticaal) en met de vlakke kant boven (tussen twee Λ's onder de
+  bovenregel; in de STL blinde nissen van 0,35 m aan beide kanten): 16 en 7
+  per wand bij de spoor- en verkeersbrug, 8 en 7 per zijvlak bij de
+  fietsbrug, en 98 en 80 in de 22 vakwerkliggers onder het wegdek.
 
-Wat er niet in zit: de windverbanden (X-verbanden in het bovenvlak) en de
-eindportalen tussen de vakwerkwanden, omdat het horizontale vrije
-overspanningen van 4,6 tot 8,6 m zijn die op 1:1000 niet zonder steun
-printen (de export zou ze tot op de vloer opvullen); de loopbruggen met
-leuningen boven op de spoorvakwerken, de bovenleiding met masten, de
+Wat er niet in zit: de windverbanden (X-verbanden in het bovenvlak, staven
+dunner dan 0,9 m) en de eindportalen tussen de vakwerkwanden (horizontale
+vrije overspanningen van 4,4 tot 7,6 m; het AHN ziet bij x = ±51 iets dwars
+tussen de wanden. Een balk van 0,9 × 0,9 m onder de bovenrand op de eerste
+en de laatste bovenknoop, boven de verticaal, krijgt in een losse
+spoorbrug een spitse opening met schoren, maar in het hele model vult de
+export de ruimte eronder tot het dek op); de loopbruggen met leuningen
+boven op de spoorvakwerken, de bovenleiding met masten, de
 lantaarns en alle leuningen (dunner dan 0,9 m); de buizen en ladder van de
 bovenregel van de fietsbrug als losse staven (één dichte regel); en de
 spoordijk en de dijk achter de landhoofden (die zitten in het
@@ -134,35 +136,38 @@ vakken binnen 1,5 m van de bovenrand van het model (mediaan +0,16 en
 +0,10 m, de leuningen van de loopbruggen), op de verkeersbrug in 25 van 34
 (mediaan -0,21 m) en op de fietsbrug in 30 van 34 (mediaan -0,30 m).
 
-Printbaarheid op 1:1000: het open vakwerk is op 1:1000 niet te printen. Elke
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun. Elke
 vakwerkwand is daarom een dichte plaat van 1 m (fietsbrug 0,95 m) met
-staven van 0,9 tot 1,3 m, doorgaande openingen met zijden van minstens 55
-graden en een spitse top, en blinde nissen waar de bovenkant vlak is. De
-zijvlakken van de fietsbrug hellen 16 graden; de zijden van hun openingen
-blijven ook gekanteld steiler dan 50 graden. De vloeren over de rivier en
-de aanbruggen hangen tussen de pijlers vrij (spoorbruggen elk 3460 m²,
-verkeersbrug 5751 m² met de rijvloer tussen de vakwerkliggers, fietsbrug
-3342 m²); alle nodes zijn gesloten manifolds (genus 32, 32, 130 en 17 door
+staven van 0,9 tot 1,3 m en doorgaande openingen; die met de punt omhoog
+hebben zijden van minstens 55 graden en een spitse top. De zijvlakken van
+de fietsbrug hellen 16 graden; de zijden van hun spitse openingen blijven
+ook gekanteld steiler dan 50 graden. Wat zonder steun niet print, laat het
+model aan de export over: de vlakke bovenkant van de openingen tussen twee
+Λ's en de vloeren over de rivier en de aanbruggen, die tussen de pijlers
+vrij hangen (spoorbruggen 3516 en 3492 m², verkeersbrug 5896 m² met de
+rijvloer en de openingen van de vakwerkliggers eronder, fietsbrug
+3365 m²). Alle nodes zijn gesloten manifolds (genus 46, 46, 224 en 31 door
 de openingen en de tunnel van het A-vakwerk; de pijlers zijn 13 losse
-delen; van de wegdelen is het spoor twee losse delen). Met 558 m past de
-brug op 1:1000 niet in één uitsnede; de printcontrole draait daarom op een
-uitsnede van 461 m (1:1153, 400 mm, 123 seconden): alle acht nodes gaan als
-gesloten solid door (status NoError). De export vult de onderdelen samen op
-en geeft de opvulling aan de eerste constructienode (spoorbrug-noord 82,5
-naar 43,6 cm³ met de opvulling van de hele brug, de andere constructienodes
-ongewijzigd: spoorbrug-zuid 7,0, verkeersbrug 4,4, fietsbrug 2,8 en pijlers
-12,7 cm³); de wegdelen krijgen geen eigen opvulling (`extraPct` 0: spoor
-2,0, rijbaan 1,6 en fietspad 0,9 cm³). Samen 75,1 cm³, minder dan de
-81,4 cm³ toen elke brug apart werd opgevuld, en de openingen in de vakwerken
-blijven open. Onder de dekken komt een wig van 45
-graden met een smal scherm tot de onderplaat. De STL op 1:2500 heeft
-dezelfde printvoet per dek (wig van 50 graden en een scherm van 0,8 mm);
-wat daarin nog vlak hangt, zijn de rijvloer tussen de twee vakwerkliggers
-onder het wegdek (een overbrugging van 7 m, 2,8 mm op 1:2500) en de
-bovenkanten van de blinde nissen. Het PDOK-terrein ligt op het water op de
-waterspiegel van het model, in de uiterwaarden circa 3,5 m hoger (de
-pijlers en wanden steken daar tot 4,5 m het maaiveld in) en op de dijk bij
-het oostelijke landhoofd tot NAP +18,4 m, tegen de liggers aan.
+delen; van de wegdelen is het spoor twee losse delen). In de meettest van
+de webshop (`scripts/overhang-lab`, het hele model op 1:1000) gaat het
+volume met "Ondersteuning v2.0" van 57,4 naar 109,9 cm³ (v1.0: 109,9 cm³;
+het vorige model met nissen 58,3 naar 111,2 cm³). Met vier bruggen naast
+elkaar krijgen te veel plafonds geen schoren, zodat v2.0 voor dit model
+terugvalt op de opvulling van v1.0: de openingen met een vlakke bovenkant
+worden binnen de wand dichtgezet (zoals de nissen eerder), de spitse
+openingen blijven open en onder de dekken komt een wig met een smal scherm
+tot de onderplaat. Ongedragen blijft net als in het vorige model 34,9 mm²
+aan smalle randjes bij de pijlers van de aanbruggen (op 9,25 mm hoogte). De STL op
+1:2500, die zonder export wordt geprint, heeft printvormen en is
+ongewijzigd: blinde nissen van 0,35 m aan beide kanten in plaats van de
+openingen met een vlakke bovenkant en per dek een printvoet (wig van 50
+graden en een scherm van 0,8 mm); wat daarin nog vlak hangt, zijn de
+rijvloer tussen de twee vakwerkliggers onder het wegdek (een overbrugging
+van 7 m, 2,8 mm op 1:2500) en de bovenkanten van de blinde nissen. Het
+PDOK-terrein ligt op het water op de waterspiegel van het model, in de
+uiterwaarden circa 3,5 m hoger (de pijlers en wanden steken daar tot 4,5 m
+het maaiveld in) en op de dijk bij het oostelijke landhoofd tot NAP +18,4 m,
+tegen de liggers aan.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Brug_bij_Westervoort)
 (vier losse bruggen naast elkaar: spoorbruggen 1980 en 1984, verkeersbrug

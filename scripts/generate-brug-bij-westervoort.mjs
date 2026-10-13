@@ -228,12 +228,13 @@ const EAST = { x0: 329.4, x1: 341.0, top: 18.0, railEnd: 340.5, roadEnd: 342.8, 
 const FIETS_EAST_ABUT = [338.6, 345.0];
 
 // ---------- vakwerkwand ----------
-// Een vakwerk is op 1:1000 niet open te printen. Elke wand is daarom een dichte
-// plaat met doorgaande driehoekige openingen met de punt omhoog (binnen elke
-// Λ van twee diagonalen, gedeeld door de verticaal als die er is) en blinde
-// nissen voor de driehoeken met de vlakke kant boven (tussen twee Λ's onder de
-// bovenregel). Zijden van openingen die vlakker lopen dan 55 graden worden
-// rond de top steiler gezet.
+// De echte staven zijn op 1:1000 te dun. Elke wand is daarom een dichte plaat
+// met doorgaande driehoekige openingen met de punt omhoog (binnen elke Λ van
+// twee diagonalen, gedeeld door de verticaal als die er is) en de driehoeken
+// met de vlakke kant boven (tussen twee Λ's onder de bovenregel): in het model
+// ook doorgaand, in de STL blinde nissen (zie trussWall). Zijden van openingen
+// met de punt omhoog die vlakker lopen dan 55 graden worden rond de top
+// steiler gezet.
 //
 // opts: x0, x1 (opleggingen), panels, top(x) (bovenkant), tc (bovenregel),
 // bottom (onderkant van de plaat), floor (bovenkant onderregel = vloer van de
@@ -295,7 +296,8 @@ function trussSection(opts) {
       holes.push(dir < 0 ? [[xb, floor], [xv, floor], [xv, za]] : [[xv, floor], [xb, floor], [xv, za]]);
     }
   }
-  // Blinde nissen tussen twee Λ's: driehoek onder de bovenregel.
+  // Driehoeken met de vlakke kant boven tussen twee Λ's, onder de bovenregel
+  // (in het model doorgaand, in de STL blinde nissen).
   for (let k = 0; k + 1 < panels; k++) {
     const xb = nodesX[k + 1];
     const ta = tops[k] + (verticals ? wv / 2 : 0);
@@ -319,16 +321,25 @@ function trussSection(opts) {
   plate = plate.subtract(holeSection);
   return { plate, niches: niches.length ? CrossSection.union(niches) : null, holes: holes.length, nicheCount: niches.length };
 }
-// Vakwerkwand als solid tussen y0 en y1.
+// Vakwerkwand als solid tussen y0 en y1. In het model (de catalogusbron) zijn
+// ook de driehoeken met de vlakke kant boven doorgaande openingen; hun vlakke
+// bovenkant print niet zonder steun, dat vult de export op. De STL, die zonder
+// export wordt geprint, heeft daar blinde nissen van 0,35 m aan beide kanten
+// (printWall).
 function trussWall(opts, y0, y1) {
   const { plate, niches, holes, nicheCount } = trussSection(opts);
   let wall = extrudeY(plate, y0, y1);
+  let printWall = wall;
   if (niches) {
-    wall = wall.subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE)).subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2));
+    printWall = wall.subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE)).subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2));
+    wall = wall.subtract(extrudeY(niches, y0 - 0.3, y1 + 0.3));
   }
-  return { wall, holes, niches: nicheCount };
+  return { wall, printWall, holes, niches: nicheCount };
 }
-
+// Geen eindportalen tussen de vakwerkwanden: een balk van 0,9 × 0,9 m onder
+// de bovenrand bij de eerste en de laatste bovenknoop (boven de verticaal)
+// vulde de export in het hele model tot het dek op, ook met een vlakke
+// onderkant; alleen in een losse spoorbrug kreeg hij schoren.
 const stats = {};
 
 // ---------- spoorbruggen ----------
@@ -336,7 +347,8 @@ function railBridge(spec, label) {
   const deckTop = Z(RAIL_TOP(0));
   const deckBottom = deckTop - DEPTH.railMain;
   const top = (x) => Z(RAIL_TRUSS_TOP(x));
-  const parts = [];
+  const walls = [];
+  const printWalls = [];
   let holes = 0;
   let niches = 0;
   for (const [y0, y1] of spec.planes) {
@@ -357,23 +369,26 @@ function railBridge(spec, label) {
       y0,
       y1,
     );
-    parts.push(w.wall);
+    walls.push(w.wall);
+    printWalls.push(w.printWall);
     holes += w.holes;
     niches += w.niches;
   }
   // Vloer over de rivier.
-  parts.push(boxFromTo(-MAIN.half, MAIN.half, spec.main[0], spec.main[1], deckBottom, deckTop));
+  const rest = [boxFromTo(-MAIN.half, MAIN.half, spec.main[0], spec.main[1], deckBottom, deckTop)];
   // Aanbruggen: betonnen ligger van 3,8 m onder het spoor, van landhoofd tot
   // rivierpijler, met de uiteinden onder de vakwerkvloer.
   const top2 = (x) => Z(RAIL_TOP(x));
   const bottom2 = (x) => Z(RAIL_TOP(x)) - DEPTH.railGirder;
-  parts.push(bandY(WEST.deckEnd, -MAIN.half + 0.6, bottom2, top2, spec.deck[0], spec.deck[1]));
-  parts.push(bandY(MAIN.half - 0.6, EAST.railEnd, bottom2, top2, spec.deck[0], spec.deck[1]));
+  rest.push(bandY(WEST.deckEnd, -MAIN.half + 0.6, bottom2, top2, spec.deck[0], spec.deck[1]));
+  rest.push(bandY(MAIN.half - 0.6, EAST.railEnd, bottom2, top2, spec.deck[0], spec.deck[1]));
   stats[label] = { holes, niches };
-  return union(parts);
+  return { model: union([...walls, ...rest]), print: union([...printWalls, ...rest]) };
 }
-const railS = railBridge(RAIL_S, "spoorbrug-zuid");
-const railN = railBridge(RAIL_N, "spoorbrug-noord");
+const railSBoth = railBridge(RAIL_S, "spoorbrug-zuid");
+const railNBoth = railBridge(RAIL_N, "spoorbrug-noord");
+const railS = railSBoth.model;
+const railN = railNBoth.model;
 
 // ---------- verkeersbrug ----------
 // Overspanningen van de aanbruggen tussen de pijlers (voor de vakwerkliggers
@@ -396,7 +411,15 @@ for (let i = 0; i + 1 < pierFaces.length; i++) {
 function roadBridge() {
   const deckTop = Z(ROAD_TOP(0));
   const deckBottom = deckTop - DEPTH.roadMain;
+  const roadTrussTop = (x) => Z(ROAD_TRUSS_TOP(x));
+  // parts: de printversie (blinde nissen), model: het model (doorgaande
+  // openingen), in dezelfde volgorde.
   const parts = [];
+  const model = [];
+  const add = (solid, printSolid = solid) => {
+    model.push(solid);
+    parts.push(printSolid);
+  };
   let holes = 0;
   let niches = 0;
   for (const [y0, y1] of ROAD.planes) {
@@ -405,7 +428,7 @@ function roadBridge() {
         x0: -MAIN.half,
         x1: MAIN.half,
         panels: MAIN.panels,
-        top: (x) => Z(ROAD_TRUSS_TOP(x)),
+        top: roadTrussTop,
         tc: 1.1,
         bottom: deckBottom,
         floor: deckTop + 0.5,
@@ -417,23 +440,24 @@ function roadBridge() {
       y0,
       y1,
     );
-    parts.push(w.wall);
+    add(w.wall, w.printWall);
     holes += w.holes;
     niches += w.niches;
   }
   // Rijvloer met het inspectiepad buiten de zuidelijke wand.
-  parts.push(boxFromTo(-MAIN.half, MAIN.half, ROAD.main[0], ROAD.main[1], deckBottom, deckTop));
+  add(boxFromTo(-MAIN.half, MAIN.half, ROAD.main[0], ROAD.main[1], deckBottom, deckTop));
   // Aanbruggen: rijvloer van 0,9 m op twee stalen vakwerkliggers per
   // overspanning, met de onderkant op NAP +15,8 m.
   const top2 = (x) => Z(ROAD_TOP(x));
   const slabBottom = (x) => Z(ROAD_TOP(x)) - DEPTH.roadSlab;
-  parts.push(bandY(WEST.deckEnd, -MAIN.half + 0.6, slabBottom, top2, ROAD.deck[0], ROAD.deck[1]));
-  parts.push(bandY(MAIN.half - 0.6, EAST.roadEnd, slabBottom, top2, ROAD.deck[0], ROAD.deck[1]));
+  add(bandY(WEST.deckEnd, -MAIN.half + 0.6, slabBottom, top2, ROAD.deck[0], ROAD.deck[1]));
+  add(bandY(MAIN.half - 0.6, EAST.roadEnd, slabBottom, top2, ROAD.deck[0], ROAD.deck[1]));
   const girderPlanes = [
     [ROAD.deck[0] + 0.6, ROAD.deck[0] + 1.5],
     [ROAD.deck[1] - 1.5, ROAD.deck[1] - 0.6],
   ];
   let girderHoles = 0;
+  let girderNiches = 0;
   for (const [a0, b0] of ROAD_SPANS) {
     const a = a0 - 0.05;
     const b = b0 + 0.05;
@@ -462,14 +486,16 @@ function roadBridge() {
         y0,
         y1,
       );
-      parts.push(w.wall);
+      add(w.wall, w.printWall);
       girderHoles += w.holes;
+      girderNiches += w.niches;
     }
   }
-  stats.verkeersbrug = { holes, niches, girderSpans: ROAD_SPANS.length, girderHoles };
-  return union(parts);
+  stats.verkeersbrug = { holes, niches, girderSpans: ROAD_SPANS.length, girderHoles, girderNiches };
+  return { model: union(model), print: union(parts) };
 }
-const road = roadBridge();
+const roadBoth = roadBridge();
+const road = roadBoth.model;
 
 // ---------- fietsbrug ----------
 function fietsBridge() {
@@ -491,7 +517,7 @@ function fietsBridge() {
     [t0, S],
     [-MAIN.half, 0.4],
   ];
-  const { wall, holes, niches } = trussWall(
+  const { wall, printWall, holes, niches } = trussWall(
     {
       x0: -MAIN.half,
       x1: MAIN.half,
@@ -512,14 +538,20 @@ function fietsBridge() {
   // Kantel het vlak: z (langs de helling) wijst naar de top, y = 0 is de
   // buitenkant.
   const deg = (lean * 180) / Math.PI;
-  const south = wall.rotate([-deg, 0, 0]).translate([0, FIETS.v0, deckTop]);
-  const north = wall.mirror([0, 1, 0]).rotate([deg, 0, 0]).translate([0, FIETS.v1, deckTop]);
   const top = Z(FIETS.topNap);
   const chord = boxFromTo(t0, -t0, FIETS.apexV - FIETS.chordW / 2, FIETS.apexV + FIETS.chordW / 2, top - FIETS.chordH, top);
-  const frame = union([south, north, chord])
-    .trimByPlane([0, 0, 1], deckBottom)
-    .trimByPlane([0, 0, -1], -top);
-  const parts = [frame, boxFromTo(-MAIN.half, MAIN.half, FIETS.v0, FIETS.v1, deckBottom, deckTop)];
+  // Het A-vakwerk met doorgaande openingen (model) en met blinde nissen (STL).
+  const frameOf = (w) =>
+    union([
+      w.rotate([-deg, 0, 0]).translate([0, FIETS.v0, deckTop]),
+      w.mirror([0, 1, 0]).rotate([deg, 0, 0]).translate([0, FIETS.v1, deckTop]),
+      chord,
+    ])
+      .trimByPlane([0, 0, 1], deckBottom)
+      .trimByPlane([0, 0, -1], -top);
+  const printFrame = frameOf(printWall);
+  const frame = frameOf(wall);
+  const parts = [boxFromTo(-MAIN.half, MAIN.half, FIETS.v0, FIETS.v1, deckBottom, deckTop)];
   // Aanbruggen: plaat van 1,2 m op wanden van 0,9 m (BGT) en het oostelijke
   // landhoofd.
   const top2 = (x) => Z(FIETS_TOP(x));
@@ -533,9 +565,10 @@ function fietsBridge() {
     boxFromTo(FIETS_EAST_ABUT[0], FIETS_EAST_ABUT[1], FIETS.v0, FIETS.v1, BASE, bottom2(FIETS_EAST_ABUT[0]) + 0.05),
   );
   stats.fietsbrug = { holes, niches, leanDeg: +deg.toFixed(1), faceLengthM: +S.toFixed(2) };
-  return union(parts);
+  return { model: union([frame, ...parts]), print: union([printFrame, ...parts]) };
 }
-const fiets = fietsBridge();
+const fietsBoth = fietsBridge();
+const fiets = fietsBoth.model;
 
 // ---------- pijlers en landhoofden ----------
 function piers() {
@@ -847,9 +880,12 @@ feet.push(foot(WEST.x1, -MAIN.half, (x) => Z(FIETS_TOP(x)) - DEPTH.fietsSlab, FI
 feet.push(foot(-MAIN.half, MAIN.half, () => Z(FIETS_TOP(0)) - DEPTH.fietsMain, FIETS.v0, FIETS.v1));
 feet.push(foot(MAIN.half, FIETS_EAST_ABUT[0], (x) => Z(FIETS_TOP(x)) - DEPTH.fietsSlab, FIETS.v0, FIETS.v1));
 const printFoot = union(feet);
-// De STL bevat de brug als geheel (de originele vijf onderdelen).
+// De STL bevat de brug als geheel (de originele vijf onderdelen) in de
+// printvorm: blinde nissen in plaats van de openingen met een vlakke
+// bovenkant.
 const wholeParts = [railN, railS, road, fiets, pierSolid];
-const printModel = union([...wholeParts, printFoot]);
+const printParts = [railNBoth.print, railSBoth.print, roadBoth.print, fietsBoth.print, pierSolid];
+const printModel = union([...printParts, printFoot]);
 
 // ---------- controles ----------
 function overhangArea(solid) {
@@ -1055,7 +1091,7 @@ await writeFile(
         "L0002.c3d8f660562748589355fb93effaf65c",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden tussen de twee rivierpijlers op de grens tussen de verkeersbrug en de zuidelijke spoorbrug, op de waterspiegel van de IJssel (z = 0, NAP +8,3 m), +X langs de brug naar Westervoort (RD-richting -46,9 graden vanaf het oosten) en +Y stroomafwaarts naar het noordoosten. Vier bruggen naast elkaar, elk een eigen node: twee enkelsporige spoorbruggen (y = 0,6 tot 7 en 7,4 tot 14) en de verkeersbrug (y = -12,3 tot -0,5), elk met een vakwerkligger van 117 m over de rivier (spoorbruggen gebogen tot NAP +34,0 m, verkeersbrug veelhoekig tot +33,3 m, acht velden met verticalen), en de fietsbrug (y = -18,5 tot -12,6) als A-vakwerk met een vlakke top op NAP +31,3 m waar het fietspad doorheen loopt; de vakwerken zijn dichte wanden van 1 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen. Aanbruggen over de uiterwaarden van x = -210 tot 345: betonnen liggers onder de sporen, stalen vakwerkliggers onder het wegdek en een plaat op smalle wanden voor het fietspad. De node pijlers heeft de twee gemetselde rivierpijlers, negen aanbrugpijlers met betonnen opleggers en de landhoofden. Drie road-nodes zijn de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel erop in extras.attributes, zodat de kleurregels van een thema erop werken: road:spoor (beide spoordekken tussen de vakwerkwanden, bgt_functie spoorbaan, gesloten verharding), road:rijbaan (het wegdek van de verkeersbrug tussen de vakwerkwanden; het inspectiepad buiten de zuidelijke wand blijft constructie; rijbaan regionale weg, gesloten verharding, asfalt) en road:fietspad (het dek van de fietsbrug tussen de zijvlakken van het A-vakwerk; fietspad, gesloten verharding, asfalt); de vakwerkwanden blijven met 2 cm vrij constructie. Windverbanden en portalen tussen de vakwerkwanden, loopbruggen met leuningen, bovenleiding, lantaarns en leuningen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong midden tussen de twee rivierpijlers op de grens tussen de verkeersbrug en de zuidelijke spoorbrug, op de waterspiegel van de IJssel (z = 0, NAP +8,3 m), +X langs de brug naar Westervoort (RD-richting -46,9 graden vanaf het oosten) en +Y stroomafwaarts naar het noordoosten. Vier bruggen naast elkaar, elk een eigen node: twee enkelsporige spoorbruggen (y = 0,6 tot 7 en 7,4 tot 14) en de verkeersbrug (y = -12,3 tot -0,5), elk met een vakwerkligger van 117 m over de rivier (spoorbruggen gebogen tot NAP +34,0 m, verkeersbrug veelhoekig tot +33,3 m, acht velden met verticalen), en de fietsbrug (y = -18,5 tot -12,6) als A-vakwerk met een vlakke top op NAP +31,3 m waar het fietspad doorheen loopt; de vakwerken zijn dichte wanden van 1 m met alle vakken als doorgaande driehoekige openingen. Aanbruggen over de uiterwaarden van x = -210 tot 345: betonnen liggers onder de sporen, stalen vakwerkliggers onder het wegdek en een plaat op smalle wanden voor het fietspad. De node pijlers heeft de twee gemetselde rivierpijlers, negen aanbrugpijlers met betonnen opleggers en de landhoofden. Drie road-nodes zijn de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel erop in extras.attributes, zodat de kleurregels van een thema erop werken: road:spoor (beide spoordekken tussen de vakwerkwanden, bgt_functie spoorbaan, gesloten verharding), road:rijbaan (het wegdek van de verkeersbrug tussen de vakwerkwanden; het inspectiepad buiten de zuidelijke wand blijft constructie; rijbaan regionale weg, gesloten verharding, asfalt) en road:fietspad (het dek van de fietsbrug tussen de zijvlakken van het A-vakwerk; fietspad, gesloten verharding, asfalt); de vakwerkwanden blijven met 2 cm vrij constructie. Windverbanden en eindportalen tussen de vakwerkwanden (de export kan onder een portaal in dit model geen schoren kwijt en zou de ruimte tot het dek opvullen), loopbruggen met leuningen, bovenleiding, lantaarns en leuningen zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, de dekken) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder de dekken een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(all.max[0] - all.min[0]).toFixed(1),

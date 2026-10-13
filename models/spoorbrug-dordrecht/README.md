@@ -51,9 +51,9 @@ Onderdelen in het model (hoogtes in NAP):
   85,8 m) tot x = -39,4 (zuidwest, 78,8 m) en -34,9 (noordoost, 83,3 m)
   volgens het AHN, met 8 en 7 vakken; Wikipedia noemt een langste
   overspanning van 88,2 m. De hefliggers lopen van x = -26,15 tot 26,15 met
-  5 vakken. In alle liggers 80 doorgaande driehoekige openingen met de punt
-  omhoog (flanken van 52,5 graden of steiler) en 72 blinde nissen van 0,35 m
-  voor de driehoeken met een vlakke bovenkant (aan de buitenkant van de
+  5 vakken. In alle liggers 152 doorgaande driehoekige openingen: 80 met de
+  punt omhoog (flanken van 52,5 graden of steiler) en 72 met een vlakke
+  bovenkant (in de STL blinde nissen van 0,35 m aan de buitenkant van de
   buitenste en aan de spoorkant van de binnenste liggers).
 - Het hemelbed: vier witte poten met een ronde voet van 4,1 m (BGT, op
   y = ±24), naar boven verbreed tot 6 m met een ronde buitenkant (AHN: top
@@ -63,15 +63,21 @@ Onderdelen in het model (hoogtes in NAP):
   twee dwarsbalken van 6,16 m breed (BGT) van +57,5 tot +65 m tussen de
   poten; per portaal twee geleidetorens (een per brug, 10,1 × 6,16 m, tot
   onder de dwarsbalk) met onderin een doorgang voor de treinen met een spitse
-  bovenkant, op de zijvlakken zes velden met een kruisverband waarvan de
-  driehoeken eronder en ernaast doorgaande openingen zijn (plafonds van
-  54 graden) en die erboven blinde nissen, op de kopse vlakken drie velden
-  met kruisnissen; en tussen de portalen twee buizen van 5,5 m boven het
+  bovenkant, op de zijvlakken zes velden met een kruisverband waarvan alle
+  vier driehoeken doorgaande openingen zijn (die eronder en ernaast met
+  plafonds van 54 graden, die erboven met een vlakke bovenkant; in de STL
+  zijn die erboven blinde nissen), op de kopse vlakken drie velden met
+  kruisnissen (doorgaand zou de toren hol maken, waar in het echt de
+  contragewichten hangen); en tussen de portalen twee buizen van 5,5 m boven het
   midden van elke brug (top +65 m, AHN) met een kiel van 50 graden.
 - Onder de dwarsbalk schoren van 50 graden tussen de geleidetorens en tussen
   toren en poot, zodat de openingen eronder een spitse bovenkant hebben in
-  plaats van een vlak plafond (printbaar; in het echt is de onderkant vlak
-  met een kraag).
+  plaats van een vlak plafond (in het echt is de onderkant vlak met een
+  kraag). Een vlakke onderkant en ronde buizen zonder kiel zijn geprobeerd,
+  maar daarmee wordt de export slechter: met de vlakke onderkant valt de
+  opvulling van het hele model terug op die zonder openingen (de export
+  probeert drie rondes, dit model had er vijf of zes nodig), met ronde buizen
+  komt er een scherm tot het hefdek en twee keer zoveel ongedragen lagen.
 - Twee rivierpijlers volgens de BGT met de kop op +5 m (AHN), daarop per brug
   een schacht tot +10 m (AHN) en een oplegblok tot onder het dek; de
   hefbrugpijler aan de Zwijndrechtse kant (19 × 58 m, kop +5 m, AHN) en de
@@ -103,8 +109,8 @@ Onderdelen in het model (hoogtes in NAP):
   nodes: `road:spoor` met `{ bgt_functie: "spoorbaan", bgt_fysiekvoorkomen:
   "gesloten verharding" }` en `road:spoor-halfverhard` met `{ bgt_functie:
   "spoorbaan", bgt_fysiekvoorkomen: "half verhard" }`; geen van beide heeft
-  een plus-fysiek voorkomen. De volumes tellen op (brug 72.659 m³:
-  constructie 68.000, spoor 3.953, half verhard 706); de z-fightingcontrole
+  een plus-fysiek voorkomen. De volumes tellen op (brug 70.416 m³:
+  constructie 65.758, spoor 3.953, half verhard 706); de z-fightingcontrole
   (30.000 stralen over het dek) vindt geen samenvallende vlakken tussen de
   nodes; de 7 stralen die de controle als "vlak zonder dikte" in de
   constructie meldt, vallen in de spitse hoeken van de driehoekige openingen,
@@ -112,8 +118,11 @@ Onderdelen in het model (hoogtes in NAP):
   dikte, geen z-fighting).
 
 Wat er niet in zit: de echte staven (circa 0,5 m, vervangen door platen met
-openingen en nissen), de verticalen in het vakwerk, de windverbanden en
-portalen boven het spoor (vrije horizontale overspanningen), de bovenleiding
+openingen), de verticalen in het vakwerk, de windverbanden boven het spoor
+(staven dunner dan 0,9 m), de eindportalen boven het spoor (zonder
+verticalen zit onder de eerste bovenknoop een opening, zodat de export onder
+een portaal geen schoren tegen de liggers kwijt kan, zoals bij de Maasbrug
+bij Gennep, en het model zit met drie rondes al op de grens), de bovenleiding
 en seinen, leuningen, loopbruggen en trappen aan de torens, de kabels en
 contragewichten in de geleidetorens, de kraag en de schijvenkasten onder de
 dwarsbalk (vervangen door de schoren), het bedieningsgebouw (eigen BAG-pand,
@@ -123,7 +132,7 @@ hefdekken staan gesloten.
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar zijn de bruggen
 alleen vlakke wegdekstroken met pijlerkoppen in het water; het hemelbed
 ontbreekt helemaal. Het model heeft van noordoost en zuidwest de vier
-vakwerkliggers met openingen en nissen, het hemelbed met de doorkijk door de
+vakwerkliggers met openingen, het hemelbed met de doorkijk door de
 geleidetorens en de buizen tussen de poten, en de remmingwerken; van
 zuidoost en noordwest (langs de brug) de twee bruggen met de spleet, de
 portalen met dwarsbalk, schuin afgesneden poten en de geleidetorens met de
@@ -137,22 +146,29 @@ maximum van het DSM per 8 m op de vier vakwerklijnen (mediaan -1,1 en
 bovenleiding). Poten, dwarsbalken en buizen volgen de AHN-hoogtes (+71,5,
 +65 en +65 m).
 
-Printbaarheid op 1:1000: het vakwerk is een dichte plaat met openingen
-waarvan de flanken minstens 52,5 graden steil zijn en nissen van 0,35 m; de
-geleidetorens hebben doorgaande openingen met plafonds van 54 graden en de
-doorgang een spitse bovenkant; onder de dwarsbalken zitten schoren van 50
-graden; de buizen hebben een kiel van 50 graden. Vrij hangen alleen de
-onderkant van de dekken en kespen (9746 m²), de plafonds van de nissen
-(402 m²) en een paar randjes van de dwarsbalken naast de poten (19 m²). Met
-468 m past de brug op 1:1000 niet in één uitsnede; in een uitsnede van 428 m
-(1:1070, 400 mm) gaan alle drie de onderdelen in de printcheck als gesloten
-solid met overhangopvulling door (status NoError, 78 s): de constructie van
-115,7 cm³ met verticale opvulling naar 86,0 cm³ (-25,7 %), het spoor 3,20 cm³
-en half verhard 0,56 cm³ zonder eigen opvulling (0 %). De export zet onder
-elke buis een smal scherm tot het hefdek; dat scherm is in de printrender van
-opzij als vlak tussen de poten te zien. De STL op 1:1250 heeft een printvoet
-onder de dekken (wig van 50 graden met een scherm van 0,5 mm breed op
-printschaal tot de onderplaat) en een scherm onder de buizen.
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom is
+het vakwerk een dichte plaat met openingen; de flanken van de openingen met
+de punt omhoog zijn minstens 52,5 graden steil. De geleidetorens hebben
+doorgaande openingen (die onder en naast het kruis met plafonds van 54
+graden) en de doorgang een spitse bovenkant; onder de dwarsbalken zitten
+schoren van 50 graden; de buizen hebben een kiel van 50 graden. Wat zonder
+steun niet print, laat het model aan de export over: de vlakke bovenkant van
+de openingen in liggers en torens (1521 m²) en de onderkant van de dekken en
+kespen (9306 m²), plus een paar randjes van de dwarsbalken naast de poten
+(19 m²); het script controleert dat verder niets naar beneden wijst. In de
+meettest van de webshop (`scripts/overhang-lab`, het hele model op 1:1000)
+gaat het volume met "Ondersteuning v2.0" van 70,4 naar 102,8 cm³ (v1.0:
+108,2 cm³; het vorige model met nissen 72,7 naar 104,3 cm³), met evenveel
+ongedragen lagen als het vorige model (3,6 mm², bij de Zwijndrechtse
+rivierpijler): onder de vlakke bovenkant van de openingen blijft een spitse
+opening met schoren tegen de staven, onder elke buis komen schoren naar de
+geleidetorens en onder de dekken een wig met een smal scherm tot de
+onderplaat. De export heeft daarvoor drie rondes nodig, het maximum. De STL
+op 1:1250, die zonder export wordt geprint, heeft printvormen en is
+ongewijzigd: blinde nissen van 0,35 m in plaats van de openingen met een
+vlakke bovenkant (in liggers en op de zijvlakken van de torens), een
+printvoet onder de dekken (wig van 50 graden met een scherm van 0,5 mm breed
+op printschaal tot de onderplaat) en een scherm onder de buizen.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Spoorbrug_Dordrecht)
 (lengte circa 560 m, breedte 2 × 12,6 m, doorvaarthoogte 11,40 m,

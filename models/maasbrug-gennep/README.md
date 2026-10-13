@@ -59,9 +59,10 @@ Onderdelen in het model (hoogtes in NAP):
   62,2, 62,2, 62,2 en 61,4 m. Per ligger acht doorgaande driehoekige
   openingen met de punt omhoog per overspanning (spitse top van 52 graden
   onder de diagonalen, de diagonalen worden naar onderen breder; onderaan
-  een verticaal stukje van 0,1 m) en zeven blinde nissen van 0,35 m aan de
-  buitenkant voor de driehoeken met een vlakke bovenkant; onderrand tot
-  0,6 m boven het wegdek.
+  een verticaal stukje van 0,1 m) en zeven doorgaande openingen voor de
+  driehoeken met een vlakke bovenkant (in de STL blinde nissen van 0,35 m
+  aan de buitenkant); samen 150 openingen. Onderrand tot 0,6 m boven het
+  wegdek.
 - Vier gemetselde pijlers met ronde koppen volgens de BGT (x = -30,6, 32,1
   en 94,8; 4,7 tot 7,6 m breed en 19,4 tot 23 m lang); de pijler op x = -93,3
   staat niet in de BGT en is die op x = -30,6, 62,7 m verschoven (AHN:
@@ -122,10 +123,13 @@ Onderdelen in het model (hoogtes in NAP):
   | fietspad | gesloten verharding, asfalt | P0031.4aadda9114d42225e053160d000a34f1 | `road:fietspad` |
   | berm (ondersteunend wegdeel) | cementbeton, beton element | P0030.00f6f968fabdf68ae050120a080440dd, P0030.630087c93a1b45e68ee5f282494f318d, G0907.63971cd1b0c24d2e9d30f6d285a8688b, P0030.3e1e1a1ae93d4097b1ce8e430044ba40, P0030.6a5f236feb124e55b6a0f9454bdd6fc3 | constructie (band en noordelijke ligger) |
 
-Wat er niet in zit: het windverband en de eindportalen boven de rijbaan
-(horizontale staven vrij over 7,1 m op 5 m boven het wegdek; op 1:1000 vult
-de export daaronder dwars over de rijbaan op, dus weggelaten), leuningen,
-lantaarns en borden (dunner dan 0,9 m), de dwarsdragers, consoles en het
+Wat er niet in zit: het windverband boven de rijbaan (staven van circa
+0,5 m), de eindportalen (een balk van 0,9 m zou vrij over 7,1 m op 5 m boven
+het wegdek liggen; in een Warren-ligger zonder verticalen zit onder de
+bovenknoop een opening, zodat de export onder een portaal geen schoren tegen
+de liggers kwijt kan en de hele ruimte tot de rijbaan dichtzet, ook met het
+portaal 0,6 m naar de eindstijl of naar binnen), leuningen, lantaarns en
+borden (dunner dan 0,9 m), de dwarsdragers, consoles en het
 onderste windverband onder het dek (de export vult onder het dek op), de
 beschildering van de portalen (kleur, geen vorm), de bouwplaats en de
 steigers bij het oostelijke landhoofd (BGT kunstwerkdeel steiger, tijdelijk
@@ -137,7 +141,7 @@ vlakke grijze wegstrook die van de dijken naar het water afloopt, zonder
 vakwerk, pijlers of dek in de lucht. Het model heeft van het noordwesten en
 noordoosten (325 en 55 graden) de noordelijke ligger met de uitkraging en het
 fietspad, de vijf losse overspanningen met schuine eindstijlen en de spleten
-boven de pijlers, de openingen en nissen en de ronde pijlerkoppen onder het
+boven de pijlers, de openingen en de ronde pijlerkoppen onder het
 dek; van het zuidoosten en zuidwesten (145 en 235 graden) de zuidelijke
 ligger op de dekrand en de pijlers die met de oude oplegblokken 8 m naast het
 dek uitsteken, zoals op de foto's van de pijlers in de uiterwaard.
@@ -150,20 +154,24 @@ rest zijn de leuning en gaten in het AHN). De bovenrand staat in het DSM op
 NAP +24,9 tot +25,5 m (98e tot 99,5e percentiel per veld) tegen +24,7 tot
 +25,3 m in het model.
 
-Printbaarheid op 1:1000: elke ligger is een dichte plaat van 1,0 m met staven
-van 0,9 m; elke doorgaande opening heeft een plafond van 52 graden (het script
-controleert dat), de driehoeken met een vlakke bovenkant zijn blinde nissen.
-Alleen het ondervlak van het dek hangt vrij; in de printversie met voet
-blijven alleen de nisplafonds van 138 m² over (0,35 m diep, op de wand).
-Alles begint op dezelfde onderkant. Printcheck met de doorloop: de uitsnede
-rond het hele model is 411 m en past op 1:1000 niet in 400 mm, dus op
-1:1027 (de STL zelf is op 1:1000 382 mm lang): status NoError voor alle
-vier onderdelen, de constructie van 44,7 naar 28,8 cm³ (de printbare
-opvulling is 35,6 % minder dan de rechte opvulling tot de onderplaat), de
-`road:`-onderdelen zonder eigen opvulling (`extraPct` 0), 23,1 s; de
-vakwerkopeningen blijven open. De STL heeft een
-printvoet: een wig van 50 graden onder beide dekranden op een scherm van
-0,9 m tot de onderplaat. Controle op samenvallende vlakken (30 000 verticale
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom is
+elke ligger een dichte plaat van 1,0 m met staven van 0,9 m en openingen.
+Wat zonder steun niet print, laat het model aan de export over: de vlakke
+bovenkant van de 70 openingen met een vlakke bovenkant (394 m²) en het
+ondervlak van het dek (3459 m²); het script controleert dat verder niets
+naar beneden wijst en dat de openingen met de punt omhoog een plafond van 52
+graden hebben. Alles begint op dezelfde onderkant. In de meettest van de
+webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 21,2 naar 32,2 cm³ (v1.0: 32,5 cm³), zonder
+ongedragen lagen: onder de vlakke bovenkant van de openingen blijft een
+spitse opening met schoren tegen de staven (een paar openingen in de
+buitenste overspanningen krijgen een kraag), onder het dek komt een wig met
+een smal scherm tot de onderplaat. De STL, die zonder export wordt geprint,
+heeft printvormen: blinde nissen van 0,35 m aan de buitenkant in plaats van
+de openingen met een vlakke bovenkant (in de printversie blijven alleen die
+nisplafonds van 138 m² over) en een printvoet: een wig van 50 graden onder
+beide dekranden op een scherm van 0,9 m tot de onderplaat; ze is
+ongewijzigd. Controle op samenvallende vlakken (30 000 verticale
 stralen over het dek en 60 000 over het hele model): geen samenvallende
 vlakken.
 

@@ -214,7 +214,7 @@ const deckBottom = (x) => road(x) - DECK.depth;
 // liggen op de landhoofden op x = ±156,4 (AHN) en boven de pijlers 0,5 m uit
 // elkaar.
 const TRUSS = { top: 5.1, floor: 0.6, bar: 0.9, panels: 8, ends: 156.4, pierGap: 0.5 };
-const NICHE = 0.35; // blinde nissen
+const NICHE = 0.35; // blinde nissen (alleen in de STL)
 const GABLE_DEG = 52; // plafond van de doorgaande openingen
 
 // Pijlers: BGT-voetafdrukken (lokale coördinaten, vereenvoudigd tot 5 cm) met
@@ -309,7 +309,10 @@ const edge = band(X_WEST, X_EAST, EDGE.y0, EDGE.y1, (x) => walk(x) - 0.3, (x) =>
 // van het dek tot de bovenrand, daarna langs het lengteprofiel gebogen. De
 // driehoeken met de punt omhoog (tussen twee onderknopen en een bovenknoop)
 // zijn doorgaande openingen met een spitse top van 52 graden; de driehoeken
-// met een vlakke bovenkant zijn blinde nissen van 0,35 m aan de buitenkant.
+// met een vlakke bovenkant zijn ook doorgaande openingen. Hun vlakke
+// bovenkant print niet zonder steun, dat vult de export op. De STL, die
+// zonder export wordt geprint, heeft daar blinde nissen van 0,35 m aan de
+// buitenkant (printTrusses).
 const TAN_GABLE = Math.tan((GABLE_DEG * Math.PI) / 180);
 const openingAngles = [];
 let throughOpenings = 0;
@@ -407,6 +410,7 @@ const alongRoad = (solid) =>
   solid.warp((v) => {
     v[2] += road(v[0]);
   });
+const printTrusses = [];
 const trusses = SPANS.flatMap((span) => {
   const { outline, holes, niches } = spanPlate(span);
   return WALLS.map(({ y0, y1, niche }) => {
@@ -417,9 +421,14 @@ const trusses = SPANS.flatMap((span) => {
     ];
     throughOpenings += holes.length;
     blindNiches += niches.length;
-    return alongRoad(plate.subtract(union(cut)));
+    printTrusses.push(alongRoad(plate.subtract(union(cut))));
+    return alongRoad(plate.subtract(union([...holes, ...niches].map((h) => profileY(h, y0 - 0.3, y1 + 0.3)))));
   });
 });
+// Geen eindportalen: in een Warren-ligger zonder verticalen zit onder de
+// bovenknoop een opening, zodat de export onder een portaal geen schoren
+// tegen de liggers kwijt kan en de hele ruimte tot de rijbaan opvult (getest
+// met een balk van 0,9 × 0,9 m op de eerste bovenknoop en 0,6 m ernaast).
 
 // ---------- pijlers en landhoofden ----------
 const offsetPoly = (poly, d) => new CrossSection([ccw(poly)]).offset(d, "Round", 2, 16);
@@ -463,6 +472,9 @@ const abutments = ABUTMENTS.map(([x0, x1]) =>
 
 // ---------- de brug als geheel ----------
 const bridge = union([deckMain, deckArm, kerb, edge, ...trusses, ...piers, ...abutments]);
+// De printversie voor de STL: blinde nissen in plaats van de openingen met een
+// vlakke bovenkant.
+const printBridge = union([deckMain, deckArm, kerb, edge, ...printTrusses, ...piers, ...abutments]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder het dek een wig van 50 graden vanaf de onderkant van beide dekranden
@@ -495,7 +507,7 @@ const footStem = loftX(
   }),
 );
 const printFoot = union([footWedge, footStem]);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
@@ -503,7 +515,9 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
   const bb = solid.boundingBox();
   if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
 }
-// Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant, per soort.
+// Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant, per soort:
+// het dek en de pijlers en de vlakke bovenkant van de openingen in de liggers
+// (in de STL de plafonds van de blinde nissen).
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -519,19 +533,21 @@ function overhangs(solid) {
     if (len < 1e-9 || n[2] > -Math.SQRT1_2 * len) continue;
     const zm = (p[0][2] + p[1][2] + p[2][2]) / 3;
     const xm = (p[0][0] + p[1][0] + p[2][0]) / 3;
-    const key = zm < road(xm) - 0.3 ? "dek en pijlers" : zm > road(xm) + TRUSS.floor + 0.05 ? "nissen" : "overig";
+    const key = zm < road(xm) - 0.3 ? "dek en pijlers" : zm > road(xm) + TRUSS.floor + 0.05 ? "vakwerk" : "overig";
     buckets[key] = (buckets[key] ?? 0) + len / 2;
   }
   return Object.fromEntries(Object.entries(buckets).map(([k, a]) => [k, +a.toFixed(1)]));
 }
 const minAngle = openingAngles.reduce((m, a) => Math.min(m, a), Infinity);
-console.log("vrij hangend in het model (m2):", overhangs(bridge));
-console.log("vrij hangend in de printversie (m2):", overhangs(printModel));
 {
+  const model = overhangs(bridge);
+  console.log("vrij hangend in het model (m2):", model);
+  if ((model.overig ?? 0) > 0.5) throw new Error("overhang buiten dek, pijlers en vakwerk");
   const left = overhangs(printModel);
+  console.log("vrij hangend in de printversie (m2):", left);
   if ((left["dek en pijlers"] ?? 0) + (left.overig ?? 0) > 0.5) throw new Error("printversie heeft overhang buiten de nissen");
 }
-console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "steilste plafond min (graden)", +minAngle.toFixed(1));
+console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "vlakste spitse plafond (graden)", +minAngle.toFixed(1));
 if (minAngle < 50) throw new Error("opening met een te vlak plafond");
 
 // ---------- wegdek als eigen onderdelen ----------
@@ -828,7 +844,7 @@ await writeFile(
         "P0031.3cdce6dd392b437fe053160d000a328b",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden (dek, wegdek en landhoofden lopen over de dijken door tot x = -192 en 190, waar de rijbaan tot NAP +19,03 en +18,83 m en het fietspad tot +18,7 en +19,3 m zakt, zodat het einde 0,4 tot 1,0 m onder het PDOK-wegvlak op de dijk ligt), de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot in het dek en tot het einde van de doorloop. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 7,1 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen) en de dwarsdragers en consoles onder het dek zijn weggelaten; de export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de brug (midden tussen de uiteinden van de vakwerken) op de as tussen de twee liggers op de waterspiegel van de Maas (z = 0, NAP +8,13 m) in de oorsprong, +X langs de brug naar het oosten (Gennep, RD-richting 6,27 graden vanaf het oosten) en +Y naar het noorden (stroomafwaarts). Vier nodes. road:rijbaan, road:fietspad en road:fietspad-cementbeton: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan regionale weg in asfalt tussen de liggers; fietspad buiten de noordelijke ligger, in cementbeton op het Brabantse deel tot x = 32,7 en in asfalt op het Limburgse deel), buiten de liggers, de band en de schampkant, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:maasbrug-gennep: de rest van de verkeersbrug van 1955: het dek van 11,6 m breed van x = -157,03 tot 158,02 met de rijbaan op NAP +20,24 m in het midden en +19,45 m bij de landhoofden (dek, wegdek en landhoofden lopen over de dijken door tot x = -192 en 190, waar de rijbaan tot NAP +19,03 en +18,83 m en het fietspad tot +18,7 en +19,3 m zakt, zodat het einde 0,4 tot 1,0 m onder het PDOK-wegvlak op de dijk ligt), de band van 0,4 m tegen de noordelijke ligger en het fietspad 0,17 m hoger op een uitkraging met een schampkant langs de rand; vijf losse vakwerkliggers van circa 62 m met evenwijdige randen 5,1 m boven de rijbaan (NAP +25,3 m in het midden), schuine eindstijlen en acht vakken Warren zonder verticalen, als dichte platen van 1,0 m op y = ±4,05 met alle vakken als doorgaande driehoekige openingen (de vakken met de punt omhoog met een spitse top van 52 graden); de vier gemetselde pijlers van de spoorbrug van 1873 (x = -93,3, -30,6, 32,1 en 94,8) met ronde koppen, een kraag en het zuidelijke deel naast het dek met de oude oplegblokken (NAP +17,6 tot +18,0 m, blokken 0,6 m hoger), met een betonnen oplegging onder het dek; de landhoofden tot in het dek en tot het einde van de doorloop. Leuningen, lantaarns, het windverband boven de rijbaan (staven dunner dan 0,9 m), de eindportalen (de export kan er onder een Warren-ligger zonder verticalen geen schoren kwijt en zou de ruimte tot de rijbaan opvullen) en de dwarsdragers en consoles onder het dek zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder het dek een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(END.e - END.w).toFixed(2),
