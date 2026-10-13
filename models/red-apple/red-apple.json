@@ -1,0 +1,78 @@
+{
+  "name": "The Red Apple",
+  "file": "red-apple.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93218,
+    436907
+  ],
+  "xAxis": [
+    0.7112903627557938,
+    0.7028982997921757
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 46.01782201,
+  "groundSamplePoints": [
+    [
+      -45.15333244597161,
+      -17.238809965411416
+    ],
+    [
+      -18.31731610941466,
+      -11.422606118910792
+    ],
+    [
+      56.59272269080964,
+      -3.9068834690991814
+    ],
+    [
+      22.40043290074982,
+      38.317366896213066
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000753288"
+  ],
+  "description": "Volledige Red Apple: toren met versmallende verticale stijlen en glazen gevelvelden, vijfhoekig uitkragend kopblok op terugliggende onderbouw en kolommen, hol atrium met twee gemeten glaskappen, grote diepe atriumvensters, parkeer-/kantooronderbouw, winkels, arcade, lage vleugels en gemeten techniek. Vaste bouwprismaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s en dakschalen, geen DSM-hoogtelagen.",
+  "realWorld": {
+    "groundNapM": 2.6,
+    "axisDegrees": 44.66,
+    "towerRoofNapM": 123.273,
+    "towerCoreNapM": 125.991,
+    "kopRoofNapM": 56.002,
+    "atriumRoofsNapM": [
+      46.926,
+      52.803
+    ],
+    "kopCoreNapM": 58.418,
+    "garageNapM": 23.937,
+    "officeRoofNapM": 29.769,
+    "lowRoofsNapM": [
+      6.357,
+      7.063,
+      8.674,
+      13.419,
+      13.431
+    ],
+    "estimates": [
+      "contouren circa .5ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“1m uit BAG/3D BAG/luchtfoto vereenvoudigd; koponderbouw 3m terugliggend en onderzijde29.4NAP uit fotoÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s geschat",
+      "kolomraster en 1.2m dikke kolommen, torenstijlen.85ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢.3m, vensters/ritme en kopbloklamellen uit architectfotoÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s geschat",
+      "atria hol tot geschatte vloer32NAP; twee gemeten glaskappen1m dik; grote atriumvensters1.6m diep blind voor printbaarheid",
+      "arcade2.8m breed met spitse bovenzijde is geschatte printdoorgang; fijne roedes/glasrelings/dakrails en vegetatie smaller dan.9m weggelaten",
+      "geen extra straat-/kade-/garageplaat; aansluitende ibis/Dock21 zijn eigen BAG-panden en blijven PDOK"
+    ]
+  },
+  "sources": [
+    "https://www.kcap.eu/projects/6/red-apple-rotterdam (architect,2009,124m,bouwprogramma; fotoÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s Rob tHart en Ossip van Duivenbode alleen referentie)",
+    "https://www.kcap.eu/pressroom?project=6 (publiek benoemde schuine fotoÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s, alleen referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000753288 (TU Delft/3DGI,CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "red-apple-1-1000.stl"
+  ]
+}
