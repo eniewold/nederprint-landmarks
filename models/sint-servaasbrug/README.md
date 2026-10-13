@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `sint-servaasbrug.glb` | Catalogusbron in meters: node `building:sint-servaasbrug` met het stenen deel (zeven bogen, zes pijlers met ijsbrekers, borstwering), de grote pijler met het brugwachtershuis en het beeld, het stalen beweegbare deel en de landhoofden; de bovenste 0,5 m van het wegdek als `road:rijbaan`, `road:rijbaan-staal`, `road:fietspad` en `road:voetpad` met de BGT-attributen (zie hieronder) |
-| `sint-servaasbrug-1-1000.stl` | De brug in één stuk op 1:1000 met een printvoet onder het stalen deel, met de onderkant (0,8 m onder de waterspiegel) op het printbed (187 × 43 × 14 mm) |
+| `sint-servaasbrug-1-1000.stl` | De brug in één stuk op 1:1000 met spitsbogen als printvorm en een printvoet onder het stalen deel, met de onderkant (0,8 m onder de waterspiegel) op het printbed (187 × 43 × 14 mm) |
 | `sint-servaasbrug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vervangen pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (176748,5, 317777,18), op de as
@@ -45,8 +45,8 @@ lokale stelsel en vereenvoudigd tot 5 cm. Het wegdek is een snijstrook van
 0,5 m onder tot 1 m boven het wegdek over dezelfde loftstations als het dek;
 de borstweringen, het platform van de grote pijler en de hoofdliggers blijven
 met 2 cm marge constructie. Wegdeel = strook ∩ brug, constructie = brug −
-strook; de volumes tellen op tot die van de brug als geheel (11 880,6 +
-273,6 + 118,9 + 375,9 + 207,4 = 12 856,3 m³). Geen samenvallende vlakken
+strook; de volumes tellen op tot die van de brug als geheel (9 432,9 +
+273,6 + 118,9 + 375,9 + 207,4 = 10 408,7 m³). Geen samenvallende vlakken
 tussen de nodes (verticale stralen over het hele model). De STL is
 ongewijzigd: het wegdek wordt pas na de printversie uitgesneden.
 
@@ -57,10 +57,10 @@ Onderdelen in het model (hoogtes in NAP):
   bij de grote pijler en +51,4 m aan de kade in Wyck.
 - Het stenen deel, 11,8 m breed (BGT), met een borstwering van 0,85 m (AHN)
   aan beide zijden.
-- Zeven bogen van 11,4 tot 13,3 m tussen het westelijke landhoofd, de zes
-  pijlers en de grote pijler (BGT). De openingen hebben een spitse top van 50
-  graden 1,05 m onder het wegdek (+50,1 tot +51,2 m) en rechte zijden die
-  onder of net boven het water op de pijlers aansluiten.
+- Zeven rondbogen van 11,4 tot 13,3 m tussen het westelijke landhoofd, de
+  zes pijlers en de grote pijler (BGT), met de kruin 1,05 m onder het wegdek
+  (+50,1 tot +51,2 m) en de halve overspanning als straal; de aanzet ligt
+  rond de waterspiegel en daaronder lopen de zijden recht naar de pijlers.
 - Zes pijlers van 4,7 tot 5,0 m breed (BGT), met een spitse ijsbreker
   stroomopwaarts (zuid, punt 9,4 m uit de as) en een ronde stroomafwaarts
   (noord, 7,7 m uit de as), recht tot +48,9 m en daarboven een kap die naar de
@@ -80,31 +80,29 @@ Binnen de voetafdruk ligt 97 % van de DSM-cellen binnen 2 m van het model
 deel 97 %, over het stalen deel 99 % en over de grote pijler 86 %, waar het
 AHN de lantaarns en de randen van het brugwachtershuis ziet.
 
-Printbaarheid op 1:1000: de echte rondbogen hebben een vlakke kruin die
-zonder steun niet print. Een spitse top van 50 graden onder de kruin past in
-de 7 tot 8 m tussen water en wegdek alleen als driehoek, dus de openingen zijn
-spitsbogen met rechte zijden; daarboven blijft 1,05 m metselwerk. Pijlers,
+Printbaarheid op 1:1000: de rondbogen hebben een vlakke kruin die zonder
+steun niet print; dat laat het model aan de export over. Met "Ondersteuning
+v2.0" (standaard) krijgt elke boog schoren tegen de pijlers met een spitse
+opening onder de kruin, en een wig vanaf beide gevels; aan de gevels blijft
+de rondboog zichtbaar. "Ondersteuning v1.0" vult de gewelven in het midden
+van de brug dicht. In de meettest van de webshop (`scripts/overhang-lab`,
+het model op 1:1000) gaat het volume van 9,77 naar 13,59 cm³ met v2.0 en
+14,37 cm³ met v1.0, in beide gevallen zonder ongedragen lagen. Pijlers,
 borstwering (0,9 m) en hoofdliggers (0,9 m) zijn dik genoeg om te dragen; de
-lantaarns en de leuningen van het stalen deel zijn weggelaten. Alleen de
-onderkant van het stalen deel hangt vrij (667 m²); het script controleert dat
-alleen die naar beneden wijst, dat alles op dezelfde onderkant begint en dat
-de printversie geen overhang heeft. In de export gaat het model als gesloten
-solid met overhangopvulling door (een uitsnede van 240 × 120 m op 1:1000
-duurt circa 2 seconden met de PDOK-tegels in de cache, 12,0 naar 15,3 cm³):
-onder het stalen deel komt een wig met een smal scherm tot de onderplaat, en
-omdat de opvulling elke laag onder 45 graden vanaf de gevels laat inkrimpen,
-dicht ze de gewelven in het midden van de 11,8 m brede brug onder de top; aan
-beide gevels blijven de spitsbogen open. Met het hulpmiddel van de
-printcheck (uitsnede van 218 m rond het model op 1:1000, 2,1 s) gaan alle
-onderdelen met status NoError door; de wegdelen krijgen geen eigen opvulling
-(`extraPct` 0), de constructie gaat van 17,28 naar 14,49 cm³ (samen
-18,26 naar 15,46 cm³, zoals het model in één node: 18,25 naar 15,46 cm³). De STL heeft dezelfde printvoet
-(wig van 50 graden en een scherm van 0,9 m) en open gewelven, die zonder steun
-printen. Het brugwachtershuis van PDOK zit niet meer in de export. Het
-PDOK-terrein ligt op het water naast de brug op de waterspiegel van het
-model, onder de bogen 0,7 tot 1 m hoger, onder het westelijke landhoofd circa
-2 m boven het water (binnen het model) en sluit in Wyck binnen 0,4 m op het
-wegdek aan.
+lantaarns en de leuningen van het stalen deel zijn weggelaten. Behalve de
+kruinen van de bogen (809 m²) hangt alleen de onderkant van het stalen deel
+vrij (667 m²); het script controleert dat alleen die naar beneden wijzen,
+dat alles op dezelfde onderkant begint en dat de printversie geen overhang
+heeft. Onder het stalen deel vult de export een wig met een smal scherm tot
+de onderplaat; de wegdelen krijgen geen eigen opvulling. De STL wordt zonder
+export geprint en heeft daarom als printvorm spitsbogen van 50 graden onder
+dezelfde kruin (met rechte zijden naar de pijlers, binnen de rondboog) en
+dezelfde printvoet onder het stalen deel (wig van 50 graden en een scherm
+van 0,9 m); zo print ze zonder steun. Het brugwachtershuis van PDOK zit
+niet meer in de export. Het PDOK-terrein ligt op het water naast de brug op
+de waterspiegel van het model, onder de bogen 0,7 tot 1 m hoger, onder het
+westelijke landhoofd circa 2 m boven het water (binnen het model) en sluit in
+Wyck binnen 0,4 m op het wegdek aan.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Sint_Servaasbrug)
 (1280-1298, in 1932-1934 geheel herbouwd en verbreed, zeven rondbogen, het
@@ -120,7 +118,7 @@ het stalen deel. Geschat zijn de waterspiegel (stuwpeil), de hoogte van de
 kruin van de bogen (circa 1,1 m onder het wegdek, op foto's), de hoogte
 waarop de ijsbrekers overgaan in hun kap, de onderkant van het stalen deel
 (1,4 m onder het wegdek) en de maten van het stenen blok en het beeld naast
-het glazen huisje; de rondbogen zijn spitsbogen, het westelijke landhoofd is
+het glazen huisje; de bogen zijn halve cirkels, het westelijke landhoofd is
 recht zonder de verbreding aan de zuidwestkant, de trottoirs liggen op
 wegdekhoogte en de lantaarns en leuningen zijn weggelaten.
 

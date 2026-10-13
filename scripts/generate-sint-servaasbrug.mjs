@@ -152,11 +152,13 @@ const WEST_ABUTMENT = -80.5; // voorzijde van het westelijke landhoofd
 // Grote pijler (BGT): 4,6 m breed, van y = -20,6 tot 22,6, met een platform op
 // NAP +52,3 m naast het wegdek en aflopende kappen naar de koppen.
 const BIG_PIER = { from: 35.5, to: 40.06, southTip: -20.6, northTip: 22.6, platform: Z(52.3), platformHalf: 15.5 };
-// Bogen: de opening krijgt een spitse top van 50 graden met de top 1,05 m
-// onder het wegdek (de echte rondbogen hebben hun kruin circa 1,1 m onder het
-// wegdek, op foto's geschat); daaronder lopen de zijden recht naar de
-// pijlers. Zo print elke boog op 1:1000 zonder steun.
-const ARCH = { belowDeck: 1.05, slope: (50 * Math.PI) / 180 };
+// Bogen: echte rondbogen met de kruin 1,05 m onder het wegdek (op foto's
+// circa 1,1 m geschat) en de halve overspanning als straal; onder de aanzet
+// lopen de zijden recht naar de pijlers. De vlakke kruin print op 1:1000 niet
+// zonder steun: de export van de webshop vult eronder op (met ondersteuning
+// v2.0 schoren met een spitse opening), en de STL krijgt als printvorm een
+// spitse top van 50 graden onder dezelfde kruin (`slope`).
+const ARCH = { belowDeck: 1.05, slope: (50 * Math.PI) / 180, segments: 64 };
 // Stalen deel: dek 13,2 m breed (BGT) met twee hoofdliggers van 0,9 m
 // (AHN: 0,7 m) die 1,35 m boven het wegdek uitsteken; onderkant 1,4 m onder
 // het wegdek (geschat op foto's). Leuningen weggelaten.
@@ -170,7 +172,7 @@ const STATUE = { x0: 37.0, x1: 38.3, y0: -17.8, y1: -15.2, top: Z(55.8) };
 
 // ---------- stenen brug ----------
 const STEPS = Math.round((BIG_PIER.to - WEST_END) / 0.5);
-let stone = bandY(WEST_END, BIG_PIER.to, () => BASE, deckZ, -STONE.halfWidth, STONE.halfWidth, STEPS);
+const stoneBody = bandY(WEST_END, BIG_PIER.to, () => BASE, deckZ, -STONE.halfWidth, STONE.halfWidth, STEPS);
 const archFaces = [[WEST_ABUTMENT, PIERS[0][0]]];
 for (let i = 0; i + 1 < PIERS.length; i++) archFaces.push([PIERS[i][1], PIERS[i + 1][0]]);
 archFaces.push([PIERS[PIERS.length - 1][1], BIG_PIER.from]);
@@ -179,9 +181,20 @@ const arches = archFaces.map(([a, b]) => {
   const half = (b - a) / 2;
   const apex = deckZ(mid) - ARCH.belowDeck;
   const jamb = apex - half * Math.tan(ARCH.slope);
-  return { a, b, mid, span: b - a, apex, jamb };
+  return { a, b, mid, half, span: b - a, apex, spring: apex - half, jamb };
 });
-const openings = arches.map(({ a, b, mid, apex, jamb }) => {
+const roundOpenings = arches.map(({ a, b, mid, half, spring }) => {
+  const low = BASE - 1;
+  const pts = [[a, low], [b, low]];
+  for (let i = 0; i <= ARCH.segments; i++) {
+    const t = (Math.PI * i) / ARCH.segments;
+    pts.push([mid + half * Math.cos(t), Math.max(spring + half * Math.sin(t), low + 0.01)]);
+  }
+  return profileY(pts, -STONE.halfWidth - 1, STONE.halfWidth + 1);
+});
+// Printvorm voor de STL: een spitse top van 50 graden onder dezelfde kruin,
+// met rechte zijden naar de pijlers. Die past binnen de rondboog.
+const pointedOpenings = arches.map(({ a, b, mid, apex, jamb }) => {
   const low = BASE - 1;
   const pts =
     jamb > low
@@ -192,7 +205,8 @@ const openings = arches.map(({ a, b, mid, apex, jamb }) => {
         })();
   return profileY(pts, -STONE.halfWidth - 1, STONE.halfWidth + 1);
 });
-stone = stone.subtract(union(openings));
+const stone = stoneBody.subtract(union(roundOpenings));
+const printStone = stoneBody.subtract(union(pointedOpenings));
 
 // IJsbrekers: recht tot NAP +48,9 m, dan een kap die naar de gevel oploopt.
 function noses([x0, x1], { southTip, southShoulder, northTip, body, southCap, northCap, southFace, northFace }) {
@@ -277,7 +291,8 @@ const girders = [-1, 1].map((s) =>
 );
 const eastAbutment = bandY(STEEL.to, EAST_END, () => BASE, deckZ, -STEEL.halfWidth, STEEL.halfWidth, 8);
 
-const bridge = union([stone, ...pierNoses, bigPier, ...parapets, steelDeck, ...girders, eastAbutment]);
+const rest = [...pierNoses, bigPier, ...parapets, steelDeck, ...girders, eastAbutment];
+const bridge = union([stone, ...rest]);
 // ---------- printvoet (alleen in de STL) ----------
 // Het stalen deel hangt 50 m vrij boven de doorvaart. Net als de
 // overhangopvulling van de export krijgt de STL daaronder een wig van 50
@@ -299,11 +314,12 @@ for (let i = 0; i <= steelSteps; i++) {
   footStations.push({ x, section });
 }
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printStone, ...rest, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het stalen deel, in de printversie geen.
+// model alleen de kruinen van de rondbogen en de onderkant van het stalen
+// deel, in de printversie geen.
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -329,16 +345,29 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
   if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
 }
 {
-  const { area, found } = overhangs(bridge);
+  const { found } = overhangs(bridge);
+  let steelArea = 0;
+  let crownArea = 0;
   for (const p of found) {
     const xMid = (p[0][0] + p[1][0] + p[2][0]) / 3;
     const zMid = (p[0][2] + p[1][2] + p[2][2]) / 3;
+    const e1 = p[1].map((c, i) => c - p[0][i]);
+    const e2 = p[2].map((c, i) => c - p[0][i]);
+    const triangle = Math.hypot(e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]) / 2;
     const under = deckZ(xMid) - STEEL.depth;
-    if (xMid < STEEL.from - 0.31 || xMid > STEEL.to + 0.31 || Math.abs(zMid - under) > 0.05) {
-      throw new Error(`overhang buiten het stalen deel op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
+    if (xMid > STEEL.from - 0.31 && xMid < STEEL.to + 0.31 && Math.abs(zMid - under) <= 0.05) {
+      steelArea += triangle;
+      continue;
     }
+    const arch = arches.find(({ a, b }) => xMid > a - 1e-3 && xMid < b + 1e-3);
+    if (arch && zMid > arch.spring + arch.half * Math.SQRT1_2 - 0.05 && zMid < arch.apex + 0.01) {
+      crownArea += triangle;
+      continue;
+    }
+    throw new Error(`overhang buiten de kruinen en het stalen deel op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
   }
-  console.log("onderkant van het stalen deel (m2):", Math.round(area));
+  console.log("onderkant van het stalen deel (m2):", Math.round(steelArea));
+  console.log("kruinen van de rondbogen (m2):", Math.round(crownArea));
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", +print.area.toFixed(2));
   if (print.area > 0.5) throw new Error("printversie heeft overhang");
@@ -631,12 +660,13 @@ for (const [name, solid] of parts) {
     zRange: [+bb.min[2].toFixed(2), +bb.max[2].toFixed(2)],
   };
 }
-report.arches = arches.map(({ a, b, span, apex, jamb }) => ({
+report.arches = arches.map(({ a, b, span, apex, spring, jamb }) => ({
   from: a,
   to: b,
   span: +span.toFixed(2),
   apexNap: +(apex + WATER_NAP).toFixed(2),
-  jambAboveWater: +jamb.toFixed(2),
+  springAboveWater: +spring.toFixed(2),
+  printJambAboveWater: +jamb.toFixed(2),
 }));
 const glbFile = path.join(outDir, "sint-servaasbrug.glb");
 await writeFile(glbFile, toGlb(parts, "NederPrint generate-sint-servaasbrug.mjs (manifold-3d)"));
@@ -684,7 +714,7 @@ await writeFile(
         "L0002.8eae57195e744331a14b475f8abbdb53",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek tussen de vierde en de vijfde pijler op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs de brug naar Wyck (RD-richting 2,85 graden vanaf het oosten) en +Y stroomafwaarts naar het noorden. Vijf nodes: road:rijbaan, road:rijbaan-staal, road:fietspad en road:voetpad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen open verharding op het stenen deel, gesloten verharding op het stalen deel; plus_fysiekvoorkomen sierbestrating op de rijbaan over het stenen deel, asfalt op rijbaan en voetpaden van het stalen deel, niet op de fietspaden, waar de BGT geen materiaal geeft), zodat de kleurregels van een thema erop werken (over het stenen deel de rijbaan in het midden met aan beide kanten een fietspad tot de borstwering, over het stalen deel de rijbaan in het midden en voetpaden binnen en buiten de hoofdliggers); en building: de rest van de brug, met het stenen deel van de kade aan de stadskant (x = -93,4) tot de grote pijler (x = 35,5 tot 40,1) met zeven bogen op zes pijlers met een spitse ijsbreker stroomopwaarts en een ronde stroomafwaarts, een borstwering van 0,85 m en een wegdek dat van NAP +50,4 m naar +52,3 m bij de vierde pijler oploopt; de grote pijler met het brugwachtershuis (NAP +57,3 m) en het beeld van Sint-Servaas aan de zuidkant; het stalen beweegbare deel van 50 m met twee hoofdliggers tot de kade in Wyck (x = 93,8). De bogen hebben een spitse top van 50 graden 1,05 m onder het wegdek in plaats van de rondbogen, zodat ze op 1:1000 zonder steun printen; de export vult onder het stalen deel een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Vervangt het brugwachtershuis (BAG-pand). Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek tussen de vierde en de vijfde pijler op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs de brug naar Wyck (RD-richting 2,85 graden vanaf het oosten) en +Y stroomafwaarts naar het noorden. Vijf nodes: road:rijbaan, road:rijbaan-staal, road:fietspad en road:voetpad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad; bgt_fysiekvoorkomen open verharding op het stenen deel, gesloten verharding op het stalen deel; plus_fysiekvoorkomen sierbestrating op de rijbaan over het stenen deel, asfalt op rijbaan en voetpaden van het stalen deel, niet op de fietspaden, waar de BGT geen materiaal geeft), zodat de kleurregels van een thema erop werken (over het stenen deel de rijbaan in het midden met aan beide kanten een fietspad tot de borstwering, over het stalen deel de rijbaan in het midden en voetpaden binnen en buiten de hoofdliggers); en building: de rest van de brug, met het stenen deel van de kade aan de stadskant (x = -93,4) tot de grote pijler (x = 35,5 tot 40,1) met zeven bogen op zes pijlers met een spitse ijsbreker stroomopwaarts en een ronde stroomafwaarts, een borstwering van 0,85 m en een wegdek dat van NAP +50,4 m naar +52,3 m bij de vierde pijler oploopt; de grote pijler met het brugwachtershuis (NAP +57,3 m) en het beeld van Sint-Servaas aan de zuidkant; het stalen beweegbare deel van 50 m met twee hoofdliggers tot de kade in Wyck (x = 93,8). De bogen zijn rondbogen met de kruin 1,05 m onder het wegdek; de vlakke kruin print op 1:1000 niet zonder steun, dus de export vult eronder op (met ondersteuning v2.0 schoren met een spitse opening) en onder het stalen deel een wig met een smal scherm tot de onderplaat. De STL heeft als printvorm spitsbogen van 50 graden onder dezelfde kruin en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Vervangt het brugwachtershuis (BAG-pand). Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),
