@@ -1,0 +1,68 @@
+{
+  "name": "UNStudio Tower",
+  "file": "unstudio-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119714,
+    483360
+  ],
+  "xAxis": [
+    0.998440764181981,
+    0.0558215049931638
+  ],
+  "groundHeight": 42.369837,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0.6013439035348669,
+      -25.072662114535852
+    ],
+    [
+      -26.517674918663147,
+      -8.533048511997553
+    ],
+    [
+      9.494706748271271,
+      26.51132859296818
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012118868"
+  ],
+  "description": "Volledige UNStudio Tower met doorgaand recht hoofdvolume, lagere noordschouder, hoge schuine dakrand, gemeten installatiekoppen, witte Moire-gevelbanden met gearticuleerde glasstroken, verspringende meerlaagse blinde atriumvoids en gerenoveerde massieve glaslobby; naburige Mahlergebouwen blijven behouden.",
+  "realWorld": {
+    "groundNapM": -0.6,
+    "axisDegrees": 3.2,
+    "mainRoofNapM": 81.229,
+    "northShoulderNapM": 62.407,
+    "crownNapM": 82.577,
+    "roofMachinesNapM": 84.568,
+    "westMachineNapM": 84.036,
+    "eastCrownNapM": 83.503,
+    "estimates": [
+      "Verticale zuid/westglasvouwen circa1.2-1.3m diep uit fotos, afgeronde detailovergangen gefacetteerd",
+      "Horizontalelaagsteek3.75m, bandhoogte/welving en.35m blinde glasnissen uit fotos; minimale witte bandcirca1.0m",
+      "Zuid- en westvoids: niveau/positie/breedte circa1-2m onzeker, blind tot3.0m diep (circa1.8m achter de gevouwen gevel); interne atria massief voorprint",
+      "Bandnissen eindigen .95m voor de hoeken; iedere ingreep houdt het gebouw gesloten met genus0",
+      "Dubbelhoge gerenoveerde glasplint.55m blind; entree-interieur niet uitgehold",
+      "Gemeten oostdakrand1.1m breed samengevoegd voorprint; kleine middeninstallaties onder.9m en antennes weggelaten",
+      "Geen taps gestapelde hoogtelagen of uitgeholde onderste verdieping; afgeronde detailhoeken vereenvoudigd tot doorgaande gevelvlakken"
+    ]
+  },
+  "sources": [
+    "https://www.unstudio.com/projects/further/unstudio-tower/ (architect,Moire,banden envoids)",
+    "https://www.unstudio.com/projects/further/unstudio-tower-lobby-remodeling/ (architect,lobbyrenovatie2016-2018)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012118868 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:UNStudio_Amsterdam_1.JPG (DennisM CC0)",
+    "https://commons.wikimedia.org/wiki/File:UNStudio_Amsterdam_2.JPG (DennisM CC0)",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Mahler_4_UN_Studio_(29669086163).jpg (Fred Romero CC BY2.0)"
+  ],
+  "printFiles": [
+    "unstudio-tower-1-1000.stl"
+  ]
+}
