@@ -219,8 +219,10 @@ const archBottom = (x) => Math.max(archTop(x) - archDepth(x), deckBottom(x) + 0.
 // Kabels: acht ankers op de boog, 18 m uit elkaar en symmetrisch rond het
 // midden, elk met twee kabels naar het dek, 18 m links en rechts ervan; de
 // ankers in het dek liggen recht onder die op de boog plus twee bij de voeten
-// (foto's). Op 1:1000 zijn de kabels niet te printen: tussen dek en boog staat
-// een scherm van 0,94 m dik met de kabels als banden van 0,9 m. De driehoeken
+// (foto's). Op 1:1000 zijn de kabels te dun: in het model zijn het banden van
+// 0,9 m breed en 0,94 m dik tussen dek en boog, met alle velden ertussen open.
+// In de STL, die zonder export wordt geprint, staat tussen dek en boog een
+// scherm van 0,94 m dik met de kabels als banden van 0,9 m: de driehoeken
 // onder de kruisingen en de ruiten onder de ankers op de boog zijn doorgaande
 // openingen waarvan de top op 52 graden is afgesneden (de kabels zelf lopen
 // vlakker), de driehoeken onder de boog met een vlakke bovenkant blinde
@@ -397,7 +399,27 @@ const nicheCuts = niches.flatMap((pg) => [
   profileY(pg, SCREEN.half - SCREEN.niche, SCREEN.half + 0.5),
   profileY(pg, -SCREEN.half - 0.5, -SCREEN.half + SCREEN.niche),
 ]);
-screen = screen.subtract(union([...holes, ...nicheCuts]));
+const printScreen = screen.subtract(union([...holes, ...nicheCuts]));
+// Model: alleen de kabels als banden van 0,9 m tussen dek en boog; alle
+// velden ertussen (ook de driehoeken onder de boog) zijn open tot de
+// onderkant van de boog en het looppad. Wat daarvan zonder steun niet print,
+// vult de export op. De banden lopen 0,5 m door in dek en boog en worden op
+// het venster van het scherm afgesneden.
+const cableBands = cables.map(({ a, d }) => {
+  const len = Math.hypot(a[0] - d[0], a[1] - d[1]);
+  const ux = (a[0] - d[0]) / len;
+  const uz = (a[1] - d[1]) / len;
+  const nx = -uz * (SCREEN.band / 2);
+  const nz = ux * (SCREEN.band / 2);
+  const p0 = [d[0] - ux * 0.5, d[1] - uz * 0.5];
+  const p1 = [a[0] + ux * 0.5, a[1] + uz * 0.5];
+  return profileY(
+    ccw([[p0[0] + nx, p0[1] + nz], [p1[0] + nx, p1[1] + nz], [p1[0] - nx, p1[1] - nz], [p0[0] - nx, p0[1] - nz]]),
+    -SCREEN.half,
+    SCREEN.half,
+  );
+});
+screen = screen.intersect(union(cableBands));
 
 // ---------- kolommen, liften ----------
 const columns = PIERS.map((x) => {
@@ -553,7 +575,8 @@ const curlFoot = loftPath(
   })),
 );
 const printFoot = union([deckFoot, curlFoot]);
-const printModel = union([bridge, printFoot]);
+const printBridge = union([deck, arch, printScreen, ...columns, ...lifts, westStair, eastStair, curl, ...curlColumns]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- voetpad, fietspad en trappen als eigen onderdelen ----------
 // De bovenste 0,5 m van dek, trappen en krul is per BGT-functie een eigen node
@@ -1034,7 +1057,7 @@ await writeFile(
         "G0935.5cfed32632db44ee8114235738a8d553",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek midden onder de top van de boog op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs de brug naar Plein 1992 in Céramique (RD-richting 8,58 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Vier nodes: road:voetpad, road:fietspad en road:voetpad-op-trap, de bovenste 0,5 m van dek, trappen en krul met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie voetpad, fietspad of voetpad op trap; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt of beton element), zodat de kleurregels van een thema erop werken (het fietspad is de zuidelijke helft van het dek tussen de voeten van de boog, het voetpad de rest van het dek en het rechte deel van de krul, voetpad op trap de luie trappen en de boog van de krul); en building: de rest van de brug, met het dek van 6,6 m breed met een romp van 1,8 m, waarvan het looppad van NAP +54,7 m boven de Maasboulevard naar +56,4 m in het midden en +55,2 m bij Plein 1992 loopt; de stalen boog in het hart van het dek met de top op NAP +72,0 m, die het dek 82,7 m uit het midden raakt; tussen dek en boog een scherm van 0,94 m met de gekruiste kabels als banden en spitse openingen en blinde nissen ertussen; op elke oever twee ronde kolommen met een uitlopende kop onder de voet van de boog en een glazen lift op de as tot NAP +61,2 m; de luie trappen naar het Stadspark (x = -139,4, NAP +48,25 m; het AHN geeft +47,1 m, maar PDOK legt daar het BGT-dek als vlakke weg op +48,0 m) en Plein 1992 (x = 121,3, NAP +50,0 m) met wangen, dicht tot de onderkant; aan de stadskant de krul van 2,5 tot 3 m breed die met een boog van 152 graden naar de stoep van de Maasboulevard afdaalt (NAP +48,2 m), op twee kolommen. De kabels, leuningen en lantaarns zijn als zodanig weggelaten; de export vult onder het dek en de krul een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd, met het PDOK-water (89,9 m ellipsoïdisch) als terugval. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek midden onder de top van de boog op de waterspiegel van de Maas (z = 0, NAP +44,0 m) in de oorsprong, +X langs de brug naar Plein 1992 in Céramique (RD-richting 8,58 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Vier nodes: road:voetpad, road:fietspad en road:voetpad-op-trap, de bovenste 0,5 m van dek, trappen en krul met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie voetpad, fietspad of voetpad op trap; bgt_fysiekvoorkomen gesloten of open verharding; plus_fysiekvoorkomen asfalt of beton element), zodat de kleurregels van een thema erop werken (het fietspad is de zuidelijke helft van het dek tussen de voeten van de boog, het voetpad de rest van het dek en het rechte deel van de krul, voetpad op trap de luie trappen en de boog van de krul); en building: de rest van de brug, met het dek van 6,6 m breed met een romp van 1,8 m, waarvan het looppad van NAP +54,7 m boven de Maasboulevard naar +56,4 m in het midden en +55,2 m bij Plein 1992 loopt; de stalen boog in het hart van het dek met de top op NAP +72,0 m, die het dek 82,7 m uit het midden raakt; tussen dek en boog de gekruiste kabels als banden van 0,9 m met alle velden ertussen open; op elke oever twee ronde kolommen met een uitlopende kop onder de voet van de boog en een glazen lift op de as tot NAP +61,2 m; de luie trappen naar het Stadspark (x = -139,4, NAP +48,25 m; het AHN geeft +47,1 m, maar PDOK legt daar het BGT-dek als vlakke weg op +48,0 m) en Plein 1992 (x = 121,3, NAP +50,0 m) met wangen, dicht tot de onderkant; aan de stadskant de krul van 2,5 tot 3 m breed die met een boog van 152 graden naar de stoep van de Maasboulevard afdaalt (NAP +48,2 m), op twee kolommen. Leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderkant van de boog en de vlakke kanten van de kabelbanden boven de open velden, het dek en de krul) vult de export op, onder het dek en de krul met een wig met een smal scherm tot de onderplaat. De STL heeft tussen dek en boog een scherm met spitse openingen en blinde nissen in plaats van de open velden, en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd, met het PDOK-water (89,9 m ellipsoïdisch) als terugval. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_STAIR.x1 - WEST_STAIR.x0).toFixed(1),

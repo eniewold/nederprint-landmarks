@@ -178,8 +178,8 @@ const cableY = (x) =>
   COLUMN.top[1] *
   Math.max(0, Math.min(1, (x - PYLON.top[0]) / (COLUMN.top[0] - PYLON.top[0]))) ** CABLE.lateralPower;
 // Kabelvlak: kabel en hangers als één plaat van 1 m van de dekrand naar de
-// kabel, met spitse openingen (zijden van 55 graden) tussen de hangers en een
-// dichte strook van 1 m boven het dek (de leuning). 19 velden van 5,8 m tussen
+// kabel, met openingen tussen de hangers (zie onder) en een dichte strook van
+// 1 m boven het dek (de leuning). 19 velden van 5,8 m tussen
 // pyloon en kolommen (foto's), hangers 0,9 m.
 const SHEET = { width: 1.0, rail: 1.0, panels: 19, hanger: 0.9, pointed: (55 * Math.PI) / 180 };
 // Tuien: west van de pyloontop naar ankers (BGT) op x = -74,45, y = ±4,7;
@@ -345,15 +345,58 @@ function sheetPlate(side, grow = 0) {
     }),
   );
 }
-function sheet(side) {
+const pointedPts = ({ a: xa, b: xb, floor, shoulder, apex }) => [[xa, floor], [xb, floor], [xb, shoulder], [(xa + xb) / 2, apex], [xa, shoulder]];
+// Open veld tussen twee hangers: van de leuningstrook tot de onderkant van de
+// kabel (0,9 m onder de bovenrand van de plaat), of null als de kabel daar
+// overal op de leuning ligt.
+const CABLE_DEPTH = 0.9;
+function fullOpening(a, b) {
+  let floor = Infinity;
+  for (let k = 0; k <= 200; k++) floor = Math.min(floor, deckZ(a + ((b - a) * k) / 200) + SHEET.rail);
+  floor = Math.max(floor, Math.max(deckZ(a), deckZ(b)) + SHEET.rail - 0.05);
+  const xs = [a, ...range(Math.ceil(a * 2) / 2, b, 0.5).filter((x) => x > a + 1e-3 && x < b - 1e-3), b];
+  const h = (x) => cableZ(x) - CABLE_DEPTH - floor;
+  const cross = (p, q) => p + ((q - p) * h(p)) / (h(p) - h(q));
+  const topLine = [];
+  for (let k = 0; k < xs.length; k++) {
+    if (h(xs[k]) > 0) {
+      if (k > 0 && h(xs[k - 1]) <= 0) topLine.push([cross(xs[k - 1], xs[k]), floor]);
+      topLine.push([xs[k], cableZ(xs[k]) - CABLE_DEPTH]);
+    } else if (k > 0 && h(xs[k - 1]) > 0) topLine.push([cross(xs[k - 1], xs[k]), floor]);
+  }
+  if (topLine.length < 2) return null;
+  return [[topLine[0][0], floor], [topLine[topLine.length - 1][0], floor], ...[...topLine].reverse().filter(([, z]) => z > floor + 1e-3)];
+}
+// In het model zijn de vier velden naast de pyloon, waar de kabel steiler dan
+// 22 graden loopt, open tot de onderkant van de kabel; de onderkant van de
+// kabel vult de export op met een smalle band. In de velden verderop vulde de
+// export een open veld grotendeels dicht, soms met een wand van het dek tot de
+// onderplaat; die houden de spitse opening (zijden van 55 graden, 0,9 m onder
+// de kabel) of zijn dicht waar de kabel minder dan 2,7 m boven de leuning
+// hangt. In de STL, die zonder export wordt geprint, hebben alle velden de
+// spitse opening of zijn ze dicht.
+const POINTED_PANELS = new Set([4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]);
+const fullHoles = [];
+for (let i = 0; i < SHEET.panels; i++) {
+  const a = hangerX[i] + SHEET.hanger / 2;
+  const b = hangerX[i + 1] - SHEET.hanger / 2;
+  if (POINTED_PANELS.has(i)) {
+    const o = openings.find((o) => Math.abs(o.a - a) < 1e-6);
+    if (o) fullHoles.push(pointedPts(o));
+  } else {
+    const pts = fullOpening(a, b);
+    if (pts) fullHoles.push(pts);
+  }
+}
+function sheet(side, holeShapes) {
   const plate = sheetPlate(side);
   const [y0, y1] = side > 0 ? [0, 12] : [-12, 0];
-  const holes = openings.map(({ a: xa, b: xb, floor, shoulder, apex }) =>
-    profileY([[xa, floor], [xb, floor], [xb, shoulder], [(xa + xb) / 2, apex], [xa, shoulder]], y0, y1),
-  );
+  const holes = holeShapes.map((pts) => profileY(pts, y0, y1));
   return holes.length ? plate.subtract(union(holes)) : plate;
 }
-const sheets = union([sheet(1), sheet(-1)]);
+const sheets = union([sheet(1, fullHoles), sheet(-1, fullHoles)]);
+const printHoles = openings.map(pointedPts);
+const printSheets = union([sheet(1, printHoles), sheet(-1, printHoles)]);
 
 // ---------- tuien, ankers en pijlers ----------
 const stayRods = (grow = 0) =>
@@ -382,6 +425,11 @@ const piers = union(
 // Alles wat onder de gemeenschappelijke onderkant uitsteekt (de staafeinden)
 // wordt daar afgesneden.
 const bridge = union([deck, roofDeck, abutment, ramp, pylon, columns, sheets, stays, anchors, piers]).trimByPlane(
+  [0, 0, 1],
+  BASE,
+);
+// Printversie (alleen in de STL): kabelvlakken met spitse openingen.
+const printBridge = union([deck, roofDeck, abutment, ramp, pylon, columns, printSheets, stays, anchors, piers]).trimByPlane(
   [0, 0, 1],
   BASE,
 );
@@ -581,7 +629,7 @@ const printFoot = loftX(
 );
 // De STL bevat de brug als geheel, zoals vóór de opsplitsing.
 const model = union([bridge, school, roofGarden]);
-const printModel = union([model, printFoot]);
+const printModel = union([union([printBridge, school, roofGarden]), printFoot]);
 
 // ---------- controles ----------
 function overhangs(solid) {
@@ -822,7 +870,7 @@ await writeFile(
         "G0344.a34753b3ec01462fbb337933f32ba422",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek midden tussen de voeten van de westpyloon en de oostkolommen op het maaiveld van de oostoever (z = 0, NAP +1,83 m) in de oorsprong, +X langs de brug naar het oosten (Oog in Al, RD-richting 6,49 graden vanaf het oosten) en +Y naar het noordnoordwesten. Zes nodes. Node road:fietspad, road:voetpad en road:voetpad op trap: de bovenste 0,5 m van het dek, de plaat op de school en de oprit waar de actuele BGT-wegdelen met relatieve hoogteligging 1 liggen, met hun attributen in extras.attributes (bgt_functie fietspad, voetpad of voetpad op trap, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken: het fietspad op de noordhelft van het dek, over de school en door de draai naar het noorden over de oprit, het voetpad langs de zuidrand en langs de buitenkant van de draai en de oprit, en het trapje aan de zuidrand bij de draai. Node building:brug: de rest van het kunstwerk, het dek van 7,4 m breed van het landhoofd in Leidsche Rijn (x = -86,1, NAP +8,6 m) over het Amsterdam-Rijnkanaal (NAP +10,1 m in het midden) naar de school (x = 86,5), daar als plaat op de school tot de draai op x = 138 (NAP +6,5 m) en dan een kwartslag naar het noorden als oprit over de oostrand van de laagbouw en een bakstenen viaduct met een doorgang (blinde nis) tot het landhoofd op de grondwal (y = 42,7, NAP +5,9 m); de A-vormige westpyloon (voeten 10,9 m uit elkaar op x = -55, top NAP +36,8 m op x = -60), de twee oostkolommen (x = 55, top NAP +21,0 m), de twee hoofdkabels met hangers als platen met spitse openingen tussen dekrand en kabel (laagste punt NAP +12,8 m op x = 12), de tuien naar de ankers op de westoever en de pijlers op de oostoever, en die pijlers onder het dek; de dekranden buiten de wegdelen, de kabelvlakken, de pyloon, de kolommen en de tuien blijven constructie. Node building:school: de school (BAG 0344100000141216) met de strook onder het dek, de gymzaal (dak NAP +9,15 m met een veld zonnepanelen) en de laagbouw (NAP +6,4 en +5,9 m), met smalle verticale ramen als nissen. Node vegetation:daktuin: het groene dak van de laagbouw. De lus over de grondwal in het Victor Hugoplantsoen zit in het PDOK-terrein en is niet gedubbeld; leuningen, lantaarns en de letters OOG IN AL zijn weggelaten. De export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het BGT-dek midden tussen de voeten van de westpyloon en de oostkolommen op het maaiveld van de oostoever (z = 0, NAP +1,83 m) in de oorsprong, +X langs de brug naar het oosten (Oog in Al, RD-richting 6,49 graden vanaf het oosten) en +Y naar het noordnoordwesten. Zes nodes. Node road:fietspad, road:voetpad en road:voetpad op trap: de bovenste 0,5 m van het dek, de plaat op de school en de oprit waar de actuele BGT-wegdelen met relatieve hoogteligging 1 liggen, met hun attributen in extras.attributes (bgt_functie fietspad, voetpad of voetpad op trap, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken: het fietspad op de noordhelft van het dek, over de school en door de draai naar het noorden over de oprit, het voetpad langs de zuidrand en langs de buitenkant van de draai en de oprit, en het trapje aan de zuidrand bij de draai. Node building:brug: de rest van het kunstwerk, het dek van 7,4 m breed van het landhoofd in Leidsche Rijn (x = -86,1, NAP +8,6 m) over het Amsterdam-Rijnkanaal (NAP +10,1 m in het midden) naar de school (x = 86,5), daar als plaat op de school tot de draai op x = 138 (NAP +6,5 m) en dan een kwartslag naar het noorden als oprit over de oostrand van de laagbouw en een bakstenen viaduct met een doorgang (blinde nis) tot het landhoofd op de grondwal (y = 42,7, NAP +5,9 m); de A-vormige westpyloon (voeten 10,9 m uit elkaar op x = -55, top NAP +36,8 m op x = -60), de twee oostkolommen (x = 55, top NAP +21,0 m), de twee hoofdkabels met hangers als platen tussen dekrand en kabel (laagste punt NAP +12,8 m op x = 12), in de vier velden naast de pyloon open tot onder de kabel en verderop met spitse openingen, de tuien naar de ankers op de westoever en de pijlers op de oostoever, en die pijlers onder het dek; de dekranden buiten de wegdelen, de kabelvlakken, de pyloon, de kolommen en de tuien blijven constructie. Node building:school: de school (BAG 0344100000141216) met de strook onder het dek, de gymzaal (dak NAP +9,15 m met een veld zonnepanelen) en de laagbouw (NAP +6,4 en +5,9 m), met smalle verticale ramen als nissen. Node vegetation:daktuin: het groene dak van de laagbouw. De lus over de grondwal in het Victor Hugoplantsoen zit in het PDOK-terrein en is niet gedubbeld; leuningen, lantaarns en de letters OOG IN AL zijn weggelaten. Wat zonder steun niet print (de onderkant van de kabel boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in alle velden spitse openingen (of een dichte plaat) en dezelfde printvoet. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         mainSpanM: +(COLUMN.foot[0] - PYLON.foot[0]).toFixed(1),

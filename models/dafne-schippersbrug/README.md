@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `dafne-schippersbrug.glb` | Catalogusbron in meters: nodes `road:fietspad`, `road:voetpad` en `road:voetpad op trap` met de bovenste 0,5 m van het dek, de plaat op de school en de oprit, met de BGT-attributen in `extras.attributes`; node `building:brug` met de rest van het dek, de westpyloon, de oostkolommen, de kabelvlakken met hangers, de tuien, het landhoofd, de pijlers en de oprit over de school; node `building:school` met de school onder het dek; node `vegetation:daktuin` met het groene dak van de laagbouw |
-| `dafne-schippersbrug-1-1000.stl` | Brug en school in één stuk op 1:1000 met een printvoet onder de overspanning, met de onderkant (0,6 m onder het maaiveld van de oostoever) op het printbed (232 × 49 × 36 mm) |
+| `dafne-schippersbrug-1-1000.stl` | Brug en school in één stuk op 1:1000 met spitse openingen in de kabelvlakken en een printvoet onder de overspanning als printvormen, met de onderkant (0,6 m onder het maaiveld van de oostoever) op het printbed (232 × 49 × 36 mm) |
 | `dafne-schippersbrug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vervangen BAG-pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (133887,25, 455478,79), op de as
@@ -46,10 +46,13 @@ Onderdelen in het model (hoogtes in NAP):
   op x = 12 (2,7 m boven het dek, AHN) naar de kolomtoppen, in plattegrond van
   de as bij de pyloon naar 5,7 m naast de as bij de kolommen (AHN). Kabel en
   hangers zijn per kant één plaat van 1 m van de dekrand naar de kabel, met
-  een dichte strook van 1 m boven het dek en tien spitse openingen (zijden van
-  55 graden) tussen hangers van 0,9 m op 5,8 m (19 velden, foto's); de hoogste
-  opening naast de pyloon reikt tot +30,9 m. Waar de kabel minder dan 2,7 m
-  boven de leuning hangt, is de plaat dicht.
+  een dichte strook van 1 m boven het dek (de leuning) en hangers van 0,9 m op
+  5,8 m (19 velden, foto's). De vier velden naast de pyloon, waar de kabel
+  steiler dan 22 graden loopt, zijn open van de leuning tot de onderkant van
+  de kabel (0,9 m onder de bovenrand). Verderop hebben zes velden een spitse
+  opening (zijden van 55 graden) tot 0,9 m onder de kabel, en waar de kabel
+  minder dan 2,7 m boven de leuning hangt, is de plaat dicht; zie de
+  printbaarheid.
 - Het landhoofd in Leidsche Rijn met de vleugels (BGT, 13,6 m breed).
 - Op de school: het dek als plaat tot x = 138, dan een kwartslag naar het
   noorden met de buitenbocht van het BAG-pand, de oprit van 6,9 m (BGT) over
@@ -91,7 +94,7 @@ ze hellen, gaat hun hele schaduw binnen de strook eruit, zodat de grens
 tussen wegdeel en constructie verticaal is. De dekranden buiten de
 wegdelen (0,4 m aan elke kant) blijven constructie. Wegdeel = strook ∩ brug,
 constructie = brug − strook; samen precies het volume van de brug als geheel
-(4.872,4 m³, constructie 4.091 m³, geen overlap). De oprit is daarvoor
+(4.803,6 m³, constructie 4.022 m³, geen overlap). De oprit is daarvoor
 opgebouwd uit twee overlappende stukken in plaats van drie die precies tegen
 elkaar lagen (die hielden op de knikken een inwendige naad); de vorm is
 gelijk. Langs de rand van het kabelvlak, waar het schuin over het dek hangt,
@@ -116,20 +119,26 @@ gymzaal 100 % (mediaan +0,16 m door de zonnepanelen), op de laagbouw 92 tot
 98 % en op de oprit 88 %. De top van de pyloon komt in het AHN tot +37,2 m.
 
 Printbaarheid op 1:1000: het dek hangt vrij over 170 m. De pyloonpoten hellen
-9 graden, de kabelvlakken ten hoogste 14 graden, de tuien staan onder 55 tot
-67 graden en de openingen hebben een spitse top, dus boven het dek print
-alles zonder steun; hangers, poten, tuien en kolommen zijn minstens 0,9 mm.
-In de export gaat het model als gesloten solids door de
-overhangopvulling; omdat de wegdelen attributen hebben, worden alle
-onderdelen samen opgevuld en gaat de opvulling naar de constructie: onder
-het dek komt een wig met een smal scherm tot de onderplaat. Printcontrole op
-1:1000 (uitsnede van 260 m, 6,4 s): status NoError voor alle onderdelen;
-brug 11,3 cm³ bij verticale opvulling tegen 7,9 cm³ met de printbare
-opvulling (-30 %), fietspad 0,55 cm³, voetpad 0,23 cm³ en trapje 0,001 cm³
-zonder eigen opvulling (0 %), school 11,5 cm³ (0 %) en daktuin 0,17 cm³
-(0 %). De STL heeft
-dezelfde printvoet (wig van 50 graden en een scherm van 0,9 m, 3.439 m³) en
-alleen de bovenkanten van de nissen hangen nog over (23 m², 0,35 m diep).
+9 graden, de kabelvlakken ten hoogste 14 graden en de tuien staan onder 55 tot
+67 graden; hangers, poten, tuien en kolommen zijn minstens 0,9 mm. Wat zonder
+steun niet print, laat het model aan de export over: de onderkant van het dek
+en de onderkant van de kabel boven de vier open velden. Omdat de wegdelen
+attributen hebben, worden alle onderdelen samen opgevuld en gaat de
+opvulling naar de constructie. In de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 16,2 naar 19,1 cm³ (v1.0: 19,1 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 6,5 s; het vorige model met
+alleen spitse openingen kwam ook op 19,2 cm³. Onder het dek komt een wig met
+een smal scherm tot de onderplaat, onder de kabel in de open velden een
+smalle band. Met alle velden open tot de kabel vulde de export de velden
+verderop (kabel vlakker dan 22 graden) grotendeels dicht, onder het dek bij
+de oostkolommen zelfs met wanden tot de onderplaat (20,0 cm³, 115 s); daar
+blijven de spitse openingen en de dichte plaat. De STL op 1:1000, die zonder
+export wordt geprint, heeft printvormen: in de kabelvlakken tien spitse
+openingen (ook in de vier velden naast de pyloon) en onder de overspanning
+een printvoet (wig van 50 graden en een scherm van 0,9 m, 3.439 m³); alleen
+de bovenkanten van de nissen hangen nog over (23 m², 0,35 m diep). Ze is
+ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Dafne_Schippersbrug)
 (fiets- en voetbrug over het Amsterdam-Rijnkanaal, hangbrug met een

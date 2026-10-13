@@ -213,9 +213,13 @@ const PIER_CAP = 0.6;
 // 21 velden van 8,886 m (foto's: 20 hangers, geen hanger in het midden), met
 // per veld een verticaal en een diagonaal die naar het midden toe daalt; in het
 // middelste veld een V. Op 1:1000 is elke boog een band van 1,3 m dik met de
-// vakwerkdriehoeken als blinde nissen van 0,3 m aan beide kanten, en de ruimte
-// tussen dek en onderrand een scherm met de hangers als stijlen van 1,0 m en
-// spitse openingen (zijden van 55 graden).
+// vakwerkdriehoeken als doorgaande openingen (staven van 0,9 m; de echte zijn
+// dunner), en de hangers als stijlen van 1,0 m tussen dek en onderrand. In de
+// vier velden aan elke oplegging is de ruimte tussen de hangers open tot de
+// onderrand; de dertien middelste velden hebben een spitse opening (zijden
+// van 55 graden) tot onder de onderrand (zie onder). In de STL, die zonder
+// export wordt geprint, zijn de vakwerkdriehoeken blinde nissen van 0,3 m aan
+// beide kanten en hebben alle velden spitse openingen.
 const ARCH = { crown: 49.0, a: 0.00461, b: 1.07e-7, depth: 7.0, ribY: 7.0, rib: 1.3, niche: 0.3, member: 0.9 };
 const PANELS = 21;
 const PANEL = (2 * BEARING) / PANELS;
@@ -468,24 +472,68 @@ const archTris = [];
   }
 }
 const archNicheHoles = archTris.map((t) => insetTriangle(t, ARCH.member / 2, 0.35)).filter(Boolean);
-const ribs = [-1, 1].map((side) => {
-  const yc = side * ARCH.ribY;
-  const y0 = yc - ARCH.rib / 2;
-  const y1 = yc + ARCH.rib / 2;
-  const band = profileY(
-    [...ribXs.map((x) => [x, ribBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
-    y0,
-    y1,
-  );
-  const holes = openings.map(({ a, b, floor, shoulder, apex }) =>
-    profileY([[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]], y0 - 0.5, y1 + 0.5),
-  );
-  const niches = archNicheHoles.flatMap((t) => [
-    profileY(t, y1 - ARCH.niche, y1 + 0.5),
-    profileY(t, y0 - 0.5, y0 + ARCH.niche),
-  ]);
-  return band.subtract(union([...holes, ...niches]));
-});
+const pointedPts = ({ a, b, floor, shoulder, apex }) => [[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]];
+// Open veld tussen a en b: van het dek (0,05 m onder het wegdek) tot de
+// onderrand van de boog, of null als de onderrand daar overal onder het dek
+// ligt. Bij de opleggingen begint de opening waar de onderrand boven het dek
+// komt.
+function fullOpening(a, b) {
+  const floor = Math.min(top(a), top(b), top((a + b) / 2)) - 0.05;
+  const xs = [a, ...ribXs.filter((x) => x > a + 1e-3 && x < b - 1e-3), b];
+  const h = (x) => lower(x) - floor;
+  const cross = (p, q) => p + ((q - p) * h(p)) / (h(p) - h(q));
+  const topLine = [];
+  for (let k = 0; k < xs.length; k++) {
+    if (h(xs[k]) > 0) {
+      if (k > 0 && h(xs[k - 1]) <= 0) topLine.push([cross(xs[k - 1], xs[k]), floor]);
+      topLine.push([xs[k], lower(xs[k])]);
+    } else if (k > 0 && h(xs[k - 1]) > 0) topLine.push([cross(xs[k - 1], xs[k]), floor]);
+  }
+  if (topLine.length < 2) return null;
+  return [[topLine[0][0], floor], [topLine[topLine.length - 1][0], floor], ...[...topLine].reverse().filter(([, z]) => z > floor + 1e-3)];
+}
+// De onderrand print zonder steun niet; dat vult de export op. In de vier
+// velden aan elke oplegging (onderrand 11 tot 22 graden) laat ze de opening
+// open met een smalle band onder de onderrand (in de twee buitenste velden,
+// die in de STL dicht zijn, vult ze het grootste deel). In de dertien
+// middelste velden vulde ze een open veld grotendeels dicht; die houden de
+// spitse opening.
+const POINTED_PANELS = new Set([4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
+const fullHoles = [];
+{
+  const posts = [-BEARING, ...hangerX, BEARING];
+  for (let i = 0; i + 1 < posts.length; i++) {
+    const a = posts[i] + HANGER / 2;
+    const b = posts[i + 1] - HANGER / 2;
+    if (POINTED_PANELS.has(i)) {
+      const o = openings.find((o) => Math.abs(o.a - a) < 1e-6);
+      if (o) fullHoles.push(pointedPts(o));
+    } else {
+      const pts = fullOpening(a, b);
+      if (pts) fullHoles.push(pts);
+    }
+  }
+}
+const ribPair = (holeShapes, through) =>
+  [-1, 1].map((side) => {
+    const yc = side * ARCH.ribY;
+    const y0 = yc - ARCH.rib / 2;
+    const y1 = yc + ARCH.rib / 2;
+    const band = profileY(
+      [...ribXs.map((x) => [x, ribBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
+      y0,
+      y1,
+    );
+    const holes = holeShapes.map((pts) => profileY(pts, y0 - 0.5, y1 + 0.5));
+    const niches = archNicheHoles.flatMap((t) =>
+      through
+        ? [profileY(t, y0 - 0.5, y1 + 0.5)]
+        : [profileY(t, y1 - ARCH.niche, y1 + 0.5), profileY(t, y0 - 0.5, y0 + ARCH.niche)],
+    );
+    return band.subtract(union([...holes, ...niches]));
+  });
+const ribs = ribPair(fullHoles, true);
+const printRibs = ribPair(openings.map(pointedPts), false);
 
 const bridge = union([
   archDeck,
@@ -500,6 +548,20 @@ const bridge = union([
   landing,
   cabin,
   ...ribs,
+]).subtract(union([...joints, ...vNiches, ...cellarWindows]));
+const printBridge = union([
+  archDeck,
+  ...boxDecks,
+  ...pierDecks,
+  ...kerbs,
+  westAbutment,
+  ...piers,
+  cellarCore,
+  cellarSouth,
+  ...parapets,
+  landing,
+  cabin,
+  ...printRibs,
 ]).subtract(union([...joints, ...vNiches, ...cellarWindows]));
 
 // ---------- printvoet (alleen in de STL) ----------
@@ -539,7 +601,7 @@ const footStations = footXs.map((x) => {
   return { x, section };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant.
@@ -932,7 +994,7 @@ await writeFile(
         "L0002.1d85bd6a481d4a3580959cecb19f488c",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de Noord (z = 0, NAP +0,05 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het oosten (Alblasserdam, RD-richting 22,30 graden vanaf het oosten) en +Y naar het noordnoordwesten, stroomafwaarts. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek tussen de schampkanten en op de kelder tussen de borstweringen met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan weerszijden, op de boogbrug buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het westelijke landhoofd op de dijk van Hendrik-Ido-Ambacht (x = -157,7 tot -143,9); de aanbrug van 47,5 m en de rolbasculebrug van 43,4 m in gesloten stand als kokerdek tot de onderrand van de V-liggers, 6,5 m onder het wegdek, met het vakwerk als blinde nissen; de twee gemetselde rivierpijlers van 6,4 × 25 m met ronde koppen, voet, schacht en dekplaat; de boogbrug met trekband van pijlerhart tot pijlerhart (186,6 m) met een dek van 20,5 m breed en twee vakwerkbogen van 1,3 m dik, 7 m naast de as, met de top op NAP +49,0 m, vakwerk van 7 m hoog in de top dat bij de opleggingen dichtloopt, 21 velden met de vakwerkdriehoeken als blinde nissen, en de 20 hangers als scherm met spitse openingen tussen dek en onderrand; de betonnen basculekelder (x = 140 tot 160,9) met borstwering, vensters, bordes en de brugwachterspost op een kolom met het dak op NAP +21,2 m. Het wegdek ligt op NAP +13,8 tot +15,1 m met een schampkant langs de randen. Het stabiliteitsverband tussen de bogen, leuningen, lantaarns, slagbomen, trappen, het remmingwerk en de betonnen aanbrug op kolommen ten oosten van de kelder zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Vervangt het BAG-pand van de brugwachterspost. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de Noord (z = 0, NAP +0,05 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het oosten (Alblasserdam, RD-richting 22,30 graden vanaf het oosten) en +Y naar het noordnoordwesten, stroomafwaarts. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek tussen de schampkanten en op de kelder tussen de borstweringen met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan weerszijden, op de boogbrug buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het westelijke landhoofd op de dijk van Hendrik-Ido-Ambacht (x = -157,7 tot -143,9); de aanbrug van 47,5 m en de rolbasculebrug van 43,4 m in gesloten stand als kokerdek tot de onderrand van de V-liggers, 6,5 m onder het wegdek, met het vakwerk als blinde nissen; de twee gemetselde rivierpijlers van 6,4 × 25 m met ronde koppen, voet, schacht en dekplaat; de boogbrug met trekband van pijlerhart tot pijlerhart (186,6 m) met een dek van 20,5 m breed en twee vakwerkbogen van 1,3 m dik, 7 m naast de as, met de top op NAP +49,0 m, vakwerk van 7 m hoog in de top dat bij de opleggingen dichtloopt, 21 velden met de vakwerkdriehoeken als doorgaande openingen, en de 20 hangers als stijlen van 1,0 m tussen dek en onderrand, met de vier velden aan elke oplegging open tot de onderrand en spitse openingen in de dertien middelste velden; de betonnen basculekelder (x = 140 tot 160,9) met borstwering, vensters, bordes en de brugwachterspost op een kolom met het dak op NAP +21,2 m. Het wegdek ligt op NAP +13,8 tot +15,1 m met een schampkant langs de randen. Het stabiliteitsverband tussen de bogen, leuningen, lantaarns, slagbomen, trappen, het remmingwerk en de betonnen aanbrug op kolommen ten oosten van de kelder zijn weggelaten; wat zonder steun niet print (de vlakke kanten van de vakwerkdriehoeken, de onderrand boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft blinde nissen in plaats van de vakwerkdriehoeken in de bogen, in elk veld een spitse opening (de twee buitenste velden aan elke kant dicht) en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Vervangt het BAG-pand van de brugwachterspost. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

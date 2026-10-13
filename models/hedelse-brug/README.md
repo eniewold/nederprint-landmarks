@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `hedelse-brug.glb` | Catalogusbron in meters, drie nodes: `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van het dek en de landhoofden, met BGT-attributen), en `building:hedelse-brug` met de rest van het dek, de boog met trekband (twee boogribben met de hangers), de twee rivierpijlers, de zeven aanbruggen met hun pijlers en de twee landhoofden |
-| `hedelse-brug-1-1250.stl` | De brug in één stuk op 1:1250 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (368 × 21 × 27 mm) |
+| `hedelse-brug-1-1250.stl` | De brug in één stuk op 1:1250 met spitse openingen tussen de hangers en een printvoet onder het dek als printvormen, met de onderkant (0,8 m onder de waterspiegel) op het printbed (368 × 21 × 27 mm) |
 | `hedelse-brug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (146802,10, 416790,88) (WGS84
@@ -71,10 +71,12 @@ Onderdelen in het model (hoogtes in NAP):
   De trekband loopt 2,8 m diep langs het dek; de onderkant ligt op +11,4 m
   (Wikipedia).
 - De 11 hangers op velden van 10,4 m (de dwarsbalken van het windverband op
-  de luchtfoto): tussen dek en rib een scherm van 1,2 m met tien spitse
-  openingen (zijden van 55 graden) tot net onder de rib, de hoogste tot
-  +31,9 m; in de twee buitenste velden is de opening versmald tot ze onder de
-  lage rib past, in de velden bij de opleggingen is het scherm dicht.
+  de luchtfoto) als stijlen van 1,2 m. De twee velden aan elke oplegging,
+  waar de rib steiler dan 25 graden loopt, zijn open van het dek tot de
+  onderrand van de rib (in het veld bij de oplegging vanaf waar de rib boven
+  het dek komt). De acht middelste velden hebben een spitse opening (zijden
+  van 55 graden) tot net onder de rib, de hoogste tot +31,9 m; zie de
+  printbaarheid.
 - Twee rivierpijlers van 5,5 × 26 m met ronde koppen (BGT), tot onder het
   dek.
 - Twee aanbruggen aan de zuidkant en vijf aan de noordkant (liggerbruggen,
@@ -83,15 +85,17 @@ Onderdelen in het model (hoogtes in NAP):
   ronde koppen (BGT; de zuidelijke tussenpijler is geschat).
 - Twee landhoofden tot waar het AHN-maaiveld het wegdek bereikt.
 
-Wat er niet in zit: het windverband en de portalen tussen de boogribben (een
-vrije horizontale overspanning van 17 m, die op 1:1000 niet zonder steun
-print), de echte hangers van circa 0,4 m (vervangen door het scherm),
-leuningen, lantaarns en de bebording.
+Wat er niet in zit: het windverband tussen de boogribben (staven, te dun voor
+1:1000), de portalen tussen de ribben (een vrije overspanning van 17 m boven
+het wegdek; waar ze precies zitten is niet bekend, en onder een balk over
+de rijbaan hangt de export een volle wand tot op het wegdek, zoals gemeten
+bij de Alexander Ver Huellbrug), de echte hangers van circa 0,4 m (vervangen
+door stijlen van 1,2 m), leuningen, lantaarns en de bebording.
 
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke wegstrook zonder boog en zonder pijlers op dekhoogte. Het model heeft
-van alle vier kanten de boog met hangers (van oost en west het scherm met de
-spitse openingen, van noord en zuid de twee ribben achter elkaar), de
+van alle vier kanten de boog met hangers (van oost en west de hangers met de
+open velden en spitse openingen, van noord en zuid de twee ribben achter elkaar), de
 rivierpijlers met ronde koppen, de rij aanbrugpijlers en de teruggezette
 liggers onder de dekrand.
 
@@ -101,21 +105,25 @@ AHN per cel vaak het water ernaast; de omhullende per 8 m (hoogste DSM-cel op
 beide ribben) ligt in 13 van de 14 vakken binnen 1 m van de bovenrand van het
 model en in alle vakken binnen 2 m (mediaan 0,00 m).
 
-Printbaarheid op 1:1000: de echte hangers en het windverband zijn te dun of
-liggen horizontaal. De ribben zijn banden van 1,2 m die via het scherm met
-spitse openingen op het dek staan, zodat de onderkant van de rib nergens vrij
-hangt. Alleen de onderkant van het dek en van de dekranden langs de aanbruggen
-hangt vrij (7028 m²); het script controleert dat alleen die naar beneden
-wijzen, dat alles op dezelfde onderkant begint en dat de printversie geen
-overhang heeft. Met 460 m past de brug op 1:1000 niet in één uitsnede; in een
-uitsnede van 487 m (1:1217, 400 mm) gaat het model in de printcheck als
-gesloten solid met overhangopvulling door (alle drie de onderdelen status
-NoError, 2,7 s, samen 41,8 naar 32,1 cm³ ten opzichte van de rechte
-opvulling): onder het dek komt een wig met een smal scherm tot de onderplaat,
-de spitse openingen in het scherm blijven open. De opvulling gaat helemaal
-naar de constructie (39,8 naar 30,1 cm³); rijbaan (1,2 cm³) en fietspad
-(0,8 cm³) krijgen geen eigen opvulling. De STL op 1:1250 heeft dezelfde printvoet (wig van 50 graden en een
-scherm van 0,9 m).
+Printbaarheid op 1:1000: de echte hangers en het windverband zijn te dun. De
+ribben zijn banden van 1,2 m die via de hangerstijlen op het dek staan. Wat
+zonder steun niet print, laat het model aan de export over: de onderkant van
+het dek en van de dekranden langs de aanbruggen (7028 m²) en de onderrand
+van de ribben boven de vier open velden (76 m²); het script controleert dat
+verder niets naar beneden wijst en dat alles op dezelfde onderkant begint.
+Met 460 m past de brug op 1:1000 niet in één uitsnede. In de meettest van de
+webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 31,4 naar 57,2 cm³ (v1.0: 57,2 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 1,9 s; het vorige model met
+spitse openingen in alle velden kwam op 57,4 cm³. Onder het dek komt een wig
+met een smal scherm tot de onderplaat, onder de rib in de open velden een
+smalle band. Met alle velden open tot de rib vulde de export de acht
+middelste velden (waar de rib vlakker dan 25 graden loopt) grotendeels of
+helemaal dicht, met losse lagen in het midden (58,7 cm³); daar blijft de
+spitse opening, die open blijft. De STL op 1:1250, die zonder export wordt
+geprint, heeft printvormen: in elk veld een spitse opening (de twee
+buitenste versmald, bij de opleggingen dicht) en onder het dek een printvoet
+(wig van 50 graden en een scherm van 0,9 m); ze is ongewijzigd.
 
 Bronnen: [Wikipedia (nl)](https://nl.wikipedia.org/wiki/Hedelse_brug) (1937,
 boog- en liggerbrug, verwoest in 1940 en 1944 en herbouwd),

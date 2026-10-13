@@ -203,8 +203,10 @@ function upper(x) {
 }
 const archLower = (x) => upper(x) - ARCH.depth;
 // Hangers op de tien binnenste knopen. Op 1:1000 is elke hanger een stijl
-// van 1 m en de ruimte tussen hoofdligger en boog een scherm met spitse
-// openingen (zijden van 52 graden) tot onder de boog.
+// van 1 m (de echte hangers zijn dunner); de ruimte tussen twee hangers is
+// open tot de onderrand van de boog, behalve in vier velden (zie onder). In de
+// STL, die zonder export wordt geprint, is het een scherm met spitse openingen
+// (zijden van 52 graden) tot net onder de boog.
 const HANGER = 1.0;
 const POINTED = Math.tan((52 * Math.PI) / 180);
 
@@ -249,10 +251,16 @@ const abutments = [
 ].map(([a, b]) => bandY([a, (a + b) / 2, b], () => BASE, (x) => deckZ(x) - DECK.pathDrop - 0.05, -DECK_HALF, DECK_HALF));
 
 // ---------- bogen met hangers ----------
-// Per veld de grootste opening met een spitse top (zijden van 52 graden)
-// tussen de hangers, boven de hoofdligger en overal 0,05 m onder de onderrand
-// van de boog; de top mag uit het midden liggen, zodat ook de eindvelden
-// (waar de boog naar de pijler zakt) een opening krijgen.
+// In het model is een veld tussen twee hangers open van de hoofdligger tot de
+// onderrand van de boog; in de eindvelden, waar de boog naar de pijler zakt,
+// van de eerste hanger tot waar de onderrand van de boog de ligger raakt. De
+// onderrand van de boog print zonder steun niet; dat vult de export op. Waar
+// de boog onder 11 tot 17 graden loopt (het derde en vierde veld vanaf elke
+// pijler) vulde de export zo'n opening grotendeels dicht; die vier velden
+// houden daarom de spitse opening. De STL krijgt in elk veld de grootste
+// opening met een spitse top (zijden van 52 graden) tussen de hangers, boven
+// de hoofdligger en overal 0,05 m onder de onderrand van de boog; de top mag
+// uit het midden liggen, zodat ook de eindvelden een opening krijgen.
 const hangerX = nodeX.slice(1, -1);
 const panelBounds = [
   [-SPRING, hangerX[0] - HANGER / 2],
@@ -279,20 +287,45 @@ function bestOpening(a, b) {
   return best;
 }
 const openings = panelBounds.map(([a, b]) => bestOpening(a, b)).filter(Boolean);
+// Open velden: tussen de hangers van de ligger (0,05 m onder de bovenkant) tot
+// de onderrand van de boog, die binnen een veld recht loopt.
+function fullOpening(a, b) {
+  const floor = Math.min(girderTop(a), girderTop(b), girderTop((a + b) / 2)) - 0.05;
+  let [x0, x1] = [a, b];
+  // In de eindvelden begint de opening waar de onderrand van de boog de
+  // vloer snijdt.
+  const za = archLower(a) - floor;
+  const zb = archLower(b) - floor;
+  if (za <= 0 && zb <= 0) return null;
+  if (za < 0) x0 = a + ((b - a) * -za) / (zb - za);
+  if (zb < 0) x1 = a + ((b - a) * za) / (za - zb);
+  const pts = [[x0, floor], [x1, floor]];
+  if (archLower(x1) > floor + 1e-3) pts.push([x1, archLower(x1)]);
+  if (archLower(x0) > floor + 1e-3) pts.push([x0, archLower(x0)]);
+  return { a: x0, b: x1, floor, pts };
+}
+const pointedPts = ({ a, b, p, apex, hl, hr, floor }) => {
+  const pts = [[a, floor], [b, floor]];
+  if (hr > floor + 1e-3) pts.push([b, hr]);
+  pts.push([p, apex]);
+  if (hl > floor + 1e-3) pts.push([a, hl]);
+  return pts;
+};
+const POINTED_PANELS = new Set([2, 3, 7, 8]);
+const fullOpenings = panelBounds
+  .map(([a, b], i) => (POINTED_PANELS.has(i) ? { pts: pointedPts(bestOpening(a, b)) } : fullOpening(a, b)))
+  .filter(Boolean);
 const ribXs = stations(-SPRING, SPRING, 0.5, nodeX);
-const ribs = [-1, 1].map((side) => {
-  const y0 = side * DECK.girderY - DECK.girderHalf;
-  const y1 = side * DECK.girderY + DECK.girderHalf;
-  const band = bandY(ribXs, (x) => deckZ(x) + 0.1, upper, y0, y1);
-  const holes = openings.map(({ a, b, p, apex, hl, hr, floor }) => {
-    const pts = [[a, floor], [b, floor]];
-    if (hr > floor + 1e-3) pts.push([b, hr]);
-    pts.push([p, apex]);
-    if (hl > floor + 1e-3) pts.push([a, hl]);
-    return profileY(pts, Math.min(y0, y1) - 0.5, Math.max(y0, y1) + 0.5);
+const ribPair = (holeShapes) =>
+  [-1, 1].map((side) => {
+    const y0 = side * DECK.girderY - DECK.girderHalf;
+    const y1 = side * DECK.girderY + DECK.girderHalf;
+    const band = bandY(ribXs, (x) => deckZ(x) + 0.1, upper, y0, y1);
+    const holes = holeShapes.map((pts) => profileY(pts, Math.min(y0, y1) - 0.5, Math.max(y0, y1) + 0.5));
+    return band.subtract(union(holes));
   });
-  return band.subtract(union(holes));
-});
+const ribs = ribPair(fullOpenings.map(({ pts }) => pts));
+const printRibs = ribPair(openings.map(pointedPts));
 
 for (const [name, solid] of [
   ["dek", deckCore],
@@ -301,10 +334,12 @@ for (const [name, solid] of [
   ...piers.map((s, i) => [`pijler ${i}`, s]),
   ...abutments.map((s, i) => [`landhoofd ${i}`, s]),
   ...ribs.map((s, i) => [`boog ${i}`, s]),
+  ...printRibs.map((s, i) => [`printboog ${i}`, s]),
 ]) {
   if (solid.status() !== "NoError") throw new Error(`${name}: ${solid.status()}`);
 }
 const bridge = union([deckCore, ...paths, ...girders, ...piers, ...abutments, ...ribs]);
+const printBridge = union([deckCore, ...paths, ...girders, ...piers, ...abutments, ...printRibs]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de landhoofden en de pijlers vrij. Net als de
@@ -323,7 +358,7 @@ const footStations = stations(WEST_FACE, EAST_FACE, 1).map((x) => {
   };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- rijbaan en fietspaden als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is een eigen node met de attributen van het
@@ -418,8 +453,8 @@ const parts = [
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek en de consoles van de paden, in de
-// printversie geen.
+// model alleen de onderkant van het dek en de consoles van de paden en de
+// onderrand van de bogen boven de open velden; in de printversie geen.
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -446,16 +481,21 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const { area, found } = overhangs(bridge);
+  const free = { dek: 0, boog: 0 };
   for (const p of found) {
     const xMid = (p[0][0] + p[1][0] + p[2][0]) / 3;
     const yMid = (p[0][1] + p[1][1] + p[2][1]) / 3;
     const zMid = (p[0][2] + p[1][2] + p[2][2]) / 3;
+    const e1 = p[1].map((c, i) => c - p[0][i]);
+    const e2 = p[2].map((c, i) => c - p[0][i]);
+    const a = Math.hypot(e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]) / 2;
     const onDeck = zMid < deckZ(xMid) - 0.3 && zMid > deckBottom(xMid) - 0.05;
-    if (!onDeck) {
-      throw new Error(`overhang buiten het dek op x ${xMid.toFixed(2)}, y ${yMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
-    }
+    const underArch = Math.abs(Math.abs(yMid) - DECK.girderY) < DECK.girderHalf + 1e-3 && Math.abs(zMid - archLower(xMid)) < 0.05;
+    if (onDeck) free.dek += a;
+    else if (underArch) free.boog += a;
+    else throw new Error(`overhang buiten dek en bogen op x ${xMid.toFixed(2)}, y ${yMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
   }
-  console.log("vrij hangend (m2):", Math.round(area));
+  console.log("vrij hangend (m2):", Math.round(area), Object.fromEntries(Object.entries(free).map(([k, v]) => [k, +v.toFixed(1)])));
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", +print.area.toFixed(2));
   if (print.area > 0.5) throw new Error("printversie heeft overhang");
@@ -651,7 +691,7 @@ await writeFile(
         "P0025.0770faefc3904679a44bb777e6a8ce61",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +6,25 m volgens het AHN) in de oorsprong, +X langs de brug naar Doesburg (oostzuidoost, RD-richting -28,06 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg tussen de hoofdliggers of fietspad aan beide kanten daarbuiten tot de randbalk, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk. Het dek van 140,9 m tussen het westelijke landhoofd (Ellecom, x = -70,6) en het oostelijke (Doesburg, x = 70,2), 16,2 m breed, met het wegdek op NAP +18,4 tot +19,34 m, de twee hoofdliggers 4,35 m naast de as 0,9 m boven het wegdek en de fiets- en voetpaden daarbuiten op consoles; de twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde koppen en twee betonnen kolommen onder de hoofdliggers, 89,2 m hart op hart; de twee bogen van de hoofdoverspanning als kokers van 1 × 1,4 m op de hoofdliggers, met de top op NAP +32,2 m, en de tien hangers per boog als een scherm met spitse openingen tussen ligger en boog. Het windverband en de eindportalen tussen de bogen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +6,25 m volgens het AHN) in de oorsprong, +X langs de brug naar Doesburg (oostzuidoost, RD-richting -28,06 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg tussen de hoofdliggers of fietspad aan beide kanten daarbuiten tot de randbalk, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk. Het dek van 140,9 m tussen het westelijke landhoofd (Ellecom, x = -70,6) en het oostelijke (Doesburg, x = 70,2), 16,2 m breed, met het wegdek op NAP +18,4 tot +19,34 m, de twee hoofdliggers 4,35 m naast de as 0,9 m boven het wegdek en de fiets- en voetpaden daarbuiten op consoles; de twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde koppen en twee betonnen kolommen onder de hoofdliggers, 89,2 m hart op hart; de twee bogen van de hoofdoverspanning als kokers van 1 × 1,4 m op de hoofdliggers, met de top op NAP +32,2 m, en de tien hangers per boog als stijlen van 1 m met de velden ertussen open van de ligger tot onder de boog (in het derde en vierde veld vanaf elke pijler een spitse opening). Het windverband en de eindportalen tussen de bogen, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de boog boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

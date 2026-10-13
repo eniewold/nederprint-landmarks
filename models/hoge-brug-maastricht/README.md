@@ -4,8 +4,8 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `hoge-brug-maastricht.glb` | Catalogusbron in meters: node `building:hoge-brug` met het dek met romp, de boog met het kabelscherm, de dubbele kolommen, de twee liften, de luie trappen naar het Stadspark en Plein 1992 en de krul naar de Maasboulevard; de bovenste 0,5 m van dek, trappen en krul als nodes `road:voetpad`, `road:fietspad` en `road:voetpad-op-trap` met de BGT-attributen (zie hieronder) |
-| `hoge-brug-maastricht-1-1000.stl` | De brug in één stuk op 1:1000 met een printvoet onder het dek en de krul, met de onderkant (0,8 m onder de waterspiegel) op het printbed (261 × 33 × 29 mm) |
+| `hoge-brug-maastricht.glb` | Catalogusbron in meters: node `building:hoge-brug` met het dek met romp, de boog met de kabels, de dubbele kolommen, de twee liften, de luie trappen naar het Stadspark en Plein 1992 en de krul naar de Maasboulevard; de bovenste 0,5 m van dek, trappen en krul als nodes `road:voetpad`, `road:fietspad` en `road:voetpad-op-trap` met de BGT-attributen (zie hieronder) |
+| `hoge-brug-maastricht-1-1000.stl` | De brug in één stuk op 1:1000 met een kabelscherm met spitse openingen en blinde nissen en een printvoet onder het dek en de krul als printvormen, met de onderkant (0,8 m onder de waterspiegel) op het printbed (261 × 33 × 29 mm) |
 | `hoge-brug-maastricht.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, terugvalhoogte, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (176847,78, 317422,23), op de as
@@ -41,11 +41,10 @@ Onderdelen in het model (hoogtes in NAP):
   2,1 m bij de voeten.
 - De kabels (foto's): acht ankers op de boog, 18 m uit elkaar, elk met twee
   kabels naar het dek, 18 m links en rechts ervan, zodat ze elkaar halverwege
-  kruisen. Tussen dek en boog staat een scherm van 0,94 m dik met de kabels als
-  banden van 0,9 m: de driehoeken onder de kruisingen en de ruiten onder de
-  ankers zijn dertien doorgaande openingen (de hoogste tot +69,9 m), de
-  driehoeken onder de boog met een vlakke bovenkant negen blinde nissen van
-  0,3 m aan beide zijden.
+  kruisen. Op 1:1000 zijn de kabels banden van 0,9 m breed en 0,94 m dik
+  tussen dek en boog; alle velden ertussen (de driehoeken onder de
+  kruisingen, de ruiten onder de ankers en de driehoeken onder de boog) zijn
+  open tot de onderkant van de boog en het looppad.
 - Op elke oever twee ronde kolommen van 2,0 m naast elkaar (BGT, foto's) met
   een kop die onder 50 graden naar de onderkant van het dek uitloopt.
 - Twee glazen liften van 2,6 × 2,6 m op de as (luchtfoto), van het maaiveld
@@ -74,26 +73,28 @@ kleurregels van een thema op de brug werken zoals op de wegdelen ernaast:
 De grenzen tussen de wegdelen zijn de dwarsgrenzen van de BGT-vlakken
 (vereenvoudigd tot 5 cm). De BGT legt de grens tussen fietspad en voetpad 0,6
 tot 0,8 m ten zuiden van de as, op de flank van de boog; in het model ligt hij
-op de as, binnen het scherm en de boog, zodat er geen strook voetpad van 0,2 m
+op de as, binnen de kabelstrook en de boog, zodat er geen strook voetpad van 0,2 m
 tussen boog en fietspad overblijft. De laag is een snijstrook over dezelfde
 loftstations als dek, trappen en krul, van 0,5 m onder tot 1 m boven het
 looppad; de boog (zolang hij boven het dek uitkomt, met een rechte strook naar
-beneden waar zijn flank door de laag loopt), het hele scherm, de liften en de
+beneden waar zijn flank door de laag loopt), de hele strook van de kabels
+(het vroegere scherm), de liften en de
 wangen van de trappen blijven met 2 tot 5 cm marge constructie. Langs de
 randen van het dek gaat de strook 0,3 m breed tot 0,8 m onder het looppad: de
 rand van de romp is precies 0,5 m hoog en loopt daaronder schuin naar binnen,
 zodat een laag van 0,5 m de constructie aan de dekrand op een mes had laten
 eindigen; nu houdt die daar met een staande kant van 0,2 m op en krijgt het
 wegdeel de hoek van de romp. De volumes tellen op tot die van de brug als
-geheel (constructie 6253 m³, voetpad 374 m³, fietspad 236 m³, voetpad op trap
-188 m³, samen 7051 m³). Verticale stralen over het hele model vinden geen
-samenvallende bovenvlakken tussen de onderdelen; alleen de lucht onder de
+geheel (constructie 5756 m³, voetpad 374 m³, fietspad 236 m³, voetpad op trap
+188 m³, samen 6554 m³). Verticale stralen over het hele model vonden geen
+samenvallende bovenvlakken tussen de onderdelen (gemeten aan de versie met
+het scherm; de wegdelen zijn gelijk gebleven); alleen de lucht onder de
 flank van de boog waar die op het dek komt en twee punten in het scherm, die
-al in het model als één geheel zaten. De STL is ongewijzigd: het hele
-brugmodel in één stuk.
+al in het model als één geheel zaten. De STL bevat het hele brugmodel in één
+stuk, met het scherm.
 
-Wat er niet in zit: de kabels zelf (circa 0,1 m; ze zijn het scherm met
-openingen), de leuningen langs dek, trappen en krul, de fietsgoten langs de
+Wat er niet in zit: de kabels op hun echte dikte (circa 0,1 m; in het model
+banden van 0,9 m), de leuningen langs dek, trappen en krul, de fietsgoten langs de
 trappen, de lantaarns en de trapjes en bordessen rond de liften.
 
 Pasvorm op het AHN: het looppad volgt het DSM binnen 0,1 m (mediaan naast de
@@ -102,23 +103,30 @@ as, om de 2 m), de bovenkant van de boog ligt op x = -60, -40, 40 en 60 binnen
 en 63,4 tot 63,9 m), de liften op de hoogste DSM-cel. De oosttrap volgt het DSM binnen 0,2 m; de westtrap, die op +48,25 m
 eindigt, ligt naar de voet toe tot 1,1 m boven het DSM.
 
-Printbaarheid op 1:1000: de kabels zijn op 1:1000 niet te printen. Het scherm
-draagt de onderkant van de boog over de hele lengte, en de openingen hebben
-een top van 52 graden (de kabels zelf lopen onder 19 tot 39 graden, dus de
-openingen zijn smaller dan de velden tussen de kabels); de blinde nissen
-hebben een vlakke bovenkant van 0,3 m diep. De boog, de kolommen (2,0 m), de
-wangen (0,9 m) en de liften zijn dik genoeg om te dragen. Alleen de onderkant
-van het dek en de krul en de nisbovenkanten hangen vrij (1677 m²); het script
-controleert dat alles op dezelfde onderkant begint en dat de printversie
-buiten de nissen geen overhang heeft (0,07 m²). In de printcontrole gaat het
-model met overhangopvulling door (uitsnede van 289 m op 1:1000, 10 seconden,
-status NoError voor alle onderdelen, samen 13,0 naar 10,7 cm³ tegen de
-verticale opvulling, -17 %; de constructie 12,2 naar 9,9 cm³, -18,6 %, de
-wegdelen voetpad, fietspad en voetpad op trap zonder eigen opvulling,
-`extraPct` 0,1, 0 en 0): onder het dek en de krul komt een wig met een smal scherm
-tot de onderplaat en de spitse openingen in het scherm blijven open. De STL
-heeft dezelfde printvoet (wig van 50 graden vanaf de rand van het dek en een
-scherm van 0,9 m). PDOK tekent het BGT-dek van de brug als een vlakke weg die
+Printbaarheid op 1:1000: de kabels zijn op hun echte dikte niet te printen;
+het zijn banden van 0,9 m. De boog, de kolommen (2,0 m), de wangen (0,9 m)
+en de liften zijn dik genoeg om te dragen. Wat zonder steun niet print, laat
+het model aan de export over: de onderkant van het dek en de krul, de
+onderkant van de boog boven de open velden en de onderkant van de
+kabelbanden (de kabels lopen onder 19 tot 39 graden; samen 1981 m²); het
+script controleert dat alles op dezelfde onderkant begint. In de meettest
+van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume
+met "Ondersteuning v2.0" van 6,55 naar 10,37 cm³ (v1.0: 10,37 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 18 s; het vorige model met
+het scherm kwam op 10,61 cm³. Onder het dek en de krul komt een wig met een
+smal scherm tot de onderplaat. De ruiten en de driehoeken onder de
+kruisingen blijven open met een smalle band onder de kabels; de driehoeken
+onder de boog (in het vorige model blinde nissen) en de kleine velden bij
+de voeten van de boog vult de export grotendeels op. De STL op 1:1000, die
+zonder export wordt geprint, heeft printvormen: tussen dek en boog een
+scherm van 0,94 m dik met de kabels als banden van 0,9 m, dertien doorgaande
+openingen met een top van 52 graden (de hoogste tot +69,9 m) voor de
+driehoeken onder de kruisingen en de ruiten onder de ankers, negen blinde
+nissen van 0,3 m aan beide zijden voor de driehoeken onder de boog met een
+vlakke bovenkant (alleen hun bovenkanten hangen vrij, 88 m²), en onder het
+dek en de krul een printvoet (wig van 50 graden vanaf de rand van het dek en
+een scherm van 0,9 m); ze is ongewijzigd. PDOK tekent het BGT-dek van de
+brug als een vlakke weg die
 van +48,0 m in het Stadspark recht over de Maas naar +49,4 m op de oostkade
 loopt (4 tot 5,4 m boven het water); die strook blijft onder de brug zichtbaar.
 De westtrap eindigt daarom op +48,25 m in plaats van op het AHN-maaiveld van

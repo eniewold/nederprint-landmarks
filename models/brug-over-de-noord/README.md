@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `brug-over-de-noord.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van het dek met BGT-attributen) en `building:brug-over-de-noord` met de rest: het westelijke landhoofd, de aanbrug, de twee rivierpijlers, de boogbrug met trekband (twee vakwerkbogen met hangers), de rolbasculebrug in gesloten stand, de basculekelder en de brugwachterspost |
-| `brug-over-de-noord-1-1000.stl` | De brug in één stuk (alle onderdelen samen) op 1:1000 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (318,6 × 27,9 × 49,8 mm) |
+| `brug-over-de-noord-1-1000.stl` | De brug in één stuk (alle onderdelen samen) op 1:1000 met printvormen (blinde nissen in de bogen, spitse openingen tussen de hangers) en een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (318,6 × 27,9 × 49,8 mm) |
 | `brug-over-de-noord.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, vervangen BAG-pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (104498,00, 430004,50) (WGS84
@@ -53,14 +53,14 @@ daar de boog, dus binnen de bogen is het dek rijbaan en ligt het fietspad
 buiten de bogen tot de schampkant. Aan de oostkant lopen de fietspaden over
 de kleine inhammen van de BGT-vlakken (0 tot 14 cm voor de kopse kant van de
 kelder) door tot het einde. De schampkanten, de borstweringen, de bogen met
-hun hangerscherm (ook onder de openingen) en de voegen van de klep blijven
+hun hangers (ook onder de openingen) en de voegen van de klep blijven
 constructie, met 2 cm vrij rond het wegdek; ook het landhoofd (op de dijk
 liggen BGT-wegdelen met hoogteligging 0) en het bordes aan de zuidkant van de
 kelder (buiten de borstwering) blijven constructie. De wegdelen zijn de strook
 van 0,5 m onder tot 1 m boven het wegdek binnen de brug, de constructie de
 brug min die strook, zodat er geen samenvallende bovenvlakken zijn; de
-volumes tellen op tot die van de brug als geheel (35 544 + 1 888 + 607 m³ =
-38 039 m³). De rijbaan bestaat uit drie stukken en elk fietspad uit drie,
+volumes tellen op tot die van de brug als geheel (34 067 + 1 888 + 607 m³ =
+36 562 m³). De rijbaan bestaat uit drie stukken en elk fietspad uit drie,
 onderbroken door de voegen van de klep.
 
 Onderdelen in het model (hoogtes in NAP):
@@ -87,13 +87,14 @@ Onderdelen in het model (hoogtes in NAP):
   de top dat bij de opleggingen dichtloopt, zodat boven- en onderrand bij de
   pijlers samenkomen (register, foto's). 21 velden van 8,886 m met per veld een
   verticaal en een diagonaal die naar het midden toe daalt, in het middelste
-  veld een V; de 41 vakwerkdriehoeken zijn blinde nissen van 0,3 m aan beide
-  kanten van elke boog.
-- De 20 hangers (foto's: geen hanger in het midden) als stijlen van 1,0 m in
-  een scherm tussen dek en onderrand, met 17 spitse openingen (zijden van
-  55 graden) tot net onder de onderrand, de middelste tot +42,0 m; in de twee
-  buitenste velden aan elke kant is het scherm dicht, omdat daar onder de lage
-  onderrand geen spitse opening past.
+  veld een V, met staven van 0,9 m; de 41 vakwerkdriehoeken zijn doorgaande
+  openingen.
+- De 20 hangers (foto's: geen hanger in het midden) als stijlen van 1,0 m
+  tussen dek en onderrand. In de vier velden aan elke oplegging is de ruimte
+  tussen de hangers open tot de onderrand (in het buitenste veld vanaf waar
+  de onderrand boven het dek komt); de dertien middelste velden hebben een
+  spitse opening (zijden van 55 graden) tot net onder de onderrand, de
+  middelste tot +42,0 m; zie de printbaarheid.
 - De betonnen basculekelder (BGT, 20,9 × 20,6 m) tot het wegdek, met een
   borstwering van 0,9 × 1,0 m langs de randen, aan de lange zijden een rij
   smalle vensters onder het dek en twee hoge vensters lager (blinde nissen van
@@ -104,10 +105,11 @@ Onderdelen in het model (hoogtes in NAP):
   kelder, met een kraag van 50 graden onder het kantoortje.
 
 Wat er niet in zit: het K-vormige stabiliteitsverband tussen de bovenranden
-van de bogen (een vrije horizontale overspanning van 14 m, die op 1:1000 niet
-zonder steun print), het open vakwerk van bogen en V-liggers als doorgaande
-openingen (de diagonalen staan flauwer dan 50 graden; ze zijn blinde nissen),
-de echte hangers van circa 0,6 m (vervangen door het scherm), leuningen,
+van de bogen (staven, te dun voor 1:1000), het open vakwerk van de V-liggers
+(blinde nissen in de zijwanden van het kokerdek: het model heeft onder het
+wegdek een dicht kokerdek in plaats van losse liggers, en hoeveel liggers er
+onder het dek liggen en waar, is niet bekend), de echte hangers van circa
+0,6 m (vervangen door stijlen van 1,0 m), leuningen,
 lantaarns, slagbomen, de trap van de brugwachterspost (smaller dan 0,9 m), het
 remmingwerk en de dukdalven bij de doorvaart (losse palen in het water, geen
 deel van de brug) en de betonnen aanbrug ten oosten van de kelder (geen deel
@@ -116,8 +118,8 @@ van het rijksmonument).
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 gedrapeerde wegstrook zonder boog en zonder pijlers, met de brugwachterspost
 als een kolom van het water tot +21 m. Het model heeft van alle vier kanten de
-vakwerkboog met hangers (van zuid en noord het scherm met de spitse openingen
-en de vakwerknissen, van oost en west de twee bogen achter elkaar), de
+vakwerkboog met hangers (van zuid en noord de hangers met de open velden en
+spitse openingen en het open vakwerk, van oost en west de twee bogen achter elkaar), de
 rivierpijlers met voet en dekplaat, de V-liggers onder aanbrug en
 basculebrug, de kelder met vensters en borstwering en de post op zijn kolom.
 
@@ -128,22 +130,30 @@ DSM-cel binnen 9 m van de as) ligt in 19 van de 22 vakken binnen 1 m van de
 bovenrand van de boog en in alle vakken binnen 2 m (mediaan +0,12 m). Het dak
 van de brugwachterspost ligt in het AHN op +21,2 m.
 
-Printbaarheid op 1:1000: de echte hangers, het open vakwerk en het
-windverband zijn te dun of liggen te flauw. De bogen zijn banden van 1,3 m die
-via het scherm met spitse openingen op het dek staan, zodat de onderrand
-nergens vrij hangt; het vakwerk zit er als nissen van 0,3 m in. Alleen de
-onderkant van het dek en van de kokerdekken hangt vrij (5577 m²) plus de
-bovenkant van de nissen (vakwerk, V-liggers, vensters); het script controleert
-dat alles op dezelfde onderkant begint en dat de printversie buiten de nissen
-geen overhang heeft. In de printcheck op 1:1000 (uitsnede van 332 m, 332 mm)
-gaan alle drie onderdelen als gesloten solid met overhangopvulling door
-(status NoError, 9,3 s): de constructie van 85,8 naar 58,4 cm³ ten opzichte
-van de rechte opvulling (-32 %), de rijbaan (1,8 cm³) en de fietspaden
-(0,6 cm³) zonder eigen opvulling (0 %); samen 88,3 naar 60,8 cm³, als voor de
-opsplitsing. Onder het dek komt een wig met een smal scherm tot de
-onderplaat, de spitse openingen blijven open. De STL op 1:1000 heeft dezelfde printvoet (wig van
-50 graden en een scherm van 0,9 m; onder de kokerdekken een trapezium tot de
-onderplaat).
+Printbaarheid op 1:1000: de echte hangers, staven en het windverband zijn te
+dun. De bogen zijn banden van 1,3 m die via de hangerstijlen op het dek
+staan. Wat zonder steun niet print, laat het model aan de export over: de
+onderkant van het dek en van de kokerdekken (5577 m²), de vlakke kanten van
+de vakwerkdriehoeken en de onderrand boven de open velden (samen met de
+andere ondervlakken op de bogen 936 m²) en de bovenkant van de nissen in de
+V-liggers en de vensters; het script controleert dat alles op dezelfde
+onderkant begint. In de meettest van de webshop (`scripts/overhang-lab`, het
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 36,6 naar
+59,9 cm³ (v1.0: 59,8 cm³), zonder ongedragen lagen waar een printlijn in
+past, in 19 s; het vorige model met nissen en spitse openingen kwam op
+60,6 cm³. Onder het dek komt een wig met een smal scherm tot de onderplaat.
+In de vakwerkdriehoeken vult de export een deel op als scherm midden in de
+boog, met aan de buitenkant alleen dunne stroken; in het derde en vierde veld
+aan elke oplegging blijft onder de onderrand een smalle band, de twee
+buitenste velden (in het vorige model dicht) vult ze grotendeels. Met alle
+velden open tot de onderrand vulde de export ook de dertien middelste velden
+grotendeels dicht (62,9 cm³, 145 s); daar blijft de spitse opening, die open
+blijft. De STL op 1:1000, die zonder export wordt geprint, heeft printvormen:
+de vakwerkdriehoeken van de bogen als blinde nissen van 0,3 m aan beide
+kanten, in de velden spitse openingen (in de twee buitenste velden aan elke
+kant is het scherm dicht) en een printvoet (wig van 50 graden en een scherm
+van 0,9 m; onder de kokerdekken een trapezium tot de onderplaat); ze is
+ongewijzigd.
 
 Bronnen: [Wikipedia (nl)](https://nl.wikipedia.org/wiki/Brug_over_de_Noord)
 (geopend 14 november 1939, sinds de Noordtunnel van 1992 de N915),
