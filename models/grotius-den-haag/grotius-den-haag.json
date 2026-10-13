@@ -1,0 +1,69 @@
+{
+  "name": "Grotius",
+  "file": "grotius-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82435,
+    455347
+  ],
+  "xAxis": [
+    0.7626683296956883,
+    -0.6467897795104596
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.11194433,
+  "groundSamplePoints": [
+    [
+      23.901655827269494,
+      -54.467521044332045
+    ],
+    [
+      23.168553512191316,
+      -28.865517978250928
+    ],
+    [
+      -26.316189874175894,
+      7.839524890343938
+    ],
+    [
+      40.189664373501024,
+      31.46094209564206
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001758098",
+    "NL.IMBAG.Pand.0518100001758100",
+    "NL.IMBAG.Pand.0518100001758099"
+  ],
+  "description": "Twee vrijstaande Grotiustorens op eigen BAG-contour, met doorlopende natuurstenen romp, geometrisch vensterraster, deels inpandige balkons met 45 graden onderzijde, asymmetrische kroon uit verticale woonbeuken op gemeten AHN5-dakhoogtes en dakopbouwen; de ondergrondse keldervoet en parkoverkluizing worden niet als bovengrondse plaat gemodelleerd.",
+  "realWorld": {
+    "groundNapM": 0.8,
+    "axisDegrees": -40.3,
+    "northCrownNapM": 121.452,
+    "northPlantNapM": 122.446,
+    "southCrownNapM": 100.509,
+    "southPlantNapM": 102.265,
+    "northCrownStartNapM": 88.356,
+    "southCrownStartNapM": 70.5,
+    "storeyM": 3.02,
+    "estimates": [
+      "kroonbeukgrenzen uit foto’s en 3D BAG tot circa 1–2 m vereenvoudigd; vlakke dakhoogtes wel gemeten",
+      "venstertraveeën circa 3,4 m, raamnis .35 m, balkonnis .9 m, balkons 1,35 m uitkragend met printkraag en vloerdikte minimaal .9 m",
+      "laagritme 3,02 m, eerste glaslaag, loggiaposities en entreenissen uit foto’s geschat",
+      "dunne glasbalustrades, railingen, roedes, planten, zonnepanelen en onderhoudsgiek niet vrijstaand opgenomen wegens doorsnede onder .9 m"
+    ]
+  },
+  "sources": [
+    "https://www.mvrdv.com/projects/392/grotius-towers (architect; Daria Scagliola/Emmely van Mierlo, foto’s alleen referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001758098 (TU Delft/3DGI, CC BY 4.0, AHN5 2023)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001758100 (TU Delft/3DGI, CC BY 4.0, AHN5 2023)",
+    "PDOK BAG-WFS en AHN DSM/DTM .5 m, CC0; gewone AHN-laag/luchtfoto toont bouwfase",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "grotius-den-haag-1-1000.stl",
+    "grotius-den-haag-grondplaat-1-1000.stl"
+  ]
+}
