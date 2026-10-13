@@ -1,0 +1,60 @@
+{
+  "name": "SnowWorld Terneuzen",
+  "file": "snowworld-terneuzen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    47782,
+    368554
+  ],
+  "xAxis": [
+    0.776046407066546,
+    0.6306758074312862
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 45.47486049774154,
+  "groundSamplePoints": [
+    [
+      28.912700324058672,
+      22.892264194945362
+    ],
+    [
+      128.83475170822405,
+      -1.6145439852362369
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000041102"
+  ],
+  "description": "Doorlopend hellend pistevolume op open staalspanten boven de retail, met lage L-sportvleugel, hellende rode box, glasnissen, toegangsluifel en koelinstallaties.",
+  "realWorld": {
+    "groundNapM": 1.1,
+    "mainRoofPlaneNap": [
+      0.18145652,
+      0.00013807,
+      8.14156996
+    ],
+    "mainRoofTopNapM": 41.235,
+    "sportRoofNapM": 6.921,
+    "retailRoofNapM": 7.521,
+    "restaurantRoofNapM": 10.442,
+    "estimated": [
+      "pistevloer 8.5m onder dak",
+      "staaltravee en verdikte spanten",
+      "vensters, panelen, luifel en kleine koelapparaten",
+      "interne printwand; overhangopvulling verkleint de hogere spantopeningen"
+    ]
+  },
+  "sources": [
+    "PDOK BAG 0715100000041102, Actueel_orthoHR, AHN4 DSM/DTM 0.5m bbox47582,368354,47982,368754",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0715100000041102",
+    "https://healthinvest-beherman.com/skidome-terneuzen/",
+    "https://www.infosteel.be/images/magazine/info-steel-21/238/index.html",
+    "https://www.reliance-scada.com/en/success-stories/other/reliance-scada-at-snowworld-terneuzen",
+    "https://www.snowworld.com/nl/terneuzen/skien-snowboarden"
+  ],
+  "printFiles": [
+    "snowworld-terneuzen-1-1000.stl"
+  ]
+}
