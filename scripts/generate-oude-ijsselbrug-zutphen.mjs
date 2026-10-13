@@ -183,6 +183,23 @@ function vBar(p0, p1, width) {
   ];
   return Manifold.hull([...section(p0), ...section(p1)]);
 }
+// Dezelfde staaf als rechthoekige balk van width × width met een vlakke
+// onderkant, zoals hij is; wat zonder steun niet print, vult de export op.
+function flatBar(p0, p1, width) {
+  const ds = p1[0] - p0[0];
+  const dt = p1[1] - p0[1];
+  const len = Math.hypot(ds, dt);
+  const ns = -dt / len;
+  const nt = ds / len;
+  const h = width / 2;
+  const section = (p) => [
+    [p[0] + ns * h, p[1] + nt * h, p[2]],
+    [p[0] - ns * h, p[1] - nt * h, p[2]],
+    [p[0] + ns * h, p[1] + nt * h, p[2] - width],
+    [p[0] - ns * h, p[1] - nt * h, p[2] - width],
+  ];
+  return Manifold.hull([...section(p0), ...section(p1)]);
+}
 
 // ---------- hoofdmaten ----------
 const WATER_NAP = 5.2; // waterspiegel van de IJssel in het PDOK-terrein (48,09 m ellipsoïdisch)
@@ -259,9 +276,11 @@ const JOINT = { width: 0.4, depth: 0.3 };
 // Aanbrug: twee stalen vakwerkliggers langs de rijbaan (AHN t = 3,5 en 10,75,
 // 0,9 m breed op 1:1000), van het landhoofd tot de westelijke heftoren, met de
 // bovenrand 2,55 m boven het wegdek (AHN) en de onderrand in de dwarsdragers.
-// Warren-vakwerk met velden van 2,4 m: driehoeken met de punt omhoog zijn
-// doorgaande openingen (flanken van 52 graden), die met een vlakke bovenkant
-// blinde nissen van 0,3 m aan de buitenkant.
+// Warren-vakwerk met velden van 2,4 m: alle driehoeken zijn doorgaande
+// openingen, die met de punt omhoog met flanken van 52 graden, die met een
+// vlakke bovenkant zonder steun eronder (dat vult de export op). De STL, die
+// zonder export wordt geprint, heeft voor die laatste blinde nissen van 0,3 m
+// aan de buitenkant.
 const TRUSS = { centres: [3.5, 10.75], width: 0.9, s0: 0, s1: 215.2, top: 2.55, chordTop: 0.6, chordLow: 0.4, panel: 2.4, bar: 0.5, niche: 0.3 };
 
 // Boog: twee verticale ribben (AHN t = 3,15 en 10,8, 1,0 m breed) tussen de
@@ -387,16 +406,19 @@ const trussOutline = (() => {
   const xs = stationsS(TRUSS.s0, TRUSS.s1, 1);
   return [...xs.map((s) => [s, road(s) - APPROACH_DEPTH]), ...[...xs].reverse().map((s) => [s, road(s) + TRUSS.top])];
 })();
+// Printvormen voor de STL: per onderdeel van het model het onderdeel dat de
+// STL in plaats daarvan krijgt.
+const printShape = new Map();
 const trusses = TRUSS.centres.map((tc) => {
   const h = TRUSS.width / 2;
   const plate = profileT(trussOutline, tc - h, tc + h);
-  // De nissen aan de buitenkant: zuidelijke ligger naar het zuiden, noordelijke naar het noorden.
+  const through = (p) => profileT(p, tc - h - 0.5, tc + h + 0.5);
+  // De nissen in de STL aan de buitenkant: zuidelijke ligger naar het zuiden, noordelijke naar het noorden.
   const outer = tc < 6 ? [tc - h - 0.5, tc - h + TRUSS.niche] : [tc + h - TRUSS.niche, tc + h + 0.5];
-  const cuts = [
-    ...trussHoles.map((p) => profileT(p, tc - h - 0.5, tc + h + 0.5)),
-    ...trussNiches.map((p) => profileT(p, outer[0], outer[1])),
-  ];
-  return plate.subtract(union(cuts));
+  const printTruss = plate.subtract(union([...trussHoles.map(through), ...trussNiches.map((p) => profileT(p, outer[0], outer[1]))]));
+  const truss = plate.subtract(union([...trussHoles, ...trussNiches].map(through)));
+  printShape.set(truss, printTruss);
+  return truss;
 });
 parts.push(...trusses);
 
@@ -423,16 +445,23 @@ const ribs = ARCH.ribs.map((tc) => {
 });
 parts.push(...ribs);
 // Windverband tussen de toppen van de ribben: dwarsstaven op de knopen waar de
-// rib meer dan 6 m boven het wegdek ligt, met kruisen daartussen.
+// rib meer dan 6 m boven het wegdek ligt, met kruisen daartussen. In het
+// model balken van 0,9 × 0,9 m met een vlakke onderkant, in de STL met een
+// V-onderkant van 50 graden, zodat ze zonder steun printen.
 const braceNodes = ARCH_NODES.filter((s) => archBottom(s) - road(s) >= ARCH.braceClear);
 const braces = [];
 const [tS, tN] = ARCH.ribs;
-for (const s of braceNodes) braces.push(vBar([s, tS, archTop(s) - 0.15], [s, tN, archTop(s) - 0.15], ARCH.braceWidth));
+const brace = (p0, p1) => {
+  const bar = flatBar(p0, p1, ARCH.braceWidth);
+  printShape.set(bar, vBar(p0, p1, ARCH.braceWidth));
+  braces.push(bar);
+};
+for (const s of braceNodes) brace([s, tS, archTop(s) - 0.15], [s, tN, archTop(s) - 0.15]);
 for (let i = 0; i + 1 < braceNodes.length; i++) {
   const s0 = braceNodes[i];
   const s1 = braceNodes[i + 1];
-  braces.push(vBar([s0, tS, archTop(s0) - 0.15], [s1, tN, archTop(s1) - 0.15], ARCH.braceWidth));
-  braces.push(vBar([s0, tN, archTop(s0) - 0.15], [s1, tS, archTop(s1) - 0.15], ARCH.braceWidth));
+  brace([s0, tS, archTop(s0) - 0.15], [s1, tN, archTop(s1) - 0.15]);
+  brace([s0, tN, archTop(s0) - 0.15], [s1, tS, archTop(s1) - 0.15]);
 }
 parts.push(...braces);
 
@@ -507,6 +536,8 @@ const joints = [LIFT.s0, LIFT.s1].map((s) =>
 );
 
 const bridge = union([union(parts).subtract(union(joints)), ...upper]);
+const printParts = parts.map((part) => printShape.get(part) ?? part);
+const printBridge = union([union(printParts).subtract(union(joints)), ...upper]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder het dek: een wig van 50 graden vanaf de randen die uitloopt in een
@@ -536,7 +567,7 @@ const printFoot = loftS(
   }),
   "printvoet",
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- rijbaan, fietspad en voetpad als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is een eigen node per BGT-functie met de
@@ -840,7 +871,7 @@ await writeFile(
         "G0301.82050841235b44bc85723ca9a525aac3",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee boogribben midden tussen de boogpijlers op de waterspiegel van de IJssel (z = 0, NAP +5,2 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zutphen, RD-richting 21,32 graden vanaf het oosten) en +Y naar het noordnoordwesten (de IJsselspoorbrug, die niet in het model zit). Vier nodes: road:rijbaan, road:fietspad en road:voetpad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de rijbaan tussen de vakwerkliggers, heftorens en boogribben, het fietspad ten zuiden daarvan, het voetpad aan de noordkant en buiten de boog aan de zuidkant), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Hoven (x = -285) tot de kade van Zutphen (x = 58,7), met het wegdek op NAP +11,6 tot +12,7 m (AHN). De aanbrug over de uiterwaard op zeven velden met wandpijlers en twee stalen vakwerkliggers langs de rijbaan (2,55 m boven het wegdek, doorgaande driehoeken met de punt omhoog en blinde nissen); de trap aan de zuidkant naar de oever als gesloten trappenhuis; de hefbrug met voegen, twee heftorens tot NAP +22,8 m als poorten met een spitse doorgang en het bedieningshuis (BAG-pand) aan de zuidkant tot NAP +18,6 m; de boogbrug met trekband van 89,7 m als twee verticale ribben 7,65 m uit elkaar met de top op NAP +25,25 m, de hangers als stijlen van 1,0 m tussen spitse openingen en het windverband tussen de toppen als staven met een V-onderkant; het voetpad buiten de boog als uitkraging; de pijlers van hefbrug en boog met ronde koppen (BGT), afgesneden aan de noordrand van het verkeersdek. Schampkanten aan de zuidrand in plaats van de leuningen. De bovenregel tussen de heftorens (13 m vrij boven de rijbaan), leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de uiterwaard en het water naast de brug bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van het water. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee boogribben midden tussen de boogpijlers op de waterspiegel van de IJssel (z = 0, NAP +5,2 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zutphen, RD-richting 21,32 graden vanaf het oosten) en +Y naar het noordnoordwesten (de IJsselspoorbrug, die niet in het model zit). Vier nodes: road:rijbaan, road:fietspad en road:voetpad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de rijbaan tussen de vakwerkliggers, heftorens en boogribben, het fietspad ten zuiden daarvan, het voetpad aan de noordkant en buiten de boog aan de zuidkant), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Hoven (x = -285) tot de kade van Zutphen (x = 58,7), met het wegdek op NAP +11,6 tot +12,7 m (AHN). De aanbrug over de uiterwaard op zeven velden met wandpijlers en twee stalen vakwerkliggers langs de rijbaan (2,55 m boven het wegdek, met doorgaande driehoekige openingen); de trap aan de zuidkant naar de oever als gesloten trappenhuis; de hefbrug met voegen, twee heftorens tot NAP +22,8 m als poorten met een spitse doorgang en het bedieningshuis (BAG-pand) aan de zuidkant tot NAP +18,6 m; de boogbrug met trekband van 89,7 m als twee verticale ribben 7,65 m uit elkaar met de top op NAP +25,25 m, de hangers als stijlen van 1,0 m tussen spitse openingen en het windverband tussen de toppen als balken van 0,9 m; het voetpad buiten de boog als uitkraging; de pijlers van hefbrug en boog met ronde koppen (BGT), afgesneden aan de noordrand van het verkeersdek. Schampkanten aan de zuidrand in plaats van de leuningen. De bovenregel tussen de heftorens (13 m vrij boven de rijbaan), leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen in de vakwerkliggers, het windverband, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant, staven met een V-onderkant in het windverband en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op de uiterwaard en het water naast de brug bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van het water. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

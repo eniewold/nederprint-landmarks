@@ -65,8 +65,8 @@ Onderdelen in het model (hoogtes in NAP):
   voegen blijven constructie, met 2 cm vrij. De wegdeklaag is gesneden met een
   strook van 0,5 m onder tot 1 m boven het wegdek over dezelfde loftstations
   als het dek; de constructie houdt zo nergens een vlak op het wegdek over. De
-  vier nodes tellen samen op tot het volume van de brug als geheel (12 483 m³:
-  constructie 10 478, rijbaan 1 113, fietspad 519, voetpad 373 m³); de STL
+  vier nodes tellen samen op tot het volume van de brug als geheel (12 450 m³:
+  constructie 10 446, rijbaan 1 113, fietspad 519, voetpad 373 m³); de STL
   bevat de brug als geheel.
 - De aanbrug over de uiterwaard op zeven velden: het westelijke landhoofd,
   vijf wandpijlers op gelijke afstand (x = -249,4 tot -117,8, geschat) en de
@@ -74,9 +74,9 @@ Onderdelen in het model (hoogtes in NAP):
   De wandpijlers lopen van t = 1,6 m tot de noordrand met een kop van 2,6 m.
   Langs de rijbaan twee stalen vakwerkliggers (AHN 7,65 m uit elkaar, 0,9 m
   breed), de bovenrand 2,55 m boven het wegdek; Warren-vakwerk met velden van
-  2,4 m: 88 doorgaande driehoeken met de punt omhoog (flanken van 52 graden,
-  scherpe hoeken 0,12 m afgekapt) en 87 blinde nissen van 0,3 m aan de
-  buitenkant voor de driehoeken met een vlakke bovenkant.
+  2,4 m en 175 doorgaande driehoeken per ligger: 88 met de punt omhoog
+  (flanken van 52 graden) en 87 met een vlakke bovenkant, de scherpe hoeken
+  0,12 m afgekapt.
 - De trap naar de oever aan de zuidkant (x = -89,35 tot -83,35, tot 23,5 m
   naast de as) als gesloten trappenhuis: een loop die van het bordes op
   dekhoogte naar NAP +9,5 m bij het dek daalt en een loopbrug op dekhoogte
@@ -96,8 +96,8 @@ Onderdelen in het model (hoogtes in NAP):
   knoop: tussen dek en rib acht doorgaande openingen met een spitse top van
   55 graden (de hangers als stijlen van 1,0 m; in de twee buitenste velden aan
   elke kant is de ruimte te laag). Het windverband tussen de toppen over de
-  middelste 45 m: zeven dwarsstaven en zes kruisen (19 staven van 0,9 m met
-  een V-onderkant van 50 graden).
+  middelste 45 m: zeven dwarsstaven en zes kruisen (19 balken van
+  0,9 × 0,9 m met een vlakke onderkant).
 - De pijlers met ronde koppen aan de zuidkant (BGT): de hefbrugpijlers van
   6,0 m dik (tot 7,07 m ten zuiden van de as) en de boogpijler van 3,8 m, tot
   in het stalen dek.
@@ -107,9 +107,11 @@ Onderdelen in het model (hoogtes in NAP):
 - De landhoofden als blokken tot het wegdek.
 
 Wat er niet in zit: de bovenregel tussen de heftorens (een ligger van 13 m
-vrij boven de rijbaan op +21,5 m, die de export tot op het dek zou opvullen)
-en de machines op de torens; het eindportaal van de boog; leuningen,
-lantaarns, slagbomen en de wenteltrap onder het bedieningshuis (dunner dan
+vrij boven de rijbaan op +21,5 m; de export vindt eronder geen wand om tegen
+te schoren, omdat naast de torens de holte van hun spitse doorgang ligt, en
+vult hem als wand tot op het dek op) en de machines op de torens; het
+eindportaal van de boog; leuningen, lantaarns, slagbomen en de wenteltrap
+onder het bedieningshuis (dunner dan
 0,9 m); de open ruimte onder de trap (het trappenhuis is dicht); het deel van
 de pijlers onder de spoorbrug en de spoorbrug zelf. De PDOK-reconstructie
 (`?landmarks=0`) heeft van de brug alleen vlakke wegstroken en het
@@ -121,19 +123,27 @@ ligt 93 % van de cellen binnen 1 m van het wegdek van het model (mediaan
 van het hoogste DSM-punt in de strook van elke rib (81 % binnen 1,5 m, mediaan
 -0,31 m; het windverband en de hangers verstoren het DSM).
 
-Printbaarheid op 1:1000: het vakwerk van de aanbrug en de hangers zijn niet
-als staven te printen; de liggers en ribben zijn platen met doorgaande
-openingen met een spitse top (52 en 55 graden) en nissen. De staven van het
-windverband hebben een V-onderkant van 50 graden, de heftorens een spitse
-doorgang. Vrij hangen de onderkant van het dek en de uitkraging (samen
-4 675 m² in het model); de STL heeft daaronder een printvoet (een wig van 50
-graden vanaf de randen die uitloopt in een scherm van 0,9 m tot de onderplaat),
-waarna 211 m² aan nisplafonds, het bedieningshuis en randjes overblijft. In de
-export (printcheck, gesloten solid met overhangopvulling, status NoError): het
-hele model in een uitsnede van 356 m op 1:1000 in 11 s, de constructie
-24,5 naar 25,9 cm³ (+5,6 %), de rijbaan 1,11 cm³ (+0,1 %), het fietspad
-0,51 cm³ (0 %) en het voetpad 0,37 cm³ (+0,8 %). Geen samenvallende vlakken
-(verticale stralen op 100 000 punten over het hele model).
+Printbaarheid op 1:1000: het vakwerk van de aanbrug en de hangers zijn als
+staven te dun; de liggers en ribben zijn platen met doorgaande openingen:
+die met de punt omhoog in de liggers hebben flanken van 52 graden, de
+hangeropeningen en de doorgang van de heftorens een spitse top van 55 graden.
+Wat zonder steun niet print, laat het model aan de export over: de onderkant
+van het dek en de uitkraging, de vlakke bovenkant van de 87 openingen per
+vakwerkligger en de onderkant van het windverband (samen 4 928 m² in het
+model). In de meettest
+van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume
+met "Ondersteuning v2.0" van 12,5 naar 27,7 cm³ (v1.0: 27,7 cm³), met
+alleen één ongedragen plekje van 0,19 mm² bij de trap, net als in het
+vorige model: de kleine openingen van de vakwerkliggers vult de export
+helemaal op, onder het windverband komt een wand tot het dek (in het vorige
+model ook, onder de staven met een V-onderkant), onder het dek
+een wig met een smal scherm tot de onderplaat. De STL, die zonder export
+wordt geprint, heeft printvormen: blinde nissen van 0,3 m aan de buitenkant
+in plaats van de openingen met een vlakke bovenkant, staven met een
+V-onderkant van 50 graden in het windverband en onder het dek een printvoet
+(een wig van 50 graden vanaf de randen die uitloopt in een scherm van 0,9 m tot
+de onderplaat), waarna 211 m² aan nisplafonds, het bedieningshuis en randjes
+overblijft; ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Oude_IJsselbrug_(Zutphen))
 (lengte 345 m, doorvaarthoogte 10,92 m, indeling van het dek, de trap aan de

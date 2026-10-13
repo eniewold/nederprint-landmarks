@@ -185,6 +185,23 @@ function vBeam(p0, p1, width, rect = 0.4) {
   ];
   return Manifold.hull([...section(p0), ...section(p1)]);
 }
+// Dezelfde balk met een vlakke onderkant, `depth` m hoog, zoals hij is; wat
+// zonder steun niet print, vult de export op.
+function flatBeam(p0, p1, width, depth) {
+  const ds = p1[0] - p0[0];
+  const dt = p1[1] - p0[1];
+  const len = Math.hypot(ds, dt);
+  const ns = -dt / len;
+  const nt = ds / len;
+  const h = width / 2;
+  const section = (p) => [
+    [p[0] + ns * h, p[1] + nt * h, p[2]],
+    [p[0] - ns * h, p[1] - nt * h, p[2]],
+    [p[0] + ns * h, p[1] + nt * h, p[2] - depth],
+    [p[0] - ns * h, p[1] - nt * h, p[2] - depth],
+  ];
+  return Manifold.hull([...section(p0), ...section(p1)]);
+}
 
 // ---------- hoofdmaten ----------
 const WATER_NAP = 5.2; // waterspiegel van de IJssel in het PDOK-terrein (48,09 m ellipsoïdisch)
@@ -269,10 +286,13 @@ const PIER_ARCH = [
 // windverband op de luchtfoto), eindstijlen naar de opleggingen op s = 238,8 en
 // 325,8. Warren-vakwerk (foto's): vanaf elk eind een diagonaal per vak, stijlen
 // op de knopen 0, 2, 4, 6 en 7, 9, 11, 13 en een kruis in het middelste vak
-// (knoop 6 tot 7). De openingen zijn de driehoeken tussen de staven (0,9 m):
-// met een plafond van minstens 52 graden doorgaand; tussen de diagonalen
-// (punt omlaag) een ruit met een spitse top van 54 graden; de rest (vlakke bovenkant)
-// een blinde nis van 0,35 m aan de buitenkant.
+// (knoop 6 tot 7). De openingen zijn de driehoeken tussen de staven (0,9 m),
+// in het model alle doorgaand; wat zonder steun niet print (de vlakke
+// bovenkant tussen de diagonalen), vult de export op. De STL, die zonder
+// export wordt geprint, heeft printvormen: met een plafond van minstens 52
+// graden doorgaand; tussen de diagonalen (punt omlaag) een ruit met een spitse
+// top van 54 graden; de rest (vlakke bovenkant, en de twee driehoeken met een
+// plafond van 49 graden) een blinde nis van 0,35 m aan de buitenkant.
 const TRUSS = {
   centres: [13.05, 22.3],
   width: 1.0,
@@ -452,10 +472,13 @@ const roofCut = (poly) => {
 };
 const trussHoles = [];
 const trussNiches = [];
+// In het model is elke driehoek tussen de staven een doorgaande opening.
+const trussOpenings = [];
 const asPolys = (cs) => cs.toPolygons().map((p) => p.map(([x, z]) => [x, z])).filter((p) => Math.abs(polyArea(p)) >= 0.3);
 for (const t of tri) {
   const open = inset(t, TRUSS.bar / 2);
   if (!open || Math.abs(polyArea(open)) < 0.3) continue;
+  trussOpenings.push(clipCorners(open));
   const angle = ceilingAngle(open);
   if (angle >= TRUSS.minCeiling) {
     trussHoles.push({ poly: clipCorners(open), angle });
@@ -486,6 +509,7 @@ const trussOutline = (() => {
   pts.push([bw - 0.6, rail(bw) + TRUSS.chordLow + 0.45]);
   return pts;
 })();
+const printTrusses = [];
 const trusses = TRUSS.centres.map((tc) => {
   const h = TRUSS.width / 2;
   const plate = profileT(trussOutline, tc - h, tc + h);
@@ -494,16 +518,26 @@ const trusses = TRUSS.centres.map((tc) => {
     ...trussHoles.map(({ poly }) => profileT(poly, tc - h - 0.5, tc + h + 0.5)),
     ...trussNiches.map(({ poly }) => profileT(poly, outer[0], outer[1])),
   ];
-  return plate.subtract(union(cuts));
+  printTrusses.push(plate.subtract(union(cuts)));
+  return plate.subtract(union(trussOpenings.map((poly) => profileT(poly, tc - h - 0.5, tc + h + 0.5))));
 });
 // Windverband tussen de bovenranden: een dwarsregel op elke knoop en een
 // diagonaal per vak, afwisselend van richting (luchtfoto).
+// In het model balken van 0,9 × 0,9 m met een vlakke onderkant; de
+// dwarsregels op de eerste en de laatste knoop zijn zo ook de eindportalen.
+// In de STL hebben ze een V-onderkant van 50 graden, zodat ze zonder steun
+// printen.
 const [tS, tN] = TRUSS.centres;
 const braces = [];
-for (let i = 0; i < 14; i++) braces.push(vBeam([NODES[i], tS, TOPS[i] - 0.15], [NODES[i], tN, TOPS[i] - 0.15], TRUSS.braceWidth));
+const printBraces = [];
+const brace = (p0, p1) => {
+  braces.push(flatBeam(p0, p1, TRUSS.braceWidth, TRUSS.braceWidth));
+  printBraces.push(vBeam(p0, p1, TRUSS.braceWidth));
+};
+for (let i = 0; i < 14; i++) brace([NODES[i], tS, TOPS[i] - 0.15], [NODES[i], tN, TOPS[i] - 0.15]);
 for (let i = 0; i < 13; i++) {
   const [a, b] = i % 2 === 0 ? [tS, tN] : [tN, tS];
-  braces.push(vBeam([NODES[i], a, TOPS[i] - 0.15], [NODES[i + 1], b, TOPS[i + 1] - 0.15], TRUSS.braceWidth));
+  brace([NODES[i], a, TOPS[i] - 0.15], [NODES[i + 1], b, TOPS[i + 1] - 0.15]);
 }
 
 // ---------- heftorens ----------
@@ -521,7 +555,9 @@ const towers = TOWERS.flatMap(({ s0, s1, topNap, beamNap, beamWidth }) => {
 });
 const ties = TIE_BEAMS.map(({ t, topNap }) => vBeam([TOWERS[0].s1 - 0.1, t, Z(topNap)], [TOWERS[1].s0 + 0.1, t, Z(topNap)], TIE_WIDTH));
 
-const bridge = union([union(parts).subtract(union(joints)), ...girders, ...trusses, ...braces, ...towers, ...ties]);
+const base = union(parts).subtract(union(joints));
+const bridge = union([base, ...girders, ...trusses, ...braces, ...towers, ...ties]);
+const printBridge = union([base, ...girders, ...printTrusses, ...printBraces, ...towers, ...ties]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder het dek: een wig van 50 graden vanaf de randen die uitloopt in een
@@ -549,7 +585,7 @@ const printFoot = loftS(
   }),
   "printvoet",
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- spoor als eigen onderdeel ----------
 // De bovenste 0,5 m van het dek binnen de BGT-spoorbaanvlakken is een eigen
@@ -782,6 +818,7 @@ report.truss = {
   nodesX: NODES.map(local),
   topsNap: TOPS.map((z) => +(z + WATER_NAP).toFixed(2)),
   bearingsX: TRUSS.bearings.map(local),
+  openings: trussOpenings.length,
   throughHoles: trussHoles.length,
   niches: trussNiches.length,
   minHoleCeilingDeg: +Math.min(...trussHoles.map(({ angle }) => angle)).toFixed(1),
@@ -839,7 +876,7 @@ await writeFile(
         "L0004.a9fc9dede36f4172a3a864f8cf1bc479",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de twee vakwerkliggers onder de top van de bovenrand op de waterspiegel van de IJssel (z = 0, NAP +5,2 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zutphen, RD-richting 21,32 graden vanaf het oosten, dezelfde as als het model van de Oude IJsselbrug) en +Y naar het noordnoordwesten; de verkeersbrug ligt ten zuiden (y < -5,4) en zit niet in dit model. Twee nodes: road:spoor, de bovenste 0,5 m van het dek binnen de drie actuele BGT-spoorbaanvlakken op de brug met hun attributen in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Hoven (x = -285) tot het landhoofd in Zutphen (x = 58,7), met het spoor op NAP +11,96 tot +12,32 m (AHN). De betonnen aanbrug over de uiterwaard op zes velden van 32,9 m met wandpijlers en pijlerkoppen en schampkanten langs de randen; een stalen veld met plaatliggers langs het spoor tot de westelijke hefbrugpijler; de hefbrug met voegen, plaatliggers en twee heftorens tot NAP +22,4 en +22,7 m, met spitse zijramen in de poten, het contragewicht als dwarsbalk met een V-onderkant tussen de poten en langsliggers met een V-onderkant tussen de torens; de vakwerkbrug met gebogen bovenrand (opleggingen 87 m uit elkaar, top NAP +25,0 m) als twee platen van 1,0 m, 9,25 m uit elkaar, met 13 vakken van 5,97 m: Warren-vakwerk met stijlen op de bovenknopen en een kruis in het middelste vak, doorgaande openingen met een spits plafond en blinde nissen, het windverband tussen de bovenranden als staven met een V-onderkant en een looppad aan de noordkant; het korte betonnen veld naar Zutphen; de pijlers van hefbrug en vakwerkbrug met ronde koppen (BGT), aan de zuidkant afgesneden bij de verkeersbrug. Bovenleiding, leuningen, seinen en de trappen op de torens zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de uiterwaard en het water naast de brug bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van het water. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de twee vakwerkliggers onder de top van de bovenrand op de waterspiegel van de IJssel (z = 0, NAP +5,2 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zutphen, RD-richting 21,32 graden vanaf het oosten, dezelfde as als het model van de Oude IJsselbrug) en +Y naar het noordnoordwesten; de verkeersbrug ligt ten zuiden (y < -5,4) en zit niet in dit model. Twee nodes: road:spoor, de bovenste 0,5 m van het dek binnen de drie actuele BGT-spoorbaanvlakken op de brug met hun attributen in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd bij De Hoven (x = -285) tot het landhoofd in Zutphen (x = 58,7), met het spoor op NAP +11,96 tot +12,32 m (AHN). De betonnen aanbrug over de uiterwaard op zes velden van 32,9 m met wandpijlers en pijlerkoppen en schampkanten langs de randen; een stalen veld met plaatliggers langs het spoor tot de westelijke hefbrugpijler; de hefbrug met voegen, plaatliggers en twee heftorens tot NAP +22,4 en +22,7 m, met spitse zijramen in de poten, het contragewicht als dwarsbalk met een V-onderkant tussen de poten en langsliggers met een V-onderkant tussen de torens; de vakwerkbrug met gebogen bovenrand (opleggingen 87 m uit elkaar, top NAP +25,0 m) als twee platen van 1,0 m, 9,25 m uit elkaar, met 13 vakken van 5,97 m: Warren-vakwerk met stijlen op de bovenknopen en een kruis in het middelste vak, alle driehoeken tussen de staven als doorgaande openingen, het windverband tussen de bovenranden als balken van 0,9 m (de dwarsregels op de eerste en de laatste knoop zijn de eindportalen) en een looppad aan de noordkant; het korte betonnen veld naar Zutphen; de pijlers van hefbrug en vakwerkbrug met ronde koppen (BGT), aan de zuidkant afgesneden bij de verkeersbrug. Bovenleiding, leuningen, seinen en de trappen op de torens zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen tussen de diagonalen, het windverband, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant, staven met een V-onderkant in het windverband en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op de uiterwaard en het water naast de brug bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van het water. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

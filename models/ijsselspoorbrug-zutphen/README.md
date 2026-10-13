@@ -74,16 +74,15 @@ Onderdelen in het model (hoogtes in NAP):
   (AHN, kleinste kwadraten), en eindstijlen van 4,7 m naar de opleggingen.
   Warren-vakwerk zoals op de foto's: vanaf elk eind een diagonaal per vak met
   stijlen op de bovenknopen (0, 2, 4, 6 en 7, 9, 11, 13) en een kruis in het
-  middelste vak. Per ligger 22 doorgaande openingen: de driehoeken naast de
-  stijlen (plafond langs de diagonaal, 56 tot 63 graden) en tussen de
-  diagonalen een ruit met een spitse top van 54 graden; de rest van die
-  driehoeken (vlakke bovenkant onder de bovenrand) en de twee driehoeken naast
-  de eindvakken die te vlak zijn (49 graden) zijn blinde nissen van 0,35 m aan
-  de buitenkant. Een stalen dek van 2,3 m onder het spoor en een looppad buiten
+  middelste vak. Per ligger 24 doorgaande openingen, alle driehoeken tussen de
+  staven: naast de stijlen met het plafond langs de diagonaal (49 tot 63
+  graden) en tussen de diagonalen met een vlakke bovenkant onder de bovenrand.
+  Een stalen dek van 2,3 m onder het spoor en een looppad buiten
   de noordelijke ligger tot de noordrand van het BGT-dek. Het windverband
   tussen de bovenranden: een dwarsregel op elke knoop en een diagonaal per
-  vak, afwisselend van richting (luchtfoto), als staven van 0,9 m met een
-  V-onderkant van 50 graden, 0,15 m onder de bovenkant van de bovenrand.
+  vak, afwisselend van richting (luchtfoto), als balken van 0,9 × 0,9 m,
+  0,15 m onder de bovenkant van de bovenrand. De dwarsregels op de eerste en
+  de laatste knoop, boven de eindstijlen, zijn de eindportalen.
 - Het oostelijke veld (x = 43,95 tot 54,65) als betonnen plaat zoals de
   aanbrug, met schampkanten.
 - De hefbrugpijlers en de boogpijler op de BGT-omtrek met hun ronde koppen aan
@@ -103,7 +102,7 @@ Onderdelen in het model (hoogtes in NAP):
   blijven constructie. De strook loopt over dezelfde loftstations als het dek,
   van 0,5 m onder tot 1 m boven het spoor; spoor = strook ∩ BGT-vlak ∩ brug,
   met 2 cm vrij van schampkanten, plaatliggers, vakwerkplaten, torenpoten en
-  voegen; constructie = brug − strook (samen 11 096 m³: constructie 9 900,
+  voegen; constructie = brug − strook (samen 10 935 m³: constructie 9 739,
   spoor 1 196 m³; het script controleert dat de volumes optellen).
 
 Wat er niet in zit: de bovenleiding met haar portalen en masten, seinen,
@@ -111,14 +110,12 @@ leuningen langs de looppaden en de trappen op de torens (de BGT-vlakjes
 `voetpad op trap` van 0,8 m breed), allemaal dunner dan 0,9 m; de machines en
 kabelschijven op de torens en het open vakwerk van de torenpoten (de poten zijn
 dichte platen met een zijraam); de echte staafbreedtes van circa 0,5 m (de
-staven zijn 0,9 m); de portalen aan de einden van de vakwerkbrug (vrije
-dwarsbalk boven het spoor, die de export tot op het dek zou opvullen). De
-PDOK-reconstructie (`?landmarks=0`) heeft van de brug alleen vlakke
-wegstroken.
+staven zijn 0,9 m). De PDOK-reconstructie (`?landmarks=0`) heeft van de brug
+alleen vlakke wegstroken.
 
 Vergelijking met de PDOK-reconstructie: van het noorden (vanaf de uiterwaard
 en de rivier) heeft het model de noordelijke vakwerkligger met de gebogen
-bovenrand, de stijlen, diagonalen, het kruis en de ruitvormige openingen, de
+bovenrand, de stijlen, diagonalen, het kruis en de driehoekige openingen, de
 heftorens met zijramen, contragewicht en langsligger, het stalen veld met
 plaatligger, de betonnen aanbrug met schampkant en zes wandpijlers en de ronde
 pijlerkoppen; van het zuiden staat de verkeersbrug ervoor, maar boven de
@@ -135,20 +132,31 @@ van het DSM over de twee sporen per meter met een mediaan verschil van 0,00 m
 (92 % binnen 0,25 m; zonder het stalen veld en de hefbrug, waar het DSM door
 het open dek kijkt).
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de liggers dichte platen van 1,0 m met openingen waarvan het plafond
-minstens 54 graden steil is en nissen van 0,35 m; de staven van het
-windverband, het contragewicht en de langsliggers hebben een V-onderkant van
-50 graden, de zijramen van de torens een spitse top van 55 graden. Vrij
-hangen de onderkant van het dek en de pijlerkoppen; de STL heeft onder het dek
-een printvoet (een wig van 50 graden vanaf de randen die uitloopt in een scherm
-van 0,9 m tot de onderplaat), waarna 377 m² aan onderkanten van de onderbouw,
-pijlerkoppen en nisplafonds overblijft. In de export (printcheck, gesloten
-solid met overhangopvulling, status NoError): het hele model in een uitsnede
-van 354 m op 1:1000 in 12,7 s, de constructie van 25,5 naar 20,7 cm³ ten
-opzichte van de rechte opvulling (-18,8 %), het spoor 1,19 cm³ zonder eigen
-opvulling (`extraPct` 0); de openingen in de liggers blijven open. Geen
-samenvallende vlakken (verticale stralen op 100 000 punten over het dek).
+Printbaarheid op 1:1000: de echte staven van circa 0,5 m zijn op 1:1000 te
+dun, daarom zijn de liggers dichte platen van 1,0 m met openingen. Wat zonder
+steun niet print, laat het model aan de export over: de vlakke bovenkant van
+de openingen tussen de diagonalen, de onderkant van het windverband, van het
+dek en van de pijlerkoppen (samen 3 878 m² in het model). Het contragewicht
+en de langsliggers tussen de torens houden een V-onderkant van 50 graden en
+de zijramen van de torens een spitse top van 55 graden: met een vlakke
+onderkant vult de export onder de langsliggers (16,6 m tussen de torens, 7 m
+boven het spoor) een wand tot het dek op. In de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 10,9 naar 21,6 cm³ (v1.0: 21,6 cm³; het vorige
+model 11,1 naar 21,6 cm³): de openingen tussen de diagonalen vult de export
+op, onder elke staaf van het windverband komt een wand of kolom tot het dek
+(in het vorige model ook, onder de staven met een V-onderkant, die smaller
+dan een steunbreedte uitlopen), onder het dek een wig met een smal scherm tot
+de onderplaat.
+Ongedragen blijven vier plekjes van samen 0,9 mm² in het vakwerk (het vorige
+model 0,35 mm²). De STL, die zonder export wordt geprint, heeft printvormen:
+in de liggers alleen doorgaande openingen met een plafond van minstens 54
+graden (tussen de diagonalen een ruit met een spitse top) en daarboven blinde
+nissen van 0,35 m aan de buitenkant, staven met een V-onderkant van 50 graden
+in het windverband en onder het dek een printvoet (een wig van 50 graden vanaf
+de randen die uitloopt in een scherm van 0,9 m tot de onderplaat), waarna
+377 m² aan onderkanten van de onderbouw, pijlerkoppen en nisplafonds
+overblijft; ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/IJsselspoorbrug_(Zutphen))
 (westelijke aanbrug met zeven velden over circa 218 m, hefbrug, vakwerkbrug
