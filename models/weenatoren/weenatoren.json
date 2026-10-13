@@ -1,0 +1,71 @@
+{
+  "name": "Weenatoren",
+  "file": "weenatoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92249,
+    437705
+  ],
+  "xAxis": [
+    0.9539266505673936,
+    0.30003990624127624
+  ],
+  "groundHeight": 43.11189843,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25.379371042414675,
+      -14.03166153708974
+    ],
+    [
+      0.7843022928333587,
+      -27.50245207092372
+    ],
+    [
+      -19.239953806878564,
+      15.486257698655894
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000689019"
+  ],
+  "description": "Ronde ponskaartgevel, drie gemeten vlakke dakniveaus en centrale liftkroon, rechte achtergevels, volledige eigen lage kantoorachterbouw met techniek en dubbelhoge entreenissen. Geen fictief hellend dak en geen circa2020 verwijderde Diamant.",
+  "realWorld": {
+    "groundNapM": -0.23,
+    "axisDegrees": 17.46,
+    "roundRoofNapM": 97.186,
+    "shouldersNapM": [
+      101.689,
+      101.693
+    ],
+    "coreNapM": 105.38,
+    "officeRoofNapM": 41.449,
+    "officePlantNapM": [
+      46.647,
+      50.824,
+      43.147
+    ],
+    "estimates": [
+      "ronde gevelradius14.97m uit BAG/ortho benaderd met24 vlakjes over180graden",
+      "vensters.38m diep, circa1.9m hoog op3.15m steek, entreepuien en plint uit schuine fotoâ€™s geschat",
+      "techniek op hoofdplatdak98.77gemeten, tweede klein ventilatieveld98.3NAP geschat uit ortho",
+      "naastgelegen glazen Weenahuis blijft eigen PDOK-pand; geen gezamenlijke garage/straatplaat vervangen"
+    ]
+  },
+  "sources": [
+    "https://movares.com/projecten/weenatoren/ (constructeur,rondeplattegrond)",
+    "https://www.bkor.nl/beeld/diamant/ (Diamant rond2020 verwijderd)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000689019 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_Weena_Tower_1.jpg (Zairon CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Weenatoren_in_Rotterdam.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Weenatoren.jpg (Fred Romero CC BY2.0)"
+  ],
+  "printFiles": [
+    "weenatoren-1-1000.stl"
+  ]
+}
