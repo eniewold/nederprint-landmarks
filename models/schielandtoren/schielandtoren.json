@@ -1,0 +1,76 @@
+{
+  "name": "Schielandtoren",
+  "file": "schielandtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92693,
+    437148
+  ],
+  "xAxis": [
+    0.9617413095492113,
+    0.27395921869243245
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.25283745,
+  "groundSamplePoints": [
+    [
+      -11.109768577672003,
+      -20.750254026169696
+    ],
+    [
+      15.795915736700332,
+      0.6993182673595699
+    ],
+    [
+      -55.07590959824329,
+      -7.186388656768592
+    ],
+    [
+      -65.28738583713144,
+      51.870581744892064
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000702017"
+  ],
+  "description": "Compleet eigen Schielandtoren/Beursplein-pand: bakstenen toren met vensters, scherpe metalen glazen erkers en hun onderschalen, gemeten liftkern, hele winkel-/garageplint met vier doorlopende dakbeuken, verlaagd binnendak, holle passage op kolommen met open spitse entree, afgeronde canopy, daktechniek en noordelijke lage toegang. Geen fictieve dakspits, terrein-/garageplaat of gestapelde DSM-hoogtelagen.",
+  "realWorld": {
+    "groundNapM": 0.7,
+    "axisDegrees": 15.9,
+    "towerRoofNapM": 96.26,
+    "coreRoofNapM": 101.2,
+    "southBayRoofNapM": 101.334,
+    "localAhnMaximumNapM": 101.406,
+    "westShopRoofNapM": 20.115,
+    "innerRoofNapM": 15.847,
+    "southShopRoofNapM": 11.602,
+    "garageGutterNapM": 27.313,
+    "garageRidgeNapM": 29.05,
+    "passageRoofsNapM": [
+      15.346,
+      19.829
+    ],
+    "estimates": [
+      "vaste contouren uit BAG/3D BAG circa.5Ã¢â‚¬â€œ1m vereenvoudigd, gebogen zuidelijke winkelgevel gemiddeld11.602NAP, plaatselijk1Ã¢â‚¬â€œ2m onzeker",
+      "metalen erkers volgen fotoÃ¢â‚¬â„¢s en gemeten lagere contouren; twee overstekende delen vanaf29.1NAP, onderschaal25.1Ã¢â‚¬â€œ29.1 voor print, circa1Ã¢â‚¬â€œ2m onzeker",
+      "vensters1.7Ãƒâ€”1.9m met3m verdiepingsritme, glazen erkers2.5Ãƒâ€”2.25m, winkelpuien en kolomraster1m dik op5m uit fotoÃ¢â‚¬â„¢s geschat",
+      "passagevloerruimte blijft hol; gemeten lagere dakvlakken15.346/19.829 als1m dikke schalen, vrije hoogte wordt door45printcorrectie kleiner",
+      "vier garage-dakbeuken en nok29.05 uit gemeten band27.3Ã¢â‚¬â€œ29.1 en foto geschat; glas-/techniekvorm op binnendak geschat",
+      "entreecanopy circa26Ãƒâ€”14m op5.8NAP, .9m dik en boogvorm geschat; reclame/relings/kozijnen/zonpanelen dunner dan.9m weggelaten",
+      "noordelijke lage toegang staat afzonderlijk op terrein en is met eigen gesloten building-node opgenomen; overige Beursplein-panden blijven PDOK"
+    ]
+  },
+  "sources": [
+    "https://www.vormliving.nl/portfolio/schielandtoren/ (eigenaar,Pi de Bruijn,32woonlagen; schuine fotoÃ¢â‚¬â„¢s alleen referentie)",
+    "https://architectenweb.nl/projecten/project.aspx?id=1040 (eigen de Architekten Cie.-projectprofiel,Beursplein en metalen erkers,schuine fotoÃ¢â‚¬â„¢s alleen referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000702017 (TU Delft/3DGI,CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "schielandtoren-1-1000.stl"
+  ]
+}
