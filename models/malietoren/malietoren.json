@@ -1,0 +1,65 @@
+{
+  "name": "Malietoren",
+  "file": "malietoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82287,
+    455635
+  ],
+  "xAxis": [
+    0.8256062107545517,
+    0.564246741030474
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 44.11794974,
+  "groundSamplePoints": [
+    [
+      -29.751158728516014,
+      -6.314155074960182
+    ],
+    [
+      25.70618327790789,
+      16.34601300876176
+    ],
+    [
+      24.025635715046633,
+      -9.15253126123454
+    ],
+    [
+      -1.9662923530456649,
+      21.934759957254016
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000224954"
+  ],
+  "description": "Volledige Malietoren: ingevouwen glazen kopgevels, glasbanden, vijf lamellen-parkeerlagen, stalen stijlen en diagonalen, afzonderlijke overstekende dakplaten met open centrale techniekstrook, gemeten dakopbouwen en open poort boven de verdiepte Utrechtsebaan met verbonden 45 graden printkragen; vlakken en bouwdelen, geen DSM-lagen.",
+  "realWorld": {
+    "groundNapM": 1,
+    "axisDegrees": 34.35,
+    "officeRoofNapM": 71.55,
+    "roofPlatesNapM": 74.545,
+    "centralCoreNapM": 75.713,
+    "gateWidthM": 15,
+    "gateUndersideNapM": 9.2,
+    "printGatePeakNapM": 3.1,
+    "estimates": [
+      "ingevouwen glasgevels met circa 3 m recessie, glasbanden/lamellen en staalposities uit architectfoto’s geschat",
+      "onderzijde NAP +9.2, rijbaanbreedte15m, draagpoten en entree circa 1–2m onzeker; 45 graden printkragen boven de verdiepte weg zijn modelvereenvoudiging",
+      "dakcontouren, posts en apparatuur vereenvoudigd op gemeten dakhoogtes, circa .5–1m onzeker",
+      "dunne glasroedes, aluminiumlamellen afzonderlijk en ronde glasblokken kleiner dan .9m weggelaten"
+    ]
+  },
+  "sources": [
+    "https://www.benthemcrouwel.com/projects/malietoren (architect, 1996, gevouwen glazen kop, lamellen en zichtbare staalconstructie, foto’s uitsluitend referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000224954 (TU Delft/3DGI, CC BY 4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "malietoren-1-1000.stl"
+  ]
+}
