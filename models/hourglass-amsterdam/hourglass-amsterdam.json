@@ -1,0 +1,76 @@
+{
+  "name": "Hourglass",
+  "file": "hourglass-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119606,
+    483413
+  ],
+  "xAxis": [
+    0.9987105118390394,
+    0.05076724871611646
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 42.660322,
+  "groundSamplePoints": [
+    [
+      -32.56794336344266,
+      -10.359974183152744
+    ],
+    [
+      36.25818191850212,
+      4.1646421172540435
+    ],
+    [
+      5.619394006271884,
+      31.755667383984793
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012249957"
+  ],
+  "description": "Hourglass als drie L-vormig verbonden, getailleerde bouwvolumes met doorlopende schuine natuursteengevels, blinde rechtopstaande vensters, glazen naden/atria, gemeten dakterrassen en de complete lage zuidwestelijke hofplint; NoMA House blijft afzonderlijk.",
+  "realWorld": {
+    "groundNapM": -0.35,
+    "axisDegrees": 2.91,
+    "waistNapM": 32.8,
+    "roofsNapM": [
+      69.472,
+      79.665,
+      69.472
+    ],
+    "roofWellNapM": 64.161,
+    "roofTerraceNapM": 79.257,
+    "roofRecessNapM": 77.948,
+    "lowRoofsNapM": [
+      4.677,
+      11.395,
+      5.654,
+      9.903
+    ],
+    "estimates": [
+      "Waist32.8NAP en facettering/versmalling uit schuine fotos, circa1-2m onzeker; hoekpunten tussen gemeten voet- en dakvlakken als doorgaande vlakken verbonden",
+      "Staand vensterritme3.7m, verspringing .22m en .45m blinde nissen uit fotos; interne glas-/atriumdelen massief",
+      "Brede plintramen/entrees .5-.55m blind; glazen naden volgen de helling als twee doorlopende vlakken en blijven .55m diep",
+      "Dakterrassen/wellen en afzonderlijke lage hofgebouwen zijn gemeten, glaslichtdak massief voor print",
+      "Losse zonnepanelen, lamellen, onderhoudsgieken en glas-/metaalroedes kleiner dan.9m samengevoegd of weggelaten"
+    ]
+  },
+  "sources": [
+    "https://damenpartners.com/projecten/hourglass/ (architect, schuine gevels en rechtopstaande ramen)",
+    "https://damenpartners.com/hourglass-receives-award-of-excellence/ (architect, drie volumes inL)",
+    "https://www.hurks.nl/projecten/hourglass/ (bouwer,2020)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012249957 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Kenniskwartier_25.jpg (MrAronymous CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Kenniskwartier_17.jpg (MrAronymous CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Kenniskwartier_07.jpg (MrAronymous CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "hourglass-amsterdam-1-1000.stl"
+  ]
+}
