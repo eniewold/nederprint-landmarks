@@ -1,0 +1,191 @@
+{
+  "name": "Viñoly",
+  "file": "vinoly-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119914,
+    483442
+  ],
+  "xAxis": [
+    0.998440764181981,
+    0.0558215049931638
+  ],
+  "groundHeight": 43.182419,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -49.41964466416058,
+      11.777042127296019
+    ],
+    [
+      0.17381084067445873,
+      21.023077552814765
+    ],
+    [
+      42.0525014313245,
+      17.680133578919907
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012107681"
+  ],
+  "description": "De volledige Viñoly/Mahler4 met brede lage kantoor-/winkelvleugel, gedraaide middel- en bovenvolumes, gemeten dakinstallaties, verticale gevelvinnen als gesloten glasreliëf en een omwikkelende blinde schuine trapgroef. Geen enkel los open trappenhuis, raamframe of publieke pleinplaat; de afzonderlijke Ito/SOM-buurgebouwen blijven behouden.",
+  "realWorld": {
+    "groundNapM": 0.15,
+    "axisDegrees": 3.2,
+    "podiumRoofNapM": 26.497,
+    "middleShoulderNapM": 62.528,
+    "upperRoofNapM": 91.271,
+    "mainPlantNapM": 95.119,
+    "lowPlantsNapM": [
+      29.771,
+      29.254
+    ],
+    "stairFlightsNapM": [
+      [
+        [
+          45.56,
+          -4.985
+        ],
+        [
+          -44.546,
+          -17.802
+        ],
+        1,
+        24
+      ],
+      [
+        [
+          -44.55,
+          -17.818
+        ],
+        [
+          -6.143,
+          -12.355
+        ],
+        24,
+        32
+      ],
+      [
+        [
+          -6.143,
+          -12.355
+        ],
+        [
+          -5.853,
+          -2.816
+        ],
+        32,
+        35.9
+      ],
+      [
+        [
+          -5.853,
+          -2.816
+        ],
+        [
+          -6.215,
+          14.517
+        ],
+        35.9,
+        43
+      ],
+      [
+        [
+          -6.215,
+          14.517
+        ],
+        [
+          -44.446,
+          14.524
+        ],
+        43,
+        59
+      ],
+      [
+        [
+          -44.446,
+          14.524
+        ],
+        [
+          -44.487,
+          -8.88
+        ],
+        59,
+        66
+      ],
+      [
+        [
+          -44.487,
+          -8.88
+        ],
+        [
+          -35.465,
+          -8.529
+        ],
+        66,
+        66.92
+      ],
+      [
+        [
+          -35.465,
+          -8.529
+        ],
+        [
+          -5.853,
+          -2.816
+        ],
+        66.92,
+        70
+      ],
+      [
+        [
+          -5.853,
+          -2.816
+        ],
+        [
+          -6.215,
+          14.517
+        ],
+        70,
+        78
+      ],
+      [
+        [
+          -6.215,
+          14.517
+        ],
+        [
+          -44.446,
+          14.524
+        ],
+        78,
+        88
+      ]
+    ],
+    "estimates": [
+      "Omwikkelende traproutes/hoeken en bordeshoogtes uit schuine fotos, circa1-3m onzeker; blind2.2m diep met gesloten achtervlakken en doorgaande schuine bodem",
+      "Verticale vinnen/glasraster3.1m en laagsteek3.8m/glashoogte2.9m, .35m blinde glasnissen; dunne echte aluminiumvinnen vereenvoudigd tot circa1.1m gesloten banden",
+      "Bovenvolume begint op geschatte60.9NAP, daken/voetcontouren volgen3DBAG/AHN4; geen volledig open verticale trapkoker",
+      "Glaspatio/foyerinterieur massief gehouden; geen fictieve open binnenhof onder het dichte podiumdak",
+      "Dakmachines tot95.119NAP circa418m2, de architectonische hoofdkop is91.271NAP; fijne antennes, leuningen, leidingen en traproedes onder.9m weggelaten"
+    ]
+  },
+  "sources": [
+    "https://www.rvapc.com/works/mahler-4-office-tower/ (architect,drie volumes en buitenomtrap)",
+    "https://zuidas.nl/en/construction-project/mahler-4-vinoly/ (gemeenteAmsterdam,2005,91m hoofdtoren)",
+    "https://www.studioseilern.com/portfolio/mahler-4/ (ontwerpteam)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012107681 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Kantoortoren_Vi%C3%B1oly_in_Amsterdam-Zuid.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Vi%C3%B1oly_Tower.jpg (Steven Lek CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Vi%C3%B1oly_Tower_6.jpg (Steven Lek CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "vinoly-amsterdam-1-1000.stl"
+  ]
+}
