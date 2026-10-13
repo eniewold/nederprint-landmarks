@@ -1,0 +1,86 @@
+{
+  "name": "World Trade Center Amsterdam",
+  "file": "world-trade-center-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120025,
+    483710
+  ],
+  "xAxis": [
+    0.9984890974505379,
+    0.05495017991244574
+  ],
+  "groundHeight": 43.87165557,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -70.11403754118744,
+      -0.14744379593095003
+    ],
+    [
+      123.00716710323304,
+      -57.84666663894559
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012065344",
+    "NL.IMBAG.Pand.0363100012096613"
+  ],
+  "description": "Beide WTC-groepen rond het behouden Zuidplein, met torens H/I, A/B/C/E, actuele TowerTen in plaats van oude D-massa, eigen lage winkel-/kantoorvleugels en holle golfvormige glaskappen met raam-/staalritme. AHN5 voor vernieuwde delen;3D BAG/AHN4 voor ongewijzigde dakvlakken.",
+  "realWorld": {
+    "groundNapM": 0.79,
+    "axisDegrees": 3.15,
+    "hRoofsNapM": [
+      92.107,
+      97.665,
+      101.172,
+      103.267
+    ],
+    "eastRoofsNapM": [
+      42.761,
+      46.537,
+      48.435,
+      63.774,
+      65.793,
+      63.788,
+      64.745,
+      61.9,
+      65.869
+    ],
+    "tenRoofsNapM": [
+      79.027,
+      71.275,
+      50.189,
+      38.158,
+      76.443
+    ],
+    "estimates": [
+      "TowerTen regelmatige vleugelgrenzen uitAHN5 gemeten/vereenvoudigd, circa.5ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“1m onzeker; raamritme en witte1m stijlen uit laatste foto geschat",
+      "golfkappen volgen gemeten dwarsprofielen, geextrudeerd langs hun lengte; lokale glasgaten lineair geinterpoleerd",
+      "vaste45-graden onderschalen onder beide atriums veranderen de lagere vrije ruimte; westelijke kap blijft onder7m vrij, middendeel wordt hoger gedeeltelijk gevuld",
+      "vensters.38m diep, glas-/staalraster en entreepuien geschat; oude gevels volgen3.6ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4m laagsteek",
+      "kleine dakapparaten, precieze zonnepaneelindeling en nieuwe constructiekranen weggelaten; geen terreinplaat op Zuidplein en station niet vervangen"
+    ]
+  },
+  "sources": [
+    "https://arcam.nl/architectuur-gids/wtc-complex-zuidas/",
+    "https://zuidas.nl/construction-project/wtc/ (TowerTen opgeleverd2022)",
+    "https://www.ahn.nl/dataroom (AHN5 DSM,CC0)",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec (AHN5,coveragefc9d369f-94ca-4373-8281-a6854edb67c9)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012065344 (TU Delft/3DGI CC BY4.0)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012096613 (oudereD-vlakken niet gebruikt)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4,CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:World_Trade_Center_Amsterdam_2.jpg (Steven Lek CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:World_Trade_Center_Amsterdam_Toren_H.jpg (Choinowski CC BY-SA4.0)",
+    "https://zuidas.nl/wp-content/uploads/2017/12/20230111-wtc-tower-ten-marcel-steinbach-01-1800x1201.jpg (Marcel Steinbach2023,uitsluitend visuele referentie)"
+  ],
+  "printFiles": [
+    "world-trade-center-amsterdam-1-1000.stl",
+    "world-trade-center-amsterdam-west-1-1000.stl",
+    "world-trade-center-amsterdam-oost-1-1000.stl"
+  ]
+}
