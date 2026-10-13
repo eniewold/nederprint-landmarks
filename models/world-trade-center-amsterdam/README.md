@@ -8,7 +8,9 @@ RD-oorsprong [120025, 483710], X-as [0.9984890974505379, 0.05495017991244574], Z
 
 ## Bouwdelen, gemeten maten en aannames
 
-Twee gebouwgroepen omvatten alle eigen toren- en plintdelen; het Zuidplein ertussen en station Zuid blijven vrij. H heeft daken op NAP92,107/97,665/101,172/103,267m. I en de westelijke golfkap volgen het gemeten dwarsprofiel26,689–28,890m. A/B/C/E hebben afzonderlijke armen/kernen op42,761/46,537/48,435/63,774/65,793/63,788/64,745/61,900/65,869m. De oudere AHN4/3DBAG miste TowerTen: de nieuwe hogere vleugels zijn daarom uit AHN5 gemeten op79,027/71,275m, met lagere west-/noordvleugels50,189/38,158m en techniek76,443m. Grenzen daarvan zijn tot regelmatige bouwdelen vereenvoudigd, circa0,5–1m onzeker. Glas-/staalritme, vensterverdeling, entrees en witte1m-Tenstijlen zijn geschat. De golfkappen worden als doorlopende dwarsprofielen geëxtrudeerd; vaste onderschalen houden ze verbonden. De overhangcorrectie voegt in west14,55% en in oost1,00% volume toe; onder de westkap blijft de ruimte onder5m open. Het centrale atrium wordt voor de print hoger gedeeltelijk gevuld. Naast de gezamenlijke304,6mm lange STL zijn aparte west-/oost-STLs beschikbaar:53,9bij91,7mm en199,7bij93,1mm op1:1000.
+Twee gebouwgroepen omvatten alle eigen toren- en plintdelen; het Zuidplein ertussen en station Zuid blijven vrij. H heeft daken op NAP92,107/97,665/101,172/103,267m. I en de westelijke golfkap volgen het gemeten dwarsprofiel26,689–28,890m. A/B/C/E hebben afzonderlijke armen/kernen op42,761/46,537/48,435/63,774/65,793/63,788/64,745/61,900/65,869m. De oudere AHN4/3DBAG miste TowerTen: de nieuwe hogere vleugels zijn daarom uit AHN5 gemeten op79,027/71,275m, met lagere west-/noordvleugels50,189/38,158m en techniek76,443m. Grenzen daarvan zijn tot regelmatige bouwdelen vereenvoudigd, circa0,5–1m onzeker. Glas-/staalritme, vensterverdeling, entrees en witte1m-Tenstijlen zijn geschat. De golfkappen worden als doorlopende dwarsprofielen geëxtrudeerd; vaste onderschalen houden ze verbonden. De overhangcorrectie voegt in west14,55% en in oost0,97% volume toe; onder de westkap blijft de ruimte onder5m open. Het centrale atrium wordt voor de print hoger gedeeltelijk gevuld. Naast de gezamenlijke304,6mm lange STL zijn aparte west-/oost-STLs beschikbaar:53,9bij91,7mm en199,7bij93,1mm op1:1000.
+
+De brede noordarm van C en de terugliggende kern volgen de afzonderlijke 3DBAG-dakvlakken op NAP63,788 en64,745m; kleine apparaatnissen zijn vereenvoudigd. De gevelnissen blijven blind: de geteste dwarsdoorsneden door de arm houden meer dan5,5m materiaal over. De noordelijke TowerTen-stijlen staan uitsluitend langs de hogere schouder vanaf u133,9m; boven het lage dak staat geen losstaande stijl. Beide gemelde afwijkingen waren eigen modelgeometrie, dus de BAG-vervangingslijst blijft beperkt tot de twee WTC-panden.
 
 ## Weggelaten
 
@@ -16,11 +18,11 @@ Fijne glasroedes, kleurverschillen per glasplaat, precieze zonnepaneelindeling, 
 
 ## Controle
 
-Alle nodes zijn gesloten (`NoError`), op 1:1000 gecontroleerd met 45-graden overhangcorrectie. GLB 103,872 driehoeken. Printcontrole per node: NoError, 14.55% extra volume; NoError, 1.00% extra volume. De permanente test in `tests/landmark-models.test.ts` controleert plaatsing, bepalende dak-/gevelvormen en printverbindingen.
+Alle nodes zijn gesloten (`NoError`), op 1:1000 gecontroleerd met 45-graden overhangcorrectie. GLB 103,554 driehoeken. Printcontrole per node: NoError, 14.55% extra volume; NoError, 0.97% extra volume. De permanente test in `tests/landmark-models.test.ts` controleert plaatsing, bepalende dak-/gevelvormen en printverbindingen.
 
-Vier schuine renders naast dezelfde richtingen van de echte PDOK-reconstructie en schuine bronfoto's bekeken. Per richting toegevoegd: -35 graden: Gevelnissen, H-kroon, twee glasgolven en huidige TowerTen; 55 graden: Vrij Zuidplein, volledige vleugelcontouren, vensters en nieuweTenhoogte; 145 graden: Witte gevelstijlen, afzonderlijke dak-/kernvolumes en holle kappen; 235 graden: Glas-/staalprofielen, eigen plintvleugels en raamritme rondom.
+Vier schuine renders naast dezelfde richtingen van de echte PDOK-reconstructie en schuine bronfoto's bekeken. Per richting toegevoegd: -35 graden: Gevelnissen, H-kroon, twee glasgolven en huidige TowerTen; 55 graden: Gesloten brede C-arm met terugliggende kern en vrije pleinen; 145 graden: TowerTen-gevelstijlen begrensd tot hun vleugel; geen losse stijl boven het lage dak; 235 graden: Glas-/staalprofielen, eigen plintvleugels en raamritme rondom.
 
-Controlekaart (plaats, richting, materiaal en maaiveld) en GLTFLoader bekeken. Volledige 1:1000-preview-export: 400 bij 400 mm, 871 objecten, 662,746 driehoeken, 105.3 mm modelhoogte; de hele landmarkvoetafdruk valt binnen de uitsnede. Onderzoeksbeelden, preview en audit blijven buiten de repo.
+Controlekaart (plaats, richting, materiaal en maaiveld) en GLTFLoader bekeken. Volledige 1:1000-preview-export: 400 bij 400 mm, 871 objecten, 662,412 driehoeken, 105.3 mm modelhoogte; de hele landmarkvoetafdruk valt binnen de uitsnede. Onderzoeksbeelden, preview en audit blijven buiten de repo.
 
 ## Bronnen
 
