@@ -113,7 +113,7 @@ vlak (pijl 1,45 tot 1,83 m over 14 m) dat schoren tegen de pijlers het water
 zouden raken, dus zowel "Ondersteuning v1.0" als "v2.0" vult de gewelven
 onder de kruin op; aan beide gevels blijft de boog onder een wig van 45
 graden open. In de meettest van de webshop (`scripts/overhang-lab`, het model
-op 1:1000) gaat het volume van 2,40 naar 4,15 cm³, zonder ongedragen lagen.
+op 1:1000) gaat het volume van 2,59 naar 4,83 cm³, zonder ongedragen lagen.
 Verder hangen alleen randen van 0,15 tot 0,3 m vrij (boogrib, lijst, blinde
 vakken). De STL op 1:300, die zonder export wordt geprint, heeft als
 printvorm blinde bogen: een nis vanaf beide gevels waarvan het plafond onder

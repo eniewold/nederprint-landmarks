@@ -323,9 +323,12 @@ const gangway = loftX(
 // randen met de bovenkant 10,8 m boven de spoorstaaf (AHN NAP +24,9 tot
 // +25,1 m), schuine eindstijlen van de oplegging naar de eerste bovenknoop,
 // diagonalen als W en stijlen bij de bovenknopen. Op 1:1000 is het vakwerk een
-// dichte plaat: de vakken met de punt omhoog (door de stijl in twee
-// rechthoekige driehoeken verdeeld) zijn doorgaande openingen, de driehoeken
-// met een vlakke bovenkant blinde nissen van 0,35 m aan de buitenkant.
+// dichte plaat van staven van 0,9 m (de echte staven van circa 0,5 m zijn te
+// dun) met alle vakken als doorgaande openingen: de vakken met de punt omhoog
+// (door de stijl in twee rechthoekige driehoeken verdeeld) en de driehoeken
+// met een vlakke bovenkant, waarvan de vlakke bovenkant zonder steun niet
+// print; dat vult de export op. De STL, die zonder export wordt geprint, heeft
+// voor die driehoeken blinde nissen van 0,35 m aan de buitenkant.
 const TRUSS_LINES = [
   { y0: -3.0, y1: -2.0, niche: [-3.0 - 0.3, -3.0 + 0.35] },
   { y0: 2.25, y1: 3.25, niche: [3.25 - 0.35, 3.25 + 0.3] },
@@ -338,6 +341,8 @@ const trussTop = (x) => railZ(x) + TRUSS_HEIGHT;
 const openingAngles = [];
 let throughOpenings = 0;
 let blindNiches = 0;
+const printTrussSolids = [];
+const portals = [];
 const trussSolids = TRUSS_SPANS.flatMap(([x0, x1]) => {
   const p = (x1 - x0) / PANELS;
   const bottomX = Array.from({ length: PANELS + 1 }, (_, k) => x0 + k * p);
@@ -401,13 +406,29 @@ const trussSolids = TRUSS_SPANS.flatMap(([x0, x1]) => {
   }
   throughOpenings += holes.length;
   blindNiches += niches.length;
+  // Eindportalen: tussen de twee liggers een balk van 0,9 × 0,9 m onder de
+  // bovenrand bij de eerste en de laatste bovenknoop (boven de eindstijlen).
+  // De vrije overspanning van 5 m boven het spoor vult de export op; de STL
+  // heeft ze niet.
+  for (const xt of [topX[0], topX[PANELS - 1]]) {
+    portals.push(
+      box(
+        xt - BAR / 2,
+        xt + BAR / 2,
+        TRUSS_LINES[0].y1 - 0.01,
+        TRUSS_LINES[1].y0 + 0.01,
+        trussTop(xt) - BAR,
+        trussTop(xt),
+      ),
+    );
+  }
   return TRUSS_LINES.map(({ y0, y1, niche }) => {
     const plate = profileY(outline, y0, y1);
-    const cut = [
-      ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
-      ...niches.map((h) => profileY(h, niche[0], niche[1])),
-    ];
-    return plate.subtract(union(cut));
+    const through = (h) => profileY(h, y0 - 0.3, y1 + 0.3);
+    printTrussSolids.push(
+      plate.subtract(union([...holes.map(through), ...niches.map((h) => profileY(h, niche[0], niche[1]))])),
+    );
+    return plate.subtract(union([...holes, ...niches].map(through)));
   });
 });
 
@@ -592,14 +613,13 @@ const bearings = BEARINGS.flatMap(([x0, x1]) =>
 // vakwerk op de pijlerkop, tot NAP +14,4 m (AHN).
 const cabinet = Manifold.cylinder(Z(14.4) - Z(STONE_TOP_NAP) + 0.05, 1.2, 1.2, 32, false).translate([110.3, 6.4, Z(STONE_TOP_NAP) - 0.05]);
 
-const bridge = union([
+const common = [
   trackDeck,
   bikeDeck,
   kerb,
   ...westParapets,
   ...eastParapets,
   gangway,
-  ...trussSolids,
   ...basculeGirders,
   cellar,
   cabin,
@@ -607,7 +627,9 @@ const bridge = union([
   ...piers,
   ...bearings,
   cabinet,
-]);
+];
+const bridge = union([...common, ...trussSolids, ...portals]);
+const printBridge = union([...common, ...printTrussSolids]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder de vrij hangende dekken een wig van 50 graden die uitloopt in een
@@ -633,19 +655,26 @@ const printFoot = loftX(
     return { x, section: section.map(([y, z]) => [y + yc, z]) };
   }),
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: de
-// onderkant van de dekken (en van de uitkraging van het fietsdek), de
-// plafonds van de blinde nissen, de onderkant van de loopbrug en van het dak
-// van het bedieningshuis (alleen randen); verder niets.
-const inNiche = (y) => TRUSS_LINES.some(({ niche }) => y > niche[0] - 1e-3 && y < niche[1] + 1e-3);
+// onderkant van de dekken (en van de uitkraging van het fietsdek), de vlakke
+// bovenkant van de openingen in het vakwerk (in de STL de plafonds van de
+// blinde nissen), de onderkant van de eindportalen, de onderkant van de
+// loopbrug en van het dak van het bedieningshuis (alleen randen); verder
+// niets.
+const inNiche = (y) =>
+  TRUSS_LINES.some(({ y0, y1, niche }) => y > Math.min(y0, niche[0]) - 1e-3 && y < Math.max(y1, niche[1]) + 1e-3);
+const inPortal = (x, y, z) =>
+  y > TRUSS_LINES[0].y1 - 0.02 &&
+  y < TRUSS_LINES[1].y0 + 0.02 &&
+  Math.abs(z - (trussTop(x) - BAR)) < 0.05;
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
   const s = mesh.numProp;
-  const area = { deck: 0, niche: 0, gangway: 0, other: 0 };
+  const area = { deck: 0, niche: 0, portal: 0, gangway: 0, other: 0 };
   for (let t = 0; t < mesh.triVerts.length; t += 3) {
     const p = [0, 1, 2].map((k) => [0, 1, 2].map((a) => v[mesh.triVerts[t + k] * s + a]));
     if (Math.max(p[0][2], p[1][2], p[2][2]) < BASE + 1e-4) continue;
@@ -659,6 +688,7 @@ function overhangs(solid) {
     const inDeck = xm > X_SOUTH - 0.01 && xm < X_NORTH + 0.01 && ym > -9.01 && ym < WEST + 0.01;
     if (inDeck && zm < railZ(xm) + 0.5 && zm > deckBottom(xm) - 0.2) area.deck += a2;
     else if (inNiche(ym) && zm > railZ(xm) + CHORD_TOP) area.niche += a2;
+    else if (inPortal(xm, ym, zm)) area.portal += a2;
     else if (xm > GANGWAY.x0 - 0.01 && xm < GANGWAY.x1 + 0.01 && ym < -8.3) area.gangway += a2;
     else {
       area.other += a2;
@@ -676,10 +706,11 @@ const minFlank = openingAngles.reduce((m, a) => Math.min(m, a), Infinity);
 {
   const model = overhangs(bridge);
   console.log("vrij hangend (m2):", Object.fromEntries(Object.entries(model).map(([k, a]) => [k, +a.toFixed(2)])));
-  if (model.other > 0.5) throw new Error("overhang buiten dekken, nissen en loopbrug");
+  if (model.other > 0.5) throw new Error("overhang buiten dekken, vakwerk, portalen en loopbrug");
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", Object.fromEntries(Object.entries(print).map(([k, a]) => [k, +a.toFixed(2)])));
-  console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "vlakste plafond (graden)", +minFlank.toFixed(1));
+  if (print.portal > 0.01) throw new Error("portaal in de printversie");
+  console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "vlakste spitse plafond (graden)", +minFlank.toFixed(1));
   if (minFlank < 50) throw new Error("opening met een te vlak plafond");
 }
 
@@ -938,7 +969,7 @@ await writeFile(
         "L0004.f6810264513d4a39b6e8867ca566f71a",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste stenen pijler op het water van de Beneden-Merwede (z = 0, NAP +0,07 m) in de oorsprong, +X langs de brug naar het noorden (Sliedrecht, RD-richting 91,52 graden vanaf het oosten) en +Y naar het westen; het fietspad ligt aan de oostkant (y < 0). Drie nodes: road:spoor en road:fietspad, de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug met hun attributen in extras.attributes (spoorbaan, gesloten verharding; fietspad, gesloten verharding, asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd (x = -290,95) tot het noordelijke (x = 182,3), 473 m. Twee gelijke vakwerkliggers van 110,7 m over de rivier (7 vakken, evenwijdige randen 10,8 m boven de spoorstaaf tot NAP +25,0 m, schuine eindstijlen, stijlen bij de bovenknopen) als dichte platen van 1,0 m met doorgaande driehoekige openingen en blinde nissen; drie stenen pijlers met voet en kraag tot NAP +12,3 m met lagere aanbouwen; de basculebrug met de klep (x = -152,4 tot -119), het vaste deel met plaatliggers op de basculekelder en het machinehuis, het bedieningshuis (BAG-pand) op een kolom met loopbrug en negen dukdalven; de aanbruggen als kokerligger met uitkragend fietsdek op pijlers met ronde koppen; schampkant tussen spoor en fietspad en borstweringen. Spoorstaaf NAP +13,07 m (zuid) tot +14,3 m (middelste pijler) en +13,58 m (noord). Windverbanden, portalen, bovenleiding, leuningen en de open stand van de klep zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de vakwerkliggers bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste stenen pijler op het water van de Beneden-Merwede (z = 0, NAP +0,07 m) in de oorsprong, +X langs de brug naar het noorden (Sliedrecht, RD-richting 91,52 graden vanaf het oosten) en +Y naar het westen; het fietspad ligt aan de oostkant (y < 0). Drie nodes: road:spoor en road:fietspad, de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug met hun attributen in extras.attributes (spoorbaan, gesloten verharding; fietspad, gesloten verharding, asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd (x = -290,95) tot het noordelijke (x = 182,3), 473 m. Twee gelijke vakwerkliggers van 110,7 m over de rivier (7 vakken, evenwijdige randen 10,8 m boven de spoorstaaf tot NAP +25,0 m, schuine eindstijlen, stijlen bij de bovenknopen) als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen en eindportalen tussen de liggers; drie stenen pijlers met voet en kraag tot NAP +12,3 m met lagere aanbouwen; de basculebrug met de klep (x = -152,4 tot -119), het vaste deel met plaatliggers op de basculekelder en het machinehuis, het bedieningshuis (BAG-pand) op een kolom met loopbrug en negen dukdalven; de aanbruggen als kokerligger met uitkragend fietsdek op pijlers met ronde koppen; schampkant tussen spoor en fietspad en borstweringen. Spoorstaaf NAP +13,07 m (zuid) tot +14,3 m (middelste pijler) en +13,58 m (noord). Windverbanden, bovenleiding, leuningen en de open stand van de klep zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, de portalen, de dekken) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant, geen portalen en onder de dekken een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de vakwerkliggers bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(X_NORTH - X_SOUTH).toFixed(2),

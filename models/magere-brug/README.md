@@ -25,9 +25,9 @@ niet print, is zoals het is en laat het model aan de export over: de open
 bogen, de doorvaart onder de kleppen, de rondbogen in de portalen en het vrij
 hangende achtereinde van de balansen. De bogen en de doorvaart liggen zo dicht
 op het water dat schoren de vloer zouden raken, dus "Ondersteuning v1.0" en
-"v2.0" vullen ze allebei op; in de meettest van de webshop
-(`scripts/overhang-lab`, het model op 1:1000) gaat het volume van 1,20 naar
-2,28 cm³, zonder ongedragen lagen. De STL op 1:300, die zonder export wordt
+"v2.0" vullen ze allebei grotendeels op; in de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume van 1,31 naar
+2,54 cm³ (v1.0: 2,59 cm³), zonder ongedragen lagen. De STL op 1:300, die zonder export wordt
 geprint, heeft printvormen: blinde bogen van 0,4 m diep, een dichte onderbouw
 onder de kleppen, rondbogen met een spitse top van 50 graden in de portalen en
 steunen van 0,9 m onder het achtereinde van de balansen; ze is ongewijzigd.

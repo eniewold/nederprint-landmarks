@@ -64,10 +64,12 @@ Onderdelen in het model (hoogtes in NAP):
   van 15,8 m, evenwijdige randen met de bovenkant 10,8 m boven de spoorstaaf
   (NAP +24,96 tot +25,08 m), schuine eindstijlen van de oplegging naar de
   eerste bovenknoop (7,9 m) en diagonalen als W met stijlen bij de
-  bovenknopen (foto's). Elke plaat heeft 14 doorgaande openingen (de vakken
-  met de punt omhoog, door de stijl in twee rechthoekige driehoeken gedeeld,
-  plafond 52 graden) en 6 blinde nissen van 0,35 m aan de buitenkant voor de
-  driehoeken met een vlakke bovenkant; samen 56 openingen en 24 nissen.
+  bovenknopen (foto's). Elke plaat heeft 20 doorgaande openingen: 14 met de
+  punt omhoog (door de stijl in twee rechthoekige driehoeken gedeeld, plafond
+  52 graden) en 6 driehoeken met een vlakke bovenkant; samen 80 openingen.
+- Eindportalen van 0,9 × 0,9 m tussen de twee liggers onder de bovenrand bij
+  de eerste en de laatste bovenknoop van elke ligger, met een vrije
+  overspanning van 4,25 m boven het spoor.
 - Onder het vakwerk dwarsdragers tot 1,5 m onder de spoorstaaf, op
   opleggingen van 1,6 × 1,6 m onder elke vakwerklijn op de stenen pijlers.
 - Drie stenen pijlers op de BGT-omtrek (ronde koppen, 24,4 tot 24,6 m lang,
@@ -126,9 +128,8 @@ Onderdelen in het model (hoogtes in NAP):
   vakwerkopening, waar boven- en ondervlak samenkomen).
 
 Wat er niet in zit: de echte staven (circa 0,5 m, vervangen door de plaat met
-openingen en nissen), de windverbanden en portalen tussen de liggers boven het
-spoor (vrije horizontale overspanningen van 5 m die op 1:1000 niet zonder steun
-printen), de leuning en loopbrug op de bovenrand, de radar op het noordelijke
+openingen), de windverbanden tussen de liggers boven het spoor en de
+tussenportalen (staven van circa 0,5 m), de leuning en loopbrug op de bovenrand, de radar op het noordelijke
 portaal, de bovenleiding met haar portalen, de seinen en slagbomen, de
 leuningen langs het fietspad op de aanbruggen en het vakwerk, de stalen
 loopbruggen tussen de dukdalven (allemaal dunner dan 0,9 m), de klep in open
@@ -138,7 +139,7 @@ kelder (x = -152 tot -150,5, NAP +10,2 m, kleiner dan de kelder ernaast).
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke strook met de pijlerkoppen en een hoog blok voor het bedieningshuis,
 zonder liggers. Het model heeft van het westen de westelijke vakwerkligger met
-openingen en nissen, de ronde westkoppen van de stenen pijlers met voet en
+openingen, de ronde westkoppen van de stenen pijlers met voet en
 kraag, het machinehuis op de basculekelder, de lagere pijlerkoppen van de
 aanbruggen met de kokers erboven, de borstwering en de dukdalven; van het
 oosten de oostelijke ligger achter het uitkragende fietsdek met zijn schuine
@@ -153,24 +154,22 @@ van 8 m (95e percentiel van het DSM op elk van de twee vakwerklijnen) binnen
 de leuning op de bovenrand). De spoorstaaf volgt de mediaan van het DSM over
 het spoor per meter met een mediaan verschil van 0,01 m.
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de liggers dichte platen van 1,0 m met openingen waarvan het plafond
-minstens 52 graden steil is en nissen van 0,35 m voor de driehoeken met een
-vlakke bovenkant. Alleen de onderkant van de dekken (4633 m²), de plafonds
-van de nissen (117 m²) en de onderkant van de loopbrug (2,7 m²) hangen vrij;
-het script controleert dat verder niets naar beneden wijst, dat de openingen
-steil genoeg zijn, dat alles op dezelfde onderkant begint en dat de
-printversie buiten nissen en loopbrug geen overhang heeft. Met 473 m past de
-brug op 1:1000 niet in één uitsnede; in een uitsnede van 504 m (1:1259,
-400 mm) gaan alle drie onderdelen in de printcheck als gesloten solid met
-overhangopvulling door (status NoError, 5,8 s): de constructie van 39,1 naar
-24,3 cm³ ten opzichte van de rechte opvulling (-38 %), fietspad 0,44 cm³ en
-spoor 0,32 cm³ zonder eigen opvulling (`extraPct` 0). Een uitsnede van 395 m op
-1:1000 rond de liggers en de basculebrug geeft ook NoError (9,7 s, constructie
-73,0 naar 40,2 cm³, wegdelen `extraPct` 0). Onder de dekken komt een wig met een
-smal scherm tot de onderplaat, de openingen in de liggers blijven open. De STL
-op 1:1250 heeft dezelfde printvoet (wig van 50 graden en een scherm van
-0,9 m).
+Printbaarheid op 1:1000: de echte staven van circa 0,5 m zijn op 1:1000 te
+dun, daarom zijn de liggers dichte platen van 1,0 m met openingen. Wat zonder
+steun niet print, laat het model aan de export over: de vlakke bovenkant van
+de 24 openingen met een vlakke bovenkant (335 m²), de onderkant van de
+eindportalen (15 m²), de onderkant van de dekken (4633 m²) en van de loopbrug
+(2,7 m²); het script controleert dat verder niets naar beneden wijst en dat
+de openingen met de punt omhoog minstens 50 graden steil zijn. In de
+meettest van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat
+het volume met "Ondersteuning v2.0" van 31,7 naar 48,3 cm³ (v1.0: 49,2 cm³),
+zonder ongedragen lagen: onder de vlakke bovenkant van de openingen en onder
+de portalen blijft een spitse opening met schoren tegen de staven, onder de
+dekken komt een wig met een smal scherm tot de onderplaat. De STL op 1:1250,
+die zonder export wordt geprint, heeft printvormen: blinde nissen van 0,35 m
+aan de buitenkant in plaats van de openingen met een vlakke bovenkant, geen
+eindportalen en onder de dekken een printvoet (wig van 50 graden en een scherm
+van 0,9 m); ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Baanhoekbrug) (1880-1885,
 herbouwd 1947, 1978-1983 verbouwd met basculebrug en fietspad aan de
