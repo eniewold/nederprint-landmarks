@@ -1,0 +1,79 @@
+{
+  "name": "Willemswerf",
+  "file": "willemswerf.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93280,
+    436885
+  ],
+  "xAxis": [
+    0.6845471059286887,
+    0.7289686274214114
+  ],
+  "groundHeight": 47.04817914,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -66.08784024992995,
+      -31.88098761173716
+    ],
+    [
+      -34.94607259473502,
+      -31.44474535122696
+    ],
+    [
+      19.8962875934247,
+      -19.72657446187083
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000612039"
+  ],
+  "description": "Willemswerf met het echte doorlopende diagonale glasvlak, 3.6m-gevelraster, ingesprongen achterkern, hoge kop met open dakput, afzonderlijke technische delen/daklichten, noordelijke vijflaagse garages en volledige afgeronde oostelijke hellingbaanvoet. Platte daken waar gemeten en ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©n glasplanvergelijking.",
+  "realWorld": {
+    "groundNapM": 3.69,
+    "axisDegrees": 46.8,
+    "mainRoofNapM": 90.609,
+    "glassRoofPlaneNap": [
+      -0.997765781522,
+      -0.008076375547,
+      41.641796672768
+    ],
+    "headRimNapM": 91.524,
+    "headWellNapM": 88.344,
+    "roofTerraceNapM": 84.859,
+    "machineryNapM": [
+      91.542,
+      91.578,
+      94.888
+    ],
+    "garageRoofsNapM": [
+      19.202,
+      19.203,
+      19.058
+    ],
+    "estimates": [
+      "venstervakken2.5bij1.75m/.38m diep, puien en garagebanden uit fotos geschat;3.6m geometrisch raster volgens bron",
+      "glasvelden volgen gemeten45-graden vlak; paneelindeling en.38m reliÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«f vereenvoudigd",
+      "hellingbaanlus en laagbouw volgen gemeten omtrek, individuele hellingbanen inwendig niet uitgehold",
+      "garageonderbouw gesloten voor printbaarheid; de overstekte Hertekade wordt onder de eigen parkeerlagen gedeeltelijk gevuld",
+      "daklichten en machines vereenvoudigd op gemeten hoogtes; open dakput en kleiner noordterras behouden met geschatte vasteonderschaal77–84.859NAP"
+    ]
+  },
+  "sources": [
+    "https://www.qwa.nl/geschiedenis/ (architect,glas-trapezium)",
+    "https://www.architectuur.org/bouwwerk/425/Kantoorgebouw_Willemswerf.html (gevelraster,garages,achterkern)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000612039 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Gebouw_Willemswerf_Rotterdam.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Willemswerf_@_Rotterdam_(30465517922).jpg (Guilhem Vellut CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Willemswerf2.JPG (R08-42,publiekdomein)"
+  ],
+  "printFiles": [
+    "willemswerf-1-1000.stl"
+  ]
+}
