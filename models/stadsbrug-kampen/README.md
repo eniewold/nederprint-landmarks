@@ -44,9 +44,13 @@ Onderdelen in het model (hoogtes in NAP):
 - Vier heftorens, op elke pijler één aan elke dekrand, 4,0 m langs de brug en
   4,25 m dwars (y = ±6,95 tot ±11,2: de binnenste poot staat op de band
   tussen fietspad en voetpad, de buitenste buiten de dekrand). Het raamwerk
-  van poten en dwarsregels heeft de openingen als blinde nissen van 0,35 m:
-  vier rijen van 2,0 × 1,8 m op de zijvlakken (NAP +9,8 tot +18,7 m), drie op
-  het kopvlak aan de kant van het hefdeel en één aan de landzijde. Het voetpad
+  van poten en dwarsregels van 0,9 m heeft vier rijen openingen van
+  2,0 × 1,5 m op de zijvlakken (NAP +9,8 tot +18,4 m), waarvan de bovenste
+  drie dwars door de toren gaan, en dezelfde drie rijen van 2,2 m breed door
+  het kopvlak aan de kant van het hefdeel en de tweede rij door het kopvlak
+  aan de landzijde. De onderste rij is een nis van 0,35 m op beide
+  zijvlakken: doorgaand zou ze één opening vormen met de doorgang van het
+  voetpad eronder. Het voetpad
   loopt tussen de poten door, onder een doorgang van 2,25 m breed met een
   spitse top van 55 graden (top 4,1 m boven het wegdek). Boven de schouder
   (+19,3 m) een kop die naar de as smaller wordt met de naaf, en aan
@@ -97,7 +101,7 @@ dekeinde ophouden lopen door tot het dekeinde) en de rijbaan als de rest
 tussen fietspad en voetpad, de torens (behalve de doorgang van het voetpad)
 en de voegen blijven met 2 cm vrij constructie. Het voetpad loopt dus door de
 torens heen en houdt aan de buitenrand 9,2 m naast de as op (de schampkant).
-Volumes: brug 10.674 m³, constructie 8804 m³, rijbaan 931 m³, fietspad
+Volumes: brug 10.526 m³, constructie 8656 m³, rijbaan 931 m³, fietspad
 655 m³, voetpad 284 m³; samen precies de brug (het script controleert het).
 De verticale-stralencontrole (30.000 punten over het dek) vindt geen
 samenvallende vlakken tussen de nodes; alleen één punt in de knik onder een
@@ -109,10 +113,12 @@ verkeerslichten, portalen en slagbomen, de kabels van de wielen naar het
 hefdeel en de contragewichten (alle dunner dan 0,9 m), de stalen frames en
 leuningen op de pijlerpunten (buizen), het houten remmingwerk langs de
 pijlers en de meerpalen in de rivier (losse palen en balken), de spaken als
-open wiel (op 1:1000 een vrij hangende velg; nu nissen) en de open stand van
-het hefdeel. De torens zijn in het echt een open raamwerk; op 1:1000 worden
-de openingen nissen, omdat de dwarsregels anders vrije horizontale
-overspanningen van 2 m zijn.
+open wiel (spaken en velg van 0,35 m zijn op 1:1000 te dun; nu nissen) en de
+open stand van het hefdeel. De dwarsregels van de torens zijn in het model
+0,9 m in plaats van de 0,6 m die de nissen eerder lieten zien, zodat ze als
+losse balk dik genoeg zijn; de openingen zijn daardoor 1,5 in plaats van
+1,8 m hoog. De doorgang van het voetpad houdt zijn spitse top: hoe die echt
+afsluit, is op de bronnen niet te zien.
 
 Pasvorm op het AHN: het wegdek volgt het DSM binnen 0,05 m (25e percentiel
 per 4 m over rijbaan en fietspaden; de voetpaden zijn roosters waar het AHN
@@ -127,22 +133,26 @@ zuidwesten verschoven (scheefstand van 0,18 m per meter hoogte); het model
 volgt het DSM.
 
 Printbaarheid op 1:1000: de koppen van de torens lopen onder 48 tot 50 graden
-naar de as, de doorgang van het voetpad heeft een spitse top van 55 graden,
-de onderkant van de contragewichten en de dakrand van het bedieningsgebouw
-staan op 45 graden; de openingen van de torens en de spaken zijn blinde nissen
-van 0,3 tot 0,35 m. Vrij hangen alleen de onderkant van het dek (4099 m²),
-de bovenkant van de nissen (81 m²), de onderkant van de wielen boven de kop
-(16 m²) en wat kleine randen (5 m²). In de export gaan de constructie
-(genus 3 over zes stukken: de brug en de vijf losse schanscaissons) en de
-wegdelen samen met overhangopvulling door, die naar de constructie gaat: de
-printcheck op 1:1000 (uitsnede 220 m, 220 mm) geeft status NoError voor alle
-vier onderdelen, constructie 9,0 cm³ tegen 24,4 cm³ met opvulling (+172 %, de
-wig met scherm onder het vrij hangende dek), rijbaan +0,3 %, fietspad +1,3 %,
-voetpad 0 %, 3,4 seconden. De STL heeft dezelfde soort printvoet (wig van 50
-graden vanaf de dekrand die uitloopt in een scherm van 0,9 m tot de
-onderplaat; 27,7 cm³ in totaal). Het PDOK-weglint van de Stadsbrug hangt in
-de reconstructie als een lint over het water door (NAP 0 tot +1,6 m) en blijft
-onder het dek zichtbaar; dat is geen pand en wordt niet vervangen.
+naar de as, de doorgang van het voetpad heeft een spitse top van 55 graden, de
+onderkant van de contragewichten en de dakrand van het bedieningsgebouw staan
+op 45 graden; de spaken zijn blinde nissen van 0,3 m. Wat zonder steun niet
+print, laat het model aan de export over: de dwarsregels boven de openingen in
+de torens (samen met de doorgang en de nissen 189 m²), de onderkant van het
+dek (4099 m²), de onderkant van de wielen boven de kop (16 m²) en wat kleine
+randen (5 m²). In de meettest van de webshop (`scripts/overhang-lab`, het
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 10,5 naar 26,2
+cm³ (v1.0: 26,2 cm³; het vorige model met nissen: 26,3 cm³), zonder ongedragen
+lagen waar een printlijn in past: de openingen in de torens blijven open met
+alleen een smalle band onder de dwarsregel, onder het dek komt een wig met een
+smal scherm tot de onderplaat. De STL, die zonder export wordt geprint, heeft
+printvormen: de openingen van de torens als blinde nissen van 0,35 m in vier
+rijen van 2,0 × 1,8 m op de zijvlakken (NAP +9,8 tot +18,7 m), drie op het
+kopvlak aan de kant van het hefdeel en één aan de landzijde, en onder het dek
+een printvoet (wig van 50 graden vanaf de dekrand die uitloopt in een scherm
+van 0,9 m tot de onderplaat; 27,7 cm³ in totaal); ze is ongewijzigd. Het
+PDOK-weglint van de Stadsbrug hangt in de reconstructie als een lint over het
+water door (NAP 0 tot +1,6 m) en blijft onder het dek zichtbaar; dat is geen
+pand en wordt niet vervangen.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Stadsbrug_(Kampen))
 (hefbrug van Zwarts & Jansma Architecten, geopend in 1999, 210 m lang, 20 m

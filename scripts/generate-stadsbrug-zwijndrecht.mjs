@@ -318,11 +318,14 @@ const barrierSolid = ([x0, x1, y0, y1], margin = 0) => band(x0, x1, y0, y1, (x) 
 const barriers = BARRIERS.map((b) => barrierSolid(b));
 
 // ---------- vakwerkliggers ----------
-// Plaat van de onderkant van het dek tot de bovenrand; de driehoeken met een
-// verticaal en de diagonaal als plafond zijn doorgaande openingen, met een
+// Plaat van de onderkant van het dek tot de bovenrand met staven van 0,9 m. In
+// de GLB zijn alle vakken doorgaande openingen: de driehoeken met een
+// verticaal en de diagonaal als plafond en de driehoeken met een vlakke
+// bovenkant onder de bovenrand. Wat daarvan zonder steun niet print, vult de
+// export op. De STL, die zonder export wordt geprint, heeft printvormen: een
 // spitse top van 52 graden onder de diagonaal (de diagonaal wordt naar onderen
-// breder); de driehoeken met een vlakke bovenkant zijn blinde nissen van
-// 0,35 m aan de buitenkant.
+// breder) en blinde nissen van 0,35 m aan de buitenkant voor de driehoeken
+// met een vlakke bovenkant.
 const TAN_GABLE = Math.tan((GABLE_DEG * Math.PI) / 180);
 const openingAngles = [];
 let throughOpenings = 0;
@@ -349,6 +352,7 @@ for (let k = 0; k <= TRUSS.panels; k++) {
 }
 const holes = [];
 const niches = [];
+const openHoles = [];
 // Eindvelden onder de schuine eindstijlen: doorgaande openingen.
 for (const [xa, xb, xApex] of [
   [TRUSS.x0 + 0.6, TRUSS.t0, TRUSS.t0],
@@ -357,6 +361,7 @@ for (const [xa, xb, xApex] of [
   const tri = [[xa, zb(xa)], [xb, zb(xb)], [xApex, zt]];
   const hole = insetTriangle(tri, BAR / 2);
   if (hole) holes.push(hole);
+  if (hole) openHoles.push(hole);
 }
 for (let i = 0; i + 1 < nodes.length; i++) {
   const a = nodes[i];
@@ -370,8 +375,10 @@ for (let i = 0; i + 1 < nodes.length; i++) {
   const inset = insetTriangle(opening, BAR / 2);
   const hole = inset && gableCut(inset);
   if (hole) holes.push(hole);
+  if (inset) openHoles.push(inset);
   const n = insetTriangle(niche, BAR / 2);
   if (n) niches.push(n);
+  if (n) openHoles.push(n);
 }
 for (const hole of holes) {
   const apex = apexOf(hole);
@@ -400,7 +407,7 @@ const TRUSS_LINES = [
   { y0: -TRUSS.offset - TRUSS.half, y1: -TRUSS.offset + TRUSS.half, niche: "low" },
   { y0: TRUSS.offset - TRUSS.half, y1: TRUSS.offset + TRUSS.half, niche: "high" },
 ];
-const trusses = TRUSS_LINES.map(({ y0, y1, niche }) => {
+const printTrusses = TRUSS_LINES.map(({ y0, y1, niche }) => {
   const plate = profileY(trussOutline, y0, y1);
   const cut = [
     ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
@@ -410,6 +417,17 @@ const trusses = TRUSS_LINES.map(({ y0, y1, niche }) => {
   blindNiches += niches.length;
   return plate.subtract(union(cut));
 });
+const trusses = TRUSS_LINES.map(({ y0, y1 }) =>
+  profileY(trussOutline, y0, y1).subtract(union(openHoles.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)))),
+);
+// Eindportalen (GLB): tussen de liggers een balk van 0,9 × 0,9 m onder de
+// bovenrand boven de verticaal aan het eind van de bovenrand (x = -199 en -46),
+// vrij over 11,9 m boven de rijbaan. Wat zonder steun niet print, vult de
+// export op; de STL heeft ze niet.
+const PORTAL = 0.9;
+const portals = [TRUSS.t0 + PORTAL / 2, TRUSS.t1 - PORTAL / 2].map((xc) =>
+  boxFromTo(xc - PORTAL / 2, xc + PORTAL / 2, -TRUSS.offset + TRUSS.half - 0.01, TRUSS.offset - TRUSS.half + 0.01, TRUSS.top - PORTAL, TRUSS.top),
+);
 
 // ---------- klepliggers ----------
 function girderProfile() {
@@ -453,19 +471,22 @@ const kelder = union([
 ]);
 
 // ---------- de brug als geheel ----------
-const bridge = union([
-  deckCentre,
-  deckSW,
-  deckNE,
-  ...kerbs,
-  ...barriers,
-  ...trusses,
-  ...girders,
-  ...piers,
-  basculePier,
-  house,
-  kelder,
-]);
+const withTrusses = (trussParts) =>
+  union([
+    deckCentre,
+    deckSW,
+    deckNE,
+    ...kerbs,
+    ...barriers,
+    ...trussParts,
+    ...girders,
+    ...piers,
+    basculePier,
+    house,
+    kelder,
+  ]);
+const bridge = withTrusses([...trusses, ...portals]);
+const printBridge = withTrusses(printTrusses);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder het dek een wig van 50 graden vanaf de dekrand die uitloopt in een
@@ -495,7 +516,7 @@ const printFoot = loftX(
     };
   }),
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
@@ -527,8 +548,19 @@ function overhangs(solid) {
 const minAngle = openingAngles.reduce((m, a) => Math.min(m, a), Infinity);
 console.log("vrij hangend in het model (m2):", overhangs(bridge));
 console.log("vrij hangend in de printversie (m2):", overhangs(printModel));
-console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "steilste plafond min (graden)", +minAngle.toFixed(1));
-if (minAngle < 50) throw new Error("opening met een te vlak plafond");
+console.log(
+  "GLB: doorgaande openingen",
+  2 * openHoles.length,
+  "portalen",
+  portals.length,
+  "| STL: doorgaande openingen",
+  throughOpenings,
+  "blinde nissen",
+  blindNiches,
+  "steilste plafond min (graden)",
+  +minAngle.toFixed(1),
+);
+if (minAngle < 50) throw new Error("opening in de STL met een te vlak plafond");
 
 // ---------- wegdek als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is per wegdeel een eigen node met de
@@ -837,7 +869,7 @@ await writeFile(
         "G0642.bbb9e3bf01b44d958334f3b2e715c2d6",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de basculebrug (waar de twee kleppen elkaar raken) op de as tussen de vakwerkliggers in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -36,41 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts, naar de spoorbrug). Vijf nodes. road:rijbaan, road:fietspad, road:fietspad-cementbeton en road:voetpad: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan lokale weg in asfalt; fietspad in asfalt op het Zwijndrechtse deel en in cementbeton op het Dordtse deel; voetpad in cementbeton), buiten de liggers, geleiders, schampkanten en gebouwtjes, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:stadsbrug-zwijndrecht: de rest van de verkeersbrug van 1939: het dek van 23,2 m breed (rijbaan op NAP +13,5 tot +13,9 m, trottoirs 0,17 m hoger, schampkanten langs de rand); twee vakwerkliggers met evenwijdige randen op y = ±6,45 (bovenrand NAP +21,4 m, schuine eindstijlen, tien vakken van 15,3 m met verticalen, Warren-diagonalen) over twee velden tussen de pijlers op x = -204,6, -115 en de basculepijler, als dichte platen van 1,0 m met doorgaande driehoekige openingen met een spitse top van 52 graden en blinde nissen voor de driehoeken met een vlakke bovenkant; de dubbele basculebrug in gesloten stand met twee blauwe plaatliggers van 1,0 m (tot 2,0 m boven het wegdek bij de draaipunten, 1,4 m midden op de klep, 2,45 m waar de kleppen elkaar raken, schuine uiteinden); de basculepijler met halfronde kop, bordes op trottoirhoogte, kraag tot NAP +5,5 m en het huisje op het bordes (BAG-pand 0505100000013841, tot NAP +17,7 m); de basculekelder op de Dordtse kade met het machinehuis (tot NAP +20,7 m); de pijlers met ronde koppen en driehoekige neuzen aan de zuidwestkant (NAP +3,4 m) en de aanbrug met geleiders tot de voeg op x = -263,35. Leuningen, lantaarns, het windverband en de eindportalen boven de rijbaan (horizontaal vrij over 12,9 m, op 1:1000 niet zonder steun dwars over de rijbaan te printen), de trappen naast de Dordtse kelder en de rest van de aanbruggen en de fly-over zijn weggelaten; de Spoorbrug Dordrecht en de koffiefilter (BAG-pand 0505100000067669) zijn eigen modellen of blijven de PDOK-reconstructie. De export vult onder het dek op, de STL heeft een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de basculebrug (waar de twee kleppen elkaar raken) op de as tussen de vakwerkliggers in de oorsprong, z = NAP-hoogte (de Oude Maas op NAP 0), +X langs de brug naar het zuidoosten (Dordrecht, RD-richting -36,41 graden vanaf het oosten) en +Y naar het noordoosten (stroomopwaarts, naar de spoorbrug). Vijf nodes. road:rijbaan, road:fietspad, road:fietspad-cementbeton en road:voetpad: de bovenste 0,5 m van het dek binnen de actuele BGT-wegdelen op de brug (rijbaan lokale weg in asfalt; fietspad in asfalt op het Zwijndrechtse deel en in cementbeton op het Dordtse deel; voetpad in cementbeton), buiten de liggers, geleiders, schampkanten en gebouwtjes, met de BGT-attributen in extras.attributes, zodat de kleurregels van een thema erop werken. building:stadsbrug-zwijndrecht: de rest van de verkeersbrug van 1939: het dek van 23,2 m breed (rijbaan op NAP +13,5 tot +13,9 m, trottoirs 0,17 m hoger, schampkanten langs de rand); twee vakwerkliggers met evenwijdige randen op y = ±6,45 (bovenrand NAP +21,4 m, schuine eindstijlen, tien vakken van 15,3 m met verticalen, Warren-diagonalen) over twee velden tussen de pijlers op x = -204,6, -115 en de basculepijler, als platen van 1,0 m met staven van 0,9 m en alle vakken als doorgaande driehoekige openingen, met eindportalen van 0,9 × 0,9 m tussen de liggers aan beide uiteinden van de bovenrand; de dubbele basculebrug in gesloten stand met twee blauwe plaatliggers van 1,0 m (tot 2,0 m boven het wegdek bij de draaipunten, 1,4 m midden op de klep, 2,45 m waar de kleppen elkaar raken, schuine uiteinden); de basculepijler met halfronde kop, bordes op trottoirhoogte, kraag tot NAP +5,5 m en het huisje op het bordes (BAG-pand 0505100000013841, tot NAP +17,7 m); de basculekelder op de Dordtse kade met het machinehuis (tot NAP +20,7 m); de pijlers met ronde koppen en driehoekige neuzen aan de zuidwestkant (NAP +3,4 m) en de aanbrug met geleiders tot de voeg op x = -263,35. Leuningen, lantaarns, het windverband boven de rijbaan, de trappen naast de Dordtse kelder en de rest van de aanbruggen en de fly-over zijn weggelaten; de Spoorbrug Dordrecht en de koffiefilter (BAG-pand 0505100000067669) zijn eigen modellen of blijven de PDOK-reconstructie. Wat zonder steun niet print (de bovenkant van de openingen, de portalen, het dek) vult de export op. De STL heeft openingen met een spitse top van 52 graden, blinde nissen voor de driehoeken met een vlakke bovenkant, geen portalen en een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthInModelM: +(X_EAST - X_WEST).toFixed(2),

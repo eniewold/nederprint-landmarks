@@ -91,6 +91,9 @@ Onderdelen in het model (hoogtes in NAP):
   doorgaande ruit met een spitse top van 55 graden onder de bovenregel
   (9 per wand). De vloer met trekband is 2,1 m hoog, het spoor ligt op
   +24,35 m op de opleggingen en +24,86 m in het midden (AHN).
+- Eindportalen van 0,9 × 0,9 m tussen de vakwerkwanden met de bovenkant op
+  de bovenrand bij de eerste en de laatste bovenknoop (x = ±105,975, de top
+  van de eindstijl met de verticaal eronder), vrij over 10 m boven het spoor.
 - De korte vloer van het zuidelijke landhoofd tot de oplegging (spoor
   +24,32 m) en de aanbruggen van 2,6 m hoog van de rivierpijler tot het
   landhoofd op de dijk, met het spoor aflopend van +24,36 m naar +21,98 m
@@ -117,10 +120,8 @@ Onderdelen in het model (hoogtes in NAP):
   (BGT). Elke pijler reikt tot onder het spoordek en onder de Snelbinder tot
   de onderkant van zijn dek.
 
-Wat er niet in zit: de windverbanden (X-verbanden tussen de bovenregels) en
-de eindportalen tussen de vakwerkwanden, omdat het horizontale vrije
-overspanningen van 10 m zijn die op 1:1000 niet zonder steun printen (de
-export zou ze tot op de vloer opvullen); de bovenleiding met portalen en
+Wat er niet in zit: de windverbanden (X-verbanden van dunne staven tussen de
+bovenregels); de bovenleiding met portalen en
 masten, de leuningen, de staven van de hangers als losse buizen (één
 scherm), en de open stalen trappen van de Snelbinder naar de kade, het
 eiland en de dijk (circa 2 m brede trapbomen met leuningen, op 1:1000 een
@@ -143,29 +144,43 @@ nergens meer dan 0,7 m erboven; op de buisboog ligt het hoogste DSM-punt per
 
 Printbaarheid op 1:1000: het open vakwerk is op 1:1000 niet te printen. Elke
 vakwerkwand is daarom een dichte plaat van 1,6 m met staven van 1,45 m,
-doorgaande openingen met zijden van minstens 55 graden en een spitse top,
-en ruiten met een spitse top onder de bovenregel; het hangerscherm is een
-plaat van 0,9 m met dezelfde openingen, die ook gekanteld steiler blijven
-dan 50 graden. Alle nodes zijn gesloten manifolds (genus 58 voor de
-spoorbrug en 37 voor de Snelbinder door de openingen; de pijlers zijn 11
-losse delen; van de wegdelen heeft het voetpad genus 1, omdat de voet van de
-buisboog bij de zuidelijke oplegging er als gat doorheen gaat). De dekken hangen tussen de pijlers vrij. Met 712 m past de brug op
-1:1000 niet in één uitsnede; de printcontrole op de hele brug kiest 1:1784
-(400 mm, 150 seconden): alle zes nodes gaan als gesloten solid door (status
-NoError). De export vult de onderdelen samen op en geeft de opvulling aan de
-eerste constructienode (spoorbrug 25,2 naar 17,7 cm³ met de opvulling van
-de hele brug; Snelbinder 0,98 en pijlers 3,1 cm³ ongewijzigd); de wegdelen
-krijgen geen eigen opvulling (`extraPct` 0 tot 0,8: spoor 0,65, fietspad
-0,25 en voetpad 0,13 cm³). Op 1:1000 over de boog (uitsnede van 270 m,
-78 seconden): spoorbrug 67,2 naar 38,5 cm³, Snelbinder 3,4, pijlers 4,8,
-spoor 1,36, fietspad 0,52 en voetpad 0,34 cm³, alles NoError en `extraPct`
-0 voor de wegdelen. Onder de dekken komt een wig van 45 graden met een smal
-scherm tot de onderplaat; de openingen in de vakwerkwanden blijven open,
-die in het schuine hangerscherm groeien in de export voor een deel dicht
-tot V-vormige sleuven. De STL op 1:2500 heeft dezelfde printvoet per dek
-(wig van 50 graden en een scherm van 0,8 mm); wat daarin nog vlak hangt
-(626 m² op ware grootte), zijn de dwarsliggers onder de Snelbinder en de
-toppen van de openingen.
+doorgaande openingen met zijden van minstens 55 graden en een spitse top, en
+ruiten met een spitse top onder de bovenregel; het hangerscherm is een plaat
+van 0,9 m met dezelfde openingen, die ook gekanteld steiler blijven dan 50
+graden. Alle nodes zijn gesloten manifolds (genus 58 voor de spoorbrug en 37
+voor de Snelbinder door de openingen; de pijlers zijn 11 losse delen; van de
+wegdelen heeft het voetpad genus 1, omdat de voet van de buisboog bij de
+zuidelijke oplegging er als gat doorheen gaat). De dekken hangen tussen de
+pijlers vrij. Met 712 m past de brug op 1:1000 niet in één uitsnede; de
+printcontrole op de hele brug kiest 1:1784 (400 mm, 150 seconden): alle zes
+nodes gaan als gesloten solid door (status NoError). De export vult de
+onderdelen samen op en geeft de opvulling aan de eerste constructienode
+(spoorbrug 25,2 naar 17,7 cm³ met de opvulling van de hele brug; Snelbinder
+0,98 en pijlers 3,1 cm³ ongewijzigd); de wegdelen krijgen geen eigen opvulling
+(`extraPct` 0 tot 0,8: spoor 0,65, fietspad 0,25 en voetpad 0,13 cm³). Op
+1:1000 over de boog (uitsnede van 270 m, 78 seconden): spoorbrug 67,2 naar
+38,5 cm³, Snelbinder 3,4, pijlers 4,8, spoor 1,36, fietspad 0,52 en voetpad
+0,34 cm³, alles NoError en `extraPct` 0 voor de wegdelen. Onder de dekken komt
+een wig van 45 graden met een smal scherm tot de onderplaat; de openingen in
+de vakwerkwanden blijven open, die in het schuine hangerscherm groeien in de
+export voor een deel dicht tot V-vormige sleuven. De STL op 1:2500 heeft
+dezelfde printvoet per dek (wig van 50 graden en een scherm van 0,8 mm); wat
+daarin nog vlak hangt (626 m² op ware grootte), zijn de dwarsliggers onder de
+Snelbinder en de toppen van de openingen. Wat zonder steun niet print, laat
+het model aan de export over; sinds de eindportalen erin zitten, gaat in de
+meettest van de webshop (`scripts/overhang-lab`, het model op 1:1000) het
+volume met "Ondersteuning v2.0" van 52,2 naar 111,9 cm³ (v1.0: 112,1 cm³; het
+vorige model zonder portalen: 111,9 cm³), zonder ongedragen lagen waar een
+printlijn in past buiten de ene die het vorige model ook had (1,9 mm² bij x =
+151 m, y = -7 m, 17 m boven het water): onder elk portaal komt aan weerszijden
+een wig van 45 graden tegen de vakwerkwanden en blijft boven het spoor een
+spitse opening. De ruiten met een spitse top in de vakwerkwanden en in het
+hangerscherm blijven: met driehoeken met een vlakke bovenkant tot onder de
+bovenregel laat de export onder de schuin lopende regel smalle ongedragen
+randjes achter (12,1 tegen 1,9 mm² printbaar ongedragen), en met driehoeken
+tot onder de buisboog brak de opvulling van de export af (RuntimeError in
+manifold na circa 400 seconden). De STL, die zonder export wordt geprint,
+heeft geen eindportalen en is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Spoorbrug_Nijmegen)
 (boog van 235 m sinds 1984, doorvaarthoogte NAP +22,8 m, Snelbinder 2004 aan

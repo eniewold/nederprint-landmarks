@@ -59,12 +59,13 @@ Onderdelen in het model (hoogtes in NAP):
   (AHN). Tien vakken van 15,3 m (windverband op de luchtfoto) met een
   verticaal op elke knoop en in het midden van elk vak en diagonalen in een
   W (Warren met verticalen, foto vanaf het dek); het steunpunt op de
-  middenpijler valt op een onderknoop. Als dichte plaat: per ligger 22
-  doorgaande driehoekige openingen (de vakken met een verticaal en de
-  diagonaal als plafond, met een spitse top van 52 graden onder de
-  diagonaal, zodat de diagonaal naar onderen breder wordt; de eindvelden
-  onder de eindstijlen van 54 graden) en 20 blinde nissen van 0,35 m aan de
-  buitenkant voor de driehoeken met een vlakke bovenkant.
+  middenpijler valt op een onderknoop. Als plaat met staven van 0,9 m en
+  per ligger 42 doorgaande driehoekige openingen: 22 met een verticaal en
+  de diagonaal als plafond (en de eindvelden onder de eindstijlen) en 20
+  met een vlakke bovenkant onder de bovenrand.
+- Eindportalen van 0,9 × 0,9 m tussen de liggers onder de bovenrand boven de
+  verticaal aan het eind van de bovenrand (x = -199 en -46), vrij over
+  11,9 m boven de rijbaan.
 - De dubbele basculebrug in gesloten stand: twee klepliggers van 1,0 m op
   y = ±6,45 van x = -34,5 tot 35,3 (BGT), 2,05 m boven het wegdek bij de
   draaipunten (x = -30,5 en 31,5), aflopend naar 1,4 m midden op de klep,
@@ -96,10 +97,8 @@ Onderdelen in het model (hoogtes in NAP):
   het trottoir één fietspad in asfalt, op het Dordtse deel (G0505) een
   fietspad en een voetpad in cementbeton.
 
-Wat er niet in zit: het windverband en de eindportalen boven de rijbaan
-(horizontale staven vrij over 12,9 m op 21 m hoogte; op 1:1000 vult de export
-daaronder dwars over de rijbaan op, dus weggelaten), leuningen, lantaarns en
-verkeersborden (dunner dan 0,9 m), de koffiefilter (BAG-pand, blijft de
+Wat er niet in zit: het windverband boven de rijbaan (dunne staven),
+leuningen, lantaarns en verkeersborden (dunner dan 0,9 m), de koffiefilter (BAG-pand, blijft de
 PDOK-reconstructie), de trappen naast de Dordtse kelder (loop niet uit de
 bronnen af te leiden, ze lopen deels onder de fly-over buiten het model), de
 rest van de Zwijndrechtse aanbrug en de Dordtse fly-over (die liggen in PDOK
@@ -110,7 +109,7 @@ Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke grijze wegstrook op het water, zonder vakwerk, pijlers of
 basculebrug; alleen het huisje en de koffiefilter staan als blok op de
 pijler. Het model heeft van het zuidwesten en noordoosten (235 en 55 graden)
-de twee vakwerkliggers met openingen en nissen, de pijlers met neuzen, de
+de twee vakwerkliggers met open vakken, de pijlers met neuzen, de
 blauwe klepliggers en het verhoogde dek op 13,8 m; van het noordwesten (325
 graden, uit Zwijndrecht) de aanbrug met geleiders, de eindstijlen en de
 basculepijler met het halfronde bordes en het huisje; van het zuidoosten
@@ -123,19 +122,24 @@ windverband boven de rijbaan, auto's en lantaarns), op de trottoirs 89,5 %
 binnen 0,5 m (mediaan -0,02 m). De bovenrand van de liggers staat in het DSM
 op +21,37 m (99e percentiel) tegen +21,4 m in het model.
 
-Printbaarheid op 1:1000: het vakwerk is een dichte plaat van 1,0 m met staven
-van 0,9 m; elke doorgaande opening heeft een plafond van 52 graden of
-steiler (het script controleert dat), de driehoeken met een vlakke bovenkant
-zijn blinde nissen. Alleen het ondervlak van het dek en van de bordessen
-hangt vrij; in de printversie met voet blijft daarvan 2,5 m² over (de
-nissen en daken van 84 m² zijn ondiep of horizontaal op een wand). Alles
-begint op dezelfde onderkant. Printcheck op 1:1000 in een uitsnede van 280 m
-rond het model: status NoError voor alle vijf onderdelen, de constructie van
-75,5 naar 59,4 cm³ (de printbare opvulling is 21 % minder dan de rechte
-opvulling tot de onderplaat), de `road:`-onderdelen zonder eigen opvulling
-(`extraPct` 0), 11,6 s; de vakwerkopeningen blijven open. De STL heeft een
-printvoet: een wig van 50 graden onder de dekrand met een scherm van 0,9 m
-tot de onderplaat. Controle op samenvallende vlakken (30 000 en 100 000
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom is
+het vakwerk een plaat van 1,0 m met staven van 0,9 m. Wat zonder steun niet
+print, laat het model aan de export over: de diagonalen en de bovenrand
+boven de openingen en de onderkant van de eindportalen (samen met de daken
+580 m²) en het ondervlak van het dek en van de bordessen. Alles begint op
+dezelfde onderkant. In de meettest van de webshop (`scripts/overhang-lab`,
+het model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 29,6 naar
+62,1 cm³ (v1.0: 62,2 cm³; het vorige model met nissen: 62,3 cm³), zonder
+ongedragen lagen waar een printlijn in past: onder de diagonalen blijft
+een spitse opening, de driehoeken met een vlakke bovenkant vult de export
+grotendeels op (zoals de nissen eerder dicht waren) en onder de
+eindportalen vult ze aan weerszijden tot het dek op, met in het midden een
+spitse doorgang van circa 5 m breed boven de rijbaan. De STL, die zonder
+export wordt geprint, heeft printvormen: doorgaande openingen met een
+plafond van 52 graden of steiler (het script controleert dat), blinde nissen
+van 0,35 m aan de buitenkant voor de driehoeken met een vlakke bovenkant,
+geen eindportalen en een printvoet (een wig van 50 graden onder de dekrand
+met een scherm van 0,9 m tot de onderplaat); ze is ongewijzigd. Controle op samenvallende vlakken (30 000 en 100 000
 verticale stralen over het dek): geen z-fighting tussen nodes en geen vlak
 zonder dikte in de `road:`-nodes.
 

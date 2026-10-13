@@ -213,8 +213,10 @@ const ABUTMENTS = [
 
 // Heftorens (AHN, luchtfoto, foto's): op elke rivierpijler twee torens
 // schrijlings op de dekrand, 4,0 m langs de brug en 4,25 m dwars
-// (y = ±6,95 tot ±11,2). Een raamwerk van vier poten met dwarsregels; de
-// openingen zijn op 1:1000 nissen van 0,35 m. Het voetpad loopt tussen de
+// (y = ±6,95 tot ±11,2). Een raamwerk van vier poten met dwarsregels; in de
+// GLB zijn de openingen doorgaand, met dwarsregels van 0,9 m. Wat daarvan
+// zonder steun niet print, vult de export op; de STL, die zonder export wordt
+// geprint, heeft de openingen als nissen van 0,35 m. Het voetpad loopt tussen de
 // poten door, onder een spitse doorgang van 55 graden. Boven de schouder
 // (NAP +19,3 m) een kop die smaller wordt naar de as met twee wielen van 3,6 m
 // (8 spaken, als nissen) aan weerszijden, top NAP +22,9 m. Aan de landzijde
@@ -231,6 +233,14 @@ const NICHE = 0.35;
 // Rijen openingen (NAP) op de zijvlakken langs de brug en op de kopvlakken.
 const SIDE_ROWS = [[9.8, 11.6], [12.2, 14.0], [14.6, 16.4], [17.0, 18.7]].map(([a, b]) => [Z(a), Z(b)]);
 const END_ROWS = [[12.0, 13.8], [14.4, 16.2], [16.8, 18.7]].map(([a, b]) => [Z(a), Z(b)]);
+// Openingen in de GLB: vier rijen van NAP +9,8 m tot 0,9 m onder de schouder
+// met dwarsregels van 0,9 m (de dwarsregels van 0,6 m tussen de nissen zouden
+// als losse balk te dun zijn), de bovenste drie doorgaand; de kopvlakken
+// hebben dezelfde rijen als de zijvlakken: aan de kant van het hefdeel de
+// bovenste drie, aan de landzijde de tweede.
+const RAIL = 0.9;
+const OPEN_ROW = (SHOULDER - RAIL - Z(9.8) - 3 * RAIL) / 4;
+const OPEN_ROWS = [0, 1, 2, 3].map((i) => [Z(9.8) + i * (OPEN_ROW + RAIL), Z(9.8) + i * (OPEN_ROW + RAIL) + OPEN_ROW]);
 
 // Bedieningsgebouw (BAG 0166100000030487) op de noordwestpunt van de
 // oostelijke pijler: een kolom die naar boven toe breder wordt (BAG-contour
@@ -364,7 +374,28 @@ function tower(side, sy) {
   const zr = zt + PASSAGE.height;
   const section = [[pa, zt - APPROACH.slab], [pb, zt - APPROACH.slab], [pb, zr], [(pa + pb) / 2, zr + half * TAN_APEX], [pa, zr]];
   const passage = loftX([{ x: x0 - 0.5, section }, { x: x1 + 0.5, section }]);
-  // Nissen tussen de poten: zijvlakken (normaal ±Y) en kopvlakken (normaal ±X).
+  // GLB: doorgaande openingen tussen de poten, door de hele toren langs Y en
+  // door de kopwand langs X.
+  // De onderste rij blijft een nis van 0,35 m op beide zijvlakken: doorgaand
+  // zou ze één opening worden met de doorgang van het voetpad eronder, en dan
+  // zet de export onder de dwarsregel een kolom tot op het voetpad.
+  const openings = OPEN_ROWS.map(([z0, z1], i) =>
+    i === 0
+      ? union([ya, yb].map((yf) => boxFromTo(x0 + TOWER.leg, x1 - TOWER.leg, yf - (yf === ya ? -1 : 1) * NICHE, yf + (yf === ya ? -1 : 1) * 0.5, z0, z1)))
+      : boxFromTo(x0 + TOWER.leg, x1 - TOWER.leg, ya - 0.5, yb + 0.5, z0, z1),
+  );
+  const landFace = side < 0 ? x0 : x1;
+  const spanFace = side < 0 ? x1 : x0;
+  for (const [xf, rows] of [
+    [spanFace, OPEN_ROWS.slice(1)],
+    [landFace, OPEN_ROWS.slice(1, 2)],
+  ]) {
+    const out = xf === x0 ? -1 : 1;
+    for (const [z0, z1] of rows) {
+      openings.push(boxFromTo(xf - out * (TOWER.leg + 0.05), xf + out * 0.5, yc - 1.1, yc + 1.1, z0, z1));
+    }
+  }
+  // STL: nissen tussen de poten, zijvlakken (normaal ±Y) en kopvlakken (normaal ±X).
   const niches = [];
   for (const yf of [ya, yb]) {
     const out = yf === ya ? -1 : 1;
@@ -372,8 +403,6 @@ function tower(side, sy) {
       niches.push(boxFromTo(x0 + TOWER.leg, x1 - TOWER.leg, yf - out * NICHE, yf + out * 0.5, z0, z1));
     }
   }
-  const landFace = side < 0 ? x0 : x1;
-  const spanFace = side < 0 ? x1 : x0;
   for (const [xf, rows] of [
     [spanFace, END_ROWS],
     [landFace, END_ROWS.slice(0, 1)],
@@ -412,9 +441,15 @@ function tower(side, sy) {
     yc - WEIGHT.half,
     yc + WEIGHT.half,
   );
-  return union([body.subtract(union([passage, ...niches])), head, hub, neck, ...wheels, weight]);
+  const top = [head, hub, neck, ...wheels, weight];
+  return {
+    model: union([body.subtract(union([passage, ...openings])), ...top]),
+    print: union([body.subtract(union([passage, ...niches])), ...top]),
+  };
 }
-const towers = [-1, 1].flatMap((side) => [1, -1].map((sy) => tower(side, sy)));
+const towerPairs = [-1, 1].flatMap((side) => [1, -1].map((sy) => tower(side, sy)));
+const towers = towerPairs.map((t) => t.model);
+const printTowers = towerPairs.map((t) => t.print);
 
 // ---------- bedieningsgebouw ----------
 const cabin = (() => {
@@ -436,20 +471,9 @@ const cabin = (() => {
   return union([column, glassBand, brimPart, dome]);
 })();
 
-const bridge = union([
-  westDeck,
-  liftSpan,
-  eastDeck,
-  ...kerbs,
-  ...abutments,
-  ...columnPiers,
-  ...riverPiers,
-  ...pierWalls,
-  ...platforms,
-  ...caissons,
-  ...towers,
-  cabin,
-]).subtract(union(joints));
+const common = [westDeck, liftSpan, eastDeck, ...kerbs, ...abutments, ...columnPiers, ...riverPiers, ...pierWalls, ...platforms, ...caissons];
+const bridge = union([...common, ...towers, cabin]).subtract(union(joints));
+const printBridge = union([...common, ...printTowers, cabin]).subtract(union(joints));
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -481,7 +505,7 @@ const printFoot = loftX(
     };
   }),
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 function overhangs(solid) {
@@ -515,7 +539,7 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
     const ym = (p[0][1] + p[1][1] + p[2][1]) / 3;
     const zm = (p[0][2] + p[1][2] + p[2][2]) / 3;
     const inTower = Math.abs(Math.abs(xm) - TOWER.xc) < TOWER.half + WEIGHT.depth + 0.1 && Math.abs(Math.abs(ym) - TOWER_YC) < WEIGHT.half + 0.1;
-    const key = inTower && zm > SHOULDER - 0.2 ? "wielen en kop" : inTower && zm > road(xm) + 0.5 ? "torens (nissen, doorgang)" : zm <= road(xm) + 0.05 ? "onder het dek" : "overig";
+    const key = inTower && zm > SHOULDER - 0.2 ? "wielen en kop" : inTower && zm > road(xm) + 0.5 ? "torens (openingen, doorgang)" : zm <= road(xm) + 0.05 ? "onder het dek" : "overig";
     buckets[key] = (buckets[key] ?? 0) + area;
   }
   console.log("vrij hangend (m2):", Object.fromEntries(Object.entries(buckets).map(([k, a]) => [k, +a.toFixed(2)])));
@@ -786,7 +810,7 @@ await writeFile(
         "G0166.07fb9aff438644b99882747a967d0a24",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de IJssel (NAP -0,31 m zoals het PDOK-terrein die legt, z = NAP + 0,31) in de oorsprong, +X langs de brug naar het noordoosten (de oostoever bij het station, RD-richting 35,53 graden vanaf het oosten) en +Y naar het noordwesten, stroomafwaarts. Vier nodes: road:rijbaan, road:fietspad en road:voetpad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van de hefbrug van de IJsselkade (x = -140,2) tot de dijk aan de oostkant (x = 79,2). De vier heftorens van 4,0 × 4,25 m schrijlings op de dekranden als raamwerk met nissen, een spitse doorgang voor het voetpad, een kop met twee wielen van 3,6 m met acht spaken (top NAP +22,9 m) en het contragewicht aan de landzijde in gesloten stand; het hefdeel van 31 m tussen de voegen op x = ±15,5; de rivierpijlers (BGT) tot NAP +3,9 m met de bovenbouw onder de aanbruggen, het bedieningsgebouw (BAG-pand) op de noordwestpunt van de oostelijke pijler met glazen band, dakrand en koepel tot NAP +13,36 m en drie dienstplatforms op de andere pijlerpunten; de aanbruggen als plaat met liggers op kolompijlers met een kesp en vier ronde kolommen (vier velden aan de westkant, twee aan de oostkant); de vijf schanscaissons in de rivier (BGT). Het wegdek ligt op NAP +4,05 m aan de IJsselkade, +7,33 m bij de westelijke pijler, +6,67 m bij de oostelijke en +4,66 m op de dijk. Schampkanten in plaats van de glazen leuningen. Lantaarns, verkeerslichten, slagbomen, portalen, de kabels, de stalen frames op de pijlerpunten, het houten remmingwerk en de meerpalen zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de rivierpijlers op de waterspiegel van de IJssel (NAP -0,31 m zoals het PDOK-terrein die legt, z = NAP + 0,31) in de oorsprong, +X langs de brug naar het noordoosten (de oostoever bij het station, RD-richting 35,53 graden vanaf het oosten) en +Y naar het noordwesten, stroomafwaarts. Vier nodes: road:rijbaan, road:fietspad en road:voetpad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van de hefbrug van de IJsselkade (x = -140,2) tot de dijk aan de oostkant (x = 79,2). De vier heftorens van 4,0 × 4,25 m schrijlings op de dekranden als raamwerk met doorgaande openingen (de onderste rij als nis), een spitse doorgang voor het voetpad, een kop met twee wielen van 3,6 m met acht spaken (top NAP +22,9 m) en het contragewicht aan de landzijde in gesloten stand; het hefdeel van 31 m tussen de voegen op x = ±15,5; de rivierpijlers (BGT) tot NAP +3,9 m met de bovenbouw onder de aanbruggen, het bedieningsgebouw (BAG-pand) op de noordwestpunt van de oostelijke pijler met glazen band, dakrand en koepel tot NAP +13,36 m en drie dienstplatforms op de andere pijlerpunten; de aanbruggen als plaat met liggers op kolompijlers met een kesp en vier ronde kolommen (vier velden aan de westkant, twee aan de oostkant); de vijf schanscaissons in de rivier (BGT). Het wegdek ligt op NAP +4,05 m aan de IJsselkade, +7,33 m bij de westelijke pijler, +6,67 m bij de oostelijke en +4,66 m op de dijk. Schampkanten in plaats van de glazen leuningen. Lantaarns, verkeerslichten, slagbomen, portalen, de kabels, de stalen frames op de pijlerpunten, het houten remmingwerk en de meerpalen zijn weggelaten; wat zonder steun niet print (de dwarsregels boven de openingen in de torens, het dek) vult de export op, onder het dek een wig met een smal scherm tot de onderplaat. De STL heeft blinde nissen in plaats van de openingen in de torens en onder het dek dezelfde printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),
