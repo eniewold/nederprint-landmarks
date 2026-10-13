@@ -1,0 +1,62 @@
+{
+  "name": "Silverline",
+  "file": "silverline-almere.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143266,
+    486516
+  ],
+  "xAxis": [
+    0.9713420698132614,
+    0.2376858923261731
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 38.566999637,
+  "groundSamplePoints": [
+    [
+      -32.61205409052425,
+      22.393166993454066
+    ],
+    [
+      -40.103907755687025,
+      17.01988785871827
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0034100000070107"
+  ],
+  "description": "Silverline aan het Weerwater: gekantelde bovenbouw met aangesloten printafschuining, lage woonvleugel, gevarieerde vensternissen, open dakput en installaties, westentree en zwarte garageplint. Oorsprong RD143266/486516 op NAP-4.26m; as13.75graden uit gevels. Het begroeide garagedak blijft terrein, geen dubbele landschapsplaat. Hoogte circa49m, geen120m-toren.",
+  "realWorld": {
+    "groundNapM": -4.26,
+    "axisDegrees": 13.75,
+    "mainRoofNapM": 44.144,
+    "frontRoofNapM": 45.121,
+    "rimNapM": 45.555,
+    "machineryNapM": 45.799,
+    "lowWingRoofNapM": 15.448,
+    "garageTopNapM": -1.525,
+    "estimates": [
+      "kantelhoek bovenste gevel en overgang op24.8NAP uit schuine foto, circa1.5m onzeker; 45-graden printafschuining begint op17.2NAP",
+      "woonlaagritme2.85m, gevarieerde vensters2.1/2.5 bij1.6m en hoekserres uit foto, circa.5m onzeker",
+      "entreeportaal en canopy uit foto, .9m minimumdikte; corrugatie en relingen dunner dan.9m weggelaten",
+      "garageplint zichtbaar als gesloten.9m wand; begroeid garagedak hoort bij PDOK-terrein"
+    ]
+  },
+  "sources": [
+    "https://www.visitalmere.com/nl/locaties/3783843205/silverline",
+    "https://www.architectuur.org/bouwwerk/153/Woontoren_Silverline.html",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0034100000070107 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_100.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_137.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_84.JPG",
+    "https://commons.wikimedia.org/wiki/File:Silverline.jpg"
+  ],
+  "printFiles": [
+    "silverline-almere-1-1000.stl"
+  ]
+}
