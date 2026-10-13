@@ -38,7 +38,7 @@
   "printFiles": [
     "spoorbrug-mook-1-1000.stl"
   ],
-  "description": "Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde driehoeken, vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.",
+  "description": "Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde staande en omgekeerde driehoeken (V-liggers; de STL zonder de omgekeerde), vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.",
   "realWorld": {
     "deckNapM": [
       [

@@ -55,9 +55,9 @@ circa 1 km zuidoostelijker (dichtstbijzijnde punten ruim 900 m uit elkaar); de m
   alleen diagonalen (geen stijlen), schuine eindstijlen van de oplegging naar
   de eerste bovenknoop een half vak verder, bovenrand op +24,3 m (AHN), de
   onderrand tot 0,9 m boven het dek. Op 1:1000 is elk vakwerk een dichte plaat
-  van 1,0 m: de driehoeken met de punt omhoog zijn doorgaande openingen
-  (flanken van 57,6 graden, negen per ligger), de driehoeken met een vlakke
-  bovenkant blinde nissen van 0,35 m aan de buitenkant (acht per ligger).
+  van 1,0 m met alle vakken als doorgaande openingen: negen driehoeken met de
+  punt omhoog (flanken van 57,6 graden) en acht met een vlakke bovenkant per
+  ligger, samen 34 openingen.
   Vakwerkdek: plaat van 0,8 m met dwarsdragers tot 1,6 m onder het dek tussen
   de liggers.
 - **Rivierpijlers** met spitse koppen (BGT: 5,6 × 21,8 m) tot 2,4 m onder het
@@ -101,9 +101,11 @@ strook tussen de sporen en die tussen spoor en schampkant blijven constructie.
 
 ## Weggelaten
 
-- Het windverband (kruisen tussen de bovenranden) en de eindportalen: vrije
-  horizontale staven van 9,7 m boven het spoor, die de export op 1:1000 tot
-  het dek zou opvullen.
+- Het windverband (kruisen van staven dunner dan 0,9 m tussen de
+  bovenranden) en de eindportalen: vrije horizontale staven van 9,7 m boven
+  het spoor. Onder de eerste en de laatste bovenknoop zit in een Warrenligger
+  zonder stijlen een opening, dus de export heeft daar geen wand om tegen te
+  schoren en zou onder een portaal een scherm tot het dek opvullen.
 - Het looppad met leuning op de bovenrand, de leuningen langs de paden (open
   hekwerk, vervangen door randbalken), de bovenleiding met portalen en de
   lantaarns: kleiner dan 0,9 m.
@@ -118,8 +120,20 @@ strook tussen de sporen en die tussen spoor en schampkant blijven constructie.
   (verschil 0,05 m3 op 31 854 m3); elke node is een gesloten manifold.
 - Geen samenvallende vlakken (z-fighting-controle met 30 000 verticale
   stralen over het dek).
-- In het model hangen alleen de onderkant van de dekken en de plafonds van
-  de blinde nissen vrij; de doorgaande openingen hebben een spitse top.
+- In het model hangen alleen de onderkant van de dekken (6794 m²) en de
+  vlakke bovenkant van de 16 openingen met een vlakke bovenkant (141 m²)
+  vrij; de openingen met de punt omhoog hebben flanken van 57,6 graden. Wat
+  zonder steun niet print, laat het model aan de export over. In de meettest
+  van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het
+  volume met "Ondersteuning v2.0" van 31,5 naar 54,3 cm³ (v1.0: 54,6 cm³),
+  zonder ongedragen lagen op een stukje van 0,26 mm² bij de pijlerkop naast
+  de trap na (ook in het model met nissen): onder de vlakke bovenkant van de
+  openingen blijft een spitse opening met schoren tegen de staven, onder de
+  dekken komt een wig met een smal scherm tot de onderplaat.
+- De STL, die zonder export wordt geprint, heeft printvormen: blinde nissen
+  van 0,35 m aan de buitenkant in plaats van de openingen met een vlakke
+  bovenkant en onder de dekken een printvoet (wig van 50 graden en een
+  scherm); ze is ongewijzigd.
 - Printcontrole van de catalogus (uitsnede rond het hele model, 400 mm,
   effectief 1:1075): alle onderdelen NoError, de wegdelen zonder eigen
   opvulling (`extraPct` 0).

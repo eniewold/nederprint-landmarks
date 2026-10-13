@@ -41,7 +41,7 @@ const piers=BGT_SUPPORTS.map(({ring})=>{const x=ring.reduce((s,p)=>s+p[0]/ring.l
 const FIELD_ENDS=[-72.3,1.6,75.6,149.7],TRUSS_Y=[-4.05,.35],TRUSS_WIDTH=1.5;
 const profileY=(poly,y0,y1)=>section(poly).extrude(y1-y0).rotate([90,0,0]).translate([0,y1,0]);
 const profileX=(poly,x0,x1)=>section(poly).extrude(x1-x0).rotate([90,0,90]).translate([x0,0,0]);
-const trusses=[],portals=[];
+const trusses=[],portals=[],glbTrusses=[];
 for(let field=0;field<3;field++){
  const a=FIELD_ENDS[field],b=FIELD_ENDS[field+1],z=top((a+b)/2),cap=27.02-WATER_NAP;
  const outline=field<2?[[a,z-.3],[b,z-.3],[b,cap],[a,cap]]:[[a,z-.3],[b,z-.3],[b,z+.4],[b-7.8,cap],[a+7.8,cap],[a,z+.4]];
@@ -54,15 +54,33 @@ for(let field=0;field<3;field++){
    if(field===2&&(j===0||j===n-1))continue;
    wall=wall.subtract(profileY(opening,y-.76,y-.45)).subtract(profileY(opening,y+.45,y+.76));
   }trusses.push(wall.intersect(mask));
+  // Alleen in de GLB: in het Warrenveld ook de omgekeerde driehoeken tussen de
+  // staande, met een vlakke bovenkant onder de bovenrand en diagonalen van
+  // 1,0 m, als blinde nis zoals de andere vakken. Die vlakke bovenkant vult de
+  // export op; de STL heeft ze niet.
+  if(field===2){
+   let glbWall=wall;
+   for(let j=1;j<n-2;j++){
+    const r=a+(b-a)*(j+1)/n-1.1,l=a+(b-a)*(j+1)/n+1.1,ml=a+(b-a)*(j+.5)/n,mr=a+(b-a)*(j+1.5)/n,h=cap-1-(z+1);
+    const s=1.0/Math.sin(Math.atan2(h,r-ml)),bottom=z+1+(s-1.1)*h/(r-ml);
+    const opening=[[ml+s,cap-1],[(r+l)/2,bottom],[mr-s,cap-1]];
+    glbWall=glbWall.subtract(profileY(opening,y-.76,y-.45)).subtract(profileY(opening,y+.45,y+.76));
+   }
+   glbTrusses.push(glbWall.intersect(mask));
+  }else glbTrusses.push(trusses[trusses.length-1]);
  }
  // De vlakke echte portaalbalk is op printschaal vervangen door een spitse doorgang.
+ // Ook in de GLB: met een vlakke dakbalk vulde de export (Ondersteuning v2.0)
+ // in de meettest onder elk portaal een scherm tot het dek op in plaats van
+ // schoren tegen de vakwerkwanden.
  for(const x of [a+8,b-8]){
   const lo=TRUSS_Y[0],hi=TRUSS_Y[1],c=(lo+hi)/2,outer=[[lo-.75,z],[hi+.75,z],[hi+.75,cap],[lo-.75,cap]],opening=[[lo+.75,z-1],[hi-.75,z-1],[hi-.75,z+4.5],[c,cap-.95],[lo+.75,z+4.5]];
   portals.push(profileX(outer,x-.475,x+.475).subtract(profileX(opening,x-.6,x+.6)).intersect(mask));
  }
 }
 const guards=union(TRUSS_Y.map(y=>prism(rect(-72.32,y-.77,149.72,y+.77),0,40)));
-const whole=union([deck,...kokers,...piers,...estimated,...trusses.map(s=>s.intersect(mask)),...portals.map(s=>s.intersect(mask))]);
+const printWhole=union([deck,...kokers,...piers,...estimated,...trusses.map(s=>s.intersect(mask)),...portals.map(s=>s.intersect(mask))]);
+const whole=union([deck,...kokers,...piers,...estimated,...glbTrusses.map(s=>s.intersect(mask)),...portals.map(s=>s.intersect(mask))]);
 const layer=deck.subtract(deck.translate([0,0,-ROAD_LAYER]));let rest=footprint;const parts=[];
 for(const {id,rings,attributes}of ROAD_FOOTPRINTS){const area=rest.intersect(CrossSection.union(rings.map(section))),road=layer.intersect(area.extrude(40)).subtract(guards);if(road.isEmpty()||road.volume()<.005)continue;parts.push([`road:${attributes.bgt_functie}-${id.split('.')[1]}`,road,attributes]);rest=rest.subtract(area);}
 // Niet als wegdeel geregistreerde dekranden en middenberm blijven constructie.
@@ -75,7 +93,7 @@ for(const [name,s]of parts)if(s.status()!=='NoError')throw Error(name+': '+s.sta
 // De brede voet aan lage landhoofden voorkomt vrije horizontale ondervlakken.
 const feet=[0,1].map(side=>loftX(stations,x=>{const [lo,hi]=limits(x),mid=(lo+hi)/2,a=side?mid-3:lo-3,b=side?hi+3:mid+3,c=(a+b)/2,ceiling=top(x)-SLAB+.2,root=Math.max(.05,ceiling-((b-a)/2-.5)/Math.tan(43*Math.PI/180)),wall=Math.max(.5,(b-a)/2-(ceiling-root)*Math.tan(43*Math.PI/180));return [[c-wall,0],[c+wall,0],[c+wall,root],[b,ceiling],[b,top(x)-.25],[a,top(x)-.25],[a,ceiling],[c-wall,root]];}));
 const endFeet=footprint.offset(.5).extrude(1).refineToLength(3).warp(v=>{v[2]*=top(v[0])-.25;}).intersect(union([prism(rect(-184,-15,-170,15),0,40),prism(rect(172,-15,187,15),0,40)]));
-const combined=union([whole,endFeet,...feet.map(f=>f.intersect(mask))]);
+const combined=union([printWhole,endFeet,...feet.map(f=>f.intersect(mask))]);
 console.log("feet",endFeet.status(),endFeet.volume(),endFeet.boundingBox(),"whole",whole.status(),"combined",combined.status()); const printModel=union(combined.decompose().filter(s=>s.volume()>1e-6)).simplify(.001);
 if(printModel.status()!=='NoError'||printModel.decompose().filter(s=>s.volume()>1e-6).length!==1)throw Error('STL niet verbonden');
 const mesh=printModel.getMesh();let maxSliver=0;
@@ -217,5 +235,5 @@ function toGlb(namedParts, generator) {
 
 await mkdir(outDir,{recursive:true});await writeFile(path.join(outDir,'spoorbrug-mook.glb'),toGlb(parts,'NederPrint generate-spoorbrug-mook.mjs'));
 await writeFile(path.join(outDir,`spoorbrug-mook-1-${scale}.stl`),toStl(printModel,`Spoorbrug Mook Mook 1:${scale} geïntegreerde printvoet`).buffer);
-const entry={name:'Spoorbrug Mook',file:'spoorbrug-mook.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:51.75481,groundSamplePoints:[[-10,-35],[-10,35],[20,-35],[20,35]],replacesTerrain:["L0004.a625bfeb89034a1cb3ef616eda0355ae"],printFiles:[`spoorbrug-mook-1-${scale}.stl`],description:'Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde driehoeken, vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,fieldEndsX:FIELD_ENDS,trussWidthM:TRUSS_WIDTH,trussTopNapM:27.02,estimatedGirderDepthM:2.1,slabM:SLAB},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Mook','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Mook']};
+const entry={name:'Spoorbrug Mook',file:'spoorbrug-mook.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:51.75481,groundSamplePoints:[[-10,-35],[-10,35],[20,-35],[20,35]],replacesTerrain:["L0004.a625bfeb89034a1cb3ef616eda0355ae"],printFiles:[`spoorbrug-mook-1-${scale}.stl`],description:'Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde staande en omgekeerde driehoeken (V-liggers; de STL zonder de omgekeerde), vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,fieldEndsX:FIELD_ENDS,trussWidthM:TRUSS_WIDTH,trussTopNapM:27.02,estimatedGirderDepthM:2.1,slabM:SLAB},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Mook','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Mook']};
 await writeFile(path.join(outDir,'spoorbrug-mook.json'),JSON.stringify(entry,null,2)+'\n');console.log(JSON.stringify({parts:parts.map(([name,s])=>({name,status:s.status(),volumeM3:s.volume(),triangles:s.numTri()})),partitionDifferenceM3:delta,stlBounds:printModel.boundingBox()},null,2));

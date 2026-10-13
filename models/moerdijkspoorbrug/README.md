@@ -58,9 +58,9 @@ Onderdelen in het model (hoogtes in NAP):
 - De bovenrand ligt overal 11,36 m boven het spoor (AHN, evenwijdige randen
   die de top in het spoor volgen): +20,85 m bij Moerdijk, +23,2 m in het
   midden.
-- In de liggers 80 doorgaande driehoekige openingen met de punt omhoog per
-  vakwerklijn (flanken van 58,6 graden of steiler) en 75 blinde nissen van
-  0,35 m voor de driehoeken met een vlakke bovenkant, aan de buitenkant.
+- In de liggers per vakwerklijn 155 doorgaande driehoekige openingen: 80 met
+  de punt omhoog (flanken van 58,6 graden of steiler) en 75 met een vlakke
+  bovenkant.
 - Tien pijlers van 6,9 × 15,5 m met ronde koppen (BGT) tot 1,2 m onder het
   dek, met daarop oplegblokken van 1,6 × 1,4 m onder beide vakwerklijnen (bij
   de voegen 2,8 m lang). Overspanningen 104,0 tot 105,5 m (Wikipedia: langste
@@ -89,15 +89,17 @@ Onderdelen in het model (hoogtes in NAP):
   onder tot 1 m boven het spoor, tussen de binnenkanten van de vakwerkplaten
   met 2 cm vrij, 0,2 m voor het dek tot 0,5 m over het noordelijke landhoofd)
   binnen de BGT-contouren, gesneden met de brug; de constructie is de brug
-  min die strook. Volumes: brug 44389,6 m³ = constructie 41574,9 m³ + spoor
+  min die strook. Volumes: brug 39121,3 m³ = constructie 36306,6 m³ + spoor
   2814,7 m³ (verschil 0). Het spoor loopt van x = -523,8 tot 557,35; de
   bovenkant ligt op het spoorniveau (NAP +9,3 tot +11,85 m).
 
 Wat er niet in zit: de echte staven (geklonken diagonalen van circa 0,6 tot
-0,8 m met bindplaten, vervangen door de plaat met openingen en nissen), de
-windverbanden en dwarsportalen tussen de liggers boven het spoor en de
-schuine eindportalen (vrije horizontale overspanningen van 9,4 m die op
-1:1000 niet zonder steun printen), de bovenleiding, de leuningen langs de
+0,8 m met bindplaten, vervangen door de plaat met openingen), de
+windverbanden tussen de liggers boven het spoor (staven dunner dan 0,9 m),
+de dwarsportalen en de schuine eindportalen (vrije horizontale
+overspanningen van 9,4 m; onder een bovenknoop zit in een W-vakwerk zonder
+stijlen een opening, dus de export heeft daar geen wand om tegen te schoren
+en zou onder een portaal een scherm tot het dek opvullen), de bovenleiding, de leuningen langs de
 looppaden, de stalen bordessen met trappen op de koppen van de pijlers (open
 staalwerk; de BGT tekent ze als stukjes van 1,3 × 5 m naast het dek), de
 vleugelmuren van het zuidelijke landhoofd (0,3 m dik) en de sloofbakken
@@ -107,7 +109,7 @@ PDOK-terrein.
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke strook op NAP +0 tot +4 m met losse plaatjes, zonder liggers en
 pijlers. Het model heeft van oost en west de twee vakwerklijnen met de
-openingen en nissen, de V-insnijdingen bij de vijf voegen en de pijlers met
+openingen, de V-insnijdingen bij de vijf voegen en de pijlers met
 oplegblokken, van noord en zuid de doorkijk tussen de twee liggers met de
 schuine eindstijlen, de plaatbrug en de landhoofden, en van alle kanten het
 licht gebogen spoor met de top in het midden. De PDOK-strook blijft overal
@@ -119,27 +121,25 @@ vakwerklijnen, de voegen niet meegerekend) ligt in alle 125 vakken binnen
 72 % van de DSM-cellen binnen 1 m van het spoorniveau (mediaan +0,04 m); de
 rest zijn de windverbanden boven het spoor en doorkijkjes door het open dek.
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de liggers dichte platen van 1,0 m met openingen waarvan de flanken
-minstens 58,6 graden steil zijn en nissen van 0,35 m voor de driehoeken met
-een vlakke bovenkant. Alleen de onderkant van het dek (14017 m²) en de
-plafonds van de nissen (601 m²) hangen vrij; het script controleert dat
-alleen die naar beneden wijzen, dat de openingen steil genoeg zijn, dat alles
-op dezelfde onderkant begint en dat de printversie buiten de nissen geen
-overhang heeft. Elke node is gesloten (status NoError; de constructie genus 171: 160
-openingen en 11 lussen tussen pijler, oplegblokken en dek; het spoor twee
-losse stroken). Met 1092 m past
-de brug op 1:1000 niet in één uitsnede. Op een uitsnede van 400 × 400 m
-(430 m brug met twee voegen) op 1:1000 ging het model vóór de opsplitsing in
-constructie en spoor in de printcheck als gesloten solid met
-overhangopvulling door (status NoError, 17,5 s, 75669 naar 37687 mm³ ten
-opzichte van de rechte opvulling, -50 %). Met het spoor als eigen node kiest
-de printcheck bij schaal 1000 de automatische uitsnede van 1050 m (1:2624):
-alle onderdelen NoError (5,1 s), de constructie 10380 naar 5431 mm³ (-47,7 %),
-het spoor 147 naar 147 mm³ (`extraPct` 0, geen eigen opvulling); samen
-10527 naar 5578 mm³, gelijk aan het oude model (10529 naar 5581 mm³). Onder het dek komt een wig met een smal scherm tot de onderplaat;
-de openingen in de liggers en de voegen blijven open. De STL op 1:3000 heeft
-dezelfde printvoet (wig van 50 graden en een scherm van 1 mm).
+Printbaarheid op 1:1000: de echte staven zijn op 1:1000 te dun, daarom zijn
+de liggers dichte platen van 1,0 m met openingen. Wat zonder steun niet
+print, laat het model aan de export over: de vlakke bovenkant van de 150
+openingen met een vlakke bovenkant (1717 m²) en de onderkant van het dek
+(14017 m²); het script controleert dat verder niets naar beneden wijst, dat
+de openingen met de punt omhoog minstens 50 graden steil zijn en dat alles op
+dezelfde onderkant begint. Elke node is gesloten (status NoError; de
+constructie genus 321: 310 openingen en 11 lussen tussen pijler,
+oplegblokken en dek; het spoor twee losse stroken). In de meettest van de
+webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 39,1 naar 90,2 cm³ (v1.0: 94,9 cm³), zonder
+ongedragen lagen: onder de vlakke bovenkant van de openingen blijft een
+spitse opening met schoren tegen de staven, onder het dek komt een wig met
+een smal scherm tot de onderplaat, de voegen blijven open. Met 1092 m past
+de brug op 1:1000 niet in één uitsnede. De STL op 1:3000, die zonder export
+wordt geprint, heeft printvormen: blinde nissen van 0,35 m aan de buitenkant
+in plaats van de openingen met een vlakke bovenkant (plafonds 601 m², het
+enige dat in de printversie vrij hangt) en onder het dek een printvoet (wig
+van 50 graden en een scherm van 1 mm); ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Moerdijkspoorbrug)
 (1040 m, tien overspanningen in plaats van veertien sinds het herstel van

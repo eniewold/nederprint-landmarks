@@ -340,9 +340,12 @@ const kerbs = KERBS.map(([x0, x1, y0, y1, above]) => band(x0, x1, y0, y1, above)
 // eindstijlen schuin van de oplegging naar de eerste bovenknoop een half vak
 // verder (AHN: de bovenrand begint 5,3 m binnen de oplegging); bovenrand op
 // NAP +24,3 m (AHN), onderrand tot 0,9 m boven het dek. Op 1:1000 is het
-// vakwerk een dichte plaat: de driehoeken met de punt omhoog zijn doorgaande
-// openingen (flanken van 57,6 graden), de driehoeken met een vlakke
-// bovenkant blinde nissen van 0,35 m aan de buitenkant.
+// vakwerk een dichte plaat van staven van 1,0 m met alle vakken als
+// doorgaande opening: de driehoeken met de punt omhoog (flanken van 57,6
+// graden) en de driehoeken met een vlakke bovenkant, waarvan de vlakke
+// bovenkant zonder steun niet print; dat vult de export op. De STL, die zonder
+// export wordt geprint, heeft voor die driehoeken blinde nissen van 0,35 m aan
+// de buitenkant.
 const TRUSS_LINES = [
   { y0: TRUSS_FACE.east, y1: TRUSS_FACE.east + 1.0, niche: [TRUSS_FACE.east - 0.3, TRUSS_FACE.east + 0.35] },
   { y0: TRUSS_FACE.west - 1.0, y1: TRUSS_FACE.west, niche: [TRUSS_FACE.west - 0.35, TRUSS_FACE.west + 0.3] },
@@ -355,6 +358,7 @@ const CHORD_TOP = 0.9; // bovenkant onderrand boven het dek
 const openingAngles = [];
 let throughOpenings = 0;
 let blindNiches = 0;
+const printTrussSolids = [];
 const trussSolids = (() => {
   const [x0, x1] = [X_TW, X_TE];
   const bottomX = Array.from({ length: PANELS + 1 }, (_, k) => x0 + k * PANEL);
@@ -411,8 +415,9 @@ const trussSolids = (() => {
   blindNiches = niches.length * TRUSS_LINES.length;
   return TRUSS_LINES.map(({ y0, y1, niche }) => {
     const plate = profileY(outline, y0, y1);
-    const cut = [...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)), ...niches.map((h) => profileY(h, niche[0], niche[1]))];
-    return plate.subtract(union(cut));
+    const through = (h) => profileY(h, y0 - 0.3, y1 + 0.3);
+    printTrussSolids.push(plate.subtract(union([...holes.map(through), ...niches.map((h) => profileY(h, niche[0], niche[1]))])));
+    return plate.subtract(union([...holes, ...niches].map(through)));
   });
 })();
 
@@ -523,6 +528,7 @@ const stair = union(
 );
 
 const bridge = union([...deckParts, ...kerbs, ...trussSolids, ...piers, stair]);
+const printBridge = union([...deckParts, ...kerbs, ...printTrussSolids, ...piers, stair]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Onder de vrij hangende dekken een wig van 50 graden vanaf de onderkant van
@@ -549,12 +555,14 @@ const printFoot = loftX(
     return { x, section: section.map(([y, z]) => [y + yc, z]) };
   }),
 );
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: de
-// onderkant van de dekken en de plafonds van de blinde nissen; verder niets.
-const inNiche = (y) => TRUSS_LINES.some(({ niche }) => y > niche[0] - 1e-3 && y < niche[1] + 1e-3);
+// onderkant van de dekken en de vlakke bovenkant van de openingen in het
+// vakwerk (in de STL de plafonds van de blinde nissen); verder niets.
+const inNiche = (y) =>
+  TRUSS_LINES.some(({ y0, y1, niche }) => y > Math.min(y0, niche[0]) - 1e-3 && y < Math.max(y1, niche[1]) + 1e-3);
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -590,10 +598,11 @@ const minFlank = openingAngles.reduce((m, a) => Math.min(m, a), Infinity);
 {
   const model = overhangs(bridge);
   console.log("vrij hangend (m2):", Object.fromEntries(Object.entries(model).map(([k, a]) => [k, +a.toFixed(2)])));
-  if (model.other > 0.5) throw new Error("overhang buiten dekken en nissen");
+  if (model.other > 0.5) throw new Error("overhang buiten dekken en vakwerk");
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", Object.fromEntries(Object.entries(print).map(([k, a]) => [k, +a.toFixed(2)])));
-  console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "vlakste plafond (graden)", +minFlank.toFixed(1));
+  if (print.other > 0.5) throw new Error("overhang in de printversie buiten dekken en nissen");
+  console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "vlakste spitse plafond (graden)", +minFlank.toFixed(1));
   if (minFlank < 50) throw new Error("opening met een te vlak plafond");
 }
 
@@ -883,7 +892,7 @@ await writeFile(
         "L0004.0de47900982f4229a7918fe0cf69c338",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras midden tussen de harten van de twee rivierpijlers op het water van de nevengeul (z = 0, NAP +2,98 m) in de oorsprong, +X langs de brug naar het noordoosten (Deventer, RD-richting 48,60 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts, het voetpad); het fietspad ligt aan de zuidoostkant (y < 0). Zes nodes: road:spoor, road:spoor-ballastbed, road:fietspad, road:voetpad en road:voetpad-op-trap, de bovenste 0,5 m van het dek en van de trap binnen de actuele BGT-wegdelen met hun attributen in extras.attributes (spoorbaan, gesloten verharding of half verhard; fietspad en voetpad, gesloten verharding; voetpad op trap, gesloten verharding, cementbeton), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd op de dijk (x = -416,89) tot het oostelijke landhoofd aan de IJsselkade (x = 102,13), 519 m. De stalen vakwerkbrug van 95,9 m over de IJssel (Warrenligger met negen vakken van 10,65 m, alleen diagonalen, schuine eindstijlen, bovenrand NAP +24,3 m, vakwerklijnen 4,7 m ten zuidoosten en 5,0 m ten noordwesten van de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen (punt omhoog) en blinde nissen; de rivierpijlers met spitse koppen en opleggingen; de betonnen aanbrug als kokerligger (3,6 m) over de uiterwaard en de nevengeul op negen wandpijlers met kop, vier daarvan op achthoekige poeren in de nevengeul; het veld over de weg langs de dijk en het oostelijke veld over de IJsselkade (2,6 m); de landhoofden; schampkanten van 0,9 m tussen spoor en paden en randbalken van 0,6 m aan de buitenranden; de trap van het voetpad naar de uiterwaard bij x = -118,5 als dicht blok met zes treden. Dek op NAP +12,6 m (westelijk landhoofd), +14,9 m (rivierpijler), +15,0 m (vakwerk) en +14,8 m (oostelijk landhoofd). Windverband en portalen tussen de bovenranden, bovenleiding, leuningen, het looppad op de bovenrand en de trappen langs de landhoofden zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de nevengeul en de IJssel bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras midden tussen de harten van de twee rivierpijlers op het water van de nevengeul (z = 0, NAP +2,98 m) in de oorsprong, +X langs de brug naar het noordoosten (Deventer, RD-richting 48,60 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts, het voetpad); het fietspad ligt aan de zuidoostkant (y < 0). Zes nodes: road:spoor, road:spoor-ballastbed, road:fietspad, road:voetpad en road:voetpad-op-trap, de bovenste 0,5 m van het dek en van de trap binnen de actuele BGT-wegdelen met hun attributen in extras.attributes (spoorbaan, gesloten verharding of half verhard; fietspad en voetpad, gesloten verharding; voetpad op trap, gesloten verharding, cementbeton), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het westelijke landhoofd op de dijk (x = -416,89) tot het oostelijke landhoofd aan de IJsselkade (x = 102,13), 519 m. De stalen vakwerkbrug van 95,9 m over de IJssel (Warrenligger met negen vakken van 10,65 m, alleen diagonalen, schuine eindstijlen, bovenrand NAP +24,3 m, vakwerklijnen 4,7 m ten zuidoosten en 5,0 m ten noordwesten van de as) als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen; de rivierpijlers met spitse koppen en opleggingen; de betonnen aanbrug als kokerligger (3,6 m) over de uiterwaard en de nevengeul op negen wandpijlers met kop, vier daarvan op achthoekige poeren in de nevengeul; het veld over de weg langs de dijk en het oostelijke veld over de IJsselkade (2,6 m); de landhoofden; schampkanten van 0,9 m tussen spoor en paden en randbalken van 0,6 m aan de buitenranden; de trap van het voetpad naar de uiterwaard bij x = -118,5 als dicht blok met zes treden. Dek op NAP +12,6 m (westelijk landhoofd), +14,9 m (rivierpijler), +15,0 m (vakwerk) en +14,8 m (oostelijk landhoofd). Windverband en portalen tussen de bovenranden, bovenleiding, leuningen, het looppad op de bovenrand en de trappen langs de landhoofden zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, de dekken) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder de dekken een wig met een smal scherm als printvoet. Het maaiveld wordt op het water van de nevengeul en de IJssel bemonsterd; groundHeight is de laagste PDOK-hoogte daar (ellipsoïdisch). Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(X_E_END - X_W_END).toFixed(2),

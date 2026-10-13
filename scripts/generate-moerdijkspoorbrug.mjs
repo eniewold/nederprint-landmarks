@@ -221,9 +221,12 @@ const SOUTH_BEARING = -523.6;
 const PANELS = 16;
 const UNITS = JOINTS.map((xj, i) => [i === 0 ? SOUTH_BEARING : JOINTS[i - 1] + GAP / 2, xj - GAP / 2]);
 // Twee vakwerklijnen van 1,0 m dik, 4,7 m naast de as (AHN); op 1:1000 een
-// dichte plaat met de driehoeken met de punt omhoog als doorgaande opening
-// en de driehoeken met een vlakke bovenkant als blinde nis van 0,35 m aan de
-// buitenkant.
+// dichte plaat van staven van 0,9 m (de echte staven van circa 0,6 tot 0,8 m
+// zijn te dun) met alle vakken als doorgaande opening: de driehoeken met de
+// punt omhoog en de driehoeken met een vlakke bovenkant, waarvan de vlakke
+// bovenkant zonder steun niet print; dat vult de export op. De STL, die
+// zonder export wordt geprint, heeft voor die driehoeken blinde nissen van
+// 0,35 m aan de buitenkant.
 const NICHE = 0.35;
 const TRUSS_Y = 4.7;
 const TRUSS_T = 1.0;
@@ -274,6 +277,7 @@ const abutments = [
 const openingAngles = [];
 let throughOpenings = 0;
 let blindNiches = 0;
+const printGirderSolids = [];
 const girderSolids = UNITS.flatMap(([x0, x1]) => {
   const bottomX = Array.from({ length: PANELS + 1 }, (_, k) => x0 + ((x1 - x0) * k) / PANELS);
   const top = bottomX.slice(0, -1).map((x, i) => {
@@ -325,11 +329,16 @@ const girderSolids = UNITS.flatMap(([x0, x1]) => {
   blindNiches += niches.length;
   return TRUSSES.map(({ y0, y1, niche }) => {
     const plate = profileY(outline, y0, y1);
-    const cut = [
-      ...holes.map((h) => profileY(h, y0 - 0.3, y1 + 0.3)),
-      ...niches.map((h) => (niche[0] === y0 ? profileY(h, y0 - 0.3, niche[1]) : profileY(h, niche[0], y1 + 0.3))),
-    ];
-    return plate.subtract(union(cut));
+    const through = (h) => profileY(h, y0 - 0.3, y1 + 0.3);
+    printGirderSolids.push(
+      plate.subtract(
+        union([
+          ...holes.map(through),
+          ...niches.map((h) => (niche[0] === y0 ? profileY(h, y0 - 0.3, niche[1]) : profileY(h, niche[0], y1 + 0.3))),
+        ]),
+      ),
+    );
+    return plate.subtract(union([...holes, ...niches].map(through)));
   });
 });
 const plateGirders = [-TRUSS_Y, TRUSS_Y].map((y) =>
@@ -337,6 +346,7 @@ const plateGirders = [-TRUSS_Y, TRUSS_Y].map((y) =>
 );
 
 const bridge = union([deck, ...abutments, ...piers, ...bearings, ...southBearings, ...girderSolids, ...plateGirders]);
+const printBridge = union([deck, ...abutments, ...piers, ...bearings, ...southBearings, ...printGirderSolids, ...plateGirders]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -362,14 +372,15 @@ const footStations = Array.from({ length: footSteps + 1 }, (_, i) => {
   return { x, section };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
 // model alleen de onderkant van het dek, de randen van het dek naast de
-// pijlerkoppen en de plafonds van de blinde nissen (0,35 m diep), in de
-// printversie alleen die nissen.
-const inNiche = (y) => TRUSSES.some(({ niche }) => y > niche[0] - 1e-3 && y < niche[1] + 1e-3);
+// pijlerkoppen en de vlakke bovenkant van de openingen in het vakwerk, in de
+// printversie alleen de plafonds van de blinde nissen (0,35 m diep).
+const inNiche = (y) =>
+  TRUSSES.some(({ y0, y1, niche }) => y > Math.min(y0, niche[0]) - 1e-3 && y < Math.max(y1, niche[1]) + 1e-3);
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -404,13 +415,13 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const model = overhangs(bridge);
-  console.log("vrij hangend (m2): dek", Math.round(model.deckArea), "nissen", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
-  if (model.area > 0.5) throw new Error("overhang buiten dek en nissen");
+  console.log("vrij hangend (m2): dek", Math.round(model.deckArea), "vakwerk", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
+  if (model.area > 0.5) throw new Error("overhang buiten dek en vakwerk");
   const print = overhangs(printModel);
-  console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "overig", +print.area.toFixed(2));
+  console.log("overhang in de printversie (m2): dek", +print.deckArea.toFixed(2), "nissen", Math.round(print.nicheArea), "overig", +print.area.toFixed(2));
   if (print.deckArea + print.area > 0.5) throw new Error("printversie heeft overhang");
   const minAngle = minOf(openingAngles);
-  console.log("doorgaande openingen", throughOpenings, "blinde nissen", blindNiches, "steilste flank min (graden)", +minAngle.toFixed(1));
+  console.log("openingen met punt", throughOpenings, "met vlakke bovenkant", blindNiches, "steilste flank min (graden)", +minAngle.toFixed(1));
   if (minAngle < 50) throw new Error("opening met een te vlakke flank");
 }
 
@@ -676,7 +687,7 @@ await writeFile(
         "L0004.602e82ad47f54c0b94e5e71df8612b78",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de spoorbrug in het hart van de vijfde rivierpijler vanaf het zuiden op de waterspiegel van het Hollandsch Diep (z = 0, NAP +0,2 m) in de oorsprong, +X langs de brug naar het noordnoordwesten (Willemsdorp, RD-richting 111,65 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten (de HSL-brug). Twee nodes: road:spoor, de bovenste 0,5 m van het dek onder de twee sporen (de twee BGT-wegdelen spoorbaan op het dek, elk 2,6 tot 2,7 m breed, tussen y = -3,3 en +3,5) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 13,1 m breed van het zuidelijke landhoofd (x = -523,8) tot het noordelijke (x = 556,9) met het spoor op NAP +9,4 m, +11,85 m bij de middelste pijler en +9,3 m (AHN); vijf doorgaande vakwerkliggers over twee velden (208 tot 209 m, 16 vakken van 13 m) op twee vakwerklijnen 4,7 m naast de as, als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen voor de driehoeken met een vlakke bovenkant, met evenwijdige randen 11,36 m boven het spoor en schuine eindstijlen bij de voegen op de 2e, 4e, 6e, 8e en 10e pijler; tien pijlers van 6,9 × 15,5 m met ronde koppen (BGT) met oplegblokken onder de liggers; een plaatbrug van 31 m aan de noordkant (randen 1,55 m boven het spoor); de landhoofden, het zuidelijke met een ronde voorkant. Windverbanden, portalen, bovenleiding, leuningen, bordessen en trappen bij de pijlers zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast vijf velden bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de spoorbrug in het hart van de vijfde rivierpijler vanaf het zuiden op de waterspiegel van het Hollandsch Diep (z = 0, NAP +0,2 m) in de oorsprong, +X langs de brug naar het noordnoordwesten (Willemsdorp, RD-richting 111,65 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten (de HSL-brug). Twee nodes: road:spoor, de bovenste 0,5 m van het dek onder de twee sporen (de twee BGT-wegdelen spoorbaan op het dek, elk 2,6 tot 2,7 m breed, tussen y = -3,3 en +3,5) met de attributen van het BGT-wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 13,1 m breed van het zuidelijke landhoofd (x = -523,8) tot het noordelijke (x = 556,9) met het spoor op NAP +9,4 m, +11,85 m bij de middelste pijler en +9,3 m (AHN); vijf doorgaande vakwerkliggers over twee velden (208 tot 209 m, 16 vakken van 13 m) op twee vakwerklijnen 4,7 m naast de as, als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen, met evenwijdige randen 11,36 m boven het spoor en schuine eindstijlen bij de voegen op de 2e, 4e, 6e, 8e en 10e pijler; tien pijlers van 6,9 × 15,5 m met ronde koppen (BGT) met oplegblokken onder de liggers; een plaatbrug van 31 m aan de noordkant (randen 1,55 m boven het spoor); de landhoofden, het zuidelijke met een ronde voorkant. Windverbanden, portalen, bovenleiding, leuningen, bordessen en trappen bij de pijlers zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast vijf velden bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(DECK.x1 - DECK.x0).toFixed(1),
