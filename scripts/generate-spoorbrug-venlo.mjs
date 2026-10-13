@@ -36,6 +36,15 @@ const mask=footprint.extrude(40);
 const GIRDER_Y=[-4.5,4.7],GIRDER_WIDTH=1.0;
 const kokers=GIRDER_Y.map(c=>loftX(stations.filter(x=>x>=-113.194&&x<=113.194),x=>[[c-.5,top(x)-depth(x)],[c+.5,top(x)-depth(x)],[c+.5,top(x)+1.7],[c-.5,top(x)+1.7]]).intersect(mask));
 const profileY=(poly,y0,y1)=>section(poly).extrude(y1-y0).rotate([90,0,0]).translate([0,y1,0]);
+// De ronde doorgang onder het westelijke landhoofd (foto's): 8 m breed, vloer 1,8 m en aanzet
+// 2,4 m boven het water, rondboog met de kruin op 6,4 m, dwars door het metselwerk tussen
+// landhoofd en eindoplegging. Het gebogen plafond print op 1:1000 niet zonder steun; dat vult de
+// export op. De STL, die zonder export wordt geprint, houdt de blinde spitse nissen als printvorm.
+// Oostelijk blijft ook in de GLB de nis: het landhoofd eindigt daar schuin binnen de breedte van
+// de doorgang (x = 120,9 tot 122,6 tegen 117 tot 125), zodat een doorgaande boog de kopse kant
+// zou openleggen; de ligging van de echte doorgang is daar niet bekend.
+const PASSAGE={x0:-126,width:8,floor:1.8,springing:2.4};
+const passage=(()=>{const r=PASSAGE.width/2,c=PASSAGE.x0+r;return profileY([[PASSAGE.x0,PASSAGE.floor],[PASSAGE.x0+PASSAGE.width,PASSAGE.floor],...Array.from({length:33},(_,i)=>{const t=Math.PI*i/32;return [c+r*Math.cos(t),PASSAGE.springing+r*Math.sin(t)];})],-20,20);})();
 const piers=BGT_SUPPORTS.map(({ring,index})=>{
  const x=ring.reduce((s,p)=>s+p[0]/ring.length,0),river=[68,70,72].includes(index);
  let solid=prism(ring,0,Math.max(.1,top(x)+(river?-depth(x)+.2:1.7)));
@@ -50,22 +59,25 @@ const piers=BGT_SUPPORTS.map(({ring,index})=>{
 const guards=union(GIRDER_Y.map(y=>prism(rect(-113.22,y-.52,113.22,y+.52),0,40)));
 const roadAreas=CrossSection.union(ROAD_FOOTPRINTS.flatMap(r=>r.rings.map(section))).intersect(footprint);
 const roadClearance=roadAreas.extrude(40).refineToLength(3).warp(v=>{v[2]+=top(v[0])+bikeLift(v[1])-ROAD_LAYER-.02;}).subtract(guards);
-// Metselwerk tussen landhoofd en eindoplegging; de echte doorgang is op 1:1000
-// een blinde nis met een spitse top, zodat een doorlopende dragende kern blijft.
+// Metselwerk tussen landhoofd en eindoplegging; in de STL (en oostelijk ook in de GLB) is de
+// doorgang een blinde nis met een spitse top, zodat een doorlopende dragende kern blijft.
 const heads=[[-130.8,-113.2,-126], [113.2,126,117]].map(([lo,hi,a])=>{
  const area=footprint.intersect(section(rect(lo,-15,hi,15)));
  let solid=area.extrude(top((lo+hi)/2)-SLAB+.2);
  const poly=[[a,1.8],[a+8,1.8],[a+8,2.4],[a+4,7.4],[a,2.4]];
  const ys=area.toPolygons().flatMap(r=>r.map(p=>p[1])),y0=Math.min(...ys),y1=Math.max(...ys);
- return solid.subtract(profileY(poly,y0-.02,y0+.3)).subtract(profileY(poly,y1-.3,y1+.02));
+ const niched=solid.subtract(profileY(poly,y0-.02,y0+.3)).subtract(profileY(poly,y1-.3,y1+.02));
+ return {niched,open:a===PASSAGE.x0?solid.subtract(passage):niched};
 });
-const whole=union([deck,...kokers,...piers,...heads]).subtract(roadClearance).add(deck);
+// GLB met de doorgaande doorgang; het printmodel (de STL) met de blinde nissen.
+const model=union([deck,...kokers,...piers,...heads.map(h=>h.open)]).subtract(roadClearance).add(deck);
+const whole=union([deck,...kokers,...piers,...heads.map(h=>h.niched)]).subtract(roadClearance).add(deck);
 const layer=deck.subtract(deck.translate([0,0,-ROAD_LAYER]));let rest=footprint;const parts=[];
 for(const {id,rings,attributes}of ROAD_FOOTPRINTS){const area=rest.intersect(CrossSection.union(rings.map(section))),road=layer.intersect(area.extrude(40)).subtract(guards);if(road.isEmpty()||road.volume()<.005)continue;parts.push([`road:${attributes.bgt_functie}-${id.split('.')[1]}`,road,attributes]);rest=rest.subtract(area);}
 // Niet als wegdeel geregistreerde dekranden en middenberm blijven constructie.
 const roadStrip=deck.translate([0,0,1]).subtract(deck.translate([0,0,-ROAD_LAYER])).intersect(roadAreas.extrude(40)).subtract(guards);
-parts.push(['building:plaatliggers-ovale-pijlers-en-landhoofden',whole.subtract(roadStrip).subtract(union(parts.map(p=>p[1])))]);
-const delta=parts.reduce((sum,[,s])=>sum+s.volume(),0)-whole.volume();if(Math.abs(delta)>Math.max(.05,whole.volume()*1e-6))throw Error('Volumepartitie '+delta);
+parts.push(['building:plaatliggers-ovale-pijlers-en-landhoofden',model.subtract(roadStrip).subtract(union(parts.map(p=>p[1])))]);
+const delta=parts.reduce((sum,[,s])=>sum+s.volume(),0)-model.volume();if(Math.abs(delta)>Math.max(.05,model.volume()*1e-6))throw Error('Volumepartitie '+delta);
 for(const [name,s]of parts)if(s.status()!=='NoError')throw Error(name+': '+s.status());
 // Twee doorlopende printwanden volgen de bocht; de schouders zijn 35 graden.
 // De brede voet aan lage landhoofden voorkomt vrije horizontale ondervlakken.
@@ -213,7 +225,7 @@ function toGlb(namedParts, generator) {
 
 await mkdir(outDir,{recursive:true});await writeFile(path.join(outDir,'spoorbrug-venlo.glb'),toGlb(parts,'NederPrint generate-spoorbrug-venlo.mjs'));
 await writeFile(path.join(outDir,`spoorbrug-venlo-1-${scale}.stl`),toStl(printModel,`Spoorbrug Venlo Venlo 1:${scale} geïntegreerde printvoet`).buffer);
-const entry={name:'Spoorbrug Venlo',file:'spoorbrug-venlo.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:57.3568327,groundSamplePoints:[[-10,-25],[-10,25],[20,-25],[20,25]],replacesTerrain:["L0004.9e7fbcce25a1404887d9c8102aeeb618","G0983.2a14be6a090a42a99f93d406fe6d5fe8","L0004.96a508b3f38740dca4f550ce1f3edd08","L0004.a1f61227f868433f80eb4ff774a1db49"],printFiles:[`spoorbrug-venlo-1-${scale}.stl`],description:'Tweesporige plaatliggerbrug met noordelijk fietsdek (+0,14 m), drie ovale BGT-rivierpijlers en brede landhoofden met blinde spitse boognissen. Spoorprofiel AHN NAP +23,33–24,09 m; westelijke AHN-gaten en voertuigen zijn tussen betrouwbare spoor- en fietsmetingen geïnterpoleerd. Plaatbovenrand +1,7 m en haunchdiepte 2,1–4,1 m geschat uit schuine foto’s. Waterbasis NAP +13,21 m gekalibreerd op de oostelijke PDOK-spooraansluiting; ellipsoïdisch +57,35683 m. Losse STL met twee doorlopende 35-graden printwanden; de aangrenzende verkeersbrug blijft staan.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,riverPierX:RIVER_PIERS,girderWidthM:GIRDER_WIDTH,girderRiseM:1.7,estimatedGirderDepthM:[2.1,4.1],bikeLiftM:.14,slabM:SLAB,blindArchDepthM:.3},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Venlo','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Venlo']};
+const entry={name:'Spoorbrug Venlo',file:'spoorbrug-venlo.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:57.3568327,groundSamplePoints:[[-10,-25],[-10,25],[20,-25],[20,25]],replacesTerrain:["L0004.9e7fbcce25a1404887d9c8102aeeb618","G0983.2a14be6a090a42a99f93d406fe6d5fe8","L0004.96a508b3f38740dca4f550ce1f3edd08","L0004.a1f61227f868433f80eb4ff774a1db49"],printFiles:[`spoorbrug-venlo-1-${scale}.stl`],description:'Tweesporige plaatliggerbrug met noordelijk fietsdek (+0,14 m), drie ovale BGT-rivierpijlers en brede landhoofden: onder het westelijke landhoofd een doorgaande rondboog van 8 m (vloer 1,8 m, kruin 6,4 m boven het water), oostelijk een blinde spitse boognis. Spoorprofiel AHN NAP +23,33–24,09 m; westelijke AHN-gaten en voertuigen zijn tussen betrouwbare spoor- en fietsmetingen geïnterpoleerd. Plaatbovenrand +1,7 m en haunchdiepte 2,1–4,1 m geschat uit schuine foto’s. Waterbasis NAP +13,21 m gekalibreerd op de oostelijke PDOK-spooraansluiting; ellipsoïdisch +57,35683 m. Het gebogen plafond van de doorgang vult de export op. Losse STL met twee doorlopende 35-graden printwanden en aan beide landhoofden blinde spitse nissen als printvorm; de aangrenzende verkeersbrug blijft staan.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,riverPierX:RIVER_PIERS,girderWidthM:GIRDER_WIDTH,girderRiseM:1.7,estimatedGirderDepthM:[2.1,4.1],bikeLiftM:.14,slabM:SLAB,blindArchDepthM:.3,westPassageM:{width:PASSAGE.width,floor:PASSAGE.floor,crown:PASSAGE.springing+PASSAGE.width/2}},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Venlo','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Venlo']};
 await writeFile(path.join(outDir,'spoorbrug-venlo.json'),JSON.stringify(entry,null,2)+'\n');console.log(JSON.stringify({parts:parts.map(([name,s])=>({name,status:s.status(),volumeM3:s.volume(),triangles:s.numTri()})),partitionDifferenceM3:delta,stlBounds:printModel.boundingBox()},null,2));
 
 

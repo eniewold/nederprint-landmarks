@@ -186,7 +186,9 @@ const legT = (nap) => PYLON.t0 + (PYLON.t1 - PYLON.t0) * pz(nap);
 const legW = (nap) => PYLON.w0 + (PYLON.w1 - PYLON.w0) * pz(nap);
 const legInner = (nap) => legT(nap) - legW(nap) / 2;
 // De kop tussen de poten (foto's: NAP +71 tot +84 m) met een V-vormige
-// onderkant van 50 graden, zodat hij zonder steun print.
+// onderkant van 50 graden, zodat hij zonder steun print. Ook in de GLB: met een
+// vlakke onderkant vult de export (ook met ondersteuning v2.0) de hele ruimte
+// tussen de poten van de kop tot het dek op.
 const HEAD = { bottomNap: 71.0, topNap: 84.0 };
 // Dwarsdrager onder het dek tussen de poten, met schuine schoren van 50
 // graden naar de poten (foto's).
@@ -313,23 +315,40 @@ const basculePier = boxFromTo(X(bp.s0), X(bp.s1), -bp.half, bp.half, BASE, bpTop
 );
 // Aandrijving van de klep: aan beide randen een liggende cilinder van 2,5 m
 // onder het dek, van de basculepijler 7,4 m naar het zuiden (foto's, ortho).
-// Een halve zeshoek met daaronder een kiel van 55 graden, zodat de onderkant
-// zonder steun print.
+// In de GLB rond; de onderkant print op 1:1000 niet zonder steun en vult de
+// export op. De STL, die zonder export wordt geprint, heeft als printvorm een
+// halve zeshoek met daaronder een kiel van 55 graden.
+const DRIVE = { r: 1.25, t: 8.6, zc: top(X(0)) - DECK.edge - 0.33 - 0.95 };
 const drives = [-1, 1].map((side) => {
-  const r = 1.25;
-  const tc = side * 8.6;
-  const zc = top(X(0)) - DECK.edge - 0.33 - 0.95;
+  const { r } = DRIVE;
+  const tc = side * DRIVE.t;
+  const zc = DRIVE.zc;
   const keel = r * Math.tan((55 * Math.PI) / 180);
   const shape = [[r, 0], [r / 2, 0.866 * r], [-r / 2, 0.866 * r], [-r, 0], [0, -keel]];
   return profileX(shape.map(([t, z]) => [tc + t, zc + z]), X(-7.0), X(bp.s0) + 0.5);
 });
+const roundDrives = [-1, 1].map((side) =>
+  profileX(
+    Array.from({ length: 32 }, (_, i) => {
+      const a = (2 * Math.PI * i) / 32;
+      return [side * DRIVE.t + DRIVE.r * Math.cos(a), DRIVE.zc + DRIVE.r * Math.sin(a)];
+    }),
+    X(-7.0),
+    X(bp.s0) + 0.5,
+  ),
+);
 // Steunpijler aan de noordkant van de doorvaart: een portaal van twee kolommen
-// met een bovenregel (foto's); de opening tussen de kolommen is op 1:1000 een
-// blinde nis van 0,4 m aan beide kanten.
+// met een bovenregel (foto's); de opening tussen de kolommen loopt in de GLB
+// dwars door de pijler. In de STL, die zonder export wordt geprint, is ze als
+// printvorm een blinde nis van 0,4 m aan beide kanten.
 const rp = REST_PIER;
 const rpTop = soffitAt(rp.s0);
-const restPier = boxFromTo(X(rp.s0), X(rp.s1), -rp.half, rp.half, BASE, rpTop).subtract(
+const restPierBlock = boxFromTo(X(rp.s0), X(rp.s1), -rp.half, rp.half, BASE, rpTop);
+const restPier = restPierBlock.subtract(
   union([X(rp.s0), X(rp.s1)].map((xf) => boxFromTo(xf - 0.4, xf + 0.4, -(rp.half - rp.leg), rp.half - rp.leg, 0, rpTop - 2.5))),
+);
+const restPortal = restPierBlock.subtract(
+  boxFromTo(X(rp.s0) - 0.5, X(rp.s1) + 0.5, -(rp.half - rp.leg), rp.half - rp.leg, 0, rpTop - 2.5),
 );
 
 // ---------- pyloon ----------
@@ -450,7 +469,25 @@ const backSails = [-1, 1].map((side) =>
   }),
 );
 
+// De brug (GLB) met de open steunpijler en ronde aandrijfcilinders; de
+// printbrug (STL) met de printvormen.
 const bridge = union([
+  deck,
+  ...kerbs,
+  southAbutment,
+  anchorCore,
+  ...anchorWalls,
+  ...wallPiers,
+  basculePier,
+  ...roundDrives,
+  restPortal,
+  ...legs,
+  head,
+  crossbeam,
+  ...mainSails,
+  ...backSails,
+]).subtract(union(joints));
+const printBridge = union([
   deck,
   ...kerbs,
   southAbutment,
@@ -482,7 +519,7 @@ const footStations = stationsX(SOUTH_FACE, ANCHOR_FACE, 1).map((x) => {
   return { x, section: [[-SCREEN, BASE], [SCREEN, BASE], [SCREEN, zs], [w, zb], [w, zIn], [-w, zIn], [-w, zb], [-SCREEN, zs]] };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 // Eerst de brug en de printversie als geheel uitrekenen: zo blijven hun
 // driehoeken (en die van de STL) dezelfde als voordat de rijbaan een eigen
 // onderdeel werd.
@@ -582,7 +619,8 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   // In het model hangen alleen de onderkant van het dek (met de schuine
-  // randen), de dwarsdrager en de bovenkant van de nissen vrij.
+  // randen), de dwarsdrager, de aandrijfcilinders en de bovenkant van de
+  // nissen en van de opening in de steunpijler vrij.
   const { area, found } = overhangs(bridge);
   const buckets = {};
   for (const { p, area: a } of found) {
@@ -804,7 +842,7 @@ await writeFile(
         "L0002.9fb7492bd4cd4e84b62724a5a94305b2",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee landhoofden op de waterspiegel van de IJssel (z = 0, NAP -0,47 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het noorden (Ramspol, RD-richting 97,84 graden vanaf het oosten) en +Y naar het westen. Twee nodes: road:rijbaan, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van het BGT-wegdeel op de brug in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18,8 m breed van het zuidelijke landhoofd op de Kamper dijk (x = -209,9) tot het ankerblok op de noordelijke dijk (x = 209,9), met het wegdek op NAP +16,7 tot +18,5 m en een schampkant langs de randen; drie aanbruggen op wandpijlers over de zuidelijke uiterwaard; de basculepijler met de aandrijfcilinders, de stalen basculeklep van 20,5 m in gesloten stand en de steunpijler als portaal; de hoofdoverspanning van circa 150 m; de achterover hellende pyloon van twee poten met de kop tussen NAP +71 en +84 m en de top op NAP +90,7 m, met een dwarsdrager onder het dek; twee tuivlakken van elf tuien 3 m naast de as en vier achtertuien per vlak naar het ankerblok. De tuien zijn op 1:1000 dichte platen van 0,9 m met de tuien als ribben, de drie steilste vrijstaande staven van 1 m. De achteroverspanning heeft een pijler aan de dijkvoet. Leuningen, lantaarns, portalen met verkeerslichten, slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee landhoofden op de waterspiegel van de IJssel (z = 0, NAP -0,47 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het noorden (Ramspol, RD-richting 97,84 graden vanaf het oosten) en +Y naar het westen. Twee nodes: road:rijbaan, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van het BGT-wegdeel op de brug in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18,8 m breed van het zuidelijke landhoofd op de Kamper dijk (x = -209,9) tot het ankerblok op de noordelijke dijk (x = 209,9), met het wegdek op NAP +16,7 tot +18,5 m en een schampkant langs de randen; drie aanbruggen op wandpijlers over de zuidelijke uiterwaard; de basculepijler met de ronde aandrijfcilinders, de stalen basculeklep van 20,5 m in gesloten stand en de steunpijler als open portaal; de hoofdoverspanning van circa 150 m; de achterover hellende pyloon van twee poten met de kop tussen NAP +71 en +84 m en de top op NAP +90,7 m, met een dwarsdrager onder het dek; twee tuivlakken van elf tuien 3 m naast de as en vier achtertuien per vlak naar het ankerblok. De tuien zijn op 1:1000 dichte platen van 0,9 m met de tuien als ribben, de drie steilste vrijstaande staven van 1 m; de kop heeft een V-onderkant van 50 graden. Wat zonder steun niet print (de cilinders, de bovenregel van de steunpijler, de onderkant van het dek) vult de export op; de STL heeft als printvorm cilinders met een kiel van 55 graden en in de steunpijler blinde nissen. De achteroverspanning heeft een pijler aan de dijkvoet. Leuningen, lantaarns, portalen met verkeerslichten, slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

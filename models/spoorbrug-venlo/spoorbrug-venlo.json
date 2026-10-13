@@ -41,7 +41,7 @@
   "printFiles": [
     "spoorbrug-venlo-1-1000.stl"
   ],
-  "description": "Tweesporige plaatliggerbrug met noordelijk fietsdek (+0,14 m), drie ovale BGT-rivierpijlers en brede landhoofden met blinde spitse boognissen. Spoorprofiel AHN NAP +23,33–24,09 m; westelijke AHN-gaten en voertuigen zijn tussen betrouwbare spoor- en fietsmetingen geïnterpoleerd. Plaatbovenrand +1,7 m en haunchdiepte 2,1–4,1 m geschat uit schuine foto’s. Waterbasis NAP +13,21 m gekalibreerd op de oostelijke PDOK-spooraansluiting; ellipsoïdisch +57,35683 m. Losse STL met twee doorlopende 35-graden printwanden; de aangrenzende verkeersbrug blijft staan.",
+  "description": "Tweesporige plaatliggerbrug met noordelijk fietsdek (+0,14 m), drie ovale BGT-rivierpijlers en brede landhoofden: onder het westelijke landhoofd een doorgaande rondboog van 8 m (vloer 1,8 m, kruin 6,4 m boven het water), oostelijk een blinde spitse boognis. Spoorprofiel AHN NAP +23,33–24,09 m; westelijke AHN-gaten en voertuigen zijn tussen betrouwbare spoor- en fietsmetingen geïnterpoleerd. Plaatbovenrand +1,7 m en haunchdiepte 2,1–4,1 m geschat uit schuine foto’s. Waterbasis NAP +13,21 m gekalibreerd op de oostelijke PDOK-spooraansluiting; ellipsoïdisch +57,35683 m. Het gebogen plafond van de doorgang vult de export op. Losse STL met twee doorlopende 35-graden printwanden en aan beide landhoofden blinde spitse nissen als printvorm; de aangrenzende verkeersbrug blijft staan.",
   "realWorld": {
     "deckNapM": [
       [
@@ -115,7 +115,12 @@
     ],
     "bikeLiftM": 0.14,
     "slabM": 1.5,
-    "blindArchDepthM": 0.3
+    "blindArchDepthM": 0.3,
+    "westPassageM": {
+      "width": 8,
+      "floor": 1.8,
+      "crown": 6.4
+    }
   },
   "sources": [
     "https://nl.wikipedia.org/wiki/Spoorbrug_Venlo",

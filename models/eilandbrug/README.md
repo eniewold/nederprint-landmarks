@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `eilandbrug.glb` | Catalogusbron in meters met twee nodes: `road:rijbaan`, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van het BGT-wegdeel op de brug (`bgt_functie` rijbaan autoweg, `bgt_fysiekvoorkomen` gesloten verharding), en `building:eilandbrug` met de rest van het kunstwerk: het dek, de aanbruggen met hun pijlers, de basculepijler met de aandrijving, de basculeklep, de steunpijler, de pyloon met kop en dwarsdrager, de tuivlakken van de hoofdoverspanning en de achtertuien, het zuidelijke landhoofd en het ankerblok |
-| `eilandbrug-1-1500.stl` | De brug in één stuk op 1:1500 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (280 × 22 × 61 mm; op 1:1000 is hij 420 mm lang: `--scale 1000`) |
+| `eilandbrug-1-1500.stl` | De brug in één stuk op 1:1500 met een printvoet onder het dek en printvormen voor de aandrijfcilinders en de steunpijler (zie Printbaarheid), met de onderkant (0,8 m onder de waterspiegel) op het printbed (280 × 22 × 61 mm; op 1:1000 is hij 420 mm lang: `--scale 1000`) |
 | `eilandbrug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, ellipsoïdische terugvalhoogte, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (186982,81, 510702,83) (WGS84
@@ -44,13 +44,14 @@ Onderdelen in het model (hoogtes in NAP):
   (foto's).
 - De basculepijler (BGT, 4 × 19,2 m) als blok met verticale sleuven en het
   trappenhuis als blinde nissen van 0,4 m, en aan beide randen de liggende
-  aandrijfcilinder van 2,5 m onder het dek, 7,4 m naar het zuiden (foto's,
-  luchtfoto).
+  ronde aandrijfcilinder van 2,5 m onder het dek, 7,4 m naar het zuiden
+  (foto's, luchtfoto).
 - De stalen basculeklep van 20,5 m in gesloten stand, 1,8 m hoog, met een voeg
   van 0,5 × 0,3 m over het wegdek bij het draaipunt en bij de punt. In het AHN
   staat de klep open (top +42 m, dus 23,5 m vanaf het draaipunt).
 - De steunpijler (BGT, 4 × 18,8 m) als portaal van twee kolommen met een
-  bovenregel; de opening is een blinde nis van 0,4 m aan beide kanten.
+  bovenregel; de opening van 10,8 m breed loopt dwars door de pijler, tot
+  2,5 m onder de bovenkant.
 - De hoofdoverspanning van 148,5 m tussen de steunpijler en de pyloon
   (Wikipedia: 150 m).
 - De pyloon van twee betonnen poten die naar boven toe naar elkaar toe lopen
@@ -87,9 +88,9 @@ en 0,5 m voorbij de uiteinden van het dek. De tuivlakken (plaat, ribben en de
 drie vrije staven: de strook 2,2 tot 3,8 m naast de as van x = -1,6 tot
 92,5) en de achtertuien (die vanaf 8,0 m naast de as in de rijbaan steken,
 x = 161,8 tot 200,0) blijven met 2 cm vrij constructie; de voegen van de
-klep (sleuven van 0,3 m) horen bij de rijbaan. Volumes: brug 41.783 m³, rijbaan 3393 m³, constructie 38.390 m³; samen
+klep (sleuven van 0,3 m) horen bij de rijbaan. Volumes: brug 41.315 m³, rijbaan 3393 m³, constructie 37.922 m³; samen
 precies de brug (het script controleert het). De STL bevat de brug als geheel
-en is ongewijzigd.
+met de printvormen en is ongewijzigd.
 
 Tuien op 1:1000: een tui van circa 0,15 m is niet te printen. De drie
 binnenste tuien van de hoofdoverspanning staan steiler dan 50 graden (52, 58
@@ -117,14 +118,28 @@ buitenste 3 m van het dek 2 tot 4 m lager dan het wegdek; de BGT en de
 luchtfoto tonen daar het volle dek, dus het model houdt 18,8 m aan.
 
 Printbaarheid op 1:1000: de pyloonpoten hellen 6 tot 11,5 graden uit het lood,
-de kop heeft een V-onderkant van 50 graden, de schoren van de dwarsdrager en
-de onderkant van de tuivlakken staan op 50 graden en de aandrijfcilinders
-hebben een kiel van 55 graden. Alleen de onderkant van het dek (7371 m²,
-inclusief de schuine randen en de klep), de vlakke onderkant van de
-dwarsdrager (40 m²) en de bovenkant van de blinde nissen (13 m²) hangen vrij;
-het script controleert dat er boven het dek niets vrij hangt, dat alles op
-dezelfde onderkant begint en dat de printversie buiten de nissen geen
-overhang heeft. In de export gaan de constructie (genus 13: de vrije tuien,
+de kop heeft een V-onderkant van 50 graden en de schoren van de dwarsdrager en
+de onderkant van de tuivlakken staan op 50 graden. De kop houdt de
+V-onderkant ook in de GLB: met een vlakke onderkant vult de export (ook
+"Ondersteuning v2.0") de hele ruimte tussen de poten van de kop tot het dek
+op (+2,9 cm³ en een rekentijd van 13 naar 159 s in de meettest). De
+aandrijfcilinders zijn rond en de opening in de steunpijler loopt dwars door
+de pijler; wat daarvan zonder steun niet print, laat het model aan de export
+over. Vrij hangen de onderkant van het dek (7365 m², inclusief de schuine
+randen en de klep), de vlakke onderkant van de dwarsdrager (40 m²), de
+onderkant van de cilinders, de bovenregel van de steunpijler en de bovenkant
+van de blinde nissen in de basculepijler (samen 76 m²); het script controleert
+dat er boven het dek niets vrij hangt, dat alles op dezelfde onderkant begint
+en dat de printversie buiten de nissen geen overhang heeft. In de meettest van
+de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 41,31 naar 70,48 cm³ (v1.0: 70,48 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 14 s; het vorige model met de
+printvormen kwam op 71,05 cm³. Het meeste daarvan is de opvulling onder het
+dek, waar ook de opening van de steunpijler in valt. De STL, die zonder export
+wordt geprint, heeft als printvorm aandrijfcilinders van een halve zeshoek met
+een kiel van 55 graden en in de steunpijler aan beide kanten een blinde nis
+van 0,4 m, en is ongewijzigd. De printcheck hieronder is gemeten aan de
+versie met die printvormen in de GLB. In de export gaan de constructie (genus 13: de vrije tuien,
 de tuivlakken, de pyloonlus en de twee aandrijfcilinders) en de rijbaan
 (genus 2: de gaten van de tuivlakken) samen met overhangopvulling door, die
 naar de constructie gaat: de printcheck op 1:1000 neemt voor de uitsnede van
@@ -162,7 +177,8 @@ achteroverspanning (plaats s = 216 en maten), de verbreding van de
 wandpijlers, de constructiehoogte van dek (2,4 m) en klep (1,8 m), de
 aandrijfcilinders en de schampkanten; de waterspiegel is die van het
 PDOK-terrein (NAP -0,47 m), die met de stand van de IJssel meebeweegt. De
-openingen van de pijlers zijn blinde nissen, de kop heeft een V-onderkant en
-de tuien zijn platen met ribben, om op 1:1000 zonder steun te printen.
+sleuven en het trappenhuis in de basculepijler zijn blinde nissen, de kop
+heeft een V-onderkant en de tuien zijn platen met ribben, om op 1:1000 zonder
+steun te printen.
 
 Licentie van het model: eigen werk op basis van open bronnen.

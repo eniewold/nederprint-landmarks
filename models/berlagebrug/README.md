@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `berlagebrug.glb` | Catalogusbron in meters: nodes `road:rijbaan`, `road:ov-baan`, `road:fietspad`, `road:voetpad`, `road:voetpad-open` (met BGT-attributen), `building:brug`, `building:basculeklep`, `building:brugwachtershuis` |
-| `berlagebrug-1-1000.stl` | Brug met toren in één stuk op 1:1000, met de onderkant van de pijlers op het printbed (73,7 × 33,4 × 15,1 mm) |
+| `berlagebrug-1-1000.stl` | Brug met toren in één stuk op 1:1000 met nissen in plaats van de doorvaarten als printvorm, met de onderkant van de pijlers op het printbed (73,7 × 33,4 × 15,1 mm) |
 | `berlagebrug.json` | Catalogusitem met RD-georeferentie, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op de as van het dek (de tramsporen,
@@ -24,16 +24,20 @@ brugwachtershuis (`NL.IMBAG.Pand.0363100012197554`), dat PDOK als blok van
 NAP +3,2 tot +13,8 m op het dek zet; andere panden liggen niet onder het
 model.
 
-Het model is vereenvoudigd zodat het op 1:1000 zonder losse steunconstructie
-print. In werkelijkheid zijn de vijf doorvaarten open onder een vlak dek. Een
-eerste versie met open doorvaarten liet de export op 1:1000 opvullen met een
-gestreepte wig onder elk dek (`building:brug` +110 %). Daarom is de ruimte
-onder het dek dicht en heeft elke doorvaart aan beide gevels een diepe nis
-met een plafond dat onder 50 graden naar binnen afloopt. Leuningen en
-lichtmasten ontbreken. Printcheck op 1:1000 (uitsnede 107 mm): alle
-onderdelen NoError en vrijwel geen opvulling (`building:brug` 7893 →
-7896 mm³, +0,04 %; wegdelen, klep en toren 0 %), samen 9292 → 9295 mm³, in
-1,7 s.
+De vijf doorvaarten zijn open onder het vlakke dek, zoals in werkelijkheid.
+Die vrije overspanning van 10 tot 12 m print op 1:1000 niet zonder steun; dat
+laat het model aan de export over. De doorvaarten zijn zo laag (2,2 tot 2,9 m
+van het water tot de onderkant van de liggers) dat schoren tegen de pijlers
+de onderkant zouden raken, dus zowel "Ondersteuning v1.0" als "v2.0" vult de
+doorvaarten onder het dek op; aan beide gevels blijft de doorvaart onder een
+wig van 45 graden open. In de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
+"Ondersteuning v2.0" van 4,80 naar 8,82 cm³ (v1.0: 8,82 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 0,4 s; het vorige model met
+de nissen kwam op 8,99 cm³. De STL op 1:1000, die zonder export wordt
+geprint, heeft als printvorm een dichte onderbouw met aan beide gevels per
+doorvaart een diepe nis met een plafond dat onder 50 graden naar binnen
+afloopt, en is ongewijzigd. Leuningen en lichtmasten ontbreken.
 
 Onderdelen in het model (hoogtes boven de waterspiegel, NAP = z - 0,4):
 
@@ -73,8 +77,9 @@ Onderdelen in het model (hoogtes boven de waterspiegel, NAP = z - 0,4):
   met 2 cm vrij constructie. `building:brug` is de vaste brug onder het
   wegdek, `building:basculeklep` de klep onder het wegdek,
   `building:brugwachtershuis` de toren. Samen vormen de acht onderdelen
-  precies de brug als geheel (8603,4 m³, geen overlap); verticale stralen op
-  30.000 punten over het dek vinden geen samenvallende bovenvlakken.
+  precies de brug als geheel (4796,6 m³, geen overlap); verticale stralen op
+  30.000 punten over het dek vinden geen samenvallende bovenvlakken (gemeten
+  aan de versie met nissen; het dek en de wegdelen zijn gelijk gebleven).
 - Basculeklep van 11,86 × 23,2 m (0,5 m smaller dan het vaste dek) tussen de
   middenpijler en pijler E1, in gesloten stand.
 - Vier bakstenen pijlers volgens de BGT: W1 (x = -26,25 .. -23,74), de
@@ -82,10 +87,11 @@ Onderdelen in het model (hoogtes boven de waterspiegel, NAP = z - 0,4):
   E2 (23,46 .. 26,0), met hun puntige granieten voorkoppen tot NAP +0,3 m en
   op W1 en E2 granieten pilasters van 0,7 m op de hoeken van de kopse
   kanten. Landhoofden als eindwanden van 0,5 m tegen de kades.
-- Vijf doorvaarten van 10,2 tot 11,9 m als nissen in beide gevels: het
-  plafond loopt van de onderkant van de liggers (z = 2,2 tot 2,9 m) onder
-  50 graden naar binnen af tot onder water, 1,9 tot 2,5 m diep op de
-  waterlijn.
+- Vijf open doorvaarten van 10,2 tot 11,9 m onder het vlakke dek, van
+  pijler tot pijler (onderkant van de liggers 2,2 tot 2,9 m boven het
+  water). In de STL zijn het nissen in beide gevels: het plafond loopt van
+  de onderkant van de liggers (z = 2,2 tot 2,9 m) onder 50 graden naar
+  binnen af tot onder water, 1,9 tot 2,5 m diep op de waterlijn.
 - Pijlerkoppen boven het dek (AHN NAP +5,3 tot +5,5 m): op E1 aan beide zijden
   (3,6 × 1,4 m, 1,2 m boven het wegdek) en op de middenpijler aan de
   zuidzijde naast de klep (4 × 1,4 m, 1,3 m boven het wegdek).
@@ -105,8 +111,7 @@ de rood-zwarte lichtmasten en de masten van de bovenleiding (circa 0,4 m
 dik), de vlaggenmasten op de toren, de trappen op het bordes (treden van
 0,3 m), de lage granieten stootblokken op de kadehoeken (horen bij de
 kademuur, 0,5 m boven water) en de basculekelder en het contragewicht in de
-middenpijler (onzichtbaar). De doorvaarten zijn geen open ruimte maar
-nissen, zie boven.
+middenpijler (onzichtbaar).
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Berlagebrug_(Amsterdam))
 (brug 423, 1929-1932, 80 × 24 m, Genius van 4 m),

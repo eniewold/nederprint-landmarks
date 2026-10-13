@@ -227,13 +227,18 @@ for (const [name, pier] of Object.entries(PIERS)) {
   }
 }
 substructure.push(...NOSES.map((poly) => prism(poly, BOTTOM, NOSE_TOP)));
-// Doorvaarten: in werkelijkheid open onder een vlak dek. Een vrije
-// horizontale overspanning van 10,7 m vult de export op 1:1000 op met een
-// gestreepte wig (+110 % volume); daarom is de ruimte onder het dek dicht en
-// heeft elke doorvaart aan beide gevels een diepe nis met een plafond dat
-// onder 50 graden naar binnen afloopt (zelfdragend), van de onderkant van de
-// liggers tot onder water. De bovenrand van de nis ligt per doorvaart op de
-// laagste liggeronderkant.
+// Doorvaarten: open onder het vlakke dek, van pijler tot pijler. De vrije
+// horizontale overspanning van 10,2 tot 11,9 m print op 1:1000 niet zonder
+// steun; de export van de webshop vult eronder op. De doorvaarten zijn zo laag
+// (3 tot 3,7 m van de onderkant tot de liggers) dat schoren tegen de pijlers
+// de onderkant zouden raken, zodat ook "Ondersteuning v2.0" een wig onder het
+// dek zet.
+//
+// Printvorm voor de STL, die zonder export wordt geprint: de ruimte onder het
+// dek is dicht en elke doorvaart heeft aan beide gevels een diepe nis met een
+// plafond dat onder 50 graden naar binnen afloopt (zelfdragend), van de
+// onderkant van de liggers tot onder water. De bovenrand van de nis ligt per
+// doorvaart op de laagste liggeronderkant.
 const ARCH_SLOPE = Math.tan((50 * Math.PI) / 180);
 const OPENINGS = [
   { x0: DECK.west + ABUTMENT, x1: PIERS.w1.x0 },
@@ -243,6 +248,7 @@ const OPENINGS = [
   { x0: PIERS.e2.x1, x1: DECK.east - ABUTMENT },
 ];
 const openingReport = [];
+const printOpenings = [];
 for (const { x0, x1, leaf: isLeaf } of OPENINGS) {
   const face = (isLeaf ? LEAF.halfWidth : DECK.halfWidth) - GIRDER_INSET;
   const top = isLeaf ? soffit : (x) => soffit(x) + 0.01;
@@ -261,8 +267,14 @@ for (const { x0, x1, leaf: isLeaf } of OPENINGS) {
       x1 + 0.01,
     ),
   );
-  substructure.push(body.subtract(union(recesses)));
-  openingReport.push({ x0, x1, span: +(x1 - x0).toFixed(2), recessTop: +zr.toFixed(2), depthAtWater: +(zr / ARCH_SLOPE).toFixed(2) });
+  printOpenings.push(body.subtract(union(recesses)));
+  openingReport.push({
+    x0,
+    x1,
+    span: +(x1 - x0).toFixed(2),
+    clearance: +Math.min(soffit(x0), soffit(x1)).toFixed(2),
+    printRecessDepthAtWater: +(zr / ARCH_SLOPE).toFixed(2),
+  });
 }
 // Pijlerkoppen boven het dek.
 const heads = HEADS.map(({ x0, x1, y0, y1, rise }) => band(x0, x1, () => BOTTOM, (x) => Z(x) + rise, y0, y1));
@@ -341,8 +353,10 @@ const genius = boxFromTo(
 );
 const tower = union([towerBody, towerCore]).subtract(union(niches)).add(genius);
 
+// Het model met open doorvaarten (GLB) en het printmodel met de nissen (STL).
 const fixedStructure = union([fixedDeck, ...substructure, ...heads, balcony, landing]);
-const printModel = union([fixedStructure, leaf, tower]);
+const model = union([fixedStructure, leaf, tower]);
+const printModel = union([union([fixedDeck, ...substructure, ...printOpenings, ...heads, balcony, landing]), leaf, tower]);
 // Het printmodel eerst doorrekenen: de wegdeklaag hieronder verandert de STL niet.
 printModel.numTri();
 
@@ -448,11 +462,11 @@ const roadCut = layer.subtract(union([ovZone, bikeZone, outer(DECK.west - 2, DEC
 // De constructie verliest de hele strook (niet de som van de wegdelen), zodat
 // de grenzen tussen de wegdelen geen splinters in de constructie laten.
 const cut = layer;
-const ovLane = ovCut.intersect(printModel);
-const roadway = roadCut.intersect(printModel);
-const bikeway = bikeCut.intersect(printModel);
-const footway = footCut.intersect(printModel);
-const footwayOpen = footOpenCut.intersect(printModel);
+const ovLane = ovCut.intersect(model);
+const roadway = roadCut.intersect(model);
+const bikeway = bikeCut.intersect(model);
+const footway = footCut.intersect(model);
+const footwayOpen = footOpenCut.intersect(model);
 // Constructie: vaste brug, klep en toren onder of naast het wegdek, uit de
 // losse onderdelen (de klep en de vaste brug grenzen alleen in x = -2,76 en
 // 9,1 aan elkaar; de toren gaat voor waar hij in pijler en dek staat).
@@ -629,8 +643,8 @@ const roadParts = parts.filter(([name]) => name.startsWith("road:")).map(([, sol
 const buildingParts = parts.filter(([name]) => name.startsWith("building:")).map(([, solid]) => solid);
 report.partition = {
   partsM3: +partsVolume.toFixed(3),
-  wholeM3: +printModel.volume().toFixed(3),
-  differenceM3: +(partsVolume - printModel.volume()).toFixed(4),
+  wholeM3: +model.volume().toFixed(3),
+  differenceM3: +(partsVolume - model.volume()).toFixed(4),
   overlapRoadBuildingM3: +union(roadParts).intersect(union(buildingParts)).volume().toFixed(4),
 };
 report.openings = openingReport;
@@ -689,13 +703,13 @@ await writeFile(
         "G0363.abcafbc3118c4538935469c1a80063ea",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek (de tramsporen), 3,2 m ten westen van het hart van de basculedoorvaart, op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (Mr. Treublaan, RD-richting 12,57 graden) en +Y stroomafwaarts naar het noorden (de stadszijde met de toren). Nodenaam klasse:label bepaalt de materiaalklasse: road:rijbaan, road:ov-baan, road:fietspad, road:voetpad en road:voetpad-open zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan, fietspad of voetpad; bgt_fysiekvoorkomen gesloten verharding, de oostelijke voetpaden open verharding), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dek van 73,7 × 24,2 m met rand en liggers, landhoofden, vier bakstenen pijlers met voorkoppen en pilasters, pijlerkoppen boven het dek, balkon, keldermuur en bordes aan de noordzijde van de middenpijler), building:basculeklep de klep van 11,9 × 23,2 m onder het wegdek, building:brugwachtershuis de toren (BAG-pand) met de kern tot NAP +13,9 m, zijdelen tot NAP +11,5 m, ramen als nissen en de Genius van Amsterdam als reliëf. De vijf doorvaarten (vier vaste overspanningen van 10,7 m en de basculedoorvaart van 11,9 m) zijn aan beide gevels diepe nissen met een plafond dat onder 50 graden naar binnen afloopt, zodat het model op 1:1000 zonder opvulling print; daartussen is de onderbouw dicht. Leuningen, lichtmasten, bovenleiding, vlaggenmasten en de trappen op het bordes zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de PDOK-waterspiegel (ellipsoïdisch).",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek (de tramsporen), 3,2 m ten westen van het hart van de basculedoorvaart, op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (Mr. Treublaan, RD-richting 12,57 graden) en +Y stroomafwaarts naar het noorden (de stadszijde met de toren). Nodenaam klasse:label bepaalt de materiaalklasse: road:rijbaan, road:ov-baan, road:fietspad, road:voetpad en road:voetpad-open zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan, fietspad of voetpad; bgt_fysiekvoorkomen gesloten verharding, de oostelijke voetpaden open verharding), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dek van 73,7 × 24,2 m met rand en liggers, landhoofden, vier bakstenen pijlers met voorkoppen en pilasters, pijlerkoppen boven het dek, balkon, keldermuur en bordes aan de noordzijde van de middenpijler), building:basculeklep de klep van 11,9 × 23,2 m onder het wegdek, building:brugwachtershuis de toren (BAG-pand) met de kern tot NAP +13,9 m, zijdelen tot NAP +11,5 m, ramen als nissen en de Genius van Amsterdam als reliëf. De vijf doorvaarten (vier vaste overspanningen van 10,2 tot 10,8 m en de basculedoorvaart van 11,9 m) zijn open onder het vlakke dek, van pijler tot pijler; de vrije overspanning print op 1:1000 niet zonder steun en vult de export op. De STL, die zonder export wordt geprint, heeft als printvorm een dichte onderbouw met aan beide gevels per doorvaart een diepe nis met een plafond dat onder 50 graden naar binnen afloopt. Leuningen, lichtmasten, bovenleiding, vlaggenmasten en de trappen op het bordes zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de PDOK-waterspiegel (ellipsoïdisch).",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(DECK.east - DECK.west).toFixed(2),
         widthM: DECK.halfWidth * 2,
         leafM: { length: +(LEAF.x1 - LEAF.x0).toFixed(2), width: LEAF.halfWidth * 2 },
-        openingsRecessDepthAtWaterM: openingReport.map((o) => o.depthAtWater),
+        openingsClearanceM: openingReport.map((o) => o.clearance),
         spansM: [
           +(PIERS.w1.x0 - DECK.west - ABUTMENT).toFixed(2),
           +(PIERS.mid.x0 - PIERS.w1.x1).toFixed(2),
