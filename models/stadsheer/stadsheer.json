@@ -1,0 +1,86 @@
+{
+  "name": "StadsHeer",
+  "file": "stadsheer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133574,
+    396870
+  ],
+  "xAxis": [
+    0.990652851696501,
+    -0.13640721177998827
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 58.34388678,
+  "groundSamplePoints": [
+    [
+      -16.776296005533695,
+      -17.45152979926729
+    ],
+    [
+      15.606631307654279,
+      -18.039763280790172
+    ],
+    [
+      111.23273607873442,
+      42.57086356228417
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000394673"
+  ],
+  "description": "StadsHeer met85geslotenserresopprintkragen, verschillende gemeten torenkoppen, glasplint, vier kantoorvolumes,glazenverbindingsvleugels, drie foyer-dakvlakken en de noordelijke parkeerschijf met ronde hellingen. Het gehele eigen BAG-pand wordt vervangen; binnentuinen en openbarepleinen blijvenopen. RD133574/396870, hoofdas-7.84graden, z0NAP15.2m.",
+  "realWorld": {
+    "groundNapM": 15.2,
+    "axisDegrees": -7.84,
+    "towerRoofsNapM": [
+      97.953,
+      106.913,
+      115.233
+    ],
+    "machineryNapM": 117.1,
+    "westOfficeRoofsNapM": [
+      61.514,
+      67.017
+    ],
+    "otherOfficeRoofsNapM": [
+      39.93,
+      39.981,
+      39.994,
+      45.54,
+      45.401,
+      45.436
+    ],
+    "parkingRoofNapM": 30.795,
+    "corridorRoofNapM": 32.772,
+    "foyerGutterRidgeNapM": [
+      21.14,
+      22.56
+    ],
+    "serres": 85,
+    "estimates": [
+      "serreplaatsing in vier ritmesuit schuinefoto s:3.25m breed,2.1m diep,2.65m hoog; vaste45-graden onderschalen vergrotenonderhang",
+      "venster-/glasritme, woonlaagsteek2.8m, kantoorsteek3.2/3.5m en glasplint uitfoto s geschat, circa.5m onzeker",
+      "rondeparkeerhellingen7.1m straal en1.1m borstwering vanuitluchtfoto vereenvoudigd; inrichting van binnenhellingen weggelaten",
+      "installatieblokken uitAHN op3DBAG-daken, top117.1NAP binnenAHNmaximum117.76",
+      "smallekozijnen,lamellen,leuningenenzonnepanelenonder.9m weggelaten; noorderdek isgebouw, geenpleinvloer"
+    ]
+  },
+  "sources": [
+    "https://factor-s.com/Ontwikkeling/referentieprojecten/de-stadsheer.aspx (ontwikkelaar,85woningen/6kantoorlagen/25woonlagen)",
+    "https://www.skyscrapercenter.com/building/de-stadsheer/5856 (CVU,101m,EGM,2007)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000394673 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Stadsheer_Tilburg_DSCF9463.jpg (G.Lanting,CC BY4.0)",
+    "https://commons.wikimedia.org/wiki/File:Stadsheer_Tilburg_DSCF9465.jpg (G.Lanting,CC BY4.0)",
+    "https://commons.wikimedia.org/wiki/File:Stadsheer_Tilburg_P1160983.jpg (G.Lanting,CC BY4.0)",
+    "https://commons.wikimedia.org/wiki/File:UPC0511-Unnatural-7_(5772263355).jpg (Joris Leermakers,CC BY-SA2.0)"
+  ],
+  "printFiles": [
+    "stadsheer-1-1000.stl"
+  ]
+}
