@@ -281,18 +281,17 @@ const STAIR_WALL = { x0: 109.1, x1: 111.4, inner: 11.9, outer: 16.9, top: Z(16.0
 // wegdek) die bij de pijlers op dekhoogte uitkomt. De boogrib is 1,2 m hoog en
 // 1,0 m breed (foto's). Hangers op de 15 knopen van 16 velden van 7,5 m
 // (foto's); op 1:1000 is elke hanger een stijl van 1,0 m (de echte zijn open
-// staven) en de ruimte tussen ligger en boog een scherm. In de GLB lopen de
-// openingen in de middelste velden tot de onderkant van de boog, zoals in het
-// echt; die bovenkant vult de export op. In de velden daarbuiten loopt de
-// boog over een opening meer dan REAL_RISE op, en vult de export de opening
-// grotendeels of helemaal dicht (meettest `scripts/overhang-lab`); daar en in
-// de STL, die zonder export wordt geprint, zijn het spitse openingen (zijden
-// van 55 graden), zoals bij de Waalbrug.
+// staven). In de GLB is elk veld tussen twee hangers open van de ligger tot de
+// onderkant van de boog, zoals in het echt; die onderkant vult de export op
+// met schoren vanaf de hangers. Waar de boog minder dan MIN_CLEAR boven de
+// ligger komt, sluit het veld met een verticale kant. In de STL, die zonder
+// export wordt geprint, is de ruimte tussen ligger en boog een scherm met
+// spitse openingen (zijden van 55 graden), zoals bij de Waalbrug.
 const ARCH = { span: 119.6, crown: 42.5, k: 0.00475, depth: 1.2 };
 const PANELS = 16;
 const HANGER = 1.0;
 const POINTED = (55 * Math.PI) / 180;
-const REAL_RISE = 1.0;
+const MIN_CLEAR = 0.9;
 const upper = (x) => Z(ARCH.crown - ARCH.k * x * x);
 const lower = (x) => upper(x) - ARCH.depth;
 
@@ -482,10 +481,7 @@ for (let i = 0; i < PANELS; i++) {
   const floor = Math.min(girderTop(a), girderTop(b), girderTop((a + b) / 2)) - 0.03;
   if (shoulder < Math.max(girderTop(a), girderTop(b)) + 1.0) continue;
   const apex = shoulder + (Math.tan(POINTED) * (b - a)) / 2;
-  // Echte opening tot de onderkant van de boog waar die over de opening
-  // hooguit REAL_RISE oploopt.
-  const real = Math.abs(lower(a) - lower(b)) <= REAL_RISE;
-  openings.push({ a, b, floor, shoulder, apex, real });
+  openings.push({ a, b, floor, shoulder, apex });
 }
 const archXs = [
   ...Array.from({ length: Math.round((archX1 - archX0) / 0.5) + 1 }, (_, i) => archX0 + i * 0.5),
@@ -493,28 +489,57 @@ const archXs = [
 ]
   .filter((x) => x >= archX0 && x <= archX1)
   .filter((x, i, xs) => i === 0 || x - xs[i - 1] > 1e-3);
-// De boog met het hangerscherm; `realTops` geeft de echte openingen (GLB).
-const archBand = (side, realTops) => {
+// Open veld in de GLB: van net onder de bovenkant van de ligger tot de
+// onderkant van de boog, om de 0,5 m. Waar de boog minder dan MIN_CLEAR boven
+// de ligger komt, houdt het veld op met een verticale kant op de plek waar de
+// vrije hoogte precies MIN_CLEAR is.
+const fieldOpenings = [];
+for (let i = 0; i < PANELS; i++) {
+  const a = panelX[i] + HANGER / 2;
+  const b = panelX[i + 1] - HANGER / 2;
+  const floor = Math.min(girderTop(a), girderTop(b), girderTop((a + b) / 2)) - 0.03;
+  const clear = (x) => lower(x) - girderTop(x) - MIN_CLEAR;
+  const m = Math.ceil((b - a) / 0.5);
+  const xs = Array.from({ length: m + 1 }, (_, j) => a + ((b - a) * j) / m);
+  const cross = (p, q) => {
+    let lo = p;
+    let hi = q;
+    for (let k = 0; k < 50; k++) {
+      const c = (lo + hi) / 2;
+      if (clear(c) > 0 === clear(p) > 0) lo = c;
+      else hi = c;
+    }
+    return (lo + hi) / 2;
+  };
+  const top = [];
+  for (let k = 0; k < xs.length; k++) {
+    if (k > 0 && clear(xs[k]) > 0 !== clear(xs[k - 1]) > 0) {
+      const x = cross(xs[k - 1], xs[k]);
+      top.push([x, lower(x)]);
+    }
+    if (clear(xs[k]) > 0) top.push([xs[k], lower(xs[k])]);
+  }
+  if (top.length < 2) continue;
+  fieldOpenings.push([[top[0][0], floor], [top[top.length - 1][0], floor], ...[...top].reverse()]);
+}
+const pointedOpenings = openings.map(({ a, b, floor, shoulder, apex }) => [
+  [a, floor],
+  [b, floor],
+  [b, shoulder],
+  [(a + b) / 2, apex],
+  [a, shoulder],
+]);
+// De boog met het hangerscherm en de gegeven openingen.
+const archBand = (side, holeShapes) => {
   const y0 = side * GIRDER.y - GIRDER.half;
   const y1 = side * GIRDER.y + GIRDER.half;
   const band = bandXs(archXs, (x) => girderTop(x) - 0.2, upper, y0, y1);
-  const holes = openings.map(({ a, b, floor, shoulder, apex, real }) => {
-    if (realTops && real) {
-      const m = Math.ceil((b - a) / 0.5);
-      const top = Array.from({ length: m + 1 }, (_, j) => a + ((b - a) * j) / m).map((x) => [x, lower(x)]);
-      return profileY([[a, floor], [b, floor], ...top.reverse()], y0 - 0.5, y1 + 0.5);
-    }
-    return profileY(
-      [[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]],
-      y0 - 0.5,
-      y1 + 0.5,
-    );
-  });
+  const holes = holeShapes.map((pts) => profileY(pts, y0 - 0.5, y1 + 0.5));
   return band.subtract(union(holes));
 };
 // Alles zonder de bogen; de STL krijgt de bogen met de spitse openingen.
 const baseParts = [...parts];
-for (const side of [-1, 1]) parts.push(archBand(side, false));
+for (const side of [-1, 1]) parts.push(archBand(side, pointedOpenings));
 
 const printBridge = union(parts);
 
@@ -557,7 +582,7 @@ const printModel = union([printBridge, printFoot]);
 
 // ---------- bogen met de echte openingen (alleen in de GLB) ----------
 // Pas na het printmodel gebouwd, zodat de STL ongewijzigd blijft.
-const bridge = union([...baseParts, archBand(-1, true), archBand(1, true)]);
+const bridge = union([...baseParts, archBand(-1, fieldOpenings), archBand(1, fieldOpenings)]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant.
@@ -862,7 +887,7 @@ report.arch = {
   ends: [+archX0.toFixed(2), +archX1.toFixed(2)],
   hangers: PANELS - 1,
   openings: openings.length,
-  openingsToArch: openings.filter(({ real }) => real).map(({ a, b }) => [+a.toFixed(2), +b.toFixed(2)]),
+  openFields: fieldOpenings.map((pts) => [+pts[0][0].toFixed(2), +pts[1][0].toFixed(2)]),
   openingApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
 };
 report.deckNap = {
@@ -915,7 +940,7 @@ await writeFile(
         "G0202.2af034b9591912c4e05343604191f184",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Rijn (z = 0, NAP +8,25 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het noordnoordoosten (de binnenstad, RD-richting 59,43 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vijf nodes: road:rijbaan, road:ov-baan, road:fietspad en road:fietspad-viaduct, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan of fietspad; bgt_fysiekvoorkomen gesloten verharding; plus_fysiekvoorkomen asfalt, behalve op het fietspad aan de westkant van landhoofd en viaduct, waar de BGT geen materiaal geeft), zodat de kleurregels van een thema erop werken (het fietspad is over de stalen brug alles buiten de hoofdliggers, de OV-baan de busbaan aan de oostkant van de rijweg); en building: de rest van de brug, met het stalen dek van 22,6 tot 23,7 m breed van het zuidelijke landhoofd (x = -378) tot het noordelijke landhoofd aan de Rijnkade (x = 109 tot 117), met de twee hoofdliggers als ribbels van 0,9 m boven het wegdek en de fiets- en voetpaden op consoles erbuiten, het wegdek op NAP +17,2 tot +25,4 m (AHN); de verstijfde staafboog van 120 m tussen de rivierpijlers als twee bogen van 1,2 m op de liggers met de top op NAP +42,5 m en de 15 hangers als scherm tussen ligger en boog met in de vier middelste velden openingen tot de onderkant van de boog (die bovenkant vult de export op) en daarbuiten spitse openingen; de twee rivierpijlers met spitse koppen (BGT) en stalen opleggingen; aan de zuidkant zes velden van 42 m op vijf aanbrugpijlers met opleggingen (twee op een funderingsplaat in de strang) en de overgangspijler met halfronde bordestrappen; op het noordelijke landhoofd de twee vierkante torens tot NAP +28,6 m met de trappen naar het dek en het bordes van de herdenkingsplaats; het betonnen viaduct over de Rijnkade en de Oranjewachtstraat met vier liggers, dwarsbalken en vierkante kolommen (BGT) tot x = 231. Het windverband tussen de bogen, de eindportalen, leuningen, lantaarns en de S-vormige trappen achter het viaduct zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de Rijn bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Rijn (z = 0, NAP +8,25 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het noordnoordoosten (de binnenstad, RD-richting 59,43 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Vijf nodes: road:rijbaan, road:ov-baan, road:fietspad en road:fietspad-viaduct, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, OV-baan of fietspad; bgt_fysiekvoorkomen gesloten verharding; plus_fysiekvoorkomen asfalt, behalve op het fietspad aan de westkant van landhoofd en viaduct, waar de BGT geen materiaal geeft), zodat de kleurregels van een thema erop werken (het fietspad is over de stalen brug alles buiten de hoofdliggers, de OV-baan de busbaan aan de oostkant van de rijweg); en building: de rest van de brug, met het stalen dek van 22,6 tot 23,7 m breed van het zuidelijke landhoofd (x = -378) tot het noordelijke landhoofd aan de Rijnkade (x = 109 tot 117), met de twee hoofdliggers als ribbels van 0,9 m boven het wegdek en de fiets- en voetpaden op consoles erbuiten, het wegdek op NAP +17,2 tot +25,4 m (AHN); de verstijfde staafboog van 120 m tussen de rivierpijlers als twee bogen van 1,2 m op de liggers met de top op NAP +42,5 m en de 15 hangers als stijlen van 1,0 m met alle velden ertussen open van de ligger tot de onderkant van de boog (die onderkant vult de export op); de twee rivierpijlers met spitse koppen (BGT) en stalen opleggingen; aan de zuidkant zes velden van 42 m op vijf aanbrugpijlers met opleggingen (twee op een funderingsplaat in de strang) en de overgangspijler met halfronde bordestrappen; op het noordelijke landhoofd de twee vierkante torens tot NAP +28,6 m met de trappen naar het dek en het bordes van de herdenkingsplaats; het betonnen viaduct over de Rijnkade en de Oranjewachtstraat met vier liggers, dwarsbalken en vierkante kolommen (BGT) tot x = 231. Het windverband tussen de bogen, de eindportalen, leuningen, lantaarns en de S-vormige trappen achter het viaduct zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op; de STL heeft tussen de hangers een scherm met spitse openingen en dezelfde printvoet. Het maaiveld wordt op het water van de Rijn bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

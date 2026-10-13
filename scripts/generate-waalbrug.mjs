@@ -204,11 +204,17 @@ const upper = (x) => {
 };
 const lower = (x) => upper(x) - ARCH.depth * (1 - archT(x) ** 8);
 // Hangers op de 23 knopen van het vakwerk (22 velden van 11,1 m). Op 1:1000
-// is elke hanger een stijl van 1,2 m en de ruimte tussen dek en boog een
-// scherm met spitse openingen (zijden van 55 graden) tot onder de boog.
+// is elke hanger een stijl van 1,2 m. In het model is elk veld tussen twee
+// hangers open van het wegdek tot de onderrand van de boog (zie onder); de STL
+// houdt een scherm met spitse openingen (zijden van 55 graden) tot onder de
+// boog.
 const PANELS = 22;
 const HANGER = 1.2;
 const POINTED = (55 * Math.PI) / 180;
+// Laagste vrije hoogte van een open veld boven het wegdek; waar de onderrand
+// van de boog lager komt (bij de kruising met het dek), sluit het veld met een
+// verticale kant.
+const MIN_CLEAR = 0.9;
 // Onder het dek loopt de boog naar de pijler. De onderrand krijgt daar een
 // knie van 50 graden vanaf het punt waar de boog het dek kruist, zodat hij
 // zonder steun print.
@@ -296,25 +302,63 @@ for (let i = 0; i < PANELS; i++) {
   const apex = shoulder + (Math.tan(POINTED) * (b - a)) / 2;
   openings.push({ a, b, floor, shoulder, apex });
 }
-const ribs = [-1, 1].map((side) => {
-  const y0 = side * ARCH.ribY - ARCH.rib / 2;
-  const y1 = side * ARCH.ribY + ARCH.rib / 2;
-  const band = profileY(
-    [...ribXs.map((x) => [x, ribBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
-    y0,
-    y1,
-  );
-  const holes = openings.map(({ a, b, floor, shoulder, apex }) =>
-    profileY(
-      [[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]],
-      y0 - 0.5,
-      y1 + 0.5,
-    ),
-  );
-  return band.subtract(union(holes));
-});
+// Open veld in het model: van net onder het wegdek tot de onderrand van de
+// boog, over de stations van de rib (om de 0,5 m). Waar de onderrand minder
+// dan MIN_CLEAR boven het wegdek komt, houdt het veld op met een verticale
+// kant op de plek waar de vrije hoogte precies MIN_CLEAR is.
+const fieldOpenings = [];
+for (let i = 0; i < PANELS; i++) {
+  const a = panelX[i] + HANGER / 2;
+  const b = panelX[i + 1] - HANGER / 2;
+  const floor = Math.min(deckZ(a), deckZ(b), deckZ((a + b) / 2)) - 0.05;
+  const clear = (x) => lower(x) - deckZ(x) - MIN_CLEAR;
+  const xs = [a, ...ribXs.filter((x) => x > a + 1e-3 && x < b - 1e-3), b];
+  const cross = (p, q) => {
+    let lo = p;
+    let hi = q;
+    for (let k = 0; k < 50; k++) {
+      const m = (lo + hi) / 2;
+      if (clear(m) > 0 === clear(p) > 0) lo = m;
+      else hi = m;
+    }
+    return (lo + hi) / 2;
+  };
+  const top = [];
+  for (let k = 0; k < xs.length; k++) {
+    if (k > 0 && clear(xs[k]) > 0 !== clear(xs[k - 1]) > 0) {
+      const x = cross(xs[k - 1], xs[k]);
+      top.push([x, lower(x)]);
+    }
+    if (clear(xs[k]) > 0) top.push([xs[k], lower(xs[k])]);
+  }
+  if (top.length < 2) continue;
+  fieldOpenings.push([[top[0][0], floor], [top[top.length - 1][0], floor], ...[...top].reverse()]);
+}
+const pointedOpenings = openings.map(({ a, b, floor, shoulder, apex }) => [
+  [a, floor],
+  [b, floor],
+  [b, shoulder],
+  [(a + b) / 2, apex],
+  [a, shoulder],
+]);
+function ribs(holeShapes) {
+  return [-1, 1].map((side) => {
+    const y0 = side * ARCH.ribY - ARCH.rib / 2;
+    const y1 = side * ARCH.ribY + ARCH.rib / 2;
+    const band = profileY(
+      [...ribXs.map((x) => [x, ribBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
+      y0,
+      y1,
+    );
+    const holes = holeShapes.map((pts) => profileY(pts, y0 - 0.5, y1 + 0.5));
+    return band.subtract(union(holes));
+  });
+}
 
-const bridge = union([deck, ...approachArches, ...piers, ...abutments, ...ribs]);
+// Model (GLB): de velden tussen de hangers open tot de onderrand van de boog.
+const bridge = union([deck, ...approachArches, ...piers, ...abutments, ...ribs(fieldOpenings)]);
+// Printversie (alleen in de STL): het scherm met spitse openingen.
+const printBridge = union([deck, ...approachArches, ...piers, ...abutments, ...ribs(pointedOpenings)]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek van de hoofdoverspanning en de bogen van de aanbruggen hangen vrij.
@@ -353,7 +397,7 @@ for (const x of footXs) {
   footStations.push({ x, section: section.map(([y, z]) => [y + yc, z]) });
 }
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- rijbaan als eigen onderdeel ----------
 // De bovenste 0,5 m van het dek is een eigen node met de attributen van het
@@ -364,7 +408,7 @@ const printModel = union([bridge, printFoot]);
 // verharding, asfalt, over de hele breedte van x = -327,8 tot 323,9 (ook de
 // trottoirs en fietspaden op de brug zijn in de BGT geen eigen wegdeel).
 // De rijbaan is daarom het hele wegdek; alleen de strook van de twee bogen
-// met hun hangerscherm blijft constructie. De laag wordt pas na het
+// met hun hangers blijft constructie. De laag wordt pas na het
 // printmodel gebouwd, zodat de STL ongewijzigd blijft.
 const LAYER = 0.5;
 const ROAD_ATTRIBUTES = {
@@ -381,7 +425,7 @@ const strip = union(
     bandY(x0, x1, (x) => deckZ(x) - LAYER, (x) => deckZ(x) + ABOVE, -20, 20, Math.round(x1 - x0)),
   ),
 );
-// De bogen met hun hangerscherm blijven constructie over de hele strook van
+// De bogen met hun hangers blijven constructie over de hele strook van
 // de rib (ook onder de openingen), met 2 cm vrij, over het stuk waar de
 // bovenrand van de boog in de wegdeklaag of erboven komt (plus 0,5 m).
 // Daarbuiten ligt de boog geheel in het dek, onder de laag.
@@ -435,8 +479,8 @@ const parts = [
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
 // model alleen de onderkant van het dek (over de hoofdoverspanning en naast
-// de ronde koppen van de pijlers) en de bogen van de aanbruggen, in de
-// printversie geen.
+// de ronde koppen van de pijlers), de bogen van de aanbruggen en de onderrand
+// van de hoofdboog boven de open velden, in de printversie geen.
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -464,14 +508,25 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 {
   const { area, found } = overhangs(bridge);
   let deckArea = 0;
+  let ribArea = 0;
   for (const p of found) {
     const xMid = (p[0][0] + p[1][0] + p[2][0]) / 3;
     const zMid = (p[0][2] + p[1][2] + p[2][2]) / 3;
     const onDeck = Math.abs(zMid - deckBottom(xMid)) < 0.15;
     const span = APPROACH_SPANS.find(({ a, b }) => xMid >= a - 0.01 && xMid <= b + 0.01);
     const onArch = span && Math.abs(zMid - soffit(span, xMid)) < 0.1;
+    const yMid = (p[0][1] + p[1][1] + p[2][1]) / 3;
+    const onRib = Math.abs(Math.abs(yMid) - ARCH.ribY) <= ARCH.rib / 2 + 1e-3 && Math.abs(zMid - lower(xMid)) < 0.1;
+    if (onRib) {
+      ribArea += Math.hypot(...[0, 1, 2].map((a) => {
+        const e1 = p[1].map((c, i) => c - p[0][i]);
+        const e2 = p[2].map((c, i) => c - p[0][i]);
+        return [e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]][a];
+      })) / 2;
+      continue;
+    }
     if (!onDeck && !onArch) {
-      throw new Error(`overhang buiten dek en aanbruggen op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
+      throw new Error(`overhang buiten dek, aanbruggen en boog op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
     }
     if (onDeck && Math.abs(xMid) < MAIN_PIERS[1].x0) {
       const e1 = p[1].map((c, i) => c - p[0][i]);
@@ -479,7 +534,14 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
       deckArea += Math.abs(e1[0] * e2[1] - e1[1] * e2[0]) / 2;
     }
   }
-  console.log("vrij hangend (m2):", Math.round(area), "waarvan dek hoofdoverspanning:", Math.round(deckArea));
+  console.log(
+    "vrij hangend (m2):",
+    Math.round(area),
+    "waarvan dek hoofdoverspanning:",
+    Math.round(deckArea),
+    "onderrand boog boven de open velden:",
+    Math.round(ribArea),
+  );
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", +print.area.toFixed(2));
   if (print.area > 0.5) throw new Error("printversie heeft overhang");
@@ -628,8 +690,9 @@ report.arch = {
   lowerCrownNap: +(lower(0) + WATER_NAP).toFixed(2),
   kneeX: [+kneeX.toFixed(2), +kneeXr.toFixed(2)],
   hangers: panelX.filter((x) => lower(x) > deckZ(x) + 1).length,
-  openings: openings.length,
-  openingApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
+  openFields: fieldOpenings.map((pts) => [+pts[0][0].toFixed(1), +pts[1][0].toFixed(1)]),
+  printOpenings: openings.length,
+  printOpeningApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
 };
 report.roadway = {
   attributes: ROAD_ATTRIBUTES,
@@ -684,7 +747,7 @@ await writeFile(
         "G0268.42ff08b3a4965775e0530100007f0cc2",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de Waal (z = 0, NAP +8,0 m) in de oorsprong, +X langs de brug naar het noorden (Lent, RD-richting 108,15 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Twee nodes: road:rijbaan, de bovenste 0,5 m van het wegdek over de hele lengte en breedte behalve de strook van de twee bogen met hun hangerscherm, met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de BGT heeft op de brug geen apart fietspad of voetpad), zodat de kleurregels van een thema erop werken; en building:waalbrug, de rest van het kunstwerk: het dek van 23 tot 25,5 m breed van het zuidelijke landhoofd aan het Keizer Traianusplein (x = -332) tot het oude landhoofd op Veur-Lent (x = 322,6), met het wegdek op NAP +26,2 tot +27,3 m; de twee rivierpijlers van 10,8 × 32 m op 252 m hart op hart; de hoofdboog van 244 m tussen de opleggingen als twee dichte vakwerkbanden van 1,2 m dik, 7 m naast de as, met de top op NAP +59,3 m en de hangers als een scherm met spitse openingen tussen dek en boog; onder het dek een knie van 50 graden naar de pijlers; aan beide zijden twee aanbruggen met dichte bogen onder het dek op een tussenpijler. De Verlengde Waalbrug over de Spiegelwaal (2013-2015), de windverbanden tussen de bogen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de Waal (z = 0, NAP +8,0 m) in de oorsprong, +X langs de brug naar het noorden (Lent, RD-richting 108,15 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Twee nodes: road:rijbaan, de bovenste 0,5 m van het wegdek over de hele lengte en breedte behalve de strook van de twee bogen met hun hangers, met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de BGT heeft op de brug geen apart fietspad of voetpad), zodat de kleurregels van een thema erop werken; en building:waalbrug, de rest van het kunstwerk: het dek van 23 tot 25,5 m breed van het zuidelijke landhoofd aan het Keizer Traianusplein (x = -332) tot het oude landhoofd op Veur-Lent (x = 322,6), met het wegdek op NAP +26,2 tot +27,3 m; de twee rivierpijlers van 10,8 × 32 m op 252 m hart op hart; de hoofdboog van 244 m tussen de opleggingen als twee dichte vakwerkbanden van 1,2 m dik, 7 m naast de as, met de top op NAP +59,3 m en de hangers als stijlen van 1,2 m, met de velden ertussen open van het wegdek tot de onderrand van de boog; onder het dek een knie van 50 graden naar de pijlers; aan beide zijden twee aanbruggen met dichte bogen onder het dek op een tussenpijler. De Verlengde Waalbrug over de Spiegelwaal (2013-2015), de windverbanden tussen de bogen, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de boog boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft tussen de hangers een scherm met spitse openingen en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),
