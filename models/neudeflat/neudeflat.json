@@ -1,0 +1,63 @@
+{
+  "name": "Neudeflat",
+  "file": "neudeflat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136544,
+    456074
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 47.22958266,
+  "groundSamplePoints": [
+    [
+      10,
+      23
+    ],
+    [
+      30,
+      8
+    ],
+    [
+      9,
+      -17
+    ],
+    [
+      -17,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000048613"
+  ],
+  "description": "Huidige Neudeflat na transformatie A3 in 2017: volledige wigvormige toren, commerciële voet en lage westentree, horizontale glasbanden, diepe kopbalkons/serres en achterste balkonvelden, afzonderlijke hoge westelijke dakopbouw en ventilatiekasten; doorlopende bouwprisma’s en platte daken, geen DSM-lagen.",
+  "realWorld": {
+    "groundNapM": 3.8,
+    "mainRoofNapM": 59.051,
+    "roofCoreNapM": 61.656,
+    "lowEntranceNapM": 8.411,
+    "storeyM": 3.2,
+    "estimates": [
+      "regelmatige wigvormige toren- en dakplannen uit BAG/3D BAG vereenvoudigd circa .5–1m",
+      "glasbanden, commerciële puien, balkons en serres uit gevelbouwersfoto’s: verdiepingsritme3.2m, diepe nissen2.0/1.6m geschat",
+      "vier dakventilatiekasten gemeten NAP59.439–59.711, contouren circa1.3m uit luchtfoto/AHN vereenvoudigd, circa .5m onzeker",
+      "dunne dakframebalken, balustrades, kozijnroedes en kleinere dakpunten smaller dan .9m weggelaten"
+    ]
+  },
+  "sources": [
+    "https://facedo.nl/portfolio-item/transformatie-neudeflat/ (gevelbouwer, huidige buitenfoto’s en transformatie2017, uitsluitend referentie)",
+    "https://www.a3architecten.com/nieuws-neudeflat/ (architect, nieuwe balkons/serres en kozijnen)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000048613 (TU Delft/3DGI, CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "neudeflat-1-1000.stl"
+  ]
+}
