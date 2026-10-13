@@ -1,0 +1,139 @@
+{
+  "name": "SnowWorld Amsterdam",
+  "file": "snowworld-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    106841,
+    495950
+  ],
+  "xAxis": [
+    0.5313985795180829,
+    -0.8471219213821372
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 41.78637831515875,
+  "groundSamplePoints": [
+    [
+      -73.13047659345374,
+      5.738762341682726
+    ],
+    [
+      -69.07938416572912,
+      19.724063559104977
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0453100000000400"
+  ],
+  "description": "Vijf verspringende gebogen pistekappen met stijgend dwarsprofiel, afgeronde kop, lagere korte piste, ontvangstboog, witte entreevorken en volledige zijgalerijen.",
+  "realWorld": {
+    "groundNapM": -1.1095,
+    "mainRoofTopNapM": 29.233,
+    "mainLowCrownNapM": 9.969,
+    "receptionCrownNapM": 8.49,
+    "westGalleryRoofNapM": 2.696,
+    "eastGalleryRoofNapM": 3.259,
+    "roofSections": {
+      "lowBay": [
+        [
+          -16,
+          9.969,
+          12,
+          0.0126
+        ],
+        [
+          40.6,
+          11.087,
+          13.5,
+          0.012
+        ]
+      ],
+      "lowerSlope": [
+        [
+          40.6,
+          12.076,
+          13.8,
+          0.0122
+        ],
+        [
+          75.8,
+          16.248,
+          13.8,
+          0.0122
+        ]
+      ],
+      "middleSlope": [
+        [
+          75.8,
+          17.244,
+          13.944,
+          0.0123
+        ],
+        [
+          115.9,
+          21.715,
+          16.65,
+          0.0118
+        ]
+      ],
+      "upperSlope": [
+        [
+          115.9,
+          22.733,
+          16.7,
+          0.0119
+        ],
+        [
+          146.05,
+          25.85,
+          21.62,
+          0.0117
+        ]
+      ],
+      "roundedHead": [
+        [
+          146.05,
+          26.91,
+          21.6,
+          0.011
+        ],
+        [
+          157,
+          28.565,
+          21.6,
+          0.0055
+        ],
+        [
+          165,
+          29.233,
+          21.37,
+          0.0036
+        ],
+        [
+          176.83,
+          29.078,
+          21.42,
+          0.0044
+        ]
+      ]
+    },
+    "estimated": [
+      "regelmatige paraboolprofielen gefit op AHN-dwarsmetingen; hoogtes geÃ¯nterpoleerd door glasgaten",
+      "kleine vouwen tussen roofstations, naden en kopafronding",
+      "entreevorken, luifel, glasvelden en koelinstallatievereenvoudiging"
+    ]
+  },
+  "sources": [
+    "PDOK BAG0453100000000400, Actueel_orthoHR, AHN4 DSM/DTM0.5m bbox106631,495740,107051,496160; dwarsprofielen per meter langs nokas -57.9graden",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0453100000000400",
+    "https://abr-roosendaal.nl/project_detail/snow-planet-spaarnwoude/",
+    "https://www.snowworld.com/nl/amsterdam",
+    "https://www.snowworld.com/en/amsterdam/plan-your-visit",
+    "https://bispingen.snowworld.com/unternehmen/ueber-uns.html"
+  ],
+  "printFiles": [
+    "snowworld-amsterdam-1-1000.stl"
+  ]
+}
