@@ -59,8 +59,8 @@ liggen BGT-wegdelen met hoogteligging 0) en het bordes aan de zuidkant van de
 kelder (buiten de borstwering) blijven constructie. De wegdelen zijn de strook
 van 0,5 m onder tot 1 m boven het wegdek binnen de brug, de constructie de
 brug min die strook, zodat er geen samenvallende bovenvlakken zijn; de
-volumes tellen op tot die van de brug als geheel (34 067 + 1 888 + 607 m³ =
-36 562 m³). De rijbaan bestaat uit drie stukken en elk fietspad uit drie,
+volumes tellen op tot die van de brug als geheel (33 308 + 1 888 + 607 m³ =
+35 803 m³). De rijbaan bestaat uit drie stukken en elk fietspad uit drie,
 onderbroken door de voegen van de klep.
 
 Onderdelen in het model (hoogtes in NAP):
@@ -90,11 +90,9 @@ Onderdelen in het model (hoogtes in NAP):
   veld een V, met staven van 0,9 m; de 41 vakwerkdriehoeken zijn doorgaande
   openingen.
 - De 20 hangers (foto's: geen hanger in het midden) als stijlen van 1,0 m
-  tussen dek en onderrand. In de vier velden aan elke oplegging is de ruimte
-  tussen de hangers open tot de onderrand (in het buitenste veld vanaf waar
-  de onderrand boven het dek komt); de dertien middelste velden hebben een
-  spitse opening (zijden van 55 graden) tot net onder de onderrand, de
-  middelste tot +42,0 m; zie de printbaarheid.
+  tussen dek en onderrand. In alle 21 velden is de ruimte tussen de hangers
+  open tot de onderrand (in het buitenste veld vanaf waar de onderrand boven
+  het dek komt), in het midden tot +42,0 m; zie de printbaarheid.
 - De betonnen basculekelder (BGT, 20,9 × 20,6 m) tot het wegdek, met een
   borstwering van 0,9 × 1,0 m langs de randen, aan de lange zijden een rij
   smalle vensters onder het dek en twee hoge vensters lager (blinde nissen van
@@ -119,7 +117,7 @@ Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 gedrapeerde wegstrook zonder boog en zonder pijlers, met de brugwachterspost
 als een kolom van het water tot +21 m. Het model heeft van alle vier kanten de
 vakwerkboog met hangers (van zuid en noord de hangers met de open velden en
-spitse openingen en het open vakwerk, van oost en west de twee bogen achter elkaar), de
+het open vakwerk, van oost en west de twee bogen achter elkaar), de
 rivierpijlers met voet en dekplaat, de V-liggers onder aanbrug en
 basculebrug, de kelder met vensters en borstwering en de post op zijn kolom.
 
@@ -135,20 +133,22 @@ dun. De bogen zijn banden van 1,3 m die via de hangerstijlen op het dek
 staan. Wat zonder steun niet print, laat het model aan de export over: de
 onderkant van het dek en van de kokerdekken (5577 m²), de vlakke kanten van
 de vakwerkdriehoeken en de onderrand boven de open velden (samen met de
-andere ondervlakken op de bogen 936 m²) en de bovenkant van de nissen in de
+andere ondervlakken op de bogen 1212 m²) en de bovenkant van de nissen in de
 V-liggers en de vensters; het script controleert dat alles op dezelfde
 onderkant begint. In de meettest van de webshop (`scripts/overhang-lab`, het
-model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 36,6 naar
-59,9 cm³ (v1.0: 59,8 cm³), zonder ongedragen lagen waar een printlijn in
-past, in 19 s; het vorige model met nissen en spitse openingen kwam op
-60,6 cm³. Onder het dek komt een wig met een smal scherm tot de onderplaat.
-In de vakwerkdriehoeken vult de export een deel op als scherm midden in de
-boog, met aan de buitenkant alleen dunne stroken; in het derde en vierde veld
-aan elke oplegging blijft onder de onderrand een smalle band, de twee
-buitenste velden (in het vorige model dicht) vult ze grotendeels. Met alle
-velden open tot de onderrand vulde de export ook de dertien middelste velden
-grotendeels dicht (62,9 cm³, 145 s); daar blijft de spitse opening, die open
-blijft. De STL op 1:1000, die zonder export wordt geprint, heeft printvormen:
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 35,8 naar
+59,8 cm³ (v1.0: 62,9 cm³), zonder ongedragen lagen waar een printlijn in
+past, in 19 s; het vorige model met spitse openingen in de dertien middelste
+velden kwam op 59,7 cm³. Onder het dek komt een wig met een smal scherm tot
+de onderplaat. In de vakwerkdriehoeken vult de export een deel op als scherm
+midden in de boog, met aan de buitenkant alleen dunne stroken; in het derde
+en vierde veld aan elke oplegging blijft onder de onderrand een smalle band,
+de twee buitenste velden (in de STL dicht) vult ze grotendeels. In de
+dertien middelste velden komen onder de vlakke onderrand schoren onder
+45 graden vanaf beide hangers met een spitse opening ertussen; onder de
+knopen van het vakwerk in het vijfde en zevende veld aan elke kant zet ze
+daarnaast smalle schermen tot op het dek, maar geen veld vult ze helemaal.
+De STL op 1:1000, die zonder export wordt geprint, heeft printvormen:
 de vakwerkdriehoeken van de bogen als blinde nissen van 0,3 m aan beide
 kanten, in de velden spitse openingen (in de twee buitenste velden aan elke
 kant is het scherm dicht) en een printvoet (wig van 50 graden en een scherm
