@@ -1,0 +1,81 @@
+{
+  "name": "Stadskantoor Utrecht",
+  "file": "stadskantoor-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135870,
+    455736
+  ],
+  "xAxis": [
+    0.8688908169083602,
+    0.49500378613938134
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 45.86565235,
+  "groundSamplePoints": [
+    [
+      -38.77355913287323,
+      -37.75726568714401
+    ],
+    [
+      -45.89848624679938,
+      4.281233496595171
+    ],
+    [
+      -14.944944466101383,
+      46.49353325899362
+    ],
+    [
+      33.70240451610901,
+      26.835572098104308
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000135173"
+  ],
+  "description": "H-vormig Stadskantoor met twee gemeten afgeschuinde torens, dakinstallaties, witte diagonalen en pixelvensters, twee carrévleugels, holle glasdakzone, gekromde publiekshalgevel, garageplint, drie geschatte zuidkolommen met printunderschaal en aparte toegangstrappen. Utrecht Centraal en WTC blijven eigen panden. RD135870/455736, as29.67graden, z0NAP2.47m; Stadsplateau circa10.3NAP.",
+  "realWorld": {
+    "groundNapM": 2.47,
+    "axisDegrees": 29.67,
+    "towerRoofsNapM": [
+      92.45,
+      92.439
+    ],
+    "machineryNapM": [
+      96.469,
+      96.457,
+      97.8
+    ],
+    "courtyardRoofsNapM": [
+      55.353,
+      55.412
+    ],
+    "atriumRoofNapM": 36.309,
+    "garageNapM": 10.509,
+    "estimates": [
+      "schouder55.35NAP en zuidonderkant33.0NAP uit opstand en foto, binnengevelhellingen vanuit gemeten topcontouren opgebouwd",
+      "witte diagonalen1.1m breed en raamvelden2.7bij2.0m op3.6m steek uit foto geschat; glasfront en drie hoofdkolomposities circa1m onzeker",
+      "glaskapruimte en zuidonderhang houden hun vrije onderzijde, vaste45-graden printkragen veranderen de lagere vrije ruimte",
+      "toegangstrappen8grove treden naar10.35NAP, plaats/wijdte uitluchtfoto geschat; geen algemeen pleinplateau",
+      "installatiehoofdvolumes en noordelijkeventilatieveld94.077NAP gemeten;10ventilatorkoppen uitorthofoto geschat en tot.9m verdikt, dunne geleframes/roosters onder.9m weggelaten"
+    ]
+  },
+  "sources": [
+    "https://www.nationalestaalprijs.nl/project/stadskantoor-utrecht (constructie,driehoofdkolommen)",
+    "https://www.staalmakers.nl/projecten/stadskantoor-utrecht/ (uitvoerende staalbouwer)",
+    "https://www.octatube.nl/project-item/projectitem/167-stadskantoor-utrecht.html (glasgevelleverancier)",
+    "https://www.architectuur.org/bouwwerk/690/Stadskantoor_Utrecht.html",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000135173 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Stadskantoor_Utrecht._(18148413504).jpg (FaceMePLS,CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Stadskantoor_Utrecht_in_2021.jpg (Choinowski,CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Stadskantoor_Utrecht_(oktober_2014)_1.jpg (Victor van Werkhooven,CC BY3.0)"
+  ],
+  "printFiles": [
+    "stadskantoor-utrecht-1-1000.stl"
+  ]
+}
