@@ -1,0 +1,69 @@
+{
+  "name": "Rijntoren",
+  "file": "rijntoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    190215,
+    444129
+  ],
+  "xAxis": [
+    0.9743700647852352,
+    -0.224951054343865
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 72.51205677,
+  "groundSamplePoints": [
+    [
+      -21.060805163997223,
+      -11.020094638620307
+    ],
+    [
+      4.19950418512366,
+      -22.635462544404277
+    ],
+    [
+      26.083040694857488,
+      7.048048532069591
+    ],
+    [
+      -9.670388312557115,
+      15.21458477528581
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000247396"
+  ],
+  "description": "Complete Rijntoren,2005: smalle dragende voet, doorlopende verbredende glazen gevelvlakken over vier onderste niveaus, afgeronde kop, horizontale venster-/borstweringbanden met middensponning, hele entree-/expeditievoet, gemeten daklift-/techniekkern en opstaande gebogen dakrand. Arnhem Centraal en Parktoren zijn eigen panden en blijven behouden. Geen DSM-hoogtelagen of extra plein-/garageplaat.",
+  "realWorld": {
+    "groundNapM": 28.9,
+    "axisDegrees": -13,
+    "lowerPublicLevelNapM": 24.5,
+    "lobbyLevelNapM": 31,
+    "fullWidthLevelNapM": 44.5,
+    "mainRoofNapM": 89.99,
+    "coreRoofNapM": 94.169,
+    "parapetNapM": 91.124,
+    "footWidthM": 8,
+    "estimates": [
+      "BAG-contour .1–.3m vereenvoudigd, gebogen kop uit vaste BAG-punten",
+      "onderste vier niveaus als schuine glasvlakken van 8m voet naar17.12m bovenbouw, overgang24.5–44.5NAP en rechte in plaats van licht gekromde generatrices geschat",
+      "glasbanden5.9m met3.55m verdiepingsritme, bandhoogte2.3m naar1.65m bij middensponning, diepte.45m en entreeraster geschat uit architectfoto’s",
+      "geen annex van stationpand0223614; bestaand Arnhem Centraal-model behouden; Parktoren0238526 niet vervangen",
+      "fijne roedes, reclame, dakrailingen en kleine antennes onder.9m weggelaten; kleurverloop niet apart gemodelleerd"
+    ]
+  },
+  "sources": [
+    "https://architectenweb.nl/projecten/project.aspx?id=4449 (eigen UNStudio-projectprofiel,voet8m,uitkraging5/3m,niveaus24.5/31; foto’s alleen referentie)",
+    "https://www.grunsvengroep.nl/projecten/werken/park-en-rijn-toren-arnhem/ (hoofdaannemer,70m,16verdiepingen)",
+    "https://ibsconsultants.nl/en/portfolio/construction-of-park-en-rijn-towers/ (geveladviseur,schuine primaire foto’s alleen referentie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0202100000247396 (TU Delft/3DGI,CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "printFiles": [
+    "rijntoren-1-1000.stl"
+  ]
+}
