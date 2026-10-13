@@ -60,11 +60,12 @@ Onderdelen in het model (hoogtes in NAP):
   acht overspanningen van 61 m) met evenwijdige randen 6,6 m boven de
   spoorstaaf (+24,5 m bij de derde rivierpijler, +20,9 m bij het noordelijke
   landhoofd), tien vakken van circa 5,9 m en verticale eindstijlen.
-- In de liggers 1120 doorgaande driehoekige openingen met de punt omhoog
-  (twee per vak, aan weerszijden van de verticaal, flanken van 59 graden of
-  steiler) en 516 blinde nissen van 0,35 m voor de driehoeken met een vlakke
-  bovenkant (aan de buitenkant van de buitenste en aan de spoorkant van de
-  binnenste liggers).
+- In de liggers 1636 doorgaande driehoekige openingen: 1120 met de punt
+  omhoog (twee per vak, aan weerszijden van de verticaal, flanken van
+  59 graden of steiler) en 516 met een vlakke bovenkant.
+- Eindportalen van 0,9 × 0,9 m tussen de twee liggers van elke brug onder de
+  bovenregel bij de eerste en de laatste bovenknoop van elk veld (44 in
+  totaal), met een vrije overspanning van 4,6 m boven het spoor.
 - Drie stenen rivierpijlers van 8,7 tot 10,3 m dik en 32 tot 39 m lang met een
   spitse kop stroomopwaarts en een ronde stroomafwaarts (BGT), tot onder het
   dek.
@@ -98,16 +99,15 @@ Onderdelen in het model (hoogtes in NAP):
   het dek.
 
 Wat er niet in zit: de echte staven (circa 0,5 m, vervangen door de plaat met
-openingen en nissen), de windverbanden en portalen tussen de liggers boven
-het spoor (vrije horizontale overspanningen van 4 tot 5 m die op 1:1000 niet
-zonder steun printen), de bovenleiding met portalen, leuningen en de
+openingen), de windverbanden tussen de liggers boven het spoor (staven van
+circa 0,5 m), de bovenleiding met portalen, leuningen en de
 leuning van de dienstweg (kleiner dan 0,9 m), de opleggingen op de pijlers
 (op 1:1000 opgaand in het dek) en de Martinus Nijhoffbrug.
 
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke strook met de omtrekken van de pijlers op het water en in het gras,
 zonder liggers of hoogte. Het model heeft van oost en west de vier
-vakwerkliggers met openingen en nissen, de drie karakteristieke bogen over de
+vakwerkliggers met openingen, de drie karakteristieke bogen over de
 rivier en de lange rij evenwijdige velden over de uiterwaard, van noord en
 zuid de twee bruggen naast elkaar met de spleet ertussen en de steile
 eindstijlen van de rivieroverspanningen, en van alle kanten de stenen pijlers
@@ -119,25 +119,24 @@ vakwerklijnen) ligt in 107 van de 109 vakken binnen 1 m en in alle 109 binnen
 liggen bij het zuidelijke landhoofd en naast de tweede rivierpijler, waar de
 eindstijlen in het AHN steiler of juist lager uitkomen dan in het model.
 
-Printbaarheid op 1:1000: open vakwerk is op 1:1000 niet te printen, daarom
-zijn de liggers dichte platen van 1,0 m met openingen waarvan de flanken
-minstens 59 graden steil zijn en nissen van 0,35 m voor de driehoeken met een
-vlakke bovenkant. Alleen de onderkant van het dek met de pijlerkoppen ernaast
-(12 542 m²) en de plafonds van de nissen (883 m²) hangen vrij; het script
-controleert dat alleen die naar beneden wijzen, dat de openingen steil genoeg
-zijn, dat alles op dezelfde onderkant begint en dat de printversie buiten de
-nissen geen overhang heeft. Met 875 m past de brug op 1:1000 niet in één
-uitsnede: in een uitsnede van 902 m (1:2255, 400 mm) gaan beide onderdelen
-in de printcheck als gesloten solid met overhangopvulling door (status
-NoError, 86 s): de constructie van 13,3 naar 11,1 cm³ ten opzichte van de
-rechte opvulling (-16,5 %), het spoor 0,35 cm³ zonder eigen opvulling
-(`extraPct` 0), samen 13,6 naar 11,4 cm³ zoals voor de opsplitsing.
-Op 1:1000 zelf ging een uitsnede van 200 m over de middelste
-rivieroverspanning (200 mm, gemeten voor de opsplitsing) ook als gesloten
-solid door (status NoError, 110 s, 60,2 naar 28,0 cm³, -54 %): onder het dek komt een wig met een smal
-scherm tot de onderplaat, de openingen in de liggers blijven open en de
-gebogen bovenranden printen zonder steun. De STL op 1:2500 heeft dezelfde printvoet (wig van 50 graden
-en een scherm van 0,8 mm op printschaal).
+Printbaarheid op 1:1000: de echte staven van circa 0,5 m zijn op 1:1000 te
+dun, daarom zijn de liggers dichte platen van 1,0 m met openingen. Wat zonder
+steun niet print, laat het model aan de export over: de vlakke bovenkant van
+de openingen met een vlakke bovenkant (2524 m² samen met de randen van het
+vakwerk), de onderkant van de eindportalen (184 m²) en de onderkant van het
+dek met de pijlerkoppen ernaast (12 542 m²); het script controleert dat
+verder niets naar beneden wijst en dat de openingen met de punt omhoog steil
+genoeg zijn. Met 875 m past de brug op 1:1000 niet in één uitsnede. In de
+meettest van de webshop (`scripts/overhang-lab`, het model op 1:1000) gaat
+het volume met "Ondersteuning v2.0" van 64,3 naar 121,3 cm³ (het vorige model
+met nissen: 124,6 cm³), zonder ongedragen lagen waar een printlijn in past:
+onder de vlakke bovenkant van de openingen en onder de portalen blijft een
+spitse opening met schoren tegen de staven, onder het dek komt een wig met
+een smal scherm tot de onderplaat. De STL op 1:2500, die zonder export wordt
+geprint, heeft printvormen: blinde nissen van 0,35 m in plaats van de
+openingen met een vlakke bovenkant, geen portalen en onder het dek een
+printvoet (wig van 50 graden en een scherm van 0,8 mm op printschaal); ze is
+ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Dr._W._Hupkesbrug) (1869,
 863 m, 10 pijlers, 15 m breed, drie overspanningen van 125 m over het zomerbed

@@ -164,8 +164,8 @@ const deckBottom = (x) => railZ(x) - DECK.depth;
 
 // Vier vakwerklijnen van 1,0 m dik (AHN-DSM, aandeel cellen meer dan 3 m boven
 // de spoorstaaf); tussen de twee bruggen een spleet van 0,8 m. De blinde
-// nissen zitten aan de buitenkant van de buitenste en aan de spoorkant van de
-// binnenste liggers.
+// nissen in de STL zitten aan de buitenkant van de buitenste en aan de
+// spoorkant van de binnenste liggers.
 const TRUSSES = [
   { y0: -7.1, y1: -6.1, niche: "y0" },
   { y0: -1.5, y1: -0.5, niche: "y0" },
@@ -240,10 +240,12 @@ const SOUTH_END = -194.74;
 const NORTH_ABUTMENT = { x0: 676.63, x1: 680.17, y0: -7.9, y1: 7.89 };
 
 // ---------- vakwerkwand ----------
-// Een vakwerk is op 1:1000 niet open te printen. Elke wand is daarom een dichte
-// plaat met doorgaande driehoekige openingen met de punt omhoog (binnen elke Λ
-// van twee diagonalen, gedeeld door de verticaal) en blinde nissen voor de
-// driehoeken met de vlakke kant boven (tussen twee Λ's onder de bovenregel).
+// De echte staven (circa 0,5 m) zijn op 1:1000 te dun. Elke wand is daarom een
+// dichte plaat met doorgaande driehoekige openingen: met de punt omhoog
+// (binnen elke Λ van twee diagonalen, gedeeld door de verticaal) en met de
+// vlakke kant boven (tussen twee Λ's onder de bovenregel). Die vlakke
+// bovenkant print zonder steun niet; dat vult de export op. De STL, die zonder
+// export wordt geprint, heeft voor die driehoeken blinde nissen van 0,35 m.
 // Zijden van openingen die vlakker lopen dan 55 graden worden rond de top
 // steiler gezet. De vloer van de openingen ligt per vak 0,5 m boven de hoogste
 // spoorstaaf van dat vak.
@@ -320,6 +322,18 @@ function trussSection(opts) {
 // ---------- liggers ----------
 const stats = { river: { holes: 0, niches: 0 }, floodplain: { holes: 0, niches: 0 } };
 const girderSolids = [];
+const printGirderSolids = [];
+// Eindportalen: tussen de twee liggers van elke brug een balk van 0,9 × 0,9 m
+// onder de bovenregel bij de eerste en de laatste bovenknoop (de top van de
+// eerste en de laatste Λ). De vrije overspanning van 4,6 m boven het spoor
+// vult de export op; de STL heeft ze niet.
+const PORTAL = 0.9;
+const PORTAL_PAIRS = [
+  [TRUSSES[0].y1, TRUSSES[1].y0],
+  [TRUSSES[2].y1, TRUSSES[3].y0],
+];
+const portals = [];
+const portalTops = [];
 const spanSpecs = [
   ...RIVER_SPANS.map(([a, b]) => ({ kind: "river", a, b, panels: RIVER.panels, top: riverTop(a, b), tc: 1.2 })),
   ...FLOOD_SPANS.map(([a, b]) => ({ kind: "floodplain", a, b, panels: FLOOD.panels, top: (x) => railZ(x) + FLOOD.rise, tc: 1.0 })),
@@ -342,12 +356,24 @@ for (const spec of spanSpecs) {
   for (const { y0, y1, niche } of TRUSSES) {
     let wall = extrudeY(plate, y0, y1);
     if (niches) {
-      wall =
+      printGirderSolids.push(
         niche === "y0"
           ? wall.subtract(extrudeY(niches, y0 - 0.2, y0 + NICHE))
-          : wall.subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2));
-    }
+          : wall.subtract(extrudeY(niches, y1 - NICHE, y1 + 0.2)),
+      );
+      wall = wall.subtract(extrudeY(niches, y0 - 0.2, y1 + 0.2));
+    } else printGirderSolids.push(wall);
     girderSolids.push(wall);
+  }
+  const P = (spec.b - spec.a) / spec.panels;
+  for (const xc of [spec.a + P / 2, spec.b - P / 2]) {
+    const zt = Math.min(spec.top(xc - PORTAL / 2), spec.top(xc + PORTAL / 2));
+    portalTops.push({ x: xc, z: zt - PORTAL });
+    for (const [ya, yb] of PORTAL_PAIRS) {
+      portals.push(
+        Manifold.cube([PORTAL, yb - ya + 0.02, PORTAL], false).translate([xc - PORTAL / 2, ya - 0.01, zt - PORTAL]),
+      );
+    }
   }
 }
 
@@ -361,7 +387,8 @@ const abutments = [
   bandY(NORTH_ABUTMENT.x0, NORTH_ABUTMENT.x1, () => BASE, (x) => railZ(x) - 0.01, NORTH_ABUTMENT.y0, NORTH_ABUTMENT.y1, 1),
 ];
 
-const bridge = union([deck, ...abutments, ...piers, ...girderSolids]);
+const bridge = union([deck, ...abutments, ...piers, ...girderSolids, ...portals]);
+const printBridge = union([deck, ...abutments, ...piers, ...printGirderSolids]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -388,22 +415,28 @@ const footStations = Array.from({ length: footSteps + 1 }, (_, i) => {
   return { x, section: section.map(([y, z]) => [y + yc, z]) };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek, de pijlerkoppen naast het dek en de
-// plafonds van de blinde nissen, in de printversie alleen pijlerkoppen en
-// nissen.
+// model alleen de onderkant van het dek, de pijlerkoppen naast het dek, de
+// vlakke bovenkant van de openingen in de liggers en de onderkant van de
+// eindportalen; in de printversie alleen pijlerkoppen en de plafonds van de
+// blinde nissen, geen portalen.
 const inNiche = (y) =>
   TRUSSES.some(({ y0, y1, niche }) => (niche === "y0" ? y > y0 - 1e-3 && y < y0 + NICHE + 1e-3 : y > y1 - NICHE - 1e-3 && y < y1 + 1e-3));
-function overhangs(solid) {
+const inTruss = (y) => TRUSSES.some(({ y0, y1 }) => y > y0 - 1e-3 && y < y1 + 1e-3);
+const inPortal = (x, y, z) =>
+  PORTAL_PAIRS.some(([ya, yb]) => y > ya - 0.02 && y < yb + 0.02) &&
+  portalTops.some((p) => Math.abs(x - p.x) < PORTAL / 2 + 0.02 && Math.abs(z - p.z) < 0.05);
+function overhangs(solid, inOpening = inNiche) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
   const s = mesh.numProp;
   let area = 0;
   let deckArea = 0;
   let nicheArea = 0;
+  let portalArea = 0;
   for (let t = 0; t < mesh.triVerts.length; t += 3) {
     const p = [0, 1, 2].map((k) => [0, 1, 2].map((a) => v[mesh.triVerts[t + k] * s + a]));
     if (Math.max(p[0][2], p[1][2], p[2][2]) < BASE + 1e-4) continue;
@@ -416,13 +449,14 @@ function overhangs(solid) {
     const yMid = (p[0][1] + p[1][1] + p[2][1]) / 3;
     const zMid = (p[0][2] + p[1][2] + p[2][2]) / 3;
     if (Math.abs(zMid - deckBottom(xMid)) < 0.15) deckArea += len / 2;
-    else if (inNiche(yMid) && zMid > railZ(xMid) + 0.4) nicheArea += len / 2;
+    else if (inOpening(yMid) && zMid > railZ(xMid) + 0.4) nicheArea += len / 2;
+    else if (inPortal(xMid, yMid, zMid)) portalArea += len / 2;
     else {
       area += len / 2;
       if (len / 2 > 0.01) console.log("overhang op", [xMid, yMid, zMid].map((c) => +c.toFixed(2)));
     }
   }
-  return { area, deckArea, nicheArea };
+  return { area, deckArea, nicheArea, portalArea };
 }
 for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
   if (solid.status() !== "NoError") throw new Error(`${name}: ${solid.status()}`);
@@ -431,12 +465,21 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 const minAngle = openingAngles.reduce((a, b) => Math.min(a, b), Infinity);
 {
-  const model = overhangs(bridge);
-  console.log("vrij hangend (m2): dek en pijlerkoppen", Math.round(model.deckArea), "nissen", Math.round(model.nicheArea), "overig", +model.area.toFixed(2));
-  if (model.area > 0.5) throw new Error("overhang buiten dek en nissen");
+  const model = overhangs(bridge, inTruss);
+  console.log(
+    "vrij hangend (m2): dek en pijlerkoppen",
+    Math.round(model.deckArea),
+    "openingen",
+    Math.round(model.nicheArea),
+    "portalen",
+    Math.round(model.portalArea),
+    "overig",
+    +model.area.toFixed(2),
+  );
+  if (model.area > 0.5) throw new Error("overhang buiten dek, liggers en portalen");
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2): dek en pijlerkoppen", +print.deckArea.toFixed(2), "overig", +print.area.toFixed(2));
-  if (print.area > 0.5) throw new Error("printversie heeft overhang");
+  if (print.area + print.portalArea > 0.5) throw new Error("printversie heeft overhang");
   console.log("openingen", stats, "steilste flank min (graden)", +minAngle.toFixed(1));
   if (minAngle < 50) throw new Error("opening met een te vlakke flank");
 }
@@ -704,7 +747,7 @@ await writeFile(
         "L0004.c87dee9e7dbf43cc9f0681a1448ac4f3",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee sporen midden in de middelste rivieroverspanning op de waterspiegel van de Waal (z = 0, NAP +2,9 m) in de oorsprong, +X langs de brug naar het noorden (Waardenburg, RD-richting 96,33 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,6 m) met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee enkelsporige spoorbruggen naast elkaar met samen een dek van 15,7 m breed van het zuidelijke landhoofd in Zaltbommel (x = -194,7) tot het noordelijke (x = 680,2), met de spoorstaaf op NAP +17,9 tot +18,5 m over de rivier, dalend naar +14,3 m; vier vakwerkliggers (6,6 en 1,0 m oostelijk, 0,8 en 6,5 m westelijk van de as) als dichte platen van 1,0 m met doorgaande driehoekige openingen met de punt omhoog en blinde nissen: drie rivieroverspanningen van circa 124 m met een gebogen bovenrand tot NAP +31,0 m en korte steile eindstijlen, en acht velden van circa 60 m over de uiterwaard met evenwijdige randen 6,6 m boven de spoorstaaf, alle met verticalen; drie stenen rivierpijlers en zeven pijlers in de uiterwaard met spitse en ronde koppen (BGT). Windverbanden en portalen tussen de liggers, bovenleiding, leuningen en de Martinus Nijhoffbrug (75 m stroomafwaarts) zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de rivieroverspanningen bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as tussen de twee sporen midden in de middelste rivieroverspanning op de waterspiegel van de Waal (z = 0, NAP +2,9 m) in de oorsprong, +X langs de brug naar het noorden (Waardenburg, RD-richting 96,33 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Twee nodes: road:spoor, de bovenste 0,5 m van het dek tussen de vakwerkliggers van elke brug (twee spoorbedden van 4,6 m) met de attributen van de BGT-wegdelen op het dek in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen half verhard), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, twee enkelsporige spoorbruggen naast elkaar met samen een dek van 15,7 m breed van het zuidelijke landhoofd in Zaltbommel (x = -194,7) tot het noordelijke (x = 680,2), met de spoorstaaf op NAP +17,9 tot +18,5 m over de rivier, dalend naar +14,3 m; vier vakwerkliggers (6,6 en 1,0 m oostelijk, 0,8 en 6,5 m westelijk van de as) als dichte platen van 1,0 m met alle vakken als doorgaande driehoekige openingen: drie rivieroverspanningen van circa 124 m met een gebogen bovenrand tot NAP +31,0 m en korte steile eindstijlen, en acht velden van circa 60 m over de uiterwaard met evenwijdige randen 6,6 m boven de spoorstaaf, alle met verticalen; drie stenen rivierpijlers en zeven pijlers in de uiterwaard met spitse en ronde koppen (BGT). Tussen de liggers van elke brug eindportalen van 0,9 × 0,9 m bij de eerste en de laatste bovenknoop van elk veld. Windverbanden, bovenleiding, leuningen en de Martinus Nijhoffbrug (75 m stroomafwaarts) zijn weggelaten; wat zonder steun niet print (de vlakke bovenkant van de openingen, de portalen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de openingen met een vlakke bovenkant, geen portalen en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de rivieroverspanningen bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(all.max[0] - all.min[0]).toFixed(1),
