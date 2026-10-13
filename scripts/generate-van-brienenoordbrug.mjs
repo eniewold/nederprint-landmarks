@@ -344,9 +344,11 @@ const archBottom = (x) => archTop(x) - ARCH.depth * Math.hypot(1, 2 * ARCH.k * x
 // naar de boog een veld naar links en een veld naar rechts; de hangers van
 // buurknopen kruisen elkaar halverwege (de kenmerkende X-en). Op 1:1000 is een
 // kabel niet te printen: het vlak tussen dek en rib is een scherm met de
-// hangers als stroken van 1,0 m; tussen de stroken blijven openingen over
-// waarvan elke bovenkant minstens 50 graden helt, of die onder een spitse top
-// van 55 graden blijven. Openingen kleiner dan 2 m2 blijven dicht.
+// hangers als stroken van 1,0 m; elk vak tussen de stroken is open tot de
+// onderrand van de rib en de onderkant van de stroken. In de STL, die zonder
+// export wordt geprint, blijven van de vakken openingen over waarvan elke
+// bovenkant minstens 50 graden helt, of die onder een spitse top van
+// 55 graden blijven. Openingen kleiner dan 2 m2 blijven dicht.
 const PANEL = (2 * ARCH.ribEnd) / 20;
 const DECK_NODES = Array.from({ length: 19 }, (_, k) => -ARCH.ribEnd + PANEL * (k + 1));
 const HANGER = { width: 1.0, steep: 50, pointed: 55, minArea: 2.0, minHeight: 1.2 };
@@ -645,6 +647,9 @@ const cells = screenRegion.subtract(new CrossSection(strips)).decompose();
 const TAN_POINTED = Math.tan((HANGER.pointed * Math.PI) / 180);
 const openingReport = [];
 const openings = [];
+// In het model het hele vak; de onderrand van de rib en de onderkant van de
+// flauwe stroken printen zonder steun niet, dat vult de export op.
+const fullOpenings = [];
 // Punten op de plafonds van een polygoon (randen waar de opening onder ligt:
 // de rand loopt naar links) die flauwer hellen dan 50 graden.
 function flatCeilings(poly) {
@@ -661,6 +666,10 @@ function flatCeilings(poly) {
 }
 const rangeOf = (values) => values.reduce(([lo, hi], v) => [Math.min(lo, v), Math.max(hi, v)], [Infinity, -Infinity]);
 for (const cell of cells) {
+  {
+    const [zLo, zHi] = rangeOf(cell.toPolygons().flat().map(([, z]) => z));
+    if (cell.area() >= HANGER.minArea && zHi - zLo >= HANGER.minHeight) fullOpenings.push(cell);
+  }
   const poly = ccw(cell.toPolygons()[0]);
   const flat = flatCeilings(poly);
   let shape = cell;
@@ -693,14 +702,17 @@ for (const cell of cells) {
   const [xLo, xHi] = rangeOf(pts.map(([x]) => x));
   openingReport.push([+((xLo + xHi) / 2).toFixed(1), +zHi.toFixed(2), +area.toFixed(1)]);
 }
-const openingSection = CrossSection.union(openings);
 // De westrib staat op de dekrand; waar de BGT-dekrand iets binnen de rib
 // ligt (bij de zuidpijler tot 0,5 m), volgt de rib de dekrand.
-const ribs = RIBS.map(([y0, y1]) =>
-  profileY(ribBand, y0, y1).subtract(extrudeY(openingSection, y0 - 0.5, y1 + 0.5)).intersect(outlinePrism),
-);
+const ribPair = (section) =>
+  RIBS.map(([y0, y1]) => profileY(ribBand, y0, y1).subtract(extrudeY(section, y0 - 0.5, y1 + 0.5)).intersect(outlinePrism));
+const ribs = ribPair(CrossSection.union(fullOpenings));
+const printRibs = ribPair(CrossSection.union(openings));
 
-const bridge = union([deck, ...abutments, ...archPiers, tower, kelder, ...southPiers, ...northPiers, ...ribs]).subtract(union(joints));
+const withRibs = (ribParts) =>
+  union([deck, ...abutments, ...archPiers, tower, kelder, ...southPiers, ...northPiers, ...ribParts]).subtract(union(joints));
+const bridge = withRibs(ribs);
+const printBridge = withRibs(printRibs);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij. Net als de overhangopvulling van de
@@ -724,7 +736,7 @@ const footStations = stations(X_SOUTH, X_NORTH).map((x) => {
   };
 });
 const printFoot = loftX(footStations).intersect(outlinePrism);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- wegdeklaag: rijbaan en fietspad als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is een eigen node met de attributen van het
@@ -820,11 +832,19 @@ const inNiche = ([x, y, z]) =>
   ARCH_PIERS.some(({ x0, x1 }) => x > x0 - 0.1 && x < x1 + 0.1 && Math.abs(z - (road((x0 + x1) / 2) - 0.3 - PIER_NICHE.below)) < 0.1);
 {
   // In het model hangen alleen de onderkant van de dekken, de kraag onder de
-  // kanzel en de bovenkant van de nissen vrij; boven het wegdek niets (de
-  // hangeropeningen hebben een spitse top).
+  // kanzel, de bovenkant van de nissen en in de ribben de onderrand van de
+  // boog en de onderkant van flauwe hangerstroken boven de open vakken vrij;
+  // verder boven het wegdek niets.
   const buckets = {};
   for (const { m, area } of overhangs(bridge)) {
-    const key = inNiche(m) ? "nissen" : m[2] > top(m[0], m[1]) + 0.05 ? "boven het dek" : "onder het dek";
+    const inRib = RIBS.some(([y0, y1]) => m[1] > y0 - 1e-3 && m[1] < y1 + 1e-3);
+    const key = inNiche(m)
+      ? "nissen"
+      : m[2] > top(m[0], m[1]) + 0.05
+        ? inRib
+          ? "boven de open vakken"
+          : "boven het dek"
+        : "onder het dek";
     buckets[key] = (buckets[key] ?? 0) + area;
     if (key === "boven het dek" && area > 0.01) console.log("boven het dek:", m.map((c) => +c.toFixed(2)), +area.toFixed(3));
   }
@@ -984,8 +1004,9 @@ report.arch = {
   riseAboveDeckM: +(ARCH.crown - road(0)).toFixed(2),
   deckNodes: DECK_NODES.map((x) => +x.toFixed(2)),
   hangers: cables.length,
-  openings: openingReport.length,
-  openingsXTopArea: openingReport,
+  openFields: fullOpenings.length,
+  printOpenings: openingReport.length,
+  printOpeningsXTopArea: openingReport,
 };
 const glbFile = path.join(outDir, `${SLUG}.glb`);
 await writeFile(glbFile, toGlb(parts, `NederPrint generate-${SLUG}.mjs (manifold-3d)`));
@@ -1036,7 +1057,7 @@ await writeFile(
         "L0002.8abeacd54c5b7500047bb9e566ccd0ce",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden onder de bogen op de voeg tussen de twee bruggen op NAP 0 (z = NAP-hoogte, het water van de Nieuwe Maas) in de oorsprong, +X langs de brug naar het noorden (Kralingen, RD-richting 112,81 graden vanaf het oosten) en +Y naar het westen-zuidwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het schuine zuidelijke landhoofd in IJsselmonde (x = -636) tot het noordelijke in Kralingen (x = 716,7). Twee boogbruggen met trekband naast elkaar (westboog 1990 op y = 0 tot 30,9, oostboog 1965 met het fietspad op y = 0 tot -33,6), elk met twee verticale ribben van 2,0 m breed met de top op NAP +68,0 m en het netwerk van kruisende schuine hangers (twintig velden, van elke dekknoop twee hangers naar de boog) als scherm met stroken van 1,0 m en spitse openingen; de rivierpijlers met ronde koppen; de basculekleppen van 54 m in gesloten stand met voegen; de basculekelder met plint, raambanden als nissen en de ronde trapkoker; de bedieningstoren met de kanzel tot NAP +49,6 m (BAG-pand); de zuidelijke aanbrug met de bocht naar het zuidoosten op sloven met ronde kolommen, de noordelijke op wandkolommen, beide met twee kokers per brug. Het wegdek ligt op NAP +12,3 tot +14,6 m (zuid, dwarshelling) tot +28,6 m (bogen) en +10,8 m (noord), met 4 % dwarshelling in de bocht. Schampkanten en geleiderails in de middenbermen in plaats van leuningen. Het windverband tussen de ribben (vrije horizontale overspanningen van 24 tot 27 m), de portaalborden boven de rijbanen, lantaarns, slagbomen, het geluidsscherm langs het fietspad en de open stand van de kleppen zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft een printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden onder de bogen op de voeg tussen de twee bruggen op NAP 0 (z = NAP-hoogte, het water van de Nieuwe Maas) in de oorsprong, +X langs de brug naar het noorden (Kralingen, RD-richting 112,81 graden vanaf het oosten) en +Y naar het westen-zuidwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het schuine zuidelijke landhoofd in IJsselmonde (x = -636) tot het noordelijke in Kralingen (x = 716,7). Twee boogbruggen met trekband naast elkaar (westboog 1990 op y = 0 tot 30,9, oostboog 1965 met het fietspad op y = 0 tot -33,6), elk met twee verticale ribben van 2,0 m breed met de top op NAP +68,0 m en het netwerk van kruisende schuine hangers (twintig velden, van elke dekknoop twee hangers naar de boog) als stroken van 1,0 m met de vakken ertussen open tot onder de rib; de rivierpijlers met ronde koppen; de basculekleppen van 54 m in gesloten stand met voegen; de basculekelder met plint, raambanden als nissen en de ronde trapkoker; de bedieningstoren met de kanzel tot NAP +49,6 m (BAG-pand); de zuidelijke aanbrug met de bocht naar het zuidoosten op sloven met ronde kolommen, de noordelijke op wandkolommen, beide met twee kokers per brug. Het wegdek ligt op NAP +12,3 tot +14,6 m (zuid, dwarshelling) tot +28,6 m (bogen) en +10,8 m (noord), met 4 % dwarshelling in de bocht. Schampkanten en geleiderails in de middenbermen in plaats van leuningen. Het windverband tussen de ribben (vrije horizontale overspanningen van 24 tot 27 m), de portaalborden boven de rijbanen, lantaarns, slagbomen, het geluidsscherm langs het fietspad en de open stand van de kleppen zijn weggelaten; wat zonder steun niet print (de onderrand van de rib en de onderkant van de hangerstroken boven de open vakken, de dekken) vult de export op, onder de dekken met een wig met een smal scherm tot de onderplaat. De STL heeft in de vakken openingen met een spitse top en een printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(716.7 - -636.0).toFixed(1),

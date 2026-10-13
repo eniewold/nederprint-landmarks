@@ -46,10 +46,8 @@ Onderdelen in het model (hoogtes in NAP):
   de dwarsstijlen van het windverband) als stijlen van 1 m. De velden ertussen
   zijn open van de hoofdligger tot de onderrand van de boog, in het
   middenveld tot +30,8 m; in de twee eindvelden, waar de boog naar de pijler
-  zakt, van de eerste hanger tot waar de boog de ligger raakt. Het derde en
-  vierde veld vanaf elke pijler, waar de boog onder 11 tot 17 graden loopt,
-  hebben een spitse opening (zijden van 52 graden) tot net onder de boog,
-  zie de printbaarheid.
+  zakt, van de eerste hanger tot waar de boog de ligger raakt; zie de
+  printbaarheid.
 - Twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde
   koppen (BGT) tot +11,3 m, en daarop onder elke hoofdligger een betonnen
   kolom van 2,8 × 3,4 m met een afgeschuind oplegblok van 2,0 × 2,6 m tot onder
@@ -78,8 +76,8 @@ volgt het model de ligger en het dekeinde. De lagen zijn een snijstrook van
 0,5 m onder tot 1 m boven het wegdek over dezelfde loftstations als het dek:
 wegdeel = strook ∩ brug, constructie = brug − strook. De hoofdliggers met de
 bogen en het hangerscherm erop blijven met 2 cm marge constructie. Volumes:
-constructie 5190 m³, rijbaan 539 m³, fietspaden 389 m³, samen precies de
-6119 m³ van de brug als geheel (geen overlap; het script controleert dat).
+constructie 5062 m³, rijbaan 539 m³, fietspaden 389 m³, samen precies de
+5991 m³ van de brug als geheel (geen overlap; het script controleert dat).
 Geen samenvallende bovenvlakken tussen de onderdelen (verticale stralen over
 het dek). De STL bevat de printversie van de brug als geheel.
 
@@ -105,19 +103,19 @@ Printbaarheid op 1:1000: bogen, hangers, liggers en randbalken zijn 1 m breed
 of meer en de kolomkoppen hebben een afschuining van 51 graden. Wat zonder
 steun niet print, laat het model aan de export over: de onderkant van het dek
 en de consoles (2255 m²) en de onderrand van de bogen boven de open velden
-(96 m²); het script controleert dat verder niets naar beneden wijst en dat
+(154 m²); het script controleert dat verder niets naar beneden wijst en dat
 alles op dezelfde onderkant begint. In de meettest van de webshop
 (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
-"Ondersteuning v2.0" van 6,12 naar 13,88 cm³ (v1.0: 14,24 cm³), zonder
-ongedragen lagen waar een printlijn in past, in 1,1 s; het vorige model met
-spitse openingen in alle velden kwam op 13,97 cm³. Onder het dek komt een wig
-met een smal scherm tot de onderplaat; in de eindvelden blijft onder de boog
-een smalle band opvulling, in de drie middelste velden een spitse opening
-met schoren tegen de hangers. Met open velden tot de boog vulde de export
-het derde en vierde veld vanaf elke pijler, waar de boog onder 11 tot
-17 graden loopt, grotendeels dicht (het derde veld met verticale stroken,
-het vierde met een wig over ruim de helft); daar blijft de spitse opening,
-die open blijft. De STL op 1:1000, die zonder export wordt geprint, heeft
+"Ondersteuning v2.0" van 5,99 naar 13,89 cm³ (v1.0: 14,54 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 1,7 s; het vorige model met
+spitse openingen in het derde en vierde veld vanaf elke pijler kwam op
+13,88 cm³. Onder het dek komt een wig met een smal scherm tot de onderplaat;
+in de eindvelden blijft onder de boog een smalle band opvulling, in de
+andere velden schoren vanaf beide hangers met een spitse opening ertussen.
+In het derde veld vanaf elke pijler, waar de boog onder 17 graden loopt,
+wordt de schoor aan de kant van de pijler een wig over de diagonaal van het
+veld (van vlak boven de ligger tot onder de boog bij de volgende hanger); de
+helft eronder blijft open, en geen veld vult helemaal. De STL op 1:1000, die zonder export wordt geprint, heeft
 printvormen: in elk veld een spitse opening met zijden van 52 graden tot net
 onder de boog en onder het dek een printvoet (wig van 50 graden vanaf de
 randbalken en een scherm van 0,9 m; 15,3 cm³); ze is ongewijzigd. Het PDOK-terrein ligt op het water naast de brug

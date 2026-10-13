@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `merwedebrug-papendrecht.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van de dekken, met de attributen van het BGT-wegdeel in `extras.attributes`: `bgt_functie` `rijbaan regionale weg` of `fietspad`, `bgt_fysiekvoorkomen` `gesloten verharding`, het fietspad ook `plus_fysiekvoorkomen` `asfalt`; zo werken de kleurregels van een thema op het brugdek) en `building:merwedebrug-papendrecht` met de boogbrug met trekband (twee boogribben met het hangerscherm), de rivierpijlers, de basculeklep in gesloten stand, de basculekelder met het bedieningsgebouw, de zuidelijke aanbrug met het fietsdek, de noordelijke aanbrug, alle pijlers en de twee landhoofden |
-| `merwedebrug-papendrecht-1-3000.stl` | De brug in één stuk op 1:3000 met een printvoet onder de dekken, met de onderkant (NAP -2,0 m) op het printbed (350 × 19 × 15 mm) |
+| `merwedebrug-papendrecht-1-3000.stl` | De brug in één stuk op 1:3000 met openingen met een spitse top tussen de hangers en een printvoet onder de dekken als printvormen, met de onderkant (NAP -2,0 m) op het printbed (350 × 19 × 15 mm) |
 | `merwedebrug-papendrecht.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, vervangen BAG-pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (108025,67, 426267,50) (WGS84
@@ -52,12 +52,11 @@ Onderdelen in het model (hoogtes in NAP):
   ertussen en het fietspad als uitkraging.
 - Het netwerk van schuine hangers: acht knopen op het dek op velden van
   22,56 m (foto's: negen velden), van elke knoop een hanger naar de boog een
-  half veld links en een half veld rechts. Tussen dek en rib een scherm met
-  de hangers als stroken van 1,0 m en 17 openingen per rib: driehoeken met de
-  punt omhoog tussen twee hangers waar die steiler staan dan 50 graden, en
-  overal waar een bovenkant flauwer helt (de boog boven een dekknoop, de
-  hangers bij de opleggingen) een spitse top van 55 graden. De hoogste
-  opening reikt tot +40,5 m.
+  half veld links en een half veld rechts. De hangers zijn stroken van
+  1,0 m; de vakken ertussen (17 per rib) zijn open van het dek tot de
+  onderrand van de rib en de onderkant van de stroken. Alleen het onderste
+  vak aan elke oplegging, onder de flauwe buitenste hanger, heeft een
+  opening met een spitse top van 55 graden; zie de printbaarheid.
 - Twee rivierpijlers met ronde koppen van 6,5 × 29,6 m tot +6,2 m (BGT, AHN),
   met drie kolommen van 4,5 × 3,0 m onder de trekbanden en de as.
 - De basculeklep van 34,3 m in gesloten stand (stalen dekplaat van 0,6 m op
@@ -87,7 +86,7 @@ Onderdelen in het model (hoogtes in NAP):
 
 Wat er niet in zit: het windverband en de portalen tussen de boogribben
 (vrije horizontale overspanningen van 16,5 m, die op 1:1000 niet zonder steun
-printen), de echte hangers van circa 0,1 m (vervangen door het scherm),
+printen), de echte hangers van circa 0,1 m (vervangen door stroken van 1,0 m),
 leuningen, lantaarns, seinpalen, slagbomen en verkeersborden (dunner dan
 0,9 m), het remmingwerk en de geleidewerken in de rivier (niet in BGT of AHN
 te plaatsen; laag bij het water), de trappen aan de kelder (dunner dan
@@ -97,7 +96,7 @@ open stand van de klep.
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke wegstrook op dekhoogte zonder boog, pijlers of kelder, en de kelder
 een plaat op het water. Het model heeft van alle vier kanten de boog: van
-oost en west het scherm met de driehoekige en spitse openingen, van noord en
+oost en west de hangerstroken met de open vakken, van noord en
 zuid de twee ribben achter elkaar; verder de rivierpijlers met ronde koppen
 en kolommen, de kelder met de toren (vooral van west en noordwest
 herkenbaar, zoals op de foto vanaf de noordoever), de rijen kolompijlers
@@ -115,20 +114,30 @@ PDOK-maaiveld aan (zuid 54,17 m tegen 54,26 m ellipsoïdisch, noord 49,59 m
 tegen 49,75 m).
 
 Printbaarheid op 1:1000: de echte hangers en het windverband zijn te dun of
-liggen horizontaal. De ribben staan via het scherm op het dek; elke opening
-heeft een bovenkant van minstens 50 graden of een spitse top van 55 graden,
-openingen kleiner dan 2 m² blijven dicht. Alleen de onderkant van de dekken
-(met de uitkragingen) hangt vrij (18 961 m²), plus de bovenkant van de
-raamnissen (6,6 m²); het script controleert dat er boven het wegdek niets
-vrij hangt, dat alles op dezelfde onderkant begint en dat de printversie
-buiten de nissen geen overhang heeft (1,9 m² aan splinters waar fietsdek en
-rijbaan elkaar raken). Printcheck op 1:1000 in een uitsnede van 395 m rond de
-boog, de klep en de kelder: status NoError, 61,0 naar 68,8 cm³ (+12,7 %),
-11,7 s; de openingen in het scherm blijven open en onder de dekken komt een
-wig met een smal scherm. De hele brug past niet in 400 mm: in een uitsnede van
-1078 m (1:2694) gaat het model ook als gesloten solid door (status NoError,
-9,8 naar 8,5 cm³, 4,2 s). De STL op 1:3000 heeft dezelfde printvoet (wig van
-50 graden en een scherm van 0,8 mm); op die schaal zijn de hangerstroken
+liggen horizontaal. De ribben staan via de hangerstroken op het dek; vakken
+kleiner dan 2 m² blijven dicht. Wat zonder steun niet print, laat het model
+aan de export over: de onderkant van de dekken (met de uitkragingen,
+18 961 m²) en in de ribben de onderrand van de boog en de onderkant van de
+flauwe hangerstroken boven de open vakken (633 m²), plus de bovenkant van de
+raamnissen (6,6 m²); het script controleert dat er verder boven het wegdek
+niets vrij hangt, dat alles op dezelfde onderkant begint en dat de
+printversie buiten de nissen geen overhang heeft (1,9 m² aan splinters waar
+fietsdek en rijbaan elkaar raken). De hele brug past op 1:1000 niet in één
+uitsnede. In de meettest van de webshop (`scripts/overhang-lab`, het model
+op 1:1000) gaat het volume met "Ondersteuning v2.0" van 70,1 naar
+153,8 cm³ (v1.0: 155,6 cm³), in 77 s; het vorige model met spitse openingen
+in alle vakken kwam op 154,7 cm³. Ongedragen lagen waar een printlijn in
+past: 0,6 mm², precies als in het vorige model. Onder de
+dekken komt een wig met een smal scherm tot de onderplaat; onder de rib en
+de flauwe stroken komen schoren vanaf de hangers met een spitse opening
+ertussen, in twee vakken met een kort paaltje eronder. Met ook het onderste vak aan elke oplegging helemaal open vulde de
+export dat vak, onder een hanger die circa 22 graden helt, helemaal dicht;
+daar blijft de spitse opening, die open blijft. Geen ander vak vult
+helemaal. De STL op 1:3000, die zonder export wordt geprint, heeft
+printvormen: in elk vak een opening waarvan elke bovenkant minstens
+50 graden helt of met een spitse top van 55 graden (de hoogste tot
++40,5 m), en dezelfde printvoet (wig van 50 graden en een scherm van
+0,8 mm); ze is ongewijzigd. Op die schaal zijn de hangerstroken
 0,33 mm en de kolommen 0,3 mm breed, dus te dun om los te printen: print de
 boog met de export op 1:1000.
 

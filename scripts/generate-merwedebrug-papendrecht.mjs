@@ -268,9 +268,12 @@ const archBottom = (x) => archTop(x) - ARCH.depth * Math.hypot(1, 2 * ARCH.k * x
 // van elke knoop een hanger naar de boog een half veld naar links en een half
 // veld naar rechts (netwerk zonder kruisingen). Op 1:1000 is een kabel niet te
 // printen: het vlak tussen dek en rib is een scherm met de hangers als
-// stroken van 1,0 m; tussen de stroken blijven openingen over waarvan elke
-// bovenkant minstens 50 graden helt, of die onder een spitse top van 55 graden
-// blijven. Openingen kleiner dan 2 m2 blijven dicht.
+// stroken van 1,0 m; elk vak tussen de stroken is open tot de onderrand van
+// de rib en de onderkant van de stroken, behalve het vak onder de flauwe
+// onderste hanger aan elke oplegging (zie onder). In de STL, die zonder export wordt
+// geprint, blijven van de vakken openingen over waarvan elke bovenkant
+// minstens 50 graden helt, of die onder een spitse top van 55 graden blijven.
+// Openingen kleiner dan 2 m2 blijven dicht.
 const PANEL = ARCH.span / 9;
 const DECK_NODES = Array.from({ length: 8 }, (_, k) => -ARCH.span / 2 + PANEL * (k + 1));
 const HANGER = { width: 1.0, steep: 50, pointed: 55, minArea: 2.0, minHeight: 1.2 };
@@ -561,6 +564,11 @@ const cells = screenRegion.subtract(new CrossSection(strips)).decompose();
 const TAN_POINTED = Math.tan((HANGER.pointed * Math.PI) / 180);
 const openingReport = [];
 const openings = [];
+// In het model het hele vak; de onderrand van de rib en de onderkant van de
+// stroken die flauwer dan 45 graden hellen, printen zonder steun niet, dat
+// vult de export op.
+const fullOpenings = [];
+const pointedInModel = [];
 // Punten op de plafonds van een polygoon (randen waar de opening onder ligt:
 // de rand loopt naar links) die flauwer hellen dan 50 graden; randjes korter
 // dan 2 cm (afrondingen van de doorsnijding) tellen mee.
@@ -581,6 +589,14 @@ for (const cell of cells) {
   // Plafonds: randen waar de cel onder ligt (de rand loopt naar links), die
   // flauwer hellen dan 50 graden.
   const flat = flatCeilings(poly);
+  // Een vak onder een flauwe hangerstrook (het onderste vak aan elke
+  // oplegging) vulde de export helemaal dicht; dat houdt ook in het model de
+  // spitse opening. De andere vakken zijn in het model helemaal open.
+  const underHanger = flat.some(([x, z]) => z < archBottom(x) - 0.1);
+  if (!underHanger) {
+    const zs = cell.toPolygons().flat().map(([, z]) => z);
+    if (cell.area() >= HANGER.minArea && Math.max(...zs) - Math.min(...zs) >= HANGER.minHeight) fullOpenings.push(cell);
+  }
   let shape = cell;
   if (flat.length) {
     // Spitse top van 55 graden onder alle flauwe plafonds; kies de top zo dat
@@ -611,13 +627,18 @@ for (const cell of cells) {
   const zs = pts.map(([, z]) => z);
   if (Math.max(...zs) - Math.min(...zs) < HANGER.minHeight) continue;
   openings.push(shape);
+  if (underHanger) {
+    fullOpenings.push(shape);
+    pointedInModel.push(openingReport.length);
+  }
   const xsAll = pts.map(([x]) => x);
   openingReport.push([+((Math.min(...xsAll) + Math.max(...xsAll)) / 2).toFixed(1), +Math.max(...zs).toFixed(2), +area.toFixed(1)]);
 }
-const openingSection = CrossSection.union(openings);
-const ribs = RIBS.map(([y0, y1]) => profileY(ribBand, y0, y1).subtract(extrudeY(openingSection, y0 - 0.5, y1 + 0.5)));
+const ribPair = (section) => RIBS.map(([y0, y1]) => profileY(ribBand, y0, y1).subtract(extrudeY(section, y0 - 0.5, y1 + 0.5)));
+const ribs = ribPair(CrossSection.union(fullOpenings));
+const printRibs = ribPair(CrossSection.union(openings));
 
-const bridge = union([
+const withRibs = (ribParts) => union([
   southMain,
   southFull,
   bike,
@@ -634,8 +655,10 @@ const bridge = union([
   ...bikePiers,
   ...archPiers,
   kelder,
-  ...ribs,
+  ...ribParts,
 ]).subtract(union(joints));
+const bridge = withRibs(ribs);
+const printBridge = withRibs(printRibs);
 
 // ---------- rijbaan en fietspad als eigen onderdelen ----------
 // De bovenste 0,5 m van de dekken is een eigen node met de attributen van het
@@ -764,7 +787,7 @@ const printFoot = union([
   footLoft(footXs, deckEdges, road, (x) => (x > -ARCH_END - 0.005 && x < LEAF.x0 + 0.005 ? TIE_DEPTH : BOX.slab)),
   footLoft(stationsX(BIKE_END, BIKE_SPLIT, 1), bikeEdges, bikeTop, () => BIKE_DECK.edge),
 ]);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant.
@@ -797,14 +820,22 @@ const inNiche = (xm, ym, zm) =>
   (xm > WINDOWS.x[0][0] - 0.1 && xm < WINDOWS.x[2][1] + 0.1 && ym > 10.5 && Math.abs(zm - WINDOWS.z[1]) < 0.1);
 {
   // In het model hangen alleen de onderkant van de dekken (met de
-  // uitkragingen en de kolomgaten) en de bovenkant van de nissen vrij; boven
-  // het wegdek niets (de hangeropeningen hebben een spitse top).
+  // uitkragingen en de kolomgaten), de bovenkant van de nissen en in de
+  // ribben de onderrand van de boog en de onderkant van flauwe hangerstroken
+  // boven de open vakken vrij; verder boven het wegdek niets.
   const buckets = {};
   for (const { p, area: a } of overhangs(bridge).found) {
     const xm = (p[0][0] + p[1][0] + p[2][0]) / 3;
     const ym = (p[0][1] + p[1][1] + p[2][1]) / 3;
     const zm = (p[0][2] + p[1][2] + p[2][2]) / 3;
-    const key = inNiche(xm, ym, zm) ? "nissen" : zm > road(xm) + 0.05 ? "boven het dek" : "onder het dek";
+    const inRib = RIBS.some(([y0, y1]) => ym > y0 - 1e-3 && ym < y1 + 1e-3);
+    const key = inNiche(xm, ym, zm)
+      ? "nissen"
+      : zm > road(xm) + 0.05
+        ? inRib
+          ? "boven de open vakken"
+          : "boven het dek"
+        : "onder het dek";
     buckets[key] = (buckets[key] ?? 0) + a;
     if (key === "boven het dek" && a > 0.01) console.log("boven het dek:", [xm, ym, zm].map((c) => +c.toFixed(2)), +a.toFixed(3));
   }
@@ -964,8 +995,10 @@ report.arch = {
   crownNap: ARCH.crown,
   riseAboveDeckM: +(ARCH.crown - road(0)).toFixed(2),
   deckNodes: DECK_NODES.map((x) => +x.toFixed(2)),
-  openings: openingReport.length,
-  openingsXTopArea: openingReport,
+  openFields: fullOpenings.length - pointedInModel.length,
+  pointedInModel: pointedInModel.map((i) => openingReport[i]),
+  printOpenings: openingReport.length,
+  printOpeningsXTopArea: openingReport,
 };
 report.piers = {
   south: SOUTH_PIERS,
@@ -1025,7 +1058,7 @@ await writeFile(
         "L0002.a1822cf68db446978a4b1665095c69ab",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op NAP 0 (z = NAP-hoogte, het water van de Beneden-Merwede) in de oorsprong, +X langs de brug naar het noorden (Papendrecht, RD-richting 94,40 graden vanaf het oosten) en +Y naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd in Dordrecht (x = -568) tot het noordelijke in Papendrecht (x = 482,9). De boogbrug met trekband van 203 m als twee verticale ribben van 1,8 m breed (6,4 m ten oosten en 10,1 m ten westen van de as, het fietspad buiten de oostelijke rib) met de top op NAP +43,0 m en het netwerk van schuine hangers (acht knopen op het dek, van elke knoop twee hangers naar de boog) als een scherm met stroken van 1,0 m en spitse openingen; de twee rivierpijlers met ronde koppen tot NAP +6,2 m en drie kolommen; de basculeklep van 34,3 m in gesloten stand met voegen; de basculekelder (BAG-pand) met plint, ramen als nissen en de toren van het bedieningsgebouw tot NAP +20,0 m; de zuidelijke aanbrug als kokerligger op tien velden van circa 45 m met een bocht naar het zuidoosten, zes kolommen per pijler en poeren in de Wantijhaven, met het lager liggende fietsdek dat vanaf x = -122 afdaalt en ten zuiden van x = -335 losraakt; de noordelijke aanbrug op zes velden. Het wegdek ligt op NAP +10,6 m (Dordrecht) tot +14,9 m (boog) en +6,1 m (Papendrecht). Schampkanten in plaats van leuningen. Het windverband en de portalen tussen de ribben (vrije horizontale overspanningen van 16,5 m), lantaarns, de seinpalen en slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten; de export vult onder de dekken een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water van de haven en de rivier bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op NAP 0 (z = NAP-hoogte, het water van de Beneden-Merwede) in de oorsprong, +X langs de brug naar het noorden (Papendrecht, RD-richting 94,40 graden vanaf het oosten) en +Y naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van de dekken met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk van het zuidelijke landhoofd in Dordrecht (x = -568) tot het noordelijke in Papendrecht (x = 482,9). De boogbrug met trekband van 203 m als twee verticale ribben van 1,8 m breed (6,4 m ten oosten en 10,1 m ten westen van de as, het fietspad buiten de oostelijke rib) met de top op NAP +43,0 m en het netwerk van schuine hangers (acht knopen op het dek, van elke knoop twee hangers naar de boog) als stroken van 1,0 m met de vakken ertussen open tot onder de rib; de twee rivierpijlers met ronde koppen tot NAP +6,2 m en drie kolommen; de basculeklep van 34,3 m in gesloten stand met voegen; de basculekelder (BAG-pand) met plint, ramen als nissen en de toren van het bedieningsgebouw tot NAP +20,0 m; de zuidelijke aanbrug als kokerligger op tien velden van circa 45 m met een bocht naar het zuidoosten, zes kolommen per pijler en poeren in de Wantijhaven, met het lager liggende fietsdek dat vanaf x = -122 afdaalt en ten zuiden van x = -335 losraakt; de noordelijke aanbrug op zes velden. Het wegdek ligt op NAP +10,6 m (Dordrecht) tot +14,9 m (boog) en +6,1 m (Papendrecht). Schampkanten in plaats van leuningen. Het windverband en de portalen tussen de ribben (vrije horizontale overspanningen van 16,5 m), lantaarns, de seinpalen en slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten; wat zonder steun niet print (de onderrand van de rib en de onderkant van de hangerstroken boven de open vakken, de dekken) vult de export op, onder de dekken met een wig met een smal scherm tot de onderplaat. De STL heeft in de vakken openingen met een spitse top en dezelfde printvoet. Het maaiveld wordt op het water van de haven en de rivier bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

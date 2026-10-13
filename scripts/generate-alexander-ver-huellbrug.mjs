@@ -204,9 +204,9 @@ function upper(x) {
 const archLower = (x) => upper(x) - ARCH.depth;
 // Hangers op de tien binnenste knopen. Op 1:1000 is elke hanger een stijl
 // van 1 m (de echte hangers zijn dunner); de ruimte tussen twee hangers is
-// open tot de onderrand van de boog, behalve in vier velden (zie onder). In de
-// STL, die zonder export wordt geprint, is het een scherm met spitse openingen
-// (zijden van 52 graden) tot net onder de boog.
+// open tot de onderrand van de boog. In de STL, die zonder export wordt
+// geprint, is het een scherm met spitse openingen (zijden van 52 graden) tot
+// net onder de boog.
 const HANGER = 1.0;
 const POINTED = Math.tan((52 * Math.PI) / 180);
 
@@ -254,10 +254,9 @@ const abutments = [
 // In het model is een veld tussen twee hangers open van de hoofdligger tot de
 // onderrand van de boog; in de eindvelden, waar de boog naar de pijler zakt,
 // van de eerste hanger tot waar de onderrand van de boog de ligger raakt. De
-// onderrand van de boog print zonder steun niet; dat vult de export op. Waar
-// de boog onder 11 tot 17 graden loopt (het derde en vierde veld vanaf elke
-// pijler) vulde de export zo'n opening grotendeels dicht; die vier velden
-// houden daarom de spitse opening. De STL krijgt in elk veld de grootste
+// onderrand van de boog print zonder steun niet; dat vult de export op, met
+// schoren vanaf de hangers en een spitse opening ertussen. De STL krijgt in
+// elk veld de grootste
 // opening met een spitse top (zijden van 52 graden) tussen de hangers, boven
 // de hoofdligger en overal 0,05 m onder de onderrand van de boog; de top mag
 // uit het midden liggen, zodat ook de eindvelden een opening krijgen.
@@ -311,10 +310,7 @@ const pointedPts = ({ a, b, p, apex, hl, hr, floor }) => {
   if (hl > floor + 1e-3) pts.push([a, hl]);
   return pts;
 };
-const POINTED_PANELS = new Set([2, 3, 7, 8]);
-const fullOpenings = panelBounds
-  .map(([a, b], i) => (POINTED_PANELS.has(i) ? { pts: pointedPts(bestOpening(a, b)) } : fullOpening(a, b)))
-  .filter(Boolean);
+const fullOpenings = panelBounds.map(([a, b]) => fullOpening(a, b)).filter(Boolean);
 const ribXs = stations(-SPRING, SPRING, 0.5, nodeX);
 const ribPair = (holeShapes) =>
   [-1, 1].map((side) => {
@@ -691,7 +687,7 @@ await writeFile(
         "P0025.0770faefc3904679a44bb777e6a8ce61",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +6,25 m volgens het AHN) in de oorsprong, +X langs de brug naar Doesburg (oostzuidoost, RD-richting -28,06 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg tussen de hoofdliggers of fietspad aan beide kanten daarbuiten tot de randbalk, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk. Het dek van 140,9 m tussen het westelijke landhoofd (Ellecom, x = -70,6) en het oostelijke (Doesburg, x = 70,2), 16,2 m breed, met het wegdek op NAP +18,4 tot +19,34 m, de twee hoofdliggers 4,35 m naast de as 0,9 m boven het wegdek en de fiets- en voetpaden daarbuiten op consoles; de twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde koppen en twee betonnen kolommen onder de hoofdliggers, 89,2 m hart op hart; de twee bogen van de hoofdoverspanning als kokers van 1 × 1,4 m op de hoofdliggers, met de top op NAP +32,2 m, en de tien hangers per boog als stijlen van 1 m met de velden ertussen open van de ligger tot onder de boog (in het derde en vierde veld vanaf elke pijler een spitse opening). Het windverband en de eindportalen tussen de bogen, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de boog boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +6,25 m volgens het AHN) in de oorsprong, +X langs de brug naar Doesburg (oostzuidoost, RD-richting -28,06 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordoosten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van de BGT-wegdelen erop in extras.attributes (bgt_functie rijbaan regionale weg tussen de hoofdliggers of fietspad aan beide kanten daarbuiten tot de randbalk, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk. Het dek van 140,9 m tussen het westelijke landhoofd (Ellecom, x = -70,6) en het oostelijke (Doesburg, x = 70,2), 16,2 m breed, met het wegdek op NAP +18,4 tot +19,34 m, de twee hoofdliggers 4,35 m naast de as 0,9 m boven het wegdek en de fiets- en voetpaden daarbuiten op consoles; de twee rivierpijlers met een gemetselde voet van 4,0 × 16,8 m met ronde koppen en twee betonnen kolommen onder de hoofdliggers, 89,2 m hart op hart; de twee bogen van de hoofdoverspanning als kokers van 1 × 1,4 m op de hoofdliggers, met de top op NAP +32,2 m, en de tien hangers per boog als stijlen van 1 m met alle velden ertussen open van de ligger tot onder de boog. Het windverband en de eindportalen tussen de bogen, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de boog boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),

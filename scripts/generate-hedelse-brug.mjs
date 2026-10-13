@@ -205,10 +205,8 @@ const PIERS = [
 // (Structurae). Tussen dek en rib hangen 11 hangers op velden van 10,4 m
 // (luchtfoto: de dwarsbalken van het windverband); op 1:1000 is elke hanger
 // een stijl van 1,2 m (de echte hangers zijn circa 0,4 m). In het model zijn
-// de vier velden het dichtst bij de opleggingen open tot de onderrand van de
-// rib, de acht middelste velden hebben een spitse opening (zijden van
-// 55 graden) tot onder de rib (zie onder); in de STL hebben alle velden
-// spitse openingen.
+// alle velden open tot de onderrand van de rib (zie onder); in de STL hebben
+// alle velden spitse openingen (zijden van 55 graden) tot onder de rib.
 const ARCH = { half: 62.38, crown: 34.1, crossX: 60.5, depth: 2.0 };
 const RIBS = [
   [-8.93, -7.73],
@@ -249,12 +247,10 @@ const abutments = [
 // ---------- boog ----------
 // De ribben lopen als band van de onderkant van het dek tot de bovenrand van
 // de rib; tussen de hangers zijn openingen uitgespaard. In de STL, die zonder
-// export wordt geprint, zijn het spitse openingen. In het model zijn de twee
-// velden aan elke oplegging, waar de rib steiler dan 25 graden loopt, open
-// tot de onderrand van de rib; die onderrand vult de export op met een
-// smalle band. In de acht middelste velden vulde de export zo'n open veld
-// grotendeels of helemaal dicht (in het midden met volle wanden en losse
-// lagen); die houden de spitse opening.
+// export wordt geprint, zijn het spitse openingen. In het model is elk veld
+// open tot de onderrand van de rib; die onderrand vult de export op, aan de
+// opleggingen met een smalle band, in de vlakkere velden met schoren vanaf de
+// hangers en een spitse opening ertussen.
 const ribXs = Array.from({ length: Math.round((2 * ARCH.half) / 0.5) + 1 }, (_, i) => -ARCH.half + i * 0.5);
 const panelX = Array.from({ length: PANELS + 1 }, (_, i) => -ARCH.half + (2 * ARCH.half * i) / PANELS);
 const openings = [];
@@ -313,18 +309,10 @@ function fullOpening(a, b) {
   const pts = [[x0, floor], [x1, floor], ...[...top].reverse().filter(([, z]) => z > floor + 1e-3)];
   return pts;
 }
-const POINTED_PANELS = new Set([2, 3, 4, 5, 6, 7, 8, 9]);
 const fullHoles = [];
 for (let i = 0; i < PANELS; i++) {
-  const a = panelX[i] + HANGER / 2;
-  const b = panelX[i + 1] - HANGER / 2;
-  if (POINTED_PANELS.has(i)) {
-    const o = openings.find((o) => o.a >= a - 1e-6 && o.b <= b + 1e-6);
-    if (o) fullHoles.push(pointedPts(o));
-  } else {
-    const pts = fullOpening(a, b);
-    if (pts) fullHoles.push(pts);
-  }
+  const pts = fullOpening(panelX[i] + HANGER / 2, panelX[i + 1] - HANGER / 2);
+  if (pts) fullHoles.push(pts);
 }
 const ribPair = (holeShapes) =>
   RIBS.map(([y0, y1]) => {
@@ -722,7 +710,7 @@ await writeFile(
         "L0002.8e874d355c3a4490bc40c013d1b3c2d4",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 99,31 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek en de landhoofden met de BGT-attributen in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de functies van de wegdelen op de landhoofden, want op het dek ligt in de BGT geen wegdeel), met de fietspaden aan weerszijden van de dekrand tot 4,65 m (oost) en 4,9 m (west) van de as, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 16,5 m breed over de aanbruggen en 18,2 m onder de boog van het zuidelijke landhoofd (x = -163) tot het noordelijke (x = 297), met het wegdek op NAP +13,1 tot +14,4 m; de twee rivierpijlers van 5,5 × 26 m met ronde koppen; de boog met trekband van 124,8 m tussen de opleggingen als twee boogribben van 1,2 m op de randen van het dek met de top op NAP +34,1 m en de 11 hangers als stijlen van 1,2 m, met de twee velden aan elke oplegging open tot onder de rib en spitse openingen in de acht middelste velden; twee aanbruggen aan de zuidkant en vijf aan de noordkant op pijlers van 4,7 × 17 m. Het windverband en de portalen tussen de ribben, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de rib boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden onder de boog op de waterspiegel van de Maas (z = 0, NAP +1,1 m) in de oorsprong, +X langs de brug naar het noorden (Hedel, RD-richting 99,31 graden vanaf het oosten) en +Y stroomafwaarts naar het westen. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek en de landhoofden met de BGT-attributen in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding, plus_fysiekvoorkomen asfalt; de functies van de wegdelen op de landhoofden, want op het dek ligt in de BGT geen wegdeel), met de fietspaden aan weerszijden van de dekrand tot 4,65 m (oost) en 4,9 m (west) van de as, zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 16,5 m breed over de aanbruggen en 18,2 m onder de boog van het zuidelijke landhoofd (x = -163) tot het noordelijke (x = 297), met het wegdek op NAP +13,1 tot +14,4 m; de twee rivierpijlers van 5,5 × 26 m met ronde koppen; de boog met trekband van 124,8 m tussen de opleggingen als twee boogribben van 1,2 m op de randen van het dek met de top op NAP +34,1 m en de 11 hangers als stijlen van 1,2 m, met alle velden ertussen open tot onder de rib; twee aanbruggen aan de zuidkant en vijf aan de noordkant op pijlers van 4,7 × 17 m. Het windverband en de portalen tussen de ribben, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de rib boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

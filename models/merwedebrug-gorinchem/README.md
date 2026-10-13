@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `merwedebrug-gorinchem.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van het wegdek met de BGT-attributen, zie hieronder) en `building:merwedebrug-gorinchem` met de rest van het dek, de twee bogen met trekband (elk twee boogribben met de hangers), de drie rivierpijlers, de vier zuidelijke en vijf noordelijke aanbruggen met hun wandpijlers, de basculeklep, de basculekelder met het bedieningshuis en de twee landhoofden |
-| `merwedebrug-gorinchem-1-2250.stl` | De brug als geheel in één stuk (constructie en wegdelen samen, ongewijzigd) op 1:2250 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (365 × 17 × 18 mm; met `--scale` een andere schaal, op 1:1000 is hij 822 mm lang) |
+| `merwedebrug-gorinchem-1-2250.stl` | De brug als geheel in één stuk (constructie en wegdelen samen, ongewijzigd) op 1:2250 met spitse openingen tussen de hangers en een printvoet onder het dek als printvormen, met de onderkant (0,8 m onder de waterspiegel) op het printbed (365 × 17 × 18 mm; met `--scale` een andere schaal, op 1:1000 is hij 822 mm lang) |
 | `merwedebrug-gorinchem.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, ellipsoïdische terughoogte, vervangen BAG-pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (124340,0, 426609,4) (WGS84
@@ -65,12 +65,12 @@ van het dekeinde door. De laag is een snijstrook over de volle breedte en
 de stations van het dek (om de 2 m en de voegen tussen de dekdelen); de hele
 strook van elke boogrib (ook onder de openingen van het hangerscherm) en de
 delen van de kelder buiten het dek blijven met 2 cm vrij constructie. De
-volumes tellen op tot die van de brug als geheel (constructie 85.072 m³,
-rijbaan 6.504 m³, fietspad 3.286 m³, samen 94.862 m³, geen overlap; het
+volumes tellen op tot die van de brug als geheel (constructie 82.257 m³,
+rijbaan 6.504 m³, fietspad 3.286 m³, samen 92.048 m³, geen overlap; het
 script controleert dat). Verticale stralen over het dek en over het hele
 model vinden geen samenvallende bovenvlakken en geen vlakken zonder dikte,
-net als in het model zonder wegdelen. De STL is ongewijzigd: het hele
-brugmodel in één stuk.
+net als in het model zonder wegdelen. De STL is ongewijzigd: de printversie
+van de hele brug in één stuk.
 
 Onderdelen in het model (hoogtes in NAP):
 
@@ -90,10 +90,10 @@ Onderdelen in het model (hoogtes in NAP):
   tussen de opleggingen (2,6 m boven het wegdek) met de top op +40,8 m (het
   hoogste punt, 40,3 m boven het water); boven de middelste pijler komen de
   ribben van beide bogen in een V op het dek samen.
-- De hangers: per boog 15 op velden van 10,8 m (foto's); tussen dek en rib een
-  scherm met stijlen van 1,2 m en 16 spitse openingen per rib (zijden van 55
-  graden) tot net onder de rib, de hoogste tot +38,7 m, bij de opleggingen
-  versmald tot de rib (laagste top +20,4 m).
+- De hangers: per boog 15 op velden van 10,8 m (foto's) als stijlen van
+  1,2 m; de 16 velden per rib ertussen zijn open van het dek tot de onderrand
+  van de rib, in de velden bij de opleggingen vanaf waar de rib boven het dek
+  komt; zie de printbaarheid.
 - De drie rivierpijlers: caissons met ronde koppen volgens de BGT (11 × 38 m
   onder de bogen, 8,5 × 33,6 m in het midden) tot +6,4 en +6,3 m (AHN naast
   het dek), daarop een schacht van 6 en 5 m met ronde koppen onder de
@@ -119,7 +119,7 @@ bedieningshuis en de contragewichten en het val van de basculeklep in de kelder.
 Het windverband en de portalen zijn horizontale vrije overspanningen van 16,5
 m tussen de ribben die op 1:1000 niet zonder steun printen (de export zou ze
 tot op het dek opvullen); de rest is kleiner dan 0,9 m. De echte hangers zijn
-staven van circa 0,1 m en zitten alleen als scherm in het model. Het
+staven van circa 0,1 m en zitten als stijlen van 1,2 m in het model. Het
 aanbrugviaduct van 550 m verder naar het noorden (over het Kanaal van
 Steenenhoek en het spoor, 380 m voorbij het noordelijke landhoofd) is een
 apart kunstwerk en hoort niet bij dit model.
@@ -131,25 +131,31 @@ het windverband en de lantaarns ziet. De bovenste DSM-cel per 8 m op de
 ribben ligt in 38 van 42 vakken binnen 2 m van de bovenrand van het model
 (mediaan 1,1 m lager: het DSM is op de smalle ribben dun bezet).
 
-Printbaarheid op 1:1000: het windverband en de hangers zijn te dun of liggen
-horizontaal. De ribben zijn banden van 1,4 m die via het scherm met spitse
-openingen op het dek staan, zodat de onderkant van de rib nergens vrij hangt.
-Alleen de onderkant van de kokerligger en van de uitkragende plaat hangt vrij
-(18 611 m²); het script controleert dat alleen die naar beneden wijzen, dat
-alles op dezelfde onderkant begint en dat de printversie geen overhang heeft
+Printbaarheid op 1:1000: het windverband en de echte hangers zijn te dun of
+liggen horizontaal. De ribben zijn banden van 1,4 m die via de hangerstijlen
+op het dek staan. Wat zonder steun niet print, laat het model aan de export
+over: de onderkant van de kokerligger en van de uitkragende plaat
+(18 611 m²) en de onderrand van de ribben boven de open velden (896 m²); het
+script controleert dat verder niets naar beneden wijst, dat alles op
+dezelfde onderkant begint en dat de printversie geen overhang heeft
 (0,08 m² aan losse facetjes). Met 822 m past de brug op 1:1000 niet in één
-uitsnede. In de printcheck (gesloten solid met overhangopvulling, status
-NoError voor alle onderdelen): een uitsnede van 380 × 380 m rond de bogen op 1:1000 in 4,5 s
-(122,0 naar 85,4 cm³ ten opzichte van de rechte opvulling; onder het dek komt
-een wig met een smal scherm tot de onderplaat, de spitse openingen blijven
-open), een uitsnede van 280 × 280 m over de basculebrug en de noordelijke
-aanbruggen op 1:1000 in 2,0 s (30,0 naar 51,8 cm³, +73 %) en het hele model
-(1:2092, 400 mm) in 6,0 s (19,5 naar 19,8 cm³, +2 %; met de wegdelen
-gescheiden: constructie 18,4 naar 18,8 cm³, +1,8 %, rijbaan 0,69 en fietspad
-0,36 cm³ zonder eigen opvulling). De STL op 1:2250 heeft
-dezelfde printvoet (wig van 50 graden vanaf de randen van de plaat, die bij de
-basculeklep steiler wordt zodat hij onder de diepere ligger door loopt, en een
-scherm van 0,9 m). Het PDOK-terrein ligt op het water op de waterspiegel van
+uitsnede. In de meettest van de webshop (`scripts/overhang-lab`, het model
+op 1:1000) gaat het volume met "Ondersteuning v2.0" van 92,0 naar
+177,0 cm³ (v1.0: 183,2 cm³), zonder ongedragen lagen waar een printlijn in
+past, in 31 s; het vorige model met spitse openingen in alle velden kwam
+ook op 177,0 cm³. Onder het dek komt een wig met een smal scherm tot de
+onderplaat. Onder de rib komt in de velden bij de opleggingen een smalle
+band en in de andere velden schoren vanaf beide hangers met een spitse
+opening ertussen; in een deel van de velden staan daaronder één of twee
+paaltjes tot op het dek of naast een hanger een volle strook van 2 tot 4 m,
+en in de velden waar de rib het vlakst naar de opleggingen afloopt wordt de
+schoor aan één kant een wig over de diagonaal. Geen veld vult helemaal. De
+STL op 1:2250, die zonder export wordt geprint, heeft printvormen: in elk
+veld een spitse opening (zijden van 55 graden) tot net onder de rib, de
+hoogste tot +38,7 m, bij de opleggingen versmald tot de rib (laagste top
++20,4 m), en onder het dek een printvoet (wig van 50 graden vanaf de randen
+van de plaat, die bij de basculeklep steiler wordt zodat hij onder de
+diepere ligger door loopt, en een scherm van 0,9 m); ze is ongewijzigd. Het PDOK-terrein ligt op het water op de waterspiegel van
 het model, onder de aanbruggen 1 tot 4 m hoger (NAP +1,2 tot +4,5 m); aan het
 noordeinde sluit het wegdek binnen 0,3 m op de PDOK-weg op de dijk aan, aan
 het zuideinde ligt de PDOK-toerit 3,2 m lager dan het wegdek (het AHN ziet de

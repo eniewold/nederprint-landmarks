@@ -286,9 +286,11 @@ const PIERS = [
 // op dezelfde lijnen). De bovenrand is per boog een parabool boven de koorde
 // tussen de opleggingen (2,6 m boven het wegdek) met de top op NAP +40,8 m
 // (AHN, bovenste DSM-cellen). Tussen dek en rib hangen per boog 15 hangers op
-// velden van 10,8 m (foto's); op 1:1000 is elke hanger een stijl van 1,2 m en
-// de ruimte tussen dek en rib een scherm met spitse openingen (zijden van 55
-// graden) tot onder de rib.
+// velden van 10,8 m (foto's); op 1:1000 is elke hanger een stijl van 1,2 m (de
+// echte hangers zijn staven van circa 0,1 m) en de ruimte tussen twee hangers
+// open van het dek tot de onderrand van de rib. In de STL, die zonder export
+// wordt geprint, is het een scherm met spitse openingen (zijden van 55 graden)
+// tot onder de rib.
 const ARCH = { crownNap: 40.8, ribEnd: 2.6, depth: 2.0 };
 const RIBS = [
   [-9.35, -7.95],
@@ -339,7 +341,11 @@ const cabin = box(CABIN.x0, CABIN.x1, CABIN.y0, CABIN.y1, BASE, Z(CABIN.roofNap)
 
 // ---------- bogen ----------
 // De ribben lopen als band van de onderkant van de kokerligger tot de
-// bovenrand van de rib; tussen de hangers zijn spitse openingen uitgespaard.
+// bovenrand van de rib; tussen de hangers zijn openingen uitgespaard. In het
+// model is elk veld open van het dek tot de onderrand van de rib; die
+// onderrand print zonder steun niet en vult de export op, met schoren vanaf
+// de hangers en een spitse opening ertussen. In de STL zijn het spitse
+// openingen tot net onder de rib.
 const ribXs = Array.from({ length: Math.round((SPRINGS[2] - SPRINGS[0]) / 0.5) + 1 }, (_, i) => SPRINGS[0] + i * 0.5);
 const openings = [];
 // Spitse opening tussen a en b: de hoogste aanzet van de spitse top die
@@ -374,23 +380,57 @@ for (let k = 0; k < 2; k++) {
     if (found) openings.push(found);
   }
 }
-const ribs = RIBS.map(([y0, y1]) => {
-  const band = profileY(
-    [...ribXs.map((x) => [x, deckBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
-    y0,
-    y1,
-  );
-  const holes = openings.map(({ a, b, floor, shoulder, apex }) =>
-    profileY(
-      [[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]],
-      y0 - 0.5,
-      y1 + 0.5,
-    ),
-  );
-  return band.subtract(union(holes));
-});
+const pointedPts = ({ a, b, floor, shoulder, apex }) => [[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]];
+// Open veld tussen a en b: van het dek (0,05 m onder het wegdek) tot de
+// onderrand van de rib, of null als de rib daar overal onder het dek ligt. In
+// de velden bij de opleggingen begint de opening waar de onderrand van de rib
+// boven het dek komt.
+function fullOpening(a, b) {
+  const floor = Math.min(deckZ(a), deckZ(b), deckZ((a + b) / 2)) - 0.05;
+  const xs = [a, ...ribXs.filter((x) => x > a + 1e-3 && x < b - 1e-3), b];
+  const top = [];
+  for (let k = 0; k < xs.length; k++) {
+    const h = lower(xs[k]) - floor;
+    if (h > 0) {
+      if (k > 0 && lower(xs[k - 1]) - floor <= 0) {
+        const h0 = lower(xs[k - 1]) - floor;
+        top.push([xs[k - 1] + ((xs[k] - xs[k - 1]) * -h0) / (h - h0), floor]);
+      }
+      top.push([xs[k], lower(xs[k])]);
+    } else if (k > 0 && lower(xs[k - 1]) - floor > 0) {
+      const h0 = lower(xs[k - 1]) - floor;
+      top.push([xs[k - 1] + ((xs[k] - xs[k - 1]) * h0) / (h0 - h), floor]);
+    }
+  }
+  if (top.length < 2) return null;
+  const x0 = top[0][0];
+  const x1 = top[top.length - 1][0];
+  return [[x0, floor], [x1, floor], ...[...top].reverse().filter(([, z]) => z > floor + 1e-3)];
+}
+const fullHoles = [];
+for (let k = 0; k < 2; k++) {
+  const a0 = SPRINGS[k];
+  const b0 = SPRINGS[k + 1];
+  for (let i = 0; i < PANELS; i++) {
+    const pts = fullOpening(a0 + ((b0 - a0) * i) / PANELS + HANGER / 2, a0 + ((b0 - a0) * (i + 1)) / PANELS - HANGER / 2);
+    if (pts) fullHoles.push(pts);
+  }
+}
+const ribPair = (holeShapes) =>
+  RIBS.map(([y0, y1]) => {
+    const band = profileY(
+      [...ribXs.map((x) => [x, deckBottom(x)]), ...[...ribXs].reverse().map((x) => [x, upper(x)])],
+      y0,
+      y1,
+    );
+    const holes = holeShapes.map((pts) => profileY(pts, y0 - 0.5, y1 + 0.5));
+    return band.subtract(union(holes));
+  });
+const ribs = ribPair(fullHoles);
+const printRibs = ribPair(openings.map(pointedPts));
 
 const bridge = union([deck, ...piers, ...abutments, kelder, cabin, ...ribs]);
+const printBridge = union([deck, ...piers, ...abutments, kelder, cabin, ...printRibs]);
 
 // ---------- printvoet (alleen in de STL) ----------
 // Het dek hangt tussen de pijlers vrij en de fiets- en voetpaden kragen 2,3
@@ -439,7 +479,7 @@ const footStations = footXs.map((x) => {
   return { x, section };
 });
 const printFoot = loftX(footStations);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 
 // ---------- rijbaan en fietspad als eigen onderdelen ----------
 // De bovenste 0,5 m van het wegdek is per BGT-functie een eigen node met de
@@ -559,8 +599,8 @@ console.log("partitie (m3):", JSON.stringify(partition));
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van de kokerligger en van de uitkragende plaat,
-// in de printversie geen.
+// model alleen de onderkant van de kokerligger en van de uitkragende plaat en
+// de onderrand van de ribben boven de open velden, in de printversie geen.
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -587,15 +627,24 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
 }
 {
   const { area, found } = overhangs(bridge);
+  const free = { dek: 0, rib: 0 };
   for (const p of found) {
     const xMid = (p[0][0] + p[1][0] + p[2][0]) / 3;
+    const yMid = (p[0][1] + p[1][1] + p[2][1]) / 3;
     const zMid = (p[0][2] + p[1][2] + p[2][2]) / 3;
+    const e1 = p[1].map((c, i) => c - p[0][i]);
+    const e2 = p[2].map((c, i) => c - p[0][i]);
+    const a = Math.hypot(e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]) / 2;
     // Onderkant van de kokerligger (ook de sprongen bij de boogpijlers en de
     // klep) en van de uitkragende plaat.
     const onDeck = Math.abs(zMid - deckBottom(xMid)) < 0.7 || Math.abs(zMid - (deckZ(xMid) - SLAB)) < 0.06;
-    if (!onDeck) throw new Error(`overhang buiten het dek op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
+    // Onderrand van de rib boven de open velden.
+    const underRib = RIBS.some(([y0, y1]) => yMid > y0 - 1e-3 && yMid < y1 + 1e-3) && Math.abs(zMid - lower(xMid)) < 0.05;
+    if (onDeck) free.dek += a;
+    else if (underRib) free.rib += a;
+    else throw new Error(`overhang buiten dek en ribben op x ${xMid.toFixed(2)}, z ${zMid.toFixed(2)}`);
   }
-  console.log("vrij hangend (m2):", Math.round(area));
+  console.log("vrij hangend (m2):", Math.round(area), Object.fromEntries(Object.entries(free).map(([k, v]) => [k, +v.toFixed(1)])));
   const print = overhangs(printModel);
   console.log("overhang in de printversie (m2):", +print.area.toFixed(2));
   if (print.area > 1) {
@@ -748,8 +797,9 @@ report.arches = {
     return +(best + WATER_NAP).toFixed(2);
   }),
   hangersPerArch: PANELS - 1,
-  openings: openings.length,
-  openingApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
+  openFields: fullHoles.length,
+  printOpenings: openings.length,
+  printOpeningApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
   deckUndersideNapAtCrowns: [-86.6, 86.6].map((x) => +(deckBottom(x) + WATER_NAP).toFixed(2)),
   leafUndersideNap: [LEAF.x0 + 0.1, (LEAF.x0 + LEAF.x1) / 2, LEAF.x1 - 0.1].map((x) => +(deckBottom(x) + WATER_NAP).toFixed(2)),
 };
@@ -806,7 +856,7 @@ await writeFile(
         "L0002.e8cec8975dc940e68d58b6e076c684ce",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek boven de middelste rivierpijler op de waterspiegel van de Boven-Merwede (z = 0, NAP +0,55 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Gorinchem, RD-richting 77,0 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding; het fietspad aan beide kanten buiten de rijbaan, onder de bogen buiten de ribben), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 24,5 tot 25,5 m breed van het zuidelijke landhoofd bij Sleeuwijk (x = -380) tot het noordelijke bij Gorinchem (x = 442), met het wegdek op NAP +12,4 tot +17,6 m en een kokerligger onder de uitkragende fiets- en voetpaden; twee bogen met trekband van 173,2 m tussen de pijlerharten x = -173,2, 0 en 173,2, elk met twee boogribben van 1,4 m boven de hoofdliggers en de top op NAP +40,8 m, en per boog 15 hangers als een scherm met spitse openingen tussen dek en rib; de drie rivierpijlers met caissons tot NAP +6,4 m en een smallere schacht; vier aanbruggen aan de zuidkant en vijf aan de noordkant op wandpijlers; de basculeklep van 30,9 m, de basculekelder en het bedieningshuis (BAG-pand, dak op NAP +21,5 m). Het windverband en de portalen tussen de ribben, de seinportalen, leuningen en lantaarns zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek boven de middelste rivierpijler op de waterspiegel van de Boven-Merwede (z = 0, NAP +0,55 m) in de oorsprong, +X langs de brug naar het noordnoordoosten (Gorinchem, RD-richting 77,0 graden vanaf het oosten) en +Y stroomafwaarts naar het westnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het wegdek met de attributen van het BGT-wegdeel erop in extras.attributes (bgt_functie rijbaan autosnelweg of fietspad, bgt_fysiekvoorkomen gesloten verharding; het fietspad aan beide kanten buiten de rijbaan, onder de bogen buiten de ribben), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 24,5 tot 25,5 m breed van het zuidelijke landhoofd bij Sleeuwijk (x = -380) tot het noordelijke bij Gorinchem (x = 442), met het wegdek op NAP +12,4 tot +17,6 m en een kokerligger onder de uitkragende fiets- en voetpaden; twee bogen met trekband van 173,2 m tussen de pijlerharten x = -173,2, 0 en 173,2, elk met twee boogribben van 1,4 m boven de hoofdliggers en de top op NAP +40,8 m, en per boog 15 hangers als stijlen van 1,2 m met de velden ertussen open van het dek tot onder de rib; de drie rivierpijlers met caissons tot NAP +6,4 m en een smallere schacht; vier aanbruggen aan de zuidkant en vijf aan de noordkant op wandpijlers; de basculeklep van 30,9 m, de basculekelder en het bedieningshuis (BAG-pand, dak op NAP +21,5 m). Het windverband en de portalen tussen de ribben, de seinportalen, leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de onderrand van de rib boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

@@ -71,11 +71,9 @@ Onderdelen in het model (hoogtes in NAP):
   De trekband loopt 2,8 m diep langs het dek; de onderkant ligt op +11,4 m
   (Wikipedia).
 - De 11 hangers op velden van 10,4 m (de dwarsbalken van het windverband op
-  de luchtfoto) als stijlen van 1,2 m. De twee velden aan elke oplegging,
-  waar de rib steiler dan 25 graden loopt, zijn open van het dek tot de
-  onderrand van de rib (in het veld bij de oplegging vanaf waar de rib boven
-  het dek komt). De acht middelste velden hebben een spitse opening (zijden
-  van 55 graden) tot net onder de rib, de hoogste tot +31,9 m; zie de
+  de luchtfoto) als stijlen van 1,2 m. Alle velden ertussen zijn open van
+  het dek tot de onderrand van de rib, in de middelste velden tot +32,1 m (in
+  het veld bij de oplegging vanaf waar de rib boven het dek komt); zie de
   printbaarheid.
 - Twee rivierpijlers van 5,5 × 26 m met ronde koppen (BGT), tot onder het
   dek.
@@ -95,7 +93,7 @@ door stijlen van 1,2 m), leuningen, lantaarns en de bebording.
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke wegstrook zonder boog en zonder pijlers op dekhoogte. Het model heeft
 van alle vier kanten de boog met hangers (van oost en west de hangers met de
-open velden en spitse openingen, van noord en zuid de twee ribben achter elkaar), de
+open velden, van noord en zuid de twee ribben achter elkaar), de
 rivierpijlers met ronde koppen, de rij aanbrugpijlers en de teruggezette
 liggers onder de dekrand.
 
@@ -109,18 +107,20 @@ Printbaarheid op 1:1000: de echte hangers en het windverband zijn te dun. De
 ribben zijn banden van 1,2 m die via de hangerstijlen op het dek staan. Wat
 zonder steun niet print, laat het model aan de export over: de onderkant van
 het dek en van de dekranden langs de aanbruggen (7028 m²) en de onderrand
-van de ribben boven de vier open velden (76 m²); het script controleert dat
+van de ribben boven de open velden (259 m²); het script controleert dat
 verder niets naar beneden wijst en dat alles op dezelfde onderkant begint.
 Met 460 m past de brug op 1:1000 niet in één uitsnede. In de meettest van de
 webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
-"Ondersteuning v2.0" van 31,4 naar 57,2 cm³ (v1.0: 57,2 cm³), zonder
-ongedragen lagen waar een printlijn in past, in 1,9 s; het vorige model met
-spitse openingen in alle velden kwam op 57,4 cm³. Onder het dek komt een wig
-met een smal scherm tot de onderplaat, onder de rib in de open velden een
-smalle band. Met alle velden open tot de rib vulde de export de acht
-middelste velden (waar de rib vlakker dan 25 graden loopt) grotendeels of
-helemaal dicht, met losse lagen in het midden (58,7 cm³); daar blijft de
-spitse opening, die open blijft. De STL op 1:1250, die zonder export wordt
+"Ondersteuning v2.0" van 30,8 naar 57,2 cm³ (v1.0: 58,7 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 5,8 s; het vorige model met
+spitse openingen in de acht middelste velden kwam ook op 57,2 cm³. Onder het
+dek komt een wig met een smal scherm tot de onderplaat. Onder de rib komt in
+de twee velden aan elke oplegging een smalle band en in de andere velden
+schoren vanaf beide hangers met een spitse opening ertussen; in het derde tot
+vijfde veld vanaf elke oplegging staan daaronder één of twee paaltjes tot op
+het dek en in het vierde naast de buitenste hanger een volle strook van
+circa 3 m. Geen veld vult helemaal; de middelste vier houden alleen de
+schoren. De STL op 1:1250, die zonder export wordt
 geprint, heeft printvormen: in elk veld een spitse opening (de twee
 buitenste versmald, bij de opleggingen dicht) en onder het dek een printvoet
 (wig van 50 graden en een scherm van 0,9 m); ze is ongewijzigd.
