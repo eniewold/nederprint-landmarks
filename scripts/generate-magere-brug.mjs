@@ -105,16 +105,20 @@ const top = (x) => deckZ(x) + DECK_LIFT;
 const ROAD = 0.25; // dikte van de loop- en fietslaag
 const LEAF_THICKNESS = 0.6;
 
-// Printbaarheid op 1:1000 (laag 0,2 mm, overhang 45 graden, steunbreedte
-// 0,8 mm in lib/server/overhang-support.ts): de export vult alles op wat
-// vlakker hangt dan 45 graden en laat delen smaller dan 0,8 m op ware grootte
-// niet dragen. Daarom is de onderbouw dicht met blinde bogen, ontbreken de
-// leuningen, zijn staanders en hangstangen minstens 0,9 m dik en is elk paar
-// balansen één dichte plaat. Alleen de opening in de portalen blijft open: die
-// heeft een spitse top van 50 graden en draagt zichzelf.
+// Printbaarheid op 1:1000 (laag 0,2 mm, steunbreedte 0,8 mm in
+// lib/server/overhang-support.ts): delen smaller dan 0,8 m op ware grootte
+// dragen niet, daarom ontbreken de leuningen, zijn staanders en hangstangen
+// minstens 0,9 m dik en is elk paar balansen één dichte plaat. Wat zonder
+// steun niet print (de open bogen, de doorvaart onder de kleppen, de
+// rondbogen in de portalen en het vrij hangende achtereinde van de balansen)
+// is in het model zoals het is: dat vult de export van de webshop op. De STL,
+// die zonder export wordt geprint, heeft daarvoor een printvorm: blinde bogen,
+// een dichte onderbouw onder de kleppen, rondbogen met een spitse top van 50
+// graden in de portalen en steunen onder het achtereinde.
 
-// Blinde bogen in elke vaste overspanning: platte segmentboog met de kruin
-// 0,9 m onder het dek en pijl 0,6 m (foto's), 0,4 m diep in beide gevels.
+// Bogen in elke vaste overspanning: platte segmentboog met de kruin 0,9 m
+// onder het dek en pijl 0,6 m (foto's), open dwars door de brug; in de STL
+// blinde bogen van 0,4 m diep in beide gevels.
 const ARCH = { belowDeck: 0.9, rise: 0.6, recess: 0.4 };
 // Onder de kleppen springt de onderbouw 0,6 m terug, als schaduwlijn van de
 // doorvaart (minder dan drie lagen op 1:1000, dus vrijwel zonder opvulling).
@@ -131,8 +135,8 @@ const BEAM = { halfWidth: 3.05, depth: 0.6, slope: 0.15, front: 0.3, rear: 12.3 
 const BALLAST = { from: 9.5, to: 12.3, halfWidth: 3.1, height: 1.1 };
 // Hangstangen van de plaat naar de voorkant van elke klep, 0,9 m dik.
 const ROD = { x: 1.0, size: 0.9, y: BRIDGE.leafHalfWidth - 0.5 };
-// Steunen onder het achtereinde: in werkelijkheid hangt de balans daar vrij,
-// maar zonder steun vult de export de 6,7 m lange uitkraging tot het dek op.
+// Steunen onder het achtereinde, alleen in de STL: in werkelijkheid hangt de
+// balans daar vrij.
 const REAR_LEG = { x: 11.85, size: 0.9, y: BEAM.halfWidth - 0.45 };
 
 // ---------- brug ----------
@@ -161,6 +165,7 @@ const passageBody = bandY(
   20,
 );
 const recesses = [];
+const openArches = [];
 const spans = [];
 for (let i = 0; i < PIERS.length; i++) {
   const from = PIERS[i] + PIER_HALF;
@@ -182,6 +187,13 @@ for (const [from, to] of spans) {
     pts.push([mid + r * Math.sin(t), centreZ + r * Math.cos(t)]);
   }
   pts.push([mid - half, spring]);
+  // Open boog: dezelfde segmentboog met rechte dagkanten tot de onderkant.
+  const open = profileY(
+    [[mid - half, BOTTOM - 1], [mid + half, BOTTOM - 1], ...pts.slice(2)],
+    -BRIDGE.halfWidth - 1,
+    BRIDGE.halfWidth + 1,
+  );
+  openArches.push(open, open.mirror([1, 0, 0]));
   for (const s of [-1, 1]) {
     for (const t of [-1, 1]) {
       const y0 = t * (BRIDGE.halfWidth - ARCH.recess);
@@ -191,7 +203,10 @@ for (const [from, to] of spans) {
     }
   }
 }
-const body = union([...fixedBody, passageBody]).subtract(union(recesses));
+// Het model: open bogen en onder de kleppen de open doorvaart.
+const body = union(fixedBody).subtract(union(openArches));
+// De STL: blinde bogen en onder de kleppen een dichte onderbouw.
+const printBody = union([...fixedBody, passageBody]).subtract(union(recesses));
 
 // Looplaag: over de vaste delen 10 m breed, over de kleppen 4,9 m.
 const fixedDeck = [-1, 1].map((s) => {
@@ -208,10 +223,10 @@ const leaves = bandY(
   40,
 );
 const deck = union([...fixedDeck, leaves]);
-const bridge = body;
 
 // ---------- ophaalbrug: portalen, balansen met ballastkist, hangstangen ----------
 const mechanism = [];
+const printMechanism = [];
 const beamBottom = (ax) => PORTAL.capTop + BEAM.slope * (PORTAL.x - ax);
 for (const s of [-1, 1]) {
   // Portaal: blok over de volle breedte met de opening over het looppad:
@@ -240,8 +255,16 @@ for (const s of [-1, 1]) {
     const t = (phi * i) / 8;
     openingPts.push([-r * Math.cos(t), spring + r * Math.sin(t)]);
   }
-  const opening = profileX(openingPts, s * PORTAL.x - PORTAL.depth, s * PORTAL.x + PORTAL.depth);
-  mechanism.push(portalBlock.subtract(opening));
+  const pointed = profileX(openingPts, s * PORTAL.x - PORTAL.depth, s * PORTAL.x + PORTAL.depth);
+  printMechanism.push(portalBlock.subtract(pointed));
+  // In het model een rondboog met de kruin onder de kap.
+  const roundPts = [[-r, deckZ(PORTAL.x) - 1], [r, deckZ(PORTAL.x) - 1]];
+  for (let i = 0; i <= 32; i++) {
+    const t = (Math.PI * i) / 32;
+    roundPts.push([r * Math.cos(t), PORTAL.capBottom - r + r * Math.sin(t)]);
+  }
+  const round = profileX(roundPts, s * PORTAL.x - PORTAL.depth, s * PORTAL.x + PORTAL.depth);
+  mechanism.push(portalBlock.subtract(round));
 
   // Balansplaat, schuin, met de onderkant op de kap boven het portaal.
   const plate = bandY(
@@ -281,14 +304,18 @@ for (const s of [-1, 1]) {
       beamBottom(BALLAST.from) - BALLAST.height + 0.05,
     ),
   );
-  const balance = union([plate, ballast, ...rods, ...legs]);
+  const balance = union([plate, ballast, ...rods]);
+  const printBalance = union([plate, ballast, ...rods, ...legs]);
   mechanism.push(s > 0 ? balance : balance.mirror([1, 0, 0]));
+  printMechanism.push(s > 0 ? printBalance : printBalance.mirror([1, 0, 0]));
 }
 const lift = union(mechanism);
 
-// Het printmodel (de STL) is de brug als geheel; de wegdeklaag hieronder wordt
-// er pas daarna uitgesneden, zodat de STL niet verandert.
-const printModel = union([deck, bridge, lift]);
+// Het model als geheel; de wegdeklaag hieronder wordt er pas daarna
+// uitgesneden.
+const model = union([deck, body, lift]);
+// Het printmodel (de STL) met de printvormen.
+const printModel = union([deck, printBody, union(printMechanism)]);
 
 // ---------- fietspad als eigen onderdelen ----------
 // De bovenste 0,5 m van het dek is een eigen node met de attributen van het
@@ -350,8 +377,8 @@ const strip = union([
   fixedLayer.mirror([1, 0, 0]),
 ]);
 // Wat door het wegdek steekt, blijft constructie, met 2 cm vrij: de staanders
-// van de portalen, de hangstangen op de kleppen (tot voorbij de klep, zodat
-// er geen strookje fietspad naast blijft) en de steunen onder de balansen.
+// van de portalen en de hangstangen op de kleppen (tot voorbij de klep,
+// zodat er geen strookje fietspad naast blijft).
 const guards = [];
 for (const s of [-1, 1]) {
   for (const t of [-1, 1]) {
@@ -372,24 +399,16 @@ for (const s of [-1, 1]) {
         0,
         PORTAL.capBottom,
       ),
-      boxFromTo(
-        s * (REAR_LEG.x - REAR_LEG.size / 2 - GAP),
-        s * (REAR_LEG.x + REAR_LEG.size / 2 + GAP),
-        t * (REAR_LEG.y - REAR_LEG.size / 2 - GAP),
-        t * (REAR_LEG.y + REAR_LEG.size / 2 + GAP),
-        0,
-        PORTAL.capBottom,
-      ),
     );
   }
 }
 const roadLayer = strip.subtract(union(guards));
 const leafArea = Manifold.extrude([ccw(LEAF_PATH)], 20).translate([0, 0, BOTTOM - 1]);
-const leafBikeway = roadLayer.intersect(leafArea).intersect(printModel);
-const bikeway = roadLayer.subtract(leafArea).intersect(printModel);
+const leafBikeway = roadLayer.intersect(leafArea).intersect(model);
+const bikeway = roadLayer.subtract(leafArea).intersect(model);
 // De kleppen (onder het wegdek) en het mechanisme zijn de ophaalbrug, de rest
 // van brug − strook is de vaste brug. Opgebouwd uit de losse onderdelen in
-// plaats van printModel − strook − ophaalbrug: dat aftrekken over precies
+// plaats van model − strook − ophaalbrug: dat aftrekken over precies
 // samenvallende vlakken (de onderkant van de kleppen) liet in de vaste brug een
 // vlak zonder dikte staan.
 const liftPart = union([lift, leaves.subtract(roadLayer)]);
@@ -557,8 +576,8 @@ for (const [name, solid] of parts) {
 const partsVolume = parts.reduce((sum, [, solid]) => sum + solid.volume(), 0);
 report.partition = {
   partsM3: +partsVolume.toFixed(3),
-  wholeM3: +printModel.volume().toFixed(3),
-  differenceM3: +(partsVolume - printModel.volume()).toFixed(4),
+  wholeM3: +model.volume().toFixed(3),
+  differenceM3: +(partsVolume - model.volume()).toFixed(4),
   overlapM3: +union(parts.slice(0, 2).map(([, solid]) => solid))
     .intersect(union(parts.slice(2).map(([, solid]) => solid)))
     .volume()
@@ -611,7 +630,7 @@ await writeFile(
         "G0363.874043cee9314281a048ff1aa45f82c8",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (dichte onderbouw met blinde bogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek, de portalen, balansplaten met ballastkisten, hangstangen en steunen; het model is vereenvoudigd om op 1:1000 zonder losse steunconstructie te printen.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (onderbouw met open segmentbogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek boven de open doorvaart, de portalen met een rondboog over het looppad, balansplaten met ballastkisten en hangstangen; wat zonder steun niet print vult de export op, de STL heeft blinde bogen, een dichte onderbouw onder de kleppen, spitse portaalopeningen en steunen onder de balansen als printvorm.",
       printFiles: [`magere-brug-1-${scale}.stl`],
       realWorld: {
         lengthM: BRIDGE.halfLength * 2,

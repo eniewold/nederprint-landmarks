@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `magere-brug.glb` | Catalogusbron in meters: nodes `road:fietspad`, `road:fietspad-klep` (met BGT-attributen), `building:brug`, `building:ophaalbrug` |
-| `magere-brug-1-300.stl` | Brug met portalen en balansen in één stuk op 1:300, met de onderkant van de pijlers op het printbed (247 × 33 × 40 mm) |
+| `magere-brug-1-300.stl` | Brug met portalen en balansen in één stuk op 1:300 met printvormen (zie hieronder), met de onderkant van de pijlers op het printbed (247 × 33 × 40 mm) |
 | `magere-brug.json` | Catalogusitem met RD-georeferentie, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong in het hart van de brug (tussen de
@@ -18,15 +18,19 @@ noordnoordwesten. Net als bij de Koornbrug ligt z = 0 op het water en is
 brug bemonsterd (`groundSamplePoints`), niet op de kades (NAP +1,6 m). De brug
 is geen BAG-pand, dus `replacesBuildings` blijft leeg.
 
-Het model is vereenvoudigd zodat het op 1:1000 zonder losse steunconstructie
-print. De export vult alles op wat vlakker hangt dan de ingestelde overhang
-(standaard 45 graden) en laat delen smaller dan 0,8 mm niet dragen;
-op 1:1000 is dat 0,8 m op ware grootte.
-Daarom zijn de doorvaarten blind, ontbreken de leuningen, zijn staanders en
-stangen minstens 0,9 m dik en is elk paar balansen één dichte plaat.
-Printcheck op 1:1000 (uitsnede 104 mm): alle onderdelen NoError, de opvulling
-gaat geheel naar de constructie (`building:brug` +10,1 %, 2416 → 2660 mm³;
-fietspad, fietspad-klep en ophaalbrug 0 %), samen 3211 mm³, in 1,0 s.
+De export laat delen smaller dan 0,8 mm niet dragen; op 1:1000 is dat 0,8 m
+op ware grootte. Daarom ontbreken de leuningen, zijn staanders en stangen
+minstens 0,9 m dik en is elk paar balansen één dichte plaat. Wat zonder steun
+niet print, is zoals het is en laat het model aan de export over: de open
+bogen, de doorvaart onder de kleppen, de rondbogen in de portalen en het vrij
+hangende achtereinde van de balansen. De bogen en de doorvaart liggen zo dicht
+op het water dat schoren de vloer zouden raken, dus "Ondersteuning v1.0" en
+"v2.0" vullen ze allebei op; in de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume van 1,20 naar
+2,28 cm³, zonder ongedragen lagen. De STL op 1:300, die zonder export wordt
+geprint, heeft printvormen: blinde bogen van 0,4 m diep, een dichte onderbouw
+onder de kleppen, rondbogen met een spitse top van 50 graden in de portalen en
+steunen van 0,9 m onder het achtereinde van de balansen; ze is ongewijzigd.
 
 Onderdelen in het model (hoogtes boven de waterspiegel):
 
@@ -52,25 +56,22 @@ Onderdelen in het model (hoogtes boven de waterspiegel):
     van het BGT-vlak liggen op de rand van de klep, de dwarsranden op
     x = ±4,98 m.
 
-  De staanders van de portalen, de hangstangen en de steunen steken door het
-  wegdek en blijven met 2 cm vrij constructie. `building:brug` is de vaste
+  De staanders van de portalen en de hangstangen steken door het wegdek en
+  blijven met 2 cm vrij constructie. `building:brug` is de vaste
   brug onder het wegdek, `building:ophaalbrug` de kleppen onder het wegdek
   met het mechanisme hieronder. Samen vormen de vier onderdelen precies de
-  brug als geheel (2664,0 m³, geen overlap); de STL is ongewijzigd.
-- Dichte onderbouw tot 0,8 m onder water met acht blinde segmentbogen van
-  0,4 m diep in beide gevels: per zijde vier vaste overspanningen van 6,5 m
-  tussen de pijlers van 1,5 m (de buitenste 6 m tot een eindwand van 0,5 m),
-  kruin 0,9 m onder het dek en pijl 0,6 m. Onder de 4,9 m brede kleppen
-  springt de onderbouw 0,6 m terug als schaduwlijn van de doorvaart van 10 m.
+  brug als geheel (1307,0 m³, geen overlap).
+- Onderbouw tot 0,8 m onder water met acht open segmentbogen dwars door de
+  brug: per zijde vier vaste overspanningen van 6,5 m tussen de pijlers van
+  1,5 m (de buitenste 6 m tot een eindwand van 0,5 m), kruin 0,9 m onder het
+  dek en pijl 0,6 m. Onder de 4,9 m brede kleppen de open doorvaart van 10 m.
 - Twee portalen (galgen) op de middenpijlers: 6,9 m breed, 1 m diep, met
-  staanders van 1 × 1 m en een opening over het looppad als rondboog met een
-  spitse top van 50 graden (zelfdragend), kap tot 9,8 m.
+  staanders van 1 × 1 m en een opening over het looppad als rondboog, kap tot
+  9,8 m.
 - Per portaal één balansplaat van 6,1 × 12 m en 0,6 m dik, die met 1:6,7 naar
   het midden oploopt tot 11,2 m, met een ballastkist van 2,8 × 6,2 × 1,1 m
-  achteraan, twee hangstangen van 0,9 m naar de voorkant van de klep en twee
-  steunen van 0,9 m onder het achtereinde. Die steunen bestaan in werkelijkheid
-  niet (de balansen hangen daar vrij), maar zonder steun zou de export de
-  uitkraging van 6,7 m tot het dek opvullen.
+  achteraan en twee hangstangen van 0,9 m naar de voorkant van de klep; het
+  achtereinde hangt vrij, zoals in werkelijkheid.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Magere_Brug),
 [Rijksmonumentenregister 518383](https://monumentenregister.cultureelerfgoed.nl/monumenten/518383)
