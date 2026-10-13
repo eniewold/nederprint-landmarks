@@ -1,0 +1,128 @@
+{
+  "name": "UP Office Building (IJ-toren)",
+  "file": "ij-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122941,
+    487872
+  ],
+  "xAxis": [
+    0.9602936856769431,
+    -0.2789911060392292
+  ],
+  "groundHeight": 44.426876,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -1.6031647782703207,
+      -41.078338119910754
+    ],
+    [
+      -32.64390419689245,
+      -41.76572181567209
+    ],
+    [
+      37.67790633784581,
+      -40.079612947189474
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012090447"
+  ],
+  "description": "UP/IJ-toren met twee rechte glasgevelschijven, centrale hoge installatiekern, westelijke glasvin en kroon, volledige Passenger Terminal-hal met doorlopend gebogen dak, lage terminal-/entreevleugels en de lange glazen kadepassage; de publieke ondergrondse garagevoet, Movenpick en oostelijke warehouses blijven buiten de landmark.",
+  "realWorld": {
+    "groundNapM": 1.4,
+    "axisDegrees": -16.2,
+    "towerRoofNapM": 81.096,
+    "coreTopNapM": 89.086,
+    "roofWellNapM": 79.834,
+    "southWingNapM": 32.697,
+    "hallRoofProfileNapM": [
+      [
+        -117,
+        20.94
+      ],
+      [
+        -114,
+        22.18
+      ],
+      [
+        -111,
+        24.51
+      ],
+      [
+        -108,
+        24.91
+      ],
+      [
+        -105,
+        25.45
+      ],
+      [
+        -102,
+        25.87
+      ],
+      [
+        -99,
+        26.09
+      ],
+      [
+        -96,
+        26.11
+      ],
+      [
+        -93,
+        25.9
+      ],
+      [
+        -90,
+        25.88
+      ],
+      [
+        -87,
+        24.99
+      ],
+      [
+        -84,
+        24.34
+      ],
+      [
+        -48,
+        16.909
+      ],
+      [
+        -45,
+        16.61
+      ],
+      [
+        -39.5,
+        16.525
+      ]
+    ],
+    "terminalPlinthNapM": 12.564,
+    "quayRoofNapM": 11.774,
+    "estimates": [
+      "Gevelraster2.5m en3.75m/.35m blinde nissen, glasvin/kroononderkant uit schuine fotos",
+      "Kroon82.0NAP, glasvinbegin59.2NAP circa1-2m onzeker; kern/dakput/wing gemeten",
+      "Terminaldakprofile uitAHN4, doorlopend gevel-/dakvlak; kleine lasnaden weggelaten",
+      "Glazen kadepassage massief3mhoog, .3m blinde glasnissen en1.2m piers met50deg vereenvoudigde onderbogen",
+      "Geen ondergrondse garage-/publieke verhoogde pleinplaat of AHN-scheepsmast/antenne; westelijk hotel en oostelijke warehouses aparte BAG behouden"
+    ]
+  },
+  "sources": [
+    "https://upofficebuilding.nl/ (eigenaar, Piet Heinkade55,19verdiepingen)",
+    "https://www.tgm.nl/projecten/ij-toren/ (gevelrenovatie)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012090447 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:PietHeinKade2015.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:%27IJ-Toren%27_Amsterdam_(5619892436).jpg (FaceMePLS CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:A_photo_of_climbing-hall,_Passenger_terminal_and_waterfront_of_the_IJ_in_Amsterdam,_Oosterdok_2005.jpg (Fons Heijnsbroek CC0)"
+  ],
+  "printFiles": [
+    "ij-toren-1-1000.stl"
+  ]
+}
