@@ -1,0 +1,70 @@
+{
+  "name": "Hofpoort (Shell-gebouw)",
+  "file": "hofpoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92502,
+    437802
+  ],
+  "xAxis": [
+    0.9563047559630354,
+    0.29237170472273677
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.290304,
+  "groundSamplePoints": [
+    [
+      32.25240591490216,
+      13.144668603672885
+    ],
+    [
+      19.132124173685842,
+      31.795625872164642
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000702496"
+  ],
+  "description": "Rechte betonnen Hofpoorttoren met blind/beveled vensterraster en massieve kop, gemeten dakput en liftopbouw, beide De-parelreliefs, transparante gerenoveerde plint als blinde nissen en de volledige garage met hogere oostvleugel en lage noordoosthoek; aangrenzend Shell-I blijft apart.",
+  "realWorld": {
+    "groundNapM": -0.05,
+    "axisDegrees": 17,
+    "mainRoofNapM": 93.441,
+    "liftNapM": 94.606,
+    "liftCornersNapM": [
+      96.126,
+      95.694
+    ],
+    "roofWellNapM": 89.052,
+    "garageRoofsNapM": [
+      12.765,
+      14.396,
+      11.142
+    ],
+    "penthouseNapM": 17.563,
+    "eastServiceNapM": 16.812,
+    "estimates": [
+      "Vensterpitch3.25m, kolomraster2.1m en gebogen/afgeschuinde raamneggen .42m diep uit fotos geschat; venstermateriaalstroken circa .9m",
+      "Garageopeningen blinde doorlopende bandnissen .7m diep; interieur massief, hoek-/trappenkoppen uit fotos vereenvoudigd",
+      "De parel heeft bronmaat5x5m; positie en bolrelief circa1.85m straal geschat, ondiep met de gevel verbonden voor1:1000",
+      "Gerenoveerde dubbelhoge entree met blinde glasnissen .6m diep; exacte puilijnen en trappositie uit fotos geschat",
+      "Grillige .2-.8m dakranden naar doorgaande plint-/gevelvlakken vereenvoudigd, dakhoogtes en putdiepte gemeten"
+    ]
+  },
+  "sources": [
+    "https://www.rotterdamarchitectuurprijs.nl/archief/spaces-hofplein.html (renovatie2016, ZZDP/SevilPeach)",
+    "https://www.shell.nl/over-ons/nieuws/shell-venster-2024/verleden-heden-toekomst.html (historische opdrachtgever,26lagen/95m)",
+    "https://www.bkor.nl/beeld/de-parel/ (collectiebeheerder,Marc Ruygrok,5x5m)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000702496 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Hofpoort.jpg (Fred Romero CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Hofpoort_(1).jpg (Fred Romero CC BY2.0)"
+  ],
+  "printFiles": [
+    "hofpoort-1-1000.stl"
+  ]
+}
