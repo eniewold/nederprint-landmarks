@@ -1,0 +1,69 @@
+{
+  "name": "De Nederlandsche Bank",
+  "file": "de-nederlandsche-bank.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121830,
+    485778
+  ],
+  "xAxis": [
+    0.9698720152847468,
+    0.24361501178602252
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 45.192265,
+  "groundSamplePoints": [
+    [
+      20.201693850802496,
+      64.00696497693394
+    ],
+    [
+      57.99458622389221,
+      25.644258006803994
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012165684"
+  ],
+  "description": "DNB na renovatie2025: langgerekte torenschijf met vernieuwde glazen kroon, brede hofvleugels en terugliggende publieke plint, noordelijke dubbelhoge kaszaal, atrium en lage logistieke delen; ontmantelde ronde toren ontbreekt, stadstuin en oostpatio blijven open.",
+  "realWorld": {
+    "groundNapM": 2.05,
+    "axisDegrees": 14.1,
+    "oldRoofNapM": 68.182,
+    "currentCrownRoofNapM": 70.45,
+    "capTopNapM": 71.35,
+    "northStairHeadNapM": 74.15,
+    "southStairHeadNapM": 73.55,
+    "wingRoofNapM": 19.131,
+    "northHallRoofNapM": 20.572,
+    "atriumRoofNapM": 22.094,
+    "outerRoofNapM": 15.199,
+    "logisticsRoofNapM": 10.05,
+    "eastCourtRoofNapM": 5.242,
+    "estimates": [
+      "Vernieuwde glazen kroon en dakrand uit AHN5 en fotos2025; exacte capdikte/.9-1.2m overstek en glasvloer66.6NAP geschat, circa1m hoogteonzekerheid",
+      "Raamrijen, witte banddikte, dubbelhoge kaszaalpuien en grondnissen uit recente fotos; nissen .3-.65m diep en brede dichte gevellichamen",
+      "Bovenbouw langs de lage vleugels en zonnepanelen/pergolaranden gesloten vereenvoudigd; dunne zonnepanelen en profielen niet los",
+      "Atriumcontour en lage logistieke vleugels uit oude3DBAG/currentortho, van grillige laserpunten naar doorgaande gevelvlakken vereenvoudigd",
+      "Ronde1991toren, verbindingsbrug en oude installatiebovenbouw verwijderd volgens actueleBAG/luchtfoto/Mecanoo; 3DBAG kiest hier AHN4 2020 en toont verouderde bouwdelen"
+    ]
+  },
+  "sources": [
+    "https://www.mecanoo.nl/Projects?project=282&t=2 (architect, renovatie2025)",
+    "https://www.dnb.nl/over-ons/renovatie/ (gebouwbeheerder, heropening2025)",
+    "https://www.pieters.net/projecten/de-nederlandsche-bank (constructeur, nieuwe kroon)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012165684 (TU Delft/3DGI CC BY4.0; AHN4 2020, blijvende vleugels)",
+    "https://www.ahn.nl/dataroom (AHN5 DSM WCS, CC0; bouwfase2023)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)",
+    "https://commons.wikimedia.org/wiki/File:De_Nederlandsche_Bank_(2025),_Westeinde_side.jpg (Erremm CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:De_Nederlandsche_Bank_(2025).jpg (Erremm CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "de-nederlandsche-bank-1-1000.stl",
+    "de-nederlandsche-bank-grondplaat-1-1000.stl"
+  ]
+}
