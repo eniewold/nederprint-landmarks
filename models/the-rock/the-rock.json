@@ -1,0 +1,64 @@
+{
+  "name": "The Rock",
+  "file": "the-rock.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119761,
+    483431
+  ],
+  "xAxis": [
+    0.998440764181981,
+    0.0558215049931638
+  ],
+  "groundHeight": 43.18035577,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      27.39812634716383,
+      -11.547409781628398
+    ],
+    [
+      -6.673195296399786,
+      -47.70187066076243
+    ],
+    [
+      -33.730046287909666,
+      -12.136061033773329
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012114135"
+  ],
+  "description": "Glazen voet en verschoven doorlopende middenvlakken, gearticuleerde natuursteenkroon met wisselend vensterritme en schuine voorhangende facetten, hoge noord/zuidingangen, glazen dakzone en gemeten dakinstallatie. Gevelas3.2graden.",
+  "realWorld": {
+    "groundNapM": 0.17,
+    "axisDegrees": 3.2,
+    "lowerRoofNapM": 30.177,
+    "middleRoofNapM": 62.57,
+    "crownRoofNapM": 87.702,
+    "plantRoofNapM": 90.247,
+    "glazedRoofNapM": 89.173,
+    "estimates": [
+      "gevelovergangen en uitstekende steenfacetten vanaf60.8Ã¢â‚¬â€œ66.5NAP uit bronfotoÃ¢â‚¬â„¢s, circa1Ã¢â‚¬â€œ2m onzeker; geen glasrots op steenvoet maar natuursteen boven glas",
+      "raamritme3.6m (gebouwbron), gemengde venstervormen en.38m blinde nissen uit fotos geschat",
+      "noord/zuidingang en glazen dakzone vereenvoudigd; verticale atriumruimte niet inwendig uitgehold",
+      "dunne aluminiumprofielen en steenlamellen onder.9m samengevoegd; dakmachines gesloten hoofdvolume"
+    ]
+  },
+  "sources": [
+    "https://www.archdaily.com/183612/the-rock-erick-van-egeraat (tekst door architect)",
+    "https://therock-zuidas.nl/ (gebouwbeheerder, renovatie2024,laagsteek3.6m)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012114135 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam-TheRock.jpg (Choinowski CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:The_Rock_Amsterdam_2010.jpg (IKÃ¢â‚¬â„¢s World Trip CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Mahler_39.jpg (MrAronymous CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "the-rock-1-1000.stl"
+  ]
+}
