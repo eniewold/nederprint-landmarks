@@ -1,0 +1,77 @@
+{
+  "name": "Y-Towers (Maritim Hotel en Yvie)",
+  "file": "y-towers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122133,
+    488703
+  ],
+  "xAxis": [
+    0.8090169943749475,
+    0.5877852522924731
+  ],
+  "groundHeight": 44.580624,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -63.1402464565066,
+      -30.76214032559513
+    ],
+    [
+      71.31282455399341,
+      6.283395111828977
+    ],
+    [
+      73.57505922964359,
+      41.72182473663439
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012247366"
+  ],
+  "description": "Beide Y-Towers met volledige eigen bovengrondse congres-/lobbyplint, donker verticaal hotelraster, verspringende horizontale woonbalkons met schuine onderzijde, eigen dakschouders en dakkoppen; de parkgarage, oude bouwketen en valse kraanwand tot108m zijn weggelaten en de buurtorens blijven behouden.",
+  "realWorld": {
+    "groundNapM": 1.65,
+    "axisDegrees": 36,
+    "hotelRoofNapM": 111.624,
+    "hotelPlantNapM": 115.916,
+    "hotelShoulderNapM": 106.952,
+    "residenceRoofNapM": 106.112,
+    "residencePlantNapM": 107.638,
+    "residenceShouldersNapM": [
+      102.52,
+      102.534,
+      102.512
+    ],
+    "congressRoofNapM": 15.076,
+    "lobbyRoofsNapM": [
+      18.872,
+      18.901
+    ],
+    "courtyardTerraceNapM": 15.223,
+    "atriumRoofEstimateNapM": 18.9,
+    "estimates": [
+      "Glazen atriumroof18.9NAP circa2-3m onzeker: AHN5 heeft geen retour en LoD2.2 foutvlak108.242 is door een bouwkraan vervuild; aansluiting bij gemeten lobbydaken en actuele fotos/ortho",
+      "Hotelvensters1.8m breed/.35m blind,2.2m hoog op3.18m verdieping en2.9m travee; natuurstenen hoekpilasters massief",
+      "Woonbalkonveldenverspringen1-2m uit fotos; vloeren1.2m dik,uitkraging1.2m met45graden onderzijde, glasbanden.55m blind/2.12m hoog op3.15m steek",
+      "Glazen westelijke verbindingsstrook blijft zonder fictieve uitkragende balkonframes; dakrand op107.312NAP uit AHN5/fotos tot gesloten.95m rand vereenvoudigd, circa.6m onzeker; dakcontouren tot.75m vereenvoudigd, hotelhoeken rechtgetrokken; gemeten hoogten uit AHN5/3DBAG, machines115.916/107.638NAP",
+      "Negen dakwybertjes met19.7NAP kroon circa.4m verhoogd voor herkenbaarheid; publieke garage-/parkplaat en inmiddels verdwenen bouwcontainers niet gemodelleerd"
+    ]
+  },
+  "sources": [
+    "https://teamv.nl/project/y-towers-overhoeks/ (architect,torens/plint/wybertjes/balkonritme,2025)",
+    "https://knauf.com/nl-NL/projectreferenties/yvie-ytowers-amsterdam (projectleverancier114/106m)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012247366 (TU Delft/3DGI CC BY4.0;AHN52023)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0,bouwjaar2026,pandingegebruik)",
+    "https://www.ahn.nl/ahn5 (AHN5DSM2023 CC0,EllipsisWCSfc9d369f-94ca-4373-8281-a6854edb67c9)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho,parkvrijvanbouwketen)",
+    "https://commons.wikimedia.org/wiki/File:Yvie_en_Maritim.jpg (MrAronymous CC0)",
+    "https://commons.wikimedia.org/wiki/File:Yvie_AmsterdamNoord.jpg (J93ffrey CC BY-SA4.0)",
+    "https://commons.wikimedia.org/wiki/File:Maritim_Hotel_Amsterdam_2022.jpg (Choinowski CC BY-SA4.0,alleenbuitenvormnietbouwkraan)"
+  ],
+  "printFiles": [
+    "y-towers-1-1000.stl"
+  ]
+}
