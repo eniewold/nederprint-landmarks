@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `blauwbrug.glb` | Catalogusbron in meters: nodes `building:blauwbrug`, `road:rijbaan`, `road:ov-baan`, `road:fietspad`, `road:voetpad` (de wegdelen met BGT-attributen) |
-| `blauwbrug-1-300.stl` | Brug met pijlers, pylonen en eindblokken in één stuk op 1:300, met de onderkant op het printbed (181 × 93 × 37 mm) |
+| `blauwbrug-1-300.stl` | Brug met pijlers, pylonen en eindblokken in één stuk op 1:300 met blinde bogen als printvorm, met de onderkant op het printbed (181 × 93 × 37 mm) |
 | `blauwbrug.json` | Catalogusitem met RD-georeferentie, hoofdmaten en bronnen |
 
 Generator: [`scripts/generate-blauwbrug.mjs`](../../scripts/generate-blauwbrug.mjs)
@@ -58,20 +58,18 @@ Onderdelen in het model (hoogtes boven de waterspiegel):
   en de voetpaden tot voorbij de balustrade, zodat er geen randjes van een
   ander wegdeel overblijven. De balustrade, de voetstukken van de pylonen en
   de eindblokken steken door het wegdek en blijven met 2 cm vrij constructie.
-  Samen vormen de vijf onderdelen precies de brug als geheel (4627,5 m³, geen
-  overlap). `zfight.py` over de wegdelen (30.000 stralen): geen samenvallende
-  vlakken; over het hele model (`--all`) alleen 5 punten "vlak zonder dikte"
-  in `building:blauwbrug` op snijlijnen onder een kleine hoek (boogrib tegen
-  de lijst, nis tegen de pijlervoet, bol op de kroon), geen samenvallende
-  vlakken tussen nodes.
+  Samen vormen de vijf onderdelen precies de brug als geheel (2594,1 m³, geen
+  overlap). `zfight.py` over de wegdelen (30.000 stralen, gemeten aan de
+  versie met blinde bogen): geen samenvallende vlakken; over het hele model
+  (`--all`) alleen 5 punten "vlak zonder dikte" in `building:blauwbrug` op
+  snijlijnen onder een kleine hoek (boogrib tegen de lijst, nis tegen de
+  pijlervoet, bol op de kroon), geen samenvallende vlakken tussen nodes.
 - Drie segmentbogen tussen de pijlers en de landhoofden (x = ±24,0 m): zijbogen
   van 14,3 m met pijl 1,45 m, middenboog van 14,2 m met pijl 1,83 m, aanzet
   0,9 m boven water en kruin 1,2 m onder het wegdek (NAP +1,95 en +2,33 m).
-  De doorvaarten zijn blinde bogen: een nis vanaf beide gevels waarvan het
-  plafond onder 45 graden naar binnen afloopt (op de waterspiegel 2,3 tot
-  2,7 m diep, doorlopend tot de onderkant onder het PDOK-water), zodat er geen
-  vrije overspanning onder het dek is. Om elke boog een rib van 0,15 m in het
-  vlak van de lijst.
+  De doorvaarten zijn open bogen dwars door de hele brug, met rechte
+  dagkanten onder de aanzet tot de onderkant. Om elke boog een rib van 0,15 m
+  in het vlak van de lijst.
 - Lijst langs het dek tot 0,85 m onder het wegdek (0,15 m voor de boogvlakken,
   met een schuine onderkant van 45 graden) en daarop een balustrade van 1,0 m
   hoog en 0,9 m breed (BGT 0,63 m; naar buiten verbreed op een kraag van 45
@@ -102,9 +100,6 @@ Niet in het model:
 - De bovenleiding en de masten van de tram: dunner dan 0,9 m.
 - De gebogen kadebalustrades met de kroonpaaltjes aan de hoeken: horen bij de
   kade buiten het BGT-dek (BGT-kademuur), niet bij de brug.
-- De doorvaarten als open bogen: onder een plat dek van 21 m breed zouden ze
-  op 1:1000 een vrije overspanning zijn; daarom blinde bogen met een
-  zelfdragend plafond.
 
 Pasvorm op het AHN: het wegdek volgt het DSM binnen 0,05 m (mediaan over het
 dek per 2 m); balustrade (DSM 0,5 tot 1,0 m boven het wegdek), boegen (DSM tot
@@ -112,12 +107,19 @@ NAP +4,2 m op y = ±12 m) en pylonen (DSM NAP +9,3 tot +9,7 m) kloppen met het
 model. In de voor/na-renders ligt het dek op de PDOK-reconstructie en staan de
 eindblokken op de ronde scheidingselementen van PDOK op de kadehoeken.
 
-Printbaarheid op 1:1000: printcheck (uitsnede 89 mm) alle onderdelen NoError;
-`building:blauwbrug` 4534 → 4568 mm³ (+0,8 %), `road:rijbaan` +0,4 %,
-`road:fietspad` +0,1 %, `road:ov-baan` en `road:voetpad` 0 %, in 2,0 s.
-Overhang boven het water zit alleen in randen van 0,15 tot 0,3 m (boogrib,
-lijst, blinde vakken). De STL op 1:300 is één gesloten stuk (genus 0,
-175 cm³).
+Printbaarheid op 1:1000: de open bogen hebben een vlakke kruin die zonder
+steun niet print; dat laat het model aan de export over. De bogen zijn zo
+vlak (pijl 1,45 tot 1,83 m over 14 m) dat schoren tegen de pijlers het water
+zouden raken, dus zowel "Ondersteuning v1.0" als "v2.0" vult de gewelven
+onder de kruin op; aan beide gevels blijft de boog onder een wig van 45
+graden open. In de meettest van de webshop (`scripts/overhang-lab`, het model
+op 1:1000) gaat het volume van 2,40 naar 4,15 cm³, zonder ongedragen lagen.
+Verder hangen alleen randen van 0,15 tot 0,3 m vrij (boogrib, lijst, blinde
+vakken). De STL op 1:300, die zonder export wordt geprint, heeft als
+printvorm blinde bogen: een nis vanaf beide gevels waarvan het plafond onder
+45 graden naar binnen afloopt (op de waterspiegel 2,3 tot 2,7 m diep,
+doorlopend tot de onderkant); ze is één gesloten stuk (genus 0, 175 cm³) en
+ongewijzigd.
 
 Per kant meer dan PDOK (PDOK: een vlak dek met lage randen en ronde
 scheidingselementen op de hoeken):
