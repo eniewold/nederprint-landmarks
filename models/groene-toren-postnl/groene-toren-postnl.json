@@ -1,0 +1,48 @@
+{
+  "name": "Hoofdkantoor PostNL (De Groene Toren)",
+  "file": "groene-toren-postnl.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82912,
+    454990
+  ],
+  "xAxis": [
+    0.8132710126027053,
+    0.5818850918009245
+  ],
+  "groundHeight": 44.00886393551513,
+  "groundNap": 0.49,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      46.012789126948,
+      -26.77355480243547
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000207723"
+  ],
+  "description": "Bestaande Groene Toren met lange en korte kantoorvleugel, doorlopende centrale dienstenschijf, lage glazen entreehal en afzonderlijke dakmachines. BAG/3DBAG meten asymmetrische H-voetafdruk en gevelas; AHN meet daken en maaiveld. Blind glasraster, verdiepingritme en entreevelden geschat uit schuine fotos van eigenaar Rijksvastgoedbedrijf en fotograaf Bart van Hoek. De toekomstige herontwikkeling is niet gebouwd; de aangrenzende Zilveren Toren en kleine losse dienstgebouwtjes blijven behouden.",
+  "realWorld": {
+    "groundNapM": 0.49,
+    "mainRoofNapM": 75.196,
+    "hallRoofNapM": 8.943,
+    "connectingRoofNapM": 12.523,
+    "roofPitNapM": 71.647,
+    "machineTopNapM": 77.753,
+    "estimatedGlazingRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0518100000207723: eigen hoofdgebouw met glazen hal; Zilveren Toren 0518100000246102 behouden",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000207723 (LoD2.2 dakcontouren en gemeten gevelas 35.583239 graden)",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: gemeten daken, machines, blind dakputje en maaiveld; punt RD 82965,454995 NAP 0.49 m, PDOK ellipsoide 44.008864 m",
+    "https://projecten.rijksvastgoedbedrijf.nl/groups/18-rvb-in-het-beatrixkwartier (eigenaar: aankoop 2024 en voorbereiding transformatie; eigen schuine foto via widgets/1827/header)",
+    "https://www.denhaag.nl/nl/projecten-in-den-haag/herontwikkeling-de-groene-toren/ (gemeente: huidig leeg kantoor, planvorming 2024-2026 en uitvoering 2026-2029)",
+    "https://www.architectuur.org/bouwwerk/1008/Kantoor_Nationale_Nederlanden.html (eigen fotos Bart van Hoek, gool04_2 en gool04_3: lange/korte schijf en gevelraster; gool04_1 toont de aangrenzende Zilveren Toren en wordt niet als modelbron gebruikt)"
+  ],
+  "printFiles": [
+    "groene-toren-postnl-1-1000.stl"
+  ]
+}
