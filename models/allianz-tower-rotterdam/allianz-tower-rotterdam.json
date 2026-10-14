@@ -1,0 +1,74 @@
+{
+  "name": "Allianz Tower (Robeco-toren)",
+  "file": "allianz-tower-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92699,
+    437057
+  ],
+  "xAxis": [
+    0.990170666273471,
+    -0.13986440451934407
+  ],
+  "groundHeight": 44.839939,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38.046078531949924,
+      -2.3443353729146614
+    ],
+    [
+      26.454879180345028,
+      5.756680254569232
+    ],
+    [
+      -0.8947856003063768,
+      -29.41427134452738
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000617946"
+  ],
+  "description": "Volledige voormalige Robeco-/Allianz-toren met drie rechthoekige kantoorvolumes, gesloten granieten hoofdkop, gegroepeerde blinde vensterbanden, hoge lobby/arcade, lagere glasvleugels en gemeten dakmachines; de foutieve97m-vleugel uit3DBAG is gecorrigeerd tot25.4m, naastgelegen erfgoedpanden blijven behouden.",
+  "realWorld": {
+    "groundNapM": 1.5,
+    "axisDegrees": -8.04,
+    "mainRoofNapM": 94.676,
+    "middleRoofNapM": 49.132,
+    "lowRoofNapM": 25.422,
+    "mainRoofParapetNapM": 96.758,
+    "roofPlantNapM": [
+      96.835,
+      96.849,
+      96.838,
+      96.83,
+      96.873,
+      96.311
+    ],
+    "estimates": [
+      "Kantoorgevel: horizontale venstergroepen circa7.3m op4.15m verdiepingen,1.65m hoge/.35m blinde glaspanelen,≥1.3m doorgaande pilasters; kozijnroedes weggelaten",
+      "Lage/middenvleugel glasraster4.5-5.8m,2.1-2.7m hoog,.4m blind; foyer/arcade5.2m hoog en.6m blind geschat uit renovatiefoto",
+      "Blank granite kroon en twee ventilatievelden op90-91.2NAP, posities uit historische/renovatiefotos geschat circa1m",
+      "Volledige lage noordvleugel en verbindingsdak uit BAG/ortho;3DBAG bovenliggende93.59m2 strook96.758 is fout:AHN4 buitenhoofdmassa225cellen mediaan25.36NAP/p9025.42NAP, daarom geen zwevend97m-dak of glazen scherm boven deze vleugel",
+      "Dunne.67m zuidelijke3DBAG-dakspur weggelatennaasthet49m-bouwdeel:20AHN4cellen,p9049.6NAP; geen95m vrijstaand dun scherm",
+      "Dakkoppen/roofdaken volgen3DBAG/AHN4, beperkte.035m aansluiting om meetafrondingskieren te sluiten; noordelijke dakrand tot1m dikke gesloten rand vereenvoudigd, kleine vrije machines/antennes onder.9m weggelaten"
+    ]
+  },
+  "sources": [
+    "https://www.bimandbeyond.nl/en/projects/allianz-toren (renovatie/BIM,Colliers/Constructif,2020)",
+    "https://www.barcol-air.nl/projecten/allianz-tower (projectleverancier,WimQuist,21verdiepingen/97m,Coolsingel120)",
+    "https://nl.linkedin.com/posts/quist-wintermans-architekten_wimquist-rotterdam-architectuur-activity-7478024692927270913-vlJL (architectQWA,drievolumes/natuursteen,2026)",
+    "https://www.cbre.nl/press-releases/group-of-investors-acquires-allianz-tower-in-rotterdam (beheer/transactie,2023,renovatie2018-2020)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000617946 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_robecogebouw.jpg (Wikifrits publicdomain)",
+    "Bim&Beyond renovatieprojectfoto, auteursrecht, alleen visuele referentie buitenrepo"
+  ],
+  "printFiles": [
+    "allianz-tower-rotterdam-1-1000.stl"
+  ]
+}
