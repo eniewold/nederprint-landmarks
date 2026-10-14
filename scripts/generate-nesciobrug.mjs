@@ -507,9 +507,10 @@ const cableNap = (x) => CABLE.midNap + CABLE.a * x * x + CABLE.b * x ** 4;
 const cableY = (x) => CABLE.midY * Math.cos((Math.PI * x) / (2 * PYLON.x)) ** 2;
 // Hangerscherm: de kabel (0,9 m) met daaronder een scherm van 0,95 m dik dat
 // als regelvlak naar de buitenrand van het fietsdek loopt (de hangers hangen
-// aan de dekrand en staan daardoor tot 21 graden schuin), met spitse openingen
-// tussen de hangers. Op 1:1000 zijn kabel (circa 0,15 m) en hangers (circa
-// 0,05 m) niet te printen; het scherm draagt de kabel zonder steun.
+// aan de dekrand en staan daardoor tot 21 graden schuin), met tussen de
+// hangers open velden tot onder de kabel. Op 1:1000 zijn kabel (circa 0,15 m)
+// en hangers (circa 0,05 m) niet te printen; kabel en hangers worden een band
+// en staanders van 0,9 m.
 const SCREEN = { thick: 0.95, sink: 0.3, base: 0.4, gap: 0.3, end: 83.3, step: 0.5 };
 const edgeY = (x) => fietsEdge(x) - EDGE.hanger + SCREEN.thick / 2;
 const screenFrame = (x) => {
@@ -536,9 +537,10 @@ const screenLoft = (grow) =>
     }),
   );
 // Hangers om de 6,96 m (twaalf velden per helft, foto's), staanders van
-// 0,9 m. Elke opening heeft een vlakke onderkant 0,4 m boven het dek, staande
-// zijden en een spitse top (55 graden) 0,3 m onder de kabel; waar het scherm
-// laag is (midden) wordt de opening een driehoek.
+// 0,9 m. In de STL, die zonder export wordt geprint, heeft elke opening een
+// vlakke onderkant 0,4 m boven het dek, staande zijden en een spitse top
+// (55 graden) 0,3 m onder de kabel, zodat het scherm de kabel zonder steun
+// draagt; waar het scherm laag is (midden) wordt de opening een driehoek.
 const HANGERS = { perHalf: 12, post: 0.9, apex: 55 };
 const hangerStep = PYLON.x / HANGERS.perHalf;
 const tanApex = Math.tan((HANGERS.apex * Math.PI) / 180);
@@ -678,10 +680,12 @@ const stairs = [-1, 1].map((side) => {
 });
 
 const parts0 = [deck, pylon(-1), pylon(1), screen, stays(-1), stays(1), ...columns, ...abutments, ...stairs];
-const bridge = union(parts0);
-if (bridge.status() !== "NoError") throw new Error(`brug: ${bridge.status()}`);
+// De STL houdt het scherm met de spitse openingen; het model krijgt de open
+// velden pas na de printversie (zie onder), zodat de STL gelijk blijft.
+const printBridge = union(parts0);
+if (printBridge.status() !== "NoError") throw new Error(`brug: ${printBridge.status()}`);
 {
-  const bb = bridge.boundingBox();
+  const bb = printBridge.boundingBox();
   if (Math.abs(bb.min[2] - BASE) > 1e-4) throw new Error(`onderkant op ${bb.min[2]}`);
 }
 
@@ -735,8 +739,44 @@ const footS1 = sAtX(foot, -53);
 const footS2 = sAtX(foot, 53);
 const footS3 = sAtX(foot, 97);
 const printFoot = union([footLoft(cycle, 3, cycle.length - 3), footLoft(foot, footS0, footS1), footLoft(foot, footS2, footS3)]);
-const printModel = union([bridge, printFoot]);
+const printModel = union([printBridge, printFoot]);
 if (printModel.status() !== "NoError") throw new Error(`print: ${printModel.status()}`);
+
+// ---------- open velden in het model ----------
+// In het model zijn alle 24 velden open, zoals in het echt: van dezelfde
+// dorpel 0,4 m boven het dek tussen de staanders tot de onderkant van de
+// kabelband, die haaks op de kabel 0,9 m dik blijft (in het midden 0,45 m
+// onder de kabelas, bij de pylonen waar de kabel 21 graden steil loopt
+// 0,06 m lager). De dorpel volgt het dek. Wat daaronder zonder steun niet
+// print (de onderkant van de kabelband), vult de export op; dat is de taak
+// van de export, niet van het model.
+const BAND = 0.9;
+const cableSlope = (x) => 2 * CABLE.a * x + 4 * CABLE.b * x ** 3;
+const fieldTop = (x) => screenFrame(x).zc + CABLE.half - BAND * Math.hypot(1, cableSlope(x));
+const fields = [];
+for (let k = -HANGERS.perHalf; k < HANGERS.perHalf; k++) {
+  let x0 = k * hangerStep + HANGERS.post / 2;
+  let x1 = (k + 1) * hangerStep - HANGERS.post / 2;
+  if (k === -HANGERS.perHalf) x0 = -PYLON.x + 1.9;
+  if (k === HANGERS.perHalf - 1) x1 = PYLON.x - 1.9;
+  const n = Math.ceil((x1 - x0) / 0.5);
+  const xs = Array.from({ length: n + 1 }, (_, i) => x0 + ((x1 - x0) * i) / n);
+  const cutter = loftX(
+    xs.map((x) => {
+      const zb = screenFrame(x).ze + SCREEN.base;
+      const zt = fieldTop(x);
+      const yb = screenCenterY(x, zb);
+      const yt = screenCenterY(x, zt);
+      return { x, section: [[yb - 1.5, zb], [yb + 1.5, zb], [yt + 1.5, zt], [yt - 1.5, zt]] };
+    }),
+  );
+  const tops = xs.map(fieldTop);
+  fields.push({ x0, x1, low: Math.min(...xs.map((x) => fieldTop(x) - screenFrame(x).ze - SCREEN.base)), top: Math.max(...tops), cutter });
+}
+const openScreen = screenLoft(0).subtract(union(fields.map((f) => f.cutter)));
+const bridge = union(parts0.map((part) => (part === screen ? openScreen : part)));
+if (bridge.status() !== "NoError") throw new Error(`brug: ${bridge.status()}`);
+if (Math.abs(bridge.boundingBox().min[2] - BASE) > 1e-4) throw new Error("onderkant van het model verschoven");
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant.
@@ -763,7 +803,8 @@ function overhangs(solid) {
 const pieceOverhang = {};
 for (const [name, solid] of [
   ["dek", deck],
-  ["hangerscherm", screen],
+  ["hangerscherm", openScreen],
+  ["hangerscherm (STL)", screen],
   ["tuien", union([stays(-1), stays(1)])],
   ["pylonen", union([pylon(-1), pylon(1)])],
   ["trappen", union(stairs)],
@@ -961,7 +1002,8 @@ await writeFile(path.join(outDir, stlName), buffer);
   };
 }
 report.stays = stayAngles;
-report.slots = slots.map((s) => [+s.x0.toFixed(2), +s.x1.toFixed(2), +(s.top + WATER_NAP).toFixed(2)]);
+report.fields = fields.map((f) => [+f.x0.toFixed(2), +f.x1.toFixed(2), +(f.top + WATER_NAP).toFixed(2), +f.low.toFixed(2)]);
+report.printSlots = slots.map((s) => [+s.x0.toFixed(2), +s.x1.toFixed(2), +(s.top + WATER_NAP).toFixed(2)]);
 report.heights = {
   crestNap: MAIN.crestNap,
   cableMidNap: CABLE.midNap,
@@ -1005,7 +1047,7 @@ await writeFile(
         "G0363.d0a19fbf19cf4357a54f61feec456f35",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de voeten van de twee pylonen in de oorsprong op de waterspiegel van het Amsterdam-Rijnkanaal (z = 0, NAP -0,5 m), +X van pylon naar pylon naar het noordoosten (RD-richting 42,8 graden vanaf het oosten) en +Y naar het noordwesten. Vijf nodes: road:fietspad, road:voetpad, road:voetpad-op-trap-zuid en road:voetpad-op-trap-noord, de bovenste 0,5 m van dek en trappen binnen de BGT-wegdelen met hun attributen in extras.attributes, en building:nesciobrug met de rest: het slingerende kokerdek (fietsdek met in het midden het voetpad ernaast, 53 m uit het midden gesplitst) met de parabool van NAP +10,5 m bij de pylonen naar +11,95 m in het midden, de lus van 270 graden op kolommen aan de zuidkant (begin op NAP +1,9 m) en de helling langs de noordoever (eind op +3,55 m), de twee pylonen (x = ±83,56, top NAP +35,8 m), de hoofdkabel boven de zuidoostrand van het dek met een hangerscherm met spitse openingen naar de buitenrand van het fietsdek, de vier tuien, de ovale trappen aan het eind van het voetdek, 36 kolommen, twee zware steunpunten en de landhoofden. Kabel en hangers zijn een scherm van 0,95 m, de tuien staven van 0,9 m; het hekwerk en de lantaarns zijn weggelaten. Het maaiveld wordt op het kanaal naast de hoofdoverspanning bemonsterd; groundHeight (ellipsoïdisch, PDOK-water) is de terugval voor een uitsnede zonder kanaal. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden tussen de voeten van de twee pylonen in de oorsprong op de waterspiegel van het Amsterdam-Rijnkanaal (z = 0, NAP -0,5 m), +X van pylon naar pylon naar het noordoosten (RD-richting 42,8 graden vanaf het oosten) en +Y naar het noordwesten. Vijf nodes: road:fietspad, road:voetpad, road:voetpad-op-trap-zuid en road:voetpad-op-trap-noord, de bovenste 0,5 m van dek en trappen binnen de BGT-wegdelen met hun attributen in extras.attributes, en building:nesciobrug met de rest: het slingerende kokerdek (fietsdek met in het midden het voetpad ernaast, 53 m uit het midden gesplitst) met de parabool van NAP +10,5 m bij de pylonen naar +11,95 m in het midden, de lus van 270 graden op kolommen aan de zuidkant (begin op NAP +1,9 m) en de helling langs de noordoever (eind op +3,55 m), de twee pylonen (x = ±83,56, top NAP +35,8 m), de hoofdkabel boven de zuidoostrand van het dek met een hangerscherm naar de buitenrand van het fietsdek, met alle 24 velden tussen de hangers open van een dorpel 0,4 m boven het dek tot onder de kabel, de vier tuien, de ovale trappen aan het eind van het voetdek, 36 kolommen, twee zware steunpunten en de landhoofden. Kabel en hangers zijn een scherm van 0,95 m (kabelband en staanders van 0,9 m), de tuien staven van 0,9 m; het hekwerk en de lantaarns zijn weggelaten. Wat zonder steun niet print (de onderkant van de kabelband boven de open velden, het dek) vult de export op; de STL heeft in het scherm spitse openingen en een printvoet onder het dek. Het maaiveld wordt op het kanaal naast de hoofdoverspanning bemonsterd; groundHeight (ellipsoïdisch, PDOK-water) is de terugval voor een uitsnede zonder kanaal. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         mainSpanM: +(2 * PYLON.x).toFixed(2),

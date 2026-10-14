@@ -47,13 +47,9 @@ Onderdelen in het model (hoogtes in NAP):
   liggen op +26,09, +26,06, +25,78 en +25,28 m, omdat de derde en vierde boog
   het dalende spoor volgen.
 - Per boog elf platte hangers van 0,9 m op twaalf gelijke velden
-  (luchtfoto). De twee velden aan elke oplegging, waar de rib steiler dan
-  circa 25 graden loopt, zijn open van de ligger tot de onderrand van de rib
-  (in het veld bij de oplegging vanaf waar de rib de ligger raakt). De acht
-  middelste velden hebben een opening met verticale zijden en een spitse top
-  met flanken van 50 graden onder de rib (bij de uiteinden, waar de rib
-  schuin loopt, schuift de top naar de hoge kant; toppen tot +24,9 m); zie
-  de printbaarheid.
+  (luchtfoto). Alle twaalf velden zijn open van de ligger tot de onderrand
+  van de rib (in het veld bij de oplegging vanaf waar de rib de ligger
+  raakt), zoals in het echt.
 - De verstijvingsliggers in hetzelfde vlak, van 1,6 m onder tot 0,6 m boven
   het spoor, met verticale verstijvers van 0,9 × 0,25 m aan de buitenkant op
   elke hanger en aan de uiteinden.
@@ -93,7 +89,7 @@ Onderdelen in het model (hoogtes in NAP):
   verlengd. De strook loopt over dezelfde knikken als het spoor, van 0,5 m
   onder tot 1 m boven het spoor; de liggers blijven over hun hele strook
   constructie (2 cm vrij). Spoor = strook ∩ brug, constructie = brug − strook
-  (samen 9.623 m³: constructie 9.166, spoor 457). Het script controleert dat
+  (samen 9.316 m³: constructie 8.860, spoor 457). Het script controleert dat
   de volumes optellen; `zfight.py` vond geen samenvallende vlakken (gemeten
   aan de versie met alleen spitse openingen; spoor en dekplaat zijn gelijk
   gebleven). Het spoor
@@ -111,8 +107,8 @@ PDOK-terrein).
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke grijze strook op het water en de uiterwaard met losse pijlerstompjes,
 zonder bogen en zonder liggers. Het model heeft van het noordwesten en het
-zuidoosten (de lange zijden) de vier bogen met de hangers, de open velden en
-spitse openingen en de verstijvers, de plaatliggers met verstijvers en de pijlers met
+zuidoosten (de lange zijden) de vier bogen met de hangers, de open velden
+en de verstijvers, de plaatliggers met verstijvers en de pijlers met
 plint en deklijst; van het zuidwesten en noordoosten (langs de brug) de
 ribben met het windverband en de portalen, het looppad aan de westkant en de
 pijlers die aan de oostkant 10 m buiten de brug uitsteken.
@@ -123,29 +119,32 @@ maximum per 2 m langs de ribben binnen circa 0,5 m; het spoor ligt binnen
 0,03 m van het 25e percentiel van het DSM op de spoorstrook, de pijlerkoppen
 binnen 0,05 m van de mediaan van het DSM op het deel buiten de brug.
 
-Printbaarheid op 1:1000: het windverband heeft een onderkant van 47 graden,
-de deklijsten van de pijlers kragen onder 50 graden uit en het looppad heeft
-een onderkant van 46 graden. Wat zonder steun niet print, laat het model aan
-de export over: de onderkant van het dek en de onderrand van de rib boven de
-open velden (boven het dek 113 m²). Alles begint op dezelfde onderkant (0,8 m
-onder de waterspiegel) en elke node is een gesloten manifold (constructie één
-component, genus 250; het spoor één component). In de meettest van de
-webshop (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
-"Ondersteuning v2.0" van 9,62 naar 16,21 cm³ (v1.0: 16,21 cm³), zonder
-ongedragen lagen waar een printlijn in past, in 69 s; het vorige model met
-alleen spitse openingen kwam op 16,28 cm³. Onder het dek komt een wig met een
-smal scherm tot de onderplaat; onder de rib blijft in de open velden een
-smalle band, de spitse openingen blijven open. Met alle velden open tot de
-rib vulde de export de acht middelste velden (rib vlakker dan circa
-22 graden) grotendeels dicht; daar blijft de spitse opening. Als proef had
-het windverband rechte regels en portalen zonder de schuine onderkant: de
-export hing er dan onder elke regel een volle wand tot op het spoor onder
-(samen met de open velden 20,0 cm³); de onderkant van 47 graden blijft
-daarom. De STL op 1:1000, die zonder export wordt geprint, heeft printvormen:
-tussen alle hangers spitse openingen (flanken van 50 graden), tussen de
-oplegging en de eerste hanger een driehoek met de top tegen de hanger, en
-onder het dek een printvoet (wig van 50 graden en een scherm van 0,9 m); ze
-is ongewijzigd.
+Printbaarheid op 1:1000: het model is open zoals de echte brug; alle velden
+tussen de hangers lopen door tot de onderrand van de rib. Het windverband
+heeft een onderkant van 47 graden, de deklijsten van de pijlers kragen onder
+50 graden uit en het looppad heeft een onderkant van 46 graden. Wat zonder
+steun niet print, laat het model aan de export over: de onderkant van het
+dek en de onderrand van de rib boven de open velden (boven het dek 369 m²).
+Alles begint op dezelfde onderkant (0,8 m onder de waterspiegel) en elke
+node is een gesloten manifold (constructie één component, genus 250; het
+spoor één component). In de meettest van de webshop (`scripts/overhang-lab`,
+het model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 9,32 naar
+17,31 cm³ (v1.0: 17,62 cm³), zonder ongedragen lagen waar een printlijn in
+past, in 382 s; het vorige model met spitse openingen in de acht middelste
+velden kwam op 16,21 cm³. Onder het dek komt een wig met een smal scherm tot
+de onderplaat. In de twee velden aan elke oplegging, waar de rib steiler dan
+circa 25 graden loopt, blijft onder de rib een smalle band en is het veld
+verder open; de acht middelste velden (rib vlakker dan circa 22 graden) vult
+de export grotendeels dicht, bij de tweede boog helemaal en bij de andere
+bogen met onregelmatige open stukken. Het model blijft open: dichtzetten
+voor de print is de taak van de export. Als proef had het windverband
+rechte regels en portalen zonder de schuine onderkant: de export hing er dan
+onder elke regel een volle wand tot op het spoor onder; de onderkant van
+47 graden blijft daarom. De STL op 1:1000, die zonder export wordt geprint,
+heeft printvormen: tussen alle hangers spitse openingen (flanken van
+50 graden, toppen tot +24,9 m), tussen de oplegging en de eerste hanger een
+driehoek met de top tegen de hanger, en onder het dek een printvoet (wig van
+50 graden en een scherm van 0,9 m); ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Edithbrug) (vier
 boogbruggen achter elkaar uit 1946, enkelsporig, pijlers breed genoeg voor een

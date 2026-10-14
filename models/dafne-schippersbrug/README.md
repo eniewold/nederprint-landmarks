@@ -47,12 +47,9 @@ Onderdelen in het model (hoogtes in NAP):
   de as bij de pyloon naar 5,7 m naast de as bij de kolommen (AHN). Kabel en
   hangers zijn per kant één plaat van 1 m van de dekrand naar de kabel, met
   een dichte strook van 1 m boven het dek (de leuning) en hangers van 0,9 m op
-  5,8 m (19 velden, foto's). De vier velden naast de pyloon, waar de kabel
-  steiler dan 22 graden loopt, zijn open van de leuning tot de onderkant van
-  de kabel (0,9 m onder de bovenrand). Verderop hebben zes velden een spitse
-  opening (zijden van 55 graden) tot 0,9 m onder de kabel, en waar de kabel
-  minder dan 2,7 m boven de leuning hangt, is de plaat dicht; zie de
-  printbaarheid.
+  5,8 m (19 velden, foto's). Alle velden zijn open van de leuning tot de
+  onderkant van de kabel (0,9 m onder de bovenrand), zoals in het echt; bij
+  het laagste punt van de kabel is de opening nog 0,8 m hoog.
 - Het landhoofd in Leidsche Rijn met de vleugels (BGT, 13,6 m breed).
 - Op de school: het dek als plaat tot x = 138, dan een kwartslag naar het
   noorden met de buitenbocht van het BAG-pand, de oprit van 6,9 m (BGT) over
@@ -94,7 +91,7 @@ ze hellen, gaat hun hele schaduw binnen de strook eruit, zodat de grens
 tussen wegdeel en constructie verticaal is. De dekranden buiten de
 wegdelen (0,4 m aan elke kant) blijven constructie. Wegdeel = strook ∩ brug,
 constructie = brug − strook; samen precies het volume van de brug als geheel
-(4.803,6 m³, constructie 4.022 m³, geen overlap). De oprit is daarvoor
+(4.540,6 m³, constructie 3.759 m³, geen overlap). De oprit is daarvoor
 opgebouwd uit twee overlappende stukken in plaats van drie die precies tegen
 elkaar lagen (die hielden op de knikken een inwendige naad); de vorm is
 gelijk. Langs de rand van het kabelvlak, waar het schuin over het dek hangt,
@@ -122,20 +119,21 @@ Printbaarheid op 1:1000: het dek hangt vrij over 170 m. De pyloonpoten hellen
 9 graden, de kabelvlakken ten hoogste 14 graden en de tuien staan onder 55 tot
 67 graden; hangers, poten, tuien en kolommen zijn minstens 0,9 mm. Wat zonder
 steun niet print, laat het model aan de export over: de onderkant van het dek
-en de onderkant van de kabel boven de vier open velden. Omdat de wegdelen
+en de onderkant van de kabel boven de open velden. Omdat de wegdelen
 attributen hebben, worden alle onderdelen samen opgevuld en gaat de
 opvulling naar de constructie. In de meettest van de webshop
 (`scripts/overhang-lab`, het model op 1:1000) gaat het volume met
-"Ondersteuning v2.0" van 16,2 naar 19,1 cm³ (v1.0: 19,1 cm³), zonder
-ongedragen lagen waar een printlijn in past, in 6,5 s; het vorige model met
-alleen spitse openingen kwam ook op 19,2 cm³. Onder het dek komt een wig met
-een smal scherm tot de onderplaat, onder de kabel in de open velden een
-smalle band. Met alle velden open tot de kabel vulde de export de velden
-verderop (kabel vlakker dan 22 graden) grotendeels dicht, onder het dek bij
-de oostkolommen zelfs met wanden tot de onderplaat (20,0 cm³, 115 s); daar
-blijven de spitse openingen en de dichte plaat. De STL op 1:1000, die zonder
-export wordt geprint, heeft printvormen: in de kabelvlakken tien spitse
-openingen (ook in de vier velden naast de pyloon) en onder de overspanning
+"Ondersteuning v2.0" van 15,9 naar 19,8 cm³ (v1.0: 20,0 cm³), zonder
+ongedragen lagen waar een printlijn in past, in 113 s; het vorige model met
+vier open velden kwam op 19,1 cm³ in 9 s. Onder het dek komt een wig met een
+smal scherm tot de onderplaat, onder de kabel in de open velden een smalle
+band. Omdat het kabelvlak naar buiten helt, hangt de kabel in de velden op
+x = 29 tot 42 naast de dekrand; daar zet de export onder de kabel aan beide
+kanten smalle wanden tot de onderplaat. Het model blijft open: dichtzetten
+voor de print is de taak van de export. De STL op 1:1000, die
+zonder export wordt geprint, heeft printvormen: in de kabelvlakken tien
+spitse openingen (zijden van 55 graden, 0,9 m onder de kabel; dicht waar de
+kabel minder dan 2,7 m boven de leuning hangt) en onder de overspanning
 een printvoet (wig van 50 graden en een scherm van 0,9 m, 3.439 m³); alleen
 de bovenkanten van de nissen hangen nog over (23 m², 0,35 m diep). Ze is
 ongewijzigd.

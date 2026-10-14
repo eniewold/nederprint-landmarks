@@ -197,11 +197,12 @@ const ARCH_OUTER = ARCH.y + ARCH.width / 2;
 const CHAMFER = 1.0; // breedte van de afschuining aan de onderkant buiten
 // Hangers op de twaalf knopen van het windverband (AHN: knopen om de
 // 11,18 m van x = -61,5 tot 61,5; foto NS 1757: hangers om de circa 11 m).
-// Op 1:1000 is elke hanger een stijl van 1,0 m en de ruimte tussen dek en
-// boog een scherm van 1,0 m dik tegen het binnenvlak van de boog, met spitse
-// openingen (flanken van 50 graden) tot onder de boog. Tussen de laatste
-// hanger en de oplegging blijft het scherm dicht (de koker wordt daar een
-// diepe plaat, foto's).
+// Op 1:1000 is elke hanger een stijl van 1,0 m in een scherm van 1,0 m dik
+// tegen het binnenvlak van de boog; de elf velden tussen twee hangers zijn
+// open van het dek tot de onderkant van de boog, zoals in het echt (in de STL
+// spitse openingen met flanken van 50 graden tot onder de boog). Tussen de
+// laatste hanger en de oplegging blijft het scherm dicht (de koker wordt daar
+// een diepe plaat, foto's).
 const NODES = Array.from({ length: 12 }, (_, k) => -61.5 + (123 * k) / 11);
 const HANGER = 1.0;
 const SCREEN_T = 1.0;
@@ -439,15 +440,28 @@ const screenOutline = [
   ...screenXs.map((x) => [x, railZ(x) - 0.3]),
   ...[...screenXs].reverse().map((x) => [x, archBottom(x) + 0.3]),
 ];
-const screens = [-1, 1].map((side) => {
-  const y0 = side > 0 ? ARCH_INNER - 0.02 : -ARCH_INNER - SCREEN_T;
-  const y1 = side > 0 ? ARCH_INNER + SCREEN_T : -ARCH_INNER + 0.02;
-  const plate = profileY(screenOutline, y0, y1);
-  const holes = openings.map(({ a, b, floor, shoulder, apex }) =>
-    profileY([...floor, [b, shoulder], [(a + b) / 2, apex], [a, shoulder]], y0 - 0.5, y1 + 0.5),
-  );
-  return plate.subtract(union(holes));
+// Velden tussen twee hangers in het model: van dezelfde vloer tot 0,1 m in de
+// boog, zodat de onderkant van de boog de bovenkant van het veld is. Wat
+// daaronder zonder steun niet print, vult de export op; dat is de taak van de
+// export, niet van het model.
+const fields = NODES.slice(0, -1).map((x, i) => {
+  const a = x + HANGER / 2;
+  const b = NODES[i + 1] - HANGER / 2;
+  const floor = range(a, b, 1).map((u) => [u, railZ(u) - 0.1]);
+  return { a, b, outline: [...floor, ...range(a, b, 0.5).reverse().map((u) => [u, archBottom(u) + 0.1])] };
 });
+const screenPair = (holeOutlines) =>
+  [-1, 1].map((side) => {
+    const y0 = side > 0 ? ARCH_INNER - 0.02 : -ARCH_INNER - SCREEN_T;
+    const y1 = side > 0 ? ARCH_INNER + SCREEN_T : -ARCH_INNER + 0.02;
+    const plate = profileY(screenOutline, y0, y1);
+    const holes = holeOutlines.map((pts) => profileY(pts, y0 - 0.5, y1 + 0.5));
+    return plate.subtract(union(holes));
+  });
+const printScreens = screenPair(
+  openings.map(({ a, b, floor, shoulder, apex }) => [...floor, [b, shoulder], [(a + b) / 2, apex], [a, shoulder]]),
+);
+const screens = screenPair(fields.map(({ outline }) => outline));
 
 // ---------- windverband ----------
 // Plattegrond: de diagonalen van knoop naar knoop over de twee bogen en de
@@ -496,6 +510,8 @@ const bracing = latticePrism.intersect(braceEnvelope);
 const braceKnee = NODES.map((x) => +(braceUnder(x, BY) - archBottom(x)).toFixed(2));
 
 const bridge = union([mainDeck, approachDeck, ...abutments, ...mainPiers, ...approachPiers, ...ribs, ...screens, bracing]);
+// De STL, die zonder export wordt geprint, houdt de spitse openingen.
+const printBridge = union([mainDeck, approachDeck, ...abutments, ...mainPiers, ...approachPiers, ...ribs, ...printScreens, bracing]);
 
 // ---------- monument ----------
 const monument = (() => {
@@ -560,11 +576,13 @@ const printFoot = loftX(
   }),
   "printvoet",
 );
-const printModel = union([bridge, printFoot, monument]);
+const printModel = union([printBridge, printFoot, monument]);
 
 // ---------- controles ----------
 // Ondervlakken die vlakker dan 45 graden hangen, boven de onderkant: in het
-// model alleen de onderkant van het dek, in de printversie niets.
+// model de onderkant van het dek en, boven de open velden, de onderkant van
+// de bogen en het windverband naast de hangers (dat vult de export op); in de
+// printbrug alleen de onderkant van het dek, in de printversie niets.
 function overhangs(solid) {
   const mesh = solid.getMesh();
   const v = mesh.vertProperties;
@@ -591,7 +609,7 @@ function overhangs(solid) {
   }
   return { area, deckArea, where };
 }
-for (const [name, solid] of [...wholeParts, ["print", printModel]]) {
+for (const [name, solid] of [...wholeParts, ["printbrug", printBridge], ["print", printModel]]) {
   if (solid.status() !== "NoError") throw new Error(`${name}: ${solid.status()}`);
   const bb = solid.boundingBox();
   if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
@@ -601,20 +619,23 @@ const checks = {};
   const model = overhangs(bridge);
   const mon = overhangs(monument);
   const print = overhangs(printModel);
+  const printDeck = overhangs(printBridge);
   checks.overhangM2 = {
     deck: Math.round(model.deckArea),
     other: +model.area.toFixed(2),
+    printBridgeOther: +printDeck.area.toFixed(2),
     monument: +(mon.area + mon.deckArea).toFixed(2),
     print: +(print.area + print.deckArea).toFixed(2),
   };
   console.log("vrij hangend (m2):", checks.overhangM2);
-  if (model.where.length) console.log("overhang op", model.where.slice(0, 20));
+  if (printDeck.where.length) console.log("printbrug: overhang op", printDeck.where.slice(0, 20));
   if (print.where.length) console.log("print: overhang op", print.where.slice(0, 20));
-  if (model.area > 0.5 || mon.area + mon.deckArea > 0.5) throw new Error("overhang buiten het dek");
+  if (printDeck.area > 0.5 || mon.area + mon.deckArea > 0.5) throw new Error("overhang buiten het dek");
   if (print.area + print.deckArea > 0.5) throw new Error("printversie heeft overhang");
-  // Het windverband moet tegen de bogen eindigen binnen het dichte deel van
-  // het hangerscherm rond elke hanger (de flanken van de openingen lopen
-  // onder 50 graden; de staaf raakt de boog over 0,9 m naast de knoop).
+  // Het windverband moet in de printversie tegen de bogen eindigen binnen het
+  // dichte deel van het hangerscherm rond elke hanger (de flanken van de
+  // openingen lopen onder 50 graden; de staaf raakt de boog over 0,9 m naast
+  // de knoop).
   const spandrel = NODES.map((x) => {
     const left = openings.find(({ b }) => Math.abs(b - (x - HANGER / 2)) < 1e-6);
     const right = openings.find(({ a }) => Math.abs(a - (x + HANGER / 2)) < 1e-6);
@@ -630,7 +651,8 @@ const checks = {};
   for (const { x, kneeBelowArch, solidBelowArch } of checks.braceKnee) {
     if (kneeBelowArch > solidBelowArch) throw new Error(`windverband bij x = ${x} hangt onder het dichte scherm`);
   }
-  checks.openings = openings.length;
+  checks.openFields = fields.length;
+  checks.printOpenings = openings.length;
   checks.minFlankDeg = 50;
 }
 
@@ -852,8 +874,9 @@ report.arch = {
   endNap: +archTopNap(ARCH.half).toFixed(2),
   hangers: NODES.length,
   nodesX: NODES.map((x) => +x.toFixed(2)),
-  openings: openings.length,
-  openingApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
+  openFields: fields.length,
+  printOpenings: openings.length,
+  printOpeningApexNap: openings.map(({ apex }) => +(apex + WATER_NAP).toFixed(1)),
   screenX: [+SCREEN_X0.toFixed(2), +SCREEN_X1.toFixed(2)],
 };
 report.checks = checks;
@@ -908,7 +931,7 @@ await writeFile(
         "L0004.3393bdd7958b42bc87d014025576d0b0",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Lek (z = 0, NAP +2,8 m) in de oorsprong, +X langs de brug naar het noorden (Schalkwijk, RD-richting 120,68 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Drie nodes. Node road:spoor: de bovenste 0,5 m van het dek op het BGT-wegdeel van de brug (spoorbaan L0004.fdf547dd99eb49ae993f3f716cf44ea0: over de boog de twee sporen tussen de bogen met een gat ertussen, daarbuiten tot 4,3 m en op het zuidelijke landhoofd 5,8 m naast de as) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; de bogen met het hangerscherm blijven constructie. Node building:kuilenburgse-spoorbrug: de rest van de stalen boogbrug van 1983 met het dek van 14 m breed over de hoofdoverspanning tussen de gemetselde rivierpijlers (x = -83,1 tot -73,4 en 73,8 tot 82,2, ronde koppen, zware kraag op NAP +9,0 m, blok en oplegbank), twee kokerbogen van 2 m breed 4,85 m naast de as met de top op NAP +42,8 m, de twaalf hangers om de 11,18 m als scherm met spitse openingen tegen het binnenvlak van de bogen, het windverband van kruisende diagonalen tussen de bogen; de betonnen kokerligger van 10,8 m breed en 4,0 m hoog over tien velden (43 en 61 m) op de oude pijlers met spitse koppen, kraag, betonnen blok en kop tot het noordelijke landhoofd (x = 592,2), en het gemetselde zuidelijke landhoofd vanaf x = -100,4; spoorstaaf NAP +17,3 tot +17,8 m en dalend tot +12,9 m. Node building:monument-oude-spoorbrug: het monument van 1983 op (-77,4, -26,95) met een stuk van de vakwerkligger uit 1868 op een kolom (BAG-pand 0216100000016391, top NAP +24,5 m). Bovenleiding, seinen, leuningen, looprails en de geribde afwerking van de kolom zijn weggelaten; de export vult onder het dek een wig met een smal scherm tot de onderplaat op, de STL heeft dezelfde printvoet. Het maaiveld wordt op de Lek naast de hoofdoverspanning en op de geul onder de aanbrug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de Lek (z = 0, NAP +2,8 m) in de oorsprong, +X langs de brug naar het noorden (Schalkwijk, RD-richting 120,68 graden vanaf het oosten) en +Y stroomafwaarts naar het westzuidwesten. Drie nodes. Node road:spoor: de bovenste 0,5 m van het dek op het BGT-wegdeel van de brug (spoorbaan L0004.fdf547dd99eb49ae993f3f716cf44ea0: over de boog de twee sporen tussen de bogen met een gat ertussen, daarbuiten tot 4,3 m en op het zuidelijke landhoofd 5,8 m naast de as) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; de bogen met het hangerscherm blijven constructie. Node building:kuilenburgse-spoorbrug: de rest van de stalen boogbrug van 1983 met het dek van 14 m breed over de hoofdoverspanning tussen de gemetselde rivierpijlers (x = -83,1 tot -73,4 en 73,8 tot 82,2, ronde koppen, zware kraag op NAP +9,0 m, blok en oplegbank), twee kokerbogen van 2 m breed 4,85 m naast de as met de top op NAP +42,8 m, de twaalf hangers om de 11,18 m als stijlen in een scherm tegen het binnenvlak van de bogen met de elf velden ertussen open tot onder de boog, het windverband van kruisende diagonalen tussen de bogen; de betonnen kokerligger van 10,8 m breed en 4,0 m hoog over tien velden (43 en 61 m) op de oude pijlers met spitse koppen, kraag, betonnen blok en kop tot het noordelijke landhoofd (x = 592,2), en het gemetselde zuidelijke landhoofd vanaf x = -100,4; spoorstaaf NAP +17,3 tot +17,8 m en dalend tot +12,9 m. Node building:monument-oude-spoorbrug: het monument van 1983 op (-77,4, -26,95) met een stuk van de vakwerkligger uit 1868 op een kolom (BAG-pand 0216100000016391, top NAP +24,5 m). Bovenleiding, seinen, leuningen, looprails en de geribde afwerking van de kolom zijn weggelaten; wat zonder steun niet print (de onderkant van de bogen en het windverband boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in het hangerscherm spitse openingen en dezelfde printvoet. Het maaiveld wordt op de Lek naast de hoofdoverspanning en op de geul onder de aanbrug bemonsterd; groundHeight is de laagste PDOK-hoogte daar. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

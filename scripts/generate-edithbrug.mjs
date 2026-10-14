@@ -287,11 +287,10 @@ const ARCHES = BEARINGS.slice(0, 4).map((b0, k) => {
 });
 const archGirderTop = (x) => rail(x) + ARCH_GIRDER.up;
 
-// Spitse openingen in het vlak tussen ligger en rib (in de STL overal, in het
-// model in de middelste velden): tussen twee hangers een opening met
-// verticale zijden en een spitse top met flanken van 50 graden onder de rib;
-// tussen de oplegging en de eerste hanger een driehoek met de top tegen de
-// hanger. Zo hangt boven het dek niets vrij.
+// Spitse openingen in het vlak tussen ligger en rib (alleen in de STL): tussen
+// twee hangers een opening met verticale zijden en een spitse top met flanken
+// van 50 graden onder de rib; tussen de oplegging en de eerste hanger een
+// driehoek met de top tegen de hanger. Zo hangt boven het dek niets vrij.
 function archOpenings(arch) {
   const holes = [];
   const apexes = [];
@@ -328,12 +327,10 @@ function archOpenings(arch) {
   }
   return { holes, apexes };
 }
-// Open velden (model): tussen twee hangers van de ligger tot de onderrand van
-// de rib, en tussen de oplegging en de eerste hanger van de ligger tot waar de
-// onderrand van de rib de ligger raakt. Velden in `pointed` houden de spitse
-// opening van archOpenings.
-function archOpeningsOpen(arch, pointed) {
-  const spitse = archOpenings(arch);
+// Open velden (model): alle twaalf velden, tussen twee hangers van de ligger
+// tot de onderrand van de rib, en tussen de oplegging en de eerste hanger van
+// de ligger tot waar de onderrand van de rib de ligger raakt.
+function archOpeningsOpen(arch) {
   const holes = [];
   const h = arch.hangers;
   const cells = [
@@ -341,14 +338,7 @@ function archOpeningsOpen(arch, pointed) {
     ...h.slice(0, -1).map((x, i) => [x + ARCH.hanger / 2, h[i + 1] - ARCH.hanger / 2]),
     [h[h.length - 1] + ARCH.hanger / 2, arch.x1],
   ];
-  cells.forEach(([a, b], i) => {
-    if (pointed.has(i)) {
-      for (const hole of spitse.holes) {
-        const xs = hole.map(([x]) => x);
-        if (Math.min(...xs) >= a - 1e-6 && Math.max(...xs) <= b + 1e-6) holes.push(hole);
-      }
-      return;
-    }
+  for (const [a, b] of cells) {
     const xs = [a, ...range(a, b, 0.25).slice(1, -1), b];
     const gap = (x) => arch.low(x) - archGirderTop(x);
     const top = [];
@@ -366,13 +356,13 @@ function archOpeningsOpen(arch, pointed) {
         top.push([x, archGirderTop(x)]);
       }
     }
-    if (top.length < 3) return;
+    if (top.length < 3) continue;
     const x0 = top[0][0];
     const x1 = top[top.length - 1][0];
     const bottom = range(x0, x1, 0.5).map((x) => [x, archGirderTop(x) - 0.01]);
     holes.push(bluntAcute([...bottom, ...[...top].reverse().filter(([, z], k, arr) => k === 0 || k === arr.length - 1 || z > 0)]));
-  });
-  return { holes, apexes: spitse.apexes };
+  }
+  return { holes };
 }
 
 // Eén boogoverspanning: twee verstijvingsliggers met verstijvers op de
@@ -384,7 +374,7 @@ function archSpan(arch, real = false) {
   // het stuk waar de rib boven de ligger uitkomt.
   const xs = range(x0, x1, 0.5).filter((x) => arch.top(x) > archGirderTop(x) + 0.02);
   const band = [...xs.map((x) => [x, rail(x)]), ...[...xs].reverse().map((x) => [x, arch.top(x)])];
-  const { holes, apexes } = real ? archOpeningsOpen(arch, POINTED_CELLS) : archOpenings(arch);
+  const { holes, apexes } = real ? archOpeningsOpen(arch) : archOpenings(arch);
   if (!real) {
     arch.apexes = apexes;
     arch.openings = holes.length;
@@ -539,13 +529,11 @@ const bearings = [
   ...bearing(DECK_X1 - 1.4, ABUT_N.topNap, PLATE_GIRDER.down, 1),
 ];
 
-// In het model zijn de twee velden aan elke oplegging, waar de rib steiler dan
-// circa 25 graden loopt, open tot de onderrand van de rib; die onderrand vult
-// de export op met een smalle band. In de acht middelste velden vulde de
-// export een open veld grotendeels dicht; die houden de spitse opening. De
-// STL, die zonder export wordt geprint, heeft in alle velden de spitse
-// openingen en de driehoeken van archOpenings.
-const POINTED_CELLS = new Set([2, 3, 4, 5, 6, 7, 8, 9]);
+// In het model zijn alle twaalf velden per boog open tot de onderrand van de
+// rib, zoals de echte brug. Wat daarvan zonder steun niet print (de onderrand
+// van de rib, onder de kruin bijna vlak), vult de export op; dat is de taak
+// van de export, niet van het model. De STL, die zonder export wordt geprint,
+// heeft in alle velden de spitse openingen en de driehoeken van archOpenings.
 const printArchSpans = ARCHES.map((arch) => archSpan(arch));
 const archSpans = ARCHES.map((arch) => archSpan(arch, true));
 const plateSpans = PLATE_SPANS.map(plateSpan);
@@ -836,7 +824,7 @@ await writeFile(
         "L0004.0eae333b21b242f6bf5da1efd6a50e4d",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste pijler op de waterspiegel van de Maas (z = 0, NAP +5,10 m) in de oorsprong, +X langs de brug naar het noordoosten (Niftrik, RD-richting 31,77 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts). Twee nodes. Node road:spoor: de bovenste 0,5 m van de dekplaat op het BGT-wegdeel spoorbaan van de brug (L0004.9833e744..., 2,9 m breed) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema op het dek werken. Node building:edithbrug: de rest van het kunstwerk van het zuidelijke landhoofd bij Ravenstein (x = -126,9) tot het noordelijke bij Niftrik (x = 214,4): vier gelijke stalen boogbruggen van circa 63 m met een verstijvingsligger, twee volle boogribben 2,8 m naast de as tot 11,07 m boven het spoor (NAP +26,1 m bij de eerste twee bogen), elk met elf platte hangers, de twee velden aan elke oplegging open tot onder de rib en spitse openingen in de acht middelste velden, verstijvers op de liggers, het windverband tussen de ribben (dwarsregels op de hangers, portalen en kruisende diagonalen); twee plaatliggerbruggen van circa 44 m over de uiterwaard met verstijvers; de dekplaat tussen de liggers en het looppad aan de westkant; vijf gemetselde pijlers met spitse koppen (BGT), plint en deklijst, aan de oostkant 10 m breder dan de brug, met oplegblokken; de twee landhoofden. Spoor op NAP +15,03 m over de eerste twee bogen, daarna dalend tot +13,25 m bij Niftrik. Bovenleiding, leuningen en de bordessen op de pijlers zijn weggelaten; wat zonder steun niet print (de onderrand van de rib boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op de Maas naast de eerste drie bogen bemonsterd; groundHeight is de PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de spooras in het hart van de middelste pijler op de waterspiegel van de Maas (z = 0, NAP +5,10 m) in de oorsprong, +X langs de brug naar het noordoosten (Niftrik, RD-richting 31,77 graden vanaf het oosten) en +Y naar het noordwesten (stroomafwaarts). Twee nodes. Node road:spoor: de bovenste 0,5 m van de dekplaat op het BGT-wegdeel spoorbaan van de brug (L0004.9833e744..., 2,9 m breed) met de attributen van dat wegdeel in extras.attributes (bgt_functie spoorbaan, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema op het dek werken. Node building:edithbrug: de rest van het kunstwerk van het zuidelijke landhoofd bij Ravenstein (x = -126,9) tot het noordelijke bij Niftrik (x = 214,4): vier gelijke stalen boogbruggen van circa 63 m met een verstijvingsligger, twee volle boogribben 2,8 m naast de as tot 11,07 m boven het spoor (NAP +26,1 m bij de eerste twee bogen), elk met elf platte hangers en alle twaalf velden open tot onder de rib, verstijvers op de liggers, het windverband tussen de ribben (dwarsregels op de hangers, portalen en kruisende diagonalen); twee plaatliggerbruggen van circa 44 m over de uiterwaard met verstijvers; de dekplaat tussen de liggers en het looppad aan de westkant; vijf gemetselde pijlers met spitse koppen (BGT), plint en deklijst, aan de oostkant 10 m breder dan de brug, met oplegblokken; de twee landhoofden. Spoor op NAP +15,03 m over de eerste twee bogen, daarna dalend tot +13,25 m bij Niftrik. Bovenleiding, leuningen en de bordessen op de pijlers zijn weggelaten; wat zonder steun niet print (de onderrand van de rib boven de open velden, het dek) vult de export op, onder het dek met een wig met een smal scherm tot de onderplaat. De STL heeft in elk veld een spitse opening en dezelfde printvoet. Het maaiveld wordt op de Maas naast de eerste drie bogen bemonsterd; groundHeight is de PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(ABUT_N.poly.reduce((m, [x]) => Math.max(m, x), -Infinity) - ABUT_S.poly.reduce((m, [x]) => Math.min(m, x), Infinity)).toFixed(1),

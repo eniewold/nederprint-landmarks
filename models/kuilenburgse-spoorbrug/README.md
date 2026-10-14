@@ -5,7 +5,7 @@ Bestanden:
 | Bestand | Inhoud |
 | --- | --- |
 | `kuilenburgse-spoorbrug.glb` | Catalogusbron in meters met drie nodes: `road:spoor`, de bovenste 0,5 m van het dek op het BGT-wegdeel van de brug (spoorbaan), met `extras.attributes` `bgt_functie` spoorbaan en `bgt_fysiekvoorkomen` gesloten verharding; `building:kuilenburgse-spoorbrug` met de rest van het stalen dek en de twee kokerbogen van de hoofdoverspanning (hangerscherm en windverband), de betonnen aanbrug, de gemetselde pijlers met betonnen koppen en de twee landhoofden, en node `building:monument-oude-spoorbrug` met het monument van 1983 (stuk van de vakwerkligger uit 1868 op een kolom) |
-| `kuilenburgse-spoorbrug-1-2000.stl` | De brug (constructie en spoor samen) en het monument op 1:2000 met een printvoet onder het dek, met de onderkant (0,8 m onder de waterspiegel) op het printbed (346 × 22 × 20 mm) |
+| `kuilenburgse-spoorbrug-1-2000.stl` | De brug (constructie en spoor samen) en het monument op 1:2000 met spitse openingen in het hangerscherm en een printvoet onder het dek als printvormen, met de onderkant (0,8 m onder de waterspiegel) op het printbed (346 × 22 × 20 mm) |
 | `kuilenburgse-spoorbrug.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, het vervangen BAG-pand, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (143059,41, 441367,07) (WGS84
@@ -50,15 +50,15 @@ Onderdelen in het model (hoogtes in NAP):
   aan de buitenkant.
 - Twaalf hangers per boog op de knopen van het windverband (om de 11,18 m,
   x = -61,5 tot 61,5) als stijlen van 1,0 m in een scherm van 1,0 m dik tegen
-  het binnenvlak van de boog, met elf spitse openingen per boog (flanken van
-  50 graden, toppen van +26,9 tot +39,8 m). Tussen de laatste hanger en de
-  oplegging is het scherm dicht, zoals de koker daar op de foto's een diepe
-  plaat wordt.
+  het binnenvlak van de boog. De elf velden tussen de hangers zijn open van
+  het dek tot de onderkant van de boog, zoals in het echt. Tussen de laatste
+  hanger en de oplegging is het scherm dicht, zoals de koker daar op de
+  foto's een diepe plaat wordt.
 - Het windverband tussen de bogen (AHN, luchtfoto): kruisende diagonalen van
   1,0 m in elf velden met een eindregel van 1,5 m aan beide kanten, 0,4 m
   onder de bovenkant van de boog en in het midden 0,9 m dik; de onderkant
-  loopt onder 47 graden naar de bogen en eindigt bij elke hanger binnen het
-  dichte deel van het scherm.
+  loopt onder 47 graden naar de bogen; in de STL eindigt ze bij elke hanger
+  binnen het dichte deel van het scherm.
 - De betonnen kokerligger van de aanbrug over tien velden (43,1, 42,6, 61,5,
   61,0, 61,2, 61,1, 60,9, 61,0 en 60,0 m), 10,8 m breed (BGT), 4,0 m hoog
   vanaf de spoorstaaf met een kraaglijst van 0,6 m en een afgeschuinde
@@ -100,7 +100,7 @@ Onderdelen in het model (hoogtes in NAP):
   verlengd, zodat daar geen smalle reep constructie blijft staan. De strook
   loopt over dezelfde loftstations als het dek, van 0,5 m onder tot 1 m boven
   de spoorstaaf; spoor = strook ∩ brug, constructie = brug − strook (samen
-  45.272 m³: constructie 42.782, spoor 2.489). Het script controleert dat de
+  44.592 m³: constructie 42.103, spoor 2.489). Het script controleert dat de
   volumes optellen; er liggen geen samenvallende bovenvlakken van de nodes op
   het dek. Het spoor wordt pas na het printmodel uit de brug gesneden; de STL
   is ongewijzigd.
@@ -116,7 +116,7 @@ spoortalud achter de landhoofden (zit in het PDOK-terrein).
 Vergelijking met de PDOK-reconstructie (`?landmarks=0`): daar is de brug een
 vlakke grijze strook op het water zonder boog en zonder pijlers, en het
 monument een grijs blok tot NAP +26,5 m. Het model heeft van oost en west de
-boog met de hangers en spitse openingen, het windverband tussen de bogen en de
+boog met de hangers en de open velden, het windverband tussen de bogen en de
 diepe eindplaten, van noord en zuid de twee bogen met het windverband
 ertussen, en van alle kanten de gemetselde pijlers met kragen en betonnen
 koppen, de kokerligger van de aanbrug met kraaglijst en het monument met het
@@ -128,27 +128,33 @@ booglijnen (mediaan: AHN 0,48 m hoger, door de looprail en leuning op de
 boog). De spoorstaaf van de aanbrug wijkt per 10 m hoogstens 0,15 m af van
 het 75e percentiel van het DSM.
 
-Printbaarheid op 1:1000: de hangers zijn een scherm met spitse openingen
-(50 graden) tot onder de boog, de boog heeft een afgeschuinde onderrand en
-het windverband een onderkant van 47 graden die bij elke hanger in het dichte
-deel van het scherm eindigt (het script controleert dat per knoop: de staaf
-hangt 2,0 tot 2,5 m onder de boog, het scherm is daar 2,9 tot 5,5 m dicht).
-Kragen, pijlerkoppen en het monument kragen onder 50 graden uit. Alleen de
-onderkant van het dek (5815 m²) hangt vrij; het script controleert dat er
-verder niets naar beneden wijst (0 m² in de brug, 0,02 m² in het monument en
-de printversie), dat alles op dezelfde onderkant begint en dat elke node een
-gesloten manifold is (genus 58, 5 en 1 voor het spoor). Printcheck op 1:1000 met een uitsnede
-van 300 m rond de hoofdoverspanning en het monument: status NoError voor
-alle drie de nodes, 60 s; de constructie van 50,2 naar 33,9 cm³ ten opzichte
-van de rechte opvulling (-32,5 %), het spoor 0,8 cm³ en het monument 0,3 cm³
-zonder eigen opvulling (`extraPct` 0), samen 35,0 cm³ zoals voor de
-opsplitsing; onder het dek komt een wig met een smal scherm tot de
-onderplaat, de openingen in het hangerscherm en het windverband blijven open.
-Het hele model past op 1:1000 niet in 400 mm; in een uitsnede van 633 m
-(1:1582) gaat het ook als gesloten solid door (NoError, 15 s): de constructie
-van 23,5 naar 17,6 cm³ (-25,2 %), het spoor 0,6 cm³ en het monument 0,07 cm³
-met `extraPct` 0. De STL op 1:2000 heeft
-dezelfde printvoet (wig van 50 graden en een scherm van 0,9 m).
+Printbaarheid op 1:1000: het model is open zoals de echte brug; de velden
+tussen de hangers lopen door tot de onderkant van de boog. Wat zonder steun
+niet print, laat het model aan de export over: de onderkant van het dek
+(5815 m²) en boven de open velden de onderkant van de bogen en het
+windverband naast de hangers (230 m²). De boog heeft een afgeschuinde
+onderrand, het windverband een onderkant van 47 graden; kragen,
+pijlerkoppen en het monument kragen onder 50 graden uit. Alles begint op
+dezelfde onderkant en elke node is een gesloten manifold (genus 58, 5 en 1
+voor het spoor). In de meettest van de webshop (`scripts/overhang-lab`, het
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 44,9 naar
+67,3 cm³ (v1.0: 68,6 cm³), zonder ongedragen lagen waar een printlijn in
+past, in 169 s; het vorige model met spitse openingen kwam op 65,3 cm³. Onder
+het dek komt een wig met een smal scherm tot de onderplaat. In de twee
+buitenste velden aan elke kant, waar de boog steil loopt, blijft het veld
+grotendeels open met een smalle band onder de boog; de zeven middelste
+velden vult de export grotendeels dicht, in het kruinveld met een spitse
+opening. Het model blijft open: dichtzetten voor de print is de taak van de
+export. Het hele model past op 1:1000 niet in 400 mm.
+
+De STL op 1:2000, die zonder export wordt geprint, heeft printvormen: in het
+hangerscherm elf spitse openingen per boog (flanken van 50 graden, toppen van
++26,9 tot +39,8 m), het windverband eindigt bij elke hanger in het dichte
+deel van het scherm (het script controleert dat per knoop: de staaf hangt
+2,0 tot 2,5 m onder de boog, het scherm is daar 2,9 tot 5,5 m dicht), en
+onder het dek een printvoet (wig van 50 graden en een scherm van 0,9 m); het
+script controleert dat er verder niets naar beneden wijst (0,02 m² in het
+monument en de printversie). Ze is ongewijzigd.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Kuilenburgse_spoorbrug)
 (stalen boogbrug, hoofdoverspanning 155 m, lengte 667 m, breedte 10 m,

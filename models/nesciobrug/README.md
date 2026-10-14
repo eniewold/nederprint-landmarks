@@ -51,10 +51,10 @@ Onderdelen in het model (hoogtes in NAP):
   kabel naar de zuidoostrand van het fietsdek: de hangers hangen aan de
   dekrand, en omdat het fietsdek onder de kabel door zwaait, staan ze tot 21
   graden schuin (foto's: oren aan de buitenrand van het gebogen fietsdek).
-  Twaalf velden van 6,96 m per helft met staanders van 0,9 m en 24 openingen
-  met een vlakke onderkant 0,4 m boven het dek, staande zijden en een spitse
-  top (55 graden) 0,3 m onder de kabelband; in het midden, waar het scherm
-  maar 4 m hoog is, zijn het driehoeken.
+  Twaalf velden van 6,96 m per helft met staanders van 0,9 m. Alle 24
+  velden zijn open, zoals in het echt: van een dorpel 0,4 m boven het dek
+  tot de onderkant van de kabelband, die haaks op de kabel 0,9 m dik blijft;
+  in het midden is een veld 3,2 m hoog, naast de pylonen 21,5 m.
 - Vier tuien van 0,9 m van de pylontop (+35,3 m): één naar de
   noordwestrand van het fietsdek bij het zware steunpunt op de lus en de
   helling (BGT 1,27 en 1,55 m² op x = ±107,6) en één naar het eind van het
@@ -90,17 +90,19 @@ de BGT-contour van 0,5 m onder tot 1 m boven het wegdek (dezelfde
 hoogtefunctie als het dek); het hangerscherm, de tuien en de pylonen blijven
 met 2 cm marge constructie, de trapstrook blijft 2 cm binnen de wanden van de
 trapgoot en volgt de trapvloer. De volumes tellen op tot die van de brug als
-geheel (constructie 5090 m³, fietspad 1448 m³, voetpad 272 m³, de trappen 4 en
-4 m³, samen 6818 m³). Verticale stralen over het hele dek (30000 punten,
+geheel (constructie 4767 m³, fietspad 1448 m³, voetpad 272 m³, de trappen 4 en
+4 m³, samen 6496 m³). Verticale stralen over het hele dek (30000 punten,
 `zfight.py`) vinden geen samenvallende bovenvlakken tussen de onderdelen;
 alleen één punt in de constructie op de scherpe rand waar de top van een
-opening het schuine hangerscherm snijdt. De STL is ongewijzigd: het hele
+opening het schuine hangerscherm snijdt (gemeten aan de versie met spitse
+openingen; het dek en de wegdelen zijn gelijk gebleven). De STL is ongewijzigd: het hele
 brugmodel in één stuk.
 
 Wat er niet in zit: het hekwerk langs dek en trappen (open gaas tussen
 staanders, dunner dan 0,9 m), de lantaarns, de oren van de hangers onder de
 dekrand, het knooppunt met het ronde gat onder de splitsing, de kabel zelf
-(circa 0,15 m) en de hangers (circa 0,05 m), die het scherm met openingen zijn,
+(circa 0,15 m) en de hangers (circa 0,05 m), die als kabelband en staanders van
+0,9 m in het scherm zitten,
 en de treden (0,17 m; de trap is een helling). De ovale trap is in het echt
 een open stalen kooi; hier is het een gesloten blok met een rug onder het
 voetdek en twee dalende trapgoten.
@@ -117,26 +119,34 @@ het model liggen. De kabel ligt binnen 0,4 m van de DSM-punten op de kabel
 +35,8 m ligt boven het hoogste DSM-punt (+34,8 m, de buis is te dun voor een
 volle cel).
 
-Printbaarheid op 1:1000: het dek zweeft 9 tot 12 m boven het kanaal en de
-oevers en hangt aan het scherm, dus zonder steun is het niet te printen. Het
-hangerscherm staat op het dek en loopt in de vlakken van de hangers hooguit 21
-graden uit het lood; de openingen hebben een spitse top van 55 graden, de
-kabelband draagt zichzelf. De tuien lopen onder 47,7 en 50,4 graden (de
+Printbaarheid op 1:1000: het model is open zoals de echte brug; alle 24
+velden tussen de hangers lopen door tot onder de kabelband. Het dek zweeft 9
+tot 12 m boven het kanaal en de oevers en hangt aan het scherm, dus zonder
+steun is het niet te printen. Het hangerscherm staat op het dek en loopt in
+de vlakken van de hangers hooguit 21 graden uit het lood; kabelband en
+staanders zijn 0,9 m. De tuien lopen onder 47,7 en 50,4 graden (de
 fietsdektui is daarvoor 4,6 m naar de pylon geschoven); pylonen (1,0 tot
 1,8 m), kolommen (0,91 m), trapwangen (0,9 m) en de rug van de trap zijn dik
-genoeg. Alleen de onderkant van dek (4218 m²), de voet van scherm en tuien in
-het dek hangen over; in de printversie met voet blijven alleen de randen van
-0,8 m naast de kern over (1445 m², op 1:2500 een richel van 0,3 mm). In de
-printcontrole gaat het model met overhangopvulling door: hele model (uitsnede
-560 m, op 1:1400 omdat 1:1000 niet in 400 mm past) status NoError voor alle
-onderdelen, constructie 13,3 naar 6,1 cm³ (-54 % tegen de verticale
-opvulling), fietspad, voetpad en trappen zonder eigen opvulling (`extraPct`
-0,2, 0,3, 0 en 0), 21,6 s; de hoofdoverspanning op 1:1000 (uitsnede 270 m)
-idem, constructie 19,5 naar 10,3 cm³ (-47 %). Onder dek, lus en helling komt
-een wig met een smal scherm tot de onderplaat; de openingen in het
-hangerscherm blijven open. De STL op 1:2500 heeft dezelfde soort printvoet
+genoeg. Wat zonder steun niet print, laat het model aan de export over: de
+onderkant van het dek (4218 m²), de onderkant van de kabelband boven de open
+velden en de voet van scherm en tuien in het dek (scherm 298 m², tuien
+1,1 m²). In de meettest van de webshop (`scripts/overhang-lab`, het model op
+1:1000) gaat het volume met "Ondersteuning v2.0" van 6,50 naar 17,42 cm³
+(v1.0: 17,42 cm³), zonder ongedragen lagen waar een printlijn in past, in
+297 s; het vorige model met spitse openingen kwam op 15,61 cm³. Met de open
+velden lukten de openingen van v2.0 na drie rondes niet overal, zodat de
+export voor het hele model terugvalt op opvullen zonder openingen (precies
+het volume van v1.0): alle 24 velden worden dicht opgevuld, en naast de
+pylonen, waar het scherm schuin buiten de dekrand hangt, zet de export onder
+de kabelband wanden tot de onderplaat. Onder dek, lus en helling komt een
+wig met een smal scherm tot de onderplaat. Het model blijft open:
+dichtzetten voor de print is de taak van de export. De STL op 1:2500, die
+zonder export wordt geprint, heeft printvormen: in het scherm 24 openingen
+met een vlakke onderkant 0,4 m boven het dek, staande zijden en een spitse
+top (55 graden) 0,3 m onder de kabelband (in het midden driehoeken), zodat
+het scherm de kabelband zonder steun draagt, en onder het dek een printvoet
 (wig van 50 graden vanaf de kern en een scherm van 0,9 m onder de fietsas en
-de losse stukken voetdek); op die schaal zijn scherm, tuien en kolommen 0,36
+de losse stukken voetdek); ze is ongewijzigd. Op die schaal zijn scherm, tuien en kolommen 0,36
 tot 0,38 mm, dus alleen geschikt voor een fijne nozzle. PDOK tekent de
 BGT-wegdelen van de brug als een vlakke weg op het maaiveld en over het water;
 die strook blijft onder de brug zichtbaar.
