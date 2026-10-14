@@ -1,0 +1,60 @@
+{
+  "name": "De Coopvaert",
+  "file": "coopvaert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92843,
+    436976
+  ],
+  "xAxis": [
+    0.9614725680858853,
+    0.2749008927201447
+  ],
+  "groundHeight": 47.69469135,
+  "groundNap": 4.1,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -17,
+      0
+    ],
+    [
+      0,
+      23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000432858",
+    "NL.IMBAG.Pand.0599100000753476"
+  ],
+  "description": "Gehele De Coopvaert met drie doorlopende gevelvleugels, witte marmerkroon, blinde erker- en venstervelden, drie hoge Blaak-kolommen, lage plint, eigen overdekte luchtbrug en complete garage Wijnstraat 100. BAG/3D BAG/AHN meten contouren, daken en luchtbrug. Fasadiritme, kolombreedte, printkapitelen, kroonvereenvoudiging en brugonderzijde zijn fotoschattingen. De historische Incassobank blijft behouden. Bouwdelen uit continue vlakken, geen gestapelde hoogtekaartlagen. Z=NAP-4.10 m.",
+  "realWorld": {
+    "groundNapM": 4.1,
+    "lowerWingRoofNapM": 95.136,
+    "westWingRoofNapM": 101.136,
+    "eastWingRoofNapM": 101.222,
+    "centralRoofNapM": 104.161,
+    "topMachineNapM": 109.394,
+    "columnHeightM": 30,
+    "bridgeTopNapM": 11.35,
+    "parkingRoofWestNapM": 32.17,
+    "parkingRoofEastNapM": 33.457,
+    "parkingTopNapM": 36.122,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000432858 en eigen garage 0599100000753476, volledige contouren EPSG:28992",
+    "PDOK Locatieserver Wijnstraat 100: RD 92862.41/436952.85; 3D BAG LoD 2.2 van beide panden",
+    "PDOK AHN DSM/DTM 0.5 m: daken, maaiveld en luchtbrug tot NAP 11.2-11.3 m; actuele orthoHR",
+    "PDOK 3D Basisvoorziening maaiveld 47.6947/47.4135 m ellipsoidisch",
+    "https://damenpartners.com/projecten/de-coopvaert/ (architect: marmerkroon, erkers en drie 30 m-kolommen, publiek zoekfragment)",
+    "https://de-coopvaert.nl/ (VvE: gehele complex, garage Wijnstraat en overdekte luchtbrug)",
+    "https://www.loveld.com/en/references/gritblasted-concrete/de-coopvaert/ (betongevelleverancier, vier schuine fotos)",
+    "https://www.zonneveld.com/nl/projecten/Coopvaert-Rotterdam (constructeur, entreefoto)"
+  ],
+  "printFiles": [
+    "coopvaert-1-1000.stl"
+  ]
+}
