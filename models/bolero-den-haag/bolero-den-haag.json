@@ -1,0 +1,82 @@
+{
+  "name": "Bolero",
+  "file": "bolero-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81795,
+    454860
+  ],
+  "xAxis": [
+    0.7557391838264477,
+    0.654872725061393
+  ],
+  "groundHeight": 44.11613,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -9.973631307157016,
+      -19.144886485662365
+    ],
+    [
+      -16.22279620912163,
+      8.764752315799285
+    ],
+    [
+      27.20509210392919,
+      -3.7259849190153247
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001756999",
+    "NL.IMBAG.Pand.0518100001754313"
+  ],
+  "description": "Bolero met twee visuele schijven, centrale verdiepte loggiastroken en zijloggias, penthouseband, doorlopende stenen kroonribben, gemeten dakmachines en gehele dubbelhoge eigen plint; Amare behouden als eenvoudige gemeten dakvolumes omdat PDOK er twee89m spookkolommen van Bolero aan toeschrijft. Adagio,Turfmarktgarage en nieuw los entreehuis blijven apart.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "axisDegrees": 40.91,
+    "mainRoofNapM": 86.205,
+    "parapetNapM": 87.1,
+    "crownRibsNapM": 87.4,
+    "sideTerracesNapM": [
+      82.932,
+      82.913
+    ],
+    "plantNapM": [
+      89.948,
+      89.378
+    ],
+    "plinthNapM": 10.65,
+    "amareRoofNapM": [
+      28.645,
+      40.44,
+      41.06,
+      42.725
+    ],
+    "estimates": [
+      "Toren-as40.91graden en volledigevoet uit BAG/ortho; grillige3DBAGrand geregulariseerd tot rechte schijven, grotedaken86.205/82.932/82.913NAP gemeten; AHN5 dakmachinesp9089.88 en ortho ondersteunen huidigehoogte",
+      "Twee visuele schijven door centrale6m brede1.2m verdiepte loggias met3.04m laagritme/2.15m hoogte; zijloggias tot.95-1m diepeblinde nissen, geen uitkragende balkonlagen",
+      "Woonraamgrid3.8m pitch/2.3x2.05m/.4m blind,1.5m dikke piers, kroonribben.95m breed tot87.4NAP en penthouseband82.95-85.3NAP uit gevelbeelden geschat circa1-2m",
+      "Dubbelhoge10m plint/arcade gesloten met.6m blinde puien9.8NAP; stadsbalkon en expeditiestraat op eigen/BAGcontour behouden zonder openbare pleinplaat",
+      "PDOK-Amare0518100001754313 bevat naast echte40-43NAP bouwdelen twee spookschijven op87-89NAP van Bolero; volledigebuur behouden als eenvoudige gemeten3DBAGdakprismas, fijn gevelframe/atriumglas niet gedetailleerd; Spuigarage0518100001774714 wordt al door het bestaandeStadhuis-model vervangen",
+      "Dunne balustrades, roedes en open arcade vereenvoudigd tot gesloten delen; dakmachines op89.948/89.378NAP gemeten, kleine techniek circa.5m geschat"
+    ]
+  },
+  "sources": [
+    "https://www.klunderarchitecten.nl/klunder_portfolio/sonate-den-haag/ (architect2022,188woningen,Bolero/Cantate apart)",
+    "https://www.boele.nl/nl/nieuws/oplevering-woontoren-bolero (aannemer,19sept2022,actuelegevels enplint)",
+    "https://www.westo.nl/nl/projecten/sonate-bolero (prefabgevelproducent,10mplint/inpandigeloggiavorm)",
+    "https://stedenbouw.nl/woningbouw-en-utiliteitsbouw/bolero-als-haagse-blikvanger/ (interviewarchitect:loggias,tweeschijven,penthousebalkon,10mplint)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001756999 (TU Delft/3DGI CC BY4.0,AHN5)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001754313 (Amare,CCBY4.0,echte28-43NAP dakdelen zonderspookkolommen)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://www.ahn.nl/ahn5 (AHN5DSM2023 CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "Boele&VanEesteren:fotosoplevering2022©,alleenvisuelereferentie buitenrepo; geenbeeldtextures inmodel"
+  ],
+  "printFiles": [
+    "bolero-den-haag-1-1000.stl",
+    "bolero-den-haag-grondplaat-1-1000.stl"
+  ]
+}
