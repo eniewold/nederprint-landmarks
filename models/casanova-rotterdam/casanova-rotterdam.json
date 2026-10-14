@@ -1,0 +1,56 @@
+{
+  "name": "CasaNova",
+  "file": "casanova-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93092,
+    437006
+  ],
+  "xAxis": [
+    0.966433363887945,
+    0.25691740533531565
+  ],
+  "groundHeight": 45.97028124,
+  "groundNap": 2.54,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -31.2813,
+      -32.0387
+    ],
+    [
+      3.4371,
+      -29.8862
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100018533"
+  ],
+  "description": "Gehele eigen BAG-voetafdruk met terugliggende glasplint, drie echte gevouwen galerijvloeren, dakgardenbedden, driehoekige toren en continu versmallende voet. Dakranden uit 3D BAG/AHN5 2023; z=NAP-2.54 m, lokale X langs de noordelijke torengevel (14.887 graden). Vensters, loggia’s, taperhoogte, plintpuien en galerijvouwen zijn uit schuine foto’s geschat en voor 1:1000 vereenvoudigd; The Muse blijft PDOK.",
+  "realWorld": {
+    "podiumRoofNapM": 19.38,
+    "taperTopNapM": 31.9,
+    "towerRoofNapM": 111.489,
+    "crownTopNapM": 112.48,
+    "machineTopNapM": 113.71,
+    "groundNapM": 2.54,
+    "facadeBaysPerSide": 9,
+    "blindWindowDepthM": 0.34,
+    "blindLoggiaDepthM": 0.72,
+    "photoEstimatedNeckScale": 0.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100018533",
+    "PDOK BAG 0599100100018533 EPSG:28992, actuele contour",
+    "PDOK AHN5 DSM 0.5 m (2023); PDOK AHN DTM 0.5 m en actuele orthoHR",
+    "PDOK 3D Basisvoorziening: maaiveld op Wijnhaven 45.9703/46.0340 m ellipsoïdisch",
+    "https://barcodearchitects.com/projects/casanova/ (schuine foto’s Hans Wilschut, uitsluitend visuele referentie; maten uit open data)",
+    "https://commons.wikimedia.org/wiki/File:CasaNova_Rotterdam.jpg Dinx, CC BY-SA 4.0",
+    "https://nl.wikipedia.org/wiki/CasaNova_(Rotterdam)"
+  ],
+  "printFiles": [
+    "casanova-rotterdam-1-1000.stl"
+  ]
+}
