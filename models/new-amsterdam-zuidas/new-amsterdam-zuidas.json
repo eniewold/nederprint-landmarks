@@ -1,0 +1,69 @@
+{
+  "name": "New Amsterdam",
+  "file": "new-amsterdam-zuidas.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119827,
+    483374
+  ],
+  "xAxis": [
+    -0.05651853448202428,
+    0.998401550108975
+  ],
+  "groundNap": -0.9103999733924866,
+  "groundHeight": 42.13835608911476,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -47.92327,
+      2.71289
+    ],
+    [
+      -0.92323,
+      -34.00217
+    ],
+    [
+      12.13172,
+      37.37407
+    ],
+    [
+      37.93926,
+      -2.1477
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012104198"
+  ],
+  "description": "New Amsterdam in Mahler 4: hoge en lagere woonvleugel, hele winkel-/recreatieplint op NAP circa 8.207/8.1405 m, hoofddak 88.1105 m, echte ronde penthouse-terrassen rond 84.6385/81.3355/77.925 m, lage vleugel 60.878 m en dakmachines 90.3825/63.8605 m. As 93.24 graden volgt de gemeten lange hoofdgevel, de plint heeft zijn eigen polygonale plan. Ronde penthouse-einden zijn kwadratische planbogen uit de gemeten uitersten en schuine fotos; de echte vlakke dakterrassen zijn afzonderlijke doorlopende bouwdelen, geen gestapelde DSM-lagen. Regelmatige blinde glasvelden van 0.35 m, verticale balkonstrips van 0.65 m en gesloten winkelentrees; gevelverdeling, terrasafronding en balkonpatroon vereenvoudigd op 1:1000. Alleen het eigen woonpand wordt vervangen, aangrenzende kantoren blijven PDOK.",
+  "realWorld": {
+    "groundNapM": -0.9103999733924866,
+    "mainRoofNapM": 88.1105,
+    "mainRoofPlantNapM": 90.3825,
+    "lowerWingRoofNapM": 60.878,
+    "lowerRoofPlantNapM": 63.8605,
+    "shopPlinthRoofNapM": 8.207,
+    "flatPenthouseTerraceNapM": [
+      84.6385,
+      81.3355,
+      77.925
+    ],
+    "facadeAngleDegrees": 93.24,
+    "estimatedPenthouseCurve": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012104198, 3D BAG LoD2.2, AHN DSM/DTM 0.5 m en actuele orthoHR: eigen gehele voet, dakvlakken, verschillende woonvleugels, echte penthouse-terrassen, plint en machines; 2026-10-15",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012104198",
+    "https://www.cie.nl/page/778/new-amsterdam (architect: woongebouw Mahler 4, 194 appartementen, 23 verdiepingen, 3.6 m verdiepingshoogte, acht meter hoge plint, balkonstrips en afgeronde penthouses; fotos alleen onderzoeksreferentie)",
+    "https://commons.wikimedia.org/wiki/File:Gebouw_New_Amsterdam.jpg (Choinowski, CC0, 2012: schuine zuidkant met penthouse-terrassen en balkonstrips)",
+    "https://commons.wikimedia.org/wiki/File:New_Amsterdam_-_Flickr_-_Rob_Oo.jpg (Rob Oo, CC BY 2.0, gevelreflectie als referentie)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Mahler_33.jpg (CC BY-SA 4.0, noordelijke straat-/plintzijde, geen fotos meegeleverd)",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Gershwin_12.jpg (CC BY-SA 4.0, schuine zuidkant en afgeronde penthousekoppen)",
+    "https://www.breeam.nl/projecten/new-amsterdam-11139-29083 (Vesteda-portfoliocertificering, Gustav Mahlerlaan 60 A)"
+  ],
+  "printFiles": [
+    "new-amsterdam-zuidas-1-1000.stl"
+  ]
+}
