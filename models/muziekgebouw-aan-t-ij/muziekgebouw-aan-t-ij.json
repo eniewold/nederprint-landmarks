@@ -30,7 +30,7 @@
   "replacesBuildings": [
     "NL.IMBAG.Pand.0363100012118833"
   ],
-  "description": "Muziekgebouw met glazen foyer, 19 m dakluifel met gesloten 45-graden onderzijde, Bimhuis op schuin voetvolume, restaurantplint, entreetrappen, glasnissen, daklijst en installaties. Behoudt hotel- en verbindingsvolumes van hetzelfde BAG-pand uit dakvlakken; geen afzonderlijk nieuw skyline-model. +X RD -16,2 graden, z=0 NAP +1,0 m; diepe voet -1,5 m aan de kade.",
+  "description": "Muziekgebouw met glazen foyer, 19 m dakluifel met gesloten 45-graden onderzijde, Bimhuis op schuin voetvolume, restaurantplint, entreetrappen, glasnissen, daklijst en installaties. Behoudt de verbindingsvolumes tot lokale X=40.5; het hotel staat apart in movenpick-amsterdam zonder overlappend volume. +X RD -16,2 graden, z=0 NAP +1,0 m; diepe voet -1,5 m aan de kade.",
   "realWorld": {
     "groundNapM": 1,
     "mainRoofNapM": 26.34,
@@ -38,7 +38,7 @@
     "bimhuisRoofNapM": 21.35,
     "bimhuisUndersideEstimatedNapM": 8.1,
     "canopyProjectionM": 19.27,
-    "preservedHotelTopNapM": 71.26
+    "sharedHotelBoundaryLocalXM": 40.5
   },
   "sources": [
     "PDOK BAG/BGT 0363100012118833, AHN DSM/DTM 0,5 m en ortho, 11 oktober 2026",
