@@ -20,17 +20,19 @@ is geen BAG-pand, dus `replacesBuildings` blijft leeg.
 
 De export laat delen smaller dan 0,8 mm niet dragen; op 1:1000 is dat 0,8 m
 op ware grootte. Daarom ontbreken de leuningen, zijn staanders en stangen
-minstens 0,9 m dik en is elk paar balansen één dichte plaat. Wat zonder steun
+minstens 0,9 m dik, net als de balken van de balansen. Wat zonder steun
 niet print, is zoals het is en laat het model aan de export over: de open
-bogen, de doorvaart onder de kleppen, de rondbogen in de portalen en het vrij
-hangende achtereinde van de balansen. De bogen en de doorvaart liggen zo dicht
-op het water dat schoren de vloer zouden raken, dus "Ondersteuning v1.0" en
-"v2.0" vullen ze allebei grotendeels op; in de meettest van de webshop
-(`scripts/overhang-lab`, het model op 1:1000) gaat het volume van 1,31 naar
-2,54 cm³ (v1.0: 2,59 cm³), zonder ongedragen lagen. De STL op 1:300, die zonder export wordt
-geprint, heeft printvormen: blinde bogen van 0,4 m diep, een dichte onderbouw
-onder de kleppen, rondbogen met een spitse top van 50 graden in de portalen en
-steunen van 0,9 m onder het achtereinde van de balansen; ze is ongewijzigd.
+bogen, de doorvaart onder de kleppen, de rondbogen in de portalen en de open
+balansen met hun vrij hangende achtereinde. De bogen en de doorvaart liggen zo
+dicht op het water dat schoren de vloer zouden raken, dus "Ondersteuning v1.0"
+en "v2.0" vullen ze allebei grotendeels op; in de meettest van de webshop
+(`scripts/overhang-lab`, het model op 1:1000) gaat het volume van 1,26 naar
+2,57 cm³ (v1.0 ook 2,57 cm³), zonder ongedragen lagen. Onder de balken van de
+balansen zet de export nog een scherm tot het dek. De STL op 1:300, die zonder
+export wordt geprint, heeft printvormen: blinde bogen van 0,4 m diep, een
+dichte onderbouw onder de kleppen, rondbogen met een spitse top van 50 graden
+in de portalen, per balans één dichte plaat en steunen van 0,9 m onder het
+achtereinde van de balansen; ze is ongewijzigd.
 
 Onderdelen in het model (hoogtes boven de waterspiegel):
 
@@ -60,7 +62,7 @@ Onderdelen in het model (hoogtes boven de waterspiegel):
   blijven met 2 cm vrij constructie. `building:brug` is de vaste
   brug onder het wegdek, `building:ophaalbrug` de kleppen onder het wegdek
   met het mechanisme hieronder. Samen vormen de vier onderdelen precies de
-  brug als geheel (1307,0 m³, geen overlap).
+  brug als geheel (1260,3 m³, geen overlap).
 - Onderbouw tot 0,8 m onder water met acht open segmentbogen dwars door de
   brug: per zijde vier vaste overspanningen van 6,5 m tussen de pijlers van
   1,5 m (de buitenste 6 m tot een eindwand van 0,5 m), kruin 0,9 m onder het
@@ -68,10 +70,14 @@ Onderdelen in het model (hoogtes boven de waterspiegel):
 - Twee portalen (galgen) op de middenpijlers: 6,9 m breed, 1 m diep, met
   staanders van 1 × 1 m en een opening over het looppad als rondboog, kap tot
   9,8 m.
-- Per portaal één balansplaat van 6,1 × 12 m en 0,6 m dik, die met 1:6,7 naar
-  het midden oploopt tot 11,2 m, met een ballastkist van 2,8 × 6,2 × 1,1 m
-  achteraan en twee hangstangen van 0,9 m naar de voorkant van de klep; het
-  achtereinde hangt vrij, zoals in werkelijkheid.
+- Per portaal een balans van twee losse balken van 12 m, die met 1:6,7 naar
+  het midden oplopen tot 11,2 m, met de buitenkant 3,05 m uit de as (AHN:
+  twee stroken van circa 1 m op 2 tot 3 m uit de as, open ertussen). De echte
+  balken zijn circa 0,6 m; in het model 0,9 × 0,9 m, de minimale dikte op
+  1:1000. Achteraan hangt een ballastkist van 2,8 × 6,2 × 1,1 m over de volle
+  breedte, iets breder dan het balkenpaar en dieper dan de balken (AHN, foto's
+  in open stand); twee hangstangen van 0,9 m lopen naar de voorkant van de
+  klep. Het achtereinde hangt vrij, zoals in werkelijkheid.
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Magere_Brug),
 [Rijksmonumentenregister 518383](https://monumentenregister.cultureelerfgoed.nl/monumenten/518383)

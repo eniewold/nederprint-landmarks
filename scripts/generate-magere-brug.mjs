@@ -108,13 +108,14 @@ const LEAF_THICKNESS = 0.6;
 // Printbaarheid op 1:1000 (laag 0,2 mm, steunbreedte 0,8 mm in
 // lib/server/overhang-support.ts): delen smaller dan 0,8 m op ware grootte
 // dragen niet, daarom ontbreken de leuningen, zijn staanders en hangstangen
-// minstens 0,9 m dik en is elk paar balansen één dichte plaat. Wat zonder
+// minstens 0,9 m dik, net als de balken van de balansen. Wat zonder
 // steun niet print (de open bogen, de doorvaart onder de kleppen, de
-// rondbogen in de portalen en het vrij hangende achtereinde van de balansen)
+// rondbogen in de portalen, de open balansen en hun vrij hangende achtereinde)
 // is in het model zoals het is: dat vult de export van de webshop op. De STL,
 // die zonder export wordt geprint, heeft daarvoor een printvorm: blinde bogen,
 // een dichte onderbouw onder de kleppen, rondbogen met een spitse top van 50
-// graden in de portalen en steunen onder het achtereinde.
+// graden in de portalen, per balans één dichte plaat en steunen onder het
+// achtereinde.
 
 // Bogen in elke vaste overspanning: platte segmentboog met de kruin 0,9 m
 // onder het dek en pijl 0,6 m (foto's), open dwars door de brug; in de STL
@@ -128,10 +129,17 @@ const PASSAGE_INSET = 0.6;
 // rondboog met spitse top over het looppad en een kap tot 9,8 m (AHN:
 // NAP +9,4 m).
 const PORTAL = { x: 5.6, depth: 1.0, post: 1.0, capTop: 9.8, capBottom: 8.9 };
-// Balansen (wippen) op de portalen: per portaal één dichte plaat van 0,6 m
-// over de breedte van beide balken, die naar het midden oploopt (1:6,7
-// volgens AHN en foto's), van x = ±0,3 tot ±12,3, met achteraan de ballastkist.
+// Balansen (wippen) op de portalen: per portaal twee losse balken, die naar
+// het midden oplopen (1:6,7 volgens AHN en foto's), van x = ±0,3 tot ±12,3,
+// met daartussen niets (AHN: twee stroken van circa 1 m op |y| = 2 tot 3 m,
+// open ertussen) en achteraan de ballastkist. De echte balken zijn circa
+// 0,6 m; in het model 0,9 × 0,9 m, de minimale dikte. In de STL is elke
+// balans één dichte plaat van 0,6 m over de breedte van beide balken.
 const BEAM = { halfWidth: 3.05, depth: 0.6, slope: 0.15, front: 0.3, rear: 12.3 };
+const BEAM_BAR = 0.9;
+// De ballastkist hangt onder het achtereinde en loopt over de volle breedte
+// door, iets breder dan het balkenpaar (AHN: x = 9,5 tot 12,3 over y = -3 tot
+// 3; foto's in open stand: een blok breder en dieper dan de balken).
 const BALLAST = { from: 9.5, to: 12.3, halfWidth: 3.1, height: 1.1 };
 // Hangstangen van de plaat naar de voorkant van elke klep, 0,9 m dik.
 const ROD = { x: 1.0, size: 0.9, y: BRIDGE.leafHalfWidth - 0.5 };
@@ -304,7 +312,21 @@ for (const s of [-1, 1]) {
       beamBottom(BALLAST.from) - BALLAST.height + 0.05,
     ),
   );
-  const balance = union([plate, ballast, ...rods]);
+  // In het model twee balken van 0,9 × 0,9 m langs de buitenrand van de
+  // plaat, met de bovenkant op die van de plaat (AHN) en de extra dikte naar
+  // beneden.
+  const beams = [-1, 1].map((t) =>
+    bandY(
+      BEAM.front,
+      BEAM.rear,
+      (x) => beamBottom(x) + BEAM.depth - BEAM_BAR,
+      (x) => beamBottom(x) + BEAM.depth,
+      t > 0 ? BEAM.halfWidth - BEAM_BAR : -BEAM.halfWidth,
+      t > 0 ? BEAM.halfWidth : -(BEAM.halfWidth - BEAM_BAR),
+      4,
+    ),
+  );
+  const balance = union([...beams, ballast, ...rods]);
   const printBalance = union([plate, ballast, ...rods, ...legs]);
   mechanism.push(s > 0 ? balance : balance.mirror([1, 0, 0]));
   printMechanism.push(s > 0 ? printBalance : printBalance.mirror([1, 0, 0]));
@@ -630,7 +652,7 @@ await writeFile(
         "G0363.874043cee9314281a048ff1aa45f82c8",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (onderbouw met open segmentbogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek boven de open doorvaart, de portalen met een rondboog over het looppad, balansplaten met ballastkisten en hangstangen; wat zonder steun niet print vult de export op, de STL heeft blinde bogen, een dichte onderbouw onder de kleppen, spitse portaalopeningen en steunen onder de balansen als printvorm.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het hart van de brug (tussen de kleppen) op de waterspiegel van de Amstel (z = 0, NAP -0,4 m) in de oorsprong, +X langs de brug naar de oostoever (RD-richting 16,75 graden) en +Y stroomafwaarts. Het maaiveld wordt op het water naast de brug bemonsterd, vandaar geen verzinking. Nodenaam klasse:label bepaalt de materiaalklasse: road:fietspad en road:fietspad-klep zijn de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie fietspad; bgt_fysiekvoorkomen open verharding op de vaste delen, gesloten verharding op de kleppen en de doorgang door de portalen), zodat de kleurregels van een thema erop werken; building:brug is de vaste brug (onderbouw met open segmentbogen en het dek onder het wegdek), building:ophaalbrug de kleppen onder het wegdek boven de open doorvaart, de portalen met een rondboog over het looppad, per portaal een balans van twee losse balken van 0,9 × 0,9 m met open ruimte ertussen, achteraan een ballastkist over de volle breedte, en hangstangen; wat zonder steun niet print vult de export op, de STL heeft blinde bogen, een dichte onderbouw onder de kleppen, spitse portaalopeningen, per balans een dichte plaat en steunen onder de balansen als printvorm.",
       printFiles: [`magere-brug-1-${scale}.stl`],
       realWorld: {
         lengthM: BRIDGE.halfLength * 2,
