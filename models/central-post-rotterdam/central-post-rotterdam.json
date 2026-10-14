@@ -1,0 +1,54 @@
+{
+  "name": "Central Post",
+  "file": "central-post-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92129,
+    437799
+  ],
+  "xAxis": [
+    0.954285096977075,
+    0.2988978984326497
+  ],
+  "groundHeight": 43.57521675,
+  "groundNap": -0.1,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -17.2566,
+      -24.9842
+    ],
+    [
+      30.4686,
+      -23.166
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000700780"
+  ],
+  "description": "Gehele BAG-voetafdruk van het voormalige stationspostgebouw; zeven dubbelhoge glazen zaalgevels, vijftienlaagse kantoorhoofden, blinde westgalerijen, verbonden kunstvenster-reliÃ«fs en gemeten dakmachines. BAG/3D BAG/AHN leveren dak- en contourmaten; venster- en reliÃ«fritme, entreepuien en luifels zijn uit fotoâ€™s geschat. Geen nieuwe 60 m glazen opbouw; renovatie voegde interne entresols toe. Z=NAP+0.1 m.",
+  "realWorld": {
+    "groundNapM": -0.1,
+    "roofNapM": 53.136,
+    "westCoreNapM": 57.058,
+    "eastCoreNapM": 57.123,
+    "machineTopNapM": 57.762,
+    "pairedGlazingHalls": 7,
+    "officeFloors": 15,
+    "artWindows": 22,
+    "glassDepthM": 0.48
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000700780",
+    "PDOK BAG 0599100000700780 EPSG:28992; AHN DSM/DTM 0.5 m en actuele orthoHR",
+    "PDOK 3D Basisvoorziening: maaiveld Delftseplein 43.5752/43.6063 m ellipsoÃ¯disch",
+    "https://kaanarchitecten.com/work/central-post-offices (schuine foto Luuk Kramer; uitsluitend visuele referentie)",
+    "https://central-post-rotterdam.com/nl/gebouw/",
+    "https://wederopbouwrotterdam.nl/artikelen/stationspostkantoor (fotoâ€™s Marlies Lageweg en bouwhistorie)"
+  ],
+  "printFiles": [
+    "central-post-rotterdam-1-1000.stl"
+  ]
+}
