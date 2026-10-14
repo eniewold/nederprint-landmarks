@@ -1,0 +1,54 @@
+{
+  "name": "Mövenpick Hotel",
+  "file": "movenpick-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122753.33449981491,
+    487918.5885706783
+  ],
+  "xAxis": [
+    0.9602936856769431,
+    -0.2789911060392293
+  ],
+  "groundNap": 1,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -60,
+      -34
+    ],
+    [
+      -20,
+      -45
+    ],
+    [
+      8,
+      -32
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012118833",
+    "NL.IMBAG.Pand.0363100012571026"
+  ],
+  "description": "Mövenpick Hotel aan de Piet Heinkade: slanke hotelschijf met doorlopende horizontale blinde glasbanden en gesloten hoeken, glazen lobby, lage congresplint en verhoogde glazen dakmachine. Hoofddak uit continu 3D BAG-vlak circa NAP 66.05 m, dakmachine circa 71.17 m, lobby circa 19.70 m, lage daken circa 12.54/11.67 m; AHN bevestigt de echte horizontale daken. De foutieve steile glasreconstructie RoofSurface 225 is geen dak. Hoteldeel uit het bestaande Muziekgebouw-model verwijderd op lokale X=40.5; beide sluiten zonder dubbel volume aan en vervangen gezamenlijk hetzelfde BAG-pand. Gevelbandritme 3.28 m, 0.35 m blinde diepte, gesloten entreevelden en lobbyrooster geschat uit Arcam-fotos; dunne letters en luifel niet los geprint.",
+  "realWorld": {
+    "groundNapM": 1,
+    "hotelRoofNapM": 66.05,
+    "roofPlantNapM": 71.17,
+    "lobbyRoofNapM": 19.7,
+    "podiumRoofNapM": 12.54,
+    "sharedBoundaryLocalXM": 40.5,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012118833 en nieuw pand 0363100012571026, 3D BAG LoD2.2 en AHN DSM/DTM 0.5 m, actuele orthoHR, 2026-10-14",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012118833",
+    "https://arcam.nl/architectuur-gids/movenpick-hotel/ (Claus en Kaan 2006, circa 65 m; schuine Luuk Kramer- en Doriann Kransberg-fotos als referentie)",
+    "https://www.iamsterdam.com/en/conventions/venue-finder/movenpick-hotel-amsterdam-city-centre"
+  ],
+  "printFiles": [
+    "movenpick-amsterdam-1-1000.stl"
+  ]
+}
