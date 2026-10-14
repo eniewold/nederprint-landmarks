@@ -1,0 +1,63 @@
+{
+  "name": "Muzentoren",
+  "file": "muzentoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81800.4,
+    455063.28
+  ],
+  "xAxis": [
+    0.34054365626527733,
+    0.9402287052507367
+  ],
+  "groundNap": 0.7297000288963318,
+  "groundHeight": 44.1981114093669,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -26.5481,
+      -3.8723
+    ],
+    [
+      -29.1911,
+      0.4883
+    ],
+    [
+      30.6131,
+      -0.186
+    ],
+    [
+      26.0897,
+      3.4935
+    ],
+    [
+      -27.9253,
+      -11.816
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000269561"
+  ],
+  "description": "Muzentoren in De Resident: eigen achthoekige BAG-romp, blinde venstervelden en verticale penanten, middelste band met ronde oculi, terugliggende koperen bovenrand en doorlopende achtvlakkige schildkap. Nokrichting 70.09 graden uit de echte 3D BAG-nok, romp circa NAP 59.417 m, kaprand circa 63.3-64.0 m en nok 73.456 m, bevestigd in AHN. Twee robuuste masten tot geschatte NAP 78.45 m. Gevelritme 3.35 m, vensternissen 0.35 m, oculi, entreevelden en koperrooster zijn uit straat-/pleinfotos geschat. Geen hoogteplakken of BAG-bounding-box-as; de sculptuur en omliggende Sirius/Orion-panden blijven buiten dit model.",
+  "realWorld": {
+    "groundNapM": 0.7297000288963318,
+    "brickShoulderNapM": 59.417,
+    "copperEaveNapM": 63.9,
+    "copperRidgeNapM": 73.45550524902343,
+    "estimatedMastTipNapM": 78.45,
+    "ridgeAngleDegrees": 70.09,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0518100000269561, AHN DSM/DTM 0.5 m en actuele orthoHR, 3D BAG LoD2.2: exacte eigen voet, acht kapvlakken, schouders, nok en terrein; 2026-10-14",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000269561",
+    "https://cksa.de/portfolio/the-hague-de-resident/ (architect: 17 kantoorverdiepingen, dakmachine onder koperen kap, donkere baksteen en terugliggende geveldelen)",
+    "https://homepages.bluffton.edu/~sullivanm/netherlands/thehague/krier/muzentoren.html (Mary Ann Sullivan: oorspronkelijke schuine straat-/pleinfotos, uitsluitend lokale onderzoeksreferentie; geen fotos meegeleverd)",
+    "https://www.architectuur.org/bouwwerk/312/Muzentoren.html (73 m zonder masten, 18 verdiepingen, koperen dak)"
+  ],
+  "printFiles": [
+    "muzentoren-1-1000.stl"
+  ]
+}
