@@ -1,0 +1,52 @@
+{
+  "name": "Cross Towers",
+  "file": "cross-towers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120774,
+    483411
+  ],
+  "xAxis": [
+    0.9999862922474267,
+    -0.00523596383141958
+  ],
+  "groundHeight": 42.40364998,
+  "groundNap": -0.57,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -33,
+      14.8
+    ],
+    [
+      33,
+      -10.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012061407"
+  ],
+  "description": "Twee verschoven continue kantoorvleugels met gemeten daken NAP 86.257/86.243 m, lagere verbindingskern 85.436 m, echte lange podiumpaviljoens en open vijverhof. Aangehecht diagonaal gevelraster, blinde glasvelden en schuin bovenste kopglas volgen openbare bronfotos; raamritme, rasterdikte en glashelling zijn schattingen. Ondergrondse parkeerlagen en vijver zijn geen gebouwvolume. Gevelas -0.30 graden, geen gestapelde hoogtelagen.",
+  "realWorld": {
+    "groundNapM": -0.57,
+    "westRoofNapM": 86.257,
+    "eastRoofNapM": 86.243,
+    "coreRoofNapM": 85.436,
+    "restaurantRoofNapM": 7.405,
+    "westPodiumRoofNapM": 5.116,
+    "diagridBays": 5,
+    "diagridTriangularBands": 6,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012061407, 3D BAG LoD2.2 en AHN DSM/DTM 0.5 m voor contouren, dakranden, daken en maaiveld; actuele orthoHR",
+    "https://www.aronsohn.nl/project/vivaldi/ (constructeur: twee verschoven bouwdelen, centrale kern, diagrid en ondergrondse garage)",
+    "https://edge.tech/portfolio/cross-towers (eigenaar: twee torens, kern en podiumvoorzieningen; overzichtsfotos)",
+    "https://arcam.nl/architectuur-gids/kantoor-ernst-young/ (Doriann Kransberg/Stadsarchief Amsterdam: drie schuine fotos en schuin bovenste kopglas)"
+  ],
+  "printFiles": [
+    "cross-towers-1-1000.stl"
+  ]
+}
