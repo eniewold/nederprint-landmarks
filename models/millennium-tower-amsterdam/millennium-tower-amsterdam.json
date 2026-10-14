@@ -1,0 +1,57 @@
+{
+  "name": "Millennium Tower Amsterdam",
+  "file": "millennium-tower-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117568,
+    489633
+  ],
+  "xAxis": [
+    0.9941132045189992,
+    0.10834637327094243
+  ],
+  "groundNap": 0.9848999977111816,
+  "groundHeight": 44.17363873138221,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      5.28224,
+      -43.83033
+    ],
+    [
+      38.39402,
+      -35.36806
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012078190",
+    "NL.IMBAG.Pand.0363100012201454",
+    "NL.IMBAG.Pand.0363100012201455"
+  ],
+  "description": "Volledige Millennium Tower (De Kluif) aan Radarweg 29: vier vierkante kantoorarmen rond een diagonale verbinding, twee hogere koppen (NAP 95.794/95.783 m), centrale glazen kern tot 98.663 m en uiterste kantoorarmen tot 89.291/89.280 m. Gemeten eigen plintdaken rond 9.90 m, afzonderlijk laag garagepaviljoen op licht hellend dak 3.725 m en diensthuisje circa 3.777 m. De hoofdassen van de vierkante kopgevels staan 6.22 graden gedraaid in RD, de schuine verbindingsdelen zijn vaste polygonen. Blind vensterreliëf, horizontale glasbanden, brede verticale eindkolommen en gesloten entreevelden zijn uit Wessels Zeist-fotos geschat; geen ronde toren en geen gestapelde DSM-lagen. Onjuiste steile 3D BAG-glasvlakken zijn gevelvelden, niet nep-daken. Naburige hallen blijven behouden.",
+  "realWorld": {
+    "groundNapM": 0.9848999977111816,
+    "endWingRoofNapM": 89.291,
+    "otherEndWingRoofNapM": 89.28,
+    "westHeadRoofNapM": 95.794,
+    "eastHeadRoofNapM": 95.783,
+    "centralCoreRoofNapM": 98.663,
+    "roofMachineNapM": 99.505,
+    "podiumRoofNapM": 9.9,
+    "pavilionRoofNapM": 3.725,
+    "serviceHutRoofNapM": 3.777,
+    "facadeAngleDegrees": 6.22,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012078190/0363100012201454/0363100012201455, 3D BAG LoD2.2, actuele orthoHR, AHN DSM/DTM 0.5 m: footprint, echte hoofddaken, plint, garagepaviljoen en terrein; hutdak uit AHN wegens ontbrekende 3D BAG; 2026-10-14",
+    "https://www.wessels-zeist.nl/nl/projecten/millennium-tower-kantoor-reed-elsevier-amsterdam (bouwer: De Kluif, Rob van Erk/EGM, 2004; drie schuine projectfotos met daken, kantoorarmen en glaskern, alleen referentie)",
+    "https://www.skyscrapercenter.com/building/millennium-tower/5646 (CVU: Millennium Tower / Reed Elsevier, 97.5 m, 24 verdiepingen)",
+    "https://www.mitsubishi-liften.nl/project/millennium-tower/ (installateur: kantoor Elsevier, liftmodernisering 2025)"
+  ],
+  "printFiles": [
+    "millennium-tower-amsterdam-1-1000.stl"
+  ]
+}
