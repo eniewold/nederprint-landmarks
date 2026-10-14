@@ -1,0 +1,61 @@
+{
+  "name": "Five55",
+  "file": "five55.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92774,
+    437081
+  ],
+  "xAxis": [
+    0.9998742061222221,
+    -0.015861019243923906
+  ],
+  "groundHeight": 46.94254542,
+  "groundNap": 3.4,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      10.426989580808165,
+      -26.83799337286076
+    ],
+    [
+      -10.506294677027785,
+      31.83736440347187
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701103"
+  ],
+  "description": "Five55 aan Blaak 555, niet Weenapoint. Continue gebogen hoofdtoren, afzonderlijke westvleugel op kolommen, gemeten noordvleugel en terrasdaken, stalen kroon met grote echte opening en 51-graden printschoren in de bovenhoeken, blinde horizontale glasvelden en verbonden afgeschuinde dakluifel. Positie, gevelas en dakhoogtes uit BAG/3D BAG/AHN. Onderkant westvleugel, kolommen en schoren, kozijnritme, vensterdiepte en luifeldikte geschat uit schuine fotos. Schielandshuis en buurpanden blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 3.4,
+    "mainRoofNapM": 104.945,
+    "northRoofNapM": 94.351,
+    "westRoofNapM": 57.746,
+    "crownNapM": 107.025,
+    "machineNapM": 105.903,
+    "terraceRoofsNapM": [
+      37.495,
+      50.777,
+      64.067,
+      77.367,
+      90.716
+    ],
+    "estimatedWestUndersideNapM": 16,
+    "facadeEstimated": true
+  },
+  "sources": [
+    "PDOK BAG 0599100000701103, AHN DSM/DTM 0.5 m en orthoHR: voetafdruk, gebogen gevel en gevelas -0.908808 graden",
+    "3D BAG LoD2.2: afzonderlijke dakvlakken en terrasdaken; vals smal hellend dakvlak naar 89.386 m boven westvleugel verworpen op schuine fotos",
+    "https://edge.tech/articles/edge-acquires-landmark-five55-asset-in-rotterdam (eigenaar 2024: 107 m, Murphy Jahn, gerenoveerd 2020; schuine gevelbeelden)",
+    "https://edge.tech/articles/edge-sells-landmark-five55-asset-to-anchor-tenant-msc (eigenaar 2025: Blaak 555, MSC)",
+    "https://www.mecanoo.nl/Projects/project/269/Blaak555 (architect renovatie: dubbelhoge transparante plint, 26 kantoorlagen)",
+    "https://www.architectuur.org/bouwwerk/282/Hoofdkantoor_Fortis_Bank.html (schuine fotos Bart van Hoek: gebogen gevel, kolommen en gevelstroken)",
+    "https://www.3develop.nl/blog/erasmushuis-dak-rotterdam-zomeravond/ (eigen schuine foto Frans Blok: grote kroonopening, westkolommen en terrassprongen)"
+  ],
+  "printFiles": [
+    "five55-1-1000.stl"
+  ]
+}
