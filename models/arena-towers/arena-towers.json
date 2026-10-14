@@ -1,0 +1,69 @@
+{
+  "name": "Arena Towers",
+  "file": "arena-towers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124658,
+    480286
+  ],
+  "xAxis": [
+    0.8754645270000179,
+    0.4832823832550024
+  ],
+  "groundHeight": 39.562271,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27.511557977435288,
+      -27.076081283195634
+    ],
+    [
+      -46.67292064953091,
+      18.91133200075001
+    ],
+    [
+      37.6882692114954,
+      35.16524369092084
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012131669"
+  ],
+  "description": "Het volledige huidige Holiday Inn/Arena Towers-complex: twee parallelle hotelvleugels met afgeronde driehoekige koppen, horizontale blinde glasbanden, hoge westelijke machinekroon en daklift, lage gedeelde lobby en gebogen zuidoostentree; het voormalige Praxis-pand is apart behouden.",
+  "realWorld": {
+    "groundNapM": -3.5,
+    "axisDegrees": 28.9,
+    "wingRoofsNapM": [
+      51.168,
+      51.199
+    ],
+    "machineHouseNapM": 57.391,
+    "liftNapM": 61.687,
+    "lobbyNapM": 7.699,
+    "curvedEntranceNapM": 4.456,
+    "estimates": [
+      "Doorlopende gevelglasbanden1.6m hoog,.35m blind,3.15m verdiepingsritme uit2014-2020schuinefoto geschat; hoofdvolumes zijn ononderbroken prisma’s",
+      "Eigen BAG-koppen met.45-.9m afronding vereenvoudigd, kleine dakruis verwijderd; geen minimumrechthoekhoofdas",
+      "Open galerij onder de ronde koppen voor1:1000 massief met.4m blinde glaspui uitgevoerd; terrein/parking niet in GLB",
+      "Dakhoofden51.168/51.199,57.391machinehuis en61.687lift volgen3DBAG/AHN4 en bevestigd door AHN5; oude70mpublicatie niet als dakmaat gebruikt",
+      "Plintglasbanden, machineventilatie en kleine dakserviceblokken uit fotos/ortho geschat circa.5-1m; de grote gebogen entree4.456 en gedeelde lobby7.699NAP gemeten"
+    ]
+  },
+  "sources": [
+    "https://www.zzdp.nl/history (architect,Bull1989/Arena-renovatie2014,schuinefoto)",
+    "https://www.ihg.com/holidayinn/hotels/us/en/amsterdam/amsaa/hoteldetail (huidigeHolidayInn,Hoogoorddreef66a)",
+    "https://www.ihg.com/holidayinnexpress/hotels/gb/en/amsterdam/amsea/hoteldetail (huidigeHolidayInnExpress,Hoogoorddreef66b)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012131669 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://www.ahn.nl/ (AHN5DSM,hoogtekanaal0,CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Holiday_Inn_Express_Amsterdam-Arena_Towers_(29668602803).jpg (FredRomero CC BY2.0)",
+    "https://commons.wikimedia.org/wiki/File:Holiday_Inn_Amsterdam_-_Arena_Towers.jpg (Choinowski CC BY-SA4.0)"
+  ],
+  "printFiles": [
+    "arena-towers-1-1000.stl"
+  ]
+}
