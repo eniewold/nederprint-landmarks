@@ -1,0 +1,55 @@
+{
+  "name": "Leonardo da Vinci",
+  "file": "leonardo-da-vinci-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79510,
+    458940
+  ],
+  "xAxis": [
+    0.689442574583905,
+    0.7243403456601851
+  ],
+  "groundNap": 8.7202,
+  "groundHeight": 52.130884614879676,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      63.39297,
+      46.53312
+    ],
+    [
+      68.21056,
+      12.46274
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000268161"
+  ],
+  "description": "Volledig Plaza Leonardo da Vinci aan het Palaceplein: twee ongelijke doorlopende woontorens (NAP 85.284/65.744 m), gemeten lagere schouders van de hoge toren, gouden dakbol en witte pylon tot NAP 95.55 m. Lange galerijvleugel met gebogen dakluifels per serre, afgerond noordelijk pleingebouw, eigen terugliggende stadsappartementen en de gemeten verbindingsplint. Bouwdelen en continue dakprofielen volgen open BAG/3D BAG en AHN, geen gestapelde DSM-lagen. Gevelas 46.414 graden uit de lange straatgevel. Blinde glasvelden, balkonvelden en winkelarcade zijn geschat uit schuine VvE/Nelec-fotos en sluiten aan op brede massieve wanden. Buiten het complex blijven buurpanden behouden; het openbare plein, tuinmeubilair en bestrating zijn terrein.",
+  "realWorld": {
+    "groundNapM": 8.7202,
+    "highRoofNapM": 85.284,
+    "lowRoofNapM": 65.744,
+    "highShoulderNapM": 76.99,
+    "highPylonNapM": 95.55,
+    "lowPylonNapM": 69.44,
+    "galleryWingRoofNapM": 38.035,
+    "roundEndRoofNapM": 23.306,
+    "townhouseRoofNapM": 23.44,
+    "facadeAngleDegrees": 46.414,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0518100000268161, actuele orthoHR, AHN DSM/DTM 0.5 m en 3D BAG LoD2.2: hele complexvoetafdruk, hoofdhoogtes, gebogen serrecontouren, kroon, galerijwing en eigen stadsappartementen; 2026-10-14",
+    "https://vvedavinci.nl/ (eigenaar: Plaza Leonardo da Vinci met twee torens, pleingebouw en stadsappartementen, Dam & Partners; vijf schuine fotos, alleen referentie)",
+    "https://www.nelec.com/da-vinci-62-woningen-opgeleverd/ (installateur: project uit 1997 aan Zwolsestraat 7, fotos F-1406/F-1410 van torengevels, witte pylonen, dakbol en lange galerijvleugel; alleen referentie)",
+    "https://www.skyscrapercenter.com/building/leonardo-da-vinci-i/5425 (CVU: hoge toren 87 m, 26 verdiepingen, 1997)",
+    "https://vriesrobbe.nl/woning/s-gravenhage-zwolsestraat-7/ (makelaar: architect Cees Dam, serre en ligging aan Scheveningse kust)"
+  ],
+  "printFiles": [
+    "leonardo-da-vinci-den-haag-1-1000.stl"
+  ]
+}
