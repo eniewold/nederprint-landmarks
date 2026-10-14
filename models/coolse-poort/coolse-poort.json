@@ -1,0 +1,55 @@
+{
+  "name": "Coolse Poort",
+  "file": "coolse-poort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92549,
+    437025
+  ],
+  "xAxis": [
+    0.963630453208623,
+    0.26723837607825685
+  ],
+  "groundHeight": 44.02135966,
+  "groundNap": 0.45,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -20,
+      26
+    ],
+    [
+      35,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000700138"
+  ],
+  "description": "Volledige eigen Coolse Poort met drie gemeten glasvolumes, hogere continue staalplaatkernen, lage winkelplint, terugliggende glazen entree en verbonden kapiteelkolommen. Dakmaten uit 3D BAG/AHN; herontwikkeling behouden bestaande hoofdvorm en huidige transparante raamvelden volgens Groosman 2025. Bouwdelen uit continue vlakken, geen gestapelde hoogtelagen. Gevelritme, entreevuisten en smalle servicewandhoogte zijn fotoschattingen; kapitelen krijgen 45-graden afschuining voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 0.45,
+    "westGlassRoofNapM": 58.149,
+    "westCoreRoofNapM": 62.379,
+    "northGlassRoofNapM": 67.297,
+    "northCoreRoofNapM": 73.693,
+    "southGlassRoofNapM": 61.213,
+    "southCoreRoofNapM": 65.438,
+    "topMachineNapM": 78.408,
+    "shopRoofNapM": 11.83,
+    "capitalColumns": 8,
+    "estimatedFacadeRhythm": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000700138, volledige contour EPSG:28992",
+    "3D BAG LoD 2.2: drie glasvolumes, kernen en machines; PDOK AHN DSM/DTM 0.5 m",
+    "PDOK actuele orthoHR: behouden Coolse Poort en huidige plint",
+    "PDOK 3D Basisvoorziening maaiveld 43.6177/44.0214 m ellipsoidisch",
+    "https://architectenweb.nl/projecten/project.aspx?id=50256 (GROOSMAN eigen projectbeschrijving, foto’s Aiste Rakauskaite en vier gevelaanzichten; oplevering 2025)"
+  ],
+  "printFiles": [
+    "coolse-poort-1-1000.stl"
+  ]
+}
