@@ -185,10 +185,10 @@ const legCentre = (nap) => (legSouth(nap) + legNorth(nap)) / 2;
 const legT = (nap) => PYLON.t0 + (PYLON.t1 - PYLON.t0) * pz(nap);
 const legW = (nap) => PYLON.w0 + (PYLON.w1 - PYLON.w0) * pz(nap);
 const legInner = (nap) => legT(nap) - legW(nap) / 2;
-// De kop tussen de poten (foto's: NAP +71 tot +84 m) met een V-vormige
-// onderkant van 50 graden, zodat hij zonder steun print. Ook in de GLB: met een
-// vlakke onderkant vult de export (ook met ondersteuning v2.0) de hele ruimte
-// tussen de poten van de kop tot het dek op.
+// De kop tussen de poten (foto's: NAP +71 tot +84 m) met een vlakke onderkant.
+// Die print op 1:1000 niet zonder steun en vult de export op; de STL, die
+// zonder export wordt geprint, heeft als printvorm een V-vormige onderkant van
+// 50 graden.
 const HEAD = { bottomNap: 71.0, topNap: 84.0 };
 // Dwarsdrager onder het dek tussen de poten, met schuine schoren van 50
 // graden naar de poten (foto's).
@@ -205,16 +205,22 @@ const MAIN_ANCHOR_NAP = MAIN_FEET.map((_, k) => 83 - 1.1 * k);
 const BACK_FEET = [271, 268, 265, 262];
 const BACK_ANCHOR_NAP = [81, 79, 77, 75];
 const BACK_T = 8.9;
-// Printbaarheid: een tui van 0,15 m is op 1:1000 niet te printen. Waar de
-// tuien steiler staan dan 50 graden (de drie binnenste van de
-// hoofdoverspanning) zijn ze vrijstaande staven van 1,0 × 1,0 m; daaronder is
-// elk tuivlak een dichte plaat van 0,9 m dik tussen de buitenste tui, het dek
-// en een lijn van 50 graden van het dek naar de kop, met de tuien als ribben
-// van 1,0 m breed die 0,3 m uitsteken (flanken van 45 graden). Zo hangt geen
-// vlak flauwer dan 50 graden vrij.
+// Een tui van 0,15 m is op 1:1000 niet te printen. In de GLB is elke tui een
+// rechte staaf van 0,9 × 0,9 m (doorsnede loodrecht op de tui) van de voet in
+// het dek naar het anker in de kop, met de ruimte tussen de tuien open; de
+// onderkant van de flauwe tuien print niet zonder steun en vult de export op.
+// De STL, die zonder export wordt geprint, heeft als printvorm per vlak een
+// dichte plaat van 0,9 m dik tussen de buitenste tui, het dek en een lijn van
+// 50 graden van het dek naar de kop, met de tuien als ribben van 1,0 m breed
+// die 0,3 m uitsteken (flanken van 45 graden), en waar de tuien steiler staan
+// dan 50 graden (de drie binnenste van de hoofdoverspanning) vrijstaande staven
+// van 1,0 × 1,0 m. Zo hangt daar geen vlak flauwer dan 50 graden vrij.
 const POINTED = Math.tan((50 * Math.PI) / 180);
 const RIB = { base: 1.0, top: 0.4, proud: 0.3 };
 const BAR = 1.0;
+// Tuien in de GLB: staven van 0,9 m die bij de voet 1 m langs de tui doorlopen
+// in het dek of het ankerblok.
+const STAY = { size: 0.9, sink: 1.0 };
 
 // ---------- dek ----------
 function deckLoft(s0, s1, depth, soffitHalf) {
@@ -362,6 +368,8 @@ const legs = [-1, 1].map((side) => {
   }
   return Manifold.hull(pts);
 });
+// Kop met de V-onderkant van 50 graden: de printvorm voor de STL. De vlakke
+// kop van de GLB staat bij de tuien.
 const headPts = [];
 for (const nap of [HEAD.bottomNap, HEAD.topNap]) {
   for (const s of [legSouth(nap), legNorth(nap)]) {
@@ -389,7 +397,7 @@ const crossbeam = profileX(
   beamX + CROSSBEAM.half,
 );
 
-// ---------- tuivlakken ----------
+// ---------- tuivlakken (printvorm, alleen in de STL) ----------
 // Rib langs een tui van (x0, z0) naar (x1, z1) in een vlak y = 0 (lokaal):
 // zeskantige doorsnede, 1,0 m breed op de plaat, 0,4 m op de top.
 function rib(x0, z0, x1, z1) {
@@ -469,24 +477,9 @@ const backSails = [-1, 1].map((side) =>
   }),
 );
 
-// De brug (GLB) met de open steunpijler en ronde aandrijfcilinders; de
-// printbrug (STL) met de printvormen.
-const bridge = union([
-  deck,
-  ...kerbs,
-  southAbutment,
-  anchorCore,
-  ...anchorWalls,
-  ...wallPiers,
-  basculePier,
-  ...roundDrives,
-  restPortal,
-  ...legs,
-  head,
-  crossbeam,
-  ...mainSails,
-  ...backSails,
-]).subtract(union(joints));
+// De printbrug (STL) met de printvormen; de brug van de GLB (met de open
+// steunpijler, ronde aandrijfcilinders, de vlakke kop en losse tuien) volgt na
+// de printvoet, zodat de STL dezelfde blijft.
 const printBridge = union([
   deck,
   ...kerbs,
@@ -520,6 +513,62 @@ const footStations = stationsX(SOUTH_FACE, ANCHOR_FACE, 1).map((x) => {
 });
 const printFoot = loftX(footStations);
 const printModel = union([printBridge, printFoot]);
+
+// ---------- brug van de GLB: vlakke kop en losse tuien ----------
+const flatHeadPts = [];
+for (const nap of [HEAD.bottomNap, HEAD.topNap]) {
+  for (const s of [legSouth(nap), legNorth(nap)]) {
+    for (const t of [-1, 1]) flatHeadPts.push([X(s), t * (legInner(nap) + 0.5), Z(nap)]);
+  }
+}
+const flatHead = Manifold.hull(flatHeadPts);
+// Tui als rechte staaf van de voet a naar het anker b: een vierkante doorsnede
+// van 0,9 m loodrecht op de tui met twee zijden horizontaal, bij de voet 1 m
+// verder doorgetrokken zodat het eindvlak in het dek of het ankerblok ligt.
+function stay(a, b) {
+  const d = b.map((c, i) => c - a[i]);
+  const len = Math.hypot(...d);
+  const n = d.map((c) => c / len);
+  const h = Math.hypot(n[0], n[1]);
+  const u = [n[1] / h, -n[0] / h, 0];
+  const v = [n[1] * u[2] - n[2] * u[1], n[2] * u[0] - n[0] * u[2], n[0] * u[1] - n[1] * u[0]];
+  const pts = [];
+  for (const p of [a.map((c, i) => c - STAY.sink * n[i]), b]) {
+    for (const su of [-1, 1]) {
+      for (const sv of [-1, 1]) pts.push(p.map((c, i) => c + (STAY.size / 2) * (su * u[i] + sv * v[i])));
+    }
+  }
+  return Manifold.hull(pts);
+}
+// Hoofdoverspanning: elf tuien per vlak 3 m naast de as, van 0,3 m onder het
+// wegdek naar het anker in het hart van de kop. Achtertuien: vier per vlak van
+// het ankerblok (8,9 m naast de as) naar de kop (3 m naast de as).
+const staySegments = [-1, 1].flatMap((side) => [
+  ...MAIN_FEET.map((s, k) => [
+    [X(s), side * SAIL.t, mainSailFoot(s)],
+    [X(legCentre(MAIN_ANCHOR_NAP[k])), side * SAIL.t, Z(MAIN_ANCHOR_NAP[k])],
+  ]),
+  ...BACK_FEET.map((s, k) => [
+    [X(s), side * BACK_T, backFoot(s)],
+    [X(legCentre(BACK_ANCHOR_NAP[k])), side * SAIL.t, Z(BACK_ANCHOR_NAP[k])],
+  ]),
+]);
+const stays = staySegments.map(([a, b]) => stay(a, b));
+const bridge = union([
+  deck,
+  ...kerbs,
+  southAbutment,
+  anchorCore,
+  ...anchorWalls,
+  ...wallPiers,
+  basculePier,
+  ...roundDrives,
+  restPortal,
+  ...legs,
+  flatHead,
+  crossbeam,
+  ...stays,
+]).subtract(union(joints));
 // Eerst de brug en de printversie als geheel uitrekenen: zo blijven hun
 // driehoeken (en die van de STL) dezelfde als voordat de rijbaan een eigen
 // onderdeel werd.
@@ -567,15 +616,14 @@ const strip = loftX(
     return { x, section: [[-STRIP_HALF, zt - LAYER], [STRIP_HALF, zt - LAYER], [STRIP_HALF, zt + ABOVE], [-STRIP_HALF, zt + ABOVE]] };
   }),
 );
-// De tuivlakken (plaat, ribben en vrije staven) en de achtertuien staan op het
-// dek en blijven constructie: de hele strook van elk vlak in de laag, met 2 cm
-// vrij. De achtertuien komen op het dek 8,9 m naast de as uit en steken met de
-// plaat en de ribben in de rijbaan.
-const sailGuards = [...mainSails, ...backSails].map((sail) => {
-  const bb = sail.intersect(strip).boundingBox();
+// De tuien staan op het dek en blijven constructie: per tui het stuk waar hij
+// in de laag zit, met 2 cm vrij. De achtertuien komen op het ankerblok 8,9 m
+// naast de as uit en raken met hun binnenkant net de rand van de rijbaan.
+const stayGuards = stays.map((bar) => {
+  const bb = bar.intersect(strip).boundingBox();
   return boxFromTo(bb.min[0] - 0.02, bb.max[0] + 0.02, bb.min[1] - 0.02, bb.max[1] + 0.02, BASE, 200);
 });
-const roadCut = strip.subtract(union(sailGuards));
+const roadCut = strip.subtract(union(stayGuards));
 const roadway = roadCut.intersect(bridge);
 const structure = bridge.subtract(roadCut);
 {
@@ -617,10 +665,17 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
   const bb = solid.boundingBox();
   if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
 }
+// Afstand van punt q tot de as van tui [a, b].
+function stayDistance(q, [a, b]) {
+  const d = b.map((c, i) => c - a[i]);
+  const t = Math.min(Math.max(d.reduce((sum, c, i) => sum + c * (q[i] - a[i]), 0) / d.reduce((sum, c) => sum + c * c, 0), -0.1), 1);
+  return Math.hypot(...q.map((c, i) => c - a[i] - t * d[i]));
+}
 {
-  // In het model hangen alleen de onderkant van het dek (met de schuine
-  // randen), de dwarsdrager, de aandrijfcilinders en de bovenkant van de
-  // nissen en van de opening in de steunpijler vrij.
+  // In het model hangen de onderkant van het dek (met de schuine randen), de
+  // dwarsdrager, de aandrijfcilinders, de bovenkant van de nissen en van de
+  // opening in de steunpijler, de vlakke onderkant van de kop en de onderkant
+  // van de tuien vrij; dat vult de export op. Verder niets boven het dek.
   const { area, found } = overhangs(bridge);
   const buckets = {};
   for (const { p, area: a } of found) {
@@ -633,9 +688,13 @@ for (const [name, solid] of [["model", bridge], ["print", printModel]]) {
         ? "dek"
         : Math.abs(xm - beamX) <= CROSSBEAM.half + 0.01
           ? "dwarsdrager"
-          : zm > zt + 0.01
-            ? `boven het dek x ${xm.toFixed(0)} y ${ym.toFixed(0)} z ${zm.toFixed(0)}`
-            : "nissen/pijlers";
+          : Math.abs(zm - Z(HEAD.bottomNap)) < 0.01 && Math.abs(ym) < legInner(HEAD.bottomNap) + 0.51
+            ? "kop"
+            : zm > zt + 0.01 && staySegments.some((seg) => stayDistance([xm, ym, zm], seg) < STAY.size * 0.75)
+              ? "tuien"
+              : zm > zt + 0.01
+                ? `boven het dek x ${xm.toFixed(0)} y ${ym.toFixed(0)} z ${zm.toFixed(0)}`
+                : "nissen/pijlers";
     buckets[key] = (buckets[key] ?? 0) + a;
   }
   // Splinters van een paar cm2 waar ribben en plaat het dek raken tellen niet.
@@ -790,6 +849,8 @@ report.pylon = {
   beamX: +beamX.toFixed(2),
 };
 report.stays = {
+  glb: stays.length,
+  angles: staySegments.map(([a, b]) => +((Math.atan2(b[2] - a[2], Math.hypot(b[0] - a[0], b[1] - a[1])) * 180) / Math.PI).toFixed(0)),
   mainOpenFootS: +mainOpenFoot.toFixed(1),
   backOpenFootS: +backOpenFoot.toFixed(1),
   main: mainFree.map(({ s, angle, free }) => `${s.toFixed(1)}:${angle.toFixed(0)}${free ? " vrij" : ""}`),
@@ -842,7 +903,7 @@ await writeFile(
         "L0002.9fb7492bd4cd4e84b62724a5a94305b2",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee landhoofden op de waterspiegel van de IJssel (z = 0, NAP -0,47 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het noorden (Ramspol, RD-richting 97,84 graden vanaf het oosten) en +Y naar het westen. Twee nodes: road:rijbaan, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van het BGT-wegdeel op de brug in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18,8 m breed van het zuidelijke landhoofd op de Kamper dijk (x = -209,9) tot het ankerblok op de noordelijke dijk (x = 209,9), met het wegdek op NAP +16,7 tot +18,5 m en een schampkant langs de randen; drie aanbruggen op wandpijlers over de zuidelijke uiterwaard; de basculepijler met de ronde aandrijfcilinders, de stalen basculeklep van 20,5 m in gesloten stand en de steunpijler als open portaal; de hoofdoverspanning van circa 150 m; de achterover hellende pyloon van twee poten met de kop tussen NAP +71 en +84 m en de top op NAP +90,7 m, met een dwarsdrager onder het dek; twee tuivlakken van elf tuien 3 m naast de as en vier achtertuien per vlak naar het ankerblok. De tuien zijn op 1:1000 dichte platen van 0,9 m met de tuien als ribben, de drie steilste vrijstaande staven van 1 m; de kop heeft een V-onderkant van 50 graden. Wat zonder steun niet print (de cilinders, de bovenregel van de steunpijler, de onderkant van het dek) vult de export op; de STL heeft als printvorm cilinders met een kiel van 55 graden en in de steunpijler blinde nissen. De achteroverspanning heeft een pijler aan de dijkvoet. Leuningen, lantaarns, portalen met verkeerslichten, slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de brug midden tussen de twee landhoofden op de waterspiegel van de IJssel (z = 0, NAP -0,47 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het noorden (Ramspol, RD-richting 97,84 graden vanaf het oosten) en +Y naar het westen. Twee nodes: road:rijbaan, de bovenste 0,5 m van het dek tussen de schampkanten met de attributen van het BGT-wegdeel op de brug in extras.attributes (bgt_functie rijbaan autoweg, bgt_fysiekvoorkomen gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 18,8 m breed van het zuidelijke landhoofd op de Kamper dijk (x = -209,9) tot het ankerblok op de noordelijke dijk (x = 209,9), met het wegdek op NAP +16,7 tot +18,5 m en een schampkant langs de randen; drie aanbruggen op wandpijlers over de zuidelijke uiterwaard; de basculepijler met de ronde aandrijfcilinders, de stalen basculeklep van 20,5 m in gesloten stand en de steunpijler als open portaal; de hoofdoverspanning van circa 150 m; de achterover hellende pyloon van twee poten met de kop tussen NAP +71 en +84 m en de top op NAP +90,7 m, met een dwarsdrager onder het dek; twee tuivlakken van elf tuien 3 m naast de as en vier achtertuien per vlak naar het ankerblok. Elke tui is een losse staaf van 0,9 × 0,9 m van het dek naar de kop (de achtertuien van 8,9 m naast de as op het ankerblok naar 3 m in de kop), met de ruimte tussen de tuien open; de kop heeft een vlakke onderkant. Wat zonder steun niet print (de cilinders, de bovenregel van de steunpijler, de onderkant van het dek, van de kop en van de flauwe tuien) vult de export op; de STL heeft als printvorm cilinders met een kiel van 55 graden, in de steunpijler blinde nissen, een V-onderkant van 50 graden onder de kop en per tuivlak een dichte plaat met de tuien als ribben. De achteroverspanning heeft een pijler aan de dijkvoet. Leuningen, lantaarns, portalen met verkeerslichten, slagbomen, het remmingwerk en de open stand van de klep zijn weggelaten. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(NORTH_END - SOUTH_END).toFixed(1),

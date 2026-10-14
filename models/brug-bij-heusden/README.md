@@ -4,8 +4,8 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `brug-bij-heusden.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van het dek tussen de verhoogde stroken, met de attributen van het BGT-wegdeel in `extras.attributes`: `bgt_functie` `rijbaan regionale weg` voor de rijbaan van de N267 en `fietspad` voor de twee fietspaden, beide `bgt_fysiekvoorkomen` `gesloten verharding` en `plus_fysiekvoorkomen` `asfalt`; zo werken de kleurregels van een thema op het brugdek) en `building:brug-bij-heusden` met het dek, de scheidingen en randen, de portaalpyloon met kop, verdiept vlak met spitse onderkant en rode kappen, de sloof met sokkels, vier tuiwaaiers, de overgangspijler, zes wandpijlers en twee landhoofden |
-| `brug-bij-heusden-1-1500.stl` | De brug in één stuk op 1:1500 met een printvoet onder het dek, met de onderkant (NAP -0,17 m) op het printbed (375 × 20 × 34 mm) |
+| `brug-bij-heusden.glb` | Catalogusbron in meters: nodes `road:rijbaan` en `road:fietspad` (de bovenste 0,5 m van het dek tussen de verhoogde stroken, met de attributen van het BGT-wegdeel in `extras.attributes`: `bgt_functie` `rijbaan regionale weg` voor de rijbaan van de N267 en `fietspad` voor de twee fietspaden, beide `bgt_fysiekvoorkomen` `gesloten verharding` en `plus_fysiekvoorkomen` `asfalt`; zo werken de kleurregels van een thema op het brugdek) en `building:brug-bij-heusden` met het dek, de scheidingen en randen, de portaalpyloon met kop (vlakke onderkant met kleine schuine hoeken) en rode kappen, de sloof met sokkels, vier tuiwaaiers van acht losse tuien, de overgangspijler, zes wandpijlers en twee landhoofden |
+| `brug-bij-heusden-1-1500.stl` | De brug in één stuk op 1:1500 met een printvoet onder het dek en printvormen voor de kop en de tuiwaaiers (zie Printbaarheid), met de onderkant (NAP -0,17 m) op het printbed (375 × 20 × 34 mm) |
 | `brug-bij-heusden.json` | Catalogusitem met RD-georeferentie, maaiveldpunten, vaste maaiveldhoogte, hoofdmaten en bronnen |
 
 De GLB is in meters met de oorsprong op RD (136424,26, 416375,78) (WGS84
@@ -56,12 +56,8 @@ Onderdelen in het model (hoogtes in NAP):
   waarvan de buitenkant van 13,1 m naast de as op dekhoogte naar 9,1 m in de
   top loopt (circa 6 graden, AHN en foto's), van de sokkels (+5,5 m) tot de
   kop. De kop tussen de poten van +45,3 tot +49,7 m (AHN tussen de kappen,
-  foto's). Onder de kop een afschuining van 50 graden naar een 0,35 m
-  verdiept vlak van 2,7 m dik met een spitse onderkant van 50 graden vanaf de
-  poten (top +44,83 m, tegen de poten +36,7 m), zoals bij de dwarsregel van de
-  Molenbrug: met alleen een kiel onder de kop zette de export een wand van de
-  kop tot het wegdek. Op de foto's heeft de doorgang alleen kleine schuine
-  hoeken; de spitse top is een aanpassing voor het printen zonder steun.
+  foto's), met een vlakke onderkant op +45,3 m en in de hoeken van de
+  doorgang kleine schuine hoeken van 1 m tot +44,3 m tegen de poten (foto's).
   Erop twee rode kappen van 7,45 m breed en 3,0 m langs de as tot +51,4 m,
   met 3,2 m vrij in het midden (AHN 51,51 m, foto's).
 - De sloof in de rivier volgens de BGT (5,2 m langs de as, tot 14,8 m naast
@@ -69,19 +65,19 @@ Onderdelen in het model (hoogtes in NAP):
   tot +5,5 m (AHN) vanaf 10 m naast de as.
 - Per kant en per overspanning een waaier van acht tuien (foto's, geschat),
   verankerd in de kop op +46,0 tot +48,9 m (om de 0,42 m), op de scheiding
-  21 tot 109,2 m van de pyloon om de 12,6 m, 5,175 m naast de as. Elke waaier
-  is een verticale plaat van 0,9 m met de tuien als ribben van 1,0 m die
-  0,25 m uitsteken en daartussen 67 doorgaande openingen per overspanning
-  (verticale zijde aan de kant van de pyloon, bovenzijde van 55 graden, punt
-  aan de dekkant afgeknot op 0,15 m). De eerste 8 m vanaf de pyloon is de
-  omhulling van de ribben (een bundel van 1,4 m dik); onder de kortste tui
-  (59 graden) is de doorgang open.
+  21 tot 109,2 m van de pyloon om de 12,6 m, 5,175 m naast de as (59 graden
+  voor de kortste tot 19 graden voor de langste). Elke tui is een losse rechte
+  staaf van 0,9 × 0,9 m (doorsnede loodrecht op de tui) van de voet in de
+  scheiding (0,2 m boven het wegdek) naar het hart van de kop; de ruimte
+  tussen de tuien en onder de kortste tui is open. Bij de kop liggen de
+  ankers 0,42 m boven elkaar, zodat de staven daar in elkaar overlopen en
+  pas verderop uiteengaan.
 - De overgangspijler op x = 112,9 (3,75 m dik) en zes wandpijlers van
   1,65 × 11,8 m op x = 152,1, 199,6, 247,0, 294,4, 341,8 en 389,2 (BGT).
 - Twee massieve landhoofden (BGT): x = -127,9 tot -119,2 en 425,4 tot 435,0.
 
-Wat er niet in zit: de echte tuien van circa 0,2 m (vervangen door de
-tuiplaten met ribben en openingen), de spreiding van de ankers over de
+Wat er niet in zit: de echte dikte van de tuien (circa 0,2 m; in het model
+0,9 m, de minimale dikte op 1:1000), de spreiding van de ankers over de
 breedte van een kap (op de foto van voren een V-vormige waaier; hier ligt elke
 waaier in één verticaal vlak), leuningen, geleiderails, lantaarns en de
 witte beschermbuizen aan de voet van de tuien (dunner dan 0,9 m), de
@@ -95,7 +91,7 @@ Vergelijking met de PDOK-reconstructie (`?landmarks=0`): PDOK heeft geen
 gebouw op de brug; het dek is alleen een vlakke grijze wegstrook op
 dekhoogte zonder pyloon, tuien, pijlers of ligger. Het model heeft van
 noordwest en zuidoost (325 en 145 graden) de portaalpyloon met kop en kappen
-en de vier tuiwaaiers met hun openingen, de sloof met sokkels in het water,
+en de vier tuiwaaiers van losse tuien, de sloof met sokkels in het water,
 de zeven pijlers onder de aanbrug en de ligger met zijn schuine onderkant;
 van noordoost en zuidwest (55 en 235 graden) het silhouet van de waaiers aan
 beide kanten van de pyloon en de rij wandpijlers; van alle kanten de
@@ -108,26 +104,46 @@ de DSM-cellen binnen 1 m van het wegdek van het model (14 467 cellen, mediaan
 DSM-cel op de pyloon ligt op +51,51 m tegen +51,4 m in het model; tussen de
 kappen ziet het AHN de kop op +49,7 m.
 
-Printbaarheid op 1:1000: de tuien zijn te dun en hangen te flauw. De
-tuiwaaiers zijn dichte platen van 0,9 m met ribben van 1,0 m; elke opening
-heeft een bovenzijde van 55 graden, zodat boven het dek geen vlak flauwer dan
-50 graden vrij hangt, en de kortste tui (59 graden) vormt de onderrand van de
-plaat. De kop rust op het verdiepte vlak met de spitse onderkant. Alleen de
-onderkant van het dek, de pijlers en de sokkels hangen vrij (11 702 m2,
-allemaal onder het wegdek). De brug is 563 m lang en past op 1:1000 niet in
-400 mm; de printcheck (`prepareMeshes` met de printbare overhangopvulling)
-rekent daarom op 1:1439: status NoError voor alle drie de onderdelen,
-constructie 27 767 mm3 zonder en 27 409 mm3 met opvulling (-1,3 %), rijbaan
-en fietspad 0 % (de constructie draagt alles); op 1:1500 ook NoError
-(-5,9 %, de wegdelen 0 %). Een verticale straal door de doorgang van de
-pyloon raakt na het wegdek pas het verdiepte vlak onder de kop (met alleen
-een kiel vulde de export de doorgang tot het wegdek). Onder het dek zet de
-export een wig met een smal scherm tot de onderplaat, vast aan de pijlers en
-de sloof; de STL heeft dezelfde printvoet. De wegdelen en de constructie
+Printbaarheid op 1:1000: het model toont de echte vorm en laat het dichtmaken
+aan de export over. De tuien zijn te dun en hangen te flauw om zonder steun
+te printen; in het model zijn het staven van 0,9 m, de minimale dikte. Vrij
+hangen de onderkant van het dek, de pijlers en de sokkels (11 702 m2, onder
+het wegdek), de vlakke onderkant van de kop met de schuine hoeken (43 m2) en
+de onderkant van de tuien (1623 m2: alle tuien flauwer dan 45 graden, zes van
+de acht per waaier); het script controleert dat er boven het wegdek verder
+niets vrij hangt. In de meettest van de webshop (`scripts/overhang-lab`, het
+model op 1:1000) gaat het volume met "Ondersteuning v2.0" van 36,89 naar
+82,80 cm³ (v1.0: 84,39 cm³), zonder ongedragen lagen, in 12 s (v1.0 16 s,
+met 6,6 mm² ongedragen in stukjes waar geen printlijn in past); het vorige
+model met de tuiplaten en het verdiepte vlak ging van 40,88 naar 85,36 cm³.
+Het meeste daarvan is de opvulling onder het dek. Waar de export nog vult:
+onder de vlakke onderkant van de kop een spitse wig tussen de poten, die
+op twee dunne verticale wanden onder de schuine hoeken staat (circa 6,6 m
+naast de as, van de kop tot het fietspad; geen wand onder de hele kop), en
+onder de flauwe buitenste tuien wiggen tussen twee tuien; de doorgang onder
+de kop en de ruimte tussen de steilere tuien blijven open. De STL, die zonder export wordt geprint, heeft als printvormen
+onder de kop een afschuining van 50 graden naar een 0,35 m verdiept vlak van
+2,7 m dik met een spitse onderkant van 50 graden vanaf de poten (top
++44,83 m, tegen de poten +36,7 m, zoals bij de dwarsregel van de Molenbrug)
+en per waaier een verticale plaat van 0,9 m met de tuien als ribben van
+1,0 m die 0,25 m uitsteken, 67 doorgaande openingen per overspanning
+(verticale zijde aan de kant van de pyloon, bovenzijde van 55 graden) en de
+eerste 8 m vanaf de pyloon als bundel van 1,4 m; onder het dek een wig met
+een smal scherm tot de onderplaat. De STL is ongewijzigd. De printcheck
+hieronder is gemeten aan de eerdere versie met die printvormen in de GLB:
+de brug is 563 m lang en past op 1:1000 niet in 400 mm; de printcheck
+(`prepareMeshes` met de printbare overhangopvulling) rekent daarom op
+1:1439: status NoError voor alle drie de onderdelen, constructie 27 767 mm3
+zonder en 27 409 mm3 met opvulling (-1,3 %), rijbaan en fietspad 0 % (de
+constructie draagt alles); op 1:1500 ook NoError (-5,9 %, de wegdelen 0 %).
+Volumes van het huidige model: brug 36 888 m3, rijbaan 2494 m3, fietspad
+1948 m3, constructie 32 445 m3; samen precies de brug (het script
+controleert het). De wegdelen en de constructie
 hebben geen samenvallende bovenvlakken (`zfight.py`, 30 000 stralen: geen
 z-fighting tussen nodes; 2 tot 3 splinters in de constructie waar ribben
 schuin door een scheiding of langs elkaar lopen, minder dan bij de
-goedgekeurde Molenbrug en Eilandbrug).
+goedgekeurde Molenbrug en Eilandbrug; gemeten aan de eerdere versie met de
+tuiplaten).
 
 Bronnen: [Wikipedia](https://nl.wikipedia.org/wiki/Brug_bij_Heusden) (type,
 lengte 540 m), PDOK BGT overbruggingsdeel (dek
@@ -145,7 +161,7 @@ voetafstanden (de foto's laten de tuien zien maar niet scherp genoeg om ze
 te tellen; de luchtfoto toont de ankerlijnen op de scheidingen), de diepte en
 vorm van de ligger in de tuioverspanning (2,2 m) en van de kokerligger van
 de aanbrug (3,0 m), de hoogte van de lagere sloof tussen de sokkels (+4,3 m),
-de onderkant van de kop (+45,3 m, uit de foto's) en de dikte van de poten
+de onderkant van de kop (+45,3 m, uit de foto's) en de schuine hoeken eronder (1 m) en de dikte van de poten
 langs de as (3,4 m). Geen bouwjaar of ontwerper in de gebruikte bronnen.
 
 Licentie van het model: eigen werk op basis van open bronnen.
