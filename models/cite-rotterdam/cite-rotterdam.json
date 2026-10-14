@@ -1,0 +1,56 @@
+{
+  "name": "Cité",
+  "file": "cite-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93670,
+    435720
+  ],
+  "xAxis": [
+    0.8171037246092491,
+    -0.5764906792218696
+  ],
+  "groundHeight": 47.54438725,
+  "groundNap": 3.9,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -55,
+      0
+    ],
+    [
+      0,
+      23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000766718"
+  ],
+  "description": "Gehele Cité met twee cantileverende woontorens, gedeeld atrium, lage glasvleugel en hogere aansluitende bouwdelen. BAG en 3D BAG meten contouren en daken; de uitkraging begint op fotoschatting NAP 44.7 m en krijgt een 45 graden afschuining voor 1:1000. Wisselende blinde raamvelden, verticale kleursleuven als reliÃ«f en het atriumglas zijn vereenvoudigd naar schuine fotoâ€™s. Geen gestapelde hoogtelagen. Z=NAP-3.90 m.",
+  "realWorld": {
+    "groundNapM": 3.9,
+    "westTowerRoofNapM": 77.082,
+    "eastTowerRoofNapM": 88.898,
+    "topMachineNapM": 91.284,
+    "shoulderNapM": 44.7,
+    "middleCoreRoofNapM": 53.435,
+    "atriumRoofNapM": 21.369,
+    "lowWingRoofNapM": 9.253,
+    "estimatedCantileverStartNapM": 44.7,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000766718, complete eigen contour EPSG:28992",
+    "3D BAG LoD 2.2: beide torendaken, hogere vleugels en dakmachines",
+    "PDOK AHN DSM/DTM 0.5 m en orthoHR",
+    "PDOK 3D Basisvoorziening maaiveld 47.5444/47.7334 m ellipsoïdisch",
+    "https://www.rotterdamarchitectuurprijs.nl/2012/cite.html (Tangram; John Lewis Marshall, nachtbeeld en atriumfoto)",
+    "https://www.stadswonenrotterdam.nl/nl/over-ons/begeleid-wonen-in-cite (schuine dagfoto uitkraging)",
+    "https://www.hibex.nl/cite-kop-van-zuid-rotterdam/ (gevelbouwer, twee woontorens)"
+  ],
+  "printFiles": [
+    "cite-rotterdam-1-1000.stl"
+  ]
+}
