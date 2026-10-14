@@ -2,7 +2,8 @@
 // Example: generate-evoluon.mjs; continuous building volumes, blind facade recesses
 // and curved plant covers. The underground BAG rectangle is not a plaza slab.
 // Roof contours/heights: 3D BAG, TU Delft/3DGI, CC BY 4.0; checked against PDOK AHN4.
-import {Manifold,prism,rect,box,union,ccw,writeLandmark} from './efteling-kit.mjs';
+import {Manifold,prism,rect,box,union,ccw,writeLandmark,flag,toStl} from './efteling-kit.mjs';
+import {readFile,writeFile} from 'node:fs/promises';import path from 'node:path';
 const slug='amsterdam-symphony',ORIGIN=[120000,483225],GROUND=-.75,BASE=-1,z=h=>h-GROUND;
 const B=(a,b,c,d,h0,h1)=>box(a,b,z(h0),c,d,z(h1));
 function niche(a,b,s0,s1,h0,h1,depth=.36){
@@ -68,3 +69,11 @@ const nodes=[['building:symphony-woontoren',residential],['building:symphony-kan
 // hidden air pockets; keep the exterior niches and the open courtyards.
 const closedNodes=nodes.map(([name,body])=>[name,Manifold.compose(body.decompose().filter(p=>p.volume()>0))]);
 await writeLandmark({slug,base:BASE,nodes:closedNodes,catalog:{name:'Amsterdam Symphony',origin:ORIGIN,xAxis:[1,0],groundHeight:42.44917,groundOffsetMetres:0,groundSamplePoints:[[-10,-1],[91,9]],replacesBuildings:['NL.IMBAG.Pand.0363100012128931'],description:'Beide Symphony-torens, getrapte kantoorlaagbouw, hotel en alle bovengrondse vleugels van het gedeelde BAG-pand; de ondergrondse garage blijft onder het maaiveld en openbare pleinruimten blijven vrij.',realWorld:{groundNapM:GROUND,residentialRoofNapM:101.885,residentialPlantNapM:104.179,officeRoofNapM:102.004,officeShoulderNapM:73.247,officePlantNapM:104.236,hotelRoofNapM:38.666,hotelPlantNapM:43.263,lowRoofsNapM:[30.563,30.567,10.571,3.930,40.956,27.799,11.020,.272],estimates:['Venster-/metselwerkritme, verspringing van 0.32m en entreepuien uit schuine Commons-fotos geschat; nissen 0.36m diep','Regelmatige vleugelranden uit 3DBAG/AHN vereenvoudigd, circa0.3-0.8m; brede gesloten volumes houden raamrijen blind','Ronde plantkappen: contour uit ortho en dakhoogtes uit3DBAG; lokaal omhullende ellipsoide tussen gemeten voet en kruin','Het witte noordelijke installatiescherm is als massief volume met gebogen L-contour vereenvoudigd','Geen glas-koppen zoals de backlog suggereerde: bakstenen torens met afzonderlijke daktechniek; gepubliceerde105m wordt door techniekhoogte bereikt']},sources:['https://www.cie.nl/Amsterdam-Symphony?lang=nl (architect)','https://www.boele.nl/nl/projecten/symphony (bouwer)','https://www.verhoeven.nl/nl/projecten/symphony-amsterdam (gevelelementen)','https://zuidas.nl/en/threesixty_info/amsterdam-symphony/ (gemeente)','https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012128931 (TU Delft/3DGI CC BY4.0)','https://service.pdok.nl/lv/bag/wfs/v2_0 (CC0)','https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM/DTM CC0)','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actuele ortho)','https://commons.wikimedia.org/wiki/File:Amsterdam_-_Symphony_Office_Tower_%26_Symphony_Amsterdam_(30214043291).jpg (Fred Romero CC BY2.0)','https://commons.wikimedia.org/wiki/File:Amsterdam_Symphony_Towers.jpg (Choinowski CC BY-SA4.0)']}});
+
+// Five real buildings stay separate on the map; a standalone-print variant connects them.
+const outDir=path.join(path.resolve(flag('--out',path.join(import.meta.dirname,'../models'))),slug),scale=Number(flag('--scale','1000'));
+const all=union(closedNodes.map(([,part])=>part)),bounds=all.boundingBox();
+const plate=union([all,box(bounds.min[0]-1,bounds.min[1]-1,BASE-scale/1000,bounds.max[0]+1,bounds.max[1]+1,BASE+.02)]).translate([0,0,-BASE+scale/1000]);
+if(plate.status()!=='NoError'||plate.decompose().filter(p=>p.volume()>1e-6).length!==1)throw new Error('Symphony ground plate must connect five buildings');
+const plateName=`${slug}-grondplaat-1-${scale}.stl`;await writeFile(path.join(outDir,plateName),toStl(plate,'NederPrint Symphony with 1mm ground plate').buffer);
+const entryPath=path.join(outDir,slug+'.json'),entry=JSON.parse(await readFile(entryPath,'utf8'));entry.printFiles.push(plateName);await writeFile(entryPath,JSON.stringify(entry,null,2));
