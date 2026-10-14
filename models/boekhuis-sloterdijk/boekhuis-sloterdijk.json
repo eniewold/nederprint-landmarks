@@ -1,0 +1,73 @@
+{
+  "name": "Boekhuis",
+  "file": "boekhuis-sloterdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117956,
+    488982
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 43.948831,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      121
+    ],
+    [
+      37,
+      -16
+    ],
+    [
+      33,
+      -121
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012107557"
+  ],
+  "description": "Hele Boekhuis/The Book: opengeslagen boekvleugels met glasbanden en verticale piers, glashoofden en centrale vouw, volledige lange natuursteenonderbouw, noordgarage, zuidelijke kantoorvleugel en servicebouw, glazen piramide en printbaar dakwiel.",
+  "realWorld": {
+    "groundNapM": 1,
+    "axisDegrees": 0,
+    "bookRoofNapM": 82.757,
+    "bookParapetNapM": 83.5,
+    "frontNapM": [
+      19,
+      20.049
+    ],
+    "northGarageNapM": 19.752,
+    "southOfficeNapM": 59.637,
+    "southHeadNapM": 26.488,
+    "serviceNapM": 14.834,
+    "pyramidApexNapM": 22.164,
+    "wheelTopNapM": 92.25,
+    "estimates": [
+      "Hoofdassen en benoemde plannen uit3DBAG/BAG, V-boekvleugels kleine meetruis geregulariseerd tot rechte gevelvlakken; geen hoogtelagen",
+      "Horizontale glasgroepen3.65m ritme,6.2m breed/1.55m hoog/.3m blind, zwarte verticale piers1.3m breed/1.1m uit, hoogste blinde lagen en glashoofden uit actuele eigenaarsfoto geschat circa1-2m",
+      "Glaspiramide22.164NAP gemeten, resterende glashellingen symmetrisch rond gemeten apex geschat circa1m",
+      "Het Wiel9m volgens PublicArt: ovale vorm/aspositie uit foto geschat circa1m, gesloten1.05m dikke plaat met.22m blinde ovalengravure; draadmodel en as versterkt voor1:1000",
+      "Grote garagematen en kantoor-/servicedaken gemeten; dakmachines vereenvoudigd tot gesloten volumes circa.5-1m, smalle glasroedes en parkeerinterieur ontbreken",
+      "Eigen BAG-binnenhof blijft open, geen openbare pleinplaat; lobbypuien, kolommen en garageroosters gesloten/blind voor1:1000"
+    ]
+  },
+  "sources": [
+    "https://www.molsbergendevelopment.com/nieuwe-eigenaar-kantoorgebouw-belastingdienst-sloterdijk-amsterdam/ (eigenaar,2dec2025,boekvorm/HetWiel,PaulStarinkphotos)",
+    "https://publicart.amsterdam/projecten/het-wiel/ (kunstorganisatie,9mhoog1996JeroenHenneman)",
+    "https://www.realisag.de/en/magazine-and-press/company-news/article/real-is-signs-lease-for-40000-m2-in-amsterdam/ (eigenaar2023,hele40000m2complex)",
+    "https://nl.wikipedia.org/wiki/Boekhuis (BAG0363100012107557,boekvorm/onderbouw)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012107557 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "Commons:ChoinowskiBoekhuis2016/CCBYSA4,CeescamelWiel2020/CCBYSA4; Molsbergen/PaulStarink2025©uitsluitendvisuelereferentie buitenrepo"
+  ],
+  "printFiles": [
+    "boekhuis-sloterdijk-1-1000.stl"
+  ]
+}
