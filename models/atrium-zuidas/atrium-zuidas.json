@@ -1,0 +1,104 @@
+{
+  "name": "Atrium",
+  "file": "atrium-zuidas.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119736,
+    483700
+  ],
+  "xAxis": [
+    0.9985366703262117,
+    0.05407881298477529
+  ],
+  "groundHeight": 43.897341,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      33.20082888887287,
+      58.289835830029446
+    ],
+    [
+      42.122051889471216,
+      -54.3574534412779
+    ],
+    [
+      76.6710083631792,
+      -8.158215281132545
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012074056",
+    "NL.IMBAG.Pand.0363100012246549",
+    "NL.IMBAG.Pand.0363100012246583",
+    "NL.IMBAG.Pand.0363100012246582",
+    "NL.IMBAG.Pand.0363100012244160"
+  ],
+  "description": "Het volledige Atrium: drie oudere glasgevelblokken en centrale steenkern, twee nieuwe afgeronde torens met bronzen vloerbanden en wintertuinhoek, drie analytisch gebogen glaskappen, gemeten dakmachines en eigen glazen verbindingsatria/lobbies; de ondergrondse garage wordt alleen als dubbel PDOK-pand vervangen, buitenplein en tuin blijven open.",
+  "realWorld": {
+    "groundNapM": 0.65,
+    "axisDegrees": 3.1,
+    "oldBlockRoofsNapM": [
+      48.915,
+      37.222,
+      25.517
+    ],
+    "stoneCoreNapM": 61.409,
+    "smallCorePlantNapM": [
+      61.626,
+      61.733,
+      62.159,
+      62.19
+    ],
+    "newNorthRoofNapM": 42.813,
+    "newNorthParapetNapM": 43.461,
+    "newNorthPlantNapM": 46.806,
+    "newSouthRoofNapM": 66.672,
+    "newSouthPlantNapM": 68.693,
+    "glassBarrelEavesNapM": [
+      50.287,
+      38.093,
+      26.787
+    ],
+    "glassBarrelRidgesNapM": [
+      53.946,
+      42.278,
+      30.552
+    ],
+    "lobbyRoofsNapM": [
+      9.268,
+      9.297,
+      14.029
+    ],
+    "northLinksNapM": [
+      25.518,
+      14.017,
+      21.63,
+      14.047,
+      13.517
+    ],
+    "estimates": [
+      "Nieuwe torengevels met2.4m ronde hoeken volgens constructeur/MVSA; bronzen vinnen.8m uitkragend/.95m uiterste plaatdikte/45graden ondersnijding,3.9m ritme geschat uit fotos",
+      "Wintertuinhoek in de zuidtoren op42-54NAP geschat ±2m, vloerbanden daar onderbroken; open glaspartijen blind gemaakt",
+      "Drie oude glaskappen als parabolische dwarsprofielen tussen gemeten goot/nok geëxtrudeerd, geen hoogtelagen; exacte boogkromming en kapvoet ca.5-1m onzeker",
+      "Oud glasraster2.9m/3.55m,1.05m piers en.3m blind; lage glaspuien.4m blind en doorlopende plint vanaflaagste straatmaaiveld .65NAP geschat",
+      "Oudere kantoorplannen op eigen BAG geclipt, dakrand/klimaatruis vereenvoudigd tot benoemde rechte vlakken; hoofddaken en grote machinekoppen gemeten met3DBAG/AHN4",
+      "Eigen garageID0363100012244160 bevat dubbele hoge dakreconstructies: volledig vervangen, maar alleen echte bovengrondse lobbies/meanderluifel en shuttlebouwdelen meegenomen; geen plein/tuinplaat inGLB"
+    ]
+  },
+  "sources": [
+    "https://mvsa-architects.com/en/projects/atrium-zuidas/ (architect,5volumes,rondehoeken/wintertuinen/bronzenbanden)",
+    "https://zuidas.nl/construction-project/atrium/ (gemeente,nieuw/oud2018,schuinefoto)",
+    "https://vandenbergbouwkundigen.nl/projecten/the-new-atrium-amsterdam (constructeur,hoekstraal2.40m)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012074056 (TU Delft/3DGI CC BY4.0; andere4eigenBAG-panden zelfdebron)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "https://commons.wikimedia.org/wiki/File:Atrium_zuidtoren_Amsterdam-Zuid.jpg (Choinowski CC BY-SA4.0)",
+    "GemeenteZuidas/MVSA,SiebeSwart,JanVonk,MarcelSteinbach,OssipvanDuivenbode:schuinefotos alleenvisuele referentie buitenrepo"
+  ],
+  "printFiles": [
+    "atrium-zuidas-1-1000.stl"
+  ]
+}
