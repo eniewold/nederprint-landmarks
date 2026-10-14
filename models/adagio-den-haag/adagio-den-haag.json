@@ -1,0 +1,71 @@
+{
+  "name": "Adagio",
+  "file": "adagio-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81804,
+    454926
+  ],
+  "xAxis": [
+    0.6004202253258841,
+    -0.7996846584870905
+  ],
+  "groundHeight": 44.109611,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24.407457101830982,
+      -14.187178642079626
+    ],
+    [
+      16.601994172594488,
+      3.7912780817474507
+    ],
+    [
+      -4.181926170543067,
+      34.40220186999848
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001756996"
+  ],
+  "description": "Volledige eigen Adagio-woontoren met afgeronde bakstenen kopvleugels, terugliggende lange glasgevels, balkons als gesloten volumes met schuine onderzijde, terugliggende penthousekroon, gemeten dakmachines en eigen commerciële/fietsenplint met lage westentree; Bolero en de oude Turfmarktgarage blijven afzonderlijke panden.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "axisDegrees": -53.1,
+    "mainRoofNapM": 89.863,
+    "westHighShoulderNapM": 89.519,
+    "westTerraceNapM": 77.532,
+    "eastTerraceNapM": 77.47,
+    "mainRoofPlantNapM": 92.002,
+    "roofPlantsNapM": [
+      92.452,
+      92.364,
+      91.528,
+      91.552
+    ],
+    "plinthRoofNapM": 11.214,
+    "westEntryRoofNapM": 7.539,
+    "estimates": [
+      "Afgeronde kopvleugels uit BAG/ortho tot1m hoekradius en rechtgetrokken lokale gevelvlakken vereenvoudigd; lange centrale glasgevel1.6-1.9m terugliggend",
+      "Kroon/terrasscheiding rond77.5NAP volgt3DBAG/architectdoorsneden; kleine open hoeken en glasranden tot gesloten bouwdelen vereenvoudigd, circa1-2m onzeker",
+      "Woontraveeen3.4m/laagsteek3.02m/vensters2.05m hoog,.35m blind, balkons uit fotos als.95m dikke vloer en1.05m hoge gesloten frontband met1.2m uitkraging en45graden onderzijde",
+      "Commerciele puien4.4m hoog/.45m blind, tweedeverdiepingsscherm met.22m blinde sleuven; smalle echte verticale roedes niet vrijstaand",
+      "Hoofddak89.863NAP en installaties92.452NAP gemeten; metalen machinerasters en kleine schuine servicekap92.002 tot gesloten vaste dakdelen vereenvoudigd"
+    ]
+  },
+  "sources": [
+    "https://mvsa-architects.com/en/projects/sonate-adagio/ (architect,90m,2023,afgerondegevels/centralesetback/doorsneden)",
+    "https://www.boele.nl/nl/projecten/sonate (aannemer,2023,aparteAdagio/Bolero enoudeparkeergarage)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001756996 (TU Delft/3DGI CC BY4.0,AHN52023)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://www.ahn.nl/ahn5 (AHN5DSM2023 CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "MVSA-projectpagina: Ronald Tilleman2024 headerfotos enarchitectdoorsneden, auteursrecht, alleenvisueelreferentiemateriaal buitenrepo; modelmaten uit BAG/3DBAG/AHN5"
+  ],
+  "printFiles": [
+    "adagio-den-haag-1-1000.stl"
+  ]
+}
