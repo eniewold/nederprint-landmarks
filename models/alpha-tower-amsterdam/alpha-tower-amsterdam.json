@@ -1,0 +1,69 @@
+{
+  "name": "Alpha Tower",
+  "file": "alpha-tower-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124480,
+    480513
+  ],
+  "xAxis": [
+    0.9947743374368467,
+    0.10209807822423742
+  ],
+  "groundHeight": 39.843656,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14.924342762550573,
+      -37.67312029957041
+    ],
+    [
+      28.133769238098893,
+      -9.924264630560812
+    ],
+    [
+      -0.6857524017662628,
+      42.29101256346875
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012079391"
+  ],
+  "description": "Rechte natuurstenen Alpha-schijf met volledig eigen plint, blind vensterraster, uitstekende glazen gevelbanden en verticale eindspines, hoge entreeglasnis en gemeten daklift-/machinevolumes; de Oval Tower en Villa Arena blijven apart.",
+  "realWorld": {
+    "groundNapM": -3.5,
+    "axisDegrees": 5.86,
+    "mainRoofNapM": 86.435,
+    "liftNapM": 89.971,
+    "plantNapM": [
+      88.946,
+      88.752,
+      88.272,
+      88.951,
+      88.112
+    ],
+    "plinthRoofNapM": 6.376,
+    "estimates": [
+      "Steengevel met vensterpitch3.55m en kolomraster3.3m, blind2.1m hoog/.35m diep, steenpiers≥1.05m: aantallen uit fotos geschat",
+      "Glaserkers horizontaal op48.1/56/67.4/73NAP en verticale eindspines72.3/74.3 tot87.4NAP uit schuine fotos geschat ±2-3m,1m projectie met45graden ondersnijding",
+      "Hoge oostentreeglasnis tot17.2NAP en plintglasbanden.45m blind uit beheerderfoto geschat",
+      "Rechte hoofdcontour16.5x59.9m en noordkop31.08m volgen gemeten gevelassen; kleine LoD2.2gevelruis geregulariseerd, eigen volledigeBAGplint behouden",
+      "Dakhoogten uit3DBAG gecontroleerdmetAHN4; kleine installaties met schuine randen vereenvoudigd tot gesloten rechthoekige bouwdelen, geen vrijstaande roedes onder.9m"
+    ]
+  },
+  "sources": [
+    "https://www.alphatower.nl/ (gebouwbeheerder,23verdiepingen,SOM/ZZDP,DeEntree11-97)",
+    "https://www.breeam.nl/projecten/alpha-tower-amsterdam-10189 (DGBC,BREEAM,22verdiepingen)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012079391 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "https://commons.wikimedia.org/wiki/File:Alpha_Tower_Amsterdam_Zuidoost.jpg (Choinowski CC BY-SA4.0)",
+    "https://www.alphatower.nl/fotos/7_foto1_slider_groot.jpg (beheerderfoto,alleenvisuele referentie buitenrepo)"
+  ],
+  "printFiles": [
+    "alpha-tower-amsterdam-1-1000.stl"
+  ]
+}
