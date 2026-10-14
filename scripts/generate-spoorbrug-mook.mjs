@@ -41,7 +41,17 @@ const piers=BGT_SUPPORTS.map(({ring})=>{const x=ring.reduce((s,p)=>s+p[0]/ring.l
 const FIELD_ENDS=[-72.3,1.6,75.6,149.7],TRUSS_Y=[-4.05,.35],TRUSS_WIDTH=1.5;
 const profileY=(poly,y0,y1)=>section(poly).extrude(y1-y0).rotate([90,0,0]).translate([0,y1,0]);
 const profileX=(poly,x0,x1)=>section(poly).extrude(x1-x0).rotate([90,0,90]).translate([x0,0,0]);
-const trusses=[],portals=[],glbTrusses=[];
+// De STL krijgt de printvormen (trusses, portals): blinde ruiten en driehoeken
+// van 0,3 m aan beide kanten rond een kern van 0,9 m en spitse portalen. De
+// GLB (glbTrusses, glbPortals) toont het echte, open vakwerk: elk vak is een
+// doorgaande opening en de portalen zijn vlakke dakbalken van 0,95 × 0,95 m
+// met de ruimte eronder open. Wat daarvan zonder steun niet print (de vlakke
+// bovenkant van de omgekeerde driehoeken, de dakbalken), vult de export op.
+const trusses=[],portals=[],glbTrusses=[],glbPortals=[];
+// Snijpunt van twee lijnen, elk als [punt, richting].
+const meet=([p,d],[q,e])=>{const t=((q[0]-p[0])*e[1]-(q[1]-p[1])*e[0])/(d[0]*e[1]-d[1]*e[0]);return [p[0]+t*d[0],p[1]+t*d[1]];};
+const shiftX=([p,d],dx)=>[[p[0]+dx,p[1]],d];
+const horizontal=h=>[[0,h],[1,0]];
 for(let field=0;field<3;field++){
  const a=FIELD_ENDS[field],b=FIELD_ENDS[field+1],z=top((a+b)/2),cap=27.02-WATER_NAP;
  const outline=field<2?[[a,z-.3],[b,z-.3],[b,cap],[a,cap]]:[[a,z-.3],[b,z-.3],[b,z+.4],[b-7.8,cap],[a+7.8,cap],[a,z+.4]];
@@ -54,20 +64,49 @@ for(let field=0;field<3;field++){
    if(field===2&&(j===0||j===n-1))continue;
    wall=wall.subtract(profileY(opening,y-.76,y-.45)).subtract(profileY(opening,y+.45,y+.76));
   }trusses.push(wall.intersect(mask));
-  // Alleen in de GLB: in het Warrenveld ook de omgekeerde driehoeken tussen de
-  // staande, met een vlakke bovenkant onder de bovenrand en diagonalen van
-  // 1,0 m, als blinde nis zoals de andere vakken. Die vlakke bovenkant vult de
-  // export op; de STL heeft ze niet.
+  // GLB: dezelfde ruiten en staande driehoeken als doorgaande opening door de
+  // hele wand van 1,5 m. In het Warrenveld ook de omgekeerde driehoeken tussen
+  // de staande (vlakke bovenkant onder de bovenrand, diagonalen van 1,0 m) en
+  // de eindvakken: een staande driehoek tussen eindstijl en een staaf van
+  // 1,0 m van de eerste bovenknoop naar de eerste onderknoop (geschat) en een
+  // omgekeerde driehoek tussen die staaf en de eerste diagonaal. Eindstijl en
+  // bovenrand 1,0 m, onderrand met dek 1,3 m.
+  const holes=[];
+  for(let j=0;j<n;j++){
+   const l=a+(b-a)*j/n+1.1,r=a+(b-a)*(j+1)/n-1.1,m=(l+r)/2;
+   if(field===2&&(j===0||j===n-1))continue;
+   holes.push(field<2?[[l,z+4.15],[m,z+1.1],[r,z+4.15],[m,cap-1.0]]:[[l,z+1.0],[r,z+1.0],[m,cap-1.0]]);
+  }
   if(field===2){
-   let glbWall=wall;
+   const p=(b-a)/n,h=cap-1-(z+1);
    for(let j=1;j<n-2;j++){
-    const r=a+(b-a)*(j+1)/n-1.1,l=a+(b-a)*(j+1)/n+1.1,ml=a+(b-a)*(j+.5)/n,mr=a+(b-a)*(j+1.5)/n,h=cap-1-(z+1);
+    const r=a+(b-a)*(j+1)/n-1.1,l=a+(b-a)*(j+1)/n+1.1,ml=a+(b-a)*(j+.5)/n,mr=a+(b-a)*(j+1.5)/n;
     const s=1.0/Math.sin(Math.atan2(h,r-ml)),bottom=z+1+(s-1.1)*h/(r-ml);
-    const opening=[[ml+s,cap-1],[(r+l)/2,bottom],[mr-s,cap-1]];
-    glbWall=glbWall.subtract(profileY(opening,y-.76,y-.45)).subtract(profileY(opening,y+.45,y+.76));
+    holes.push([[ml+s,cap-1],[(r+l)/2,bottom],[mr-s,cap-1]]);
    }
-   glbTrusses.push(glbWall.intersect(mask));
-  }else glbTrusses.push(trusses[trusses.length-1]);
+   for(const mirror of [false,true]){
+    const X=x=>mirror?a+b-x:x;
+    const post=[[a,z+.4],[7.8,cap-(z+.4)]],postIn=shiftX(post,1.0/Math.sin(Math.atan2(cap-(z+.4),7.8)));
+    const knot=meet(postIn,horizontal(cap-1)),foot=[a+p,z+1],md=[foot[0]-knot[0],foot[1]-knot[1]];
+    const mw=.5/Math.sin(Math.atan2(-md[1],md[0])),member=[knot,md];
+    const l1=a+p+1.1,m1=a+1.5*p,s=1.0/Math.sin(Math.atan2(h,m1-l1)),diag=[[l1-s,z+1],[m1-l1,h]];
+    const endTriangle=[meet(postIn,horizontal(z+1)),meet(shiftX(member,-mw),horizontal(z+1)),meet(postIn,shiftX(member,-mw))];
+    const inverted=[meet(shiftX(member,mw),horizontal(cap-1)),meet(diag,horizontal(cap-1)),meet(shiftX(member,mw),diag)];
+    for(const hole of [endTriangle,inverted])holes.push(hole.map(([x,zz])=>[X(x),zz]));
+   }
+  }
+  if(field<2){
+   // Ruitenverband als twee families kruisende staven van 0,9 m (loodrecht
+   // op de staaf) tussen onder- en bovenrand: elke staaf loopt over de hele
+   // hoogte één vakbreedte opzij, met de knopen op de randen midden boven en
+   // onder de ruiten. Zo zijn de ruiten en de driehoeken langs de randen
+   // ertussen open; de eindstijlen zijn 1,1 m.
+   const p=(b-a)/n,zb=z+1.1,zt=cap-1.0,H=zt-zb,hw=.45*Math.hypot(H,p)/H;
+   const bar=(x0,dir)=>{const k=dir*p/H;return [[x0-hw-k,zb-1],[x0+hw-k,zb-1],[x0+hw+k*(H+1),zt+1],[x0-hw+k*(H+1),zt+1]];};
+   const solid=[[[a-1,z-1],[b+1,z-1],[b+1,zb],[a-1,zb]],[[a-1,zt],[b+1,zt],[b+1,cap+1],[a-1,cap+1]],[[a-1,z-1],[a+1.1,z-1],[a+1.1,cap+1],[a-1,cap+1]],[[b-1.1,z-1],[b+1,z-1],[b+1,cap+1],[b-1.1,cap+1]]];
+   for(let j=-1;j<=n;j++){const m=a+(b-a)*(j+.5)/n;solid.push(bar(m,1),bar(m,-1));}
+   glbTrusses.push(profileY(outline,y-.75,y+.75).intersect(union(solid.map(poly=>profileY(poly,y-.76,y+.76)))).intersect(mask));
+  }else glbTrusses.push(profileY(outline,y-.75,y+.75).subtract(union(holes.map(hole=>profileY(hole,y-.76,y+.76)))).intersect(mask));
  }
  // De vlakke echte portaalbalk is op printschaal vervangen door een spitse doorgang.
  // Ook in de GLB: met een vlakke dakbalk vulde de export (Ondersteuning v2.0)
@@ -76,11 +115,14 @@ for(let field=0;field<3;field++){
  for(const x of [a+8,b-8]){
   const lo=TRUSS_Y[0],hi=TRUSS_Y[1],c=(lo+hi)/2,outer=[[lo-.75,z],[hi+.75,z],[hi+.75,cap],[lo-.75,cap]],opening=[[lo+.75,z-1],[hi-.75,z-1],[hi-.75,z+4.5],[c,cap-.95],[lo+.75,z+4.5]];
   portals.push(profileX(outer,x-.475,x+.475).subtract(profileX(opening,x-.6,x+.6)).intersect(mask));
+  // GLB: de echte vlakke dakbalk tussen de wanden, onder de bovenrand
+  // gelijk met de bovenkant, binnen de wandcontour.
+  glbPortals.push(prism(rect(x-.475,lo,x+.475,hi),cap-.95,.95).intersect(profileY(outline,lo-.75,hi+.75)).intersect(mask));
  }
 }
 const guards=union(TRUSS_Y.map(y=>prism(rect(-72.32,y-.77,149.72,y+.77),0,40)));
 const printWhole=union([deck,...kokers,...piers,...estimated,...trusses.map(s=>s.intersect(mask)),...portals.map(s=>s.intersect(mask))]);
-const whole=union([deck,...kokers,...piers,...estimated,...glbTrusses.map(s=>s.intersect(mask)),...portals.map(s=>s.intersect(mask))]);
+const whole=union([deck,...kokers,...piers,...estimated,...glbTrusses,...glbPortals]);
 const layer=deck.subtract(deck.translate([0,0,-ROAD_LAYER]));let rest=footprint;const parts=[];
 for(const {id,rings,attributes}of ROAD_FOOTPRINTS){const area=rest.intersect(CrossSection.union(rings.map(section))),road=layer.intersect(area.extrude(40)).subtract(guards);if(road.isEmpty()||road.volume()<.005)continue;parts.push([`road:${attributes.bgt_functie}-${id.split('.')[1]}`,road,attributes]);rest=rest.subtract(area);}
 // Niet als wegdeel geregistreerde dekranden en middenberm blijven constructie.
@@ -235,5 +277,5 @@ function toGlb(namedParts, generator) {
 
 await mkdir(outDir,{recursive:true});await writeFile(path.join(outDir,'spoorbrug-mook.glb'),toGlb(parts,'NederPrint generate-spoorbrug-mook.mjs'));
 await writeFile(path.join(outDir,`spoorbrug-mook-1-${scale}.stl`),toStl(printModel,`Spoorbrug Mook Mook 1:${scale} geïntegreerde printvoet`).buffer);
-const entry={name:'Spoorbrug Mook',file:'spoorbrug-mook.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:51.75481,groundSamplePoints:[[-10,-35],[-10,35],[20,-35],[20,35]],replacesTerrain:["L0004.a625bfeb89034a1cb3ef616eda0355ae"],printFiles:[`spoorbrug-mook-1-${scale}.stl`],description:'Enkelsporige brug: twee rechte Callender-Hamiltonvelden met blind ruitenverband, één trapeziumvormig Warrenveld met blinde staande en omgekeerde driehoeken (V-liggers; de STL zonder de omgekeerde), vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden 1,5 m met 0,9 m kern en spitse printportalen. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,fieldEndsX:FIELD_ENDS,trussWidthM:TRUSS_WIDTH,trussTopNapM:27.02,estimatedGirderDepthM:2.1,slabM:SLAB},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Mook','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Mook']};
+const entry={name:'Spoorbrug Mook',file:'spoorbrug-mook.glb',crs:'EPSG:28992',origin:ORIGIN,xAxis:AXIS,unitsPerMetre:1,className:'building',groundOffsetMetres:0,groundHeight:51.75481,groundSamplePoints:[[-10,-35],[-10,35],[20,-35],[20,35]],replacesTerrain:["L0004.a625bfeb89034a1cb3ef616eda0355ae"],printFiles:[`spoorbrug-mook-1-${scale}.stl`],description:'Enkelsporige brug: twee rechte Callender-Hamiltonvelden met ruitenverband, één trapeziumvormig Warrenveld met staande en omgekeerde driehoeken (V-liggers), vier vlakke aanbruggen en actuele brede BGT-pijlers. AHN-spoorvlak circa NAP +18,9 m en bovenliggers +27,02 m; waterbasis geschat NAP +8,18 m en PDOK-water +51,75481 m ellipsoïdisch. Vakwerkwanden van 1,5 m met alle vakken als doorgaande opening en staven van minstens 0,9 m (in de Callender-Hamiltonvelden een ruitenverband van kruisende staven); zes portalen als vlakke dakbalken van 0,95 × 0,95 m. Wat zonder steun niet print (de bovenkant van de omgekeerde driehoeken, de dakbalken), vult de export op; de STL heeft blinde ruiten en driehoeken rond een kern van 0,9 m, spitse portalen en een printvoet. De afzonderlijke fietsbrug De Maasover wordt niet vervangen.',realWorld:{deckNapM:PROFILE,waterNapM:WATER_NAP,fieldEndsX:FIELD_ENDS,trussWidthM:TRUSS_WIDTH,trussTopNapM:27.02,estimatedGirderDepthM:2.1,slabM:SLAB},sources:['https://nl.wikipedia.org/wiki/Spoorbrug_Mook','https://api.pdok.nl/lv/bgt/ogc/v1/collections/overbruggingsdeel/items','https://api.pdok.nl/lv/bgt/ogc/v1/collections/wegdeel/items','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0','https://commons.wikimedia.org/wiki/Category:Spoorbrug_Mook']};
 await writeFile(path.join(outDir,'spoorbrug-mook.json'),JSON.stringify(entry,null,2)+'\n');console.log(JSON.stringify({parts:parts.map(([name,s])=>({name,status:s.status(),volumeM3:s.volume(),triangles:s.numTri()})),partitionDifferenceM3:delta,stlBounds:printModel.boundingBox()},null,2));

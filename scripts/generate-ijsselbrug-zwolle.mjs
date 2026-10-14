@@ -293,12 +293,13 @@ parts.push(bandY(-MAIN_PIER.x - 0.1, MAIN_PIER.x + 0.1, (x) => roadZ(x) - MAIN_D
 // tussen dek en binnenrand doorgaande openingen met een spitse top van 55
 // graden (de hangers als stijlen van 1,0 m), in het vakwerk doorgaande
 // driehoeken onder de diagonalen met een flank van minstens 53 graden en
-// blinde nissen van 0,35 m voor de rest. In de GLB is de driehoek onder een
-// diagonaal van minstens 45 graden helemaal open, zoals in het echt. De
-// openingen tussen de hangers tot de onderrand en de driehoeken onder de
-// bovenrand en de vlakkere diagonalen houden ook in de GLB hun printvorm: daar
-// zette de export in de meettest volle wanden of liet ze ongedragen lagen
-// over (zie de README).
+// blinde nissen van 0,35 m voor de rest. In de GLB is het vakwerk open zoals
+// in het echt: elk veld tussen twee hangers is open van de leuningstrook tot
+// de onderkant van de onderrand, en elke vakwerkdriehoek (onder en boven de
+// diagonaal) is een doorgaande opening, met randen van 1,4 m en stijlen en
+// diagonalen van 1,0 m. Wat daarvan zonder steun niet print (de onderkant van
+// de onderrand en van de bovenrand, de vlakke diagonalen rond de top), vult
+// de export op; de STL houdt de printvormen.
 const ARCH = { crown: 35.7, k: 0.00357, depth: 7.0, landX: 55, half: 69.6, post: 1.2, chord: 1.4, ribY: 4.3, plate: 1.2, panels: 22, hanger: 1.0, bar: 0.5, flank: 53, pointed: 55, niche: 0.35 };
 const upperTop = (x) => Z(ARCH.crown) - ARCH.k * x * x;
 const LOW_CROWN = Z(ARCH.crown - ARCH.depth);
@@ -309,12 +310,14 @@ const ribXs = Array.from({ length: Math.round((2 * ARCH.half) / 0.5) + 1 }, (_, 
 const ribOutline = [...ribXs.map((x) => [x, roadZ(x) - 1.0]), ...[...ribXs].reverse().map((x) => [x, upperTop(x)])];
 const throughHoles = [];
 const nicheHoles = [];
-// Voor de GLB: de spitse openingen tussen de hangers, doorgaande openingen
-// over de hele driehoek onder de steile diagonalen en verder dezelfde
-// openingen en nissen als in de STL.
+// Voor de GLB: de velden tussen de hangers open tot de onderrand en alle
+// vakwerkdriehoeken als doorgaande opening, zonder nissen.
 const hangerHoles = [];
-const belowHoles = [];
-const glbNiches = [];
+// Laagste vrije hoogte van een open veld boven de leuningstrook; waar de
+// onderrand lager komt (bij de kruising met het dek), sluit het veld met een
+// verticale kant.
+const MIN_CLEAR = 0.9;
+const trussHoles = [];
 const flankAngles = [];
 // Openingen tussen dek en binnenrand (hangers).
 for (let k = 0; k < ARCH.panels; k++) {
@@ -329,8 +332,38 @@ for (let k = 0; k < ARCH.panels; k++) {
   if (shoulder < floor + 1.0) continue;
   const apex = shoulder + (Math.tan(rad(ARCH.pointed)) * (b - a)) / 2;
   throughHoles.push([[a, floor], [b, floor], [b, shoulder], [(a + b) / 2, apex], [a, shoulder]]);
-  hangerHoles.push(throughHoles[throughHoles.length - 1]);
   flankAngles.push(ARCH.pointed);
+}
+// In de GLB: elk veld tussen twee hangers van de leuningstrook tot de
+// onderkant van de onderrand, om de 0,5 m; waar de vrije hoogte onder
+// MIN_CLEAR komt, houdt het veld op met een verticale kant.
+for (let k = 0; k < ARCH.panels; k++) {
+  const a = nodeX[k] + ARCH.hanger / 2;
+  const b = nodeX[k + 1] - ARCH.hanger / 2;
+  const floor = Math.min(roadZ(a), roadZ(b)) + 0.6;
+  const clear = (x) => lowBot(x) - floor - MIN_CLEAR;
+  const m = Math.ceil((b - a) / 0.5);
+  const xs = Array.from({ length: m + 1 }, (_, j) => a + ((b - a) * j) / m);
+  const cross = (p, q) => {
+    let lo = p;
+    let hi = q;
+    for (let i = 0; i < 50; i++) {
+      const c = (lo + hi) / 2;
+      if (clear(c) > 0 === clear(p) > 0) lo = c;
+      else hi = c;
+    }
+    return (lo + hi) / 2;
+  };
+  const top = [];
+  for (let j = 0; j < xs.length; j++) {
+    if (j > 0 && clear(xs[j]) > 0 !== clear(xs[j - 1]) > 0) {
+      const x = cross(xs[j - 1], xs[j]);
+      top.push([x, lowBot(x)]);
+    }
+    if (clear(xs[j]) > 0) top.push([xs[j], lowBot(xs[j])]);
+  }
+  if (top.length < 2) continue;
+  hangerHoles.push([[top[0][0], floor], [top[top.length - 1][0], floor], ...[...top].reverse()]);
 }
 // Vakwerk tussen onderrand en bovenrand: stijlen op de knopen, diagonalen van
 // de bovenknoop aan de buitenkant naar de onderknoop aan de binnenkant.
@@ -342,11 +375,9 @@ for (let k = 0; k < ARCH.panels; k++) {
   const xi = left ? nodeX[k + 1] : nodeX[k]; // binnenkant
   // Onder de diagonaal: top op de buitenste stijl.
   const below = inset([[xo, L(xo)], [xi, L(xi)], [xo, U(xo)]], ARCH.bar);
-  // In de GLB een doorgaande opening over de hele driehoek waar de diagonaal
-  // minstens 45 graden steil loopt; vlakkere diagonalen (rond de top, 37 tot
-  // 42 graden) houden de printvorm.
-  const diagonal = (Math.atan2(U(xo) - L(xi), Math.abs(xo - xi)) * 180) / Math.PI;
-  if (below && polyArea(below) > 1.5 && diagonal >= 45) belowHoles.push(below);
+  // In de GLB een doorgaande opening over de hele driehoek, ook onder de
+  // vlakkere diagonalen rond de top (37 tot 42 graden).
+  if (below && polyArea(below) > 1.5) trussHoles.push(below);
   if (below && polyArea(below) > 1.5) {
     const apex = below.reduce((p, q) => (q[1] > p[1] ? q : p));
     const dir = Math.sign(xi - xo);
@@ -356,23 +387,21 @@ for (let k = 0; k < ARCH.panels; k++) {
     const hole = CrossSection.intersection(new CrossSection([ccw(below)]), new CrossSection([ccw(wedge)])).toPolygons();
     if (hole.length === 1 && polyArea(hole[0]) > 1.0) {
       throughHoles.push(hole[0]);
-      if (diagonal < 45) belowHoles.push(hole[0]);
       const ap = hole[0].reduce((p, q) => (q[1] > p[1] ? q : p));
       // Helling van de schuine flank vanaf de top.
       const far = hole[0].reduce((p, q) => (Math.abs(q[0] - ap[0]) > Math.abs(p[0] - ap[0]) ? q : p));
       flankAngles.push((Math.atan2(ap[1] - far[1], Math.abs(far[0] - ap[0])) * 180) / Math.PI);
       const rest = new CrossSection([ccw(below)]).subtract(new CrossSection([ccw(wedge)])).toPolygons();
       for (const r of rest) if (polyArea(r) > 1.0) nicheHoles.push(r);
-      if (diagonal < 45) for (const r of rest) if (polyArea(r) > 1.0) glbNiches.push(r);
     } else {
       nicheHoles.push(below);
-      if (diagonal < 45) glbNiches.push(below);
     }
   }
-  // Boven de diagonaal: plafond is de bovenrand, dus een blinde nis.
+  // Boven de diagonaal: plafond is de bovenrand; in de STL een blinde nis, in
+  // de GLB een doorgaande opening.
   const above = inset([[xo, U(xo)], [xi, U(xi)], [xi, L(xi)]], ARCH.bar);
   if (above && polyArea(above) > 1.0) nicheHoles.push(above);
-  if (above && polyArea(above) > 1.0) glbNiches.push(above);
+  if (above && polyArea(above) > 1.0) trussHoles.push(above);
 }
 // Eindstijl: de plaat stopt op x = ±69,6 (stijl van 1,2 m breed).
 const printRibs = [-1, 1].map((side) => {
@@ -472,11 +501,7 @@ const ribs = [-1, 1].map((side) => {
   const t = ARCH.plate / 2;
   const yc = side * ARCH.ribY;
   const plate = profileY(ribOutline, yc - t, yc + t);
-  const outer = side > 0 ? [yc + t - ARCH.niche, yc + t + 0.5] : [yc - t - 0.5, yc - t + ARCH.niche];
-  const cuts = [
-    ...[...hangerHoles, ...belowHoles].map((h) => profileY(h, yc - t - 0.5, yc + t + 0.5)),
-    ...glbNiches.map((h) => profileY(h, outer[0], outer[1])),
-  ];
+  const cuts = [...hangerHoles, ...trussHoles].map((h) => profileY(h, yc - t - 0.5, yc + t + 0.5));
   return plate.subtract(union(cuts));
 });
 // Eindportalen: tussen de bogen een balk van 0,9 × 0,9 m op de eindstijlen,
@@ -749,8 +774,9 @@ report.arch = {
   bearingNap: +(lowBot(BEARING_X) + WATER_NAP).toFixed(2),
   hangerOpenings: throughHoles.length,
   niches: nicheHoles.length,
-  glbThroughHoles: hangerHoles.length + belowHoles.length,
-  glbNiches: glbNiches.length,
+  glbThroughHoles: hangerHoles.length + trussHoles.length,
+  glbHangerFields: hangerHoles.map((h) => [+h[0][0].toFixed(1), +h[1][0].toFixed(1)]),
+  glbTrussHoles: trussHoles.length,
   portalClearanceM: portals.map(({ clearance }) => +clearance.toFixed(2)),
   braces: braces.length,
   minFlankDeg: +Math.min(...flankAngles).toFixed(1),
@@ -802,7 +828,7 @@ await writeFile(
         "G0244.f1ac59f63bcf4f4c8b26456f97f97966",
       ],
       description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +1,3 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zwolle, RD-richting 28,87 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan beide kanten, onder de boog buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 15 m breed over de aanbruggen en 17,1 m onder de boog van het westelijke landhoofd bij Hattem (x = -262) tot het oostelijke bij Zwolle (x = 175,5), met het wegdek op NAP +8,4 tot +12,05 m (AHN); de stalen boog van 138 m tussen de rivierpijlers als twee rechtopstaande vakwerkbogen 4,3 m naast de as met de top op NAP +35,7 m, als platen van 1,2 m met doorgaande spitse openingen tussen de hangers en in het vakwerk (onder de diagonalen van minstens 45 graden over de hele driehoek) en blinde nissen, eindstijlen op het dek en schoren onder het dek naar de oplegging op de rivierpijlers; het windverband tussen de bovenranden als dwarsstaven en kruisen met een V-onderkant; zes betonnen bogen aan de westkant en drie aan de oostkant onder het dek, met de boogring 0,3 m voor het boogvlak, op pijlers met ronde koppen; de rivierpijlers van 6,1 × 22,6 m met ronde koppen. Tussen de bogen op de eindstijlen de eindportalen van 0,9 × 0,9 m. Leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de portalen, het dek) vult de export op. De STL heeft geen portalen, in het vakwerk overal de spitse openingen met nissen en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
+        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van het dek midden tussen de twee rivierpijlers op de waterspiegel van de IJssel (z = 0, NAP +1,3 m zoals het PDOK-terrein) in de oorsprong, +X langs de brug naar het oosten (Zwolle, RD-richting 28,87 graden vanaf het oosten) en +Y stroomafwaarts naar het noordnoordwesten. Drie nodes: road:rijbaan en road:fietspad, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan lokale weg of fietspad, bgt_fysiekvoorkomen gesloten verharding; de fietspaden aan beide kanten, onder de boog buiten de bogen), zodat de kleurregels van een thema erop werken; en building: de rest van het kunstwerk, het dek van 15 m breed over de aanbruggen en 17,1 m onder de boog van het westelijke landhoofd bij Hattem (x = -262) tot het oostelijke bij Zwolle (x = 175,5), met het wegdek op NAP +8,4 tot +12,05 m (AHN); de stalen boog van 138 m tussen de rivierpijlers als twee rechtopstaande vakwerkbogen 4,3 m naast de as met de top op NAP +35,7 m, als platen van 1,2 m met de velden tussen de hangers open tot de onderkant van de onderrand en alle vakwerkdriehoeken (onder en boven de diagonalen) als doorgaande opening, randen van 1,4 m, stijlen en diagonalen van 1,0 m, eindstijlen op het dek en schoren onder het dek naar de oplegging op de rivierpijlers; het windverband tussen de bovenranden als dwarsstaven en kruisen met een V-onderkant; zes betonnen bogen aan de westkant en drie aan de oostkant onder het dek, met de boogring 0,3 m voor het boogvlak, op pijlers met ronde koppen; de rivierpijlers van 6,1 × 22,6 m met ronde koppen. Tussen de bogen op de eindstijlen de eindportalen van 0,9 × 0,9 m. Leuningen en lantaarns zijn weggelaten; wat zonder steun niet print (de portalen, de onderrand boven de open velden, de bovenkant van de vakwerkdriehoeken, het dek) vult de export op. De STL heeft geen portalen, tussen de hangers en in het vakwerk overal de spitse openingen met nissen en onder het dek een wig met een smal scherm als printvoet. Het maaiveld wordt op het water naast de boog bemonsterd; groundHeight is de ellipsoïdische PDOK-hoogte van dat water. Geen BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
       printFiles: [stlName],
       realWorld: {
         lengthM: +(EAST_END - WEST_END).toFixed(1),
