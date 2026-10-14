@@ -1,0 +1,63 @@
+{
+  "name": "La Guardia Plaza",
+  "file": "la-guardia-plaza.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117745,
+    489325
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": 1.2585,
+  "groundHeight": 44.30191880791546,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -19,
+      -43
+    ],
+    [
+      50,
+      43
+    ],
+    [
+      -7,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012112686",
+    "NL.IMBAG.Pand.0363100012100941",
+    "NL.IMBAG.Pand.0363100012115282",
+    "NL.IMBAG.Pand.0363100012248810",
+    "NL.IMBAG.Pand.0363100012250150"
+  ],
+  "description": "Volledig Bright Offices-complex met vier gebogen kantoorschijven rond het open hof; A en B staan vrij, C en D delen een drie bouwlagen hoge L-vormige verbinding. Hoofddaken NAP 60.442/49.631/42.408/90.841 m en afzonderlijke dakmachines zijn gemeten uit open 3D BAG en gecontroleerd met AHN5. Doorlopende zijwanden, blinde glasvelden, brede kolommen en terugliggende hoge entrees zijn uit schuine ZZDP/JLL-fotos vereenvoudigd; raamritme, nisdikte en terugligging zijn geschat. De brasserie en het diensthuisje hebben echte gemeten schuine dakvlakken. Wereldassen in RD met oorsprong in het hof; de verschillende gebogen gevelassen staan in de contouren. Ondergrondse parkeerkelder en niet-architectonische hofkunst worden niet als bovengronds kantoorvolume gebouwd.",
+  "realWorld": {
+    "groundNapM": 1.2585,
+    "roofANapM": 60.442,
+    "roofBNapM": 49.631,
+    "roofCNapM": 42.408,
+    "roofDNapM": 90.841,
+    "connectorRoofNapM": 12.187,
+    "topMachineDNapM": 94.291,
+    "pavilionRoofMinNapM": 4.977,
+    "pavilionRoofMaxNapM": 7.822,
+    "facadePitchM": 3.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG, actuele orthoHR, AHN4 DSM/DTM 0.5 m, AHN5 DSM 0.5 m en 3D BAG LoD2.2: panden 0363100012112686/12100941/12115282/12248810/12250150, open geometrie en NAP-daken; 2026-10-14",
+    "https://www.zzdp.nl/history (architect: La Guardia Plaza met SOM, oblique projectfoto; alleen referentie)",
+    "https://www.breeam.nl/projecten/bright-offices-gebouw-a-7936 (opdrachtgever: vier gebouwen, A/B vrijstaand, C/D verbonden over eerste drie bouwlagen)",
+    "https://aanbod.jll.nl/en-nl/listings/la-guardiaweg-36-162-la-guardiaweg-36 (makelaar: actuele schuine fotos van gevels, entree en paviljoen; alleen referentie)",
+    "https://www.fundainbusiness.nl/en/kantoor/amsterdam/object-40335130-la-guardiaweg-36-66/ (opdrachtgever/makelaar: gerenoveerde Bright Offices en Brasserie Helden)"
+  ],
+  "printFiles": [
+    "la-guardia-plaza-1-1000.stl"
+  ]
+}
