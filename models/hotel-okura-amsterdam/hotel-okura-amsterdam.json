@@ -1,0 +1,53 @@
+{
+  "name": "Hotel Okura",
+  "file": "hotel-okura-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121368,
+    484637
+  ],
+  "xAxis": [
+    0.9970552410613919,
+    -0.07668667597444614
+  ],
+  "groundHeight": 43.525357875451135,
+  "groundNap": 0.5084,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      24.92599567,
+      -37.19804753
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012150422"
+  ],
+  "description": "Hotel Okura met volledige verbonden hotelvleugels, doorlopende kamertoren, open dakluifel op vier hoekstijlen en eigen dakmachines. BAG/3DBAG meten de gevelas en luifel-/vleugelcontouren, AHN meet fysieke dakhoogtes en maaiveld. De brede luifel krijgt een enkele schuine printkraag van NAP 70.1 naar 75.95 m; het centrale dakputje blijft open en de gevelnissen blijven in de print zichtbaar. De PDOK-reconstructie trekt de uitkragende luifel ten onrechte door als massieve gevel; de terugliggende torenvoet, hoekstijlen, luifelonderkant en het kamerraamritme zijn daarom uit schuine eigen Commons-fotos geschat. Alle glasvelden zijn blinde nissen met vaste achterwand. Nabijgelegen woonblokken en sportcentrum blijven behouden.",
+  "realWorld": {
+    "groundNapM": 0.5084,
+    "towerRoofNapM": 72.691,
+    "canopyTopNapM": 76.663,
+    "machineTopNapM": 80.266,
+    "westWingRoofNapM": 15.584,
+    "eastWingRoofNapM": 11.991,
+    "estimatedTowerSetback": true,
+    "estimatedCanopyUnderside": true,
+    "estimatedWindows": true,
+    "estimatedPrintCollar": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012150422: eigen verbonden hotelcomplex; overige panden behouden",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012150422 (LoD2.2 afzonderlijke dakvlakken, open luifelring en gevelas -4.398141 graden)",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: hoofddak 72.691 m, luifel 76.663 m, machines 79.401/79.930/80.266/79.999 m NAP; maaiveld RD 121390,484598 NAP .5084 m, PDOK ellipsoide 43.525358 m",
+    "https://www.okura.nl/nl/colouring-the-skyline (hoteleigenaar: dakluifel met LED-barometer, 78 m boven de stad)",
+    "https://www.okura.nl/history (hoteleigenaar: opening september 1971)",
+    "https://commons.wikimedia.org/wiki/File:Hotel_Okura_Amsterdam_-_Amstel_Canal.jpg (eigen schuine foto, kanaalgevel, ramen en dakluifel)",
+    "https://commons.wikimedia.org/wiki/File:Okura_Hotel_Amsterdam_in_2016.jpg (Choinowski eigen foto CC BY-SA 4.0: terugliggende kamertoren, open kroonstijlen en uitkragende luifel)",
+    "https://www.skyscrapercenter.com/building/okura-hotel/6529 (CVU: 78 m, 22 verdiepingen, architect Kanko Kikaku Sekkeisha)"
+  ],
+  "printFiles": [
+    "hotel-okura-amsterdam-1-1000.stl"
+  ]
+}
