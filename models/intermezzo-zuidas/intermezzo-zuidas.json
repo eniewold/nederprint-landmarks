@@ -1,0 +1,50 @@
+{
+  "name": "Intermezzo",
+  "file": "intermezzo-zuidas.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119883,
+    483277
+  ],
+  "xAxis": [
+    0.9999976312561755,
+    -0.002176575759790689
+  ],
+  "groundHeight": 42.42551558182622,
+  "groundNap": -0.5882,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -30.04563703,
+      20.93465298
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012244546",
+    "NL.IMBAG.Pand.0363100012244545"
+  ],
+  "description": "Intermezzo op de via PDOK adressen bevestigde locatie, circa 190 m oostelijk van de oude backlogpin. Volledige afgeronde straatgevel, oostelijke terrasvleugel, lage westvleugel en opgetilde binnenhofplint. BAG/3DBAG meten as en fysieke terrascontouren; AHN meet daken en maaiveld. Afgeronde gevelhoeken, blinde brede woonramen, balkonloggias met blijvende vloerbanden en bovenste dakrand geschat uit gemeentelijke eigen schuine fotos van Jan Vonk. De gedeelde kelder wordt verborgen; het afzonderlijke Ella 0363100012242878 en omliggende Mahler/Summertime blijven behouden.",
+  "realWorld": {
+    "groundNapM": -0.5882,
+    "streetRoofNapM": 80.823,
+    "parapetTopNapM": 81.428,
+    "machineTopNapM": 82.619,
+    "westWingRoofNapM": 24.484,
+    "courtyardRoofNapM": 4.859,
+    "estimatedGlazedCorners": true,
+    "estimatedBalconyLoggias": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012244546: volledige bovengrondse Intermezzo; 0363100012244545 is de gedeelde kelderregistratie, afzonderlijk Ella 0363100012242878 behouden",
+    "PDOK Locatieserver: Leonard Bernsteinstraat 62A en Gustav Mahlerlaan 547B bevestigen circa 190 m correctie ten opzichte van backlogpin",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012244546 (LoD2.2 afzonderlijke terras-/vleugeldaken en lange dakrandas -0.124709 graden)",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: hoofddak 80.823 m, eigen plant 82.619 m, westvleugel 24.484 m en binnenhofplint 4.859 m NAP; maaiveld RD 119853,483298 NAP -.5882 m, PDOK ellipsoide 42.425516 m",
+    "https://zuidas.nl/construction-project/intermezzo/ (gemeente, eigen fotos Jan Vonk: afgeronde straatgevel, grote zuid/westbalkons, Inbo en oplevering 2017)",
+    "https://www.nibostone.nl/zakelijk/projecten/intermezzo-zuidas (uitvoerend natuursteenspecialist: plint van 8 m, Inbo/ERA Contour, materialen en oplevering 2017)"
+  ],
+  "printFiles": [
+    "intermezzo-zuidas-1-1000.stl"
+  ]
+}
