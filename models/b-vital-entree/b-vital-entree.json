@@ -1,0 +1,78 @@
+{
+  "name": "B Vital (De Entree 201)",
+  "file": "b-vital-entree.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124565,
+    480536
+  ],
+  "xAxis": [
+    0.9323238012155122,
+    0.36162457008209226
+  ],
+  "groundHeight": 39.525523,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -31.33738467124532,
+      13.22755918400665
+    ],
+    [
+      28.78898833363975,
+      -0.44062538006136975
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012067060"
+  ],
+  "description": "Volledige geknikte L-vormige B Vital-toren, horizontale glasgroepen en verticale glashoek, gerenoveerde gesloten lobby, glazen bovenste kantoorlaag, gemeten zuidoostelijke dakrand als doorlopend hellend vlak en afzonderlijke machineblokken; Oval/Alpha/VillaArena en DeEntreeII blijven apart.",
+  "realWorld": {
+    "groundNapM": -3.7,
+    "axisDegrees": 21.2,
+    "mainRoofNapM": 70.687,
+    "parapetNapM": 71.38,
+    "southeastCrownNapM": [
+      70.588,
+      72.398
+    ],
+    "southeastRoofPlaneNap": [
+      0.03999700470480257,
+      -0.03545030095426882,
+      71.01336121444699
+    ],
+    "lowPlantNapM": 71.417,
+    "plantNapM": [
+      73.479,
+      73.262,
+      73.269,
+      73.449,
+      73.282
+    ],
+    "lobbyOuterNapM": 2.262,
+    "estimates": [
+      "BAG/3DBAG-gevelassen en volledigeL-voet: hoofdvleugelcirca43.4x15.5m en tweedevleugelcirca27x15.6m met circa15graden knik, kleine meetruis geregulariseerd",
+      "Achttien brede glasbanden op3.65m ritme,1.8m hoog/.35m blind en≥1.05m doorgaande piers uit eigenaarsfoto geschat; dunne glasroedes niet vrijstaand",
+      "Verticale glashoek circa4.5m breed en bovenste glasstrook68.65-70.1NAP uit eigenaarsfoto geschat circa1m",
+      "Lobbypuien.45m blind vanafNAP-3.05tot2.6m, hele eigenBAGplint en kleine entreecilinder op2.262NAP meegenomen; interieur/kelder niet gemodelleerd",
+      "Zuidoostelijke dakrand exactplanvlak .039997u-.035450v+71.013361,3DBAGresidu<.001m, .79m werkelijke rand tot.95m versterkt; geen gestapelde hoogtelagen",
+      "Dakblokken volgen3DBAG/AHN4, ortho toont2022vernieuwde machines; kleine roosters en warmtepompaansluitingen tot gesloten hoofdvolumes vereenvoudigd circa.5-1m"
+    ]
+  },
+  "sources": [
+    "https://www.bvital-amsterdam.nl/ (gebouwbeheerder,18verdiepingen,actuelegevelfoto/overzicht)",
+    "https://www.flowrealestate.nl/investment/b-vital (eigenaar,renovatie2022)",
+    "https://www.bosmanbedrijven.nl/projecten/b-vital/ (installateur,renovatie2022,hergebruik/nieuwewarmtepompen)",
+    "https://inbo.com/nl/projects/b-vital-amsterdam/ (architectinterieur2023,actueleL-plattegrond)",
+    "https://www.breeam.nl/projecten/b-vital-18311 (DGBC,DeEntree201/18verdiepingen)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012067060 (TU Delft/3DGI CC BY4.0)",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (BAGCC0)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4DSM/DTM CC0)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (actueleortho)",
+    "BVital/Flow,BosmanenINBO/JordiHuisman:gevel/overzicht/plattegrond uitsluitendvisuelereferentie buitenrepo"
+  ],
+  "printFiles": [
+    "b-vital-entree-1-1000.stl"
+  ]
+}
