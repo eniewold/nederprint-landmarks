@@ -1,0 +1,67 @@
+{
+  "name": "Hoge Erasmus",
+  "file": "hoge-erasmus.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92685,
+    436104
+  ],
+  "xAxis": [
+    0.8923639323642293,
+    0.4513165321760873
+  ],
+  "groundHeight": 46.56198360355458,
+  "groundNap": 2.965,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      47.34663407524388,
+      -12.739554220809898
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000691772",
+    "NL.IMBAG.Pand.0599100000690103"
+  ],
+  "description": "Hoge Erasmus aan het Willemsplein met gemeten golvende woontoren, terugliggende bovenste terrassen, aangehechte dakmachines, complete eigen kantoorplint op drie V-kolommen, zeslaagse parkeergarage en westelijke laagbouw. BAG/3DBAG bepalen gevelas en bouwdelen; AHN meet roofhoogtes en maaiveld. Blind vensterritme en breedte/spreiding van de V-kolommen uit eigen fotos Steven Lek en Zairon geschat. De verkeerde Westblaak/Churchillplein-omschrijving uit de backlog is gecorrigeerd. Geen omliggende Zalmhaven of Hoge Heren vervangen.",
+  "realWorld": {
+    "groundNapM": 2.965,
+    "towerRoofNapM": 92.263,
+    "balconyShoulderNapM": 89.471,
+    "upperTerracesNapM": [
+      83.134,
+      83.37
+    ],
+    "machineTopNapM": 96.515,
+    "podiumRoofsNapM": [
+      17.686,
+      21.083
+    ],
+    "garageRoofNapM": 28.815,
+    "garageMachinesNapM": [
+      32.537,
+      32.46
+    ],
+    "westernOfficeRoofNapM": 15.797,
+    "estimatedFacadeRelief": true,
+    "estimatedVColumns": 3,
+    "estimatedFrontUndersideNapM": 8.4
+  },
+  "sources": [
+    "PDOK BAG 0599100000691772 en 0599100000690103: eigen toren/plint en volledige garage/westelijke laagbouw",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000691772 (LoD2.2 golvende dakcontouren en afzonderlijke terrassen)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000690103 (LoD2.2 complete eigen garage en lage kantoren)",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: afzonderlijke fysieke daken; open glazen borstweringen hebben weinig bruikbare DSM-cellen, coherent LoD2.2 vlak gebruikt waar nodig",
+    "https://commons.wikimedia.org/wiki/File:Hoge_Erasmus_2018_1.jpg (Steven Lek eigen foto, CC BY-SA 4.0: V-kolommen en kantoorplint; in browser bekeken)",
+    "https://commons.wikimedia.org/wiki/File:Hoge_Erasmus_2018_2.jpg (Steven Lek eigen foto, CC BY-SA 4.0: golvende woontoren en plint; in browser bekeken)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_Hoge_Erasmus.jpg (Zairon eigen foto, CC BY-SA 4.0: terrassen en zijgevel; in browser bekeken)",
+    "https://www.skyscrapercenter.com/building/hoge-erasmus/5407 (CVU: 93 m, 28 verdiepingen, 68 appartementen, Klunder, Willemsplein 500/569)",
+    "https://sprank.nl/en/projecten/hoge-erasmus-rotterdam/ (renovatieontwerper: eigen entreeproject en fotos)",
+    "https://www.colliers.com/nl-nl/news/fyeo-opent-oogkliniek-in-hoge-erasmus-offices-in-rotterdam (verhuuradviseur: kantoorplint en huidige eigenaar/gebruik 2026)"
+  ],
+  "printFiles": [
+    "hoge-erasmus-1-1000.stl"
+  ]
+}
