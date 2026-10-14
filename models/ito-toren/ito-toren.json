@@ -1,0 +1,51 @@
+{
+  "name": "Ito-toren",
+  "file": "ito-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119919,
+    483382
+  ],
+  "xAxis": [
+    0.9999957726015372,
+    -0.002907710276956493
+  ],
+  "groundHeight": 42.5709661114952,
+  "groundNap": -0.5813,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      52.0928269,
+      -31.84866379
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012112073"
+  ],
+  "description": "Volledige eigen Ito-kantoorvleugels en lage binnenhofplint met doorlopende volumes, afzonderlijke dakmachines, verhoogde westelijke daklichtstrook, horizontale blinde glasbanden en vier diepe blinde atriumgevels. BAG/3DBAG meten contouren en gevelas; AHN meet hoofddak, westelijk daklicht, lage plint en machines. Grote glazen vides, terugliggende glasruggen, tweezijdige bovenste vide, plintkolommen en raamritme geschat uit eigen eigenaarfoto Union Investment en fotos Bart van Hoek. De aparte Viñoly/SOM-registratie 0363100012107681 en omringende torens blijven behouden.",
+  "realWorld": {
+    "groundNapM": -0.5813,
+    "tallRoofNapM": 96.715,
+    "middleRoofNapM": 64.972,
+    "podiumRoofNapM": 26.493,
+    "roofLightNapM": 30.329,
+    "machineTopNapM": 100.094,
+    "estimatedBlindVides": true,
+    "estimatedStripWindows": true
+  },
+  "sources": [
+    "PDOK BAG 0363100012112073: volledige eigen Ito met binnenhofvleugels; naastgelegen 0363100012107681 wordt niet vervangen",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012112073 (LoD2.2 fysieke dak- en gevelvlakken, zuidgevelas -0.166600 graden)",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: hoofddak NAP 96.715 m, laag dak 26.493 m, westelijk daklicht 30.329 m, machines 98.482/97.473/98.606/100.094 m; middelste begroeide dakterras gebruikt coherent LoD2.2-vlak 64.972 m in plaats van gemengde DSM 64.632 m",
+    "https://www.ito-som.nl/en_GB/offices-ito (Union Investment eigenaar: eigen schuine foto, 100 m, vier glazen atria, gekoppelde lage binnenhofvleugels)",
+    "https://www.architectuur.org/bouwwerk/281/Toyo_Ito_toren.html (eigen fotos Bart van Hoek ito01_1/ito01_2: rechthoekige glazen vides en horizontale aluminium/glasbanden)",
+    "https://www.hunterdouglasarchitectural.com/interiordesign/index.jsp?id=8a4383491a0d1127011a3b41c29201ac (gevelleverancier: uitgesneden vides op verschillende hoogtes)",
+    "https://www.graziosi-progetti.nl/projecten/ito/ (entree-architect: gerealiseerde transparante pleinlobby en binnentuin)",
+    "https://www.skyscrapercenter.com/building/ito-toren/5666 (CVU: 100 m, 25 verdiepingen, Toyo Ito/ZZDP)"
+  ],
+  "printFiles": [
+    "ito-toren-1-1000.stl"
+  ]
+}
