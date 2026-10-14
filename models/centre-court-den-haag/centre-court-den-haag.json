@@ -1,0 +1,64 @@
+{
+  "name": "Centre Court",
+  "file": "centre-court-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82823,
+    455344
+  ],
+  "xAxis": [
+    0.848048096156426,
+    0.5299192642332049
+  ],
+  "groundHeight": 44.10150059,
+  "groundNap": 0.67,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -38.6965,
+      70.1682
+    ],
+    [
+      49.9303,
+      -46.5292
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000238629",
+    "NL.IMBAG.Pand.0518100000239375",
+    "NL.IMBAG.Pand.0518100000271459",
+    "NL.IMBAG.Pand.0518100000218778",
+    "NL.IMBAG.Pand.0518100000221349",
+    "NL.IMBAG.Pand.0518100000326121",
+    "NL.IMBAG.Pand.0518100000338618",
+    "NL.IMBAG.Pand.0518100000212640",
+    "NL.IMBAG.Pand.0518100000287985"
+  ],
+  "description": "Gehele Centre Court met twee getrapte kantoortorens, zeven woonvleugeldelen, twee open binnenhoven, een overdekt atrium en de continue gewelfde entreehal. Dakmaten en BAG-contouren uit 3D BAG/AHN5; 2021-optopping tot NAP 28.192 m opgenomen. Venster- en glasribritme, lichte kroonvereenvoudiging en schoorsteenbreedte zijn fotoschattingen en printaanpassingen. Z=NAP-0.67 m; backloglocatie gecorrigeerd naar werkelijk complex circa 450 m noordelijker.",
+  "realWorld": {
+    "groundNapM": 0.67,
+    "mainRoofNapM": 24.411,
+    "highShoulderNapM": 52.412,
+    "highCrownNapM": 66.353,
+    "highMachineNapM": 73.195,
+    "chimneyNapM": 79.94,
+    "lowerTowerNapM": 42.014,
+    "extensionRoofNapM": 28.192,
+    "barrelCrownNapM": 28.061,
+    "atriumPeakNapM": 28.572,
+    "housingParts": 7
+  },
+  "sources": [
+    "PDOK BAG: kantoor en complete aansluitende woonvleugel, EPSG:28992",
+    "3D BAG LoD 2.2: alle negen panddelen, afzonderlijke dakvlakken en contouren",
+    "PDOK AHN5 DSM 0.5 m 2023 en AHN DTM 0.5 m; actuele orthoHR",
+    "PDOK 3D Basisvoorziening: maaiveld 44.1015/44.2270 m ellipsoïdisch",
+    "https://kow.nl/projecten/centre-court-den-haag/ (KOW-foto’s, uitsluitend visuele referentie)",
+    "https://www.heembouw.nl/projecten/optopping-centre-court-den-haag/ (oplevering optopping mei 2021)"
+  ],
+  "printFiles": [
+    "centre-court-den-haag-1-1000.stl"
+  ]
+}
