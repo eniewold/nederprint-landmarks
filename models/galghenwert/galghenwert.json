@@ -1,0 +1,57 @@
+{
+  "name": "Galghenwert",
+  "file": "galghenwert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138285,
+    454425
+  ],
+  "xAxis": [
+    0.9245809425679573,
+    -0.3809856698619355
+  ],
+  "groundHeight": 46.85064793,
+  "groundNap": 3.45,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      10.834898148655483,
+      -42.042894549593775
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000005765"
+  ],
+  "description": "Galghenwert met hogere witte schijf, lagere schouder en panoramaliftnaad, twee ronde blinde kroonvensters, aparte machines, glasentree, complete eigen kantoren DOS, Velox en Elinkwijk en hun verbonden glasbruggen. Alle delen zitten in een eigen BAG-pand; de grote ondergrondse parkeerplaat wordt niet meegebouwd. BAG/PDOK LoD2.2 bepalen gevelas en dakcontouren; AHN meet dakhoogtes. Vensterritme, kroonnissen, entreepui, brugbreedte en onderkant glasbrug uit Conclusion-fotos en de openbare Ans de Wijn-verhuurbrochure geschat. Antenne, stadion en Apollo Residence weggelaten.",
+  "realWorld": {
+    "groundNapM": 3.45,
+    "towerRoofNapM": 85.949,
+    "shoulderRoofNapM": 80.89,
+    "machineTopNapM": 88.498,
+    "officeRoofsNapM": [
+      18.073,
+      21.669,
+      16.221,
+      17.197
+    ],
+    "foyerRoofNapM": 10.916,
+    "bridgeRoofNapM": 11.062,
+    "estimatedBridgeBottomNapM": 5.1,
+    "estimatedRoundCrownWindows": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0344100000005765: complete kantoren inclusief ondergrondse garage; stadion 0344100000056854 wordt behouden",
+    "PDOK openbare LoD2.2-gebouwtegels: afzonderlijke vlakke daken en gevelrand voor hoofdas -22.394751 graden; 3D BAG-itemservice gaf HTTP 502",
+    "AHN DSM/DTM 0.5 m en actuele orthoHR: dakhoogtes van ieder bovengronds bouwdeel, ondergrondse plaat en antenne uitgesloten",
+    "https://www.conclusion.nl/en/contact-us/ (eigen gebruikerfotos: verschillende torenfronten en ronde kroonvensters)",
+    "https://donkerutrecht.nl/foto/kantorencomplex-galgenwaard/ (eigen schuine foto Donker Utrecht: liftnaad en lage kantoren)",
+    "https://ventu.nl/media/objects/88/16/7F/C3/88167FC3-77EB-4360-8234-DF1D8C2A1458/docs/VI-Utrecht-Herculesplein-2-116.pdf (Ans de Wijn-verhuurbrochure: naam/samenhang eigen kantoren; fotos pp.11-13, gevels, entrees en glasbruggen)",
+    "https://www.skyscrapercenter.com/building/kantoortoren-galghenwert/6962 (CVU: Cees Dam, 22 verdiepingen, 85.6 m inclusief architectonische top)"
+  ],
+  "printFiles": [
+    "galghenwert-1-1000.stl"
+  ]
+}
