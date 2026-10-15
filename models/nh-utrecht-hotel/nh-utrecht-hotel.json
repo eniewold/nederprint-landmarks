@@ -1,0 +1,65 @@
+{
+  "name": "NH Utrecht Hotel",
+  "file": "nh-utrecht-hotel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135706,
+    455792
+  ],
+  "xAxis": [
+    0.8580649057236446,
+    0.51354125205817
+  ],
+  "groundNap": 2.3340001106262207,
+  "groundHeight": 45.73414768867144,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -20.52867,
+      -45.98449
+    ],
+    [
+      13.05946,
+      -22.96629
+    ],
+    [
+      7.68365,
+      30.36382
+    ],
+    [
+      -46.32902,
+      21.90028
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000002340"
+  ],
+  "description": "Volledig NH Utrecht aan Jaarbeursplein 24: ongelijk hoge hotelkamerschachten met NAP 53.255/58.617 m schouders, glazen hals, uitkragende witte congreskop op doorlopend schuin steunprofiel tot NAP 65.815 m, dakmachine 68.992 m en kleine rand 67.242 m. Eigen zaagtand-congresvleugel circa 21.008 m, achterste vergadervleugel circa 18.232 m, installaties en volledige lage lobby-/verbindingsbouw circa 6.35-8.08 m. Alle vlakken en bouwdelen zijn continu en volgen BAG/3D BAG/AHN; geen hoogteplakken. As 30.90 graden uit de gemeten hoofdgevels. Blinde verticale vensterstroken 0.35-0.40 m, robuuste penanten, gesloten lobbyvelden en glasgeleding van de kop zijn foto-afgeleid; de geschatte hals/koponderzijde begint rond NAP 58.3/61.9 m en blijft printbaar zonder losse kolommen.",
+  "realWorld": {
+    "groundNapM": 2.3340001106262207,
+    "whiteHeadRoofNapM": 65.815,
+    "roofPlantNapM": 68.992,
+    "roofRidgeNapM": 67.242,
+    "highRoomShoulderNapM": 58.617,
+    "lowRoomShoulderNapM": 53.255,
+    "congressWingRoofNapM": 21.008,
+    "rearMeetingWingRoofNapM": 18.232,
+    "lobbyRoofNapM": 8.079,
+    "estimatedHeadUndersideNapM": 61.9,
+    "estimatedNeckBaseNapM": 58.3,
+    "facadeAngleDegrees": 30.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0344100000002340 (bouwjaar 1970), 3D BAG LoD2.2, AHN DSM/DTM 0.5 m en actuele orthoHR: eigen volledige voet, hotel-/congresdakvlakken, installaties, schouders, plint en straat; 2026-10-15",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000002340",
+    "https://www.nh-hotels.com/nl/hotel/nh-utrecht (eigenaar: Jaarbeursplein 24, 21 verdiepingen, 276 kamers op 18 verdiepingen, 28 vergaderzalen en vier bovenin; vier eigen buitenfotos F_NH_utrecht_142/148/141/147 uitsluitend als lokale referentie)",
+    "https://commons.wikimedia.org/wiki/File:NH_Hotel_Utrecht.jpg",
+    "https://hoog500.nl/jaarlijst/tabel/nederland_alles_tm_1971 (historische hotelhoogte 66 m, 1970; maten in het model uit open metingen)"
+  ],
+  "printFiles": [
+    "nh-utrecht-hotel-1-1000.stl"
+  ]
+}
