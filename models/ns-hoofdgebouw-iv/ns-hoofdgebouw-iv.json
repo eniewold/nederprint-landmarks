@@ -1,0 +1,57 @@
+{
+  "name": "NS Hoofdgebouw IV",
+  "file": "ns-hoofdgebouw-iv.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136190,
+    455560
+  ],
+  "xAxis": [
+    0.8853936257544159,
+    0.46484204572461957
+  ],
+  "groundNap": 2.580899953842163,
+  "groundHeight": 45.95250790129434,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      34.97284,
+      -40.94997
+    ],
+    [
+      -54.23088,
+      -28.00021
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000081994"
+  ],
+  "description": "NS-hoofdkantoor aan Laan van Puntenburg 100: lange getrapte torenschijf, lage noord- en zuidvleugels, doorlopende schuine glasvlakken rond het hof en hoge centrale dakopstand. BAG/3D BAG en AHN bepalen de werkelijke polygonen en dakvlakken. Blinde horizontale glasbanden met gesloten hoeken en robuuste penanten; geen hoogteplakken.",
+  "realWorld": {
+    "groundNapM": 2.580899953842163,
+    "mainRoofNapM": 74.129,
+    "roofPlantNapM": 79.216,
+    "northWingRoofNapM": 18.419,
+    "southWingRoofNapM": 18.47,
+    "glassCourtRoofNapM": [
+      19.435,
+      23.589
+    ],
+    "facadeAngleDegrees": 27.7,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0344100000081994 (1990), AHN DSM/DTM 0.5 m en actuele orthoHR: eigen voet en straat",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000081994",
+    "https://www.ns.nl/bedrijfsinformatie (adres Laan van Puntenburg 100)",
+    "https://www.up-construction.nl/hoofdkantoor-ns (verbouwing, 18 verdiepingen)",
+    "https://commons.wikimedia.org/wiki/File:NS-Groep_NV.JPG",
+    "https://commons.wikimedia.org/wiki/File:NS-kantoor_20061019.jpg",
+    "https://commons.wikimedia.org/wiki/File:NS_Stationsgebied_Utrecht.jpg"
+  ],
+  "printFiles": [
+    "ns-hoofdgebouw-iv-1-1000.stl"
+  ]
+}
