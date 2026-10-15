@@ -1,0 +1,61 @@
+{
+  "name": "Piet van Dommelenhuis (Nova)",
+  "file": "piet-van-dommelenhuis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135013,
+    454045
+  ],
+  "xAxis": [
+    0.48633538042349067,
+    -0.8737722230354651
+  ],
+  "groundNap": 1.7036999464035034,
+  "groundHeight": 45.1490824937911,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -6.67717,
+      31.18358
+    ],
+    [
+      42.14803,
+      -129.89435
+    ],
+    [
+      -43.82729,
+      -150.70889
+    ],
+    [
+      44.6205,
+      -74.04736
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000057810"
+  ],
+  "description": "Witte kantoortoren Nova/Piet van Dommelenhuis met smalle horizontale glasbanden, verhoogde kroon en centrale dakopbouw; hele eigen BAG-voet met winkelvleugels, hellende galerijdakvlakken en westelijke lagere kantoorvolumes. BAG, 3D BAG en AHN bepalen de continue bouwvlakken; geen hoogtelagen. Gevelritme en gesloten entreenisvelden uit de uitgevoerde gevelrenovatie op Commons-fotos.",
+  "realWorld": {
+    "groundNapM": 1.7036999464035034,
+    "mainRoofNapM": 71.729,
+    "crownRoofNapM": 72.096,
+    "centralPlantRoofNapM": 76.496,
+    "technicalPlantRoofNapM": 78.61,
+    "facadeAngleDegrees": -60.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG 0344100000057810 (1970), AHN DSM/DTM 0.5 m en actuele orthoHR: eigen volledige voet en straat",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000057810",
+    "https://commons.wikimedia.org/wiki/File:Piet_van_Dommelenhuis_Utrecht_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:Piet_van_Dommelenhuis2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Winkelcentrum_Kanaleneiland.JPG (historische opname voor bouwdelen, gevelkleur inmiddels vernieuwd)",
+    "https://www.urbaninterest.nl/portefeuille/winkelcentrum-nova/ (eigenaar winkelcomplex en gerenoveerde Nova Office Building)",
+    "https://www.hetiseentrane.nl/?p=752 (installatieleverancier: vernieuwde buitenste schil en drie warmtepompen op het dak)"
+  ],
+  "printFiles": [
+    "piet-van-dommelenhuis-1-1000.stl"
+  ]
+}
