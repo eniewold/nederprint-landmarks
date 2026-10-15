@@ -1,0 +1,59 @@
+{
+  "name": "Oval Tower",
+  "file": "oval-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124512.4,
+    480582.97
+  ],
+  "xAxis": [
+    0.9945182460306845,
+    0.10456317856707874
+  ],
+  "groundNap": -2.6717000007629395,
+  "groundHeight": 40.34092949092113,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -32.11469,
+      4.4122
+    ],
+    [
+      1.59203,
+      18.96751
+    ],
+    [
+      32.52899,
+      -2.38441
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012070234"
+  ],
+  "description": "Ovale torenschacht met analytische elliptische planvorm uit BAG-fit, doorlopende blinde horizontale glasbanden, hoge stedelijke entree aan de Arena-kop, brede ovale luifel op doorlopend schuin steunprofiel en gemeten centrale dakinstallaties. Geen hoogteplakken. Gevelritme en luifelprofiel zijn uit schuine architectenfotoÃ¢â‚¬â„¢s geschat.",
+  "realWorld": {
+    "groundNapM": -2.6717000007629395,
+    "ellipseRadiiM": [
+      26.1683,
+      13.57714
+    ],
+    "mainRoofNapM": 92.041,
+    "centralPlantRoofNapM": 92.66,
+    "technicalPlantRoofNapM": 95.178,
+    "facadeAngleDegrees": 6.002,
+    "estimatedFacadeRelief": true,
+    "estimatedCanopyRoofNapM": 3.878
+  },
+  "sources": [
+    "PDOK BAG 0363100012070234, AHN DSM/DTM 0.5 m, actuele orthoHR: elliptische voet en geldige straatpunten",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012070234",
+    "https://www.oplarchitecten.nl/project/oval-tower/ (architect renovatie 2010Ã¢â‚¬â€œ2012; extra entreevierbouwlagen, brede luifel en vrijwel ongewijzigde hoge gevels; schuine fotoÃ¢â‚¬â„¢s alleen lokale referentie)",
+    "https://www.breeam.nl/projecten/oval-tower-10967 (24 verdiepingen, 94 m architecturale hoogte)",
+    "https://www.zonneveld.com/en/projects/Oval-tower-Amsterdam"
+  ],
+  "printFiles": [
+    "oval-tower-1-1000.stl"
+  ]
+}
