@@ -1,0 +1,64 @@
+{
+  "name": "Provinciehuis Utrecht",
+  "file": "provinciehuis-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138965,
+    456310
+  ],
+  "xAxis": [
+    0.9366721892483977,
+    0.3502073812594674
+  ],
+  "groundHeight": 45.450230566534344,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -77.1877,
+      -60.81989
+    ],
+    [
+      85.80692,
+      -16.06775
+    ],
+    [
+      2.00931,
+      99.60403
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000048051"
+  ],
+  "description": "Hele voormalige Fortiscomplex aan Archimedeslaan 6: ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n smalle torenschijf met gevelraster, blinde kroonnissen, dakput en techniek; lage kantoorvleugels, rond dakpaviljoen, auditorium met doorlopend hellend dakvlak, drie daklichten, gebogen entree en twee pylonen. Niet twee losse schijven zoals de backlog suggereerde. BAG-voet en PDOK-daklijnen vergeleken met AHN; vensterverdeling, glasvelden, kroonopeningen, entreeluifel en pylonen foto-afgeleid en voor 1:1000 vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 2.05,
+    "crownNapM": 88.878,
+    "roofWellNapM": 87.14,
+    "westOfficeRoofNapM": 13.963,
+    "eastOfficeRoofNapM": 13.972,
+    "roundRoofNapM": 16.497,
+    "garageRoofNapM": 4.121,
+    "auditoriumRoofPlane": [
+      0.001452311,
+      -0.077221132,
+      17.161462
+    ],
+    "estimatedFacadeReliefM": 0.36,
+    "estimatedCrownBlindReliefM": 0.48,
+    "estimatedPylonTopNapM": 29.5,
+    "facadeAngleDegrees": 20.5
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000048051 (1995), LoD2.2 gebouwtegels Kadaster/PDOK CC BY 4.0, AHN DSM/DTM 0.5 m en actuele orthoHR, geraadpleegd 2026-10-16",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Provinciehuis_Utrecht_vooraanzicht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Provinciehuis_Utrecht_zijaanzicht.jpg",
+    "https://www.asrnederland.nl/nieuws-en-pers/asr-nederland-verkoopt-voormalig-fortis-hoofdkantoor-aan-provincie-utrecht"
+  ],
+  "printFiles": [
+    "provinciehuis-utrecht-1-1000.stl"
+  ]
+}
