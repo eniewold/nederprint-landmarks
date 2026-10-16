@@ -1,0 +1,59 @@
+{
+  "name": "Rijkskantoor Westraven",
+  "file": "rijkskantoor-westraven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135420,
+    452270
+  ],
+  "xAxis": [
+    0.9048270524660196,
+    0.4257792915650726
+  ],
+  "groundNap": 2.2,
+  "groundHeight": 45.538542719842226,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -14.90412,
+      62.27252
+    ],
+    [
+      -27.35531,
+      -109.80295
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000073774"
+  ],
+  "description": "Westraven aan Griffioenlaan 2: schuin op de laagbouw staande toren met doorlopende horizontale glasbanden, vijf grote blinde videvelden en open dakput; vijf driehoekige kantoorvleugels met eigen dakmachines, lage corridors en doorlopende licht hellende serredaken. BAG/3D BAG en AHN bepalen voet, daken en positie; gevelreliëf is uit foto’s geschat. Geen hoogteplakken.",
+  "realWorld": {
+    "groundNapM": 2.2,
+    "towerRoofNapM": 82.55,
+    "towerCrownNapM": 86.32,
+    "officeRoofNapM": 14.76,
+    "corridorRoofNapM": 15.68,
+    "plantRoofNapM": 19.965,
+    "glassRoofNapM": [
+      15.6,
+      16.14
+    ],
+    "facadeAngleDegrees": 25.2,
+    "estimatedFacadeRelief": true,
+    "estimatedWestVideArrangement": true
+  },
+  "sources": [
+    "PDOK BAG 0344100000073774, actuele orthoHR en AHN DSM/DTM 0.5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000073774",
+    "https://www.cepezed.nl/projecten/westraven/",
+    "https://www.rijkswaterstaat.nl/over-ons/onze-organisatie/organisatiestructuur/midden-nederland/hoofdlocatie-utrecht-westraven",
+    "https://commons.wikimedia.org/wiki/File:Gebouw_van_Rijkswaterstaat_Griffioenlaan_vanuit_parkeergarage.JPG",
+    "https://commons.wikimedia.org/wiki/File:Rijkskantoorgebouw_Westraven_in_2014.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rijkswaterstaat_Westraven.jpg"
+  ],
+  "printFiles": [
+    "rijkskantoor-westraven-1-1000.stl"
+  ]
+}
