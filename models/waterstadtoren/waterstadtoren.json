@@ -1,0 +1,72 @@
+{
+  "name": "Waterstadtoren",
+  "file": "waterstadtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93131.83,
+    436890.01
+  ],
+  "xAxis": [
+    0.9443763702374811,
+    0.32886664673858323
+  ],
+  "groundNap": 2.65,
+  "groundHeight": 46.128,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -34,
+      0
+    ],
+    [
+      15,
+      -20
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      0,
+      29
+    ],
+    [
+      -20,
+      29
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000702531"
+  ],
+  "description": "Waterstadtoren aan de Wijnhaven: toren tot NAP +106,2 m met een trapsgewijs oplopende kop (oostelijke trede +97,4 m, glazen kopvolume tot +111,4 m) op een plint van zes delen tussen +8,8 en +24,5 m; BAG-contour en 3D BAG-dakvlakken, vensters per verdieping als blinde nissen. Oorsprong in het hart van het BAG-pand, X-as langs de Wijnhaven (19,2° op RD-oost). Vensterstramien, verdiepingen en de vereenvoudigde hoekbalkons zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.65,
+    "stepRoofNapM": 97.4,
+    "towerRoofNapM": 106.2,
+    "headRoofNapM": 111.4,
+    "plinthRoofsNapM": {
+      "noordblok": 24.5,
+      "westvleugel": 17.35,
+      "strook": 14.5,
+      "midden": 11.8,
+      "zuidmidden": 8.8,
+      "zuidoost": 13.5
+    },
+    "facadeAngleDegrees": 19.2,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000702531 (bouwjaar 2004), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000702531",
+    "https://nl.wikipedia.org/wiki/Waterstadtoren",
+    "https://commons.wikimedia.org/wiki/File:Waterstadtoren_in_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Waterstadtoren_-_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Waterstadtoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Waterstadtoren.jpg"
+  ],
+  "printFiles": [
+    "waterstadtoren-1-1000.stl"
+  ]
+}
