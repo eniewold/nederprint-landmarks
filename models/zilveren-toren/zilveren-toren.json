@@ -1,0 +1,65 @@
+{
+  "name": "Zilveren Toren",
+  "file": "zilveren-toren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82865.02,
+    455071.54
+  ],
+  "xAxis": [
+    0.8131007610470277,
+    0.5821229701572894
+  ],
+  "groundNap": 0.66,
+  "groundHeight": 44.141,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -40,
+      30
+    ],
+    [
+      0,
+      50
+    ],
+    [
+      28,
+      30
+    ],
+    [
+      28,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000246102"
+  ],
+  "description": "Zilveren Toren aan de Prinses Beatrixlaan: schijf van 56 × 28 m met golvende zonweringsbanden per verdieping tot de dichte aluminium kroon, dak op NAP +69,86 m binnen de kroon tot +74,9 m en installaties tot +73,7 m; lage vleugel met gebogen dak (+17,35 tot +20,6 m) en lage verbindingsdelen (+5,8 tot +9,3 m); BAG-contour en 3D BAG-hoogtes (AHN5 2023). Oorsprong in het hart van het BAG-pand, X-as langs de lange gevel (35,6° op RD-oost). Kroonhoogte, verdiepingen en banddiepte zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.66,
+    "towerRoofNapM": 69.86,
+    "crownTopNapM": 74.9,
+    "crownBottomNapM": 61,
+    "plantRoofNapM": 73.68,
+    "wingRoofNapM": [
+      17.35,
+      20.6
+    ],
+    "officeStoreys": 16,
+    "facadeAngleDegrees": 35.6,
+    "estimatedCrownBottom": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000246102 (bouwjaar 1971), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000246102",
+    "https://nl.wikipedia.org/wiki/Zilveren_Toren",
+    "https://commons.wikimedia.org/wiki/File:Zilveren_Toren_Den_Haag.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zilveren_toren_-_Den_Haag.JPG"
+  ],
+  "printFiles": [
+    "zilveren-toren-1-1000.stl"
+  ]
+}
