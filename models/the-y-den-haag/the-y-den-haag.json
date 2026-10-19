@@ -1,0 +1,66 @@
+{
+  "name": "The Y",
+  "file": "the-y-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82125.69,
+    454186.33
+  ],
+  "xAxis": [
+    0.8280603346224944,
+    0.5606389945632417
+  ],
+  "groundNap": -0.2,
+  "groundHeight": 43.57,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -60,
+      0
+    ],
+    [
+      -30,
+      10
+    ],
+    [
+      -10,
+      25
+    ],
+    [
+      26,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001649070"
+  ],
+  "description": "The Y bij Den Haag HS: plint langs het spoor tot NAP +21,55 m, schuin weglopende woonstrook tot +51,6 m en toren tot +72,45 m met open kroon tot +75,75 m en installaties, ronde erker met hellend dak en spitse erker aan de noordgevel; BAG-contour en 3D BAG-hoogtes (AHN5 2023), bouwlagen (6, 16, 24) uit de projectbeschrijving. Oorsprong in het hart van de BAG-contour, X-as langs het spoor (34,1° op RD-oost). Vensterstramien en nisdiepte zijn geschat; schuine foto's van het gebouw waren niet beschikbaar.",
+  "realWorld": {
+    "groundNapM": -0.2,
+    "plinthRoofNapM": 21.55,
+    "stripRoofNapM": 51.6,
+    "towerRoofNapM": 72.45,
+    "crownTopNapM": 75.75,
+    "railStripRoofNapM": 9.3,
+    "storeys": {
+      "plinth": 6,
+      "strip": 16,
+      "tower": 24
+    },
+    "facadeAngleDegrees": 34.1,
+    "stripAngleDegrees": 45,
+    "estimatedWindowGrid": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100001649070 (bouwjaar 2017), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001649070",
+    "https://knauf.com/nl-NL/projectreferenties/sigma-the-y",
+    "https://www.holland2stay.com/building/they",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag"
+  ],
+  "printFiles": [
+    "the-y-den-haag-1-1000.stl"
+  ]
+}
