@@ -1,0 +1,69 @@
+{
+  "name": "Willem C. van Unnikgebouw",
+  "file": "van-unnikgebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    140277.04,
+    455239.79
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": 2,
+  "groundHeight": 45.856,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -25,
+      -12
+    ],
+    [
+      -58,
+      0
+    ],
+    [
+      12,
+      -32
+    ],
+    [
+      60,
+      0
+    ],
+    [
+      -10,
+      40
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000027739",
+    "NL.IMBAG.Pand.0344100000074170"
+  ],
+  "description": "Van Unnikgebouw (Transitorium II) in het Utrecht Science Park: schijf van 53,8 × 22,9 m tot NAP +79,1 m met dakrand tot +80,1 m, teruggelegen installatieverdieping tot +83,36 m en twee liftkoppen tot +84,85 m, 21 kantoorlagen met doorlopende vensterbanden boven een hogere begane grond, en de laagbouw van het pand (verbindingsvleugel, dek met open patio, lage vleugels en het lage aanbouwpand aan de westkop); BAG-contour en 3D BAG-hoogtes (AHN5 2023). Oorsprong in het hart van het BAG-pand, X-as naar RD-oost. Verdiepingen en banddiepte zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2,
+    "slabRoofNapM": 79.1,
+    "parapetNapM": 80.1,
+    "plantRoofNapM": 83.36,
+    "liftRoofNapM": 84.85,
+    "linkRoofNapM": 10.77,
+    "deckRoofNapM": 3.85,
+    "officeStoreys": 21,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0344100000027739 (bouwjaar 1970) en 0344100000074170 (aanbouw 2002), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000074170",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000027739",
+    "https://nl.wikipedia.org/wiki/Willem_C._van_Unnikgebouw",
+    "https://commons.wikimedia.org/wiki/File:Willem_C._van_Unnikgebouw_in_2011.jpg",
+    "https://commons.wikimedia.org/wiki/File:Willem_C_van_Unnikgebouw_Utrecht.jpg",
+    "https://commons.wikimedia.org/wiki/File:WC_van_Unnikgebouw_2009.jpg",
+    "https://commons.wikimedia.org/wiki/File:UithofVanUnnik.jpg"
+  ],
+  "printFiles": [
+    "van-unnikgebouw-1-1000.stl"
+  ]
+}
