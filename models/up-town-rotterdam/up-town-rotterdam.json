@@ -1,0 +1,70 @@
+{
+  "name": "Up:Town",
+  "file": "up-town-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93035.85,
+    436814.01
+  ],
+  "xAxis": [
+    0.9505157316277837,
+    0.3106764296307318
+  ],
+  "groundNap": 2.6,
+  "groundHeight": 46.105,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -20,
+      25
+    ],
+    [
+      15,
+      25
+    ],
+    [
+      0,
+      40
+    ],
+    [
+      -18,
+      -10
+    ],
+    [
+      14,
+      -10
+    ],
+    [
+      0,
+      -48
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100015923",
+    "NL.IMBAG.Pand.0599100100015922"
+  ],
+  "description": "Up:Town op het Wijnhaveneiland: toren van 34 verdiepingen tot NAP +106,27 m met liftopbouw tot +108,5 m en balkonzone aan de zuidkant, op een plint van vijf lagen tot +17,8 m met verdiepte daktuin; BAG-contouren en 3D BAG-hoogtes (AHN5 2023). Oorsprong in het hart van de twee BAG-panden, X-as langs de Wijnhaven (18,1° op RD-oost). Balkonbanden, travees en nisdiepte zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.6,
+    "plinthRoofNapM": 17.8,
+    "roofTerraceNapM": 14.63,
+    "towerRoofNapM": 106.27,
+    "liftRoofNapM": 108.5,
+    "storeys": 34,
+    "facadeAngleDegrees": 18.1,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100100015923 en 0599100100015922 (bouwjaar 2019), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100015923",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100015922",
+    "https://nl.wikipedia.org/wiki/Up:Town",
+    "https://commons.wikimedia.org/wiki/File:Up;Town_in_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_UpTown.jpg"
+  ],
+  "printFiles": [
+    "up-town-rotterdam-1-1000.stl"
+  ]
+}
