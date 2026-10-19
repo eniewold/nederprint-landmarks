@@ -1,0 +1,64 @@
+{
+  "name": "Weenacenter",
+  "file": "weenacenter.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92225.43,
+    437715.71
+  ],
+  "xAxis": [
+    0.9568135840576074,
+    0.29070219359825245
+  ],
+  "groundNap": -0.5,
+  "groundHeight": 43.18,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      20,
+      -44
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      40,
+      -25
+    ],
+    [
+      20,
+      4
+    ],
+    [
+      2,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000689019"
+  ],
+  "description": "Weenacenter aan het Weena: woontoren van 34 verdiepingen met een halfronde kop aan de Weenakant tot NAP +97,2 m, twee hogere flanken tot +101,8 m met een verdiepte sleuf ertussen aan de noordgevel en een middenkern tot +105,4 m, en een lagere vleugel aan de noordkant tot +41,45 m met trappenhuiskop; BAG-contour en 3D BAG-hoogtes, vensters per verdieping als blinde nissen. Oorsprong in het hart van de twee BAG-panden van het complex, X-as langs het Weena (16,9° op RD-oost). Vensterstramien en verdiepingshoogte zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.5,
+    "roundHeadRoofNapM": 97.2,
+    "flankRoofNapM": 101.8,
+    "spineRoofNapM": 105.4,
+    "northWingRoofNapM": 41.45,
+    "roundHeadRadiusM": 15.05,
+    "storeys": 34,
+    "facadeAngleDegrees": 16.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000689019 (bouwjaar 1990), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000689019",
+    "https://nl.wikipedia.org/wiki/Weenacenter",
+    "https://commons.wikimedia.org/wiki/File:Weenacenter.jpg"
+  ],
+  "printFiles": [
+    "weenacenter-1-1000.stl"
+  ]
+}
