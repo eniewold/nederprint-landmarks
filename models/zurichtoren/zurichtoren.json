@@ -1,0 +1,85 @@
+{
+  "name": "Zurichtoren (De Citruspers)",
+  "file": "zurichtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81876.84,
+    455205.32
+  ],
+  "xAxis": [
+    0.4601997847838517,
+    0.8878153851364013
+  ],
+  "groundNap": 0.47,
+  "groundHeight": 43.902,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      50,
+      20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      30,
+      -38
+    ],
+    [
+      50,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000269583"
+  ],
+  "description": "Zurichtoren aan het Muzenplein: zeshoekige toren (omgeschreven straal 16,6 m) tot NAP +70,0 m met een naar binnen lopende kap tot +84,6 m en twaalf ribben tot +85,1 m, vensters per verdieping; lage westvleugel met golvende zuidgevel tot +23,4 m met twee koppen tot +27,0 m, zuidvleugel tot +23,2 m en oostelijke aanbouw tot +16,4 m. Torenplattegrond uit het AHN-DSM, vleugels uit de BAG-contour, hoogtes uit de 3D BAG. Oorsprong op het BAG-pand, X-as langs de westvleugel (62,6° op RD-oost). Kapprofiel, ribben en vensterstramien zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.47,
+    "towerTopNapM": 70,
+    "capRingsNapM": [
+      [
+        70,
+        16.6
+      ],
+      [
+        74,
+        15.6
+      ],
+      [
+        78,
+        14
+      ],
+      [
+        81,
+        12.3
+      ],
+      [
+        84.6,
+        8
+      ]
+    ],
+    "ribTopNapM": 85.1,
+    "towerCircumradiusM": 16.6,
+    "westWingRoofNapM": 23.4,
+    "southWingRoofNapM": 23.2,
+    "eastAnnexRoofNapM": 16.4,
+    "estimatedCapProfile": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000269583 (bouwjaar 1999), actuele orthoHR, AHN DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000269583",
+    "https://nl.wikipedia.org/wiki/Zurichtoren",
+    "https://commons.wikimedia.org/wiki/File:Zurichtoren_Den_Haag.JPG",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Zurichtoren_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_Zurichtoren_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_Zurichtoren_(39789937282).jpg"
+  ],
+  "printFiles": [
+    "zurichtoren-1-1000.stl"
+  ]
+}
