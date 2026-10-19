@@ -1,0 +1,68 @@
+{
+  "name": "Vivaldigebouw (EMA)",
+  "file": "vivaldigebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120827.59,
+    483407.62
+  ],
+  "xAxis": [
+    0.9999619230641713,
+    -0.008726535498373935
+  ],
+  "groundNap": -0.7,
+  "groundHeight": 42.358,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -18,
+      -10
+    ],
+    [
+      -18,
+      20
+    ],
+    [
+      40,
+      -42
+    ],
+    [
+      45,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012251798"
+  ],
+  "description": "Vivaldigebouw van het Europees Geneesmiddelenbureau aan de Domenico Scarlattilaan: kantoorblok van 37,4 × 51,7 m tot NAP +76,13 m met dakrand tot +77,9 m en installatieopbouw tot +81,5 m, op een onderbouw tot +17,0 m (borstwering +18,3 m) die het blok aan drie kanten omsluit en aan de noordkant schuin afloopt; BAG-contour en 3D BAG-hoogtes (AHN5 2023), glasvakken tussen verticale vinnen per bouwlaag. Oorsprong in het hart van het BAG-pand, X-as bijna RD-oost (-0,5°). Vensterstramien en bouwlagen zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.7,
+    "podiumRoofNapM": 17,
+    "podiumParapetNapM": 18.3,
+    "towerRoofNapM": 76.13,
+    "towerParapetNapM": 77.9,
+    "plantRoofNapM": [
+      80.6,
+      81.5
+    ],
+    "storeys": {
+      "podium": 4,
+      "tower": 16
+    },
+    "facadeBayM": 2.7,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012251798 (bouwjaar 2020), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012251798",
+    "https://nl.wikipedia.org/wiki/Vivaldigebouw",
+    "https://commons.wikimedia.org/wiki/File:Vivaldigebouw_2019.10.24_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Vivaldigebouw_2020.04.23_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Vivaldigebouw_2020.04.23_(2).jpg"
+  ],
+  "printFiles": [
+    "vivaldigebouw-1-1000.stl"
+  ]
+}
