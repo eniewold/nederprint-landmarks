@@ -1,0 +1,62 @@
+{
+  "name": "Terraced Tower",
+  "file": "terraced-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93213.95,
+    436782.39
+  ],
+  "xAxis": [
+    0.6819983600624985,
+    0.7313537016191705
+  ],
+  "groundNap": 2.5,
+  "groundHeight": 45.677,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -30,
+      14.5
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      20,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100016464"
+  ],
+  "description": "Terraced Tower aan de Boompjes: sokkel tot NAP +34,15 m, brede middentoren tot +76,05 m en smalle bovenste schijf tot +106,05 m met dakinstallatie tot +109,25 m, op de BAG-contour met hoogtes uit de 3D BAG (AHN5 2023); per verdieping een blinde glasband onder de doorlopende vloerrand en terrasopbouwen op de trappen. Oorsprong in het hart van de toren, X-as langs de lange gevel (47° op RD-oost). Verdiepingsritme en banddiepte zijn geschat.",
+  "realWorld": {
+    "groundNapM": 2.5,
+    "podiumRoofNapM": 34.15,
+    "midTowerRoofNapM": 76.05,
+    "topRoofNapM": 106.05,
+    "plantRoofNapM": 109.25,
+    "floors": {
+      "podium": 10,
+      "midTower": 13,
+      "topTower": 9
+    },
+    "facadeAngleDegrees": 47,
+    "estimatedFloorBands": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100100016464 (bouwjaar 2021), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100016464",
+    "https://nl.wikipedia.org/wiki/Terraced_Tower",
+    "https://commons.wikimedia.org/wiki/File:Terraced_Tower_Rotterdam_2026.jpg",
+    "https://commons.wikimedia.org/wiki/File:Terraced_Tower.jpg",
+    "https://commons.wikimedia.org/wiki/File:Terraced_Tower_Zij-aanzicht.jpg",
+    "https://commons.wikimedia.org/wiki/File:2025_Scheepmakershaven,_Rotterdam_gezien_vanaf_de_Punt_met_achterzijden_van_hoogbouw_aan_De_Boompjes.jpg"
+  ],
+  "printFiles": [
+    "terraced-tower-1-1000.stl"
+  ]
+}
