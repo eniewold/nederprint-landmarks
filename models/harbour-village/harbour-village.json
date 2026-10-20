@@ -1,0 +1,104 @@
+{
+  "name": "Harbour Village",
+  "file": "harbour-village.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93078,
+    436840
+  ],
+  "xAxis": [
+    0.9505157316277837,
+    0.3106764296307318
+  ],
+  "groundNap": 2.48,
+  "groundHeight": 46.026,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -32,
+      0
+    ],
+    [
+      -32,
+      -10
+    ],
+    [
+      -31,
+      -25
+    ],
+    [
+      30,
+      0
+    ],
+    [
+      30,
+      -15
+    ],
+    [
+      -15,
+      -33
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000750224",
+    "NL.IMBAG.Pand.0599100000750223"
+  ],
+  "description": "Harbour Village op het Wijnhaveneiland: toren Jufferstraat tot NAP +85,1 m met liftopbouw tot +87,7 m en een lagere noordstrook tot +77,0 m, toren Bierstraat tot +71,6 m met installaties tot +74,77 m en een westvleugel tot +63,5 m. Gemetselde noord- en zuidgevels met loggia's, schuine glazen oost- en westgevels: zuidgevels 16° gedraaid op het straatraster, oostgevels geknikt, de westgevel van de toren Jufferstraat helt 1,6–4,2 m naar binnen, de westvleugel van de toren Bierstraat heeft een geknikte glasgevel. Plinten van vijf lagen als platte blokken (+10,2 tot +18,0 m) met een lessenaarsdak tussen de torens (+17,3 tot +21,0 m). BAG-contouren, hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong tussen de twee BAG-panden, X-as langs het straatraster (18,1° op RD-oost). Verdiepingshoogtes, de helling van de westgevel, de knik in de oostgevel van de toren Jufferstraat en het nissenpatroon zijn geschat.",
+  "realWorld": {
+    "groundNapM": 2.48,
+    "jufferstraat": {
+      "roofNapM": 85.1,
+      "liftNapM": 87.7,
+      "northStripNapM": 77,
+      "storeys": 29,
+      "westFaceLeanM": [
+        1.6,
+        4.2
+      ]
+    },
+    "bierstraat": {
+      "roofNapM": 71.6,
+      "plantNapM": [
+        74.13,
+        74.77
+      ],
+      "westWingNapM": 63.5,
+      "storeys": 24
+    },
+    "plinthRoofsNapM": [
+      10.2,
+      10.8,
+      11.4,
+      11.5,
+      12.9,
+      14.2,
+      14.25,
+      17.1,
+      17.2,
+      17.3,
+      17.6,
+      17.9,
+      18
+    ],
+    "slopedPlinthRoofNapM": [
+      17.3,
+      21
+    ],
+    "southFacadeRotationDegrees": 15.8,
+    "facadeAngleDegrees": 18.1,
+    "estimatedFacadeRelief": true,
+    "estimatedWestLean": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100000750224 (bouwjaar 2002) en 0599100000750223 (bouwjaar 2002), actuele orthoHR, AHN DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000750224",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000750223",
+    "https://nl.wikipedia.org/wiki/Harbour_Village",
+    "https://commons.wikimedia.org/wiki/File:Harbor_Village.jpg"
+  ],
+  "printFiles": [
+    "harbour-village-1-1000.stl"
+  ]
+}
