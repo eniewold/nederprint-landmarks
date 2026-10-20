@@ -1,0 +1,85 @@
+{
+  "name": "Hefbrug Waddinxveen",
+  "file": "hefbrug-waddinxveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    105089.3,
+    450869.4
+  ],
+  "xAxis": [
+    0.98444,
+    -0.17571
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.13,
+  "groundSamplePoints": [
+    [
+      -8,
+      14
+    ],
+    [
+      -8,
+      -14
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      0,
+      -14
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      8,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0627100000017571",
+    "NL.IMBAG.Pand.0627100000002866"
+  ],
+  "replacesTerrain": [
+    "P0028.b2d16c6b8d754da7ba2dd43cb4a2d63e"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de rijbaan midden tussen de twee heftorens op de waterspiegel van de Gouwe (NAP -0,37 m zoals het PDOK-terrein die legt, z = NAP + 0,37) in de oorsprong, +X langs de brug naar het oosten (de Henegouwerweg, RD-richting -10,12 graden vanaf het oosten) en +Y naar het noorden, stroomafwaarts. Vijf nodes: road:rijbaan, road:fietspad, road:voetpad en road:voetpad-tegels, de bovenste 0,5 m van het dek met de attributen van het BGT-wegdeel eronder in extras.attributes (bgt_functie rijbaan regionale weg, fietspad of voetpad, bgt_fysiekvoorkomen gesloten verharding met plus_fysiekvoorkomen asfalt, of open verharding met tegels), zodat de kleurregels van een thema erop werken; en building: de rest van de hefbrug van het westelijke landhoofd aan de Kerkweg-Oost (x = -25,6) tot het oostelijke aan de Henegouwerweg (x = 25,5). Twee heftorens van open vakwerk (binnenstijl verticaal op x = ±12,6, schuine buitenstijl van ±23,6 op het wegdek naar ±16,9 onder de kop, poten van 1,6 m dwars op y = ±4,6 tot ±6,2, regels om de 4,5 m met diagonalen, tussen de poten regels en kruisverbanden in het vlak van de binnen- en van de buitenstijlen met een portaal met knieschoren boven de rijbaan), een kop tot NAP +41,9 m met twee kabelwielen van 2,0 m tot +43,3 m en het betonnen ballastblok tussen de poten in de hoogste stand (de brug is dicht); het val van 25 m in de laagste stand met twee vakwerkliggers van 8 vakken (bovenkant NAP +7,2 m) en het bovenwindverband, de rijvloer van 0,9 m en de voetpaden buiten de liggers; de betonnen landhoofden (BGT en BAG) en het brugwachtershuisje (BAG-pand) met achthoekige kabine, vensterband en koperen dak tot NAP +7,4 m aan de zuidkant van de oostoever. Het wegdek ligt op NAP +2,70 m aan de Kerkweg-Oost, +2,81 m midden op het val en +2,84 m aan de Henegouwerweg (boven het PDOK-landhoofd, het AHN geeft +2,67 m). Leuningen, lantaarns, verkeerslichten, slagbomen, matrixborden, kabels, ladders en bordessen, de remmingwerken langs het water, het viaduct onder de Kerkweg-Oost en de open stand van het val zijn weggelaten; wat zonder steun niet print (de regels en kruisverbanden van de torens, de kop, het ballastblok, het windverband, het dek) vult de export op. De STL heeft een printvorm: dichte vlakken met nissen in plaats van het open vakwerk, een spitse doorgang voor de rijbaan, geen windverband en ballastblok, en onder het val een printvoet. Het maaiveld wordt op het water bemonsterd; groundHeight is de PDOK-terreinhoogte van de Gouwe (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hefbrug-waddinxveen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 51.1,
+    "liftSpanM": 25,
+    "clearWidthM": 25.2,
+    "towerTopNapM": 43.3,
+    "towerBaseM": 11,
+    "towerWidthM": 12.4,
+    "trussTopNapM": 7.2,
+    "counterweightNapM": [
+      32.7,
+      37.7
+    ],
+    "cabinTopNapM": 7.4,
+    "roadNapM": {
+      "0": 2.81,
+      "13": 2.76,
+      "-25.6": 2.7,
+      "-13": 2.76,
+      "25.5": 2.84
+    },
+    "waterNapM": -0.37
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512003",
+    "https://nl.wikipedia.org/wiki/Hefbrug_Waddinxveen",
+    "PDOK BGT overbruggingsdeel (dek, oostelijk landhoofd) en wegdeel (rijbaan, fietsstroken, voetpaden op het dek), EPSG:28992",
+    "PDOK BAG panden 0627100000017571 (westelijk landhoofd) en 0627100000002866 (brugwachtershuisje)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor het wegdek, de vakwerkliggers, de torens en het brugwachtershuisje",
+    "PDOK luchtfoto (Actueel_orthoHR) voor het windverband, de kop en het dak van het huisje",
+    "Wikimedia Commons: 200518 Hefbrug Waddinxveen (2), (3), (7), (8), (9), (10) en (11).jpg; 200307 Hefbrug Waddinxveen - Geopend.jpg; 120901 Hefbrug Waddinxveen - Heftorens.jpg en Feestelijke heropening na renovatie.jpg; 2004010 Hefbrug Waddinxveen - Brugwachtershuisje met matrixbord.jpg; Detail hefbrug met veelhoekig bedieningshuis met koperen dak - Waddinxveen - 20375886 - RCE.jpg; Val van de Waddinxveen hefbrug te Waddinxveen - Rijksmonument (22714876091).jpg; Hefbrug Waddinxveen - panoramio.jpg; HefbrugWveen.jpg; Waddixveen, hefbrug Waddixveen RM512003 IMG 0472 2019-07-01 15.54.jpg"
+  ]
+}
