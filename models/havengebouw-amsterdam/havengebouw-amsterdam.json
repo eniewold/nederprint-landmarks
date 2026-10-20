@@ -1,0 +1,121 @@
+{
+  "name": "Havengebouw",
+  "file": "havengebouw-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121522.8,
+    488299.2
+  ],
+  "xAxis": [
+    0.5120428648705717,
+    0.8589598969306643
+  ],
+  "groundNap": 0.735,
+  "groundHeight": 43.737,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -22,
+      13.5
+    ],
+    [
+      -12,
+      13.5
+    ],
+    [
+      0,
+      13.5
+    ],
+    [
+      12,
+      13.5
+    ],
+    [
+      21,
+      8
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      21,
+      -7
+    ],
+    [
+      12,
+      -13.5
+    ],
+    [
+      -2,
+      -13.5
+    ],
+    [
+      -20,
+      -13.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012179689",
+    "NL.IMBAG.Pand.0363100012179691",
+    "NL.IMBAG.Pand.0363100012170978"
+  ],
+  "description": "Havengebouw aan de De Ruijterkade (Dudok en Magnée, 1960): kantoorschijf van 45,7 × 22,2 m haaks op het IJ met elf lagen tot een dakterras op NAP +43,05 m en een borstwering tot +44,15 m, daarop een teruggezette kroon van twee lagen tot +51,35 m (onderlaag binnen de dakrand, kraag van 45°, glasband rondom) en een installatieopbouw tot +53,78 m met twee kleinere opbouwen tot +54,65 m. Tien lisenen per lange gevel met vensterbanden ertussen, die boven het terras doorlopen in rode beugels tot +51,9 m met een arm over de dakrand van de kroon; op beide bakstenen koppen een uitspringende strook loggia's tot +42,5 m en liggende vensters. Halfronde entreeluifel aan de zuidoostgevel, paviljoen tot +4,95 m aan de zuidwestkop en een lage vleugel tot +9,75 m langs het spoor. BAG-contouren, hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong midden in het oostelijke BAG-pand, X-as langs de lange gevels (59,2° op RD-oost, naar de kade). Verdiepingshoogtes, vensterbanden, de loggia's en de vorm van de beugels zijn geschat; de beugels zijn dikker dan in werkelijkheid.",
+  "realWorld": {
+    "groundNapM": 0.735,
+    "slabM": [
+      45.71,
+      22.18
+    ],
+    "terraceNapM": 43.05,
+    "parapetNapM": 44.15,
+    "crownLowerNapM": 45,
+    "crownRoofNapM": 51.35,
+    "crownGlassBandNapM": [
+      46.9,
+      50.7
+    ],
+    "crownSetbackM": {
+      "southWest": 2.48,
+      "northEast": 1.23,
+      "southEast": 2.4,
+      "northWest": 0.93
+    },
+    "installationNapM": 53.78,
+    "topBoxesNapM": 54.65,
+    "bracketTopNapM": 51.9,
+    "bracketsPerLongFace": 10,
+    "loggiaStripTopNapM": 42.5,
+    "loggiaStripProjectionM": 1.42,
+    "storeys": {
+      "groundFloorTopNapM": 5,
+      "storeyM": 3.805,
+      "officeFloorsAboveGround": 10,
+      "crownFloors": 2
+    },
+    "pavilionNapM": 4.95,
+    "lowWingNapM": 9.75,
+    "porchNapM": 3.35,
+    "facadeAngleDegrees": 59.2,
+    "estimatedFacadeRelief": true,
+    "estimatedBracketShape": true,
+    "estimatedStoreyHeights": true
+  },
+  "sources": [
+    "PDOK BAG panden 0363100012179689, 0363100012179691 en 0363100012170978 (bouwjaar 1960), actuele orthoHR, AHN DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012179689",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012179691",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012170978",
+    "https://nl.wikipedia.org/wiki/Havengebouw_(Amsterdam)",
+    "https://commons.wikimedia.org/wiki/File:Havengebouw_De_Ruijterkade_7,_Amsterdam.JPG",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Havengebouw_001.JPG",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Havengebouw_002.JPG",
+    "https://commons.wikimedia.org/wiki/File:Havengebouw_Amsterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_20050827_(21).jpg"
+  ],
+  "printFiles": [
+    "havengebouw-amsterdam-1-1000.stl"
+  ]
+}
