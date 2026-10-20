@@ -1,0 +1,86 @@
+{
+  "name": "Kennedytoren",
+  "file": "kennedytoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161492.9,
+    383881.1
+  ],
+  "xAxis": [
+    0.9759167619387474,
+    0.2181432413965425
+  ],
+  "groundNap": 15.91,
+  "groundHeight": 59.831,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -15,
+      -42
+    ],
+    [
+      9,
+      -46
+    ],
+    [
+      -20,
+      -39
+    ],
+    [
+      -35,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000354498",
+    "NL.IMBAG.Pand.0772100000936704"
+  ],
+  "description": "Kennedytoren aan het Kennedyplein: toren met een parallellogram als plattegrond (24,45 m breed, schuine noord- en zuidgevel onder 26,7°, 38,1 m lang) tot de lamellenkroon op NAP +95,5 m, dakrand 0,8 m terug tot +98,85 m en dak op +98,07 m met twee dakopbouwen; de oostkant kraagt 7,9 m uit boven een vlakke onderkant op +40,2 m. Daaronder de westvleugel tot +38,6 m, de zuidvleugel tot +38,55 m en de hal met glazen dak op +35,15 m dat naar de voorkant afloopt tot +34,45 m, met installatiekasten op de vleugels; vensters per verdieping als blinde nissen. Contouren uit de BAG, hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het midden van de toren, X-as langs de zuidgevels van de vleugels (12,6° op RD-oost). Tweede node: de bovengrondse delen op de parkeergarage (pand 0772100000936704), waarvan de PDOK-reconstructie de toren meeneemt: een hellend plein tussen de westelijke buurpanden van +16,4 tot +19,7 m, een hellende ingang ten zuidwesten tot +21,3 m en de rode hellingbaan voor de noordgevel tot +22,2 m, als vlakken gefit op het AHN. Hoogte van de uitkraging, verdiepingshoogte, kroon en vensterstramien zijn geschat.",
+  "realWorld": {
+    "groundNapM": 15.91,
+    "roofNapM": 98.07,
+    "parapetNapM": 98.85,
+    "crownNapM": [
+      90.9,
+      95.5
+    ],
+    "soffitNapM": 40.2,
+    "cantileverM": 7.88,
+    "towerWidthM": 24.45,
+    "towerLengthM": 38.12,
+    "skewDegrees": 26.7,
+    "storeyHeightM": 3.38,
+    "westWingRoofNapM": 38.6,
+    "southWingRoofNapM": 38.55,
+    "atriumRoofNapM": [
+      35.15,
+      34.45
+    ],
+    "atriumRibSpacingM": 4.5,
+    "facadeAngleDegrees": 12.6,
+    "garagePlazaNapM": [
+      16.4,
+      19.7
+    ],
+    "garageRampSouthWestTopNapM": 21.3,
+    "garageRampNorthWestTopNapM": 22.2,
+    "estimatedSoffit": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0772100000354498 (2002) en 0772100000936704 (2005, parkeergarage), actuele orthoHR, AHN-DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000354498",
+    "https://nl.wikipedia.org/wiki/Kennedytoren",
+    "https://commons.wikimedia.org/wiki/File:Kennedytoren_Eindhoven_in_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kennedytoren_Eindhoven_2021.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kennedytoren_Eindhoven.JPG",
+    "https://commons.wikimedia.org/wiki/File:Kennedy_tower_Eindhoven_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Buildings_Kennedyplein_Eindhoven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kennedytoren01.jpg"
+  ],
+  "printFiles": [
+    "kennedytoren-1-1000.stl"
+  ]
+}
