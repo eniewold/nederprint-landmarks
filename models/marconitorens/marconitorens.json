@@ -1,0 +1,149 @@
+{
+  "name": "Europoint (Marconitorens)",
+  "file": "marconitorens.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    89211.17,
+    436393.76
+  ],
+  "xAxis": [
+    0.9947743374368467,
+    0.10209807822423742
+  ],
+  "groundNap": 3.3,
+  "groundHeight": 46.809,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -28.5,
+      -48.6
+    ],
+    [
+      -1.5,
+      -47.6
+    ],
+    [
+      28.5,
+      -32.6
+    ],
+    [
+      50.5,
+      -2.6
+    ],
+    [
+      8.5,
+      39.4
+    ],
+    [
+      -31.5,
+      17.4
+    ],
+    [
+      -56.5,
+      -2.6
+    ],
+    [
+      -71.5,
+      -12.6
+    ],
+    [
+      -91.5,
+      -55.6
+    ],
+    [
+      -71.5,
+      33.4
+    ],
+    [
+      68.5,
+      -32.6
+    ],
+    [
+      88.5,
+      -32.6
+    ],
+    [
+      110.5,
+      -12.6
+    ],
+    [
+      83.5,
+      5.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701896",
+    "NL.IMBAG.Pand.0599100000649440",
+    "NL.IMBAG.Pand.0599100000701700"
+  ],
+  "description": "Europoint aan het Marconiplein: drie torens van Skidmore, Owings & Merrill (Lee Towers West en Oost, sinds 2019 woningen, en de Rotterdam Science Tower), elk een schijf van 33,5 × 47,4–47,7 m tot NAP +97,0–97,1 m met een raster van 9 × 13 traveeën diepliggende ramen tussen penanten en borstweringsbanden (hoge begane grond, 21 lagen, dubbelhoge installatielaag met roosters) en installatieblokken op het dak tot +101,1, +101,55 (met de witte S tot +102,75) en +100,04 m; een entreebouw tussen de Lee Towers tot +10,8 m en lage delen aan de zuidkant van de Science Tower tot +9,16 en +7,6 m. Het Overbeekhuis (1966): elf lagen vliesgevel van +14,26 tot +49,46 m die aan een dakparasol op een kern hangen, een open daklaag met stijlen en hoekschoren onder een raster van balken tot +55,05 m, een installatieopbouw tot +63,65 m en een onderbouw tot +11,1 en +9,9 m. BAG-contouren, hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in de entreebouw van de Lee Towers, X-as langs de korte gevels (5,86° op RD-oost). Verdiepingshoogtes, het gevelraster, de kern en de onderkant van het Overbeekhuis, de balken en stijlen van de parasol zijn geschat.",
+  "realWorld": {
+    "groundNapM": 3.3,
+    "towerFootprintM": [
+      33.5,
+      47.4
+    ],
+    "towerRoofNapM": {
+      "leeWest": 97.05,
+      "leeEast": 97.12,
+      "scienceTower": 97.01
+    },
+    "roofBoxesNapM": [
+      101.1,
+      98.65,
+      101.55,
+      102.75,
+      100.04,
+      98.1
+    ],
+    "towerStoreys": 22,
+    "towerBays": [
+      9,
+      13
+    ],
+    "towerStoreyM": 3.78,
+    "lobbyNapM": 10.8,
+    "scienceLowNapM": [
+      9.16,
+      7.6
+    ],
+    "overbeekhuis": {
+      "soffitNapM": 14.259999999999998,
+      "terraceNapM": 49.46,
+      "parasolNapM": 55.05,
+      "plantNapM": 63.65,
+      "plantEastNapM": 58.5,
+      "floors": 11,
+      "baseNapM": [
+        11.1,
+        9.9
+      ],
+      "hallNapM": 7.6
+    },
+    "facadeAngleDegrees": 5.86,
+    "estimatedFacadeRelief": true,
+    "estimatedOverbeekCoreAndSoffit": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100000701896 (bouwjaar 1974, Lee Towers), 0599100000649440 (bouwjaar 1979, Rotterdam Science Tower), 0599100000701700 (bouwjaar 1966, Overbeekhuis); actuele orthoHR; AHN DSM/DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000701896",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000649440",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000701700",
+    "https://nl.wikipedia.org/wiki/Marconiplein",
+    "https://www.architectureguide.nl/project/list_projects_of_city/cit_id/242/prj_id/1855",
+    "https://structurae.net/structures/europoint-i",
+    "https://commons.wikimedia.org/wiki/File:Europoint_-_Rotterdam_-_2010.jpg",
+    "https://commons.wikimedia.org/wiki/File:Europoint_Rotterdam_2018_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Europoint_Rotterdam_2018_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Europoint_Rotterdam_2019_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Europoint.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overbeekhuis_in_2013.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overbeekhuis2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam,_Marconiplein_foto3_2014-03-09_10.56.jpg"
+  ],
+  "printFiles": [
+    "marconitorens-1-1000.stl"
+  ]
+}
