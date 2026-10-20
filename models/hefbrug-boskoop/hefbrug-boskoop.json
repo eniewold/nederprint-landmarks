@@ -1,0 +1,83 @@
+{
+  "name": "Hefbrug Boskoop",
+  "file": "hefbrug-boskoop.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    105158.52,
+    454245.78
+  ],
+  "xAxis": [
+    0.99768,
+    -0.06802
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43.12,
+  "groundSamplePoints": [
+    [
+      -6,
+      20
+    ],
+    [
+      -6,
+      -20
+    ],
+    [
+      6,
+      20
+    ],
+    [
+      6,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0499100002021238",
+    "NL.IMBAG.Pand.0484100002028378"
+  ],
+  "replacesTerrain": [
+    "P0028.4b31246ddcb946078ab15fad54ac18c0",
+    "P0028.cc0d1124896b4bf4883f591816d5288c",
+    "P0028.da325a82c4c34ba5a24152818cf1e3ac"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de as van de weg midden tussen de twee heftorens op de waterspiegel van de Gouwe (z = 0, NAP -0,31 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de brug naar het oosten (RD-richting -3,90 graden vanaf het oosten) en +Y naar het noorden. Vier nodes: road:rijbaan, road:rijbaan-cementbeton en road:voetpad, de bovenste 0,5 m van het dek (op de landhoofden 0,5 tot 0,6 m, met een horizontale onderkant per stuk van het lengteprofiel) met de attributen van het BGT-wegdeel eronder in extras.attributes (rijbaan regionale weg van asfalt op het val en van cementbeton op de landhoofden, voetpaden van asfalt, alle gesloten verharding), zodat de kleurregels van een thema erop werken; en building: de rest van de hefbrug. De twee landhoofden (BGT, x = -29,39 tot -12,55 en 12,55 tot 25,48) tot het wegdek (NAP +2,72 m op het val, aflopend naar +2,35 m aan de westkant), met onder de kop van het westelijke dek de lage doorgang van de kade-weg (3,0 m breed, flauw gewelf tot NAP +1,80 m); het val in de laagste stand (25,0 m met een voeg van 5 cm naar de landhoofden en opleggingen eronder, onderkant NAP +1,90 m: doorvaarthoogte 2,5 m) met een rijdek tussen twee vakwerkhoofdliggers van 0,9 m (hart 4,6 m naast de as, bovenrand NAP +7,22 m, zes vakken met stijlen en diagonalen als W, alle driehoeken doorgaande openingen), het bovenwindverband als ruiten op de bovenrand en voetpaden buiten de liggers op NAP +2,35 m; de twee heftorens met per toren twee zijvlakken van open vakwerk (binnenpoot verticaal op x = ±12,6, tweede verticaal 2,75 m verder, schuine buitenpoot van x = ±24,3 op het dek naar ±16,4 bovenin, zes vakken), regels en kruisen tussen de zijvlakken boven de weg, de kop met machinebordes tot NAP +41,6 m, twee kabelwielen van 2,2 m tot +43,4 m en het contragewicht bovenin de schacht; en het twaalfhoekige brugwachtershuisje (BAG) van het water tot de kroonlijst en het platte dak op NAP +7,36 m, met de raamband als nis. Leuningen, lantaarns, slagbomen, kabels, ladders en trappen langs de torens, de balkons en bordessen halverwege de torens, het remmingwerk en het steigertje bij het huisje zijn weggelaten; wat zonder steun niet print (de vlakke kanten van de vakwerkdriehoeken, het windverband, de regels tussen de zijvlakken, het gewelf, het val) vult de export op. De STL heeft printvormen: blinde nissen waar een opening een vlak plafond heeft, een kern in de schacht van elke toren met een spitse doorgang over de weg, geen windverband of dwarsverband, een dichte doorgang en een printvoet onder het val. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de laagste PDOK-terreinhoogte (ellipsoïdisch) op die punten. Vervangt het BAG-pand van het brugwachtershuisje en het pand onder de westelijke toren. Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hefbrug-boskoop-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.87,
+    "liftSpanM": 25,
+    "navigationWidthM": 25,
+    "clearanceClosedM": 2.5,
+    "deckNapM": {
+      "val": 2.72,
+      "west": 2.33,
+      "east": 2.53
+    },
+    "footpathValNapM": 2.35,
+    "trussTopNapM": 7.22,
+    "trussAxisOffsetM": 4.6,
+    "valPanels": 6,
+    "towerTopNapM": 41.6,
+    "wheelTopNapM": 43.4,
+    "towerBaseM": 11.7,
+    "towerTopM": 3.8,
+    "towerFramesFromAxisM": 5.6,
+    "counterweightNapM": [
+      33.7,
+      36.2
+    ],
+    "houseRoofNapM": 7.36,
+    "waterNapM": -0.31
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hefbrug_Boskoop",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512076",
+    "PDOK BGT overbruggingsdeel (dek, landhoofden), wegdeel (rijbaan en voetpaden op het dek, de lokale weg door het viaduct) en pand (brugwachtershuisje), EPSG:28992",
+    "PDOK AHN DSM 0,5 m via WCS voor het wegdek, de hoofdliggers, de torens en de kabelwielen",
+    "PDOK luchtfoto (Actueel_orthoHR) voor het bovenwindverband en de ligging",
+    "PDOK 3D Basisvoorziening (terrein) voor de waterspiegel; 3D BAG voor het dak van het brugwachtershuisje",
+    "Wikimedia Commons: 200408 Hefbrug Boskoop.jpg, Boskoop hefbrug1.jpg, Boskoop hefbrug2.jpg, De Stella Maris voor de Hefbrug Boskoop.jpg, Hefbrug Boskoop - Beweegbaar deel van de hefbrug.jpg, Hefbrug Boskoop - Brugopening.jpg, Hefbrug Boskoop - Voetpad en brugwachtershuisje.jpg, Hefbrug Boskoop - Zuidkant brug.jpg, Hefbrug Boskoop 2019 1 tot en met 4.jpg, Overzicht brugwachtershuisje op de hefbrug over de Gouwe, vanaf de brug - Boskoop - 20353274 - RCE.jpg, Overzicht hefbrug - Boskoop - 20342360 - RCE.jpg, Overzicht hefbrug over de Gouwe, in geopende toestand - Boskoop - 20353275 - RCE.jpg, Overzicht, geklonken stalen brug ... - Boskoop - 20366689 - RCE.jpg"
+  ]
+}
