@@ -1,0 +1,90 @@
+{
+  "name": "Hefbrug Gouwesluis",
+  "file": "hefbrug-gouwesluis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    106134.89,
+    459048.07
+  ],
+  "xAxis": [
+    0.95589,
+    -0.29372
+  ],
+  "groundOffsetMetres": 0,
+  "groundHeight": 43,
+  "groundSamplePoints": [
+    [
+      -6,
+      16
+    ],
+    [
+      -6,
+      -16
+    ],
+    [
+      0,
+      16
+    ],
+    [
+      0,
+      -16
+    ],
+    [
+      6,
+      16
+    ],
+    [
+      6,
+      -16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0484100000003746"
+  ],
+  "replacesTerrain": [
+    "P0028.80717001cf8d43f9b56f60dbd2decdc0"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van het BGT-brugdek op het water van de Gouwe (z = 0, NAP -0,39 m zoals het PDOK-terrein het water legt) in de oorsprong, +X langs de weg naar het oostzuidoosten (de oostelijke oever met het brugwachtershuisje, RD-richting -17,08 graden vanaf het oosten) en +Y naar het noordnoordoosten (de keersluis). Zes nodes: building, het kunstwerk zonder de bovenste 0,5 m van het wegdek: de twee betonnen landhoofden (x = ±13,5 tot ±27,5), het val in de laagste stand (x = -13,5 tot 13,5, onderkant NAP +3,89 m, wegdek NAP +4,77 m) met twee vakwerkhoofdliggers van 29,2 m (bovenkant NAP +9,1 m, Warren-vakwerk met stijlen, alle velden open) en eindportalen, de twee heftorens van open vakwerk (zijvlakken met een verticale binnenstijl en een schuine buitenstijl, acht velden met kruisen, het schuine buitenvlak met portaal en kruisen, open aan de kant van het val) met topplatform, kabelwielen (top NAP +43,0 m) en ballastblok, en het brugwachtershuisje (BAG-pand) op het oostelijke landhoofd; en vijf road-nodes, de bovenste 0,5 m van dek en landhoofden binnen de actuele BGT-wegdelen met hun attributen in extras.attributes (op het dek rijbaan regionale weg en fietspad, op de landhoofden rijbaan lokale weg, fietspad en voetpad), zodat de kleurregels van een thema erop werken. Het bovenwindverband, de kabels, leuningen, ladders, bordessen in de torens, slagbomen, seinen, het remmingwerk en de keersluis zijn weggelaten; wat zonder steun niet print (de vlakke plafonds van de vakwerkopeningen, de portalen, het dek) vult de export op. De STL heeft blinde nissen in plaats van de vakwerkopeningen en onder het val een printvoet. Het maaiveld wordt op het water naast de brug bemonsterd; groundHeight is de PDOK-hoogte van het water (ellipsoïdisch). Nodenaam klasse:label bepaalt de materiaalklasse.",
+  "printFiles": [
+    "hefbrug-gouwesluis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 55,
+    "deckM": {
+      "length": 27,
+      "width": 15.5,
+      "roadNap": 4.77,
+      "undersideNap": 3.89
+    },
+    "trussM": {
+      "length": 29.2,
+      "topNap": 9.1,
+      "linesY": [
+        -4.73,
+        5.25
+      ],
+      "spacing": 9.98
+    },
+    "towersM": {
+      "topNap": 43,
+      "platformNap": 40.5,
+      "footAlongRoad": 10.5,
+      "topAlongRoad": 3.1,
+      "acrossRoad": 13.5,
+      "clearOpening": 25.8
+    },
+    "houseRoofNap": 8.9,
+    "waterNap": -0.39
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hefbrug_Gouwesluis",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516141",
+    "PDOK BGT overbruggingsdeel en wegdeel (dek, landhoofden, wegdelen op dek en landhoofden), EPSG:28992",
+    "PDOK BAG pand 0484100000003746 (brugwachtershuisje)",
+    "PDOK AHN DSM 0,5 m via WCS voor wegdek, hoofdliggers, torens en brugwachtershuisje",
+    "PDOK luchtfoto (Actueel_orthoHR) en PDOK 3D-terrein (waterhoogte)",
+    "Wikimedia Commons: 200407 Hefbrug Gouwesluis.jpg, Gouwsluis-hefbrug nrd..JPG, Gouwsluis-hefbrug zd..JPG, Hefbrug Gouwesluis - Het beweegbare deel.jpg, - Oostelijk landhoofd.jpg, - Westelijk landhoofd.jpg, - Vanaf de Steekterweg.jpg, - Brugwachtershuisje.jpg, Overzicht hefbrug over de Gouwe - Alphen aan den Rijn - 20396221 - RCE.jpg, Alphen aan den Rijn - hefbrug.jpg"
+  ]
+}
