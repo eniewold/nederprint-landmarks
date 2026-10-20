@@ -1,0 +1,98 @@
+{
+  "name": "De Calypso",
+  "file": "calypso-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92070,
+    437290
+  ],
+  "xAxis": [
+    0.9942448326331054,
+    0.10713175431387367
+  ],
+  "groundNap": -1.06,
+  "groundHeight": 42.403,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -22,
+      -40
+    ],
+    [
+      -22,
+      0
+    ],
+    [
+      -22,
+      30
+    ],
+    [
+      -22,
+      55
+    ],
+    [
+      10,
+      76
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100010072083",
+    "NL.IMBAG.Pand.0599100100001761"
+  ],
+  "description": "De Calypso met de Pauluskerk: plint van vijf lagen tot NAP +18,45 m over de hele BAG-contour met een glazen tussenbouw tot +19,2 m; rode toren aan het Kruisplein tot +68,57 m (schuine zuidgevel, zuilengalerij op de begane grond, installatieblokken tot +71,3 m); drie witte gefacetteerde torens aan de Mauritsweg tot +56,77 m (noord, met uitstekende kop en schuine onderkant), +68,75 m (midden, terras op +65,6 m, installaties tot +71,7 m) en +45,0 m (zuid, naar binnen hellende westgevel, bovenkant 1,7 m over de kerk); de Pauluskerk als koperen veelvlak tot +14,3 m met een punt tot +16,4 m. Ramen, loggia's en balkons als blinde nissen per verdieping. Contouren uit de BAG, hoogtes en dakvlakken uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong in de middelste witte toren, X-as loodrecht op de westgevel aan de Mauritsweg (6,15° op RD-oost). Verdiepingshoogtes, facetten, de kop, de zuilengalerij, de vorm van de kerk en het nissenpatroon zijn geschat.",
+  "realWorld": {
+    "groundNapM": -1.06,
+    "plinthTopNapM": 18.45,
+    "linkRoofNapM": 19.2,
+    "redTowerRoofNapM": 68.57,
+    "mainTowerRoofNapM": 68.75,
+    "northTowerRoofNapM": 56.77,
+    "southTowerRoofNapM": 45,
+    "southOverhangOverChurchM": 1.7,
+    "mainTerraceNapM": 65.6,
+    "plantRoofsNapM": [
+      71.3,
+      71,
+      71.1,
+      71.7,
+      71.5,
+      70
+    ],
+    "storeyHeightM": 3.14,
+    "plinthLevelsNapM": [
+      -1.06,
+      3.94,
+      7.57,
+      11.2,
+      14.83,
+      18.45
+    ],
+    "pauluskerk": {
+      "roofNapM": 14.3,
+      "peakNapM": 16.4
+    },
+    "facadeAngleDegrees": 6.15,
+    "estimatedFacets": true,
+    "estimatedFacadeRelief": true,
+    "estimatedArcade": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100010072083 (2013) en 0599100100001761 (2013), actuele orthoHR, AHN DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100010072083",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100001761",
+    "https://nl.wikipedia.org/wiki/Calypso_(Rotterdam)",
+    "https://commons.wikimedia.org/wiki/File:De_Calypso_in_Rotterdam_2021_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Calypso_in_Rotterdam_2021_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Calypso_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Calypso_(7).jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Calypso_-_Rotterdam_-_View_of_the_building_as_seen_from_the_Groothandelsgebouw_in_the_northwest.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_mauritsweg_calypsoflat.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pauluskerk_-_Cool_-_Rotterdam_-_View_of_the_church_from_the_southwest.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_nieuwe_Pauluskerk.jpg"
+  ],
+  "printFiles": [
+    "calypso-rotterdam-1-1000.stl"
+  ]
+}
