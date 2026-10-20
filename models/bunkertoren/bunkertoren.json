@@ -1,0 +1,89 @@
+{
+  "name": "BunkerToren",
+  "file": "bunkertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161420,
+    384230
+  ],
+  "xAxis": [
+    0.9786885595886878,
+    -0.20535019681076389
+  ],
+  "groundNap": 18.78,
+  "groundHeight": 62.675,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -28,
+      0
+    ],
+    [
+      -28,
+      -20
+    ],
+    [
+      0,
+      48
+    ],
+    [
+      -10,
+      -35
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001025376",
+    "NL.IMBAG.Pand.0772100000300142",
+    "NL.IMBAG.Pand.0772100001047020"
+  ],
+  "description": "BunkerToren met de bewaarde delen van De Bunker: schacht tot NAP +118,65 m met dakopbouw tot +121,5 m en natuurstenen banden per verdieping, westelijke middenzone 1 m breder tot +77,5 m, oostelijke erker tot +113,0 m, getrapte zuidkant langs één schuin vlak (1,09 m terug per laag van 3 m; snijlijn met de zuidgevel van +53,0 m west tot +69,0 m oost), podium tot +32,5 m met hellende westrand (+27,5 tot +30,3 m); De Bunker tot +25,6 m met teruggezette glazen laag achter een terras op +22,0 m, noordkop tot +26,6 m en zuidkop tot +27,9 m met naar buiten hellende bovengevels, lage delen op +23,9 en +19,95 m. BAG-contouren, hoogtes en vlakken uit de 3D BAG (AHN5 2024). Oorsprong in de toren, X-as loodrecht op de oostgevel (-11,85° op RD-oost). Verdiepingshoogte, glasbanden en de helling van de Bunkergevels zijn geschat; de ondergrondse garage (pand 0772100001047020) wordt alleen verborgen.",
+  "realWorld": {
+    "groundNapM": 18.78,
+    "roofNapM": 118.65,
+    "plantRoofNapM": 121.5,
+    "midZoneTopNapM": 77.5,
+    "eastBayTopNapM": 113,
+    "podiumTopNapM": 32.5,
+    "lobbyTopNapM": 25.6,
+    "stepPlane": {
+      "vAt0": -35.52,
+      "dvPerU": -0.23,
+      "dvPerNapM": 0.3625
+    },
+    "stepPlaneOnSouthFacadeNapM": [
+      53,
+      69
+    ],
+    "storeyHeightM": 3,
+    "storeys": 30,
+    "bunker": {
+      "roofNapM": 25.6,
+      "eastTerraceNapM": 22,
+      "northHeadNapM": 26.6,
+      "southHeadNapM": 27.9,
+      "southLowNapM": [
+        23.94,
+        19.95
+      ]
+    },
+    "facadeAngleDegrees": -11.85,
+    "estimatedFacadeRelief": true,
+    "estimatedBunkerFascia": true
+  },
+  "sources": [
+    "PDOK BAG panden 0772100001025376 (2022), 0772100000300142 (1969), 0772100001047020 (2022, ondergronds), actuele orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100001025376",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000300142",
+    "https://nl.wikipedia.org/wiki/BunkerToren",
+    "https://commons.wikimedia.org/wiki/File:Bunker_Toren_(2023).jpg",
+    "https://commons.wikimedia.org/wiki/File:BunkerToren_in_Eindhoven_in_2022.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bunkertoren1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bunkertoren2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Studentencentrum_De_Bunker_Eindhoven.jpg"
+  ],
+  "printFiles": [
+    "bunkertoren-1-1000.stl"
+  ]
+}
