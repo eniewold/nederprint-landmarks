@@ -1,0 +1,97 @@
+{
+  "name": "HAUT",
+  "file": "haut-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    123120,
+    483716
+  ],
+  "xAxis": [
+    0.8771461637055887,
+    -0.48022349744318893
+  ],
+  "groundNap": 0.61,
+  "groundHeight": 43.494,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -21,
+      8
+    ],
+    [
+      -12,
+      21
+    ],
+    [
+      0,
+      21
+    ],
+    [
+      20,
+      20
+    ],
+    [
+      30,
+      10
+    ],
+    [
+      24,
+      -8
+    ],
+    [
+      -8,
+      -20.5
+    ],
+    [
+      -21,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012246300"
+  ],
+  "description": "HAUT aan de Amstel in het Amstelkwartier: houten woontoren van 21 lagen tot NAP +72,23 m met een dakrand tot +73,6 m en een dakframe tot +73,65 m. Vijfhoekige plattegrond met een schuine noordoostgevel en een scherpe zuidoostpunt die lager stopt (+60,0 en +57,0 m); de oostelijke helft van de noordgevel staat 1,5 m terug onder een doorlopende dakrand; witte vloerranden met glasbanden als blinde nissen, per laag verspringende balkons (zuidgevel 1,8 m, noordoostgevel 1,6 m, westgevel en noordgevel 1,0 m), dubbelhoge loggia's en een dakterras in de bovenste laag. Plint van drie lagen tot +12,85 m en een lage vleugel tot +30,65 m met trappenhuis. BAG-contour, hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong midden in het BAG-pand, X-as langs de zuidgevel (−28,7° op RD-oost). Het balkonpatroon onder de bovenste laag, de dubbelhoge loggia's, de plaats van de verspringing en de verdiepingshoogtes zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.61,
+    "roofNapM": 72.23,
+    "parapetNapM": 73.6,
+    "roofFrameNapM": 73.65,
+    "topFloorNapM": 68.9,
+    "eastSliceNapM": 60,
+    "eastTipNapM": 57,
+    "plinthNapM": 12.85,
+    "lowWingNapM": 30.65,
+    "stairNapM": [
+      27.4,
+      18.5
+    ],
+    "storeys": {
+      "groundFloorTopNapM": 6.2,
+      "storeyM": 3.3,
+      "floorsAboveGround": 20
+    },
+    "northFaceSetbackM": 1.5,
+    "balconyDepthM": {
+      "south": 1.8,
+      "northEast": 1.6,
+      "north": 1,
+      "west": 1
+    },
+    "facadeAngleDegrees": -28.7,
+    "estimatedBalconyPattern": true,
+    "estimatedLoggias": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012246300 (bouwjaar 2017 in de BAG; oplevering 2021), actuele orthoHR, AHN DSM/DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012246300",
+    "https://nl.wikipedia.org/wiki/HAUT",
+    "https://commons.wikimedia.org/wiki/File:HAUT_Amsterdam2.jpg",
+    "https://commons.wikimedia.org/wiki/File:HAUT_Amsterdam.jpg"
+  ],
+  "printFiles": [
+    "haut-amsterdam-1-1000.stl"
+  ]
+}
