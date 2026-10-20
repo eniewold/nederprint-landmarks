@@ -1,0 +1,267 @@
+{
+  "name": "Carlton (WTC Almere)",
+  "file": "carlton-almere.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143410,
+    487545
+  ],
+  "xAxis": [
+    0.97130057100502,
+    0.237855419877963
+  ],
+  "groundNap": -3.51,
+  "groundHeight": 39.194,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -48,
+      -12
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      38,
+      0
+    ],
+    [
+      52,
+      15
+    ],
+    [
+      20,
+      27
+    ],
+    [
+      -15,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0034100000051481"
+  ],
+  "description": "Carlton (WTC Almere) aan het Stationsplein: rechthoekige toren van 32 lagen tot NAP +112,7 m met een vooruitspringende glazen strook in de zuidgevel, een kroon tot +116,4 m en een antennemast tot +137,5 m; oostkop, noordoosthoek en westkop springen naar beneden toe in treden van drie lagen uit. Zuidwestvleugel van 12 lagen tot +44,2 m en noordvleugel van 6 lagen tot +18,99 m, eveneens getrapt; oranje luifel met kolommen boven de entree aan het Stationsplein, luifel aan de noordwestkant en een teruggezette begane grond onder de noordvleugel; vensterbanden als blinde nissen per verdieping. Contouren uit de BAG, hoogtes en treden uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong in de toren, X-as langs de lange gevels (13,76° op RD-oost). Tredenposities tussen de gemeten randen, de luifels, kolommen, de mastdikte en het vensterraster zijn geschat.",
+  "realWorld": {
+    "groundNapM": -3.51,
+    "towerRoofNapM": 112.7,
+    "crownTopNapM": 116.4,
+    "mastTopNapM": 137.5,
+    "towerTopSizeM": [
+      47.9,
+      16.05
+    ],
+    "eastEndSteps": [
+      [
+        51.5,
+        32.85
+      ],
+      [
+        62.300000000000004,
+        32
+      ],
+      [
+        73.1,
+        31.4
+      ],
+      [
+        83.89999999999999,
+        30.8
+      ],
+      [
+        94.7,
+        30.2
+      ],
+      [
+        105.5,
+        29.6
+      ],
+      [
+        112.7,
+        29.1
+      ]
+    ],
+    "northEastSteps": [
+      [
+        51.5,
+        10.4
+      ],
+      [
+        62.300000000000004,
+        10.15
+      ],
+      [
+        73.1,
+        9.9
+      ],
+      [
+        83.89999999999999,
+        9.65
+      ],
+      [
+        94.7,
+        9.4
+      ],
+      [
+        112.7,
+        9.15
+      ]
+    ],
+    "westEndSteps": [
+      [
+        29.900000000000002,
+        -20.7
+      ],
+      [
+        51.5,
+        -20.35
+      ],
+      [
+        73.1,
+        -20
+      ],
+      [
+        83.89999999999999,
+        -19.7
+      ],
+      [
+        94.7,
+        -19.3
+      ],
+      [
+        105.5,
+        -19
+      ],
+      [
+        112.7,
+        -18.8
+      ]
+    ],
+    "southWestWingRoofNapM": 44.2,
+    "southWestWingSteps": {
+      "west": [
+        [
+          22.6,
+          -43.2
+        ],
+        [
+          29.900000000000002,
+          -42.3
+        ],
+        [
+          37.03,
+          -41.6
+        ],
+        [
+          44.2,
+          -40.4
+        ]
+      ],
+      "south": [
+        [
+          8.3,
+          -21.35
+        ],
+        [
+          22.6,
+          -21
+        ],
+        [
+          37.03,
+          -20.6
+        ],
+        [
+          44.2,
+          -20
+        ]
+      ],
+      "north": [
+        [
+          8.3,
+          -4.2
+        ],
+        [
+          22.6,
+          -4.75
+        ],
+        [
+          37.03,
+          -5.2
+        ],
+        [
+          44.2,
+          -5.7
+        ]
+      ],
+      "east": [
+        [
+          22.6,
+          4.05
+        ],
+        [
+          37.03,
+          3.8
+        ],
+        [
+          44.2,
+          3.3
+        ]
+      ]
+    },
+    "northWingRoofNapM": 18.99,
+    "northWingSteps": {
+      "north": [
+        [
+          8.3,
+          22.89
+        ],
+        [
+          15.5,
+          22.6
+        ],
+        [
+          18.99,
+          22.3
+        ]
+      ],
+      "east": [
+        [
+          11.8,
+          48.74
+        ],
+        [
+          18.99,
+          47.2
+        ]
+      ]
+    },
+    "storeyGrid": {
+      "firstFloorNapM": 1.1,
+      "storeyM": 3.6
+    },
+    "southCanopyTopNapM": 8.3,
+    "northWestCanopyTopNapM": 9.5,
+    "facadeAngleDegrees": 13.76,
+    "estimatedSteps": true,
+    "estimatedCanopies": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0034100000051481 (bouwjaar 2010), actuele orthoHR, AHN DSM/DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0034100000051481",
+    "https://nl.wikipedia.org/wiki/Carlton_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:Carlton_Almere.jpg",
+    "https://commons.wikimedia.org/wiki/File:CarltonAlmere.jpg",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_09.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_35.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_289.JPG",
+    "https://commons.wikimedia.org/wiki/File:Almere_World_Trade_Centre_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Almere_World_Trade_Centre_2.jpg"
+  ],
+  "printFiles": [
+    "carlton-almere-1-1000.stl"
+  ]
+}
