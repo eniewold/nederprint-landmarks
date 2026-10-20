@@ -33,15 +33,20 @@ Onderdelen in het model (hoogtes in NAP):
 
 - Bloms driehoeksraster: 8,66 m tussen buren, 2,2 graden gedraaid ten opzichte
   van RD, gefit op de AHN-toppen (afwijking per top meestal onder 0,3 m).
-- 46 woningkubussen met ribbe 5,5 m en de lichaamsdiagonaal verticaal (wanden
+- 46 woningkubussen met ribbe 7,2 m en de lichaamsdiagonaal verticaal (wanden
   onder 54,7 graden), top op +24,8 m, de drie bovenste hoekpunten naar de buren
-  in het raster (richtingen 30, 150 en 270 graden plus de draaiing, AHN:
-  richels die tot 4,5 m uit het hart op +21,6 m lopen). Onderste punt op
-  +15,3 m.
+  in het raster (richtingen 30, 150 en 270 graden plus de draaiing). De
+  kubussen zitten aan elkaar vast, zoals op de foto's: elke bovenste ribbe
+  loopt zonder sprong door in het dakvlak van de buurkubus (AHN-profiel tussen
+  twee harten: laagste punt +20,5 m op 5,5 m uit het hart). Precies raken
+  vraagt een ribbe van 8,66 m x wortel(2/3) = 7,07 m; met 7,2 m steekt het
+  hoekpunt 0,1 m in het dakvlak van de buur, zodat de buren met volume aan
+  elkaar vastzitten in plaats van langs een lijn. Onderste punt op +12,3 m,
+  circa 2 m boven het dek.
 - Drie grote kubussen met ribbe 11 m: één aan de noordwestkant (top +30,8 m)
   en twee naast elkaar aan de zuidoostkant (+31,0 en +30,8 m).
-- Zeshoekige pijlers van 3,1 m over de vlakken (de grote kubussen 4,6 m), van
-  de onderbouw tot 2,6 m in de kubus.
+- Zeshoekige pijlers van 4,0 m over de vlakken (de grote kubussen 4,6 m), van
+  de onderbouw tot 3,4 m in de kubus (5,2 m bij de grote).
 - Onderbouw op de BAG-contouren: het lage deel op +7,1 m en het voetgangersdek
   op +10,3 m (AHN, buiten de kubussen gemeten en eronder doorgetrokken), met
   onder het BGT-dek de doorgang voor de Blaak tot +8,8 m.
@@ -56,8 +61,9 @@ luchtfoto en Wikimedia Commons-foto's
 (`Overzicht kubuswoningen - Rotterdam - 20359748 - RCE.jpg`,
 `Cube Houses @ Oudehaven @ Rotterdam (29948985423).jpg`) voor pijlers en
 opbouw. Raster, toppen, ribbe, draaiing en de niveaus van de onderbouw komen uit
-het AHN; de ribbe van de grote kubussen (dubbel), de pijlerbreedte en de diepte
-van de doorgang zijn geschat. In het AHN zijn 46 kubussen op woninghoogte te
+het AHN; de pijlerbreedte en de diepte van de doorgang zijn geschat. De ribbe
+van de grote kubussen (11 m) past op het AHN binnen 8 m van hun hart, maar is
+daar nauwelijks van een grotere te onderscheiden. In het AHN zijn 46 kubussen op woninghoogte te
 onderscheiden; de bronnen noemen 51 woning- en bedrijfskubussen, dus enkele
 lagere bedrijfskubussen ontbreken. Ramen, de piramidevormige daktuinen en de
 trappen zijn niet gemodelleerd.

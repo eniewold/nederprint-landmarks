@@ -10,6 +10,9 @@
 //   node scripts/generate-kubuswoningen.mjs              # 1:1000 (standaard)
 //   node scripts/generate-kubuswoningen.mjs --scale 500
 //
+// De woningkubussen zitten aan elkaar vast zoals in het echt: elke bovenste
+// ribbe loopt door in het dakvlak van de buurkubus.
+//
 // Printbaar op 1:1000 zonder losse steunconstructie: een kubus die op een punt
 // staat heeft ondervlakken die 35 graden uit het lood hangen. Alles zit in één
 // node, zodat de export het object laag voor laag opvult (de doorgang onder het
@@ -23,8 +26,8 @@
 // Bronnen: BAG-panden 0599100000701291 (het complex) en 0599100000764949 (de
 // onderbouw onder de zuidoostelijke grote kubussen); AHN DSM/DTM 0,5 m (PDOK
 // WCS) voor het raster en de toppen (46 kubussen op NAP +24,8 m, de grote
-// op +30,8 en +31,0 m), de ribbe (richels tot 4,5 m uit het hart op +21,6 m),
-// de draaiing van de kubussen en de hoogte van dek en onderbouw; BGT
+// op +30,8 en +31,0 m), de ribbe (richels die zonder sprong overgaan in het
+// dakvlak van de buur), de draaiing van de kubussen en de hoogte van dek en onderbouw; BGT
 // overbruggingsdeel (dek over de Blaak); PDOK luchtfoto en Wikimedia
 // Commons-foto's voor pijlers en opbouw.
 import Module from "manifold-3d";
@@ -79,10 +82,14 @@ const DATA = {
   cells: [[-6, 4], [-5, 3], [-5, 4], [-5, 5], [-5, 6], [-4, 2], [-4, 4], [-4, 6], [-3, 1], [-3, 4], [-3, 5], [-3, 7], [-2, 0], [-2, 6], [-1, -1], [-1, 0], [-1, 1], [-1, 2], [-1, 3], [-1, 4], [0, -2], [0, 0], [0, 4], [1, -6], [1, -3], [1, -2], [1, -1], [2, -4], [2, -2], [3, -8], [3, -7], [3, -4], [3, -3], [4, -8], [4, -6], [4, -4], [5, -8], [5, -7], [5, -6], [5, -5], [6, -8], [6, -6], [7, -9], [7, -8], [7, -7], [7, -6]],
 };
 
-// Woningkubus: ribbe 5,5 m, lichaamsdiagonaal verticaal (wanden 54,7 graden),
-// top op NAP +24,8 m; de drie bovenste hoekpunten wijzen naar de buren in het
-// raster (richtingen 30, 150 en 270 graden plus de draaiing).
-const CUBE = { edge: 5.5, apex: 24.8 };
+// Woningkubus: lichaamsdiagonaal verticaal (wanden 54,7 graden), top op
+// NAP +24,8 m; de drie bovenste hoekpunten wijzen naar de buren in het raster
+// (richtingen 30, 150 en 270 graden plus de draaiing). De kubussen zitten aan
+// elkaar vast: de bovenste ribbe van een kubus loopt door tot in het dakvlak
+// van de buur (AHN: geen sprong tussen de buren, laagste punt NAP +20,5 m op
+// 5,5 m uit het hart). Dat vraagt een ribbe van raster x wortel(2/3) = 7,07 m;
+// 7,2 m laat de buren elkaar met volume raken in plaats van langs een lijn.
+const CUBE = { edge: 7.2, apex: 24.8 };
 // Grote kubussen: dubbele ribbe, top uit het AHN.
 const SUPER = [
   { cell: [2, -6], apex: 31.0 },
@@ -90,9 +97,10 @@ const SUPER = [
   { cell: [-2, 5], apex: 30.8 },
 ];
 const SUPER_EDGE = 11.0;
-// Zeshoekige pijlers (foto: circa 0,4 keer de kubusbreedte), tot 2,6 m boven
-// het onderste punt van de kubus, zodat ze daarin opgaan.
-const PYLON = { acrossFlats: 3.1, superAcrossFlats: 4.6, intoCube: 2.6 };
+// Zeshoekige pijlers (foto: circa 0,4 keer de kubusbreedte), tot 3,4 m boven
+// het onderste punt van de kubus, zodat ze daarin opgaan (de driehoekige
+// doorsnede op die hoogte omsluit de zeshoek).
+const PYLON = { acrossFlats: 4.0, superAcrossFlats: 4.6, intoCube: 3.4 };
 // Onderbouw: laag deel op NAP +7,1 m, dek op +10,3 m (AHN), doorgang voor de
 // Blaak onder het BGT-dek tot NAP +8,8 m (dek 1,5 m dik), onderkant op
 // NAP +0,5 m (de kade aan de Oudehaven ligt op NAP +1,8 m).
@@ -153,7 +161,7 @@ for (const { cell, apex } of SUPER) {
   const bottom = centreZ - halfDiagonal(SUPER_EDGE);
   parts.push(superCube.translate([x, y, centreZ]));
   parts.push(
-    hexPrism(PYLON.superAcrossFlats, NAP(levelAt([x, y])) - 0.5, bottom + PYLON.intoCube * 2).translate([x, y, 0]),
+    hexPrism(PYLON.superAcrossFlats, NAP(levelAt([x, y])) - 0.5, bottom + 5.2).translate([x, y, 0]),
   );
 }
 const complex = union(parts);
