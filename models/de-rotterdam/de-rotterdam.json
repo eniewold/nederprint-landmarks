@@ -9,10 +9,12 @@
     435733.86
   ],
   "xAxis": [
-    0.77605,
-    0.63068
+    0.776046407066546,
+    0.6306758074312862
   ],
-  "groundOffsetMetres": -0.3,
+  "groundNap": 3.3,
+  "groundHeight": 46.89,
+  "groundOffsetMetres": -0.15,
   "groundSamplePoints": [
     [
       -40,
@@ -30,25 +32,66 @@
   "replacesBuildings": [
     "NL.IMBAG.Pand.0599100100002429"
   ],
-  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93136,02, 435733,86), het midden van het BAG-pand, op het maaiveld van de pier (NAP +3,5 m), +X langs de lange as naar het noordoosten (39,1 graden vanaf het oosten) en +Y naar het noordwesten, de Nieuwe Maas. Eén node building:de-rotterdam met de plint (NAP +31 m) over de hele kavel van 107 bij 50 m, de onderdelen van de drie torens tot de verspringing (NAP +88 m, aan de straatzijde richels op +74 m) met de nis tot op de plint aan de rivierzijde tussen west- en middentoren, de drie verspringende bovendelen tot NAP +149 m en de dakopbouwen tot +155 m, afgelezen in het AHN-DSM. Waar een bovendeel boven een smaller onderdeel uitkraagt, loopt het model recht door; alle blokken staan op het blok eronder, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
-  "printFiles": [
-    "de-rotterdam-1-1000.stl"
-  ],
+  "description": "De Rotterdam (OMA, 2013): plint over het hele BAG-pand van 107,1 × 49,6 m tot NAP +31,45 m (colonnade en drie banden met glasstroken die 1 m buiten de BAG-rand uitsteken, lamellenzone, dakrand +32,5) met drie torens tot +148,4 m (dakrand +150,55, dakopbouwen tot +154,8). Elke toren verspringt: westtoren op +87,26 m (bovenblok kraagt 7,25 m uit naar het zuidwesten, richel aan de binnenkant), middentoren op +89,4 m (kolom van plint tot dak aan de westkant, onderblok 8 m verder naar het oosten, bovenblok 10,8 m over een nis aan de Maaszijde), oosttoren op +86,9 m (onderblok 7,4 m naar de straat, bovenblok over de sleuf van 3,3 m tussen midden- en oosttoren). Gevels met glasvakken per verdieping (wonen en hotel 3,0 m, kantoren 3,4 m). Oorsprong in het midden van het BAG-pand, X-as langs de lange gevel naar het noordoosten (39,1° op RD-oost), +Y naar de Maas. Bovenkanten uit 3D BAG en AHN; onderblokken, sleuf, nis, verdiepingen en plintgevel uit foto's geschat.",
   "realWorld": {
     "lengthM": 107.1,
     "widthM": 49.6,
-    "highestPointNapM": 155,
-    "plinthNapM": 31,
-    "setbackNapM": 88,
-    "towerTopNapM": 149,
-    "roofStructuresNapM": 155,
-    "groundNapM": 3.5,
-    "baseNapM": 3
+    "bandProjectionM": 1,
+    "groundNapM": 3.3,
+    "roofNapM": 148.4,
+    "parapetNapM": 150.55,
+    "roofStructuresNapM": [
+      151.6,
+      153,
+      154.6,
+      154.8
+    ],
+    "shiftNapM": {
+      "west": 87.26,
+      "mid": 89.4,
+      "east": 86.9
+    },
+    "plinthNapM": 31.45,
+    "plinthRimNapM": 32.5,
+    "plinthBandsNapM": [
+      12.1,
+      21.2
+    ],
+    "westOverhangM": 7.25,
+    "eastSlotM": [
+      21.6,
+      24.9
+    ],
+    "midNicheM": {
+      "x": [
+        -4.45,
+        2.5
+      ],
+      "y": [
+        14,
+        24.8
+      ]
+    },
+    "storeyM": {
+      "west": 3,
+      "mid": 3.4,
+      "eastLower": 3,
+      "eastUpper": 3.4
+    },
+    "estimatedLowerBlocks": true,
+    "estimatedFacadeRelief": true
   },
   "sources": [
+    "PDOK BAG pand 0599100100002429 (bouwjaar 2013), AHN DSM/DTM 0,5 m (PDOK WCS)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100002429",
     "https://nl.wikipedia.org/wiki/De_Rotterdam",
-    "PDOK BAG pand 0599100100002429, EPSG:28992",
-    "PDOK AHN DSM 0,5 m via WCS, per 1 m in het stelsel van het gebouw bemonsterd en gekwantiseerd naar +31, +74, +88, +149 en +155 m",
-    "Wikimedia Commons: De Rotterdam across the Nieuwe Maas.jpg, De Rotterdam south side.jpg, De Rotterdam, September 2019 - 01.jpg"
+    "https://commons.wikimedia.org/wiki/File:De_Rotterdam,_September_2019_-_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:DeRotterdam.JPG",
+    "https://commons.wikimedia.org/wiki/File:De_Rotterdam_south_side.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kantoorgebouw_De_Rotterdam_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Rotterdam_(2).jpg"
+  ],
+  "printFiles": [
+    "de-rotterdam-1-1000.stl"
   ]
 }

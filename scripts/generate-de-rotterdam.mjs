@@ -1,345 +1,232 @@
-// Genereert een vereenvoudigd, gesloten 3D-model van De Rotterdam (OMA, 2013)
-// op de Wilhelminapier: de plint over de hele kavel, de drie torens met hun
-// onderdelen tot circa NAP +88 m en de verspringende bovendelen tot NAP +149 m,
-// met de dakopbouwen. Het AHN ziet alleen de bovenkant: waar een bovendeel
-// uitkraagt boven een smaller onderdeel, loopt het model recht door tot de
-// plint; waar een onderdeel buiten het bovendeel uitsteekt, staat de richel op
-// +88 m (de zichtbare verspringing). Alle maten in het script zijn meters op
-// ware grootte. Uitvoer: een GLB in meters (Y omhoog, één node met de
-// materiaalklasse in de nodenaam) als catalogusbron voor de export en de
-// kaart, plus een binaire STL in millimeters op 1:<schaal>.
+// De Rotterdam (Wilhelminapier, Rotterdam, 2009–2013; OMA): de "verticale stad" van drie torens op een
+// gezamenlijke plint. Elke toren bestaat uit een onderblok en een bovenblok die op circa NAP +87 tot +89 m
+// ten opzichte van elkaar verspringen:
+// - Westtoren (wonen): het bovenblok kraagt 7,25 m uit aan de kopse kant richting Hotel New York en laat
+//   aan de binnenkant een richel van 6,85 m op het onderblok;
+// - Middentoren (kantoren): een kolom van plint tot dak aan de westkant (springt 8 m naar de straat uit),
+//   een onderblok dat 8 m verder naar het oosten loopt dan het bovenblok, en een bovenblok dat aan de
+//   Maaszijde 10,8 m over een nis in het onderblok kraagt;
+// - Oosttoren (hotel en kantoren): het onderblok steekt 7,4 m naar de straat uit; het bovenblok ligt over
+//   de sleuf van 3,3 m tussen de onderblokken van midden- en oosttoren heen, die van de plint tot de
+//   verspringing door de hele diepte loopt.
+// De plint heeft een colonnade op de begane grond, drie horizontale banden met glasstroken en drie lagen
+// met lamellen; de torens hebben een raster van glasvakken per verdieping en een dichte dakrand met
+// installatieblokken erachter.
 //
-//   node scripts/generate-de-rotterdam.mjs              # 1:1000 (standaard)
-//   node scripts/generate-de-rotterdam.mjs --scale 2000
-//
-// Uitkragingen (foto's van de rivier- en straatzijde): de bovenbouw (NAP +88 tot
-// +149 m) begint pas op +88 m en rust op een onderbouw die er per toren anders
-// onder staat. De bovenste plaat van de westtoren kraagt 6,2 m uit aan de
-// buitenkant, die van de oosttoren 6,8 m over een sleuf van 3,3 m tussen de
-// onderbouw van de midden- en de oosttoren (door de hele diepte), en de
-// middentoren heeft een onderbouw die 8 m breder is dan zijn bovenbouw. Het
-// model heeft dus vlakke onderkanten op +88 m; de export zet daar onder 45
-// graden steun onder.
-//
-// Assenstelsel: oorsprong op RD (93136,02, 435733,86), het midden van het
-// BAG-pand, op het maaiveld van de pier (NAP +3,5 m), Z omhoog. +X loopt langs
-// de lange as naar het noordoosten (RD-richting 39,1 graden), +Y naar het
-// noordwesten, de Nieuwe Maas. De westtoren ligt aan de -X-kant.
-//
-// Bronnen: BAG-pand 0599100100002429 (rechthoek van 107,1 bij 49,6 m); AHN DSM
-// 0,5 m (PDOK WCS), in het stelsel van het gebouw per 1 m bemonsterd en naar
-// de niveaus +31, +74, +88, +149 en +155 m gekwantiseerd; Wikipedia; foto's op
-// Wikimedia Commons.
-import Module from "manifold-3d";
-import { mkdir, writeFile } from "node:fs/promises";
-import path from "node:path";
+// Bronnen en maten: BAG-pand 0599100100002429 (rechthoek 107,1 × 49,6 m, gevelrichting 39,1° op RD-oost);
+// de bovenkanten (dakvlakken, richels en dakopbouwen) uit de 3D BAG LoD2.2 en het AHN-DSM 0,5 m; wat het
+// AHN niet ziet (de onderblokken onder de bovenblokken, de sleuf, de nis aan de Maaszijde, verdiepingen
+// en plintgevel) uit frontale foto's op Wikimedia Commons, geschaald op de gevellengte van 107,1 m en de
+// dakhoogte. Het DSM heeft langs de naar het zuidoosten en zuidwesten gerichte glasgevels een strook van
+// 4 tot 8 m met spiegelpunten op alle hoogtes; daar volgen de gevels de 3D BAG en de BAG.
+import { CrossSection, Manifold, ccw, prism, union, writeLandmark } from "./efteling-kit.mjs";
 
-const argv = process.argv.slice(2);
-const flag = (name, fallback) => {
-  const i = argv.indexOf(name);
-  return i >= 0 && argv[i + 1] ? argv[i + 1] : fallback;
-};
-const scale = Number(flag("--scale", "1000"));
-const outDir = path.join(path.resolve(flag("--out", path.join(import.meta.dirname, "../models"))), "de-rotterdam");
-const mmPerMetre = 1000 / scale;
-
-const wasm = await Module();
-wasm.setup();
-const { Manifold, CrossSection } = wasm;
-
-// ---------- maten (lokaal stelsel, z = NAP - 3,5 m; hoogtes hieronder in NAP) ----------
+const slug = "de-rotterdam";
+// Gebouwstelsel: x langs de lange gevel naar het noordoosten (39,1° op RD-oost, BAG-contour), y naar het
+// noordwesten (de Nieuwe Maas); oorsprong in het midden van het BAG-pand. Westtoren aan de -x-kant.
 const ORIGIN = [93136.02, 435733.86];
-const AXIS_DEG = 39.1;
-const X_AXIS = [+Math.cos((AXIS_DEG * Math.PI) / 180).toFixed(5), +Math.sin((AXIS_DEG * Math.PI) / 180).toFixed(5)];
-const GROUND_NAP = 3.5;
-const NAP = (h) => h - GROUND_NAP;
-const BASE = NAP(3.0);
-// Halve lengte en breedte van het BAG-pand.
-const HX = 53.55;
-const HY = 24.8;
-// Blokken [x0, x1], [y0, y1] met het dak in NAP, afgelezen in het
-// gekwantiseerde AHN-raster per 1 m.
-const PLINTH = { x: [-HX, HX], y: [-HY, HY], top: 31 };
-const LOWER = [
-  // Onderdelen van de drie torens tot de verspringing (x uit de verhoudingen op
-  // een foto van de rivierzijde): westtoren x -47,3 tot -21,5 m (de bovenste
-  // plaat loopt tot -53,5 m), middentoren -21,5 tot 21,1 m, oosttoren 24,4 tot
-  // 53 m (de bovenste plaat begint op 17,6 m); tussen midden- en oosttoren de
-  // sleuf van 3,3 m.
-  { name: "onderdelen west en midden", x: [-47.3, 21.1], y: [-8, 15], top: 88 },
-  { name: "onderdelen oost", x: [24.4, 53], y: [-8, 15], top: 88 },
-  { name: "onderdelen rivierzijde west", x: [-47.3, -21], y: [15, HY], top: 88 },
-  { name: "onderdelen rivierzijde midden", x: [-5, 21.1], y: [15, HY], top: 88 },
-  { name: "onderdelen rivierzijde oost", x: [24.4, 53], y: [15, HY], top: 88 },
-  { name: "richel tussen west en midden", x: [-21, -5], y: [15, 17], top: 88 },
-  { name: "onderdelen straatzijde west en midden", x: [-29, 21.1], y: [-14, -8], top: 88 },
-  { name: "onderdelen straatzijde oost", x: [24.4, 53], y: [-14, -8], top: 88 },
-  { name: "middentoren straatzijde", x: [-20, -4], y: [-22, -14], top: 88 },
-  { name: "oosttoren straatzijde", x: [31, HX], y: [-18, -14], top: 88 },
-  { name: "oosttoren onderste richel", x: [28, HX], y: [-21, -18], top: 74 },
-  { name: "westtoren straatzijde", x: [-52.5, -29], y: [-14, -8], top: 74 },
+const ANGLE = 39.1;
+const A = (ANGLE * Math.PI) / 180;
+const AXIS = [Math.cos(A), Math.sin(A)];
+const GROUND = 3.3; // NAP; 3D BAG b3_h_maaiveld 3,26, AHN-DTM op straat en kade 3,3–3,5
+const BASE = -0.8;
+const z = (nap) => nap - GROUND;
+const rect = (x0, y0, x1, y1) => [[x0, y0], [x1, y0], [x1, y1], [x0, y1]];
+const cs = (poly) => new CrossSection([ccw(poly)]);
+const prismCs = (sec, z0, z1) => Manifold.extrude(sec, z1 - z0).translate([0, 0, z0]);
+
+// ---------- Hoogtes (NAP) ----------
+const ROOF = 148.4; // dakvlakken van de drie bovenblokken (3D BAG 148,38–148,45)
+const PARAPET = 150.55; // dichte dakrand, 1,0 m breed (3D BAG-randen 150,56–150,59, DSM 150–151)
+const W_SHIFT = 87.26; // dak van het westelijke onderblok = onderkant bovenblok (3D BAG 87,25–87,27)
+const M_SHIFT = 89.4; // dak van het middelste onderblok (3D BAG 89,40–89,45, DSM 89)
+const E_SHIFT = 86.9; // dak van het oostelijke onderblok (3D BAG 86,86–86,94, DSM 87)
+const PLINTH_TOP = 31.45; // dakterras van de plint (3D BAG 31,38–31,49)
+const PLINTH_RIM = 32.5; // lamellen boven het dakterras (foto van de Maaszijde: +32,6)
+const BANDS_BOTTOM = 12.1; // onderkant van de bandenzone, bovenkant van de colonnade (foto: +12,1)
+const BANDS_TOP = 21.2; // bovenkant van de bandenzone (foto: +21,1 tot +21,2)
+const BAND_STOREY = 3.0; // drie banden: plaat 1,0 m en glasstrook 2,0 m (foto)
+// De colonnade en de banden steken 1,0 m buiten de BAG-rand uit; de lamellenzone en de torens die tot
+// de rand lopen liggen op de BAG-rand (foto van de Maaszijde; DSM +18 tot +28 m in de strook 0,5–1 m
+// buiten de rand).
+const BAND_PROJECTION = 1.0;
+
+// ---------- Plattegrond (x, y in m) ----------
+// BAG-rechthoek: x -53,55 tot 53,55, y -24,8 tot 24,8.
+const HX = 53.55, HY = 24.8;
+// Torens. Bovenblokken en richels uit de 3D BAG en het DSM (randen ±0,3 m); onderblokken onder de
+// bovenblokken uit de frontale foto van de Maaszijde (8,13 px/m): westelijk onderblok tot x -46,3, sleuf
+// x 21,6–24,9, nis onder het middelste bovenblok x -4,4 tot 2,5.
+const W_LOWER_X = -46.3;
+const W_LOWER = rect(W_LOWER_X, -12.9, -20.95, 21.8);
+const W_UPPER = rect(-HX, -12.9, -27.8, 21.8);
+// Middentoren: westkolom van plint tot dak (straatgevel y -21,7 uit de 3D BAG, Maasgevel y 14,0 uit de
+// inkeping in het DSM, die tot op de plint loopt), onderblok tot de sleuf met de nis aan de Maaszijde,
+// bovenblok tot x 13,6 (DSM-rand) tot de Maasgevel van de plint.
+const M_COLUMN = rect(-21.0, -21.7, -4.4, 14.0);
+const NICHE_X = 2.5;
+const M_LOWER = [[-4.45, -13.6], [21.6, -13.6], [21.6, HY], [NICHE_X, HY], [NICHE_X, 14.0], [-4.45, 14.0]];
+const M_UPPER = rect(-4.45, -13.6, 13.6, HY);
+// Oosttoren: onderblok vanaf de sleuf met de uitsprong naar de straat (3D BAG-richel x 27,6–53,2,
+// y -21 tot -13,6); bovenblok vanaf x 19,5 (DSM en 3D BAG) over de sleuf.
+const SLOT = [21.6, 24.9];
+const E_LOWER = [[SLOT[1], -13.6], [27.6, -13.6], [27.6, -21.0], [HX, -21.0], [HX, 22.2], [SLOT[1], 22.2]];
+const E_UPPER = rect(19.5, -13.6, HX, 22.2);
+
+// Verdiepingen per blok uit de periode van het gevelraster op de foto van de Maaszijde: wonen en hotel
+// 3,0 m, kantoren 3,4 m.
+const BLOCKS = [
+  { name: "westtoren onderblok", poly: W_LOWER, from: PLINTH_TOP, to: W_SHIFT, floors: 19 },
+  { name: "westtoren bovenblok", poly: W_UPPER, from: W_SHIFT, to: ROOF, floors: 20 },
+  { name: "middentoren kolom", poly: M_COLUMN, from: PLINTH_TOP, to: ROOF, levels: [[PLINTH_TOP, M_SHIFT, 17], [M_SHIFT, ROOF, 17]] },
+  { name: "middentoren onderblok", poly: M_LOWER, from: PLINTH_TOP, to: M_SHIFT, floors: 17 },
+  { name: "middentoren bovenblok", poly: M_UPPER, from: M_SHIFT, to: ROOF, floors: 17 },
+  { name: "oosttoren onderblok", poly: E_LOWER, from: PLINTH_TOP, to: E_SHIFT, floors: 19 },
+  { name: "oosttoren bovenblok", poly: E_UPPER, from: E_SHIFT, to: ROOF, floors: 18 },
 ];
-const UPPER = [
-  { name: "westtoren", x: [-53.5, -26.8], y: [-7, HY], top: 149 },
-  { name: "middentoren", x: [-21, 15], y: [-13, 15], top: 149 },
-  { name: "middentoren rivierzijde", x: [-5, 15], y: [15, HY], top: 149 },
-  { name: "middentoren straatzijde", x: [-15, -4], y: [-19, -13], top: 149 },
-  { name: "oosttoren", x: [17.6, HX], y: [-13, HY], top: 149 },
+// Dakopbouwen (3D BAG-vlakken en DSM): west een kader met schermen tot +154,6 rond installaties tot
+// +151,6; midden een dicht blok tot +154,8; oost een blok tot +154,8 met een schermkader tot +153,0.
+const ROOF_FRAMES = [
+  { poly: rect(-46.6, -5.5, -32.0, 8.6), inner: 151.6, rim: 154.6 },
+  { poly: rect(28.0, -6.6, 45.0, 7.2), inner: null, rim: 153.0 },
 ];
-const ROOF = [
-  { name: "dakopbouw midden", x: [-10, 0], y: [-6, 7], top: 155 },
-  { name: "dakopbouw west", x: [-47, -44], y: [-1, 3], top: 155 },
-  { name: "dakopbouw oost", x: [35, 45], y: [-7, 7], top: 155 },
+const ROOF_BOXES = [
+  { poly: rect(-12.5, -6.4, 0.6, 6.8), top: 154.8 },
+  { poly: rect(35.0, -6.6, 45.0, 7.2), top: 154.8 },
 ];
-// Niveau waarop de bovenbouw begint; de onderkanten van de uitkragingen.
-const UPPER_FROM = 88;
-// Maaiveld (AHN NAP +3,0 tot +3,5 m): de kade aan de straatzijde, 3 m voor de
-// plint.
-const GROUND_SAMPLES = [[-40, -28], [0, -28], [40, -28]];
+// Opbouw op het plintdak aan de straatzijde voor de sleuf (3D BAG 32,33–32,44).
+const PLINTH_BOXES = [{ poly: rect(21.0, -17.5, 28.0, -13.6), top: 32.4 }];
 
-// ---------- hulpfuncties ----------
-const box = ([x0, x1], [y0, y1], z0, z1) => Manifold.cube([x1 - x0, y1 - y0, z1 - z0]).translate([x0, y0, z0]);
-const block = ({ x, y, top }) => box(x, y, BASE, NAP(top));
-// De bovenbouw begint op NAP +88 m (uitkragend waar de onderbouw smaller is) en
-// de dakopbouwen beginnen op het dak van de bovenbouw (NAP +149 m).
-const upperBlock = ({ x, y, top }) => box(x, y, NAP(UPPER_FROM), NAP(top));
-const roofBlock = ({ x, y, top }) => box(x, y, NAP(149) - 0.01, NAP(top));
+// ---------- Massa ----------
+const plinthCs = cs(rect(-HX, -HY, HX, HY));
+const BAND_RECT = rect(-HX - BAND_PROJECTION, -HY - BAND_PROJECTION, HX + BAND_PROJECTION, HY + BAND_PROJECTION);
+// De torens beginnen op de bandenzone, zodat een torengevel die gelijk ligt met de BAG-rand (het
+// middelste onderblok en bovenblok aan de Maaszijde, de kopse kant van de oosttoren) doorloopt tot daar.
+const towerSolids = BLOCKS.map((b) => (b.from === PLINTH_TOP ? prismCs(cs(b.poly), z(BANDS_TOP) - 0.1, z(b.to)) : prismCs(cs(b.poly), z(b.from), z(b.to))));
+const tops = [cs(W_UPPER), cs(M_COLUMN).add(cs(M_UPPER)), cs(E_UPPER)];
+const ring = (sec, w) => sec.subtract(sec.offset(-w, "Miter"));
+const body = union([
+  prism(BAND_RECT, BASE, z(BANDS_TOP)),
+  prismCs(plinthCs, z(BANDS_TOP) - 0.1, z(PLINTH_TOP)),
+  prismCs(ring(plinthCs, 1.0), z(PLINTH_TOP) - 0.1, z(PLINTH_RIM)),
+  ...PLINTH_BOXES.map((b) => prism(b.poly, z(PLINTH_TOP) - 0.1, z(b.top))),
+  ...towerSolids,
+  ...tops.map((t) => prismCs(ring(t, 1.0), z(ROOF) - 0.1, z(PARAPET))),
+  ...ROOF_FRAMES.flatMap((f) => [
+    prismCs(ring(cs(f.poly), 1.0), z(ROOF) - 0.1, z(f.rim)),
+    f.inner && prism(f.poly, z(ROOF) - 0.1, z(f.inner)),
+  ]),
+  ...ROOF_BOXES.map((b) => prism(b.poly, z(ROOF) - 0.1, z(b.top))),
+]);
 
-// ---------- gebouw ----------
-const building = Manifold.union([block(PLINTH), ...LOWER.map(block), ...UPPER.map(upperBlock), ...ROOF.map(roofBlock)]);
-
-const nodes = [["building:de-rotterdam", building]];
-const all = building;
-
-// ---------- controles ----------
-for (const [name, solid] of nodes) if (solid.status() !== "NoError") throw new Error(`${name}: ${solid.status()}`);
-for (const [name, solid] of nodes) {
-  // Naar beneden gerichte vlakken mogen alleen de onderkanten van de
-  // uitkragingen zijn: op de onderkant van de bovenste platen (NAP +88 m).
-  const mesh = solid.getMesh();
-  const v = mesh.vertProperties;
-  const s = mesh.numProp;
-  for (let t = 0; t < mesh.triVerts.length; t += 3) {
-    const p = [0, 1, 2].map((k) => [0, 1, 2].map((a) => v[mesh.triVerts[t + k] * s + a]));
-    if (Math.max(...p.map((q) => q[2])) < BASE + 1e-6) continue;
-    const e1 = p[1].map((c, i) => c - p[0][i]);
-    const e2 = p[2].map((c, i) => c - p[0][i]);
-    const nz = e1[0] * e2[1] - e1[1] * e2[0];
-    if (nz < -1e-9 && Math.abs(Math.min(...p.map((q) => q[2])) - NAP(UPPER_FROM)) > 1e-6) {
-      throw new Error(`${name}: ondervlak op z ${Math.min(...p.map((q) => q[2]))}`);
-    }
-  }
-  const bb = solid.boundingBox();
-  if (Math.abs(bb.min[2] - BASE) > 1e-6) throw new Error(`${name}: onderkant op ${bb.min[2]}`);
-}
-// ---------- STL-export ----------
-function toStl(manifold, label) {
-  const mesh = manifold.getMesh();
-  const v = mesh.vertProperties;
-  const tri = mesh.triVerts;
-  const stride = mesh.numProp;
-  const count = tri.length / 3;
-  const buffer = Buffer.alloc(84 + count * 50);
-  buffer.write(label.slice(0, 79), 0, 80, "ascii");
-  buffer.writeUInt32LE(count, 80);
-  let offset = 84;
-  for (let t = 0; t < count; t++) {
-    const p = [0, 1, 2].map((k) => {
-      const i = tri[t * 3 + k] * stride;
-      return [v[i] * mmPerMetre, v[i + 1] * mmPerMetre, v[i + 2] * mmPerMetre];
-    });
-    const u = p[1].map((c, i) => c - p[0][i]);
-    const w = p[2].map((c, i) => c - p[0][i]);
-    const n = [
-      u[1] * w[2] - u[2] * w[1],
-      u[2] * w[0] - u[0] * w[2],
-      u[0] * w[1] - u[1] * w[0],
-    ];
-    const len = Math.hypot(...n) || 1;
-    for (const value of [...n.map((c) => c / len), ...p[0], ...p[1], ...p[2]]) {
-      buffer.writeFloatLE(value, offset);
-      offset += 4;
-    }
-    buffer.writeUInt16LE(0, offset);
-    offset += 2;
-  }
-  return { buffer, triangles: count };
-}
-
-// ---------- GLB-export (glTF 2.0, meters, Y omhoog) ----------
-function toGlb(namedParts, generator) {
-  const chunks = [];
-  let byteLength = 0;
-  const bufferViews = [];
-  const accessors = [];
-  const meshes = [];
-  const nodes = [];
-  const pushView = (typedArray, target) => {
-    const bytes = Buffer.from(
-      typedArray.buffer,
-      typedArray.byteOffset,
-      typedArray.byteLength,
-    );
-    const padded = Buffer.concat([bytes, Buffer.alloc((4 - (bytes.length % 4)) % 4)]);
-    bufferViews.push({
-      buffer: 0,
-      byteOffset: byteLength,
-      byteLength: bytes.length,
-      target,
-    });
-    chunks.push(padded);
-    byteLength += padded.length;
-    return bufferViews.length - 1;
-  };
-  for (const [name, solid] of namedParts) {
-    // Vertexnormalen met scherpe randen boven 40 graden; getMesh() levert ze
-    // als properties 3..5, al meegedraaid met de toegepaste transformaties.
-    const mesh = solid.calculateNormals(0, 40).getMesh();
-    const stride = mesh.numProp;
-    const count = mesh.vertProperties.length / stride;
-    const positions = new Float32Array(count * 3);
-    const normals = new Float32Array(count * 3);
-    const min = [Infinity, Infinity, Infinity];
-    const max = [-Infinity, -Infinity, -Infinity];
-    for (let i = 0; i < count; i++) {
-      const v = mesh.vertProperties;
-      // Z omhoog (model) naar Y omhoog (glTF): (x, y, z) -> (x, z, -y).
-      const p = [v[i * stride], v[i * stride + 2], -v[i * stride + 1]];
-      const n =
-        stride >= 6
-          ? [v[i * stride + 3], v[i * stride + 5], -v[i * stride + 4]]
-          : [0, 1, 0];
-      for (let a = 0; a < 3; a++) {
-        positions[i * 3 + a] = p[a];
-        normals[i * 3 + a] = n[a];
-        min[a] = Math.min(min[a], p[a]);
-        max[a] = Math.max(max[a], p[a]);
+// ---------- Gevelreliëf ----------
+// Nissen per gevelzijde: n gelijke vakken met penanten (ook op de hoeken), per rij [onder, boven] een
+// opening van de gegeven diepte met een kop onder 45°. Alleen waar de gevel vrij ligt met ≥ 1 m materiaal
+// erachter (straal vanuit 3 m buiten de gevel, zoals in generate-marconitorens.mjs).
+const DEPTH = 0.35, PIER = 0.9;
+// `end`: breedte van de hoekpenanten (standaard die van de penanten).
+function facadeNiches(mass, edges, rows, { pitch, pier = PIER, depth = DEPTH, bays, end = pier }) {
+  const cuts = [];
+  for (const [a, b] of edges) {
+    const L = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const d = [(b[0] - a[0]) / L, (b[1] - a[1]) / L], n = [d[1], -d[0]]; // n naar buiten (massa links van a→b)
+    const P = (s, dep, h) => [a[0] + d[0] * s - n[0] * dep, a[1] + d[1] * s - n[1] * dep, h];
+    const cnt = bays ?? Math.max(1, Math.round((L - 2 * end + pier) / pitch));
+    const w = (L - 2 * end - pier * (cnt - 1)) / cnt;
+    if (w < 0.9) continue;
+    for (let k = 0; k < cnt; k++) {
+      const s0 = end + k * (w + pier), s1 = s0 + w;
+      // Lange vakken (doorlopende glasstroken) om de 3 m bemonsterd.
+      const m = Math.max(2, Math.ceil(w / 3));
+      const probes = Array.from({ length: m + 1 }, (_, i) => s0 + 0.1 + ((w - 0.2) * i) / m);
+      for (const [lo, top] of rows) {
+        const hi = top - depth;
+        if (hi - lo < 0.9) continue;
+        const free = [lo + 0.1, top - 0.1].every((h) => probes.every((s) => {
+          const from = P(s, -3, h), hits = mass.rayCast(from, P(s, 3, h));
+          const at = (j) => hits[j] && Math.hypot(hits[j].position[0] - from[0], hits[j].position[1] - from[1]);
+          return at(0) > 2.95 && at(0) < 3.05 && !(at(1) < 3 + depth + 1);
+        }));
+        if (!free) continue;
+        cuts.push(Manifold.hull([P(s0, -0.2, lo), P(s1, -0.2, lo), P(s0, depth, lo), P(s1, depth, lo), P(s0, -0.2, top + 0.2), P(s1, -0.2, top + 0.2), P(s0, depth, hi), P(s1, depth, hi)]));
       }
     }
-    const indices = Uint32Array.from(mesh.triVerts);
-    const positionView = pushView(positions, 34962);
-    const normalView = pushView(normals, 34962);
-    const indexView = pushView(indices, 34963);
-    accessors.push(
-      { bufferView: positionView, componentType: 5126, count, type: "VEC3", min, max },
-      { bufferView: normalView, componentType: 5126, count, type: "VEC3" },
-      { bufferView: indexView, componentType: 5125, count: indices.length, type: "SCALAR" },
-    );
-    const base = accessors.length - 3;
-    meshes.push({
-      name,
-      primitives: [
-        { attributes: { POSITION: base, NORMAL: base + 1 }, indices: base + 2, mode: 4 },
-      ],
-    });
-    nodes.push({ name, mesh: meshes.length - 1 });
   }
-  const json = Buffer.from(
-    JSON.stringify({
-      asset: { version: "2.0", generator },
-      scene: 0,
-      scenes: [{ nodes: nodes.map((_, i) => i) }],
-      nodes,
-      meshes,
-      buffers: [{ byteLength }],
-      bufferViews,
-      accessors,
-    }),
-  );
-  const jsonPadded = Buffer.concat([json, Buffer.alloc((4 - (json.length % 4)) % 4, 0x20)]);
-  const bin = Buffer.concat(chunks);
-  const header = Buffer.alloc(12);
-  header.writeUInt32LE(0x46546c67, 0);
-  header.writeUInt32LE(2, 4);
-  header.writeUInt32LE(12 + 8 + jsonPadded.length + 8 + bin.length, 8);
-  const chunkHeader = (length, type) => {
-    const b = Buffer.alloc(8);
-    b.writeUInt32LE(length, 0);
-    b.writeUInt32LE(type, 4);
-    return b;
-  };
-  return Buffer.concat([
-    header,
-    chunkHeader(jsonPadded.length, 0x4e4f534a),
-    jsonPadded,
-    chunkHeader(bin.length, 0x004e4942),
-    bin,
-  ]);
+  return cuts;
 }
-
-
-await mkdir(outDir, { recursive: true });
-const report = {};
-for (const [name, solid] of nodes) {
-  const bb = solid.boundingBox();
-  report[name] = {
-    status: solid.status(),
-    genus: solid.genus(),
-    triangles: solid.numTri(),
-    volumeM3: +solid.volume().toFixed(1),
-    sizeM: [0, 1, 2].map((i) => +(bb.max[i] - bb.min[i]).toFixed(2)),
-    xRange: [+bb.min[0].toFixed(2), +bb.max[0].toFixed(2)],
-    yRange: [+bb.min[1].toFixed(2), +bb.max[1].toFixed(2)],
-    zRange: [+bb.min[2].toFixed(2), +bb.max[2].toFixed(2)],
-  };
+const edgesOf = (poly) => ccw(poly).map((p, i, r) => [p, r[(i + 1) % r.length]]);
+// Verdiepingsrijen: glas van 0,5 m boven de vloer tot 0,5 m onder de volgende (band van 1,0 m).
+const storeyRows = (from, to, n) => Array.from({ length: n }, (_, k) => {
+  const h = (to - from) / n, f = z(from) + k * h;
+  return [f + 0.5, f + h - 0.5];
+});
+const cuts = [];
+// Torens: glasvakken van 2,7 m tussen stijlen van 0,9 m (het fijnere raster van lamellen om de 0,9 m is
+// op 1:1000 niet te printen).
+// Waar een toren tot de BAG-rand loopt, krijgt hij ook de lamellenrijen van de plint.
+const finRows = storeyRows(BANDS_TOP, PLINTH_TOP, 3);
+for (const b of BLOCKS) {
+  const rows = b.levels ? b.levels.flatMap(([f, t, n]) => storeyRows(f, t, n)) : storeyRows(b.from, b.to, b.floors);
+  cuts.push(...facadeNiches(body, edgesOf(b.poly), rows, { pitch: 3.6 }));
+  if (b.from === PLINTH_TOP) cuts.push(...facadeNiches(body, edgesOf(b.poly), finRows, { pitch: 2.7 }));
 }
-const glbFile = path.join(outDir, "de-rotterdam.glb");
-await writeFile(glbFile, toGlb(nodes, "NederPrint generate-de-rotterdam.mjs (manifold-3d)"));
-report.glb = { file: glbFile, parts: nodes.map(([name]) => name) };
+// Plint: colonnade op de begane grond (glas 2,5 m achter de kolommen van 0,9 m om de circa 8 m, dus
+// 1,5 m achter de BAG-rand; hoekkolommen van 3,0 m, zodat de colonnades om de hoek niet samenkomen), drie doorlopende glasstroken tussen de banden en drie lagen met lamellen.
+const plinthEdges = edgesOf(BAND_RECT);
+cuts.push(...facadeNiches(body, plinthEdges, [[0.2, z(BANDS_BOTTOM)]], { pitch: 8.9, depth: 2.5, end: 3.0 }));
+const bandRows = [0, 1, 2].map((k) => [z(BANDS_BOTTOM) + k * BAND_STOREY + 1.0, z(BANDS_BOTTOM) + (k + 1) * BAND_STOREY]);
+cuts.push(...facadeNiches(body, plinthEdges, bandRows, { bays: 1, depth: 0.4 }));
+cuts.push(...facadeNiches(body, edgesOf(rect(-HX, -HY, HX, HY)), finRows, { pitch: 2.7 }));
 
-const stlFile = path.join(outDir, `de-rotterdam-1-${scale}.stl`);
-const printSolid = all.translate([0, 0, -BASE]);
-const { buffer, triangles } = toStl(printSolid, `NederPrint De Rotterdam 1:${scale} mm Z-up`);
-await writeFile(stlFile, buffer);
-const bb = printSolid.boundingBox();
-report.stl = {
-  file: stlFile,
-  status: printSolid.status(),
-  genus: printSolid.genus(),
-  triangles,
-  volumeCm3: +((printSolid.volume() * mmPerMetre ** 3) / 1000).toFixed(2),
-  sizeMm: [0, 1, 2].map((i) => +((bb.max[i] - bb.min[i]) * mmPerMetre).toFixed(1)),
-};
+const building = body.subtract(union(cuts));
+const parts = building.decompose();
+if (parts.length !== 1) throw new Error(`De Rotterdam: ${parts.length} losse delen`);
+console.log("De Rotterdam", building.status(), "genus", building.genus(), "driehoeken", building.numTri(), "nissen", cuts.length);
 
-const hallBox = building.boundingBox();
-await writeFile(
-  path.join(outDir, "de-rotterdam.json"),
-  JSON.stringify(
-    {
-      name: "De Rotterdam",
-      file: "de-rotterdam.glb",
-      unitsPerMetre: 1,
-      className: "building",
-      crs: "EPSG:28992",
-      origin: ORIGIN,
-      xAxis: X_AXIS,
-      groundOffsetMetres: -0.3,
-      // Op de kade aan de straatzijde, 3 m voor de plint (NAP +3,0 tot +3,5 m).
-      groundSamplePoints: GROUND_SAMPLES,
-      replacesBuildings: ["NL.IMBAG.Pand.0599100100002429"],
-      description:
-        "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt de oorsprong op RD (93136,02, 435733,86), het midden van het BAG-pand, op het maaiveld van de pier (NAP +3,5 m), +X langs de lange as naar het noordoosten (39,1 graden vanaf het oosten) en +Y naar het noordwesten, de Nieuwe Maas. Eén node building:de-rotterdam met de plint (NAP +31 m) over de hele kavel van 107 bij 50 m, de onderdelen van de drie torens tot de verspringing (NAP +88 m, aan de straatzijde richels op +74 m) met de nis tot op de plint aan de rivierzijde tussen west- en middentoren, de drie verspringende bovendelen tot NAP +149 m en de dakopbouwen tot +155 m, afgelezen in het AHN-DSM. Waar een bovendeel boven een smaller onderdeel uitkraagt, loopt het model recht door; alle blokken staan op het blok eronder, zodat het model op 1:1000 zonder steun print. Vervangt de PDOK-reconstructie van het BAG-pand. Nodenaam klasse:label bepaalt de materiaalklasse.",
-      printFiles: [`de-rotterdam-1-${scale}.stl`],
-      realWorld: {
-        lengthM: +(hallBox.max[0] - hallBox.min[0]).toFixed(2),
-        widthM: +(hallBox.max[1] - hallBox.min[1]).toFixed(2),
-        highestPointNapM: +(hallBox.max[2] + GROUND_NAP).toFixed(2),
-        plinthNapM: PLINTH.top,
-        setbackNapM: 88,
-        towerTopNapM: 149,
-        roofStructuresNapM: 155,
-        groundNapM: GROUND_NAP,
-        baseNapM: 3.0,
-      },
-      sources: [
-        "https://nl.wikipedia.org/wiki/De_Rotterdam",
-        "PDOK BAG pand 0599100100002429, EPSG:28992",
-        "PDOK AHN DSM 0,5 m via WCS, per 1 m in het stelsel van het gebouw bemonsterd en gekwantiseerd naar +31, +74, +88, +149 en +155 m",
-        "Wikimedia Commons: De Rotterdam across the Nieuwe Maas.jpg, De Rotterdam south side.jpg, De Rotterdam, September 2019 - 01.jpg",
-      ],
+await writeLandmark({
+  slug,
+  base: BASE,
+  nodes: [["building:de-rotterdam-drie-verspringende-torens-op-de-plint", building]],
+  catalog: {
+    name: "De Rotterdam",
+    origin: ORIGIN,
+    xAxis: AXIS,
+    groundNap: GROUND,
+    groundHeight: 46.89, // laagste PDOK-terrein op de straat aan de zuidoostkant (ellipsoïdisch), NAP circa +3,2
+    groundOffsetMetres: -0.15,
+    // Op de rijbaan aan de straatzijde, 3,2 m voor de plint (PDOK 46,89–46,94); de kade aan de Maas ligt hoger.
+    groundSamplePoints: [[-40, -28], [0, -28], [40, -28]],
+    replacesBuildings: ["NL.IMBAG.Pand.0599100100002429"],
+    description:
+      "De Rotterdam (OMA, 2013): plint over het hele BAG-pand van 107,1 × 49,6 m tot NAP +31,45 m (colonnade en drie banden met glasstroken die 1 m buiten de BAG-rand uitsteken, lamellenzone, dakrand +32,5) met drie torens tot +148,4 m (dakrand +150,55, dakopbouwen tot +154,8). Elke toren verspringt: westtoren op +87,26 m (bovenblok kraagt 7,25 m uit naar het zuidwesten, richel aan de binnenkant), middentoren op +89,4 m (kolom van plint tot dak aan de westkant, onderblok 8 m verder naar het oosten, bovenblok 10,8 m over een nis aan de Maaszijde), oosttoren op +86,9 m (onderblok 7,4 m naar de straat, bovenblok over de sleuf van 3,3 m tussen midden- en oosttoren). Gevels met glasvakken per verdieping (wonen en hotel 3,0 m, kantoren 3,4 m). Oorsprong in het midden van het BAG-pand, X-as langs de lange gevel naar het noordoosten (39,1° op RD-oost), +Y naar de Maas. Bovenkanten uit 3D BAG en AHN; onderblokken, sleuf, nis, verdiepingen en plintgevel uit foto's geschat.",
+    realWorld: {
+      lengthM: 2 * HX,
+      widthM: 2 * HY,
+      bandProjectionM: BAND_PROJECTION,
+      groundNapM: GROUND,
+      roofNapM: ROOF,
+      parapetNapM: PARAPET,
+      roofStructuresNapM: [151.6, 153.0, 154.6, 154.8],
+      shiftNapM: { west: W_SHIFT, mid: M_SHIFT, east: E_SHIFT },
+      plinthNapM: PLINTH_TOP,
+      plinthRimNapM: PLINTH_RIM,
+      plinthBandsNapM: [BANDS_BOTTOM, BANDS_TOP],
+      westOverhangM: +(W_LOWER_X + HX).toFixed(2),
+      eastSlotM: SLOT,
+      midNicheM: { x: [-4.45, NICHE_X], y: [14.0, HY] },
+      storeyM: { west: 3.0, mid: 3.4, eastLower: 3.0, eastUpper: 3.4 },
+      estimatedLowerBlocks: true,
+      estimatedFacadeRelief: true,
     },
-    null,
-    2,
-  ),
-);
-console.log(JSON.stringify(report, null, 2));
+    sources: [
+      "PDOK BAG pand 0599100100002429 (bouwjaar 2013), AHN DSM/DTM 0,5 m (PDOK WCS)",
+      "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100002429",
+      "https://nl.wikipedia.org/wiki/De_Rotterdam",
+      "https://commons.wikimedia.org/wiki/File:De_Rotterdam,_September_2019_-_01.jpg",
+      "https://commons.wikimedia.org/wiki/File:DeRotterdam.JPG",
+      "https://commons.wikimedia.org/wiki/File:De_Rotterdam_south_side.jpg",
+      "https://commons.wikimedia.org/wiki/File:Kantoorgebouw_De_Rotterdam_02.jpg",
+      "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Rotterdam_(2).jpg",
+    ],
+  },
+});
