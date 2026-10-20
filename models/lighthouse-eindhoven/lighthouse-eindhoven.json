@@ -1,0 +1,87 @@
+{
+  "name": "Lighthouse",
+  "file": "lighthouse-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    159800.3,
+    384421.66
+  ],
+  "xAxis": [
+    0.880951036257675,
+    -0.47320742990418957
+  ],
+  "groundNap": 18.3,
+  "groundHeight": 61.97,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -10,
+      -18
+    ],
+    [
+      15,
+      -18
+    ],
+    [
+      -5,
+      18.5
+    ],
+    [
+      -34,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001039863"
+  ],
+  "description": "Lighthouse (Toren Niko) op Strijp-S: schijf van 58,4 × 23,8 m met een getande noordoosthoek (zes treden van 4,1 × 1,67 m), die naar het westen afloopt in twee blokken tot NAP +32,5 m (dakrand) en +53,5 m, een teruggezette noordwesthoek tot +78,3 m, de schijf tot het dak op +116,8 m (dakrand +117,8 m) met een trappenhuis tot +120,4 m, en een kroon van drie penthouselagen boven de westelijke helft tot +127,1 m. Colonnade van twee lagen langs de hele zuidgevel (pijlers om de 4,1 m, als nis van 1,5 m), balkonbanden op de zuidgevel van het oostdeel, verder staande ramen tussen penanten als doorlopende nissen. Contour uit de BAG, opbouw en hoogtes uit de plattegronden en doorsnede van De Zwarte Hond, lage blokken uit de 3D BAG. Oorsprong in het midden van de plattegrond, X-as langs de zuidgevel (-28,24° op RD-oost). De hoogte van de noordwesthoek, het trappenhuis, de diepte van de colonnade en het gevelstramien zijn geschat.",
+  "realWorld": {
+    "groundNapM": 18.3,
+    "footprintM": [
+      58.38,
+      23.8
+    ],
+    "plinthTopM": 7.45,
+    "storeyM": 3.035,
+    "storeys": 34,
+    "westBlockRoofNapM": [
+      31.6,
+      52.6
+    ],
+    "westBlockParapetNapM": [
+      32.52,
+      53.52
+    ],
+    "northWestCornerTopNapM": 78.25,
+    "slabRoofNapM": 116.8,
+    "slabParapetNapM": 117.8,
+    "crownRoofNapM": 126.4,
+    "crownParapetNapM": 127.1,
+    "heightM": 108.8,
+    "colonnadePitchM": 4.1,
+    "balconyBandProjectionM": 0.7,
+    "teethM": [
+      4.1,
+      1.665
+    ],
+    "facadeAngleDegrees": -28.2427,
+    "estimatedNorthWestCorner": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0772100001039863 (bouwjaar 2025), actuele orthoHR (toren af), AHN-DTM 0,5 m (van vóór de bouw)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100001039863",
+    "https://nl.wikipedia.org/wiki/Lighthouse_(Eindhoven)",
+    "https://dezwartehond.nl/en/projecten/lighthouse/",
+    "https://commons.wikimedia.org/wiki/File:Toren_Niko_(2025)_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_Niko_(2025)_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_Niko_(2025)_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_NIko_in_aanbouw.jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_Niko_en_Klokgebouw_(2024).jpg"
+  ],
+  "printFiles": [
+    "lighthouse-eindhoven-1-1000.stl"
+  ]
+}
