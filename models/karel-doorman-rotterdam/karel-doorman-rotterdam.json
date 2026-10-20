@@ -1,0 +1,116 @@
+{
+  "name": "De Karel Doorman",
+  "file": "karel-doorman-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92399.5,
+    437048.8
+  ],
+  "xAxis": [
+    0.880477353509162,
+    0.4740882090471163
+  ],
+  "groundNap": -0.99,
+  "groundHeight": 42.644,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -50,
+      -10
+    ],
+    [
+      -50,
+      6
+    ],
+    [
+      -30,
+      -23
+    ],
+    [
+      0,
+      -23
+    ],
+    [
+      30,
+      -23
+    ],
+    [
+      -20,
+      13
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      60,
+      -5
+    ],
+    [
+      64,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100110021001",
+    "NL.IMBAG.Pand.0599100000609958"
+  ],
+  "description": "De Karel Doorman op het warenhuis Ter Meulen: schijf van 75,9 × 17,7 m met een westtoren tot NAP +69,14 m (liftopbouw +70,41 m) en een oosttoren tot +60,0 m (liftopbouw +61,25 m), daartussen een daktuin op +42,8 m met aan beide lange zijden een glazen windscherm tot +50,7 m; de westkop kraagt 6 m over het dakterras uit op twee kolommen (onderkant +16,0 m). Lange gevels met verspringende loggia-openingen, koppen met verspringende ramen. Warenhuis tot +10,6 m met kroonlijst, luifels langs het Binnenwegplein en de Lijnbaan, etalages, vensterband en pilasters; parkeerlaag met dakparkeren tot +16,0 m ten zuiden en oosten van de toren, oostvleugel aan de Lijnbaan tot +14,6 m met installatieopbouwen tot +18,35 m, plint aan de Crispijnstraat tot +7,4 m. BAG-contouren, hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong in het midden van de toren, X-as langs de lange gevels (28,3° op RD-oost). Uitkraging, kolommen, luifels, kroonlijst, verdiepingshoogtes, windschermhoogte en het nissenpatroon zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.99,
+    "towerFootprintM": [
+      75.9,
+      17.7
+    ],
+    "westTower": {
+      "roofNapM": 69.14,
+      "liftNapM": 70.41,
+      "storeys": 9
+    },
+    "eastTower": {
+      "roofNapM": 60,
+      "liftNapM": 61.25,
+      "storeys": 6
+    },
+    "roofGardenNapM": [
+      41.65,
+      42.8,
+      44.6
+    ],
+    "windScreenNapM": 50.7,
+    "westOverhang": {
+      "depthM": -5.974602638085116,
+      "soffitNapM": 16,
+      "columns": 2,
+      "columnDiameterM": 1
+    },
+    "store": {
+      "roofNapM": 10.6,
+      "northPlinthNapM": 7.4,
+      "parkingDeckNapM": 16,
+      "eastWingNapM": 14.6,
+      "canopyDepthM": 2,
+      "canopyTopNapM": 4.2
+    },
+    "facadeAngleDegrees": 28.3,
+    "estimatedOverhang": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100110021001 (bouwjaar 2012) en 0599100000609958 (bouwjaar 1949), actuele orthoHR, AHN DSM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100110021001",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000609958",
+    "https://nl.wikipedia.org/wiki/De_Karel_Doorman",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Karel_Doorman.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Karel_Doorman_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_De_Karel_Doorman_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:Karel_Doormanstraat_towards_De_Rotterdam_-_2019-12-05.jpg",
+    "https://commons.wikimedia.org/wiki/File:Binnenwegplein_(3782243003).jpg",
+    "https://commons.wikimedia.org/wiki/File:%27Polare%27_Binnenwegplein_Rotterdam.jpg"
+  ],
+  "printFiles": [
+    "karel-doorman-rotterdam-1-1000.stl"
+  ]
+}
