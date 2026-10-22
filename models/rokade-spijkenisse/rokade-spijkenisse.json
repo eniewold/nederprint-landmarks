@@ -1,0 +1,63 @@
+{
+  "name": "De Rokade",
+  "file": "rokade-spijkenisse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83005.63,
+    429862.36
+  ],
+  "xAxis": [
+    0.6374239897486899,
+    -0.7705132427757891
+  ],
+  "groundNap": 5.6,
+  "groundHeight": 49.3,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -30,
+      -20
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      30,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0612100000000569"
+  ],
+  "description": "De Rokade in Spijkenisse: woontoren van 33 lagen op een plint van zes lagen (dak NAP +27,9 m) over de hele BAG-contour van 103 × 22,5 m. De toren heeft een plattegrond als parallellogram (40 m langs de gevel, kopgevels onder 55°, uit het AHN-DSM) en een dak op +110,3 m met een installatiekast tot +114,4 m en een mastkroon tot +120 m; tussen de zwarte en de witte helft een 3 m brede, 1,2 m diepe naad met balkonbanden. Vensters per travee als blinde nissen, loggia's in de noordwestelijke kopgevel en een glasband in de zuidoostelijke, winkelpuien en vensters in de plint. Oorsprong in het hart van de BAG-contour, X-as langs de lange gevels naar het zuidoosten (-50,4° op RD-oost). Verdiepingshoogtes, naad, kroon en gevelindeling zijn geschat.",
+  "realWorld": {
+    "groundNapM": 5.6,
+    "plinthRoofNapM": 27.9,
+    "roofNapM": 110.3,
+    "plantNapM": 114.4,
+    "crownNapM": 120,
+    "towerLengthM": 40,
+    "towerDepthM": 22.55,
+    "endFaceAngleDegrees": 55.4,
+    "floors": {
+      "plinth": 6,
+      "tower": 27
+    },
+    "facadeAngleDegrees": -50.4,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0612100000000569 (bouwjaar 2010), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/De_Rokade_(Spijkenisse)",
+    "https://commons.wikimedia.org/wiki/File:Spijkenisse_DSCF1949.JPG",
+    "https://commons.wikimedia.org/wiki/File:Hooge_flats_kant_oude_maas_Spijkenisse.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vier_Werelden_en_De_Rokade_Spijkenisse_2016.jpg",
+    "https://commons.wikimedia.org/wiki/File:Spijkenisse_uitzicht_De_Stoep_richting_De_Elementen_2013.jpg"
+  ],
+  "printFiles": [
+    "rokade-spijkenisse-1-1000.stl"
+  ]
+}
