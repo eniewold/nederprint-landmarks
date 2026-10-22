@@ -1,0 +1,54 @@
+{
+  "name": "2Amsterdam",
+  "file": "2amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119840,
+    483700
+  ],
+  "xAxis": [
+    0.9986295347545738,
+    0.05233595624294383
+  ],
+  "groundNap": 0.8,
+  "groundHeight": 43.6,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012081222",
+    "NL.IMBAG.Pand.0363100012075036",
+    "NL.IMBAG.Pand.0363100012252214"
+  ],
+  "description": "2Amsterdam aan de Eduard van Beinumstraat (Zuidas): de westelijke hoteltoren tot NAP +75,3 m met een gebogen oostgevel (BAG-boog, zuidhelft gespiegeld), installatieopbouw tot +86,0 m en lage vleugels van +9,2 en +8,3 m; de oostelijke kantoortoren met een gebogen glazen schild tot +61,0 m voor een blok tot +65,5 m, een installatiekast tot +68,0 m en lage vleugels tot +22,5 m; en het toegangspaviljoen van de parkeergarage tot +7,0 m. Verticale vensterkolommen in de hoteltoren, glasbanden per laag in de kantoortoren en langs beide bogen. Hoogtes uit het AHN-DSM. Oorsprong tussen de torens, X-as langs de zuidgevels (3,0° op RD-oost). Verdiepingshoogtes, vinnen en banden zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.8,
+    "hotelRoofNapM": 75.3,
+    "hotelPlantNapM": 86,
+    "hotelWingsNapM": [
+      9.2,
+      8.3
+    ],
+    "officeRoofNapM": [
+      61,
+      65.5
+    ],
+    "officePlantNapM": 68,
+    "officeWingsNapM": 22.5,
+    "garagePavilionNapM": 7,
+    "facadeAngleDegrees": 3,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0363100012081222 (1985), 0363100012075036 (1992) en 0363100012252214 (2021), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/2Amsterdam",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:2Amsterdam_hoteltoren_in_2025.jpg",
+    "https://commons.wikimedia.org/wiki/File:2Amsterdam_II_(2019.06.09).jpg",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Strawinsky_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zuidas_Strawinsky_02.jpg"
+  ],
+  "printFiles": [
+    "2amsterdam-1-1000.stl"
+  ]
+}
