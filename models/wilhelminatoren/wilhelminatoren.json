@@ -1,0 +1,63 @@
+{
+  "name": "Wilhelminatoren",
+  "file": "wilhelminatoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93452.22,
+    435875.65
+  ],
+  "xAxis": [
+    0.8191520442889918,
+    -0.573576436351046
+  ],
+  "groundNap": 3.9,
+  "groundHeight": 47.6,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -10,
+      18
+    ],
+    [
+      8,
+      18
+    ],
+    [
+      20,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000691047"
+  ],
+  "description": "Wilhelminatoren aan het Wilhelminaplein (Kop van Zuid): witte kantoortoren van 22 × 20 m tot NAP +83,5 m (zuidwestelijke helft +80,5 m) met vensterkolommen tussen lisenen, aan de noordwestkant een lagere afgeronde schijf tot +75,3 m met een raamband per laag, de liftschacht ertussen tot +84,0 m en een installatiekader van 19 × 1,6 m tot +93,0 m. Contour uit de BAG, hoogtes uit het AHN-DSM. Oorsprong in het hart van de BAG-contour, X-as langs de zuidwestgevel van de toren (-35° op RD-oost). Verdiepingshoogte, vensterstramien en raambanden zijn geschat.",
+  "realWorld": {
+    "groundNapM": 3.9,
+    "towerRoofNapM": [
+      80.5,
+      83.5
+    ],
+    "roundWingRoofNapM": 75.3,
+    "coreNapM": 84,
+    "plantNapM": 93,
+    "towerPlanM": [
+      22.14,
+      20.18
+    ],
+    "storeyHeightM": 3.55,
+    "facadeAngleDegrees": -35,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000691047 (bouwjaar 1997), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Wilhelminaplein_(Rotterdam)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam,_The_Netherlands_(30580639771).jpg",
+    "https://commons.wikimedia.org/wiki/File:Wilhelminaplein_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:-_panoramio_(2705).jpg"
+  ],
+  "printFiles": [
+    "wilhelminatoren-1-1000.stl"
+  ]
+}
