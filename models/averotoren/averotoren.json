@@ -1,0 +1,49 @@
+{
+  "name": "Avérotoren",
+  "file": "averotoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181925.93,
+    579114.73
+  ],
+  "xAxis": [
+    0.9967788784562471,
+    -0.0801989243288589
+  ],
+  "groundNap": 1.1,
+  "groundHeight": 42.3,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000336057"
+  ],
+  "description": "Avérotoren aan de Lange Marktstraat in Leeuwarden: glazen kubus van 22,8 × 22,5 m tot NAP +71,0 m in een zwart raster van drie bij zes vakken, met een open kader van 3 × 3 vakken rond de omloop tot +73,0 m; aan de noordkant een hogere schacht tot +77,5 m en een verbindingsdeel tot +70,0 m, lage vleugels tot +15,0 m, een lager noorddeel tot +17,0 m en een glazen entreehal tot +5,5 m. Contour uit de BAG, hoogtes uit het AHN-DSM, raster uit foto's. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevel (-4,6° op RD-oost). Rasterverdeling, schachtvensters en de dikte van het kader zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.1,
+    "towerNapM": 71,
+    "frameNapM": 73,
+    "shaftNapM": 77.5,
+    "linkNapM": 70,
+    "northPartNapM": 17,
+    "wingsNapM": 15,
+    "hallNapM": 5.5,
+    "gridBays": {
+      "wide": 3,
+      "high": 6
+    },
+    "facadeAngleDegrees": -4.6,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0080100000336057 (bouwjaar 1990), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Averotoren",
+    "https://commons.wikimedia.org/wiki/File:Averotoren_Leeuwarden.jpg",
+    "https://commons.wikimedia.org/wiki/File:Averotoren_achmeatoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:20130608_Uitzicht_Achmeatoren_Leeuwarden_NL_(2).jpg",
+    "https://commons.wikimedia.org/wiki/File:20180721_540_leeuwarden.jpg"
+  ],
+  "printFiles": [
+    "averotoren-1-1000.stl"
+  ]
+}
