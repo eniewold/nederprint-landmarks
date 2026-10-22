@@ -1,0 +1,73 @@
+{
+  "name": "Oosterbaken",
+  "file": "oosterbaken.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83721.19,
+    430909.54
+  ],
+  "xAxis": [
+    0.7738402097265062,
+    0.6333808726275502
+  ],
+  "groundNap": 0.1,
+  "groundHeight": 43.8,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -9,
+      -9
+    ],
+    [
+      0,
+      -15
+    ],
+    [
+      3,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000431103"
+  ],
+  "description": "Oosterbaken in Hoogvliet: woontoren van 33 lagen op een plattegrond als pijlpunt (BAG-contour), dak op NAP +97,2 m met installatieopbouwen tot +102,1 m; langs de holle zuidgevels een terras op +91,6 m met de bovenste laag 2,5 m terug. Drie glazen kopvolumes kragen 1,0–1,2 m uit vanaf +66 tot +70 m tot het dak (noordhoek, zuidpunt van de oostarm, westkop), met een kraag onder 45°. Onderaan de westvleugel (+6,5 en +9,4 m) en de entree aan de noordkant (+8,4 m). Vensters in de bakstenen gevels en het donkere paneel als blinde nissen per travee, glasstroken als doorlopende band per laag. Hoogtes uit het AHN-DSM en de PDOK-reconstructie. Oorsprong in het hart van de BAG-contour, X-as langs de noordwestgevel (39,3° op RD-oost). Uitkraging en onderkant van de kopvolumes, verdiepingshoogte en vensterstramien zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.1,
+    "roofNapM": 97.2,
+    "terraceNapM": 91.6,
+    "setbackM": 2.5,
+    "plantNapM": [
+      100.2,
+      102.1
+    ],
+    "westWingNapM": [
+      6.5,
+      9.4
+    ],
+    "entranceNapM": 8.4,
+    "lanternBottomNapM": {
+      "north": 66,
+      "east": 70,
+      "west": 68
+    },
+    "storeyHeightM": 2.9,
+    "floors": 33,
+    "facadeAngleDegrees": 39.3,
+    "estimatedLanterns": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000431103 (bouwjaar 2007), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Oosterbaken",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_hoogvliet_oosterbaken.jpg",
+    "https://commons.wikimedia.org/wiki/File:Oosterbaken_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Oosterbaken_4_copy.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hoogvliet_De_Oosterbaken_lente_2007.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hoogvliet_Oosterbaken.jpg"
+  ],
+  "printFiles": [
+    "oosterbaken-1-1000.stl"
+  ]
+}
