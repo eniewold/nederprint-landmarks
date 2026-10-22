@@ -1,0 +1,41 @@
+{
+  "name": "Torens Prinses Beatrixlaan 9 en 11",
+  "file": "beatrixlaan-9-11.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82784,
+    455167
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": 0.8,
+  "groundHeight": 44.2,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001753745",
+    "NL.IMBAG.Pand.0518100001753747"
+  ],
+  "description": "Twee woontorens aan de Prinses Beatrixlaan (Beatrixkwartier): beide op hun BAG-contour (vier hoeken met één schuine gevel) tot NAP +73,0 m met een installatiekast tot +75,0 m, een vensterraster per laag en per toren twee balkonstapels die 1,4 m buiten de gevel steken tot +70,0 m, met per laag een open balkon. Hoogtes en de plaats van de balkons uit het AHN-DSM. Oorsprong tussen de torens, X-as naar RD-oost. Verdiepingshoogte, vensterraster en de hoogte van de balkonstapels zijn geschat; de naam komt uit de hoogbouwlijst en is niet nagekeken.",
+  "realWorld": {
+    "groundNapM": 0.8,
+    "roofNapM": 73,
+    "plantNapM": 75,
+    "balconyTopNapM": 70,
+    "balconyDepthM": 1.4,
+    "floors": 22,
+    "storeyHeightM": 3.15,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0518100001753745 en 0518100001753747 (bouwjaar 2019), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegels (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://commons.wikimedia.org/wiki/File:Monarch_III,_Prinses_Beatrixlaan_Den_Haag_(49900924528).jpg"
+  ],
+  "printFiles": [
+    "beatrixlaan-9-11-1-1000.stl"
+  ]
+}
