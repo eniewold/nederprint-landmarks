@@ -1,0 +1,84 @@
+{
+  "name": "Rijnstraat 8",
+  "file": "rijnstraat-8.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82053.81,
+    455166.13
+  ],
+  "xAxis": [
+    -0.6073758397232868,
+    0.794414620535418
+  ],
+  "groundNap": 0.7,
+  "groundHeight": 44.2,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      0,
+      30
+    ],
+    [
+      -73,
+      0
+    ],
+    [
+      -73,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000274290"
+  ],
+  "description": "Rijnstraat 8 (voormalig VROM-gebouw) naast Den Haag Centraal: een blok van 140 × 56 m met over de lengte vier witte kantoorschijven tot NAP +61,0 m en drie travees met glazen gevelserres en een verhoogde glazen kap op het middenatrium (+60,4 tot +62,5 m), aan de zuidoostkant een kantoorblok met glasgevel tot +60,4 m en een lichtkap tot +62,8 m, aan de noordwestgevel een trappenhuis tot +57,3 m en aan het plein twee lage vleugels van +13,8 en +14,0 m. Onder de schijven een open plint met Λ-kolommen tot +9 m, onder de serres een inspringende plint tot +13 m en in de Rijnstraatgevel de trampoort. Glasbanden per laag in serres en kopblok, een verticale vensterstrook per schijf. Hoogtes uit het AHN-DSM, indeling uit de luchtfoto. Oorsprong in het hart van de BAG-contour, X-as langs de lange as naar het noordwesten (127,4° op RD-oost). Plinthoogtes, kolommen, trampoort, zaagtandsteek en gevelindeling zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.7,
+    "slabRoofNapM": 61,
+    "serreRoofNapM": [
+      60.4,
+      61.4
+    ],
+    "atriumRoofNapM": [
+      61.9,
+      62.5
+    ],
+    "headRoofNapM": 60.4,
+    "skylightNapM": [
+      61.6,
+      62.8
+    ],
+    "wingsNapM": [
+      13.8,
+      14
+    ],
+    "plinthNapM": {
+      "serres": 13,
+      "slabs": 9,
+      "head": 8
+    },
+    "tramPortalNapM": [
+      10.5,
+      16.5
+    ],
+    "lengthM": 139.83,
+    "widthM": 56.25,
+    "floors": 16,
+    "storeyHeightM": 3.6,
+    "facadeAngleDegrees": 127.4,
+    "estimatedPlinthAndFacade": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000274290 (bouwjaar 1993), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/VROM-gebouw",
+    "https://commons.wikimedia.org/wiki/File:Rijnstraat_8_The_Hague_2020.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rijksgebouw_Den_Haag.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rijkskantoor_Rijnstraat_8_gezien_vanaf_de_Lekstraat.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rijkskantoorgebouw_Rijnstraat_8.jpg",
+    "https://commons.wikimedia.org/wiki/File:Former_VROM_building_The_Hague.jpg"
+  ],
+  "printFiles": [
+    "rijnstraat-8-1-1000.stl"
+  ]
+}
