@@ -1,0 +1,47 @@
+{
+  "name": "Kantoor Anna van Buerenplein",
+  "file": "anna-van-buerenplein-706.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82256.63,
+    455350.73
+  ],
+  "xAxis": [
+    0.7944146205354181,
+    0.6073758397232867
+  ],
+  "groundNap": 0.8,
+  "groundHeight": 44.2,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001643163"
+  ],
+  "description": "Kantoorgebouw aan het Anna van Buerenplein bij Den Haag Centraal: toren van 18,6 × 42,6 m tot NAP +72,0 m met een installatieopbouw tot +74,0 m, middenblok tot +50,8 m met een glazen atriumkap van drie zaagtanden tot +53,3 m, laag blok tot +17,0 m, strook tot +13,0 m en onder het RandstadRail-viaduct een begane-grondvolume tot +4,0 m over de hele BAG-contour. Glasbanden per laag. Hoogtes uit het AHN-DSM en de PDOK-reconstructie. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevel (37,4° op RD-oost). Naam, verdiepingshoogte, atriumkap en banden zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.8,
+    "towerNapM": 72,
+    "towerPlantNapM": 74,
+    "middleBlockNapM": 50.8,
+    "atriumRoofNapM": [
+      50.8,
+      53.3
+    ],
+    "lowBlockNapM": 17,
+    "stripNapM": 13,
+    "hallNapM": 4,
+    "storeyHeightM": 3.5,
+    "facadeAngleDegrees": 37.4,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100001643163 (bouwjaar 2013), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_Universiteit_Leiden_(39835418041).jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag,_hoogbouw_vanaf_het_Anna_van_Buerenplein_IMG_5984_2024-11-03_15.41.jpg"
+  ],
+  "printFiles": [
+    "anna-van-buerenplein-706-1-1000.stl"
+  ]
+}
