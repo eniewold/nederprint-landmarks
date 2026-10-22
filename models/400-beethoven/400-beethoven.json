@@ -1,0 +1,50 @@
+{
+  "name": "400 Beethoven",
+  "file": "400-beethoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120227.43,
+    483277
+  ],
+  "xAxis": [
+    0.4508775406894308,
+    -0.8925858184521255
+  ],
+  "groundNap": -0.7,
+  "groundHeight": 42.4,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012242448",
+    "NL.IMBAG.Pand.0363100012242865"
+  ],
+  "description": "400 Beethoven aan de Beethovenstraat (Zuidas): sokkel met afgeronde hoeken over de BAG-contour tot NAP +30,0 m, aan de zuidoostkant in treden van +26,0 en +22,0 m, daarop de toren tot +55,2 m (westdeel +50,0 m) met een technische opbouw tot +59,5 m. Vensters per laag als blinde nissen. Hoogtes en terugsprongen uit het AHN-DSM. Oorsprong in het hart van de BAG-contour, X-as langs de lange gevels (-63,2° op RD-oost). Verdiepingshoogte en vensterstramien zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.7,
+    "podiumNapM": 30,
+    "podiumStepsNapM": [
+      26,
+      22
+    ],
+    "towerNapM": [
+      50,
+      55.2
+    ],
+    "plantNapM": 59.5,
+    "floors": 14,
+    "storeyHeightM": 3.95,
+    "facadeAngleDegrees": -63.2,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0363100012242448 en 0363100012242865 (bouwjaar 2017), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_-_400_Beethovenstraat_(30299782305).jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_-_400_Beethovenstraat_(30003120410).jpg",
+    "https://commons.wikimedia.org/wiki/File:Beethovenstraat_hoek_George_Gershwinlaan_foto_1.jpg"
+  ],
+  "printFiles": [
+    "400-beethoven-1-1000.stl"
+  ]
+}
