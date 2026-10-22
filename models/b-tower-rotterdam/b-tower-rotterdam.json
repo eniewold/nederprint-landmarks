@@ -1,0 +1,46 @@
+{
+  "name": "B'Tower",
+  "file": "b-tower-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92450.09,
+    437250.8
+  ],
+  "xAxis": [
+    0.9542403285162769,
+    0.29904079225608665
+  ],
+  "groundNap": -0.8,
+  "groundHeight": 42.5,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000766719"
+  ],
+  "description": "B'Tower aan de Hennekijnstraat achter de Lijnbaan: sokkel over de BAG-contour tot NAP +22,0 m (achterkant +25,0 m), daarop een toren van 18,7 × 30,8 m tot +68,5 m met een kern aan de noordkant tot +54,0 m; per laag een glasband achter een doorlopende witte vloerrand (15 woonlagen, vier sokkellagen). Hoogtes uit het AHN-DSM. Oorsprong in het hart van de BAG-contour, X-as langs de korte zuidgevel (17,4° op RD-oost). Verdiepingshoogtes, banddiepte en de kern zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.8,
+    "towerNapM": 68.5,
+    "coreNapM": 54,
+    "podiumNapM": [
+      22,
+      25
+    ],
+    "floors": {
+      "podium": 4,
+      "tower": 15
+    },
+    "facadeAngleDegrees": 17.4,
+    "estimatedFloorBands": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000766719 (bouwjaar 2012), actuele orthoHR, AHN-DSM en -DTM 0,5 m, PDOK 3D-gebouwtegel (LoD2.2)",
+    "https://nl.wikipedia.org/wiki/B%27Tower",
+    "https://commons.wikimedia.org/wiki/File:B%E2%80%99Tower_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:2024_Aert_van_Nesstraat,_Rotterdam_met_zondagmiddag_drukte.jpg"
+  ],
+  "printFiles": [
+    "b-tower-rotterdam-1-1000.stl"
+  ]
+}
