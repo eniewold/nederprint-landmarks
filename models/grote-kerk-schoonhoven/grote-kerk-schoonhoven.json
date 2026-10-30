@@ -1,0 +1,96 @@
+{
+  "name": "Grote of Bartholomeüskerk Schoonhoven",
+  "file": "grote-kerk-schoonhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    118140,
+    439890.5
+  ],
+  "xAxis": [
+    0.98797,
+    0.15466
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -29,
+      0
+    ],
+    [
+      -12,
+      -15.5
+    ],
+    [
+      -12,
+      15.5
+    ],
+    [
+      1,
+      15.5
+    ],
+    [
+      1,
+      -15.5
+    ],
+    [
+      20,
+      -12
+    ],
+    [
+      20,
+      12
+    ],
+    [
+      30.5,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0608100001224191"
+  ],
+  "description": "Oorsprong bij het zwaartepunt van het BAG-pand op NAP +2,0 m, +X oostwaarts langs de kerkas (8,9 graden linksom van RD-oost), toren aan de westkant. Westelijke hallenkerk met drie evenwijdige zadeldaken (nokken NAP +22,5/+23,3/+22,5, schild en wolfseind naar het westen), breed dwarsschip met nok NAP +27,7 en topgevels met grote vensters, drie oostkoren met veelhoekige sluiting en schilddaken (nokken NAP +19,2/+22,2/+19,5), consistorie en lage aanbouw, steunberen uit de BAG-contour en spitse vensternissen; scheve toren met hoeksteunberen en pinakels, galmgaten, omgang op NAP +27,3, bovengeleding met drie vensters per zijde tot NAP +38,2, tentdak met vier uurwerkfrontons, lantaarn en kroon tot NAP +48,2, circa 1,6 m oostwaarts uit het lood. Dakhellingen en nokken uit 3D BAG en AHN, torenmaten en vensters uit AHN en foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2,
+    "transeptRidgeNapM": 27.68,
+    "westRidgesNapM": [
+      22.51,
+      23.34,
+      22.45
+    ],
+    "choirRidgesNapM": [
+      19.48,
+      22.19,
+      19.17
+    ],
+    "roofPitchDeg": {
+      "west": 60,
+      "transept": 60,
+      "middleChoir": 54.5,
+      "sideChoirs": 56
+    },
+    "towerGalleryNapM": 27.3,
+    "towerCorniceNapM": 38.2,
+    "towerRoofTopNapM": 48.2,
+    "ahnTopNapM": 53,
+    "towerLeanM": [
+      1.6,
+      0.4
+    ],
+    "bagFootprintM2": 1399.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Bartholome%C3%BCskerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33472",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0608100001224191 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dakhellingen, nokken en goten",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Bartholome%C3%BCskerk_(Schoonhoven)",
+    "https://commons.wikimedia.org/wiki/File:Bartholomeuskerk_Schoonhoven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Noordwest-gevel_-_Schoonhoven_-_20198365_-_RCE.jpg",
+    "PDOK BAG-pand 0608100001224191, AHN DSM 0,5 m, Actueel_orthoHR, 2026-10-30"
+  ],
+  "printFiles": [
+    "grote-kerk-schoonhoven-1-1000.stl"
+  ]
+}
