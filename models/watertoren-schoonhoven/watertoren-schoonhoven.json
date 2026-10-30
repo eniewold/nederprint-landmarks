@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Schoonhoven",
+  "file": "watertoren-schoonhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117922.24,
+    439652.837
+  ],
+  "xAxis": [
+    0.99434,
+    0.1062
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0608100001224969"
+  ],
+  "description": "Oorsprong op het zwaartepunt van het BAG-pand op maaiveld (NAP +0,5 m), +X langs de oostvleugel (6,1 graden linksom van RD-oost), ingang naar -Y (zuid). Kruisvormige onderbouw van vier vleugels met zadeldaken, topgevels, schoorstenen en blinde vensters rond een achtkante kern; achtkante schacht met vensters en oculi tot een ronde kraag op 16,6 m; ronde arcaderand, kraagsteenrij en achtkante reservoirommanteling met spitsboogvensters tot de kroonlijst op 26,3 m; uitlopende leien onderkap, achtkante spits tot 41,2 m met vier dakkapellen en vier hoektorentjes, ijzeren standpijp met knop tot 46 m. Breedtes uit BAG en de bestektekening, hoogtes uit de tekening op het AHN gepast; windvaan, makelaars en pinakels op de topgevels weggelaten.",
+  "realWorld": {
+    "publishedHeightM": 50,
+    "ahnGroundNapM": 0.5,
+    "ahnRidgeNapM": 12,
+    "ahnCorniceNapM": 26.8,
+    "ahnTopNapM": 48.59,
+    "bagFootprintM2": 109.6,
+    "armWidthM": 4.4,
+    "footprintSpanM": 14.47,
+    "shaftAcrossFlatsM": 6.24,
+    "tankAcrossFlatsM": 7.7,
+    "corniceAcrossFlatsM": 8.9,
+    "drawingVerticalFactor": 1.056,
+    "modelTopM": 46,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Schoonhoven)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/452390",
+    "https://commons.wikimedia.org/wiki/File:Zijgevel_watertoren_Schoonhoven.jpg (bestektekening zijgevel 1:100, 1900)",
+    "https://commons.wikimedia.org/wiki/File:Doorsnede_watertoren_Schoonhoven.jpg (doorsnede CD 1:100)",
+    "https://commons.wikimedia.org/wiki/File:RM452390_Schoonhoven_-_Watertoren_(foto_1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Achtergevel_-_Schoonhoven_-_20198446_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Schoonhoven_-_20198444_-_RCE.jpg",
+    "PDOK BAG-pand 0608100001224969, AHN DSM/DTM 0,5 m, 2026-10-30"
+  ],
+  "printFiles": [
+    "watertoren-schoonhoven-1-1000.stl"
+  ]
+}
