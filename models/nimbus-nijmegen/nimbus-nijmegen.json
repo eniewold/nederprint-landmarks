@@ -1,0 +1,82 @@
+{
+  "name": "Nimbus",
+  "file": "nimbus-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187310.7,
+    428508
+  ],
+  "xAxis": [
+    0.999033,
+    -0.043968
+  ],
+  "groundNap": 22.6,
+  "groundHeight": 66.33,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -5,
+      -13
+    ],
+    [
+      15,
+      -13
+    ],
+    [
+      35,
+      -13.5
+    ],
+    [
+      -20,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000087616"
+  ],
+  "description": "Woontoren Nimbus aan de Spoorstraat bij station Nijmegen met de twee vleugels van hetzelfde BAG-pand: toren van 19,8 × 19,6 m tot NAP +94,9 m (24 lagen) met een dakrand die van +98,0 m aan de westkant schuin afloopt naar het dak aan de oostgevel en een installatieopbouw tot +98,9 m; voor de westgevel twee bakstenen schijven van 1,3 m tot +74,15 en +59,35 m; de zuidoosthoek staat op een pijler boven de balkonstrook. Westvleugel (donkergrijs) en oostvleugel (balkonstrook tot +38,6 m) tot +41,7 m met zonnepanelenvelden tot +42,6 m. Vensters als blinde nissen, in de baksteen verspringend, in de pixelgevel en de vleugels in een raster; glazen hoekloggia's. Contour uit de BAG, hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het hart van de toren, X-as langs de zuidgevel (-2,52° op RD-oost). Verdiepingshoogte, vensterpatroon, balkons, hoekloggia's en de hoogte van de open zuidoosthoek zijn geschat; de parkeerkelder onder het dek (op maaiveld) is weggelaten.",
+  "realWorld": {
+    "groundNapM": 22.6,
+    "geoidM": 43.73,
+    "roofNapM": 94.9,
+    "crownNapM": [
+      98,
+      94.9
+    ],
+    "plantNapM": [
+      97.18,
+      98.91
+    ],
+    "westStepsNapM": [
+      74.15,
+      59.35
+    ],
+    "wingRoofNapM": 41.7,
+    "solarNapM": 42.6,
+    "balconyNapM": 38.6,
+    "floors": 24,
+    "groundFloorM": 4,
+    "storeyHeightM": 2.97,
+    "towerPlanM": [
+      19.8,
+      19.59
+    ],
+    "facadeAngleDegrees": -2.52,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0268100000087616 (bouwjaar 2016), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0268100000087616 (AHN4 2021): dakrand, schijven, vleugels",
+    "NLGEO2018-geoïde (data/geoid in de webshop)",
+    "https://nl.wikipedia.org/wiki/Nimbus_(Nijmegen)",
+    "https://www.pss-archi.eu/immeubles/NL-268-70281.html",
+    "https://commons.wikimedia.org/wiki/File:Nimbus_Nijmegen_2016.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nimbus_Nijmegen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nimbus_Nijmegen_voormalig_Belastingkantoor.jpg"
+  ],
+  "printFiles": [
+    "nimbus-nijmegen-1-1000.stl"
+  ]
+}
