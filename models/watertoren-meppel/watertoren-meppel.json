@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren Meppel",
+  "file": "watertoren-meppel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    208752.1,
+    524541.3
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0119100000007291"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +2,5 m), assen in RD-richting. Witgepleisterde verjongende voet van 9,07 m met zes rondboogvensters tot 5,85 m, verjongende schacht met smalle vensters tot 15,9 m, fries en lijst tot 18,0 m, trommel met twaalf consoles onder het reservoir van 9,7 m met bolle onderrand tot de kroonlijst op 28,4 m, dakterras op 28,8 m en een lantaarn van 4,7 m tot 31,7 m. Maten uit BAG, AHN en een Commons-foto.",
+  "realWorld": {
+    "publishedHeightM": 31.5,
+    "reservoirM3": 230,
+    "ahnGroundNapM": 2.5,
+    "ahnTopNapM": 34.27,
+    "bagFootDiameterM": 9.07,
+    "shaftDiameterM": [
+      7,
+      6.76
+    ],
+    "tankDiameterM": 9.7,
+    "corniceM": 28.4,
+    "terraceM": 28.8,
+    "lanternDiameterM": 4.7,
+    "modelTopM": 31.7,
+    "photoScalePxPerM": 47,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Meppel)",
+    "https://commons.wikimedia.org/wiki/File:Meppel,_watertoren_foto7_2011-05-21_12.27.JPG (maten)",
+    "https://commons.wikimedia.org/wiki/File:Meppel,_de_watertoren_PM1-0171_IMG_2121_2018-04-07_16.35.jpg",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Meppel.jpg",
+    "PDOK BAG-pand 0119100000007291, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-meppel-1-1000.stl"
+  ]
+}
