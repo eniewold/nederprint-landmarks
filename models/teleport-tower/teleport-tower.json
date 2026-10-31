@@ -1,0 +1,83 @@
+{
+  "name": "Teleport Tower",
+  "file": "teleport-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117970,
+    488772
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": 2.55,
+  "groundHeight": 45.55,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -5,
+      -25
+    ],
+    [
+      10,
+      -30
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      -25,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012081516"
+  ],
+  "description": "Teleport Tower aan de Kingsfordweg (Teleport, Sloterdijk): kantoortoren van 17 lagen in drie vleugels op de bovengrondse voetafdruk van de 3D BAG, met het dak op NAP +64,4 m, een middendeel tot +65,8 m en een installatieopbouw tot +67,1 m; de west- en de noordvleugel lopen in terrassen af naar +53,7, +28,5, +17,7, +10,5 en +6,9 m, de zuidoostvleugel gaat door tot +64,5 m. Per laag (begane grond 4,35 m, daarboven 3,6 m) vensters als blinde nissen op lange gevels en doorlopende glasstroken op de korte facetten in de binnenhoeken; tegen de noordwestgevel het glazen entreepaviljoen tot +14,5 m. Het BAG-pand omvat ook het garagedek (NAP +2,5) waar de toren op staat; dat dek zelf zit in het maaiveld en is niet gemodelleerd. Terrashoogtes en voetafdruk uit de 3D BAG (LoD2.2), gecontroleerd tegen het AHN4-DSM. Oorsprong in het hart van de toren, X-as naar RD-oost. Verdiepingsindeling, vensterstramien en glasstroken zijn uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.55,
+    "roofNapM": 64.43,
+    "centralRoofNapM": 65.82,
+    "southEastWingRoofNapM": 64.49,
+    "plantNapM": 67.13,
+    "terraceNapM": {
+      "west": [
+        53.71,
+        28.48,
+        17.7,
+        10.5,
+        6.91
+      ],
+      "north": [
+        53.72,
+        28.5,
+        17.71,
+        10.5,
+        6.91
+      ]
+    },
+    "entrancePavilionNapM": [
+      11.8,
+      14.5
+    ],
+    "floors": 17,
+    "storeyHeightM": 3.6,
+    "groundFloorHeightM": 4.35,
+    "footprintM2": 1228.8,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012081516 (bouwjaar 2001), actuele orthoHR, AHN4-DSM en -DTM 0,5 m",
+    "3D BAG v2 (3DGI/TU Delft, CC BY 4.0), NL.IMBAG.Pand.0363100012081516, LoD2.2 (puntwolk AHN3)",
+    "https://nl.wikipedia.org/wiki/Teleport_Tower",
+    "https://commons.wikimedia.org/wiki/File:Teleport_Tower_Amsterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Regus_Sloterdijk_Teleport_Towers.JPG",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_kantoorpand_Regus.jpg"
+  ],
+  "printFiles": [
+    "teleport-tower-1-1000.stl"
+  ]
+}
