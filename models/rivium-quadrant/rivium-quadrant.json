@@ -1,0 +1,80 @@
+{
+  "name": "Gemini I en II (Rivium Quadrant)",
+  "file": "rivium-quadrant.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    96607.2,
+    436508.25
+  ],
+  "xAxis": [
+    0.980546,
+    0.196288
+  ],
+  "groundNap": 4.75,
+  "groundHeight": 48.25,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      30.9,
+      7
+    ],
+    [
+      2.9,
+      5
+    ],
+    [
+      -7.9,
+      -23
+    ],
+    [
+      -7.9,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0502100000021139",
+    "NL.IMBAG.Pand.0502100000021143"
+  ],
+  "description": "De twee kantoortorens Gemini I (Rivium Quadrant 81, 1995) en Gemini II (Rivium Quadrant 141–181, 1998) van VTBS op het Rivium in Capelle aan den IJssel, beide op hun BAG-contour. Gemini I: een kruis van witte armen tot NAP +67,8 m met per armkop vensters, een verticale sleuf en patrijspoorten, donkere hoekblokken in treden van +61,1, +44,2 en +27,2 m, een reclameblok tot +76,6 m met vakwerkschermen opzij, een vakwerkkubus tot +83,8 m en een halfrond entreepaviljoen aan de vijver. Gemini II: witte west- en oostgevel met vensters en donkere noord- en zuidgevel met glasbanden tot +68,0 m, een glazen opbouw tot +74,7 m met een pergola langs de west- en zuidrand, een witte kroon tot +81,6 m met aan noord- en zuidkant een donkere schijf tot +82,9 m die naar het oosten rond afloopt, een installatieblok tot +84,2 m en een aanbouw tot +12,9 m. Hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong midden tussen de torens, X-as langs de zuidgevels (11,32° op RD-oost). Verdiepingshoogtes, gevelindeling, de schermen, de pergola, de ronding van de schijven en het paviljoen zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 4.75,
+    "geminiI": {
+      "armsNapM": 67.8,
+      "cornerTiersNapM": [
+        61.1,
+        44.2,
+        27.2
+      ],
+      "coreNapM": 76.6,
+      "latticeNapM": 83.8,
+      "pavilionHeightM": 4,
+      "sideM": 22.25
+    },
+    "geminiII": {
+      "shaftNapM": 68,
+      "glassNapM": 74.7,
+      "crownNapM": 81.6,
+      "bladeNapM": 82.9,
+      "bladeEndNapM": 79.4,
+      "plantNapM": 84.2,
+      "annexNapM": 12.9
+    },
+    "floors": 19,
+    "facadeAngleDegrees": 11.32,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0502100000021139 (bouwjaar 1995) en 0502100000021143 (bouwjaar 1998), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2",
+    "https://nl.wikipedia.org/wiki/Rivium",
+    "https://www.pss-archi.eu/immeubles/NL-502-73261.html",
+    "https://www.pss-archi.eu/immeubles/NL-502-73260.html",
+    "https://commons.wikimedia.org/wiki/File:Capelle_ad_IJssel,_zicht_op_het_Rivium_foto1_2013-07-07_15.56.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rivium.jpg",
+    "https://commons.wikimedia.org/wiki/File:Capelle_aan_den_IJssel_-_Rivium_-_kantoorgebouw.jpg"
+  ],
+  "printFiles": [
+    "rivium-quadrant-1-1000.stl"
+  ]
+}
