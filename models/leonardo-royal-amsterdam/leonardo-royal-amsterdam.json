@@ -1,0 +1,57 @@
+{
+  "name": "Leonardo Royal Hotel Amsterdam",
+  "file": "leonardo-royal-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    123003.87,
+    482858.06
+  ],
+  "xAxis": [
+    0.9240797784353525,
+    0.38219963773775323
+  ],
+  "groundNap": 0.45,
+  "groundHeight": 43.49,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012242114"
+  ],
+  "description": "Leonardo Royal Hotel aan de Paul van Vlissingenstraat 24 (Overamstel): de BAG-contour is een rechthoek van 50,5 × 69,0 m met aan de zuidkant de hoteltoren van 50,5 × 21,7 m tot NAP +60,5 m met dakinstallaties tot +64,35 m, daarachter een sokkelvleugel tot +15,85 m, een lage strook tot +8,35 m en een parkeergarage met een dek op twee halve niveaus (+17,35 en +18,7 m), twee hellingbanen als vlakken en een trappenhuis met liftopbouw tot +21,2 m. De toren heeft een glazen plint met hoge omlijste ramen, 16 hotellagen met een vensterraster als blinde nissen, in de bovenste twee lagen per travee een kruisvenster van twee lagen, en een entreeluifel aan de zuidgevel. Hoogtes uit het AHN-DSM en de 3D BAG, gevelindeling uit een foto van de zuid- en westgevel. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevel (22,47° op RD-oost). Verdiepingshoogtes, vensterraster, de luifel en de gevels van de lage strook zijn geschat; de gevels van de parkeergarage zijn vlak gelaten.",
+  "realWorld": {
+    "groundNapM": 0.45,
+    "towerRoofNapM": 60.5,
+    "towerPlantNapM": 64.35,
+    "podiumRoofNapM": 15.85,
+    "lowRoofNapM": 8.35,
+    "parkingDeckNapM": [
+      17.35,
+      18.7
+    ],
+    "rampLowNapM": 16.1,
+    "stairCoreNapM": 20.1,
+    "liftNapM": 21.2,
+    "footprintM": [
+      50.5,
+      69
+    ],
+    "towerM": [
+      50.5,
+      21.7
+    ],
+    "hotelFloors": 16,
+    "storeyHeightM": 3,
+    "plinthHeightM": 10.6,
+    "facadeAngleDegrees": 22.47,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012242114 (bouwjaar 2019; verblijfsobjecten Paul van Vlissingenstraat 24, logies, en Isaäc Asscherpad 4), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5 2023), NLGEO2018",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:LeonardoRoyalHotelAmsterdam.jpg"
+  ],
+  "printFiles": [
+    "leonardo-royal-amsterdam-1-1000.stl"
+  ]
+}
