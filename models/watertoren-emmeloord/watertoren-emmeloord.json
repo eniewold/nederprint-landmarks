@@ -1,0 +1,68 @@
+{
+  "name": "Poldertoren Emmeloord",
+  "file": "watertoren-emmeloord.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    179582.51,
+    524787.84
+  ],
+  "xAxis": [
+    0.9681,
+    0.2504
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0171100000012589"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-contour op maaiveld (NAP -2,5 m), +X naar het klokvlak op 14,5 graden (oost). Bakstenen achthoek van 14,0 m over de vlakken, verjongend tot 13,4 m op het bezoekersplatform op 48,5 m, met ingang, klokzone met hoge vensters (30 tot 39 m) en kleine vensters langs de trap; langwerpige achthoekige lantaarn (9,4 bij 12,4 m) met galmgaten voor het carillon tot 60,8 m en een koperen tentdak tot 65,3 m. Maten uit BAG, AHN, Wikipedia en RCE-foto's.",
+  "realWorld": {
+    "publishedHeightM": 65.3,
+    "withVaneM": 70.5,
+    "reservoirM3": 1850,
+    "ahnGroundNapM": -2.51,
+    "ahnTopNapM": 64.41,
+    "footAcrossFlatsM": 14,
+    "platformAcrossFlatsM": 13.4,
+    "platformM": 48.5,
+    "publishedPlatformM": 43.4,
+    "lanternAcrossFlatsM": [
+      9.4,
+      12.4
+    ],
+    "eaveM": 60.8,
+    "modelTopM": 65.3,
+    "photoScalePxPerM": 21.2,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Poldertoren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/532139",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren,_vanaf_de_Kampwal_-_Emmeloord_-_20413330_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren,_gezien_vanaf_de_noordzijde,_Onder_de_Toren_-_Emmeloord_-_20413332_-_RCE.jpg (richting van de klokvlakken)",
+    "https://commons.wikimedia.org/wiki/File:Zicht_op_opengewerkte_lantaarn_met_tentdak_en_carillon_-_Emmeloord_-_20409639_-_RCE.jpg",
+    "PDOK BAG-pand 0171100000012589, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-emmeloord-1-1000.stl"
+  ]
+}
