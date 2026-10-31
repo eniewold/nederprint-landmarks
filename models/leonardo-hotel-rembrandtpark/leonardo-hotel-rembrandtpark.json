@@ -1,0 +1,52 @@
+{
+  "name": "Leonardo Hotel Amsterdam Rembrandtpark",
+  "file": "leonardo-hotel-rembrandtpark.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    118004.14,
+    486831.35
+  ],
+  "xAxis": [
+    0.999933655059592,
+    0.011518918315752342
+  ],
+  "groundNap": -0.75,
+  "groundHeight": 42.25,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012148630"
+  ],
+  "description": "Het Rembrandtparkgebouw aan de Staalmeesterslaan (1972–1973), nu Leonardo Hotel Amsterdam Rembrandtpark en Hotelschool The Hague, als één BAG-pand: de hoteltoren van 25,5 × 48,8 m tot NAP +66,6 m met 17 doorlopende vloerranden die 0,8 m voor de glaswand steken (onderkant onder 45°), een terugliggende begane grond, een dichte kroon met venstersleuven, liftopbouwen tot +73,0 m en installaties; de laagbouw van drie lagen tot +12,03 m rond een binnentuin met een middenkern tot +16,45 m, een oostelijke binnenhof met lage daken, vensternissen per travee en een begane grond op kolommen. Het parkeerdek op +0,3 m ligt al in het PDOK-terrein en zit niet in het model. Hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het hart van de toren, X-as langs de korte torengevels (0,66° op RD-oost). Verdiepingsindeling, vloerranddiepte, kroonsleuven (westgevel gespiegeld aangenomen), vensterraster van de laagbouw en de entreeluifel zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.75,
+    "deckNapM": 0.3,
+    "towerRoofNapM": 66.6,
+    "towerPlantNapM": 70.13,
+    "liftNapM": 73,
+    "towerFootprintM": [
+      25.45,
+      48.83
+    ],
+    "towerStoreys": 17,
+    "storeyHeightM": 3.2,
+    "ledgeProjectionM": 0.8,
+    "crownHeightM": 5.3,
+    "lowBlockRoofNapM": 12.03,
+    "lowBlockCoreNapM": 16.45,
+    "facadeAngleDegrees": 0.66,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012148630 (bouwjaar 1972), actuele orthoHR, AHN-DSM en -DTM 0,5 m; 3D BAG LoD2.2 (AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:Rembrandt_Park_Gebouw_Amsterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ramada-hotel_Amsterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Rembrandtparkgebouw.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Campus_Hotelschool_The_Hague.jpg"
+  ],
+  "printFiles": [
+    "leonardo-hotel-rembrandtpark-1-1000.stl"
+  ]
+}
