@@ -1,0 +1,52 @@
+{
+  "name": "Little Manhattan",
+  "file": "little-manhattan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117413,
+    485619
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": -0.2,
+  "groundHeight": 42.82,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012246893"
+  ],
+  "description": "Little Manhattan bij station Lelylaan (studioninedots, 2017): een Z-vormige voet van negen lagen op de BAG-contour tot NAP +30,8 m, met de noordtoren (23 lagen) tot +72,97 m en de zuidtoren (19 lagen) tot +61,12 m, elk met luchtkanalen en een installatiekast op het dak. Gevels als blinde nissen: een vensterraster van 2,25 m, verspreide venstersleuven op de buitenste torengevels en de koppen eronder, een hoge glazen plint met penanten en een glazen spleet over de hele hoogte van de voet in de inham van de zuidgevel. Hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de contour, X-as naar RD-oost (de gevels staan op 0,6° en -8,24°). Plinthoogte, verdiepingshoogte, vensterraster en de verdeling raster/sleuven over de gevels zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": -0.2,
+    "podiumNapM": 30.8,
+    "northTowerNapM": 72.97,
+    "southTowerNapM": 61.12,
+    "roofKitNapM": [
+      74,
+      62.12
+    ],
+    "floors": {
+      "podium": 9,
+      "northTower": 23,
+      "southTower": 19
+    },
+    "plinthM": 6.6,
+    "storeyHeightM": 3,
+    "windowPitchM": 2.25,
+    "footprintM2": 3045,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012246893 (bouwjaar 2017), 3D BAG (LoD2.2, AHN5 2023), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://nl.wikipedia.org/wiki/Willem_Frogerstraat",
+    "https://commons.wikimedia.org/wiki/Category:Little_Manhattan_(Amsterdam)",
+    "https://commons.wikimedia.org/wiki/File:Little_Manhattan_Amsterdam.jpg"
+  ],
+  "printFiles": [
+    "little-manhattan-1-1000.stl"
+  ]
+}
