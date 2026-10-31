@@ -1,0 +1,51 @@
+{
+  "name": "De Hoogt",
+  "file": "de-hoogt-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134803.57,
+    454678.18
+  ],
+  "xAxis": [
+    0.8703556959398997,
+    0.49242356010346705
+  ],
+  "groundNap": 1.36,
+  "groundHeight": 44.81,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000065643"
+  ],
+  "description": "Woontoren De Hoogt (1968) aan de Beneluxlaan en de Van Weerden Poelmanlaan in Kanaleneiland: kantoorsokkel van twee lagen over de BAG-contour tot NAP +10,95 m met vensters per laag, daarop een toren van 23,5 × 34,5 m (buitenrand van de balkonplaten) tot +64,95 m met 18 woonlagen van 2,75 m, per laag een rondlopende balkonplaat met vaste stukken witte borstwering en open balkons op de hoeken, een gesloten dakrand van 4,5 m en een liftopbouw tot +68,0 m; tegen de zuidoostgevel een lage strook van één laag tot +13,65 m. Hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het hart van de BAG-contour, X-as langs de korte torengevels (29,5° op RD-oost). Verdiepingshoogte, balkondiepte, de indeling van de noordoost- en zuidoostgevel (puntsymmetrisch aangenomen) en de vensters van de sokkel zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.36,
+    "podiumNapM": 10.95,
+    "lowWingNapM": 13.65,
+    "towerRoofNapM": 64.95,
+    "liftNapM": 68,
+    "towerPlanM": [
+      23.5,
+      34.5
+    ],
+    "floors": {
+      "podium": 2,
+      "tower": 18
+    },
+    "storeyHeightM": 2.75,
+    "crownHeightM": 4.5,
+    "balconyDepthM": 1.2,
+    "facadeAngleDegrees": 29.5,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000065643 (bouwjaar 1968), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/De_Hoogt_(toren)",
+    "https://commons.wikimedia.org/wiki/File:Utrecht_De_Hoogt.jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_De_Hoogt_te_stad_Utrecht.jpg"
+  ],
+  "printFiles": [
+    "de-hoogt-utrecht-1-1000.stl"
+  ]
+}
