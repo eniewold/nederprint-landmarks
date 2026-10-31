@@ -1,0 +1,70 @@
+{
+  "name": "De Witte Keizer",
+  "file": "hoofdpoort-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92835,
+    437160
+  ],
+  "xAxis": [
+    0.9404662204253442,
+    0.3398871698650418
+  ],
+  "groundNap": 2.1,
+  "groundHeight": 45.64,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      8,
+      23
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      0,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000394211"
+  ],
+  "description": "De Witte Keizer (KCAP, 2005) aan de Vissersdijk bij de Leuvekolk, in de Kanzo-taak 'De Hoofdpoort' genoemd (dat is de oude naam van Blaak 333): plint over de hele BAG-contour tot NAP +17,97 m met een glazen begane grond, daarop een zuidvleugel en een noordvleugel in een L tot +73,08 m met een teruggelegen glazen laag boven de plint, een glazen hoekstrook tussen de vleugels, een open insnijding van 6,8 × 4,45 m in de zuidgevel vanaf +32,45 m, een vensterraster per laag (18 woonlagen, vier kantoorlagen) en op het dak een installatieblok, een kanaalkast, een kast en vijf ventilatieschachten. Hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong in de binnenhoek tussen de vleugels, X-as langs de zuidgevel (19,87° op RD-oost). Verdiepingshoogtes, vensterraster, de diepte van de glazen banden en hoekstrook en de maten van de dakopbouwen zijn geschat; Five55 en Blaak 333 blijven eigen panden.",
+  "realWorld": {
+    "groundNapM": 2.1,
+    "roofNapM": 73.08,
+    "podiumNapM": 17.97,
+    "notchFloorNapM": 32.45,
+    "notchM": [
+      6.8,
+      4.45
+    ],
+    "plantNapM": 74.6,
+    "plantStackNapM": 75.8,
+    "ductNapM": 74.4,
+    "northBoxNapM": 75.6,
+    "floors": {
+      "ground": 1,
+      "podium": 3,
+      "glassBand": 1,
+      "residential": 18
+    },
+    "storeyHeightM": 2.86,
+    "facadeAngleDegrees": 19.87,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000394211 (bouwjaar 2005, Vissersdijk 1–217 en Hang 33), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0599100000394211 (AHN5 2023): dak 73,06–73,09, plintdak 17,98, insnijding 32,4, installatie 74,4–74,8",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Rotterdam",
+    "https://nl.wikipedia.org/wiki/Blaak_333 (oorspronkelijke naam Hoofdpoort; ander gebouw)",
+    "https://www.e-architect.com/rotterdam/de-witte-keizer (KCAP, 107 appartementen; foto's Rob 't Hart)",
+    "https://www.architectureguide.nl/project/item/prj_id/1924/alfa/H"
+  ],
+  "printFiles": [
+    "hoofdpoort-rotterdam-1-1000.stl"
+  ]
+}
