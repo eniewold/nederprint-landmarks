@@ -1,0 +1,49 @@
+{
+  "name": "Studententoren Kolffpad",
+  "file": "kolffpad-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92695.34,
+    464932.15
+  ],
+  "xAxis": [
+    0.838670567945424,
+    0.5446390350150271
+  ],
+  "groundNap": 0.2,
+  "groundHeight": 43.65,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000061036"
+  ],
+  "description": "Studententoren Kolffpad (DUWO, Klunder Architecten, 2023) op het Bio Science Park bij Leiden Centraal: een vierkante toren van 22,2 m op de BAG-contour met het dak op NAP +67,5 m, een dakrand tot +68,1 m en een liftopbouw tot +68,8 m, en een L-vormige sokkel van vijf lagen tot +16,6 m langs de zuidoost- en noordoostkant met een glazen trappenhuisopbouw (+19,3 m) en installaties. Per laag vensters als blinde nissen op zes traveeën per gevel (aan de zuidoostgevel alleen de vier oostelijke), een glazen plint in nissen, en in de bovenste twee lagen sleuven door de dakrand waartussen de penanten als kroon staan. Hoogtes uit de 3D BAG (LoD2.2 op AHN5; het AHN4 ziet het bouwterrein). Oorsprong in het hart van de toren, X-as langs de zuidoostgevel (33,0° op RD-oost). Verdiepingshoogtes, de hoogte van de dakrand, het vensterraster van de noordwest- en noordoostgevel en van de sokkel, en het installatiekader zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.2,
+    "roofNapM": 67.5,
+    "rimNapM": 68.1,
+    "liftNapM": 68.8,
+    "podiumNapM": 16.6,
+    "stairNapM": 19.3,
+    "towerSizeM": [
+      22.16,
+      22.12
+    ],
+    "floors": 21,
+    "groundFloorM": 3.8,
+    "storeyHeightM": 3.15,
+    "facadeAngleDegrees": 33,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0546100000061036 (bouwjaar 2023), actuele orthoHR, AHN-DTM 0,5 m",
+    "3D BAG NL.IMBAG.Pand.0546100000061036 (LoD2.2, puntwolk AHN5 2023): https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0546100000061036",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0546100000061036",
+    "https://www.universiteitleiden.nl/nieuws/2024/04/een-waanzinnig-uitzicht-relaxruimte-en-cafe-studententoren-kolffpad-officieel-geopend",
+    "https://www.duwo.nl/en/about-duwo/our-buildings/we-build/project-details/item/44"
+  ],
+  "printFiles": [
+    "kolffpad-leiden-1-1000.stl"
+  ]
+}
