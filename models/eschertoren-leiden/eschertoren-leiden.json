@@ -1,0 +1,45 @@
+{
+  "name": "Eschertoren",
+  "file": "eschertoren-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93912,
+    464908
+  ],
+  "xAxis": [
+    0.912834,
+    -0.40833
+  ],
+  "groundNap": 0.15,
+  "groundHeight": 43.6,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000025644"
+  ],
+  "description": "Eschertoren aan de Willem de Zwijgerlaan in Leiden-Noord (2002, 17 lagen): op de BAG-contour een getrapte toren met een middenblok tot NAP +64,5 m, een oost- en noordvleugel tot +54,2 m met een ventilatorblok en een rij koelunits op het dak, een glazen blok op de zuidwesthoek tot +61,15 m en een 3 m teruggesprongen middendeel in de zuidgevel; alle daken met een dakrand van 1 m. Aan de westkant een sokkel van twee lagen tot +9,25 m met een gebogen gevel langs het plein. Hoogtes uit de 3D BAG (LoD2.2, AHN4) en het AHN-DSM; de schuine dakvlakken van 66,6° in de 3D BAG zijn de overgang aan de westgevel en zijn als verticale gevels gebouwd. Oorsprong in het middenblok, X-as langs de zuidgevel (-24,1° op RD-oost). Verdiepingshoogtes, vensterbanden, het ruitenraster van het glazen blok en de sokkelgevel zijn geschat uit luchtfoto's.",
+  "realWorld": {
+    "groundNapM": 0.15,
+    "wingRoofNapM": 54.2,
+    "middleRoofNapM": 64.5,
+    "glassBlockRoofNapM": 61.15,
+    "podiumRoofNapM": 9.25,
+    "parapetM": 1.05,
+    "fansNapM": 56.5,
+    "unitsNapM": 55.6,
+    "floors": 17,
+    "storeyHeightM": 3.5,
+    "facadeAngleDegrees": -24.1,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0546100000025644 (bouwjaar 2001), orthoHR 2021–2026, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (api.3dbag.nl, AHN4 2020)",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0546100000025644",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Leiden",
+    "https://skyscraperpage.com/b9564"
+  ],
+  "printFiles": [
+    "eschertoren-leiden-1-1000.stl"
+  ]
+}
