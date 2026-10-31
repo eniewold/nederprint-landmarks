@@ -1,0 +1,68 @@
+{
+  "name": "Toren van Siza",
+  "file": "toren-van-siza.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177158.37,
+    317457
+  ],
+  "xAxis": [
+    0.997684,
+    -0.068015
+  ],
+  "groundNap": 48.1,
+  "groundHeight": 93.95,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -8.94,
+      15.428
+    ],
+    [
+      -2.441,
+      15.67
+    ],
+    [
+      5.56,
+      15.915
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000023758"
+  ],
+  "description": "Toren van Siza (Álvaro Siza, 2001) op de kop van de Avenue Céramique: de BAG-contour met twee gedraaide volumes. Het zinken westvolume en het middenstuk tot NAP +98,97 m met een dakrand van 0,9 m tot +99,9, een uitsparing van 7,8 × 3,5 m in de westgevel tot +95,7 met de uitkragende dakrand aan de zuidkant, de liftopbouw tot +102,9 en een leidingkoker tot +101,2; per laag een venster en een loggia op de zuidgevel, vensters en een loggia op de west- en noordgevel en een sokkel van twee lagen met luifel. Het witte oostvolume met het dakterras op +95,7 achter een borstwering tot +97,8, hoekloggia's die de zuidwesthoek uitsnijden, vensters en een loggiakolom op de oostgevel, een luifel rond de hardstenen sokkel en het trappenhuis in de noordoosthoek tot +102,7. In de nissen tussen de volumes glas per laag. Hoogtes uit de 3D BAG (AHN5) en het AHN-DSM, contour uit de BAG. Oorsprong in het zwaartepunt van de contour, X-as langs de zuidgevel (−3,9° op RD-oost). Laagindeling, gevelindeling, borstwering en luifels zijn geschat uit foto's; luifels en borstwering zijn dikker dan in het echt om te printen.",
+  "realWorld": {
+    "groundNapM": 48.1,
+    "plazaNapM": 49,
+    "roofNapM": 98.97,
+    "rimNapM": 99.9,
+    "terraceNapM": 95.7,
+    "terraceParapetNapM": 97.8,
+    "stairTowerNapM": 102.7,
+    "liftNapM": 102.9,
+    "ductNapM": 101.2,
+    "floors": 17,
+    "zincStoreyHeightM": 2.8,
+    "whiteStoreyHeightM": 2.89,
+    "facadeAngleDegrees": -3.9,
+    "volumeAnglesDegrees": {
+      "zinc": -7.8,
+      "white": 11
+    },
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0935100000023758 (bouwjaar 2001), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (puntwolk AHN5 2024)",
+    "NLGEO2018 (geoïde) voor de maaiveldoffset, geijkt op de landmarkmodellen van de Maastrichtse Maasbruggen",
+    "https://nl.wikipedia.org/wiki/Toren_van_Siza",
+    "https://commons.wikimedia.org/wiki/Category:Toren_van_Siza_(Maastricht)",
+    "https://commons.wikimedia.org/wiki/File:Toren_van_Siza,_Maastricht-40468.jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_van_Siza,_Maastricht-40464.jpg",
+    "https://commons.wikimedia.org/wiki/File:20150312_Maastricht;_Siza%27s_Tower.jpg"
+  ],
+  "printFiles": [
+    "toren-van-siza-1-1000.stl"
+  ]
+}
