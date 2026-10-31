@@ -1,0 +1,89 @@
+{
+  "name": "City Tower en Noordwaarts",
+  "file": "stadshart-zoetermeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93647,
+    453116
+  ],
+  "xAxis": [
+    0.930418,
+    0.366501
+  ],
+  "groundNap": -4.2,
+  "groundHeight": 39.27,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      120,
+      14
+    ],
+    [
+      132,
+      14
+    ],
+    [
+      141,
+      2
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0637100000178446",
+    "NL.IMBAG.Pand.0637100000178154"
+  ],
+  "description": "Twee woontorens uit 1998 in het Stadshart van Zoetermeer: City Tower aan de Berlijnstraat (oosten) met een hoofdblok tot NAP +60,1 m, een liftkop tot +64,0 m, vleugels tot +35,9 en +27,8 m, een strook tot +57,3 m en een entreebouw tot +3,3 m, en drie balkonstapels op de schuine zuidoostgevel tot +57,4 m; Noordwaarts (westen) als schijf tot +59,4 m met aan beide kopse kanten vier terrassen van één laag die naar het westen aflopen (zuid +56,6 tot +48,25, noord +51,2 tot +42,9), een kern tot +64,5 m en een winkelonderbouw tot +5,25 m. Contouren uit de BAG, hoogtes en dakdelen uit de 3D BAG (LoD2.2) en het AHN-DSM, balkonstapels uit het DSM buiten de gevel. Oorsprong midden tussen de torens, X-as langs de noordgevel van City Tower (21,5° op RD-oost); het maaiveld van City Tower (NAP -4,2) is z = 0, Noordwaarts staat 2,8 m hoger en loopt door tot dezelfde onderkant. Vensterraster (lagen van 2,7 m, travee 3,0 m) en balkondiepte zijn geschat.",
+  "realWorld": {
+    "groundNapM": -4.2,
+    "cityTower": {
+      "roofNapM": 60.1,
+      "headNapM": [
+        62.6,
+        64
+      ],
+      "wingsNapM": [
+        27.8,
+        35.9
+      ],
+      "stripNapM": 57.3,
+      "entranceNapM": 3.3,
+      "balconyTopNapM": 57.4,
+      "floors": 23,
+      "heightM": 65
+    },
+    "noordwaarts": {
+      "groundNapM": -1.4,
+      "roofNapM": 59.4,
+      "coreNapM": 64.5,
+      "terracesSouthNapM": [
+        48.25,
+        51.25,
+        53.95,
+        56.6
+      ],
+      "terracesNorthNapM": [
+        42.9,
+        45.85,
+        48.55,
+        51.2
+      ],
+      "podiumNapM": 5.25,
+      "floors": 22,
+      "heightM": 63
+    },
+    "storeyHeightM": 2.7,
+    "facadeAngleDegrees": 21.5,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0637100000178446 (Berlijnstraat 27–193, bouwjaar 1998) en 0637100000178154 (Noordwaarts 34–196, bouwjaar 1998), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG LoD2.2 (puntenwolk AHN5 2023): https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0637100000178446 en https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0637100000178154",
+    "https://www.skyscrapercenter.com/building/city-tower/6762",
+    "https://www.skyscrapercenter.com/building/noordwaarts/6763",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0637100000178446"
+  ],
+  "printFiles": [
+    "stadshart-zoetermeer-1-1000.stl"
+  ]
+}
