@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Drachten",
+  "file": "watertoren-drachten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    201400.2,
+    570187.2
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0090100000606260"
+  ],
+  "description": "Oorsprong op het hart van het reservoir in het AHN op maaiveld (NAP +1,55 m), assen in RD-richting. Achthoekige kern met acht ribben (8,9 m over de ribben) en een deur naar het zuidoosten, reservoir van 15,2 m met kegelvormige onderkant van 22 tot 24 m en tegelbekleding tot 34,5 m, ronde dakrand en licht bol dak tot 36 m, zeszijdige glazen lantaarn van 5,0 m met puntgevels tot 41 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 42,
+    "reservoirsM3": [
+      500,
+      1000
+    ],
+    "ahnGroundNapM": 1.55,
+    "ahnTopNapM": 43.54,
+    "tankDiameterM": 15.2,
+    "shaftAcrossFinsM": 9,
+    "rimM": 24,
+    "roofEdgeM": 35.3,
+    "lanternAcrossFlatsM": 5,
+    "eaveM": 40.3,
+    "modelTopM": 41,
+    "photoScalePxPerM": 15,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Drachten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Drachten_12w.JPG (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:De_top_van_de_watertoren._Drachten.JPG (lantaarn)",
+    "PDOK BAG-pand 0090100000606260, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-drachten-1-1000.stl"
+  ]
+}
