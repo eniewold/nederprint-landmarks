@@ -1,0 +1,70 @@
+{
+  "name": "Skydome",
+  "file": "skydome-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124655,
+    487818
+  ],
+  "xAxis": [
+    0.9989705697907147,
+    0.04536298812925378
+  ],
+  "groundNap": 1.7,
+  "groundHeight": 44.7,
+  "groundOffsetMetres": -0.2,
+  "groundSamplePoints": [
+    [
+      -15,
+      -24
+    ],
+    [
+      0,
+      -24
+    ],
+    [
+      15,
+      -24
+    ],
+    [
+      -10,
+      17
+    ],
+    [
+      5,
+      17
+    ],
+    [
+      15,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012126867"
+  ],
+  "description": "Skydome aan de KNSM-laan op het KNSM-eiland (Wiel Arets, 1996): woontoren van vier volumes op de BAG-contour tot NAP +63,78 m (3D BAG, 70e percentiel) met een liftopbouw tot +65,27 m en vijf ventilatiekappen, vier diepe sleuven in de west-, zuid- en oostgevel met per laag een kubusbalkon in de monding, per laag loggia's en raambanden als blinde nissen, een glazen pui op het parkeerdek (+3,3 m) en de geknikte noordgevel met raambanden. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevels (2,6° op RD-oost). Verdiepingshoogte, de verdeling van loggia's en raambanden per gevel en de balkons zijn geschat uit foto's; het parkeerdek eromheen is geen BAG-pand en zit niet in het model.",
+  "realWorld": {
+    "groundNapM": 1.7,
+    "deckNapM": 3.3,
+    "roofNapM": 63.78,
+    "plantNapM": 65.27,
+    "hoodNapM": 65.9,
+    "floors": 22,
+    "storeyHeightM": 2.7,
+    "facadeAngleDegrees": 2.6,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012126867 (bouwjaar 1995), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Skydome_(Amsterdam)",
+    "https://commons.wikimedia.org/wiki/File:2023_Amsterdam,_KNSM-eiland,_Skydome_(03).jpg",
+    "https://commons.wikimedia.org/wiki/File:2023_Amsterdam,_KNSM-eiland,_Skydome_(10).jpg",
+    "https://commons.wikimedia.org/wiki/File:2023_Amsterdam,_KNSM-eiland,_Skydome_(13).jpg",
+    "https://commons.wikimedia.org/wiki/File:Skydome_(1).jpg"
+  ],
+  "printFiles": [
+    "skydome-amsterdam-1-1000.stl"
+  ]
+}
