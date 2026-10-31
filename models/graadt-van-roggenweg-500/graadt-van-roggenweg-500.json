@@ -1,0 +1,73 @@
+{
+  "name": "Graadt van Roggenweg 500 (voormalig AXA-kantoor)",
+  "file": "graadt-van-roggenweg-500.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135350,
+    455392
+  ],
+  "xAxis": [
+    0.6467897795104595,
+    0.7626683296956883
+  ],
+  "groundNap": 2.1,
+  "groundHeight": 45.55,
+  "groundOffsetMetres": -0.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000001816"
+  ],
+  "description": "Kantoorcomplex Graadt van Roggenweg 400–500 achter de Jaarbeurs (2001, De Jong Gortemaker Algra), gebouwd als hoofdkantoor van AXA en nu onder meer het College ter Beoordeling van Geneesmiddelen: op de BAG-contour drie bakstenen torens van twaalf lagen (zuidwest NAP +54,85 m met een strook tot +61,75 m en een glazen kroon met vinnen en een gebogen dak tot +70,4 m en een nokbalk tot +72,7 m; midden +54,8 m met een glazen zijvleugel; noordoost met een dak dat oploopt van +52,0 naar +55,0 m) boven een plint van twee lagen die 2,0 m terugligt achter witte V-kolommen, een glazen tussenvleugel tot +33,85 m met de entreehal tot +12,0 m, een parkeerdek met daktuin op +7,2 m en een glazen blok van tien lagen tot +39,1 m met een dakpunt boven de weg die op een kraag onder 45° rust. Hoogtes uit het AHN-DSM en de dakvlakken van de 3D BAG. Oorsprong midden op het complex, X-as langs de zuidoostgevel (49,7° op RD-oost). Verdiepingshoogtes, vensterraster, de diepte van de plint, de kolommen en de vinnen van de kroon zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 2.1,
+    "towerRoofsNapM": {
+      "southWest": 54.85,
+      "southWestStrip": 61.75,
+      "middle": 54.8,
+      "northEast": [
+        51.97,
+        55.015
+      ]
+    },
+    "crownNapM": {
+      "eaves": [
+        63.6,
+        64.6
+      ],
+      "top": 70.4,
+      "ridge": 72.7
+    },
+    "wingNapM": 33.85,
+    "lobbyNapM": 12,
+    "deckNapM": 7.2,
+    "glassBlockNapM": [
+      31.65,
+      39.1
+    ],
+    "plinthM": {
+      "height": 9.9,
+      "recess": 2,
+      "columnPitch": 7.2
+    },
+    "floors": {
+      "plinth": 2,
+      "brick": 12
+    },
+    "storeyHeightM": 3.57,
+    "facadeAngleDegrees": 49.7,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000001816 (bouwjaar 2001, Graadt van Roggenweg 400 en 500), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG (LoD2.2, AHN4 2020), NL.IMBAG.Pand.0344100000001816",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Utrecht_(stad)",
+    "https://commons.wikimedia.org/wiki/File:College_ter_Beoordeling_van_Geneesmiddelen_building_Utrecht_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:AXA_in_Utrecht.JPG",
+    "https://commons.wikimedia.org/wiki/File:AXA_Utrecht.JPG",
+    "https://commons.wikimedia.org/wiki/File:Sneltramhalte_Graadt_van_Roggenweg.jpg"
+  ],
+  "printFiles": [
+    "graadt-van-roggenweg-500-1-1000.stl"
+  ]
+}
