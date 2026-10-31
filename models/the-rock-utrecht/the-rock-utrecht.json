@@ -1,0 +1,73 @@
+{
+  "name": "The Rock Utrecht",
+  "file": "the-rock-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134640.47,
+    454680.37
+  ],
+  "xAxis": [
+    0.8699256439656696,
+    0.4931829011339657
+  ],
+  "groundNap": 1.72,
+  "groundHeight": 45.17,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -19,
+      8
+    ],
+    [
+      -19,
+      -4
+    ],
+    [
+      -19,
+      -14
+    ],
+    [
+      -22,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000146591"
+  ],
+  "description": "Studententoren The Rock (2020, LIAG Architecten) aan het Van Heuven Goedhartplein in Kanaleneiland: een rechthoekige toren van 33,3 × 23,0 m (BAG-contour, buitenrand van de gevelbanden) tot NAP +73,95 m op een gemetselde plint tot +5,6 m (de hoogte van het verhoogde binnenhof ernaast), met 22 woonlagen van 3,04 m. Per laag steekt onder de vensters een witte band 0,35 tot 1,0 m uit de vensterwand, met een onderkant onder 45°; de uitsprong golft rond de toren en verschuift per laag. Op de lange gevels achttien vensters per laag, op de korte gevels een enkel venster bij de hoek en een breed driedelig venster in het midden, als blinde nissen. Op het dak een installatieframe tot +77,05 m, lage leidingkokers tot +75,2 m en kasten tot +76,3 m. Hoogtes uit het AHN-DSM en de 3D BAG (AHN5). Oorsprong in het hart van de BAG-contour, X-as langs de lange gevels (29,55° op RD-oost). Het golfpatroon, de laaghoogte, de vensterwand 1,0 m achter de BAG-contour, de plint met haar nissen en de indeling van de oostnoordoostgevel (puntsymmetrisch aangenomen) zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.72,
+    "plinthNapM": 5.6,
+    "roofNapM": 73.95,
+    "frameNapM": 77.05,
+    "plantNapM": 76.3,
+    "planM": [
+      33.28,
+      22.98
+    ],
+    "floors": {
+      "plinth": 1,
+      "residential": 22
+    },
+    "storeyHeightM": 3.043,
+    "bandProjectionM": [
+      0.35,
+      1
+    ],
+    "facadeAngleDegrees": 29.55,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000146591 (bouwjaar 2020), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Utrecht_(stad)",
+    "https://www.duic.nl/algemeen/studenten-nemen-intrek-in-nieuwe-woontoren-de-rock-in-kanaleneiland/",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_The_Rock.jpg",
+    "https://commons.wikimedia.org/wiki/File:Up_Living_woontoren_in_Utrecht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Panta_Rhei_-_Flickr_-_Rob_Oo.jpg"
+  ],
+  "printFiles": [
+    "the-rock-utrecht-1-1000.stl"
+  ]
+}
