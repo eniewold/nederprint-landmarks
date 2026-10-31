@@ -1,0 +1,65 @@
+{
+  "name": "OurDomain Rotterdam Blaak",
+  "file": "blaak-10.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93232,
+    437050
+  ],
+  "xAxis": [
+    0.5791388968818445,
+    -0.8152288869504566
+  ],
+  "groundNap": 2.47,
+  "groundHeight": 46,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100015362"
+  ],
+  "description": "OurDomain Rotterdam Blaak (Tangram Architekten, 2022) op de kop van de Wijnhaven naast de Willem de Kooning Academie: een schijf van 20 × 40 m op de BAG-contour met daken op NAP +75,2 m (zuidwesthelft) en +75,9 m (noordoosthelft) en een dakopbouw midden over het dak tot +79,0 m, aan de zuidoostkant een hoger blok tot +78,1 m met installaties tot +81,2 m, en een trappenhuis op de noordwestpunt tot +78,3 m. Rondom een onderbouw van zes lagen tot +24,8 m, een middenzone die 2,0 m achter de zuidgevel en 1,0 m achter de noordoostgevel ligt en een bovenzone van acht lagen vanaf circa +52,2 m die daarboven uitkraagt (kraag onder 45°); langs de Gapersteeg staat de onderbouw 2,3 m buiten de toren met een galerij in de begane grond. Op de noordwestpunt een glazen paviljoen tot +8,7 m. Gevels met lisenen als vensterraster per laag, de print als verspringende losse ramen. Hoogtes uit de 3D BAG-dakvlakken (AHN5 2023; het AHN4 dateert van vóór de bouw), contour uit de BAG. Oorsprong in het hart van de contour, X-as langs de lange gevels naar het zuidoosten (-54,61° op RD-oost). Verdiepingshoogtes, de hoogte van de bovenzone, de terugsprongen en de gevelindeling zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 2.47,
+    "roofNapM": {
+      "slabSouthWest": 75.22,
+      "slabNorthEast": 75.88,
+      "notch": 75.26,
+      "southEastBlock": 78.06,
+      "roofSpine": 79.01,
+      "coreNorthWest": 78.32
+    },
+    "plantNapM": [
+      80.36,
+      81.22,
+      80,
+      79.13,
+      79,
+      81.32
+    ],
+    "podiumNapM": 24.76,
+    "pavilionNapM": 8.68,
+    "upperBandFromNapM": 52.22,
+    "recessM": {
+      "south": 2,
+      "northEast": 1,
+      "gapersteeg": 2.3
+    },
+    "floors": 24,
+    "storeyHeightM": 3.05,
+    "facadeAngleDegrees": -54.61,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100100015362 (bouwjaar 2021, oorspronkelijk 2022), actuele orthoHR, AHN-DTM 0,5 m",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0599100100015362 (puntwolk AHN5 2023), https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100015362",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Rotterdam",
+    "https://commons.wikimedia.org/wiki/File:OurDomain_Rotterdam_Blaak.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woongebouw_van_OurDomain_aan_de_Blaak.jpg",
+    "https://commons.wikimedia.org/wiki/File:2025_Gapersteeg,_Rotterdam_vanaf_de_Wijnhaven_tot_aan_de_Wijnstraat.jpg",
+    "https://commons.wikimedia.org/wiki/File:2025_Vissteeg,_Rotterdam_vanaf_de_Blaak_tot_aan_de_Wijnstraat.jpg"
+  ],
+  "printFiles": [
+    "blaak-10-1-1000.stl"
+  ]
+}
