@@ -1,0 +1,57 @@
+{
+  "name": "Xavier",
+  "file": "xavier-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120123.6,
+    483277
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": -0.68,
+  "groundHeight": 42.36,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012246555",
+    "NL.IMBAG.Pand.0363100012246554",
+    "NL.IMBAG.Pand.0363100012246556"
+  ],
+  "description": "Woongebouw Xavier (KENK architecten, 2019) aan de Gustav Mahlerlaan op de Zuidas: een U-vormig complex met voorop een toren van 21 verdiepingen en achterop twee vleugels van zes lagen aan de George Gershwinlaan, verbonden door een onderbouw (+2,9) rond de binnenhof. De toren staat op een plint met een galerij (bovenkant +6,9) en bestaat uit drie gestapelde blokken die tot 2 m buiten de BAG-contour van de begane grond uitkragen en naar boven insnoeren (randen op +33,3, +49,8 en +59,7, uit het AHN-DSM rond de gevels), met een kroon van vier lagen tot NAP +73,6 en getrapte terrassen op +63,0, +66,3 en +69,6 (3D BAG). Gevels met een vensterraster per laag (3,3 m), loggiagroepen aan de noordgevel die per blok verspringen, een kolom open balkons in de oost- en westgevel en balkonstapels aan de zuidgevel; de vleugels (+22,7, noordkop +16,1) hebben verspringende balkons aan de zuidgevel. Oorsprong midden in het complex, X-as naar RD-oost. Vervangt ook de parkeerkelder (pand 0363100012246556), waarvan de 3D BAG-reconstructie het hele complex dubbelt. Verdiepingshoogtes, de galerij, de plaats van loggia's en balkons en de blokgrenzen per gevel zijn geschat uit foto's en het DSM.",
+  "realWorld": {
+    "groundNapM": -0.68,
+    "roofNapM": 73.6,
+    "upstandNapM": 74.6,
+    "plinthTopNapM": 6.9,
+    "blockTopsNapM": [
+      33.3,
+      49.8,
+      59.7
+    ],
+    "crownTerracesNapM": [
+      63,
+      66.3,
+      69.6
+    ],
+    "podiumNapM": 2.9,
+    "wingRoofNapM": 22.7,
+    "wingNorthRoofNapM": 16.1,
+    "storeyHeightM": 3.3,
+    "towerFloors": 21,
+    "apartments": 159,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0363100012246555, 0363100012246554 en 0363100012246556 (bouwjaar 2019), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG (LoD2.2, puntwolk AHN5 2023): https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012246555",
+    "https://nl.wikipedia.org/wiki/Xavier_(Amsterdam)",
+    "https://commons.wikimedia.org/wiki/Category:Xavier_(Amsterdam)",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Xavier_(1).jpg"
+  ],
+  "printFiles": [
+    "xavier-amsterdam-1-1000.stl"
+  ]
+}
