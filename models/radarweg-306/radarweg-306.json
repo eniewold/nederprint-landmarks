@@ -1,0 +1,52 @@
+{
+  "name": "Vertical",
+  "file": "radarweg-306.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    117416.75,
+    488912.3
+  ],
+  "xAxis": [
+    0.9999912270311376,
+    0.0041887779554038804
+  ],
+  "groundNap": 1,
+  "groundHeight": 44,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012253362"
+  ],
+  "description": "Vertical aan de Radarweg bij station Sloterdijk (BAG-pand 0363100012253362, 2023), het hele pand met beide kavels. Oost: een toren van 24,7 × 33,4 m met 18 lagen van 3,11 m vanaf NAP +23,5 m tot het dak op +79,55 m, per laag een vloerrand van 0,9 m rondom met de gevel 1,2 m terug (plafond onder 45°), een teruggezette glazen laag boven het sokkeldak (+20,5 m) en een kroon met een zonnedak tot +84,2 m op staanders; de sokkel heeft een dubbelhoge begane grond (+9,1 m) en terrassen die per laag 1,57 m terugspringen van de zuidrand en de Radarweg, met een blok tot +23,0 m op de noordoosthoek boven een galerij. West: een begroeid dek op +8,75 m over de begane grond, een woontoren tot +36,3 m met liftopbouw op een sokkel tot +15,4 m en blokken op het dek (+12,0 tot +16,6 m) uit de 3D BAG-dakvlakken; vensters als blinde nissen. Hoogtes uit de 3D BAG (AHN5, 2023; het AHN4 toont de bouwput). Oorsprong in het hart van de hoge toren, X-as langs de zuidgevel (0,24° op RD-oost). Sokkelhoogtes en terrassen, de verdeling van de lagen, de kroon en de vensterrasters zijn geschat uit de doorsnede, de aanzichten en foto's.",
+  "realWorld": {
+    "groundNapM": 1,
+    "crownNapM": 84.2,
+    "roofNapM": 79.55,
+    "towerBaseNapM": 23.5,
+    "podiumNapM": 20.5,
+    "plinthGroundFloorNapM": 9.1,
+    "cornerBlockNapM": 23,
+    "towerFloors": 18,
+    "storeyHeightM": 3.114,
+    "floorEdgeM": 0.9,
+    "facadeRecessM": 1.2,
+    "westTowerNapM": 36.3,
+    "westLiftNapM": 37.67,
+    "westPlinthNapM": 15.4,
+    "deckNapM": 8.75,
+    "facadeAngleDegrees": 0.24,
+    "estimatedPlinthAndFloors": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012253362 (bouwjaar 2023), actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4: bouwput)",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0363100012253362 (puntwolk AHN5, 2023), https://3dbag.nl",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam (Vertical, 79 m, 22 lagen, 2023)",
+    "https://www.metalocus.es/en/news/urban-ecosystem-vertical-nl-architects-space-encounters-donna-van-milligen-bielke-chris (doorsnede, aanzichten, foto's)",
+    "https://afasiaarchzine.com/2025/04/vertical-sloterdijk-kavel-n1-and-n3-amsterdam-nl-space-encounters-dvmb-collaris-vdndp",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Vertical_in_aanbouw_in_Amsterdam_Sloterdijk.jpg"
+  ],
+  "printFiles": [
+    "radarweg-306-1-1000.stl"
+  ]
+}
