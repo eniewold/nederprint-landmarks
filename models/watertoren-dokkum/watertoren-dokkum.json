@@ -1,0 +1,62 @@
+{
+  "name": "Watertoren Dokkum",
+  "file": "watertoren-dokkum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195144.4,
+    593637.27
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000215831"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour (het reservoir) op maaiveld (NAP +0,8 m), assen in RD-richting. Achthoekige kern met acht ribben (8,9 m over de ribben) tot de kegelvormige onderkant van het reservoir, reservoir van 15,56 m met tegelbekleding van 21,6 tot 30,6 m, verdiepte raamband tot 31,6 m, schuine dakrand en plat dak op 32,6 m met een kleine dakopbouw tot 33,6 m. Maten uit BAG, AHN en een RCE-foto.",
+  "realWorld": {
+    "publishedHeightM": 37,
+    "reservoirM3": 1000,
+    "ahnGroundNapM": 0.79,
+    "ahnTopNapM": 36.24,
+    "bagTankDiameterM": 15.56,
+    "shaftAcrossFinsM": 9,
+    "coreFaceM": 2.43,
+    "rimM": 21.6,
+    "roofM": 32.6,
+    "modelTopM": 33.6,
+    "photoScalePxPerM": 24.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dokkum)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/530878",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Dokkum_-_20421405_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Zicht_op_het_bovenste_gedeelte_van_de_watertoren_-_Dokkum_-_20421409_-_RCE.jpg (ribben en onderkant)",
+    "PDOK BAG-pand 0058100000215831, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-dokkum-1-1000.stl"
+  ]
+}
