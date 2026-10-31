@@ -1,0 +1,78 @@
+{
+  "name": "Woontoren Waterfront",
+  "file": "waterfront-terneuzen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    46763,
+    373243
+  ],
+  "xAxis": [
+    0.9976125063612252,
+    0.0690600257144058
+  ],
+  "groundNap": 2.95,
+  "groundHeight": 47.29,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      0,
+      -20.5
+    ],
+    [
+      12,
+      -22
+    ],
+    [
+      22,
+      -21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000024539",
+    "NL.IMBAG.Pand.0715100000041714"
+  ],
+  "description": "Woontoren Waterfront (Waterfront 200, Roodbeen Architectuur, 2005) aan de Westerscheldedijk in Terneuzen, het hoogste gebouw van Zeeland: een schijf van 10,8 × 22,8 m op de BAG-contour tot NAP +82,07 m met een installatiekast tot +83,45 m, daarnaast een 60° gedraaide vleugel van 10,2 × 17,1 m tot +70,65 m met twee dakopbouwen, en een verbindingsdeel dat aan de kant van de schijf tot het hoge dak doorloopt; per laag vensterkolommen als blinde nissen (entreelaag van 4,2 m en 25 woonlagen van 2,95 m). De toren staat in de halfverdiepte parkeergarage (tweede BAG-pand, kwartcirkel tegen de dijk) met het dek op +6,25 m, dat aan de dijkkant gelijk ligt met het maaiveld en aan het plein en de vijver een wand van 3,3 m vormt; in de hoek tussen garagewand, schijf en vleugel de entree onder een hellend glasdak (6,5 naar 5,2 m), geen BAG-pand. Dakhoogtes uit de 3D BAG (AHN5) en het AHN-DSM, maaiveld het plein op +2,95 m. Oorsprong in het hart van de schijf, X-as langs de korte noord- en zuidgevel (3,96° op RD-oost). Verdiepingshoogtes, vensterkolommen (alleen de westgevel van een foto), de vorm van de dakopbouwen en de entree als dicht volume zijn geschat; groundHeight is de geoïde min de afwijking van SnowWorld Terneuzen.",
+  "realWorld": {
+    "groundNapM": 2.95,
+    "towerRoofNapM": 82.07,
+    "wingRoofNapM": 70.65,
+    "plantNapM": 83.45,
+    "wingBoxesNapM": [
+      72.05,
+      72.6
+    ],
+    "garageDeckNapM": 6.25,
+    "entryGlassRoofNapM": [
+      6.5,
+      5.2
+    ],
+    "towerPlanM": [
+      10.79,
+      22.81
+    ],
+    "wingPlanM": [
+      10.2,
+      17.1
+    ],
+    "wingRotationDegrees": 60,
+    "floors": {
+      "total": 26,
+      "groundFloorM": 4.2,
+      "storeyHeightM": 2.95
+    },
+    "facadeAngleDegrees": 3.96,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0715100000024539 (woontoren, bouwjaar 2004) en 0715100000041714 (parkeergarage, bouwjaar 2004), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG (LoD2.2, AHN5 2024) van beide panden",
+    "https://www.pss-archi.eu/immeubles/NL-715-63550.html",
+    "https://commons.wikimedia.org/wiki/File:TerneuzenDeich.JPG",
+    "https://commons.wikimedia.org/wiki/File:Terneuzen_-_Skyline_langs_de_Westerschelde.jpg"
+  ],
+  "printFiles": [
+    "waterfront-terneuzen-1-1000.stl"
+  ]
+}
