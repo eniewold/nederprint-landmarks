@@ -1,0 +1,71 @@
+{
+  "name": "B'Mine",
+  "file": "bercylaan-overhoeks.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122070.8,
+    488651.81
+  ],
+  "xAxis": [
+    0.8081955029958271,
+    0.5889142797872388
+  ],
+  "groundNap": 1.55,
+  "groundHeight": 44.5,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012245546"
+  ],
+  "description": "B'Mine, woontoren aan de Bercylaan op Overhoeks (Paul de Ruiter, 2017): toren van 28,6 × 29,3 m tot NAP +70,9 m met een 2,0 m teruggelegen penthouselaag tot +74,0 m (hoekterrassen van twee travees, hogere daken tot +75,8 m, leidingstraat en installatiekast), en een sokkel van 14,5 m aan de noordoostkant tot +29,6 m. Rondom witte vinnen van 0,9 m op een travee van circa 2,9 m vóór een zwarte gevel die 1,0 m terugligt, per travee een balkonstapel met borstwering of een kolom vensternissen; begane grond als glaspui, twee parkeerlagen. De vinnen lopen door als witte kroon tot +76,4 m met een ringbalk, korte balken naar de penthouselaag en per hoek een paal met balken, alle overspanningen met een spitse onderkant. Contour uit de BAG, hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de BAG-contour, X-as langs de zuidoostgevel (36,08° op RD-oost). Lagenindeling, vindiepte, balkonpatroon op de zuidoost- en noordoostgevel en de kroonbalken binnen de ring zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.55,
+    "planM": [
+      43.13,
+      29.33
+    ],
+    "towerPlanM": [
+      28.6,
+      29.33
+    ],
+    "podiumNapM": 29.55,
+    "terraceNapM": 70.88,
+    "penthouseNapM": 74,
+    "highRoofNapM": 75.8,
+    "plantNapM": 76.05,
+    "crownTopNapM": 76.4,
+    "floors": {
+      "tower": 23,
+      "podium": 8
+    },
+    "storeyHeightM": {
+      "ground": 6,
+      "parking": 3.1,
+      "tower": 3.174,
+      "podium": 3.16
+    },
+    "finBayM": {
+      "tower": [
+        2.86,
+        2.933
+      ],
+      "podium": 2.906
+    },
+    "finDepthM": 1,
+    "facadeAngleDegrees": 36.08,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012245546 (bouwjaar 2017), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012245546 (3D BAG LoD2.2, AHN5 2023, CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://paulderuiter.nl/en/projects/bmine-tower",
+    "https://commons.wikimedia.org/wiki/File:B_MIne_toren_Amsterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Overhoeks.jpg",
+    "https://commons.wikimedia.org/wiki/File:BMine_woontoren_in_Overhoeks,_Amsterdam-noord.jpg"
+  ],
+  "printFiles": [
+    "bercylaan-overhoeks-1-1000.stl"
+  ]
+}
