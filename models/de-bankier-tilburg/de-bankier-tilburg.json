@@ -1,0 +1,63 @@
+{
+  "name": "De Bankier",
+  "file": "de-bankier-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134300,
+    396763
+  ],
+  "xAxis": [
+    0.989776230907789,
+    -0.14262893370551163
+  ],
+  "groundNap": 14.45,
+  "groundHeight": 58.25,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000715598",
+    "NL.IMBAG.Pand.0855100000715596",
+    "NL.IMBAG.Pand.0855100000715597"
+  ],
+  "description": "Woontoren De Bankier op de hoek van de Spoorlaan en de Magazijnstraat (Spoorzone Tilburg): toren van 22,5 × 32,0 m tot NAP +87,85 m met een dakrand tot +88,8 m, een attiek langs de noordgevel tot +90,0 m en twee verdiepte dakterrassen op +84,2 m op de zuidhoeken; de onderste dertien woonlagen met horizontale vloerbanden, aan de Spoorlaan een doorlopende balkonzone en op de zuidhoeken balkonstapels tot +60,15 m, de bovenste negen lagen met vensters tussen penanten; ten westen een lage onderbouw tot +30,9 m en een strook tot +30,3 m tegen het oude bankgebouw, aan de zuidoostkant een aanbouw tot +27,15 m. De toren staat op drie BAG-panden; alle hoogtes uit de 3D BAG (AHN5, 2024), want het PDOK-AHN is van vóór de oplevering. Oorsprong midden in de toren, X-as langs de zuidgevel (-8,2° op RD-oost). Verdiepingshoogte, vensterraster, uitsteek van de banden en de noordelijke balkonzone, de balkonstapel zuidwest en de entree zijn geschat.",
+  "realWorld": {
+    "groundNapM": 14.45,
+    "roofNapM": 87.85,
+    "parapetNapM": 88.8,
+    "northCrownNapM": 90.04,
+    "terraceNapM": 84.2,
+    "balconyZoneTopNapM": 60.15,
+    "podiumNapM": [
+      28.2,
+      30.87,
+      31.71
+    ],
+    "stripNapM": 30.3,
+    "annexNapM": [
+      17.82,
+      27.15
+    ],
+    "towerPlanM": [
+      22.5,
+      32
+    ],
+    "floors": 23,
+    "groundFloorM": 5.2,
+    "storeyHeightM": 3.1,
+    "facadeAngleDegrees": -8.2,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0855100000715598, 0855100000715596 en 0855100000715597 (bouwjaar 2023), actuele orthoHR, AHN-DTM 0,5 m",
+    "3D BAG LoD2.2 (AHN5, 2024): https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000715598",
+    "https://nl.wikipedia.org/wiki/De_Bankier_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_De_Bankier.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Bankier_Tilburg2.jpg",
+    "https://commons.wikimedia.org/wiki/File:De_Bankier.jpg",
+    "https://commons.wikimedia.org/wiki/File:Magazijnstraat.jpg"
+  ],
+  "printFiles": [
+    "de-bankier-tilburg-1-1000.stl"
+  ]
+}
