@@ -1,0 +1,83 @@
+{
+  "name": "Westerlaantoren",
+  "file": "westerlaantoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92180.98,
+    435660.76
+  ],
+  "xAxis": [
+    0.937282,
+    0.348572
+  ],
+  "groundNap": 3.15,
+  "groundHeight": 46.65,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -22,
+      -40
+    ],
+    [
+      -22,
+      0
+    ],
+    [
+      -10,
+      -102
+    ],
+    [
+      8,
+      -60
+    ],
+    [
+      10,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000701967"
+  ],
+  "description": "Westerlaantoren aan de Westerlaan (Scheepvaartkwartier): het voormalige Van Ommeren-hoofdkantoor uit 1962, in 2012 door Ector Hoogstad opgehoogd en nieuw bekleed. Toren van 32,9 × 32,8 m tot NAP +74,43 m met een ondiepe koepel tot +78,4 m en een verdiept midden; elke gevel heeft aan één eind een donker deel van 8,8 m en daarnaast raamstroken (plint en zeven kantoorlagen) en negen woonlagen met een balkonraster dat 1,8 m buiten de gevel staat op een kraag van 45°; entreeluifel op kolommen aan de westgevel. Laagbouw uit 1965 tegen de zuidgevel tot +24,3 m met een witte onderbouw, een donkere kantoordoos die aan de zuidkant 4 m uitkraagt, een dakpaviljoen tot +28,2 m, een lage strook tot +14,35 m tegen de toren, een terras en een gele trappenhuistoren tot +25,5 m; de drie glazen nooduitgangen van de parkeergarage onder het plantsoen (ook BAG-pand) staan erbij. Contouren uit de BAG, hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de toren, X-as langs de zuidgevel van de toren (20,4° op RD-oost). Verdiepingshoogtes, gevelindeling, de uitkraging van de laagbouw en de vorm van de nooduitgangen zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 3.15,
+    "towerRoofNapM": 74.43,
+    "domeNapM": {
+      "rim": 75.4,
+      "top": 78.4,
+      "well": 76.9
+    },
+    "towerPlanM": [
+      32.86,
+      32.84
+    ],
+    "lowRiseRoofNapM": 24.3,
+    "linkRoofNapM": 14.35,
+    "pavilionNapM": [
+      27.5,
+      28.2
+    ],
+    "yellowStairNapM": 25.5,
+    "floors": {
+      "tower": 19,
+      "lowRise": 6
+    },
+    "balconyFrameOutM": 1.8,
+    "facadeAngleDegrees": 20.4,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000701967 (bouwjaar 1956 volgens de BAG), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5, 2022)",
+    "https://nl.wikipedia.org/wiki/Westerlaantoren",
+    "https://commons.wikimedia.org/wiki/File:Euromast_-_Scheepvaartkwartier_-_Rotterdam_-_View_of_Westerlaantoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Westerlaantoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:1604_Westerlaantoren,_Rotterdam_159.jpg",
+    "https://commons.wikimedia.org/wiki/File:1604_Westerlaantoren,_Rotterdam_164.jpg",
+    "https://commons.wikimedia.org/wiki/File:1604_Westerlaantoren,_Rotterdam_157.jpg"
+  ],
+  "printFiles": [
+    "westerlaantoren-1-1000.stl"
+  ]
+}
