@@ -1,0 +1,63 @@
+{
+  "name": "Watertoren Coevorden",
+  "file": "watertoren-coevorden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    246787.11,
+    520566.99
+  ],
+  "xAxis": [
+    0.8829,
+    -0.4695
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000006543"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +11,4 m), deur naar -Y (zuidwest). Gepleisterde voet van 7,8 m met deur en cordonlijst tot 6,85 m, verjongende bakstenen schacht met smalle vensters tot 16,5 m, fries van twintig boognissen, kwartholle kraag naar het reservoir van 8,2 m met acht vensters tot de kroonlijst op 26,7 m, zinken tentdak in zestien banen met vier frontondakkapellen, lantaarn tot 32,2 m en naald. Maten uit BAG, AHN en een frontale RCE-foto.",
+  "realWorld": {
+    "publishedHeightM": 32.2,
+    "reservoirM3": 150,
+    "ahnGroundNapM": 11.36,
+    "ahnTopNapM": 43.6,
+    "bagFootDiameterM": 7.8,
+    "shaftTopDiameterM": 6,
+    "tankDiameterM": 8.2,
+    "eaveM": 26.7,
+    "lanternCapM": 32.2,
+    "modelTopM": 34.8,
+    "photoScalePxPerM": 50,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Coevorden)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/468592",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_overzicht_voorzijde_-_Coevorden_-_20322147_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Coevorden.jpg",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Coevorden_2.JPG",
+    "PDOK BAG-pand 0109100000006543, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-coevorden-1-1000.stl"
+  ]
+}
