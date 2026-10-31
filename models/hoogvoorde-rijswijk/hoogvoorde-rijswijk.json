@@ -1,0 +1,61 @@
+{
+  "name": "Hoogvoorde",
+  "file": "hoogvoorde-rijswijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81616.52,
+    450229.19
+  ],
+  "xAxis": [
+    0.5045276238150193,
+    -0.8633955506067716
+  ],
+  "groundNap": 0.65,
+  "groundHeight": 44.05,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0603100000007372"
+  ],
+  "description": "Hoogvoorde aan het Bogaardplein (stadhuis van Rijswijk): toren van 53,7 × 24,5 m met per laag een witte vloerrand (17 lagen van 3,38 m boven de eerste verdieping), pilasters op een raster van zeven bij drie traveeën en een glazen kroon van +66,3 tot +75,4 m NAP die 0,9 m naar buiten helt, met uitlopende stijlen; dakvlak op +74,25 m, koelers tot +77,1 m en een installatiehuis met schouders op +81,6 m en een middendeel op +83,15 m. Aan de voet de begane grond op de BAG-contour met vier ronde uitbouwen tot +5,43 m en aan de noordwestelijke helft een eerste verdieping met fascia tot +8,85 m die als luifel over de twee ingangen doorloopt. Hoogtes uit het AHN-DSM en de 3D BAG (AHN4 en AHN5 gelijk). Oorsprong in het hart van de toren, X-as langs de lange gevels naar het zuidoosten (-59,7° op RD-oost). Verdiepingshoogte, pilasterbreedte, glasdiepte, de helling van de kroon en de zuidwestrand van de eerste verdieping (achter de toren niet in het DSM) zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.65,
+    "plinthNapM": 5.43,
+    "firstFloorNapM": 8.85,
+    "crownBaseNapM": 66.31,
+    "roofNapM": 74.25,
+    "rimNapM": 75.4,
+    "coolersNapM": 77.1,
+    "plantHouseNapM": [
+      78.5,
+      81.6,
+      83.15
+    ],
+    "towerPlanM": [
+      53.66,
+      24.44
+    ],
+    "storeys": {
+      "tower": 17,
+      "crown": 2.5,
+      "base": 2
+    },
+    "storeyHeightM": 3.38,
+    "bays": [
+      7,
+      3
+    ],
+    "facadeAngleDegrees": -59.7,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0603100000007372 (bouwjaar 1970), actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4), 3D BAG LoD2.2 (AHN5, 2023)",
+    "https://nl.wikipedia.org/wiki/Hoogvoorde_(gebouw)",
+    "https://commons.wikimedia.org/wiki/File:Nieuwe_gemeentehuis.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hoogvoorde_en_De_Generaal_Rijswijk.jpg"
+  ],
+  "printFiles": [
+    "hoogvoorde-rijswijk-1-1000.stl"
+  ]
+}
