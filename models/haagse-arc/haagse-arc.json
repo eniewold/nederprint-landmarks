@@ -1,0 +1,67 @@
+{
+  "name": "Haagse Arc",
+  "file": "haagse-arc.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    84109,
+    453816
+  ],
+  "xAxis": [
+    0.737277,
+    0.67559
+  ],
+  "groundNap": 0,
+  "groundHeight": 43.45,
+  "groundOffsetMetres": -0.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000320364"
+  ],
+  "description": "Haagse Arc (Maanweg 174, 1992, voormalig gebouw van het Internationaal Strafhof): een poortgebouw van twee torens met een brug. Westtoren van 16 lagen op de BAG-contour met een schuin afgesneden kop aan het entreeplein tot NAP +61,55 m, twee installatiekasten, een zuilengalerij en een loggia bovenin de kop; oosttoren van 13 lagen (een trapezium 17,6° gedraaid) met een bol dak van +47,9 tot +51,2 m uit vlakken, de kop op kolommen boven een rond terras (+6,0); daartussen een brug van twee glazen lagen van +47,6 tot +57,67 m met een ronde kop over de oostgevel, gedragen door een ronde kolom; de onderkant van de brug boven de poort is spits (flanken van 50°) zodat de doorgang zonder steun open blijft. Achter de westtoren een vleugel van 9 lagen (+34,1 m) met een gebogen opbouw (+39,2), achter de poort een blok van 6 lagen (+21,55) met een schuin glazen dak, een atrium (+6,73), een entreehal (+10,1) en een lage strook (+7,45). Hoogtes en contouren uit de 3D BAG (AHN5) en het AHN-DSM. Oorsprong onder het midden van de brug, X-as langs de korte gevels naar het noordoosten (42,5° op RD-oost). Geschat: de dikte van de brug, de plaats en maat van de kolom, de spitse onderkant, de kolommen onder de oosttoren, verdiepingshoogtes en vensterraster. Het noordwestelijke eind van de vleugel ligt in buurpand 0518100001640258 en is niet gemodelleerd.",
+  "realWorld": {
+    "groundNapM": 0,
+    "westTowerNapM": 61.55,
+    "westPlantNapM": [
+      63.7,
+      63.9
+    ],
+    "eastTowerNapM": {
+      "back": 47.9,
+      "crest": 51.2
+    },
+    "bridgeNapM": [
+      47.6,
+      57.67
+    ],
+    "archApexNapM": 47.6,
+    "archFlankDegrees": 50,
+    "wingNapM": [
+      34.1,
+      39.2
+    ],
+    "rearBlockNapM": 21.55,
+    "hallNapM": 10.1,
+    "atriumNapM": 6.73,
+    "terraceNapM": 6,
+    "floors": {
+      "westTower": 16,
+      "eastTower": 13,
+      "wing": 9,
+      "rearBlock": 6
+    },
+    "axisDegrees": 42.5,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000320364 (bouwjaar 1992), 3D BAG LoD2.2 (AHN5 2023), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://www.pss-archi.eu/immeubles/NL-518-64227.html",
+    "https://commons.wikimedia.org/wiki/File:Haagse_Arc.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maanweg_174_former_ICC_building_The_Hague_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Building_of_the_International_Criminal_Court_in_The_Hague.jpg"
+  ],
+  "printFiles": [
+    "haagse-arc-1-1000.stl"
+  ]
+}
