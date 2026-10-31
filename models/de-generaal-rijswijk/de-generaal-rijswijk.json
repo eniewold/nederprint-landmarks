@@ -1,0 +1,49 @@
+{
+  "name": "De Generaal",
+  "file": "de-generaal-rijswijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81393.98,
+    450609.92
+  ],
+  "xAxis": [
+    0.8589598969306643,
+    0.5120428648705716
+  ],
+  "groundNap": 0.5,
+  "groundHeight": 43.9,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0603100000005789"
+  ],
+  "description": "De Generaal aan de Generaal Spoorlaan / Prinses Ariane Promenade in Rijswijk (1966, getransformeerd tot woontoren 2016–2021): toren van 46,6 × 29,3 m op de BAG-contour tot NAP +63,28 m met per laag een glasband tussen witte vloerranden (17 lagen van 3,4 m boven een plint van 4,6 m), midden in de lange gevels een strook loggia's en een dakterras op +59,5 m in de bovenste laag, op de korte gevels 2,5 m diepe balkonstapels in het verspringende patroon van de foto's (onder drie, in het midden vier, boven twee brede blokken tot +59,5 m), een plint achter kolommen langs de lange gevels, en op het dak een stalen bordes tot +65,53 m rond een installatieplatform met een kast tot +65,9 m en leidingkokers. Hoogtes uit de 3D BAG (AHN5 2023); het AHN4-DSM is opgenomen tijdens de verbouwing en toont een bouwkraan tot +86 m. Oorsprong in het hart van de toren, X-as langs de lange gevels (30,8° op RD-oost). Verdiepingshoogte uit de balkonhoogtes afgeleid; balkonbreedtes, loggiadiepte, plintdiepte en kolomafstand geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "roofNapM": 63.28,
+    "frameNapM": 65.53,
+    "platformNapM": 63.67,
+    "plantNapM": 65.9,
+    "topFloorTerraceNapM": 59.5,
+    "firstFloorNapM": 5.1,
+    "storeyHeightM": 3.4,
+    "floorsAboveGround": 18,
+    "towerM": [
+      46.56,
+      29.3
+    ],
+    "balconyDepthM": 2.52,
+    "facadeAngleDegrees": 30.8,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0603100000005789 (bouwjaar 1968), 3D BAG LoD2.2 (AHN5 2023), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://nl.wikipedia.org/wiki/De_Generaal_(gebouw)",
+    "https://mei-arch.eu/en/de-generaal-in-rijswijk-completed/",
+    "https://mei-arch.eu/en/generaal-under-construction/"
+  ],
+  "printFiles": [
+    "de-generaal-rijswijk-1-1000.stl"
+  ]
+}
