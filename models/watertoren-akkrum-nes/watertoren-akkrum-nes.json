@@ -1,0 +1,62 @@
+{
+  "name": "Watertoren Akkrum-Nes",
+  "file": "watertoren-akkrum-nes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186264.59,
+    563191.05
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0055100000257787"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour (het reservoir) op maaiveld (NAP -0,15 m), assen in RD-richting. Betonnen voetplaat van 7,7 m tot 1,0 m, schacht met cannelures (twintighoek van 4,8 m) tot de kraag op 30,3 m, reservoir van 10,33 m met vlakke onderkant en ronde onderrand, twaalf hotelramen en dakrand op 38,45 m, kleine achthoekige lantaarn tot 39,8 m. Deur boven de trap naar het zuidzuidoosten. Maten uit BAG, een RCE-foto en de luchtfoto.",
+  "realWorld": {
+    "publishedHeightM": 41,
+    "reservoirM3": 515,
+    "ahnGroundNapM": -0.15,
+    "ahnTopNapM": 41.75,
+    "bagTankDiameterM": 10.33,
+    "plateDiameterM": 7.7,
+    "shaftDiameterM": 4.76,
+    "tankFootM": 30.3,
+    "rimM": 38.45,
+    "modelTopM": 39.8,
+    "photoScalePxPerM": 41.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Akkrum)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Akkrum_-_20419892_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:20181005_Watertoren1_van_Nes.jpg (hotelramen)",
+    "https://commons.wikimedia.org/wiki/File:Detail_watertoren,_ingangspartij_-_Akkrum_-_20419893_-_RCE.jpg",
+    "PDOK BAG-pand 0055100000257787, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-akkrum-nes-1-1000.stl"
+  ]
+}
