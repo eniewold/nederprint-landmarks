@@ -1,0 +1,105 @@
+{
+  "name": "Martinez (PLAZA Premium Almere)",
+  "file": "plaza-almere.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143507,
+    487577
+  ],
+  "xAxis": [
+    0.9713420698132614,
+    0.2376858923261731
+  ],
+  "groundNap": -3.47,
+  "groundHeight": 39.43,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -33,
+      0
+    ],
+    [
+      -14,
+      -20
+    ],
+    [
+      12,
+      -20
+    ],
+    [
+      37,
+      -5
+    ],
+    [
+      0,
+      19
+    ],
+    [
+      -30,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0034100000103008"
+  ],
+  "description": "Martinez aan het Mandelaplein met het PLAZA Premium Almere: vier geschakelde glazen schijven van 7,8 m dik op de BAG-contour, van noord naar zuid tot NAP +66,75 m (19 lagen, aan de westkant vanaf de vierde laag 4,6 m uitkragend), +74,2 m (21 lagen, met een verdiept dakterras op +72,3 m en een opbouw tot +73,7 m), +52,55 m (15 lagen, sky bar tot +55,65 m, aan de oostkant vanaf de tweede laag 4,4 m uitkragend) en +59,8 m (17 lagen, westkop boven een 2,6 m teruggezette entree, installatiekast tot +61,05 m); uitkragingen op een kraag onder 45°; lange gevels met vensters per laag op een stramien van 1,8 m, kopgevels met een vensterband per laag. Hoogtes uit de 3D BAG (AHN5 2023) en het AHN-DSM. Oorsprong in het midden van de schijven, X-as langs de lange gevels (13,75° op RD-oost). De laaghoogte, de hoogte en diepte van de uitkragingen en de gevelindeling zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": -3.47,
+    "geoidM": 42.9,
+    "slabRoofsNapM": {
+      "north": 66.75,
+      "highest": 74.2,
+      "third": 52.55,
+      "south": 59.8
+    },
+    "terraceNapM": 72.3,
+    "terraceBoxNapM": 73.7,
+    "skyBarNapM": 55.65,
+    "plantNapM": 61.05,
+    "slabDepthM": 7.8,
+    "floors": {
+      "north": 19,
+      "highest": 21,
+      "third": 15,
+      "south": 17
+    },
+    "storeyHeightM": 3.6,
+    "groundFloorM": 4.6,
+    "overhangs": {
+      "northWest": {
+        "depthM": 4.57,
+        "undersideAboveGroundM": 15.4
+      },
+      "thirdEast": {
+        "depthM": 4.43,
+        "undersideAboveGroundM": 8.2
+      },
+      "southWest": {
+        "depthM": 2.58,
+        "undersideAboveGroundM": 8.2
+      }
+    },
+    "facadeAngleDegrees": 13.75,
+    "estimatedOverhangs": true,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0034100000103008 (bouwjaar 2010; bijeenkomst-, kantoor- en logiesfunctie), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0034100000103008",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Almere",
+    "https://www.pss-archi.eu/immeubles/NL-34-63044.html",
+    "https://www.visitalmere.com/en/locations/2617365838/martinez",
+    "https://commons.wikimedia.org/wiki/File:Gebouw_Martinez_Almere.jpg",
+    "https://commons.wikimedia.org/wiki/File:Martinez_Almere.jpg",
+    "https://commons.wikimedia.org/wiki/File:Almere_Almere-Stad_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Almere_Almere-Stad_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_03.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_08.JPG",
+    "https://commons.wikimedia.org/wiki/File:20150316_Almere_10.JPG"
+  ],
+  "printFiles": [
+    "plaza-almere-1-1000.stl"
+  ]
+}
