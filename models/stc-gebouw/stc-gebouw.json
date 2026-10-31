@@ -1,0 +1,110 @@
+{
+  "name": "Scheepvaart en Transport College (STC)",
+  "file": "stc-gebouw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91287.24,
+    435192.8
+  ],
+  "xAxis": [
+    0.990024,
+    0.140901
+  ],
+  "groundNap": 3,
+  "groundHeight": 46.5,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      19.5,
+      -8.7
+    ],
+    [
+      19.5,
+      21.3
+    ],
+    [
+      19.5,
+      51.3
+    ],
+    [
+      6.7,
+      -21
+    ],
+    [
+      -3.3,
+      -21
+    ],
+    [
+      -25,
+      -25.5
+    ],
+    [
+      -48,
+      -8.7
+    ],
+    [
+      -40,
+      21.3
+    ],
+    [
+      -20,
+      62
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000750477"
+  ],
+  "description": "Scheepvaart en Transport College (STC-gebouw) aan de Lloydstraat in het Lloydkwartier: een schacht van 32,4 × 32,6 m tot NAP +64,2 m met een scherm tot +68,4 en installaties tot +69,9 (kraanvoet +71,6), bovenop een kop van vier lagen die 13 tot 20 m naar het westen uitkraagt (onderkant +52,4, dak +67,4) met een ingelijst venster in de westkop; ten noorden een onderbouw met een schuin dak van +26,8 tegen de toren naar +19,2 aan de noordgevel, rondom aan de west- en zuidkant een lage vleugel tot +15,2 met het grote venster van de witte doos naar de rivier, langs de oostgevel een teruggelegde begane grond achter V-kolommen, en per laag een raamstrook per vak van 3,6 m. Contour uit de BAG, hoogtes uit de 3D BAG (AHN5) en het AHN-DSM. Oorsprong in het hart van de schacht, X-as langs de zuidgevel (8,1° op RD-oost). Onderkant van de kop, verdiepingshoogtes, vensters, de diepte van de arcade en de V-kolommen zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 3,
+    "lowWingNapM": 15.2,
+    "podiumRoofNapM": [
+      26.77,
+      19.24
+    ],
+    "podiumRoofSlopeDegrees": 9.9,
+    "shaftRoofNapM": 64.2,
+    "headRoofNapM": 67.4,
+    "rimNapM": 68.4,
+    "headUndersideNapM": 52.4,
+    "plantNapM": [
+      69.2,
+      69.77,
+      69.85
+    ],
+    "craneBaseNapM": 71.6,
+    "shaftPlanM": [
+      32.4,
+      32.6
+    ],
+    "cantileverM": [
+      20.45,
+      13
+    ],
+    "floors": 16,
+    "storeyHeightM": 3.8,
+    "architect": "Neutelings Riedijk",
+    "completed": 2005,
+    "facadeAngleDegrees": 8.1,
+    "modelCentre": [
+      0,
+      0
+    ],
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000750477 (bouwjaar 2005, onderwijsfunctie), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG NL.IMBAG.Pand.0599100000750477 (LoD2.2, puntenwolk AHN5 2022)",
+    "https://neutelings-riedijk.com/shipping-and-transport-college/",
+    "https://www.architectureguide.nl/project/item/prj_id/1952/alfa/S",
+    "https://commons.wikimedia.org/wiki/File:STC_Lloydstraat.jpg",
+    "https://commons.wikimedia.org/wiki/File:Shipping_and_Transport_College_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Scheepvaart_en_Transport_College_-_Lloydstraat_-_Rotterdam_(28872432443).jpg",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Scheepvaart_en_Transport_College_(5).jpg"
+  ],
+  "printFiles": [
+    "stc-gebouw-1-1000.stl"
+  ]
+}
