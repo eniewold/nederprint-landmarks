@@ -1,0 +1,72 @@
+{
+  "name": "Pharos Hoofddorp",
+  "file": "mercuriusplein-hoofddorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    107950,
+    478590
+  ],
+  "xAxis": [
+    0.6691306063588582,
+    0.7431448254773942
+  ],
+  "groundNap": -5,
+  "groundHeight": 38.15,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      0,
+      -20
+    ],
+    [
+      25,
+      -17
+    ],
+    [
+      50,
+      -17
+    ],
+    [
+      60,
+      -22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0394100000242475"
+  ],
+  "description": "Pharos aan het Mercuriusplein bij station Hoofddorp (KPF, 2003): een torenwig met een rechte noordwestgevel en een cirkelvormige zuidgevel (straal 67 m) tot NAP +69,7 m, met een kroonzone tot +76,6 m en een gebogen kroonrand tot +77,3 m, een zuilengalerij van zes kolommen onder de zuidgevel tot +2,5 m met een erker, en een lensvormige laagbouw van vijf lagen tot +20,6 m (gebogen noordwestgevel, straal 179 m) met een 6 m uitkragende kop op drie kolommen, een hoger blok tot +25,55 m en een hal tot +16,5 m met een patio. Langs de hele noordwestgevel een lijst op +21,3 m en een luifel op +1,4 m, op de laagbouw de installaties uit de 3D BAG en per laag een doorlopende raamband. Contour uit de BAG, hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong midden in de BAG-contour, X-as langs de noordwestgevel (48,0° op RD-oost). Geschat: verdiepingshoogte, raambanden, de hoogte en diepte van de zuilengalerij, de kolommen onder de kop, de erker en de vorm van de kroon (een stalen kader boven installaties, als dicht blok).",
+  "realWorld": {
+    "groundNapM": -5,
+    "towerRoofNapM": 69.7,
+    "crownNapM": [
+      76.6,
+      77.3
+    ],
+    "podiumNapM": 20.6,
+    "corniceNapM": 21.3,
+    "blockNapM": 25.55,
+    "hallNapM": 16.5,
+    "patioNapM": 3.5,
+    "canopyNapM": 1.4,
+    "galleryUndersideNapM": 2.5,
+    "southFacadeRadiusM": 67.04,
+    "northwestFacadeRadiusM": 178.91,
+    "floors": 19,
+    "storeyHeightM": 3.537,
+    "facadeAngleDegrees": 48,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0394100000242475 (bouwjaar 2003, Mercuriusplein 1-23), actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4), 3D BAG LoD2.2 (AHN5 2023)",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0394100000242475",
+    "https://skyscraperpage.com/b5526",
+    "https://www.skyscrapercenter.com/building/pharos/6660",
+    "https://commons.wikimedia.org/wiki/File:Pharos_toren,_Van_Heuven-Goedhartlaan_pic1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pharos_toren,_Van_Heuven-Goedhartlaan_pic2.jpg"
+  ],
+  "printFiles": [
+    "mercuriusplein-hoofddorp-1-1000.stl"
+  ]
+}
