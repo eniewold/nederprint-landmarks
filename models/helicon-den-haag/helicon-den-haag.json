@@ -1,0 +1,67 @@
+{
+  "name": "Helicon",
+  "file": "helicon-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81927.94,
+    455135.86
+  ],
+  "xAxis": [
+    0.79441,
+    0.60738
+  ],
+  "groundNap": 0.6,
+  "groundHeight": 44.05,
+  "groundOffsetMetres": -0.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001754311"
+  ],
+  "description": "Oorsprong in het hart van de BAG-contour op maaiveld NAP +0,6 m, +X langs de Turfmarktgevel naar het noordoosten (37,4 graden in RD), +Y naar het noordwesten (Castalia); drie bakstenen torens van 13,9 m breed tot een dakrand op +59,0 (dak +57,6) met elk een plat tongewelf tot +60,0, aan de Turfmarkt vier treden van twee lagen (+26,3, +33,05, +39,8, +46,65) met witte lijsten, op v = −2 een witte balk met vijf naalden tot circa +68 boven drie witte lisenen op de lange gevels; daartussen laagbouw tot +22,76 met een glazen tongewelf tot +26,1; hoogtes uit de 3D BAG (AHN5) en het AHN-DSM, verdiepingen, vensterraster, lijsten, lisenen en naaldhoogte uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.6,
+    "roofNapM": 57.6,
+    "parapetNapM": 59,
+    "roofVaultNapM": 60,
+    "stepNapM": [
+      26.3,
+      33.05,
+      39.8,
+      46.65
+    ],
+    "stepFaceV": [
+      -24.13,
+      -22.75,
+      -21.2,
+      -19.3,
+      -17.4
+    ],
+    "lowNapM": 22.76,
+    "atriumVaultNapM": 26.1,
+    "needleTopNapM": 68,
+    "towerWidthM": 13.9,
+    "floors": 16,
+    "storeyHeightM": 3.392,
+    "axisDegrees": 37.4,
+    "estimates": [
+      "verdiepingshoogte 3,39 m uit de treden (twee lagen per trede), begane grond tot +5,95",
+      "vensters 1,2 m op 2,5 m (torens) en 1,5 m op 2,6 m (laagbouw) als nissen van 0,35 m",
+      "witte lijsten 0,4 m uit de gevel rond elke trede en de dakrand, ook langs de lange gevels",
+      "drie witte lisenen van 0,9 m op v = −2 en vijf naalden tot +68 (DSM raakt de dunne naalden tot +67,3)",
+      "kopse kanten van het glazen tongewelf als holle ellips van 3 × 5 m, 1 m vrij van de torens"
+    ]
+  },
+  "sources": [
+    "PDOK BAG pand 0518100001754311 (bouwjaar 1998), AHN-DSM en -DTM 0,5 m (WCS), Actueel_orthoHR",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100001754311 (3D BAG, TU Delft/3D geoinformatie, CC BY 4.0): dak, treden, laagbouw, tongewelven",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport/organisatie/gebouwen",
+    "https://commons.wikimedia.org/wiki/File:Helicon1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Den_Haag_-_De_Resident_(28056663929).jpg",
+    "https://commons.wikimedia.org/wiki/File:Turfmarkt_The_Hague_2016_1.jpg"
+  ],
+  "printFiles": [
+    "helicon-den-haag-1-1000.stl"
+  ]
+}
