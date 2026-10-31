@@ -1,0 +1,47 @@
+{
+  "name": "Poort van Zuid",
+  "file": "strevelsweg-torens.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93405,
+    433581.5
+  ],
+  "xAxis": [
+    0.14643,
+    0.98922
+  ],
+  "groundNap": -1.25,
+  "groundHeight": 42.26,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000678559",
+    "NL.IMBAG.Pand.0599100000651925"
+  ],
+  "description": "Poort van Zuid (Klunder Architecten): twee identieke woontorens aan weerszijden van de Strevelsweg bij Zuidplein, de westelijke uit 1993 en de oostelijke uit 1994. Per toren een bruine schijf langs de straat tot NAP +66,6 m met smalle staarten aan beide koppen, een witte schijf erachter tot +64,0 m waarvan de buitengevel in drie treden naar buiten springt, in elke trede en aan de zuidkop een balkonstapel tot +61,0 m met per laag een open balkon, een balkonstapel aan de straatkant bij de noordkop, een sleuf met vluchtbalkons midden in de straatgevel, een liftopbouw tot +70,6 m, vensterrasters per laag, en de onderbouw met winkels en parkeerdek (+4,5 en +4,4 m) op de BAG-contour met de hellingbaan. Contouren uit de BAG, hoogtes en treden uit de 3D BAG (LoD2.2, AHN5) en het AHN-DSM. Oorsprong midden op de Strevelsweg tussen de torens, X-as langs de lange as van de torens (RD-richting 81,6°). Verdiepingshoogte, vensterraster, de sleuf en de balkonopeningen zijn geschat uit foto's; de taaknaam 'Torens Strevelsweg' en het woord kantoortorens kloppen niet.",
+  "realWorld": {
+    "groundNapM": -1.25,
+    "roofBrownNapM": 66.6,
+    "roofWhiteNapM": 64,
+    "liftNapM": 70.6,
+    "balconyTopNapM": 61,
+    "plinthNapM": [
+      4.5,
+      4.4
+    ],
+    "floors": 24,
+    "storeyHeightM": 2.7,
+    "apartments": 252,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0599100000651925 (bouwjaar 1994) en 0599100000678559 (bouwjaar 1995), 3D BAG LoD2.2 (AHN5 2022), AHN-DSM en -DTM 0,5 m, actuele orthoHR",
+    "https://rotterdamwoont.nl/app/uploads/2018/01/5.1993.3-projectblad-Poort-van-Zuid-3.pdf",
+    "https://hoog500.nl/gebouw/poort_van_zuid_1993-10299",
+    "https://commons.wikimedia.org/wiki/Category:Poort_van_Zuid_(Rotterdam)"
+  ],
+  "printFiles": [
+    "strevelsweg-torens-1-1000.stl"
+  ]
+}
