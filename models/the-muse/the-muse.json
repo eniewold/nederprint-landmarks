@@ -1,0 +1,70 @@
+{
+  "name": "The Muse",
+  "file": "the-muse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93041.4,
+    436981.5
+  ],
+  "xAxis": [
+    0.953191,
+    0.30237
+  ],
+  "groundNap": 2.55,
+  "groundHeight": 46.08,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -12,
+      -18.5
+    ],
+    [
+      12,
+      -18.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100100015965"
+  ],
+  "description": "The Muse (BARCODE Architects, 2019) aan de Wijnhaven: onderbouw van vijf lagen op de BAG-contour tot NAP +18,9 m met per laag witte banden en een verdiepte pui aan de Wijnhaven en de Wijnstraat; daarboven een rok van vier lagen die naar de toren versmalt, met getrapte terrassen en borstweringen aan de noord- en zuidkant, een donker dakvlak met dakramen en een uitsparing tot +21,5 m aan de oostkant en twee naar buiten hellende wanden met ramen aan de westkant; en de toren van 28,4 × 20,5 m tot +75,75 m (dakrand +76,55 m, opbouw +77,55 m, twee verdiepte dakterrassen op +72,17 m) in een antraciet kader met gesloten oost- en westgevels (verspringende ramen) en glazen noord- en zuidgevels met per laag een witte balkonband en drie diepe balkons die per laag een vak verspringen, alle met een kraag onder 47°. Hoogtes uit de 3D BAG-dakvlakken (AHN5 2023) en het AHN-DSM, contour uit de BAG, opbouw van de rok uit de plattegronden van BARCODE. Oorsprong in het hart van de contour, X-as langs de lange gevels naar het oost-noordoosten (17,6° op RD-oost). Verdiepingshoogtes, gevels van de terrassen, balkondiepte en -indeling, de ramen en de uitsparing zijn geschat uit foto's; CasaNova sluit aan de oostkant aan (eigen model).",
+  "realWorld": {
+    "groundNapM": 2.55,
+    "podiumRoofNapM": 18.9,
+    "skirtFloorsNapM": [
+      18.9,
+      21.85,
+      24.81,
+      27.76,
+      30.72
+    ],
+    "storeyHeightM": 2.954,
+    "roofNapM": 75.75,
+    "parapetNapM": 76.55,
+    "patioNapM": 72.17,
+    "plantNapM": 77.55,
+    "notchNapM": 21.5,
+    "towerPlanM": [
+      28.4,
+      20.5
+    ],
+    "floors": 23,
+    "balconyDepthBeyondFrameM": {
+      "band": 0.5,
+      "deep": 2.1
+    },
+    "glassSetbackM": 0.8,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100100015965 (bouwjaar 2019), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100100015965 (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/The_Muse",
+    "https://barcodearchitects.com/projects/the-muse/ (plattegronden 5e en 15e verdieping en foto's, alleen visuele referentie; maten uit open data)",
+    "https://commons.wikimedia.org/wiki/Category:The_Muse_(Rotterdam)"
+  ],
+  "printFiles": [
+    "the-muse-1-1000.stl"
+  ]
+}
