@@ -1,0 +1,68 @@
+{
+  "name": "Jheronimus",
+  "file": "hofvijver-den-bosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    148182.44,
+    410774.87
+  ],
+  "xAxis": [
+    0.9684528146428742,
+    -0.24919700200904238
+  ],
+  "groundNap": 6.89,
+  "groundHeight": 50.43,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      15,
+      -9
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      15,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000434078"
+  ],
+  "description": "Woontoren Jheronimus (Hofvijver 1, Paleiskwartier, Baumschlager Eberle, 2014) in de Hofvijver: een vierkante schacht op de BAG-contour van 24,3 m tot NAP +62,72 m, daarop een kroon die rondom 1,15 m terugspringt tot +80,63 m, met een installatieblok tot +82,0 m en kleinere installaties tot +82,6 m. Elke gevel heeft per laag vier vensters en bij beide hoeken een loggia op een stramien van 3,9 m (begane grond 6,18 m met zes hoge puien, daarboven 23 lagen van 2,92 m). Hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevel (-14,43° op RD-oost); lokaal z = 0 is de promenade aan de oostkant (NAP +6,89), de voet loopt 1,6 m door onder het water. Verdiepingshoogtes, de terugsprong en het gevelraster komen uit foto's van de architect en zijn geschat; de naam komt van de architect en makelaarsteksten (de taak noemde de toren naar zijn adres).",
+  "realWorld": {
+    "groundNapM": 6.89,
+    "shaftNapM": 62.72,
+    "roofNapM": 80.63,
+    "plantNapM": [
+      82,
+      82.6
+    ],
+    "planM": [
+      24.31,
+      24.35
+    ],
+    "crownInsetM": 1.15,
+    "floors": {
+      "ground": 1,
+      "shaft": 17,
+      "crown": 6
+    },
+    "groundFloorHeightM": 6.18,
+    "storeyHeightM": 2.92,
+    "bayM": 3.9,
+    "facadeAngleDegrees": -14.43,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0796100000434078 (bouwjaar 2014, Hofvijver 1), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG (LoD2.2, puntwolk AHN4 2021)",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0796100000434078",
+    "https://baumschlager-eberle.com/en/work/projects/projekte-details/jheronimus/"
+  ],
+  "printFiles": [
+    "hofvijver-den-bosch-1-1000.stl"
+  ]
+}
