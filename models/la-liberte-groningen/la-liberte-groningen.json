@@ -1,0 +1,60 @@
+{
+  "name": "La Liberté",
+  "file": "la-liberte-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233015.91,
+    579933.24
+  ],
+  "xAxis": [
+    15.3,
+    19.99
+  ],
+  "groundNap": -0.15,
+  "groundHeight": 40.6,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010982642"
+  ],
+  "description": "Hoge toren van La Liberté aan de Laan van de Vrijheid (Dominique Perrault, 2011): op de vierkante BAG-contour van 25,2 m een glazen sokkel tot NAP +11,8 m met per laag een glasband, een rondom 3 m teruggelegen glazen terrasverdieping, een donker woonblok van +14,6 tot +45,6 m en een wit woonblok tot +72,5 m dat 1,4 m naar het noordwesten is verschoven, met een dakrand tot +73,3 m en drie installaties tot +74,9 m; in beide woonblokken een vrij verspreid patroon van vensters en balkonramen als blinde nissen. Hoogtes uit de 3D BAG en het AHN-DSM, verschuiving en verdiepingen uit foto's. Oorsprong in het hart van de BAG-contour, X-as langs de zuidoostgevel (52,6° op RD-oost). Geschat zijn de onderkant van het donkere blok, de terugsprong van de terrasverdieping, de verdiepingshoogtes en het vensterpatroon, dat niet de echte posities volgt.",
+  "realWorld": {
+    "groundNapM": -0.15,
+    "plinthNapM": 11.77,
+    "darkBlockNapM": [
+      14.6,
+      45.6
+    ],
+    "roofNapM": 72.5,
+    "parapetNapM": 73.3,
+    "plantNapM": [
+      74.92,
+      74.27,
+      74.2
+    ],
+    "footprintM": 25.18,
+    "whiteBlockShiftM": 1.4,
+    "terraceSetbackM": 3,
+    "floors": {
+      "plinth": 3,
+      "terrace": 1,
+      "darkBlock": 10,
+      "whiteBlock": 9
+    },
+    "facadeAngleDegrees": 52.58,
+    "estimatedWindowPattern": true
+  },
+  "sources": [
+    "PDOK BAG pand 0014100010982642 (bouwjaar 2011), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010982642 (3D BAG LoD2.2, TU Delft/3DGI, CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/La_Libert%C3%A9_(gebouw)",
+    "https://perraultarchitecture.com/en/projects/la-liberte/",
+    "https://commons.wikimedia.org/wiki/File:20120326_La_Libert%C3%A9_Groningen_NL.jpg",
+    "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_20110719.jpg",
+    "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_Groningen.JPG"
+  ],
+  "printFiles": [
+    "la-liberte-groningen-1-1000.stl"
+  ]
+}
