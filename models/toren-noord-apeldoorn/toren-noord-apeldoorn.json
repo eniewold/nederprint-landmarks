@@ -1,0 +1,64 @@
+{
+  "name": "Toren Noord",
+  "file": "toren-noord-apeldoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195494.87,
+    472523.45
+  ],
+  "xAxis": [
+    0.945519,
+    0.325568
+  ],
+  "groundNap": 9.1,
+  "groundHeight": 52.23,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      13.85,
+      -15.29
+    ],
+    [
+      17.85,
+      -10.29
+    ],
+    [
+      14.85,
+      -6.79
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0200100000700217"
+  ],
+  "description": "Toren Noord (2002, UNStudio; eerder La Tour en HNK) aan de Boogschutterstraat in Apeldoorn-Noord: toren op de BAG-contour van 22,3 × 36,6 m tot NAP +80,7 m (72 m boven het entreeplein) met 21 lagen, gevels als lappendeken van witte vlakken met een vensterraster (0,6 m voor de BAG-gevel) en lamellenschermen met een band per laag (1,0 m voor de gevel, oost 0,7 m) die als kader doorlopen tot +84,0 m; het noordelijke deel van de oostgevel buigt boven +55 m naar binnen tot een dakrand 1,8 m achter de gevel. Op het dak een installatieopbouw tot +84,3 m. Begane grond 5,0 m, aan de zuid- en entreekant een colonnade 1,5 m diep. Aan de oostkant de laagbouwvleugel (hetzelfde BAG-pand) tot +19,6 m op een open parkeerlaag met colonnade. Hoogtes uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de toren, X-as langs de zuidgevel (19,0° op RD-oost). Verdiepingshoogtes, de indeling van de gevelvlakken, het vensterraster en de kolommen zijn geschat van foto's; het lamellenkader is als dichte rand gemodelleerd.",
+  "realWorld": {
+    "groundNapM": 9.1,
+    "roofNapM": 80.7,
+    "frameNapM": 84,
+    "plantNapM": 84.28,
+    "wingNapM": 19.6,
+    "leanFromNapM": 55,
+    "floors": 21,
+    "storeyHeightM": 3.33,
+    "footprintM": [
+      22.3,
+      36.58
+    ],
+    "louvreOffsetM": 1,
+    "whiteOffsetM": 0.6,
+    "facadeAngleDegrees": 19,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0200100000700217 (bouwjaar 2002), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG (LoD2.2) pand NL.IMBAG.Pand.0200100000700217, puntenwolk AHN4 2022",
+    "https://nl.wikipedia.org/wiki/Toren_Noord",
+    "https://commons.wikimedia.org/wiki/Category:Toren_Noord",
+    "NLGEO2018 (geoïde) voor groundHeight"
+  ],
+  "printFiles": [
+    "toren-noord-apeldoorn-1-1000.stl"
+  ]
+}
