@@ -1,0 +1,50 @@
+{
+  "name": "Eurotoren",
+  "file": "luchtmachtplein-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108916,
+    402231
+  ],
+  "xAxis": [
+    0.99863,
+    0.052336
+  ],
+  "groundNap": 2.9,
+  "groundHeight": 46.76,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000003827"
+  ],
+  "description": "Eurotoren aan het Luchtmachtplein (hoofdkwartier van de Koninklijke Luchtmacht), op de BAG-contour in drie delen: in het westen een sikkel met een gebogen gevel tot NAP +67,97 m met een witte dakrand van 1,0 m, vensterbanden per laag, een nis van vier lagen op het westen en een begane grond die 2,5 m terugligt achter ronde kolommen; in het midden een glazen schijf tot +74,35 m met glasbanden per laag, een dakrand rondom, het embleem (+75,77 m) en installaties (+75,88 m); in het oosten een bakstenen blok tot +64,37 m met vier vensters per laag op het oosten en één op het noorden en zuiden en een installatiekast (+66,89 m). Hoogtes uit de 3D BAG (AHN5). Oorsprong in de schijf, X-as langs de noord- en zuidgevels (3,0° op RD-oost). Verdiepingshoogtes, vensters, de nis, de dakranden en de terugliggende begane grond zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 2.9,
+    "slabRoofNapM": 74.35,
+    "curveRoofNapM": 67.97,
+    "eastRoofNapM": 64.37,
+    "emblemNapM": 75.77,
+    "plantNapM": [
+      75.88,
+      66.89
+    ],
+    "floors": 18,
+    "groundFloorM": 9,
+    "storeyHeightM": 3.6,
+    "curveRadiusM": 33.2,
+    "facadeAngleDegrees": 3,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0758100000003827 (bouwjaar 2001, kantoorfunctie), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0758100000003827 (puntenwolk AHN5 2024)",
+    "https://skyscraperpage.com/b9552",
+    "https://commons.wikimedia.org/wiki/File:Eurotoren_Breda.jpg",
+    "https://commons.wikimedia.org/wiki/File:Eurotoren_Breda_DSCF5141.jpg",
+    "https://commons.wikimedia.org/wiki/File:P1010384Eurotoren.JPG"
+  ],
+  "printFiles": [
+    "luchtmachtplein-breda-1-1000.stl"
+  ]
+}
