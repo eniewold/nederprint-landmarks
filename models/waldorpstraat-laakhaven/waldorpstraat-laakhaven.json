@@ -1,0 +1,64 @@
+{
+  "name": "Studententorens Waldorpstraat",
+  "file": "waldorpstraat-laakhaven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81703.53,
+    453728.71
+  ],
+  "xAxis": [
+    0.8195522765271338,
+    0.5730044206105154
+  ],
+  "groundNap": 0.7,
+  "groundHeight": 44.14,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -45,
+      -17
+    ],
+    [
+      -32,
+      -17
+    ],
+    [
+      35,
+      -17
+    ],
+    [
+      48,
+      -17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100001625661",
+    "NL.IMBAG.Pand.0518100001625111"
+  ],
+  "description": "Twee vrijstaande studententorens van K2 Architecten (2013) aan de Waldorpstraat bij Den Haag HS: elk op de rechthoekige BAG-contour (27,5 × 22,3 m) tot NAP +72,1 m met een liftopbouw tot +73,2 m, een installatie, ventilatiekappen en per gevel de 'streepjescode' van witte vensterbanen als blinde nissen per laag, met luifels boven de begane grond langs de straat- en de spoorgevel. Hoogtes uit de 3D BAG en het AHN-DSM, de vensterbanen uit de luchtfoto's van 2026 en 2023. Oorsprong midden tussen de torens, X-as langs de lange gevels (34,96° op RD-oost). Het aantal lagen (begane grond en 23 woonlagen van 2,82 m), de breedte van de banen op de schuin gefotografeerde gevels en de dikte van de luifels zijn geschat; de torens hebben geen eigen projectnaam.",
+  "realWorld": {
+    "groundNapM": 0.7,
+    "roofNapM": 72.1,
+    "liftNapM": 73.22,
+    "hoodNapM": 73,
+    "canopyNapM": 6.55,
+    "canopyDepthM": {
+      "street": 3.5,
+      "rail": 2.4
+    },
+    "floors": 24,
+    "storeyHeightM": 2.82,
+    "facadeAngleDegrees": 34.96,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0518100001625661 (Waldorpstraat 47) en 0518100001625111 (Waldorpstraat 45), bouwjaar 2013; luchtfoto's orthoHR 2026 en 2023; AHN-DSM en -DTM 0,5 m; 3D BAG (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://kegro.nl/studenten-waldorpstraat-den-haag/"
+  ],
+  "printFiles": [
+    "waldorpstraat-laakhaven-1-1000.stl"
+  ]
+}
