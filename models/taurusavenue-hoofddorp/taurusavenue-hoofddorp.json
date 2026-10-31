@@ -1,0 +1,78 @@
+{
+  "name": "Zuidtoren Hoofddorp",
+  "file": "taurusavenue-hoofddorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108055,
+    478410
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": -4.72,
+  "groundHeight": 38.43,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      15,
+      0
+    ],
+    [
+      16,
+      -8
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      5,
+      28
+    ],
+    [
+      -5,
+      25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0394100000242103"
+  ],
+  "description": "De Zuidtoren aan de Taurusavenue bij station Hoofddorp (2006): een schildvormige kantoortoren van 20 lagen op de BAG-contour tot NAP +73,55 m. De bolle west- en zuidkant is een schild van raambanden dat boven de begane grond 1,6 tot 2,4 m buiten de contour staat, op een rij kolommen van 0,9 m met een kraag onder 48° naar de teruggelegen lobby, en boven het dak uitsteekt tot +76,6 m (zuid en west) en +74,2 m (noordwest). Daarachter in het zuidwesten een verdiepte installatiezone op +68,7 m met bordessen en een lamellenband in de gevel; de holle oostgevel aan de Taurusavenue heeft een glasraster per laag en de draaideur met de witte ‘1’. Contour uit de BAG, hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong midden in de contour, X-as naar RD-oost. Geschat: verdiepingshoogte (3,48 m) en lobbyhoogte, de vensterindeling, de plaats en dikte van de kolommen, de helling van de schildrand tussen noordwest en west en hoe ver het schild voor de zuidkop langs loopt.",
+  "realWorld": {
+    "groundNapM": -4.72,
+    "roofNapM": 73.55,
+    "shieldTopNapM": [
+      74.2,
+      76.6
+    ],
+    "shieldOutsideBagM": [
+      1.6,
+      2.4
+    ],
+    "plantPitNapM": 68.7,
+    "plantDeckNapM": [
+      71.3,
+      72.4
+    ],
+    "roofBoxNapM": 75,
+    "lobbyTopNapM": 1,
+    "floors": 20,
+    "storeyHeightM": 3.48,
+    "columnDiameterM": 0.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0394100000242103 (bouwjaar 2006, Taurusavenue 1-41, kantoorfunctie), actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4), 3D BAG LoD2.2 (AHN5 2023)",
+    "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0394100000242103",
+    "https://www.skyscrapercenter.com/building/zuidtoren/6661",
+    "https://commons.wikimedia.org/wiki/File:Zuidtoren_Hoofddorp.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zuidtoren,_Hoofddorp_pic2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pharos_toren_en_Zuidtoren_pic2.jpg"
+  ],
+  "printFiles": [
+    "taurusavenue-hoofddorp-1-1000.stl"
+  ]
+}
