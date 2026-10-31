@@ -1,0 +1,106 @@
+{
+  "name": "Lloydtoren",
+  "file": "lloydtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    90829,
+    435177
+  ],
+  "xAxis": [
+    0.998312,
+    -0.058087
+  ],
+  "groundNap": 3.6,
+  "groundHeight": 47.1,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -21,
+      -12.5
+    ],
+    [
+      0,
+      -12.5
+    ],
+    [
+      30,
+      -12.5
+    ],
+    [
+      60,
+      -12
+    ],
+    [
+      90,
+      -11
+    ],
+    [
+      120,
+      -10
+    ],
+    [
+      -22,
+      2.5
+    ],
+    [
+      0,
+      11.2
+    ],
+    [
+      30,
+      22
+    ],
+    [
+      65,
+      36.5
+    ],
+    [
+      95,
+      46.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000754407"
+  ],
+  "description": "Lloydtoren op de kop van de Lloydpier met de woonblokken langs de Kratonkade die in hetzelfde BAG-pand liggen: toren op een vereenvoudigde DSM/BAG-contour tot NAP +77,0 m met installaties tot +79,9 m, op de westkop een dakterras (+70,7/+73,8) binnen een gemetselde kroon tot +78,5 met een groot venster naar het westen en een loggiaband onder de zuidelijke latei, vensterbanden per laag van 3,0 m en balkonstapels op het zuiden, oosten en noorden; westvleugel tot +26,1, sokkels tot +20,1, oranje blokken tot +40,8/+40,9 met hoekloggia's en liftopbouwen, en de blokken van acht lagen tot +28,95 en +26,1/+29,0 met een poort van circa 10 bij 10 m naar de binnentuin. Dakhoogtes uit de 3D BAG (LoD2.2), balkons en terras uit het AHN-DSM, gevelindeling uit foto's. Oorsprong in het hart van de toren, X-as langs de zuidgevel (-3,33° op RD-oost). Vensterraster, verdiepingshoogtes, de hoogte van de balkonstapels en de maten van de poort zijn geschat.",
+  "realWorld": {
+    "groundNapM": 3.6,
+    "towerRoofNapM": 77,
+    "crownNapM": 78.5,
+    "roofPlantTopNapM": 79.9,
+    "terraceNapM": [
+      70.7,
+      73.8
+    ],
+    "westWingNapM": 26.1,
+    "podiumNapM": 20.13,
+    "orangeBlocksNapM": [
+      40.87,
+      40.81
+    ],
+    "northBlockNapM": 28.95,
+    "southBlockNapM": [
+      26.1,
+      29
+    ],
+    "portalTopNapM": 13.7,
+    "towerFloors": 23,
+    "storeyHeightM": 3,
+    "architect": "De Zwarte Hond",
+    "completed": 2010,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000754407 (bouwjaar 2010), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG NL.IMBAG.Pand.0599100000754407 (LoD2.2, puntenwolk AHN5 2022)",
+    "https://nl.wikipedia.org/wiki/Lloydtoren",
+    "https://commons.wikimedia.org/wiki/File:Lloydtoren_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lloydkwartier_Rotterdam_2018_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Schiehaven,_Rotterdam-8156.jpg"
+  ],
+  "printFiles": [
+    "lloydtoren-1-1000.stl"
+  ]
+}
