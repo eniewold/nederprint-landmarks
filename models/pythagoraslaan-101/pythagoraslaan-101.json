@@ -1,0 +1,47 @@
+{
+  "name": "De Pyth (Pythagoraslaan 101)",
+  "file": "pythagoraslaan-101.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    138739.04,
+    456081.78
+  ],
+  "xAxis": [
+    0.9864292571764954,
+    -0.16418684656886293
+  ],
+  "groundNap": 1.05,
+  "groundHeight": 44.4,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000130837"
+  ],
+  "description": "Kantoortoren De Pyth aan de Pythagoraslaan in Rijnsweerd: op de BAG-contour een wit gebogen deel (kwart cirkel r 10,55 m om het middelpunt van de waaier) tot NAP +60,9 m, een noordblok met gebogen noordwesthoek tot +53,9 m, een donkerglazen dakopbouw tot +66,75 m met vier dakkasten, een glazen cilinder tot +63,8 m en een glazen voeg aan de westkant; 17 lagen van 3,5 m met een doorlopende raamband per laag, behalve op de dichte witte oostschijf. De laagbouw is een kwart cirkelschijf van r 34,27 m met een zaagtanddak van twee glazen ringen (14,8°, lichtstroken naar buiten), een schuine glazen rand, een witte daklijst op +11,3 m en een hoge glazen pui. Aan de zuidwestkant een luifel op +11,4 m boven het parkeerdek (buiten het BAG-pand, eigen node, met dichte onderbouw). Hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het middelpunt van de waaier, X-as langs de lange gevels (-9,45° op RD-oost). Verdiepingsindeling, raambanden, lichtstroken, de hoogte van de glazen voeg en de onderbouw van de luifel zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.05,
+    "southRoofNapM": 60.9,
+    "northRoofNapM": 53.9,
+    "coreRoofNapM": 66.75,
+    "cylinderNapM": 63.8,
+    "towerArcRadiusM": 10.55,
+    "fanRadiusM": 34.27,
+    "fanRoofSlopeDegrees": 14.8,
+    "fanEaveNapM": 11.33,
+    "canopyNapM": 11.4,
+    "floors": 17,
+    "storeyHeightM": 3.5,
+    "facadeAngleDegrees": -9.45,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0344100000130837 (bouwjaar 1995), actuele orthoHR, AHN-DSM en -DTM 0,5 m, BGT (overbruggingsdelen bij het parkeerdek)",
+    "3D BAG NL.IMBAG.Pand.0344100000130837 (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Utrecht_(stad)",
+    "https://commons.wikimedia.org/wiki/File:Pythagoraslaan_101.jpg"
+  ],
+  "printFiles": [
+    "pythagoraslaan-101-1-1000.stl"
+  ]
+}
