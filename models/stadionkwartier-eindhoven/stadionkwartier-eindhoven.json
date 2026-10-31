@@ -1,0 +1,48 @@
+{
+  "name": "Hartje New York (E' Tower)",
+  "file": "stadionkwartier-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    160340.33,
+    383825.28
+  ],
+  "xAxis": [
+    0.80042,
+    -0.59944
+  ],
+  "groundNap": 18.32,
+  "groundHeight": 62.25,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001013392",
+    "NL.IMBAG.Pand.0772100001018057"
+  ],
+  "description": "Woontoren Hartje New York (E' Tower, Wiel Arets Architects, 2013) aan de Gerard Philipslaan in het Stadionkwartier: glazen schijf op de BAG-contour met de schuine noordwestkop tot NAP +91,85 m (3D BAG, 70e percentiel van het dak) met een liftopbouw tot +93,45 m; per laag een glasband achter een doorlopende witte vloerrand (begane grond van 3,3 m en 22 woonlagen van 3,12 m), vanaf de achtste woonlaag een uitkraging van 1,1 m over de westelijke helft van de zuidwestgevel, elf balkonstapels van 2–2,4 m diep met per laag een open balkon die per hoogte van plaats wisselen (bovenste balkonranden +88,5 m) en aan de zuidoostkop een lage doorgang naar het buurgebouw. Vervangt ook de PDOK-reconstructie van de parkeergarage 0772100001018057, die de toren dubbel bevat. Oorsprong in het hart van de BAG-contour, X-as langs de lange gevels naar het zuidoosten (-36,83° op RD-oost). De lagen komen uit het gevelaanzicht van de architect; de plaats en laagbereiken van de balkonstapels, de startlaag van de uitkraging en de banddiepte zijn geschat uit plattegronden, 3D BAG en foto's.",
+  "realWorld": {
+    "groundNapM": 18.32,
+    "roofNapM": 91.85,
+    "liftNapM": 93.45,
+    "topBalconyNapM": 88.5,
+    "groundFloorM": 3.3,
+    "storeyHeightM": 3.12,
+    "floors": 22,
+    "cantileverM": 1.09,
+    "cantileverFromFloor": 8,
+    "balconyDepthM": 2,
+    "facadeAngleDegrees": -36.83,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0772100001013392 (bouwjaar 2013, Gerard Philipslaan), 3D BAG LoD2.2 (AHN5 2024), AHN-DSM en -DTM 0,5 m, actuele orthoHR",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Eindhoven",
+    "https://www.archdaily.com/445282/e-tower-wiel-arets-architects",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Hartje_New_York_in_Eindhoven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hartje_New_York.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hartje_NY,_Eindhoven.jpg"
+  ],
+  "printFiles": [
+    "stadionkwartier-eindhoven-1-1000.stl"
+  ]
+}
