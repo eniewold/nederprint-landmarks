@@ -1,0 +1,61 @@
+{
+  "name": "Kantoor Koningskade 4",
+  "file": "koningskade-4.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81504,
+    456077
+  ],
+  "xAxis": [
+    0.8995577789551803,
+    0.43680178836770217
+  ],
+  "groundNap": 0.85,
+  "groundHeight": 44.27,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000302196"
+  ],
+  "description": "Voormalig kantoor van Rijkswaterstaat aan de Koningskade 4 bij het Malieveld (1967–1970, sinds 2019 onder meer de Nederlandse Emissieautoriteit): toren van 39,8 × 29,0 m tot NAP +63,05 m met een vensterraster op een stramien van 1,8 m (begane grond, 16 kantoorlagen en een kroonverdieping met hoge smalle vakken), daarop een teruggezette installatieopbouw tot +67,28 m met twee liftopbouwen tot +64,9 m en een schoorsteenbundel tot +70,5 m; aan de noordoostkant een laagbouw van 88,4 × 15,6 m tot +23,95 m met een vensterraster per laag, een ronde trommel tot +29,75 m, een installatiekast tot +28,15 m en een verdiepte glazen strook langs de oostrand, en een tussenlid tot +23,0 m met een laag entreedeel. Contour uit de BAG, hoogtes uit het AHN-DSM en de 3D BAG. Oorsprong in het hart van de toren, X-as langs de zuidoostgevel (25,9° op RD-oost). Verdiepingshoogtes, vensterraster, de diepte van de glazen strook en de schoorsteenbundel als één blok zijn geschat; het gebouw heeft geen eigen naam en staat niet in de hoogbouwlijst van Den Haag.",
+  "realWorld": {
+    "groundNapM": 0.85,
+    "gardenNapM": 2.45,
+    "towerRoofNapM": 63.05,
+    "towerPlantNapM": 67.28,
+    "liftHeadsNapM": 64.9,
+    "chimneyNapM": 70.5,
+    "wingRoofNapM": 23.95,
+    "linkRoofNapM": 23,
+    "drumNapM": 29.75,
+    "wingPlantNapM": 28.15,
+    "towerPlanM": [
+      39.76,
+      28.99
+    ],
+    "wingPlanM": [
+      15.56,
+      88.39
+    ],
+    "floors": {
+      "tower": 18,
+      "wing": 6
+    },
+    "storeyHeightM": 3.2,
+    "facadePitchM": 1.8,
+    "facadeAngleDegrees": 25.9,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000302196 (bouwjaar 1968), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG (LoD2.2, AHN5 2023)",
+    "https://skyscraperpage.com/b8339",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://commons.wikimedia.org/wiki/File:Hoofdkantoor_Nederlandse_Emissieautorieit.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fontein_Joop_Beljon_Koningskade-4_Den_Haag_zijaanzicht.jpg",
+    "https://commons.wikimedia.org/wiki/File:Denhaag_kunstwerk_objectengroep.jpg"
+  ],
+  "printFiles": [
+    "koningskade-4-1-1000.stl"
+  ]
+}
