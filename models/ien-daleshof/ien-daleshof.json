@@ -1,0 +1,55 @@
+{
+  "name": "Parktoren",
+  "file": "ien-daleshof.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    96977,
+    439168
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": -6.2,
+  "groundHeight": 37.25,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000753214"
+  ],
+  "description": "Parktoren aan het Ien Daleshof (Prinsenland, Prins Alexander) aan de noordrand van het Prinsenpark: baksteentoren op de BAG-contour met een bolle zuidgevel, hoofdtoren tot NAP +69,95 m, westelijke strook en noordoostvleugel tot +60,97 m, noordwestvleugel tot +55,0 m en installatiekasten tot +72,38 m (dakvlakken uit de 3D BAG, AHN5). Glazen plint van twee lagen (7,3 m) 1,2 m achter de bakstenen tafel met witte kolommen, onder de noordoostvleugel 2,5 m diep met twee hoekkolommen; op de zuidgevel een stapel grote balkons tot de kroon op +61 m, een lisene en een smalle stapel kleine balkons, glasbanden op de glazen delen, loggia's in de zuidgevel van de noordoostvleugel en blinde vensters in de bakstenen gevels. Oorsprong in het hart van de BAG-contour, X-as naar RD-oost. Laaghoogte, balkondiepte, vensterraster en kolomafstand zijn geschat uit foto's; de taak noemde het gebouw naar de straat (Ien Daleshof).",
+  "realWorld": {
+    "groundNapM": -6.2,
+    "roofNapM": 69.95,
+    "wingNapM": 60.97,
+    "northWestWingNapM": 55,
+    "plantNapM": [
+      72.38,
+      71.51,
+      71
+    ],
+    "heightAboveGroundM": 76.15,
+    "floors": {
+      "plinth": 2,
+      "residential": 22
+    },
+    "plinthHeightM": 7.3,
+    "storeyHeightM": 3.05,
+    "balconyDepthM": {
+      "west": 2,
+      "east": 1.4
+    },
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000753214 (bouwjaar 2009, Ien Daleshof), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000753214 (3D BAG LoD2.2, AHN5 2023, TU Delft/3DGI CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Rotterdam (Parktoren, 76 m, 24 verdiepingen, 2009)",
+    "https://commons.wikimedia.org/wiki/File:Parktoren_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Parktoren_Rotterdam"
+  ],
+  "printFiles": [
+    "ien-daleshof-1-1000.stl"
+  ]
+}
