@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Zuidlaren",
+  "file": "watertoren-zuidlaren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    241219.18,
+    567344.79
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1730100000012721"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +7,8 m), assen in RD-richting. Plint van 6,1 m, voet met rondboogvensters tot 4,8 m, slanke schacht van 5,0 m met vensters langs de trap tot 19,2 m, boogfries en reservoir van 5,7 m tot 24,55 m, kroonlijst van 6,3 m met holle onderkant tot 26,1 m, lage kegel tot 28,3 m en een vierkant dakhuisje tot 29,4 m. De toren helt 0,85 m over naar het zuidzuidoosten, zoals in het AHN. Maten uit de RCE-foto en het AHN.",
+  "realWorld": {
+    "publishedHeightM": 32,
+    "ahnGroundNapM": 7.77,
+    "ahnTopNapM": 37.22,
+    "bagFootDiameterM": 7,
+    "plinthDiameterM": 6.1,
+    "shaftDiameterM": 5,
+    "tankDiameterM": 5.74,
+    "corniceDiameterM": 6.26,
+    "corniceM": 26.1,
+    "roofHouseTopM": 29.4,
+    "leanAtRoofM": [
+      0.3,
+      -0.8
+    ],
+    "photoScalePxPerM": 45,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Zuidlaren)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510918",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_overzicht_slanke_ronde_watertoren_met_een_reservoir_op_uitkragend_boogfries_-_Zuidlaren_-_20321989_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Zuidlaren_Watertoren_Dennenoord.JPG",
+    "https://commons.wikimedia.org/wiki/File:20191030_Watertoren1_Dennenoord.jpg (dakhuisje)",
+    "PDOK BAG-pand 1730100000012721, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-zuidlaren-1-1000.stl"
+  ]
+}
