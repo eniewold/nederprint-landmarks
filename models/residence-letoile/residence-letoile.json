@@ -1,0 +1,57 @@
+{
+  "name": "Résidence L'Étoile",
+  "file": "residence-letoile.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120353.1,
+    482775
+  ],
+  "xAxis": [
+    0.9999813422410571,
+    -0.006108614390678361
+  ],
+  "groundNap": -0.65,
+  "groundHeight": 42.4,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012092125"
+  ],
+  "description": "Résidence L'Étoile aan de Van Leijenberghlaan bij het Gelderlandplein (Buitenveldert): beige schijf van 11,4 × 23,6 m tot NAP +67,95 m met een dakopbouw tot +69,65 m, de penthouse aan de noordkop tot +71,2 m en een installatiekast tot +70,3 m; aan weerszijden vleugels die in drie stappen naar buiten springen en lager eindigen (+65,0, +62,3 en de glazen erkers op de buitenste stap +59,2), in beide zuidelijke binnenhoeken een balkonstapel tot +59,2 m met per laag een open balkon en een kraag onder 45°, een vensterraster per laag, een verticale naad in de kopgevels en de ingang onder de oostelijke erker. Contour uit de BAG, hoogtes uit de 3D BAG (AHN5) en het AHN-DSM. Oorsprong in het hart van de schijf, X-as langs de kopgevels (-0,35° op RD-oost). Verdiepingshoogte, vensterraster, de erkers aan de westkant, de naad en de ingang zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.65,
+    "slabNapM": 67.95,
+    "spineNapM": 69.65,
+    "penthouseNapM": 71.2,
+    "plantNapM": 70.3,
+    "wingNapM": [
+      65,
+      62.3,
+      59.2
+    ],
+    "balconyStackNapM": 59.2,
+    "slabPlanM": [
+      11.44,
+      23.61
+    ],
+    "footprintM": [
+      24.84,
+      23.61
+    ],
+    "floors": 23,
+    "storeyHeightM": 3,
+    "facadeAngleDegrees": -0.35,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012092125 (bouwjaar 1997, Van Leijenberghlaan 20–84), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:Van_Leijenberghlaan_20-84.jpg",
+    "https://commons.wikimedia.org/wiki/File:Winkelcentrum_Gelderlandplein,_noordgevel_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:Gelderlandplein_-_panoramio.jpg"
+  ],
+  "printFiles": [
+    "residence-letoile-1-1000.stl"
+  ]
+}
