@@ -1,0 +1,49 @@
+{
+  "name": "Pharos",
+  "file": "pharos-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79235.03,
+    451777.65
+  ],
+  "xAxis": [
+    0.759271,
+    0.650774
+  ],
+  "groundNap": 0.35,
+  "groundHeight": 43.81,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000208808"
+  ],
+  "description": "Pharos aan de Loevesteinlaan en de Melis Stokelaan (Escamp, DOK architecten, 2009): woontoren van 25 lagen met een kern van 21,6 × 18,1 m tot NAP +72,5 m, aan de noordwest- en zuidoostkant zones van 3 m tot +66,5 m met per laag twee balkons en glazen erkers aan de uiteinden, op de lagen 6–11 vier hoekstapels met balkons tot +34,0 m die 4,2–4,5 m uitkragen boven schuine voeten (op het maaiveld even breed als de uitkraging, 15,8 m hoog), een balkonstapel in de zuidwestgevel, een glazen entreestrook in de noordoostgevel, twee installatiekasten tot +75,2 m, een liftopbouw tot +76,0 m en een mast tot +80,3 m (verdikt tot 1,0 m). Hoogtes uit de 3D BAG (AHN4), plattegrond uit de 3D BAG en het AHN-DSM. Oorsprong in het hart van de kern, X-as langs de lange gevels naar het noordoosten (40,6° op RD-oost). Verdiepingshoogte, vensterraster, balkons, de plaats van de voeten en de kragen onder de uitkragingen zijn geschat uit foto's; de ondergrondse garage onder het grasdek binnen de BAG-contour is niet gemodelleerd.",
+  "realWorld": {
+    "groundNapM": 0.35,
+    "geoidM": 43.46,
+    "roofNapM": 72.5,
+    "roofAboveGroundM3dBag70p": 72.6,
+    "stripNapM": 66.5,
+    "cornerStackNapM": 34,
+    "plantNapM": 75.2,
+    "liftNapM": 76,
+    "mastTopNapM": 80.3,
+    "corePlanM": [
+      21.6,
+      18.1
+    ],
+    "floors": 25,
+    "storeyHeightM": 2.84,
+    "facadeAngleDegrees": 40.6,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000208808 (bouwjaar 2009), 3D BAG LoD2.2 (AHN4, 2020), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Den_Haag",
+    "https://dokarchitecten.nl/en/project/pharos-den-haag"
+  ],
+  "printFiles": [
+    "pharos-den-haag-1-1000.stl"
+  ]
+}
