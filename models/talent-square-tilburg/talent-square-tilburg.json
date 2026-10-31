@@ -1,0 +1,53 @@
+{
+  "name": "High Lane",
+  "file": "talent-square-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133339.85,
+    396950.44
+  ],
+  "xAxis": [
+    0.990652851696501,
+    -0.13640721177998827
+  ],
+  "groundNap": 13.15,
+  "groundHeight": 56.97,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000815266"
+  ],
+  "description": "Woontoren High Lane aan Talent Square (Spoorzone Tilburg, 2023, HUB architecten): rechthoekige toren van 29,8 × 18,8 m op de BAG-contour tot NAP +83,02 m (69,9 m boven het laagste maaiveld van +13,15 m) met een dakrand van 0,9 m tot +84,15 m en een installatie- en liftopbouw tot +84,4 m; gevels met een raster van acht traveeën op de lange en vijf op de korte zijden, per woonlaag een venster als blinde nis, een hogere begane grond met brede ramen en aan het binnenhof (zuidzijde) een teruggelegen hal over twee traveeën. Alle hoogtes uit de 3D BAG (AHN5, 2024), want het PDOK-AHN is van vóór de oplevering. Oorsprong midden in de toren, X-as langs de zuidgevel (-7,84° op RD-oost). Verdiepingshoogte, vloerpeil van de begane grond, vensterafmetingen, de hal en de dakrand buiten de noordgevel zijn geschat; het lage L-blok, het glazen tussenlid en de entreepergola horen bij het complex maar staan op andere panden en blijven PDOK.",
+  "realWorld": {
+    "groundNapM": 13.15,
+    "groundFloorNapM": 14.45,
+    "roofNapM": 83.02,
+    "parapetNapM": 84.15,
+    "plantNapM": 84.4,
+    "heightAboveGroundM": 69.91,
+    "towerPlanM": [
+      29.78,
+      18.84
+    ],
+    "floors": 23,
+    "groundFloorM": 3.9,
+    "storeyHeightM": 2.92,
+    "baysLongShort": [
+      8,
+      5
+    ],
+    "facadeAngleDegrees": -7.84,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0855100000815266 (bouwjaar 2023), actuele orthoHR, AHN-DTM 0,5 m",
+    "3D BAG LoD2.2 (AHN5, 2024): https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000815266",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Tilburg",
+    "https://www.hubarchitecten.eu/en/projects/woontoren-tilburg",
+    "https://www.vandevenbv.nl/nl/projecten/high-lane"
+  ],
+  "printFiles": [
+    "talent-square-tilburg-1-1000.stl"
+  ]
+}
