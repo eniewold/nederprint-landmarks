@@ -1,0 +1,63 @@
+{
+  "name": "Watertoren Bolsward",
+  "file": "watertoren-bolsward.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    162941.65,
+    564082.56
+  ],
+  "xAxis": [
+    0.99959,
+    0.02879
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0064100000129055"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-contour op maaiveld (NAP +0,5 m), +X naar het smalle vlak op 1,65 graden (oost). Onregelmatige betonnen achthoek met brede vlakken van 5,3 m en smalle van 3,3 m (9,9 bij 10,8 m over de vlakken): voetrand, schacht 0,2 m ingesprongen tot de band met schuine onderkant op 21 m, bovendeel met vensterstrook tot de dakrand op 35 m en een koperen achtzijdige kap tot 37,3 m. Deur in het brede vlak naar het noordwesten. Maten uit BAG, AHN, Wikipedia en foto's.",
+  "realWorld": {
+    "publishedHeightM": 37.4,
+    "reservoirsM3": [
+      200,
+      200
+    ],
+    "ahnGroundNapM": 0.49,
+    "ahnTopNapM": 37.68,
+    "acrossWideFacesM": 9.9,
+    "acrossNarrowFacesM": 10.78,
+    "shaftInsetM": 0.2,
+    "bandM": 21.6,
+    "eaveM": 35,
+    "modelTopM": 37.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bolsward)",
+    "https://commons.wikimedia.org/wiki/File:20190821_Bolsward_watertoren2.jpg (frontale foto, hoogtes, deur)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Bolsward_Industrieel_Erfgoed_in_Beeld,_18-03-1996,_signatuur_54992.jpg (breedte boven en onder de band)",
+    "PDOK BAG-panden 0064100000129055 en 0064100000129086, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-bolsward-1-1000.stl"
+  ]
+}
