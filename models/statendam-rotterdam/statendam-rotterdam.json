@@ -1,0 +1,49 @@
+{
+  "name": "De Statendam",
+  "file": "statendam-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93135.84,
+    437382.75
+  ],
+  "xAxis": [
+    0.9238795325112867,
+    0.3826834323650898
+  ],
+  "groundNap": 1.3,
+  "groundHeight": 44.83,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000754175"
+  ],
+  "description": "De Statendam aan de Botersloot (Hans Kollhoff, 2009): vierkante toren van 28,1 × 27,9 m op de BAG-contour tot de kroonlijst op NAP +65,0 m, met een grijze plint van drie lagen waarvan de hoeken op de begane grond 5,7 m zijn afgeschuind onder een schuin vlak van 46°, een stenen band op +10,5 m, per gevel twee bakstenen vleugels met elk een erker van 0,6 m en een grijze middenstrook die 0,4 m terugligt, en een kroonlijst die 0,4 m uitsteekt. Daarboven een mansardekap tot het platte dak op +74,48 m met een lichthof tot +71,86 m en per gevel twee topgevels met een zadeldak onder 57,5° (nok +74,75 m, afdekking +75,3 m) en een boogvenster, die bij elke hoek in een kilgoot samenkomen. Dakvlakken uit de 3D BAG (LoD2.2) en het AHN-DSM, gevelindeling uit foto's. Oorsprong in het hart van de BAG-contour, X-as langs de gevels (22,5° op RD-oost). Verdiepingshoogte, vensterraster, erkers, terugligging van de middenstrook en de helling onder de afgeschuinde hoeken zijn geschat.",
+  "realWorld": {
+    "groundNapM": 1.3,
+    "corniceNapM": 65,
+    "flatRoofNapM": 74.48,
+    "gableRidgeNapM": 74.75,
+    "gableTipNapM": 75.3,
+    "lightWellNapM": 71.86,
+    "gablePitchDegrees": 57.5,
+    "planM": [
+      28.06,
+      27.86
+    ],
+    "floors": 22,
+    "storeyHeightM": 2.817,
+    "facadeAngleDegrees": 22.5,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000754175 (bouwjaar 2009), actuele orthoHR, AHN-DSM en -DTM 0,5 m; 3D BAG LoD2.2 (AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/De_Statendam",
+    "https://commons.wikimedia.org/wiki/File:De_Statendam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_De_Statendam_Rotterdam.jpg",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Statendam_-_Binnenrotte_-_City_of_Rotterdam_(22159316163).jpg"
+  ],
+  "printFiles": [
+    "statendam-rotterdam-1-1000.stl"
+  ]
+}
