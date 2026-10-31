@@ -1,0 +1,60 @@
+{
+  "name": "Europlaza",
+  "file": "europlaza-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124915,
+    480455
+  ],
+  "xAxis": [
+    0.960779,
+    -0.277315
+  ],
+  "groundNap": -1.9,
+  "groundHeight": 41.1,
+  "groundOffsetMetres": -0.2,
+  "groundSamplePoints": [
+    [
+      23,
+      -8
+    ],
+    [
+      23,
+      5
+    ],
+    [
+      23,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012088788"
+  ],
+  "description": "Europlaza aan de Hoogoorddreef (Amsterdam-Zuidoost, 1991–1992, ZZ+P): een vierkant van circa 31 × 31 m dat diagonaal is gedeeld in een natuurstenen schijf tot NAP +55,7 m met installatiestroken tot +57,5 m en twee kolommen ronde vensters in de spitse zuidwestpunt, en een getrapt blok met lintvensters: de oostelijke strook tot +28,4 m, daarboven een loggialaag met kolommen en vijf lagen tot +48,2 m en een teruggezette glazen opbouw tot +51,5 m, met aan beide uiteinden een terugliggende naad tussen schijf en blok. Contour uit de BAG, hoogtes uit de 3D BAG (LoD2.2) en het AHN-DSM. Oorsprong midden in het vierkant, X-as langs de zuidgevel (-16,1° op RD-oost). Verdiepingshoogte, vensterbanden, loggia en de gevels aan het water zijn geschat; de taak noemde het gebouw Dreeftoren, maar dat is een ander pand aan de Haaksbergweg.",
+  "realWorld": {
+    "groundNapM": -1.9,
+    "slabNapM": 55.68,
+    "plantNapM": 57.52,
+    "penthouseNapM": 51.5,
+    "upperBlockNapM": 48.17,
+    "lowerBlockNapM": 28.39,
+    "planM": [
+      30.84,
+      30.84
+    ],
+    "floors": 16,
+    "storeyHeightM": 3.29,
+    "facadeAngleDegrees": -16.1,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012088788 (bouwjaar 1991, Hoogoorddreef 54–58), 3D BAG LoD2.2 (AHN5 2023), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://www.pss-archi.eu/immeubles/NL-363-68916.html",
+    "https://commons.wikimedia.org/wiki/File:Europlaza_Amsterdam.jpg"
+  ],
+  "printFiles": [
+    "europlaza-amsterdam-1-1000.stl"
+  ]
+}
