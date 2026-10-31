@@ -1,0 +1,78 @@
+{
+  "name": "De Hoge Maas",
+  "file": "hoge-maas.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    91550.51,
+    434754.45
+  ],
+  "xAxis": [
+    0.66,
+    0.75126
+  ],
+  "groundNap": 5.5,
+  "groundHeight": 49,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -14.85,
+      9.9
+    ],
+    [
+      -14.85,
+      -10.1
+    ],
+    [
+      10.15,
+      19.9
+    ],
+    [
+      10.15,
+      -19.1
+    ],
+    [
+      23.15,
+      -0.1
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000616618"
+  ],
+  "description": "Woontoren De Hoge Maas aan het Charloisse Hoofd (Benthem Crouwel, 2001) op een kruisvormige plattegrond: de brede arm (29,6 x 16 m) tot NAP +74,9 m met een dakrand tot +76,3 m en een dakopbouw tot +80,4 m, de smalle dwarsarm (8,3 m breed, 35 m lang, schuine koppen) tot +64,1 m, daarboven aan beide kanten drie lagen balkons aan schoren tot +72,15 m, hoekbalkonstapels op de rivierkop (tot +72,15 m) en op de zuidwestelijke hoeken van de smalle arm (tot +61,15 m), een erker aan de zuidwestkop en een glazen paviljoen in een boog aan de rivierkant tot +8,75 m. Vensters per laag als blinde nissen: smal op de donkere gevels, breed op de glazen koppen. Oorsprong op de kruising van de armen, X-as langs de brede arm naar de rivier (noordoost); z = 0 is het sokkeldek op NAP +5,5 m. Hoogtes uit de 3D BAG (AHN5) en het AHN-DSM; verdiepingshoogte, vensterraster, uitsteek van de balkons en de hoogte van de erker zijn geschat; de sokkel met de half verdiepte garage zit in het maaiveld en is niet gemodelleerd.",
+  "realWorld": {
+    "groundNapM": 5.5,
+    "streetNapM": 3.9,
+    "roofNapM": 74.9,
+    "parapetNapM": 76.3,
+    "roofBoxNapM": 80.4,
+    "narrowArmNapM": 64.1,
+    "upperBalconiesNapM": 72.15,
+    "narrowCornerBalconiesNapM": 61.15,
+    "pavilionNapM": 8.75,
+    "bayNapM": 50.15,
+    "wideArmM": [
+      29.6,
+      16
+    ],
+    "narrowArmM": [
+      8.3,
+      35
+    ],
+    "floors": 24,
+    "groundFloorM": 3.4,
+    "storeyHeightM": 2.75,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000616618 (bouwjaar 2001), AHN-DSM en -DTM 0,5 m, actuele orthoHR",
+    "3D BAG NL.IMBAG.Pand.0599100000616618 (LoD2.2, puntwolk AHN5 2022)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Rotterdam",
+    "https://rotterdamwoont.nl/app/uploads/2018/01/5.2001.1-projectblad-Hoge-Maas-2.pdf",
+    "https://commons.wikimedia.org/wiki/Category:De_Hoge_Maas_(Rotterdam)"
+  ],
+  "printFiles": [
+    "hoge-maas-1-1000.stl"
+  ]
+}
