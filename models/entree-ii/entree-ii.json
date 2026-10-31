@@ -1,0 +1,66 @@
+{
+  "name": "De Entree II",
+  "file": "entree-ii.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124574,
+    480312
+  ],
+  "xAxis": [
+    0.8748734329603797,
+    0.48435160400283606
+  ],
+  "groundNap": -3.3,
+  "groundHeight": 39.7,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -17,
+      0
+    ],
+    [
+      1,
+      -20
+    ],
+    [
+      21,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012138124"
+  ],
+  "description": "Kantoortoren De Entree II (2002) bij station Bijlmer ArenA: glazen schijf van 27,5 × 32,2 m op de BAG-dakcontour met afgeronde hoeken aan de zuidoostkop tot NAP +65,26 m, per laag een glasband (16 kantoorlagen, een lichte vloerrand per twee lagen), een teruggezette installatiekast tot +69,29 m, twee groepen koelers tot +67,65 m en een witte kern aan de noordwestkop tot +70,4 m. De schijf staat op een open onderbouw tot +4,8 m: rondom een terugligging met een plafond onder 45° en aan de zuidoostkop twee vrijstaande kolommen (BGT); aan de noordoostgevel een entreepaviljoen tot +2,2 m. Hoogtes uit de 3D BAG (AHN5). Model-z 0 is het plein op NAP -3,3 m; de kern en de noordwestkop lopen door tot onder de verdiepte patio (NAP -6,8 m), die als maaiveld in het PDOK-terrein blijft. Oorsprong bij het hart van de schijf, X-as langs de zuidoostkop (28,97° op RD-oost). Verdiepingshoogte, hoogte van de onderbouw, diepte van de terugligging en de glasbanden zijn geschat uit een foto.",
+  "realWorld": {
+    "groundNapM": -3.3,
+    "patioNapM": -6.8,
+    "roofNapM": 65.26,
+    "plantNapM": 69.29,
+    "coolersNapM": 67.65,
+    "coreNapM": 70.4,
+    "pavilionNapM": 2.2,
+    "slabSoffitAboveGroundM": 8.1,
+    "slabPlanM": [
+      27.46,
+      32.15
+    ],
+    "floors": {
+      "offices": 16,
+      "undercroft": 2
+    },
+    "storeyHeightM": 3.75,
+    "facadeAngleDegrees": 28.97,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012138124 (bouwjaar 2002, De Entree 230–260), BGT pand, erf en scheiding (kolommen, patio), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG NL.IMBAG.Pand.0363100012138124 (LoD2.2, AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Amsterdam",
+    "https://commons.wikimedia.org/wiki/File:Kantoorgebouw_De_Entree_II.jpg"
+  ],
+  "printFiles": [
+    "entree-ii-1-1000.stl"
+  ]
+}
