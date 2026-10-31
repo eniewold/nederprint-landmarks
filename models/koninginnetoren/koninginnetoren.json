@@ -1,0 +1,54 @@
+{
+  "name": "Koninginnetoren",
+  "file": "koninginnetoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93792.49,
+    438233.65
+  ],
+  "xAxis": [
+    0.992652,
+    -0.121003
+  ],
+  "groundNap": -0.2,
+  "groundHeight": 43.3,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000611391"
+  ],
+  "description": "Koninginnetoren aan de Boezemsingel (2001, Jorissen Simonetti): bakstenen woontoren van 22,3 × 19,7 m met afgeschuinde hoeken op de BAG-contour tot een dak op NAP +74,3 m, met een plint van 5,5 m met hoge ramen, 24 woonlagen met een vensterraster als blinde nissen, teruggelegen serrestroken (twee in de noord- en zuidgevel, één in de oost- en westgevel, 1,2 m diep, met een glasband per laag) die op +71,5 eindigen zodat de kroon gekarteld is, groene kroonkaders tot +74,8 m (de middenkaders noord en zuid met een holle bovenrand van +75,1 naar +74,5) en een dakopbouw tot +78,0 m. Tot +40,4 m volgt de noordoosthoek de BAG tegen het kantoor van 1974. Hoogtes uit de 3D BAG (AHN5) en het AHN-DSM, gevelindeling uit foto's. Oorsprong in het hart van de BAG-contour, X-as langs de zuidgevel (-6,95° op RD-oost). Verdiepingshoogte, vensterraster, de diepte van de stroken en de strook in de oost- en westgevel (alleen uit de luchtfoto) zijn geschat.",
+  "realWorld": {
+    "groundNapM": -0.2,
+    "roofNapM": 74.3,
+    "crownFrameNapM": 74.8,
+    "crownCentreFrameNapM": [
+      74.5,
+      75.1
+    ],
+    "stripTopNapM": 71.5,
+    "topBoxNapM": 78,
+    "neighbourRoofNapM": 40.4,
+    "planM": [
+      22.32,
+      19.67
+    ],
+    "chamferM": 1.95,
+    "floors": 26,
+    "plinthM": 5.5,
+    "storeyHeightM": 2.8,
+    "facadeAngleDegrees": -6.95,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000611391 (bouwjaar 2001) en 0599100000611372 (1974), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG NL.IMBAG.Pand.0599100000611391 (LoD2.2, puntwolk AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Koninginnetoren",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_toren_koninginnetoren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vredenoordbrug_-_Crooswijk_-_Rotterdam_-_View_from_the_bridge_towards_the_Koninginnetoren_in_the_north.jpg"
+  ],
+  "printFiles": [
+    "koninginnetoren-1-1000.stl"
+  ]
+}
