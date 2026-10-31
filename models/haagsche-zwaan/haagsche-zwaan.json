@@ -1,0 +1,55 @@
+{
+  "name": "De Haagsche Zwaan",
+  "file": "haagsche-zwaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    82845,
+    454910
+  ],
+  "xAxis": [
+    0.8146219672274693,
+    0.5799922848714869
+  ],
+  "groundNap": 0.7,
+  "groundHeight": 44.22,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -30,
+      -12.5
+    ],
+    [
+      0,
+      -12.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000250152"
+  ],
+  "description": "Kantoortoren De Haagsche Zwaan (Schenkkade 50, 2010, ZZDP Architecten) op de BAG-contour, een trapezium met een rechte zuidoostgevel aan de Schenkkade en een noordwestgevel 3,4° uit de as. De toren loopt van NAP +12,0 m (bovenkant plint) tot het dak op +74,52 m (3D BAG) en helt over de verdiepte Utrechtsebaan: de noordoostkop schuift 0,18 m per meter hoogte naar buiten tot de BAG-rand, 1,5 m boven de weg, de zuidwestgevel 0,12 m per meter. Op beide lange gevels een witte trekdiagonaal van de bovenhoek naar de entree die als schuine plaat naar het maaiveld loopt, met de glazen entree als nis eronder; de entreehal is een omgekeerde V tot u 22, daarachter een open doorgang onder de kop met kolommen van 1 m op de hoeken en een V onder het midden. Op het dak een installatiekast tot +76,43 m en een verdiepte installatieplaats; aan de zuidwestkant laagbouw tot +12,1 m met een dakopbouw. Gevelraster als blinde nissen per laag op stijlen van 1,8 m, op de plint en de laagbouw hoge sleuven op hetzelfde raster. Oorsprong midden op het torendak, X-as langs de lange gevels naar het noordoosten (35,45° op RD-oost). Geschat uit foto's: de helling van beide kopgevels, de hoogte van de plint en de onderkant van de toren, de lagen (17 boven de plint), de vorm van de entreehal, de kolommen, de diagonaal en het gevelraster.",
+  "realWorld": {
+    "groundNapM": 0.7,
+    "roofNapM": 74.52,
+    "roofBoxNapM": 76.43,
+    "lowWingNapM": 12.1,
+    "soffitNapM": 12,
+    "northEastLeanMPerM": 0.18,
+    "southWestLeanMPerM": 0.12,
+    "cantileverAboveSoffitM": 11.25,
+    "floorsAbovePlinth": 17,
+    "storeyHeightM": 3.678,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0518100000250152 (bouwjaar 2010), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000250152 (LoD2.2, puntwolk AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/De_Haagsche_Zwaan (73,5 m, 20 lagen, 12 m over de Utrechtsebaan)",
+    "https://architectures.jidipi.com/j00033257/en/haagsche-zwaan (ZZDP: taps uitkragende vorm, trekdiagonalen op de lange gevels, entree als omgekeerde V)",
+    "https://commons.wikimedia.org/wiki/Category:De_Haagsche_Zwaan (foto's vanaf de Schenkkade, de Utrechtsebaan en Bezuidenhout)"
+  ],
+  "printFiles": [
+    "haagsche-zwaan-1-1000.stl"
+  ]
+}
