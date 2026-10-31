@@ -1,0 +1,56 @@
+{
+  "name": "Hondsrugtoren",
+  "file": "hondsrugtoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    256503,
+    534525
+  ],
+  "xAxis": [
+    0.9963452961909064,
+    0.08541692313736747
+  ],
+  "groundNap": 22.3,
+  "groundHeight": 64.15,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000405358"
+  ],
+  "description": "Hondsrugtoren aan de Weerdingerstraat in Emmen (2021): hoofdmassa van 18,5 × 15 m tot NAP +79,6 m met een installatieopbouw tot +82,3 m en een liftopbouw tot +83,4 m; aan de west- en oostkant vleugels van 4,2 tot 4,8 m breed tot +75,45 m die op de zuidhoeken tot +68,4 m aflopen (dakterrassen), met loggia's in de twee lagen onder het vleugeldak; een blinde kern die 2,8 m uit de noordgevel en 1,75 m uit de zuidgevel steekt, met een rug van 1,5 m tot +82,3 m over de noordkern; vier balkonstapels (zuidhoeken tot +64,8 m, west- en oostgevel tot +55,0 m) met per laag een open balkon; een vensterraster per laag en een winkelpui op de begane grond; de lage uitbouw aan de zuid- en westkant tot +26,77 m met een strook tot +30,22 m voor de zuidkern. Contour uit de BAG, hoogtes uit het AHN-DSM (AHN4, 2022, na de oplevering) en de 3D BAG. Oorsprong in de hoofdmassa, X-as langs de lange gevels (4,9° op RD-oost). Verdiepingshoogte (begane grond 4,45 m, daarboven 3,2 m), vensterraster, loggiadiepte, balkondiepte en de onderkant van de balkonstapels zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 22.3,
+    "roofNapM": 79.6,
+    "installationNapM": 82.3,
+    "liftNapM": 83.4,
+    "wingNapM": [
+      75.45,
+      68.4
+    ],
+    "balconyStackNapM": {
+      "corners": 64.8,
+      "sides": 55
+    },
+    "plinthNapM": [
+      26.77,
+      30.22
+    ],
+    "floors": 17,
+    "groundFloorHeightM": 4.45,
+    "storeyHeightM": 3.2,
+    "facadeAngleDegrees": 4.9,
+    "heightAboveGroundM": 61.1,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0114100000405358 (bouwjaar 2021), actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4, opname 2022), 3D BAG LoD2.2 (https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0114100000405358, TU Delft/3DGI, CC BY 4.0)",
+    "https://nl.wikipedia.org/wiki/Hondsrugtoren",
+    "https://commons.wikimedia.org/wiki/File:Hondsrugtoren_Emmen_2021.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hondsrugtoren.jpg",
+    "NLGEO2018-geoïde (data/geoid in de webshop) voor groundHeight"
+  ],
+  "printFiles": [
+    "hondsrugtoren-1-1000.stl"
+  ]
+}
