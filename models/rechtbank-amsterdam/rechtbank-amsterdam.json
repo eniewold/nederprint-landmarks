@@ -1,0 +1,97 @@
+{
+  "name": "Rechtbank Amsterdam",
+  "file": "rechtbank-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119581.73,
+    483690.77
+  ],
+  "xAxis": [
+    0.9984698553882129,
+    0.055298715003526885
+  ],
+  "groundNap": 0.5,
+  "groundHeight": 43.54,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -5,
+      48
+    ],
+    [
+      25,
+      48
+    ],
+    [
+      48,
+      25
+    ],
+    [
+      48,
+      5
+    ],
+    [
+      -20,
+      -48
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012252557"
+  ],
+  "description": "Rechtbank Amsterdam aan de Parnassusweg (Zuidas, KAAN Architecten): twee in elkaar geschoven blokken van 43,2 × 65,7 m en 65,3 × 43,9 m tot NAP +50,75 m op de contour uit de 3D BAG en de BGT, met de open noordwest- en zuidoosthoek. In het dak een hof per blok (vloer +34,3 en +29,75 m) met lichtschachten tot het glasdak van de hal (+11,8 en +11,5 m) en een plantenbak; op het dak luchtbehandelingskasten. Buitengevels per laag als blinde nissen: drie rijen grote vensters, twee overgangslagen en vijf kantoorlagen met halve vensters; aan het plein een reuzenorde van pijlers van 1,0 m voor een 1,0 m teruggelegen glaspui tot +19,9 m, met daarvoor een entreeluifel van 19,9 × 3,1 m tot +4,4 m. Hoogtes uit het AHN4-DSM en de 3D BAG. Oorsprong in de binnenhoek aan het plein, X-as langs de zuidgevels (3,17° op RD-oost). Verdiepingshoogtes, het travee- en lamellenraster, de diepte van de pijlers en de dikte van de luifel zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "roofNapM": 50.75,
+    "courtyardFloorNapM": [
+      34.3,
+      29.75
+    ],
+    "lightWellNapM": [
+      11.8,
+      11.5
+    ],
+    "blocksM": [
+      [
+        43.2,
+        65.7
+      ],
+      [
+        65.3,
+        43.9
+      ]
+    ],
+    "courtyardsM": [
+      [
+        18.3,
+        29.2
+      ],
+      [
+        28.4,
+        17.8
+      ]
+    ],
+    "floors": {
+      "lower": 3,
+      "transition": 2,
+      "upper": 5
+    },
+    "bayM": 3.96,
+    "colonnadeTopM": 19.4,
+    "canopyTopNapM": 4.4,
+    "facadeAngleDegrees": 3.17,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012252557 (bouwjaar 2022), BGT-pand en -erf, actuele orthoHR, AHN4-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5, 2023)",
+    "https://nl.wikipedia.org/wiki/Rechtbank_Amsterdam",
+    "https://www.baunetzwissen.de/treppen/objekte/buero-gewerbe/gerichtsgebaeude-in-amsterdam-8231951",
+    "https://commons.wikimedia.org/wiki/File:2021_Rechtbank_Amsterdam,_Parnassusweg_280_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:2021_Rechtbank_Amsterdam,_Parnassusweg_280_(3).jpg",
+    "https://commons.wikimedia.org/wiki/File:2021_Love_or_generosity_(1).jpg"
+  ],
+  "printFiles": [
+    "rechtbank-amsterdam-1-1000.stl"
+  ]
+}
