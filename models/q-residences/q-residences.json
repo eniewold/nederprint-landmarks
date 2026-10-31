@@ -1,0 +1,67 @@
+{
+  "name": "Q Residences",
+  "file": "q-residences.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119614.9,
+    482272.6
+  ],
+  "xAxis": [
+    0.9999939076577904,
+    -0.003490651415223732
+  ],
+  "groundNap": -0.72,
+  "groundHeight": 42.34,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012089779"
+  ],
+  "description": "Q Residences aan de Buitenveldertselaan (Studio Gang en Bureau Rijnboutt, 2022): de toren Quartz op 21,8 × 35,4 m met hoeken van 3 m straal tot NAP +72,8 m met een installatie tot +74,0 m, een hoge begane grond met de pui achter de kolommen en 22 lagen loggia's tussen vinnen van 0,9 m, waarvan de diepte (0,4–1,2 m) diagonaal over de gevel golft; in de hoeken gebogen loggia's die per laag wisselen. Ten zuiden het blok Qube op de BAG-contour tot +30,2 m met een verhoogd middendeel tot +32,2 m en op elke vloer een vloerrand die 1,2 m uitsteekt met een ondervlak onder 45°. Hoogtes en de toren-plattegrond uit de 3D BAG (AHN5, 2023), want het AHN4 toont nog de bouwput. Oorsprong in het hart van de BAG-contour op het plein tussen de gebouwen, X-as langs de korte gevels (-0,2° op RD-oost). Verdiepingshoogtes, het traveeraster, de golf van de loggiadieptes, de hoekstraal en de uitsteek van de vloerranden van Qube zijn geschat uit foto's en de luchtfoto.",
+  "realWorld": {
+    "groundNapM": -0.72,
+    "quartzRoofNapM": 72.8,
+    "quartzPlantNapM": 73.99,
+    "quartzPlanM": [
+      21.73,
+      35.43
+    ],
+    "quartzCornerRadiusM": 3,
+    "quartzFloors": {
+      "ground": 5.4,
+      "upper": 22,
+      "storeyM": 3.096
+    },
+    "quartzBays": {
+      "long": 6,
+      "short": 3,
+      "finM": 0.9,
+      "loggiaDepthsM": [
+        0.4,
+        0.8,
+        1.2
+      ]
+    },
+    "qubeRoofNapM": 30.24,
+    "qubeRaisedRoofNapM": 32.18,
+    "qubeFloors": {
+      "ground": 4.5,
+      "upper": 8,
+      "storeyM": 3.307
+    },
+    "qubeSlabOverhangM": 1.2,
+    "facadeAngleDegrees": -0.2,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012089779 (bouwjaar 2022), actuele orthoHR, AHN-DTM 0,5 m; 3D BAG LoD2.2 (puntwolk AHN5, 2023); NLGEO2018",
+    "https://nl.wikipedia.org/wiki/Q_Residences",
+    "https://www.dezeen.com/2022/12/16/studio-gangs-q-residences-amsterdam/",
+    "https://studiogang.com/projects/amsterdam-tower/",
+    "https://commons.wikimedia.org/wiki/Category:Q_Residences"
+  ],
+  "printFiles": [
+    "q-residences-1-1000.stl"
+  ]
+}
