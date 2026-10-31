@@ -1,0 +1,63 @@
+{
+  "name": "Blaak 8",
+  "file": "stedin-blaak.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93240.81,
+    437122.82
+  ],
+  "xAxis": [
+    -0.748261,
+    -0.663404
+  ],
+  "groundNap": 3.9,
+  "groundHeight": 47.43,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000755012"
+  ],
+  "description": "Kantoortoren Blaak 8 (hoofdkantoor van Stedin) aan de Blaak bij de Oude Haven: sokkel van zes lagen tot NAP +24,85 m op de BAG-contour, waarvan de zuidwestgevel in één lijn met die van het lagere zuidoostelijke deel doorloopt; daarop een romp van 23,7 × 39,7 m tot +63,7 m die aan de westhoek tot 5,9 m over de sokkel uitkraagt, en een kop van drie lagen tot +74,33 m waarvan de gevel aan de Blaak gedraaid is, zodat aan de westhoek een driehoekig terras op +63,7 m blijft. Op het dak een koelerblok tot +75,94 m en een verdiepte installatiesleuf, op het lagere deel een installatiekast, drie tanks en twee lichtstraten. Per laag smalle staande vensters op een travee van 1,8 m als blinde nissen, met hier en daar een dicht paneel, en de ingang aan de Blaak. Hoogtes uit de 3D BAG (AHN5 2023). Oorsprong in het hart van de romp, X-as langs de gevel aan de Blaak naar de westhoek (221,56° op RD-oost), ingang aan -Y. Verdiepingshoogtes, vensterraster, de dichte panelen, de ingang en de vorm van de installaties zijn geschat; de taak noemde het gebouw 'Kantoor Stedin (Blaak 8)', de naam van het gebouw is Blaak 8.",
+  "realWorld": {
+    "groundNapM": 3.9,
+    "plinthNapM": 24.85,
+    "bodyNapM": 63.7,
+    "topNapM": 74.33,
+    "plantNapM": 75.94,
+    "roofWellNapM": [
+      70.78,
+      72.06,
+      73.52
+    ],
+    "podiumBoxNapM": 27.4,
+    "podiumTanksNapM": 28.42,
+    "rooflightNapM": 25.85,
+    "bodyM": [
+      23.75,
+      39.75
+    ],
+    "cantileverM": 6.01,
+    "topSetbackM": 5.58,
+    "floors": {
+      "plinth": 6,
+      "body": 11,
+      "top": 3
+    },
+    "windowPitchM": 1.8,
+    "facadeAngleDegrees": 221.56,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0599100000755012 (bouwjaar 2011), actuele orthoHR, AHN-DSM en -DTM 0,5 m",
+    "3D BAG LoD2.2 NL.IMBAG.Pand.0599100000755012 (puntwolk AHN5 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Rotterdam",
+    "https://divisare.com/projects/210530-group-a-ossip-van-duivenbode-blaak-8",
+    "https://www.pss-archi.eu/immeubles/NL-599-43079.html",
+    "https://commons.wikimedia.org/wiki/File:1503_Blaak_8,_Rotterdam_026.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kantoorgebouw_Blaak_8.jpg"
+  ],
+  "printFiles": [
+    "stedin-blaak-1-1000.stl"
+  ]
+}
