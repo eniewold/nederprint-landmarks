@@ -1,0 +1,61 @@
+{
+  "name": "Watertoren Troelstralaan Assen",
+  "file": "watertoren-assen-troelstralaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233082.07,
+    557060.25
+  ],
+  "xAxis": [
+    -0.887,
+    -0.462
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000027379"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour op maaiveld (NAP +10,9 m), ingang met glazen portaal en stalen trap naar -Y (noordnoordwest). Ronde schacht van glas tussen acht betonnen pilasters (5,84 m), kraag en kegelvormige bodem, gemetselde cilindrische tank van 12,7 m tot 28,8 m, terugliggende vensterband met zestien vensters onder een dakschijf op 31,2 m en een zeskantig dakhuisje tot 33,4 m. Maten uit BAG, AHN en een frontale RCE-foto; zonnepanelen en antenne weggelaten.",
+  "realWorld": {
+    "publishedHeightM": 34,
+    "reservoirM3": 550,
+    "ahnGroundNapM": 10.88,
+    "ahnHutTopNapM": 44.3,
+    "bagTankDiameterM": 12.7,
+    "shaftDiameterM": 5.84,
+    "tankWallTopM": 28.8,
+    "roofTopM": 31.2,
+    "modelTopM": 33.4,
+    "minimumPartM": 0.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Assen_Troelstralaan)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Assen_-_20412964_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_het_reservoir_-_Assen_-_20412958_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_entree_van_de_watertoren_-_Assen_-_20412959_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:AssenWatertoren2017a.jpg",
+    "PDOK BAG-pand 0106100000027379, AHN DSM/DTM 0,5 m en luchtfoto, 2026-10-31"
+  ],
+  "printFiles": [
+    "watertoren-assen-troelstralaan-1-1000.stl"
+  ]
+}
