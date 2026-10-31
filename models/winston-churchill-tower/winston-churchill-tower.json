@@ -1,0 +1,52 @@
+{
+  "name": "The Minister (voorheen Winston Churchill Tower)",
+  "file": "winston-churchill-tower.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81366.8,
+    450096
+  ],
+  "xAxis": [
+    0.8985643925091958,
+    0.43884169413876334
+  ],
+  "groundNap": 0.5,
+  "groundHeight": 43.9,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0603100000005840"
+  ],
+  "description": "The Minister, tot 2020 de Winston Churchill Tower (kantoortoren van 1971 bij station Rijswijk, in 2020–2022 door ZZDP Architecten getransformeerd tot woontoren): een onderste deel tot NAP +73,55 m met op de lange gevels drie erkerkolommen van twee vensters breed tussen vier kolommen gestapelde balkons die op +70,12 m eindigen, aan de noordoost- en oostkant 5,0 en 2,9 m dieper en in het midden van de westkop een balkonstapel; daarop drie nieuwe lagen die rondom 1,9–2,9 m terugliggen tot het hoofddak op +83,65 m, met in de bovenste laag dakterrassen op +80,06 m in de balkonkolommen zodat de erkers als tanden boven de kroon uitsteken; op het dak een installatiekast met zonnepanelen tot +87,31 m en een installatieframe tot +86,04 m. Vensters per laag als blinde nissen, balkons als open nissen van 1,6 m. Vormen en hoogtes uit de 3D BAG LoD2.2 (AHN5 2023; het AHN4-DSM is van vóór de transformatie). Oorsprong in het hart van de toren, X-as langs de lange gevels (26,03° op RD-oost). Verdiepingshoogte (3,43 m uit het hoogteverschil van erkers en balkonkolommen), venster- en balkonmaten, de gevelindeling van de oostkop en noordoosthelft en de ingangen zijn geschat.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "lowerTopNapM": 73.55,
+    "balconyTopNapM": 70.12,
+    "terraceNapM": 80.06,
+    "roofNapM": 83.65,
+    "plantBoxNapM": 87.31,
+    "plantFrameNapM": 86.04,
+    "storeys": {
+      "ground": 1,
+      "lower": 20,
+      "new": 3
+    },
+    "storeyHeightM": 3.43,
+    "bayColumnsLongFacade": 3,
+    "balconyColumnsLongFacade": 4,
+    "facadeAngleDegrees": 26.03,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0603100000005840, actuele orthoHR, AHN-DSM en -DTM 0,5 m (AHN4), 3D BAG LoD2.2 (AHN5, 2023)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Haaglanden",
+    "https://www.zzdp.nl/project/the-minister",
+    "https://stedenbouw.nl/en/?p=11248",
+    "https://skyscraperpage.com/b6548",
+    "https://commons.wikimedia.org/wiki/File:Churchill_Tower_Rijswijk_2020.jpg"
+  ],
+  "printFiles": [
+    "winston-churchill-tower-1-1000.stl"
+  ]
+}
