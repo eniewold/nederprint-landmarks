@@ -1,0 +1,56 @@
+{
+  "name": "Haasje Over",
+  "file": "veemstraat-strijp-s.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    159726.94,
+    384339.05
+  ],
+  "xAxis": [
+    0.4723,
+    0.8815
+  ],
+  "groundNap": 18.42,
+  "groundHeight": 62.34,
+  "groundOffsetMetres": -0.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100001026060",
+    "NL.IMBAG.Pand.0772100000303079"
+  ],
+  "description": "Haasje Over op Strijp-S (VMX Architects, 2021; in de werklijst 'Woontoren Veemstraat'): rode toren van 22,7 × 30,1 m op de BAG-contour tot NAP +91,51 m met 14 woonlagen van 3,65 m boven de arm, per travee van 7,5 m één verspringend venster als blinde nis, een rondom glazen gemeenschappelijke laag, een glazen band van twee lagen ter hoogte van de arm, een rode sokkel en een glazen begane grond tussen kolommen. Kroon tot +98,02 m: installatiekern 3 m achter de gevel, palen op de hoeken en traveelijnen en een paneelrand die 1,0 m buiten de gevel steekt met een onderkant onder 45°, met de opening rond de gevelinstallatie. Dubbele glazen arm (57,7 m, +30,2 tot +38,52 m) in U-vorm rond een patio die tot op het haldak open is, met dekken op +31,5 m aan beide koppen; daaronder een onderbouw 2 m teruggezet met een kraag onder 45°. De hal uit 1958 (pand 0772100000303079) wordt mee vervangen omdat de PDOK-reconstructie de arm bevat: blok tot +26,55 m met zes zaagtanden tot +28,6 m. Stalen vakwerkbrug (+52,4 tot +56,4 m) van de zuidwestgevel naar het dak van Anton. Oorsprong in het hart van de torencontour, X-as langs de armgevels (61,82° op RD-oost). Hoogtes uit AHN4 en 3D BAG; onderkant van de arm, lagenindeling, vensterpatroon, kroonopbouw, brughoogte en de hallevensters zijn geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 18.42,
+    "towerRoofNapM": 91.51,
+    "crownTopNapM": 98.02,
+    "armRoofNapM": 38.52,
+    "armBottomNapM": 30.2,
+    "patioDeckNapM": 31.5,
+    "hallRoofNapM": 26.55,
+    "sawtoothTopNapM": 28.6,
+    "bridgeNapM": [
+      52.4,
+      56.4
+    ],
+    "towerFootprintM": [
+      22.74,
+      30.1
+    ],
+    "armLengthM": 57.74,
+    "storeys": 19,
+    "storeyHeightM": 3.65,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG panden 0772100001026060 (2021) en 0772100000303079 (1958), actuele orthoHR, AHN4-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5 2024), PDOK 3D-gebouwtegels",
+    "https://nl.wikipedia.org/wiki/Lijst_van_hoogste_gebouwen_van_Eindhoven",
+    "https://divisare.com/projects/512191-vmx-architects-marcel-van-der-burg-haasje-over",
+    "https://commons.wikimedia.org/wiki/File:Woontoren_Haasje_Over_in_Eindhoven.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nieuwbouw_in_de_Eindhovense_wijk_Strijp-S.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haasje-2021.jpg"
+  ],
+  "printFiles": [
+    "veemstraat-strijp-s-1-1000.stl"
+  ]
+}
