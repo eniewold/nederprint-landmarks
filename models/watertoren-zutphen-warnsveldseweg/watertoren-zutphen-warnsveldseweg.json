@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren Warnsveldseweg Zutphen",
+  "file": "watertoren-zutphen-warnsveldseweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    210993.15,
+    461874.42
+  ],
+  "xAxis": [
+    0,
+    -1
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 52.52,
+  "groundSamplePoints": [
+    [
+      8.7,
+      0
+    ],
+    [
+      0,
+      8.7
+    ],
+    [
+      -8.7,
+      0
+    ],
+    [
+      0,
+      -8.7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0301100000014935"
+  ],
+  "description": "Oorsprong op het hart van de twaalfzijdige schacht op maaiveld (NAP +9,15 m), +X naar het zuidvlak met de balkons; vlakken op k·30 graden. Plint van 13,9 m over de vlakken tot 2,9 m, schacht verjongend van 13,4 naar 12,9 m tot de dakvoet op 39,4 m, verdiepte panelen met witte lateien, twaalf hoekvinnen, zes vinnen op consoles en zes hoge vensters, woonlagen met vensters, balkons en vensterstrook; gebolde twaalfzijdige koepel tot 46,05 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 46.2,
+    "reservoirM3": 600,
+    "ahnGroundNapM": 9.15,
+    "ahnTopNapM": 55.13,
+    "groundHeightEllipsoidM": 52.52,
+    "plinthAcrossFlatsM": 13.9,
+    "shaftFootAcrossFlatsM": 13.4,
+    "shaftTopAcrossFlatsM": 12.9,
+    "plinthTopM": 2.9,
+    "eaveM": 39.4,
+    "modelTopM": 46.05,
+    "photoScalePxPerM": 29.9,
+    "minimumPartM": 0.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Zutphen_Warnsveldseweg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523419",
+    "https://commons.wikimedia.org/wiki/File:Zutphen,_de_watertoren_RM523419_foto2_2014-03-10_15.02.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Zutphen,_de_watertoren_RM523419_IMG_3891_2020-03-31_14.00.jpg (zuidzijde)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Zutphen.jpg (koepel, vinnen en woonlagen)",
+    "https://commons.wikimedia.org/wiki/File:Zutphen_Wasserturm.jpg (oostzijde vanaf de Warnsveldseweg)",
+    "PDOK BAG-pand 0301100000014935, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-zutphen-warnsveldseweg-1-1000.stl"
+  ]
+}
