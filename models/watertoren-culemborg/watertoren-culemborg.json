@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren Culemborg",
+  "file": "watertoren-culemborg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    144398.55,
+    439979.09
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.2,
+      0
+    ],
+    [
+      -6.2,
+      0
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      0,
+      -6.2
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0216100000016390"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour op maaiveld aan de voet (NAP +2,70 m), assen in RD-richting. Rond basement van 8,5 m tot 7 m met acht lisenen, vensters en een deur naar het zuidwesten, bakstenen schacht verjongend van 7,8 tot 7,0 m met trapvensters, rondboogfries en kraaglijst tot 24,6 m, uitlopende stoel tot de onderste band op 26,35 m, reservoir van 9,2 m met golfaluminium tussen twee banden en een plat dak op 34,65 m binnen een rand tot 35 m. Maten uit BAG, AHN, luchtfoto en één foto.",
+  "realWorld": {
+    "publishedHeightM": 35,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 2.7,
+    "ahnRoofNapM": 37.36,
+    "bagPlinthDiameterM": 8.48,
+    "shaftDiameterM": [
+      7.8,
+      7
+    ],
+    "tankDiameterM": 9.2,
+    "bandDiameterM": 9.5,
+    "plinthM": 7,
+    "corniceM": 24.6,
+    "tankFootM": 26.35,
+    "roofM": 34.65,
+    "modelTopM": 35,
+    "photoCameraDistanceM": 58,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Culemborg)",
+    "https://commons.wikimedia.org/wiki/File:Culemborg_Watertoren.JPG (enige foto: opbouw, hoogtes en breedtes)",
+    "PDOK BAG-pand 0216100000016390, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-culemborg-1-1000.stl"
+  ]
+}
