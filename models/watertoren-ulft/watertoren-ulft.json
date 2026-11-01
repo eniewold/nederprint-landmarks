@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Ulft",
+  "file": "watertoren-ulft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    223450.26,
+    434748.43
+  ],
+  "xAxis": [
+    0.87965,
+    0.47562
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -4.5
+    ],
+    [
+      -3,
+      -5
+    ],
+    [
+      3,
+      -5
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 59.09,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1509100000186256"
+  ],
+  "description": "Oorsprong op het hart van de waterkamer in het AHN op het maaiveld van de binnenplaats (NAP +15,19 m), +X langs de gevel aan de binnenplaats (RD-richting 28,4 graden), -Y naar de binnenplaats. Vierkante schacht van 3,55 m met een rondboogvenster per zijde tot 17,0 m, hoekconsoles met gewelven tot de voetplaat op 18,95 m, waterkamer van 5,7 m met voetplaat en tandlijst, drie vensters per zijde, rondboogfries en kroonlijst van 6,2 m tot het platte dak op 25,2 m. De toren hoort bij BAG-pand 1509100000186256 (het hele Beltmancomplex); dat pand wordt vervangen en building:beltmancomplex is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder het torenblok.",
+  "realWorld": {
+    "built": 1913,
+    "ahnGroundNapM": 15.19,
+    "ahnTopNapM": 40.51,
+    "roofM": 25.2,
+    "shaftWidthM": 3.55,
+    "tankWidthM": 5.7,
+    "corniceWidthM": 6.2,
+    "consoleFootM": 17,
+    "tankFootM": 18.95,
+    "complexRoofNapM": 24.6,
+    "photoScalePxPerM": [
+      82.4,
+      44.3
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Ulft)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_het_waterreservoir_van_de_watertoren_-_Ulft_-_20530862_-_RCE.jpg (waterkamer, consoles, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Ulft_-_20530905_-_RCE.jpg (hele toren, hoogtes)",
+    "https://commons.wikimedia.org/wiki/File:2025-02-08_Water_tower_DRU_Ulft_ZvD_01.jpg (huidige staat, schachtvensters)",
+    "PDOK BAG-pand 1509100000186256, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "3DBAG (3DGI en TU Delft), pand NL.IMBAG.Pand.1509100000186256, LoD2.2-dakvlakken, CC BY 4.0, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-ulft-1-1000.stl"
+  ]
+}
