@@ -1,0 +1,71 @@
+{
+  "name": "Watertoren Stramproy",
+  "file": "watertoren-stramproy.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    178466.12,
+    356383.36
+  ],
+  "xAxis": [
+    0.8111,
+    -0.585
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -1.2,
+      -4.4
+    ],
+    [
+      1.2,
+      -4.4
+    ],
+    [
+      -1.2,
+      4.4
+    ],
+    [
+      1.2,
+      4.4
+    ]
+  ],
+  "groundHeight": 76.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0988100000025603"
+  ],
+  "description": "Oorsprong op het hart van de BAG-rechthoek van de toren op maaiveld (NAP +32,17 m), +Y naar achteren (54,2 graden in RD), de pleinzijde op -Y. Vierkante bakstenen toren van 4,40 × 5,78 m tussen twee woonvleugels, met een deur en drie vensters boven elkaar, een kroonlijst op 10,4 tot 10,85 m en een afgeknot schilddak van circa 63 graden tot een plat bovenvlak op 14,0 m; daarnaast de woning uit hetzelfde BAG-pand met een zadeldak (nok 10,1 m). Maten uit AHN, BAG, 3D BAG en een Commons-foto.",
+  "realWorld": {
+    "renovatedAndIncorporated": 2004,
+    "ahnGroundNapM": 32.17,
+    "ahnTopNapM": 46.32,
+    "towerWidthM": 4.4,
+    "towerDepthM": 5.78,
+    "wallTopM": 10.4,
+    "eaveM": 10.85,
+    "flatTopM": [
+      1.7,
+      3.1
+    ],
+    "modelTopM": 14,
+    "houseRidgeM": 10.1,
+    "houseEavesM": [
+      8.1,
+      4.15
+    ],
+    "photoScalePxPerM": 43,
+    "geoidNlgeo2018M": 44.56,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Stramproy)",
+    "https://commons.wikimedia.org/wiki/File:Stramproy_Watertoren_7544.JPG (pleinzijde, maten)",
+    "PDOK BAG-pand 0988100000025603, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "3D BAG (LoD2.2) van panden 0988100000025603 en 0988100000025604: dakvlak, nok en goten",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,56 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-stramproy-1-1000.stl"
+  ]
+}
