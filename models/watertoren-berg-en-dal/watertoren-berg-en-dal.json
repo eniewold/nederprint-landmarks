@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren Berg en Dal",
+  "file": "watertoren-berg-en-dal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191564.2,
+    425604.29
+  ],
+  "xAxis": [
+    0.9732,
+    0.23
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.6,
+      0
+    ],
+    [
+      -5.6,
+      0
+    ],
+    [
+      0,
+      5.6
+    ],
+    [
+      0,
+      -5.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0241100000002828"
+  ],
+  "description": "Oorsprong op het hart van de BAG-contour op maaiveld (NAP +93,2 m), +X loodrecht op het oostelijke hoofdvlak (13,3 graden), +Y naar de deur aan de Watertorenweg. Bakstenen achthoek (vierkant met afgeschuinde hoeken, 8,0 m over de vlakken boven een sokkel van 8,2 m) met verticale wanden tot 23,35 m; in elk hoofdvlak een louvrestrook (17,0 tot 22,4 m), twee reliëfblokken en een lisene op een penant of op het deurportaal, in elk schuin vlak twee verdiepte panelen; uitkragende dakrand tot 24,0 m en een achtzijdig tentdak tot 26,6 m. Maten uit BAG, AHN en een RCE-foto.",
+  "realWorld": {
+    "publishedHeightM": 37.6,
+    "reservoirM3": 110,
+    "ahnGroundNapM": 93.2,
+    "ahnTopNapM": 119.9,
+    "bagMainFaceM": 4.5,
+    "bagChamferFaceM": 2.6,
+    "bagAcrossFlatsM": 8.2,
+    "wallAcrossFlatsM": 8,
+    "copingTopM": 24,
+    "louvreStripM": [
+      17,
+      22.4
+    ],
+    "modelTopM": 26.6,
+    "photoScalePxPerM": 41,
+    "minimumPartM": 0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Berg_en_Dal)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Berg_en_Dal_-_20313815_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Berg_en_Dal_(Groesbeek)_Watertoren_(01).JPG",
+    "https://commons.wikimedia.org/wiki/File:Berg_en_Dal_(Groesbeek)_Watertoren_(02).JPG (zijvlak met penant en sokkel)",
+    "PDOK BAG-pand 0241100000002828, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-berg-en-dal-1-1000.stl"
+  ]
+}
