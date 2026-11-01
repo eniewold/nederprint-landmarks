@@ -1,0 +1,68 @@
+{
+  "name": "Watertoren Eibergen",
+  "file": "watertoren-eibergen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    242361.39,
+    459482.32
+  ],
+  "xAxis": [
+    0.99678,
+    0.0802
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1859100000791649"
+  ],
+  "description": "Oorsprong op het middelpunt van de BAG-contour op maaiveld (NAP +29,2 m), +X naar de oostelijke risaliet op 4,6 graden. Ronde bakstenen schacht van 11,7 m met vier vlakke risalieten van 3,8 m (lisenen en verdiept middenvlak), plint tot 2,5 m, per hoek drie vensters boven elkaar en een raamband, witte band van 28 tot 29,4 m, drie spleetvensters per hoek met kruisblokken in de kroonlijst op 39,3 m en een koperen kegeldak tot 45,2 m; deur in de noordwestelijke hoek. Maten uit BAG, AHN en een RCE-foto.",
+  "realWorld": {
+    "publishedHeightM": 46,
+    "reservoirsM3": [
+      400,
+      200
+    ],
+    "ahnGroundNapM": 29.2,
+    "ahnTopNapM": 74.4,
+    "shaftDiameterM": 11.66,
+    "risalitWidthM": 3.8,
+    "bandM": [
+      28,
+      29.4
+    ],
+    "corniceM": 39.3,
+    "roofPitchDeg": 45,
+    "modelTopM": 45.2,
+    "photoScalePxPerM": 32,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Eibergen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509417",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Eibergen_-_20359578_-_RCE.jpg (frontale foto op de westelijke risaliet, maten)",
+    "https://commons.wikimedia.org/wiki/File:Eibergen_Watertoren_2006.JPG (hoek met vensters, kroonlijst en kegeldak)",
+    "PDOK BAG-pand 1859100000791649, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-eibergen-1-1000.stl"
+  ]
+}
