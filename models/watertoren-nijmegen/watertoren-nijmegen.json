@@ -1,0 +1,73 @@
+{
+  "name": "NYMA-watertoren Nijmegen",
+  "file": "watertoren-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186049,
+    429908.65
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.7,
+      0
+    ],
+    [
+      -7.7,
+      0
+    ],
+    [
+      0,
+      7.7
+    ],
+    [
+      0,
+      -7.7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000015629"
+  ],
+  "description": "Oorsprong op het hart van het reservoir in het AHN op maaiveld (NAP +14,29 m), assen in RD-richting. Zestienhoekig reservoir van 11,7 m (12,2 m over de ringbalken) in een betonskelet van acht kolommen met ringbalken op 10,65, 16,2 en 22,45 m, een zigzag van schoren tussen 10,65 en 15,35 m, kroonlijst tot 26,6 m en een laag zestienzijdig kegeldak met lichtkoepel tot 28,55 m. De toren hoort bij het fabriekspand, dat als tweede node uit de dakvlakken van de 3D BAG is opgebouwd. Maten uit AHN, 3D BAG en foto's.",
+  "realWorld": {
+    "built": 1929,
+    "architect": "J. Buining",
+    "ahnGroundNapM": 14.29,
+    "ahnTopNapM": 42.57,
+    "tankAcrossCornersM": 11.7,
+    "frameAcrossM": 12.2,
+    "corniceAcrossM": 12.4,
+    "ringBeamsM": [
+      10.65,
+      16.2,
+      22.45
+    ],
+    "corniceTopM": 26.6,
+    "roofTopM": 28.4,
+    "modelTopM": 28.55,
+    "roofPitchDeg": 21,
+    "photoScalePxPerM": 45,
+    "factoryRoofAroundTowerM": [
+      5,
+      7.5
+    ],
+    "minimumPartM": 0.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Nijmegen)",
+    "https://commons.wikimedia.org/wiki/File:Nijmegen_NYMA-watertoren.JPG (bijna frontale foto, hoogtes en kolommen)",
+    "https://commons.wikimedia.org/wiki/File:Nijmegen_NYMA_watertoren_achter_de_Oversteek,_vanuit_de_Waalsprong_gezien_(02).JPG (telefoto, schoren en onderste ringbalk)",
+    "https://commons.wikimedia.org/wiki/File:Nijmegen_Watertoren_NYMA_2010.jpg (noordzijde)",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0268100000015629, LoD2.2, opgehaald 2026-11-01",
+    "PDOK BAG-pand 0268100000015629, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-nijmegen-1-1000.stl"
+  ]
+}
