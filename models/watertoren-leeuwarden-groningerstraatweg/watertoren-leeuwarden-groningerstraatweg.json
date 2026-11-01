@@ -1,0 +1,64 @@
+{
+  "name": "Watertoren Groningerstraatweg",
+  "file": "watertoren-leeuwarden-groningerstraatweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    183444.5,
+    580597.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10.5,
+      0
+    ],
+    [
+      -10.5,
+      0
+    ],
+    [
+      0,
+      10.5
+    ],
+    [
+      0,
+      -10.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000337268"
+  ],
+  "description": "Oorsprong op het hart van de BAG-contour op maaiveld (NAP +1,0 m), assen in RD-richting. Verjongende ster van acht bakstenen penanten (18,0 m over de penanten aan de voet, 16,1 m op de dakrand) met acht travees die boven 19,8 m 1,1 m inspringen, vensters van negen woonlagen als nissen, een dichte travee naar het zuidoosten en de ingang naar het noordwesten, een schuine zinken dakrand van 35,6 tot 37,8 m en een zestienzijdig kegeldak tot 40,6 m met een verdiept dakterras aan de zuidwestzijde. Maten uit AHN, BAG en één foto.",
+  "realWorld": {
+    "built": 1925,
+    "raised": 1973,
+    "apartments2002": 9,
+    "publishedHeightM": 36,
+    "ahnGroundNapM": 1,
+    "ahnTopNapM": 41.65,
+    "acrossPiersFootM": 18,
+    "acrossPiersRoofEdgeM": 16.1,
+    "bayRecessM": 1.1,
+    "sillM": 19.8,
+    "corniceFootM": 35.6,
+    "roofEdgeM": 37.8,
+    "terraceFloorM": 37.1,
+    "modelTopM": 40.6,
+    "photoScalePxPerM": 15,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Leeuwarden_Groningerstraatweg)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Leeuwarden_08cw.JPG (foto vanaf het zuiden, woonlagen en gevelindeling)",
+    "PDOK BAG-pand 0080100000337268, AHN DSM/DTM 0,5 m en luchtfoto, 3D BAG LoD2.2, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-leeuwarden-groningerstraatweg-1-1000.stl"
+  ]
+}
