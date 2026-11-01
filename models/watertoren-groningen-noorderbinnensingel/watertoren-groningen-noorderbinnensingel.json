@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Noorderbinnensingel",
+  "file": "watertoren-groningen-noorderbinnensingel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233339.1,
+    582742.65
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9.5,
+      0
+    ],
+    [
+      0,
+      -9.5
+    ],
+    [
+      -9.6,
+      -3
+    ],
+    [
+      6.7,
+      -6.7
+    ]
+  ],
+  "groundHeight": 44.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100022186464"
+  ],
+  "description": "Oorsprong op het hart van het dak in het AHN op maaiveld (NAP +3,95 m), assen in RD-richting, hoeken van de twaalfhoek op -5 + k·30 graden. Twaalf stalen poten (0,9 m) met kruisverbanden onder 53 graden en consoles onder de ringbalk op 22,8 m, een Barkhausenbodem tot 20,45 m op de ronde bakstenen schacht (3,5 m) met omloop op 16,45 m, een twaalfzijdige bakstenen mantel van 14,9 m tot 26,4 m en 15,5 m tot de goot, met een venster per vlak in beide verdiepingen, een tentdak van 16,8 m van 33,0 tot 36,8 m, een twaalfzijdige lantaarn van 6,8 m en een spits tot 43,05 m. Op de grond het entreepaviljoen van 4 m tussen de poten en aan de westhoek de liftkoker met peilschaal tot 33,1 m. Maten uit AHN, luchtfoto, BAG en foto's met de peilschaal.",
+  "realWorld": {
+    "built": 1908,
+    "publishedHeightM": 45.3,
+    "reservoirM3": 1000,
+    "ahnGroundNapM": 3.95,
+    "ahnTopNapM": 47.49,
+    "sides": 12,
+    "legs": 12,
+    "eaveApothemM": 8.4,
+    "upperWallApothemM": 7.75,
+    "lowerWallApothemM": 7.45,
+    "wallFootM": 23.18,
+    "ringBeamM": 22.83,
+    "bowlBottomM": 20.45,
+    "eaveM": 33,
+    "lanternApothemM": 3.4,
+    "lanternFootM": 36.78,
+    "modelTopM": 43.05,
+    "gaugeTopM": 33.1,
+    "shaftDiameterM": 3.5,
+    "galleryM": 16.45,
+    "photoScalePxPerM": 44.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Groningen_Noorderbinnensingel)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/485963",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_vanaf_Nieuwe_Kerk_(1).jpg (telefoto 2016 met peilschaal, hoogtes en silhouet van dak en lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:Groningen,_de_watertoren_aan_de_Noorderbinnensingel-de_Bovenkamer_van_Groningen_RM485963_foto4_2015-03-22_14.16.jpg (2015, peilschaal, schacht, omloop, vakwerk, paviljoen)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_vanuit_het_zuidwesten_-_Groningen_-_20533281_-_RCE.jpg (vakwerk, consoles en bodem, 2010)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Groningen_Noorderbinnensingel.jpg (telefoto 2016 van boven, lantaarn en liftkoker)",
+    "PDOK BAG-pand 0014100022186464, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-groningen-noorderbinnensingel-1-1000.stl"
+  ]
+}
