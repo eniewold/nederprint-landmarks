@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Sneek",
+  "file": "watertoren-sneek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173039.55,
+    560114.3
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0091100000011099"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour op maaiveld (NAP +0,38 m), assen in RD-richting. Ronde bakstenen schacht met een basement van 10 m met blinde rondboognissen en een deurportaal naar het zuidoosten, verjongend van 9,1 tot 8,0 m met vensters en oculi, gemetselde kraag tot 22 m; zestienzijdig reservoir van 11,6 m op een kegel van schoren van 24,3 tot 32 m met drie vensters per vlak, overstekende dakrand van 13,0 m tot 33,25 m, holle zestienzijdige leien kap met vier dakhuisjes, omgang op 37,4 m, achtzijdige lantaarn en koepeltje tot 44 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 44,
+    "reservoirM3": 350,
+    "ahnGroundNapM": 0.38,
+    "ahnTopNapM": 44.33,
+    "bagShaftDiameterM": 10,
+    "shaftDiameterM": [
+      9.1,
+      8
+    ],
+    "tankAcrossCornersM": 11.6,
+    "corniceAcrossFlatsM": 12.95,
+    "rimM": 24.3,
+    "corniceM": 33.25,
+    "galleryM": 37.4,
+    "modelTopM": 44,
+    "photoScalePxPerM": [
+      29.1,
+      45.4
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Sneek)",
+    "https://commons.wikimedia.org/wiki/File:20190529_Watertoren_Sneek.jpg (frontale foto, maten van schacht en deur)",
+    "https://commons.wikimedia.org/wiki/File:Sneek,_Watertoren.JPG (reservoir, dakrand, kap en lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_(Sneek)_(d.j.b.)_04.jpg (kap, dakhuisjes, omgang en lantaarn)",
+    "PDOK BAG-pand 0091100000011099, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-sneek-1-1000.stl"
+  ]
+}
