@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Oude Pekela",
+  "file": "watertoren-oude-pekela.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    264469,
+    570703.35
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9.4,
+      0
+    ],
+    [
+      -9.4,
+      0
+    ],
+    [
+      0,
+      9.4
+    ],
+    [
+      0,
+      -9.4
+    ]
+  ],
+  "groundHeight": 42.14,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0765100000002849"
+  ],
+  "description": "Oorsprong op het hart van de ronde wand in het AHN op maaiveld (NAP +1,17 m), assen in RD-richting. Achtkante schacht (14,5 m over de vlakken, hoeken op 30,5 + k·45 graden) tot 32,7 m met in elk vlak een kolom smalle vensters en een rond venster; daarboven springt elk vlak onder een gebogen luifel terug tot de ronde wand van 13,7 m en lopen de hoeken als penanten door tot witte kappen op 36,5 m; ronde wand met vensters boven de penanten tot de daklijst op 45,75 m, teruggelegen opbouw van 11,8 m tot 47,45 m. Deur en twee grote vensters naar de weg in het zuidwesten. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 48,
+    "reservoirM3": 1000,
+    "built": 1938,
+    "ahnGroundNapM": 1.17,
+    "ahnRoofNapM": 48.62,
+    "ahnCopingNapM": 46.94,
+    "shaftAcrossFlatsM": 14.5,
+    "wallDiameterM": 13.7,
+    "drumDiameterM": 11.8,
+    "pierWidthAlongFaceM": 1,
+    "ledgeM": 32.7,
+    "pierCapM": [
+      35.4,
+      36.5
+    ],
+    "copingM": 45.75,
+    "modelTopM": 47.45,
+    "photoScalePxPerM": 12.07,
+    "geoidHeightM": 40.97,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Oude_Pekela)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Oude_Pekela_-_20365171_-_RCE.jpg (vanuit het zuidwesten, maten)",
+    "https://commons.wikimedia.org/wiki/File:Oude_Pekela_Watertoren_2006.JPG (penanten, kappen, luifels, vensters)",
+    "https://commons.wikimedia.org/wiki/File:Oude_Pekela_-_watertoren.JPG (luifels en terugsprongen in de zon)",
+    "https://commons.wikimedia.org/wiki/File:2013_Watertoren.jpg (deur en benedenvensters)",
+    "PDOK BAG-pand 0765100000002849, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "NLGEO2018-geoïdehoogte op de oorsprong (40,97 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-oude-pekela-1-1000.stl"
+  ]
+}
