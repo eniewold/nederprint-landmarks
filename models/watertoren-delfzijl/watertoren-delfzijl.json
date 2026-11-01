@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Delfzijl",
+  "file": "watertoren-delfzijl.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    260814.1,
+    592166.8
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.4,
+      0
+    ],
+    [
+      -6.4,
+      0
+    ],
+    [
+      0,
+      6.4
+    ],
+    [
+      0,
+      -6.4
+    ]
+  ],
+  "groundHeight": 41.17,
+  "description": "Oorsprong op het hart van het reservoir in het AHN op maaiveld (NAP +0,6 m), assen in RD-richting. Stalen Barkhausentoren: vier poten op 4,2 m van het hart (op 23,5 + k·90 graden, 0,9 m dik in plaats van 0,3 m) met ringen op 7,0, 13,4 en 19,8 m en daaronder een omgekeerde V per vlak per verdieping, centrale stijgbuis van 1,24 m, reservoir van 7,8 m met halfbolle bodem van 23,6 tot 27,2 m, cilinder tot 30,3 m en een vlak kegeldak tot 30,9 m, omloop van 9,7 m op 27,9 m. Geen BAG-pand. Maten uit AHN, luchtfoto en de Commons-foto.",
+  "realWorld": {
+    "built": 1966,
+    "type": "Barkhausen",
+    "ahnGroundNapM": 0.6,
+    "ahnTopNapM": 31.6,
+    "tankDiameterM": 7.8,
+    "galleryDiameterM": 9.7,
+    "galleryM": 27.9,
+    "bowlBottomM": 23.6,
+    "rimM": 30.3,
+    "modelTopM": 30.9,
+    "riserDiameterM": 1.24,
+    "legRadiusM": 4.2,
+    "legDiameterRealM": 0.31,
+    "ringsM": [
+      7,
+      13.4,
+      19.8
+    ],
+    "photoScalePxPerM": 38.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Delfzijl)",
+    "https://commons.wikimedia.org/wiki/File:Delfzijl_Watertoren_Aldel.JPG (frontale foto van onderaf, maten)",
+    "PDOK BAG-panden (geen pand onder de toren), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "NLGEO2018-geoïdehoogte op de oorsprong (40,57 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-delfzijl-1-1000.stl"
+  ]
+}
