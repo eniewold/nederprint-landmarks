@@ -1,0 +1,80 @@
+{
+  "name": "Nieuwe watertoren Zaltbommel",
+  "file": "watertoren-zaltbommel-nieuwe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    145070.94,
+    423357.22
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.6,
+      0
+    ],
+    [
+      -6.6,
+      0
+    ],
+    [
+      0,
+      6.6
+    ],
+    [
+      0,
+      -6.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0297100000002210"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +3,04 m), assen in RD-richting. Ronde betonnen schacht van 10,2 m met twaalf spitse nissen in de plint tot 4,4 m, vanaf 13,7 m een holle overgang naar een rechte kegel die uitwaaiert tot 19,7 m aan de dakrand, tien voegen om de 3,18 m vanaf 5,7 m, plat dak op 36,95 m met een afgeschuinde rand en een antenne-installatie tot 40,35 m. Maten uit AHN, BAG en drie frontale foto's.",
+  "realWorld": {
+    "publishedHeightM": 38,
+    "reservoirsM3": [
+      1255,
+      875,
+      415
+    ],
+    "built": 1964,
+    "architect": "Brouwer en Deurvorst",
+    "rijksmonument": 532144,
+    "ahnGroundNapM": 3.04,
+    "ahnRoofNapM": 39.99,
+    "bagDiameterM": 10.2,
+    "topDiameterM": 19.7,
+    "coneKneeM": 15.7,
+    "coneAngleFromVerticalDeg": 12.6,
+    "joints": [
+      5.7,
+      8.88,
+      12.06,
+      15.24,
+      18.42,
+      21.6,
+      24.78,
+      27.96,
+      31.14,
+      34.32
+    ],
+    "plinthNiches": 12,
+    "roofM": 36.95,
+    "modelTopM": 40.35
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Zaltbommel)",
+    "https://commons.wikimedia.org/wiki/File:Zaltbommel_Nieuwe_Watertoren_gezien_vanaf_zuidelijk_fietspad_2024-09-24-2.jpg (frontaal, schachtprofiel, voegen en plint)",
+    "https://commons.wikimedia.org/wiki/File:Zaltbommel_-_watertoren_gebouwd_in_1964.jpg (frontaal, schachtprofiel en voegen)",
+    "https://commons.wikimedia.org/wiki/File:Zaltbommel_Nieuwe_Watertoren_gezien_vanaf_zuidelijk_fietspad_2024-09-24-1.jpg (plint, dakrand en antennes)",
+    "PDOK BAG-pand 0297100000002210, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-zaltbommel-nieuwe-1-1000.stl"
+  ]
+}
