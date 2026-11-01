@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Arnhem",
+  "file": "watertoren-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191865.88,
+    446038.48
+  ],
+  "xAxis": [
+    0.9681,
+    0.2504
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -10.2,
+      0
+    ],
+    [
+      11.5,
+      0
+    ],
+    [
+      0,
+      7.3
+    ],
+    [
+      0,
+      -16.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000235137"
+  ],
+  "description": "Watertoren De Steenen Tafel. Oorsprong op de symmetrie-as van hoofdblok en trappenhuis in het AHN op maaiveld (NAP +83,40 m), +X langs de lange as naar het halfronde trappenhuis op 14,5 graden (oost). Langgerekt achtzijdig hoofdblok van 12,3 bij 10,3 m met licht geknikte lange gevels op een gepleisterde onderbouw met betonnen band tot 5,5 m (0,5 m breder), bovenste verdieping vanaf 15,4 m 0,2 m terug met bandvensters, dakterras op 17,2 m achter een borstwering tot 18,0 m; trappenhuis van 4,9 m breed tot 22,5 m met vier vensters in de ronding; glazen paviljoen van 3,8 m hoog aan de zuidkant. Maten uit AHN, BAG, het monumentenregister en foto's.",
+  "realWorld": {
+    "publishedHeightM": 22.5,
+    "reservoirM3": 600,
+    "ahnGroundNapM": 83.4,
+    "ahnRoofNapM": 100.65,
+    "ahnStairRoofNapM": 105.5,
+    "mainLengthM": 12.3,
+    "mainWidthM": 10.3,
+    "plinthM": 4.2,
+    "bandM": 5.5,
+    "setbackM": 15.4,
+    "roofM": 17.2,
+    "parapetM": 18,
+    "stairWidthM": 4.9,
+    "stairTopM": 22.5,
+    "annexM": 3.8,
+    "modelTopM": 22.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Arnhem)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516836",
+    "https://commons.wikimedia.org/wiki/File:Watertower_Arnhem.JPG (westgevel, hoogtes onderbouw en band)",
+    "https://commons.wikimedia.org/wiki/File:Klarenbeek_Stenen_Tafel_watertoren.jpg (westgevel van verder weg)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren,_thans_restaurant_-_Arnhem_-_20345330_-_RCE.jpg (zuidgevel met knik en bandvensters)",
+    "https://commons.wikimedia.org/wiki/File:Restaurant_%22de_Stenen_tafel%22_at_the_highest_point_of_Arnhem_some_85_m_above_sealevel_-_panoramio.jpg (zuidkant, trappenhuis en paviljoen)",
+    "PDOK BAG-pand 0202100000235137, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-arnhem-1-1000.stl"
+  ]
+}
