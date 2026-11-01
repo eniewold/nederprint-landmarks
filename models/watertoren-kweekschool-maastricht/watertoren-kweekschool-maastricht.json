@@ -1,0 +1,80 @@
+{
+  "name": "Watertoren Kweekschool Maastricht",
+  "file": "watertoren-kweekschool-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    175026.67,
+    316890.75
+  ],
+  "xAxis": [
+    0.87882,
+    0.47716
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -5.2
+    ],
+    [
+      -3.6,
+      -2
+    ],
+    [
+      3.7,
+      -2
+    ],
+    [
+      -3.6,
+      2
+    ]
+  ],
+  "groundHeight": 121.21,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000010728"
+  ],
+  "description": "Oorsprong op het hart van de kroonlijst in het AHN op het maaiveld (NAP +75,45 m), +X langs de zuidgevel van de toren (RD-richting 28,5 graden), -Y naar het zuidzuidoosten (de deur). Schacht van 4,3 × 7,15 m met plint, deur en vensternissen tot de rondboogfries op 19,6 m, vierde bouwlaag van 4,8 × 7,65 m met drie en vijf vensters per gevel, kroonlijst van 5,95 × 8,8 m op een schuine onderkant tot 24,9 m en een laag schilddak tot 27,35 m. De toren hoort bij BAG-pand 0935100000010728 (de hele kweekschool); dat pand wordt vervangen en building:kweekschool is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": 1909,
+    "architect": "Lambertus Faber",
+    "ahnGroundNapM": 75.45,
+    "ahnTopNapM": 102.8,
+    "shaftM": [
+      4.3,
+      7.15
+    ],
+    "topFloorM": [
+      4.8,
+      7.65
+    ],
+    "corniceM": [
+      5.95,
+      8.8
+    ],
+    "friezeM": [
+      19.6,
+      20.8
+    ],
+    "corniceFootM": 23.45,
+    "eaveM": 24.9,
+    "apexM": 27.35,
+    "wingRoofM": 19.65,
+    "photoScalePxPerM": 36.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kweekschool_van_de_Broeders_van_de_Onbevlekte_Ontvangenis",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/506723 (watertoren sluit de linkerzijvleugel af; vier bouwlagen, de vierde breder met boogfries; schilddak met leien en nokpion)",
+    "https://commons.wikimedia.org/wiki/File:Zuidoostgevel_-_Maastricht_-_20353893_-_RCE.jpg (zuid- en oostgevel, hoogtes en verhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_oostgevel_-_Maastricht_-_20353895_-_RCE.jpg (oostgevel, trapvensters, vierde bouwlaag)",
+    "https://commons.wikimedia.org/wiki/File:Maastricht,_Biesland,_Trichtercollege01.jpg (toren en oostvleugel)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_binnenplaats_vanuit_de_derde_verdieping_-_Maastricht_-_20353903_-_RCE.jpg (vierde bouwlaag aan de westkant)",
+    "PDOK BAG-pand 0935100000010728, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0935100000010728, LoD2.2-dakvlakken, opgehaald 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-kweekschool-maastricht-1-1000.stl"
+  ]
+}
