@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Bontebrug",
+  "file": "watertoren-bontebrug.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    224406.85,
+    433990.75
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1509100000188838"
+  ],
+  "description": "Oorsprong op het hart van het reservoir in het AHN op maaiveld (NAP +18,0 m), assen in RD-richting. Ronde kern (7,4 m) met zes lisenen tot 10,6 m over de voorvlakken (één naar het zuiden), deur naar het westen; loggia met balkons van 20,1 tot 23,05 m onder de uitkragende reservoirrand (12,4 m); reservoir van 11,3 m met twaalf kleine vensters tot 32,65 m, dakrand van 12,9 m met omloop tot 33,4 m en koperen kegeldak tot 37,65 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 37.6,
+    "reservoirM3": 400,
+    "ahnGroundNapM": 18,
+    "ahnTopNapM": 55.67,
+    "coreDiameterM": 7.4,
+    "acrossPiersM": 10.6,
+    "pierWidthM": 1.24,
+    "balconyFloorM": 20.6,
+    "ringM": [
+      23.05,
+      23.7
+    ],
+    "ringDiameterM": 12.44,
+    "tankDiameterM": 11.34,
+    "eaveM": [
+      32.65,
+      33.4
+    ],
+    "eaveDiameterM": 12.9,
+    "coneDiameterM": 11.6,
+    "modelTopM": 37.65,
+    "photoScalePxPerM": 10.85,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bontebrug)",
+    "https://commons.wikimedia.org/wiki/File:Bontebrug_Watertoren.JPG (frontale foto, breedtes en hoogtes van de top)",
+    "https://commons.wikimedia.org/wiki/File:2024-08-29_Watertoren_Bontebrug.jpg (lisenen, loggia, balkons, vensters)",
+    "https://commons.wikimedia.org/wiki/File:2013-06_Watertoren_Bontebrug.jpeg (diepte van de lisenen)",
+    "https://commons.wikimedia.org/wiki/File:Bontebrug_Watertoren_2006.JPG",
+    "PDOK BAG-pand 1509100000188838, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-bontebrug-1-1000.stl"
+  ]
+}
