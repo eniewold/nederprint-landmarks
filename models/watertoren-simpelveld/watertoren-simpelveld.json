@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Simpelveld",
+  "file": "watertoren-simpelveld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    197218.65,
+    315851.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 204.07,
+  "groundSamplePoints": [
+    [
+      3.8,
+      0
+    ],
+    [
+      -3.8,
+      0
+    ],
+    [
+      0,
+      3.8
+    ],
+    [
+      0,
+      -3.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0965100000822833"
+  ],
+  "description": "Oorsprong op het hart van het dak in het AHN op maaiveld (NAP +158,05 m), assen in RD-richting. Achtzijdige bakstenen onderbouw van 3,0 m over de vlakken met een deur naar het noorden en een venster naar het noordwesten, cilindrisch betonnen reservoir van 4,6 m van 5,0 tot 8,8 m met een schuine onderrand, plat dak licht oplopend tot 8,9 m. Maten uit AHN, luchtfoto en een foto.",
+  "realWorld": {
+    "publishedHeightM": 8.85,
+    "reservoirsM3": [
+      25,
+      25
+    ],
+    "publishedTankDiameterM": 5.1,
+    "ahnGroundNapM": 158.05,
+    "ahnRoofEdgeNapM": 166.8,
+    "ahnTopNapM": 166.96,
+    "tankDiameterM": 4.6,
+    "tankBottomM": 5,
+    "roofEdgeM": 8.8,
+    "shaftAcrossFlatsM": 3,
+    "modelTopM": 8.9,
+    "photoScalePxPerM": 78,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Simpelveld)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518643 (achtzijdige bakstenen onderbouw, stalen deur, venster, betonnen reservoir, plat dak)",
+    "https://commons.wikimedia.org/wiki/File:Simpelveld_Watertoren_8547.JPG (foto vanuit het noordwesten, verhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:Watertower,_Simpelveld,_Netherlands.JPG (tweede foto, controle)",
+    "PDOK BAG-pand 0965100000822833, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-simpelveld-1-1000.stl"
+  ]
+}
