@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Doetinchem",
+  "file": "watertoren-doetinchem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    218197.866,
+    440613.235
+  ],
+  "xAxis": [
+    0.8004,
+    0.5995
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -5.7,
+      0
+    ],
+    [
+      0,
+      5.7
+    ],
+    [
+      0,
+      -5.7
+    ],
+    [
+      8.3,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0222100000591573"
+  ],
+  "description": "Oorsprong op het hart van de vierkante BAG-contour op maaiveld (NAP +16,1 m), +X naar de ingangszijde op 36,8 graden (noordoost). Bakstenen toren van 8,4 m in het vierkant met paren smalle vensters en een deur in de schacht, aan de ingangszijde een risaliet van 3,2 m tot de galerij en een laag portaal; omlopende galerij van 10,4 m op 24,1 m, glazen verdieping met drie ramen per gevel onder een luifel tot 27,0 m, reservoirblok met hoeklisenen, vensters, stenen consoles en kroonlijst tot 36,45 m, fries, dakrand op 37,4 m en tentdak met knik tot 40,6 m. Maten uit BAG, AHN, Wikipedia en foto's.",
+  "realWorld": {
+    "publishedHeightM": 40.6,
+    "reservoirsM3": [
+      180,
+      180
+    ],
+    "ahnGroundNapM": 16.1,
+    "ahnTopNapM": 56.93,
+    "bagSquareM": 8.41,
+    "bagEntranceM": [
+      3.2,
+      2.66
+    ],
+    "risalitDepthM": 1,
+    "portalHeightM": 4.2,
+    "galleryM": 24.1,
+    "galleryWidthM": 10.4,
+    "luifelM": 26.98,
+    "ledgeM": 36.45,
+    "eaveM": 37.4,
+    "roofPitchDeg": 36,
+    "modelTopM": 40.6,
+    "photoScalePxPerM": 36.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Doetinchem)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513133",
+    "https://commons.wikimedia.org/wiki/File:Watertower_Doetinchem_by_G.J._Postel_Hzn.,_Doetinchem,_the_Netherlands.JPG (van ver, bijna recht: galerij, luifel, reservoirblok, kroonlijst en dak)",
+    "https://commons.wikimedia.org/wiki/File:Doetinchem_Watertoren.JPG (zuidwestgevel: vensters en deur in de schacht)",
+    "PDOK BAG-pand 0222100000591573, 3D BAG LoD2.2, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-doetinchem-1-1000.stl"
+  ]
+}
