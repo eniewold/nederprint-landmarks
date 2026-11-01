@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Tegelen-Egypte",
+  "file": "watertoren-tegelen-1939.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    208560.1,
+    372591.5
+  ],
+  "xAxis": [
+    0.9455,
+    -0.3256
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 77.61,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0983100000019604"
+  ],
+  "description": "Oorsprong op het middelpunt van de achtkantige BAG-contour op maaiveld (NAP +32,88 m), +X naar het vlak op -19 graden van RD-oost. Onderbouw van 11,6 m over de vlakken tot 3,4 m met een lijst op een schuine kraag, ingang naar het zuidzuidoosten tussen twee penanten met een stoep; schacht van 10,9 m met afgeschuinde hoeken en vijf smalle trapvensters per afschuining; kroonlijst van 12,9 m op een schuine kraag van 25,15 tot 27,35 m; reservoirkop van 10,9 m met plat dak op 31,1 m en een dakrand tot 31,3 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 32.1,
+    "reservoirM3": 500,
+    "ahnGroundNapM": 32.88,
+    "ahnRoofNapM": 64.02,
+    "ahnTopNapM": 64.17,
+    "geoidNlgeo2018M": 44.73,
+    "baseAcrossFlatsM": 11.6,
+    "shaftAcrossFlatsM": 10.9,
+    "chamferWidthM": 0.82,
+    "corniceAcrossFlatsM": 12.9,
+    "ledgeTopM": 3.4,
+    "corbelM": 25.15,
+    "corniceM": 27.35,
+    "roofM": 31.1,
+    "modelTopM": 31.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Tegelen_Egypte)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/524690",
+    "https://commons.wikimedia.org/wiki/File:Watertoren.jpg (onderbouw, ingang, trapvensters in de afschuiningen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Tegelen.jpg (kop en kroonlijst, verhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:1951_Het_voetbalveld_van_Sportclub_Irene_bij_de_Watertoren.jpg (hele toren, vensterrijen)",
+    "https://commons.wikimedia.org/wiki/File:1952_Het_Pompstation_met_de_Watertoren,_Tegelen.jpg (hoogte van de kop)",
+    "PDOK BAG-pand 0983100000019604, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-tegelen-1939-1-1000.stl"
+  ]
+}
