@@ -1,0 +1,84 @@
+{
+  "name": "Watertoren De Reus van Schimmert",
+  "file": "watertoren-schimmert-de-reus-van-schimmert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    185741.33,
+    323226.15
+  ],
+  "xAxis": [
+    0.9763,
+    0.2164
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 185.64,
+  "groundSamplePoints": [
+    [
+      8.6,
+      -3.5
+    ],
+    [
+      -8.6,
+      -3.5
+    ],
+    [
+      6.5,
+      6.5
+    ],
+    [
+      -6.5,
+      6.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0951100000003112"
+  ],
+  "description": "Oorsprong op de as van het reservoir op het plateau rond de voet (NAP +140,0 m), +X 12,5 graden linksom van RD-oost, trappenhuizen naar het zuidzuidoosten (-Y). Zestienzijdige bakstenen schacht met lisenen, plint en twee rijen vensters, rond reservoir van 16,9 m op een afgeronde onderrand op 21 m met twee vensterbanden, borstwering en omloop op 31 m, glazen torenkamer onder een kegeldak tot 36,4 m, twee ronde trappenhuizen met een kopwand tot 37,4-38,6 m en een lage aanbouw met platte daken tussen hun voeten. Maten uit BAG, 3D BAG (AHN5), AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 38,
+    "publishedTopNapM": 178,
+    "reservoirM3": 1150,
+    "reservoirInnerDiameterM": 13.5,
+    "ahnGroundNapM": 140,
+    "groundLowSideNapM": 139.55,
+    "geoidNlgeo2018M": 45.64,
+    "tankDiameterM": 16.9,
+    "shaftAcrossFlatsM": 14.3,
+    "shaftSides": 16,
+    "stairDiameterM": 3.1,
+    "tankBottomM": 21,
+    "windowBandsM": [
+      23.5,
+      28.9
+    ],
+    "parapetM": 31.9,
+    "eavesM": 33.35,
+    "roofApexM": 36.4,
+    "stairTopsM": [
+      38.6,
+      37.4
+    ],
+    "headWallM": 38.1,
+    "annexRoofsM": [
+      3.3,
+      6.5,
+      3.9,
+      3.4
+    ],
+    "modelTopM": 38.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Schimmert)",
+    "https://commons.wikimedia.org/wiki/File:Schimmert-Watertoren_(1).JPG (telefoto van het noorden: bandindeling, torenkamer, kegeldak, kopwand)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Schimmert_-_20197530_-_RCE.jpg (diameters van reservoir, schacht en trappenhuis, banden)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Schimmert_-_20197529_-_RCE.jpg (zuidzijde: trappenhuizen, kopwand, aanbouw)",
+    "https://commons.wikimedia.org/wiki/File:Schimmert_-_Watertoren_De_Reus_1.jpg (huidige toestand: schacht met lisenen en vensters, glazen balustrade)",
+    "PDOK BAG-panden 0951100000003112 en 0951100000003113, 3D BAG (AHN5), AHN DSM/DTM 0,5 m, luchtfoto 8 cm en NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-schimmert-de-reus-van-schimmert-1-1000.stl"
+  ]
+}
