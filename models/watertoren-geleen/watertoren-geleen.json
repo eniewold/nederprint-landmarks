@@ -1,0 +1,84 @@
+{
+  "name": "Watertoren Geleen",
+  "file": "watertoren-geleen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    185190.24,
+    331660.27
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8.3,
+      0
+    ],
+    [
+      -8.3,
+      0
+    ],
+    [
+      0,
+      8.3
+    ],
+    [
+      0,
+      -8.3
+    ]
+  ],
+  "groundHeight": 115.96,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1883100000047359"
+  ],
+  "description": "Oorsprong op het hart van de middenschacht (BAG-pand 1883100000047359) op maaiveld (NAP +70,6 m), assen in RD-richting. Betonnen toren van Staatsmijn Maurits: zes kolommen op 5,9 m van het hart (op -9 + k·60 graden) met ringbalken op 6,05–6,95 en 14,35–15,25 m en een kraagbalk van 22,2 tot 23,8 m, middenschacht van 2,08 m met ingang naar het zuidzuidoosten, achttienhoekig reservoir van 12,9 m met lisenen op de hoeken van 23,8 tot de kroonlijst (13,6 m) op 36,0 m, plat dak op 35,7 m en een ronde trommel van 8,0 m tot 37,9 m met zes steunblokken. Maten uit AHN, BAG, luchtfoto en Commons-foto.",
+  "realWorld": {
+    "built": "1924–1926",
+    "designer": "Ir. A.E. Dinger (Staatsmijnen)",
+    "wikipediaHeightM": 30,
+    "reservoirM3": 640,
+    "ahnGroundNapM": 70.6,
+    "ahnTopNapM": 108.54,
+    "reservoirDiameterM": 12.9,
+    "corniceDiameterM": 13.6,
+    "drumDiameterM": 8,
+    "legRadiusM": 5.9,
+    "legs": 6,
+    "sides": 18,
+    "ringsM": [
+      [
+        6.05,
+        6.95
+      ],
+      [
+        14.35,
+        15.25
+      ],
+      [
+        22.2,
+        23.8
+      ]
+    ],
+    "roofM": 35.7,
+    "rimM": 36,
+    "modelTopM": 37.9,
+    "shaftDiameterM": 2.08,
+    "photoScalePxPerM": 34.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Limburg_(Nederland) (bouwjaar 1924, ontwerper, 30 m, 640 m³)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_gemeentelijke_monumenten_in_Geleen (GM066, voormalige watertoren Mijn Maurits, Mauritspark 1a)",
+    "https://commons.wikimedia.org/wiki/File:7061_Geleen_Watertoren_DSM_terrein.JPG (maten)",
+    "https://commons.wikimedia.org/wiki/File:Geleen_Watertoren_DSM_terrein_2e.JPG",
+    "PDOK BAG-pand 1883100000047359, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "NLGEO2018-geoïdehoogte op de oorsprong (45,36 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-geleen-1-1000.stl"
+  ]
+}
