@@ -1,0 +1,71 @@
+{
+  "name": "Watertoren Harderwijk",
+  "file": "watertoren-harderwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173216.65,
+    482906.48
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.7,
+      0
+    ],
+    [
+      -6.7,
+      0
+    ],
+    [
+      0,
+      6.7
+    ],
+    [
+      0,
+      -6.7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0243100001326183"
+  ],
+  "description": "Oorsprong op het hart van de dakrand in het AHN op maaiveld (NAP +19,30 m), assen in RD-richting. Ronde bakstenen toren van 10,1 m over tien lisenen op een plint, met verdiepte velden in drie geledingen: blinde rondboogvensters en een deur naar het zuiden onderin, een natuurstenen band op 6,2 m, segmentbogen tot 8,3 m, vlakke velden onder een kroonlijst op 12,95 m, een gladde attiek met een luik en een afdekband tot 14,95 m om een plat dak op 14,53 m binnen een borstwering van 0,85 m. Maten uit AHN, BAG en één frontale foto.",
+  "realWorld": {
+    "publishedHeightM": 15.85,
+    "reservoirM3": 336,
+    "ahnGroundNapM": 19.3,
+    "ahnRoofNapM": 33.83,
+    "ahnRimNapM": 34.25,
+    "bagAreaM2": 80.2,
+    "diameterOverLisenesM": 10.1,
+    "fieldDiameterM": 9.6,
+    "lisenes": 10,
+    "bandM": [
+      5.45,
+      6.2
+    ],
+    "archesM": [
+      7.78,
+      8.32
+    ],
+    "corniceM": 12.95,
+    "roofM": 14.53,
+    "modelTopM": 14.95,
+    "photoCameraDistanceM": 26,
+    "roofInnerRadiusM": 4.2,
+    "minimumPartM": 0.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Harderwijk)",
+    "https://commons.wikimedia.org/wiki/File:Harderwijk_Watertoren_2007.JPG (frontale foto: opbouw, hoogtes en breedtes)",
+    "PDOK BAG-pand 0243100001326183, AHN DSM/DTM 0,5 m en luchtfoto's 2021-2025, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-harderwijk-1-1000.stl"
+  ]
+}
