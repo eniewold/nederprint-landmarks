@@ -1,0 +1,100 @@
+{
+  "name": "Watertoren Rimburg",
+  "file": "watertoren-rimburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202957.5,
+    324501.25
+  ],
+  "xAxis": [
+    0.9903,
+    0.1392
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 171.51,
+  "groundSamplePoints": [
+    [
+      5.7,
+      0
+    ],
+    [
+      4.03,
+      4.03
+    ],
+    [
+      0,
+      5.7
+    ],
+    [
+      -4.03,
+      4.03
+    ],
+    [
+      -5.7,
+      0
+    ],
+    [
+      -4.03,
+      -4.03
+    ],
+    [
+      0,
+      -5.7
+    ],
+    [
+      4.03,
+      -4.03
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0882100000000477"
+  ],
+  "description": "Oorsprong op het hart van de kop in het AHN op maaiveld (NAP +125,75 m, lage zuidwestkant), +X naar het oostvlak op 8 graden. Verjongende achthoekige schacht (7,7 m over de vlakken aan de voet, 6,5 m op 26,8 m) met hoeklisenen, banden om de 5 m, bakstenen vakken, kleine vensters en een deur naar het noordoosten; reservoirkop van 8,5 m van 26,8 tot 33,35 m op acht consoles met een hoog venster per vlak; achtzijdig tentdak tot 35,7 m; cortenstalen balkon naar het zuidoosten en trap met bordes naar het noordwesten. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 35.7,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 125.75,
+    "ahnGroundRangeNapM": [
+      125.65,
+      126.1
+    ],
+    "ahnTopNapM": 161.45,
+    "geoidNlgeo2018M": 45.76,
+    "footAcrossFlatsM": 7.7,
+    "shaftTopAcrossFlatsM": 6.5,
+    "headAcrossFlatsM": 8.5,
+    "corniceAcrossFlatsM": 8.7,
+    "ringM": 26.8,
+    "eaveM": 33.35,
+    "modelTopM": 35.7,
+    "bandsM": [
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "balconyTopM": 29.45,
+    "stairLandingM": [
+      23.9,
+      26.3
+    ],
+    "stairLandingOutM": 10.4,
+    "photoScalePxPerM": 32.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Rimburg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521662",
+    "https://commons.wikimedia.org/wiki/File:Water_tower_(Rimburg)_Watertoren_(Rimburg)_06.jpg (hoogtes, trap en balkon, van het noorden)",
+    "https://commons.wikimedia.org/wiki/File:Rimburg_-_Watertoren.jpg (consoles, vensters, trap)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Rimburg.jpg (verhoudingen van kop en schacht, van ver)",
+    "https://commons.wikimedia.org/wiki/File:Landgraaf_Watertoren_6235.JPG (vóór de verbouwing: banden, vakken, consoles)",
+    "PDOK BAG-pand 0882100000000477, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-rimburg-1-1000.stl"
+  ]
+}
