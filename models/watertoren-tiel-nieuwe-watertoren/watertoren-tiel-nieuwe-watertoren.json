@@ -1,0 +1,68 @@
+{
+  "name": "Nieuwe watertoren Tiel",
+  "file": "watertoren-tiel-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    158841.6,
+    433447.59
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.7,
+      0
+    ],
+    [
+      -7.7,
+      0
+    ],
+    [
+      0,
+      7.7
+    ],
+    [
+      0,
+      -7.7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0281100000000199"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +6,40 m), assen in RD-richting. Ronde schacht van 10,4 m met acht steunberen (12,4 m over de beren) tot 25,8 m, reservoir van 11,8 m dat tussen de beren 0,7 m uitkraagt vanaf 23 m met een betonnen rand, plat dak op 33,05 m achter een opstaande rand tot 34,1 m met een dakluik, kleine vensters onder de dakrand, twee vensterstroken en de deur onder een latei aan de oostkant. De toren helt 1,0 m over naar het westnoordwesten, zoals in het AHN. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 35,
+    "reservoirM3": 500,
+    "built": 1946,
+    "architect": "G.B.F. Hoes",
+    "ahnGroundNapM": 6.4,
+    "ahnRoofM": 33.05,
+    "ahnRimM": 34.1,
+    "bagDiameterM": 12,
+    "shaftDiameterM": 10.4,
+    "tankDiameterM": 11.8,
+    "acrossRibsM": 12.4,
+    "ribs": 8,
+    "soffitM": 23,
+    "ribTopM": 25.8,
+    "leanAtRoofM": [
+      -0.9,
+      0.43
+    ],
+    "modelTopM": 34.1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Tiel)",
+    "https://commons.wikimedia.org/wiki/File:Tiel_Watertoren_Fabriekslaantje_26.jpg (oostzijde met deur en vensterstroken, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Tiel.jpg (oostzijde, beren, rand en vensters onder het dak)",
+    "PDOK BAG-pand 0281100000000199, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-tiel-nieuwe-watertoren-1-1000.stl"
+  ]
+}
