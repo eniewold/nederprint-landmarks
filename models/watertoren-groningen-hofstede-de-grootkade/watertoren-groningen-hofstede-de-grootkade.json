@@ -1,0 +1,82 @@
+{
+  "name": "Watertoren Hofstede de Grootkade",
+  "file": "watertoren-groningen-hofstede-de-grootkade.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    232618.08,
+    581972.45
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      11,
+      0
+    ],
+    [
+      -11,
+      0
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      0,
+      -11
+    ]
+  ],
+  "groundHeight": 43.21,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010913807"
+  ],
+  "description": "Oorsprong op het hart in het AHN op maaiveld (NAP +2,45 m), assen in RD-richting, vlakmiddens op 4,5 + k·22,5 graden. Zestienhoekige schacht (apothema 9,05 naar 8,85 m) met plint, zestien lisenen, getrapte kraagstenen en trappenhuisvensters, stenen banden op 29 en 32 m met daartussen segmentboogvensters, ronde reservoirmantel van 18,2 m met vensters en tegelfries, kroonlijst tot 38,9 m, zestienzijdig tentdak (55 graden) met vier dakkapellen tot 43,9 m, lantaarn met zestien vensters tot 49,6 m, koepel, hals en kleine koepel tot 55,9 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 56.3,
+    "reservoirsM3": [
+      1000,
+      782
+    ],
+    "ahnGroundNapM": 2.45,
+    "ahnTopNapM": 58.32,
+    "geoidHeightM": 40.76,
+    "shaftApothemFootM": 9.05,
+    "shaftApothemTopM": 8.85,
+    "pilasterOuterRadiusM": [
+      9.48,
+      9.27
+    ],
+    "mantleDiameterM": 18.2,
+    "corniceDiameterM": 19,
+    "lowBandM": 28.96,
+    "upBandM": 31.95,
+    "eaveM": 38.9,
+    "roofPitchDeg": 54.6,
+    "dormerRidgeM": 43.9,
+    "lanternApothemM": 2.85,
+    "lanternM": [
+      47.9,
+      49.6
+    ],
+    "modelTopM": 55.87,
+    "photoScalePxPerM": 26.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Groningen_Hofstede_de_Grootkade)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/485188",
+    "https://commons.wikimedia.org/wiki/File:Groningen,_de_watertoren_aan_de_Hofstede_de_Grootkade,_RM485188_foto6_2013-08-04_17.35.jpg (bijna frontaal, hoogtes van de zones)",
+    "https://commons.wikimedia.org/wiki/File:Watertower_Hofstede_de_Grootkade_(Groningen).JPG (dakkapellen, lantaarn en koepels)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_van_Groningenstad_01.jpg (lisenen, kraagstenen, banden en vensters)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Groningen.JPG (plint en trappenhuisvensters)",
+    "PDOK BAG-pand 0014100010913807, AHN DSM/DTM 0,5 m en luchtfoto, NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-groningen-hofstede-de-grootkade-1-1000.stl"
+  ]
+}
