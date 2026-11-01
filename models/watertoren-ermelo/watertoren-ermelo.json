@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Oud Groevenbeek Ermelo",
+  "file": "watertoren-ermelo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    170581.99,
+    476780.2
+  ],
+  "xAxis": [
+    0.99844,
+    -0.05583
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.5,
+      0
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      -4.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0233100000009678"
+  ],
+  "description": "Oorsprong op het hart van de rechthoekige BAG-contour op het maaiveld van de heuveltop (NAP +23,1 m), +X langs de noordgevel (3,2 graden rechtsom van RD-oost). Bakstenen blok van 3,67 x 4,24 m met veldkeienplint, deur in het westen, rondboogvensters en rechte vensters, witte waterlijst op 3 m, rondboogfries en een gekanteelde borstwering van 4,03 x 4,60 m op een tandlijst tot 7,3 m rond een verdiept dak op 5,95 m; ronde hoektoren van 2,34 m op de zuidoosthoek met trapvensters, tandlijst, fries en een uitkragende kanteelkrans van 2,72 m tot 10,8 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1912,
+    "monument": 523878,
+    "ahnGroundNapM": 23.1,
+    "ahnBlockRoofNapM": 29.1,
+    "ahnBlockMerlonsNapM": 30.3,
+    "ahnTowerWalkwayNapM": 32.3,
+    "bagOutlineM": [
+      4.03,
+      4.6
+    ],
+    "blockWallsM": [
+      3.67,
+      4.24
+    ],
+    "towerDiameterM": 2.34,
+    "towerCrownDiameterM": 2.72,
+    "blockRoofM": 5.95,
+    "blockMerlonsM": 7.3,
+    "towerMerlonsM": 10.8,
+    "modelTopM": 10.8,
+    "photoScalePxPerM": 30.1,
+    "minimumPartM": 0.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Ermelo)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523878",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_WATERTOREN,_OVERZICHT_VOORZIJDE_-_Ermelo_-_20339656_-_RCE.jpg (frontale foto vanuit het zuidoosten, hoogtes)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Ermelo_-_20313754_-_RCE.jpg (west- en zuidgevel)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_-_Ermelo_-_20375910_-_RCE.jpg (west- en zuidgevel)",
+    "https://commons.wikimedia.org/wiki/File:Ermelo_Watertoren_2007.JPG (noord- en westgevel)",
+    "PDOK BAG-pand 0233100000009678, 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-ermelo-1-1000.stl"
+  ]
+}
