@@ -1,0 +1,87 @@
+{
+  "name": "Watertoren Oranje Nassaumijnen",
+  "file": "watertoren-heerlen-oranje-nassaumijnen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195339.08,
+    323001.34
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.9,
+      0
+    ],
+    [
+      5.59,
+      5.59
+    ],
+    [
+      0,
+      7.9
+    ],
+    [
+      -5.59,
+      5.59
+    ],
+    [
+      -7.9,
+      0
+    ],
+    [
+      -5.59,
+      -5.59
+    ],
+    [
+      0,
+      -7.9
+    ],
+    [
+      5.59,
+      -5.59
+    ]
+  ],
+  "groundHeight": 153.23,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0917100000030863"
+  ],
+  "description": "Oorsprong op het hart in het AHN op maaiveld aan de lage zuidkant van de voet (NAP +107,5 m), assen in RD-richting. Ronde bakstenen schacht van 12,7 m aan de voet naar 12,0 m onder de band, met trappenhuisvensters in vier kolommen en een deur naar het zuidzuidwesten; uitkragende band van het boogfries op 32,5 m met tien rondboogvensters en blinde panelen eronder, kroonlijst van 12,96 m tot 34,1 m, vlak kegeldak en ventilatiekap tot 36,3 m. Maten uit AHN, BAG en foto.",
+  "realWorld": {
+    "publishedHeightM": 35,
+    "reservoirM3": 630,
+    "built": 1952,
+    "ahnGroundNapM": 107.5,
+    "ahnGroundNorthNapM": 107.8,
+    "ahnRoofEdgeNapM": 141.6,
+    "ahnTopNapM": 143.82,
+    "geoidHeightM": 45.73,
+    "shaftDiameterFootM": 12.7,
+    "shaftDiameterTopM": 11.99,
+    "bandDiameterM": 12.29,
+    "corniceDiameterM": 12.96,
+    "bandM": 32.46,
+    "eaveM": 34.1,
+    "roofPitchDeg": 9,
+    "capDiameterM": [
+      1.1,
+      1.74
+    ],
+    "modelTopM": 36.32,
+    "photoScalePxPerM": 30.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Heerlen_Oranje_Nassaumijnen)",
+    "https://commons.wikimedia.org/wiki/File:Heerlen_Watertoren_3808.JPG (frontaal: boogfries, vensters, panelen, kroonlijst, kap, verjonging)",
+    "PDOK BAG-pand 0917100000030863, AHN DSM/DTM 0,5 m en luchtfoto, NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-heerlen-oranje-nassaumijnen-1-1000.stl"
+  ]
+}
