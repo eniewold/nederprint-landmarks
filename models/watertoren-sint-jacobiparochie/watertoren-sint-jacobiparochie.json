@@ -1,0 +1,68 @@
+{
+  "name": "Watertoren Sint Jacobiparochie",
+  "file": "watertoren-sint-jacobiparochie.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169632.42,
+    587096.22
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0063100000001159"
+  ],
+  "description": "Oorsprong op het hart van de toren op maaiveld (NAP +0,6 m), assen in RD-richting. Roodpaarse sokkel van 9,3 m, schacht met zestien lisenen (6,14 m over de vlakken) tot de kraag op 29,45 m, reservoir van 13,5 m met nagenoeg vlakke onderkant, ronde onderrand, tien hoge hotelramen en dakrand op 37,65 m, achtkante glazen lantaarn tot 40,6 m. Deur en trap naar het noordwesten. Rond de voet een zwevende twaalfhoekige ring met kamers (21 m, van 3,15 tot 7,0 m) op een liftkern, open aan de voorzijde. Maten uit AHN, BAG, luchtfoto, een RCE-foto en de bouwtekeningen.",
+  "realWorld": {
+    "publishedHeightM": 41,
+    "reservoirM3": 515,
+    "ahnGroundNapM": 0.6,
+    "ahnTopNapM": 41.03,
+    "ahnTankDiameterM": 13.8,
+    "tankDiameterM": 13.5,
+    "plinthDiameterM": 9.3,
+    "shaftAcrossFlatsM": 6.14,
+    "collarM": 29.45,
+    "tankRollTopM": 30.85,
+    "roofM": 37.65,
+    "modelTopM": 40.6,
+    "ringAcrossFlatsM": 21,
+    "ringFloorM": 3.15,
+    "ringRoofM": 7,
+    "photoScalePxPerM": 17.16,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Sint_Jacobiparochie)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Sint_Jacobiparochie_-_20423047_-_RCE.jpg (frontale telefoto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Sint_Jacobiparochie_-_20423059_-_RCE.jpg (deur en trap)",
+    "https://ruimtelijkeplannen.nl/ bestemmingsplan NL.IMRO.1949.BPStjGvSwiestr23-VAS1, toelichting en figuur 2.3 (ring op circa 3 m, gevels 1:200)",
+    "https://wadhoog.nl/ (foto na de verbouwing: ramen in het reservoir)",
+    "PDOK BAG-pand 0063100000001159, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-sint-jacobiparochie-1-1000.stl"
+  ]
+}
