@@ -1,0 +1,62 @@
+{
+  "name": "Watertoren Oosterbeek",
+  "file": "watertoren-oosterbeek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    184278.04,
+    444665.48
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.5,
+      0
+    ],
+    [
+      -5.5,
+      0
+    ],
+    [
+      0,
+      5.5
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0274100000009522"
+  ],
+  "description": "Oorsprong op het hart van de BAG-cirkel op maaiveld (NAP +55,25 m), assen in RD-richting. Ronde schacht van 8,0 m, taps naar 7,8 m, met lisenen en een stenen band met consoles op 15,3 m, vier uitgebouwde vensters met kapje en balkonkastje, afdeklijst en borstwering tot 20,8 m rond een plat dak op 19,75 m; trappentoren met ronde kop aan de zuidkant met deur, als trappenhuis tot 22,6 m met een installatieblok tot 23,65 m. Maten uit AHN, BAG en de foto.",
+  "realWorld": {
+    "publishedHeightM": 22.35,
+    "reservoirM3": 150,
+    "ahnGroundNapM": 55.25,
+    "ahnRoofNapM": 75,
+    "ahnParapetNapM": 76.05,
+    "ahnStairHouseNapM": 77.85,
+    "bagShaftDiameterM": 8.04,
+    "shaftTopDiameterM": 7.84,
+    "bandTopM": 15.3,
+    "brickCoursesParapetToBand": 88,
+    "stairTurretWidthM": 2.06,
+    "stairTurretProjectionM": 1.6,
+    "modelTopM": 23.65,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Oosterbeek)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Oosterbeek.jpg (foto vanuit het noordoosten, maten in steenlagen)",
+    "PDOK BAG-pand 0274100000009522, AHN DSM/DTM 0,5 m en luchtfoto, 3D BAG (dakhoogtes), 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-oosterbeek-1-1000.stl"
+  ]
+}
