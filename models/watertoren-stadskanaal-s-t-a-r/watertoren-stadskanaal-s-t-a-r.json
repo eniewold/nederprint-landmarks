@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren S.T.A.R. Stadskanaal",
+  "file": "watertoren-stadskanaal-s-t-a-r.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    258869.64,
+    557767.08
+  ],
+  "xAxis": [
+    0.7009,
+    -0.7133
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      3.6,
+      0
+    ],
+    [
+      -3.6,
+      0
+    ],
+    [
+      0,
+      3.6
+    ],
+    [
+      0,
+      -3.6
+    ]
+  ],
+  "groundHeight": 47.63,
+  "description": "Oorsprong op het hart van het dak in het AHN op maaiveld (NAP +6,35 m), x langs de sporen naar het zuidoosten, y naar het noordoosten. Houten watertoren van de museumspoorlijn (2008): vierkante schacht van 3,03 m met vier schoren, overstekend tankhuis van 4,40 x 4,85 m van 4,63 tot 7,1 m, pannendak met goot op 7,3 m, schilden onder 47 graden tot 8,71 m en een zadeldakje met puntgeveltjes (nok langs y, 2,52 m, 48 graden) tot 9,9 m; vensters als nissen. Geen BAG-pand. Maten uit AHN, luchtfoto en twee Commons-foto's.",
+  "realWorld": {
+    "built": 2008,
+    "publishedHeightM": 10,
+    "reservoirM3": 50,
+    "ahnGroundNapM": 6.35,
+    "ahnTopNapM": 16.24,
+    "shaftM": [
+      3.03,
+      3.03
+    ],
+    "houseM": [
+      4.4,
+      4.85
+    ],
+    "eavesM": [
+      4.7,
+      5.15
+    ],
+    "houseBottomM": 4.63,
+    "eaveM": 7.3,
+    "gableFootM": 8.71,
+    "ridgeLengthM": 2.52,
+    "modelTopM": 9.9,
+    "photoScalePxPerM": 58.6,
+    "roofSlopesDeg": [
+      48,
+      47
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Groningen (bouwjaar, hoogte, reservoir)",
+    "https://commons.wikimedia.org/wiki/File:Stoom_2016_Stadskanaal_05.jpg (bijna frontaal op het zuidoostvlak, maten)",
+    "https://commons.wikimedia.org/wiki/File:Estaciones_y_Trenes_Europa_2017_-_I_-_49671078071.jpg (zuidoost- en noordoostvlak, dak)",
+    "PDOK BAG-panden (geen pand onder de toren), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01",
+    "OpenStreetMap: richting van de sporen (-45,5 graden) en het station Stadskanaal van de STAR",
+    "NLGEO2018-geoïdehoogte op de oorsprong (41,28 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-stadskanaal-s-t-a-r-1-1000.stl"
+  ]
+}
