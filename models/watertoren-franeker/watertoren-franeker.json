@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Franeker",
+  "file": "watertoren-franeker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    166462.95,
+    577889.5
+  ],
+  "xAxis": [
+    0.97476,
+    0.22325
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000322890"
+  ],
+  "description": "Oorsprong op het hart van de achthoek in het AHN op maaiveld aan de voet (NAP +1,65 m), +X naar het vlak op 12,9 graden (oost). Betonnen achthoek van 11,3 m over de vlakken met op elke hoek een lisene van 0,9 m die aan de voet tot 7,0 m uit het hart schuin uitloopt, een band met schuine onderkant van 27,8 tot 31,1 m, een fries vanaf 39,6 m, dakrand op 43,4 m en een achtzijdig tentdak tot 47,2 m; deur naar het zuiden. Maten uit AHN, BAG en een foto.",
+  "realWorld": {
+    "publishedHeightM": 48.8,
+    "postcardHeightM": 49,
+    "reservoirM3": 445,
+    "ahnGroundNapM": 1.65,
+    "ahnTopNapM": 48.88,
+    "acrossFacesM": 11.3,
+    "bagAcrossFacesM": 10.2,
+    "pilasterWidthM": 0.9,
+    "footReachM": 7,
+    "bandM": [
+      28.5,
+      31.1
+    ],
+    "friezeM": 39.6,
+    "rimM": 43.4,
+    "modelTopM": 47.2,
+    "photoScalePxPerM": [
+      12.8,
+      13.6
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Franeker)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Franeker_03cw.JPG (frontale foto 2007, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertorens_van_Franeker_Nutsbedrijven_en_Infrastructuur,_24-09-1925,_archiefnr_2086.jpg (lisenen, band, oorspronkelijke koepel)",
+    "PDOK BAG-pand 0070100000322890, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-franeker-1-1000.stl"
+  ]
+}
