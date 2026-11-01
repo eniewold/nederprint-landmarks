@@ -1,0 +1,68 @@
+{
+  "name": "Watertoren Generaal Foulkesweg",
+  "file": "watertoren-wageningen-generaal-foulkesweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176246.5,
+    442220.45
+  ],
+  "xAxis": [
+    0.9962,
+    0.0872
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.3,
+      0
+    ],
+    [
+      -6.3,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -6.3
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0289100000005476"
+  ],
+  "description": "Oorsprong op het hart van de schacht in het AHN op maaiveld (NAP +43,0 m), lokale +Y naar de traptoren op kompasrichting -5 graden. Licht verjongende schacht (r 4,78 naar 4,62) met zes steunberen en schuine leikappen, witte band op 19,3 m, reservoir van 8,9 m tot 25,45 m met witte rand, verdiepte omloop en koperen kegeldak van 10,1 m met de goot op 26,6 m en de top op 30,3 m; traptoren van 2,5 m met kegeldakje tot 28,9 m en een portaal met schilddak en deur. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 30,
+    "reservoirM3": 130,
+    "ahnGroundNapM": 43,
+    "ahnTopNapM": 73.37,
+    "shaftDiameterFootM": 9.56,
+    "acrossButtressesFootM": 10.5,
+    "bandM": 19.3,
+    "tankDiameterM": 8.9,
+    "copingM": 25.8,
+    "roofDiameterM": 10.1,
+    "eaveM": 26.6,
+    "roofApexM": 30.3,
+    "stairTowerDiameterM": 2.5,
+    "stairTowerEaveM": 27.9,
+    "stairTowerApexM": 28.9,
+    "photoScalePxPerM": 36.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Wageningen_Generaal_Foulkesweg)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Wageningen_-_20423290_-_RCE.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_het_bovenste_gedeelte_van_de_watertoren_-_Wageningen_-_20423291_-_RCE.jpg (dak, omloop, traptoren)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_het_onderste_gedeelte_van_de_watertoren_-_Wageningen_-_20423292_-_RCE.jpg (portaal, deur)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Wageningen.jpg",
+    "PDOK BAG-pand 0289100000005476, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-wageningen-generaal-foulkesweg-1-1000.stl"
+  ]
+}
