@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Radio Kootwijk",
+  "file": "watertoren-radio-kootwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    184991.2,
+    465295.42
+  ],
+  "xAxis": [
+    0.9796,
+    0.2011
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      5
+    ],
+    [
+      -5,
+      5
+    ],
+    [
+      5,
+      -5
+    ],
+    [
+      -5,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0200100000700606"
+  ],
+  "description": "Oorsprong tussen het hart van de BAG-contour en het hart van het dak in het AHN op maaiveld (NAP +47,15 m), -Y naar het voorportaal aan het pad (-78,4 graden in RD). Betonnen achthoek van 7,2 m over de vlakken, verjongend tot 6,9 m op de dakrand op 34,15 m; op elk van de vier hoofdvlakken een portaal met kap, trap en wangen, een lisene met zes vensters en een erker met V-vormige onderkant en vensterstrook (27,3 m tot de dakrand), op de schuine vlakken een hoge vensterstrook; achtkant tentdak en rond glazen lichtbaken tot 37,7 m. Maten uit BAG, AHN, Wikipedia en foto's.",
+  "realWorld": {
+    "publishedHeightM": 37.85,
+    "reservoirM3": 110,
+    "ahnGroundNapM": 47.15,
+    "ahnTopNapM": 84.83,
+    "footAcrossFlatsM": 7.2,
+    "eaveAcrossFlatsM": 6.9,
+    "eaveM": 34.15,
+    "orielM": [
+      27.3,
+      34.15
+    ],
+    "beaconDiameterM": 1,
+    "modelTopM": 37.7,
+    "photoScalePxPerM": 20.8,
+    "minimumPartM": 0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Radio_Kootwijk)",
+    "https://commons.wikimedia.org/wiki/File:20160926_Watertoren1_Radio_Kootwijk.jpg (frontale foto, hoogtes)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_-_Kootwijk_-_20127027_-_RCE.jpg (portaal, deur en trap)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Radio_Kootwijk_P1380186.jpg (zuidgevel, zijportalen op de rand)",
+    "https://commons.wikimedia.org/wiki/File:Kootwijk_watertoren_westzijde.jpg (westgevel gelijk aan de zuidgevel)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_-_Kootwijk_-_20127026_-_RCE.jpg (erker en vensters van onderen)",
+    "PDOK BAG-pand 0200100000700606, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-radio-kootwijk-1-1000.stl"
+  ]
+}
