@@ -1,0 +1,64 @@
+{
+  "name": "Watertoren Joure",
+  "file": "watertoren-joure.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    182684.16,
+    553077.5
+  ],
+  "xAxis": [
+    0.9558,
+    0.2941
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      5.5
+    ],
+    [
+      0,
+      -5.5
+    ],
+    [
+      10.5,
+      0
+    ],
+    [
+      -8,
+      5.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0051100001222389"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-contour op maaiveld (NAP +0,3 m), +X loodrecht op het oostvlak (17,1 graden). Achthoekig betonskelet met verdiepte bakstenen vakken: uitwijkende voet van 7,96 m over de vlakken, verjongende schacht tot 16,75 m met twee vensters in de vlakken naast het oostvlak, kraag naar het reservoir van 8,26 m met band, kapitelen en een fries met ventilatieramen, overstekende dakrand van 10,16 m op 26,1 tot 26,55 m en een achtzijdig koperen tentdak tot 29,2 m; lage west- en oostvleugel van de woning met lessenaarsdaken. Maten uit BAG, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 30.3,
+    "reservoirM3": 150,
+    "ahnGroundNapM": 0.3,
+    "bag3dRidgeNapM": 29.26,
+    "footAcrossFlatsM": 7.96,
+    "shaftTopAcrossFlatsM": 6.74,
+    "tankAcrossFlatsM": 8.26,
+    "eaveAcrossFlatsM": 10.16,
+    "soffitM": 26.1,
+    "eaveM": 26.55,
+    "modelTopM": 29.2,
+    "roofPitchDeg": 28,
+    "photoScalePxPerM": 37.9,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Joure)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_in_Joure_verbouwd_tot_woning,_21-08-1991,_signatuur_62618.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Joure_uo.JPG (vensters, dakrand)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0051100001222389 (dakvlakken, AHN5 2023)",
+    "PDOK BAG-pand 0051100001222389, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-joure-1-1000.stl"
+  ]
+}
