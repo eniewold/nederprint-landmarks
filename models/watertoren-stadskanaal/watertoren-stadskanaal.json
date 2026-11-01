@@ -1,0 +1,78 @@
+{
+  "name": "Watertoren Stadskanaal",
+  "file": "watertoren-stadskanaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    261661.62,
+    555096.81
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 48.6,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0037100000008106"
+  ],
+  "description": "Oorsprong op het hart van de BAG-cirkel op maaiveld (NAP +7,25 m), assen in RD-richting. Ronde schacht van 11,26 m met vier steunberen van drie schijven op de diagonalen (2,44 m breed, tot 8,27 m uit het hart, kap op 36 m), op elk vlak een sikkelvormige luifel op 26,8 m, een rond venster en twee smalle vensters, ingang en groot venster op het zuiden, kroonlijst tot 39,85 m en een opbouw van 10,2 m met plat dak op 42,2 m, dakrand 42,65 m en dakluik tot 42,85 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 42.76,
+    "publishedBaseNapM": 7.1,
+    "reservoirM3": 900,
+    "ahnGroundNapM": 7.25,
+    "ahnRoofNapM": 49.42,
+    "ahnTopNapM": 50.08,
+    "geoidNlgeo2018M": 41.35,
+    "shaftDiameterM": 11.26,
+    "buttressWidthM": 2.44,
+    "buttressOuterFromAxisM": [
+      8.27,
+      7.33
+    ],
+    "buttressCapM": [
+      35.8,
+      36.2
+    ],
+    "ledgeTopM": 26.8,
+    "corniceM": [
+      39,
+      39.85
+    ],
+    "drumDiameterM": 10.2,
+    "roofM": 42.2,
+    "rimM": 42.65,
+    "modelTopM": 42.85,
+    "minimumPartM": 0.65
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Stadskanaal)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_van_Stadskanaal.jpg (luifel, vensters, steunberen)",
+    "https://commons.wikimedia.org/wiki/File:Stadskanaal_Watertoren_2006.JPG (steunbeer van drie schijven, kroonlijst en opbouw)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren%2Bmuseum.jpg (steunbeer van voren, luifels op twee vlakken)",
+    "PDOK BAG-pand 0037100000008106, AHN DSM/DTM 0,5 m, luchtfoto 8 cm en NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-stadskanaal-1-1000.stl"
+  ]
+}
