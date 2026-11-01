@@ -1,0 +1,61 @@
+{
+  "name": "Watertoren Hoorn (Terschelling)",
+  "file": "watertoren-hoorn-terschelling.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    152416.89,
+    601676.59
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      -1.5,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0093100000216576"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +17,9 m), assen in RD-richting. Bakstenen cilinder van 6,3 m tot 8,85 m met een betonnen dakrand van 6,6 m tot 9,25 m, licht oplopend dak tot 9,5 m en een dakluik tot 10,5 m; aan de zuidzuidoostkant een betonnen deurportaal van drie vlakken met deur, panelen en een overstekend plat dak op 2,65 m. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "publishedHeightM": 10,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 17.9,
+    "ahnRoofEdgeNapM": 27.1,
+    "ahnTopNapM": 28.6,
+    "bagDiameterM": 6.55,
+    "wallDiameterM": 6.3,
+    "roofEdgeM": 9.25,
+    "porchRoofM": 2.65,
+    "porchDepthM": 1.5,
+    "modelTopM": 10.5,
+    "photoScalePxPerM": 83,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hoorn_Terschelling)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Hoorn,_Terschelling.jpg (frontale foto op het portaal, verhoudingen)",
+    "PDOK BAG-pand 0093100000216576, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-hoorn-terschelling-1-1000.stl"
+  ]
+}
