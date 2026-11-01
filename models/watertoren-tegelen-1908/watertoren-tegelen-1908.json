@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Steyl",
+  "file": "watertoren-tegelen-1908.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206300.4,
+    372105.25
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 74.16,
+  "groundSamplePoints": [
+    [
+      4.2,
+      0
+    ],
+    [
+      -4.2,
+      0
+    ],
+    [
+      0,
+      4.2
+    ],
+    [
+      0,
+      -4.2
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0983100000000104"
+  ],
+  "description": "Oorsprong op het hart van de kop (BAG en AHN) op maaiveld (NAP +29,45 m), assen in RD-richting. Ronde, taps toelopende bakstenen schacht van 5,11 m aan de voet tot 4,36 m op 23 m, met een gemetselde voet van 5,3 m, een waterlijst van twee banden op 16 m, een band onder de holle kraag, een deur op het westen en twee smalle vensters per verdieping; gepleisterde kop van 6,2 m van 24,5 tot 30,85 m met vier raampjes, dakrand van 6,42 m met een lage rand tot 31,1 m om het platte dak. Maten uit de maattekening bij de toren, BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1909-1910",
+    "architect": "P.M. Scholl SVD",
+    "rijksmonument": 528364,
+    "ahnGroundNapM": 29.45,
+    "roofNapM": 60.3,
+    "roofRimNapM": 60.55,
+    "geoidNlgeo2018M": 44.71,
+    "footDiameterM": 5.11,
+    "shaftTopDiameterM": 4.36,
+    "headDiameterM": 6.2,
+    "corniceDiameterM": 6.42,
+    "waterCourseM": [
+      15.9,
+      16.65
+    ],
+    "flareM": [
+      22.95,
+      24.5
+    ],
+    "roofM": 30.85,
+    "modelTopM": 31.1,
+    "drawingScalePxPerM": 21.65,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Steyl)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/528364 (taps toelopend op ronde voet, waterlijst halverwege, segmentboogdeur en -vensters, uitkragend reservoir met plat dak, getuid kruis)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_met_uitleg_werking_2024.jpg (maattekening op het informatiebord: doorsneden en hoogteverhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:Tegelen_Steyl_Watertoren_5893.JPG (kop, kraag, banden, vensters)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_watertoren_Missiehuis_-_Steijl_-_20321110_-_RCE.jpg (deur, waterlijst, verhoudingen)",
+    "PDOK BAG-pand 0983100000000104, AHN DSM/DTM 0,5 m, luchtfoto 8 cm en NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-tegelen-1908-1-1000.stl"
+  ]
+}
