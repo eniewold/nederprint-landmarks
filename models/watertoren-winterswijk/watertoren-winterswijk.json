@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Winterswijk",
+  "file": "watertoren-winterswijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    245410.75,
+    442930.55
+  ],
+  "xAxis": [
+    0.4602,
+    -0.8878
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.4,
+      5.4
+    ],
+    [
+      -5.4,
+      5.4
+    ],
+    [
+      -5.4,
+      -5.4
+    ],
+    [
+      5.4,
+      -5.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0294100000392878"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-contour op maaiveld (NAP +37,35 m), +X naar het vlak met de deur (297,4 graden van RD-oost). Achthoekige schacht van 11,4 m over de vlakken, verjongend tot 10,8 m op 18,6 m, met getande hoeklisenen, portaal en vensterstroken; witte kraag naar de vensterzone van 11,4 m, witte band met zestien consoles op 22,5 m, reservoirzone met zestien lisenen tot 31,15 m, koperen opstand van 10,4 m met acht vensters tot 33,4 m en koperen tentdak tot 37,0 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 36,
+    "reservoirM3": 400,
+    "ahnGroundNapM": 37.35,
+    "ahnTopNapM": 74.35,
+    "footAcrossFlatsM": 11.44,
+    "shaftTopAcrossFlatsM": 10.84,
+    "ledgeM": 18.95,
+    "bandTopM": 22.5,
+    "wallTopM": 31.15,
+    "atticAcrossFlatsM": 10.44,
+    "eaveM": 33.4,
+    "modelTopM": 37,
+    "photoScalePxPerM": 32,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Winterswijk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523469",
+    "https://commons.wikimedia.org/wiki/File:Winterswijk,_de_Watertoren_RM523469_IMG_2610_2022-07-18_18.06.jpg (frontale foto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Water_Tower_Winterswijk.JPG (opstand en tentdak)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Winterswijk.jpg (ingang en vensterstrook)",
+    "PDOK BAG-pand 0294100000392878, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-winterswijk-1-1000.stl"
+  ]
+}
