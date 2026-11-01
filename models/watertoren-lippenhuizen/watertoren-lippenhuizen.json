@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Lippenhuizen",
+  "file": "watertoren-lippenhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202884.75,
+    559849.75
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0086100000354476"
+  ],
+  "description": "Oorsprong op het hart van de BAG-contour, bijgesteld op het AHN, op maaiveld (NAP +2,28 m), assen in RD-richting. Achthoekige bakstenen schacht (14,6 m over de hoeken) met plint; de vier diagonale hoeken zijn tot de gelede luifel op 24,6 m afgeschuind tot panelen met smalle vensters, de deur met portaal in het paneel naar het zuidoosten; daarboven drie rijen raamparen met ribben op de hoeken tot 36,7 m, een koperen opstand met uitgebogen dakvoet en een achtzijdig tentdak tot 43,5 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 44.25,
+    "reservoirsM3": [
+      300,
+      300
+    ],
+    "ahnGroundNapM": 2.28,
+    "ahnTopNapM": 45.75,
+    "cornerRadiusM": 7.3,
+    "panelDistanceM": 6,
+    "panelWidthM": 6.28,
+    "corniceTopM": 24.6,
+    "wallTopM": 36.7,
+    "eaveM": 38.45,
+    "modelTopM": 43.5,
+    "photoScalePxPerM": 22.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Lippenhuizen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513162",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Lippenhuizen.jpg (telelens, hoogtes van luifel, raamparen en dakvoet)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Lippenhuizen_2019.jpg (paneel, luifel en ribben aan de deurzijde)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_in_Lippenhuizen_Industrieel_erfgoed_1932,_signatuur_65872.jpg (portaal)",
+    "PDOK BAG-pand 0086100000354476, AHN DSM/DTM 0,5 m, luchtfoto en 3D BAG, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-lippenhuizen-1-1000.stl"
+  ]
+}
