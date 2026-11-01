@@ -1,0 +1,63 @@
+{
+  "name": "Watertoren Leur",
+  "file": "watertoren-leur.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176832.1,
+    425308.2
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4,
+      0
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      -4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000021710"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour van de schacht op maaiveld (NAP +7,45 m), assen in RD-richting. Ronde schacht van 5,0 m met plint, zeven banden en een vensterband tot 28,3 m, gladde kraag tot 30 m, omgekeerde kegel met 72 ribben onder 50 graden tot een witte dakrand van 20,2 m op 38 m, plat dak met ronde dakopbouw tot 40,1 m; deur naar het zuiden geschat. Maten uit BAG, AHN, luchtfoto en één foto.",
+  "realWorld": {
+    "publishedHeightM": 40,
+    "reservoirM3": 800,
+    "ahnGroundNapM": 7.45,
+    "ahnTopNapM": 47.58,
+    "shaftDiameterM": 5,
+    "rimDiameterM": 20.2,
+    "shaftTopM": 28.3,
+    "coneFootM": 30,
+    "coneAngleDeg": 50,
+    "ribs": 72,
+    "eaveM": 38.05,
+    "deckM": 38.45,
+    "drumDiameterM": 6.7,
+    "modelTopM": 40.1,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Leur)",
+    "https://commons.wikimedia.org/wiki/File:Leur_Watertoren_2006.JPG (foto, hoogtes en ribben)",
+    "PDOK BAG-pand 0296100000021710, AHN DSM/DTM 0,5 m en luchtfoto, 3D BAG, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-leur-1-1000.stl"
+  ]
+}
