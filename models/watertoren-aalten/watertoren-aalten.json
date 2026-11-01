@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Aalten",
+  "file": "watertoren-aalten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    236784.1,
+    438893
+  ],
+  "xAxis": [
+    0.9304,
+    0.3665
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.4,
+      0
+    ],
+    [
+      -7.4,
+      0
+    ],
+    [
+      0,
+      7.4
+    ],
+    [
+      0,
+      -7.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0197100000024554"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de BAG-contour op maaiveld (NAP +37,2 m), +X naar de steunbeer op 21,5 graden (oost-noordoost). Zeshoekige kern (hoeken op 4,4 m) met zes steunberen van 1,3 m tot 5,85 m uit het hart, deur in het vak naar het zuidzuidoosten, raamband en trapvensters in de vakken; rond reservoir van 11,2 m tussen de steunberen van 22,5 tot 29,9 m met drie vensters per vak, gemetselde kraag naar de omgang op 31,0 m (12,3 m), teruggezette opbouw van 9,2 m met twaalf vensters, overstekende dakrand van 10,7 m op 33,3 tot 33,8 m en koperen kegeldak tot 37,15 m. Maten uit BAG, AHN, Wikipedia en foto's.",
+  "realWorld": {
+    "publishedHeightM": 37.15,
+    "reservoirsM3": [
+      375,
+      195
+    ],
+    "ahnGroundNapM": 37.2,
+    "ahnTopNapM": 74.61,
+    "bagCoreCornerRadiusM": 4.4,
+    "bagPilasterRadiusM": 5.85,
+    "pilasterWidthM": 1.3,
+    "tankDiameterM": 11.2,
+    "ledgeM": 22.5,
+    "galleryM": 31,
+    "galleryDiameterM": 12.3,
+    "drumDiameterM": 9.2,
+    "eaveDiameterM": 10.7,
+    "eaveM": 33.8,
+    "modelTopM": 37.15,
+    "photoScalePxPerM": 42,
+    "minimumPartM": 0.65
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Aalten)",
+    "https://commons.wikimedia.org/wiki/File:Iloveachterhoek.jpg (van ver, bijna recht: maten van reservoir, omgang, opbouw en dak)",
+    "https://commons.wikimedia.org/wiki/File:Water_Tower_Aalten.JPG (steunberen, onderrand, raamband en vensters)",
+    "PDOK BAG-pand 0197100000024554, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-aalten-1-1000.stl"
+  ]
+}
