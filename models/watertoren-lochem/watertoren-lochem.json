@@ -1,0 +1,60 @@
+{
+  "name": "Watertoren Lochem",
+  "file": "watertoren-lochem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    225180.92,
+    463264.8
+  ],
+  "xAxis": [
+    0.96858,
+    0.24869
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      -7
+    ],
+    [
+      0,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0262100000008034"
+  ],
+  "description": "Oorsprong op het hart van de achthoek op maaiveld (NAP +35,98 m), +X loodrecht op de oostgevel (14,4 graden), +Y naar het trappentorentje (noord). Achtkante bakstenen toren van 10,8 m over de vlakken op een plint, met per vlak een verdiept middenveld van 7 tot 12,3 m, witte banden op 10,9 en 13,35 m, plat dak op 13,7 m achter een borstwering met openingen tot 14,7 m, installatiekasten op het dak, de hoofdingang met puntige omlijsting en treden in het noordoostvlak; tegen de noordgevel een achtkant trappentorentje van 3,2 m met eigen deur, spleetvensters, kroonlijst en laag koperen dak tot 18,7 m. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "publishedHeightM": 18.6,
+    "reservoirM3": 250,
+    "built": 1924,
+    "architect": "H. Wessel",
+    "ahnGroundNapM": 35.98,
+    "ahnRoofM": 13.7,
+    "ahnParapetM": 14.7,
+    "ahnTurretTopM": 18.7,
+    "acrossFlatsM": 10.8,
+    "turretAcrossFlatsM": 3.2,
+    "axisDeg": 14.4,
+    "modelTopM": 18.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Lochem)",
+    "https://commons.wikimedia.org/wiki/File:Lochem_Watertoren_2006.JPG (noordoostvlak met ingang en torentje, maten)",
+    "PDOK BAG-pand 0262100000008034, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-lochem-1-1000.stl"
+  ]
+}
