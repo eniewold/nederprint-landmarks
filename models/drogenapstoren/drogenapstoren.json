@@ -1,0 +1,72 @@
+{
+  "name": "Drogenapstoren",
+  "file": "drogenapstoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    210481.76,
+    461524.11
+  ],
+  "xAxis": [
+    0.0814,
+    -0.9967
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      0,
+      10
+    ]
+  ],
+  "groundHeight": 52.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0301100000013716"
+  ],
+  "description": "Oorsprong op het hart van het vierkante BAG-pand op het maaiveld van de poort (NAP +9,1 m), +X naar de zuidgevel met de poort (274,67 graden van RD-oost). Poortgebouw van 11,4 × 11,3 m met spitsboogpoort, vensters, witte boogfries op 11,9 m, borstwering met vier kantelen per zijde tot 13,75 m, vier achtkante hoektorentjes op kraagstenen tot 21,0 m, achtkante bovenbouw van 8,0 m met spitsboogfries en dakvoet op 22,35 m en een achtkante spits met knik tot 45,0 m; twee lage aanbouwen in het BAG-pand. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 50,
+    "reservoirM3": 180,
+    "ahnGroundNapM": 9.1,
+    "ahnTopNapM": 53.49,
+    "coneFitApexM": 45.46,
+    "bodyM": [
+      11.44,
+      11.28
+    ],
+    "friezeM": 11.9,
+    "merlonTopM": 13.75,
+    "turretAcrossCornersM": 3.3,
+    "turretEaveM": 16.45,
+    "turretApexM": 21,
+    "upperAcrossFlatsM": 8,
+    "eaveM": 22.35,
+    "modelTopM": 45,
+    "photoScalePxPerM": 29.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Drogenapstoren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41393",
+    "https://commons.wikimedia.org/wiki/File:Zutphen,_de_Drogenapstoren_RM41393_IMG_7993_2021-02-12_11.31.jpg (frontale foto zuidgevel, maten)",
+    "https://commons.wikimedia.org/wiki/File:Zutphen,_de_Drogenapstoren_positie2_RM41393_foto3_2014-03-10_15.23.jpg (kantelen, torentjes, bovenbouw)",
+    "https://commons.wikimedia.org/wiki/File:20160917_Drogenapsteeg_Drogenapstoren_Zutphen.jpg (noordgevel)",
+    "https://commons.wikimedia.org/wiki/File:Monumentendag_010.JPG (westzijde, torentjes)",
+    "PDOK BAG-pand 0301100000013716, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "drogenapstoren-1-1000.stl"
+  ]
+}
