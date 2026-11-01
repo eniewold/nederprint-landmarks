@@ -1,0 +1,81 @@
+{
+  "name": "Nieuwe watertoren Roermond",
+  "file": "watertoren-roermond-1930.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    197377.2,
+    355989.79
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 72.63,
+  "groundSamplePoints": [
+    [
+      5.4,
+      0
+    ],
+    [
+      -5.4,
+      0
+    ],
+    [
+      0,
+      -5.4
+    ],
+    [
+      -3.8,
+      3.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0957100000217594"
+  ],
+  "description": "Oorsprong op het hart van het dak in het AHN op maaiveld (NAP +27,9 m), assen in RD-richting. Ronde bakstenen schacht van 7,75 m met drie bouwlagen: vensterparen op het zuiden en oostnoordoosten, losse vensters op het oosten en zuidoosten, deuren op het westen, noorden en oostnoordoosten; betonnen reservoir van dezelfde doorsnede van 9,7 tot 14,35 m met een voeg aan de onderkant, plat dak met een ring binnen de dakrand en een glazen lichtkap, balkon en kooiladder op het noordnoordoosten tot 15,25 m. Maten uit BAG, 3D BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1928-1930",
+    "architect": "S. van Ravesteyn",
+    "rijksmonument": 506153,
+    "ahnGroundNapM": 27.9,
+    "roofNapM": 42.24,
+    "roofMaxNapM": 42.49,
+    "geoidNlgeo2018M": 44.73,
+    "diameterM": 7.75,
+    "tankBottomM": 9.7,
+    "roofM": 14.35,
+    "windowFloorsM": [
+      [
+        1,
+        3.6
+      ],
+      [
+        4.6,
+        6
+      ],
+      [
+        7.5,
+        8.85
+      ]
+    ],
+    "balconyM": 3.7,
+    "modelTopM": 15.25,
+    "photoScalePxPerM": 31.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Roermond)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/506153 (drie bouwlagen, drie deuren, plat gedekt reservoir, stalen trap aan de noordzijde)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Roermond_-_20291317_-_RCE.jpg (noordkant: ladder, balkon, deuren, hoogtes)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Roermond_-_20291318_-_RCE.jpg (zuidoostkant: vensters, reservoirhoogte)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Roermond_-_20291316_-_RCE.jpg (zuidkant: vensterparen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Roermond.jpeg (westdeur en zuidkant)",
+    "PDOK BAG-pand 0957100000217594, 3D BAG (AHN5), AHN DSM/DTM 0,5 m, luchtfoto 8 cm en NLGEO2018, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-roermond-1930-1-1000.stl"
+  ]
+}
