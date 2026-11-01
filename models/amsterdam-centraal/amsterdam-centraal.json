@@ -45,27 +45,38 @@
     "NL.IMBAG.Pand.0363100012245759",
     "NL.IMBAG.Pand.0363100012246251"
   ],
-  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de voorgevel van de middenpartij (tussen de torens) in de oorsprong, +X langs de sporen naar het oosten (RD-azimut 121 graden) en +Y naar het IJ; de voorgevel aan het Stationsplein ligt richting -Y. Het maaiveld wordt op het Stationsplein bemonsterd. Vervangt de PDOK-reconstructie van het stationspand (een LoD1.1-blok), de IJ-hal en de tunnels. Nodenamen klasse:label bepalen de materiaalklasse.",
+  "replacesTerrain": [
+    "G0363.9806c03a419f49e0b9858c9773357e70"
+  ],
+  "description": "GLB in meters, Y omhoog volgens glTF; na omzetting naar Z omhoog ligt het midden van de voorgevel van de middenpartij (tussen de torens) in de oorsprong, +X langs de sporen naar het oosten (RD-azimut 121 graden) en +Y naar het IJ; de voorgevel aan het Stationsplein ligt richting -Y. Het maaiveld wordt op het Stationsplein bemonsterd. De vier perronkappen zijn open schalen op kolommen boven een eigen spoorplateau met perrons en het busplatform boven de IJ-hal. Vervangt de PDOK-reconstructie van het stationspand (een LoD1.1-blok), de IJ-hal en de tunnels, en het plat gelegde busplatform. Nodenamen klasse:label bepalen de materiaalklasse; spoor, perrons en busplatform dragen BGT-attributen.",
   "printFiles": [
     "amsterdam-centraal-1-2000.stl"
   ],
   "realWorld": {
-    "lengthM": 430.3,
-    "depthM": 187.1,
+    "lengthM": 437.8,
+    "depthM": 187.4,
     "stationBuildingLengthM": 373.4,
-    "wingEavesNapM": 20.7,
+    "wingEavesNapM": 21.3,
     "wingRidgeNapM": 26,
     "centralRidgeNapM": 34.2,
+    "towerShaftM": [
+      9.3,
+      9
+    ],
     "towerTopsNapM": [
       43.7,
-      42.8
+      44
     ],
+    "trackNapM": 5.6,
+    "platformNapM": 6.6,
+    "busPlatformNapM": 6.7,
     "halls": [
       {
         "label": "eerste kap",
         "spanM": 45.4,
         "lengthM": 308.5,
-        "topNapM": 29.05
+        "topNapM": 29.05,
+        "screenBottomNapM": 12.5
       },
       {
         "label": "middenkap",
@@ -77,7 +88,8 @@
         "label": "tweede kap",
         "spanM": 38,
         "lengthM": 355,
-        "topNapM": 29.1
+        "topNapM": 29.1,
+        "screenBottomNapM": 12.5
       },
       {
         "label": "busstationkap",
@@ -92,6 +104,11 @@
     "https://en.wikipedia.org/wiki/Amsterdam_Centraal_station",
     "https://monumentenregister.cultureelerfgoed.nl/monumenten/5681",
     "PDOK BAG panden en BGT pand 0363100012185598 (contour stationsgebouw), EPSG:28992",
-    "PDOK AHN DSM/DTM 0,5 m via WCS voor alle hoogtes en de boogprofielen van de vier kappen"
+    "PDOK BGT perrons, overkappingen, wegdelen (OV-baan, voetpad) en overbruggingsdeel G0363.9806c03a419f49e0b9858c9773357e70 (busplatform)",
+    "PDOK AHN DSM/DTM 0,5 m via WCS voor alle hoogtes, de omhullende van torens en paviljoens, de boogprofielen van de vier kappen, spoor en perrons",
+    "PDOK luchtfoto Actueel_orthoHR (dakkapellen, topgevels, glasdak oostvleugel)",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_2024_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Centraal_station_2023.jpg",
+    "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Amsterdam_Central_Station_and_the_surrounding_area.jpg"
   ]
 }

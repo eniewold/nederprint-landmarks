@@ -4,9 +4,12 @@ Bestanden:
 
 | Bestand | Inhoud |
 | --- | --- |
-| `amsterdam-centraal.glb` | Catalogusbron in meters: nodes `building:stationsgebouw`, `building:eerste kap`, `building:middenkap`, `building:tweede kap`, `building:busstationkap` |
-| `amsterdam-centraal-1-2000.stl` | Stationsgebouw en de vier perronkappen in één stuk op 1:2000 (215 × 94 × 22 mm) |
-| `amsterdam-centraal.json` | Catalogusitem met RD-georeferentie, acht vervangen BAG-panden, hoofdmaten en bronnen |
+| `amsterdam-centraal.glb` | Catalogusbron in meters: nodes `building:stationsgebouw`, `building:eerste kap`, `building:middenkap`, `building:tweede kap`, `building:busstationkap`, `building:spoorplateau`, `road:spoor`, `separation:perrons`, `building:IJ-hal en busplatform`, `road:busbanen` en `road:busperrons` |
+| `amsterdam-centraal-1-2000.stl` | Alle onderdelen in één stuk op 1:2000 (219 × 94 × 22 mm), met open kappen op kolommen |
+| `amsterdam-centraal.json` | Catalogusitem met RD-georeferentie, acht vervangen BAG-panden, het vervangen busplatform uit de BGT, hoofdmaten en bronnen |
+
+Gegenereerd met `node scripts/generate-amsterdam-centraal.mjs` (1:2000 is de
+standaard; het complex is 438 m lang en past op 1:1000 niet op een printbed).
 
 De STL is in millimeters met Z omhoog en de oorsprong in het midden van de
 voorgevel van de middenpartij, tussen de torens, op NAP +2,5 m (het
@@ -16,59 +19,77 @@ de GLB gebruikt dezelfde oorsprong in meters met de glTF-conventie Y omhoog.
 azimut 121 graden), +Y naar het IJ; de voorgevel aan het Stationsplein ligt
 richting -Y. Het maaiveld wordt op vijf punten op het Stationsplein
 bemonsterd (`groundSamplePoints`), omdat de standaardpunten rond de voetafdruk
-van 430 × 187 m in het IJ of op de lagere IJ-zijde (NAP +0,8 m) vallen. Alle
-onderdelen lopen door tot NAP +0,5 m, zodat ze ook aan de IJ-zijde en op het
-spoorviaduct in het terrein staan.
+in het IJ of op de lagere IJ-zijde (NAP +0,8 m) vallen. Alle onderdelen lopen
+door tot NAP +0,5 m, zodat ze ook aan de IJ-zijde in het terrein staan.
 
 Het catalogusitem vervangt acht BAG-panden (`replacesBuildings`): het
-stationspand 0363100012185598, de IJ-hal 0363100012242112, de passage
+stationspand 0363100012185598 (in PDOK een LoD1.1-blok van 23 m hoog over
+gebouw en kappen samen), de IJ-hal 0363100012242112, de passage
 0363100012240311, 0363100012185599 onder het westeinde van de kappen en vier
-kleine panden in de IJ-hal. De PDOK-reconstructie van het stationspand is een
-LoD1.1-blok (`rf_extrusion_mode` `lod11_fallback`, dak `unknown`, RMSE van de
-LoD2.2-poging 5,6 m): één vlakke doos van 23 m hoog over gebouw en kappen
-samen, zonder torens of bogen. De andere panden hebben wel een LoD2.2-dak, maar
-dat volgt de glazen kappen slecht en steekt door het model heen.
+kleine panden in de IJ-hal. Daarnaast vervangt het het BGT-overbruggingsdeel
+van het busplatform (`replacesTerrain`), dat PDOK plat op maaiveld legt.
 
-Onderdelen in het model:
+## Waarom open kappen en een eigen spoorplateau
 
-- Stationsgebouw van Cuypers op de BGT-contour, 373 m lang: hoofdvleugels met
-  goot op NAP +20,7 m en mansardekap tot de nok op NAP +26,0 m, vijf topgevels
-  aan de voorzijde (waarvan één brede met risaliet), een lage westvleugel
-  (nok NAP +15,4 m) met een hoger kopgebouw.
-- Middenpartij 12,6 m naar voren, met een dwarskap tot NAP +34,2 m (achter
-  afgewolfd), een voorblok op NAP +29,3 m en de grote topgevel tot NAP +38 m.
-- Twee vierkante torens van 6,7 m met kroonlijst op NAP +29,5 m en spitsen tot
-  NAP +43,7 m (west) en +42,8 m (oost).
-- Koningspaviljoen (Koninklijke wachtkamer) met schilddak tot NAP +29,9 m en
-  een naar voren stekend portaal met topgevel tot NAP +32 m; een lage
-  verbinding boven de oostelijke doorgang.
-- Oostvleugel, 15 m diep, goot NAP +17,9 m, nok NAP +24,2 m, met twee
-  risalieten op NAP +25,4 m.
-- Vier gebogen perronkappen, elk als eigen onderdeel met het boogprofiel uit
-  het AHN (90e percentiel per meter dwars op de sporen, langs de hele kap
-  binnen 5 cm constant) en aan beide kopse kanten een 1 m teruggelegde
-  kopgevel onder een 1,2 m dikke boogrand:
-  - eerste kap (L.J. Eijmer, 1889): 45 m overspanning, 309 m lang, met
-    lichtstraat in de nok tot NAP +29,05 m;
-  - middenkap (Jan Garvelink, 1997): 19 m, 358 m lang, tot NAP +19,45 m;
-  - tweede kap (Werkspoor, 1922-1924): 38 m, 355 m lang, met lichtstraat tot
-    NAP +29,1 m;
-  - busstationkap (Benthem Crouwel, 2014): 53,5 m, 361 m lang, tot
-    NAP +22,85 m, met de noordrand boven de IJ-zijde.
+Het vorige model (2026-09-29) had dichte kappen: een volle boog van het
+perron tot de nok. Volgens de huidige werkwijze toont het model de echte
+vorm en vult de export op wat een print nodig heeft. De kappen zijn daarom
+schalen van 1,2 m dik op kolommen van 1 m in de goten, met de glazen
+kopgevels alleen boven de treinen (tot NAP +12,5 m). Onder de kappen ziet het
+AHN het spoor niet; het PDOK-terrein zakt daar door tot NAP +2,4 m, en het
+busplatform ligt in PDOK plat op maaiveld. Het model brengt daarom zelf het
+spoorplateau mee (spoor NAP +5,6 m en perrons NAP +6,6 m, gemeten in het AHN
+waar het spoor buiten de kappen ligt) en het busplatform boven de IJ-hal
+(NAP +6,7 m), met de oprit van de busbaan naar de kade aan de oostkant.
+Spoor, perrons, busbanen en busperrons zijn aparte onderdelen met hun
+BGT-attributen, zodat ze in de export de kleur van weg en perron krijgen.
+
+Printvolume op 1:1000 (overhangopvulling, 45°): het model zelf 0,39 dm³,
+met ondersteuning v2 1,06 dm³ en met v1 1,11 dm³; het vorige, dichte model
+kwam op 1,14 dm³. Onder de oprit en naast de kolommen op de perrons laat v2
+openingen van circa 1 mm, die de printer overbrugt.
+
+## Onderdelen
+
+- Stationsgebouw van Cuypers op de BGT-contour: hoofdvleugels met de goot op
+  NAP +21,3 m, steile mansarde en nok op NAP +26,0 m, vier topgevels en een
+  rij dakkapellen om de 3,6 m in de voorste mansarde; vensters als nissen van
+  0,35 m (drie lagen in de vleugels van Cuypers, vier in de oostvleugel).
+- Westpaviljoen (risaliet van 8,5 × 10,2 m, schilddak tot NAP +32 m) en de
+  lage westvleugel (nok NAP +15,4 m) met een hoger kopgebouw.
+- Middenpartij met een voorblok, de grote dwarskap tot NAP +34,2 m, de
+  topgevel tot NAP +38 m met twee hoektorentjes en drie poorten.
+- Twee torens van 9,3 × 9,0 m tot de kroonlijst op NAP +29 m met
+  hoekpinakels, een kap in twee geledingen, lantaarn en naald tot NAP +43,7 m
+  (west) en +44,0 m (oost); de wijzerplaten als ronde nissen.
+- Koningspaviljoen met schilddak tot NAP +29,9 m en portaal met topgevel,
+  de open oostelijke doorgang en de luifel voor de oostelijke hoofdvleugel.
+- Oostvleugel met mansarde (goot NAP +18 m), glazen kap, twee risalieten,
+  drie smalle topgevels en een hoekblok met kantelen.
+- Vier perronkappen met het boogprofiel uit het AHN (90e percentiel per
+  meter dwars op de sporen):
+  - eerste kap (L.J. Eijmer, 1889): 45 m overspanning, met lichtstraat tot
+    NAP +29,05 m, aan de zuidkant op de achtergevel van het stationsgebouw;
+  - middenkap (Jan Garvelink, 1997): 19 m, tot NAP +19,45 m, kopse kanten open;
+  - tweede kap (Werkspoor, 1922-1924): 38 m, met lichtstraat tot NAP +29,1 m;
+  - busstationkap (Benthem Crouwel, 2014): 53,5 m, tot NAP +22,85 m, met de
+    noordrand boven de kade aan het IJ, kopse kanten open.
+- Spoorplateau, sporen en zes perrons volgens de BGT (perron 4 tot 6 buigen
+  aan het oosteinde af naar het noorden).
+- IJ-hal en busplatform met busbanen langs beide randen, de busperrons
+  ertussen, kolommen waar geen IJ-hal onder ligt en de oprit naar de kade.
 
 Bronnen: [Wikipedia (nl)](https://nl.wikipedia.org/wiki/Station_Amsterdam_Centraal),
 [Wikipedia (en)](https://en.wikipedia.org/wiki/Amsterdam_Centraal_station),
 [Rijksmonumentenregister 5681](https://monumentenregister.cultureelerfgoed.nl/monumenten/5681),
-PDOK BAG en BGT (contour van het stationsgebouw, vervangen panden), PDOK AHN
-(dsm en dtm 0,5 m via WCS: alle hoogtes, de boogprofielen en de uiteinden van
-de kappen, plaats en hoogte van torens, topgevels en paviljoens) en de PDOK
-luchtfoto. Het Mapbox Standard-landmarkmodel is alleen visueel vergeleken
-(dakvormen, torens, glazen kopgevels van de kappen); er is geen geometrie uit
-overgenomen. Plattegrond, hoogtes en boogprofielen komen uit BGT en AHN; namen,
-jaartallen en de overspanning van de eerste kap (bijna 45 m) uit de bronnen;
-de vorm van de topgevels, de torenspitsen, de kroonlijst, de teruggelegde
-kopgevels en de dakranden van de kappen zijn vereenvoudigd of geschat.
-Overkappingen van de perrons ten oosten van de kappen en de letters op de
+PDOK BAG en BGT (contour van het stationsgebouw, perrons, overkappingen,
+wegdelen, het overbruggingsdeel van het busplatform), PDOK AHN (dsm en dtm
+0,5 m via WCS: alle hoogtes, de omhullende van torens en paviljoens, de
+boogprofielen van de kappen, spoor en perrons), de PDOK-luchtfoto
+(dakkapellen, topgevels, glasdak van de oostvleugel) en foto's op Wikimedia
+Commons (torens, gevels, kopgevels van de kappen). De vorm van de topgevels,
+de torenspitsen, de kroonlijsten en de kopgevels zijn vereenvoudigd of
+geschat. De perronoverkappingen ten oosten van de kappen en de letters op de
 busstationkap zijn niet gemodelleerd.
 
 Licentie van het model: eigen werk op basis van open bronnen.
