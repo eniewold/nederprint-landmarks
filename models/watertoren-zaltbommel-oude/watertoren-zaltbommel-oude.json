@@ -1,0 +1,71 @@
+{
+  "name": "Oude watertoren Zaltbommel",
+  "file": "watertoren-zaltbommel-oude.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    145974.06,
+    425148.81
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      3.8,
+      0
+    ],
+    [
+      -3.8,
+      0
+    ],
+    [
+      0,
+      3.8
+    ],
+    [
+      0,
+      -3.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0297100000003677"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +8,85 m), assen in RD-richting. Plint van 4,9 m tot 5,45 m met een band en een deuromlijsting met spitsboogdeur naar het zuiden, ronde schacht van 4,2 m met drie vensters, kraaglijst tot 14,46 m, holle trompet met achttien ribben naar de kop van 6,6 m op 15,94 m, acht spitsboogvensters, boogfries, kroonlijst en plat dak op 20,9 m, tien kantelen tot 22,0 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 21,
+    "reservoirM3": 50,
+    "built": 1905,
+    "kopRebuilt": 1996,
+    "ahnGroundNapM": 8.85,
+    "ahnRoofNapM": 29.76,
+    "bagContourDiameterM": 5.6,
+    "plinthDiameterM": 4.9,
+    "shaftDiameterM": 4.2,
+    "kopDiameterM": 6.6,
+    "corniceDiameterM": 6.9,
+    "plinthTopM": 5.45,
+    "flareM": [
+      14.46,
+      15.94
+    ],
+    "roofM": 20.9,
+    "modelTopM": 22,
+    "photoScalePxPerM": 26,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Oude_watertoren_(Zaltbommel)",
+    "https://commons.wikimedia.org/wiki/File:Zaltbommel,_de_Oude_Watertoren_positie1_foto6_2015-08-06_11.04.jpg (bijna frontaal op de deur, maten)",
+    "https://commons.wikimedia.org/wiki/File:Oude_watertoren,_Zaltbommel_-_panoramio.jpg (kop, vensters, trompet en ribben)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_VOORZIJDE_-_Zaltbommel_-_20339441_-_RCE.jpg (plint, deuromlijsting en schachtvensters)",
+    "https://commons.wikimedia.org/wiki/File:Zaltbommel_watertoren_01.jpg (kop van de andere kant)",
+    "PDOK BAG-pand 0297100000003677, 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-zaltbommel-oude-1-1000.stl"
+  ]
+}
