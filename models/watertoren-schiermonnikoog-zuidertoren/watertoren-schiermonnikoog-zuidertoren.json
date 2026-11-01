@@ -1,0 +1,70 @@
+{
+  "name": "Zuidertoren Schiermonnikoog",
+  "file": "watertoren-schiermonnikoog-zuidertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206213.86,
+    610862.86
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.4,
+      0
+    ],
+    [
+      -5.4,
+      0
+    ],
+    [
+      0,
+      5.4
+    ],
+    [
+      0,
+      -5.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0088100000138176"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +13,33 m, duintop), assen in RD-richting. Gepleisterde ronde schacht van 7,7 m met plint, taps tot 4,4 m op 27,55 m, rondboogdeur op het zuiden en twee rijen ronde vensters (zuid en west); ringband, fries met twaalf blinde rondboogjes, omloopkroonlijst van 5,6 m op 29,8 m, lantaarnhuis van 3,0 m met kroonlijst tot 31,05 m en een twaalfzijdige geribde koepel tot 32,85 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 31.5,
+    "reservoirM3": 44,
+    "built": 1854,
+    "ahnGroundNapM": 13.33,
+    "ahnGalleryNapM": 43.13,
+    "ahnTopNapM": 46.77,
+    "bagDiameterM": 7.72,
+    "footDiameterM": 7.56,
+    "shaftTopDiameterM": 4.4,
+    "galleryDiameterM": 5.6,
+    "galleryM": 29.8,
+    "lanternDiameterM": 3,
+    "lanternCorniceM": 31.05,
+    "domeDiameterM": 2.6,
+    "modelTopM": 32.85,
+    "photoScalePxPerM": 22.3,
+    "minimumPartM": 0.45
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Zuidertoren_(Schiermonnikoog)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/398179",
+    "https://commons.wikimedia.org/wiki/File:Zuidertoren_Schiermonnikoog.jpg (frontale foto op de deur, stralen en hoogtes boven)",
+    "https://commons.wikimedia.org/wiki/File:Torenstreek22_Zuidertoren_Schiermonnikoog.jpg (vensters boven de deur, fries)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Schiermonnikoog_15m.JPG (tweede vensterrij)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Schiermonnikoog_-_20273297_-_RCE.jpg (vensterhoogtes, fries en lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_ENTREE_-_Schiermonnikoog_-_20273300_-_RCE.jpg (deur, plint)",
+    "PDOK BAG-pand 0088100000138176, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-schiermonnikoog-zuidertoren-1-1000.stl"
+  ]
+}
