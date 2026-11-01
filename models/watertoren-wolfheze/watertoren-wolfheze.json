@@ -1,0 +1,61 @@
+{
+  "name": "Watertoren Wolfheze",
+  "file": "watertoren-wolfheze.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    182416.26,
+    445999.45
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.6,
+      0
+    ],
+    [
+      -4.6,
+      0
+    ],
+    [
+      0,
+      4.6
+    ],
+    [
+      0,
+      -4.6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0274100000012591"
+  ],
+  "description": "Oorsprong op het hart van de BAG-cirkel op maaiveld (NAP +32,33 m), assen in RD-richting. Ronde schacht van 6,14 m op een plint met tegelband en rondboogdeur naar het noordwesten, taps naar 4,9 m met twee rijen vensters en een oculus, holle welving naar een achtkantige kop (6,4 m over de vlakken) met voetlijst op 20 m, vier vensters en een schuine daklijst tot de goot op 24 m (7,35 m over de vlakken), achtkant tentdak tot 27,1 m. Maten uit AHN, BAG, luchtfoto en één foto.",
+  "realWorld": {
+    "publishedHeightM": 27,
+    "reservoirM3": 40,
+    "ahnGroundNapM": 32.33,
+    "ahnTopNapM": 59.44,
+    "bagShaftDiameterM": 6.14,
+    "shaftDiameterBelowFlareM": 4.86,
+    "headAcrossFlatsM": 6.4,
+    "eaveAcrossFlatsM": 7.36,
+    "soffitM": 19.64,
+    "eaveM": 24,
+    "roofPitchDeg": 40,
+    "modelTopM": 27.1,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Wolfheze)",
+    "https://commons.wikimedia.org/wiki/File:Wolfheze_Watertoren_2006.JPG (enige foto, maten via een gepaste camera)",
+    "PDOK BAG-pand 0274100000012591, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-wolfheze-1-1000.stl"
+  ]
+}
