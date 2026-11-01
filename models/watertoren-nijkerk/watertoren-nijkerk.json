@@ -1,0 +1,83 @@
+{
+  "name": "Watertoren Nijkerk",
+  "file": "watertoren-nijkerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161374,
+    471049.9
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.3,
+      0
+    ],
+    [
+      -4.3,
+      0
+    ],
+    [
+      0,
+      4.3
+    ],
+    [
+      0,
+      -4.3
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0267100000030958",
+    "NL.IMBAG.Pand.0267100000004832"
+  ],
+  "description": "Oorsprong op het hart van het kegeldak in het AHN op maaiveld (NAP +1,41 m), assen in RD-richting. Verjongende bakstenen schacht van 5,2 naar 4,55 m op een plint van 5,5 m met drie cordonbanden (4,45, 8,75 en 13,1 m), deur naar het oostnoordoosten, oculi en vensters in vier kolommen; omloop van 9,6 m op 15,3 tot 15,8 m op twaalf klossen met een houten uitbouw naar het zuidzuidwesten; houten trommel van 7,5 m met zestien spleetvensters en zestien schoren onder een kegeldak van 11,4 m met de rand op 20,05 tot 20,35 m en de top op 24,25 m. Het aangrenzende pand 0267100000004832 (aanbouw en paviljoen, 1998), dat in de 3D BAG tot onder de dakrand van de toren reikt, is vervangen door een blok op de BAG-contour: plat op 4,2 m met een vleugel onder een zadeldak (goot 5,0 m, nok 7,2 m). Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 30,
+    "registerHeightM": 32,
+    "reservoirM3": 140,
+    "ahnGroundNapM": 1.41,
+    "ahnTopNapM": 25.59,
+    "bagContourDiameterM": 9,
+    "shaftDiameterM": [
+      5.2,
+      4.55
+    ],
+    "plinthDiameterM": 5.5,
+    "galleryDiameterM": 9.64,
+    "drumDiameterM": 7.46,
+    "roofDiameterM": 11.4,
+    "bandsM": [
+      4.45,
+      8.75,
+      13.1
+    ],
+    "galleryM": [
+      15.3,
+      15.8
+    ],
+    "eaveM": [
+      20.05,
+      20.35
+    ],
+    "roofPitchDeg": 36.7,
+    "modelTopM": 24.25,
+    "photoScalePxPerM": 51,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Nijkerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523782",
+    "https://commons.wikimedia.org/wiki/File:Nijkerk_Watertoren.jpg (bijna frontale foto, breedtes en hoogtes van de bovenbouw)",
+    "https://commons.wikimedia.org/wiki/File:Aanzicht,_reproductie_van_prentbriefkaart_-_Nijkerk_-_20166508_-_RCE.jpg (hele schacht met plint, deur, oculi en vensters)",
+    "https://commons.wikimedia.org/wiki/File:Alde_wettertoer_Nijkerk_7.JPG (omloop, uitbouw en stand)",
+    "PDOK BAG-panden 0267100000030958 en 0267100000004832, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-01"
+  ],
+  "printFiles": [
+    "watertoren-nijkerk-1-1000.stl"
+  ]
+}
