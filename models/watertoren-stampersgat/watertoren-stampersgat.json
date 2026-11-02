@@ -1,0 +1,82 @@
+{
+  "name": "Watertoren Stampersgat",
+  "file": "watertoren-stampersgat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    89579.96,
+    403226.61
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 46.77,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1655100000495658"
+  ],
+  "description": "Oorsprong op het midden van de ronde BAG-contour op maaiveld (NAP +2,70 m), +X naar RD-oost, deur op oostzuidoost (-20 graden). Ronde bakstenen schacht van 14,6 m op maaiveld (BAG) tot 13,4 m op 33,0 m; schuine onderrand naar een ronde kop van 14,2 m (34,1 tot 38,3 m) met een gemetselde band en zestien rondboogvensters als nissen; uitkragende koperen dakrand van 15,0 m op 38,7 tot 39,2 m; flauw kegeldak (helling 0,31 binnen, vlakker naar de rand) tot 41,3 m met piron en bol tot 42,6 m; rondboogportaal met deur op de oostzuidoostkant en acht vierkante vensters in twee rijen. Maten uit BAG, AHN, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 41.45,
+    "reservoirM3": 900,
+    "built": 1952,
+    "architect": "J.M. (Jacques) Hurks",
+    "ahnGroundNapM": 2.7,
+    "ahnApexNapM": 43.99,
+    "ahnRoofAt5p5mNapM": 42.19,
+    "ahnEaveNapM": 41.86,
+    "bag3dRoofNapM": [
+      41.5,
+      44.1
+    ],
+    "bag3dGroundNapM": 2.54,
+    "geoidNlgeo2018M": 44.07,
+    "doorDeg": -20,
+    "baseDiameterM": 14.6,
+    "shaftTopDiameterM": 13.4,
+    "headDiameterM": 14.2,
+    "eaveDiameterM": 15,
+    "shaftTopM": 33,
+    "eaveM": [
+      38.7,
+      39.2
+    ],
+    "headWindows": 16,
+    "roofPitchDeg": 17.7,
+    "apexM": 41.3,
+    "modelTopM": 42.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Stampersgat) (Jacques Hurks, 1952, 41,45 m, 900 m³, sinds 2009 woning en galerie)",
+    "https://commons.wikimedia.org/wiki/File:Stampersgat_Watertoren_1253.JPG (Willemjans, 2006, CC BY-SA 3.0: verhoudingen dakrand, kop en schacht, portaal, vensters)",
+    "https://commons.wikimedia.org/wiki/File:Stampersgat,_watertoren_foto4_2010-09-11_13.40.JPG (Michielverbeek, 2010, CC BY-SA 3.0: zuidzuidwestkant, vensters, kop)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_P1070262.JPG (G.Lanting, 2011, CC BY-SA 3.0: kop met banden en rondboogvensters, dakrand, piron)",
+    "PDOK BAG-pand 1655100000495658 (bouwjaar 1952, cirkel van 7,30 m), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2024) van pand 1655100000495658: maaiveld 2,54, dak 41,5 tot 44,1, nok 43,89 (NAP)",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,07 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-stampersgat-1-1000.stl"
+  ]
+}
