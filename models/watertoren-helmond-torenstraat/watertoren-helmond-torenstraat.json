@@ -1,0 +1,79 @@
+{
+  "name": "Watertoren Torenstraat Helmond",
+  "file": "watertoren-helmond-torenstraat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173593.55,
+    388423.2
+  ],
+  "xAxis": [
+    0.9081,
+    0.4187
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10.5,
+      0
+    ],
+    [
+      -10.5,
+      0
+    ],
+    [
+      0,
+      10.5
+    ],
+    [
+      0,
+      -10.5
+    ]
+  ],
+  "groundHeight": 61.02,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000353661"
+  ],
+  "description": "Oorsprong op het hart van de BAG-contour op maaiveld (NAP +17,08 m), +X langs de oost-noordoostelijke vleugel (24,75 graden linksom van RD-oost). Kruisvormige bakstenen schacht met vier vleugels van 4,2 m breed tot 8,55 m uit het hart en getrapte binnenhoeken (één afgeschuind, zoals in de BAG), per vleugel een getrapte sleuf met vensterstrook en bovenaan een erker van 6,5 m breed op een console; daarop het twaalfzijdige reservoir van 16,8 m over de hoeken (een hoek boven elke vleugel) op een schuine kraag, met een witte lijst op 31,5 tot 32,4 m, een wit sierstuk boven elke vleugel en de afdekking op 43,75 m. Op het dak een teruggezette twaalfzijdige lichtkap met flauw kegeldak tot 47,05 m. Deur met luifel aan de zuid-zuidwestkant. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "designed": 1941,
+    "built": 1948,
+    "architect": "J.H.J. Kording",
+    "gemeentelijkMonument": "WN269",
+    "publishedHeightM": 47.3,
+    "reservoirM3": 1200,
+    "ahnGroundNapM": 17.08,
+    "ahnCopingNapM": 60.9,
+    "ahnLanternEaveNapM": 62.6,
+    "ahnTopNapM": 64.12,
+    "geoidNlgeo2018M": 43.94,
+    "wingsDeg": 24.75,
+    "wingWidthM": 4.2,
+    "shaftAcrossWingsM": 17.1,
+    "tankAcrossFlatsM": 16.22,
+    "tankFootM": 32.4,
+    "copingM": 43.75,
+    "lanternEaveM": 45.5,
+    "modelTopM": 47.05,
+    "orielM": [
+      25.7,
+      31.5
+    ],
+    "photoScalePxPerM": 25.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Helmond_Torenstraat) (J.H.J. Kording, ontwerp 1941, in gebruik 1948, 47,3 m, 1200 m³)",
+    "https://commons.wikimedia.org/wiki/File:0794_WN269_Helmond_Watertoren_2.jpg (frontaal op een vleugel, maten)",
+    "https://commons.wikimedia.org/wiki/File:0794_WN269_Helmond_Watertoren.jpg, Watertoren_Helmond_in_2022.jpg (vleugel, erker, sierstuk, lichtkap)",
+    "https://commons.wikimedia.org/wiki/File:Helmond_Watertoren_2483.JPG, Watertoren_Torenstraat,_Helmond.JPG (deur met luifel, sleuf, zij-erker)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Torenstraat,_Helmond_(2).JPG (erker, lijst en console van dichtbij)",
+    "PDOK BAG-pand 0794100000353661, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5) van pand 0794100000353661: maaiveld 17,05, dak 59,9 tot 63,9 (NAP) ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,94 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-helmond-torenstraat-1-1000.stl"
+  ]
+}
