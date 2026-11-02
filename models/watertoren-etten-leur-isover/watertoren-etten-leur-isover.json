@@ -1,0 +1,48 @@
+{
+  "name": "Watertoren Isover Etten-Leur",
+  "file": "watertoren-etten-leur-isover.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    100699.38,
+    397811.86
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 48.52,
+  "description": "Oorsprong op het middelpunt van de ronde BGT-contour op het maaiveld van het fabrieksterrein (NAP +4,42 m), +X naar RD-oost; geen BAG-pand. Witte betonnen schacht van 7,3 m doorsnede met een band op 28 m, een kuip als omgekeerde afgeknotte kegel van 29,6 tot 34,7 m met een rechte rand van 13,7 m tot 37,45 m, een kegeldak van 23 graden en een ronde kap tot 39,95 m; twee kolommen trapvensters. Maten uit AHN, BGT, luchtfoto en één foto.",
+  "realWorld": {
+    "built": 1962,
+    "ahnGroundNapM": 4.42,
+    "ahnEaveNapM": 41.9,
+    "ahnCapEdgeNapM": 43.8,
+    "ahnTopNapM": 44.37,
+    "geoidNlgeo2018M": 44.1,
+    "bgtCircleDiameterM": 6,
+    "shaftDiameterM": 7.3,
+    "rimDiameterM": 13.7,
+    "capDiameterM": 6.7,
+    "bowlM": [
+      29.6,
+      34.7
+    ],
+    "eaveM": 37.45,
+    "roofPitchDeg": 23,
+    "modelTopM": 39.95,
+    "photoScalePxPerM": 34.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Noord-Brabant (bouwjaar 1962)",
+    "https://commons.wikimedia.org/wiki/File:Etten_Leur_Watertoren_1228.JPG (Willemjans, 2006, CC BY-SA 3.0: schacht, band, kuip, rand, kap en vensters)",
+    "PDOK AHN DSM/DTM 0,5 m, luchtfoto 8 cm en BGT overig bouwwerk G0777.209723b0a9cb43d28cd78c2dd7df4fe5, 2026-11-02",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,10 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-etten-leur-isover-1-1000.stl"
+  ]
+}
