@@ -1,0 +1,81 @@
+{
+  "name": "Watertoren Leiden",
+  "file": "watertoren-leiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95275.87,
+    463349.4
+  ],
+  "xAxis": [
+    0.9914,
+    0.1305
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 44.01,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0546100000042902"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de BAG-contour op maaiveld (NAP +0,65 m), +X langs de oostelijke hoekpilaster (7,5 graden linksom van RD-oost). Twaalfzijdige schacht van 10,7 m over de vlakken met twaalf betonnen hoekpilasters (op de begane grond breder, tot 6 m), banden op 6 en 13 m, daarboven gebogen consoles naar de ringbalk op 18,7 m onder het twaalfzijdige reservoir van 15,7 m over de vlakken met hoekpilasters, borstwering en afdekking tot 29,3 m; op het dak een glazen twaalfzijdige opbouw met piramidedak en kapje tot 33,8 m en een dakterras aan de west-noordwestkant. Oculi, hoge vensters, reservoirvensters en de deur (zuid) als nissen. Maten uit BAG, AHN, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 29.5,
+    "reservoirM3": 1200,
+    "built": 1908,
+    "architect": "W.C. van Manen",
+    "rijksmonument": 515106,
+    "ahnGroundNapM": 0.65,
+    "ahnParapetNapM": [
+      29.6,
+      30
+    ],
+    "ahnEaveNapM": 32.3,
+    "ahnApexNapM": 34.48,
+    "geoidNlgeo2018M": 43.36,
+    "cornersDeg": 7.5,
+    "shaftAcrossFlatsM": 10.7,
+    "shaftAcrossPiersM": 11.8,
+    "tankAcrossFlatsM": 15.7,
+    "ringAcrossCornersM": 16.88,
+    "consolesM": [
+      13.2,
+      18.7
+    ],
+    "parapetTopM": 29.3,
+    "rooftopEaveM": 31.6,
+    "modelTopM": 33.8,
+    "photoScalePxPerM": 55.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Leiden)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515106 (W.C. van Manen, 1908, twaalfzijdig, betonskelet, 29,5 m, 1200 m³)",
+    "https://commons.wikimedia.org/wiki/File:Leiden,_Water_Tower_near_Wilhelmina_Bridge.jpg (frontale telefoto, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren-leiden.jpg, Leiden215.JPG, Watertoren_Leiden_2017_1.jpg, Watertoren_Leiden_2017_2.jpg, Water_tower_Leiden_(51283292069).jpg (zuidkant, deur, opbouw)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_van_de_Leidsche_Duinwater_Maatschappij_aan_de_Hoge_Rijndijk_te_Leiden,_Objectnr_PV_PV103953.jpg (ingang en voet rond 1908)",
+    "PDOK BAG-pand 0546100000042902, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2023) van pand 0546100000042902: maaiveld, borstwering en opbouw ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,36 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-leiden-1-1000.stl"
+  ]
+}
