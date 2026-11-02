@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Wilhelminasingel",
+  "file": "watertoren-breda-wilhelminasingel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    113274.1,
+    399677
+  ],
+  "xAxis": [
+    -0.866,
+    0.5
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 46.6,
+  "groundSamplePoints": [
+    [
+      6.4,
+      6.4
+    ],
+    [
+      -6.4,
+      6.4
+    ],
+    [
+      -6.4,
+      -6.4
+    ],
+    [
+      6.4,
+      -6.4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000065355"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +2,70 m), +X naar het portaal (RD-richting 150 graden, noordwest). Ronde schacht van 13,5 m op een natuurstenen plint, taps tot 12,5 m onder het fries, met drie witte banden, een portaal met fronton en pinakel, een groot boogvenster en drie rijen van vijf vensters; boogfries op twintig consoles van 21,6 tot 24,7 m; twaalfzijdige bovenbouw van 13 m over de vlakken met pilasters en per vlak een rondboognis met venster; goot van 14,2 m op 32,85 m op een schuine onderkant; achtzijdige spits tot 42,6 m met vier dakkapellen en vier hoektorentjes. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "built": "1893-1894",
+    "architect": "J. Schotel",
+    "publishedHeightM": 42,
+    "reservoirM3": 500,
+    "ahnGroundNapM": 2.7,
+    "ahnEaveNapM": 35.6,
+    "ahnSpireAt1mNapM": 43.75,
+    "geoidM": 43.9,
+    "plinthDiameterM": 13.9,
+    "shaftFootDiameterM": 13.5,
+    "shaftTopDiameterM": 12.5,
+    "friezeDiameterM": 13.5,
+    "headAcrossFlatsM": 13,
+    "eaveAcrossFlatsM": 14.2,
+    "friezeM": [
+      21.6,
+      24.7
+    ],
+    "eaveM": 32.85,
+    "modelTopM": 42.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Breda_Wilhelminasingel)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10345",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_Wilhelminasingel,_Breda_P1460774.jpg (van ver: breedtes en hoogtes van banden, fries, bovenbouw en spits)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Wilhelminasingel_Breda_20230823_-_1.png (portaal, vensterrijen boven het portaal, bovenbouw)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Wilhelminasingel_Breda_20230823_-_3.png (boogvenster naast het portaal, dakkapel en torentje)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Wilhelminasingel_Breda_20230823_-_2.png (consoles, pilasters, spits met dakkapellen)",
+    "PDOK BAG-pand 0758100000065355, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02"
+  ],
+  "printFiles": [
+    "watertoren-breda-wilhelminasingel-1-1000.stl"
+  ]
+}
