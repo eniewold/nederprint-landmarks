@@ -1,0 +1,85 @@
+{
+  "name": "Oude watertoren Etten-Leur",
+  "file": "watertoren-etten-leur-oude-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    101932.69,
+    398722.56
+  ],
+  "xAxis": [
+    0.9767,
+    0.2147
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 50.64,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0777100000151802"
+  ],
+  "description": "Oorsprong op het hart van de vierkante BAG-contour op maaiveld (NAP +6,56 m), +X naar de oostgevel (RD-richting 12,4 graden). Vierkante, afgesnoten betonnen schacht van 10,6 m met een plint, vier steunberen op de hoeken en vier portalen met schuine wangen tot 6,6 m; per gevel een lisene die op 21 m breder wordt en op 34,3 m uitkraagt tot een erker tot de dakvoet; achthoekige kroonlijst van 11,4 m van 43 tot 45,7 m; koperen tentdak tot 48,68 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "built": 1924,
+    "architect": "H. Sangster",
+    "style": "expressionisme (register)",
+    "publishedHeightM": 48.7,
+    "reservoirsM3": [
+      300,
+      400
+    ],
+    "registerWaterLevelsM": [
+      28.5,
+      41.5
+    ],
+    "ahnGroundNapM": 6.56,
+    "ahnTopNapM": 55.25,
+    "geoidNlgeo2018M": 44.08,
+    "shaftAcrossFacesM": 10.6,
+    "shaftChamferM": 1,
+    "headAcrossFacesM": 11.4,
+    "headChamferM": 1.9,
+    "corniceM": [
+      43,
+      45.7
+    ],
+    "erkerM": [
+      34.3,
+      45.7
+    ],
+    "roofSlopePerM": 0.523,
+    "modelTopM": 48.68,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Oude_watertoren_(Etten-Leur)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516667",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Etten-Leur_-_20388943_-_RCE.jpg (schacht, lisenen, erkers en kroonlijst, verhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Etten-Leur_-_20340467_-_RCE.jpg (gevel met portaal, lisene en erker, verticaal gecorrigeerd)",
+    "https://commons.wikimedia.org/wiki/File:Voet_van_de_watertoren_met_ingangspartij_-_Etten-Leur_-_20340470_-_RCE.jpg (portaal, plint, steunbeer)",
+    "https://commons.wikimedia.org/wiki/File:Voet_van_de_watertoren_met_ingangspartij_-_Etten-Leur_-_20340471_-_RCE.jpg (twee portalen, afgeschuinde hoek)",
+    "https://commons.wikimedia.org/wiki/File:Bovenste_gedeelte_met_koperen_tentdak_-_Etten-Leur_-_20340468_-_RCE.jpg (erkers, kroonlijst, tentdak)",
+    "PDOK BAG-pand 0777100000151802, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,08 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-etten-leur-oude-watertoren-1-1000.stl"
+  ]
+}
