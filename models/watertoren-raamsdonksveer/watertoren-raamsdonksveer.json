@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Raamsdonksveer",
+  "file": "watertoren-raamsdonksveer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119685.67,
+    410817.23
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 45.96,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0779100000000227"
+  ],
+  "description": "Oorsprong op het hart van de toren uit het AHN5-DSM op maaiveld (NAP +2,2 m), +X de normaal van de oostgevel (RD-oost), hoeken van de zeshoek op noord en zuid. Zeshoekige schacht van 9,6 m over de vlakken op een plint tot 7 m, steunberen op de noord- en zuidhoek tot 37,2 m en twee tegen de oost- en westgevel tot 29,6 m, reservoirbehuizing die op 28,4 m onder 45 graden uitkraagt (oost en west tot 10,3 m) met een erker per vlak, twaalfzijdige bekroning met panelen en kroonlijst tot 41 m en een iets spits twaalfvlaks koepeldak tot 44,05 m; aan de oostzijde de ingang, de dichtgezette vensterspleet en de uitsparing in de behuizing. Maten uit AHN5, BAG, luchtfoto, register en foto's.",
+  "realWorld": {
+    "publishedHeightM": 43.85,
+    "reservoirM3": 300,
+    "highWaterM": 36,
+    "built": 1925,
+    "architect": "H. Sangster",
+    "monument": 520055,
+    "ahnGroundNapM": 2.2,
+    "ahnTopNapM": 46.25,
+    "geoidNlgeo2018M": 43.76,
+    "shaftAcrossFlatsM": 9.6,
+    "plinthAcrossFlatsM": 10.2,
+    "tankEastWestM": 10.8,
+    "plinthM": 7,
+    "corbelM": [
+      28.4,
+      28.75
+    ],
+    "facePierTopM": 29.6,
+    "cornerPierTopM": 37.2,
+    "tankTopM": 37.6,
+    "drumTopM": 41,
+    "apexM": 44.05,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Raamsdonksveer)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520055 (zeshoek, vier delen, steunberen, erkers, twaalfzijdige bekroning)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voormalig_watertoren_-_Raamsdonksveer_-_20346871_-_RCE.jpg (frontaal: beren, overgang, plint)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Raamsdonksveer_-_20335216_-_RCE.jpg (bekroning en koepel)",
+    "https://commons.wikimedia.org/wiki/File:Raamsdonksveer_-_watertoren.jpg (2007) en File:Raamsdonkveer,_de_watertoren_RM520055_IMG_7390_2020-09-13_11.56.jpg (2020)",
+    "PDOK BAG-pand 0779100000000227, AHN5 DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2024) van pand 0779100000000227 ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,76 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-raamsdonksveer-1-1000.stl"
+  ]
+}
