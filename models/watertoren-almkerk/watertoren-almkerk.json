@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Almkerk",
+  "file": "watertoren-almkerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124141.32,
+    422420.76
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      -5.3,
+      -5.3
+    ]
+  ],
+  "groundHeight": 46.14,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0874100000001233"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op het maaiveld van de terp (NAP +2,52 m), +X naar RD-oost. Ronde bakstenen schacht van 13,08 m doorsnede met een band van 13,74 m op een schuine kraag van 38,05 tot 39,6 m, een kegeldak van 23 graden tot 42,6 m en een bol tot 43,35 m; acht rondvensters onder de band, aan de zuidkant een koppelvenster op 29,8 m en vier trapvensters, vensterparen op de begane grond en de deur aan de westkant. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 43.3,
+    "reservoirM3": 500,
+    "bagBuildYear": 1948,
+    "ahnGroundNapM": 2.52,
+    "ahnEaveNapM": 42.15,
+    "ahnApexNapM": 45.12,
+    "ahnTopNapM": 46.22,
+    "geoidNlgeo2018M": 43.62,
+    "shaftDiameterM": 13.08,
+    "bandDiameterM": 13.74,
+    "eaveM": 39.6,
+    "roofPitchDeg": 23,
+    "apexM": 42.57,
+    "modelTopM": 43.35,
+    "photoScalePxPerM": 24.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Almkerk)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_met_tuinkabouters_op_de_voorgrond_-_Uppel_-_20335217_-_RCE.jpg (hele toren, vensters, maten)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_-_Almkerk_-_20007301_-_RCE.jpg (band, rondvensters, kegeldak en bol)",
+    "https://commons.wikimedia.org/wiki/File:Uppel_met_watertoren.jpg (silhouet)",
+    "PDOK BAG-pand 0874100000001233, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2) van pand 0874100000001233: dakrand en nok ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,62 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-almkerk-1-1000.stl"
+  ]
+}
