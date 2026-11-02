@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Bergen op Zoom",
+  "file": "watertoren-bergen-op-zoom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79206.31,
+    389501.75
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.5,
+      0
+    ],
+    [
+      0,
+      6.5
+    ],
+    [
+      -6.5,
+      0
+    ],
+    [
+      0,
+      -6.5
+    ]
+  ],
+  "groundHeight": 54.34,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0748100000041750"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +10,05 m), +X naar RD-oost. Ronde bakstenen toren: onderbouw van 10,42 m doorsnede tot 6,0 m met een schuine waterlijst en de ingang onder een fronton aan de westkant; schacht van 9,7 m met acht gekoppelde en acht smalle vensters; rondboogfries van 10,4 m met lijst van 17,6 tot 21,4 m; gladde reservoirzone tot 22,35 m; zestienzijdig overstekend tentdak (12,8 m, dakrand 24,85 m, 28 graden) op een consolerij, dakkapel aan de westkant en een achtkantig torentje met koepeltje tot 31,0 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 33.4,
+    "registerHeightM": 35,
+    "reservoirM3": 290,
+    "buildYear": 1899,
+    "ahnGroundNapM": 10.05,
+    "ahnEaveNapM": 34.9,
+    "ahnTopNapM": 41,
+    "geoidNlgeo2018M": 44.29,
+    "plinthDiameterM": 10.42,
+    "shaftDiameterM": 9.7,
+    "friezeDiameterM": 10.4,
+    "eaveCornerRadiusM": 6.4,
+    "ledgeM": 6,
+    "friezeM": [
+      17.6,
+      21.4
+    ],
+    "eaveM": 24.85,
+    "roofPitchDeg": 28,
+    "modelTopM": 31,
+    "photoScalePxPerM": 46,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bergen_op_Zoom)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517134",
+    "https://commons.wikimedia.org/wiki/File:Bergen_op_Zoom_water_tower.jpg (westkant: ingang, fronton, vensters, fries, dakkapel, maten)",
+    "https://commons.wikimedia.org/wiki/File:Bergen_op_Zoom_-_Watertoren_-_voorkant.jpg (zuidkant: onderbouw, boogopening, consoles)",
+    "https://commons.wikimedia.org/wiki/File:Bergen_op_Zoom_-_Watertoren_met_bomen.jpg (zuidoost: reservoirzone, dakvlakken)",
+    "https://commons.wikimedia.org/wiki/File:Bergen_op_Zoom_-_Watertoren_-_torentje.jpg (torentje, verhoudingen)",
+    "PDOK BAG-pand 0748100000041750, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,29 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-bergen-op-zoom-1-1000.stl"
+  ]
+}
