@@ -1,0 +1,98 @@
+{
+  "name": "Nieuwe watertoren Oss",
+  "file": "watertoren-oss-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    165214.19,
+    419373.86
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      -5
+    ]
+  ],
+  "groundHeight": 51.96,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001591002"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de BAG-contour op maaiveld (NAP +8,3 m), +X naar RD-oost (de toren is rond). Ronde betonnen schacht van 4,5 m met drie rijen van twaalf smalle vensters als nissen, daarboven vanaf 24,65 m een glazen trommel van 6,8 m breed en vier bouwlagen (zestienzijdige glasgevel met groene banden per verdieping) tot het platte dak op 34,7 m, met in het midden een groene ronde opbouw van 4,0 m met voetrand en verdiept dak tot 36,3 m. Maten uit BAG, AHN, 3D BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 34.52,
+    "reservoirM3": 85,
+    "built": 1951,
+    "architect": "J.A.G. van der Steur jr. en jhr. A.P. Wesselman van Helmond",
+    "ahnGroundNapM": 8.3,
+    "ahnRoofNapM": [
+      42.9,
+      43.1
+    ],
+    "ahnCapRimNapM": [
+      44.3,
+      44.8
+    ],
+    "ahnCapWellNapM": [
+      43.3,
+      43.4
+    ],
+    "geoidNlgeo2018M": 43.66,
+    "shaftDiameterM": 4.5,
+    "drumDiameterM": 6.76,
+    "drumM": [
+      24.65,
+      34.7
+    ],
+    "storeyM": 2.4,
+    "capDiameterM": 4,
+    "capTopM": 36.3,
+    "slitRowsM": [
+      [
+        7.9,
+        9.8
+      ],
+      [
+        15.5,
+        17.4
+      ],
+      [
+        22.5,
+        24.1
+      ]
+    ],
+    "photoScalePxPerM": [
+      17.9,
+      20.9
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Oss) (1951, J.A.G. van der Steur en jhr. A.P. Wesselman van Helmond, 34,52 m, 85 m³)",
+    "https://watertorens.eu/torens/Oss/Organon/fotoos.html (Molenstraat 110, betonnen vlakbodem, glazen trappenhuis bovenaan, renovatie 2009; foto O. Brinkkemper, RCE 2017: trommel, banden, opbouw, vensters onder de trommel)",
+    "https://www.trefhetinoss.nl/locaties/3632373061/watertoren-organon (ansichtkaart 'Oss, N.V. Organon', circa 1951: de hele toren, vensterrijen in de schacht)",
+    "PDOK BAG-pand 0828100001591002, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2024) van pand 0828100001591002: maaiveld 8,26, dak 42,87 tot 43,55 (NAP)",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,66 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-oss-nieuwe-watertoren-1-1000.stl"
+  ]
+}
