@@ -1,0 +1,87 @@
+{
+  "name": "Watertoren Dongen",
+  "file": "watertoren-dongen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    123512.42,
+    406371.52
+  ],
+  "xAxis": [
+    0.9986,
+    0.0523
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 46.49,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0766100000004972"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de BAG-contour op maaiveld (NAP +2,70 m), +X langs de oostelijke hoeklisene (3 graden linksom van RD-oost). Achtkante bakstenen schacht van 11,6 m over de vlakken met acht hoeklisenen, 2,4 % taps tot een kraag met louvreband op 27-29,6 m, reservoirdeel van 12,3 m tot de kroonlijst op 39,6 m, achtkant koperen dak met een steile band en acht dakkapellen, bolle kap tot 44,75 m en lichtkap tot 45,9 m; vensterparen en hoge vensterkolommen om en om, deur aan de west-noordwestkant. De vrij hangende stalen omloop om het reservoir is weggelaten. Maten uit AHN5, BAG, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 44.76,
+    "reservoirM3": 500,
+    "built": 1923,
+    "architect": "H. Sangster",
+    "ahnGroundNapM": 2.7,
+    "ahnEaveNapM": 42.4,
+    "ahnLanternNapM": 48.56,
+    "ahnDeckNapM": [
+      34,
+      35.1
+    ],
+    "geoidNlgeo2018M": 43.79,
+    "cornersDeg": 3,
+    "footAcrossFlatsM": 11.6,
+    "footAcrossPiersM": 13.1,
+    "tankAcrossFlatsM": 12.34,
+    "collarM": [
+      27,
+      29.6
+    ],
+    "corniceM": 39.6,
+    "roofBandTopM": 42.7,
+    "apexM": 44.75,
+    "modelTopM": 45.9,
+    "omittedGalleryRing": {
+      "diameterM": 17.8,
+      "widthM": 1,
+      "deckAboveGroundM": [
+        31.3,
+        32.4
+      ]
+    },
+    "photoScalePxPerM": 31.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dongen)",
+    "https://commons.wikimedia.org/wiki/File:Dongen_Watertoren_2208.JPG (frontale foto 2005, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Dongen_-_20335210_-_RCE.jpg (kraag, kroonlijst en dak)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Dongen_6_jpg.jpg, Watertoren_Dongen_8.jpg, Watertoren_Dongen_9.jpg (2024: vensters, omloop, dakkapellen, lichtkap)",
+    "PDOK BAG-pand 0766100000004972, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2024) van pand 0766100000004972: dakrand en kap ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,79 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-dongen-1-1000.stl"
+  ]
+}
