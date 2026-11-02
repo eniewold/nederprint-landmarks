@@ -1,0 +1,86 @@
+{
+  "name": "Watertoren Hinthamereinde 's-Hertogenbosch",
+  "file": "watertoren-s-hertogenbosch-hinthamereinde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    150145.26,
+    411313.44
+  ],
+  "xAxis": [
+    0.7604,
+    0.6494
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8.6
+    ],
+    [
+      0,
+      -8.6
+    ]
+  ],
+  "groundHeight": 50.59,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000218014"
+  ],
+  "description": "Oorsprong op het midden van de BAG-contour op maaiveld (NAP +7,0 m), +X langs RD 40,5 graden (noordoost), +Y langs de ingangsgevels (noordwest en zuidoost). Vierkante bakstenen toren: hardstenen onderbouw van 13,7 × 14,9 m tot 6,8 m met trappen en rondboognissen voor de ingangen, waterlijst, bovenbouw met hoeklisenen (12,6 × 12,9 m) en waterlijsten op 19 en 23 m, boogfries als kraag, plat dak op 30,4 m, borstwering met vijf kantelen per zijde tot 32,8 m en hoekblokken tot 33,75 m met pinakels; rondboogvensters, het grote venster en de oculi als nissen, twee installaties op het dak. Maten uit BAG, AHN, 3D BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 30.84,
+    "registerHeightM": 33,
+    "reservoirM3": [
+      180,
+      180
+    ],
+    "built": 1885,
+    "architect": "J. Kalff",
+    "rijksmonument": 522464,
+    "ahnGroundNapM": 7,
+    "ahnRoofNapM": 37.44,
+    "ahnCornerNapM": [
+      40.7,
+      40.8
+    ],
+    "geoidNlgeo2018M": 43.59,
+    "axisDeg": 40.5,
+    "baseM": [
+      13.68,
+      14.9
+    ],
+    "shaftAcrossPiersM": [
+      12.6,
+      12.9
+    ],
+    "parapetM": [
+      12.9,
+      13.2
+    ],
+    "roofM": 30.44,
+    "merlonTopM": 32.8,
+    "cornerTopM": 33.75,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_('s-Hertogenbosch_Hinthamereinde)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/522464 (J. Kalff, 1885, vierkant, 33 m, plat dak met kantelen, vier bouwlagen, ingangen noord en zuid, 2 × 180 m³)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_exterieur_-_'s-Hertogenbosch_-_20109301_-_RCE.jpg (zuidgevel frontaal, maten)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_met_kantelen_-_'s-Hertogenbosch_-_20348614_-_RCE.jpg, RM522464_Watertoren,_Hinthamereinde73,_'s-Hertogenbosch.jpg, Watertoren05jan2007.jpg, 522464_Watertoren_('s-Hertogenbosch_Hinthamereinde).jpg (noordgevel, zijgevel met trappenhuis, pinakels)",
+    "PDOK BAG-pand 0796100000218014, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN4 2021) van pand 0796100000218014: maaiveld 6,99, dak 37,44, maximum 39,36 (NAP)",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,59 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-s-hertogenbosch-hinthamereinde-1-1000.stl"
+  ]
+}
