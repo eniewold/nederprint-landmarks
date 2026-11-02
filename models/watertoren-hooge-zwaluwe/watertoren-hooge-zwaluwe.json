@@ -1,0 +1,81 @@
+{
+  "name": "Watertoren Hooge Zwaluwe",
+  "file": "watertoren-hooge-zwaluwe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112632.6,
+    409602.8
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 45.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1719100000009568"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de ronde BAG-contour op maaiveld (NAP +1,90 m), +X naar RD-oost. Ronde bakstenen schacht van 12,6 m doorsnede op het maaiveld tot 11,8 m bovenaan, een kraag van 45 graden naar de koperen dakrand van 13,0 m van 38,1 tot 38,8 m, een kegeldak van 36 graden tot 43,56 m met acht dakkapellen met een rondboogdak en een makelaar tot 44,3 m. Twaalf rondboogvensters op 30 m, twee rijen trapvensters en een hoge rondboognis met de deur (zuidzuidoost) als nissen. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 43.9,
+    "reservoirM3": 600,
+    "built": 1948,
+    "architect": "B. Oomen",
+    "monument": "gemeentelijk monument Drimmelen",
+    "ahnGroundNapM": 1.9,
+    "ahnRoofNapM": [
+      41.2,
+      44.9
+    ],
+    "ahnConeApexNapM": 45.46,
+    "ahnMaxNapM": 46.23,
+    "geoidNlgeo2018M": 43.83,
+    "bagRadiusM": 6.52,
+    "shaftDiameterFootM": 12.6,
+    "shaftDiameterTopM": 11.8,
+    "eaveDiameterM": 13,
+    "eaveM": [
+      38.1,
+      38.8
+    ],
+    "roofPitchDeg": 36.2,
+    "dormers": 8,
+    "archedWindows": 12,
+    "coneApexM": 43.56,
+    "modelTopM": 44.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hooge_Zwaluwe) (B. Oomen, 1948, 43,9 m, 600 m³; de coördinaten daar liggen 165 m westzuidwest van de toren)",
+    "https://commons.wikimedia.org/wiki/File:Drimmelen-Made,_watertoren_IMG_0804_2022-03-28_15.29.jpg (schacht, vensters, dakkapellen)",
+    "https://commons.wikimedia.org/wiki/File:Made_Watertoren_5924.JPG (deur, rondboognis, trapvensters boven de deur, dakrand)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Made_-_20335208_-_RCE.jpg (rand/schacht, versmalling, rondboogvensters, dakkapellen, makelaar)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_met_graafwerkzaamheden_op_de_voorgrond_-_Made_-_20335209_-_RCE.jpg (silhouet)",
+    "PDOK BAG-pand 1719100000009568, BGT (pand, inrit), AHN DSM/DTM 0,5 m en luchtfoto 8 cm (acht dakkapellen), 2026-11-02",
+    "3D BAG (LoD2.2) van pand 1719100000009568: maaiveld en dak ter controle",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,83 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-hooge-zwaluwe-1-1000.stl"
+  ]
+}
