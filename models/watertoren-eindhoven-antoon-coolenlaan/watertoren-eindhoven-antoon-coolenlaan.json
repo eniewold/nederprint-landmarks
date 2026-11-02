@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Antoon Coolenlaan Eindhoven",
+  "file": "watertoren-eindhoven-antoon-coolenlaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161424.54,
+    380818.97
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -6
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      -8,
+      2
+    ],
+    [
+      3,
+      -9
+    ]
+  ],
+  "groundHeight": 62.21,
+  "description": "Oorsprong op het zwaartepunt van de drie buisvoeten uit de BGT op maaiveld (NAP +18,22 m), +X naar RD-oost. Drie bollen van 10 m in een driehoek van 14 m, elk op een buis van 1,25 m met vier poten, de buis als pijp tot 43,45 m; bovenkant van de bollen noord 41,65, zuidwest 36,4 en oost 31,08 m. In het midden een driehoekige trappentoren (stijlen uit de BGT, 5,57 m) met kruisschoren tot 37 m en een console-loopbrug naar elke bol. Geen BAG-pand. Maten uit BGT, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "built": 1970,
+    "designer": "W.G. Quist",
+    "publishedHeightM": 43.45,
+    "reservoirM3": [
+      500,
+      500,
+      500
+    ],
+    "sphereDiameterM": 10,
+    "sphereTopsM": {
+      "noord": 41.65,
+      "zuidwest": 36.4,
+      "oost": 31.08
+    },
+    "tubeDiameterM": 1.25,
+    "stackDiameterM": 1,
+    "triangleSideM": 14.06,
+    "stairTowerSideM": 5.57,
+    "stairTowerTopM": 37,
+    "ahnGroundNapM": 18.22,
+    "ahnEastSphereTopNapM": 49.3,
+    "ahnNorthStackTopNapM": 61.28,
+    "geoidNlgeo2018M": 43.99,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Eindhoven_Antoon_Coolenlaan) (1970, W.G. Quist, 43,45 m, 3 × 500 m³)",
+    "https://en.wikipedia.org/wiki/Eindhoven_Water_Towers (bollen van 10 m)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/532557 (omschrijving)",
+    "https://commons.wikimedia.org/wiki/File:Waterbollen_Eindhoven-02.jpg (drie bollen, trappentoren, hoogteverschillen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Eindhoven.jpeg (pijpen, poten, loopbrug)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Eindhoven_1.jpeg (pijpen, loopbrug)",
+    "https://commons.wikimedia.org/wiki/File:20051110_Eindhoven_Watertoren_0204.jpg (bollen en pijpen)",
+    "PDOK BGT overigbouwwerk (opslagtank, 7 objecten), BAG (geen pand), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,99 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-eindhoven-antoon-coolenlaan-1-1000.stl"
+  ]
+}
