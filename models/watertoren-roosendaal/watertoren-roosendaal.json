@@ -1,0 +1,86 @@
+{
+  "name": "Watertoren Roosendaal",
+  "file": "watertoren-roosendaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    90646.39,
+    393890.4
+  ],
+  "xAxis": [
+    0.9646,
+    -0.2639
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      -6.5,
+      -6.5
+    ],
+    [
+      6.5,
+      -6.5
+    ]
+  ],
+  "groundHeight": 48.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1674100000957195"
+  ],
+  "description": "Oorsprong op het midden van de achtkantige BAG-contour op maaiveld (NAP +4,40 m), +X langs RD -15,3 graden (een BAG-vlak, oostzuidoost), deur op -Y (zuid). Gepleisterde achtkantige begane grond van 10,5 m over de vlakken met plint, kroonlijst, deuromlijsting met gebogen fronton en trap; achtkantige schacht van 10,2 tot 8,4 m met drie geledingen verdiept metselwerk tussen het betonnen vakwerk (bovenste met segmentbogen) tot 24,6 m; schuine onderrand, band en rond reservoir van 10,1 m met fries en kantelen; dakrand van 11,9 m tot 35,9 m; koperen kegel van 58 graden tot 45,2 m met vier dakkapellen met een gebogen fronton, piron tot 46,0 m; balkonhuisje onder het reservoir. Maten uit BAG, AHN, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightNapM": 48.6,
+    "registerHeightM": 52,
+    "reservoirM3": 300,
+    "built": 1916,
+    "architect": "H.P.N. Halbertsma",
+    "rijksmonument": 517281,
+    "ahnGroundNapM": 4.4,
+    "ahnConeApexNapM": 49.6,
+    "ahnMaxNapM": 50.36,
+    "bag3dEaveNapM": [
+      40.5,
+      41
+    ],
+    "bag3dDormerTopNapM": 44,
+    "geoidNlgeo2018M": 44.2,
+    "axisDeg": -15.3,
+    "baseAcrossFlatsM": 10.54,
+    "shaftAcrossFlatsM": [
+      10.24,
+      8.42
+    ],
+    "reservoirDiameterM": 10.1,
+    "corniceDiameterM": 11.9,
+    "shaftTopM": 24.6,
+    "corniceM": [
+      35.2,
+      35.9
+    ],
+    "roofPitchDeg": 57.9,
+    "dormers": 4,
+    "coneApexM": 45.2,
+    "modelTopM": 46,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Roosendaal) (H.P.N. Halbertsma, 1916, 48,6 m boven NAP)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517281 (achtkantige schacht met vier geledingen, betonskelet, verdiept metselwerk, segmentbogen, uitkragend rond reservoir van 300 m³ met schuine onderrand, fries met kantelen, koperen spits met vier dakkapelletjes en piron, deuromlijsting met gebogen fronton, circa 52 m)",
+    "https://commons.wikimedia.org/wiki/File:Roosendaal,_de_Watertoren_RM517281_IMG_9483_2021-06-14_10.57.jpg (evenwijdige verticalen: verhoudingen en hoogtes, balkonhuisje)",
+    "https://commons.wikimedia.org/wiki/File:WatertorenRoosendaal.jpg, File:WatertorenRoosendaalAchterzijde.jpg, File:Watertoren_Roosendaal.jpg (reservoir, dakrand, dakkapellen, piron, deur met fronton, schacht)",
+    "PDOK BAG-pand 1674100000957195, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "3D BAG (LoD2.2, AHN5 2024) van pand 1674100000957195: maaiveld 3,84, dak 40,5 tot 49,6, dakkapellen 44,0 (NAP)",
+    "NLGEO2018-geoïdehoogte op de oorsprong (44,20 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-roosendaal-1-1000.stl"
+  ]
+}
