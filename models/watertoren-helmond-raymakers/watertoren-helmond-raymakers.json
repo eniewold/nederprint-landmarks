@@ -1,0 +1,80 @@
+{
+  "name": "Watertoren Raymakers Helmond",
+  "file": "watertoren-helmond-raymakers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173291.55,
+    388053.45
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -6,
+      -4
+    ],
+    [
+      6,
+      -4
+    ],
+    [
+      -15,
+      -10
+    ],
+    [
+      -30,
+      -20
+    ]
+  ],
+  "groundHeight": 61.06,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000396381"
+  ],
+  "description": "Oorsprong op het hart van de vierkante schacht (5,1 m, BAG) op maaiveld (NAP +17,12 m), +X naar RD-oost. Toren met hoekpenanten, verdiepte panelen en vensterband tot een dakplaat van 6,8 m op 31,8 m, uurwerklantaarn met kap tot 36,03 m, lage koepel, nest en adelaar tot 39,68 m. De toren hoort bij BAG-pand 0794100000396381; het model vervangt dat hele pand: sheddakhal met drie tanden, lessenaar, noordstrook, oostblok van 18 m met trappenhuis, lager zuidoostblok en zuidvleugel met zadeldak, op de BAG-contour met hoogtes uit het AHN en de 3D BAG.",
+  "realWorld": {
+    "built": 1948,
+    "designer": "S.L.A. Orie",
+    "reservoirM3": [
+      150,
+      35
+    ],
+    "shaftM": 5.1,
+    "roofSlabM": 6.8,
+    "roofSlabTopM": 31.8,
+    "lanternM": 3.4,
+    "capTopM": 36.03,
+    "domeTopM": 37.33,
+    "nestTopM": 38.13,
+    "eagleTopM": 39.68,
+    "ahnGroundNapM": 17.12,
+    "ahnRoofSlabNapM": 48.92,
+    "ahnHighestNapM": 55.55,
+    "geoidNlgeo2018M": 43.94,
+    "factory": {
+      "bagPand": "0794100000396381",
+      "shedRidgeNapM": 33.2,
+      "shedValleyNapM": 30.15,
+      "eastBlockNapM": 35.15,
+      "southEastBlockNapM": 27.13,
+      "southWingRidgeNapM": 37.19
+    },
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Helmond_Raymakers) (1948, S.L.A. Orie, 150 + 35 m³; hoogte onbekend)",
+    "https://commons.wikimedia.org/wiki/File:Helmond_Watertoren_2485.JPG (Willemjans, 2007, CC BY-SA 3.0: schacht, penanten, panelen, vensterband, dakplaat, lantaarn, koepel, nest en adelaar)",
+    "https://web.archive.org/web/20070929083555/http://afrit13.tweakdsl.nl/watertorens/Nederland/Noord-Brabant/Helmond2.jpg (zelfde aanzicht)",
+    "https://www.openstreetmap.org/way/1565252045 (water_tower zonder naam; hoogte 25 m klopt niet)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0794100000396381 (3D BAG, CC BY 4.0: dakhoogtes van de fabriek en de PDOK-vorm van de toren)",
+    "PDOK BAG (pand 0794100000396381, 1926), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,94 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-helmond-raymakers-1-1000.stl"
+  ]
+}
