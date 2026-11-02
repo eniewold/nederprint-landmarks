@@ -1,0 +1,78 @@
+{
+  "name": "Watertoren Speelhuislaan",
+  "file": "watertoren-breda-speelhuislaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112199.1,
+    401506.4
+  ],
+  "xAxis": [
+    0.9928,
+    -0.1201
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 46.31,
+  "groundSamplePoints": [
+    [
+      10.5,
+      0
+    ],
+    [
+      0,
+      10.5
+    ],
+    [
+      -10.5,
+      0
+    ],
+    [
+      -4,
+      -11
+    ],
+    [
+      5,
+      -11.5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000050726"
+  ],
+  "description": "Oorsprong op het hart van de ronde toren op maaiveld (NAP +2,35 m), +X langs de voorgevel van het trappenhuis (-6,9 graden van RD-oost), voorkant naar -Y (zuid). Schacht van 15,1 m met drie rijen smalle vensters, galerij van 17,9 m op 19,3 m op een schuine kraag, belvedère met ronde vensters, reservoirtrommel van 16,8 m vanaf 22,1 m met vijftien verdiepte stroken tot de dakrand op 33,65 m, licht kegelvormig dak en een lantaarn met drie overstekende schijven tot 38,8 m en de mastvoet tot 39,8 m. Trappenhuis met ronde oostkop tot 26,65 m en lage ingangsaanbouw met rondboogdeur voor de zuidgevel. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 41.8,
+    "registerHeightM": 39.3,
+    "reservoirM3": 1200,
+    "reservoirFloorM": 22.81,
+    "ahnGroundNapM": 2.35,
+    "ahnRimNapM": 36.08,
+    "ahnLanternTopNapM": 41.12,
+    "ahnMastBaseNapM": 42.12,
+    "geoidNlgeo2018M": 43.96,
+    "shaftDiameterM": 15.1,
+    "galleryDiameterM": 17.9,
+    "drumDiameterM": 16.8,
+    "bagCircleRadiusM": 8.21,
+    "lanternDiscDiameterM": 5.7,
+    "galleryM": 19.3,
+    "drumM": 22.1,
+    "stairTowerM": 26.65,
+    "rimM": 33.65,
+    "modelTopM": 39.8,
+    "photoScalePxPerM": 57.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Breda_Speelhuislaan)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/519041",
+    "https://commons.wikimedia.org/wiki/File:Breda_Belcrumwatertoren_2024-08-17.jpg (frontaal op het trappenhuis: verhoudingen, galerij, stroken, lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_zuidzijde_-_Breda_-_20534450_-_RCE.jpg (zuidzijde, trappenhuis en ingang)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_noordoostzijde_-_Breda_-_20534416_-_RCE.jpg (noordoostzijde, vensterrijen)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_zuidoostzijde_-_Breda_-_20534413_-_RCE.jpg (ronde oostkop van het trappenhuis)",
+    "PDOK BAG-pand 0758100000050726, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-02"
+  ],
+  "printFiles": [
+    "watertoren-breda-speelhuislaan-1-1000.stl"
+  ]
+}
