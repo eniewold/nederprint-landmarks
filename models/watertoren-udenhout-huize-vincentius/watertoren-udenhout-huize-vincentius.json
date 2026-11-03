@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Huize Vincentius",
+  "file": "watertoren-udenhout-huize-vincentius.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137767.58,
+    402714.61
+  ],
+  "xAxis": [
+    0.93483,
+    -0.35511
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -14
+    ],
+    [
+      -20,
+      -8
+    ],
+    [
+      20,
+      -8
+    ],
+    [
+      -45,
+      -8
+    ],
+    [
+      45,
+      -8
+    ]
+  ],
+  "groundHeight": 53.36,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000071049"
+  ],
+  "description": "Oorsprong op het hart van de torenschacht uit het AHN-DSM op maaiveld (NAP +9,65 m), +X langs de voorgevel (RD -20,8 graden), voorzijde -Y. Vierkante schacht van 5,3 m met hoekpilasters, hoekpijlers met consoles tot 23,8 m, twee groeven per vlak, uurwerken, kroonlijst tot 34,3 m en een koepel op een tamboer tot 37,45 m, op een onderbouw van 7 m tot 20 m; daaronder het hele hoofdgebouw van Huize Vincentius: middendeel met voorschild (nok 19,2 m) en plat achterdak, vierkante hoektorens, vier ronde traptorens, bordes met luifel, zijvleugels met schilddak en dakkapellen, lage aanbouwen, gangen rond de binnenhof en het portaal naar de kapel; vensters als nissen in de voorgevel. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 35.5,
+    "ahnTopNapM": 47.08,
+    "built": 1925,
+    "architect": "J.J.M. van Halteren",
+    "reservoirM3": null,
+    "ahnGroundNapM": 9.65,
+    "geoidNlgeo2018M": 43.71,
+    "shaftM": 5.3,
+    "towerBaseTopM": 20,
+    "pierCapM": 23.8,
+    "corniceTopM": 34.3,
+    "apexM": 37.45,
+    "midRidgeM": 19.2,
+    "midFlatRoofM": 16.62,
+    "wingEaveM": 12.6,
+    "wingRidgeM": 15.2,
+    "frontLengthM": 131.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Udenhout_Vincentius)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_internaat_met_toren_-_Udenhout_-_20342745_-_RCE.jpg en 20342746 (voorgevel, toren, traptorens, hoektorens)",
+    "https://commons.wikimedia.org/wiki/File:Udenhout_Watertoren_2010.jpg (toren, bordes, luifel, dakkapellen)",
+    "https://commons.wikimedia.org/wiki/File:Vincentius_Udenhout.jpg (schacht, consoles, uurwerken, koepel)",
+    "PDOK BAG-pand 0855100000071049, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,71 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-udenhout-huize-vincentius-1-1000.stl"
+  ]
+}
