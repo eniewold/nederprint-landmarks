@@ -1,0 +1,72 @@
+{
+  "name": "Nieuwe watertoren (Steenbergen)",
+  "file": "watertoren-steenbergen-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    81735.45,
+    400550.35
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      9,
+      -9
+    ]
+  ],
+  "groundHeight": 45.36,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0851100000010832"
+  ],
+  "description": "Oorsprong op het hart van de toren uit het AHN-DSM op maaiveld (NAP +1,23 m), +X RD-oost. Ronde bakstenen schacht van 12,6 m met een boogjesfries op 25 m, zestien vensters onder de dakrand, zware ronde dakrand van 13,5 m tot 35,55 m, koperen kegeldak tot een ronde lantaarn met glasband en kap tot 39,85 m; aan de zuidkant de dienstvleugels uit hetzelfde BAG-pand (twee bouwlagen naar het zuidwesten, één laag naar het westen en het zuidoosten, zadeldaken uit het AHN) met drie schoorstenen en een plat aanbouwtje. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 40.65,
+    "reservoirM3": 600,
+    "built": 1950,
+    "architect": "J.M. Hurks",
+    "ahnGroundNapM": 1.23,
+    "ahnTopNapM": 41.1,
+    "geoidNlgeo2018M": 44.13,
+    "shaftDiameterM": 12.6,
+    "eaveDiameterM": 13.5,
+    "lanternDiameterM": 4.8,
+    "friezeM": 25,
+    "eaveTopM": 35.55,
+    "roofTopM": 37.45,
+    "apexM": 39.85,
+    "wingRidgesM": {
+      "west": 5.82,
+      "southwest": 9.22,
+      "southeast": 5.84
+    },
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Steenbergen) (1950, J.M. Hurks, 40,65 m, 600 m³, kinderopvang sinds 2000)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Steenbergen_-_20346621_-_RCE.jpg (toren en vleugels van het zuiden, verticalen evenwijdig)",
+    "https://commons.wikimedia.org/wiki/File:2010-09-11_12.13_Steenbergen,_watertoren_foto1.JPG en File:Steenbergen,_watertoren_foto4_2015-05-30_16.15.jpg (vensterkrans, fries, dakrand, lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:WatertorenSteenbergen.jpg (2008)",
+    "PDOK BAG-pand 0851100000010832, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte voor groundHeight, lineair geïnterpoleerd tussen naburige watertorenmodellen"
+  ],
+  "printFiles": [
+    "watertoren-steenbergen-nieuwe-watertoren-1-1000.stl"
+  ]
+}
