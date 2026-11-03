@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Vught",
+  "file": "watertoren-vught.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    149332.3,
+    406058.65
+  ],
+  "xAxis": [
+    0.97992,
+    0.19937
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "groundHeight": 49.57,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0865100000008150"
+  ],
+  "description": "Oorsprong op het hart van de reservoirkop uit het AHN-DSM op maaiveld (NAP +6,05 m), +X de normaal van de oost-noordoostgevel (RD 11,5 graden), ingang op -Y. Achtkant voetstuk met plint dat van 7,1 naar 5,9 m over de vlakken versmalt tot 7,3 m, fries met zestien diamantkoppen tussen twee lijsten tot 8,9 m, schacht van 5,4 m met rondboogfries op 17,65 tot 19,05 m en acht ronde vensters, een overkragende achtkante reservoirkop van 7,4 m vanaf 20,6 m met onderrand en dakrand, en een laag tentdak tot 28,0 m; de deur in een nis aan de voorzijde. Maten uit AHN, BAG, register en foto's.",
+  "realWorld": {
+    "registerHeightM": 27,
+    "reservoirHeightM": 22,
+    "built": 1903,
+    "architect": "H.J. van Tulder",
+    "monument": 521293,
+    "ahnGroundNapM": 6.05,
+    "ahnTopNapM": 34,
+    "plinthAcrossFlatsM": 7.1,
+    "plinthTopAcrossFlatsM": 5.94,
+    "shaftAcrossFlatsM": 5.4,
+    "headAcrossFlatsM": 7.4,
+    "plinthTopM": 7.3,
+    "friezeTopM": 8.9,
+    "arcadeM": [
+      17.65,
+      19.05
+    ],
+    "headFootM": 20.6,
+    "eaveM": 27.2,
+    "apexM": 28,
+    "minimumPartM": 0.8
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Vught)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521293 (achtkante schacht in drie delen, diamantkopfries, rondboogfries, ronde vensters, overkragende beschoten kop, circa 27 m)",
+    "https://commons.wikimedia.org/wiki/File:Vught_Watertoren_4648.JPG (2006, frontaal op de ingang: geledingen en breedtes)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_bij_krankzinnigeninstituut_-_Vught_-_20347871_-_RCE.jpg en File:Voorburg_watertoren.JPG (opstand en tentdak)",
+    "PDOK BAG-pand 0865100000008150, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03"
+  ],
+  "printFiles": [
+    "watertoren-vught-1-1000.stl"
+  ]
+}
