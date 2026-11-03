@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Amstelveenseweg",
+  "file": "watertoren-amsterdam-amstelveenseweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    118826.29,
+    483272.19
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 43.85,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012216977"
+  ],
+  "description": "Oorsprong op het midden van de ronde BAG-contour op maaiveld (NAP +0,80 m), +X langs RD-oost. Ronde betonnen kern van 6,6 m met zes vrijstaande kolommen van 1,07 m op een kring van 10,1 m, een kraag van 45 graden onder de reservoirbodem naar een ringbalk van 12,9 m, een omgekeerde kegelstomp (aluminium mantel) van 13,36 m op 15,4 m naar 17,48 m op 35,65 m, een flauw kegeldak en een achtkantig opbouwtje met glasband en overstekend dak tot 39,26 m. Maten uit BAG, AHN, luchtfoto en telefoto; richting van de kolommen geschat.",
+  "realWorld": {
+    "publishedHeightM": 40,
+    "reservoirM3": 2335,
+    "built": 1965,
+    "architect": "Piet Elling",
+    "ahnGroundNapM": 0.8,
+    "ahnRimNapM": 36.45,
+    "ahnMaxNapM": 40.06,
+    "geoidNlgeo2018M": 43.05,
+    "coreDiameterM": 6.6,
+    "columns": 6,
+    "columnDiameterM": 1.07,
+    "columnRingDiameterM": 10.12,
+    "tankDiameterM": [
+      13.36,
+      17.48
+    ],
+    "tankM": [
+      15.4,
+      35.65
+    ],
+    "lanternRoofDiameterM": 7.3,
+    "modelTopM": 39.26,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_Amstelveenseweg (1965, Piet Elling, 40 m, 2335 m³, stalen reservoir in aluminium mantel)",
+    "https://commons.wikimedia.org/wiki/File:Amsterdam_Watertoren_Amstelveenseweg.jpg (telefoto: verhoudingen van mantel, ringbalk, kolommen, kern, venster en opbouwtje)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Amstelveenseweg_-_panoramio.jpg (kolommen voor de kern, ringbalk)",
+    "PDOK BAG-pand 0363100012216977, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,05 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-amsterdam-amstelveenseweg-1-1000.stl"
+  ]
+}
