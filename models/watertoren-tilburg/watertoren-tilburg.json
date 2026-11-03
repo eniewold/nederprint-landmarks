@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Tilburg",
+  "file": "watertoren-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    132912.67,
+    396410.06
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9.5,
+      0
+    ],
+    [
+      0,
+      9.5
+    ],
+    [
+      -9.5,
+      0
+    ],
+    [
+      6.7,
+      -6.7
+    ]
+  ],
+  "groundHeight": 59.77,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000293803"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour op maaiveld (NAP +15,90 m), +X is RD-oost. Ronde onderbouw van 14,4 m met plint, poort met natuurstenen omlijsting, portiek en trap op het zuidwesten, zeven rondboogvensters, fries en schuine waterlijst tot 8,7 m; licht tapse schacht van 12,2 tot 11,9 m met twee rijen rondboogvensters en vierkante vensters; consolelijst met twintig consoles en kroonlijst tot 29,1 m; rond reservoir van 13,0 m met gekoppelde rondboogvensters, band, venstertjes, daklijst en borstwering tot 39,3 m om een plat dak op 38,1 m; traptorentje op een console aan de oostkant met koperen kegel tot 45,3 m. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "wikipediaHeightM": 50.5,
+    "reservoirM3": 1000,
+    "built": 1897,
+    "architect": "H.P.N. Halbertsma",
+    "rijksmonument": 521153,
+    "ahnGroundNapM": 15.9,
+    "ahnRoofNapM": 54,
+    "ahnParapetNapM": [
+      55,
+      55.2
+    ],
+    "ahnTurretNapM": 60,
+    "geoidNlgeo2018M": 43.87,
+    "baseDiameterM": 14.66,
+    "shaftDiameterM": [
+      12.2,
+      11.9
+    ],
+    "tankDiameterM": 13,
+    "corniceDiameterM": 13.5,
+    "roofM": 38.1,
+    "parapetM": 39.3,
+    "turretApexM": 45.3,
+    "consoles": 20,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Tilburg) (1897, H.P.N. Halbertsma, 50,50 m, 1000 m³, bovenbouw na 1944 vereenvoudigd met hekwerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521153",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_met_dienstgebouw_-_Tilburg_-_20343564_-_RCE.jpg (evenwijdige verticalen: geledingen, stralen, posities van poort, vensters en traptorentje)",
+    "https://commons.wikimedia.org/wiki/File:Tilburg_watertoren.jpg, File:Tilburg_-_Watertoren.jpg, File:Tilburg_-_Watertoren_(2).jpg, File:Watertoren,_detail_beeld_en_ingangspartij_-_Tilburg_-_20343567_-_RCE.jpg (consolelijst, gekoppelde vensters, traptorentje met console, poort met portiek en trap)",
+    "PDOK BAG-pand 0855100000293803, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,87 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-tilburg-1-1000.stl"
+  ]
+}
