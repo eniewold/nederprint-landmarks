@@ -1,0 +1,85 @@
+{
+  "name": "Watertoren Aalsmeer",
+  "file": "watertoren-aalsmeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    111996.55,
+    474283.69
+  ],
+  "xAxis": [
+    0.99027,
+    0.13917
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      -10
+    ]
+  ],
+  "groundHeight": 43.96,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0358100019103003"
+  ],
+  "description": "Oorsprong op het hart van de BGT-contour op maaiveld (NAP +1,05 m), +X de normaal van de oostgevel met de deur (RD 8 graden). Vierkante toren met afgeschuinde hoeken (12,4 m over de gevels, BGT), vier diagonale hoekkolommen met een verlopende voet en vier koppelbalken, per gevel een middenkolom met geknikte parabool om deur of venster, smal en breed reliëfvlak met rib ter hoogte van de reservoirs, een punt boven de gevelrand op 42 m, en een koperen kap in acht vlakken met knik van 44,66 tot 49,9 m. Maten uit AHN, BGT, register en foto's.",
+  "realWorld": {
+    "publishedHeightM": 50,
+    "reservoirsM3": [
+      520,
+      480,
+      160
+    ],
+    "reservoirDiametersM": [
+      10.5,
+      10.2
+    ],
+    "built": "1926-1928",
+    "architect": "H. Sangster",
+    "monument": 524249,
+    "ahnGroundNapM": 1.05,
+    "ahnTopNapM": 51,
+    "faceAcrossM": 12.4,
+    "cornerFootFromCentreM": 9.1,
+    "cornerColumnFromCentreM": 7.85,
+    "barsM": [
+      7.9,
+      16.2,
+      24.1,
+      32.4
+    ],
+    "reliefM": [
+      24.1,
+      32.4,
+      42
+    ],
+    "parapetM": 42,
+    "eaveM": 44.66,
+    "knickM": 47.86,
+    "apexM": 49.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Aalsmeer) (1926-1928, H. Sangster, 50 m, reservoirs 520, 480 en 160 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/524249 (betonskelet met hoek- en middenkolommen en koppelbalken, reliëf in drie verbredende vlakken, parabool om deur en vensters, kap van acht geknikte koperen vlakken)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Aalsmeer_-_panoramio_-_Rokus_C.jpg (frontaal op de oostgevel met de deur: geledingen en breedtes)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_in_Aalsmeer.jpg, File:Watertoren_Aalsmeer_(4).JPG en File:Watertoren_Aalsmeer_2019.jpg (schuin op de hoeken: hoekkolommen, koppelbalken en kap)",
+    "PDOK BGT-pand G0362.ae876bd6028f4e65bd3afe91a4b883f8 (BAG-pand 0358100019103003), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03"
+  ],
+  "printFiles": [
+    "watertoren-aalsmeer-1-1000.stl"
+  ]
+}
