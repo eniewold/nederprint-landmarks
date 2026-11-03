@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Spaklerweg",
+  "file": "watertoren-amsterdam-spaklerweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122905.04,
+    483489.12
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 43.89,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012189540"
+  ],
+  "description": "Oorsprong op het hart van de toren (BAG-cirkel, bijgesteld op het AHN-DSM) op maaiveld (NAP +0,86 m), +X naar het oosten, hoeken van de tienhoek op oost en west. Natuurstenen plint van 9,9 m tot 2,3 m, ronde schacht die van 9,4 naar 8,4 m versmalt met drie vensterlagen, siertegelfries, band en boogfries, kraag naar een tienzijdige behuizing van 9,4 m (hoeken) van 27,3 tot 32 m met kroonlijst tot 32,6 m, vier frontons met wijzerplaat, tienzijdige koepel met zes dakkapellen tot 36,5 m, koepeltorentje tot 40,6 m en bol met kroon tot 42,3 m. Maten uit AHN, BAG, luchtfoto, register en foto's.",
+  "realWorld": {
+    "publishedHeightM": 41.5,
+    "wikipediaHeightM": 45,
+    "reservoirM3": 210,
+    "built": "1910-1911",
+    "builder": "J.L. Seeuwen",
+    "monument": 526948,
+    "ahnGroundNapM": 0.86,
+    "ahnTopNapM": 43.14,
+    "geoidNlgeo2018M": 43.03,
+    "plinthDiameterM": 9.9,
+    "shaftDiameterM": [
+      9.4,
+      8.4
+    ],
+    "housingAcrossCornersM": 9.4,
+    "plinthM": 2.3,
+    "housingM": [
+      27.3,
+      32
+    ],
+    "corniceTopM": 32.6,
+    "lanternFootM": 36.45,
+    "apexM": 42.28,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Amsterdam_Spaklerweg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526948 (ronde voet, taps, tienzijdige uitkragende behuizing, tienzijdige loden koepel, torentje op pilasters, bol met kroon, vier wijzerplaten)",
+    "https://commons.wikimedia.org/wiki/File:BellavistaPark_-_Watertoren_Zuidergasfabriek.jpg (schacht frontaal: vensterlagen, friezen, kraag)",
+    "https://commons.wikimedia.org/wiki/File:WATERTOREN_van_de_Zuidergasfabriek.jpg, File:Watertoren_van_de_Zuidergasfabriek.jpg, File:51_watertoren,_spaklerweg_-_WLM_2011_-_drobm.jpg en File:2021_Bella_Vistapark,_Asd-Watertoren.jpg (behuizing, frontons, dakkapellen, torentje, ingang)",
+    "PDOK BAG-pand 0363100012189540, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,03 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-amsterdam-spaklerweg-1-1000.stl"
+  ]
+}
