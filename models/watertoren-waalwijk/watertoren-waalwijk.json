@@ -1,0 +1,80 @@
+{
+  "name": "Watertoren Waalwijk",
+  "file": "watertoren-waalwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133022.91,
+    409638.42
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4,
+      0
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      -4
+    ]
+  ],
+  "groundHeight": 46.56,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0867100000027518"
+  ],
+  "description": "Oorsprong op het midden van de ronde BAG-contour op maaiveld (NAP +2,90 m), +X langs RD-oost, deur op -X (west). Donkere tapse plint van 6,84 m tot 7,0 m met deurnis, ronde betonnen schacht van 6,24 tot 6,08 m met bovenaan twaalf rondbogen tussen lisenen met druppels, geprofileerde band, boogfries met zestien rondboogjes, stalen reservoir van 7,9 m van 26,9 m tot het dak, zestienkantig tentdak van 31 graden met een overstek van 10,5 m op een kraag met schoren, dakrand op 31,0 m, lantaarntje met galmgaten tot 34,75 m. Maten uit BAG, AHN, luchtfoto en foto.",
+  "realWorld": {
+    "publishedHeightM": 34,
+    "reservoirM3": 200,
+    "built": "1901-1902",
+    "architect": "Visser en Smit",
+    "ahnGroundNapM": 2.9,
+    "ahnRoofEdgeNapM": 34.04,
+    "ahnMaxNapM": 37.66,
+    "geoidNlgeo2018M": 43.66,
+    "plinthDiameterM": 6.84,
+    "shaftDiameterM": [
+      6.24,
+      6.08
+    ],
+    "tankDiameterM": 7.9,
+    "eaveDiameterM": 10.5,
+    "plinthTopM": 7,
+    "bandM": [
+      24.55,
+      25.6
+    ],
+    "tankFootM": 26.9,
+    "fasciaM": [
+      30.65,
+      31
+    ],
+    "roofPitchDeg": 31,
+    "modelTopM": 34.75,
+    "arcadeBays": 12,
+    "friezeBays": 16,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Waalwijk) (1901-1902, Visser en Smit, 34 m, 200 m³, buiten gebruik sinds 2018)",
+    "https://commons.wikimedia.org/wiki/File:Waalwijk_Watertoren_5998.JPG (opbouw, verhoudingen en hoogtes: plint, arcade, band, boogfries, reservoir, overstek met schoren, lantaarntje)",
+    "PDOK BAG-pand 0867100000027518, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte op de oorsprong (43,66 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-waalwijk-1-1000.stl"
+  ]
+}
