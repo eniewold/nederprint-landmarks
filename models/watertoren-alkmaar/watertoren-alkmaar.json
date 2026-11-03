@@ -1,0 +1,103 @@
+{
+  "name": "Watertoren Alkmaar",
+  "file": "watertoren-alkmaar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    110951.45,
+    516758.88
+  ],
+  "xAxis": [
+    0.9397,
+    -0.342
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      5.7,
+      5.7
+    ],
+    [
+      -5.7,
+      5.7
+    ],
+    [
+      -5.7,
+      -5.7
+    ],
+    [
+      5.7,
+      -5.7
+    ]
+  ],
+  "groundHeight": 43.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000105882"
+  ],
+  "description": "Oorsprong op het midden van de ronde BAG-contour op maaiveld (NAP +0,6 m), +X langs RD -20 graden (lange as van het dakblok), deur richting de Bergerweg (zuidwest). Ronde tapse bakstenen schacht van 10,2 tot 8,8 m met een dikke band op 5 m, deur, rondboogvensters in twee rijen en een rondboogfries met consoles tot 17,4 m; zestienzijdige bovenbouw van 12,7 m over de vlakken op een kegelvormig plafond met betonnen ribben, hoekpilasters met paaltjes, twee rijen kantoorvensters en een deklijst op 31,0 m; dakopbouw tot 33,4 m, blok tot 34,3 m met een glazen zadeldak tot 36,8 m en een dakterras aan de noordkant. Maten uit BAG, PDOK-reconstructie, AHN en foto's.",
+  "realWorld": {
+    "wikipediaHeightM": 31.4,
+    "reservoirM3": 800,
+    "built": 1900,
+    "architects": "J.C. Franken en A. Holmberg de Beckfelt",
+    "battlementsRemoved": 1955,
+    "ahnGroundNapM": 0.6,
+    "pdokParapetAboveGroundM": [
+      30.3,
+      31.4
+    ],
+    "pdokRoofAboveGroundM": [
+      33.5,
+      34.4
+    ],
+    "ahnRoofNapM": [
+      33.9,
+      34.8
+    ],
+    "ahnRidgeNapM": 38.2,
+    "geoidNlgeo2018M": 42.6,
+    "axisDeg": -20,
+    "shaftDiameterM": [
+      10.16,
+      8.84
+    ],
+    "upperAcrossFlatsM": 12.7,
+    "upperSides": 16,
+    "friezeTopM": 17.4,
+    "rimM": 19.4,
+    "copingM": 31,
+    "roofAnnexM": 33.4,
+    "roofBlockM": 34.3,
+    "modelTopM": 36.8,
+    "minimumPartM": 0.55
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Alkmaar) (1900, J.C. Franken en A. Holmberg de Beckfelt, 31,4 m, 800 m³, kantelen in 1955 verwijderd, sinds 2014 kantoren)",
+    "https://commons.wikimedia.org/wiki/File:Alkmaar,_watertoren_GM036-WN012_IMG_3329_2024-06-23_18.01.jpg (evenwijdige verticalen: verhoudingen, hoogtes, zestienhoek, ribben, pilasters, kantoorvensters, glazen zadeldak)",
+    "https://commons.wikimedia.org/wiki/File:Bergerweg_62,_Alkmaar.JPG, File:Alkmaar_-_Watertoren.jpg, File:Water_tower_in_Alkmaar_(Watertoren_)_-_The_Netherlands.jpg, File:Alkmaar_Watertoren_0606.JPG (deur, vensters, fries, plafond met ribben)",
+    "https://commons.wikimedia.org/wiki/File:Bergerweg_62,_hoek_Van_Teylingenstraat,_watertoren._Gebouwd_in_1900._-_RAA011000262_-_RAA_Elsinga.jpg (toestand voor de verbouwing: vensters, deur, paaltjes)",
+    "PDOK BAG-pand 0361100000105882 (ronde contour r 6,62 m), BGT, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "PDOK-gebouwtegel van pand 0361100000105882 (rf_roof_type slanted): borstwering en terras 30,3 tot 31,4 m, dakopbouw 33,5 en 34,4 m boven maaiveld, randen op -19 tot -22 graden",
+    "NLGEO2018-geoïdehoogte op de oorsprong (42,60 m) voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-alkmaar-1-1000.stl"
+  ]
+}
