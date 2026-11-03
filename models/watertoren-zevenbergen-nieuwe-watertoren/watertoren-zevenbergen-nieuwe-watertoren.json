@@ -1,0 +1,71 @@
+{
+  "name": "Nieuwe watertoren (Zevenbergen)",
+  "file": "watertoren-zevenbergen-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    100340.65,
+    406641.07
+  ],
+  "xAxis": [
+    0.9229,
+    0.3849
+  ],
+  "groundOffsetMetres": -0.2,
+  "groundSamplePoints": [
+    [
+      0,
+      9
+    ],
+    [
+      -9,
+      8
+    ],
+    [
+      10,
+      4
+    ]
+  ],
+  "groundHeight": 45.25,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1709100000045336"
+  ],
+  "description": "Oorsprong op het hart van de toren (BAG-cirkel) op maaiveld (NAP +1,3 m), +X langs de gevels van de aanbouw (22,64 graden linksom vanaf RD-oost). Ronde bakstenen schacht van 13 m doorsnede tot 35,8 m, rand onder 45 graden uit tot 13,7 m en 36,6 m, vlak kegeldak van 25 graden tot 39,8 m met een kapje tot 40,7 m; zestien ronde lichtopeningen, acht hoge vensters en drie losse vensters op vier assen als nissen. Aanbouw uit de verbouwing tot appartementen: twee lagen (7,35 m) om de zuid- en westzijde, een derde laag (10,4 en 10,75 m) naar de Galgenweg, lagere stroken in het zuidwesten en oosten en een glazen portaal voor de ingang. Maten uit AHN5, BAG, bestemmingsplan en foto.",
+  "realWorld": {
+    "publishedHeightM": 39.6,
+    "reservoirM3": 600,
+    "built": 1947,
+    "architect": "C.H. de Bever",
+    "ahnGroundNapM": 1.3,
+    "ahnRimNapM": 37.9,
+    "ahnTopNapM": 42,
+    "geoidNlgeo2018M": 43.95,
+    "shaftDiameterM": 13,
+    "eaveDiameterM": 13.7,
+    "rimM": 36.6,
+    "roofApexM": 39.8,
+    "capM": 40.7,
+    "annexM": {
+      "twoStoreys": 7.35,
+      "threeStoreys": [
+        10.4,
+        10.75
+      ],
+      "lowWest": 4.05,
+      "lowEast": 4.2,
+      "porch": 5.7
+    },
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Zevenbergen)",
+    "Bestemmingsplan Watertoren Zevenbergen (NL.IMRO.1709.WatertorenZvb-0401, ruimtelijkeplannen.nl): bestekstekening B-1 bestaand (gevels, doorsnede, dak), situatie en de aanbouw (twee naar drie lagen, 8 en 11,5 m)",
+    "https://commons.wikimedia.org/wiki/File:Zevenbergen_Watertoren_5958.JPG (2007, oostzijde: schacht, vensters, lichtopeningen, dakrand)",
+    "PDOK BAG-pand 1709100000045336, AHN5 DSM/DTM 0,5 m en luchtfoto, 2026-11-03",
+    "NLGEO2018-geoïdehoogte geïnterpoleerd uit de watertorens van Etten-Leur, Stampersgat, Hooge Zwaluwe en Roosendaal voor groundHeight"
+  ],
+  "printFiles": [
+    "watertoren-zevenbergen-nieuwe-watertoren-1-1000.stl"
+  ]
+}
