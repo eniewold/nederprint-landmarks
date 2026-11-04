@@ -1,0 +1,82 @@
+{
+  "name": "Watertoren Groenendaal",
+  "file": "watertoren-groenendaal-heemstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102253.47,
+    483091.11
+  ],
+  "xAxis": [
+    0.71059,
+    -0.7036
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -3,
+      6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      -3,
+      -6
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      4,
+      -5.5
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      6.5,
+      -1
+    ]
+  ],
+  "groundHeight": 43.59,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0397100000001033"
+  ],
+  "description": "Ruïne van het pomphuis (watertoren) van Meer en Berg in het wandelbos Groenendaal, rijksmonument 529181. Oorsprong in het hart van het pand op maaiveld (NAP +0,55), +X langs de nok naar het zuidoosten (RD -44,7 graden). Pomphuis op de BAG-contour (8,86 m breed, 7,16 tot 10,0 m lang, scheve zuidoostgevel), zadeldak van 38 graden met goot op 7,19 m en nok op 10,65 m (AHN), schoorsteen, blinde nissen voor boogpoort, deuren en vensters, en een afgebrokkelde muur van 0,9 m in het verlengde van de zuidwestgevel (7,0 m naast de westhoek, aflopend tot 1,8 m).",
+  "realWorld": {
+    "built": "1730 of kort daarna",
+    "monument": 529181,
+    "complex": "522623 Meer en Berg/Mariënheuvel",
+    "ahnGroundNapM": 0.55,
+    "ahnRidgeNapM": 11.2,
+    "eaveM": 7.19,
+    "ridgeM": 10.65,
+    "roofPitchDeg": 38,
+    "chimneyM": 11.45,
+    "ruinWallTopM": [
+      7,
+      1.8
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/529181 (ruïne van het pomphuis, 1730 of kort daarna, rechthoekig bouwdeel van één hoge bouwlaag met zadeldak tussen topgevels)",
+    "https://www.monumenten.nl/monument/522629 (Meer en Berg: de watertoren die de druk voor de fonteinen leverde is als ruïne bewaard)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Noord-Holland (Groenendaal (Heemstede), maten onbekend)",
+    "https://commons.wikimedia.org/wiki/File:Ruine_van_Groenendaal_park.jpg (noordwesttopgevel met deur, venster en luikdeur, noordoostgevel met boogpoort, kop van de ruïnemuur)",
+    "https://commons.wikimedia.org/wiki/File:Newcomen_steam_engine_at_landgoed_groenedaal_(2).jpg en (3) (topgevel en zuidwestgevel met schoorsteen en aflopende ruïnemuur)",
+    "PDOK BAG/BGT-pand 0397100000001033 (G0397.41cdc9b35ac6466a9258668df3ee4949), AHN DSM/DTM 0,5 m en luchtfoto 2021-2025, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-groenendaal-heemstede-1-100.stl"
+  ]
+}
