@@ -1,0 +1,83 @@
+{
+  "name": "Watertoren Assendelft",
+  "file": "watertoren-assendelft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112673.82,
+    497676.12
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      11,
+      0
+    ],
+    [
+      -11,
+      0
+    ],
+    [
+      0,
+      -11
+    ],
+    [
+      -8,
+      -8
+    ]
+  ],
+  "groundHeight": 43.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000003917"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-contour op maaiveld (NAP +0,3 m), +X naar RD-oost. Ronde bakstenen schacht (16,24 m, BAG) met tien lisenen, waterlijst op 6-7,3 m, drie rijen vensters als nissen, fries en lijst tot 24,8 m; twaalfzijdige kop uit de jaren twintig met betonnen hoekpilasters, een smalle en een brede band, een kroonlijst van 19,4 m met overstek van 45 graden tot 39,4 m, een twaalfzijdig tentdak en een rond opbouwtje tot 43,3 m. Maten uit AHN, BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "publishedHeightM": 41.85,
+    "reservoirM3": 1200,
+    "originalHeightM": 31.4,
+    "built": "1885, kop jaren twintig",
+    "architect": "D. de Leeuw",
+    "ahnGroundNapM": 0.3,
+    "ahnTopNapM": 43.6,
+    "shaftDiameterM": 16.24,
+    "crownAcrossCornersM": 19.4,
+    "ledgeM": [
+      6,
+      7.3
+    ],
+    "friezeM": [
+      21.2,
+      24
+    ],
+    "headBandsM": [
+      [
+        26.1,
+        27
+      ],
+      [
+        28.3,
+        30
+      ]
+    ],
+    "crownM": [
+      38.5,
+      39.4
+    ],
+    "cabinTopM": 43.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Assendelft) (1885, D. de Leeuw, 41,85 m, 1200 m³; oorspronkelijk 31,4 m en 540 m³, kop vernieuwd in de jaren twintig)",
+    "https://commons.wikimedia.org/wiki/File:Fiat_Topolino_C_Giardiniera_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg (vrijwel frontaal: geledingen, traveeën, deur)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Assendelft.JPG en File:Watertoren_assendelft2.jpg (schuin van onderen: kop, pilasters, banden, fries, kroonlijst en opbouw)",
+    "PDOK BAG-pand 0479100000003917 (BGT G0479.2e2bbf7742ff00fee0530a324301a3ef), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-assendelft-1-1000.stl"
+  ]
+}
