@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Kwadijk",
+  "file": "watertoren-kwadijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    127053.34,
+    504637.55
+  ],
+  "xAxis": [
+    -0.95293,
+    0.3032
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 42.37,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0478100000003103"
+  ],
+  "description": "Oorsprong op het hart van het achtkante BAG-pand op maaiveld (NAP -0,3 m), +X de normaal van de westgevel (RD 162,35 graden), ingang op het noorden naar -Y. Sokkel, acht hoekkolommen met teruggemetseld muurwerk, wigvormig verdiepte noord- en zuidgevel met drie vensterreeksen, kleinere vensters oost en west, twee betonnen banden op de reservoirbodems (25,8 en 33,5 m), reservoirgeledingen met vensternissen, bekroning met art-deco-punten tot 42,9 m en een lage achtzijdige kap tot 45,8 m; ingang met omlijsting op het noorden, glazen deur op het zuiden. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 45.5,
+    "reservoirsM3": [
+      500,
+      500
+    ],
+    "reservoirDiameterM": 10.2,
+    "built": 1925,
+    "architect": "B.F. van Nievelt (PWN)",
+    "ahnGroundNapM": -0.3,
+    "ahnTopNapM": 45.8,
+    "plinthAcrossLongFacesM": 13.28,
+    "plinthAcrossChamfersM": 14.7,
+    "columnsAcrossLongFacesM": 13,
+    "bandsM": [
+      [
+        25.8,
+        27.4
+      ],
+      [
+        33.5,
+        34.9
+      ]
+    ],
+    "crownM": [
+      40.7,
+      42.9
+    ],
+    "roofApexM": 45.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508231 (1925, B.F. van Nievelt, 45,50 m, achthoekig, skelet, reservoirs, geleding, vensters, ingang)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Kwadijk)",
+    "https://commons.wikimedia.org/wiki/File:Kwadijk_Watertoren_5409.JPG (frontaal van het zuiden: geledingen, vensters, bekroning)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Kwadijk_20250704_152811.jpg (van het zuidoosten: oost- en zuidgevel)",
+    "PDOK BAG-pand 0478100000003103, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-kwadijk-1-1000.stl"
+  ]
+}
