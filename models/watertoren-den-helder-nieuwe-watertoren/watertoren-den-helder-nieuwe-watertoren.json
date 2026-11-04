@@ -1,0 +1,80 @@
+{
+  "name": "Nieuwe watertoren Den Helder",
+  "file": "watertoren-den-helder-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112785.62,
+    552447.98
+  ],
+  "xAxis": [
+    0.99452,
+    0.10453
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 43.05,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0400100000022072"
+  ],
+  "description": "Oorsprong op het middelpunt van de BAG-cirkel (11,7 m) op maaiveld (NAP +0,95 m), +X naar de oostelijke topgevel (RD 6 graden). Ronde tapse bakstenen schacht in twee geledingen met rondboogfriezen, stenen band en trapvensters, een geribde kraag onder 45 graden naar de kuip van 12,1 m met vensters, een borstwering met vensterrij rond het dakterras op 35,9 m, vier topgevels met twee pinakels tot 40,15 m, de metalen opbouw op het terras en het ingangshuisje aan de westkant. Maten uit BAG, AHN, PDOK en foto's.",
+  "realWorld": {
+    "publishedHeightM": 40.15,
+    "reservoirM3": [
+      400,
+      500
+    ],
+    "built": "1907",
+    "architect": "Jan Schotel",
+    "ahnGroundNapM": 0.95,
+    "ahnTerraceNapM": 36.8,
+    "footDiameterM": 11.7,
+    "tankDiameterM": 12.1,
+    "bandM": [
+      10.8,
+      11.5
+    ],
+    "ringM": [
+      25.6,
+      26.2
+    ],
+    "lipM": [
+      28.1,
+      28.8
+    ],
+    "terraceM": 35.9,
+    "parapetM": 37.8,
+    "gableTopM": 39.45,
+    "pinnacleM": 40.15,
+    "drumTopM": 40.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Den_Helder) (1907, Jan Schotel, 40,15 m, reservoir 400 m³, na 1961 500 m³)",
+    "https://commons.wikimedia.org/wiki/File:Den_Helder,_watertoren_2006-08-06_10.28.JPG (evenwijdige verticalen: geledingen, doorsnedes en de topgevels)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Den_Helder.jpg (westkant met het ingangshuisje onder de topgevel)",
+    "https://commons.wikimedia.org/wiki/File:Den_Helder_Watertoren_01.JPG en File:Den_Helder_-_Watertoren.JPG (borstwering met vensterrij, topgevel met pinakels, metalen opbouw, kraag met ribben)",
+    "PDOK BAG-pand 0400100000022072, 3D BAG, PDOK 3D-gebouwtegel, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-den-helder-nieuwe-watertoren-1-1000.stl"
+  ]
+}
