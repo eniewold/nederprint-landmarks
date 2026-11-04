@@ -1,0 +1,62 @@
+{
+  "name": "Watertoren Leijweg Vogelenzang",
+  "file": "watertoren-vogelenzang-leijweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    100046.3,
+    484651.75
+  ],
+  "xAxis": [
+    0.99144,
+    -0.13053
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      3.5,
+      -3.5
+    ]
+  ],
+  "groundHeight": 47.13,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0377100000015288"
+  ],
+  "description": "Oorsprong op het hart van de achthoek uit het AHN op maaiveld (NAP +4,05 m), +X de normaal van de oostgevel (RD -7,5 graden). Regelmatig achtkante betonnen schacht van 6,2 m over de vlakken met hoekribben en verdiepte vlakken tot een dakband, een plat dak tot 33,1 m binnen een dakrand tot 33,35 m, een apparatuurkast op het dak tot 34,6 m en een deur onder aan de zuidoostgevel. Watertoren van circa 1957 naar ontwerp van J.P. Kloos aan de 1e Leijweg in de Amsterdamse Waterleidingduinen. Maten uit AHN, BAG en schuine luchtfoto's; geleding geschat.",
+  "realWorld": {
+    "built": "ca. 1957",
+    "architect": "J.P. Kloos",
+    "address": "1e Leijweg 4, Vogelenzang",
+    "ahnGroundNapM": 4.05,
+    "ahnRimNapM": 37.35,
+    "ahnRoofNapM": 37.2,
+    "ahnAntennaNapM": 42,
+    "acrossFlatsM": 6.2,
+    "rimM": 33.35,
+    "roofM": 33.1,
+    "equipmentM": 34.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Noord-Holland (Vogelenzang, Leijweg, ca. 1957, J.P. Kloos)",
+    "PDOK BAG-pand 0377100000015288 (bouwjaar 1957, 1e Leijweg 4), AHN DSM/DTM 0,5 m, 2026-11-04",
+    "PDOK luchtfoto's 2021, 2022, 2023, 2024 en 2025 (orthoHR, 8 cm): schuin zicht op de zuidwest-, zuid- en zuidoostgevels, hoekribben, dakrand, deur",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0377100000015288 (plat dak NAP +37,2), opgehaald 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-vogelenzang-leijweg-1-1000.stl"
+  ]
+}
