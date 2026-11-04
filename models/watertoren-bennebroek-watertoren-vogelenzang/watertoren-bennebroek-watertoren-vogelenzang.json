@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren Vogelenzang",
+  "file": "watertoren-bennebroek-watertoren-vogelenzang.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    100474.5,
+    481774.45
+  ],
+  "xAxis": [
+    0.99255,
+    0.12187
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      27,
+      -2
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      22,
+      -4
+    ],
+    [
+      26,
+      -6
+    ]
+  ],
+  "groundHeight": 45.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0377100000002980"
+  ],
+  "description": "Oorsprong op het hart van de schacht op de vloer van het pand (NAP +1,95 m), +X de normaal van de oostgevel (RD 7 graden). Vierkante schacht van 6,6 m met twee verdiepte vensterstroken per gevel, consoles en uitgebouwde hoekconsoles onder een dakplaat van 8,3 m op een kraag van 45 graden (bovenkant 23,05 m), en een tentdak met steile voet tot de knik op 25,05 m, een dakkapel per zijde en de top op 27,75 m. De toren hoort bij BAG-pand 0377100000002980; het model vervangt dat hele pand en neemt de rest van het complex over uit de 3D BAG (LoD2.2-dakvlakken). Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1927,
+    "architect": "A.T. Kraan (sr)",
+    "reservoirM3": 70,
+    "ahnGroundNapM": 1.95,
+    "ahnSlabNapM": 25,
+    "ahnTopNapM": 29.7,
+    "ahnMastNapM": 33.3,
+    "pdokEllipsoidMinusNapM": 43.12,
+    "shaftM": 6.6,
+    "slabM": 8.3,
+    "slabTopM": 23.05,
+    "kinkM": 25.05,
+    "apexM": 27.75,
+    "flatRoofM": 5.17,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_Vogelenzang (1927, A.T. Kraan sr, 70 m³, gemeentelijk monument)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_en_brandweergarage_-_Bennebroek_-_20407250_-_RCE.jpg (frontaal op de zuidgevel: consoles, hoekconsoles, dakplaat, tentdak met knik en dakkapel)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren-bennebroek.jpg (schuin op de noord- en westgevel: vensterstroken, consoles, dakkapel)",
+    "PDOK BAG-pand 0377100000002980, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0377100000002980, LoD2.2-dakvlakken, opgehaald 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-bennebroek-watertoren-vogelenzang-1-1000.stl"
+  ]
+}
