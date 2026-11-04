@@ -1,0 +1,88 @@
+{
+  "name": "Watertoren Laren",
+  "file": "watertoren-laren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    142669.73,
+    474535.1
+  ],
+  "xAxis": [
+    0.90924,
+    0.41628
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -10.5
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      16,
+      -9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      -12,
+      0
+    ],
+    [
+      -7,
+      -12.5
+    ],
+    [
+      -9,
+      15
+    ]
+  ],
+  "groundHeight": 71.58,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0417100000012598"
+  ],
+  "description": "Oorsprong in het hart van de cilinder op maaiveld (NAP +28,55 m), +X langs garage en traptoren (RD 24,6 graden), vlakke entreegevel naar -Y. Cilinder van 15,6 m met afgeplatte entreezijde tot 33,95 m (plat dak binnen een borstwering, lijst eronder), traptoren tot 35,6 m met zes lichtspleten per gevel, balkon en luifel; venster van glasbeton, lichtstrook en portiek in de entreegevel, noordingang met latei; garage met zadeldak, bergplaats met plat dak, lage ring en vleugel naar de dienstwoning met kruisende zadeldaken (hetzelfde BAG-pand). Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "publishedHeightM": 35.65,
+    "reservoirsM3": [
+      500,
+      500
+    ],
+    "reservoirDiameterM": 11.6,
+    "built": "1931-1933",
+    "architect": "W. Hamdorff (PWN)",
+    "monument": 511249,
+    "ahnGroundNapM": 28.55,
+    "cylinderDiameterM": 15.6,
+    "cylinderTopM": 33.95,
+    "roofM": 33,
+    "stairTowerTopM": 35.6,
+    "garageRidgeM": 7.65,
+    "storeRoofM": 6.15,
+    "wingRidgeM": 4.55,
+    "houseRidgesM": [
+      8.1,
+      8.9,
+      8.2,
+      5.6
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511249 (1931-1933, Hamdorff, 35,65 m, cilinder met afgeplatte entreezijde, traptoren, garage en bergplaats)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Laren)",
+    "https://commons.wikimedia.org/wiki/File:Laren_Watertoren_8452.JPG (entreegevel met venster, portiek, bergplaats en garage)",
+    "https://commons.wikimedia.org/wiki/File:Laren_Watertoren_8454.JPG, File:WaterTowerLaren2017-4.jpg en File:Overzicht_watertoren_met_aangebouwde_traptoren_gezien_vanaf_de_weg_-_Laren_-_20408146_-_RCE.jpg (traptoren met spleten, balkon en luifel, lijst, noordingang, garage, vleugel)",
+    "https://commons.wikimedia.org/wiki/File:WaterTowerLaren2017-3.jpg, File:WaterTowerLaren2017-1.jpg en File:WaterTowerLaren2017-2.jpg (noordingang met latei 1933 en reliëfs)",
+    "PDOK BAG-pand 0417100000012598, 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-laren-1-1000.stl"
+  ]
+}
