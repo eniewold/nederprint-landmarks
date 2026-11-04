@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Hollandia Wormer",
+  "file": "watertoren-wormer-hollandia.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    114906.45,
+    500648.3
+  ],
+  "xAxis": [
+    0.99813,
+    0.06105
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 43.05,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0880100000004206"
+  ],
+  "description": "Oorsprong op het hart van de watertoren op het maaiveld (NAP +0,3 m), +X langs de noordgevel van het fabrieksblok (RD-richting 3,5 graden), +Y naar het noorden (Pakhuisplein). Rechthoekige schacht van 6,0 × 3,7 m met panelen en hoge rondboognissen aan de noordkant, vensters en een deur op het fabrieksdak (19,0 m), een kraag van 0,35 m tot een reservoirdeel van 6,7 × 4,4 m met rondboogfries, twee lijsten, lisenen met spleten en een borstwering met rondboogopeningen tot 26,45 m. De toren hoort bij BAG-pand 0880100000004206 (het fabriekscomplex met de kloktoren); dat pand wordt vervangen en building:fabriek-hollandia is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": 1888,
+    "purpose": "sprinklerinstallatie van de Hollandia-fabriek",
+    "ahnGroundNapM": 0.3,
+    "ahnTopNapM": 26.8,
+    "bag3dTopNapM": 26.75,
+    "factoryRoofNapM": 19.3,
+    "shaftM": [
+      6,
+      3.7
+    ],
+    "reservoirM": [
+      6.7,
+      4.4
+    ],
+    "corbelM": [
+      20.15,
+      20.7
+    ],
+    "archFriezeM": [
+      21,
+      22.1
+    ],
+    "slotBandM": [
+      22.6,
+      23.15
+    ],
+    "parapetOpeningsM": [
+      24.8,
+      25.35
+    ],
+    "topM": 26.45,
+    "photoScalePxPerM": 73.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Wormer_Hollandia) (1888, sprinklerinstallatie, Stichting Hollandia)",
+    "https://commons.wikimedia.org/wiki/File:Wormer_Hollandia_Watertoren_2.JPG (noordgevel vrijwel frontaal: geledingen, breedtes)",
+    "https://commons.wikimedia.org/wiki/File:Zicht_op_toren,_vanaf_het_dak_-_Wormer_-_20386711_-_RCE.jpg (zuid- en oostgevel boven het dak: kraag, vensters, deur, aantallen boogjes en openingen)",
+    "https://commons.wikimedia.org/wiki/File:Achterzijdel,_overzicht_-_Wormer_-_20387156_-_RCE.jpg en File:Overzicht_van_de_achterzijde_-_Wormer_-_20386716_-_RCE.jpg (toren in het complex)",
+    "PDOK BAG-pand 0880100000004206, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0880100000004206, LoD2.2-dakvlakken, opgehaald 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-wormer-hollandia-1-1000.stl"
+  ]
+}
