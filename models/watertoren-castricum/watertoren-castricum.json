@@ -1,0 +1,92 @@
+{
+  "name": "Watertoren Castricum",
+  "file": "watertoren-castricum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104731.91,
+    508169.17
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.5,
+      0
+    ],
+    [
+      3.18,
+      3.18
+    ],
+    [
+      0,
+      4.5
+    ],
+    [
+      -3.18,
+      3.18
+    ],
+    [
+      -4.5,
+      0
+    ],
+    [
+      -3.18,
+      -3.18
+    ],
+    [
+      0,
+      -4.5
+    ],
+    [
+      3.18,
+      -3.18
+    ]
+  ],
+  "groundHeight": 47.21,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0383100000005733"
+  ],
+  "description": "Oorsprong op het midden van de ronde BAG-contour op de voet (NAP +4,45 m), +X naar RD-oost, deur in de zuidzijde (-Y). Achthoekig taps basement van 7,3 m over de vlakken tot 4,6 m met deur, drie vensters en een waterlijst; taps ronde schacht van 6,4 tot 3,95 m met tien vensternissen en een fries tot 24,1 m; Intze-bodem met omloop op 25,95 m (kraag onder 45 graden) en stalen mantel van 6,15 m; opgetild kegeldak in zestien vlakken met overstek (8,6 m) van 30,3 tot 32,15 m en een lantaarn tot 32,55 m. Maten uit BAG, AHN, luchtfoto, register en foto's.",
+  "realWorld": {
+    "registerHeightM": 33.5,
+    "reservoirM3": 50,
+    "reservoirDiameterM": 5,
+    "built": "1908-1909",
+    "engineer": "J. Scholtens",
+    "monument": 524182,
+    "ahnGroundNapM": 4.45,
+    "ahnShaftTopNapM": 28.5,
+    "bag3dRoof70pAboveGroundM": 31.9,
+    "plinthAcrossFlatsM": 7.26,
+    "shaftDiameterM": [
+      6.4,
+      3.94
+    ],
+    "casingDiameterM": 6.16,
+    "galleryDiameterM": 7.6,
+    "eaveDiameterM": 8.6,
+    "plinthTopM": 4.6,
+    "shaftTopM": 24.1,
+    "galleryM": 25.95,
+    "eaveM": 30.3,
+    "apexM": 32.15,
+    "modelTopM": 32.55,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Castricum) (1908, 33,4 m, 50 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/524182 (J. Scholtens, achthoekig taps basement met deur zuid en vensters aan drie zijden, waterlijst en fries, taps ronde schacht met tien vensters, reservoir 5 m en 50 m³ type Intze, ommanteling 1936, omloop 1965, flauw kegeldak met overstek en lantaarn, 33,5 m)",
+    "https://commons.wikimedia.org/wiki/File:Castricum_Watertoren_1394.JPG (2006: basement, waterlijst, schacht, verhoudingen over de hele hoogte)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Castricum_-_20284731_-_RCE.jpg (Intze-bodem, omloop, mantel en dak vóór de restauratie)",
+    "Dronefoto bij https://www.nhnieuws.nl/nieuws/361510/slapen-op-grote-hoogte-in-monumentale-watertoren (2026: opgetild dak met glazen strook, verhoudingen van mantel, dak en lantaarn)",
+    "PDOK BAG-pand 0383100000005733 (ronde contour r 3,93 m), AHN DSM/DTM 0,5 m en luchtfoto 8 cm, 3D BAG (AHN5 2022), 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-castricum-1-1000.stl"
+  ]
+}
