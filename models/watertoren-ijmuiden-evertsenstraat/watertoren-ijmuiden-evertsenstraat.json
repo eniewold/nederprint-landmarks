@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Evertsenstraat",
+  "file": "watertoren-ijmuiden-evertsenstraat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102294.62,
+    497326.29
+  ],
+  "xAxis": [
+    0.97318,
+    0.23005
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      7.5,
+      -2.5
+    ],
+    [
+      6.25,
+      -3.75
+    ]
+  ],
+  "groundHeight": 56.29,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0453100000012284"
+  ],
+  "description": "Oorsprong op het hart van het vierkante BAG-pand op de heuvel (NAP +13,1 m), +X de normaal van de oostgevel met de ingang (RD 13,3 graden), +Y noord. Onderste deel met plint, ingang met fronton (oost) en opliggende middenvlakken, ver uitstekende lijst, taps toelopende schacht met drie terugliggende vlakken per zijde, schuine kraag, reservoirdeel met achtkante uitbouwen op consoles, terugliggende vlakken en uurwerken, daklijst op 35,1 m, tentdak van 50,6 graden tot 42,7 m met drie dakkapellen en het torentje van de wenteltrap tot 40,6 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 42.6,
+    "reservoirM3": 550,
+    "reservoirDiameterM": 9,
+    "built": 1915,
+    "architects": "W. de Vrind en D. Drost",
+    "ahnGroundNapM": 13.1,
+    "ahnTopNapM": 55.8,
+    "lowerWidthM": 12,
+    "shaftWidthM": [
+      11.18,
+      9.98
+    ],
+    "reservoirWidthM": 11.36,
+    "eaveWidthM": 12.5,
+    "ledgeM": [
+      7,
+      7.7
+    ],
+    "reservoirM": [
+      26.4,
+      34.6
+    ],
+    "eaveM": 35.1,
+    "roofPitchDeg": 50.6,
+    "roofTopM": 42.7,
+    "turretTopM": 40.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520689 (1914-1915, vierkant grondplan, 42,60 m, betonskelet, geleding, uitbouwen, uurwerken, tentdak met dakkapellen)",
+    "https://nl.wikipedia.org/wiki/Waterleidingcomplex_Evertsenstraat",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_IJmuiden_2019.jpg (frontaal op de oostgevel: breedtes en hoogtes)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_IJmuiden_JUL_2020_02.jpg en File:Watertoren_IJmuiden_JUL_2020_03.jpg (schacht, onderste deel, ingang)",
+    "https://commons.wikimedia.org/wiki/File:IJmuiden,_Wasserturm_Evertsenstraat_01.JPG, File:Watertoren.JPG en File:Watertoren_IJmuiden_(2024).jpg (uitbouwen, uurwerken, dak)",
+    "PDOK BAG-pand 0453100000012284, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-ijmuiden-evertsenstraat-1-1000.stl"
+  ]
+}
