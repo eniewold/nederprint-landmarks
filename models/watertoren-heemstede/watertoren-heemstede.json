@@ -1,0 +1,78 @@
+{
+  "name": "Watertoren Heemstede",
+  "file": "watertoren-heemstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103192.4,
+    484498.55
+  ],
+  "xAxis": [
+    -0.52992,
+    -0.84805
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      15,
+      0
+    ]
+  ],
+  "groundHeight": 43.69,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0397100000001556"
+  ],
+  "description": "Oorsprong op het hart van de achtkante reservoirkop op maaiveld (NAP +0,8 m), +X de normaal van de gevel met het pomphuis (RD -122 graden, zuidwest). Achtkante schacht (8 m over de lisenen) met hoeklisenen, vier banden en vensterspleten, acht schuine consoles onder een kop van 10,2 m met onderlijst, verdiepte vlakken en kroonlijst tot 40,95 m, dak op 40,5 m met luik tot 41,4 m, en het pomphuis met zadeldak (nok 6,35 m) en een topgevel met middenrisaliet. Maten uit AHN, BGT en foto's.",
+  "realWorld": {
+    "publishedHeightM": 41.35,
+    "reservoirM3": 460,
+    "built": "1910-1911",
+    "architect": "A. Holmberg de Beckfelt",
+    "ahnGroundNapM": 0.8,
+    "ahnRoofNapM": 41.3,
+    "ahnTopNapM": 42.2,
+    "shaftAcrossFacesM": 8,
+    "headAcrossFacesM": 10.2,
+    "corniceAcrossFacesM": 10.6,
+    "bandsM": [
+      5.6,
+      12.9,
+      20.4,
+      27.5
+    ],
+    "bracketFootM": 27.4,
+    "headBottomM": 30.1,
+    "roofM": 40.5,
+    "parapetM": 40.95,
+    "hatchM": 41.4,
+    "pumpHouse": {
+      "lengthM": 9.65,
+      "widthM": 7.1,
+      "eaveM": 4.575,
+      "ridgeM": 6.35
+    },
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Heemstede) (1910-1911, A. Holmberg de Beckfelt, 41,35 m, reservoir 460 m³)",
+    "https://commons.wikimedia.org/wiki/File:Nijverheidsweg_5,_heemstede.jpg (van circa 80 m: geledingen en breedtes)",
+    "https://commons.wikimedia.org/wiki/File:Heemstede,_watertoren_foto5_2011-06-12_10.41.JPG, File:Watertower_Heemstede_Nijverheidsweg_5.jpg en File:Watertoren_Heemstede.jpg (consoles, kop, voorgevel van het pomphuis)",
+    "PDOK BGT-pand G0397.9ff7f15494ed4cd8990029715aa6e4b8 (BAG-pand 0397100000001556), AHN DSM/DTM 0,5 m, luchtfoto en 3D BAG, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-heemstede-1-1000.stl"
+  ]
+}
