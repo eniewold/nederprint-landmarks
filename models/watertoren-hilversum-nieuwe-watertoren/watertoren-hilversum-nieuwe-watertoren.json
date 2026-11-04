@@ -1,0 +1,104 @@
+{
+  "name": "Nieuwe watertoren Hilversum",
+  "file": "watertoren-hilversum-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    139000.27,
+    468074.65
+  ],
+  "xAxis": [
+    0.84151,
+    0.54024
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -3,
+      -9
+    ],
+    [
+      12,
+      -9
+    ],
+    [
+      25,
+      -4
+    ],
+    [
+      -13,
+      10
+    ],
+    [
+      25,
+      11
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      -3,
+      20
+    ],
+    [
+      32,
+      27
+    ],
+    [
+      -16,
+      27
+    ],
+    [
+      14,
+      36
+    ],
+    [
+      -12,
+      36
+    ],
+    [
+      -19,
+      44
+    ],
+    [
+      4,
+      44
+    ],
+    [
+      -8,
+      51
+    ]
+  ],
+  "groundHeight": 46.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0402100001480421"
+  ],
+  "description": "Oorsprong in het hart van het reservoir op maaiveld (NAP +3,3 m), +X langs de lange gevels van het hoofdgebouw (RD 32,7 graden). Watertoren van Zonnestraal (Duiker en Bijvoet, 1926-1928): cilinderreservoir van 4,4 m tot 9,2 m op een ronde schacht in de zuidelijke binnenhoek, met het hele hoofdgebouw van hetzelfde BAG-pand: kruis van twee lagen tot 7,62 m met ronde opbouw tot 9,03 m, lage voor- en achtervleugels, noordblok met rond trappenhuis, zuidelijk trappenhuis met afdak; gevels met borstwering, verdiepte glasstrook en dakrand per laag. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "built": "1926-1928",
+    "architects": "J. Duiker en B. Bijvoet",
+    "monument": 46771,
+    "ahnGroundNapM": 3.3,
+    "tankTopM": 9.2,
+    "tankBottomM": 7,
+    "tankDiameterM": 4.4,
+    "shaftDiameterM": 2.2,
+    "lowRoofM": 3.62,
+    "highRoofM": 7.62,
+    "drumM": 9.03,
+    "drumDiameterM": 9.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Hilversum) (Duiker en Bijvoet, 1927, voor Sanatorium Zonnestraal)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/46771 (Sanatorium Zonnestraal, hoofdgebouw)",
+    "https://commons.wikimedia.org/wiki/File:Hoofdgebouw,_waterreservoir_-_Hilversum_-_20372212_-_RCE.jpg en File:Rijksmonument_46771_Sanatorium_Zonnestraal_Hilversum_03.JPG (reservoir op de schacht vanaf het terras)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_achtergevel,_na_restauratie_-_Hilversum_-_20349385_-_RCE.jpg, File:Rijksmonument_46771_Sanatorium_Zonnestraal_Hilversum_19.JPG en File:Zonstrhoofd02achter.jpg (gevels, glasstroken, trappenhuizen)",
+    "PDOK BAG-pand 0402100001480421, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-hilversum-nieuwe-watertoren-1-1000.stl"
+  ]
+}
