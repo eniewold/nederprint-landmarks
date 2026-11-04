@@ -1,0 +1,86 @@
+{
+  "name": "Watertoren Ouderkerk aan de Amstel",
+  "file": "watertoren-ouderkerk-aan-de-amstel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121076.93,
+    478595.8
+  ],
+  "xAxis": [
+    0.99398,
+    -0.10956
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -5.96,
+      -0.66
+    ],
+    [
+      4.2,
+      -1.55
+    ],
+    [
+      -13.59,
+      -13.57
+    ],
+    [
+      -1.89,
+      -19.32
+    ],
+    [
+      7.86,
+      19.98
+    ]
+  ],
+  "groundHeight": 42.13,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0362100001108621",
+    "NL.IMBAG.Pand.0362100001108623"
+  ],
+  "description": "Oorsprong op het hart van de ronde toren op maaiveld (NAP -0,85 m), +X langs de werkplaats (RD -6,29 graden). Ronde bakstenen romp met nissen voor vensters en deuren, uitgekraagde achtkante rand op 12,1 tot 13,2 m, houten achtkante ombouwing met lamellen, overstekend achtzijdig dak tot 18,9 m; de zuidelijke werkplaats met zadeldak (nok 8,85 m), schoorsteen en vensternissen, de aanbouw met koelinstallatie en de hals naar de toren (BAG-pand ...8621), en de glazen gang met de noordvleugel (BAG-pand ...8623) als eenvoudige blokken met zadeldak. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1895,
+    "monument": 511967,
+    "registerHeightM": "circa 20",
+    "ahnGroundNapM": -0.85,
+    "ahnRoofTopNapM": 18.05,
+    "shaftDiameterM": [
+      4.73,
+      4.58
+    ],
+    "corbelM": [
+      12.1,
+      12.6
+    ],
+    "brickRingAcrossFlatsM": 5.04,
+    "casingAcrossFlatsM": 4.8,
+    "casingM": [
+      13.2,
+      15.95
+    ],
+    "eaveAcrossFlatsM": 6.5,
+    "fasciaM": [
+      16.9,
+      17.27
+    ],
+    "apexM": 18.9,
+    "workshopRidgeM": 8.85,
+    "workshopGutterM": 5.04,
+    "northWingRidgeM": 7.75,
+    "corridorM": 5.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511967 (1895, ronde bakstenen romp, consoles op twee niveaus, achthoekige houten ombouwing, achtzijdig uitkragend dak, doorgangen naar het noorden en zuiden)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Ouderkerk_aan_de_Amstel)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_DETAIL_WATERTOREN_-_Ouderkerk_aan_de_Amstel_-_20301549_-_RCE.jpg (uitkraging, ombouwing, dak, vensters, deur)",
+    "https://commons.wikimedia.org/wiki/File:Salpeter-_en_Katoenmagazijn_en_watertoren_-_WLM_2011_-_Shirley_de_Jong.jpg, File:Laboratorium_en_watertoren_KNSF_-_WLM_2011_-_Shirley_de_Jong.jpg, File:Ouderkerk_aan_de_Amstel_-_Kruitfabriek_De_Oude_Molen.jpg en File:Ouderkerk_aan_de_Amstel_-_Watertoren_Kruitfabriek_De_Oude_Molen.jpg (geledingen, lamellen, werkplaats, glazen gang)",
+    "PDOK BAG-panden 0362100001108621 en 0362100001108623, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-ouderkerk-aan-de-amstel-1-1000.stl"
+  ]
+}
