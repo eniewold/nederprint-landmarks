@@ -1,0 +1,98 @@
+{
+  "name": "Watertoren Hoogkarspel",
+  "file": "watertoren-hoogkarspel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    140625.89,
+    523079.94
+  ],
+  "xAxis": [
+    0.95757,
+    0.2882
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 43.12,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0498100000000708"
+  ],
+  "description": "Oorsprong op het hart van het twaalfhoekige BAG-pand op de sokkel (NAP +0,8 m), +X de normaal van een gevelvlak (RD 16,75 graden), ingang naar -Y (RD -73,25 graden). Granieten plint en onderste deel met vensternissen en twee lijsten, middendeel met kolommen op basementen, sterk verdiepte vlakken, zes lichtspleten en borstweringen op consoles, overkragende lijst, reservoirdeel met lichtspleten, kroonlijst met hoekblokken tot 35,8 m, bolle twaalfzijdige kap tot 41,9 m en lantaarn met ramen en spits tot 47,1 m; ingang met omlijsting, latei, treden en twee leeuwen. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "publishedHeightM": 49.1,
+    "reservoirsM3": [
+      600,
+      400
+    ],
+    "built": 1930,
+    "architects": "B.F. van Nievelt en W. Mensert (PWN)",
+    "ahnGroundNapM": 0.8,
+    "ahnTopNapM": 47.7,
+    "plinthAcrossFacesM": 14.1,
+    "lowerAcrossFacesM": 13.7,
+    "middleAcrossFacesM": [
+      13,
+      12.4
+    ],
+    "reservoirAcrossFacesM": 12.3,
+    "ledgesM": [
+      [
+        4.7,
+        5.5
+      ],
+      [
+        7,
+        7.9
+      ],
+      [
+        24.9,
+        26
+      ],
+      [
+        33.6,
+        34.9
+      ]
+    ],
+    "parapetsM": [
+      21.8,
+      23.2
+    ],
+    "cornerBlocksM": 35.8,
+    "roofTopM": 41.9,
+    "lanternM": [
+      41.6,
+      44
+    ],
+    "finialM": 47.1,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/495633 (1930, B.F. van Nievelt en W. Mensert, 49,10 m, twaalfhoekig, geleding, kap en lantaarn)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hoogkarspel)",
+    "https://commons.wikimedia.org/wiki/File:WatertorenHoogkarspel.jpg (van circa 90 m: geledingen en breedtes, perspectief gefit)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Hoogkarspel_20180712.jpg (telelens: kap, lantaarn en reservoirdeel)",
+    "https://commons.wikimedia.org/wiki/File:Ingang_watertoren_Hoogkarspel.JPG, File:Watertoren_Hoogkarspel.JPG en File:Hoogkarspel_with_water_tower.jpg (ingang, consoles, kolommen)",
+    "PDOK BAG-pand 0498100000000708 (BGT-pand G0388.f787b31f05eb47979d6bd14e792a84ae), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-04"
+  ],
+  "printFiles": [
+    "watertoren-hoogkarspel-1-1000.stl"
+  ]
+}
