@@ -1,0 +1,82 @@
+{
+  "name": "Watertoren Deventer",
+  "file": "watertoren-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206913.5,
+    475726.94
+  ],
+  "xAxis": [
+    0.99756,
+    -0.06976
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      6.4,
+      -6.4
+    ],
+    [
+      -6.4,
+      -6.4
+    ]
+  ],
+  "groundHeight": 54.05,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0150100000017040"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld rond de basaltvoet (NAP +10,9 m), +X naar RD-richting -4 graden, +Y naar het noorden (86 graden): trap en ingang. Basaltvoet van 16,1 m met trap; gebatterde onderbouw met acht verdiepte velden onder rondbogen, twee vensters per veld en de deur; kroonlijst; taps toelopende schacht met drie banden en vensters; zestien consoles onder een schuine Intze-bodem, zware lijst, reservoir met zestien rondboogvelden en vensters, kroonlijst van 14,7 m tot 34,75 m; kegeldak met vier dakkapellen, rood lantaarnvoetstuk met omgang op 41,2 m, lantaarn en uikoepel met makelaar tot 48,7 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1892,
+    "architect": "J.A. Mulock Houwer (stadsarchitect)",
+    "publishedHeightM": 53,
+    "reservoirM3": 500,
+    "monument": 12706,
+    "ahnGroundNapM": 10.9,
+    "ahnPlinthNapM": 12.2,
+    "ahnCorniceNapM": 45.6,
+    "ahnDeckNapM": 52.08,
+    "ahnTopNapM": 59.6,
+    "plinthDiameterM": 16.1,
+    "baseDiameterM": [
+      13.7,
+      12.7
+    ],
+    "shaftDiameterM": [
+      10.7,
+      9.7
+    ],
+    "reservoirDiameterM": 13.9,
+    "corniceDiameterM": 14.7,
+    "corniceM": [
+      34.3,
+      34.75
+    ],
+    "deckM": 41.2,
+    "topM": 48.7,
+    "photoScalePxPerM": 36.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12706 (1892, J.A. Mulock Houwer, 53 m, basaltvoet, Intze-reservoir, natuursteen banden en consoles, spits dak met dakkapellen, koepellantaarn, balustrade, windvaan met zeemeermin)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Deventer) (53 m, 500 m³, Ceintuurbaan, Vitens)",
+    "https://commons.wikimedia.org/wiki/File:DvntrWatertorenWest.jpg (vanaf het westen: geledingen, schaal 36,6 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Deventer_-_20054378_-_RCE.jpg (ingang, trap en basaltvoet)",
+    "https://commons.wikimedia.org/wiki/File:Aanzicht_-_Deventer_-_20054380_-_RCE.jpg, File:Aanzicht_-_Deventer_-_20054379_-_RCE.jpg, File:Reservoir_gedeelte_-_Deventer_-_20054381_-_RCE.jpg (onderbouw, consoles, reservoir, dakkapellen)",
+    "https://commons.wikimedia.org/wiki/File:Deventer_Watertoren.JPG en File:Watertoren_Deventer_uit_1892.jpg (dak, dakkapellen, lantaarn, koepel)",
+    "PDOK BAG-pand 0150100000017040, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-deventer-1-1000.stl"
+  ]
+}
