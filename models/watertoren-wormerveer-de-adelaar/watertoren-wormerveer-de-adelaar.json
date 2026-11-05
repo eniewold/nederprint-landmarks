@@ -1,0 +1,66 @@
+{
+  "name": "Watertoren De Adelaar Wormerveer",
+  "file": "watertoren-wormerveer-de-adelaar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    115769.27,
+    499933.83
+  ],
+  "xAxis": [
+    0.85896,
+    0.51204
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 43.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000000687"
+  ],
+  "description": "Oorsprong op het hart van de reservoirommanteling op het maaiveld (NAP +0,45 m), +X naar de Zaan (RD-richting 30,8 graden), +Y naar het noordwesten over het fabrieksdak. Bakstenen schacht van 5,6 × 5,3 m met lisenen en verdiepte vakken boven het fabrieksdak (13,65 m) en een deur in de westgevel, consoles met boogjes tot een uitkragende ommanteling van 6,9 × 6,6 m, lijst en ezelsrug tot 20,95 m, schilddak tot 22,1 m en een adelaar met een spanwijdte van 6,75 m tot 25,45 m. De toren hoort bij BAG-pand 0479100000000687 (de zeepziederij); dat pand wordt vervangen en building:zeepziederij-de-adelaar is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": 1908,
+    "architects": "J.P.F. van Rossem en W.J. Vuijk",
+    "monument": 526437,
+    "wikipediaHeightAboveRoofM": 7,
+    "eagleWingspanM": 6.75,
+    "ahnGroundNapM": 0.45,
+    "ahnRoofNapM": 14.1,
+    "ahnRimNapM": 21.4,
+    "ahnEagleTopNapM": 25.88,
+    "bag3dTowerRoofTopNapM": 22.7,
+    "shaftM": [
+      5.6,
+      5.3
+    ],
+    "casingM": [
+      6.9,
+      6.6
+    ],
+    "consolesM": [
+      16.6,
+      18.05
+    ],
+    "casingFaceM": [
+      18.29,
+      20.65
+    ],
+    "rimM": 20.95,
+    "roofApexM": 22.1,
+    "eagleTopM": 25.45,
+    "photoScalePxPerM": 100.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526437 (1908, Van Rossem en Vuijk; toren van één bij twee traveeën met zes en zeven lisenen, consoles, uitkragende ommanteling met ezelsrug en letters, betonnen adelaar met 6,75 m spanwijdte naar de Zaan)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Wormerveer) (1908, stalen tank op een opbouw van 7 m)",
+    "https://commons.wikimedia.org/wiki/File:Gevel_van_liftopbouw_en_toren_met_adelaar_-_Wormerveer_-_20356385_-_RCE.jpg (noordgevel vrijwel frontaal: geledingen, schacht, lisenen, consoles)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_van_zeepziederij_met_adelaar_op_dak_-_Wormerveer_-_20356378_-_RCE.jpg en File:Gevel_van_toren,_met_adelaar_-_Wormerveer_-_20356381_-_RCE.jpg (westgevel met deur, consoles en boogjes, rand, adelaar)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_met_ligging,_oostzijde_-_Wormerveer_-_20356361_-_RCE.jpg en File:Wormerveer_Watertoren_5358.JPG (Zaankant: toren boven de fabrieksgevel, adelaar frontaal)",
+    "PDOK BAG-pand 0479100000000687, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0479100000000687, LoD2.2-dakvlakken, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-wormerveer-de-adelaar-1-1000.stl"
+  ]
+}
