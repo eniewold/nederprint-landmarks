@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Delden (Twickel)",
+  "file": "watertoren-delden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    245218.97,
+    476162.32
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      5
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      -5
+    ],
+    [
+      3.54,
+      -3.54
+    ]
+  ],
+  "groundHeight": 65.35,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1735100000056870"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand (de ronde onderbouw, 8,28 m) op maaiveld van de heuvel (NAP +22,0 m), +X naar het oosten, +Y naar het noorden; de achtkant staat met de zijden naar de windstreken. Hardstenen plint, ronde onderbouw met ingangspartij (deur, kroonlijst, halfrond fronton) en stoep aan de noordoostkant, twee rondboogvensters en vier oculi, cordonlijst op 8,8 tot 10 m, schacht van 7,8 m met drie rijen kijkspleten, hoekconsoles en een rondboogfries waarop de achtkante reservoirommanteling (9,4 m) uitkraagt, blinde vensters met timpaan tussen hoekblokken, kroonlijst en dak op 35,85 m (NAP +57,85), borstwering met kantelen tot 37,95 m en een achtkant torentje met kantelen tot 40,0 m (NAP +62,0). Maten uit BAG, AHN, 3D BAG, luchtfoto en foto's.",
+  "realWorld": {
+    "built": 1894,
+    "architect": "H.P.N. Halbertsma",
+    "reservoirM3": 200,
+    "registerHeightM": 37.5,
+    "rijksmonument": 507505,
+    "ahnGroundNapM": 22,
+    "bag3dRoofNapM": 57.84,
+    "ahnLanternNapM": 62,
+    "baseDiameterM": 8.28,
+    "shaftDiameterM": 7.78,
+    "casingAcrossFlatsM": 9.4,
+    "corniceAcrossFlatsM": 10.1,
+    "roofM": 35.85,
+    "parapetM": 37.95,
+    "lanternM": 40,
+    "entranceBearingDeg": 55,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Delden) (1894, H.P.N. Halbertsma, 37,5 m, 200 m³, landgoed Twickel)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507505 (opbouw, ingang, rondboogfries, blinde vensters met timpaan, kantelen, torentje)",
+    "https://commons.wikimedia.org/wiki/File:Delden,_de_watertoren_RM507505_foto7_2013-04-22_13.58.jpg (2013, vanaf het zuidoosten: geledingen en breedtes, 29,85 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Delden.jpg en File:Water_tower_in_Delden.JPG (ingangspartij, vensters, oculi, kijkspleten)",
+    "Commons: RCE-opnamen 20297443, 20297444 en 20297445 (overzicht en reservoirommanteling)",
+    "PDOK BAG-pand 1735100000056870 (bouwjaar 1893), AHN DSM/DTM 0,5 m, luchtfoto en PDOK-terrein, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.1735100000056870: dakhoogte en maaiveld, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-delden-1-1000.stl"
+  ]
+}
