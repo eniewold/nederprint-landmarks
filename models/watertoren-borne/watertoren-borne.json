@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Borne",
+  "file": "watertoren-borne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    248908.68,
+    479836.94
+  ],
+  "xAxis": [
+    0.91355,
+    -0.40674
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 58.8,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0147100000011259"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op maaiveld (NAP +15,7 m), +X naar RD -24 graden langs een van de vier assen met een lisenengroep, ingang met luifel naar -Y (RD 246 graden). Plint van 10,1 m, schacht van 9,8 m met vier lichtstroken en sluitstenen, een uitkragende band op 23-24 m, reservoirdeel van 10,0 m met vier groepen van drie lisenen en twee hoge vensters tot 33,0 m, flankerende lisenen, consoles langs de borstwering op 32,0 m, zestienzijdig tentdak tot 35,65 m en makelaar tot 36,5 m. Maten uit BAG, AHN, Wikipedia en foto's.",
+  "realWorld": {
+    "built": 1932,
+    "architect": "J.H.J. Kording",
+    "publishedHeightM": 36.5,
+    "reservoirM3": 240,
+    "ahnGroundNapM": 15.7,
+    "ahnParapetNapM": 47.7,
+    "ahnRoofTopNapM": 51.3,
+    "bag3dRoofMaxNapM": 51.24,
+    "plinthDiameterM": 10.1,
+    "shaftDiameterM": 9.8,
+    "stageDiameterM": 10,
+    "bandM": [
+      23,
+      24
+    ],
+    "slitsM": [
+      3.6,
+      22.2
+    ],
+    "windowsM": [
+      25.2,
+      31.2
+    ],
+    "parapetM": 32,
+    "groupTopM": 33,
+    "roofM": [
+      32,
+      35.65
+    ],
+    "finialM": 36.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Borne) (1932, J.H.J. Kording, aannemer Groothengel, 36,5 m, 240 m³)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Borne_-_20297461_-_RCE.jpg en File:Exterieur_BOVENSTUK_-_Borne_-_20297462_-_RCE.jpg (1987: lichtstrook, ingang met luifel, band, sluitsteen, lisenengroep met vensters, consoles, makelaar)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Borne_-_20427884_-_RCE.jpg (1983, van afstand: geledingen, tentdak, groepen op 45 graden)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Borne.jpg en File:Watertoren_aan_de_Watertorenstraat_te_Borne.jpg (standplaats bekend: richting van de assen)",
+    "PDOK BAG-pand 0147100000011259, AHN DSM/DTM 0,5 m en luchtfoto (actueel, 2021-2023), 2026-11-05",
+    "3D BAG pand NL.IMBAG.Pand.0147100000011259 (maaiveld NAP +15,65, h_dak_max +51,24)"
+  ],
+  "printFiles": [
+    "watertoren-borne-1-1000.stl"
+  ]
+}
