@@ -1,0 +1,62 @@
+{
+  "name": "Watertoren Daarle",
+  "file": "watertoren-daarle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234054.68,
+    493947.57
+  ],
+  "xAxis": [
+    0.98705,
+    0.1604
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 57.65,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0163100000529763"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op maaiveld (NAP +14,9 m), +X de normaal van de oostelijke risaliet (RD 9,23 graden). Betonnen schacht op een vierkant met vier risalieten van 3,58 m en diep teruggezette schuine hoeken; trapvensters en een deur in het zuidwestvlak, een vensterband onder de dakrand in elk schuin vlak; de achtkante dakrand overspant de hoeken tot 32,9 m, daarop een vlak achtkant piramidedak tot 34,8 m. Maten uit BAG, AHN, luchtfoto en één foto.",
+  "realWorld": {
+    "wikipediaHeightM": 33.7,
+    "reservoirM3": 145,
+    "built": 1934,
+    "designer": "Duecker & Co, Duisburg",
+    "ahnGroundNapM": 14.9,
+    "ahnEaveNapM": 47.8,
+    "ahnTopNapM": 49.73,
+    "risalitAcrossM": 9.07,
+    "risalitWidthM": 3.58,
+    "cornerFaceWidthM": 2.54,
+    "eaveM": 32.9,
+    "apexM": 34.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Daarle) (1934, Duecker & Co, 33,7 m, 145 m³)",
+    "https://commons.wikimedia.org/wiki/File:Daarle_Watertoren_3320.JPG (vanuit het zuidwesten, 2008: risalieten, schuine hoekvlakken, trapvensters, vensterband en dakrand)",
+    "PDOK BAG-pand 0163100000529763 en 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-daarle-1-1000.stl"
+  ]
+}
