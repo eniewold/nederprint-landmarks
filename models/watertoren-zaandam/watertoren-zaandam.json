@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Zaandam",
+  "file": "watertoren-zaandam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    116435.09,
+    495575.94
+  ],
+  "xAxis": [
+    0.99863,
+    0.05234
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      6.5
+    ],
+    [
+      9,
+      -16
+    ]
+  ],
+  "groundHeight": 43.13,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000000085"
+  ],
+  "description": "Oorsprong op het midden van de torenplattegrond op het maaiveld (NAP +0,3 m), +X langs de noord- en zuidgevel (RD-richting 3 graden), +Y naar het noorden (de insteek), oostgevel aan de Zaan. Bakstenen toren van circa 7,4 tot 7,9 bij 6,2 m op een scheve plattegrond, met gebosseerde hoekblokken, een natuurstenen band, hoeklisenen en middenlisenen, vensters en laaddeuren (noord en oost: rondbogen, een grote rondboog van 4,4 m en een oculus), verdiepte vakken met lichtspleten in de bovenste laag, een rollagenfries, de attiek en een lijst tot 22,95 m, ronde hoekbekroningen tot 23,6 m, een opgelichte dakvoet en een steil schilddak met vier dakkapellen tot 28,25 m. De toren hoort bij BAG-pand 0479100000000085 (het hele fabriekscomplex); dat pand wordt vervangen en building:fabriek-verkade is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": "1880 (Wikipedia)",
+    "purpose": "reservoir van de sprinklerinstallatie van de Verkadefabriek",
+    "register": "rijksmonument 518046 (fabrieksgebouw met watertoren, Westzijde 168)",
+    "ahnGroundNapM": 0.3,
+    "bag3dRidgeNapM": 28.55,
+    "ahnTurretTopNapM": 23.9,
+    "northFaceM": 7.44,
+    "southFaceM": 7.91,
+    "eastFaceM": 6.3,
+    "westFaceM": 6.16,
+    "slitPanelsM": [
+      16.3,
+      19
+    ],
+    "corbelM": [
+      20,
+      20.35
+    ],
+    "corniceM": [
+      22.7,
+      22.95
+    ],
+    "turretTopM": 23.6,
+    "ridgeM": 28.25,
+    "photoScalePxPerM": 30,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Zaandam) (1880, in het fabrieksgebouw van Verkade)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518046 (watertoren tegen de noordoosthoek van het fabrieksgebouw uit 1904: vijf bouwlagen, hoeklisenen op gebosseerde blokken, ronde hoekbekroningen, letters, lichtspleten tussen hangende lisenen, steil schilddak met dakkapellen en windvaan, laaddeuren, grote rondboog en oculus aan de voorzijde)",
+    "https://commons.wikimedia.org/wiki/File:WLM_-_Minke_Wagenaar_-_09-09-04_De_Zaan_132.jpg (telelens: geledingen boven het fabrieksdak)",
+    "https://commons.wikimedia.org/wiki/File:WLM_-_Minke_Wagenaar_-_09-09-04_De_Zaan_137.jpg en File:WLM_-_Minke_Wagenaar_-_09-09-04_De_Zaan_139.jpg (noord- en oostgevel: vensters, laaddeuren, rondboog, oculus)",
+    "https://commons.wikimedia.org/wiki/File:Zicht_op_de_zuidzijde_van_de_watertoren_met_uitgemetseld_muurwerk_en_de_letters-_Beschuit,_binnenterrein_op_de_voorgrond,_gezien_vanaf_de_vierde_verdieping_noordwaarts,voor_herbestemming_-_Zaandam_-_20425100_-_RCE.jpg (zuidgevel, bekroningen, dak en dakkapel)",
+    "PDOK BAG-pand 0479100000000085, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0479100000000085, LoD2.2-dakvlakken, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-zaandam-1-1000.stl"
+  ]
+}
