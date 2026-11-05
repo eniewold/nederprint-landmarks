@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Reggestraat Almelo",
+  "file": "watertoren-almelo-1926.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    242286.79,
+    485606.61
+  ],
+  "xAxis": [
+    0.93258,
+    -0.36097
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 54.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0141100000008007"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op maaiveld (NAP +11,4 m), +X naar de voorgevel aan de Reggestraat (RD-richting -21,16 graden), +Y naar het noordnoordoosten. Vierkante betonnen toren uit 1926: sokkel van 11,8 m met deur en trap aan de oostkant, taps toelopende schacht met hoekpenanten en lisenen die in kraagstukken onder de schuine onderkant van het reservoir eindigen, reservoir van 12,0 m met per gevel een driezijdig middenrisaliet, verdiepte velden en vensters als nis, lijst op 31,35 m, het hoge risaliet aan de voorgevel met een schilddakje tot 36,1 m en een tentdak tot 38,75 m. Maten uit BAG, AHN en drie foto's.",
+  "realWorld": {
+    "built": 1926,
+    "architect": "G. Halbertsma (ingenieur J. Buining)",
+    "rijksmonument": 507700,
+    "heightM": 38.1,
+    "reservoirM3": 750,
+    "ahnGroundNapM": 11.4,
+    "ahnTopNapM": 50.15,
+    "bag3dTopNapM": 49.81,
+    "tankM": 12,
+    "plinthM": [
+      11.8,
+      3.1
+    ],
+    "shaftM": [
+      11.4,
+      10.4
+    ],
+    "risalitM": [
+      2.9,
+      1.2,
+      0.87
+    ],
+    "tankBottomM": 21.2,
+    "eavesM": 31.35,
+    "stairRisalitEavesM": 34.35,
+    "stairRisalitRidgeM": 36.13,
+    "apexM": 38.75,
+    "roofDeg": 49.8,
+    "photoScalePxPerM": 32,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Almelo_Reggestraat) (1926, 38,10 m, 750 m³, rijksmonument 507700)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507700 (vierkant, gewapend beton, hoge sokkel, taps toelopende schacht, lisenen met kraagstukken, driezijdige middenrisalieten, hoog risaliet met schilddakje aan de voorgevel, trap van vijf treden en dubbele deur aan de oostkant, tentdak met leien)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Reggestraat_Almelo_1926.jpg (van het noorden: geledingen, vensters, lisenen)",
+    "https://commons.wikimedia.org/wiki/File:2009_Watertoren_Reggestraat_Almelo.jpg (van dichtbij: sokkel, schacht, verdiepte velden)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Almelo_-_20351175_-_RCE.jpg (van het zuidoosten: kraagstukken, schuine onderkant, risalieten, hoog risaliet)",
+    "PDOK BAG-pand 0141100000008007, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0141100000008007: maaiveld en hoogte van het hoge risaliet als controle, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-almelo-1926-1-1000.stl"
+  ]
+}
