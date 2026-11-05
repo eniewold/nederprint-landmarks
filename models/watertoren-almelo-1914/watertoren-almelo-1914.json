@@ -1,0 +1,64 @@
+{
+  "name": "Watertoren Spinnerij Twenthe Almelo",
+  "file": "watertoren-almelo-1914.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    241584.89,
+    486153.26
+  ],
+  "xAxis": [
+    0.73373,
+    0.67944
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundHeight": 54.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0141100000013065"
+  ],
+  "description": "Oorsprong op het hart van de schacht van de watertoren op het maaiveld (NAP +11,3 m), +X langs de voorgevel van de spinnerij (RD-richting 42,8 graden), +Y naar het Twenthe-plein (noordwest). Schacht van 3,32 m met hoekpenanten, een teruggelegd vlak en vijf vensters in de voorgevel tot 20,6 m; kapitelen, consoles en een schuine onderkant onder een plaat van 5,9 m (22,3 tot 23,3 m); reservoirdeel van 5,7 m met hoeklisenen, een venster met latei in elk vlak, een fries, een kroonlijst en een attiek tot 30,45 m, en de reclameletters op het dak als dichte plaat tot 32,6 m. De toren hoort bij BAG-pand 0141100000013065 (het hele spinnerijgebouw); dat pand wordt vervangen en building:spinnerij-twenthe is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": 1914,
+    "registerDesign": "Arend Beltman, 1916 (fabrieksgebouw)",
+    "purpose": "bluswater voor de sprinklerinstallatie van de stoomspinnerij Twenthe",
+    "ahnGroundNapM": 11.3,
+    "ahnTopNapM": 41.75,
+    "bag3dTopNapM": 41.7,
+    "shaftM": 3.32,
+    "slabM": 5.9,
+    "headM": 5.7,
+    "corbelM": [
+      21,
+      22.3
+    ],
+    "slabZM": [
+      22.3,
+      23.3
+    ],
+    "friezeM": [
+      27.2,
+      28.2
+    ],
+    "corniceM": [
+      28.2,
+      28.6
+    ],
+    "topM": 30.45,
+    "signTopM": 32.6,
+    "photoScalePxPerM": 30,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Almelo_Spinnerij) (1914, sprinklerinstallatie, rijksmonument 507707)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507707 (spinnerij Twenthe, A. Beltman 1916; slanke watertoren in de voorgevel met uitkragend reservoir, dubbele hoeklisenen, vensters onder lateien en tandlijsten)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_VOORGEVEL_-_Almelo_-_20311719_-_RCE.jpg (geledingen, consoles, lisenen, vensters, letters)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Spinnerij_Almelo_1914.jpg (kop, consoles, vensters, letters op het frame; 2003)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_FABRIEKSCOMPLEX_-_Almelo_-_20297222_-_RCE.jpg en File:Exterieur_OVERZICHT_FABRIEKSCOMPLEX_-_Almelo_-_20297223_-_RCE.jpg (toren in het complex)",
+    "PDOK BAG-pand 0141100000013065, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0141100000013065, LoD2.2-dakvlakken, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-almelo-1914-1-1000.stl"
+  ]
+}
