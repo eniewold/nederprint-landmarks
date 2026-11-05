@@ -1,0 +1,79 @@
+{
+  "name": "Watertoren Almelo (1924)",
+  "file": "watertoren-almelo-1924.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    241402.4,
+    486687.6
+  ],
+  "xAxis": [
+    0.99966,
+    -0.02618
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.5,
+      0
+    ],
+    [
+      -5,
+      -5
+    ],
+    [
+      4,
+      -5.5
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "groundHeight": 54.23,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0141100000089114"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand (de schacht) op maaiveld (NAP +11,15 m), +X naar het oosten langs de nok (RD-richting -1,5 graden), +Y naar het noorden. Langgerekte achthoek: bakstenen schacht van 6,3 × 4,8 m met twee hoge vensters per gevel en een deur in het zuiden, balkon op 9,6 m met schuine onderkant (leuning weggelaten), witte reservoirverdieping met hoekpenanten en verdiepte vlakken, lijst op 12,9 m, bakstenen bovenkamer van 8,0 × 6,4 m met twee vensters per gevel, overstekende goot op 16,05 m en een achtzijdig schilddak met een nok van 3 m tot 18,6 m. Maten uit BAG, AHN, 3D BAG en twee foto's.",
+  "realWorld": {
+    "built": 1924,
+    "reservoirs": 3,
+    "purpose": "bluswater voor de textielfabriek van Ten Cate (Indië-terrein)",
+    "ahnGroundNapM": 11.15,
+    "ahnRidgeNapM": 29.72,
+    "bag3dRidgeNapM": 29.77,
+    "bag3dSouthRoofDeg": 35.6,
+    "shaftM": [
+      6.3,
+      4.8
+    ],
+    "upperRoomM": [
+      8,
+      6.4
+    ],
+    "eavesM": [
+      8.8,
+      7.2
+    ],
+    "balconyM": 9.6,
+    "corniceM": [
+      12.5,
+      12.9
+    ],
+    "eavesHeightM": 16.05,
+    "ridgeM": 18.6,
+    "ridgeLengthM": 3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Almelo_Sluiskade) (1924, drie reservoirs, Sluiskade Noordzijde)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Sluiskade_Almelo_1924.jpg (2007, vanaf het zuiden: bovenkamer, lijst, reservoirverdieping, balkon, schacht; breedtes)",
+    "https://commons.wikimedia.org/wiki/File:Indieterrein_Almelo.jpg (vanaf het zuidwesten: hele toren, geledingen, deur)",
+    "PDOK BAG-pand 0141100000089114 (bouwjaar 1900 in de BAG, status Verbouwing pand 2024), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-05",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0141100000089114: nok, dakhelling, maaiveld, opgehaald 2026-11-05"
+  ],
+  "printFiles": [
+    "watertoren-almelo-1924-1-1000.stl"
+  ]
+}
