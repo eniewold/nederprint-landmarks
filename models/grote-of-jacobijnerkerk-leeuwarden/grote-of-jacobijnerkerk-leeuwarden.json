@@ -1,0 +1,55 @@
+{
+  "name": "Grote of Jacobijnerkerk Leeuwarden",
+  "file": "grote-of-jacobijnerkerk-leeuwarden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    182411,
+    579803
+  ],
+  "xAxis": [
+    0.99731,
+    -0.07324
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      17
+    ],
+    [
+      -10,
+      17
+    ],
+    [
+      10,
+      17
+    ],
+    [
+      26,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000360014"
+  ],
+  "description": "Grote of Jacobijnerkerk te Leeuwarden met vijfzijdig koor, noordbeuk, vier zuidkapellen met dwarsdaken, sacristie en Angelustorentje. Oorsprong RD (182411, 579803), lokale X langs het schip 4,2 graden zuid van oost. Vervangt BAG-pand 0080100000360014.",
+  "printFiles": [
+    "grote-of-jacobijnerkerk-leeuwarden-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 64.09,
+    "widthM": 29.4,
+    "highestPointM": 39.43,
+    "groundNapM": 2.7,
+    "naveRidgeM": 23.45,
+    "spireTopM": 39.43
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000360014",
+    "PDOK AHN DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Jacobijnerkerk_(Leeuwarden)",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0100.php"
+  ]
+}
