@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren DuPont Dordrecht",
+  "file": "watertoren-dordrecht-dupont.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    109225.26,
+    425681.73
+  ],
+  "xAxis": [
+    0.986,
+    0.16677
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 47.38,
+  "replacesBuildings": [],
+  "description": "Oorsprong op het hart van de achthoek van de acht stalen poten (straal 4,9 m, luchtfoto) op het maaiveld (NAP +3,8 m), X-as 9,6 graden linksom van RD-oost door een poot. Vakwerk van acht loodrechte poten met gekruiste windverbanden in zeven vakken van 5,15 m en een middenbuis; ketel met bodem onder 45 graden van 31,7 tot 37,4 m, omloop van 12,6 m doorsnede op 38,1 m, ketelmantel van 9,9 m tot 46,5 m, vlak kegeldak tot 46,95 m met ontluchting tot 47,4 m. Geen BAG-pand. Maten uit AHN en luchtfoto, vakverdeling en bodem geschat uit de foto.",
+  "realWorld": {
+    "built": 1961,
+    "architect": "Vries Robbé & Co N.V.",
+    "publishedHeightM": 46.5,
+    "reservoirM3": 570,
+    "ahnGroundNapM": 3.8,
+    "ahnTopNapM": 50.75,
+    "legs": 8,
+    "legCircleRadiusM": 4.9,
+    "panels": 7,
+    "panelHeightM": 5.15,
+    "bowlBottomM": 31.7,
+    "deckM": 38.1,
+    "deckDiameterM": 12.6,
+    "tankDiameterM": 9.9,
+    "eavesM": 46.5,
+    "roofApexM": 46.95,
+    "topM": 47.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dordrecht_DuPont) (1961, Vries Robbé & Co N.V., 46,5 m, 570 m³)",
+    "https://commons.wikimedia.org/wiki/File:Dordrecht_Watertoren_Dupont_2010.JPG (vanaf de weg, 2010)",
+    "PDOK BAG-WFS (geen pand op de toren), AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-dordrecht-dupont-1-1000.stl"
+  ]
+}
