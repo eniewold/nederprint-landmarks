@@ -1,0 +1,95 @@
+{
+  "name": "Watertoren 's-Gravenpolderseweg Goes",
+  "file": "watertoren-goes-s-gravenpolderseweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    52118.3,
+    390488.25
+  ],
+  "xAxis": [
+    0.99255,
+    0.12187
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      6.4,
+      6.4
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      -6.4,
+      6.4
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      -6.4,
+      -6.4
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      6.4,
+      -6.4
+    ]
+  ],
+  "groundHeight": 45.421,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000008428"
+  ],
+  "description": "Oorsprong op het hart van het reservoir uit het AHN op het maaiveld (NAP +1,17 m), +X op RD 7 graden naar een poot. Open stalen vakwerk van acht poten (0,9 m, hart onderaan 6,15 en bovenaan 5,25 m van het hart) met vijf verdiepingen kruisen en een kern in het midden, een glazen begane grond met ingang en luifel aan de oostnoordoostkant; trechter en bolle bodem vanaf de ring op 30,6 m, cilinder van 15,2 m (35,8 tot 42,2 m) met acht groepen vensterkolommen en ronde vensters, uitlopende rand van 17,4 m tot 44,25 m, kegeldak met twee dakkapelletjes tot 49,35 m, achtkante lantaarn met luiken tot 52,4 m en een holle achtzijdige spits tot 61,3 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "built": 1912,
+    "builder": "Carl Francke, Bremen",
+    "rijksmonument": 16286,
+    "publishedHeightM": 63,
+    "reservoirM3": 1250,
+    "ahnGroundNapM": 1.17,
+    "ahnTopNapM": 62.32,
+    "legs": 8,
+    "legCentreRadiusM": [
+      6.15,
+      5.25
+    ],
+    "braceStoreys": 5,
+    "tankBottomM": 30.6,
+    "cylinderDiameterM": 15.24,
+    "cylinderM": [
+      35.8,
+      42.2
+    ],
+    "rimDiameterM": 17.44,
+    "rimTopM": 44.25,
+    "roofTopM": 49.35,
+    "lanternM": [
+      52,
+      52.4
+    ],
+    "topM": 61.3,
+    "photoScalePxPerM": 19.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Goes_%27s_Gravenpolderseweg) (1912, Carl Francke, 63 m, 1250 m³, sinds 1999 kantoor, sinds 2021 ook appartementen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16286 (eerste stalen watertoren van Nederland, open stalen constructie met stalen reservoir)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren,_Goes (Watertoren - Goes - 20079328 - RCE.jpg voor de maten; Goes, de Watertoren RM16286 IMG 3581 2024-07-14 11.31.jpg, Goes, de watertoren RM18286 foto5 2012-05-17 17.28.JPG, Watertoren van Goes.jpg, Ready for lift-off (52823742489).jpg en Watertoren, detail - Goes - 20079330 - RCE.jpg)",
+    "PDOK BAG-pand 0664100000008428, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-goes-s-gravenpolderseweg-1-1000.stl"
+  ]
+}
