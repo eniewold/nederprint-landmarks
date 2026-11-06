@@ -1,0 +1,58 @@
+{
+  "name": "Abdijkerk Aduard",
+  "file": "abdijkerk-aduard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    226608.69,
+    586076.21
+  ],
+  "xAxis": [
+    0.9997,
+    0.0247
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -21,
+      -8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      20,
+      -8
+    ],
+    [
+      0,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0056100000006709"
+  ],
+  "description": "Voormalige ziekenzaal met zadeldak, traptoren en westelijke klokgevel; RD-oorsprong 226608,69 586076,21 en X langs de nok naar oost; voet 0,5 m onder maaiveld.",
+  "printFiles": [
+    "abdijkerk-aduard-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.7,
+    "widthM": 13.75,
+    "highestPointM": 21.3,
+    "groundNapM": 0.872,
+    "naveRidgeM": 17.83,
+    "bellGableTopM": 21.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumentkenmerken/7075",
+    "https://monumentenbezit.nl/monumenten/hervormde-kerk-aduard/",
+    "https://commons.wikimedia.org/wiki/Category:Abdijkerk_(Aduard)",
+    "https://www.ntvg.nl/artikelen/de-hervormde-kerk-te-aduard-de-oudste-ziekenzaal-nederland",
+    "3D BAG pand 0056100000006709 en BAG-WFS",
+    "PDOK AHN DSM 0,5 m via WCS"
+  ]
+}
