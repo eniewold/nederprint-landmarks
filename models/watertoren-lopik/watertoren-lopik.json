@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Lopik",
+  "file": "watertoren-lopik.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    122285.43,
+    444148.61
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      11,
+      0
+    ],
+    [
+      -11,
+      0
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      0,
+      -11
+    ]
+  ],
+  "groundHeight": 42.53,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0331100000250018"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (12,08 m) op het maaiveld (NAP +0,1 m), assen gelijk aan RD. Rechte bakstenen schacht met een band op 31,5 m, acht kleine vensters onder de goot en een vensterkolom aan de zuid- en de noordnoordwestkant; koperen kegeldak met overstek van 40,5 m tot 43,5 m en een piek tot 45,25 m; aan de westkant de aanbouw van 2023 met liftschacht, trappenhuis en balkons tot circa 40 m. Maten uit BAG, AHN, foto's en luchtfoto's.",
+  "realWorld": {
+    "built": 1936,
+    "architect": "MABEG",
+    "converted": 2022,
+    "publishedHeightM": 47,
+    "reservoirM3": 400,
+    "ahnGroundNapM": 0.1,
+    "ahnEaveNapM": 40.6,
+    "ahnRoofAtFiveMetresNapM": 41.04,
+    "ahnTopNapM": 44.05,
+    "diameterM": 12.08,
+    "bandM": [
+      31.45,
+      31.95
+    ],
+    "eaveM": 40.47,
+    "apexM": 43.5,
+    "topM": 45.25,
+    "annexDeckM": 39.6,
+    "liftTopM": 40.4,
+    "annexDegrees": [
+      150,
+      225
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Lopik) (Damweg, 1936, MABEG, 47 m, 400 m³; 2022 verbouwd tot zes woningen, B&B en multifunctionele ruimte, aan de westkant lift en trappenhuis en balkons)",
+    "https://commons.wikimedia.org/wiki/File:Lopik_watertoren.JPG (2008: schacht, band, vensters, dak met overstek en piek)",
+    "https://commons.wikimedia.org/wiki/File:De_47_meter_hoge_watertoren_aan_de_Damweg_tussen_Lopik_en_Polsbroerdam.jpg (2015: idem, zuidzijde)",
+    "https://www.ruimtelijkeplannen.nl/ (bestemmingsplan NL.IMRO.0331.01WatertorenDamweg-OM02: buitentrap, lift, balkons, uitkijkpunt bovenin)",
+    "PDOK BAG-pand 0331100000250018, AHN DSM/DTM 0,5 m (2022) en luchtfoto's 2022 tot 2025, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-lopik-1-1000.stl"
+  ]
+}
