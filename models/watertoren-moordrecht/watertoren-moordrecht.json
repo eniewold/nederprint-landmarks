@@ -1,0 +1,52 @@
+{
+  "name": "Watertoren Moordrecht",
+  "file": "watertoren-moordrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    105697.02,
+    443998.31
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1892100000640291"
+  ],
+  "description": "Vierkante toren met smalle vensterstroken, geleed reservoir, klokgeleding en lage westaanbouw; RD-oorsprong op toren as.",
+  "realWorld": {
+    "groundNapM": 4.018,
+    "ahnTopNapM": 37.82,
+    "modelTopM": 33
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1892100000640291",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511045",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Moordrecht)"
+  ],
+  "printFiles": [
+    "watertoren-moordrecht-1-1000.stl"
+  ]
+}
