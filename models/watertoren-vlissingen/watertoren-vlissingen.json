@@ -1,0 +1,86 @@
+{
+  "name": "Watertoren Vlissingen",
+  "file": "watertoren-vlissingen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    28410.05,
+    385837.09
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      -7.5
+    ],
+    [
+      5.3,
+      5.3
+    ]
+  ],
+  "groundHeight": 45.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0718100000001780"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP +1,15 m), X-as naar RD-oost; de achthoek heeft zijn hoeken op 0, 45, ... graden en de ingang onder de zijde op 112,5 graden (noordnoordwest). Plint, conische schacht (straal 5,2 tot 3,95 m) met banden, rondboogvensters, vensters, overkragende rollaag en acht paren halfronde vensters; natuurstenen ingangspartij met fronton en treden; zestien consoles onder een schuine onderkant; achtkante ommanteling (apothema 5,37 m) van 17,27 tot 24,55 m met twee rondboogvelden en vensters per zijde en een kroonlijst; leien spits van 58 graden met vier dakkapellen, lantaarnvoetstuk, lantaarn, kraag en uikoepel tot 34,84 m, makelaar tot 35,6 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1894,
+    "client": "N.V. Vlissingsche Duinwaterleiding",
+    "rijksmonument": 508765,
+    "publishedHeightM": 35,
+    "reservoirM3": 300,
+    "ahnGroundNapM": 1.15,
+    "ahnEavesNapM": 25.7,
+    "ahnRoofPlaneNap": "33,12 - 1,6 d",
+    "ahnTopNapM": 35.99,
+    "plinthRadiusM": 5.36,
+    "shaftRadiusM": [
+      5.2,
+      3.95
+    ],
+    "casingApothemM": 5.37,
+    "corniceApothemM": 5.73,
+    "casingM": [
+      17.27,
+      24.55
+    ],
+    "roofDegrees": 58,
+    "lanternBaseM": 29.79,
+    "topM": 34.84,
+    "finialM": 35.6,
+    "entranceDegrees": 112.5,
+    "octagonVertexDegrees": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Vlissingen) (1894, N.V. Vlissingsche Duinwaterleiding, neorenaissance, 35 m, 300 m³, Badhuisstraat 187)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508765 (conische schacht, uitkragende achtkante reservoirommanteling op gietijzeren consoles, gerustikeerde plint, vensters onder rondbogen, rij halfronde vensters, boogfries, verdiepte rondboogvelden met vensters, kroonlijst, achtkante leien spits met chaletachtige dakkapellen, open achtkante lantaarn, zinken uivormige helm; natuurstenen ingangspartij met Ionische pilasters, fronton en obelisk)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_Vlissingen (Watertoren Vlissingen.JPG, Watertoren, Badhuisstraat 187, Vlissingen.jpg, Vlissingen Watertoren 2010.JPG, Vlissingen, de watertoren RM508765 foto6 2015-09-29 14.22.jpg, Vlissingen-Badhuisstraat 187-watertoren-ro3162 tot ro3179.jpg)",
+    "PDOK BAG-pand 0718100000001780, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-vlissingen-1-1000.stl"
+  ]
+}
