@@ -1,0 +1,58 @@
+{
+  "name": "Grote Kerk of Sint Maartenskerk Epe",
+  "file": "grote-kerk-of-sint-maartenskerk-epe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195628,
+    484649
+  ],
+  "xAxis": [
+    0.99978,
+    -0.02093
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -12
+    ],
+    [
+      -5,
+      -12
+    ],
+    [
+      13,
+      -8
+    ],
+    [
+      20,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0232100000010469"
+  ],
+  "description": "Grote Kerk Epe: pseudobasilicaal schip met afzonderlijk driezijdig koor, westtoren met geknikte spits, portaal, steunberen en blinde vensternissen. RD-oorsprong 195628,484649; X langs de nok. Onderkant 0,5 m onder maaiveld.",
+  "printFiles": [
+    "grote-kerk-of-sint-maartenskerk-epe-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.95,
+    "widthM": 21,
+    "highestPointM": 50.8,
+    "groundNapM": 13.586,
+    "naveRidgeM": 19.75,
+    "towerTopM": 50.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/15328",
+    "https://grotekerkepe.nl/kerkgebouw/",
+    "https://www.grotekerkepe.nl/images/Bezoekersgids.pdf",
+    "3D BAG pand 0232100000010469, LoD2.2 en BAG-voetafdruk",
+    "PDOK AHN DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Grote_kerk,_Epe"
+  ]
+}
