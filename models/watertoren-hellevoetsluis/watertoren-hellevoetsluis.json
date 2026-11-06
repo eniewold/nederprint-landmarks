@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Hellevoetsluis",
+  "file": "watertoren-hellevoetsluis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    68457.78,
+    427243.1
+  ],
+  "xAxis": [
+    -1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.5,
+      0
+    ],
+    [
+      0,
+      4.5
+    ],
+    [
+      -4.5,
+      1
+    ],
+    [
+      11,
+      -2
+    ],
+    [
+      0,
+      -13
+    ]
+  ],
+  "groundHeight": 45.86,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0530100002230574"
+  ],
+  "description": "Oorsprong op het hart van de ronde schacht (BAG-boog, straal 2,81 m) op maaiveld (NAP +2,0 m), +X naar het westen (RD 180 graden): de rondboogdeur aan de kant van de Opzoomerlaan. Plint met deur en lijst tot 4,6 m, schacht van 5,2 m met rondboogvensters, medaillon en kleine vensters, lijst en twaalf consoles met bogen naar de reservoircilinder van 6,4 m (15,9 tot 20,0 m) met acht schietgatvensters, lijst, borstwering met tien kantelen tot 23,15 m om het dakterras op 20,7 m met een rond trappenhuis; de platte aanbouw van het BAG-pand (3,05 m) met een piramide-lichtkoepel. Maten uit BAG, AHN, 3D BAG, luchtfoto en een frontale RCE-foto.",
+  "realWorld": {
+    "built": 1896,
+    "architect": "N. Biezeveld",
+    "wikipediaHeightM": 22,
+    "reservoirM3": [
+      60,
+      60
+    ],
+    "monument": "gemeentelijk monument",
+    "ahnGroundNapM": 2,
+    "ahnTerraceNapM": 22.7,
+    "ahnTopNapM": 25.15,
+    "ahnAnnexNapM": 5.05,
+    "plinthDiameterM": 5.7,
+    "shaftDiameterM": 5.24,
+    "reservoirDiameterM": 6.4,
+    "reservoirM": [
+      15.9,
+      20.24
+    ],
+    "terraceM": 20.7,
+    "merlonM": 23.15,
+    "annexM": 3.05,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hellevoetsluis) (1896, N. Biezeveld, 22 m, twee reservoirs van 60 m³, in 1965 buiten gebruik, verbouwd tot woning, gemeentelijk monument)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Hellevoetsluis_-_20300202_-_RCE.jpg (frontaal op de deur vanaf het westen: plint, schacht, vensters, consoles met bogen, reservoir met kruisvormige schietgatvensters, borstwering met ronde gaten en kantelen)",
+    "https://commons.wikimedia.org/wiki/File:Fortress_Hellevoetsluis_-_Watertower_and_Church.JPG en File:Hellevoetsluis_003.jpg (silhouet van de andere kanten)",
+    "PDOK BAG-pand 0530100002230574, AHN DSM/DTM 0,5 m, 3D BAG en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-hellevoetsluis-1-1000.stl"
+  ]
+}
