@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Heuveloord Utrecht",
+  "file": "watertoren-utrecht-heuveloord.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136735.42,
+    454168.87
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8.5,
+      0
+    ],
+    [
+      0,
+      8.5
+    ],
+    [
+      0,
+      -8.5
+    ],
+    [
+      6,
+      -6
+    ]
+  ],
+  "groundHeight": 45.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000127759"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand (de omtrek van het reservoir) op het maaiveld (NAP +1,95 m), +X naar het oosten (straatzijde Heuveloord, deur geschat), +Y naar het noorden. Plint met waterlijst en deur; verjongende schacht met kleine rondboogvensters, boogfries op zestien consoles en een lichte band; kegelvormige uitkraging naar het reservoir van 14,7 m met stalen onderrand, kroonlijst, kleine vensters, banden, zestien rondboogvelden met hoge vensters en een kroonlijst; zestien kantelen tot 35,6 m rond het dakterras met het glazen restaurant tot 37,8 m en installatiekasten tot 39,1 m. Maten uit BAG, AHN, luchtfoto en een foto.",
+  "realWorld": {
+    "built": 1907,
+    "architect": "Utrechtsche Waterleiding Maatschappij",
+    "publishedHeightM": 37,
+    "reservoirM3": 1000,
+    "ahnGroundNapM": 1.95,
+    "ahnMerlonNapM": [
+      37.5,
+      37.6
+    ],
+    "ahnRestaurantRoofNapM": [
+      39.7,
+      39.8
+    ],
+    "ahnTopNapM": 41.2,
+    "plinthDiameterM": 10.8,
+    "shaftDiameterM": [
+      10.3,
+      9.9
+    ],
+    "reservoirDiameterM": 14.74,
+    "merlonM": 35.6,
+    "restaurantRoofM": 37.8,
+    "topM": 39.1,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Utrecht_Heuveloord) (1906-1907, Utrechtsche Waterleiding Maatschappij, 37 m, 1000 m³, rond en licht verjongend, overstekend reservoir, Luxalon 1977, herstel 1996, restaurant sinds 2015)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Utrecht_Heuveloord.jpg (vanaf de Vaartsche Rijn: plint, schacht met vensters en boogfries, uitkraging, reservoir met banden, kleine vensters, rondboogvelden met hoge vensters, kroonlijst, kantelen en het glazen restaurant)",
+    "https://commons.wikimedia.org/wiki/File:Vaartsche-Rijn_Pastoe_watertoren_Utrecht_Nederland.JPG (reservoir en kantelen vóór het restaurant)",
+    "PDOK BAG-pand 0344100000127759, AHN DSM/DTM 0,5 m, luchtfoto en PDOK-gebouwtegel, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-heuveloord-1-1000.stl"
+  ]
+}
