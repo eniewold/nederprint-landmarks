@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Dubbeldam",
+  "file": "watertoren-dordrecht-dubbeldam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108698.5,
+    423108.1
+  ],
+  "xAxis": [
+    0.96126,
+    0.27564
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -3.3,
+      -11.5
+    ],
+    [
+      8.5,
+      -6.6
+    ],
+    [
+      12.2,
+      2.7
+    ],
+    [
+      0.8,
+      13.8
+    ],
+    [
+      -11.4,
+      0.1
+    ]
+  ],
+  "groundHeight": 43.443,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0505100000059591"
+  ],
+  "description": "Oorsprong op het hart van de zeskantige kap op het maaiveld (NAP -0,3 m), X-as door een hoek van de zeskant, 16 graden linksom van RD-oost. Zeskantige schacht (apothema 3,8 m) met lisenen, verdiepte velden, ruitvensters en banden op 10 en 21 m; balkon van 2,2 m rond vier zijden op 23,8 m (kraag van 53 graden in plaats van de schoren); bovenste verdieping met hoge vensters; kraag van 50 graden onder de goot op 29,8 m (hoekstraal 5,6 m); geknikte zeskantige kap tot 35,8 m met een lantaarn tot 36,77 m; wenteltrap als trommel van 2,5 m aan de westzijde met een dakkapel; drie paviljoens aan de voet volgens de 3D BAG. Leuningen, vlaggenmast, het tegelfries en de lisenen van de bovenste verdieping weggelaten. Maten uit BAG, 3D BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1916,
+    "builder": "Visser & Smit Hanab",
+    "publishedHeightM": 36.4,
+    "reservoirM3": 200,
+    "stairSteps": 112,
+    "ahnGroundNapM": -0.3,
+    "bag3dBalconyNapM": 23.5,
+    "bag3dEaveNapM": 29.5,
+    "ahnTopNapM": 36.47,
+    "shaftApothemM": 3.8,
+    "balconyM": 23.8,
+    "balconyDepthM": 2.2,
+    "eaveM": 29.8,
+    "eaveCornerRadiusM": 5.6,
+    "kneeM": 33.2,
+    "lanternM": 35.8,
+    "topM": 36.77,
+    "stairTopM": 29.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dubbeldam) (1916, Visser & Smit Hanab, 36,40 m, 200 m³, wenteltrap van 112 treden)",
+    "https://commons.wikimedia.org/wiki/File:Dubbeldamwatertoren.jpg (2006)",
+    "PDOK BAG-pand 0505100000059591, 3D BAG (LoD2.2), AHN DSM/DTM 0,5 m en luchtfoto's 2021 tot 2025 (orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-dordrecht-dubbeldam-1-1000.stl"
+  ]
+}
