@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren De Lichtmis",
+  "file": "watertoren-lichtmis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    209509.55,
+    511042.16
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10,
+      15
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      2,
+      -25
+    ],
+    [
+      -5,
+      24
+    ]
+  ],
+  "groundHeight": 43.66,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000001220"
+  ],
+  "description": "Oorsprong op het hart van de schacht op maaiveld (NAP +1,15 m), +X naar RD-oost. Ronde schacht van 14,9 m met hotelvensters en een groene liftstrook (zuidoost); kraag, omgang en schuin uitlopende glazen restaurantring op 42,8 m; koperen kegeldak van 25,6 m met boeiboord tot 48,7 m, bovendak tot 55,4 m en witte koepel tot 58,6 m; witte schijf met open trappenhuis (noordoost) tot 51,2 m; laag paviljoen met vijf koperen dakvlakken die van de toren af lopen en een glazen lens. Maten uit BAG, 3D BAG, AHN, luchtfoto's en foto's.",
+  "realWorld": {
+    "built": 1932,
+    "architect": "Hendrik Sangster",
+    "wikipediaHeightM": 29.5,
+    "reservoirM3": 400,
+    "conversion": "hotel en restaurant De Koperen Hoogte (Hennie van der Most, vanaf 1990)",
+    "ahnGroundNapM": 1.15,
+    "ahnEaveNapM": 49.85,
+    "ahnUpperEaveNapM": 54.9,
+    "ahnTopNapM": 59.8,
+    "shaftDiameterM": 14.9,
+    "balconyDiameterM": 21.7,
+    "roofDiameterM": 25.6,
+    "eaveM": 48.7,
+    "topM": 58.6,
+    "slabTopM": 51.2,
+    "pavilionFootprintM2": 1971,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Lichtmis) (1932, Hendrik Sangster, 29,5 m, 400 m³, De Koperen Hoogte)",
+    "https://commons.wikimedia.org/wiki/File:De_Koperen_Hoogte,_De_Lichtmis.jpg (2021, vanuit het noordoosten: kraag, glasring, daken, schijf, liftstrook, paviljoen)",
+    "https://commons.wikimedia.org/wiki/File:KoperenHoogte-close-up0987.JPG (2009: kroon, koepel, lift en schijf)",
+    "https://commons.wikimedia.org/wiki/File:ON_THE_ROAD,2010_(1)_-_Flickr_-_bertknot.jpg (lift, open trappenhuis, schijf, paviljoen)",
+    "https://commons.wikimedia.org/wiki/File:Koperen_Hoogte.jpg (schacht met groene stroken)",
+    "PDOK BAG-pand 0193100000001220 en 3D BAG (dakvlakken paviljoen), AHN DSM/DTM 0,5 m, luchtfoto's 2021-2026, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-lichtmis-1-1000.stl"
+  ]
+}
