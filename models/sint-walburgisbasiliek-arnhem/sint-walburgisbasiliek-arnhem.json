@@ -1,0 +1,57 @@
+{
+  "name": "Sint Walburgisbasiliek Arnhem",
+  "file": "sint-walburgisbasiliek-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191170,
+    443535
+  ],
+  "xAxis": [
+    0.99419,
+    0.1076
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      0
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      8,
+      -19
+    ],
+    [
+      33,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000268355"
+  ],
+  "description": "Pseudobasiliek met twee westtorens, zadel- en schilddaken, dwarsschip, steunberen, kapellen en een driezijdig koor. Oorsprong bij de viering; +X loopt naar het oosten, Z omhoog in het bouwstelsel en Y omhoog in glTF.",
+  "printFiles": [
+    "sint-walburgisbasiliek-arnhem-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 50.7,
+    "widthM": 28.5,
+    "highestPointM": 48.4,
+    "groundNapM": 12.7,
+    "ridgeM": 28.400000000000002,
+    "towerTopM": 48.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Walburgiskerk_(Arnhem)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8370",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0202100000268355",
+    "PDOK AHN DSM 0,5 m en actuele orthofoto",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Walburgisbasiliek"
+  ]
+}
