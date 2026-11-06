@@ -1,0 +1,52 @@
+{
+  "name": "Sint-Jansbasiliek Laren",
+  "file": "sint-jansbasiliek-laren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    144067.5,
+    474261.5
+  ],
+  "xAxis": [
+    0.9961946980917455,
+    0.08715574274765817
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -28,
+      -18
+    ],
+    [
+      0,
+      -19
+    ],
+    [
+      25,
+      -20
+    ],
+    [
+      0,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0417100000006019"
+  ],
+  "description": "Kruisbasiliek met twee torens, zijbeuken, koorsluiting en achtkantige vieringkoepel.",
+  "realWorld": {
+    "groundNapM": 5.137,
+    "ahnTopNapM": 50.61,
+    "modelTopM": 45.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0417100000006019",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511274",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Jansbasiliek,_Laren"
+  ],
+  "printFiles": [
+    "sint-jansbasiliek-laren-1-1000.stl"
+  ]
+}
