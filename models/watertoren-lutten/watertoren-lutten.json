@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Lutten",
+  "file": "watertoren-lutten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233386.79,
+    514143.46
+  ],
+  "xAxis": [
+    0.99661,
+    0.08229
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 51,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0160100001371261"
+  ],
+  "description": "Oorsprong op het hart van de top in het AHN (0,35 m oost en 0,3 m noord van het hart van het BAG-pand) op maaiveld (NAP +8,6 m), +X naar RD-richting 4,72 graden (oost), +Y naar het noorden (nok). Vierkante bakstenen schacht van 12,75 m op maaiveld, taps tot 12,0 m op de borstwering (42,45 m); elke gevel met een vooruitspringend onderblok, een hoge rondboognis met vensters, consoles met een hangende console en een vooruitspringend paneel; zadeldak van 53 graden tussen topgevels noord en zuid, nok op 48,84 m, topgevels tot 49,2 m; portaal met zadeldakje en deur tegen de zuidgevel. Maten uit BAG, AHN en twee foto's.",
+  "realWorld": {
+    "wikipediaHeightM": 49.2,
+    "reservoirM3": 578,
+    "built": 1932,
+    "ahnGroundNapM": 8.6,
+    "ahnEaveNapM": 51.05,
+    "ahnGutterNapM": 50.7,
+    "ahnRidgeNapM": 57.44,
+    "ahnGableTopNapM": 57.81,
+    "footWidthM": 12.75,
+    "eaveWidthM": 12,
+    "eaveM": 42.45,
+    "ridgeM": 48.84,
+    "gableTopM": 49.2,
+    "roofPitchDeg": 53.4,
+    "minimumPartM": 0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Lutten) (1932, jarendertigstijl, gemeentelijk monument, 49,2 m, 578 m³, zadeldak, verbouwd in 2014)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Lutten_-_20350822_-_RCE.jpg (RCE, 1997, vanuit het zuidoosten: zuid- en oostgevel, geledingen, nissen, consoles, panelen, portaal)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Lutten.jpg (2003, vanuit het zuidoosten: topgevel, paneel met lage punt, vensters)",
+    "PDOK BAG-pand 0160100001371261 en 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-lutten-1-1000.stl"
+  ]
+}
