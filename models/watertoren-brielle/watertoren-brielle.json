@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Brielle",
+  "file": "watertoren-brielle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    70542.95,
+    435107.67
+  ],
+  "xAxis": [
+    0.99415,
+    -0.108
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.5,
+      0
+    ],
+    [
+      -6.5,
+      0
+    ],
+    [
+      0,
+      6.5
+    ],
+    [
+      0,
+      -6.5
+    ]
+  ],
+  "groundHeight": 44.964,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0501100001994429"
+  ],
+  "description": "Oorsprong op het zwaartepunt van de achtkante BAG-voetafdruk (7,26 m over de vlakken) op het maaiveld (NAP +1,25 m), X-as loodrecht op een gevelvlak, 6,2 graden rechtsom van RD-oost. Achtkante plint tot 4 m; achtkante schacht met lisenen op de hoeken, verdiepte gevelvlakken met vensters en consoles in twee trappen; schuine onderkant van 45 graden en een rand op 23,1 m; rond reservoir van 9,7 m met acht vensterparen tot 29,45 m; goot van 10,4 m op 30 m; leien klokdak met een bolle rok tot de knik op 32,9 m en een kegel van 50 graden tot 38,95 m (AHN), pinakel tot 39,45 m. Dakluikjes en hekwerk weggelaten. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "built": 1923,
+    "architect": "A.D. Heederik",
+    "rijksmonument": 518188,
+    "publishedHeightM": 40.5,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 1.25,
+    "ahnApexNapM": 40.2,
+    "ahnRoofSlope": 1.2,
+    "plinthAcrossFlatsM": 7.26,
+    "shaftAcrossFlatsM": 6.86,
+    "ledgeM": 23.1,
+    "reservoirDiameterM": 9.7,
+    "eaveM": 30,
+    "roofDiameterM": 10.4,
+    "kneeM": 32.9,
+    "apexM": 38.95,
+    "topM": 39.45,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Brielle) (1923, A.D. Heederik, 40,50 m, 200 m³, rijksmonument 518188)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Brielle) (Watertoren Brielle.jpg; Watertoren Brielle 2020.jpg; Exterieur OVERZICHT - Brielle - 20270371 - RCE.jpg)",
+    "PDOK BAG-pand 0501100001994429, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-brielle-1-1000.stl"
+  ]
+}
