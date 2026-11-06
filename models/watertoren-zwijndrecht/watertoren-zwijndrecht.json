@@ -1,0 +1,52 @@
+{
+  "name": "Watertoren Zwijndrecht",
+  "file": "watertoren-zwijndrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    105026.85,
+    425995.22
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0642100000002511"
+  ],
+  "description": "Ronde watertoren met versmallende schacht, uitkragend reservoir, vernieuwd tentdak en glazen dakring.",
+  "realWorld": {
+    "groundNapM": 3.703,
+    "ahnTopNapM": 36.258,
+    "modelTopM": 34.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0642100000002511",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514921",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Zwijndrecht)"
+  ],
+  "printFiles": [
+    "watertoren-zwijndrecht-1-1000.stl"
+  ]
+}
