@@ -1,0 +1,59 @@
+{
+  "name": "Watertoren Haamstede",
+  "file": "watertoren-haamstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    38568,
+    412848.95
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      -4
+    ]
+  ],
+  "groundHeight": 75.84,
+  "description": "Oorsprong op de as van de betonnen kolom (cirkelfit op het platform in AHN en luchtfoto) op de duintop in de Boswachterij Westerschouwen (NAP circa +31,7 m), +X naar het oosten. Kolom van 1,45 m met een rond uitzichtplatform van 5,7 m, dek op 8,78 m (NAP +40,52), rand van 0,5 m en een kegel van 50 graden eronder in plaats van de vlakke onderkant, en een wenteltrap van 42 blokken die linksom van de westzuidwestkant door een gat aan de noordnoordwestkant naar het dek klimt. Geen BAG-pand; maten uit AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "built": 1946,
+    "inUse": 1948,
+    "wikipediaHeightM": 12,
+    "wikipediaTopNapM": 36,
+    "reservoir": "ondergronds, onder de duin",
+    "groundNapM": 31.74,
+    "ahnDeckNapM": 40.52,
+    "columnDiameterM": 1.45,
+    "deckDiameterM": 5.7,
+    "deckM": 8.78,
+    "stairSteps": 42,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Haamstede) (1946, 12 m, standpijp boven een ondergronds reservoir, uitzichtplatform, brandwachtpost 1965-1984, restauraties 1989 en 2000)",
+    "https://commons.wikimedia.org/wiki/File:Haamstede_Watertoren_6119.JPG (vanaf de duintrap aan de oostkant: kolom, platform met hekwerk, wenteltrap van losse blokken)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Haamstede.jpg (2024, idem van dichterbij: gat in het platform, balk onder het platform, onderste treden aan de westzuidwestkant)",
+    "PDOK BAG-WFS en BGT (geen pand of bouwwerk op deze plek), AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-haamstede-1-100.stl"
+  ]
+}
