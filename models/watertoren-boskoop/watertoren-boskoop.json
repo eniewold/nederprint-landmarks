@@ -1,0 +1,100 @@
+{
+  "name": "Watertoren Boskoop",
+  "file": "watertoren-boskoop.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103630.19,
+    454412.08
+  ],
+  "xAxis": [
+    0.99692,
+    -0.07846
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      4.5,
+      -4.5
+    ],
+    [
+      -4.5,
+      -4.5
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      4.5,
+      4.5
+    ],
+    [
+      -4.5,
+      4.5
+    ]
+  ],
+  "groundHeight": 41.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0499100002023098"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP circa -1,7 m), +X naar RD-richting -4,5 graden, +Y naar het noorden (85,5 graden): portaal aan de Zijde. Huidige toestand zonder de in 1999 afgebroken bovenbouw: basement van 8,84 m met cordonband, conische eerste geleding met drie vensters, segmentboogfries en band met tandlijst tot 9,19 m (AHN), terugspringende tweede geleding van 7,2 tot 5,74 m met zes vensters op twee niveaus, rondboogfries en de dichtgemetselde gele band van 6,0 m tot 23,29 m (AHN) rond een plat dak; vlak gedekt portaal met pinakels en rondboogdeur. Maten uit BAG, AHN, register en foto's.",
+  "realWorld": {
+    "built": 1908,
+    "inUse": "1909-1976",
+    "architect": "J. Schotel",
+    "rijksmonument": 511321,
+    "publishedHeightM": 32.5,
+    "publishedHeightNote": "oorspronkelijke hoogte met de bovenbouw, die in 1999 is afgebroken",
+    "reservoirM3": 150,
+    "groundNapM": -1.69,
+    "ahnTopNapM": 21.6,
+    "ahnRoofNapM": 19.9,
+    "ahnLedgeNapM": 7.5,
+    "topM": 23.29,
+    "plinthDiameterM": 8.84,
+    "shaftDiameterM": [
+      8.5,
+      8,
+      7.2,
+      5.74
+    ],
+    "collarDiameterM": 6,
+    "ledgeM": 9.19,
+    "portalM": {
+      "front": 2.71,
+      "depthFromCentre": 5.07,
+      "height": 4.2,
+      "pinnacle": 5.5
+    },
+    "photoScalePxPerM": [
+      40.8,
+      47.8
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511321 (1908, J. Schotel, 32,5 m, conische schacht van 8,5 m aan de voet, twee geledingen, segmentboogfries met tandlijst, rondboogfries, vensters op twee niveaus, rechthoekig vlak gedekt portaal met pinakels, Intze-reservoir van 150 m³ en 8 m)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Boskoop) ('had' een hoogte van 32,5 m; 'De hoge hoed')",
+    "https://dbnl.org/tekst/sten009monu10_01/sten009monu10_01_0024.php en https://www.rodi.nl/alphenaandenrijn/historie/482006/is-de-watertoren-het-mooiste-monument-van-boskoop- (bovenbouw na 1994 afgebroken, februari 1999 kop eraf en reservoir neergelaten; restauratie vastgelopen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Boskoop_2019.jpg (Steven Lek, CC BY-SA 4.0; huidige toestand, vanaf het westen: geledingen, vensters, portaal)",
+    "https://commons.wikimedia.org/wiki/File:Boskoop_watertoren_-_panoramio.jpg (2005, vensters op twee niveaus, gele band)",
+    "PDOK BAG-pand 0499100002023098, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-boskoop-1-1000.stl"
+  ]
+}
