@@ -1,0 +1,93 @@
+{
+  "name": "Watertoren Axel",
+  "file": "watertoren-axel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    51850.48,
+    364317.38
+  ],
+  "xAxis": [
+    0.98261,
+    0.18567
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9.5,
+      0
+    ],
+    [
+      -9.5,
+      0
+    ],
+    [
+      0,
+      9.5
+    ],
+    [
+      0,
+      -9.5
+    ],
+    [
+      6.7,
+      6.7
+    ],
+    [
+      -6.7,
+      6.7
+    ],
+    [
+      6.7,
+      -6.7
+    ],
+    [
+      -6.7,
+      -6.7
+    ]
+  ],
+  "groundHeight": 45.945,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000000842"
+  ],
+  "description": "Oorsprong op het hart van de twaalfzijdige schacht uit het BAG-pand op het maaiveld (NAP +1,57 m), +X langs de BAG-zijden (RD 10,7 graden). Twaalfzijdige bakstenen schacht (apothema 7,41 m) met vier risalieten met vensterkolommen, pilasters met voeten en een deur in het zuiden tot de witte band op 40,7 à 41,3 m; iets bredere twaalfzijdige ommanteling met kleine vensters tot 49,7 m, ingesprongen fries, ronde goot (straal 7,85 m) op 51,15 m, koperen koepel volgens het AHN en een vierzijdige lantaarn tot 60,4 m; klein hok op de goot aan de westkant. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "built": 1936,
+    "architect": "C. van Eck",
+    "rijksmonument": 508104,
+    "publishedHeightM": 60.6,
+    "reservoirsM3": [
+      500,
+      500,
+      300
+    ],
+    "ahnGroundNapM": 1.57,
+    "ahnTopNapM": 61.97,
+    "shaftApothemM": 7.41,
+    "risalitFrontM": {
+      "0": 8.15,
+      "90": 7.6,
+      "180": 8.35,
+      "270": 8.6
+    },
+    "bandM": [
+      40.7,
+      41.3
+    ],
+    "casingTopM": 49.7,
+    "gutterM": 51.15,
+    "gutterRadiusM": 7.85,
+    "topM": 60.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Axel) (1936, C. van Eck, 60,6 m, 500 + 500 + 300 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508104 (twaalfzijdig, pilasters, betonband, ommanteling iets breder dan de schacht, koperen koepel met vierzijdige lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:Axel_Watertoren_4843.JPG (frontaal op een risaliet: vensterkolom, band, ommanteling, fries, goot, koepel, lantaarn en hok)",
+    "PDOK BAG-pand 0715100000000842, AHN DSM/DTM 0,5 m, luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-axel-1-1000.stl"
+  ]
+}
