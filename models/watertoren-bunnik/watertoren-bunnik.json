@@ -1,0 +1,78 @@
+{
+  "name": "Watertoren Bunnik",
+  "file": "watertoren-bunnik.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    146531.42,
+    446175.98
+  ],
+  "xAxis": [
+    0.99674,
+    0.08072
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -12,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 46.83,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0312100000004667"
+  ],
+  "description": "Oorsprong op het hart van de toren in het BAG-pand op het maaiveld (NAP +3,42 m), +X naar RD-richting 4,63 graden (oost, ingang), +Y naar 94,63 graden (noord). Rechthoekige toren van 10,65 × 10,30 m: bakstenen plint, roze onderbouw met twee rijen vensters, het trappenhuisvenster in het zuiden en de deur in het oosten, lijst op 12,15 m; gladde schacht met spleetvensters, de vensterstrook in het westen, een rondboogvenster in het oosten en een hoog venster op elke gevel onder de goot; overstekend schilddak (piramide van 30 graden, dakrand 12,1 m breed op 39,4 m, top 42,85 m) met een bolletje tot 43,3 m; lage aanbouw met lessenaarsdak tegen de westgevel. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1937,
+    "publishedHeightM": 43.3,
+    "reservoirM3": 306,
+    "gemeentelijkMonument": 2008,
+    "ahnGroundNapM": 3.42,
+    "ahnApexNapM": 46.27,
+    "ahnRoofSlope": 0.574,
+    "wallsM": [
+      10.66,
+      10.3
+    ],
+    "roofEdgeM": 12.1,
+    "eavesM": 39.38,
+    "bandM": [
+      11.9,
+      12.15
+    ],
+    "apexM": 42.85,
+    "topM": 43.3,
+    "annexM": [
+      5,
+      10.3,
+      2.6
+    ],
+    "photoScalePxPerM": 25.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bunnik) (1937, 43,30 m, 306 m³, Watertorenweg, gemeentelijk monument sinds 2008)",
+    "https://commons.wikimedia.org/wiki/File:Old_watertower_with_nice_reflections_near_Werkhoven_-_panoramio.jpg (2014, west- en zuidgevel, schaal 25,2 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Werkhoven,_watertoren_foto6_2012-05-29_10.54.JPG (2012, west- en zuidgevel voor de verbouwing)",
+    "https://commons.wikimedia.org/wiki/File:Werkhoven_Watertoren_8896.JPG (zuid- en oostgevel, ingang)",
+    "https://commons.wikimedia.org/wiki/File:WatertorenWerkhoven.jpg, File:Watertoren_Werkhoven_sloot.JPG, File:Watertoren_Werkhoven_landschap.JPG, File:Watertoren_Werkhoven.jpg, File:Werkhoven..jpg (silhouet, dak, bolletje, wit gepleisterd na de verbouwing)",
+    "PDOK BAG-pand 0312100000004667, BGT, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-bunnik-1-1000.stl"
+  ]
+}
