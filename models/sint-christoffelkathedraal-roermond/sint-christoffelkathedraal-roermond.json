@@ -1,0 +1,54 @@
+{
+  "name": "Sint-Christoffelkathedraal Roermond",
+  "file": "sint-christoffelkathedraal-roermond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    196738.5,
+    356518.3
+  ],
+  "xAxis": [
+    0.9986,
+    -0.0523
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -10,
+      0
+    ],
+    [
+      -3,
+      17
+    ],
+    [
+      12,
+      -20
+    ],
+    [
+      42,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0957100000261721"
+  ],
+  "description": "Sint-Christoffelkathedraal: vijfbeukig schip, dwarsschip, driebeukig hallenkoor en westtoren met barokke spits, opgebouwd uit dakvlakken en bouwdelen.",
+  "printFiles": [
+    "sint-christoffelkathedraal-roermond-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 69.8,
+    "widthM": 55.2,
+    "highestPointM": 74.8,
+    "groundNapM": 25.81,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0957100000261721",
+    "https://bisdom-roermond.org/KathedraalHistorie",
+    "https://commons.wikimedia.org/wiki/Category:Christoffelkathedraal_(Roermond)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ]
+}
