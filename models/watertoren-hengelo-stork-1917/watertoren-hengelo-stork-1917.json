@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Stork 1917",
+  "file": "watertoren-hengelo-stork-1917.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    250579.41,
+    475713.82
+  ],
+  "xAxis": [
+    0.98325,
+    -0.18224
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -6.5
+    ],
+    [
+      -3,
+      -6.5
+    ],
+    [
+      3,
+      -6.5
+    ],
+    [
+      -15,
+      -3.5
+    ]
+  ],
+  "groundHeight": 61.74,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0164100000013444"
+  ],
+  "description": "Oorsprong op het hart van de toren op maaiveld NAP +18,2 m, +X langs de zuidgevel (-10,5 graden), +Y naar het noordnoordoosten, ingang aan -Y. Het model bevat het hele BAG-pand 0164100000013444: de toren in detail (schacht 9,3 × 10,2 m met twee kolommen vensters in de zuidgevel, blinde velden en drie grote vensters op de andere gevels, kraag naar een achtkantige bovenverdieping met bolle gevels en vensterband, kroonlijst op 32,5 m, achtvlaks schilddak en lantaarn tot 35,95 m, NAP +54,15) en de modelmakerij (rand 11,45 m, bovenbouw 17,55 m met lichtstraat) met de oost- en westvleugel (6,1 en 6,3 m) als blokken met vensternissen. Hoogtes uit AHN, geledingen van de toren uit twee foto's; onderkant 0,9 m onder het maaiveld omdat dat naar het oosten 0,6 m daalt.",
+  "realWorld": {
+    "built": 1917,
+    "architect": "A.G. Beltman",
+    "reservoirM3": 125,
+    "rijksmonument": 511480,
+    "ahnGroundNapM": 18.2,
+    "ahnEaveNapM": 50.7,
+    "ahnLanternNapM": 54.15,
+    "bag3dRidgeNapM": 54.38,
+    "ahnHallEdgeNapM": 29.65,
+    "ahnHallUpperNapM": 35.73,
+    "ahnWingNapM": [
+      24.28,
+      24.49
+    ],
+    "shaftM": [
+      9.3,
+      10.2
+    ],
+    "storeyM": [
+      10.299999999999999,
+      11.2
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hengelo_Stork,_1917) (1917, A.G. Beltman, 125 m³, rijksmonument 511480, brandweerkazerne sinds 2000)",
+    "https://commons.wikimedia.org/wiki/File:Hengelo_Watertoren_8745.JPG (oostgevel: blinde velden, drie grote vensters, consoles, bovenverdieping met vensterband, kroonlijst, dak en lantaarn; circa 46 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Hengelo-nl-stork-04_(9437555889).jpg (zuid- en oostgevel: twee kolommen vensters, ingang, aansluiting op de hal)",
+    "https://commons.wikimedia.org/wiki/File:Hengelo-Lansinkesweg_59.jpg en File:P1090510_(4276094215).jpg (vanuit het zuidwesten en oosten: hal en vleugels)",
+    "PDOK BAG-pand 0164100000013444 (toren met modelmakerij en vleugels), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0164100000013444: h_nok 54,38, maaiveld 17,72, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-hengelo-stork-1917-1-1000.stl"
+  ]
+}
