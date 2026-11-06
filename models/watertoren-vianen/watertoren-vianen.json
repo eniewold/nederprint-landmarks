@@ -1,0 +1,81 @@
+{
+  "name": "Watertoren Vianen",
+  "file": "watertoren-vianen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134599.847,
+    445280.395
+  ],
+  "xAxis": [
+    0.94264,
+    0.33381
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.5,
+      0
+    ],
+    [
+      -5.5,
+      0
+    ],
+    [
+      0,
+      -5.5
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      -5,
+      5
+    ]
+  ],
+  "groundHeight": 48.34,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0620100000011958"
+  ],
+  "description": "Oorsprong op het hart van de vierkante onderbouw uit het BAG-pand op het maaiveld (NAP +5,03 m), +X langs de BAG-zijden (RD 19,5 graden). Vierkante onderbouw (6,69 m) tot 3,74 m met lijst, rondboogdeur en vensters; open betonskelet als achthoek van acht kolommen met drie ringbalken en vakken met een spitse bovenkant, ronde middenkolom met kraag en acht radiale balken op de middelste ring; plaat met omgang (straal 4,55 m) op 19,0 m, reservoir (straal 3,9 m) met acht lensvelden tot 23,35 m, dakrand, flauw kegeldak en luik tot 25,13 m. Maten uit BAG, AHN en foto's; kolommen en balken verdikt tot 0,9 m.",
+  "realWorld": {
+    "built": 1909,
+    "architect": "Roelof Kuipers",
+    "rijksmonument": 520862,
+    "publishedHeightM": 26.3,
+    "reservoirM3": 100,
+    "ahnGroundNapM": 5.03,
+    "ahnTopNapM": 30.16,
+    "ahnTankEaveNapM": 28.38,
+    "baseHalfSideM": 3.345,
+    "baseM": 3.74,
+    "ringsM": [
+      7.83,
+      11.65,
+      15.5
+    ],
+    "plateM": [
+      18.53,
+      19
+    ],
+    "plateRadiusM": 4.55,
+    "tankRadiusM": 3.9,
+    "tankM": 23.35,
+    "topM": 25.13,
+    "columns": 8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Vianen) (1909, Roelof Kuipers, oudste open betonskelet, 26,3 m, 100 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520862",
+    "https://commons.wikimedia.org/wiki/File:Vianen_RM_Watertoren_(2).jpg (diagonaal op de onderbouw: skelet, ringen, plaat, reservoir met lensvelden)",
+    "https://commons.wikimedia.org/wiki/File:Vianen_RM_Watertoren_(1).jpg (ingangszijde: rondboogdeur, vensters, middenkolom met kraag en radiale balken)",
+    "https://commons.wikimedia.org/wiki/File:Vianen_Watertoren_6659.JPG en File:Exterieur_OVERZICHT_-_Vianen_-_20300594_-_RCE.jpg",
+    "PDOK BAG-pand 0620100000011958, AHN DSM/DTM 0,5 m, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-vianen-1-1000.stl"
+  ]
+}
