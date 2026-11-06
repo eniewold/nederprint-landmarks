@@ -1,0 +1,84 @@
+{
+  "name": "Watertoren Gouda",
+  "file": "watertoren-gouda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    108112.9,
+    446105.54
+  ],
+  "xAxis": [
+    0.71813,
+    0.69591
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -8.5,
+      0
+    ],
+    [
+      0,
+      8.5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      -6,
+      -6
+    ],
+    [
+      23,
+      -9
+    ],
+    [
+      12,
+      -13.5
+    ],
+    [
+      12,
+      -4.6
+    ]
+  ],
+  "groundHeight": 46.824,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0513100011112774"
+  ],
+  "description": "Oorsprong op het hart van de BAG-cirkel (straal 6,89 m) op het maaiveld van de dijk (NAP +3,33 m), X-as langs de kantooraanbouw, 44,1 graden linksom van RD-oost (een hoek van het tienzijdige dak op de X-as). Ronde onderbouw met tien rondboogvelden, gekoppelde vensters en de ingang met stoep aan de noordwestzijde; waterlijst op 6 m; schacht met tien spaarvelden tussen lisenen, elk onder een rondboog met twee boogjes en een oculus; fries op 22,6 m onder de iets uitkragende bovenbouw met gekoppelde venstertjes en tandlijst; tienzijdig tentdak met overstek (dakrand 28,4 m, AHN) en een tienzijdige lantaarn tot 32,93 m. Platte aanbouw van 20 x 6,1 m op 7,8 m. Windvaan, gootklossen en het bovenlicht weggelaten. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1883,
+    "architect": "J. Schotel",
+    "rijksmonument": 517626,
+    "publishedHeightM": 33.15,
+    "reservoirDiameterM": 11,
+    "ahnGroundNapM": 3.33,
+    "ahnEaveNapM": 31.7,
+    "ahnRoofAtLanternNapM": 34.1,
+    "ahnTopNapM": 36.26,
+    "ahnAnnexRoofNapM": 11.1,
+    "baseDiameterM": 13.78,
+    "shaftDiameterM": 13.6,
+    "upperDiameterM": 13.9,
+    "eaveCornerDiameterM": 15,
+    "eaveM": 28.4,
+    "topM": 32.93,
+    "annexM": [
+      19.959999999999997,
+      6.090000000000001,
+      7.8
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Gouda) (1883, J. Schotel, 33,15 m, 300 m³, rijksmonument 517626)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517626 (ronde neoromaanse toren, drie geledingen, tienzijdig tentdak met lantaarn, ingang noordwest, aanbouw 1974/1979 niet beschermd)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Gouda) (Watertoren Gouda.jpg, 2007; Watertoren (Gouda, 1998).jpg, G. Dukker)",
+    "PDOK BAG-pand 0513100011112774, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-gouda-1-1000.stl"
+  ]
+}
