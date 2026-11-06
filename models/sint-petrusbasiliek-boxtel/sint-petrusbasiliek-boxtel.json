@@ -1,0 +1,55 @@
+{
+  "name": "Sint-Petrusbasiliek Boxtel",
+  "file": "sint-petrusbasiliek-boxtel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    150776.25,
+    400112.25
+  ],
+  "xAxis": [
+    0.9841,
+    0.1776
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -9,
+      -9
+    ],
+    [
+      14,
+      -14
+    ],
+    [
+      42,
+      -19
+    ],
+    [
+      60,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0757100001442444"
+  ],
+  "description": "Kruisbasiliek met toren, zijbeuken, dwarsschip, kooromgang en kapellen, opgetrokken uit dakvlakken en bouwdelen.",
+  "printFiles": [
+    "sint-petrusbasiliek-boxtel-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 78,
+    "widthM": 34.8,
+    "highestPointM": 69.05,
+    "naveRidgeM": 27.1,
+    "towerTopM": 69.05,
+    "groundNapM": 8.272
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0757100001442444",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.stichtingkerkconcertenboxtel.nl/beiaard/",
+    "https://www.odulphusvanbrabant.nl/petrus/cultuur-historie/bezichtiging-van-de-st-petruskerk/"
+  ]
+}
