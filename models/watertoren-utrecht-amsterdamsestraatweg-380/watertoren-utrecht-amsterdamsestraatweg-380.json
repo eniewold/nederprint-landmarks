@@ -1,0 +1,94 @@
+{
+  "name": "Watertoren Amsterdamsestraatweg",
+  "file": "watertoren-utrecht-amsterdamsestraatweg-380.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134984.88,
+    457267.3
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      5.5,
+      5.81
+    ]
+  ],
+  "groundHeight": 44.93,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000029262"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 5,82 m) op het maaiveld (NAP +1,70 m), X-as naar RD-oost. Bakstenen plint tot 5,85 m met stenen waterlijst en portiek aan de noordoostkant; schacht (straal 5,7 m) met acht pilasters en spaarvelden met sleufvensters, erker boven de ingang; getrapte overgang tot 22,6 m; onderste vensterring, reservoir (straal 6,15 m) met zestien sleufvensters en bovenste vensterring met pilasters tussen stenen banden; kroonlijst tot 35,4 m; zestienkantig dak met glazen band, lantaarn en spits tot 43,7 m. Maten uit BAG, AHN5, luchtfoto en foto's.",
+  "realWorld": {
+    "built": "1916-1918",
+    "architect": "W.K. de Wijs (Utrechtsche Waterleiding Maatschappij)",
+    "rijksmonument": 514465,
+    "publishedHeightM": 43.5,
+    "reservoirM3": 1000,
+    "ahnGroundNapM": 1.7,
+    "ahn5EaveNapM": 37.8,
+    "ahn5TopNapM": 45.3,
+    "plinthRadiusM": 5.9,
+    "plinthM": 5.85,
+    "shaftRadiusM": 5.7,
+    "shaftPilasters": 8,
+    "corbelM": [
+      20.7,
+      22.6
+    ],
+    "reservoirRadiusM": 6.15,
+    "lowerWindowRingM": [
+      22.8,
+      24.4
+    ],
+    "reservoirM": [
+      24.7,
+      31.6
+    ],
+    "upperWindowRingM": [
+      31.8,
+      33.6
+    ],
+    "corniceRadiusM": 6.4,
+    "corniceTopM": 35.4,
+    "eaveM": 36.4,
+    "lanternM": [
+      40,
+      41.55
+    ],
+    "topM": 43.7,
+    "roofSides": 16,
+    "entranceDegrees": 46.6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Utrecht_Amsterdamsestraatweg_380) (omstreeks 1917, W.K. de Wijs, Amsterdamse School, 43,5 m, reservoir 1000 m³; nieuw dak na 2013, 2020-2022 appartementen en horeca door Zecc Architecten)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514465 (42 m, ronde plattegrond, 16-kantig kegeldak met lantaarn; portiekvormige ingang aan de noordoostzijde met muurtjes; schacht met 8 pilasters en spaarvelden met sleufvensters; iets uitkragend reservoir met 16 sleufvensters; vensterringen met vierkante vensters tussen korte pilasters onder en boven het reservoir; erker boven de ingang)",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_(Amsterdamsestraatweg_Utrecht) (Exterieur OVERZICHT WATERTOREN NAAR ONTWERP VAN W.K. DE WIJS (1916-1918) - Utrecht - 20339930 - RCE.jpg, Ingang - Utrecht - 20235334 - RCE.jpg, Watertoren Amsterdamsestraatweg Utrecht.jpg (2021), Watertoren Utrecht Amsterdamsestraatweg 380 dichtbij.jpg, ... veraf.jpg (2012), Watertoren Amsterdamsestraatweg.jpg)",
+    "3D BAG NL.IMBAG.Pand.0344100000029262 (LoD2.2 uit AHN5, 2023), PDOK BAG-pand 0344100000029262, AHN DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-amsterdamsestraatweg-380-1-1000.stl"
+  ]
+}
