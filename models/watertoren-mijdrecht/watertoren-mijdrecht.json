@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Mijdrecht",
+  "file": "watertoren-mijdrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119699.28,
+    468823.02
+  ],
+  "xAxis": [
+    1,
+    0.0035
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -8
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      8,
+      0
+    ]
+  ],
+  "groundHeight": 38.68,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0736100000006955"
+  ],
+  "description": "Oorsprong op het hart van de vierkante schacht (BAG 9,32 x 9,47 m) op het maaiveld (NAP -5,05 m), +X naar RD-richting 0,2 graden, +Y noord. Rechte bakstenen schacht tot de gootlijst op 34,6 m, leien zadeldak van 53,5 graden met de nok noord-zuid op 41,3 m, op beide topgevels een rondboogdeur met halfrond balkon op 20,7 m en twee vensters bovenin, vier kleine vensters onder elke goot, drie hoge vensters in de oostgevel; tegen de oostgevel een portaal met lessenaardak en een verjongende steunbeer tot 30,5 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1937,
+    "architect": "MABEG",
+    "monument": 514700,
+    "publishedHeightM": 41,
+    "reservoirM3": 500,
+    "ahnGroundNapM": -5.05,
+    "ahnRidgeNapM": 36.27,
+    "roofPitchDegrees": 53.5,
+    "shaftM": [
+      9.32,
+      9.47
+    ],
+    "eaveM": 34.62,
+    "ridgeM": 41.32,
+    "balconyFloorM": 20.7,
+    "buttressTopM": 30.5,
+    "porchTopM": 4.81,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Mijdrecht) (Industrieweg, 1937, MABEG, 41 m, 500 m³, vierkant met kerktoren-zadeldak, Delftse School, buiten gebruik sinds 2005)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514700 (vierkante plattegrond, leien zadeldak, portaal met lessenaardak en dubbele rondboogdeur tegen de oostgevel, verjongende steunbeer links van de ingang, rondboogdeur met halfrond balkon halverwege de noord- en zuidgevel, kleine vensters vooral onder het dak, reservoir circa 8 x 8 x 8 m)",
+    "https://commons.wikimedia.org/wiki/File:Mijdrecht_Watertoren_7622.JPG (zuidoost: topgevel met balkon, oostgevel met steunbeer en vensters)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Mijdrecht) (RCE-foto's 20530360 tot 20530369: portaal, steunbeer, noord- en zuidgevel, overzicht)",
+    "PDOK BAG-pand 0736100000006955, AHN DSM/DTM 0,5 m, 3D BAG en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-mijdrecht-1-1000.stl"
+  ]
+}
