@@ -1,0 +1,83 @@
+{
+  "name": "Watertoren Amersfoort",
+  "file": "watertoren-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    153551.1,
+    461702.53
+  ],
+  "xAxis": [
+    0.70711,
+    0.70711
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 87.92,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000343441"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP +44,75 m), +X naar RD-richting 45 graden, +Y naar 135 graden (noordwest): de hoofdingang aan de Utrechtseweg. Lage brede cilinder van 14,2 m: voet van een bouwlaag op een plint met dubbele rondboogvensters en twee ingangen (deur onder een grote rondboog tussen twee kleine rondboogvensters), cordonlijst op 6,1 m; schil met acht spaarvelden onder een rondboogfries, kleine en dichtgezette vensters, lisenen met langwerpige vensters; zestien klossen onder de gootlijst, balustrade tot 16,05 m met hoge delen boven de lisenen tot 16,6 m; plat dak met een hokje onder een tentdak tot 17,2 m en een installatieblok. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1912,
+    "architect": "Gemeentewerken Amersfoort (C.G. Beltman)",
+    "publishedHeightM": 17,
+    "registerDiameterM": 12,
+    "reservoirM3": 700,
+    "monument": 517738,
+    "ahnGroundNapM": 44.75,
+    "ahnRoofNapM": [
+      60.1,
+      60.35
+    ],
+    "ahnParapetNapM": [
+      60.8,
+      61.35
+    ],
+    "baseDiameterM": 14.2,
+    "shellDiameterM": 14,
+    "gutterDiameterM": 14.9,
+    "cordonM": [
+      5.6,
+      6.1
+    ],
+    "gutterM": [
+      15,
+      15.35
+    ],
+    "parapetM": 16.05,
+    "parapetPierM": 16.6,
+    "roofHutTopM": 17.2,
+    "photoScalePxPerM": 50.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517738 (1912, Gemeentewerken/C.G. Beltman, cilinder van 12 m doorsnede en 17 m hoog, Intze-reservoir, voet, cordonlijst, spaarvelden met rondboogfries, lisenen met langwerpige vensters, klossen, gootlijst met kleine vensters, verspringende balustrade, twee ingangspartijen)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Amersfoort) (Utrechtseweg 174, 17 m, 700 m³)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Amersfoort_-_20536320_-_RCE.jpg (geledingen, schaal 50,9 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Amersfoort_-_20536319_-_RCE.jpg, File:Amersfoort_-_Watertoren_1.JPG, File:Amersfoort_-_Watertoren_2.JPG, File:Amersfoort4840.jpg (voet, vensters, spaarvelden, klossen, balustrade)",
+    "https://commons.wikimedia.org/wiki/File:Amersfoort4839.jpg en File:Amersfoort4830.jpg (ingang)",
+    "PDOK BAG-pand 0307100000343441, BGT, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-amersfoort-1-1000.stl"
+  ]
+}
