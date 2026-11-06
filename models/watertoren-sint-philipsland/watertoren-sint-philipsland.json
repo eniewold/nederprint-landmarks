@@ -1,0 +1,68 @@
+{
+  "name": "Watertoren Sint Philipsland",
+  "file": "watertoren-sint-philipsland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    70815.2,
+    404033.95
+  ],
+  "xAxis": [
+    0.93042,
+    -0.3665
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.5,
+      0
+    ],
+    [
+      0,
+      5.5
+    ],
+    [
+      -5.5,
+      0
+    ],
+    [
+      0,
+      -5.5
+    ]
+  ],
+  "groundHeight": 45.859,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000282375"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand en het dak op het maaiveld (NAP circa +1,76 m), +X op RD -21,5 graden, de normaal van de oostzuidoostgevel. Betonnen toren op een vierkant met afgeschuinde hoeken: schacht van 6,2 m met een lisene op elke hoofdgevel, reservoirdeel van 6,8 m vanaf 18,1 m op een uitkraging van 47 graden met een tussentrede en een console-blok boven elke lisene, sleuven op de vier hoekvlakken met ribben op het reservoirdeel, deur in de zuidzuidwestgevel en een achtzijdig tentdak van 25,95 tot 27,7 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "built": 1925,
+    "architect": "H. Sangster",
+    "publishedHeightM": 27.7,
+    "reservoirM3": 125,
+    "groundNapM": 1.76,
+    "ahnTopNapM": 29.42,
+    "shaftAcrossFlatsM": 6.2,
+    "tankAcrossFlatsM": 6.8,
+    "tankAcrossChamfersM": 7.24,
+    "tankFootM": 18.1,
+    "consoleM": [
+      17,
+      19.1
+    ],
+    "eavesM": 25.95,
+    "topM": 27.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Sint_Philipsland) (1925, H. Sangster, 27,7 m, 125 m³)",
+    "https://commons.wikimedia.org/wiki/File:Sint_Philipsland_6521.JPG (2005, reservoirdeel met consoles, sleuven en ribben, koperen dak)",
+    "https://commons.wikimedia.org/wiki/File:Sint_Philipsland,_de_watertoren_foto6_2015-05-24_14.39.jpg (2015, hoeksleuf met ribben, getrapte onderkant van het reservoir)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Sint_Philipsland_-_20352486_-_RCE.jpg (2002, RCE, CC BY-SA 4.0: schacht met lisenen en de deur)",
+    "PDOK BAG-pand 0716100000282375, 3D BAG, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-sint-philipsland-1-1000.stl"
+  ]
+}
