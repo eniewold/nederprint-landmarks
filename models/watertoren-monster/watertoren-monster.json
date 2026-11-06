@@ -1,0 +1,36 @@
+{
+  "name": "Watertoren Monster",
+  "file": "watertoren-monster.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    73723,
+    451465
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1783100000004031"
+  ],
+  "description": "Ronde bakstenen watertoren met ribben en banden, reservoir met kegelkap en vier dakkapellen, met aangrenzende machinegebouwen.",
+  "realWorld": {
+    "groundNapM": 3.818,
+    "ahnTopNapM": 42.258,
+    "modelHeightM": 38,
+    "publishedHeightM": 37.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1783100000004031",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/525139",
+    "https://www.raderadvies.nl/projecten/watertoren-dunea/",
+    "https://commons.wikimedia.org/wiki/File:Monster_watertoren.jpg"
+  ],
+  "printFiles": [
+    "watertoren-monster-1-1000.stl"
+  ]
+}
