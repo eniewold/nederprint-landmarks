@@ -1,0 +1,80 @@
+{
+  "name": "Watertoren Doorn",
+  "file": "watertoren-doorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    151128.99,
+    450416.04
+  ],
+  "xAxis": [
+    0.91355,
+    -0.40674
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      -5
+    ]
+  ],
+  "groundHeight": 51.83,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1581100000018088"
+  ],
+  "description": "Oorsprong op het hart van de BAG-cirkel op het maaiveld van de aarden verhoging (NAP +8,55 m), +X naar RD-richting -24 graden (oost-zuidoost): de aanbouw met de ingang. Verjongende voet met drie rondboogvensters tot een uitkragende natuurstenen band; aanbouw onder zadeldak met tuitgevel, tuit en deur; taps toelopende schacht met zes rondboogvensters en een rondboogfries van twaalf bogen op lisenen; uitkraging met bloktandlijsten, een kleinere rondboogfries van zestien bogen en een natuurstenen band naar het reservoir van 8,0 m met twaalf vensters; plat dak op 28,36 m. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "built": 1903,
+    "architect": "Visser & Smit",
+    "publishedHeightM": 30,
+    "reservoirM3": 150,
+    "monument": 508750,
+    "ahnGroundNapM": 8.55,
+    "ahnRoofNapM": 36.91,
+    "ahnRailingNapM": 37.3,
+    "ahnAnnexRidgeNapM": 12.4,
+    "bagFootRadiusM": 3.55,
+    "footDiameterM": [
+      7.1,
+      6.84
+    ],
+    "shaftDiameterM": [
+      6.44,
+      6.14
+    ],
+    "reservoirDiameterM": 8,
+    "annexM": {
+      "widthM": 3.06,
+      "frontFromCentreM": 6.03,
+      "eavesM": 3,
+      "ridgeM": 3.85,
+      "gableM": 4.75
+    },
+    "roofM": 28.36,
+    "topM": 28.36,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508750 (1902-1903 op een kunstmatige aarden verhoging, Visser & Smit, cilindervorm taps toelopend, drie geledingen, aanbouw onder zadeldak met uitkragende tuitgevel en deur met rondboogvormig bovenlicht, brede natuurstenen uitkragende band, kleine rondboogvensters, rondboogfries, bloktandlijsten, platte natuurstenen banden en een kleinere rondboogfries, reservoir met staande zesruitsvensters, kantelen in 1959 verwijderd, ijzeren reling)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Doorn) (Woestduinlaan, 1902, Visser & Smit Hanab, 30 m, 150 m³, gerenoveerd 1959, rijksmonument sinds 1998)",
+    "https://commons.wikimedia.org/wiki/File:Doorn_-_Watertoren_Woestduinlaan_55_RM508750.JPG (recht op de ingang: geledingen, aanbouw met tuitgevel, vensters, friezen, banden, reservoir)",
+    "https://commons.wikimedia.org/wiki/File:Doorn_Watertoren_9587.JPG en https://commons.wikimedia.org/wiki/File:Doorn_Woestduinlaan_55.jpg (andere zijden: vensters in voet en schacht, de verhoging)",
+    "PDOK BAG-pand 1581100000018088, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-doorn-1-1000.stl"
+  ]
+}
