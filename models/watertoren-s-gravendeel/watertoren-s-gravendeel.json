@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren 's-Gravendeel",
+  "file": "watertoren-s-gravendeel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102340.67,
+    420936.79
+  ],
+  "xAxis": [
+    0.99027,
+    0.13917
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 43.42,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0585100001641941"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 4,84 m) op het maaiveld (NAP 0,0 m), X-as 8 graden linksom van RD-oost naar de deur. Taps toelopende ronde schacht met vier steunberen tot 10,6 m en vier vensters, twee banden tot 26,0 m, consolezone met acht consoles, ring tot 28,2 m, ronde reservoirmantel (straal 4,8 m) met acht lisenen en acht vensters, kroonlijst, plat dak op 33,8 m, borstwering tot 35,1 m met pijlertjes tot 35,45 m en een trappenhuisopbouw tot 35,5 m. Maten uit BAG, AHN, luchtfoto en één foto.",
+  "realWorld": {
+    "built": 1914,
+    "architect": "Visser en Smit",
+    "publishedHeightM": 35,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 0,
+    "ahnRoofNapM": 33.8,
+    "ahnParapetNapM": 35.1,
+    "ahnTopNapM": 35.5,
+    "footRadiusM": 4.84,
+    "shaftTopRadiusM": 4.24,
+    "reservoirRadiusM": 4.8,
+    "ringRadiusM": 5.05,
+    "buttressTopM": 10.6,
+    "ringTopM": 28.2,
+    "roofM": 33.8,
+    "parapetM": 35.1,
+    "topM": 35.5,
+    "buttressDegrees": [
+      45,
+      135,
+      225,
+      315
+    ],
+    "entranceDegrees": 0,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_('s-Gravendeel) (1914, Visser en Smit, 35 m, 200 m³, betonskelet met metselwerk op een bakstenen voet met vier steunberen met natuurstenen afdekking; gemeentelijk monument)",
+    "https://commons.wikimedia.org/wiki/File:Gravendeel_Watertoren_3595.JPG (Willemjans, 2007, CC BY-SA 3.0; vanaf het oosten-zuidoosten)",
+    "PDOK BAG-pand 0585100001641941, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-s-gravendeel-1-1000.stl"
+  ]
+}
