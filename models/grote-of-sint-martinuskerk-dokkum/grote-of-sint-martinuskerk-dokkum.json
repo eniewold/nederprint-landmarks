@@ -1,0 +1,55 @@
+{
+  "name": "Grote of Sint-Martinuskerk Dokkum",
+  "file": "grote-of-sint-martinuskerk-dokkum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195720,
+    593537
+  ],
+  "xAxis": [
+    0.99926,
+    0.03839
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -14
+    ],
+    [
+      0,
+      -14
+    ],
+    [
+      14,
+      -13
+    ],
+    [
+      16,
+      11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000213293"
+  ],
+  "description": "Grote of Sint-Martinuskerk in Dokkum: schip, lagere noordelijke beuk, trapgevel, dakruiter, consistorie, steunberen en vensternissen. Gemeten 3D BAG-dakvlakken en AHN-hoogte. Lokale X loopt 2,2 graden noord van oost, Z omhoog. Vervangt BAG-pand 0058100000213293.",
+  "printFiles": [
+    "grote-of-sint-martinuskerk-dokkum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 42.78,
+    "widthM": 21,
+    "highestPointM": 32.67,
+    "groundNapM": 4.6,
+    "naveRidgeM": 20.32,
+    "spireTopM": 32.67
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000213293",
+    "PDOK AHN DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Martinuskerk",
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Martinuskerk_(Dokkum)"
+  ]
+}
