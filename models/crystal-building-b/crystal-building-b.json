@@ -1,0 +1,67 @@
+{
+  "name": "Crystal Building B (Rivium)",
+  "file": "crystal-building-b.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    97205,
+    436489
+  ],
+  "xAxis": [
+    0.998939,
+    0.04606
+  ],
+  "groundNap": 5.2,
+  "groundHeight": 48.7,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -36,
+      -10
+    ],
+    [
+      -36,
+      0
+    ],
+    [
+      -38,
+      -14
+    ],
+    [
+      -36,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0502100000021056"
+  ],
+  "description": "Crystal Building B (2001, Groep 5 Architecten), licht gebogen glazen kantoorschijf van 69 × 15 m aan de oostkant van de Rivium Boulevard, tegenover XO Hotels Rivium en spiegelbeeldig aan Crystal Building A. Het dak loopt in treden op naar de boulevard: NAP +34,8 m in het oosten, +38,5 m in het midden en +56,9 m in het westen, waar het dak als een kristal onder 42 graden oploopt tot +71 m op de westgevel; entreeblok van twee lagen aan de zuidwesthoek, het oostelijke deel op kolommen, liftopbouw op het westdak. Glasband per laag van 3,46 m als blinde nis. Oorsprong in het hart van de schijf op het niveau van het plein aan de boulevard (NAP +5,2 m), X-as langs de lange gevels (2,64 graden op RD-oost). Hoogtes uit de 3D BAG en het AHN; lagen en gevelbanden geschat uit de luchtfoto's.",
+  "realWorld": {
+    "built": 2001,
+    "architect": "Groep 5 Architecten",
+    "floors": 15,
+    "groundNapM": 5.2,
+    "roofEastNapM": 34.8,
+    "roofMiddleNapM": 38.5,
+    "roofWestNapM": 56.9,
+    "ridgeNapM": 71.3,
+    "roofSlopeDegrees": 42,
+    "entranceRoofNapM": 9.5,
+    "footprintM": [
+      69.4,
+      15.3
+    ],
+    "storeyHeightM": 3.46,
+    "facadeAngleDegrees": 2.64,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0502100000021056 (bouwjaar 2000; Rivium Boulevard 202-234), BGT (begane grond en kolommen), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5 2023)",
+    "https://www.pss-archi.eu/immeubles/NL-502-73262.html (Groep 5 Architecten, 2001, vijftien lagen, circa 59,5 m)",
+    "https://capellebouwtaandestad.nl/project/rivium-boulevard-301-321 (schuine luchtfoto van de gemeente met beide Crystal Buildings op de voorgrond)"
+  ],
+  "printFiles": [
+    "crystal-building-b-1-1000.stl"
+  ]
+}
