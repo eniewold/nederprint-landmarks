@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Goor",
+  "file": "watertoren-goor.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    235743.6,
+    472420.48
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      6
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      -9
+    ],
+    [
+      -7,
+      -9
+    ]
+  ],
+  "groundHeight": 55.56,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1735100000057191"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand (cirkel van de reservoirommanteling, 7,46 m) op maaiveld NAP +12,1 m, +X naar het oosten, +Y naar het noorden. Ronde onderbouw (5,8 m) met twee rondboogvensters en een gepleisterde band tot 4,6 m, verjongende schacht (5,7 tot 4,9 m) met vier kolommen vensters, dunne band op 18,5 m, kort metselwerk met kleine vensters, holle overgang naar de ommanteling (7,46 m) vanaf 19,4 m, band onder de ommanteling, smalle vensters, kroonlijst op 27,1 tot 27,8 m, gekanteelde borstwering tot 28,72 m (NAP +40,82) met binnen een rond reservoirdak op 28,45 m en een dakluik tot 29,07 m; aan de zuidkant een platte aanbouw tot 3,5 m. Maten uit BAG, AHN, 3D BAG, luchtfoto en twee foto's.",
+  "realWorld": {
+    "built": 1915,
+    "wikipediaHeightM": 29,
+    "reservoirM3": 125,
+    "ahnGroundNapM": 12.1,
+    "ahnCrenelNapM": 40.82,
+    "bag3dMaxNapM": 40.71,
+    "ahnTankRoofNapM": 40.55,
+    "ahnHatchNapM": 41.17,
+    "ahnAnnexRoofNapM": 15.6,
+    "baseDiameterM": 5.8,
+    "shaftDiameterM": [
+      5.7,
+      4.9
+    ],
+    "reservoirDiameterM": 7.46,
+    "parapetM": 28.72,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Goor) (1915, 29 m, 125 m³)",
+    "https://commons.wikimedia.org/wiki/File:Goor_Watertoren_8803.JPG (2006, vanuit het westen: geledingen, banden, vensters, kantelen en aanbouw; schaal 70,2 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Goor-markeloseweg-208095.jpg (2020, vanuit het westnoordwesten: ommanteling met smalle vensters, schacht met vensterkolommen)",
+    "PDOK BAG-pand 1735100000057191 (toren met aanbouw), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.1735100000057191: maaiveld 12,10 en h_dak_max 40,71, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-goor-1-1000.stl"
+  ]
+}
