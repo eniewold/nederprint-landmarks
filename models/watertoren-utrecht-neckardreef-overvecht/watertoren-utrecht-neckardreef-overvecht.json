@@ -1,0 +1,87 @@
+{
+  "name": "Watertoren Neckardreef",
+  "file": "watertoren-utrecht-neckardreef-overvecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136725.69,
+    458761.485
+  ],
+  "xAxis": [
+    0.99976,
+    -0.02181
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "groundHeight": 44.58,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000057728"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-voetafdruk (apothema 6,05 m) op het maaiveld (NAP +1,36 m), X-as naar een hoek van de achthoek (RD-oost -1,25 graden). Achtkante bakstenen schacht met vier steunberen over de volle hoogte op de diagonale gevels en op de vier andere gevels velden van vier spleetvensters onder en boven een betonnen band op 27,1-28,5 m, met drie kleine vensters eronder; verdiepte ingang onder een betonnen luifel aan de west-noordwestkant, dichtgemetselde dubbele vensters onderin; betonnen kroonlijst met omgang tot 39,2 m en een achtkante koperen koepel tot 47,4 m (makelaar weggelaten). Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1935,
+    "architect": "J.L. Pateer (Drinkwaterleiding Noord-West-Utrecht), Amsterdamse School",
+    "rijksmonument": 514451,
+    "publishedHeightM": 48.6,
+    "reservoirM3": 500,
+    "ahnGroundNapM": 1.36,
+    "ahnCorniceNapM": 40.6,
+    "ahnTopNapM": 48.8,
+    "apothemM": 6.05,
+    "upperApothemM": 5.9,
+    "buttressM": [
+      0.92,
+      0.94
+    ],
+    "bandM": [
+      27.07,
+      28.5
+    ],
+    "slitFieldsM": [
+      [
+        5.2,
+        24.6
+      ],
+      [
+        29.75,
+        37.2
+      ]
+    ],
+    "corniceM": [
+      38,
+      39.2
+    ],
+    "domeApothemM": 5.45,
+    "topM": 47.4,
+    "entranceDegrees": 157.5,
+    "rotationDegrees": -1.25,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Utrecht_Neckardreef) (1934-1935, J.L. Pateer, Amsterdamse School, achtzijdig, 48,6 m, vlakbodemreservoir van 500 m³; gemeente Maartensdijk tot 1954, in Park de Watertoren)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514451 (achtzijdige toren met betonskelet en baksteen, ruim 49 m, versmalt na ruim 30 m, koperen koepeldak; spleetvensters op vier zijden, gemetselde steunberen over de volle hoogte op de andere vier; verdiepte ingang met betonnen luifel en plaat D.N.W.U.; dichtgemetselde dubbele vensters onderin)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Utrecht_-_20235329_-_RCE.jpg, File:Aanzicht_-_Utrecht_-_20235330_-_RCE.jpg, File:Ingang_-_Utrecht_-_20235331_-_RCE.jpg, File:Watertoren_Utrecht_Overvecht.JPG, File:HUA-28754-Gezicht_op_de_watertoren_Overvecht_aan_de_Neckardreef_te_Utrecht_uit_het_noordwesten.jpg",
+    "PDOK BAG-pand 0344100000057728, BGT (erf voor de ingang), AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-neckardreef-overvecht-1-1000.stl"
+  ]
+}
