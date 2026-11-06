@@ -1,0 +1,89 @@
+{
+  "name": "Watertoren Dordrecht (Villa Augustus)",
+  "file": "watertoren-dordrecht-villa-augustus.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    106564.4,
+    425436
+  ],
+  "xAxis": [
+    0.70711,
+    0.70711
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      20,
+      -9
+    ],
+    [
+      20,
+      9
+    ],
+    [
+      41,
+      0
+    ]
+  ],
+  "groundHeight": 47.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0505100000025142"
+  ],
+  "description": "Oorsprong op het hart van de toren op het maaiveld (NAP +3,60 m), +X naar RD-richting 45 graden (noordoost, langs de hotelvleugel), +Y naar 135 graden, evenwijdig aan de BAG-gevels. Vierkante bakstenen toren van 14,8 m met hoekrisalieten, terugliggende middenvelden met middenpilaster, waterlijst, drie verdiepingen vensters en een kroonlijst op 21,4 m; daarop de zestienhoekige reservoirverdieping met kegeldak (goot 25,5 m), vier achtkante hoektorentjes met spitsen tot 33 m, vier schoorstenen en een achtkante glazen lantaarn in twee geledingen tot 32,85 m; het hele BAG-pand eromheen: liftschacht, trappenhuis, vleugel met middenopbouw, zadeldakgebouw met topgevels en een aanbouw. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1882,
+    "architect": "J.A. van der Kloes",
+    "publishedHeightM": 33,
+    "reservoirM3": 500,
+    "rijksmonument": 526400,
+    "ahnGroundNapM": 3.6,
+    "ahnEaveNapM": 29.1,
+    "ahnLanternTopNapM": 36.45,
+    "towerM": [
+      14.8,
+      14.8
+    ],
+    "corniceM": 21.4,
+    "reservoirEaveM": 25.5,
+    "lanternTopM": 32.85,
+    "spireTopM": 33,
+    "wingM": {
+      "flatEaveM": 6.35,
+      "monitorM": 8,
+      "gableEaveM": 5.6,
+      "gableRidgeM": 8.4,
+      "annexM": [
+        4.5,
+        3.3
+      ]
+    },
+    "photoScalePxPerM": 51.7,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dordrecht) (1882, J.A. van der Kloes, 33 m, 500 m³, hoektorentjes deels afgebroken in 1938, hotel sinds 2007)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526400",
+    "https://commons.wikimedia.org/wiki/File:Dordrecht_-_watertoren_vooraanzicht_2011-02-06.jpg (zuidwestgevel frontaal: risalieten, middenvelden, vensters, kroonlijst, torentjes, spitsen, lantaarn, schoorstenen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_aan_het_Wantij_-_WLM_2011_-_ednl.jpg (bovenbouw: reservoirverdieping, kegeldak, lantaarn in twee geledingen, spitsvormen)",
+    "https://commons.wikimedia.org/wiki/File:Watertower,_Dordrecht_(9733967598).jpg (zuidoostzijde: trappenhuis, vleugel, zadeldakgebouw met topgevel)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_met_bijgebouwen_-_Dordrecht_-_20337342_-_RCE.jpg (toestand voor de restauratie)",
+    "PDOK BAG-pand 0505100000025142, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-dordrecht-villa-augustus-1-1000.stl"
+  ]
+}
