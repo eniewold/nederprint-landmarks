@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Hazerswoude-Rijndijk",
+  "file": "watertoren-hazerswoude-rijndijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    100041.57,
+    460315.25
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      -10
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "groundHeight": 43.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1672100000002789"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 4,54 m) op het maaiveld (NAP +0,2 m), X-as naar RD-oost. Achtkante betonnen schacht op hoekkolommen met drie lagen glas en een bakstenen plint met rondboogvensters, verjongend van 7,5 naar 7,1 m tot 15,3 m; ringbalk; consoles met oculi tot 18,0 m; rond bakstenen reservoir (straal 4,54 m) met dubbele en enkele vensters, rondboogfries, lisenen met pinakels tot 28,94 m en een borstwering van 26,9 en 28,1 m; glazen opbouw met een dakschijf van 9,3 m tot 30,5 m en een lichtkoepel; liftschacht van 24,4 m aan de zuidkant met drie loopbruggen; kantoorvleugel van 4 m met groen dak aan de zuidoostkant. Maten uit BAG, 3D BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1915,
+    "architect": "A.D. Heederik",
+    "converted": "1999-2003, kantoor",
+    "publishedHeightM": 28.5,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 0.2,
+    "ahnTopNapM": 30.7,
+    "bagRadiusM": 4.54,
+    "shaftAcrossFlatsM": [
+      7.5,
+      7.1
+    ],
+    "ringBeamM": 16.08,
+    "reservoirBottomM": 18.84,
+    "lowParapetM": 26.9,
+    "highParapetM": 28.1,
+    "pinnacleM": 28.94,
+    "discM": 30.5,
+    "discDiameterM": 9.3,
+    "topM": 30.95,
+    "liftM": 24.4,
+    "wingM": 4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Hazerswoude-Rijndijk) (1915, A.D. Heederik, 28,5 m, 200 m³, buiten gebruik sinds 1985, van 1999 tot 2003 verbouwd tot kantoor, eigendom van Hoogvliet Beheer)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Hazerswoude-Rijndijk) (Rijnwoude 016.jpg vanaf het west-zuidwesten, Rijnwoude 020.jpg vanaf het westen, Hazerswoude-Rijndijk watertoren bij nacht.jpg vanaf het noordwesten)",
+    "PDOK BAG-pand 1672100000002789, 3D BAG (puntenwolk 2023), AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-hazerswoude-rijndijk-1-1000.stl"
+  ]
+}
