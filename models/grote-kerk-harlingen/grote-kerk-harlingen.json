@@ -1,0 +1,57 @@
+{
+  "name": "Grote Kerk Harlingen",
+  "file": "grote-kerk-harlingen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    157330.1,
+    576247.1
+  ],
+  "xAxis": [
+    0.9919,
+    -0.12702
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -8
+    ],
+    [
+      -2,
+      -19
+    ],
+    [
+      18,
+      -12
+    ],
+    [
+      19,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0072100000295357"
+  ],
+  "description": "De Grote Kerk in Harlingen als Griekse kruiskerk met zadeldaken, gevelpilasters, vensternissen, portalen en middeleeuwse toren met ingesnoerde spits. RD-oorsprong op de kruising; +X langs de kerk naar het oosten. Maten in meters; Z omhoog in het model en Y omhoog in glTF.",
+  "printFiles": [
+    "grote-kerk-harlingen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.7,
+    "widthM": 33.4,
+    "highestPointM": 48.7,
+    "groundNapM": 4.23,
+    "ridgeM": 25.59,
+    "towerTopM": 48.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Harlingen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20447",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0072100000295357",
+    "PDOK AHN DSM 0,5 m en luchtfoto Actueel_orthoHR",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk_(Harlingen)"
+  ]
+}
