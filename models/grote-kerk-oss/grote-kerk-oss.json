@@ -1,0 +1,60 @@
+{
+  "name": "Grote Kerk Oss",
+  "file": "grote-kerk-oss.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    164313,
+    420070
+  ],
+  "xAxis": [
+    0.987,
+    0.16
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      -13
+    ],
+    [
+      15,
+      -16
+    ],
+    [
+      36,
+      -24
+    ],
+    [
+      58,
+      -22
+    ],
+    [
+      57,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001484067"
+  ],
+  "description": "Kruisbasiliek met stompe westtoren, dwarskapellen en kooromgang; oorsprong RD (164313, 420070).",
+  "printFiles": [
+    "grote-kerk-oss-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 70.52,
+    "widthM": 36.6,
+    "highestPointM": 53.3,
+    "groundNapM": 7.74,
+    "naveRidgeM": 27.2,
+    "towerTopM": 53.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001484067",
+    "https://commons.wikimedia.org/wiki/Category:Onze-Lieve-Vrouw_Onbevlekt_Ontvangenkerk_(Oss)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31870",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ]
+}
