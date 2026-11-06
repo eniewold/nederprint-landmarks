@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Steenwijkerwold",
+  "file": "watertoren-steenwijkerwold.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    201853.14,
+    534860.69
+  ],
+  "xAxis": [
+    0.9616,
+    -0.27446
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 59.08,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000024661"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op maaiveld (NAP +17,0 m), +X naar RD-richting -15,93 graden (oost-zuidoost), +Y naar 74,07 graden (noord-noordoost): de voorgevel met de deur, naar de Oldemarktseweg. Rechte bakstenen schacht van 8,68 m met tweedelige schuine hoeken, vertanding en lisenen op de hoeken, vijf vensters onder de dakrand, staande vensters, drie vensters op de begane grond en de deur; gootrand op 30,0 m, rechtstandige onderste dakschilden met een verspringende onderrand op de hoeken, knik op 31,85 m en tentdak tot 35,14 m, dakkapel aan de westzijde. Maten uit BAG, AHN, register en foto's.",
+  "realWorld": {
+    "built": 1931,
+    "registerHeightM": 35.2,
+    "reservoirM3": 208,
+    "monument": 508646,
+    "ahnGroundNapM": 17,
+    "ahnKnickNapM": 48.85,
+    "ahnTopNapM": 52.14,
+    "widthM": 8.68,
+    "wallTopM": 29.7,
+    "ledgeM": 30,
+    "skirtM": 28.9,
+    "knickM": 31.85,
+    "topM": 35.14,
+    "minimumPartM": 0.55
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508646 (1931, 35,20 m, gebroken tentdak op rechtstandige onderste dakschilden met verspringende onderrand, tweedelige afgeschuinde hoeken met vertanding, dubbele deur in de voorgevel, drie stalen vensters, staande vensters, vijf vensters onder de dakrand, 208 m³)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Steenwijkerwold) (1931, 35,2 m, 208 m³, Butzers)",
+    "https://commons.wikimedia.org/wiki/File:20140416_Zicht_op_watertoren_van_Tuk2.jpg (telelens vanuit het zuidwesten: dakschilden, knik, dakrand, vensters, lisenen)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Tuk_-_20350297_-_RCE.jpg (vanuit het zuidwesten: geledingen, vensters, dakkapel)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_-_Tuk_-_20350476_-_RCE.jpg (vanuit het noordoosten: vensters op de begane grond)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Steenwijkerwold_07.JPG (2007, vanuit het zuidwesten)",
+    "PDOK BAG-pand 1708100000024661, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-steenwijkerwold-1-1000.stl"
+  ]
+}
