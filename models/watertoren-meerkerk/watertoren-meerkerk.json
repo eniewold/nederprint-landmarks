@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Meerkerk",
+  "file": "watertoren-meerkerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    127932.05,
+    436833.73
+  ],
+  "xAxis": [
+    0.99919,
+    0.04013
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      -10
+    ]
+  ],
+  "groundHeight": 42.99,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0707100000372807"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige BAG-voetafdruk (apothema 5,74 m) op het maaiveld (NAP -0,5 m), X-as 2,3 graden linksom van RD-oost loodrecht op het oostvlak. Bakstenen onderbouw tot 5,2 m met ingang (trap, luifel) in het noordoostvlak en drielichten; achtkante betonnen schacht met hoeklisenen en drie vensters per travee tot 34,8 m; ronde reservoirmantel met vier keer drie vensters tot 44,2 m; uitkragende rand met omloop op 47,85 m (15,8 m doorsnede); kegeldak van 60 graden tot 59,65 m; halfrond trappenhuis aan de noordwestzijde met torentje en kegeldakje op de omloop. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1936,
+    "architect": "Technisch Advies Bureau van de VNG (Amersfoort)",
+    "rijksmonument": 515486,
+    "publishedHeightM": 59.72,
+    "reservoirM3": 560,
+    "ahnGroundNapM": -0.5,
+    "ahnTopNapM": 59.13,
+    "ahnConeSlope": 1.77,
+    "octagonApothemM": 5.74,
+    "brickBaseM": 5.2,
+    "reservoirBottomM": 34.8,
+    "reservoirTopM": 44.2,
+    "reservoirDiameterM": 12.5,
+    "deckM": 47.85,
+    "deckDiameterM": 15.8,
+    "coneFootM": 49.9,
+    "topM": 59.65,
+    "stairDegrees": 135,
+    "entranceDegrees": 45,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Meerkerk) (1936, Technisch Advies Bureau Nederlandse Gemeenten, 59,7 m, 560 m³, een van de eerste betonnen watertorens)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515486 (achthoekig, glijbekist beton, acht wandvlakken tussen hoeklisenen, bakstenen onderbouw met ingang, trap en luifel en drielichten, drie vensters per travee, ronde reservoirmantel met vier keer drie vensters, kegeldak, uitkragende rand met omloop, halfrond trappenhuis aan de noordwestzijde met bovenbouw en deur naar de omloop)",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_of_Meerkerk (Watertoren Meerkerk 2021.jpg vanaf het noordoosten, Watertoren Meerkerk Trappehuis.JPG vanaf het noordwesten, Watertoren Meerkerk Entree.JPG, Watertoren Meerkerk 1.jpg en 2.jpg)",
+    "PDOK BAG-pand 0707100000372807, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-meerkerk-1-1000.stl"
+  ]
+}
