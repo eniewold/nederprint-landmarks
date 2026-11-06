@@ -1,0 +1,52 @@
+{
+  "name": "Sint-Jan de Doperkerk Veldhoven",
+  "file": "sint-jan-de-doperkerk-veldhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    153768,
+    381416
+  ],
+  "xAxis": [
+    -0.12,
+    -0.9927739
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -12
+    ],
+    [
+      10,
+      -12
+    ],
+    [
+      20,
+      13
+    ],
+    [
+      35,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0861100000366307"
+  ],
+  "description": "Neogotische kruisbasiliek met toren, naaldspits, zijbeuken, driezijdig gesloten dwarsschip en koor, vieringtoren en zijkapellen.",
+  "realWorld": {
+    "groundNapM": 22.57,
+    "ahnTopNapM": 65.914,
+    "modelTopM": 43.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0861100000366307",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507725",
+    "https://commons.wikimedia.org/wiki/Category:St._Jan_de_Doperkerk_(Veldhoven)"
+  ],
+  "printFiles": [
+    "sint-jan-de-doperkerk-veldhoven-1-1000.stl"
+  ]
+}
