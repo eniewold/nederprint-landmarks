@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Baarn",
+  "file": "watertoren-baarn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    147674.27,
+    469299.61
+  ],
+  "xAxis": [
+    0.91355,
+    0.40674
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 57.49,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0308100000021663"
+  ],
+  "description": "Oorsprong op het hart van de top in het AHN-DSM op het maaiveld (NAP +14,3 m; het BAG-pand ligt 1,2 m zuidwestelijker), +X naar RD-richting 24 graden, +Y naar 114 graden (noordwest): portaal, straatzijde en hoge kanteel. Verjongende voet met plint, natuurstenen band en cordonlijsten, portaal met timpaan en pinakel; schacht met smalle vensters en boogfries; uitkraging naar het Intze-reservoir van 10,8 m met veertien vensters, boogfries en cordonlijst; achttien kantelen rond het dakterras op 28,45 m tot 29,35 m, boven de ingang tot 29,9 m. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "built": 1903,
+    "architect": "Utrechtsche Waterleiding Maatschappij",
+    "publishedHeightM": 29,
+    "publishedFootDiameterM": 10,
+    "reservoirM3": 500,
+    "monument": 511733,
+    "ahnGroundNapM": 14.3,
+    "ahnTerraceNapM": 42.86,
+    "ahnMerlonNapM": [
+      43.4,
+      43.7
+    ],
+    "ahnTopNapM": 44.18,
+    "footDiameterM": [
+      9.7,
+      9.5
+    ],
+    "shaftDiameterM": [
+      9.4,
+      8.5
+    ],
+    "reservoirDiameterM": 10.8,
+    "terraceM": 28.45,
+    "merlonM": 29.35,
+    "topM": 29.9,
+    "bagOffsetM": 1.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511733 (1903, Utrechtse Waterleiding Maatschappij, 29 m, voet 10 m, drie geledingen, portaal met timpaan en pinakel, schacht met smalle vensters en boogfries, uitkraging tussen profielijzers, reservoir met smalle vensters en boogfries, cordonlijst met kantelen, hogere kanteel met windvaan, Intze I-reservoir 500 m³)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Baarn) (Sophialaan 31, 29 m, 500 m³, woning sinds 2014)",
+    "https://commons.wikimedia.org/wiki/File:Baarn_Watertoren_9170.JPG (recht op de ingang: geledingen, portaal, vensters, uitkraging, reservoir, kantelen)",
+    "PDOK BAG-pand 0308100000021663, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-baarn-1-1000.stl"
+  ]
+}
