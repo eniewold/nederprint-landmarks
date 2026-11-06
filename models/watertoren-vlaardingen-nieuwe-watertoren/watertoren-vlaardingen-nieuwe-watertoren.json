@@ -1,0 +1,51 @@
+{
+  "name": "Nieuwe watertoren Vlaardingen",
+  "file": "watertoren-vlaardingen-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83629.94,
+    436658.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0622100000050967"
+  ],
+  "description": "Ronde bakstenen watertoren met gesloten boventank, vensterband en lage dakopbouw.",
+  "realWorld": {
+    "groundNapM": 1.232,
+    "ahnTopNapM": 39.407,
+    "modelTopM": 38.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0622100000050967",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nieuwe_watertoren_(Vlaardingen)"
+  ],
+  "printFiles": [
+    "watertoren-vlaardingen-nieuwe-watertoren-1-1000.stl"
+  ]
+}
