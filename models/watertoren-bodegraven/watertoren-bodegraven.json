@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Bodegraven",
+  "file": "watertoren-bodegraven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    110766.51,
+    455691.93
+  ],
+  "xAxis": [
+    0.76604,
+    0.64279
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 43.315,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0497100000000004"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 4,25 m) op het maaiveld (NAP -0,25 m), X-as 40 graden linksom van RD-oost op een steunbeer. Bakstenen schacht op een onderbouw met acht betonnen steunberen tot 5,2 m en een plintband; taps tot 3,6 m straal op 21,6 m met een rondboogfries en een betonnen band; kraag van 45 graden onder een reservoir van 9 m doorsnede (24,1 tot 33 m) met acht lisenen en drie vensters per travee; plat dak op 33,55 m met een borstwering tot 34,45 m en acht penanten. Zendmast weggelaten. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1907,
+    "architect": "Visser & Smit (Hanab)",
+    "gemeentelijkMonument": "GM1901WN031",
+    "publishedHeightM": 34.15,
+    "reservoirM3": 200,
+    "ahnGroundNapM": -0.25,
+    "ahnDeckNapM": 33.3,
+    "ahnParapetNapM": 34,
+    "footprintRadiusM": 4.25,
+    "buttressTopM": 5.2,
+    "shaftRadiusFootM": 3.9,
+    "shaftRadiusTopM": 3.6,
+    "reservoirBottomM": 24.1,
+    "reservoirTopM": 33,
+    "reservoirDiameterM": 9,
+    "corniceDiameterM": 9.5,
+    "deckM": 33.55,
+    "parapetM": 34.45,
+    "topM": 34.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bodegraven) (1907, Visser & Smit Hanab, 34,15 m, 200 m³, nieuw reservoir 1954, restauratie 1995, zendmast)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Bodegraven) (Bodegraven, watertoren GM1901WN031 foto11 2017-07-09 09.26.jpg vanaf het noordoosten; Watertoren (Bodegraven).JPG vanaf de Oude Rijn; Watertoren, voormalige - Bodegraven - 20374386 - RCE.jpg; Overzicht - Bodegraven - 20373708 - RCE.jpg)",
+    "PDOK BAG-pand 0497100000000004, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-bodegraven-1-1000.stl"
+  ]
+}
