@@ -1,0 +1,55 @@
+{
+  "name": "Sint-Petrusbasiliek Oirschot",
+  "file": "sint-petrusbasiliek-oirschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    149440,
+    390505
+  ],
+  "xAxis": [
+    0.9,
+    0.435
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -10,
+      -11
+    ],
+    [
+      15,
+      -18
+    ],
+    [
+      40,
+      -20
+    ],
+    [
+      65,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0823100000000096"
+  ],
+  "description": "Kruisbasiliek met stompe westtoren, dakruiter, kooromgang en straalkapellen, opgebouwd uit dakvlakken en bouwdelen.",
+  "printFiles": [
+    "sint-petrusbasiliek-oirschot-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 89.75,
+    "widthM": 52.6,
+    "highestPointM": 62.8,
+    "groundNapM": 16.871,
+    "baseM": -0.5,
+    "towerTopM": 62.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0823100000000096",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31282",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petrusbasiliek_(Oirschot)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ]
+}
