@@ -1,0 +1,35 @@
+{
+  "name": "Watertoren Naaldwijk",
+  "file": "watertoren-naaldwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    74127.25,
+    446191.2
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1783100000002398"
+  ],
+  "description": "Cilindrische bakstenen watertoren met vier zware steunberen, verticale vensternissen en koperen koepel.",
+  "realWorld": {
+    "groundNapM": 0.549,
+    "ahnTopNapM": 41.782,
+    "modelHeightM": 41.2,
+    "publishedHeightM": 40.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1783100000002398",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516156",
+    "https://commons.wikimedia.org/wiki/File:Naaldwijk_watertoren.jpg"
+  ],
+  "printFiles": [
+    "watertoren-naaldwijk-1-1000.stl"
+  ]
+}
