@@ -1,0 +1,53 @@
+{
+  "name": "Grote Kerk Harderwijk",
+  "file": "grote-kerk-harderwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    170620,
+    484593
+  ],
+  "xAxis": [
+    0.9943,
+    -0.1066
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -20
+    ],
+    [
+      -25,
+      20
+    ],
+    [
+      35,
+      10
+    ],
+    [
+      35,
+      -16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0243100001325562"
+  ],
+  "description": "Grote Kerk Harderwijk: koor met kooromgang, dwarsschip en westelijk kerkfragment; dakvlakken en bouwdelen op basis van de 3D BAG en foto’s. Lokaal Z omhoog, voet -0,5 m; +X langs het koor oostwaarts.",
+  "printFiles": [
+    "grote-kerk-harderwijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 55.8,
+    "widthM": 52.8,
+    "highestPointM": 36.4,
+    "groundNapM": 2.371,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0243100001325562",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Onze-Lieve-Vrouwekerk_(Harderwijk)",
+    "https://www.vgkharderwijk.nl/de-kerk"
+  ]
+}
