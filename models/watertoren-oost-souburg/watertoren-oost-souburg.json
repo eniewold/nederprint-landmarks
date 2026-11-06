@@ -1,0 +1,83 @@
+{
+  "name": "Watertoren Oost-Souburg",
+  "file": "watertoren-oost-souburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    30678.03,
+    386900.38
+  ],
+  "xAxis": [
+    0.55904,
+    0.82909
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 44.205,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0718100000008321"
+  ],
+  "description": "Oorsprong op het hart van de BAG-rechthoek (11,40 x 11,62 m) op het maaiveld (NAP circa -0,1 m), +X naar de noordoostgevel (RD-hoek 56 graden), ingang op -Y (zuidoost). Vierkante bakstenen schacht tot de betonband op 20,85 m, met per gevel een overhoeks hoog venster, een getrapte lateiplaat, een liseen tot boven de dakrand en korte vensters onder de band; verjongde bovenbouw met afgeschuinde hoeken en hoge smalle vensters tot de dakrand op 29,85 m (AHN); glazen paviljoen met terras en een kop over de oosthoek tot 33,78 m (AHN). Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1939,
+    "architect": "ir. J.H.J. Kording",
+    "rijksmonument": 508771,
+    "publishedHeightM": 35,
+    "reservoirM3": 450,
+    "groundNapM": -0.08,
+    "ahnRoofEdgeNapM": 29.77,
+    "ahnPavilionNapM": 33.7,
+    "lowerBodyM": [
+      11.4,
+      11.62
+    ],
+    "upperBodyM": [
+      10.7,
+      10.92
+    ],
+    "upperChamferM": 1.5,
+    "bandM": [
+      20.1,
+      20.85
+    ],
+    "roofBandM": [
+      29.25,
+      29.85
+    ],
+    "liseneWidthM": 1.76,
+    "liseneTopM": 30.15,
+    "tallWindowM": [
+      3.7,
+      17.1
+    ],
+    "pavilionTopM": 33.78,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Oost-Souburg) (1939, J.H.J. Kording, 35 m, 450 m³, expositieruimte)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508771 (vierkante plattegrond, 35 m, betonskelet met bakstenen mantel; ingangspartij met luifel op het zuidoosten, overhoeks hoog stalen venster, liseen tot de dakrand met smalle hoge vensters; bovendeel verjongd met afgeschuinde hoeken tussen twee betonbanden; plat dak; rond vlakbodemreservoir)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Oost-Souburg) (Oost-Souburg-Vlissingsestraat 239-ro3253.jpg, Oost-Souburg-Vlissingsestraat 239-detail-ro3251.jpg, Overzicht watertoren - Oost-Souburg - 20342496 - RCE.jpg)",
+    "PDOK BAG-pand 0718100000008321, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-oost-souburg-1-1000.stl"
+  ]
+}
