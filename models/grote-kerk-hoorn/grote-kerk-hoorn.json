@@ -1,0 +1,34 @@
+{
+  "name": "Grote Kerk Hoorn",
+  "file": "grote-kerk-hoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    132880,
+    517045.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0405100000552184"
+  ],
+  "description": "Neorenaissancistische kruiskerk met vierkante toren, achtzijdige lantaarn en naaldspits.",
+  "realWorld": {
+    "groundNapM": 0.784,
+    "ahnTopNapM": 62.178,
+    "modelHeightM": 61.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0405100000552184",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/333542",
+    "https://commons.wikimedia.org/wiki/File:Hoorn_027.JPG"
+  ],
+  "printFiles": [
+    "grote-kerk-hoorn-1-1000.stl"
+  ]
+}
