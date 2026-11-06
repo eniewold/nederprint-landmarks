@@ -1,0 +1,79 @@
+{
+  "name": "Watertoren Wateringsevest",
+  "file": "watertoren-delft-wateringsevest.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    83877.12,
+    448109.35
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 45.59,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000024873"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 5,63 m) op het maaiveld (NAP +2,15 m), X-as naar RD-oost. Hardstenen plint; onderste geleding (straal 4,5 m) met deur aan de zuidwestkant, stoep en drie boogvensters tot de lijst op 5,45 m; licht verjongende schacht (straal 4,08 tot 3,72 m) met vier boogvensters en acht lancetvensters tot de band op 14,85 m; schuine overkraging met 24 velden tot 17,4 m; reservoirmantel (straal 5,36 m) met ijzeren band, lijst, zestien arcadevelden met vensters, kroonlijst op 24,55 m, hoge kroonlijst met zestien ronde openingen; plat dak op 26,1 m met 16 kantelen tot 26,95 m en een traptorentje met kantelen tot 29,95 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1895,
+    "architect": "M.A.C. Hartman (gemeentearchitect Delft)",
+    "rijksmonument": 525246,
+    "publishedHeightM": 29,
+    "reservoirM3": 600,
+    "ahnGroundNapM": 2.15,
+    "ahnRoofNapM": 28.25,
+    "ahnMerlonNapM": 29.1,
+    "ahnTurretNapM": 32.2,
+    "plinthRadiusM": 4.65,
+    "lowerStageM": [
+      0.9,
+      5.45
+    ],
+    "shaftRadiusFootM": 4.08,
+    "shaftRadiusTopM": 3.72,
+    "corbelM": [
+      14.85,
+      17.4
+    ],
+    "drumRadiusM": 5.36,
+    "corniceRadiusM": 5.65,
+    "roofM": 26.1,
+    "merlons": 16,
+    "merlonsReal": 32,
+    "merlonTopM": 26.95,
+    "topM": 29.95,
+    "entranceDegrees": 225,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Delft_Wateringsevest) (1895, M.A.C. Hartman, neorenaissance, 29 m, reservoir 600 m³; kunstcentrum RADIUS in pompgebouw en bassin sinds 2022)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/525246 (ronde toren van 29 m op hardstenen plint, twee geledingen gescheiden door een hardstenen lijst, deur en drie rondboogvensters, vier rondboogvensters en acht lancetvensters, overkraging van schuine gewelfjes met ijzeren liggers, zestien rondboogvensters, hoge kroonlijst met zestien ronde openingen, 32 kantelen, plat dak met gemetseld traptorentje met kantelborstwering)",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_in_Delft (Watertoren, exterieur - Delft - 20050547 - RCE.jpg, Delft, de watertoren aan het Kalverbos RM525246 foto6 2016-03-13 11.48.jpg, Water tower Delft 2020.jpg, Delft - Watertoren (2010).jpg, 525246 Delft Watertoren.jpg, Watertoren, Delft.jpg)",
+    "PDOK BAG-pand 0503100000024873, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-delft-wateringsevest-1-1000.stl"
+  ]
+}
