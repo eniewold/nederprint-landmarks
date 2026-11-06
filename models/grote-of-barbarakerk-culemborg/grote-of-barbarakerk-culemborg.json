@@ -1,0 +1,55 @@
+{
+  "name": "Grote of Barbarakerk Culemborg",
+  "file": "grote-of-barbarakerk-culemborg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143933,
+    441024
+  ],
+  "xAxis": [
+    0.90334,
+    0.42892
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -28,
+      15
+    ],
+    [
+      0,
+      27
+    ],
+    [
+      20,
+      12
+    ],
+    [
+      28,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0216100000002246"
+  ],
+  "description": "Grote of Barbarakerk met stompe westtoren, schip, zijbeuken, dwarsschip, kooromgang, sacristie en traptoren. Oorsprong RD (143933, 441024), lokale X 25,4 graden noord van oost langs het schip. Vervangt BAG-pand 0216100000002246.",
+  "printFiles": [
+    "grote-of-barbarakerk-culemborg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 60.8,
+    "widthM": 49.6,
+    "highestPointM": 35.5,
+    "groundNapM": 4.95,
+    "naveRidgeM": 22.4,
+    "towerRoofM": 35.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0216100000002246",
+    "PDOK AHN DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Barbarakerk_(Culemborg)",
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Barbarakerk_(Culemborg)"
+  ]
+}
