@@ -1,0 +1,59 @@
+{
+  "name": "Grote of Sint-Maartenskerk Zaltbommel",
+  "file": "grote-of-sint-maartenskerk-zaltbommel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    145711,
+    424837
+  ],
+  "xAxis": [
+    0.920505,
+    0.390731
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -34,
+      -14
+    ],
+    [
+      -15,
+      -18
+    ],
+    [
+      4,
+      -22
+    ],
+    [
+      25,
+      -17
+    ],
+    [
+      42,
+      -6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0297100000003841"
+  ],
+  "description": "Kerk en stompe westtoren uit bouwdelen en dakvlakken, met koorsluiting, kapellen, steunberen en spitsboognissen. Oorsprong RD (145711, 424837), +X langs de kerk in richting 23 graden. Onderzijde op -0,5 m.",
+  "printFiles": [
+    "grote-of-sint-maartenskerk-zaltbommel-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 78,
+    "widthM": 41.7,
+    "highestPointM": 65.9,
+    "naveRidgeM": 30.3,
+    "towerTopM": 66.6,
+    "groundNapM": 5.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0297100000003841",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_Sint_Maartenskerk_Zaltbommel",
+    "https://www.griffie.media/uploads/2FCA5C6A-8384-B727-6B20-0D3165FB946D/documenten/21861/Bouwhistorisch%20onderzoek%20St.%20Maartenskerk.pdf"
+  ]
+}
