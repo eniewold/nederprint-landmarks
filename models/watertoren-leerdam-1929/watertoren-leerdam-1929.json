@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Leerdam (1929)",
+  "file": "watertoren-leerdam-1929.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135152.59,
+    434026.52
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      8.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 44.616,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0545100000338731"
+  ],
+  "description": "Oorsprong op het hart van de BAG-voetafdruk (straal 5,49 m) op het maaiveld (NAP +1,1 m), X-as = RD-oost, tienhoeken met hoeken op k maal 36 graden. Tienkante bakstenen toren met lisenen op de hoeken: plint met uitgezette voeten, vensterstrook onder een latei, schacht (hoekstraal 5,05 m) met verdiepte velden en vensters, band op consoles van 27,3 tot 29,0 m, reservoirverdieping (hoekstraal 5,55 m) met verdiepte velden tot het platte dak op 40,73 m, tienkante lantaarn met vensters tot 46,4 m, kap van helling 1,6 tot 49,2 m en een getrapte piek tot 51,6 m; trappentoren met dekplaat tot 12,14 m aan de noordnoordwestzijde, portaal tot 3,18 m aan de zuidzuidoostzijde en een uitbouwtje op 33 m. Maten uit BAG, AHN, 3D BAG en foto's.",
+  "realWorld": {
+    "built": 1929,
+    "builder": "Visser & Smit",
+    "publishedHeightM": 50.25,
+    "reservoirM3": 500,
+    "outOfUse": 2009,
+    "ahnGroundNapM": 1.1,
+    "ahnRoofNapM": 41.83,
+    "lanternRimNapM": 47.55,
+    "ahnTopNapM": 52.71,
+    "bagRadiusM": 5.49,
+    "shaftCornerRadiusM": 5.05,
+    "upperCornerRadiusM": 5.55,
+    "lanternCornerRadiusM": 2.9,
+    "bandM": [
+      27.3,
+      29
+    ],
+    "roofM": 40.73,
+    "lanternM": 46.4,
+    "capM": 49.2,
+    "topM": 51.6,
+    "stairTowerM": 12.14,
+    "porchM": 3.18,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Leerdam_1929) (1929, Visser & Smit, 50,25 m, 500 m³, buiten gebruik sinds 2009)",
+    "https://commons.wikimedia.org/wiki/File:Leerdam_-_Watertoren_bouwjaar_1929_met_huizen.jpg, File:Leerdam_-_Watertoren_bouwjaar_1929.jpg, File:Leerdam,_watertoren_foto3_2010-06-27_10.42.JPG, File:Exterieur_OVERZICHT_-_Leerdam_-_20300699_-_RCE.jpg, File:Watertoren_Leerdam_De_Landerije_Makelaars.jpg",
+    "PDOK BAG-pand 0545100000338731, 3D BAG (LoD2.2), AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-leerdam-1929-1-1000.stl"
+  ]
+}
