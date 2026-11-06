@@ -1,0 +1,48 @@
+{
+  "name": "Watertoren De Esch Rotterdam",
+  "file": "watertoren-rotterdam-de-esch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95327.85,
+    436345.06
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      13
+    ],
+    [
+      -13,
+      0
+    ],
+    [
+      0,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000758803"
+  ],
+  "description": "Ronde watertoren met vensternissen, reservoir, kegelkap en lantaarn. Hoogte van slanke top naar literatuur geschat.",
+  "realWorld": {
+    "heightM": 47.3,
+    "groundNapM": 2.593,
+    "diameterM": 20.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000758803",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32914",
+    "https://mylittledutchblog.com/2023/10/05/een-oude-watertoren-en-een-interessante-buurt/"
+  ],
+  "printFiles": [
+    "watertoren-rotterdam-de-esch-1-1000.stl"
+  ]
+}
