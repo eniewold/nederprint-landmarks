@@ -1,0 +1,42 @@
+{
+  "name": "Grote of Pancratiuskerk",
+  "file": "grote-kerk-emmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    256678.5,
+    534157
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundHeight": 23.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000202332"
+  ],
+  "description": "Oorsprong op RD (256678,5, 534157), +X naar het oosten langs de kerk-as en +Y naar het noorden. Het model bevat de kruiskerk uit 1856 met drie hipped roof volumes en de westtoren: veldstenen voet, gemetselde geledingen, een vereenvoudigde galerij, octagonale klokverdieping en ingezwenkte achtkantige spits. De westingang is als verhoogd rondboogportaal op de torengevel weergegeven voor steunloos printen op 1:1000. Hoogten afgeleid uit AHN-DSM 0,5 m en maaiveld NAP +23,1 m; daknok, vensters, portaal en torenprofielen deels geschat. Vervangt BAG-pand 0114100000202332.",
+  "printFiles": [
+    "grote-kerk-emmen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.2,
+    "widthM": 31,
+    "groundNapM": 23.1,
+    "naveRidgeNapM": 39,
+    "transeptRidgeNapM": 38.9,
+    "choirRidgeNapM": 38.4,
+    "towerTopNapM": 57.2,
+    "highestPointM": 34.1
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510954",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14958",
+    "https://www.openstreetmap.org/way/273317988",
+    "PDOK BAG pand 0114100000202332 (kerk en toren), EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS (26-11-2026): gebouw- en torenhoogten; PDOK luchtfoto (Actueel_orthoHR): grondplan",
+    "Wikimedia Commons: Grote of Pancratiuskerk, Emmen (RCE- en overzichtsfoto's)"
+  ]
+}
