@@ -1,0 +1,75 @@
+{
+  "name": "Janninktoren Enschede",
+  "file": "watertoren-enschede-janninktoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    257461.04,
+    470578.07
+  ],
+  "xAxis": [
+    0.87343,
+    0.48695
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -3,
+      7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "groundHeight": 80.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0153100000257537"
+  ],
+  "description": "Oorsprong op het hart van de watertoren op het maaiveld aan de straat (NAP +36,65 m), +X langs de voorgevel van de spinnerij (RD-richting 29,14 graden), +Y naar de Haaksbergerstraat (noordwest). Bakstenen toren van 8,2 bij 10,7 m met hoekpenanten, lisenen, verdiepte vakken, vier natuurstenen banden, vensters onder boogjes, twee deuren aan de straat en in de brede zijgevels grote rondbogen boven paren vensters; kroonlijst tot 22,3 m, hoekpinakels, vier topgevels met een rond venster of uurwerk tot 26,0 m (pinakel 27,0) en een steil mansardedak met een plat dak op 28,75 m. De toren hoort bij BAG-pand 0153100000257537 (het hele fabrieksgebouw); dat pand wordt vervangen en building:spinnerij-jannink is de 3D BAG-reconstructie (CC BY 4.0) van de rest ervan, zonder de toren.",
+  "realWorld": {
+    "built": 1900,
+    "architect": "H. Reijgers",
+    "purpose": "bluswater voor de sprinklerinstallatie van de spinnerij Gebr. Jannink & Zonen; ook trappenhuis",
+    "monument": 15299,
+    "ahnGroundNapM": 36.65,
+    "ahnTopNapM": 65.4,
+    "bag3dTopNapM": 65.4,
+    "towerPlanM": [
+      8.2,
+      10.66
+    ],
+    "bandsM": [
+      4.1,
+      8.2,
+      12.3,
+      16.3
+    ],
+    "corniceM": [
+      21.8,
+      22.3
+    ],
+    "gableApexM": 26,
+    "topM": 28.75,
+    "photoScalePxPerM": 45,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Enschede_Janninktoren) (1900, H. Reijgers, sprinklerinstallatie van de spinnerij Jannink, rijksmonument)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15299 (fabriekscomplex Jannink, Haaksbergerstraat 147)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_met_trappenhuis_annex_sprinklertoren_-_Enschede_-_20351267_-_RCE.jpg (vanaf de straat in het zuidwesten: geledingen, banden, vensters, rondbogen, deuren, schaal circa 45 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorgevel_met_trappenhuis_annex_sprinklertoren_-_Enschede_-_20351730_-_RCE.jpg (toren in de voorgevel)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_jannink_1900.jpg (topgevels, schouders, rozetvensters, pinakels, mansardedak met hek)",
+    "https://commons.wikimedia.org/wiki/File:RM15299_-_Enschede_-_Haaksbergerstraat_147_(1).jpg en File:Aerial_-_Fabriekscomplex_Jannink_(6929512021).jpg (uurwerk, toren in het complex)",
+    "PDOK BAG-pand 0153100000257537, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0153100000257537, LoD2.2-dakvlakken, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-enschede-janninktoren-1-1000.stl"
+  ]
+}
