@@ -1,0 +1,52 @@
+{
+  "name": "Watertoren Noordwijk",
+  "file": "watertoren-noordwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    90086.6,
+    473093.8
+  ],
+  "xAxis": [
+    0.8660254037844387,
+    -0.49999999999999994
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0575100000024061"
+  ],
+  "description": "Achthoekige schacht, koepeldak, uitkijkgeleding en aangebouwde traptoren; maaiveld op de duinvoet van het gebouw.",
+  "realWorld": {
+    "groundNapM": 19.007,
+    "ahnTopNapM": 42.7536,
+    "modelTopM": 23.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0575100000024061",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511994",
+    "https://commons.wikimedia.org/wiki/Category:Watertower_Noordwijk"
+  ],
+  "printFiles": [
+    "watertoren-noordwijk-1-1000.stl"
+  ]
+}
