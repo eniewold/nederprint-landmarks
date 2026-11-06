@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Scherpenisse",
+  "file": "watertoren-scherpenisse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    66490.16,
+    396239.29
+  ],
+  "xAxis": [
+    0.99813,
+    0.06105
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -9.5,
+      0
+    ],
+    [
+      0,
+      -8.5
+    ]
+  ],
+  "groundHeight": 44.209,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000106925"
+  ],
+  "description": "Oorsprong op het hart van het achtkante BAG-pand op het maaiveld (NAP circa 0 m), +X naar RD-richting 3,5 graden (een gevel), ingang in de zuidgevel (-Y). Achtkante onderbouw van 11,3 m met bordes, ingang en vensters in een omlijsting met segmentfronton, geprofileerde lijst op 7,0 m; taps toelopende achtkante schacht in vier geledingen met verdiepte velden tussen hoekkolommen en vensters; uitkraging naar het ronde reservoir met band en kroonlijst van 12,2 m tot 42,9 m; kegeldak van 58 graden met vier dakkapellen en een kapje tot 52,35 m. Maten uit BAG, AHN, 3D BAG en foto's.",
+  "realWorld": {
+    "built": "1922-1923",
+    "architect": "N.V. MABEG (Mobeg), Utrecht",
+    "contractor": "Z.N. Beton Mij., 's-Hertogenbosch",
+    "publishedHeightM": 52.4,
+    "reservoirM3": 350,
+    "monument": 496127,
+    "groundNapM": 0.01,
+    "ahnCorniceNapM": 42.9,
+    "ahnRoofApexNapM": 50.55,
+    "ahnTopNapM": 52.44,
+    "plinthAcrossFlatsM": 11.3,
+    "shaftAcrossFlatsM": [
+      10.8,
+      9.1
+    ],
+    "reservoirDiameterM": [
+      10.8,
+      10.6
+    ],
+    "corniceDiameterM": 12.2,
+    "corniceM": 42.9,
+    "roofPitchDeg": 58,
+    "topM": 52.35,
+    "photoScaleMPerPx": 0.035,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/496127 (1922-1923, N.V. Mobeg Utrecht, beton, achtkant op acht kolommen met verdiepte velden, drie banden, geprofileerde lijst, ingang en vensters met segmentfronton, reservoir 350 m³ met overstekende kroonlijst, kegeldak met dakkapellen)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Scherpenisse) (1922, MABEG, 52,4 m, 350 m³, woonhuis sinds 1996)",
+    "https://commons.wikimedia.org/wiki/File:Karakteristieke_landschappen,_watertorens,_Bestanddeelnr_164-0197.jpg (Nationaal Archief, van opzij: geledingen, velden, reservoir, dak met dakkapellen)",
+    "https://commons.wikimedia.org/wiki/File:Scherpenisse_Watertoren_6921.JPG (2008, voor de ingang: bordes, omlijsting, lijst, uitkraging, kroonlijst, kapje)",
+    "https://commons.wikimedia.org/wiki/File:Scherpenisse_-_molen_De_Korenbloem_kaalgezet.jpg (silhouet met de spits van verre)",
+    "PDOK BAG-pand 0716100000106925, 3D BAG (LoD2.2, AHN5), AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-scherpenisse-1-1000.stl"
+  ]
+}
