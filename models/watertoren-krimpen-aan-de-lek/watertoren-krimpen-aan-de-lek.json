@@ -1,0 +1,87 @@
+{
+  "name": "Watertoren Krimpen aan de Lek",
+  "file": "watertoren-krimpen-aan-de-lek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103622.71,
+    434374.19
+  ],
+  "xAxis": [
+    0.97237,
+    0.23345
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5.54,
+      2.3
+    ],
+    [
+      2.3,
+      5.54
+    ],
+    [
+      -2.3,
+      5.54
+    ],
+    [
+      -5.54,
+      2.3
+    ],
+    [
+      -5.54,
+      -2.3
+    ],
+    [
+      -2.3,
+      -5.54
+    ],
+    [
+      2.3,
+      -5.54
+    ],
+    [
+      5.54,
+      -2.3
+    ]
+  ],
+  "groundHeight": 46.418,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0643100002039539"
+  ],
+  "description": "Oorsprong op het hart van de ronde toren (BAG-cirkel 9,36 m) op het laagste maaiveld rond de voet (NAP circa +2,77 m, rivierzijde; aan de dijkzijde ligt het terrein tot 0,8 m hoger), +X op RD 13,5 graden, zodat de acht steunberen op veelvouden van 45 graden staan. Onderbouw met trasraam, acht steunberen, de ingang aan de noordkant en een gepleisterde sierband op 12,5 m; gordel, conische schacht met twee sierbanden en staande rondboogvensters; rondboogfries, witte ringbodem en reservoir van 8,3 m met twaalf lange vensters; kraag, opengewerkte borstwering met twaalf kantelen tot 47,7 m rond het platte dak op 45,9 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "built": 1909,
+    "architect": "Visser & Smit",
+    "publishedHeightM": 47.2,
+    "reservoirM3": 250,
+    "rijksmonument": 512470,
+    "groundNapM": 2.77,
+    "ahnRoofNapM": 48.7,
+    "ahnParapetNapM": 50.45,
+    "baseDiameterM": 9.36,
+    "buttressDiameterM": 10.94,
+    "shaftDiameterM": [
+      7.7,
+      7.04
+    ],
+    "drumDiameterM": 8.3,
+    "roofM": 45.93,
+    "topM": 47.68,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Krimpen_aan_de_Lek) (1909, Visser & Smit, 47,2 m, 250 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512470 (steunberen, trasraam, entree noordzijde, conische schacht met sierbanden en rondboogvensters, rondboogfries, reservoirvensters, borstwering met kantelen, plat dak)",
+    "https://commons.wikimedia.org/wiki/File:Krimpen_aan_de_Lek_-_Watertoren_vanaf_NW.jpg (telefoto van het reservoir, de borstwering en de schacht)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_WATERLEIDINGBEDRIJF_MET_WATERTOREN_-_Krimpen_aan_de_Lek_-_20302607_-_RCE.jpg (RCE, hele toren: geledingen)",
+    "https://commons.wikimedia.org/wiki/File:Krimpen_ad_Lek,_watertoren_foto2_2010-07-04_11.27.JPG (2010, onderbouw met steunberen, gordel en sierbanden)",
+    "https://commons.wikimedia.org/wiki/File:Kinderdijk_Watertoren_(Krimpen_aan_de_Lek).jpg en File:Watertoren_(Krimpen_aan_de_Lek).JPG (vanaf de rivier)",
+    "PDOK BAG-pand 0643100002039539, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-krimpen-aan-de-lek-1-1000.stl"
+  ]
+}
