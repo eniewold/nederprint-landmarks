@@ -1,0 +1,56 @@
+{
+  "name": "Grote of Sint Gertrudiskerk Hindeloopen",
+  "file": "grote-of-sint-gertrudiskerk-hindeloopen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    155770,
+    550670.7
+  ],
+  "xAxis": [
+    0.99998,
+    0.006
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -9
+    ],
+    [
+      -5,
+      -8
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      19,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0104100000129880"
+  ],
+  "description": "Kerk van Hindeloopen: eenbeukig schip met vijfzijdige sluiting en leien schilddak, steunberen, blinde vensternissen en westtoren met achtkante houten bekroning. RD oorsprong op 155770,550670.7; +X langs de nok oostwaarts, Z omhoog, onderkant 0,4 m onder maaiveld. De open galerijen zijn omwille van de printbaarheid als ondiepe nissen vereenvoudigd.",
+  "printFiles": [
+    "grote-of-sint-gertrudiskerk-hindeloopen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 34.91,
+    "widthM": 10.73,
+    "highestPointM": 37.7,
+    "naveRidgeM": 14.1,
+    "groundNapM": 1.9,
+    "towerTopM": 37.7
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/22171",
+    "https://www.stichtingmonumentenswf.nl/monumenten/Hervormde%20kerk%20Hindelopen/Westertoren%20Hindeloopen",
+    "https://commons.wikimedia.org/wiki/File:20080504_Church_Hindeloopen_NL.jpg",
+    "PDOK AHN DSM 0,5 m via WCS, maaiveld en nok",
+    "3D BAG pand 0104100000129880, plattegrond"
+  ]
+}
