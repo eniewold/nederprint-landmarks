@@ -1,0 +1,78 @@
+{
+  "name": "Watertoren Gorinchem",
+  "file": "watertoren-gorinchem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    127003.65,
+    426954.38
+  ],
+  "xAxis": [
+    0.96126,
+    -0.27564
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      -10
+    ]
+  ],
+  "groundHeight": 46.691,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0512100000038785"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 5,39 m) op het maaiveld (NAP +3,7 m), X-as 16 graden rechtsom van RD-oost, voorgevel van het entreegebouw naar -Y. Ronde bakstenen onderbouw met plint, spitsboogvensters en band tot 6,85 m; verjongende schacht met vier verdiepingen vensters; spitsboogfries op een kraag van 50 graden van 16,55 tot 19,65 m; achtkante ommanteling met vensterstroken en blinde nissen; overstekende goot op 25,3 m (12,5 m over de vlakken); achtkant tentdak van 45 graden met vier dakkapellen tot 30,9 m en een makelaar tot 31,6 m; entreegebouw met trapgevel, spitsboogdeur en schoorsteen aan de zuidzijde en een plat aanbouwtje uit 1985 aan de noordzijde. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1886,
+    "architect": "Jan Schotel",
+    "publishedHeightM": 31,
+    "reservoirM3": 300,
+    "convertedToHomes": 1985,
+    "ahnGroundNapM": 3.7,
+    "ahnApexNapM": 34.59,
+    "ahnFinialNapM": 35.32,
+    "ahnRoofSlope": 1,
+    "ahnEaveNapM": 29,
+    "bagRadiusM": 5.39,
+    "bandM": [
+      6.2,
+      6.85
+    ],
+    "friezeM": [
+      16.55,
+      19.65
+    ],
+    "casingApothemM": 5.45,
+    "eaveApothemM": 6.25,
+    "gutterM": 25.3,
+    "apexM": 30.9,
+    "topM": 31.6,
+    "annexEaveM": 4,
+    "annexRidgeM": 7.8,
+    "annexGableTopM": 8.3,
+    "chimneyM": 9.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Gorinchem) (1886, Jan Schotel, 31,00 m, 300 m³, maximale breedte 10 m, sinds 1985 woningen)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Gorinchem) (Gorinchem Watertoren 8497.JPG, 2006; Overzicht - Gorinchem - 20080593 - RCE.jpg; Exterieur NA INBOUW APPARTEMENTEN - Gorinchem - 20316648 - RCE.jpg; Exterieur NA UITBOUW WOONEENHEDEN - Gorinchem - 20316645 - RCE.jpg; Watertoren Gorinchem.jpg, 1901)",
+    "PDOK BAG-pand 0512100000038785, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-gorinchem-1-1000.stl"
+  ]
+}
