@@ -1,0 +1,35 @@
+{
+  "name": "Watertoren Sassenheim",
+  "file": "watertoren-sassenheim.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95261.64,
+    470115.4
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1525100000062491"
+  ],
+  "description": "Achthoekige betonnen watertoren met acht hoekribben en verbrede reservoirkop.",
+  "realWorld": {
+    "groundNapM": -0.312,
+    "ahnRoofNapM": 33.895,
+    "modelHeightM": 34,
+    "publishedHeightM": 35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1525100000062491",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://indeweer.blogspot.com/2023/09/watertoren-147-sassenheim.html",
+    "https://commons.wikimedia.org/wiki/File:Sassemheim_Watertoren.jpg"
+  ],
+  "printFiles": [
+    "watertoren-sassenheim-1-1000.stl"
+  ]
+}
