@@ -1,0 +1,82 @@
+{
+  "name": "Watertoren Sint Jansklooster",
+  "file": "watertoren-sint-jansklooster.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    197294.38,
+    521134.22
+  ],
+  "xAxis": [
+    0.89493,
+    0.4462
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 47.08,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000028702"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op het maaiveld (NAP +4,9 m), +X naar RD-richting 26,5 graden (oost-noordoost): de voorgevel met de keperboogportiek. Vierkante schacht van 11,4 tot 11,1 m die verjongt tot 40 m, met in elke hoek een sleuf van 2,35 m met een penant en bovenin een overhoeks blok (31,1 tot 37,6 m) onder een recessie; smalle vensters; staande band van 39,5 (hoeken) of 40,0 m (gevels) tot 41,75 m met goten en vier uitkijkramen; achtkante tentkap tot 45,55 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1931-1932",
+    "builder": "Waterleiding Maatschappij Overijssel (W.M.O.)",
+    "publishedHeightM": 45.5,
+    "wikipediaHeightM": 45.7,
+    "reservoirM3": 400,
+    "monument": 507463,
+    "ahnGroundNapM": 4.9,
+    "ahnEavesNapM": 46.6,
+    "ahnApexNapM": 50.45,
+    "shaftWidthM": [
+      11.36,
+      11.1
+    ],
+    "cornerSlotM": [
+      2.4299999999999997,
+      2.3
+    ],
+    "pierM": 0.9,
+    "cornerBlockM": [
+      31.1,
+      37.6
+    ],
+    "bandM": [
+      39.5,
+      40,
+      41.75
+    ],
+    "topM": 45.55,
+    "photoScalePxPerM": 38,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507463 (1931, W.M.O., 45,5 m, 400 m³ holbodemreservoir, glijbekisting, verjongend, uit- en inspringende hoeken met bovenin overhoekse invullingen, smalle vensters, octogonaal gebroken tentdak met geglazuurde pannen en verspringende randen, keperboogportiek, linker gevelpartij vernieuwd)",
+    "https://nl.wikipedia.org/wiki/Watertoren_(Sint_Jansklooster) (1931-1932, 45,7 m, 400 m³, uitkijktoren met vier ramen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Sint_Jansklooste.jpg (vanuit het zuid-zuidwesten: sleuf, penant, hoekblok, band en tentkap; schaal 38 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Sint_Jansklooster,_de_watertoren_RM507463_foto4_2013-04-28_10.44.jpg (vanuit het oosten: hoekblok, uitkijkraam, vensters, portiek)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_Barsbeek_6,_Sint_Jansklooster.JPG en File:20131030_Belterwijde_met_watertoren_Sint_Jansklooster.jpg (silhouet, uitkijkramen)",
+    "PDOK BAG-pand 1708100000028702, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-sint-jansklooster-1-1000.stl"
+  ]
+}
