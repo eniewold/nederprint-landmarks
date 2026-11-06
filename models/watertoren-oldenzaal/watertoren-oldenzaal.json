@@ -1,0 +1,71 @@
+{
+  "name": "Watertoren Oldenzaal",
+  "file": "watertoren-oldenzaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    260344.31,
+    481191.385
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.5,
+      0
+    ],
+    [
+      -6.5,
+      0
+    ],
+    [
+      0,
+      6.5
+    ],
+    [
+      0,
+      -6.5
+    ]
+  ],
+  "groundHeight": 93.54,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0173100000132934"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP +50,2 m), lokaal stelsel = RD (+X oost, +Y noord). Gebatterde voet met plint, deur (zuid) en rondboogvenster; natuurstenen band met profiellijst; taps toelopende schacht met een kolom trapvensters (noord) en paren rondboogvensters; natuurstenen ring, uitlopende kraag met twaalf ribben en een overstekende rand van 10 m; kop van 8,9 m met witte banden, twaalf hoge vensters, boogfries met hangende consoles, dakterras op 31,5 m en borstwering met twaalf kantelen tot 32,75 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1905,
+    "headRebuilt": 2006,
+    "architect": "J.P. Hazeu",
+    "publishedHeightM": 31.7,
+    "reservoirM3": 250,
+    "ahnGroundNapM": 50.2,
+    "ahnRoofNapM": 81.7,
+    "ahnHatchNapM": 82.4,
+    "footDiameterM": 8.66,
+    "shaftDiameterM": [
+      7.44,
+      7.28
+    ],
+    "rimDiameterM": 10,
+    "headDiameterM": 8.9,
+    "roofM": 31.5,
+    "parapetM": 31.85,
+    "topM": 32.75,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Oldenzaal) (1905, J.P. Hazeu, 31,7 m, 250 m³, kop in 2003 verwijderd en in 2006 herbouwd als woning)",
+    "https://commons.wikimedia.org/wiki/File:Oldenzaal,_de_watertoren_foto2_2013-04-22_18.16.jpg (vanuit het noordwesten: geledingen, breedteverhoudingen)",
+    "https://commons.wikimedia.org/wiki/File:Oldenzaal,_de_watertoren_IMG_7374_2020-08-10_17.41.jpg (GPS-standpunt: richting van trapkolom, vensterparen, vensters en kantelen)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_(water_tower)_-_panoramio.jpg en File:2006-07-15_14.53_Oldenzaal,toren.JPG (deur, tweede vensterpaar, kop)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Oldenzaal_-_20297190_-_RCE.jpg (1987, oude kop zonder kantelen)",
+    "PDOK BAG-pand 0173100000132934, AHN DSM/DTM 0,5 m, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-oldenzaal-1-1000.stl"
+  ]
+}
