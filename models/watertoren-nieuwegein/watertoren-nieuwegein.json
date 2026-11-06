@@ -1,0 +1,83 @@
+{
+  "name": "Watertoren Nieuwegein",
+  "file": "watertoren-nieuwegein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133436.5,
+    447560.4
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -3,
+      -8
+    ],
+    [
+      9,
+      3
+    ]
+  ],
+  "groundHeight": 44.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0356100000074678"
+  ],
+  "description": "Oorsprong op het hart van de achthoekige onderbouw uit het BAG-pand op het maaiveld (NAP +1,35 m), assen gelijk aan RD. Achthoekige onderbouw (hoekpunten op 6,33 m) met verdiepte velden, overstekend boeiboord op 3,25 m en leien dak tot de schacht; verjongende ronde schacht met 24 ribben en een band op 15,7 m; hals met twaalf consoles en vier paren rondboogvensters; reservoir (straal 4,95 m) op een schuine bodem met onderrand, 24 ribben, twee vensters, band, fries en kroonlijst tot het platte dak op 25,9 m; lage aanbouw, gang en vierkant bijgebouw uit hetzelfde pand. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "built": 1911,
+    "architect": "Roelof Kuipers",
+    "rijksmonument": 526781,
+    "publishedHeightM": 28.5,
+    "reservoirM3": 150,
+    "ahnGroundNapM": 1.35,
+    "ahnRoofNapM": 27.25,
+    "ahnBaseEaveNapM": 4.6,
+    "ahnBlockNapM": 5.87,
+    "octagonVertexRadiusM": 6.33,
+    "shaftRadiusM": [
+      3.68,
+      3.38
+    ],
+    "reservoirRadiusM": 4.95,
+    "bandM": [
+      15.2,
+      15.7
+    ],
+    "ledgeM": [
+      19.03,
+      19.55
+    ],
+    "reservoirBandM": [
+      24.6,
+      24.85
+    ],
+    "roofM": 25.9,
+    "annexM": 2.15,
+    "corridorM": 2.75,
+    "blockM": 4.55,
+    "ribs": 24,
+    "consoles": 12,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Nieuwegein) (1911, Roelof Kuipers, 28,5 m, 150 m³, Hooglandse Jaagpad, rijksmonument 526781)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Nieuwegein_in_2020.jpg (2020, vanuit het zuidwesten: onderbouw, schacht, consoles, reservoir, vensters)",
+    "PDOK BAG-pand 0356100000074678, AHN DSM/DTM 0,5 m, 3D BAG en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-nieuwegein-1-1000.stl"
+  ]
+}
