@@ -1,0 +1,60 @@
+{
+  "name": "Sint-Antoniuskathedraal Breda",
+  "file": "sint-antoniuskathedraal-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    112730.75,
+    400032.25
+  ],
+  "xAxis": [
+    0.54,
+    -0.841665
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -7,
+      -12
+    ],
+    [
+      20,
+      -14
+    ],
+    [
+      40,
+      -17
+    ],
+    [
+      40,
+      15
+    ],
+    [
+      2,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000050778"
+  ],
+  "description": "Hallenkerk met klassiek gevelreliëf en vierkante toren met achtkantige lantaarn; oorsprong RD (112730,75, 400032,25).",
+  "printFiles": [
+    "sint-antoniuskathedraal-breda-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 55.2,
+    "widthM": 26.3,
+    "highestPointM": 48.3,
+    "groundNapM": 3.16,
+    "naveRidgeM": 25.1,
+    "towerTopM": 48.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000050778",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Sint-Antoniuskathedraal,_Breda",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10227",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ]
+}
