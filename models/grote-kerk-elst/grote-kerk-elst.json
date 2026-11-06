@@ -1,0 +1,55 @@
+{
+  "name": "Grote Kerk Elst",
+  "file": "grote-kerk-elst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186800,
+    436918
+  ],
+  "xAxis": [
+    0.92523,
+    0.37946
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      16
+    ],
+    [
+      0,
+      16
+    ],
+    [
+      20,
+      14
+    ],
+    [
+      10,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1734101000027993"
+  ],
+  "description": "Grote Kerk Elst met tweebeukig schip, driezijdig koor, portaal en vierkante westtoren met achthoekige bovenbouw. Oorsprong RD (186800, 436918), lokale X 22,3 graden noord van oost. Vervangt BAG-pand 1734101000027993.",
+  "printFiles": [
+    "grote-kerk-elst-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 65.4,
+    "widthM": 23.7,
+    "highestPointM": 52.32,
+    "groundNapM": 10.95,
+    "naveRidgeM": 21.7,
+    "towerTopM": 52.32
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1734101000027993",
+    "PDOK AHN DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Maartenskerk_(Elst)",
+    "https://www.dbnl.org/tekst/sten009monu05_01/sten009monu05_01_0075.php"
+  ]
+}
