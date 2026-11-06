@@ -1,0 +1,53 @@
+{
+  "name": "Watertoren Katwijk",
+  "file": "watertoren-katwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    88259.9,
+    467043.4
+  ],
+  "xAxis": [
+    0.8712138111201895,
+    -0.49090375361514077
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      11,
+      0
+    ],
+    [
+      -11,
+      0
+    ],
+    [
+      0,
+      -21
+    ],
+    [
+      0,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0537100000025991"
+  ],
+  "description": "Achthoekige watertoren met rond reservoir, tentdak en lantaarn, en beide lage aangebouwde vleugels. RD-oorsprong op torenas; X-as langs de westelijke vleugel.",
+  "realWorld": {
+    "groundNapM": 6.897,
+    "ahnTopNapM": 40.947,
+    "towerTopM": 34.05,
+    "shaftWidthM": 17.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0537100000025991",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508787",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_in_Katwijk"
+  ],
+  "printFiles": [
+    "watertoren-katwijk-1-1000.stl"
+  ]
+}
