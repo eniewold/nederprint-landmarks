@@ -1,0 +1,52 @@
+{
+  "name": "Grote Kerk Beverwijk",
+  "file": "grote-kerk-beverwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    105478,
+    500042
+  ],
+  "xAxis": [
+    0.99657,
+    0.08275
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -10
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      20,
+      -20
+    ],
+    [
+      45,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0375100000017910"
+  ],
+  "description": "Driebeukige Grote Kerk met de vrijstaande Wijkertoren, tussenbouw, steile spits, grafkapellen en gevelnissen.",
+  "realWorld": {
+    "groundNapM": 3.198,
+    "ahnTopNapM": 64.907,
+    "modelTopM": 61.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0375100000017910",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9448",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk,_Beverwijk"
+  ],
+  "printFiles": [
+    "grote-kerk-beverwijk-1-1000.stl"
+  ]
+}
