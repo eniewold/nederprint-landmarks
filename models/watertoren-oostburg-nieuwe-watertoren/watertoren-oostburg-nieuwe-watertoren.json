@@ -1,0 +1,91 @@
+{
+  "name": "Nieuwe watertoren Oostburg",
+  "file": "watertoren-oostburg-nieuwe-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    23331.03,
+    372995.83
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9.5,
+      0
+    ],
+    [
+      6.72,
+      6.72
+    ],
+    [
+      0,
+      9.5
+    ],
+    [
+      -6.72,
+      6.72
+    ],
+    [
+      -9.5,
+      0
+    ],
+    [
+      -6.72,
+      -6.72
+    ],
+    [
+      0,
+      -9.5
+    ],
+    [
+      6.72,
+      -6.72
+    ]
+  ],
+  "groundHeight": 46.245,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000725735"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-contour op het maaiveld (NAP +2,05 m), +X naar RD-oost. Ronde onderbouw (straal 8,15 m) met bakstenen plint, vensterkrans en holle kroonlijst tot 5,3 m (straal 8,99 m); gepleisterde schacht met holle voet die verjongt van 8,6 naar 7,0 m, zestien kleine vensters en een afdeklijst tot 44,6 m; dekplaat tot 46,0 m; twaalfzijdige glazen lantaarn onder een overstekend dak tot 52,25 m en een ventilatietrommel tot 54,3 m. Ingang met portiek, trap en muren in het zuiden, platte aanbouw in het noordwesten. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1948-1950",
+    "architect": "A.J. van Eck",
+    "publishedHeightM": 55,
+    "reservoirsM3": [
+      320,
+      715,
+      425,
+      325,
+      375
+    ],
+    "ahnGroundNapM": 2.05,
+    "ahnTopNapM": 56.53,
+    "rimRadiusM": 8.99,
+    "shaftRadiusM": {
+      "12": 8.05,
+      "20": 7.75,
+      "30": 7.42,
+      "44": 7,
+      "5.3": 8.6
+    },
+    "deckM": 46,
+    "deckRadiusM": 6.35,
+    "lanternRoofM": 52.25,
+    "topM": 54.3,
+    "annexM": 4.3,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Nieuwe_watertoren_(Oostburg) (1948-1950, A.J. van Eck, 55 m, 320 + 715 + 425 + 325 + 375 m³)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Oostburg) (RCE-foto's 2000: ingangspartij, onderbouw, overzicht; foto's 2008, 2013 en 2015)",
+    "PDOK BAG-pand 1714100000725735, AHN DSM/DTM 0,5 m, luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-oostburg-nieuwe-watertoren-1-1000.stl"
+  ]
+}
