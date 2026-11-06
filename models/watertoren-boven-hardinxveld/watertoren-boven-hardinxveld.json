@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Boven-Hardinxveld",
+  "file": "watertoren-boven-hardinxveld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119622.02,
+    426112.23
+  ],
+  "xAxis": [
+    0.99988,
+    0.01571
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 43.571,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0523100000012264"
+  ],
+  "description": "Oorsprong op het hart van de rechthoekige BAG-voetafdruk (7,0 x 6,6 m) op het maaiveld (NAP +0,05 m), X-as langs de zuidgevel, 0,9 graden linksom van RD-oost. Vierkante betonnen schacht met per gevel drie verdiepte velden en een band op 21,7 m; reservoir van 9 x 9 m met een schuine onderkant van 45 graden (22,5 tot 23,6 m); omloop van 11,5 m op 30,75 m op een kraag van 45 graden; geknikte piramidekap van 32,2 m (goot 10 m) via de knik op 35 m tot de top op 42 m, pinakel tot 42,85 m. Hekwerk en consoles weggelaten. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1923,
+    "builder": "N.V. Algemeene Beton Compagnie, Den Haag",
+    "rijksmonument": 512954,
+    "publishedHeightM": 42.9,
+    "reservoirM3": 215,
+    "ahnGroundNapM": 0.05,
+    "ahnDeckNapM": 30.7,
+    "ahnEaveNapM": 32.6,
+    "ahnApexNapM": 42,
+    "shaftM": [
+      7,
+      6.62
+    ],
+    "reservoirM": 9,
+    "reservoirBottomM": 23.6,
+    "deckM": 30.75,
+    "deckWidthM": 11.5,
+    "eaveM": 32.2,
+    "eaveWidthM": 10,
+    "kneeM": 35,
+    "apexM": 42,
+    "topM": 42.85,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Boven-Hardinxveld) (1923, N.V. Algemeene Beton Compagnie, 42,90 m, 215 m³, rijksmonument 512954)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Boven-Hardinxveld) (Hardinxveld Watertoren 6853.JPG, 2008; Exterieur OVERZICHT, VOORGEVEL, ZIJGEVEL - Boven-Hardinxveld - 20276765 - RCE.jpg, 1992)",
+    "PDOK BAG-pand 0523100000012264, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-boven-hardinxveld-1-1000.stl"
+  ]
+}
