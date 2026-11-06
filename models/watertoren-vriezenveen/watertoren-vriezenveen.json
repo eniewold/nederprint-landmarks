@@ -1,0 +1,64 @@
+{
+  "name": "Watertoren Vriezenveen",
+  "file": "watertoren-vriezenveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    239450.18,
+    492628.14
+  ],
+  "xAxis": [
+    0.9978,
+    0.06627
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 52.47,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1700100000034518"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op maaiveld (NAP +9,95 m), +X de normaal van de oostelijke risaliet (RD 3,8 graden). Achtkante bakstenen schacht met op vier hoeken een risaliet van 3,2 m met staande vensters (deur in het westen), een witte ronde bovenbouw met vensterband en beklede koppen tot 37,3 m, daarop een kegeldak van 32 vlakken tot 40,94 m. Maten uit BAG, AHN, luchtfoto en drie foto's.",
+  "realWorld": {
+    "wikipediaHeightM": 40.8,
+    "reservoirM3": 295,
+    "built": 1934,
+    "designer": "Hendrik Sangster",
+    "ahnGroundNapM": 9.95,
+    "ahnTopNapM": 50.89,
+    "octagonCornerRadiusM": 6.3,
+    "risalitAcrossM": 12.3,
+    "risalitWidthM": 3.2,
+    "upperDiameterM": 11.2,
+    "rimM": 37.3,
+    "apexM": 40.94,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Vriezenveen) (1934, Hendrik Sangster, 40,80 m, 295 m³)",
+    "https://commons.wikimedia.org/wiki/File:Twenterand-Vriezenveen,_de_Watertoren_GM1700-WN005_IMG_6782_2025-04-20_16.13.jpg (vanuit het westen, 2025: deur, staande vensters, bovenbouw, koppen)",
+    "https://commons.wikimedia.org/wiki/File:Vriezenveen_Watertoren_8937.JPG (2006: vensterkolom in de risaliet)",
+    "https://commons.wikimedia.org/wiki/File:Vriezenveen,_watertoren_foto9_2014-10-04_14.35.jpg (vanuit het zuiden, 2014: risalieten en koppen schuin)",
+    "PDOK BAG-pand 1700100000034518, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-vriezenveen-1-1000.stl"
+  ]
+}
