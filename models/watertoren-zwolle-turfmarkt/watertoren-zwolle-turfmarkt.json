@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Turfmarkt Zwolle",
+  "file": "watertoren-zwolle-turfmarkt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    203684.3,
+    503011.32
+  ],
+  "xAxis": [
+    0.99467,
+    0.10314
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      -7.5
+    ],
+    [
+      -5.3,
+      5.3
+    ]
+  ],
+  "groundHeight": 44.24,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0193100000026499"
+  ],
+  "description": "Oorsprong op het hart van de ronde schacht (BGT-cirkel, straal 6,38 m) op maaiveld NAP +1,6, +X naar RD-richting 5,92 graden (een hoek van de tienhoekige opbouw), +Y naar het noorden. Ronde, onderaan uitlopende bakstenen schacht van 1892 op een natuurstenen plint met band, vensters en gekoppelde rondboogvensters; tien consoles onder een schuine onderkant; tienhoekige opbouw van 2018 (BAG-tienhoek, straal 8,54 m) van 20,8 tot 33,6 m met lichte banden en vensterkolommen; terugliggende glazen bovenste laag, overstekende dakrand tot 36,84 m en tienzijdig tentdak tot 40,7 m; lage aanbouw aan de noordkant. Maten uit BAG, BGT, AHN en één foto.",
+  "realWorld": {
+    "built": 1892,
+    "converted": "2017-2018 (21 appartementen)",
+    "architect": "Jan Schotel",
+    "publishedHeightM": 36,
+    "reservoirM3": 500,
+    "ahnGroundNapM": 1.6,
+    "ahnRimNapM": 38.44,
+    "ahnTopNapM": 42.3,
+    "ahnAnnexNapM": 7.1,
+    "plinthDiameterM": 12.76,
+    "shaftDiameterM": [
+      12.4,
+      10.38
+    ],
+    "claddingCornerDiameterM": 17.08,
+    "rimCornerDiameterM": 18.61,
+    "underSideM": 20.8,
+    "claddingTopM": 33.6,
+    "rimM": 36.84,
+    "topM": 40.7,
+    "photoScalePxPerM": 46.4,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Zwolle) (1892, Jan Schotel, 36 m, 500 m³, mantel 1959, appartementen 2017-2018)",
+    "https://commons.wikimedia.org/wiki/File:Voormalige_watertoren_Turfmarkt_Zwolle.jpg (2020, vanuit het zuid-zuidwesten: schacht, consoles, opbouw, dakrand; schaal 46,4 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_watertoren_voorzijde_-_Zwolle_-_20329066_-_RCE.jpg en File:Zwolle_Watertoren_1907.jpg (oorspronkelijke toren: ronde schacht en plint)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Zwolle.JPG en File:20150819_Watertoren_Zwolle.jpg (de tienhoekige mantel van 1959)",
+    "PDOK BAG-pand 0193100000026499 (tienhoek), BGT-pand (ronde schacht en aanbouw), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-zwolle-turfmarkt-1-1000.stl"
+  ]
+}
