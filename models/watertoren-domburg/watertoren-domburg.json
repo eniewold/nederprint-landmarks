@@ -1,0 +1,77 @@
+{
+  "name": "Watertoren Domburg",
+  "file": "watertoren-domburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    24219.39,
+    399233.72
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6.5,
+      0
+    ],
+    [
+      -6.5,
+      0
+    ],
+    [
+      0,
+      6.5
+    ],
+    [
+      0,
+      -6.5
+    ]
+  ],
+  "groundHeight": 60.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000022552"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 5,04 m) op het maaiveld van de duintop (NAP +15,9 m), X-as naar RD-oost. Licht verjongende bakstenen schacht (straal 5,04 tot 4,62 m) tot 24,2 m met de rondboogingang aan de zuidwestkant, verspreide hoge vensters, zes reeksen gekoppelde openingen en groepjes van drie rond 17,4 tot 18,9 m; gaanderij met 24 vensters onder de uitkragende rand (straal 5,7 m, bovenkant 26,1 m) met een onderkant van 50 graden; dakkraag en lage bolkap tot 28,8 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1933,
+    "architect": "ir. H. Sangster (uitvoering C. van Prooyen)",
+    "rijksmonument": 508066,
+    "publishedHeightM": 28.5,
+    "reservoirM3": 200,
+    "ahnGroundNapM": 15.9,
+    "ahnBrimNapM": 41.9,
+    "ahnTopNapM": 44.71,
+    "shaftRadiusFootM": 5.04,
+    "shaftRadiusTopM": 4.62,
+    "brickTopM": 24.2,
+    "galleryWindows": 24,
+    "brimRadiusM": 5.7,
+    "brimM": [
+      25.9,
+      26.1
+    ],
+    "galleryM": [
+      24.2,
+      24.47
+    ],
+    "brimUndersideDegrees": 50,
+    "domeFootRadiusM": 4.3,
+    "domeFootM": 26.65,
+    "topM": 28.81,
+    "entranceDegrees": 225,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Domburg) (1933, Hendrik Sangster, 28,5 m, 200 m³; oorlogsschade, gerenoveerd, koperen dakplaten vernieuwd, enkele ramen toegevoegd; nu appartement)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508066 (ronde doorsnede met een geringe afname van de buitendiameter, betonnen reservoir met vlakke bodem op vijf kolommen, gele baksteen op een donkerrode plint, gaanderij boven het reservoir, bolkap met koper; rondboogingang aan de zuidwestzijde, smalle hoge vensters, gekoppelde gevelopeningen)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_Domburg (Overzicht - Domburg - 20059248 - RCE.jpg, Exterieur Nehalenniaweg ongenummerd - Domburg - 20059214 - RCE.jpg, Watertoren Domburg 2016.JPG, Watertoren Domburg P1390216.jpg, Watertoren Domburg P1390217.jpg, Wasserturm Domburg Oktober 2016 01.jpg en 02.jpg, Watertoren Domburg - view from the beach.jpg, Watertoren Domburg - duinside.jpg)",
+    "PDOK BAG-pand 0717100000022552, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-domburg-1-1000.stl"
+  ]
+}
