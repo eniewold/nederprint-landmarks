@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Olst",
+  "file": "watertoren-olst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    204454.35,
+    483752.09
+  ],
+  "xAxis": [
+    0.98782,
+    0.15557
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ],
+    [
+      -5,
+      5
+    ],
+    [
+      -5,
+      -5
+    ]
+  ],
+  "groundHeight": 47.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1773100000011750"
+  ],
+  "description": "Oorsprong op het hart van het achtkante BAG-pand op maaiveld (NAP +4,25 m), +X de normaal van de oostzijde (RD 8,95 graden) met de liftkoker, +Y naar het noorden; deur in de zuidzijde. Achtkante, licht verjongende bakstenen schacht op een gemetselde voet met waterlijst, drie natuurstenen banden en tien rijen vensters; open klokkenstoel met per zijde twee openingen en een zuil, overstekend boeiboord tot 40,05 m en een vlak achtkant dak tot 41,3 m; liftkoker van 2006 tot 35,3 m met drie loopbruggen naar de toren. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1962,
+    "architects": "P.J. de Gruyter en C. Poederoyen",
+    "wikipediaHeightM": 41.55,
+    "reservoirM3": 900,
+    "converted": "2006, vijf appartementen; liftkoker en loopbruggen",
+    "ahnGroundNapM": 4.25,
+    "ahnEaveNapM": 44.3,
+    "ahnTopNapM": 45.55,
+    "ahnLiftNapM": 39.5,
+    "bagApothemM": 5.1,
+    "shaftApothemM": [
+      4.98,
+      4.72
+    ],
+    "bandsM": [
+      12.2,
+      19.8,
+      27.35
+    ],
+    "eaveM": 40.05,
+    "apexM": 41.3,
+    "liftTopM": 35.3,
+    "photoScalePxPerM": 88.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Olst) (1962, P.J. de Gruyter en C. Poederoyen, 41,55 m, 900 m³, appartementen sinds 2006, klokken en kruis verwijderd in 2016)",
+    "https://commons.wikimedia.org/wiki/File:Olst,_de_watertoren_IMG_2025_2018-04-07_11.43.jpg (vanuit het zuiden: banden, vensterrijen, klokkenstoel, loopbruggen; schaal 88,8 px/m)",
+    "https://commons.wikimedia.org/wiki/File:20150716_Watertoren_Olst.jpg, File:Olst_Watertoren.JPG, File:Watertoren_Olst.jpg (klokkenstoel met zuilen, dak, liftkoker)",
+    "https://commons.wikimedia.org/wiki/File:Olst_Watertoren_8280.JPG (2006: deur met natuurstenen omlijsting in de zuidzijde)",
+    "PDOK BAG-pand 1773100000011750, AHN DSM/DTM 0,5 m, PDOK 3D-tegels (maaiveld), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-olst-1-1000.stl"
+  ]
+}
