@@ -1,0 +1,75 @@
+{
+  "name": "Watertoren Den Haag",
+  "file": "watertoren-den-haag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    80991.852,
+    459331.937
+  ],
+  "xAxis": [
+    0.96889,
+    -0.24751
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -13.5
+    ],
+    [
+      10.5,
+      0
+    ],
+    [
+      -10.5,
+      0
+    ],
+    [
+      0,
+      10.5
+    ],
+    [
+      7.5,
+      7.5
+    ],
+    [
+      -7.5,
+      7.5
+    ]
+  ],
+  "groundHeight": 50.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000229416"
+  ],
+  "description": "Oorsprong op het hart van de achtkante BAG-voetafdruk (apothema 8,55 m) op het maaiveld (NAP +6,85 m), X-as langs de voorgevel, 14,33 graden rechtsom van RD-oost, voorzijde met de ingang naar -Y. Achtkante bakstenen toren op een plint met kroonlijst op 7,3 m; op de schuine gevels hoge blinde nissen met boog, rondboogfries op 23,3 m, uitkragende reservoirzone van 25 tot 30,3 m, kroonlijst op 30,8 m met balustrade tot 33 m; achtkante koepel tot 40,1 m met lantaarn tot 43,35 m (AHN). Risaliet aan de voorzijde met geschoorde plint en ingang, gele hoekpilasters met kapitelen en een frontonlukarne tot 35,25 m. Balusters, zuiltjes en kleine vensters weggelaten. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1874,
+    "architects": "L.A. Brouwer (architect), Th. Stang (ingenieur)",
+    "rijksmonument": 477404,
+    "publishedHeightM": 48.74,
+    "reservoirsM3": [
+      1000,
+      1200
+    ],
+    "ahnGroundNapM": 6.85,
+    "ahnTopNapM": 50.2,
+    "octagonApothemM": 8.546,
+    "octagonSideM": 7.08,
+    "corniceM": 30.8,
+    "balustradeM": 33,
+    "gableTopM": 35.25,
+    "domeTopM": 40.14,
+    "topM": 43.35,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Den_Haag) (1874, L.A. Brouwer en Th. Stang, 48,74 m, 1000 + 1200 m³, rijksmonument 477404)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Den_Haag) (Overzicht watertoren met ingangspartij - 's-Gravenhage - 20396134 - RCE.jpg; Water tower The Hague 2020.jpg; Den Haag-Scheveningen, de watertoren RM477404 IMG 0122 2021-08-04 11.11.jpg; Watertoren Den Haag P1290158/P1290159.jpg; Exterieur WATERTOREN, BOVENSTE GEDEELTE - 20308612 - RCE.jpg)",
+    "PDOK BAG-pand 0518100000229416, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-den-haag-1-1000.stl"
+  ]
+}
