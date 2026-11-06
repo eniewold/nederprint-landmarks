@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Dirksland",
+  "file": "watertoren-dirksland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    67535.25,
+    418699.23
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7.5,
+      0
+    ],
+    [
+      -7.5,
+      0
+    ],
+    [
+      0,
+      7.5
+    ],
+    [
+      0,
+      -7.5
+    ]
+  ],
+  "groundHeight": 44.398,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0504100001641890"
+  ],
+  "description": "Oorsprong op het middelpunt van de ronde BAG-voetafdruk (straal 5,93 m) op het maaiveld (NAP +0,52 m), X-as naar RD-oost. Ronde bakstenen schacht die verjongt tot 5,55 m op 36,95 m, met kleine vensters aan de voet, een deur, vier kolommen spleetvensters, acht vensters op 27 m en twaalf onder het dak als nissen; hoeddak met een kraag van 45 graden tot de boeiboord van 15,4 m (39,15 tot 40,1 m, AHN), koperen kegel van 28 graden tot 43,15 m, lantaarn met zes openingen, kraag op 45,75 m, spits met knop op 56,75 m en naald tot 62,0 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1939-1941",
+    "architect": "J. Gerber",
+    "rijksmonument": 525002,
+    "publishedHeightM": 62.5,
+    "reservoirM3": 575,
+    "newRoof": 1993,
+    "ahnGroundNapM": 0.52,
+    "ahnBrimNapM": 40.5,
+    "ahnConeTopNapM": 43.7,
+    "ahnSpireFootNapM": 47.4,
+    "ahnSpireNapM": 59.6,
+    "footDiameterM": 11.86,
+    "shaftTopDiameterM": 11.1,
+    "brimDiameterM": 15.4,
+    "brimM": [
+      39.15,
+      40.1
+    ],
+    "coneTopM": 43.15,
+    "lanternM": [
+      43.15,
+      45.75
+    ],
+    "knobM": 56.75,
+    "topM": 62,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Dirksland) (1939-1941, J. Gerber, 62,50 m, 575 m³, nieuw dak 1993)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/525002",
+    "Wikimedia Commons: Overzicht met omgeving - Dirksland - 20338063 - RCE.jpg; Overzicht watertoren met omgeving - Dirksland - 20353450 - RCE.jpg; Dirksland - Watertoren.jpg; Watertoren Dirksland.jpg; Netherlands-Dirksland-watertower.jpg",
+    "PDOK BAG-pand 0504100001641890, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-dirksland-1-1000.stl"
+  ]
+}
