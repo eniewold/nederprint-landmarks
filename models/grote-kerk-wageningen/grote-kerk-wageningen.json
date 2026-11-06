@@ -1,0 +1,57 @@
+{
+  "name": "Grote Kerk Wageningen",
+  "file": "grote-kerk-wageningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173935,
+    441865
+  ],
+  "xAxis": [
+    0.999816,
+    0.0192
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -28,
+      -12
+    ],
+    [
+      -10,
+      -15
+    ],
+    [
+      15,
+      -19
+    ],
+    [
+      25,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0289100000002005"
+  ],
+  "description": "Kerk en westtoren op RD (173935, 441865); lokale X langs het schip naar het oosten. Opgebouwd uit BAG-dakvlakken en gesloten bouwdelen; de torenspits, steunberen en vensternissen zijn geschat. Onderkant 0,5 m onder maaiveld.",
+  "printFiles": [
+    "grote-kerk-wageningen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 55.6,
+    "widthM": 31.8,
+    "highestPointM": 46.8,
+    "groundNapM": 9.339,
+    "naveRidgeM": 15,
+    "choirRidgeM": 18.65,
+    "towerTopM": 46.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0289100000002005",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.grotekerkwageningen.nl/gebouw-historie-architectuur-gebruik-rijksmonument-historisch-hart-wederopbouw/",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Johannes_de_Doperkerk_(Wageningen)"
+  ]
+}

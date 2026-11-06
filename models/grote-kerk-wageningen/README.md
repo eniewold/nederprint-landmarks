@@ -1,0 +1,11 @@
+# Grote Kerk Wageningen
+
+Het model omvat de Grote Kerk met haar westtoren, het lagere westelijke schip, het hogere dwarsschip en het driezijdig gesloten koor. Het is opgebouwd uit verbonden bouwdelen en schuine dakvlakken. De oorsprong ligt op RD (173935, 441865); de lokale X-as wijst langs het schip naar het oosten.
+
+De omtrek en dakvlakken zijn gebaseerd op [3D BAG pand 0289100000002005](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0289100000002005). De BAG geeft maaiveld NAP +9,339 m, de westelijke nok circa +15 m en de oostelijke nok circa +18,6 m boven maaiveld. Het [AHN DSM](https://service.pdok.nl/rws/ahn/wcs/v1_0) meet de toren tot circa +46,8 m boven maaiveld. De dunne spits kan hoger zijn; die hoogte is een schatting. Foto's zijn geraadpleegd via [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Grote_of_Johannes_de_Doperkerk_(Wageningen)); zie ook de [geschiedenis van de kerk](https://www.grotekerkwageningen.nl/gebouw-historie-architectuur-gebruik-rijksmonument-historisch-hart-wederopbouw/).
+
+De torenspits en aansluiting van zijn vier dakvlakken, dakkapellen, het noordportaal, kleine aanbouwen, steunberen en vensternissen zijn vereenvoudigd en geschat op basis van foto's en de dakreconstructie. Kleine versieringen en wijzerplaten zijn weggelaten. Het model vervangt BAG-pand `NL.IMBAG.Pand.0289100000002005`.
+
+Genereer met `node scripts/generate-grote-kerk-wageningen.mjs --components` vanuit de landmarkrepo. Het model is één gesloten onderdeel met een onderkant 0,5 m onder maaiveld; de printversie is op schaal 1:1000 circa 55,6 × 31,8 × 47,3 mm. De generator controleert sluiting, Float32-rondgang en overhang.
+
+Actuele gevelreferenties: [zuidgevel en toren](https://www.frankhanswijk.nl/portfolio/architectuur-stedenbouw/grote-kerk-wageningen-van-hoogevest-architecten.html), [oostelijke koorsluiting](https://www.beeldenvanwageningen.nl/kunstwerken/herdenkingsraam-bevrijding-1940-1945), [noordportaal (RCE)](https://commons.wikimedia.org/wiki/File:Overzicht_met_voorgevels_en_rechter_zijgevel_en_gedeelte_noordgevel_kerk_-_Wageningen_-_20358029_-_RCE.jpg). De vier torendakkapellen zijn circa 1,3 m breed en de galmgaten 1,25 m; hun maatvoering is geschat.
