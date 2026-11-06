@@ -1,0 +1,59 @@
+{
+  "name": "Martinikerk Koudum",
+  "file": "martinikerk-koudum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    159128,
+    547463
+  ],
+  "xAxis": [
+    0.99394,
+    0.10992
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      -8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      10,
+      -8
+    ],
+    [
+      15,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0104100000130037"
+  ],
+  "description": "Martinikerk Koudum: zaalkerk met vijfzijdige sluiting, dakvlakken, halfingebouwde westtoren en achtkante spits. Oorsprong op RD (159128, 547463), X-as langs het schip oostwaarts. Vensters en torenspits schematisch op 1:1000.",
+  "printFiles": [
+    "martinikerk-koudum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.25,
+    "widthM": 12.5,
+    "highestPointM": 31.5,
+    "naveRidgeM": 15.7146,
+    "eaveM": 10.100000000000001,
+    "towerTopM": 31.5,
+    "groundNapM": 6.7,
+    "baseM": -0.3
+  },
+  "sources": [
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/21479",
+    "https://www.stichtingmonumentenswf.nl/monumenten/Hervormde%20kerk%20Koudum/Kerktoren%20Koudum",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0104100000130037",
+    "PDOK AHN DSM/DTM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/File:Koudum,_de_Martinikerk_RM21479_IMG_2558_2018-04-19_11.21.jpg",
+    "https://commons.wikimedia.org/wiki/File:Koudum,_de_Martinikerk_RM21479_IMG_2245_2018-04-18_09.53.jpg"
+  ]
+}
