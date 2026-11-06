@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Haaksbergen",
+  "file": "watertoren-haaksbergen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    247353.76,
+    464154.64
+  ],
+  "xAxis": [
+    0.83147,
+    0.55557
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      -5,
+      0
+    ],
+    [
+      0,
+      4.5
+    ],
+    [
+      0,
+      -4.5
+    ]
+  ],
+  "groundHeight": 69.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0158100000004297"
+  ],
+  "description": "Oorsprong op het hart van het BAG-pand op maaiveld (NAP +26,1 m), +X de lange zijde (RD 33,75 graden). Bakstenen onderbouw van 4,49 × 3,17 m met een geknikte plint en in elke zijde een doorgang onder een spitsboog, kleine vensters, een uitkragende houten kuip van 6,2 × 4,5 m met een vensterrij, een gootlijst tot 7,9 m en een schilddak met korte nok tot 9,8 m. Maten uit BAG, AHN, luchtfoto en één foto.",
+  "realWorld": {
+    "built": 1998,
+    "designer": "onbekend",
+    "ahnGroundNapM": 26.1,
+    "ahnEaveNapM": 34,
+    "ahnTopNapM": 35.9,
+    "baseM": [
+      4.49,
+      3.17
+    ],
+    "tankM": [
+      6.2,
+      4.5
+    ],
+    "eaveOutlineM": [
+      6.9,
+      5.2
+    ],
+    "eaveM": 7.9,
+    "apexM": 9.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Overijssel (Haaksbergen, 1998; ontwerp en hoogte onbekend)",
+    "https://commons.wikimedia.org/wiki/File:Haaksbergen_Stationsstraat_Watertoren.JPG (2015, recht op een korte zijde: bogen, plint, vensters, kuip, gootlijst en schilddak)",
+    "PDOK BAG-pand 0158100000004297, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-haaksbergen-1-1000.stl"
+  ]
+}
