@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Raalte",
+  "file": "watertoren-raalte.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    215613.7,
+    489468.1
+  ],
+  "xAxis": [
+    0.99756,
+    -0.06976
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8.5,
+      0
+    ],
+    [
+      -8.5,
+      0
+    ],
+    [
+      0,
+      8.5
+    ],
+    [
+      0,
+      -8.5
+    ]
+  ],
+  "groundHeight": 49.19,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0177100000191442"
+  ],
+  "description": "Oorsprong op het hart van de achtkante dakrand op het maaiveld (NAP +6,3 m), +X naar RD-richting -4 graden, +Y naar 86 graden; vlakken naar 0 + 45k graden, de westgevel (Korenstraat) naar -X. Achtkante, taps toelopende schacht (apothema 6,0 tot 5,35 m) met plint en roosters, acht hoeklisenen met schuine koppen op 39 m, een kolom trapvensters in de westgevel, een deur in de noordwestgevel, balkons op consoles op 37,9 m naar het westen en noordwesten (west met deur en luifel), betonnen goot op 41,7 m en een achtkant tentdak tot 44,5 m. Maten uit AHN, BAG en één foto.",
+  "realWorld": {
+    "built": 1933,
+    "client": "Waterleiding Maatschappij Overijssel",
+    "publishedHeightM": 44.7,
+    "reservoirM3": 177,
+    "ahnGroundNapM": 6.3,
+    "ahnEavesNapM": 48,
+    "ahnBalconyNapM": 44.2,
+    "ahnTopNapM": 50.8,
+    "apothemM": [
+      6,
+      5.35
+    ],
+    "gutterApothemM": 5.6,
+    "gutterM": [
+      41.15,
+      41.7
+    ],
+    "pierTopM": 39,
+    "balconyM": [
+      36.85,
+      37.9
+    ],
+    "topM": 44.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Raalte) (1933, 44,7 m, 177 m³, gemeentelijk monument; in 2004 door Vitens verkocht)",
+    "https://www.dbnl.org/tekst/sten009monu03_01/sten009monu03_01_0085.php (Monumenten in Nederland, Overijssel: Korenstraat 18, 1933, Waterleiding Maatschappij Overijssel, vlakbodemreservoir van beton, bakstenen omkleding in licht expressionistische vormen, afgeknot tentdak)",
+    "https://commons.wikimedia.org/wiki/File:Raalte_Watertoren_8245.JPG (2006, vanuit het westen: hoeklisenen, balkons, luifel, goot, dak, trapvensters, plint en roosters)",
+    "PDOK BAG-pand 0177100000191442, AHN DSM/DTM 0,5 m en luchtfoto's 2022 en 2026, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-raalte-1-1000.stl"
+  ]
+}
