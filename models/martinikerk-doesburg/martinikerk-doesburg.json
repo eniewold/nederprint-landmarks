@@ -1,0 +1,58 @@
+{
+  "name": "Martinikerk Doesburg",
+  "file": "martinikerk-doesburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206260,
+    447619.3
+  ],
+  "xAxis": [
+    0.99955,
+    0.02999
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -34,
+      -16
+    ],
+    [
+      -5,
+      -19
+    ],
+    [
+      20,
+      -20
+    ],
+    [
+      42,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0221100000312924"
+  ],
+  "description": "Grote of Martinikerk Doesburg: driebeukige basiliek met dakvlakken, koor, steunberen en 94 m hoge westtoren. Oorsprong RD (206260,447619.3), +X langs de nok oostwaarts.",
+  "printFiles": [
+    "martinikerk-doesburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 70.5,
+    "widthM": 32.7,
+    "highestPointM": 94,
+    "naveRidgeM": 30.549999999999997,
+    "sideRidgeM": 19.25,
+    "towerTopM": 94,
+    "groundNapM": 13.25,
+    "baseM": -0.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0221100000312924",
+    "PDOK AHN DSM en DTM 0,5 m via WCS",
+    "https://www.doesburg.nl/open-monumentendag",
+    "https://www.kerk-en-orgel.nl/record.php?id=24326",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Martinikerk_(Doesburg)"
+  ]
+}
