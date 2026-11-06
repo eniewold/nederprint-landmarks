@@ -1,0 +1,95 @@
+{
+  "name": "Watertoren Steenwijk (toren van de Grote of Sint-Clemenskerk)",
+  "file": "watertoren-steenwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    204085.1,
+    533633.3
+  ],
+  "xAxis": [
+    0.9997,
+    -0.02443
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -7,
+      0
+    ],
+    [
+      -7,
+      5
+    ],
+    [
+      -7,
+      -5
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 46.66,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000005816"
+  ],
+  "description": "Oorsprong op de as van de spits op het maaiveld aan de voet van de toren (NAP +4,7 m), +X naar RD-richting -1,4 graden (oost, de as van het schip), +Y naar het noorden; westportaal in de -X-zijde. Vierkante toren (10,4 × 10,6 m) met plint, westportaal, drie geledingen met drie spitsboognissen per zijde en galmgaten, waterlijsten, kraaglijst met balustrade tot 45,3 m en vier hoektorentjes; achtkante naaldspits met ingesnoerde voeten, wijzerplaten en dakkapelletjes, lantaarn, spitsje en bol tot 80,8 m. Kerk uit één BAG-pand: noordbeuk, middenschip en zuidbeuk onder drie zadeldaken (nokken 17,3, 19,8 en 20,2 m, goot 13,4 m), twee 3/8-koren met veelhoekige schilden, steunberen, spitsboogvensters en dakkapellen. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "waterTowerSince": 1907,
+    "reservoirM3": 145,
+    "wikipediaHeightM": 85,
+    "monument": 34576,
+    "ahnGroundNapM": 4.7,
+    "ahnParapetNapM": 50,
+    "ahnSpireTopNapM": 85.5,
+    "ahnEaveNapM": 18.1,
+    "ahnRidgesNapM": {
+      "noordbeuk": 22,
+      "middenschip": 24.5,
+      "zuidbeuk": 24.9
+    },
+    "towerM": [
+      10.4,
+      10.6
+    ],
+    "coursesM": [
+      12.2,
+      23.6,
+      34.4
+    ],
+    "parapetM": 45.3,
+    "lanternM": [
+      71.6,
+      75.2
+    ],
+    "topM": 80.8,
+    "eaveM": 13.4,
+    "roofPitch": {
+      "noordbeuk": 1.53,
+      "middenschip": 1.33,
+      "zuidbeuk": 1.31
+    },
+    "photoScalePxPerM": [
+      29.4,
+      26.2
+    ],
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Steenwijk) (reservoir van 145 m³ in 1907 in de kerktoren geplaatst; 85 m in de infobox)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34576 (Grote of Sint-Clemenskerk)",
+    "https://commons.wikimedia.org/wiki/File:Steenwijkerland-Steenwijk,_de_Grote_of_Sint-Clementskerk_RM34576_IMG_8488_2023-09-11_15.09.jpg (toren vanuit het westen: geledingen, portaal, balustrade, hoektorentjes, spits, lantaarn)",
+    "https://commons.wikimedia.org/wiki/File:34576_Grote_of_Sint-Clemenskerk_2.jpg (zuidzijde: steunberen, vensters, dakkapel, toren)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_overzicht_-_Steenwijk_-_20205452_-_RCE.jpg, File:Exterieur_zuid-oost_zijde_-_Steenwijk_-_20205455_-_RCE.jpg, File:Kerk_naar_het_zuid-westen_-_Steenwijk_-_20205441_-_RCE.jpg (koren, schilddaken, noordzijde)",
+    "PDOK BAG-pand 1708100000005816, AHN DSM/DTM 0,5 m, luchtfoto en PDOK 3D-tegels (maaiveld), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-steenwijk-1-1000.stl"
+  ]
+}
