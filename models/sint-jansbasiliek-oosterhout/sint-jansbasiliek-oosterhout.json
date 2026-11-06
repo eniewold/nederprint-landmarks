@@ -1,0 +1,56 @@
+{
+  "name": "Sint-Jansbasiliek Oosterhout",
+  "file": "sint-jansbasiliek-oosterhout.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    118561.5,
+    406384.4
+  ],
+  "xAxis": [
+    0.984,
+    -0.178
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -12,
+      -12
+    ],
+    [
+      15,
+      -17
+    ],
+    [
+      40,
+      -20
+    ],
+    [
+      60,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0826100000016867",
+    "NL.IMBAG.Pand.0826100000016868"
+  ],
+  "description": "Kruisbasiliek met onvoltooide toren, traveedaken en traptoren uit bouwdelen en dakvlakken.",
+  "printFiles": [
+    "sint-jansbasiliek-oosterhout-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 72.75,
+    "widthM": 36.8,
+    "highestPointM": 46.8,
+    "naveRidgeM": 20.6,
+    "towerTopM": 46.8,
+    "groundNapM": 4.953
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0826100000016868",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31673",
+    "https://www.openmonumentendag.nl/monument/sint-jansbasiliek/"
+  ]
+}
