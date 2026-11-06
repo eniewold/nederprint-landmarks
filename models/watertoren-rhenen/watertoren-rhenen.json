@@ -1,0 +1,80 @@
+{
+  "name": "Watertoren Rhenen (De Koerheuvel)",
+  "file": "watertoren-rhenen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    167163.49,
+    441798.73
+  ],
+  "xAxis": [
+    0.99452,
+    -0.10453
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      -6
+    ],
+    [
+      0,
+      -13
+    ],
+    [
+      -4,
+      4
+    ]
+  ],
+  "groundHeight": 95.16,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0340100000331993",
+    "NL.IMBAG.Pand.0340100000331991"
+  ],
+  "description": "Oorsprong op het hart van de schacht op het maaiveld (NAP +51,58 m), +X naar RD-richting -6,0 graden (oost, ingang), +Y naar 84,0 graden (noord). Wit blok van 13,4 × 13,0 m tot 26,3 m met een dakrand tot 27,6 m en vensters op elke verdieping; aan de noordoosthoek de schacht van 5,2 m tot 31,5 m met de ingang onder een gebogen luifel, een vensterstrook en een balkonnetje; achtkante glazen lantaarn onder een overstekend dak tot 33,9 m en een holle naaldspits tot 44,9 m; brandtrap met zes bordessen op de noordgevel; onderbouw van 5,1 m met dakterras en afgeronde zuidwesthoek; het aangebouwde rijtjeshuis 0340100000331991 als blok van 7,95 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1935,
+    "architect": "H. van Hoogdalem",
+    "publishedHeightM": 42.7,
+    "reservoirM3": 600,
+    "floors": 9,
+    "ahnGroundNapM": 51.58,
+    "ahnTipNapM": 94.73,
+    "ahnTipIsLowerBound": true,
+    "blockM": [
+      13.39,
+      12.99,
+      26.29,
+      27.57
+    ],
+    "shaftM": [
+      5.18,
+      5.22,
+      31.47
+    ],
+    "lanternAcrossFlatsM": [
+      3.3,
+      4.4
+    ],
+    "lanternRoofM": 33.9,
+    "tipM": 44.9,
+    "podiumM": 5.1,
+    "rowHouseM": 7.95,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Rhenen) (1935, H. van Hoogdalem, 42,7 m, negen verdiepingen, 600 m³, Koerheuvelweg, appartementen sinds 1994)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_-_Rhenen_-_20371381_-_RCE.jpg (1998, noordoost: ingang, schacht, brandtrap, lantaarn en spits)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Rhenen.jpg (2009, noordoost van dichtbij: vensters, balkon, luifel)",
+    "https://commons.wikimedia.org/wiki/File:Koerheuvel_met_Watertoren_Rhenen.JPG (2014, van ver uit het zuidwesten: west- en zuidgevel, lantaarn, verhoudingen)",
+    "PDOK BAG-panden 0340100000331993 en 0340100000331991, 3D BAG, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-rhenen-1-1000.stl"
+  ]
+}
