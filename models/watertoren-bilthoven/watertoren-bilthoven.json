@@ -1,0 +1,84 @@
+{
+  "name": "Watertoren Bilthoven",
+  "file": "watertoren-bilthoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143477.67,
+    460403.47
+  ],
+  "xAxis": [
+    0.99619,
+    -0.08716
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 48.49,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0310100000657245",
+    "NL.IMBAG.Pand.0310100000657246",
+    "NL.IMBAG.Pand.0310100000657247",
+    "NL.IMBAG.Pand.0310100000657248"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP +5,2 m), +X naar RD-richting -5 graden (oost), steunberen op 45 + 90k graden lokaal, portaal op 225 graden (zuidwest, straatzijde). Voet van 9,4 m met vensters tot 4,3 m; schacht van 7,9 m; vier steunberen in twee treden tot 5,35 m van het hart en 39,2 à 39,8 m hoog, met lange nissen; betonnen ring op 30,9 m, reservoir van 8,56 m met drie banden van twintig blokken en kleine vensters; betonnen dakrand van 8,9 m met opstaande rand tot 42,5 m rond een vlak dak op 42,3 m (AHN). Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": "1926-1927",
+    "architect": "H.F. Mertens",
+    "publishedHeightM": 42,
+    "reservoirM3": 300,
+    "monument": "gemeentelijk monument (2008)",
+    "ahnGroundNapM": 5.2,
+    "ahnRoofNapM": 47.5,
+    "ahnRimNapM": 47.9,
+    "footDiameterM": 9.38,
+    "shaftDiameterM": 7.9,
+    "reservoirDiameterM": 8.56,
+    "rimDiameterM": 8.9,
+    "buttressDepthM": 5.35,
+    "buttressWidthM": [
+      2.4,
+      1.6
+    ],
+    "ringM": [
+      30.9,
+      31.35
+    ],
+    "bandsM": [
+      34.45,
+      38.2,
+      40.8
+    ],
+    "roofM": 42.3,
+    "topM": 42.5,
+    "photoScalePxPerM": 41.8,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bilthoven) (1926-1927, H.F. Mertens, 42,00 m, 300 m³, Burgemeester van der Borchlaan, Vitens, gerenoveerd 2006, gemeentelijk monument 2008)",
+    "https://commons.wikimedia.org/wiki/File:Bakstenen_watertoren_met_vier_steunberen_-_Bilthoven_-_20370893_-_RCE.jpg (1998, perspectiefgecorrigeerd: geledingen, steunberen, reservoir, schaal 41,8 px/m)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren-bilthoven-2012.jpg (vanaf de straat: banden van blokken, steunberen met nissen, voet met vensters en portaal)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Bilthoven.jpg (dakrand, banden en vensters, steunberen in twee treden, portaal)",
+    "PDOK BAG-panden 0310100000657245 tot -248, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-bilthoven-1-1000.stl"
+  ]
+}
