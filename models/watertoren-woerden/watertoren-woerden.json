@@ -1,0 +1,84 @@
+{
+  "name": "Watertoren Woerden",
+  "file": "watertoren-woerden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120552.67,
+    455716.78
+  ],
+  "xAxis": [
+    -0.99619,
+    -0.08716
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      3.2,
+      3.2
+    ],
+    [
+      -3.2,
+      3.2
+    ],
+    [
+      -3.2,
+      -3.2
+    ],
+    [
+      3.2,
+      -3.2
+    ]
+  ],
+  "groundHeight": 45.79,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0632100000017372"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op de aangeaarde verhoging, +X de as van het portaal naar het westen (RD -175 graden). Taps toelopende voet met het portaal (tuitgevel tot 5,3 m, spitsboogdeur) en een venster tegenover de ingang, uitkragende band, taps toelopende schacht met tien verspringende vensters, band en uitkraging met zestien consoles onder 45 graden, reservoirgeleding met geprofileerde onderrand en tien keperboogvensters, rondboogfries, borstwering met twaalf kantelen tot 24,5 m rond het vlakke dak met dakluik. Maten uit BAG, AHN, luchtfoto's, het monumentenregister en foto's.",
+  "realWorld": {
+    "built": "1905-1906",
+    "architect": "J. Schotel",
+    "monument": "rijksmonument 512630 (complex 512629; machinegebouw 512631)",
+    "wikipediaHeightM": "27 à 28 (register: 28)",
+    "reservoirM3": 75,
+    "innerDiameterM": {
+      "bottom": 5.7,
+      "top": 7.1
+    },
+    "ahnFootNapM": 2.65,
+    "ahnStreetNapM": 0.9,
+    "ahnRoofNapM": 25.75,
+    "ahnMerlonNapM": 26.8,
+    "footAboveModelZeroM": 0.36,
+    "baseRadiusM": [
+      3.45,
+      3.1
+    ],
+    "shaftRadiusM": [
+      2.85,
+      2.55
+    ],
+    "reservoirRadiusM": 3.97,
+    "parapetRadiusM": 4.12,
+    "reservoirM": [
+      16.56,
+      24.509999999999998
+    ],
+    "roofM": 23.46,
+    "apexM": 24.509999999999998,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Woerden) (1905-1906, J. Schotel, 27 à 28 m, 75 m³, doorsnede binnen 5,70 en 7,10 m)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512630 (redengevende omschrijving: drie geledingen, portaal onder zadeldakje met tuitgevel, venster tegenover de ingang, tien verspringende vensters, overkragende geleding met tien keperboogvensters, rondboogfries en kantelen, vlak dak)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_Woerden_6805.jpg (vanaf de Oostsingel)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_onderste_gedeelte_-_Woerden_-_20216462_-_RCE.jpg (portaal en voet, frontaal)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_bovenste_gedeelte_-_Woerden_-_20216463_-_RCE.jpg (reservoirgeleding)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_(Woerden).JPG en File:Watertoren_-_Woerden_-_20216460_-_RCE.jpg (vanaf de brug in het zuiden)",
+    "PDOK BAG-pand 0632100000017372, AHN DSM/DTM 0,5 m en luchtfoto's 2021, 2024 en actueel, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-woerden-1-1000.stl"
+  ]
+}
