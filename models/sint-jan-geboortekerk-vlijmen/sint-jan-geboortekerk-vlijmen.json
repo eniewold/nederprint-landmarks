@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Jan Geboortekerk Vlijmen",
+  "file": "sint-jan-geboortekerk-vlijmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143679.2,
+    412047
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0797100000009892"
+  ],
+  "description": "Neogotische kruisbasiliek met westtoren, vieringtorentje, zijbeuken en vijfzijdig koor.",
+  "realWorld": {
+    "groundNapM": 4.073,
+    "ahnTopNapM": 72.606,
+    "modelHeightM": 68.55,
+    "publishedTowerHeightM": 71
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0797100000009892",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37871",
+    "https://commons.wikimedia.org/wiki/File:Julianastraat_44,_Vlijmen.jpg"
+  ],
+  "printFiles": [
+    "sint-jan-geboortekerk-vlijmen-1-1000.stl"
+  ]
+}
