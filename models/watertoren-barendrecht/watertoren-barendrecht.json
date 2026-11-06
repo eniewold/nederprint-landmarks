@@ -1,0 +1,88 @@
+{
+  "name": "Watertoren Barendrecht",
+  "file": "watertoren-barendrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    96200.9,
+    430314.6
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      -6.5
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      0,
+      11.5
+    ]
+  ],
+  "groundHeight": 43.06,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0489100000194910"
+  ],
+  "description": "Oorsprong op het hart van de schacht op het maaiveld (NAP circa -0,6 m), +X oost, ingang met bordes op -Y (zuid). Vierkante bakstenen schacht van 5,8 m met witte onderbouw, drie erkers en een dubbele bordestrap, per gevel drie vensters en een balkon op consoles met een dakkapel; wit cilindrisch reservoir tussen vier hoekpijlers tot de kroonlijst op 33,74 m (AHN) met een kegeldak tot 36,39 m (AHN); ronde filtertoren met achtkant kegeldak op het noorden en de trouwzaal als cirkelsegment op het oosten (BAG, AHN). Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1912,
+    "architect": "Roelof Kuipers",
+    "rijksmonument": 520878,
+    "publishedHeightM": 36,
+    "reservoirM3": 120,
+    "groundNapM": -0.59,
+    "ahnCorniceNapM": 33.15,
+    "ahnRoofApexNapM": 35.8,
+    "shaftM": 5.8,
+    "erkerM": [
+      2.75,
+      0.85,
+      4.2
+    ],
+    "tankM": [
+      27,
+      33.74
+    ],
+    "pierTopM": 34.5,
+    "roofApexM": 36.39,
+    "balconyM": [
+      3.5,
+      0.7,
+      24.4,
+      27.3
+    ],
+    "dormerApexM": 29.8,
+    "turretM": {
+      "radius": 2.45,
+      "eave": 10.79,
+      "apex": 13.39
+    },
+    "weddingHallM": {
+      "radius": 10.34,
+      "roof": 3.84,
+      "rim": 4.49
+    },
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Barendrecht) (1912, Roelof Kuipers, overgangsstijl met Italiaanse renaissance, 36 m, 120 m³, trouwzaal later aangebouwd, buiten gebruik sinds 1981)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520878 (36 m, betonskelet met baksteen; onderbouw met driezijdige erkers op drie zijden en dubbele bordestrap; hoeken van betonblokken; smalle vensters; vier balkons op consoles met rondboogdeuren onder een fronton; reservoirgeleding met convex gewelfde gevels die een door de hoeken onderbroken cirkel vormen; profielrand met hoger opgaande hoekaccenten; ronde filtertoren met achtkant kegeldak en plat tussenlid)",
+    "https://commons.wikimedia.org/wiki/Category:Watertower,_Barendrecht (Overzicht watertoren - Barendrecht - 20341692/20341693/20341694 - RCE.jpg, Barendrecht, de Watertoren RM520878 IMG 0738 2022-03-28 10.43.jpg, 2008-06-29 17.16 Barendrecht, de watertoren.JPG)",
+    "PDOK BAG-pand 0489100000194910, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-barendrecht-1-1000.stl"
+  ]
+}
