@@ -1,0 +1,35 @@
+{
+  "name": "Watertoren Zoetermeer",
+  "file": "watertoren-zoetermeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    92743,
+    450699
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0637100000139778"
+  ],
+  "description": "Achtzijdige bakstenen watertoren De Tien Gemeenten, met zestienzijdig reservoir en koepeldak.",
+  "realWorld": {
+    "groundNapM": -2.89,
+    "ahnTopNapM": 45.47,
+    "modelHeightM": 48.35,
+    "publishedHeightM": 48.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0637100000139778",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.architectuurpuntzoetermeer.nl/gebouw-van-de-maand-watertoren-de-tien-gemeenten/",
+    "https://www.oudsoetermeer.nl/e2/site/oudsoetermeer/custom/site/upload/file/seghen_waert_2/sw_2011_4.pdf"
+  ],
+  "printFiles": [
+    "watertoren-zoetermeer-1-1000.stl"
+  ]
+}
