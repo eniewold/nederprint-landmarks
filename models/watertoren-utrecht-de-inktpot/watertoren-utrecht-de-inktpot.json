@@ -1,0 +1,85 @@
+{
+  "name": "De Inktpot (watertoren) Utrecht",
+  "file": "watertoren-utrecht-de-inktpot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136367.28,
+    455491.55
+  ],
+  "xAxis": [
+    0.88295,
+    0.46947
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -27,
+      57
+    ],
+    [
+      -27,
+      -57
+    ],
+    [
+      -78,
+      0
+    ]
+  ],
+  "groundHeight": 45.8,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000012848"
+  ],
+  "description": "Oorsprong op de as van de watertoren op het maaiveld (NAP +2,45 m), +X naar de hoofdingang aan het Moreelsepark (RD-richting 28,0 graden), +Y naar het noordwesten. Het hele BAG-pand 0344100000012848 (Hoofdadministratiegebouw III, 1918-1921): vleugels rond de binnenplaats tot 22,7 m met borstwering, hogere middenrisalieten aan elke gevel (27,15 tot 29,7 m), steunberen uit de BAG-contour die verjongen op 7 en 12 m, spaarvelden met venstergroepen per verdieping, de hal op de binnenplaats (8,95 m), de stoep en de drievoudige hoofdingang, het torenblok tot 41,6 m, de toren tot 60,0 m met pylonen tot 61,5 m en de UFO 'Zover' op het torenblok.",
+  "realWorld": {
+    "built": "1918-1921",
+    "architect": "G.W. van Heukelom",
+    "monument": 46955,
+    "waterTowerReservoirM3": 27,
+    "wikipediaHeightM": 60,
+    "ahnGroundNapM": 2.45,
+    "ahnTopNapM": 63.95,
+    "heightsM": {
+      "wing": 22.7,
+      "wingParapet": 24.25,
+      "side": 27.15,
+      "sideParapet": 28.55,
+      "sideCore": [
+        29.85,
+        29.7
+      ],
+      "back": 29.45,
+      "backParapet": 30.65,
+      "front": 29.7,
+      "frontParapet": 30.95,
+      "flank": 28.65,
+      "flankParapet": 30.95,
+      "block": 41.6,
+      "blockParapet": 42.85,
+      "shaft": 60,
+      "shaftParapet": 60.95,
+      "pylon": 61.5,
+      "hall": 8.95,
+      "lantern": 10.9,
+      "backLink": 3.85,
+      "frontLink": 3.75,
+      "backEntrance": 3.8,
+      "landing": 3.15
+    },
+    "ufoDiameterM": 12,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/De_Inktpot (1918-1921, G.W. van Heukelom, watertoren 1921 met reservoir van 27 m³, UFO van Marc Ruygrok, 12 m)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/46955 (Hoofdgebouw III: vijf bouwlagen, binnenplaats, middenrisalieten, steunberen, spaarvelden, toren boven de hoofdingang)",
+    "https://commons.wikimedia.org/wiki/File:Voorgevel_-_Utrecht_-_20235288_-_RCE.jpg, File:Middenpartij_voorgevel_-_Utrecht_-_20235289_-_RCE.jpg, File:Linker_zijgevel_-_Utrecht_-_20235292_-_RCE.jpg, File:Achtergevel_-_Utrecht_-_20235293_-_RCE.jpg (gevels, steunberen, spaarvelden, toren)",
+    "https://commons.wikimedia.org/wiki/File:Voorzijde_met_kunstwerk_%27De_UFO%27_-_Utrecht_-_20350262_-_RCE.jpg (UFO op het torenblok)",
+    "https://commons.wikimedia.org/wiki/File:NIMH_-_2011_-_3666_-_Aerial_photograph_of_Utrecht,_The_Netherlands.jpg (luchtfoto uit de bouwtijd: binnenplaats en daken)",
+    "PDOK BAG-pand 0344100000012848, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0344100000012848, LoD2.2-dakvlakken als controle, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-de-inktpot-1-1000.stl"
+  ]
+}
