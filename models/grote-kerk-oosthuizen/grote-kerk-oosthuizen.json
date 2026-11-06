@@ -1,0 +1,52 @@
+{
+  "name": "Grote Kerk Oosthuizen",
+  "file": "grote-kerk-oosthuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    128241,
+    509321.5
+  ],
+  "xAxis": [
+    0.9962,
+    -0.0872
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -17,
+      -10
+    ],
+    [
+      15,
+      -10
+    ],
+    [
+      -17,
+      10
+    ],
+    [
+      15,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0478100000001179"
+  ],
+  "description": "Laatgotische eenbeukige kruiskerk met vijfzijdig koor, steunberen en een achtkantige vieringtoren met peervormige bekroning.",
+  "realWorld": {
+    "groundNapM": -1.209,
+    "ahnTopNapM": 24.679,
+    "modelTopM": 25.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0478100000001179",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40332",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Oosthuizen"
+  ],
+  "printFiles": [
+    "grote-kerk-oosthuizen-1-1000.stl"
+  ]
+}
