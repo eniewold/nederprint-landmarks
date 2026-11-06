@@ -1,0 +1,57 @@
+{
+  "name": "Grote Kerk Apeldoorn",
+  "file": "grote-kerk-apeldoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    193815,
+    470413
+  ],
+  "xAxis": [
+    0.805,
+    0.593
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -12
+    ],
+    [
+      0,
+      -33
+    ],
+    [
+      0,
+      33
+    ],
+    [
+      29,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0200100000086059"
+  ],
+  "description": "Kruiskerk op de Loolaan met twee kruisende kappen, polygonale eindgevels, zuidtoren met achtkante spits en lantaarn, lage ingangsportalen en aanbouw uit 2022. RD oorsprong (193815,470413), X-as loopt langs de hoofdnok; alle maten in meters, Y omhoog in glTF. Details en nissen zijn vereenvoudigd voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-apeldoorn-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 49.4,
+    "widthM": 57.1,
+    "highestPointM": 62,
+    "naveRidgeM": 25.6,
+    "groundNapM": 17.5,
+    "towerTopM": 62
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8162",
+    "https://www.vanhoogevest.nl/projecten/grote-kerk-apeldoorn/",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_voorzijde_kerk_-_Apeldoorn_-_20369718_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_WESTGEVEL_-_Apeldoorn_-_20339775_-_RCE.jpg",
+    "3D BAG pand 0200100000086059: voetafdruk en dakvlakken",
+    "PDOK AHN DSM 0,5 m en actuele luchtfoto"
+  ]
+}
