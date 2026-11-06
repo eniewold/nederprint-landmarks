@@ -1,0 +1,55 @@
+{
+  "name": "Sint-Martinusbasiliek Venlo",
+  "file": "sint-martinusbasiliek-venlo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    209630,
+    376040
+  ],
+  "xAxis": [
+    0.983,
+    -0.184
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -8,
+      0
+    ],
+    [
+      -2,
+      9
+    ],
+    [
+      20,
+      -24
+    ],
+    [
+      44,
+      -22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0983100000005649"
+  ],
+  "description": "Driebeukige hallenkerk met drie langsdaken en koren, dwarsschip, noorderkapellen en de naoorlogse toren; vereenvoudigd als gesloten bouwdelen en dakvlakken.",
+  "printFiles": [
+    "sint-martinusbasiliek-venlo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 66,
+    "widthM": 46,
+    "highestPointM": 63,
+    "groundNapM": 19.071,
+    "baseM": -0.5,
+    "towerTopM": 63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0983100000005649",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinusbasiliek_(Venlo)",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/venlo/martinus-basiliek",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ]
+}
