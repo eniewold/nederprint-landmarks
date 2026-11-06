@@ -1,0 +1,57 @@
+{
+  "name": "Akerk Groningen",
+  "file": "akerk-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233495,
+    581738
+  ],
+  "xAxis": [
+    0.94321,
+    0.33222
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -35,
+      -12
+    ],
+    [
+      -10,
+      -25
+    ],
+    [
+      10,
+      19
+    ],
+    [
+      40,
+      -2
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010932088"
+  ],
+  "description": "Akerk Groningen op RD (233495, 581738), lokale X langs het schip naar het oosten. De dakvlakken volgen 3D BAG; barokke toren, vensternissen en steunberen zijn vereenvoudigd. Onderkant 0,5 m onder maaiveld.",
+  "printFiles": [
+    "akerk-groningen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 65.3,
+    "widthM": 36.8,
+    "highestPointM": 76,
+    "groundNapM": 3.72,
+    "naveRidgeM": 34.8,
+    "towerTopM": 76,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010932088",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://akerk.nl/historie",
+    "https://www.groningerkerken.nl/nl/kennisbank/kerken/G/53/groningen-der-aa-kerk",
+    "https://commons.wikimedia.org/wiki/Category:Der_Aa-kerk"
+  ]
+}
