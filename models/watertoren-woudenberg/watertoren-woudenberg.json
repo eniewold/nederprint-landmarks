@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Woudenberg",
+  "file": "watertoren-woudenberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    159815.06,
+    454677.36
+  ],
+  "xAxis": [
+    0.66562,
+    0.74629
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 48.74,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0351100000007399"
+  ],
+  "description": "Oorsprong op het hart van de zeskante BAG-voetafdruk (apothema 3,86 m) op het maaiveld (NAP +5,42 m), X-as 48,27 graden linksom van RD-oost loodrecht op het ingangsvlak (noordoost). Zeskante bakstenen toren met hoeklisenen en terugliggende wandvlakken, zes schuine betonnen steunberen aan de voet, ingang met dubbele deur en twee betonnen platen, vier vensters met lateien boven elkaar, betonnen banden op 21 tot 22,15 m onder het reservoir, lichtspleten in het reservoirdeel, kroonlijst tot 31,75 m en zeskant tentdak tot 33,81 m. Maten uit BAG, AHN en een foto.",
+  "realWorld": {
+    "built": 1937,
+    "architect": "ir. A.A. Willems",
+    "client": "N.V. Veenendaalse Waterleidingmaatschappij",
+    "publishedHeightM": 34.5,
+    "reservoirM3": 205,
+    "ahnGroundNapM": 5.42,
+    "ahnTopNapM": 39.23,
+    "ahnRoofSlope": 0.77,
+    "hexagonApothemM": 3.86,
+    "panelSetbackM": 0.3,
+    "buttressReachM": 5.7,
+    "bandsM": [
+      21.05,
+      22.15
+    ],
+    "windowsM": [
+      4.4,
+      9.15,
+      14.15,
+      19.2
+    ],
+    "copingTopM": 31.75,
+    "topM": 33.81,
+    "entranceDegrees": 0,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Woudenberg) (1937, ir. A.A. Willems, 34,5 m, één reservoir van 205 m³, vier verdiepingen eronder, betonskelet met gestileerde baksteenarchitectuur, gemeentelijk monument)",
+    "https://commons.wikimedia.org/wiki/File:Woudenberg_watertoren_2721.png (frontaal op het ingangsvlak: steunberen, ingang met twee platen, vier vensters met lateien, drie banden, lichtspleten, kroonlijst met hekwerk)",
+    "PDOK BAG-pand 0351100000007399, AHN DSM/DTM 0,5 m, 3D BAG (nok NAP +39,41, dak 'slanted') en luchtfoto (Actueel_orthoHR: zeskant tentdak, vensters in het noordoostvlak), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-woudenberg-1-1000.stl"
+  ]
+}
