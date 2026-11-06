@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Het Spoorwegmuseum",
+  "file": "watertoren-utrecht-het-spoorwegmuseum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137530.1,
+    455617.2
+  ],
+  "xAxis": [
+    0.304033,
+    0.952661
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -6.5,
+      0
+    ],
+    [
+      8,
+      -5.8
+    ],
+    [
+      8,
+      5.5
+    ],
+    [
+      24,
+      0
+    ]
+  ],
+  "groundHeight": 46.21,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000126836"
+  ],
+  "description": "Oorsprong op het hart van het reservoirdak op het maaiveld (NAP +2,85 m), X-as langs de onderbouw naar het noordnoordoosten (72,3 graden vanaf RD-oost). Bakstenen onderbouw op de BAG-contour (27 bij 7 m) tot 2,35 m met blinde nissen rondom en een opbouw op het dak; op de zuidpunt een vakwerk van vier poten (0,9 m, onderaan 3,3 m en bovenaan 1,7 m hart op hart) met een kruis per zijde tot 7,4 m, een leiding in het midden, de omloop (4,95 m) op een kraag van 46 graden op 8,3 m, het reservoir (3,46 m), een twaalfzijdig dak van 5,25 m met de dakrand op 9,6 tot 10,1 m, een achtkant lantaarntje tot 10,9 m en een spits tot 12,3 m. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "placedOnSite": "circa 2005 (vernieuwing van het museum)",
+    "plinthBuilt": 1915,
+    "ahnGroundNapM": 2.85,
+    "ahnPlinthNapM": 5.2,
+    "ahnRoofNapM": 13.6,
+    "ahnLanternNapM": 13.8,
+    "plinthM": 2.35,
+    "legsCentreToCentreFootM": 3.3,
+    "legsCentreToCentreTopM": 1.7,
+    "legTopM": 7.41,
+    "galleryDiameterM": 4.96,
+    "galleryM": 8.29,
+    "tankDiameterM": 3.46,
+    "roofDiameterM": 5.26,
+    "roofSides": 12,
+    "eaveM": [
+      9.62,
+      10.1
+    ],
+    "lanternM": 10.9,
+    "topM": 12.3,
+    "photoScalePxPerM": 80,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Spoorwegmuseum_(Utrecht) (bij de vernieuwing is nabij het seinhuis uit Hoogezand-Sappemeer een watertoren geplaatst)",
+    "https://nl.wikipedia.org/wiki/Lijst_van_watertorens_in_Nederland (Utrecht, Het Spoorwegmuseum; geen bouwjaar of hoogte)",
+    "https://www.wikidata.org/wiki/Q135953949 (Watertoren Spoorwegmuseum, BAG-pand 0344100000126836)",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_(Spoorwegmuseum_Utrecht) (Spoorwegmuseum water tower.JPG, Utrecht - 2015 - panoramio (3).jpg, Spoorwegmuseum - Watertoren.jpg, Spoorwegmuseum - Parte I - 15669901336.jpg)",
+    "PDOK BAG-pand 0344100000126836, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-het-spoorwegmuseum-1-1000.stl"
+  ]
+}
