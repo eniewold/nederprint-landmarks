@@ -1,0 +1,51 @@
+{
+  "name": "Watertoren Zuidzijde",
+  "file": "watertoren-zuidzijde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    76726.85,
+    413060.03
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0580100000245872"
+  ],
+  "description": "Achthoekige watertoren met reservoir en koepeldak, vensters als blinde nissen.",
+  "realWorld": {
+    "groundNapM": 0.502,
+    "ahnTopNapM": 44.53,
+    "modelTopM": 44
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0580100000245872",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Zuidzijde)"
+  ],
+  "printFiles": [
+    "watertoren-zuidzijde-1-1000.stl"
+  ]
+}
