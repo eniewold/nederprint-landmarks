@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Soestdijk",
+  "file": "watertoren-soestdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    147528.71,
+    467456.93
+  ],
+  "xAxis": [
+    0.54171,
+    -0.84057
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      -11
+    ]
+  ],
+  "groundHeight": 49,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0308100000001971"
+  ],
+  "description": "Oorsprong op het hart van de toren (BAG-cirkelfit op de dakrand, straal 5,29 m) op het maaiveld in het park van Paleis Soestdijk (NAP circa +5,8 m), -Y langs de as van de uitbouw naar zijn deur (RD 237 graden kompas, zuidwest), +X naar het zuidoosten. Bakstenen cilinder van 9,2 m op een natuurstenen plint, rondboogfries als uitkraging naar een twaalfzijdige bovenwand met witte dakrand tot 9,96 m (NAP +15,72), vensters en een deur als nissen; uitbouw van één laag met een driezijdige beëindiging, kroonlijst, schilddak van leien met knik en dakkapel tot 6,64 m. Maten uit BAG, AHN, 3D BAG, het register en foto's.",
+  "realWorld": {
+    "built": 1680,
+    "architect": "Willem Meesters",
+    "wikipediaHeightM": 10,
+    "registerHeightM": 9,
+    "registerDiameterM": 8.2,
+    "reservoirM3": 60,
+    "rijksmonument": 531294,
+    "groundNapM": 5.76,
+    "ahnRoofNapM": 15.72,
+    "ahnAnnexRidgeNapM": 12.4,
+    "drumDiameterM": 9.2,
+    "roofEdgeAcrossFlatsM": 10.18,
+    "annexWidthM": 6.5,
+    "topM": 9.96,
+    "annexRidgeM": 6.64,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Soestdijk) (1678-1683, Willem Meesters, 10 m, 60 m³, oorspronkelijk met windmolen op het platte dak)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/531294 (cilindrische toren van 8,20 m doorsnede en circa 9 m hoog op natuurstenen plint, twaalfzijdige uitkraging op een natuurstenen rondboogfries, plat dak, hele en halve kruisvensters met natuurstenen omlijstingen, uitbouw van één laag met driezijdige beëindiging en leien schilddak aan de zuidwestzijde, hoofdingang in de uitbouw)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_watertoren_-_Soestdijk_-_20423187_-_RCE.jpg (vanuit het zuidzuidoosten: zuidoostgevel van de uitbouw met venster, drie vensters op de verdieping en één op de begane grond)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_achtergevel_en_zijgevel_van_de_watertoren_-_Soestdijk_-_20423404_-_RCE.jpg (vanuit het oosten: vensters en de deur met bovenlicht, fries, bovenwand en dakrand)",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_voorgevel_van_de_watertoren_-_Soestdijk_-_20423403_-_RCE.jpg (frontaal op de uitbouw: deur, kroonlijst, schilddak met dakkapel)",
+    "https://commons.wikimedia.org/wiki/File:Soestdijk_Watertoren_0537.JPG (vanuit het zuiden)",
+    "PDOK BAG-pand 0308100000001971 (bouwjaar 1680), AHN DSM/DTM 0,5 m, luchtfoto en PDOK-terrein, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.0308100000001971: dak- en nokhoogte, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-soestdijk-1-100.stl"
+  ]
+}
