@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Enschede (Hoog & Droog)",
+  "file": "watertoren-enschede-hoog-en-droog.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    258635.31,
+    471443.9
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ]
+  ],
+  "groundHeight": 90.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0153100000204953"
+  ],
+  "description": "Oorsprong op het hart van het ronde BAG-pand op het maaiveld (NAP +46,88 m), +X naar het oosten, +Y naar het noorden; deur naar het zuid-zuidwesten. Onderbouw van 12,3 m met plint, rondboogvensters, deur met waaierlicht, stoep en kroonlijst; ronde schacht met zes banden, drie rijen vensters en twaalf oculi; rondlijst tot 6,4 m; reservoir van 12,6 m met zestien verdiepte velden in twee rijen, band, kleine vensters en kroonlijst tot 33,0 m; vlak kegeldak van 24 banen (30 graden); lantaarn met kap, koepeltje en makelaar tot 40,4 m. Maten uit BAG, AHN en één foto.",
+  "realWorld": {
+    "built": 1890,
+    "architect": "N. Biezeveld",
+    "publishedHeightM": 40,
+    "reservoirM3": 300,
+    "ahnGroundNapM": 46.88,
+    "ahnCorniceNapM": 80,
+    "ahnDomeNapM": 86.5,
+    "ahnTopNapM": 87.25,
+    "plinthDiameterM": 12.34,
+    "shaftDiameterM": [
+      12,
+      11.7
+    ],
+    "reservoirDiameterM": 12.6,
+    "corniceDiameterM": 13.1,
+    "corniceM": [
+      32.6,
+      33
+    ],
+    "roofSlopeDeg": 29.7,
+    "topM": 40.4,
+    "photoScalePxPerM": 9.5,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Enschede_Hoog_%26_Droog) (1890, N. Biezeveld, 40 m, ijzeren hangbodemreservoir van 300 m³, gerenoveerd 1956, gemeentelijk monument, sinds 2019 CLAFIS)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Enschede.jpg (PD, vanaf het west-zuidwesten: geledingen, vensters, oculi, rondlijst, reservoir, lantaarn; schaal 9,5 px/m)",
+    "PDOK BAG/BGT-pand 0153100000204953 (cirkel, straal 6,17 m), AHN DSM/DTM 0,5 m, 3D BAG (h_dak_max NAP +86,60) en luchtfoto's 2022 tot 2026, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-enschede-hoog-en-droog-1-1000.stl"
+  ]
+}
