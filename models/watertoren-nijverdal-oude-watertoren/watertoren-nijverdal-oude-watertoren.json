@@ -1,0 +1,76 @@
+{
+  "name": "Oude watertoren Nijverdal",
+  "file": "watertoren-nijverdal-oude-watertoren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    229174.472,
+    485970.391
+  ],
+  "xAxis": [
+    0.99357,
+    0.1132
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4.5,
+      0
+    ],
+    [
+      -4.5,
+      0
+    ],
+    [
+      0,
+      4.5
+    ],
+    [
+      0,
+      -4.5
+    ]
+  ],
+  "groundHeight": 52.32,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0163100000533903"
+  ],
+  "description": "Oorsprong op het hart van het vierkante BAG-pand op maaiveld (NAP +9,3 m), +X langs de gevels 6,5 graden linksom van RD-oost, +Y naar de P.C. Stamstraat (noord). Vierkant gebouwtje van 5,25 m tot 3,22 m met overstekende goot, dubbele deur en drie vensters; acht naar binnen lopende betonnen poten met koppelbalken op 6,2 tot 6,7 m rond een kern (de vakken zijn in het echt open); kraag, kegelvormige bodem, waterlijst, cilindrisch reservoir van 5,0 m met acht lisenen en acht rondboogvensters, band en dakrand tot 16,22 m en een licht bol dak tot 16,35 m (NAP +25,65). Maten uit BAG, AHN, register en foto's.",
+  "realWorld": {
+    "built": 1912,
+    "rijksmonument": 512248,
+    "type": "betonskelet met Intze-reservoir",
+    "ahnGroundNapM": 9.3,
+    "ahnRoofRimNapM": 25.55,
+    "ahnTopNapM": 25.65,
+    "baseBuildingM": 5.25,
+    "baseBuildingTopM": 3.22,
+    "legOuterRadiusM": [
+      2.44,
+      1.98
+    ],
+    "beamsM": [
+      6.22,
+      6.73
+    ],
+    "reservoirDiameterM": 5.04,
+    "reservoirOverLisenesM": 5.34,
+    "reservoirM": [
+      11.35,
+      16.22
+    ],
+    "topM": 16.35,
+    "minimumPartM": 0.6
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512248 (betonskelet, Intze-reservoir, vierkant gebouwtje met plat dak en overstekende goot, dubbele deur en drie vensters, acht poten met koppelbalken, mantel met acht lisenen op een waterlijst, gietijzeren rondboogvensters, ijzeren wenteltrap)",
+    "https://nl.wikipedia.org/wiki/Oude_watertoren_(Nijverdal) (1912, proceswater van de Stoomblekerij, gerestaureerd 2010-2011)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_WATERTOREN_-_Nijverdal_-_20297259_-_RCE.jpg (waterpas: hoogtes van gebouwtje, koppelbalken, poten, bodem, waterlijst, vensters en dakrand; 39 px/m uit de AHN-hoogte)",
+    "https://commons.wikimedia.org/wiki/File:Nijverdal_Watertoren_8314.JPG (poten, koppelbalken met schoren, lisenen, vensters, gebouwtje)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren,_Nijverdal.jpg (mantel, lisenen, vensters, wenteltrap)",
+    "PDOK BAG-pand 0163100000533903, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-nijverdal-oude-watertoren-1-1000.stl"
+  ]
+}
