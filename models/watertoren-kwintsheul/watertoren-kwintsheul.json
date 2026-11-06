@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Kwintsheul",
+  "file": "watertoren-kwintsheul.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    76953.6,
+    449071.1
+  ],
+  "xAxis": [
+    0.83867,
+    0.54464
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      2.2,
+      0
+    ],
+    [
+      -2.2,
+      0
+    ],
+    [
+      0,
+      2.2
+    ],
+    [
+      0,
+      -2.2
+    ]
+  ],
+  "groundHeight": 43.85,
+  "replacesBuildings": [],
+  "description": "Oorsprong op het hart van het reservoir (vlakke top in het AHN-DSM) op de kade (NAP +0,6 m), X-as 33 graden linksom van RD-oost evenwijdig aan woonhuis en kas, -Y naar de sloot. Taps vakwerkframe van 3,0 m op het maaiveld tot 2,2 m onder het reservoir met vier hoekstijlen van 0,9 m, ringen op een en twee derde en open vakken met een spitse top (kruisgewelf); motorhuisje van 2,9 m in het vierkant met lessenaarsdak (1,35 tot 1,6 m) in het frame; vierkant reservoir van 2,2 m met afgeronde hoeken van 4,4 tot 6,0 m. Geen BAG-pand. Hoogte uit het AHN, verhoudingen uit de foto's.",
+  "realWorld": {
+    "built": 1900,
+    "rijksmonument": 518154,
+    "complex": "Sonnehoeck (518153)",
+    "ahnGroundNapM": 0.6,
+    "ahnTopNapM": 6.63,
+    "frameFootWidthM": 3,
+    "frameTopWidthM": 2.2,
+    "legM": 0.9,
+    "ringsM": [
+      1.75,
+      2.94
+    ],
+    "shedM": [
+      1.35,
+      1.6
+    ],
+    "shedWidthM": 2.9,
+    "tankWidthM": 2.2,
+    "tankBottomM": 4.4,
+    "topM": 6,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Kwintsheul) (1900, voor een tuinderij, vierkant ijzeren reservoir op een driedelig vakwerkstalen frame, nu voor de besproeiing van de kassen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518154 (Bij Hollewatering 26; driedelig vakwerkstalen frame met trekstangen, vierkant geklonken ijzeren reservoir, ijzeren ladder, vernieuwd motorhuisje met rabatdelen en flauw hellend lessenaarsdak binnen het frame)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Kwintsheul) (Watertoren holle watering.jpg 2009; RCE 20389997 en 20390019, 2004, vanaf het water)",
+    "PDOK BAG-WFS en gebouwtegels (geen pand op de toren), AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-kwintsheul-1-1000.stl"
+  ]
+}
