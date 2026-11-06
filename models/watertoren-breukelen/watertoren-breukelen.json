@@ -1,0 +1,70 @@
+{
+  "name": "Watertoren Breukelen",
+  "file": "watertoren-breukelen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    128846.05,
+    466420.24
+  ],
+  "xAxis": [
+    0.9916,
+    0.12931
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      5.7,
+      5.7
+    ]
+  ],
+  "groundHeight": 42.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0311100000007807"
+  ],
+  "description": "Oorsprong op het hart van het achtkante BAG-pand op maaiveld (NAP -0,7 m), +X de normaal van het oostvlak met de ingang (RD 7,43 graden). Achtkante, licht verjongende onderbouw met verdiepte stroken om het andere vlak, kleine vensters, stoep, deur en luifel; op 27,5 m kraagt de zestienhoekige opbouw over de onderbouw, waarvan de hoeken als kantelen tot 28,3 m doorlopen; vensterparen, kroonlijst tot 39,3 m, steile dakvoet en zestienzijdig puntdak tot 43,9 m. Maten uit BAG, AHN, de tekeningen van 1927 en 1963 en een foto.",
+  "realWorld": {
+    "built": "1927-1928",
+    "architect": "J. Gerber (vermoedelijk)",
+    "wikipediaHeightM": 44,
+    "reservoirM3": 400,
+    "reservoirDiameterM": 10.2,
+    "drawing1963TopNapM": 43.5,
+    "drawing1963WallTopNapM": 38.7,
+    "ahnGroundNapM": -0.7,
+    "ahnTopNapM": 43.21,
+    "octagonAcrossFlatsM": [
+      11.3,
+      11.1
+    ],
+    "upperAcrossFlatsM": 11.32,
+    "corbelM": 27.5,
+    "merlonTopM": 28.3,
+    "corniceM": 39.3,
+    "roofFootM": 40.55,
+    "apexM": 43.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Breukelen) (1927-1928, J. Gerber(?), circa 44 m, 400 m³)",
+    "https://www.ruimtelijkeplannen.nl/documents/NL.IMRO.1904.PBwatertorenBKL-CC01/b_NL.IMRO.1904.PBwatertorenBKL-CC01_Bijlage12.Monument.pdf (Vocus: gemeentelijk monument, architectonische omschrijving, foto's, tekeningen 1927 en 1963 uit J.G. Bokma, Tijdschrift Historische Kring Breukelen 1996-4)",
+    "https://commons.wikimedia.org/wiki/File:Breukelen_Watertoren_4787.JPG (vanuit het oosten, 2007: kantelen, kraag, vensters, luifel en deur)",
+    "PDOK BAG-pand 0311100000007807, BGT (erf van de stoep, oprit), AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-breukelen-1-1000.stl"
+  ]
+}
