@@ -1,0 +1,81 @@
+{
+  "name": "Watertoren Lauwerhof",
+  "file": "watertoren-utrecht-lauwerhof.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136594.5,
+    456414.98
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      10,
+      0
+    ],
+    [
+      -10,
+      0
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      -10
+    ]
+  ],
+  "groundHeight": 46.84,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000031105"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 8,42 m) op het maaiveld (NAP +3,55 m), X-as naar RD-oost. Bakstenen onderbouw tot 4,8 m met waterlijst, deur aan de noordoostkant en boogopeningen; licht verjongende schacht (straal 6,1 tot 5,6 m) met boogvensters en oculi tot 18,3 m; rondboogfries tot 20,8 m; holle overkraging tot 24,0 m; reservoirmantel (straal 8,25 m) met vensterband, blinde arcade met zestien vensters en oculi tot de kroonlijst op 36,7 m; borstwering met 26 kantelen tot 39,1 m rond een vlak kegeldak met dakkap. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1896,
+    "architect": "L.C. Dumont (Utrechtse Waterleiding Maatschappij)",
+    "rijksmonument": 514252,
+    "publishedHeightM": 39,
+    "reservoirM3": 1500,
+    "ahnGroundNapM": 3.55,
+    "ahnMerlonNapM": 42.65,
+    "ahnTopNapM": 43.39,
+    "plinthRadiusM": 6.6,
+    "plinthM": 4.8,
+    "shaftRadiusFootM": 6.1,
+    "shaftRadiusTopM": 5.6,
+    "friezeM": [
+      18.3,
+      20.8
+    ],
+    "bellM": [
+      20.8,
+      24
+    ],
+    "drumRadiusM": 8.25,
+    "drumM": [
+      25.1,
+      36.7
+    ],
+    "merlons": 26,
+    "merlonTopM": 39.1,
+    "roofApexM": 38.95,
+    "topM": 39.84,
+    "entranceDegrees": 45,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Utrecht_Lauwerhof) (1895-1896, L.C. Dumont, neorenaissance, 39 m, Intze-reservoir van 1500 m³ op circa 30 m van F.A. Neumann; nu woningen en vergaderruimte)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514252 (ronde toren van 39 m in baksteen met geglazuurde baksteen, kunststeen en natuursteen; schacht eindigt met een rondboogfries, gemetselde overkraging met ijzeren balken naar het bredere reservoir met lichtspleten, korfboogfries en kantelen)",
+    "https://commons.wikimedia.org/wiki/Category:Water_tower_(Lauwerhof_Utrecht) (Water tower (Lauwerhof Utrecht).jpg, Utrecht - Watertoren Lauwerhof - 20220223 PvE (Q2621420).jpg, Utrecht, de watertoren aan het Lauwerhof RM514252 foto3 2015-11-01 13.59.jpg, Watertoren Lauwerhof.jpg, RCE-foto's 20235332, 20235333, 20339928 en 20339929)",
+    "PDOK BAG-pand 0344100000031105, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-utrecht-lauwerhof-1-1000.stl"
+  ]
+}
