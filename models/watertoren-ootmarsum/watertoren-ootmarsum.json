@@ -1,0 +1,64 @@
+{
+  "name": "Watertoren Ootmarsum",
+  "file": "watertoren-ootmarsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    256855.32,
+    492037.03
+  ],
+  "xAxis": [
+    0.96222,
+    0.27228
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      -5
+    ],
+    [
+      -7,
+      0
+    ]
+  ],
+  "groundHeight": 109.26,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1774100000252343"
+  ],
+  "description": "Oorsprong op het hart van de reservoircilinder (BAG-cirkelfit, straal 4,32 m) op het maaiveld van de Kuiperberg (NAP circa +66,3 m), +X van de westgevel van de traptoren naar het hart (RD 15,8 graden), +Y naar het noordnoordwesten. Bakstenen cilinder op een plint met betonnen dakrand tot 7,8 m en een verdiept dak op 6,9 m; vierkante traptoren van 4,11 m die half in de cilinder staat, met drie hoge spleetvensters in de westgevel, de deur onder een boog in de noordgevel en een betonnen daklijst tot 9,6 m (NAP +75,9). Maten uit BAG, AHN, 3D BAG, het register en één foto.",
+  "realWorld": {
+    "built": 1934,
+    "registerHeightM": 9.05,
+    "reservoirM3": 216,
+    "rijksmonument": 513204,
+    "groundNapM": 66.26,
+    "ahnDrumRoofNapM": 73.15,
+    "ahnRimNapM": 74.05,
+    "ahnStairRoofNapM": 75.88,
+    "drumDiameterM": 8.64,
+    "stairTowerM": 4.11,
+    "rimM": 7.79,
+    "stairM": 9.62,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Ootmarsum) (1934, 9,05 m, 216 m³, Kuiperberg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513204 (cilinder met vlakbodemreservoir op bakstenen plint, betonnen dakranden, vierkante traptoren deels in de cilinder, drie spleetvensters in de westgevel, deur onder rondboog in de noordgevel, vijf treden op het talud)",
+    "https://commons.wikimedia.org/wiki/File:Ootmarsum_Watertoren_8948.JPG (2006, vanuit het zuidwesten: westgevel met spleetvensters, plint en dakrand van de cilinder, daklijst van de traptoren)",
+    "PDOK BAG-pand 1774100000252343 (bouwjaar 1935), AHN DSM/DTM 0,5 m, luchtfoto en PDOK-terrein, 2026-11-06",
+    "3D BAG (3dbag.nl, CC BY 4.0, TU Delft 3D geoinformation en 3DGI), pand NL.IMBAG.Pand.1774100000252343: dakhoogtes en maaiveld, opgehaald 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-ootmarsum-1-100.stl"
+  ]
+}
