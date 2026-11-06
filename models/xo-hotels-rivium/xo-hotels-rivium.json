@@ -1,0 +1,72 @@
+{
+  "name": "XO Hotels Rivium (Braingate)",
+  "file": "xo-hotels-rivium.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    97156,
+    436558
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundNap": 5.2,
+  "groundHeight": 48.7,
+  "groundOffsetMetres": -0.15,
+  "groundSamplePoints": [
+    [
+      -6,
+      -2
+    ],
+    [
+      6,
+      -2
+    ],
+    [
+      -6,
+      10
+    ],
+    [
+      6,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0502100000021132"
+  ],
+  "description": "Voormalig kantoorgebouw Braingate aan de Rivium Boulevard 301-321 (2003), in verbouwing tot XO Hotels Rivium: een gebogen schijf (zuidgevel een cirkelboog van 137,8 m straal, noordgevel 123,5 m) die als brug over de straat naar de Rivium Boulevard staat. Doorgang van 30,5 m breed onder een brugdeel vanaf NAP +19,1 m; westelijk deel tot +42,0 m met een lamellenband tot +43,25 m, een lage zuidwestvleugel en noordwestdriehoek tot +29,9 m op kolommen; oostelijk deel tot +37,1 m met band tot +38,3 m, een glazen lift- en trappentoren tot +41,5 m aan de noordgevel bij de doorgang, entreepaviljoen met luifel en een parkeerdek op +4,6 m aan de noordzijde. Vensterbanden per laag van 3,6 m als blinde nissen. Oorsprong op de rijbaan in de doorgang (NAP +5,2 m), assen langs RD. Maten uit BAG, BGT, AHN en 3D BAG; verdiepingen, de hoogte van de doorgang en de gevelbanden geschat uit de luchtfoto en de foto's en renders van de gemeente.",
+  "realWorld": {
+    "built": 2003,
+    "groundNapM": 5.2,
+    "westRoofNapM": 42,
+    "westBandNapM": 43.25,
+    "eastRoofNapM": 37.1,
+    "eastBandNapM": 38.3,
+    "wingRoofNapM": 29.9,
+    "towerNapM": 41.5,
+    "passageSoffitNapM": 19.1,
+    "passageWidthM": 30.5,
+    "deckNapM": 4.6,
+    "arcCentreRd": [
+      97177.78,
+      436679.39
+    ],
+    "arcRadiiM": [
+      123.5,
+      137.8
+    ],
+    "storeyHeightM": 3.6,
+    "estimatedFacadeRelief": true
+  },
+  "sources": [
+    "PDOK BAG pand 0502100000021132 (bouwjaar 2003; Rivium Boulevard 301, logies-, bijeenkomst- en kantoorfunctie), BGT (pand-vlakken, kolommen en wegdelen in de doorgang), actuele orthoHR, AHN-DSM en -DTM 0,5 m, 3D BAG LoD2.2 (AHN5 2023)",
+    "https://capellebouwtaandestad.nl/project/rivium-boulevard-301-321 (gemeente Capelle aan den IJssel: transformatie van het Braingate-gebouw naar hotel, schuine luchtfoto en renders van JaW architecten)",
+    "https://xohotels.com/hotel/xo-hotels-rivium/ (adres, parkeergarage aan de achterzijde)",
+    "https://deskfinder.nl/kantoorruimte-huren/capelle-aan-den-ijssel/rivium-boulevard-301-320/ (business centre Braingate)"
+  ],
+  "printFiles": [
+    "xo-hotels-rivium-1-1000.stl"
+  ]
+}
