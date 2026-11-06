@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Bergambacht",
+  "file": "watertoren-bergambacht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    113510.65,
+    437634.03
+  ],
+  "xAxis": [
+    0.99889,
+    -0.04711
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      0,
+      -7
+    ]
+  ],
+  "groundHeight": 42.482,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0491100001310888"
+  ],
+  "description": "Oorsprong op het hart van de vierkante schacht op het peil van de noordelijke doorgang (NAP circa -1,12 m; het talud bedekt de voet elders 1,3 à 1,6 m), +X op RD -2,7 graden, de normaal van de oostgevel met de hoofdingang. Bakstenen schacht van 9,85 m met hoekmuurtjes, een steunbeer met liseen en vensterstroken midden op elke gevel, rondboog met trap in het oosten en de lagere ingang in het noorden; witte liggers onder een ronde trommel van 10,8 m met witte schijf, lisenen en vensterstroken, kroonlijst van 12 m op 37,5 m en een koperen helmdak tot 45,3 m. Maten uit AHN, BAG en foto's.",
+  "realWorld": {
+    "built": 1937,
+    "architect": "P.D. Stuurman",
+    "publishedHeightM": 40,
+    "registerHeightM": 45,
+    "reservoirM3": 360,
+    "rijksmonument": 509521,
+    "groundNapM": -1.12,
+    "ahnTopNapM": 44.22,
+    "shaftWidthM": 9.86,
+    "drumDiameterM": 10.8,
+    "corniceDiameterM": 12,
+    "shaftTopM": 28.02,
+    "corniceM": 37.52,
+    "topM": 45.34,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Bergambacht) (1937, P.D. Stuurman, 40 m, 360 m³)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509521 (45 m, steunberen en lisenen, hoekmuurtjes, ingangen oost, noord en zuid, liggers, helmdak)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Bergambacht.jpg (2010, oostgevel met rondboog en trap, liggers, trommel en helmdak)",
+    "https://commons.wikimedia.org/wiki/File:Bergambacht_-_Watertoren_m_park.jpg (2007)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Bergambacht_-_20302396_-_RCE.jpg (RCE)",
+    "PDOK BAG-pand 0491100001310888, 3D BAG, AHN DSM/DTM 0,5 m, luchtfoto Actueel_orthoHR en PDOK-terrein, 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-bergambacht-1-1000.stl"
+  ]
+}
