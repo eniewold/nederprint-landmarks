@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Zeist",
+  "file": "watertoren-zeist-bergweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    145031.75,
+    455843.89
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      6,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      -6
+    ]
+  ],
+  "groundHeight": 48.47,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0355100000723944"
+  ],
+  "description": "Oorsprong op het hart van de ronde BAG-voetafdruk (straal 4,84 m) op het maaiveld (NAP +5,35 m), X-as naar RD-oost. Onderbouw op een plint met de deur naar de Bergweg (west) en een kroonlijst tot 5,6 m; verjongende schacht (straal 4,53 tot 3,75 m) met smalle vensters en oculi tot de dubbele lijst op 20,9 m; zestienzijdige overkraging tot 23,4 m; reservoir (straal 5,15 m) met band, zestien velden met elk twee vensters, lijst en een zestienzijdige kroonlijst tot 29,95 m; vlak zestienzijdig tentdak met vierkante ventilatiekap tot 34,1 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1896,
+    "client": "Utrechtse Waterleiding Maatschappij",
+    "rijksmonument": 510273,
+    "publishedHeightM": 37.5,
+    "reservoirM3": 300,
+    "ahnGroundNapM": 5.35,
+    "ahnRoofEdgeNapM": 35.25,
+    "ahnTopNapM": 39.47,
+    "footRadiusM": 4.84,
+    "baseM": 5.6,
+    "shaftRadiusFootM": 4.53,
+    "shaftRadiusTopM": 3.75,
+    "corbelM": [
+      20.9,
+      23.4
+    ],
+    "drumRadiusM": 5.15,
+    "eaveRadiusM": 6.1,
+    "roofEdgeM": 29.95,
+    "roofSlope": 0.519,
+    "topM": 34.1,
+    "entranceDegrees": 186,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Zeist) (1896, Utrechtse Waterleiding Maatschappij, neorenaissance-invloeden, 37,5 m, 300 m³, puntdak)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510273 (ronde toren met verjongende schacht en uitgekraagde reservoirbekroning; hardstenen plint, deur naar de Bergweg met gedenksteen; schacht met smalle en rondboogvensters; reservoir met lisenen, per vak een vierkant en een langwerpig venster, bovenin vensters afgewisseld met ankers; puntdak met na 1900 gewijzigde overstek en ingekorte lantaarnvormige ontluchting)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Zeist) (Overzicht Watertoren - Zeist - 20372027 - RCE.jpg, Zeist Watertoren 9161.JPG)",
+    "PDOK BAG-pand 0355100000723944, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-06"
+  ],
+  "printFiles": [
+    "watertoren-zeist-bergweg-1-1000.stl"
+  ]
+}
