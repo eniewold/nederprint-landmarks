@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Pontianuskerk Marsum",
+  "origin": [
+    177758,
+    580509.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 4.8,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000005118",
+    "NL.IMBAG.Pand.0083100000005122"
+  ],
+  "description": "Eenbeukige kerk met koorsluiting en afzonderlijk BAG-pand voor de dertiende-eeuwse toren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 4.8,
+    "highestPointM": 32.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000005118",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000005122",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28622",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Pontianuskerk_(Marsum,_Friesland)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-pontianuskerk-marsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-pontianuskerk-marsum-1-1000.stl"
+  ]
+}
