@@ -1,0 +1,35 @@
+{
+  "name": "De Vermaning Nes",
+  "origin": [
+    180696.37,
+    606578.07
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 3.145,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0060100000125965"
+  ],
+  "description": "Sober doopsgezind kerkgebouw met schilddak en rondboogvensters; nissen en entree geschat op basis van gevelbeelden.",
+  "realWorld": {
+    "groundNapM": 3.145,
+    "highestPointM": 8.17
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0060100000125965",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7635",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_kerk_(Nes,_Ameland)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.vvvameland.nl/praktisch/algemeen/dorpen-ameland/nes/vermaning-nes"
+  ],
+  "file": "de-vermaning-nes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-vermaning-nes-1-1000.stl"
+  ]
+}
