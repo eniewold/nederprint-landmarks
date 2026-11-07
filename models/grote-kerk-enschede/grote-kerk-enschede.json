@@ -1,0 +1,79 @@
+{
+  "name": "Grote Kerk Enschede",
+  "file": "grote-kerk-enschede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    258086.89,
+    471360.51
+  ],
+  "xAxis": [
+    0.97437,
+    -0.22495
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -26,
+      4
+    ],
+    [
+      -19,
+      -4
+    ],
+    [
+      0,
+      -12.5
+    ],
+    [
+      0,
+      12.5
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      -12,
+      12
+    ],
+    [
+      14,
+      -12.5
+    ],
+    [
+      22,
+      10
+    ]
+  ],
+  "groundHeight": 85.79,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0153100000214967"
+  ],
+  "description": "Grote Kerk aan de Oude Markt in Enschede: zaalkerk (tweebeukige hallenkerk van 1480, in 1842 onder één zadeldak gebracht) met nok +18,65 m, schild boven de samengetrokken koorsluiting, steunberen met zadeldakjes, rondboogvensters, sacristie met schilddak aan de noordzijde, en de romaanse westtoren met hoeklisenen, rondboogfriezen, tweelingvensters, kroonlijst, hoektorentjes, wijzerplaathuisjes en de geknikte leien spits van 1928 tot +50,5 m. Oorsprong RD (258086,89; 471360,51) op de nok op maaiveld (NAP +42,0 m), X-as langs de nok onder -13 graden. Vensters en portalen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-enschede-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 45.04,
+    "widthM": 27.31,
+    "highestPointM": 50.5,
+    "built": "noordmuur ca. 1200, toren 12e/13e eeuw met bovenste geleding ca. 1480, hallenkerk 1480, zaalkerk 1842, herstel na brand 1862, spits 1926-1928",
+    "monument": 15307,
+    "groundNapM": 42,
+    "eaveM": 12.15,
+    "ridgeM": 18.65,
+    "towerCorniceM": 27.5,
+    "towerTopM": 50.5,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Enschede)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15307",
+    "https://archimon.nl/overijssel/enschedeherv.html",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk,_Enschede (RCE-foto's 20351541, 20273507, 20273535, 20273496; Grote Kerk church Enschede 2019.jpg en 2019 2.jpg)",
+    "BAG pand 0153100000214967 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
