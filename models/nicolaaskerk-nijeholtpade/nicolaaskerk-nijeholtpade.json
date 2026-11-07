@@ -1,0 +1,35 @@
+{
+  "name": "Nicolaaskerk Nijeholtpade",
+  "origin": [
+    201577.9,
+    547300.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 2.596,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0098100000014110"
+  ],
+  "description": "Laatgotische zaalkerk met driezijdig koor, steunberen en slanke toren met naaldspits. Vensters en spits naar AHN en foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.596,
+    "highestPointM": 22.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0098100000014110",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38865",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk,_Nijeholtpade",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.zuidoostfriesland.nl/alle-locaties/2588472253/sint-nicolaaskerk-nijeholtpade"
+  ],
+  "file": "nicolaaskerk-nijeholtpade.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nicolaaskerk-nijeholtpade-1-1000.stl"
+  ]
+}
