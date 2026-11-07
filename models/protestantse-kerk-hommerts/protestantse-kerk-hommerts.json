@@ -1,0 +1,52 @@
+{
+  "name": "Protestantse Kerk Hommerts",
+  "file": "protestantse-kerk-hommerts.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172659,
+    555218.9
+  ],
+  "xAxis": [
+    0.99,
+    0.141
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      -8
+    ],
+    [
+      20,
+      -8
+    ],
+    [
+      -5,
+      8
+    ],
+    [
+      20,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0683100000291825"
+  ],
+  "description": "Johannes de Doperkerk: eenbeukige zaal met veelhoekige koorsluiting, half ingebouwde toren met spits en blinde rondboogvensters.",
+  "realWorld": {
+    "groundNapM": 0.341,
+    "ahnTopNapM": 43.0273,
+    "modelTopM": 42.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0683100000291825",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39787",
+    "https://commons.wikimedia.org/wiki/Category:Johannes_de_Doperkerk,_Hommerts"
+  ],
+  "printFiles": [
+    "protestantse-kerk-hommerts-1-1000.stl"
+  ]
+}
