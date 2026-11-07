@@ -1,0 +1,53 @@
+{
+  "name": "Sint Margaretakerk Boksum",
+  "file": "sint-margaretakerk-boksum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177701.5,
+    576756
+  ],
+  "xAxis": [
+    0.9877,
+    -0.1564
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -7
+    ],
+    [
+      14,
+      -7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      14,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000008523"
+  ],
+  "description": "Eenbeukige kerk met vijfzijdig koor, twee zware zuidelijke steunberen, vierkante westtoren en ingesnoerde spits. Ondiepe spitsboogvensters en galmgaten.",
+  "realWorld": {
+    "groundNapM": 4.241,
+    "ahnTopNapM": 33.196,
+    "modelTopM": 28.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000008523",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28584",
+    "https://commons.wikimedia.org/wiki/Category:Margaretakerk,_Boksum",
+    "https://aldefrysketsjerken.nl/boksum"
+  ],
+  "printFiles": [
+    "sint-margaretakerk-boksum-1-1000.stl"
+  ]
+}
