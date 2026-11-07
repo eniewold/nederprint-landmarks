@@ -1,0 +1,99 @@
+{
+  "name": "Sint-Martinuskerk Bitgum",
+  "file": "sint-martinuskerk-bitgum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    175024,
+    583459.95
+  ],
+  "xAxis": [
+    0.99924,
+    0.03909
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      17.8,
+      0
+    ],
+    [
+      16.6,
+      3.6
+    ],
+    [
+      16.6,
+      -3.6
+    ],
+    [
+      13,
+      -5.2
+    ],
+    [
+      0,
+      -5.2
+    ],
+    [
+      -8,
+      -5.2
+    ],
+    [
+      -15.5,
+      -4.2
+    ],
+    [
+      -19.6,
+      0
+    ],
+    [
+      -14,
+      8.9
+    ],
+    [
+      -6,
+      5.2
+    ],
+    [
+      8,
+      5.2
+    ],
+    [
+      13,
+      5.2
+    ]
+  ],
+  "groundHeight": 47.36,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000001948",
+    "NL.IMBAG.Pand.0083100000001963"
+  ],
+  "description": "Sint-Martinuskerk aan de Buorren in Bitgum (Beetgum): zaalkerk van 1669-1672 met driezijdig gesloten koor onder een steil leien dak (nok +13,3 m) met opschieter en gootlijst, steunberen, plint, rondboogvensters en twee poortjes met fronton in de zuidgevel, de zestiende-eeuwse westtoren met plint, versnijding, twee rijen blinde nissen, klokkenverdieping met galmgaten, kroonlijst (+19,8 m) en de ingesnoerde spits van 1862 tot +33,5 m, de consistorie onder een zadeldak met schoorsteen en het afdak tegen de noordgevel. Oorsprong RD (175024,0; 583459,95) op de as van het schip op maaiveld (NAP +5,9 m), X-as langs de nok van toren naar koor onder 2,24 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "sint-martinuskerk-bitgum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.27,
+    "widthM": 13.69,
+    "highestPointM": 33.5,
+    "built": "toren zestiende eeuw (met blinde nissen; zadeldak in 1862 vervangen door de spits), schip 1669-1672 op de fundamenten van de middeleeuwse kerk, gerestaureerd 1972-1980",
+    "monument": 28571,
+    "groundNapM": 5.9,
+    "naveRidgeM": 13.3,
+    "naveEaveM": 7.3,
+    "navePitch": 1.52,
+    "towerCorniceM": 19.8,
+    "towerTopM": 33.5,
+    "consistoryRidgeM": 7,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Martinuskerk_(Beetgum)",
+    "https://fy.wikipedia.org/wiki/Sint-Martinustsjerke_(Bitgum)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28571",
+    "https://www.wikidata.org/wiki/Q1856364",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinuskerk,_Bitgum (2023 Bitgum, Sint-Martinustsjerke; Beetgum, kerk foto2 2010-04-17; RCE 20029903, 20029905, 20029907, 20029908, 20029909, 20029910, 20029912, 20029916, 20377598)",
+    "BAG pand 0083100000001948 (schip, koor en consistorie) en 0083100000001963 (toren)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
