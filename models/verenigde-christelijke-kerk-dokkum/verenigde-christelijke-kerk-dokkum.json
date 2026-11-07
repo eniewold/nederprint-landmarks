@@ -1,0 +1,52 @@
+{
+  "name": "Verenigde christelijke kerk Dokkum",
+  "file": "verenigde-christelijke-kerk-dokkum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195579.5,
+    593419
+  ],
+  "xAxis": [
+    0.989,
+    -0.147
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      -6
+    ],
+    [
+      15,
+      -6
+    ],
+    [
+      -5,
+      7
+    ],
+    [
+      15,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000212970"
+  ],
+  "description": "Neoclassicistische zaalkerk uit 1852 met drie gevelvelden, fronton, vierkante uurwerktoren en opengewerkte klokkenkamer met aangepaste spitsbogen.",
+  "realWorld": {
+    "groundNapM": 1.699,
+    "ahnTopNapM": 23.9102,
+    "modelTopM": 20.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000212970",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/13153",
+    "https://commons.wikimedia.org/wiki/Category:Verenigde_christelijke_kerk,_Dokkum"
+  ],
+  "printFiles": [
+    "verenigde-christelijke-kerk-dokkum-1-1000.stl"
+  ]
+}
