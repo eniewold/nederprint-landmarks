@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Alphonsus de Liguori Beneden-Leeuwen",
+  "origin": [
+    163884,
+    432594
+  ],
+  "xAxis": [
+    0.286,
+    -0.958
+  ],
+  "groundHeight": 6.842,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000000632"
+  ],
+  "description": "Neoromaanse kruisbasiliek met achthoekige vieringtoren, zijbeuken, kooromgang en aangebouwde pastorie. Vieringtoren en geveldetails zijn vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 6.842,
+    "highestPointM": 31.94
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000000632",
+    "https://www.monumenten.nl/monument/523078",
+    "https://commons.wikimedia.org/wiki/Category:Alphonsus_de_Liguorikerk_(Beneden-Leeuwen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-alphonsus-de-liguori-beneden-leeuwen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-alphonsus-de-liguori-beneden-leeuwen-1-1000.stl"
+  ]
+}
