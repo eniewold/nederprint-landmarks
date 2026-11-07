@@ -1,0 +1,67 @@
+{
+  "name": "Sint Joriskerk Britswert",
+  "file": "sint-joriskerk-britswert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    174399,
+    569522
+  ],
+  "xAxis": [
+    0.98769,
+    0.15643
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14,
+      -4
+    ],
+    [
+      -14,
+      4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000169344"
+  ],
+  "description": "Twaalfde-eeuwse zaalkerk met halfronde koorsluiting en westtoren uit 1883; schip onder zadeldak, drie vensters per zijde, zuidportaal, drie torengeledingen en ingesnoerde achtkante spits. Oorsprong RD (174399, 569522), X-as 9 graden naar het noordoosten, maaiveld NAP circa +2,2 m. Vensters en galmgaten als blinde spitsnissen voor 1:1000.",
+  "printFiles": [
+    "sint-joriskerk-britswert-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.55,
+    "widthM": 9.4,
+    "highestPointM": 27.8,
+    "monument": 8483,
+    "groundNapM": 2.2,
+    "naveRidgeM": 10.45,
+    "naveEaveM": 5.917999999999998,
+    "towerTopM": 27.8,
+    "baseM": -1
+  },
+  "sources": [
+    "https://aldefrysketsjerken.nl/britswert",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8483",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Joriskerk_(Britswert)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0140100000169344",
+    "PDOK AHN4 DSM en DTM"
+  ]
+}
