@@ -1,0 +1,34 @@
+{
+  "name": "Petruskerk Jouswier",
+  "origin": [
+    200701.78,
+    596180.81
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.955,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000203079"
+  ],
+  "description": "Zaalkerk met driezijdig gesloten koor en zadeldaktoren; gevelopeningen vereenvoudigd naar foto's.",
+  "realWorld": {
+    "groundNapM": 1.955,
+    "highestPointM": 15.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000203079",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31575",
+    "https://commons.wikimedia.org/wiki/Category:Petruskerk,_Jouswier",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "petruskerk-jouswier.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petruskerk-jouswier-1-1000.stl"
+  ]
+}
