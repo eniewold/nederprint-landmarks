@@ -1,0 +1,38 @@
+{
+  "name": "Protestantse kerk Gendt",
+  "origin": [
+    195358,
+    432007
+  ],
+  "xAxis": [
+    0.98711,
+    -0.16
+  ],
+  "groundHeight": 12.216,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1705100000022683",
+    "NL.IMBAG.Pand.1705100000022686"
+  ],
+  "description": "Vrijstaande middeleeuwse toren en voormalig koor, tegenwoordig kerk; het verdwenen schip wordt niet gereconstrueerd. Details naar foto's en AHN geschat.",
+  "realWorld": {
+    "groundNapM": 12.216,
+    "highestPointM": 24.58
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1705100000022686",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1705100000022683",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16080",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16081",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Gendt)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-kerk-gendt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-gendt-1-1000.stl",
+    "protestantse-kerk-gendt-2-1000.stl"
+  ]
+}
