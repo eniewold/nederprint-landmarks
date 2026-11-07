@@ -1,0 +1,35 @@
+{
+  "name": "Synagoge Borculo",
+  "origin": [
+    232869,
+    459204
+  ],
+  "xAxis": [
+    0.919,
+    0.393
+  ],
+  "groundHeight": 16.966,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1859100000802624"
+  ],
+  "description": "Neoclassicistische synagoge met schilddak, gevelattiek, vier rondboognissen en pilasters, met lagere zijaanbouw.",
+  "realWorld": {
+    "groundNapM": 16.966,
+    "highestPointM": 10.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1859100000802624",
+    "https://www.monumenten.nl/monument/516416",
+    "https://synagogeborculo.nl/joodse-historie-3/synagoge/",
+    "https://commons.wikimedia.org/wiki/Category:Voormalige_synagoge_in_Borculo",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "synagoge-borculo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "synagoge-borculo-1-1000.stl"
+  ]
+}
