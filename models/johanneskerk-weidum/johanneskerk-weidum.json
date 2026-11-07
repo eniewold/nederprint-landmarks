@@ -1,0 +1,61 @@
+{
+  "name": "Johanneskerk Weidum",
+  "file": "johanneskerk-weidum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    178580,
+    573318
+  ],
+  "xAxis": [
+    0.9889,
+    0.1486
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      8,
+      -6
+    ],
+    [
+      18,
+      -6
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      17,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000168429"
+  ],
+  "description": "Romano-gotische eenbeukige kerk met afgeronde apsis, schip met schilddak, ronde vensters en spaarvelden; vierkante tufstenen toren met ingesnoerde spits en blinde galmnissen. Printbaar model met spitse top verbreed tot 0,9 m.",
+  "realWorld": {
+    "groundNapM": 3.39,
+    "naveRidgeM": 13.76,
+    "towerEaveM": 18.02,
+    "towerTopM": 29.44
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0140100000168429",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/8518",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk,_Weidum"
+  ],
+  "printFiles": [
+    "johanneskerk-weidum-1-1000.stl"
+  ]
+}
