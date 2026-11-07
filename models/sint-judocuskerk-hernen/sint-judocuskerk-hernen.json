@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Judocuskerk Hernen",
+  "origin": [
+    175123,
+    427370
+  ],
+  "xAxis": [
+    0.993,
+    0.114
+  ],
+  "groundHeight": 8.087,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000025367"
+  ],
+  "description": "Neoromaanse kruisbasiliek met ronde apsiden en hoge westtoren; details vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 8.087,
+    "highestPointM": 48
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0296100000025367",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9312",
+    "https://www.kerkramentussenmaasenwaal.nl/kerken/hernen-judocuskerk/",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Judocuskerk,_Hernen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-judocuskerk-hernen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-judocuskerk-hernen-1-1000.stl"
+  ]
+}
