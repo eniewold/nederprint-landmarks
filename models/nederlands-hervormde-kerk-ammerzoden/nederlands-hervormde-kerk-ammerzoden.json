@@ -1,0 +1,34 @@
+{
+  "name": "Nederlands hervormde kerk Ammerzoden",
+  "origin": [
+    143907.5,
+    418060
+  ],
+  "xAxis": [
+    0.995,
+    -0.1
+  ],
+  "groundHeight": 4.688,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0263100000008785"
+  ],
+  "description": "Ruïnekerk met intact veelhoekig koor en toren, dakloze muurrestanten en open spitsbogen; sterk vereenvoudigd naar foto's wegens begroeiing.",
+  "realWorld": {
+    "groundNapM": 4.688,
+    "highestPointM": 28.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0263100000008785",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8105",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Ammerzoden",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nederlands-hervormde-kerk-ammerzoden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-ammerzoden-1-1000.stl"
+  ]
+}
