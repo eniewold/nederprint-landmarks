@@ -1,0 +1,34 @@
+{
+  "name": "Kleine Bartholomeuskerk Beek",
+  "origin": [
+    192071.8,
+    426750
+  ],
+  "xAxis": [
+    0.995,
+    0.1
+  ],
+  "groundHeight": 18.428,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0282100000000932"
+  ],
+  "description": "Kerk met westtoren en piramidedak, twee trapgevels, lager koor en driezijdige sluiting. Geveldetails en hoogten van de trapgevels zijn geschat.",
+  "realWorld": {
+    "groundNapM": 18.428,
+    "highestPointM": 19.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0282100000000932",
+    "https://commons.wikimedia.org/wiki/Category:Bartholome%C3%BCs,_Beek_(Ubbergen)",
+    "https://allesover024.nl/monument/toren-van-de-kleine-bartholomeus-beek-35807/",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kleine-bartholomeuskerk-beek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kleine-bartholomeuskerk-beek-1-1000.stl"
+  ]
+}
