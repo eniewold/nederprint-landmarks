@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Heukelum",
+  "origin": [
+    133737.25,
+    431756.25
+  ],
+  "xAxis": [
+    0.943,
+    0.331
+  ],
+  "groundHeight": 3.62,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0733100000000301"
+  ],
+  "description": "Kerk met lager westschip, hoger koor, dwarsarmen en dakruiter met spits.",
+  "realWorld": {
+    "groundNapM": 3.62,
+    "highestPointM": 26.74
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0733100000000301",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21988",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Heukelum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.kerkheukelum.nl/geschiedenis"
+  ],
+  "file": "nederlands-hervormde-kerk-heukelum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-heukelum-1-1000.stl"
+  ]
+}
