@@ -1,0 +1,95 @@
+{
+  "name": "Hervormde Kerk Oosterhesselen",
+  "file": "hervormde-kerk-oosterhesselen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    244712.496,
+    530904.385
+  ],
+  "xAxis": [
+    0.99905,
+    0.04362
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -12,
+      0
+    ],
+    [
+      0,
+      -7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      6,
+      -7.2
+    ],
+    [
+      6,
+      7.2
+    ],
+    [
+      12.5,
+      0
+    ],
+    [
+      -26,
+      0
+    ],
+    [
+      -21.15,
+      -4.8
+    ],
+    [
+      -21.15,
+      4.9
+    ],
+    [
+      -16.4,
+      0
+    ]
+  ],
+  "groundHeight": 58.53,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000007011",
+    "NL.IMBAG.Pand.0109100000011992"
+  ],
+  "description": "Hervormde Kerk aan de Geserweg in Oosterhesselen: gepleisterde eenbeukige gotische kerk (koor 15e eeuw, westmuur 1628) met driezijdige koorsluiting onder een zadeldak van 45 graden (nok +13,93 m) met wolfseind boven de westgevel, steunberen tussen de traveeën en op de hoeken, spitsboogvensters (het middelste van de sluiting dichtgezet), westgevel met gebogen schouders, deurnis en vensters; met de vrijstaande laatgotische toren (15e eeuw, Drentse torenfamilie) van drie geledingen met spitsboognissen, deur, galmgaten en tentdak tot +22,15 m. Oorsprong RD (244712,496; 530904,385) midden in de kerk op het laagste maaiveld (NAP +16,75 m), X-as langs de nok naar het koor onder 2,5 graden. Vensters, deuren en galmgaten als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "hervormde-kerk-oosterhesselen-1-1000.stl",
+    "hervormde-kerk-oosterhesselen-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.46,
+    "widthM": 12.63,
+    "highestPointM": 22.15,
+    "built": "kerk: koor 15e eeuw, schip na 1592 hersteld, westmuur 1628, gepleisterd 1862; toren laat-15e eeuw",
+    "monument": [
+      31632,
+      31633
+    ],
+    "groundNapM": 16.75,
+    "ridgeM": 13.93,
+    "eaveM": 8.755,
+    "towerEaveM": 15.55,
+    "towerTopM": 22.15,
+    "towerRoofPitch": 2.18,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kerk_van_Oosterhesselen",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31632",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31633",
+    "https://www.wikidata.org/wiki/Q17438578",
+    "https://www.openstreetmap.org/way/279331888",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Oosterhesselen (Protestantse Kerk 2016 001/003/005/007/009; RM 31633 Kerktoren; kerk en toren foto6 2011; RCE 20135988, 20135989, 20322210)",
+    "BAG panden 0109100000007011 (kerk) en 0109100000011992 (toren); 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
