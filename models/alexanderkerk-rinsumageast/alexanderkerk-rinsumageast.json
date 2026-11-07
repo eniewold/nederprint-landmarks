@@ -1,0 +1,62 @@
+{
+  "name": "Alexanderkerk Rinsumageast",
+  "file": "alexanderkerk-rinsumageast.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    192053,
+    590085
+  ],
+  "xAxis": [
+    0.9767,
+    0.2145
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14,
+      -5
+    ],
+    [
+      -14,
+      9
+    ],
+    [
+      4,
+      -9
+    ],
+    [
+      14,
+      -9
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      11,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001630065"
+  ],
+  "description": "Dubbelbeukige middeleeuwse kerk met twee langsdaken, rondgesloten romaanse noordbeuk, zadeldaktoren, traptoren en gevelnissen.",
+  "realWorld": {
+    "groundNapM": 2.72,
+    "naveRidgeM": 13.2,
+    "towerRidgeM": 24.5,
+    "towerGablesM": 25.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001630065",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11691",
+    "https://commons.wikimedia.org/wiki/Category:Alexanderkerk,_Rinsumageast",
+    "https://www.dbnl.org/tekst/berg229noor03_01/berg229noor03_01_0013.php"
+  ],
+  "printFiles": [
+    "alexanderkerk-rinsumageast-1-1000.stl"
+  ]
+}
