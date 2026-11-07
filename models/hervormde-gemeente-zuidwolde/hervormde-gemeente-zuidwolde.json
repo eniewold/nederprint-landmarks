@@ -1,0 +1,68 @@
+{
+  "name": "Hervormde kerk Zuidwolde",
+  "file": "hervormde-gemeente-zuidwolde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    225500,
+    521156
+  ],
+  "xAxis": [
+    0.99926,
+    0.03839
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -24,
+      -16.5
+    ],
+    [
+      -15,
+      -16.5
+    ],
+    [
+      -20,
+      -3.5
+    ],
+    [
+      -10,
+      -14
+    ]
+  ],
+  "groundHeight": 51.88,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1690100000007702"
+  ],
+  "description": "Hervormde kerk aan de Hoofdstraat in Zuidwolde (Drenthe): neoclassicistische zaalkerk uit 1823 met een dwarsschip uit 1856 (T-vorm), zadeldaken met nok +13,92 m, afgewolfde kopgevels van het dwarsschip, lisenen, gootlijsten en rondboogvensters als nissen, een middenrisaliet in de westgevel en daarop de dakruiter van 1926 met galmgeleding, overstekende kroonlijst en ingesnoerde achtkante naaldspits tot +22,3 m; aan de westkant de glazen ontmoetingsruimte en de zaal met schilddak. Oorsprong RD (225500; 521156) in het schip op maaiveld (NAP +9,6 m), X-as langs de nok van west naar oost onder 2,2 graden.",
+  "printFiles": [
+    "hervormde-gemeente-zuidwolde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 45.02,
+    "widthM": 30.28,
+    "highestPointM": 22.3,
+    "built": "1823 (zaalkerk), 1856 dwarsschip (jhr. H.G. van Holthe tot Echten), dakruiter in huidige vorm 1926; klokken 1502 (Willem van Wou, rijksmonument 526039)",
+    "monument": 526039,
+    "groundNapM": 9.6,
+    "naveRidgeM": 13.92,
+    "naveEaveM": 7.66,
+    "transeptRidgeM": 13.92,
+    "transeptEaveM": 7.68,
+    "risalitTopM": 11.9,
+    "corniceM": 18.2,
+    "towerTopM": 22.3,
+    "hallRidgeM": 9.56,
+    "pavilionRoofM": 4.6,
+    "baseM": -1.2
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526039 (klokken in de dakruiter)",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0109.php (Monumenten in Nederland, Drenthe: bouwgeschiedenis)",
+    "https://www.openstreetmap.org/way/277380567",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Zuidwolde,_Drenthe) (RCE 20225901; Zuidwolde - Hervormde Kerk - 2014; Súdwâlde, protestantske tsjerke; IMG 3947 2018)",
+    "BAG pand 1690100000007702 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
