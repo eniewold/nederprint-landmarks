@@ -1,0 +1,60 @@
+{
+  "name": "Terpkerk Burum",
+  "file": "terpkerk-burum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    211190.9,
+    587771.3
+  ],
+  "xAxis": [
+    0.942,
+    0.3356
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -6
+    ],
+    [
+      4,
+      -6
+    ],
+    [
+      19,
+      -6
+    ],
+    [
+      -3,
+      6
+    ],
+    [
+      19,
+      6
+    ],
+    [
+      27,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0079100000357389"
+  ],
+  "description": "Driezijdig gesloten zaalkerk op een terp, met ingebouwde westtoren, slanke vierzijdige spits en hoge rondboogvensters.",
+  "realWorld": {
+    "groundNapM": 2.634,
+    "ahnTopNapM": 30.457,
+    "modelTopM": 27.82
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0079100000357389",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23745",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Burum)"
+  ],
+  "printFiles": [
+    "terpkerk-burum-1-1000.stl"
+  ]
+}
