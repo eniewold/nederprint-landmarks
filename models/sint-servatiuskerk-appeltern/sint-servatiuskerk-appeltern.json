@@ -1,0 +1,60 @@
+{
+  "name": "Sint-Servatiuskerk Appeltern",
+  "file": "sint-servatiuskerk-appeltern.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    168677,
+    426973
+  ],
+  "xAxis": [
+    -0.27,
+    0.963
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      -6
+    ],
+    [
+      -4,
+      4
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      25,
+      -11
+    ],
+    [
+      34,
+      0
+    ],
+    [
+      15,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000004609"
+  ],
+  "description": "Neogotische basiliek met twee lage zijbeuken, driezijdig gesloten koor en westtoren met ingesnoerde achtkantige spits.",
+  "realWorld": {
+    "groundNapM": 6.664,
+    "naveRidgeM": 20.44,
+    "towerTopM": 42.42
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000004609",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/523081",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Servatiuskerk,_Appeltern"
+  ],
+  "printFiles": [
+    "sint-servatiuskerk-appeltern-1-1000.stl"
+  ]
+}
