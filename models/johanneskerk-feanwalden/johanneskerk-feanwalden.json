@@ -1,0 +1,52 @@
+{
+  "name": "Johanneskerk Feanwâlden",
+  "file": "johanneskerk-feanwalden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195349.5,
+    583794.3
+  ],
+  "xAxis": [
+    0.9985,
+    0.055
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -6
+    ],
+    [
+      12,
+      -6
+    ],
+    [
+      -3,
+      6
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001636219"
+  ],
+  "description": "Eenbeukige zaalkerk met afgeschuind koor en ingebouwde westtoren onder zadeldak. Gevels met vereenvoudigde spitsboogvensters en toegangen.",
+  "realWorld": {
+    "groundNapM": 1.503,
+    "ahnTopNapM": 18.0921,
+    "modelTopM": 16.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001636219",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11701",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk,_Feanwâlden"
+  ],
+  "printFiles": [
+    "johanneskerk-feanwalden-1-1000.stl"
+  ]
+}
