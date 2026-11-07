@@ -1,0 +1,59 @@
+{
+  "name": "Lutherse Kerk Arnhem",
+  "file": "lutherse-kerk-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    190546,
+    443900
+  ],
+  "xAxis": [
+    0.11,
+    -0.994
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -7
+    ],
+    [
+      -3,
+      7
+    ],
+    [
+      8,
+      -7
+    ],
+    [
+      21,
+      -7
+    ],
+    [
+      22,
+      7
+    ],
+    [
+      8,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000206918"
+  ],
+  "description": "Voormalige Lutherse zaalkerk met schilddak, klassiek fronton en pilasters; venster- en portaalnissen voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 17.797,
+    "roofTopM": 14
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0202100000206918",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.monumenten.nl/monument/8348",
+    "https://commons.wikimedia.org/wiki/Category:Former_Lutheran_church_(Arnhem)"
+  ],
+  "printFiles": [
+    "lutherse-kerk-arnhem-1-1000.stl"
+  ]
+}
