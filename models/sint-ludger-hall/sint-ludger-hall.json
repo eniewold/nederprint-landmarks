@@ -1,0 +1,36 @@
+{
+  "name": "Sint Ludger Hall",
+  "origin": [
+    204095.2,
+    458343.8
+  ],
+  "xAxis": [
+    0.97455,
+    0.22416
+  ],
+  "groundHeight": 11.97,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0213100000042863",
+    "NL.IMBAG.Pand.0213100000118015"
+  ],
+  "description": "Laatgotische dorpskerk met driezijdig koor, lage noordbeuk en afzonderlijk geregistreerde westtoren met ingesnoerde spits. Geveldetails geschat.",
+  "realWorld": {
+    "groundNapM": 11.97,
+    "highestPointM": 26.43
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0213100000042863",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0213100000118015",
+    "https://www.monumenten.nl/monument/11251",
+    "https://commons.wikimedia.org/wiki/Category:St._Ludger,_Hall",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-ludger-hall.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-ludger-hall-1-1000.stl"
+  ]
+}
