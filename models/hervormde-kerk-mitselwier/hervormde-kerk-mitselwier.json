@@ -1,0 +1,34 @@
+{
+  "name": "Hervormde kerk Mitselwier",
+  "origin": [
+    200333.2,
+    597308.5
+  ],
+  "xAxis": [
+    0.99966,
+    -0.02618
+  ],
+  "groundHeight": 2.667,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000204863"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting, zadeldak en westtoren met slanke spits; lokale X langs het schip oostwaarts.",
+  "realWorld": {
+    "groundNapM": 2.667,
+    "highestPointM": 26.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000204863",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31583",
+    "https://www.tsjerkepaad.nl/overzicht-kerken/mitselwier-doarpstsjerke",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-mitselwier.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-mitselwier-1-1000.stl"
+  ]
+}
