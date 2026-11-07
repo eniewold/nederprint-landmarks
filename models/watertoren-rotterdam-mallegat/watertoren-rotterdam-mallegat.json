@@ -1,0 +1,76 @@
+{
+  "name": "Watertoren Mallegat",
+  "file": "watertoren-rotterdam-mallegat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    94849.91,
+    435293.96
+  ],
+  "xAxis": [
+    0.99844,
+    0.05582
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      4,
+      0
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      -4
+    ]
+  ],
+  "groundHeight": 47.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100010037769"
+  ],
+  "description": "Oorsprong op het hart van de achtkante BAG-voetafdruk (straal 2,05 m tot de hoeken) op het maaiveld (NAP +3,56 m), X-as 3,2 graden linksom vanaf RD-oost op een hoek van de achthoek. Achtkante bakstenen voet met plint en verdiepte velden tot 5,6 m; ronde, verjongende schoorsteenschacht (straal 1,55 tot 1,32 m) tot de omgang op 18,8-19,1 m (straal 2,17 m); kegelvormige onderkant met acht consoles naar een achtkante ringbalk op 21,3 m; reservoir (straal 3,08 m) met een dakrand van 3,65 m tot 25,0 m; licht hellend dak en schoorsteenmond (straal 1,1 m) tot 27,12 m. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "built": "1915-1916",
+    "function": "watertoren aan de schoorsteen van de gasfabriek Feijenoord (bluswater, door de schoorsteen verwarmd)",
+    "gemeentelijkMonument": true,
+    "ahnGroundNapM": 3.56,
+    "ahnRoofEdgeNapM": 28.57,
+    "ahnTopNapM": 30.68,
+    "plinthM": 0.9,
+    "octagonRadiusM": 2.05,
+    "octagonM": 5.6,
+    "shaftRadiusFootM": 1.55,
+    "shaftRadiusTopM": 1.32,
+    "galleryM": [
+      18.8,
+      19.1
+    ],
+    "galleryRadiusM": 2.17,
+    "ringM": [
+      21.3,
+      22.35
+    ],
+    "tankRadiusM": 3.08,
+    "rimRadiusM": 3.65,
+    "roofEdgeM": 25,
+    "flueRadiusM": 1.1,
+    "topM": 27.12,
+    "axisDegrees": 3.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Rotterdam_Mallegat) (1915-1916, onderdeel van de gasfabriek Feijenoord en tegelijk schoorsteen; water circuleerde voor koeling en werd door de schoorsteen verwarmd; rijksmonumentaanvraag van de Nederlandse Watertoren Stichting afgewezen, gemeentelijk monument, gerestaureerd)",
+    "https://commons.wikimedia.org/wiki/File:Rotterdam_-_Watertoren_Mallegat.jpg (Quistnix, 2009, CC BY-SA 2.5) en https://commons.wikimedia.org/wiki/File:Rotterdam_persoonshaven_schoorsteen.jpg, beide van de noordkant",
+    "PDOK BAG-pand 0599100010037769, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-rotterdam-mallegat-1-1000.stl"
+  ]
+}
