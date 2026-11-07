@@ -1,0 +1,74 @@
+{
+  "name": "Watertoren Sliedrecht",
+  "file": "watertoren-sliedrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    114511.95,
+    425808.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      9,
+      0
+    ],
+    [
+      -12,
+      0
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      7,
+      7
+    ]
+  ],
+  "groundHeight": 47.47,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0610100000007644"
+  ],
+  "description": "Oorsprong op het hart van de ronde toren in BAG-pand 0610100000007644 op het maaiveld (NAP +3,9 m), X-as naar RD-oost (de vlakken van het achtkante dak staan noord, oost, zuid en west). Voet met plint, boogfries en deur met oculus tot 5,3 m; taps toelopende schacht met spleetvensters tot 17,9 m; rondboogfries op consoles en ronde reservoirmantel met spleetvensters tot 23,2 m; achtkante overstekende dakplaat tot 25,4 m met een flauwe achtzijdige piramide tot 28,55 m, vier ventilatiekokers en een makelaar; noordaanbouw met zadeldak en zuidwestaanbouw met plat dak. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1886,
+    "architect": "Jan Schotel",
+    "publishedHeightM": 28.5,
+    "reservoirM3": 250,
+    "ahnGroundNapM": 3.9,
+    "ahnTopNapM": 32.46,
+    "ahnRoofSlope": 0.54,
+    "bagCircleRadiusM": 5.93,
+    "plinthRadiusM": 5.85,
+    "baseBandM": 5.3,
+    "shaftFootDiameterM": 10.2,
+    "shaftTopDiameterM": 8.5,
+    "friezeM": [
+      17.9,
+      19.9
+    ],
+    "reservoirDiameterM": 9.4,
+    "corniceAcrossFlatsM": 11.3,
+    "corniceTopM": 25.4,
+    "apexM": 28.55,
+    "finialTopM": 29.6,
+    "northAnnexRidgeM": 8.1,
+    "southWestAnnexM": 3.8,
+    "entranceDegrees": -15,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Sliedrecht) (1886, Jan Schotel, 28,5 m, één reservoir van 250 m³)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Sliedrecht) (Februari 2014 2014-03-12 12-00.jpg vanuit het zuiden, De watertoren van Sliedrecht, gezien vanaf de Beneden Merwede (01).jpg, Watertoren in Sliedrecht 2014-03-16 09-24.jpg, Sliedrecht Watertoren 6855.JPG vanaf de Rivierdijk, Watertoren Sliedrecht.jpg uit 1886)",
+    "PDOK BAG-pand 0610100000007644, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-sliedrecht-1-1000.stl"
+  ]
+}
