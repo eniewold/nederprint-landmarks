@@ -1,0 +1,34 @@
+{
+  "name": "Hervormde Kerk Lemmer",
+  "origin": [
+    176817,
+    539787.2
+  ],
+  "xAxis": [
+    0.9999,
+    0.01396
+  ],
+  "groundHeight": 0.384,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0082100000150807"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting, noordelijke dwarsarm, zuidelijke aanbouw en half ingebouwde westtoren met open achtkante lantaarn.",
+  "realWorld": {
+    "groundNapM": 0.384,
+    "highestPointM": 29.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0082100000150807",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25749",
+    "https://tsjerkepaad.nl/overzicht-kerken/lemmer-tsjerke-oan-it-dok",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-lemmer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-lemmer-1-1000.stl"
+  ]
+}
