@@ -1,0 +1,60 @@
+{
+  "name": "Bartholomeuskerk Westhem",
+  "file": "bartholomeuskerk-westhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    165925,
+    559001
+  ],
+  "xAxis": [
+    0.9856,
+    -0.169
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -4
+    ],
+    [
+      -3,
+      4
+    ],
+    [
+      4,
+      -5
+    ],
+    [
+      12,
+      -5
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      12,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0683100000294144"
+  ],
+  "description": "Zaalkerk met driezijdig gesloten koor onder schilddak en middeleeuwse zadeldaktoren met galmnissen; rondboogvensters en entree verdiept uitgewerkt.",
+  "realWorld": {
+    "groundNapM": 0.95,
+    "naveRidgeM": 10.4,
+    "towerRidgeM": 18.98
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0683100000294144",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39822",
+    "https://commons.wikimedia.org/wiki/Category:Bartholome%C3%BCskerk,_Westhem"
+  ],
+  "printFiles": [
+    "bartholomeuskerk-westhem-1-1000.stl"
+  ]
+}
