@@ -1,0 +1,99 @@
+{
+  "name": "Dorpskerk Sleen",
+  "file": "dorpskerk-sleen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    250516,
+    533017
+  ],
+  "xAxis": [
+    0.91531,
+    0.40275
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -21,
+      0
+    ],
+    [
+      -15,
+      -6.5
+    ],
+    [
+      -15,
+      6
+    ],
+    [
+      -8,
+      -9.5
+    ],
+    [
+      2,
+      -9.5
+    ],
+    [
+      7.8,
+      -17
+    ],
+    [
+      12,
+      -7.5
+    ],
+    [
+      21.5,
+      0
+    ],
+    [
+      12,
+      7.5
+    ],
+    [
+      2,
+      9.5
+    ],
+    [
+      -8,
+      9
+    ]
+  ],
+  "groundHeight": 60.18,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000000807"
+  ],
+  "description": "Hervormde kerk (Grote Kerk) aan de Brink in Sleen: driebeukige gotische hallenkerk (1420-1450) met het smallere koor en zijn vijfzijdige sluiting onder één zadeldak (nok +18,15 m), steunberen met waterlijsten, spitsboogvensters, dakkapellen, de consistorie (1962-1966) met tussenlid aan de zuidkant, en de westtoren van drie geledingen met blindnissen en galmgaten onder de ingezwenkte achtkante naaldspits met uurwerkfrontjes tot +59,5 m. Oorsprong RD (250516; 533017) op de as van het schip op maaiveld (NAP +18,3 m), X-as van toren naar koor onder 23,75 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "dorpskerk-sleen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.91,
+    "widthM": 23.76,
+    "highestPointM": 59.5,
+    "built": "schip 1420-1450 (hallenkerk), koor XV en verhoogd rond 1500, toren XV met spits (vernieuwd 1703, ingestort 1705, later herbouwd), dak deels ingestort 1880, restauratie C.H. Peters 1882-1883, restauratie en consistorie 1962-1966",
+    "monument": [
+      33779,
+      33780
+    ],
+    "groundNapM": 18.3,
+    "naveRidgeM": 18.15,
+    "naveEaveSouthM": 8.43,
+    "naveEaveNorthM": 8.85,
+    "choirEaveSouthM": 11.11,
+    "apseEaveM": 10.6,
+    "annexRidgeM": 6.5,
+    "towerTopM": 29,
+    "spireTopM": 59.5,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kerk_van_Sleen",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33779 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33780 (toren)",
+    "https://www.wikidata.org/wiki/Q17440827",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Sleen (RCE 20200481-20200493, 20322183; Kerk Sleen, Kerk Sleen2, 33779 Hervormde Kerk, 33780-Hervormde kerk toren, RM 33780 Kerktoren van Sleen, Sleen Hervormde kerk 2014)",
+    "BAG pand 0109100000000807 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
