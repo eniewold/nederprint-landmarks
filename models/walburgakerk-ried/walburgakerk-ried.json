@@ -1,0 +1,61 @@
+{
+  "name": "Walburgakerk Ried",
+  "file": "walburgakerk-ried.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    168536.7,
+    581859.4
+  ],
+  "xAxis": [
+    0.9918,
+    -0.1274
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      -4
+    ],
+    [
+      5,
+      -5
+    ],
+    [
+      20,
+      -5
+    ],
+    [
+      23,
+      4
+    ],
+    [
+      16,
+      9
+    ],
+    [
+      -4,
+      4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000315736"
+  ],
+  "description": "Zaalkerk met driezijdige sluiting, schilddak, westtoren met ingesnoerde spits, spitsboogvensters aan de zuidzijde en noordelijke consistorie.",
+  "realWorld": {
+    "groundNapM": 1.94,
+    "ahnTopNapM": 30.535,
+    "modelTopM": 28.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000315736",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15865",
+    "https://commons.wikimedia.org/wiki/Category:Walburgakerk,_Ried",
+    "https://pkn.ried-skingen.nl/ried-walburgakerk/"
+  ],
+  "printFiles": [
+    "walburgakerk-ried-1-1000.stl"
+  ]
+}
