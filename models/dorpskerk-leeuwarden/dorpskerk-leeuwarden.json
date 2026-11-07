@@ -1,0 +1,35 @@
+{
+  "name": "Dorpskerk Leeuwarden",
+  "origin": [
+    183333,
+    578372.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.158,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000365927"
+  ],
+  "description": "Dorpskerk Huizum met vijfzijdig koor, schilddak en zadeldaktoren; gevelnissen naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.158,
+    "highestPointM": 23.62
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000365927",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24511",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk_(Huizum)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://dorpskerkhuizum.nl/"
+  ],
+  "file": "dorpskerk-leeuwarden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-leeuwarden-1-1000.stl"
+  ]
+}
