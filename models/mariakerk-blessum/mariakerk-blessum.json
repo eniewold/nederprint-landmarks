@@ -1,0 +1,111 @@
+{
+  "name": "Mariakerk Blessum",
+  "file": "mariakerk-blessum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176612.77,
+    577191.75
+  ],
+  "xAxis": [
+    0.99664,
+    0.08194
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14,
+      0
+    ],
+    [
+      -14,
+      -3.5
+    ],
+    [
+      -14,
+      3
+    ],
+    [
+      -10,
+      -5.4
+    ],
+    [
+      -10,
+      3.2
+    ],
+    [
+      -6.5,
+      5.1
+    ],
+    [
+      0,
+      5.1
+    ],
+    [
+      6,
+      5.1
+    ],
+    [
+      -6,
+      -5.1
+    ],
+    [
+      0,
+      -5.1
+    ],
+    [
+      6,
+      -5.1
+    ],
+    [
+      10.5,
+      -3.8
+    ],
+    [
+      10.5,
+      3.8
+    ],
+    [
+      12.5,
+      0
+    ],
+    [
+      12.5,
+      2.5
+    ],
+    [
+      12.5,
+      -2.5
+    ]
+  ],
+  "groundHeight": 43.98,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000007588"
+  ],
+  "description": "Mariakerk in Blessum: eenbeukige gotische kerk (wellicht 14e eeuw) met driezijdig gesloten koor onder een doorlopend schilddak (nok +10,65 m) met bakgoot, plint, schoorsteen, steunberen langs de noordgevel en het koor, de noordingang met omlijsting van omstreeks 1500, de in 1860 vernieuwde zuidgevel met rondboogvensters, de in 1879 ommetselde westtoren met banden, deur, galmgaten, wijzerplaten en kroonlijst (+16,15 m) en de ingesnoerde leien spits tot +23,2 m, en het aanbouwtje tegen de zuidkant van de toren. Oorsprong RD (176612,77; 577191,75) in het midden van het schip op maaiveld (NAP +2,85 m), X-as langs de nok van toren naar koor onder 4,7 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "mariakerk-blessum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.42,
+    "widthM": 9.52,
+    "highestPointM": 23.2,
+    "built": "schip en koor wellicht 14e eeuw; noordingang omstreeks 1500; zuidgevel vernieuwd 1860; toren ommetseld en spits 1879; restauratie 1978",
+    "monument": 28581,
+    "groundNapM": 2.85,
+    "ridgeM": 10.65,
+    "eaveM": 5.44,
+    "towerCorniceM": 16.15,
+    "spireTopM": 23.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Mariakerk_(Blessum)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28581",
+    "https://www.openstreetmap.org/way/292883509",
+    "https://commons.wikimedia.org/ (Blessum, Mariatsjerke; Blessum, Marijetsjerke; Kerkje van Blessum; RCE 20035572, 20035577, 20035578, 20035583, 20035584)",
+    "BAG pand 0083100000007588 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
