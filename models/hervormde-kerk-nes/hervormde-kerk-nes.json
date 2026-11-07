@@ -1,0 +1,34 @@
+{
+  "name": "Hervormde Kerk Nes Ameland",
+  "origin": [
+    180612,
+    606705
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 3.76,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0060100000126688"
+  ],
+  "description": "Voormalige Hervormde Kerk van Nes op Ameland met schilddak en een ingang in een kenmerkend voorportaal; de elders staande toren is geen onderdeel van dit gebouw.",
+  "realWorld": {
+    "groundNapM": 3.76,
+    "highestPointM": 9.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0060100000126688",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7606",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Nes,_Ameland)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-nes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-nes-1-1000.stl"
+  ]
+}
