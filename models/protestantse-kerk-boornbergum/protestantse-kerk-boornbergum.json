@@ -1,0 +1,34 @@
+{
+  "name": "Protestantse Kerk Boornbergum",
+  "origin": [
+    199013.35,
+    566372.85
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 2.19,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0090100000579184"
+  ],
+  "description": "Zaalkerk met driezijdige sluiting, zadeldak, dakruiter en spits. Gevelindeling uit foto's; torenspits en dakruiter geschat op basis van AHN4 en foto's.",
+  "realWorld": {
+    "groundNapM": 2.19,
+    "highestPointM": 18.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0090100000579184",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33980",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Boornbergum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-kerk-boornbergum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-boornbergum-1-1000.stl"
+  ]
+}
