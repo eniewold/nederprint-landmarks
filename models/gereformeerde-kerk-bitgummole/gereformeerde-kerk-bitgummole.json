@@ -1,0 +1,98 @@
+{
+  "name": "Gereformeerde Kerk Bitgummole",
+  "file": "gereformeerde-kerk-bitgummole.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176188.73,
+    583285.51
+  ],
+  "xAxis": [
+    0.20962,
+    0.97778
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -16.2,
+      -4.5
+    ],
+    [
+      -15.4,
+      0.4
+    ],
+    [
+      -12.5,
+      -8
+    ],
+    [
+      -12.5,
+      7
+    ],
+    [
+      -7,
+      11.3
+    ],
+    [
+      7,
+      11.3
+    ],
+    [
+      9.4,
+      0
+    ],
+    [
+      10.2,
+      -8
+    ],
+    [
+      10.2,
+      -19
+    ],
+    [
+      -6.2,
+      -19
+    ],
+    [
+      -6.2,
+      -13.5
+    ],
+    [
+      -7,
+      -11.3
+    ]
+  ],
+  "groundHeight": 42.67,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000002267"
+  ],
+  "description": "Gereformeerde Kerk aan de J.H. van Aismawei in Bitgummole (Beetgumermolen): kruiskerk uit 1924-1925 van A. Nauta in de trant van de Amsterdamse School, vier armen onder twee kruisende zadeldaken van 51 graden (nok +13,95 m) met tuitgevels, roosvenster in de zuidgevel en vensterreeksen in de andere topgevels, voorportaal met spitse portaalgevel en lessenaarsdak, portaaltjes in de oksels, de vierkante toren met vier geveltopjes, leien hoekstukken en naaldspits tot +25,25 m, en de lage kerklokalen onder schilddaken aan de oostkant. Oorsprong RD (176188,73; 583285,51) op de kruising van de nokken op het laagste maaiveld (NAP +1,46 m), X-as langs de nok van het schip naar de achtergevel onder 77,9 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "gereformeerde-kerk-bitgummole-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.68,
+    "widthM": 31.39,
+    "highestPointM": 25.25,
+    "built": "1924-1925 (A. Nauta, Leeuwarden), dak later met golfplaten gedekt; kerklokalen aan de oostkant (niet beschermd)",
+    "monument": 508683,
+    "groundNapM": 1.46,
+    "ridgeM": 13.95,
+    "eaveM": 6.92,
+    "roofPitchDeg": 51.3,
+    "towerShaftM": 15.8,
+    "towerGablesM": 18.35,
+    "spireTopM": 25.25,
+    "annexRidgeM": 5.9,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508683",
+    "https://www.wikidata.org/wiki/Q7478040",
+    "https://www.openstreetmap.org/way/302818711",
+    "Wikimedia Commons (Bitgummole, Grifformearde tsjerke; 2023 Bitgummole, griff. tsjerke (PKN); 2023 Bitgummole, tsjerke en pastorij; 2023 Bitgummole, grifformearde tsjerke (PKN); RCE-signaturen 54186, 54188, 54189, 54192, 54198, 54199)",
+    "BAG pand 0083100000002267 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
