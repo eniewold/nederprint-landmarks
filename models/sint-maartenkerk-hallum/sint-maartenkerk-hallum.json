@@ -1,0 +1,52 @@
+{
+  "name": "Sint-Maartenkerk Hallum",
+  "file": "sint-maartenkerk-hallum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181532.5,
+    591260.2
+  ],
+  "xAxis": [
+    0.9998,
+    -0.02
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      -9
+    ],
+    [
+      17,
+      -15
+    ],
+    [
+      -6,
+      8
+    ],
+    [
+      17,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000005077"
+  ],
+  "description": "Middeleeuwse kerk met veelhoekig koor, twee zijkapellen, steunberen en herbouwde westtoren met achtzijdige spits.",
+  "realWorld": {
+    "groundNapM": 4.675,
+    "ahnTopNapM": 51.2868,
+    "modelTopM": 46.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000005077",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15618",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinuskerk_(Hallum)"
+  ],
+  "printFiles": [
+    "sint-maartenkerk-hallum-1-1000.stl"
+  ]
+}
