@@ -1,0 +1,91 @@
+{
+  "name": "Koepelkerk Berltsum",
+  "file": "koepelkerk-berltsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172148.08,
+    584070.76
+  ],
+  "xAxis": [
+    0.997,
+    0.07742
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      11.5,
+      0
+    ],
+    [
+      -11.5,
+      0
+    ],
+    [
+      0,
+      11.5
+    ],
+    [
+      0,
+      -13.5
+    ],
+    [
+      8.6,
+      8.6
+    ],
+    [
+      -8.6,
+      8.6
+    ],
+    [
+      8.6,
+      -8.6
+    ],
+    [
+      -8.6,
+      -8.6
+    ],
+    [
+      5,
+      -13
+    ],
+    [
+      -5,
+      -13
+    ]
+  ],
+  "groundHeight": 45.08,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000001644"
+  ],
+  "description": "Koepelkerk in Berltsum: centraalbouw uit 1777-1779 van Willem Douwes, een vierkant van 18,8 m met als cirkelboog afgeronde hoeken, lisenen, hoge rondboogvensters, de ingang met omlijsting en fronton en het ovale venster op het oosten, hoofdgestel en kroonlijst (goot +13,15 m) onder een achtkante leien koepel met twee dakkapellen, de open klokkenlantaarn met omgang, uurwerk, kroonlijst en klokvormig kapje met bol en makelaar (top +33,35 m), en tegen de zuidgevel de lage aanbouw met afgeschuinde hoeken. Oorsprong RD (172148,08; 584070,76) in het hart op het laagste maaiveld (NAP +3,85 m), X-as naar de ingang onder 4,44 graden. Vensters, deur en lantaarnopeningen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "koepelkerk-berltsum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 21.06,
+    "widthM": 22.23,
+    "highestPointM": 33.35,
+    "built": "1777-1779 (Willem Douwes) op de fundamenten van de middeleeuwse kruiskerk; jaartal 1778 op het fronton, 1779 op het uurwerk",
+    "monument": 28576,
+    "groundNapM": 3.85,
+    "wallHalfWidthM": 9.42,
+    "cornerArcRadiusM": 9.93,
+    "eaveM": 13.15,
+    "domeDeckM": 20.05,
+    "lanternCorniceM": 28,
+    "capTopM": 30.75,
+    "spireTopM": 33.35,
+    "annexTopM": 6.65,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Koepelkerk_(Berlikum)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28576",
+    "https://www.wikidata.org/wiki/Q2526688",
+    "https://commons.wikimedia.org/wiki/Category:Koepelkerk,_Berltsum (RCE 20033957, 20033958, 20033959, 20033961; 20191023 koepelkerk van Berlikum; 20191023 torenspits koepelkerk van Berlikum; 2023 Berltsum, Koepeltsjerke; Koepeltsjerke, Berltsum; Berlikum, kerk foto5 2010)",
+    "BAG pand 0083100000001644 (voetafdruk) en 3D BAG LoD2.2 (goot, lantaarn)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
