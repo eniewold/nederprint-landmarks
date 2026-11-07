@@ -1,0 +1,76 @@
+{
+  "name": "Grote Kerk Almelo",
+  "file": "grote-kerk-almelo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    242136.11,
+    486377.5
+  ],
+  "xAxis": [
+    0.99297,
+    0.1184
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -27,
+      0
+    ],
+    [
+      0,
+      19.5
+    ],
+    [
+      0,
+      -19
+    ],
+    [
+      -12,
+      -9
+    ],
+    [
+      -12,
+      9
+    ],
+    [
+      23,
+      0
+    ]
+  ],
+  "groundHeight": 55.15,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0141100000019525"
+  ],
+  "description": "Grote Kerk aan het Kerkplein in Almelo: Grieks kruis van 1738 met schilddaken (nok +20 m), laatgotisch koor van 1493 met steiler dak (+21,7 m), driezijdige sluiting en steunberen, consistorie en achtkante kamer als lage aanbouwen, westtoren van twee geledingen met balustrade, achtkante lantaarn en koepelspits van 1777 tot +44,3 m. Oorsprong RD (242136,11; 486377,50) op het hart van de viering op maaiveld (NAP +12,1 m), X-as langs de west-oostnok onder 6,8 graden. Vensters en boogstelling als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-almelo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 45.69,
+    "widthM": 35.54,
+    "highestPointM": 44.3,
+    "built": "koor 1493, schip, transept en toren 1738, koepelspits 1777",
+    "monument": [
+      7487,
+      7488
+    ],
+    "groundNapM": 12.1,
+    "armRidgeM": 20,
+    "choirRidgeM": 21.7,
+    "towerParapetM": 25.2,
+    "domeBaseM": 33.7,
+    "towerTopM": 44.3,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Almelo)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7487 (kerk: koor 1493, schip en transept 1738)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7488 (toren 1738, koepelspits 1777)",
+    "https://archimon.nl/overijssel/almeloherv.html",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk,_Almelo (RCE-foto's 20276047, 20276050, 20276051, 20276052, 20276055, 20276057, 20006974; Grote Kerk church Almelo 2019.jpg)",
+    "BAG pand 0141100000019525 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
