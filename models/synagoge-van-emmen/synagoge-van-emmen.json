@@ -1,0 +1,74 @@
+{
+  "name": "Synagoge van Emmen",
+  "file": "synagoge-van-emmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    256967.341,
+    533614.315
+  ],
+  "xAxis": [
+    0.93441,
+    0.35617
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -9.5,
+      0
+    ],
+    [
+      9.5,
+      0
+    ],
+    [
+      0,
+      4.8
+    ],
+    [
+      0,
+      -4.8
+    ],
+    [
+      -6,
+      4.8
+    ],
+    [
+      6,
+      -4.8
+    ]
+  ],
+  "groundHeight": 64.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000232970"
+  ],
+  "description": "Oorsprong in het hart van BAG-pand 0114100000232970 op het maaiveld (NAP +22,45); +X langs de nok naar de blinde achtergevel (oost), de gepleisterde topgevel met spitsboogvensters, roosvenster, keperfries en obelisk staat op -X naar de Julianastraat. Hoogtes uit het AHN, gevels naar RCE-foto's.",
+  "realWorld": {
+    "groundNapM": 22.45,
+    "lengthM": 15.67,
+    "widthM": 6.8,
+    "ridgeNapM": 30.2,
+    "eaveHeightM": 4.86,
+    "roofPitchDeg": 40.4,
+    "obeliskTopM": 9.65,
+    "estimated": [
+      "plinthoogte 1,80 m en vensterhoogtes uit verhoudingen op de RCE-foto's",
+      "hoogte van nokstuk en obelisk (8,65 en 9,65 m)",
+      "maten van hoekpilasters, kroonlijstkoppen en keperfries",
+      "nissen 0,25 tot 0,3 m diep"
+    ]
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510950",
+    "https://nl.wikipedia.org/wiki/Synagoge_(Emmen)",
+    "PDOK BAG-pand 0114100000232970 en AHN DSM/DTM 0,5 m, bbox 256942,533590,256992,533640",
+    "https://commons.wikimedia.org/wiki/File:Emmen-_Julianastraat_27.JPG",
+    "https://commons.wikimedia.org/wiki/File:SynagogeEmmen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Voor-_en_zijgevel_-_Emmen_-_20069863_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Zij-_en_achtergevel_-_Emmen_-_20069855_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "synagoge-van-emmen-1-1000.stl"
+  ]
+}
