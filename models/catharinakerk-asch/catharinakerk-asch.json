@@ -1,0 +1,34 @@
+{
+  "name": "Catharinakerk Asch",
+  "origin": [
+    149719.8,
+    438096.4
+  ],
+  "xAxis": [
+    0.99955,
+    0.03
+  ],
+  "groundHeight": 4.628,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0214100000005798"
+  ],
+  "description": "Eenbeukige kerk met smaller driezijdig koor, steunberen en houten dakruiter. Details naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 4.628,
+    "highestPointM": 16.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0214100000005798",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11396",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Catharinakerk_(Asch)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "catharinakerk-asch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "catharinakerk-asch-1-1000.stl"
+  ]
+}
