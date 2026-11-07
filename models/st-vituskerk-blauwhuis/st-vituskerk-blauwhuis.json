@@ -1,0 +1,71 @@
+{
+  "name": "St. Vituskerk Blauwhuis",
+  "file": "st-vituskerk-blauwhuis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    164841.17,
+    559515.29
+  ],
+  "xAxis": [
+    0.83001,
+    0.55775
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      49.5,
+      -3
+    ],
+    [
+      36,
+      -18.5
+    ],
+    [
+      22,
+      -27
+    ],
+    [
+      14.5,
+      -17
+    ]
+  ],
+  "groundHeight": 41.31,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0683100000292816"
+  ],
+  "description": "Rooms-katholieke St. Vituskerk aan de Vitusdijk in Blauwhuis: driebeukige transeptbasiliek van P.J.H. Cuypers (1868-1871) met westtoren van drie geledingen, hoeksteunberen, portaal met wimberg, roosvenster, galmgaten en wijzerplaten, vier wimbergen en achtkante naaldspits tot +51 m; schip en koor onder één zadeldak (nok +19,3 m), uitgebouwde eerste travee met dwarse zadeldaken, zijbeuken met lessenaarsdaken en steunberen, transept met roosvensters en hoekpinakels, dakruiter met naald op de kruising, kapellen naast het koor, absis met 5/10-sluiting en steunberen; aan de zuidkant de pastorie met traptoren, gang, zuidvleugel en sacristie (zelfde BAG-pand). Oorsprong RD (164841,17; 559515,29) in het hart van de toren op maaiveld (NAP -0,4 m), X-as langs de nok van de toren naar de absis onder 33,9 graden.",
+  "printFiles": [
+    "st-vituskerk-blauwhuis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 51.86,
+    "widthM": 40.95,
+    "highestPointM": 51,
+    "built": "1868-1871 naar ontwerp van P.J.H. Cuypers (30 oktober 1867), ingewijd 15 oktober 1872; toren gerestaureerd 1969-1970, exterieur 1991-1993",
+    "monument": 515166,
+    "groundNapM": -0.4,
+    "towerTopM": 51,
+    "towerGableTopM": 32.8,
+    "towerEaveM": 28.6,
+    "naveRidgeM": 19.3,
+    "naveEaveM": 13.9,
+    "transeptEaveM": 14.2,
+    "aisleEaveM": 7.8,
+    "westBayRidgeM": 12.8,
+    "flecheTopM": 29,
+    "stairTowerTopM": 24.5,
+    "presbyteryRidgeM": 12.91,
+    "baseM": -0.6
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515166",
+    "https://nl.wikipedia.org/wiki/Sint-Vituskerk_(Blauwhuis)",
+    "https://www.wikidata.org/wiki/Q1899825",
+    "https://www.openstreetmap.org/way/293329568",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Vitus_Church_(Blauwhuis) (o.a. tekeningen 1877; RCE 20424422, 20424418, 20345785; 20180817 Sint Vituskerk Blauwhuis; 2023 Blauhûs, Sint-Fitustsjerke; Vitus-2016)",
+    "BAG pand 0683100000292816 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
