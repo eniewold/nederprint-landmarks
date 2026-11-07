@@ -1,0 +1,81 @@
+{
+  "name": "Grote Kerk Groede",
+  "file": "grote-kerk-groede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    24118,
+    378374.5
+  ],
+  "xAxis": [
+    0.99905,
+    -0.04362
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -20,
+      -0.5
+    ],
+    [
+      -13.6,
+      6
+    ],
+    [
+      -13.6,
+      -7.5
+    ],
+    [
+      0,
+      13.5
+    ],
+    [
+      0,
+      -13.5
+    ],
+    [
+      21,
+      -1
+    ],
+    [
+      15.5,
+      9
+    ],
+    [
+      15.5,
+      -9
+    ]
+  ],
+  "groundHeight": 46.88,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000729751"
+  ],
+  "description": "Grote Kerk aan de Markt in Groede: driebeukige hallenkerk onder drie evenwijdige zadeldaken (helling 56 graden, nokken +14,4 / +14,4 / +13,5 m) met schilden boven de rechtgesloten oostgevels van noord- en zuidbeuk, koor met driezijdige sluiting, steunberen en spitsboogvensters als nissen, en de 14e-eeuwse westtoren met haakse steunberen, achtkante bovenbouw met galmgaten, omgang met borstwering, leien naaldspits met lantaarn tot +44,4 m. Oorsprong RD (24118,00; 378374,50) midden in de kerk op maaiveld (NAP +2,7 m), X-as langs de nokken onder -2,5 graden.",
+  "printFiles": [
+    "grote-kerk-groede-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.39,
+    "widthM": 25,
+    "highestPointM": 44.4,
+    "built": "13e eeuw (oudste delen), toren 14e eeuw, schip en noordbeuk 15e eeuw, zuidbeuk circa 1500, herstel 1619 en 1632-1634, verbouwd 1868, restauraties 1950, 1970 en 2010",
+    "monument": 31516,
+    "groundNapM": 2.7,
+    "pitch": 1.5,
+    "northAisleRidgeM": 14.4,
+    "naveRidgeM": 14.4,
+    "southAisleRidgeM": 13.5,
+    "towerGalleryM": 23.5,
+    "towerTopM": 44.4,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Groede)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31516",
+    "https://www.reliwiki.nl/index.php/Groede,_Markt_1_-_Grote_Kerk",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk_(Groede) (RCE-foto's 20400999, 20352870, 20400997, 20400989, 20398145, 20398186, 20398188; Grote Kerk (Groede) (4).JPG)",
+    "BAG pand 1714100000729751 (voetafdruk en steunberen) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
