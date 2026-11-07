@@ -1,0 +1,106 @@
+{
+  "name": "Gertrudiskerk Achlum",
+  "file": "gertrudiskerk-achlum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161401,
+    573478.35
+  ],
+  "xAxis": [
+    0.98902,
+    -0.14781
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -17,
+      0
+    ],
+    [
+      -17,
+      -4
+    ],
+    [
+      -17,
+      4
+    ],
+    [
+      -13,
+      -6
+    ],
+    [
+      -13,
+      4.5
+    ],
+    [
+      -5,
+      -6
+    ],
+    [
+      -5,
+      6
+    ],
+    [
+      5,
+      -6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      14,
+      -6
+    ],
+    [
+      14,
+      6
+    ],
+    [
+      21.5,
+      0
+    ],
+    [
+      21,
+      -4
+    ],
+    [
+      21,
+      4
+    ]
+  ],
+  "groundHeight": 46.04,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000325796"
+  ],
+  "description": "Gertrudiskerk op de terp van Achlum: middeleeuwse zaalkerk (schip 12e eeuw, eind 15e eeuw verhoogd) met spitsboogvensters en een zadeldak van 52 graden (nok +13,4 m), een driezijdig gesloten gotisch koor met twee diagonale steunberen onder een meegaand schilddak, en een westtoren met bakstenen romp tot +13,6 m, houten klokkeverdieping (1790) met galmgaten en een ingesnoerde achtkante spits tot +25,2 m, plus een lage aanbouw onder lessenaarsdak tegen de zuidkant van de toren. Oorsprong RD (161401,00; 573478,35) midden in het schip op het laagste maaiveld (NAP +4,58 m), X-as langs de nok naar het koor onder -8,5 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "gertrudiskerk-achlum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.86,
+    "widthM": 10.44,
+    "highestPointM": 25.2,
+    "built": "schip 12e eeuw (tufsteen), verhoogd en met koor en toren eind 15e eeuw, houten klokkeverdieping en spits 1790, restauraties 1995 en 2012",
+    "monument": 15822,
+    "groundNapM": 4.58,
+    "ridgeM": 13.4,
+    "eaveM": 7.04,
+    "roofPitchDeg": 52,
+    "towerBodyTopM": 13.6,
+    "belfryTopM": 16,
+    "spireTopM": 25.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Gertrudiskerk_(Achlum)",
+    "https://reliwiki.nl/index.php/Achlum,_De_Terp_1_-_Gertrudiskerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15822",
+    "https://www.wikidata.org/wiki/Q3915835",
+    "https://commons.wikimedia.org/wiki/Category:Gertrudiskerk,_Achlum (RCE 20345398, 20004414, 20004419; 20140530 Kerk van Achlum; Gertrudiskerk van Achlum; De Terp 1; 2023 Achlum, Gertrudistsjerke (2), (3))",
+    "BAG pand 0070100000325796 (voetafdruk) en 3D BAG",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
