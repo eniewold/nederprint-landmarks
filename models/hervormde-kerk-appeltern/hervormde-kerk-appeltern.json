@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde Kerk Appeltern",
+  "origin": [
+    168723.25,
+    427007.97
+  ],
+  "xAxis": [
+    0.95,
+    0.312
+  ],
+  "groundHeight": 7.3,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000014991",
+    "NL.IMBAG.Pand.0668100000000009"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor en lage romaanse toren met tentdak. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 7.3,
+    "highestPointM": 18.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000014991",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000000009",
+    "https://www.monumenten.nl/monument/8194",
+    "https://www.monumenten.nl/monument/8195",
+    "https://commons.wikimedia.org/wiki/Category:Zaalkerk,_Appeltern",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-appeltern.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-appeltern-1-1000.stl"
+  ]
+}
