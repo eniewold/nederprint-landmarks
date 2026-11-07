@@ -1,0 +1,78 @@
+{
+  "name": "Sint-Jan-de-Doperkerk Schiedam",
+  "file": "sint-jan-de-doperkerk-schiedam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    86924.11,
+    436768
+  ],
+  "xAxis": [
+    0.72537,
+    0.68835
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -27,
+      -6
+    ],
+    [
+      -27,
+      0
+    ],
+    [
+      -27,
+      8
+    ],
+    [
+      -23,
+      13.7
+    ],
+    [
+      -14,
+      13.7
+    ],
+    [
+      8,
+      13.7
+    ],
+    [
+      16,
+      13.7
+    ]
+  ],
+  "groundHeight": 44.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0606100000013902"
+  ],
+  "description": "Sint-Jan-de-Doperkerk (Havenkerk) aan de Lange Haven 72 in Schiedam: neoclassicistische hallenkerk van Adrianus Tollus (1822-1824). Bakstenen zaal met lisenen en hoge vensters onder een gebroken schilddak (goot NAP +15,5, knik +22,6, nok +26,25), voorgevel van natuursteen met attiek en gerustikeerde hoeken, Dorisch portiek met vier zuilen en fronton (top +19,1), houten dakruiter met klokkenverdieping, klokvormige kap, lantaarn en koepeltje (makelaar +41,3), vierkante koorbouw met schilddak en lichtkap, vier dakkapellen en de aanbouwen in hetzelfde BAG-pand (woonhuis met halsgevel, sacristie en kantoor aan de zuidoostzijde, lage aanbouw aan de noordwestzijde). Oorsprong RD (86924,11; 436768,0) op de as van de zaal halverwege voor- en achtergevel, op het kademaaiveld (NAP +0,9 m); X-as langs de nok van de haven naar het koor onder 43,5 graden. Vensters en de open lantaarn als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "sint-jan-de-doperkerk-schiedam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 50.6,
+    "widthM": 35.8,
+    "highestPointM": 40.4,
+    "built": "1822-1824 (BAG-bouwjaar 1919 is een registratiejaar), architect Adrianus Tollus",
+    "monument": 33223,
+    "groundNapM": 0.9,
+    "eaveNapM": 15.5,
+    "knikNapM": 22.6,
+    "ridgeNapM": 26.25,
+    "facadeAtticNapM": 17.4,
+    "pedimentTopNapM": 19.1,
+    "towerTopNapM": 41.3,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Jan-de-Doperkerk_(Schiedam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33223",
+    "https://www.openstreetmap.org/way/274172367",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0606100000013902 (dakvlakken zaal, koorbouw, portiek, toren en aanbouwen)",
+    "BAG pand 0606100000013902 (voetafdruk, lisenen)",
+    "PDOK AHN dsm_05m/dtm_05m (goten, nok, attiek, toren, dakkapellen, aanbouwen) en actuele luchtfoto",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Jan-de-Doperkerk_(Schiedam) (o.a. 33223 Johannes de Doperkerk.jpg, Johannes de Doperkerk, Schiedam (01).JPG, Schiedam - Lange Haven 72.jpg, Schiedam Havenkerk.jpg, Schiedam Centrum DSCF3808.JPG, RCE 20369631, 20196844, 20196845, 20196559, 20378699)"
+  ]
+}
