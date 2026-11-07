@@ -1,0 +1,67 @@
+{
+  "name": "Donatuskerk Dongjum",
+  "file": "donatuskerk-dongjum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    165543,
+    580157.2
+  ],
+  "xAxis": [
+    0.99816,
+    -0.0607
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14,
+      -4
+    ],
+    [
+      -14,
+      4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000327400"
+  ],
+  "description": "Donatuskerk uit 1777 met driezijdige koorsluiting, zadeldak, gevelvelden en een deels ingebouwde westtoren met spits. Oorsprong RD (165543, 580157,2), X-as -3,48 graden, maaiveld NAP circa +1,9 m. Galmgaten en vensters als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "donatuskerk-dongjum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.32,
+    "widthM": 9.52,
+    "highestPointM": 22.8,
+    "monument": 15851,
+    "groundNapM": 1.9,
+    "naveRidgeM": 11.45,
+    "naveEaveM": 6.2764,
+    "towerTopM": 22.8,
+    "baseM": -0.8
+  },
+  "sources": [
+    "https://pkn.ried-skingen.nl/dongjum-donatuskerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15851",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Dongjum)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000327400",
+    "PDOK AHN4 DSM en DTM"
+  ]
+}
