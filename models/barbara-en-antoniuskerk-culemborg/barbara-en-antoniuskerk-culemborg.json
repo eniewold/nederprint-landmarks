@@ -1,0 +1,34 @@
+{
+  "name": "Barbara en Antoniuskerk Culemborg",
+  "origin": [
+    143943.24,
+    440799.96
+  ],
+  "xAxis": [
+    0.99655,
+    0.083
+  ],
+  "groundHeight": 4.049,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0216100000013019"
+  ],
+  "description": "Oud-katholieke zaalkerk met schilddak, afgeronde koorsluiting en drie spitsboogvensters in de straatgevel. Gevel en kap geschat en vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 4.049,
+    "highestPointM": 12.07
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0216100000013019",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11595",
+    "https://commons.wikimedia.org/wiki/Category:H.H._Barbara_en_Antoniuskerk_(Culemborg)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "barbara-en-antoniuskerk-culemborg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "barbara-en-antoniuskerk-culemborg-1-1000.stl"
+  ]
+}
