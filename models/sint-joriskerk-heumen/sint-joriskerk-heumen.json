@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Joriskerk Heumen",
+  "origin": [
+    186484.4,
+    419578.8
+  ],
+  "xAxis": [
+    0.9992,
+    0.03999
+  ],
+  "groundHeight": 11.685,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0252100000009069"
+  ],
+  "description": "Laatgotische dorpskerk met laag gepleisterd schip, hoger vijfzijdig koor en slanke westtoren met naaldspits. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 11.685,
+    "highestPointM": 19.91
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0252100000009069",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22003",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22004",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Heumen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-joriskerk-heumen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-joriskerk-heumen-1-1000.stl"
+  ]
+}
