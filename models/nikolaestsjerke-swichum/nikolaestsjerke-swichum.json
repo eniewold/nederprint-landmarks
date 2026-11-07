@@ -1,0 +1,34 @@
+{
+  "name": "Nikolaestsjerke Swichum",
+  "origin": [
+    183857,
+    574181
+  ],
+  "xAxis": [
+    0.9906,
+    0.1368
+  ],
+  "groundHeight": 2.091,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000376054"
+  ],
+  "description": "Middeleeuwse zaalkerk met halfrond koor, steunberen en westelijke zadeldaktoren; vlakken en maten uit BAG, 3D BAG en AHN; blinde venster- en galmnissen naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.091,
+    "highestPointM": 19.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000376054",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24519",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk,_Swichum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nikolaestsjerke-swichum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nikolaestsjerke-swichum-1-1000.stl"
+  ]
+}
