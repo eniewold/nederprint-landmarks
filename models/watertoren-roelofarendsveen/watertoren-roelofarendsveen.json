@@ -1,0 +1,69 @@
+{
+  "name": "Watertoren Roelofarendsveen",
+  "file": "watertoren-roelofarendsveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    103390.1,
+    468607.3
+  ],
+  "xAxis": [
+    -0.15643,
+    -0.98769
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      8.5,
+      0
+    ],
+    [
+      5,
+      4.5
+    ],
+    [
+      -4,
+      6
+    ],
+    [
+      -5,
+      -9
+    ]
+  ],
+  "groundHeight": 42.51,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1884100000002910"
+  ],
+  "description": "Oorsprong op het hart van de toren op maaiveld (NAP -0,65 m), +X de zuidgevel met balkon en winkelpui (RD -99 graden). Betonnen toren op een vierkant van 7,6 m met afgeschuinde hoeken tot de kroonlijst op 28,2 m en een achtkante piramide tot 31,1 m, vensters als nissen, balkon op 16,9 m, tulpen als reliëf op de vier brede zijden; paviljoen volgens de BAG-contour tot 3,7 m met dakterras, etalages en luifel. Maten uit BAG, AHN, luchtfoto en foto's.",
+  "realWorld": {
+    "built": "1932",
+    "architect": "H. Sangster",
+    "use": "bloemenwinkel en woon- en bedrijfsruimte; tulpen op de gevels sinds 1986",
+    "monument": "gemeentelijk monument",
+    "wikipediaHeightM": 31.5,
+    "reservoirM3": 150,
+    "ahnGroundNapM": -0.65,
+    "ahnApexNapM": 30.46,
+    "ahnPavilionRoofNapM": 2.45,
+    "towerWidthM": 7.6,
+    "towerChamferM": 4.4,
+    "corniceM": 28.2,
+    "apexM": 31.1,
+    "balconyM": 16.9,
+    "pavilionM": 3.7,
+    "terraceM": 3.1,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Roelofarendsveen) (1932, H. Sangster, 31,5 m, 150 m³, bloemenwinkel, tulpen sinds 1986)",
+    "https://commons.wikimedia.org/wiki/File:Roelofarendsveen_watertoren.jpg (2010, vanuit het zuiden)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Roelofarendsveen.jpg (2007, vanuit het zuidwesten)",
+    "https://commons.wikimedia.org/wiki/File:Roelofarendsveen,_watertoren_in_straatzicht_foto2_2009-10-25_15.46.JPG",
+    "https://commons.wikimedia.org/wiki/File:Roelofsarendsveen,_de_watertoren_in_straatzicht_IMG_0045_2021-08-03_14.49.jpg",
+    "PDOK BAG-pand 1884100000002910, AHN DSM/DTM 0,5 m, 3D BAG en luchtfoto, 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-roelofarendsveen-1-1000.stl"
+  ]
+}
