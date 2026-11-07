@@ -1,0 +1,35 @@
+{
+  "name": "Maria Geboortekerk Lent",
+  "origin": [
+    187892.8,
+    430396.5
+  ],
+  "xAxis": [
+    0.8989,
+    0.4382
+  ],
+  "groundHeight": 10.539,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000036618"
+  ],
+  "description": "Neogotische kruiskerk met westtoren, spits, lagere zijbeuken, transept, koor en verbonden lage aanbouw; details en dakafmetingen geschat naar foto’s.",
+  "realWorld": {
+    "groundNapM": 10.539,
+    "highestPointM": 45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000036618",
+    "https://www.monumenten.nl/monument/522954",
+    "https://www.rkparochiemariamagdalena.nl/gemeenschap/lent/?eventDisplay=past&post_type=project&project=lent&shortcode=61918f5d",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Geboorte_(Lent)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "maria-geboortekerk-lent.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maria-geboortekerk-lent-1-1000.stl"
+  ]
+}
