@@ -1,0 +1,61 @@
+{
+  "name": "Groate Kerk St.-Jacobiparochie",
+  "file": "groate-kerk-st-jacobiparochie.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169411.75,
+    587400
+  ],
+  "xAxis": [
+    0.990149,
+    0.140016
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -16,
+      -11
+    ],
+    [
+      14,
+      -11
+    ],
+    [
+      -16,
+      5
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      -7,
+      21
+    ],
+    [
+      6,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0063100000002015"
+  ],
+  "description": "Neoclassicistische brede zaalkerk met schilddak, Dorisch fronton en vier aangehechte zuilen, vierkante klokgeleding, ronde lantaarn met blinde openingen, koepel en lagere achterbouwen.",
+  "realWorld": {
+    "groundNapM": 0.829,
+    "roofRidgeNapM": 15.81,
+    "towerDomeTopM": 27.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0063100000002015",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9511",
+    "https://commons.wikimedia.org/wiki/Category:Groate_Kerk",
+    "https://groatekerk.nl/in-de-kerk/"
+  ],
+  "printFiles": [
+    "groate-kerk-st-jacobiparochie-1-1000.stl"
+  ]
+}
