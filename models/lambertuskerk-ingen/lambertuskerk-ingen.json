@@ -1,0 +1,34 @@
+{
+  "name": "Lambertuskerk Ingen",
+  "origin": [
+    161783,
+    441250.5
+  ],
+  "xAxis": [
+    0.98545,
+    -0.16998
+  ],
+  "groundHeight": 7.781,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0214100000008348"
+  ],
+  "description": "Pseudobasiliek met ingebouwde westtoren, lager schip, hoger vijfzijdig koor en zuidkapel. Spits en geveldetails geschat naar foto's en AHN.",
+  "realWorld": {
+    "groundNapM": 7.781,
+    "highestPointM": 32.12
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0214100000008348",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25843",
+    "https://commons.wikimedia.org/wiki/Category:Lambertuskerk,_Ingen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "lambertuskerk-ingen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "lambertuskerk-ingen-1-1000.stl"
+  ]
+}
