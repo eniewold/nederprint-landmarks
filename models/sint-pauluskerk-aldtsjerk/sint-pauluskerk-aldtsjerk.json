@@ -1,0 +1,70 @@
+{
+  "name": "Sint-Pauluskerk Aldtsjerk",
+  "file": "sint-pauluskerk-aldtsjerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    188467.5,
+    586576
+  ],
+  "xAxis": [
+    0.99756,
+    -0.06976
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      18,
+      0
+    ],
+    [
+      17.8,
+      3
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      -17.5,
+      0
+    ]
+  ],
+  "groundHeight": 43.89,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000025600"
+  ],
+  "description": "Sint-Pauluskerk (Pauluskerk) in Aldtsjerk/Oudkerk (Fryslân): romaanse kerk uit de 12e eeuw op een terp, schip met zadeldak (nok +13,65 m, goot +6,75 m) dat aan de oostkant in schilden overgaat boven het vijfzijdig gesloten, gepleisterde koor uit de 19e eeuw met pilasters, gootlijsten, plint en rondboogvensters als nissen; westtoren uit de vroege 13e eeuw met spaarvelden, galmgaten en een zadeldak tussen twee topgevels met muurafdekking, hoekpinakels en toppinakels tot +25,6 m. Oorsprong RD (188467,5; 586576) midden in het schip op het laagste maaiveld rond de voet (NAP +2,9 m), X-as langs het schip van west naar oost onder -4,0 graden.",
+  "printFiles": [
+    "sint-pauluskerk-aldtsjerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33.96,
+    "widthM": 10.65,
+    "highestPointM": 25.6,
+    "built": "12e eeuw (schip, romaans), toren begin 13e eeuw, westmuur toren opgehoogd 1721, koorsluiting 19e eeuw",
+    "monument": 35669,
+    "groundNapM": 2.9,
+    "naveRidgeM": 13.65,
+    "naveEaveM": 6.75,
+    "roofPitch": 1.36,
+    "towerEaveM": 19.71,
+    "towerRidgeM": 24.4,
+    "towerTopM": 25.6,
+    "baseM": -1
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Pauluskerk_(Oudkerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35669",
+    "https://www.wikidata.org/wiki/Q3400952",
+    "https://www.openstreetmap.org/way/277506399",
+    "https://commons.wikimedia.org/wiki/Category:Pauluskerk,_Aldtsjerk (20180612 Sint-Pauluskerk1/2 en torenspits; 20200902 Sint Pauluskerk1-3; Paulustsjerke mei tsjerkhôf; RCE 20180309, 20180312, 20180313, 20180286)",
+    "BAG pand 0737100000025600 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
