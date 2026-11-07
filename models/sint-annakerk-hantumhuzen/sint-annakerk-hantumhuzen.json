@@ -1,0 +1,60 @@
+{
+  "name": "Sint-Annakerk Hantumhuzen",
+  "file": "sint-annakerk-hantumhuzen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195691.2,
+    598630
+  ],
+  "xAxis": [
+    0.991,
+    0.132
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -4
+    ],
+    [
+      3,
+      -6
+    ],
+    [
+      20,
+      -6
+    ],
+    [
+      -3,
+      4
+    ],
+    [
+      20,
+      6
+    ],
+    [
+      28,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000203683"
+  ],
+  "description": "Romanogotische eenbeukige kerk uit de dertiende eeuw met vijfzijdige koorsluiting en deels ingebouwde zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 2.151,
+    "ahnTowerNapM": 23.54,
+    "modelTopM": 21.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000203683",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38700",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Anne_Church_(Hantumhuzen)"
+  ],
+  "printFiles": [
+    "sint-annakerk-hantumhuzen-1-1000.stl"
+  ]
+}
