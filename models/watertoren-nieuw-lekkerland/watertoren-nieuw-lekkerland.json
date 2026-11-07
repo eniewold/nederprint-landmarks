@@ -1,0 +1,79 @@
+{
+  "name": "Watertoren Nieuw-Lekkerland",
+  "file": "watertoren-nieuw-lekkerland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    107344.8,
+    434004.91
+  ],
+  "xAxis": [
+    0.22495,
+    -0.97437
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      7,
+      0
+    ],
+    [
+      3.5,
+      6.06
+    ],
+    [
+      -3.5,
+      6.06
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      -3.5,
+      -6.06
+    ],
+    [
+      3.5,
+      -6.06
+    ]
+  ],
+  "groundHeight": 46.69,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0571100000000425"
+  ],
+  "description": "Oorsprong op het hart van de zeskante BAG-voetafdruk (hoekstraal 5,42 m) op het maaiveld (NAP +3,05 m), X-as 77 graden rechtsom van RD-oost loodrecht op het vlak naar de Lekdijk. Zeskante, licht verjongende betonnen schacht met hoeklisenen (onderaan breder), drie lijsten, ruitvensters, twee deuren en een venster aan de voet en een erker onder het reservoir aan de dijkzijde; rond reservoir van 11 m met bolle bodem, zes ribben, spleetvensters per veld en een plat dak met rand op 30,4 m. Maten uit BAG, AHN en foto's.",
+  "realWorld": {
+    "built": 1915,
+    "builder": "Visser & Smit (Hanab)",
+    "monument": "gemeentelijk monument Molenlanden",
+    "publishedHeightM": 34,
+    "reservoirM3": 400,
+    "ahnGroundNapM": 3.05,
+    "ahnRoofNapM": 33.35,
+    "ahnRimNapM": 33.45,
+    "hexagonCornerRadiusM": 5.42,
+    "hexagonCornerRadiusTopM": 5.12,
+    "bandsM": [
+      6.2,
+      12.4,
+      18.6
+    ],
+    "shaftTopM": 20.6,
+    "reservoirBottomM": 21.9,
+    "reservoirDiameterM": 11,
+    "roofM": 30.25,
+    "topM": 30.4,
+    "entranceDegrees": 0,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Nieuw-Lekkerland) (1915, Visser & Smit Hanab, 34 m, 400 m³, sinds 2010 particulier en woning)",
+    "https://commons.wikimedia.org/wiki/Category:Watertoren_(Nieuw-Lekkerland) (Overzicht watertoren - Nieuw-Lekkerland - 20276806 - RCE.jpg vanaf de Lekdijk, ... 20335214 - RCE.jpg, Watertoren Nieuw Lekkerland.jpg vanaf de Lek)",
+    "PDOK BAG-pand 0571100000000425, AHN DSM/DTM 0,5 m en luchtfoto (Actueel_orthoHR), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-nieuw-lekkerland-1-1000.stl"
+  ]
+}
