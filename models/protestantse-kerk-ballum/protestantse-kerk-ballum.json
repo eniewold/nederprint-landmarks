@@ -1,0 +1,75 @@
+{
+  "name": "Protestantse kerk Ballum",
+  "file": "protestantse-kerk-ballum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    174914.56,
+    606466.66
+  ],
+  "xAxis": [
+    0.99294,
+    0.11858
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -11,
+      0
+    ],
+    [
+      -5,
+      -5.6
+    ],
+    [
+      5,
+      -5.6
+    ],
+    [
+      0,
+      5.8
+    ],
+    [
+      -5,
+      5.8
+    ],
+    [
+      6,
+      5.8
+    ]
+  ],
+  "groundHeight": 44.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0060100000127831"
+  ],
+  "description": "Protestantse kerk van Ballum op Ameland (1832): zaalkerk onder een schilddak (nok +9,61 m, goot +4,65 m) met gootlijst rondom, vier rondboogvensters in elke lange gevel, de westgevel met ingang en twee vensters, een dakkapel op het westschild en de platte aanbouw tegen de oostgevel; de vrijstaande klokkentoren is een eigen pand en zit niet in dit model. Oorsprong RD (174914,56; 606466,66) in het hart van het schip op het laagste maaiveld (NAP +3,30 m), X-as langs de nok van west naar oost onder 6,81 graden. Vensters en deur als blinde nissen met een spitse top voor print op 1:1000.",
+  "printFiles": [
+    "protestantse-kerk-ballum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.52,
+    "widthM": 9.74,
+    "highestPointM": 9.61,
+    "built": "1832, ter vervanging van de middeleeuwse kerk op het kerkhof aan de Smitteweg (gesloopt 1838); preekstoel van 1604 uit Harlingen; dakkapel op het westschild",
+    "monument": 7652,
+    "groundNapM": 3.3,
+    "ridgeM": 9.61,
+    "eaveM": 4.65,
+    "corniceTopM": 4.5,
+    "roofPitchDeg": 47.7,
+    "westHipPitchDeg": 59.5,
+    "eastHipPitchDeg": 55.6,
+    "annexTopM": 2.93,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7652",
+    "https://www.wikidata.org/wiki/Q4011696",
+    "https://www.openstreetmap.org/way/267926158",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0021.php (Monumenten in Nederland, Fryslân: Ballum)",
+    "Wikimedia Commons: RCE 20345660 en 20276225, 'Hervormde kerk in Ballum (Ameland).jpg', '2021-10-12-Hervormde kerk Ballum-4911.jpg', 'Ballum Ameland toren kerk.jpg', 'Hervormde kerk Ballum.jpg'",
+    "BAG pand 0060100000127831 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m"
+  ]
+}
