@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Joriskerk Drempt",
+  "origin": [
+    208241.6,
+    446702
+  ],
+  "xAxis": [
+    0.992,
+    0.126
+  ],
+  "groundHeight": 12.907,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000010264"
+  ],
+  "description": "Pseudobasiliek met driezijdig koor, romaanse westtoren, hoge naaldspits en geschatte geveldetails.",
+  "realWorld": {
+    "groundNapM": 12.907,
+    "highestPointM": 39.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000010264",
+    "https://www.monumenten.nl/monument/22840",
+    "https://sintjoriskerkdrempt.nl/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Joriskerk,_Drempt",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nederlands-hervormde-kerk-sint-joris-drempt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-sint-joris-drempt-1-1000.stl"
+  ]
+}
