@@ -1,0 +1,36 @@
+{
+  "name": "Nederlands Hervormde Kerk Lathum",
+  "origin": [
+    198540.4,
+    444372.55
+  ],
+  "xAxis": [
+    0.9973,
+    0.073
+  ],
+  "groundHeight": 10.686,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0299100000405445"
+  ],
+  "description": "Eenbeukige gotische kerk met driezijdige koorsluiting en westtoren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 10.686,
+    "highestPointM": 25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0299100000405445",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8149",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Lathum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dbnl.org/tekst/kuil005kwar01_01/kuil005kwar01_01_0005.php",
+    "https://www.stopumts.nl/doc.php/Berichten%20Nederland/1021/__zo_n_mast_is_moeilijk_tegen_te_houden___%28lathum%29_de_gelderlander"
+  ],
+  "file": "nederlands-hervormde-kerk-lathum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-lathum-1-1000.stl"
+  ]
+}
