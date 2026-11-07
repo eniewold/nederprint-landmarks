@@ -1,0 +1,83 @@
+{
+  "name": "Sint-Gertrudiskathedraal Utrecht",
+  "file": "kathedrale-kerk-van-sint-gertrudis-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136463.54,
+    455645.77
+  ],
+  "xAxis": [
+    0.85985,
+    0.51054
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -23.5,
+      0
+    ],
+    [
+      -23.5,
+      -7
+    ],
+    [
+      -23.5,
+      7
+    ],
+    [
+      0,
+      -13.5
+    ],
+    [
+      10,
+      -11
+    ],
+    [
+      22,
+      -8
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      22,
+      8.5
+    ]
+  ],
+  "groundHeight": 46.28,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000049117"
+  ],
+  "description": "Oud-katholieke Sint-Gertrudiskathedraal aan het Willemsplantsoen in Utrecht (E.G. Wentink jr., 1912-1914, neoromaans): basilicaal schip met zadeldak (nok +20,15 m) en dakkapellen, zijbeuken met lessenaarsdak, kapellen met eigen zadeldak bij het koor, veelhoekige apsis met roosvenster, dubbeltorenfront met tentdaken tot +29,1 m, portaal, dwerggalerij en topgevel, vier achtkante traptorens, zijportalen en de lage aanbouwen van hetzelfde BAG-pand. Oorsprong RD (136463,54; 455645,77) op de as van het schip op het maaiveld van de Mariahoek (NAP +2,92 m), X-as langs de nok onder 30,7 graden naar de apsis. Vensters, galerij en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "kathedrale-kerk-van-sint-gertrudis-utrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 47.11,
+    "widthM": 29.74,
+    "highestPointM": 29.1,
+    "built": "1912-1914, architect E.G. Wentink jr.",
+    "groundNapM": 2.92,
+    "westGroundM": 1.16,
+    "naveRidgeM": 20.15,
+    "naveEaveM": 13.22,
+    "aisleEaveM": 7.56,
+    "chapelRidgeM": 11.2,
+    "apseEaveM": 12.5,
+    "towerStageM": 17.4,
+    "towerEaveM": 24.4,
+    "towerTopM": 29.1,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Gertrudiskathedraal",
+    "https://www.wikidata.org/wiki/Q2395780",
+    "https://www.openstreetmap.org/way/237386428",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Gertrudiskathedraal,_Utrecht (Sint-Gertrudiskathedraal.JPG, Gertrudiskathedraal Oudkatholiek 9586/9587, SFA022825602 (ca. 1914), Lange Elisabethstraat Mariaplaats panoramio)",
+    "BAG pand 0344100000049117 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
