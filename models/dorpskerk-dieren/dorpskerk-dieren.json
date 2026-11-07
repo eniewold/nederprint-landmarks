@@ -1,0 +1,34 @@
+{
+  "name": "Dorpskerk Dieren",
+  "origin": [
+    204451.7,
+    450746.5
+  ],
+  "xAxis": [
+    -0.628,
+    0.77822
+  ],
+  "groundHeight": 14.102,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000029789"
+  ],
+  "description": "Neoclassicistische dorpskerk met ingebouwde toren en klokopbouw, dwars geplaatste noordbeuk en aanbouw. Details zijn geschat en vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 14.102,
+    "highestPointM": 21.62
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0275100000029789",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42121",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Dieren)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-dieren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-dieren-1-1000.stl"
+  ]
+}
