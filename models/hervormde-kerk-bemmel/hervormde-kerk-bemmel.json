@@ -1,0 +1,60 @@
+{
+  "name": "Hervormde Kerk Bemmel",
+  "file": "hervormde-kerk-bemmel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    190071,
+    433358.5
+  ],
+  "xAxis": [
+    0.995,
+    0.099
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      -4
+    ],
+    [
+      -4,
+      4
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      17,
+      -12
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      12,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1705100000003185"
+  ],
+  "description": "Laatgotische kerk met driezijdig koor, zuidkapel met dwarsdak en oudere vierkante westtoren met laag tentdak.",
+  "realWorld": {
+    "groundNapM": 12.411,
+    "naveRidgeM": 13,
+    "towerTopM": 23.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1705100000003185",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8937",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Bemmel"
+  ],
+  "printFiles": [
+    "hervormde-kerk-bemmel-1-1000.stl"
+  ]
+}
