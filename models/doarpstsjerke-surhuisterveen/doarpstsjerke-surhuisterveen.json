@@ -1,0 +1,62 @@
+{
+  "name": "Doarpstsjerke Surhuisterveen",
+  "file": "doarpstsjerke-surhuisterveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206815.8,
+    577504
+  ],
+  "xAxis": [
+    0.93669646,
+    0.35014245
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -9,
+      -5
+    ],
+    [
+      0,
+      -5
+    ],
+    [
+      10,
+      -5
+    ],
+    [
+      -9,
+      5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000824311"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting, zadeldak en vierkante dakruiter met vierzijdige spits; vensters en galmgaten als blinde nissen.",
+  "realWorld": {
+    "groundNapM": 1.127,
+    "naveRidgeNapM": 11.79,
+    "ahnObservedSpireNapM": 16.56,
+    "modelTopM": 17.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000824311",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7050",
+    "https://commons.wikimedia.org/wiki/File:7050_dorpskerk_surhuisterveen.jpg",
+    "https://www.pkn-surhuisterveen.nl/over-ons/doarpstsjerke/"
+  ],
+  "printFiles": [
+    "doarpstsjerke-surhuisterveen-1-1000.stl"
+  ]
+}
