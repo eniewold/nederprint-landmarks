@@ -1,0 +1,75 @@
+{
+  "name": "Kerkje aan de Zee Urk",
+  "file": "kerkje-aan-de-zee-urk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    168950,
+    519447
+  ],
+  "xAxis": [
+    0.99872,
+    -0.05059
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -10.5,
+      0.3
+    ],
+    [
+      -6,
+      -4.6
+    ],
+    [
+      4,
+      -6.6
+    ],
+    [
+      14,
+      0.3
+    ],
+    [
+      4,
+      7.2
+    ],
+    [
+      -6,
+      6.4
+    ]
+  ],
+  "groundHeight": 51.39,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0184100000002638"
+  ],
+  "description": "Kerkje aan de Zee op Urk (1786, J.S. Creutz): zaalkerk onder een zadeldak (nok +10,4 m) tussen twee topgevels met schouderstukken, gootlijst, lisenen en rondboogvensters, de noordingang met zandstenen omlijsting en wapensteen, de oostgevel met twee vensters, blinde boog, oculus en schoorsteen, de aanbouw ten noorden van de toren, en de westtoren met hoekpilasters, wit hoofdgestel, balustrade met hoekpostamenten, open achtkante lantaarn en de uivormige bekroning van 1954 met bol en spil tot +21,4 m. Oorsprong RD (168950; 519447) bij het hart van het schip op het maaiveld aan de noordkant (NAP +9,0 m), X-as langs de nok van toren naar oostgevel onder -2,9 graden. Vensters, deuren en lantaarnbogen als blinde nissen met een spitse top voor print op 1:1000.",
+  "printFiles": [
+    "kerkje-aan-de-zee-urk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 21.07,
+    "widthM": 10.86,
+    "highestPointM": 21.4,
+    "built": "1786 (J.S. Creutz) op de plek van een oudere kerk; lantaarn met naaldspits 1896, huidige uivormige bekroning 1954 (Ph. Bolt); gerestaureerd 1988-1989",
+    "monument": 35882,
+    "groundNapM": 9,
+    "naveRidgeM": 10.4,
+    "naveEaveM": 5.87,
+    "towerBrickM": 8.75,
+    "towerCorniceM": 9.85,
+    "balustradeM": 10.85,
+    "lanternCorniceM": 14.75,
+    "onionTopM": 17.75,
+    "towerTopM": 21.4,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kerkje_aan_de_Zee_(Urk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35882",
+    "https://www.wikidata.org/wiki/Q2181670",
+    "https://commons.wikimedia.org/wiki/Category:Kerkje_aan_zee_(Urk) (RCE 20274361, 20274363, 20274366, 20274367, 20274368, 20274369, 20410322)",
+    "BAG pand 0184100000002638 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
