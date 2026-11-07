@@ -1,0 +1,67 @@
+{
+  "name": "Watertoren Poeldijk",
+  "file": "watertoren-poeldijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    74436.66,
+    449131.73
+  ],
+  "xAxis": [
+    0.682,
+    0.73135
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      3,
+      0
+    ],
+    [
+      -3,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      -3
+    ]
+  ],
+  "groundHeight": 43.92,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1783100000810342"
+  ],
+  "description": "Oorsprong op het hart van BAG-pand 1783100000810342 (het reservoir) op het erf (NAP +0,35 m), X-as 47 graden linksom van RD-oost evenwijdig aan toren en kas, +Y naar de kas, -Y naar het erf. Taps vakwerkframe van 4,6 m op het maaiveld tot 2,4 m onder het reservoir met vier hoekstijlen van 0,9 m, een ring op circa 4,0 m en open vakken met een spitse top (kruisgewelf); pomphuisje met plat dak (2,4 m) en deurnis in het onderste vak; vierkant reservoir van 2,15 m van 5,8 tot 7,05 m. Hoogte uit het AHN, breedte van het reservoir uit de BAG, verhoudingen uit de foto.",
+  "realWorld": {
+    "tuinderij": "Kaas en Brood (sedert 1895)",
+    "bagPand": "1783100000810342",
+    "ahnGroundNapM": 0.35,
+    "ahnTopNapM": 7.4,
+    "frameFootWidthM": 4.6,
+    "frameTopWidthM": 2.4,
+    "legM": 0.9,
+    "ringM": [
+      3.99,
+      4.25
+    ],
+    "shedHeightM": 2.4,
+    "shedWidthM": 2.86,
+    "tankWidthM": 2.15,
+    "tankBottomM": 5.8,
+    "topM": 7.05,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Poeldijk) (besproeiingsinstallatie van de kassen van tuinderij Kaas en Brood; bouwjaar, hoogte en inhoud onbekend)",
+    "https://commons.wikimedia.org/wiki/File:Poeldijk_-_watertoren_tuinderij_Kaas_en_Brood.jpg (Quistnix, 13 februari 2009, CC BY-SA: frame, ring, reservoir met opschrift, pomphuisje met deur, vlaggenmast, ladder)",
+    "PDOK BAG-WFS (pand 1783100000810342, bouwjaar 2025, 2,15 m in het vierkant op 47 graden) en gebouwtegels (blok tot ellipsoïde 51,07), 2026-11-07",
+    "AHN DSM/DTM 0,5 m (PDOK WCS) en luchtfoto's 2022, 2024 en 2026 (orthoHR), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-poeldijk-1-1000.stl"
+  ]
+}
