@@ -1,0 +1,72 @@
+{
+  "name": "Hervormde kerk Baard",
+  "file": "hervormde-kerk-baard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173817.87,
+    572880.13
+  ],
+  "xAxis": [
+    0.9978,
+    0.06627
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -13,
+      -4
+    ],
+    [
+      -13,
+      4.5
+    ],
+    [
+      0,
+      -5.5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      12.5,
+      0
+    ],
+    [
+      11,
+      3.8
+    ]
+  ],
+  "groundHeight": 43.54,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000166926"
+  ],
+  "description": "Hervormde kerk (Gertrudiskerk) aan de Dekemawei in Baard (gemeente Leeuwarden): zaalkerk uit 1876 met zadeldak (nok +10,25 m, helling 53 graden) en een driezijdig gesloten koor onder een schilddak, gootlijsten, een lisene bij het koor en rondboogvensters als nissen; westtoren van drie geledingen met banden, hoeklisenen, spitsboogportaal, galmgaten en een kroonlijst op +17,05 m, met een ingezwenkte achtkante spits tot +29,0 m. Oorsprong RD (173817,87; 572880,13) midden in het schip op maaiveld (NAP +1,95 m), X-as langs de nok van west naar oost onder 3,8 graden.",
+  "printFiles": [
+    "hervormde-kerk-baard-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.32,
+    "widthM": 8.28,
+    "highestPointM": 29,
+    "built": "1876 (zaalkerk met toren), uurwerk A.H. van Bergen 1876, orgel Bakker & Timmenga 1888",
+    "monument": 8468,
+    "groundNapM": 1.95,
+    "naveRidgeM": 10.25,
+    "naveEaveM": 5.14,
+    "towerCorniceM": 17.05,
+    "towerTopM": 29,
+    "baseM": -1.2
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8468",
+    "https://nl.wikipedia.org/wiki/Hervormde_kerk_(Baard)",
+    "https://www.wikidata.org/wiki/Q2532035",
+    "https://www.openstreetmap.org/way/292942029",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Baard (RCE 20026750, 20026753, 20026757; Baard, Gertrudistsjerke 1 en 2; BAARD HERVORMDE KERK)",
+    "BAG pand 0140100000166926 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
