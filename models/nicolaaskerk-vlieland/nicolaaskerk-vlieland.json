@@ -1,0 +1,61 @@
+{
+  "name": "Nicolaaskerk Vlieland",
+  "file": "nicolaaskerk-vlieland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    133513.13,
+    589974.35
+  ],
+  "xAxis": [
+    0.999452,
+    -0.0331
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -11,
+      -6
+    ],
+    [
+      -11,
+      6
+    ],
+    [
+      0,
+      -16
+    ],
+    [
+      0,
+      16
+    ],
+    [
+      12,
+      -6
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0096100000383318"
+  ],
+  "description": "Kruiskerk met twee kruisende zadeldaken, klokgevel, tuitgevels, kerkekamer, steunberen en blinde venster- en deurnissen.",
+  "realWorld": {
+    "groundNapM": 3.416,
+    "naveRidgeNapM": 14.43,
+    "modelTopM": 11.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0096100000383318",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37576",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Nicolaaskerk,_Vlieland",
+    "https://nicolaaskerk-vlieland.nl/-/overdekerk"
+  ],
+  "printFiles": [
+    "nicolaaskerk-vlieland-1-1000.stl"
+  ]
+}
