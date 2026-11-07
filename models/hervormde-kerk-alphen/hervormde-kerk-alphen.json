@@ -1,0 +1,34 @@
+{
+  "name": "Hervormde kerk Alphen",
+  "origin": [
+    160934.55,
+    425775.35
+  ],
+  "xAxis": [
+    -0.455,
+    -0.89
+  ],
+  "groundHeight": 5.983,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000006864"
+  ],
+  "description": "Driezijdig gesloten zaalkerk met houten dakruiter en spitsboogvensters. Spitstop en geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 5.983,
+    "highestPointM": 15.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000006864",
+    "https://www.monumenten.nl/monument/8201",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Alphen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-alphen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-alphen-1-1000.stl"
+  ]
+}
