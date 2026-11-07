@@ -1,0 +1,36 @@
+{
+  "name": "Antoniuskerk Surhuizum",
+  "origin": [
+    207755,
+    580206
+  ],
+  "xAxis": [
+    0.95265,
+    0.30408
+  ],
+  "groundHeight": 2.72,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000837847",
+    "NL.IMBAG.Pand.0059100000838057"
+  ],
+  "description": "Zaalkerk met driezijdige sluiting en vrijstaande middeleeuwse toren met achtzijdige gemetselde spits, hoeksteunberen en laag overdekt verbindingsportaal; daken uit BAG en 3D BAG, hoogte uit AHN, gevelnissen geschat uit foto's.",
+  "realWorld": {
+    "groundNapM": 2.72,
+    "highestPointM": 35.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000837847",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7051",
+    "https://commons.wikimedia.org/wiki/Category:Antoniuskerk,_Surhuizum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://lokaleregelgeving.overheid.nl/CVDR723347"
+  ],
+  "file": "antoniuskerk-surhuizum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "antoniuskerk-surhuizum-1-1000.stl"
+  ]
+}
