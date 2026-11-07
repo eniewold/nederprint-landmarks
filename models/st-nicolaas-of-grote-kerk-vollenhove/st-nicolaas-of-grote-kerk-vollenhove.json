@@ -1,0 +1,86 @@
+{
+  "name": "Grote of Sint-Nicolaaskerk Vollenhove",
+  "file": "st-nicolaas-of-grote-kerk-vollenhove.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    192897,
+    521732
+  ],
+  "xAxis": [
+    0.97072,
+    -0.24023
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      38,
+      2
+    ],
+    [
+      38,
+      6
+    ],
+    [
+      35,
+      -1
+    ],
+    [
+      29,
+      0
+    ],
+    [
+      24,
+      6
+    ],
+    [
+      24,
+      -6
+    ],
+    [
+      10,
+      -13
+    ],
+    [
+      -30,
+      4
+    ],
+    [
+      21,
+      11
+    ]
+  ],
+  "groundHeight": 47.04,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000010883",
+    "NL.IMBAG.Pand.1708100000014816"
+  ],
+  "description": "Tweebeukige hallenkerk aan het Kerkplein in Vollenhove (eind 15de eeuw, koorsluitingen 14de eeuw): twee zadeldaken (nok NAP +24,2 m, 56 graden) met vlakke goot en driezijdige sluitingen, steunberen, spitsboognissen, zuid- en westportaal, sacristie met trapgevel en achtkante traptoren met naaldspits; los ten oosten de klokkentoren van drie geledingen met tentdak (NAP +22,8 m). Oorsprong RD (192897, 521732) midden in de kerk, X-as langs de nokken onder -13,9 graden, z = 0 op NAP +4,6 m bij de toren. Vensters, galmgaten en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "st-nicolaas-of-grote-kerk-vollenhove-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 65.4,
+    "widthM": 27.95,
+    "highestPointM": 22.41,
+    "built": "koorsluitingen 14de eeuw, hallenkerk eind 15de eeuw, klokkentoren iets jonger (klokken circa 1511)",
+    "monument": 10555,
+    "groundNapM": 4.59,
+    "churchGroundNapM": 5.3,
+    "ridgeM": 19.61,
+    "southEaveM": 12.17,
+    "northEaveM": 11.8,
+    "turretTopM": 22.41,
+    "towerEaveM": 13.51,
+    "towerTopM": 18.21,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Nicolaaskerk_(Vollenhove)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10555",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Nicolaaskerk_(Vollenhove)",
+    "BAG panden 1708100000010883 (kerk) en 1708100000014816 (klokkentoren); 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m, actuele luchtfoto en PDOK-terreintegels"
+  ]
+}
