@@ -1,0 +1,37 @@
+{
+  "name": "Munsterkerk Roermond",
+  "origin": [
+    197060,
+    356190
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 24.044,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0957100000260969"
+  ],
+  "description": "Kruisbasiliek met westwerk, vier torens, vieringkoepel en drie koorsluitingen; oosttorenspitsen op basis van foto's geschat.",
+  "realWorld": {
+    "groundNapM": 24.044,
+    "westernTowersM": 55,
+    "easternTowersEstimateM": 44,
+    "highestPointM": 55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0957100000260969",
+    "https://en.wikipedia.org/wiki/Munsterkerk",
+    "https://commons.wikimedia.org/wiki/Category:Munsterkerk,_Roermond",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "file": "munsterkerk-roermond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "munsterkerk-roermond-1-1000.stl"
+  ]
+}
