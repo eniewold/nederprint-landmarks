@@ -1,0 +1,35 @@
+{
+  "name": "Remigiuskerk Hengelo Gld",
+  "origin": [
+    218328.2,
+    451944.2
+  ],
+  "xAxis": [
+    0.92496,
+    0.38006
+  ],
+  "groundHeight": 13.48,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000010472"
+  ],
+  "description": "Laatgotische pseudobasiliek met doorlopend kerkdak, driezijdig koor en forse ingebouwde toren met naaldspits. Torenhoogte naar parochiebron; details geschat.",
+  "realWorld": {
+    "groundNapM": 13.48,
+    "highestPointM": 65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000010472",
+    "https://site.skgcollect.nl/216/pagina/2637/remigiuskerk.html",
+    "https://www.monumenten.nl/monument/21506",
+    "https://commons.wikimedia.org/wiki/Category:Remigiuskerk,_Hengelo",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "remigiuskerk-hengelo-gld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "remigiuskerk-hengelo-gld-1-1000.stl"
+  ]
+}
