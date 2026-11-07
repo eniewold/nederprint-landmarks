@@ -1,0 +1,35 @@
+{
+  "name": "Trouwkapel Bronkhorst",
+  "origin": [
+    209281,
+    454509
+  ],
+  "xAxis": [
+    0.98,
+    -0.2
+  ],
+  "groundHeight": 10.094,
+  "groundOffsetMetres": -0.35,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000011985"
+  ],
+  "description": "Eenbeukige kapel met driezijdige sluiting, portaal, steunberen en dakruiter met spits. Details geschat.",
+  "realWorld": {
+    "groundNapM": 10.094,
+    "highestPointM": 17.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000011985",
+    "https://kapelbronkhorst.nl/",
+    "https://www.monumenten.nl/monument/34548",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Bronkhorst",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "trouwkapel-bronkhorst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "trouwkapel-bronkhorst-1-1000.stl"
+  ]
+}
