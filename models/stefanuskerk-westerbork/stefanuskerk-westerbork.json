@@ -1,0 +1,80 @@
+{
+  "name": "Stefanuskerk Westerbork",
+  "file": "stefanuskerk-westerbork.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    237309,
+    541051
+  ],
+  "xAxis": [
+    0.99434,
+    -0.10626
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -16.4,
+      -0.3
+    ],
+    [
+      -11.5,
+      -5.6
+    ],
+    [
+      0,
+      -7.6
+    ],
+    [
+      10.6,
+      -6.6
+    ],
+    [
+      14.2,
+      0
+    ],
+    [
+      11,
+      6.6
+    ],
+    [
+      0,
+      7.6
+    ],
+    [
+      -13,
+      6.2
+    ]
+  ],
+  "groundHeight": 59,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1731100000005010"
+  ],
+  "description": "Stefanuskerk aan de Hoofdstraat in Westerbork: eenbeukige gotische kerk (begin XV) met driezijdige sluiting onder één zadeldak (nok +13,7 m) met afgewolfde oostkant, bakgoot, steunberen met twee versnijdingen, spitsboogvensters en ingang, westtoren (onderbouw XIII, bovenbouw 1778) met galmgaten, wijzerplaat en een achtkante naaldspits op een vierkante voet tot +27,5 m, portaaltje naast de toren en een lage aanbouw met zadeldak ten noorden van het schip. Oorsprong RD (237309; 541051) op de as van het schip op maaiveld (NAP +17,3 m), X-as langs de nok van toren naar koor onder -6,1 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "stefanuskerk-westerbork-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 28.85,
+    "widthM": 23.42,
+    "highestPointM": 27.5,
+    "built": "toren onderbouw XIII, bovenbouw 1778; schip en sluiting begin XV; herstellingen 1778 en 1859; aanbouw XX",
+    "monument": 38743,
+    "groundNapM": 17.3,
+    "naveRidgeM": 13.72,
+    "naveEaveSouthM": 8.56,
+    "naveEaveNorthM": 8.37,
+    "towerEaveM": 18.05,
+    "towerTopM": 27.5,
+    "annexRidgeM": 5.8,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Stefanuskerk_(Westerbork)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38743",
+    "https://commons.wikimedia.org/wiki/Category:Stefanuskerk_(Westerbork) (RCE 20226554, 20254022-20254031; 20211018 Stefanuskerk 1-3; Westerbork, kerk foto1 2011-04-02; Stefanuskerk Westerbork; Stefanustsjerke, Westerbork; Kerk van Westerbork2)",
+    "BAG pand 1731100000005010 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
