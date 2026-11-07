@@ -1,0 +1,35 @@
+{
+  "name": "Dorpskerk Leur",
+  "origin": [
+    176211.5,
+    425675.2
+  ],
+  "xAxis": [
+    0.999,
+    -0.018
+  ],
+  "groundHeight": 8.4,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000026743"
+  ],
+  "description": "Middeleeuwse kerk met laag schip, hoger koor en een scheefstaande torenspits; details geschat.",
+  "realWorld": {
+    "groundNapM": 8.4,
+    "highestPointM": 32.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0296100000026743",
+    "https://www.openmonumentendag.nl/monument/gotisch-zaalkerkje-leur/",
+    "https://www.dbnl.org/tekst/schu211land02_01/schu211land02_01_0023.php",
+    "https://commons.wikimedia.org/wiki/File:Leur_(Wijchen,_Gld,_NL)_church.JPG",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-leur.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-leur-1-1000.stl"
+  ]
+}
