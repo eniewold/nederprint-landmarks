@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Barbarakerk Culemborg",
+  "origin": [
+    143930.5,
+    440940
+  ],
+  "xAxis": [
+    0.927,
+    0.375
+  ],
+  "groundHeight": 4.852,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0216100000002222"
+  ],
+  "description": "Neogotische kruisbasiliek met roosvensters, terzijde geplaatste toren en slanke spits.",
+  "realWorld": {
+    "groundNapM": 4.852,
+    "highestPointM": 62
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0216100000002222",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11576",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Barbarakerk_(Culemborg)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.seniorencollectiefculemborg.nl/wp-content/uploads/2023/11/Kijker-2023-05-32s.pdf"
+  ],
+  "file": "sint-barbarakerk-culemborg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-barbarakerk-culemborg-1-1000.stl"
+  ]
+}
