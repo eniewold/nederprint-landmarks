@@ -1,0 +1,35 @@
+{
+  "name": "Dorpskerk Hoog-Keppel",
+  "origin": [
+    210747,
+    446694
+  ],
+  "xAxis": [
+    0.984,
+    -0.18
+  ],
+  "groundHeight": 15.021,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000005760"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor en romaanse toren met ingesnoerde spits; details geschat.",
+  "realWorld": {
+    "groundNapM": 15.021,
+    "highestPointM": 27.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000005760",
+    "https://geldersekerken.nl/dorpskerk-hoog-keppel/",
+    "https://dorpskerkhoogkeppel.nl/historie/",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_uit_%27t_zuiden_-_Hoog-Keppel_-_20115112_-_RCE.jpg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-hoog-keppel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-hoog-keppel-1-1000.stl"
+  ]
+}
