@@ -1,0 +1,72 @@
+{
+  "name": "Watertoren Strijen",
+  "file": "watertoren-strijen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    97934.41,
+    416844.66
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -7,
+      -3
+    ],
+    [
+      -5,
+      -5
+    ],
+    [
+      -3,
+      -7
+    ],
+    [
+      -7,
+      0
+    ]
+  ],
+  "groundHeight": 43.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0617100000720527"
+  ],
+  "description": "Oorsprong op het middelpunt van de BAG-voetafdruk (achtkante uitbouw, straal 6,35 m) op het maaiveld aan de tuinkant (NAP -0,3 m), X-as naar RD-oost, vlakke zijden van de achtkant naar oost, noord, west en zuid. Ronde bakstenen schacht die verjongt van 3,85 tot 3,3 m op 14,9 m met een rondboogdeur aan de straatkant (noordoost) en vensters als nissen; achtkante woonuitbouw van 6,6 tot 10,35 m met een ondervlak van 45 graden, leien plint, glazen verdieping en plat dak met daklijst; drie uitgemetselde ringen, acht consoles onder een uitlopende reservoirbodem, betonband van 8,4 m op 19,0 m, reservoirwand met acht lisenen en smalle vensters, band op 25,8 m en een borstwering met zestien openingen tot 27,2 m rond een plat dak met dakopbouw. Maten uit BAG, AHN, 3D BAG, luchtfoto en een foto.",
+  "realWorld": {
+    "built": 1914,
+    "architect": "Visser & Smit Hanab",
+    "publishedHeightM": 27,
+    "reservoirM3": 150,
+    "ahnGroundNapM": -0.3,
+    "ahnStreetNapM": 1.45,
+    "ahnAnnexRoofNapM": 9.8,
+    "ahnRoofNapM": 26.1,
+    "threeDBagRidgeNapM": 26.91,
+    "footRadiusM": 3.85,
+    "shaftTopRadiusM": 3.3,
+    "bandDiameterM": 8.4,
+    "annexCircumradiusM": 6.4,
+    "annexM": [
+      6.6,
+      10.35
+    ],
+    "bandM": [
+      19,
+      19.35
+    ],
+    "topM": 27.2,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Strijen) (1914, Visser & Smit Hanab, 27 m, 150 m³)",
+    "Wikimedia Commons: Strijen Watertoren 3628.JPG (Willemjans, 2007)",
+    "PDOK BAG-pand 0617100000720527, AHN DSM/DTM 0,5 m, luchtfoto (Actueel_orthoHR) en 3D BAG (AHN5), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-strijen-1-1000.stl"
+  ]
+}
