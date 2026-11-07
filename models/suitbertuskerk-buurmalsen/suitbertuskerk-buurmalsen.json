@@ -1,0 +1,35 @@
+{
+  "name": "Suitbertuskerk Buurmalsen",
+  "origin": [
+    148611,
+    433507.1
+  ],
+  "xAxis": [
+    0.917,
+    0.398
+  ],
+  "groundHeight": 4.95,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000008480"
+  ],
+  "description": "Driebeukige kerk met lager schip, hoger koor met sluiting en westtoren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 4.95,
+    "highestPointM": 32.87
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000008480",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16492",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16493",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Buurmalsen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "suitbertuskerk-buurmalsen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "suitbertuskerk-buurmalsen-1-1000.stl"
+  ]
+}
