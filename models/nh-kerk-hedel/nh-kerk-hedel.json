@@ -1,0 +1,34 @@
+{
+  "name": "NH kerk Hedel",
+  "origin": [
+    146166,
+    417613.5
+  ],
+  "xAxis": [
+    0.18,
+    0.98367
+  ],
+  "groundHeight": 5.021,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0263100000012885"
+  ],
+  "description": "T-vormige kerk met schilddaken en slanke klokkenruiter op de kruising. De open lantaarn en geveldetails zijn vereenvoudigd voor printbaarheid.",
+  "realWorld": {
+    "groundNapM": 5.021,
+    "highestPointM": 23.18
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0263100000012885",
+    "https://www.monumenten.nl/monument/21068",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Hedel",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nh-kerk-hedel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nh-kerk-hedel-1-1000.stl"
+  ]
+}
