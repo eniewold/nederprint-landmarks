@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Gertrudiskerk Peins",
+  "origin": [
+    168890.2,
+    579934.9
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.835,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000328494"
+  ],
+  "description": "Middeleeuwse zaalkerk met geveltoren, klokkenhuis, koepel en achtzijdige lantaarn. Gevelnissen naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.835,
+    "highestPointM": 20.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000328494",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15862",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Gertrudiskerk,_Peins",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://aldefrysketsjerken.nl/peins"
+  ],
+  "file": "sint-gertrudiskerk-peins.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gertrudiskerk-peins-1-1000.stl"
+  ]
+}
