@@ -1,0 +1,35 @@
+{
+  "name": "Petruskerk Pietersbierum",
+  "origin": [
+    160909.2,
+    580998.2
+  ],
+  "xAxis": [
+    0.980952,
+    0.194242
+  ],
+  "groundHeight": 3.426,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000315200"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting en schilddak; vier rondboogvensters aan weerszijden en westtoren met drie geledingen en zeszijdige naaldspits. Geveldetails en hoogte van de uiterste spitspunt zijn naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 3.426,
+    "highestPointM": 31.78
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000315200",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8644",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512699",
+    "https://commons.wikimedia.org/wiki/Category:Kerk,_Pietersbierum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "petruskerk-pietersbierum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petruskerk-pietersbierum-1-1000.stl"
+  ]
+}
