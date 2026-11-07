@@ -1,0 +1,35 @@
+{
+  "name": "Oude Calixtuskerk Groenlo",
+  "origin": [
+    239422.5,
+    451163.5
+  ],
+  "xAxis": [
+    0.996,
+    0.086
+  ],
+  "groundHeight": 24.765,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1586100000020292"
+  ],
+  "description": "Laatgotische pseudobasiliek met hoog koor, zijbeuken, westtoren met twee lantaarns en traptoren; details geschat.",
+  "realWorld": {
+    "groundNapM": 24.765,
+    "highestPointM": 40.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1586100000020292",
+    "https://www.monumenten.nl/monument/18164",
+    "https://geldersekerken.nl/groenlo/",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Calixtuskerk_(Groenlo)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "oude-calixtuskerk-groenlo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-calixtuskerk-groenlo-1-1000.stl"
+  ]
+}
