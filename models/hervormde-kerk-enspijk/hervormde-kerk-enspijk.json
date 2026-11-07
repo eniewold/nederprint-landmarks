@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde kerk Enspijk",
+  "origin": [
+    142901.4,
+    432816.4
+  ],
+  "xAxis": [
+    0.9798,
+    0.19998
+  ],
+  "groundHeight": 3.218,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000008068"
+  ],
+  "description": "Witgepleisterde pseudobasiliek met driezijdig koor, noordelijke kapel en bakstenen westtoren met ingesnoerde spits. Details geschat naar AHN en foto's.",
+  "realWorld": {
+    "groundNapM": 3.218,
+    "highestPointM": 27.48
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000008068",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16503",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16504",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Enspijk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-enspijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-enspijk-1-1000.stl"
+  ]
+}
