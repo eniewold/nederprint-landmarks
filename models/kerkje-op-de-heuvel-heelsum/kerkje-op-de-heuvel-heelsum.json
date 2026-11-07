@@ -1,0 +1,35 @@
+{
+  "name": "Kerkje op de Heuvel Heelsum",
+  "origin": [
+    180586,
+    443294.8
+  ],
+  "xAxis": [
+    0.965,
+    -0.263
+  ],
+  "groundHeight": 19.773,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0274100000017984"
+  ],
+  "description": "Laatgotische eenbeukige kerk met verhoogd driezijdig koor, zuidelijke dwarsarm en smalle westtoren; details geschat.",
+  "realWorld": {
+    "groundNapM": 19.773,
+    "highestPointM": 17.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0274100000017984",
+    "https://www.monumenten.nl/monument/32430",
+    "https://kerkjeopdeheuvel.nl/historie/",
+    "https://commons.wikimedia.org/wiki/File:HeelsumKerk.jpg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerkje-op-de-heuvel-heelsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerkje-op-de-heuvel-heelsum-1-1000.stl"
+  ]
+}
