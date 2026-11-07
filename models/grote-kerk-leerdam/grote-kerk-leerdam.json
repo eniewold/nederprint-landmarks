@@ -1,0 +1,89 @@
+{
+  "name": "Grote Kerk Leerdam",
+  "file": "grote-kerk-leerdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134751.223,
+    433659.204
+  ],
+  "xAxis": [
+    0.94997,
+    0.31233
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -31.7,
+      0
+    ],
+    [
+      -28.5,
+      10.5
+    ],
+    [
+      -28.5,
+      -10.5
+    ],
+    [
+      -16.6,
+      11
+    ],
+    [
+      -16.6,
+      -10.6
+    ],
+    [
+      -5.6,
+      -14.6
+    ],
+    [
+      -4,
+      17.6
+    ],
+    [
+      4,
+      17.6
+    ],
+    [
+      21.4,
+      0.4
+    ],
+    [
+      9.4,
+      -11.4
+    ]
+  ],
+  "groundHeight": 45.75,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0545100000345310"
+  ],
+  "description": "Grote Kerk aan de Kerkstraat in Leerdam: laatgotische kruiskerk met een pseudobasilicaal schip van drie beuken onder één zadeldak (nok +18,8 m), koor met vijfzijdige sluiting en steunberen (nok +19,4 m), noord- en zuidtransept, sacristie, zuidportaal met traptoren en noordportaal, ingebouwde romaanse westtoren met getrapte steunberen, galmgaten, boogfries, borstwering, tentdak, lantaarn met uurwerk en naaldspits tot +33,7 m. Oorsprong RD (134751,22; 433659,20) op de viering op maaiveld (NAP +2,4 m), X-as langs de nok onder 18,2 graden. Vensters en boogjes als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-leerdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 51.53,
+    "widthM": 30.48,
+    "highestPointM": 33.7,
+    "built": "toren onderbouw 2e helft 13e eeuw, verhoogd 15e eeuw; koor, sacristie en zuidtransept 15e eeuw; noordtransept begin 16e eeuw; schip ca. 1550; restauratie 1954-1960 (spits, borstwering, noordportaal, traptoren)",
+    "monument": 24039,
+    "groundNapM": 2.4,
+    "naveRidgeM": 18.8,
+    "choirRidgeM": 19.4,
+    "choirEaveM": 12,
+    "towerParapetM": 24.2,
+    "towerTopM": 33.7,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Leerdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24039",
+    "https://reliwiki.nl/index.php/Leerdam,_Kerkstraat_32_-_Grote_Kerk",
+    "https://archimon.nl/utrecht/leerdamherv.html",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Grote_Kerk,_Leerdam (RCE-foto's 20129943-20129973, 20129986, 20129987, 20376510; Toren Grote Kerk.JPG; WLM mchangsp)",
+    "BAG pand 0545100000345310 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken ter controle)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
