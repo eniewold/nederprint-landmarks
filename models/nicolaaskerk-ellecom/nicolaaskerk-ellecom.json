@@ -1,0 +1,35 @@
+{
+  "name": "Nicolaaskerk Ellecom",
+  "origin": [
+    203376.6,
+    449487.3
+  ],
+  "xAxis": [
+    0.8944,
+    0.4472
+  ],
+  "groundHeight": 12.057,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000022702"
+  ],
+  "description": "Dorpskerk met romaanse westtoren, schip, zijaanbouw en driezijdige laatgotische koorsluiting.",
+  "realWorld": {
+    "groundNapM": 12.057,
+    "highestPointM": 26.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0275100000022702",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42128",
+    "https://commons.wikimedia.org/wiki/Category:Dutch_Reformed_Church,_Ellecom",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kerkrhedenellecomdesteeg.nl/nicolaaskerk-ellecom/"
+  ],
+  "file": "nicolaaskerk-ellecom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nicolaaskerk-ellecom-1-1000.stl"
+  ]
+}
