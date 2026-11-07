@@ -1,0 +1,73 @@
+{
+  "name": "Watertoren Ouderkerk aan den IJssel",
+  "file": "watertoren-ouderkerk-aan-de-ijssel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    102188.15,
+    438248.13
+  ],
+  "xAxis": [
+    0.4894,
+    -0.8721
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -6.8,
+      0
+    ],
+    [
+      -5.9,
+      3.4
+    ],
+    [
+      -5.9,
+      -3.4
+    ],
+    [
+      0,
+      6.8
+    ]
+  ],
+  "groundHeight": 46.9,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0644100002062228"
+  ],
+  "description": "Oorsprong op het hart van de zeskante schacht (BAG, apothema 4,67 m) op het laagste maaiveld (NAP +3,35 m), +X loodrecht uit de zuidoostgevel met de deur en het trappenhuis (RD -60,7 graden). Betonnen plint tot 5,0 m, zeskante schacht met hoekpilasters, banden en verdiepte baksteenvelden, bolle overgang van 45 graden naar het ronde reservoir van 11,4 m (21,85 tot 29,9 m) met zes lisenen tot 30,8 m en een rij gaten onder de rand, en het uitkragende trappenhuis tot 32,65 m met overstekend dak. Maten uit BAG, AHN, luchtfoto en de RCE-foto.",
+  "realWorld": {
+    "built": 1916,
+    "builder": "Visser & Smit (Visser & Smit Hanab)",
+    "wikipediaHeightM": 32.5,
+    "reservoirM3": 400,
+    "outOfUseSince": 1980,
+    "ahnGroundNapM": 3.35,
+    "ahnReservoirRoofNapM": 33.25,
+    "ahnStairRoofNapM": 36,
+    "hexApothemM": [
+      4.67,
+      4.35
+    ],
+    "reservoirDiameterM": 11.4,
+    "reservoirM": [
+      21.85,
+      29.9
+    ],
+    "stairHouseM": [
+      18.55,
+      32.65
+    ],
+    "topM": 32.65,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Ouderkerk_aan_den_IJssel) (1916, Visser & Smit Hanab, 32,5 m, één reservoir van 400 m³, beton en IJsselsteentjes, trappenhuis boven het dak, sinds 1980 buiten gebruik, gedenkplaat boven de ingang)",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_-_Ouderkerk_aan_den_IJssel_-_20302525_-_RCE.jpg (1994, vanaf de dijk in het zuidwesten: schacht met banden en vensters, reservoir met lisenen en gaten, trappenhuis)",
+    "https://commons.wikimedia.org/wiki/File:Ouderkerk_ad_IJssel_Watertoren_2986.JPG (2006, vanaf het zuiden: plint, deur met gedenkplaat, velden, bolle overgang, uitkraging van het trappenhuis)",
+    "PDOK BAG-pand 0644100002062228, AHN DSM/DTM 0,5 m en luchtfoto, 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-ouderkerk-aan-de-ijssel-1-1000.stl"
+  ]
+}
