@@ -1,0 +1,88 @@
+{
+  "name": "Grote of Onze-Lieve-Vrouwekerk Veere",
+  "file": "grote-kerk-veere.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    35729.39,
+    396766.97
+  ],
+  "xAxis": [
+    0.90183,
+    0.43209
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -58,
+      0
+    ],
+    [
+      -50,
+      -14
+    ],
+    [
+      -50,
+      14
+    ],
+    [
+      -25,
+      -20
+    ],
+    [
+      -25,
+      20
+    ],
+    [
+      0,
+      -30
+    ],
+    [
+      0,
+      30
+    ],
+    [
+      18,
+      -20
+    ],
+    [
+      32,
+      -8
+    ],
+    [
+      32,
+      -2
+    ]
+  ],
+  "groundHeight": 46.54,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000020522"
+  ],
+  "description": "Grote of Onze-Lieve-Vrouwekerk in Veere: laatgotische kruisbasiliek (1479-1521, Keldermans) met de onvoltooide westtoren met traptorens, grote westnis en vierzijdige koepelkap met lantaarntje (+46,6 m), schip met lichtbeuk, zijbeuken met kapellen onder eigen zadeldaken met westschild, hoog transept met afgewolfde kopgevels en vier hoektorentjes, en de lage hallenkerk met twee driezijdig gesloten beuken in het oosten. Oorsprong RD (35729,39; 396766,97) op het kruispunt van de nokken op maaiveld (NAP +2,2 m), X-as langs de nok van het schip onder 25,6 graden. Vensters en nissen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-veere-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 83.1,
+    "widthM": 55.15,
+    "highestPointM": 46.6,
+    "built": "1479-1521 (Antoon I en Rombout II Keldermans), hallenkerk tweede helft 16e eeuw, noordelijke koorbeuk gesloopt 1837",
+    "monument": 36967,
+    "groundNapM": 2.2,
+    "ridgeM": 32.55,
+    "naveEaveM": 23.92,
+    "aisleRidgeM": 17.2,
+    "towerPlatformM": 37.7,
+    "towerCapM": 44.2,
+    "hallRidgeM": 16.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Veere)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36967",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Grote_Kerk_(Veere) (RCE-foto's 20396704, 20270402, 20270405, 20270407, 20270414, 20270406, 20379806; 2022 Grote Kerk, Veere (1-3); 2026 Grote Kerk, Veere (1-2); Veere Grote Kerk 1 en 3)",
+    "BAG pand 0717100000020522 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
