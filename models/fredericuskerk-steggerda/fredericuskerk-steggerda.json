@@ -1,0 +1,34 @@
+{
+  "name": "Fredericuskerk Steggerda",
+  "origin": [
+    200160,
+    540650
+  ],
+  "xAxis": [
+    0.93715,
+    0.34893
+  ],
+  "groundHeight": 2.196,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0098100000017990"
+  ],
+  "description": "Driebeukige neogotische kerk met steile langskap en zijbeuken, schijntransepten, driezijdig koor en zeskantige vieringtoren met hoge zesvlakkige spits; twee dakkapellen per dakvlak, sacristie en verbinding met pastorie. Vensternissen, steunberen en uiteindelijke spitstop zijn op foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.196,
+    "highestPointM": 32.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0098100000017990",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508652",
+    "https://commons.wikimedia.org/wiki/Category:Fredericuskerk,_Steggerda",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "fredericuskerk-steggerda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "fredericuskerk-steggerda-1-1000.stl"
+  ]
+}
