@@ -1,0 +1,34 @@
+{
+  "name": "Mattheuskerk Langezwaag",
+  "origin": [
+    196345,
+    555234.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 0.898,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0086100000351002"
+  ],
+  "description": "Zaalkerk met driezijdig gesloten koor en ingebouwde toren met achtkantige spits; gevelopeningen vereenvoudigd naar foto's.",
+  "realWorld": {
+    "groundNapM": 0.898,
+    "highestPointM": 26.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0086100000351002",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31858",
+    "https://commons.wikimedia.org/wiki/Category:Mattheüskerk,_Langezwaag",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "mattheuskerk-langezwaag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "mattheuskerk-langezwaag-1-1000.stl"
+  ]
+}
