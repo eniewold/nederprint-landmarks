@@ -1,0 +1,91 @@
+{
+  "name": "Bethelkerk Urk",
+  "file": "bethelkerk-urk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169076.12,
+    519359.47
+  ],
+  "xAxis": [
+    0.21474,
+    0.97667
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -27,
+      0
+    ],
+    [
+      -26.5,
+      -6
+    ],
+    [
+      -26.5,
+      8
+    ],
+    [
+      -20,
+      -7.5
+    ],
+    [
+      -10,
+      -12
+    ],
+    [
+      5,
+      -12
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      -10,
+      12
+    ],
+    [
+      15.5,
+      -6
+    ],
+    [
+      15.5,
+      6
+    ]
+  ],
+  "groundHeight": 48.88,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0184100000002606"
+  ],
+  "description": "Bethelkerk aan het Wilhelminaplein in Urk: zaalkerk uit 1885 (A.T. van Wijngaarden) van zes traveeën met lisenen, hoekpenanten, spitsboogvensters en een kroonlijst onder een zadeldak (nok +15,4 m), de tuitgevel op het noorden met drie deuren, venstertjes en rondvenster, aan de zuidkant de consistorie van 1867 (twee bouwlagen, afgeschuinde hoeken boven, schilddak) met de dakruiter van 1910 (achtkante spits tot +21,45 m) en een lage aanbouw onder schilddak. Oorsprong RD (169076,12; 519359,47) midden in de zaal op het laagste maaiveld (NAP +6,45 m), X-as langs de nok naar de voorgevel onder 77,6 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "bethelkerk-urk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.69,
+    "widthM": 21.58,
+    "highestPointM": 21.45,
+    "built": "consistorie 1867, zaal 1885 (A.T. van Wijngaarden) op de plaats van de kerk van 1851, dakruiter 1910, restauraties 1951, 1981 en 2000",
+    "monument": 515906,
+    "groundNapM": 6.45,
+    "hallRidgeM": 15.4,
+    "hallEaveM": 9.67,
+    "hallPitchDeg": 29,
+    "consistoryRidgeM": 12.85,
+    "consistoryEaveM": 9.05,
+    "belfryTopM": 16.05,
+    "spireTopM": 21.45,
+    "annexRidgeM": 5.15,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Bethelkerk_(Urk)",
+    "https://reliwiki.nl/index.php/Urk,_Wijk_3_-_3_-_Bethelkerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515906",
+    "https://commons.wikimedia.org/wiki/Category:Bethelkerk_(Urk) (RCE 20409916, 20409919; Bethelkerk Urk 2018; Bethelkerk.jpg; Urk-Bethelkerk.jpg; Urk Bethelkerk -006, -008, -026; Urk 2021 2)",
+    "BAG pand 0184100000002606 (voetafdruk) en 3D BAG LoD2.2 (nokhoogte)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
