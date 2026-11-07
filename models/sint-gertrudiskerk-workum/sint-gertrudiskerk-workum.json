@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Gertrudiskerk Workum",
+  "origin": [
+    158744,
+    554669
+  ],
+  "xAxis": [
+    0.9834,
+    -0.1814
+  ],
+  "groundHeight": 1.713,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0104100000124703",
+    "NL.IMBAG.Pand.0104100000132090"
+  ],
+  "description": "Driebeukige hallenkerk met dwarsschip, sacristie en dakruiter, en vrijstaande toren met tentdak en uivormige bekroning. Nissen en bekroningen geschat voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 1.713,
+    "highestPointM": 35.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0104100000124703",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0104100000132090",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39458",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk_(Workum)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-gertrudiskerk-workum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gertrudiskerk-workum-1-1000.stl"
+  ]
+}
