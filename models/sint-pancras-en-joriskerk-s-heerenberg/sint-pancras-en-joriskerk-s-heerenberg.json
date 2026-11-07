@@ -1,0 +1,60 @@
+{
+  "name": "Sint-Pancras en Joriskerk 's-Heerenberg",
+  "file": "sint-pancras-en-joriskerk-s-heerenberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    213827.67,
+    432142.6
+  ],
+  "xAxis": [
+    0.9846,
+    0.1753
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -11,
+      3
+    ],
+    [
+      -11,
+      20
+    ],
+    [
+      2,
+      -2
+    ],
+    [
+      10,
+      -2
+    ],
+    [
+      10,
+      20
+    ],
+    [
+      -2,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1955100000004067"
+  ],
+  "description": "Laatgotische kerk met haakse vleugel en twee hoge zadeldaken, puntgevels, spitsboogvensters en portaal; voormalige slotkapel naast Huis Bergh.",
+  "realWorld": {
+    "groundNapM": 16.355,
+    "mainRidgeM": 17.75,
+    "wingRidgeM": 18.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1955100000004067",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9271",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Pancras_en_Joriskerk_('s-Heerenberg)"
+  ],
+  "printFiles": [
+    "sint-pancras-en-joriskerk-s-heerenberg-1-1000.stl"
+  ]
+}
