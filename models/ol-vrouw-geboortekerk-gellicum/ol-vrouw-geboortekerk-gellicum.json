@@ -1,0 +1,36 @@
+{
+  "name": "O.L. Vrouw Geboortekerk Gellicum",
+  "origin": [
+    139091.5,
+    432040
+  ],
+  "xAxis": [
+    0.97,
+    0.243
+  ],
+  "groundHeight": 3.261,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000007176"
+  ],
+  "description": "Tweebeukige kerk met koor, sacristie, toren en aangebouwd voormalig rechthuis.",
+  "realWorld": {
+    "groundNapM": 3.261,
+    "highestPointM": 27
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000007176",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16506",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16507",
+    "https://commons.wikimedia.org/wiki/Category:O.L._Vrouw_Geboortekerk,_Gellicum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://regionaalarchiefrivierenland.nl/gellicum"
+  ],
+  "file": "ol-vrouw-geboortekerk-gellicum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "ol-vrouw-geboortekerk-gellicum-1-1000.stl"
+  ]
+}
