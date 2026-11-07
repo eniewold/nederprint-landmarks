@@ -1,0 +1,54 @@
+{
+  "name": "Salviuskerk Dronryp",
+  "file": "salviuskerk-dronryp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172105.7,
+    578930.4
+  ],
+  "xAxis": [
+    0.9997,
+    -0.024
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      -8
+    ],
+    [
+      20,
+      -8
+    ],
+    [
+      -6,
+      8
+    ],
+    [
+      20,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000006198",
+    "NL.IMBAG.Pand.0083100000006225"
+  ],
+  "description": "Witgepleisterde kerk met dwarsarm en koorsluiting, vierkante toren, achtkantige klokkenlantaarn en peervormige bekroning.",
+  "realWorld": {
+    "groundNapM": 3,
+    "ahnTopNapM": 46.1374,
+    "modelTopM": 42.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000006198",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000006225",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28604",
+    "https://commons.wikimedia.org/wiki/Category:Salviuskerk_(Dronryp)"
+  ],
+  "printFiles": [
+    "salviuskerk-dronryp-1-1000.stl"
+  ]
+}
