@@ -1,0 +1,38 @@
+{
+  "name": "Vincentiuskerk Reduzum",
+  "origin": [
+    181832.5,
+    570227.9
+  ],
+  "xAxis": [
+    0.99667,
+    0.08153
+  ],
+  "groundHeight": 1.434,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0055100000252823"
+  ],
+  "description": "Eenbeukige kerk met driezijdige sluiting, zandstenen zuidportaal en negentiende-eeuwse toren met achtzijdige naaldspits; open balustrade weggelaten op printschaal.",
+  "realWorld": {
+    "groundNapM": 1.434,
+    "naveRidgeM": 11.68,
+    "towerEavesM": 18.1,
+    "towerTopM": 32.5,
+    "highestPointM": 32.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0055100000252823",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22921",
+    "https://commons.wikimedia.org/wiki/Category:Vincentiuskerk_Reduzum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.frieslandwonderland.nl/friesland/plaats/reduzum/friesland/lemma/kerk-en-klokkenstoel-48571"
+  ],
+  "file": "vincentiuskerk-reduzum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "vincentiuskerk-reduzum-1-1000.stl"
+  ]
+}
