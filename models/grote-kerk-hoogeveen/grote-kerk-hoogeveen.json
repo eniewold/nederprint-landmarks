@@ -1,0 +1,40 @@
+{
+  "name": "Grote Kerk Hoogeveen",
+  "origin": [
+    228865.5,
+    527043.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 12.73,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0118100000035304"
+  ],
+  "description": "Oorsprong RD (228865,5, 527043,5); +X oostwaarts langs het hoofdvolume, +Y noordwaarts; maaiveld NAP +12,73 m. Hallenkerk met een schilddak, pilasters, rondboogvensters en een kleine gesloten dakruiter met klokkap. Hoogten uit AHN DSM/DTM 0,5 m; geveldetaillering en kapopbouw uit RCE-foto's. De hoofdingang is als verhoogd rondboogpaneel weergegeven voor steunloos printen op 1:1000.",
+  "realWorld": {
+    "lengthM": 35.5,
+    "widthM": 23.7,
+    "groundNapM": 12.73,
+    "naveEaveNapM": 19.2,
+    "naveRidgeNapM": 25.2,
+    "belfryTopNapM": 30.9,
+    "highestPointM": 18.17
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22255",
+    "https://www.openstreetmap.org/way/280045026",
+    "PDOK BAG pand 0118100000035304, EPSG:28992",
+    "PDOK AHN DSM/DTM 0,5 m via WCS en Actueel_orthoHR-luchtfoto",
+    "Wikimedia Commons / RCE: exterieur 20114763–20114767; Historische Vereniging Hoogeveen, kerkgeschiedenis"
+  ],
+  "file": "grote-kerk-hoogeveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "grote-kerk-hoogeveen-1-1000.stl"
+  ]
+}
