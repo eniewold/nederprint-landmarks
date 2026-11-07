@@ -1,0 +1,35 @@
+{
+  "name": "Westerkerk Leeuwarden",
+  "origin": [
+    182184,
+    579549
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.594,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000354369"
+  ],
+  "description": "Westerkerk met twee historische beuken, twee schilddaken en de derde beuk van 2023.",
+  "realWorld": {
+    "groundNapM": 1.594,
+    "highestPointM": 21
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000354369",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24095",
+    "https://commons.wikimedia.org/wiki/Category:Westerkerk_(Leeuwarden)",
+    "https://www.mokearchitecten.nl/portfolio/westerkerk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "westerkerk-leeuwarden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "westerkerk-leeuwarden-1-1000.stl"
+  ]
+}
