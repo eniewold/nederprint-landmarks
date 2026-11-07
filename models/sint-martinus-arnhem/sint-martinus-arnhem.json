@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Martinus Arnhem",
+  "origin": [
+    191249,
+    444041.5
+  ],
+  "xAxis": [
+    -0.325,
+    0.946
+  ],
+  "groundHeight": 16.841,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000232659"
+  ],
+  "description": "Neogotische driebeukige kruisbasiliek met hoge toren en spits. Torenpunt en geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 16.841,
+    "highestPointM": 70
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0202100000232659",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8363",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinuskerk_(Arnhem)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-martinus-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinus-arnhem-1-1000.stl"
+  ]
+}
