@@ -1,0 +1,34 @@
+{
+  "name": "Willibrorduskerk Boven-Leeuwen",
+  "origin": [
+    165978,
+    433037
+  ],
+  "xAxis": [
+    0.35,
+    0.93675
+  ],
+  "groundHeight": 6.474,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000012504"
+  ],
+  "description": "Neogotische basiliek met verlaagde zuidtoren, naaldspits, dwarskappen, driezijdig koor en dakruiter. Details geschat naar AHN en foto's.",
+  "realWorld": {
+    "groundNapM": 6.474,
+    "highestPointM": 34.33
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000012504",
+    "https://www.monumenten.nl/monument/523086",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk,_Boven-Leeuwen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "willibrorduskerk-boven-leeuwen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "willibrorduskerk-boven-leeuwen-1-1000.stl"
+  ]
+}
