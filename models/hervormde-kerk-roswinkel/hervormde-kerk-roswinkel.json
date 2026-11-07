@@ -1,0 +1,88 @@
+{
+  "name": "Hervormde Kerk Roswinkel",
+  "file": "hervormde-kerk-roswinkel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    266617.77,
+    540399.98
+  ],
+  "xAxis": [
+    0.96126,
+    0.27564
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -12.5,
+      0
+    ],
+    [
+      -12.5,
+      -2.8
+    ],
+    [
+      -12.5,
+      2.8
+    ],
+    [
+      -4,
+      -5.4
+    ],
+    [
+      -4,
+      5.4
+    ],
+    [
+      4,
+      -5.4
+    ],
+    [
+      4,
+      5.4
+    ],
+    [
+      11.8,
+      0
+    ],
+    [
+      11,
+      -3
+    ],
+    [
+      11,
+      3
+    ]
+  ],
+  "groundHeight": 55.17,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000223876"
+  ],
+  "description": "Hervormde Kerk aan de Stad in Roswinkel (schip 1759, toren 1853): eenbeukige bakstenen zaalkerk met driezijdige sluiting onder een zadeldak met wolfeind over de sluiting (nok +10,1 m), dakoverstek met bakgoot, plint, lisenen met versnijding, een klein en vier hoge rondboogvensters per zijgevel en twee in de sluiting, en de bakstenen westtoren met band, deur met bovenlicht, galmgaten, oculi, kroonlijst, witte achtkante lantaarn met rondbogen en achtkante naaldspits tot +21,8 m. Oorsprong RD (266617,77; 540399,98) midden in het schip op het laagste maaiveld (NAP +13,45 m), X-as langs de nok van toren naar sluiting onder 16 graden. Vensters, deur, galmgaten en bogen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "hervormde-kerk-roswinkel-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 22.54,
+    "widthM": 9.36,
+    "highestPointM": 21.8,
+    "built": "schip 1759, toren 1853",
+    "monument": 14963,
+    "groundNapM": 13.45,
+    "ridgeM": 10.1,
+    "eaveM": 5.27,
+    "towerCorniceM": 11.05,
+    "lanternTopM": 14.45,
+    "spireTopM": 21.8,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Kerk_van_Roswinkel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14963",
+    "https://www.openstreetmap.org/way/273532334",
+    "https://commons.wikimedia.org (Kerk Roswinkel.jpg; Exterieur - Roswinkel - 20191005 - RCE.jpg; Exterieur overzicht noordoostgevel - Roswinkel - 20323208 - RCE.jpg)",
+    "BAG pand 0114100000223876 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
