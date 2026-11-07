@@ -1,0 +1,91 @@
+{
+  "name": "Margarethakerk Odoorn",
+  "file": "margarethakerk-odoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    253362.75,
+    541406.95
+  ],
+  "xAxis": [
+    0.97476,
+    0.22325
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14.5,
+      0
+    ],
+    [
+      -13.5,
+      -7.6
+    ],
+    [
+      0,
+      -7.6
+    ],
+    [
+      12,
+      -7.6
+    ],
+    [
+      20.2,
+      0
+    ],
+    [
+      20.2,
+      -3
+    ],
+    [
+      20.2,
+      3
+    ],
+    [
+      15.7,
+      5.4
+    ],
+    [
+      0,
+      7.6
+    ],
+    [
+      -13.5,
+      7.6
+    ]
+  ],
+  "groundHeight": 66.31,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1681100000002431"
+  ],
+  "description": "Margarethakerk aan de Valtherweg in Odoorn: zaalkerk van vijf traveeën (1856, W. van Ernst; na de brand van 1897 herbouwd) onder een zadeldak (nok +13,65 m) met wolfeind aan de oostkant, lisenen, kroonlijst, waterlijst, rondboogvensters en zij-ingangen met portaal, de gepleisterde geveltoren in de westgevel met banden, oculi, galmgaten en kroonlijst (+20,2 m), de achtkante lantaarn en de leien spits tot +29,0 m, en ten oosten het koor van omstreeks 1200 (consistorie) onder een tentdak met dakkapel. Oorsprong RD (253362,75; 541406,95) in het midden van het schip op maaiveld (NAP +24,9 m), X-as langs de nok van toren naar koor onder 12,9 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "margarethakerk-odoorn-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 32.7,
+    "widthM": 13.13,
+    "highestPointM": 29,
+    "built": "koor omstreeks 1200 (granieten zwerfkeien), schip en toren 1856-1857 (W. van Ernst), na de brand van 25 november 1897 herbouwd en 28 augustus 1899 heropend",
+    "monument": 31221,
+    "groundNapM": 24.9,
+    "naveRidgeM": 13.65,
+    "naveEaveM": 7.78,
+    "naveHipAtEastWallM": 10.8,
+    "choirEaveM": 6.6,
+    "choirTopM": 10.3,
+    "towerCorniceM": 20.2,
+    "lanternCorniceM": 22.9,
+    "towerTopM": 29,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Margarethakerk_(Odoorn)",
+    "https://reliwiki.nl/index.php/Odoorn,_Valtherweg_1_-_Margarethakerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31221",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Odoorn (Odoorn NH kerk 2008; Odoorn 191; RCE 20372055, 20372058, 20372059, 20372060, 20372062, 20372063)",
+    "BAG pand 1681100000002431 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
