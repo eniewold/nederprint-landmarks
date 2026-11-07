@@ -1,0 +1,60 @@
+{
+  "name": "Hervormde Kerk Elahuizen",
+  "file": "hervormde-kerk-elahuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    165099,
+    548242.5
+  ],
+  "xAxis": [
+    -0.931,
+    0.365
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -2,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      16,
+      4
+    ],
+    [
+      -2,
+      -4
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      10,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0653100000148455"
+  ],
+  "description": "Waterstaatskerk uit 1864 met driezijdig koor, fronton, geveltoren en achtkantige spits, met aangebouwde kerkzaal.",
+  "realWorld": {
+    "groundNapM": 0.049,
+    "ahnTopNapM": 19.552,
+    "modelTopM": 19.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0653100000148455",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21485",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Elahuizen"
+  ],
+  "printFiles": [
+    "hervormde-kerk-elahuizen-1-1000.stl"
+  ]
+}
