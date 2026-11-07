@@ -1,0 +1,88 @@
+{
+  "name": "Jozefkerk Assen",
+  "file": "jozefkerk-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233744.467,
+    556808.563
+  ],
+  "xAxis": [
+    0.99956,
+    -0.02967
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      0,
+      -16
+    ],
+    [
+      -11,
+      -11.5
+    ],
+    [
+      11,
+      -11.5
+    ],
+    [
+      -18,
+      -6
+    ],
+    [
+      -18,
+      6
+    ],
+    [
+      18,
+      -6
+    ],
+    [
+      18,
+      6
+    ],
+    [
+      -12,
+      11.5
+    ],
+    [
+      16.5,
+      11
+    ],
+    [
+      19.5,
+      18.5
+    ]
+  ],
+  "groundHeight": 51.82,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000000497"
+  ],
+  "description": "Jozefkerk (tot 1964 Grote Kerk) aan het Kerkplein in Assen: neoclassicistische waterstaatskerk van C.J. Spaan (1845-1848), rechthoekige zaal onder een schilddak (nok +18,8 m) met bakstenen pilasters, gepleisterde sokkel, lijsten en hoge rondboogvensters, een gepleisterd middenrisaliet met fronton en inspringend zuilenportiek aan de zuidkant, daarachter de houten toren (1911) met uurwerk, frontonnetjes en open ronde lantaarn met koepel tot +30 m, en aan de noordkant het bijgebouw, de garage en het voorhuis aan de Kerkstraat die tot hetzelfde BAG-pand horen. Oorsprong RD (233744,47; 556808,56) in het midden van de zaal op maaiveld (NAP +10,6 m), X-as langs de lange gevels onder -1,7 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "jozefkerk-assen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.72,
+    "widthM": 37.38,
+    "highestPointM": 31.6,
+    "built": "1845-1848 (ingewijd 30 april 1848); toren na blikseminslag 1910 herbouwd in 1911; restauraties 1979-1982 en vanaf 2021",
+    "monument": 8411,
+    "architect": "C.J. Spaan (hoofdingenieur van de Waterstaat)",
+    "groundNapM": 10.6,
+    "eaveM": 14.3,
+    "ridgeM": 18.83,
+    "pedimentApexM": 15.26,
+    "domeTopM": 30,
+    "vaneTopM": 31.6,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Jozefkerk_(Assen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8411",
+    "https://commons.wikimedia.org/wiki/Category:Josephkerk,_Assen (RCE-foto's 20412934-20412954, tekeningen 1846 20026094; Jozefkerk-Assen-May-2024.jpg; Assen, de Jozefkerk RM8411 foto8)",
+    "BAG pand 0106100000000497 (voetafdruk met pilasters) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
