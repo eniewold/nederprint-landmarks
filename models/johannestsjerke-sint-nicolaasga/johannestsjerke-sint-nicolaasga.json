@@ -1,0 +1,60 @@
+{
+  "name": "Johannestsjerke Sint Nicolaasga",
+  "file": "johannestsjerke-sint-nicolaasga.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    178767.5,
+    548646.02
+  ],
+  "xAxis": [
+    0.99997,
+    -0.0077
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -2,
+      -5
+    ],
+    [
+      6,
+      -5
+    ],
+    [
+      16,
+      -5
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      16,
+      5
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0051100001229622"
+  ],
+  "description": "Zaalkerk uit 1721 met driezijdig gesloten koor en schilddak, westgevel met achtkante klokkenlantaarn en koepeltje, rondboogvensters en toegang; open lantaarn op printschaal als blinde nissen.",
+  "realWorld": {
+    "groundNapM": 3.4,
+    "roofRidgeM": 10.55,
+    "domeTopM": 15.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0051100001229622",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/13254",
+    "https://commons.wikimedia.org/wiki/Category:Protestantse_kerk,_Sint_Nicolaasga"
+  ],
+  "printFiles": [
+    "johannestsjerke-sint-nicolaasga-1-1000.stl"
+  ]
+}
