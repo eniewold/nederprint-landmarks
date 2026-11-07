@@ -1,0 +1,60 @@
+{
+  "name": "Sint Victorkerk Batenburg",
+  "file": "sint-victorkerk-batenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    171812,
+    426019
+  ],
+  "xAxis": [
+    -0.934,
+    0.358
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      -6
+    ],
+    [
+      -6,
+      4
+    ],
+    [
+      8,
+      -11
+    ],
+    [
+      25,
+      -11
+    ],
+    [
+      34,
+      0
+    ],
+    [
+      18,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000000976"
+  ],
+  "description": "Rooms-katholieke neogotische basiliek met twee zijbeuken, driezijdig koor en westtoren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 9.215,
+    "naveRidgeM": 20.44,
+    "towerTopM": 50.92
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0296100000000976",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8718",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Victorkerk,_Batenburg_(Roman_Catholic)"
+  ],
+  "printFiles": [
+    "sint-victorkerk-batenburg-1-1000.stl"
+  ]
+}
