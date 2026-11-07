@@ -1,0 +1,60 @@
+{
+  "name": "Maria Geboortekerk Dronryp",
+  "file": "maria-geboortekerk-dronryp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172054,
+    578408
+  ],
+  "xAxis": [
+    -0.9103,
+    0.4139
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -4
+    ],
+    [
+      3,
+      -7
+    ],
+    [
+      18,
+      -7
+    ],
+    [
+      -3,
+      4
+    ],
+    [
+      18,
+      7
+    ],
+    [
+      31,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000007241"
+  ],
+  "description": "Driebeukige waterstaatskerk uit 1839 met oostelijke geveltoren uit 1939 en dubbele lantaarn.",
+  "realWorld": {
+    "groundNapM": 1.21,
+    "ahnLanternNapM": 32.8,
+    "modelTopM": 31.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0083100000007241",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508677",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Geboortekerk_(Dronryp)"
+  ],
+  "printFiles": [
+    "maria-geboortekerk-dronryp-1-1000.stl"
+  ]
+}
