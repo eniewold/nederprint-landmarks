@@ -1,0 +1,35 @@
+{
+  "name": "De Grote Kerk Veendam",
+  "origin": [
+    254655,
+    569760
+  ],
+  "xAxis": [
+    0.99863,
+    -0.05234
+  ],
+  "groundHeight": 1.808,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0047100000270903"
+  ],
+  "description": "Brede historische zaalkerk met toren en verbonden aanbouwen; gebruiker kiest 30 m totale hoogte wegens AHN-gat in spits.",
+  "realWorld": {
+    "groundNapM": 1.808,
+    "highestPointM": 30
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0047100000270903",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36884",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Veendam)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Veendam)"
+  ],
+  "file": "de-grote-kerk-veendam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-grote-kerk-veendam-1-1000.stl"
+  ]
+}
