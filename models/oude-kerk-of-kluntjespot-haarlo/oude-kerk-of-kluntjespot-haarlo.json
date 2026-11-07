@@ -1,0 +1,35 @@
+{
+  "name": "Oude Kerk of Kluntjespot Haarlo",
+  "origin": [
+    236810.34,
+    458781.31
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 18.568,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1859100000780933"
+  ],
+  "description": "Achthoekige centraalbouw met tentdak, hoekpilasters en dakruiter.",
+  "realWorld": {
+    "groundNapM": 18.568,
+    "highestPointM": 17.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1859100000780933",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516436",
+    "https://kluntjespot.nl/gebouw/",
+    "https://www.geldersekerken.nl/filmpjes/Haarlo/index.html",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "oude-kerk-of-kluntjespot-haarlo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-kerk-of-kluntjespot-haarlo-1-1000.stl"
+  ]
+}
