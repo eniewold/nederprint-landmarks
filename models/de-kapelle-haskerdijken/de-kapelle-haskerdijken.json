@@ -1,0 +1,60 @@
+{
+  "name": "De Kapelle Haskerdijken",
+  "file": "de-kapelle-haskerdijken.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187186.8,
+    557767.8
+  ],
+  "xAxis": [
+    0.99999,
+    0.004
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -2,
+      -5
+    ],
+    [
+      4,
+      -5
+    ],
+    [
+      12,
+      -5
+    ],
+    [
+      -2,
+      5
+    ],
+    [
+      12,
+      5
+    ],
+    [
+      17,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0051100001221441"
+  ],
+  "description": "Kapel uit 1818 met driezijdig koor, hoge rondboogvensters en kleine westelijke geveltoren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 1.101,
+    "ahnTopNapM": 23.762,
+    "modelTopM": 22.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0051100001221441",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20847",
+    "https://commons.wikimedia.org/wiki/Category:Kapelle,_Haskerdijken"
+  ],
+  "printFiles": [
+    "de-kapelle-haskerdijken-1-1000.stl"
+  ]
+}
