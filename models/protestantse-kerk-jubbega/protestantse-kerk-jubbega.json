@@ -1,0 +1,34 @@
+{
+  "name": "Protestantse Kerk Jubbega",
+  "origin": [
+    204261.5,
+    554212
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 3.415,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0074100000343843"
+  ],
+  "description": "Hervormde Kerk Jubbega-Schurega: zaalkerk met driezijdig koor, zadeldak en houten dakruiter met spits.",
+  "realWorld": {
+    "groundNapM": 3.415,
+    "highestPointM": 19.04
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0074100000343843",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21179",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Schurega",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-kerk-jubbega.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-jubbega-1-1000.stl"
+  ]
+}
