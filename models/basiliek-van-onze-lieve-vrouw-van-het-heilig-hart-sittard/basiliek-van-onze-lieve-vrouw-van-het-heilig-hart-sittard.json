@@ -1,0 +1,35 @@
+{
+  "name": "Basiliek van Onze-Lieve-Vrouw van het Heilig Hart Sittard",
+  "origin": [
+    188913.5,
+    334499.4
+  ],
+  "xAxis": [
+    0.84805,
+    0.52992
+  ],
+  "groundHeight": 43.517,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1883100000010318"
+  ],
+  "description": "Driebeukige kruisbasiliek met kooromgang, westelijke traptorens, dwarsarm en hoge vieringtoren met vier hoektorentjes; de spits is gereconstrueerd uit AHN, hoogtebron en foto's.",
+  "realWorld": {
+    "groundNapM": 43.517,
+    "highestPointM": 63.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1883100000010318",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33709",
+    "https://kerk-en-orgel.nl/record.php?action=display_ordered&direction=desc&display=table&id=6584&item=976&page_num=49&pagenum=17&province=lb&sort=status",
+    "https://basilieksittard.com/home/",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "basiliek-van-onze-lieve-vrouw-van-het-heilig-hart-sittard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "basiliek-van-onze-lieve-vrouw-van-het-heilig-hart-sittard-1-1000.stl"
+  ]
+}
