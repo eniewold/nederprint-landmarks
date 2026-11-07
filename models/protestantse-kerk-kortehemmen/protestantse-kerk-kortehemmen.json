@@ -1,0 +1,34 @@
+{
+  "name": "Protestantse Kerk Kortehemmen",
+  "origin": [
+    200977.51,
+    565898.64
+  ],
+  "xAxis": [
+    0.9882,
+    0.153
+  ],
+  "groundHeight": 3.107,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0090100000579309"
+  ],
+  "description": "Romano-gotische zaalkerk met zadeldak en vrijstaande klokkenstoel; lokale X langs het schip oostwaarts.",
+  "realWorld": {
+    "groundNapM": 3.107,
+    "highestPointM": 10.51
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0090100000579309",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33982",
+    "https://www.boornbergum-kortehemmen.nl/onze-dorpen/historie/historie-kortehemmen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-kerk-kortehemmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-kortehemmen-1-1000.stl"
+  ]
+}
