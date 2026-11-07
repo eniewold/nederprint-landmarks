@@ -1,0 +1,34 @@
+{
+  "name": "Meinardskerk Minnertsga",
+  "origin": [
+    168815,
+    584980.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.927,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0063100000000087"
+  ],
+  "description": "Eenbeukige kerk met vijfzijdig koor, steunberen en monumentale zadeldaktoren. De gevelindeling is naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.927,
+    "highestPointM": 41.08
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0063100000000087",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8634",
+    "https://commons.wikimedia.org/wiki/Category:Meinardskerk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "meinardskerk-minnertsga.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "meinardskerk-minnertsga-1-1000.stl"
+  ]
+}
