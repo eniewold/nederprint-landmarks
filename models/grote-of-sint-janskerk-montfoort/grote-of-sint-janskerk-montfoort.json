@@ -1,0 +1,81 @@
+{
+  "name": "Grote of Sint-Janskerk Montfoort",
+  "file": "grote-of-sint-janskerk-montfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124899.37,
+    450842.62
+  ],
+  "xAxis": [
+    0.99863,
+    0.05234
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -37,
+      0
+    ],
+    [
+      0,
+      -21
+    ],
+    [
+      0,
+      21
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      -24,
+      -13
+    ],
+    [
+      12,
+      -14
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      -20,
+      13
+    ]
+  ],
+  "groundHeight": 45.03,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0335100000317720"
+  ],
+  "description": "Grote of Sint-Janskerk aan de Kerkstraat in Montfoort: laatgotische kruisvormige pseudobasiliek (circa 1490-1500, na de brand van 1629 hersteld) met schip en koor onder een geknikte kap (nok +21 m, goot +9 m), dwarsschip met rechte kopgevels, vijfzijdige koorsluiting, steunberen, Heilig Grafkapel en noordportaal, achtkante dakruiter op de viering, ronde traptoren bij het koor en een westtoren met drie geledingen, traptoren, balustrade en achtkante spits van 1877 tot +47,5 m. Oorsprong RD (124899,37; 450842,62) op het hart van de viering op maaiveld (NAP +1,6 m), X-as langs de west-oostnok onder 3,0 graden. Vensters en galmgaten als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-of-sint-janskerk-montfoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 59.36,
+    "widthM": 38.6,
+    "highestPointM": 47.5,
+    "built": "schip, dwarsschip en koor circa 1490-1500 (brand 1629, herstel tot 1634), toren onderbouw 13e/15e eeuw, spits 1877",
+    "monument": 30057,
+    "groundNapM": 1.6,
+    "naveRidgeM": 21,
+    "aisleEaveM": 9,
+    "transeptEaveM": 13,
+    "towerCorniceM": 28.7,
+    "towerTopM": 47.5,
+    "flecheTopM": 28,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Sint-Janskerk_(Montfoort)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30057",
+    "https://archimon.nl/utrecht/montfoortherv.html",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Janskerk_(Montfoort) (RCE-foto's 20160538, 20160545, 20160551, 20160552, 20160553, 20160566, 20160638, 20314221; Montfoort 136.JPG; Toren Grote of Sint-Janskerk Montfoort Koninginnedag 2012.JPG; 2010 Grote of Sint-Janskerk (Montfoort).jpg)",
+    "BAG pand 0335100000317720 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
