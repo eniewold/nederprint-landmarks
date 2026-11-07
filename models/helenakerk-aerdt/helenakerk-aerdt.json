@@ -1,0 +1,61 @@
+{
+  "name": "Helenakerk Aerdt",
+  "file": "helenakerk-aerdt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    202731,
+    434219.5
+  ],
+  "xAxis": [
+    0.996,
+    -0.088
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      -5
+    ],
+    [
+      -4,
+      5
+    ],
+    [
+      5,
+      -8
+    ],
+    [
+      18,
+      -8
+    ],
+    [
+      32,
+      0
+    ],
+    [
+      20,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0196100000338082"
+  ],
+  "description": "Laatgotische kerk met lager schip en zijbeuk, hoger driezijdig gesloten koor, steunberen en een vierkante toren met slanke achtkantige spits.",
+  "realWorld": {
+    "groundNapM": 13.32,
+    "naveRidgeM": 17,
+    "choirRidgeM": 19.2,
+    "towerTopM": 38.84
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0196100000338082",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21959",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Aerdt"
+  ],
+  "printFiles": [
+    "helenakerk-aerdt-1-1000.stl"
+  ]
+}
