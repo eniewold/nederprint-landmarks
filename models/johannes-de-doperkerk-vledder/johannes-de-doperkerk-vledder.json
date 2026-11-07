@@ -1,0 +1,87 @@
+{
+  "name": "Johannes de Doperkerk Vledder",
+  "file": "johannes-de-doperkerk-vledder.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    210270,
+    541569
+  ],
+  "xAxis": [
+    0.9978,
+    -0.06627
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -16.5,
+      0.5
+    ],
+    [
+      -6,
+      -7
+    ],
+    [
+      3,
+      -7
+    ],
+    [
+      12,
+      -6.6
+    ],
+    [
+      19.2,
+      0.2
+    ],
+    [
+      12,
+      7.2
+    ],
+    [
+      3,
+      7.4
+    ],
+    [
+      -6,
+      7.4
+    ]
+  ],
+  "groundHeight": 49.29,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1701100000208934",
+    "NL.IMBAG.Pand.1701100000208933"
+  ],
+  "description": "Johannes de Doperkerk aan het Lesturgeonplein in Vledder: eenbeukige gotische dorpskerk met schip (1425) en iets smaller koor (ca. 1475) met driezijdige sluiting onder één zadeldak (nok NAP +22,55 m), steunberen met versnijdingen, spitsboogvensters en dichtgezette bogen, en de romaanse zadeldaktoren (ca. 1350) van vier geledingen met rondboogfries, galmgaten, topgevels naar west en oost en pijlertjes tot +29,2 m. Oorsprong RD (210270; 541569) in het schip op maaiveld (NAP +7,4 m), X-as langs de nok van toren naar koor onder -3,8 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "johannes-de-doperkerk-vledder-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33.18,
+    "widthM": 12.07,
+    "highestPointM": 29.2,
+    "built": "toren ca. 1350, schip vanaf 1425, koor ca. 1475; dak vernieuwd na de brand van 1621, herstel begin XVIII en 1820",
+    "monument": [
+      37474,
+      37475
+    ],
+    "groundNapM": 7.4,
+    "naveRidgeM": 15.15,
+    "naveEaveSouthM": 8,
+    "choirEaveSouthM": 8.49,
+    "apseEaveM": 8.89,
+    "towerEaveM": 23.4,
+    "towerRidgeM": 28.35,
+    "towerTopM": 29.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Johannes_de_Doperkerk_(Vledder)",
+    "https://reliwiki.nl/index.php/Vledder,_Lesturgeonplein_4_-_Johannes_de_Doperkerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37474 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37475 (toren)",
+    "https://commons.wikimedia.org/wiki/Category:Johannes_de_Doperkerk,_Vledder (RCE 20242922, 20242926, 20242928, 20242929, 20322630; Johannes de Doperkerk Vledder.jpg; Vledder - Joh de Doper - 2014; VLEDDER JOHANNES DE DOPERKERK)",
+    "BAG panden 1701100000208934 (kerk) en 1701100000208933 (toren)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
