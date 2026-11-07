@@ -1,0 +1,34 @@
+{
+  "name": "Sint Clemenskerk Nes",
+  "origin": [
+    180995,
+    606791
+  ],
+  "xAxis": [
+    0.89101,
+    0.45399
+  ],
+  "groundHeight": 3.309,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0060100000127791"
+  ],
+  "description": "Na brand herbouwde zaalkerk met dakruiter, geveltopjes, twee lage dwarsvleugels en aangebouwde lage oostvleugel.",
+  "realWorld": {
+    "groundNapM": 3.309,
+    "highestPointM": 26.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0060100000127791",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7604",
+    "https://frisobouwgroep.nl/projecten/sint-clemenskerk-ameland-restauratie",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-clemenskerk-nes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-clemenskerk-nes-1-1000.stl"
+  ]
+}
