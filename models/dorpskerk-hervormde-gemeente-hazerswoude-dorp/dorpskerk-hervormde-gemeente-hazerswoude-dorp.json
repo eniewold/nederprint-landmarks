@@ -1,0 +1,34 @@
+{
+  "name": "Dorpskerk hervormde gemeente Hazerswoude-Dorp",
+  "origin": [
+    100743,
+    456727
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": -1.097,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1672100000000347"
+  ],
+  "description": "Dorpskerk met veelhoekige koorsluiting, twee dwarsbeuken, zeventiende-eeuwse toren en achthoekige lantaarn.",
+  "realWorld": {
+    "groundNapM": -1.097,
+    "highestPointM": 35.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1672100000000347",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21046",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Hazerswoude)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-hervormde-gemeente-hazerswoude-dorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-hervormde-gemeente-hazerswoude-dorp-1-1000.stl"
+  ]
+}
