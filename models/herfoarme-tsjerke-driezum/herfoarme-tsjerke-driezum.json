@@ -1,0 +1,67 @@
+{
+  "name": "Herfoarme tsjerke Driezum",
+  "file": "herfoarme-tsjerke-driezum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    198940,
+    590315.2
+  ],
+  "xAxis": [
+    0.9996,
+    0.02827
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14,
+      -4
+    ],
+    [
+      -14,
+      4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001636892"
+  ],
+  "description": "Herfoarme tsjerke uit 1713 met driezijdige koorsluiting, zadeldak, gevelvelden en een deels ingebouwde westtoren met spits. Oorsprong RD (198940, 590315,2), X-as 1,62 graden, maaiveld NAP circa +3,8 m. Galmgaten en vensters als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "herfoarme-tsjerke-driezum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 29.63,
+    "widthM": 10.36,
+    "highestPointM": 29.9,
+    "monument": 11684,
+    "groundNapM": 3.8,
+    "naveRidgeM": 12.8,
+    "naveEaveM": 6.602400000000001,
+    "towerTopM": 29.9,
+    "baseM": -0.8
+  },
+  "sources": [
+    "https://www.hervormddriezum.nl/kerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11684",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Driezum",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001636892",
+    "PDOK AHN4 DSM en DTM"
+  ]
+}
