@@ -1,0 +1,77 @@
+{
+  "name": "Grote Kerk Vianen",
+  "file": "grote-kerk-vianen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134835.83,
+    444931.62
+  ],
+  "xAxis": [
+    0.96363,
+    0.26724
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -40.6,
+      0
+    ],
+    [
+      -21,
+      16.5
+    ],
+    [
+      -1,
+      23.5
+    ],
+    [
+      -21,
+      -17
+    ],
+    [
+      0,
+      -23.5
+    ],
+    [
+      25.5,
+      0
+    ]
+  ],
+  "groundHeight": 46.82,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0620100000008628"
+  ],
+  "description": "Grote Kerk aan de Voorstraat in Vianen: kruiskerk met schip van het Haagse halletype (langskap met drie dwarskappen en topgevels per zijbeuk, westelijke traveeën met langsnok), dwarsschip met kopgevels, hoofdkoor met vijfzijdige sluiting (nok +19,35 m), lagere zijkoren met veelhoekige sluiting, consistorie en noordportaal met trapgevel, en de westtoren van vijf geledingen met borstwering, achtkante helm en lantaarn tot +40,3 m. Oorsprong RD (134835,83; 444931,62) op de kruising van de nokken van schip en dwarsschip op maaiveld (NAP +3,5 m), X-as langs de nok van toren naar koor onder 15,5 graden. Vensters en friezen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-vianen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 62.9,
+    "widthM": 44.7,
+    "highestPointM": 40.3,
+    "built": "toren XIV (verhoogd XV B), koren XIV B-XV, schip en dwarsschip na de brand van 1540 (Cornelis Frederiksz. van der Gouwe)",
+    "monument": [
+      37388,
+      37389
+    ],
+    "groundNapM": 3.5,
+    "naveRidgeM": 19.35,
+    "aisleGableRidgeM": 19.3,
+    "sideChoirRidgeM": 13.5,
+    "towerRoofM": 29.5,
+    "towerParapetM": 30.9,
+    "towerTopM": 40.3,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://de.wikipedia.org/wiki/Grote_Kerk_(Vianen)",
+    "https://reliwiki.nl/index.php/Vianen,_Voorstraat_110_-_Grote_Kerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37389 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37388 (toren)",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk,_Vianen (RCE 20300603, 20300604, 20300607, 20300610, 20300611, 20300613, 20241799; DSCF8567-8573; panoramio 2015)",
+    "BAG pand 0620100000008628 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
