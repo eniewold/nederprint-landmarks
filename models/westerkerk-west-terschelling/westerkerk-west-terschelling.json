@@ -1,0 +1,34 @@
+{
+  "name": "Westerkerk West-Terschelling",
+  "origin": [
+    143532,
+    596888
+  ],
+  "xAxis": [
+    0.869,
+    0.495
+  ],
+  "groundHeight": 5.916,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0093100000215186"
+  ],
+  "description": "Recht gesloten zaalkerk met vijf venstertraveeën en een dakruiter; geveldetails en uiterste dakruiterpunt naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 5.916,
+    "highestPointM": 16.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0093100000215186",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/35074",
+    "https://commons.wikimedia.org/wiki/Category:Westerkerk_(West-Terschelling)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "westerkerk-west-terschelling.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "westerkerk-west-terschelling-1-1000.stl"
+  ]
+}
