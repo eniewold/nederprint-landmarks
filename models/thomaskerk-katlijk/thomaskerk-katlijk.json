@@ -1,0 +1,35 @@
+{
+  "name": "Thomaskerk Katlijk",
+  "origin": [
+    196918,
+    551537
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 2.459,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0074100000352924"
+  ],
+  "description": "Torenloze zaalkerk met steunberen, vijfzijdige koorsluiting en schilddak. Vensters en toegangen zijn naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.459,
+    "highestPointM": 11.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0074100000352924",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21180",
+    "https://commons.wikimedia.org/wiki/Category:Thomaskerk,_Katlijk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://aldefrysketsjerken.nl/katlijk"
+  ],
+  "file": "thomaskerk-katlijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "thomaskerk-katlijk-1-1000.stl"
+  ]
+}
