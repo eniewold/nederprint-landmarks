@@ -1,0 +1,62 @@
+{
+  "name": "Nederlands Hervormde Kerk Asperen",
+  "file": "nederlands-hervormde-kerk-asperen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136008,
+    432530
+  ],
+  "xAxis": [
+    0.988,
+    0.154
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -6,
+      -8
+    ],
+    [
+      -6,
+      5
+    ],
+    [
+      15,
+      -14
+    ],
+    [
+      30,
+      -18
+    ],
+    [
+      57,
+      -2
+    ],
+    [
+      35,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0733100000008035",
+    "NL.IMBAG.Pand.0733100000006544"
+  ],
+  "description": "Laatgotische kruiskerk met pseudobasilicaal schip, dwarsschip en vijfzijdig koor; Kempische westtoren met hoekaccenten en lantaarn.",
+  "realWorld": {
+    "groundNapM": 4.032,
+    "naveRidgeM": 19.3,
+    "towerTopM": 50.81
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0733100000008035",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0733100000006544",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.monumenten.nl/monument/8397",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Catharinakerk,_Asperen"
+  ],
+  "printFiles": [
+    "nederlands-hervormde-kerk-asperen-1-1000.stl"
+  ]
+}
