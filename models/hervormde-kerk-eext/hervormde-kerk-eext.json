@@ -1,0 +1,79 @@
+{
+  "name": "Hervormde Kerk Eext",
+  "file": "hervormde-kerk-eext.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    245488.98,
+    559888.24
+  ],
+  "xAxis": [
+    -0.84104,
+    -0.54097
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -9.5,
+      0
+    ],
+    [
+      -9.5,
+      -3.5
+    ],
+    [
+      -9.5,
+      3.5
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      5,
+      -6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      11.5,
+      0
+    ]
+  ],
+  "groundHeight": 58.1,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1680100000001054"
+  ],
+  "description": "Hervormde Kerk aan de Kloosterstraat in Eext (waterstaatskerk, 1841): eenbeukige bakstenen zaalkerk met driezijdige sluiting onder een schilddak (nok +10,85 m), rechte voorgevel met gevelrand, lisenen, wit ingangsportaal met fronton en wijzerplaat, drie rondboogvensters per zijgevel en twee in de sluiting, en op de nok achter de voorgevel een dakruiter met kast, open klokkenverdieping en achtkante naaldspits tot +18,2 m. Oorsprong RD (245488,98; 559888,24) midden in de zaal op maaiveld (NAP +17,0 m), X-as langs de nok van de voorgevel naar de sluiting onder -147,25 graden. Vensters, deur en klokgaten als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "hervormde-kerk-eext-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 18.97,
+    "widthM": 9.82,
+    "highestPointM": 18.2,
+    "built": "1841, waterstaatskerk in opdracht van de Staten van Drenthe",
+    "monument": 398783,
+    "groundNapM": 17,
+    "ridgeM": 10.85,
+    "eaveM": 5.36,
+    "belfryTopM": 13.65,
+    "spireTopM": 18.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hervormde_kerk_(Eext)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/398783",
+    "https://www.wikidata.org/wiki/Q17448942",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Eext) (Eext, kerk foto1 2009-04-25; RCE 20067878, 20067879, 20322722)",
+    "BAG pand 1680100000001054 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
