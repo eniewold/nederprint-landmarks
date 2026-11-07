@@ -1,0 +1,35 @@
+{
+  "name": "Centrum- of Suitbertuskerk Geldermalsen",
+  "origin": [
+    148124,
+    432765
+  ],
+  "xAxis": [
+    0.999,
+    0.035
+  ],
+  "groundHeight": 4.919,
+  "groundOffsetMetres": -0.45,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000021086"
+  ],
+  "description": "Gotische kerk met noordelijke zijbeuk, hoger koor, vierkante toren met tentdak en geschatte geveldetails.",
+  "realWorld": {
+    "groundNapM": 4.919,
+    "highestPointM": 27.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000021086",
+    "https://www.centrumkerkgeldermalsen.nl/geschiedenis/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16455",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Geldermalsen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "centrum-of-suitbertuskerk-geldermalsen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "centrum-of-suitbertuskerk-geldermalsen-1-1000.stl"
+  ]
+}
