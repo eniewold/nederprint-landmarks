@@ -1,0 +1,81 @@
+{
+  "name": "Sint-Willibrordusbasiliek Hulst",
+  "file": "sint-willibrordusbasiliek-hulst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    61990,
+    366551.86
+  ],
+  "xAxis": [
+    0.95882,
+    0.28402
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -47,
+      0
+    ],
+    [
+      -25,
+      16
+    ],
+    [
+      -25,
+      -16
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      0,
+      -25
+    ],
+    [
+      30,
+      -15
+    ],
+    [
+      39,
+      0
+    ]
+  ],
+  "groundHeight": 47.69,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000608184"
+  ],
+  "description": "Sint-Willibrordusbasiliek in Hulst: laatgotische kruisbasiliek in Brabantse gotiek met driebeukig schip (lessenaarsdaken over de zijbeuken, steunberen met pinakels, dakkapellen), westgevel met pinakelkam en traptorentjes, transepten met een westelijke zijbeuk onder een lessenaarsdak en kopgevels met pinakels, koor met achtzijdige sluiting, kooromgang met schilddaken per travee, luchtbogen en drie straalkapellen, de sacristie aan de noordzijde en de vieringtoren met omgang, bovenste achtkant en de betonnen kroon 'De Prediker' van Jan Brouwers (1957) tot circa +65,3 m. Oorsprong RD (61990,00; 366551,86) op het hart van de vieringtoren op maaiveld (NAP +3,25 m), X-as langs de nok van schip en koor onder 16,5 graden. Vensters en galmgaten als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "sint-willibrordusbasiliek-hulst-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 79.6,
+    "widthM": 43.1,
+    "highestPointM": 65.3,
+    "built": "gotische kerk eerste helft 15e eeuw; herbouw 1462-1535 (Spoorwater, De Waeghemaekere, Matthijs en Laurens Keldermans); torenbekroning 1957 (Jan Brouwers)",
+    "monument": 22778,
+    "groundNapM": 3.25,
+    "naveRidgeM": 28.05,
+    "naveEaveM": 20.47,
+    "choirRidgeM": 28.3,
+    "transeptRidgeM": 21.75,
+    "aisleEaveM": 10.18,
+    "towerGalleryM": 31,
+    "towerCornicheM": 41.8,
+    "crownPinnaclesM": 52.6,
+    "towerTopM": 65.3,
+    "towerHeightWithCrossM": 68.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Willibrordusbasiliek_(Hulst)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22778",
+    "https://www.openstreetmap.org/way/272162693",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrordusbasiliek_(Hulst) (Hulst Sint-Willibrordusbasiliek 18-06-2012 16-18-45.jpg; Sint-Willibrordusbasiliek Hulst 01-04.jpg; Hulst basiliek westergevel 18-06-2012 15-52-16.jpg; Hulst. Basiliek Sint-Willibrordus Exterieur, GD012129.jpg; RCE-foto's 20118615, 20292331, 20302851, 20302852)",
+    "BAG pand 0677100000608184 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
