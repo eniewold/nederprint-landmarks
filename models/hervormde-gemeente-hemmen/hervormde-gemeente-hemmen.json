@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Gemeente Hemmen",
+  "origin": [
+    176529.5,
+    438464.35
+  ],
+  "xAxis": [
+    0.9998,
+    0.018
+  ],
+  "groundHeight": 9.197,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1734101000026483"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting, lage aanbouwen en ingebouwde westtoren met spits.",
+  "realWorld": {
+    "groundNapM": 9.197,
+    "highestPointM": 21.42
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1734101000026483",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36737",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36738",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Hemmen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://hervormdegemeentehemmen.nl/Kerkgebouw.html"
+  ],
+  "file": "hervormde-gemeente-hemmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-gemeente-hemmen-1-1000.stl"
+  ]
+}
