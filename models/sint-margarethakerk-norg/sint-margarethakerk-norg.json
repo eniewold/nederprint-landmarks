@@ -1,0 +1,88 @@
+{
+  "name": "Sint-Margarethakerk Norg",
+  "file": "sint-margarethakerk-norg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    227008,
+    564920.5
+  ],
+  "xAxis": [
+    0.99939,
+    0.0349
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -17.5,
+      0.3
+    ],
+    [
+      -13,
+      -4
+    ],
+    [
+      -5,
+      -7.5
+    ],
+    [
+      10,
+      -6
+    ],
+    [
+      17.5,
+      -4.5
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      17.5,
+      4.5
+    ],
+    [
+      10,
+      6
+    ],
+    [
+      -8,
+      7.8
+    ],
+    [
+      -13,
+      4.6
+    ]
+  ],
+  "groundHeight": 51.36,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1699100000028356"
+  ],
+  "description": "Sint-Margarethakerk aan de Kerkbrink in Norg: romaanse en romanogotische zaalkerk (XIII) met lisenen en zware steunberen aan het westdeel van het schip, een smaller koor met vijfzijdige sluiting en platte steunberen onder één doorlopend zadeldak (nok +13,9 m), rondboogvensters in omlijstingen, een kleine noordelijke aanbouw, en de romaanse westtoren met zadeldak tussen twee topgevels (nok +23,75 m), witte tweelingvensters en galmgaten. Oorsprong RD (227008; 564920,5) midden in het schip op maaiveld (NAP +10,15 m), X-as langs de nok van toren naar koor onder 2 graden. Vensters en deuren als blinde nissen met een spitse top voor print op 1:1000.",
+  "printFiles": [
+    "sint-margarethakerk-norg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.16,
+    "widthM": 14.63,
+    "highestPointM": 24.05,
+    "built": "toren en schip midden XIII (ca. 1260), schip later verhoogd, koor romanogotisch met meloengewelf; restauratie 1969-1971",
+    "monument": 30783,
+    "groundNapM": 10.15,
+    "naveRidgeM": 13.9,
+    "naveEaveSouthM": 7.31,
+    "choirEaveM": 9.19,
+    "towerEaveM": 18.24,
+    "towerRidgeM": 23.75,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Margaretakerk_(Norg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30783",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Margaretakerk_(Norg) (20171016 Sint-Margaretakerk Norg1/2, 20201125 Sint-Margaretakerk1/2 Norg, RCE 20169934, 20169946, 20169951, 20321855, Margarethakerk Norg2, Norg Kerk, NorgChurch)",
+    "https://www.openstreetmap.org/way/272777554",
+    "BAG pand 1699100000028356 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
