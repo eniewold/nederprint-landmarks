@@ -1,0 +1,70 @@
+{
+  "name": "Grote of Maria Magdalenakerk Goes",
+  "file": "grote-kerk-goes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    51076.47,
+    391530.4
+  ],
+  "xAxis": [
+    0.99098,
+    0.13399
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -35,
+      0
+    ],
+    [
+      -18,
+      17.5
+    ],
+    [
+      -18,
+      -18
+    ],
+    [
+      0,
+      29
+    ],
+    [
+      0,
+      -28.5
+    ]
+  ],
+  "groundHeight": 46.04,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000008055",
+    "NL.IMBAG.Pand.0664100000015497",
+    "NL.IMBAG.Pand.0664100000015314"
+  ],
+  "description": "Grote of Maria Magdalenakerk in Goes: laatgotische kruisbasiliek met vijfbeukig schip van 1619-1621 (lessenaarsdaken over twee zijbeuken per kant), transepten met kopgevels, borstweringen en hoekpinakels, basilicaal koor met vijfzijdige sluiting, zijkoren met dwarse zadeldaken, luchtbogen en apsissen met tentdaken, en de open achtkante dakruiter van 1620 met naaldspits tot circa +55 m. Oorsprong RD (51076,47; 391530,40) op het hart van de viering op maaiveld (NAP +1,9 m), X-as langs de nok van schip en koor onder 7,7 graden. Vensters en klokgaten als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-goes-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 66.7,
+    "widthM": 53.7,
+    "highestPointM": 55,
+    "built": "koor 1455-1470, transepten voltooid 1506, schip 1619-1621, dakruiter 1620",
+    "monument": 16375,
+    "groundNapM": 1.9,
+    "ridgeM": 31.5,
+    "naveEaveM": 22.35,
+    "aisleEaveM": 11.99,
+    "choirAisleEaveM": 12.2,
+    "spireTopM": 55,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_of_Maria_Magdalenakerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16375",
+    "https://archimon.nl/zeeland/goesherv.html",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Magdalenakerk_(Goes) (RCE-foto's 20079413, 20079416, 20079415, 20079417, 20079420, 20079422, 20307124, 20352790; 2019 Maria Magdalenakerk (Goes) (1).jpg; Goes Grote Kerk Sint Maria Magdalena Vierungsturm 1.jpg)",
+    "BAG pand 0664100000008055 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
