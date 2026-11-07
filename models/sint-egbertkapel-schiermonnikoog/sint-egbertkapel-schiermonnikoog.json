@@ -1,0 +1,62 @@
+{
+  "name": "Sint Egbertkapel Schiermonnikoog",
+  "file": "sint-egbertkapel-schiermonnikoog.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205978,
+    611415
+  ],
+  "xAxis": [
+    0.733114,
+    0.680106
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      7,
+      -4
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      2,
+      -5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      -8,
+      -7
+    ],
+    [
+      -9,
+      4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0088100000137791"
+  ],
+  "description": "Kruiskapel met twee kruisende zadeldaken, dakruiter, vijfzijdige apsis, sacristie en zadeldakportaal; gevels met vensternissen. Lokale +X naar noordoosten richting entree.",
+  "realWorld": {
+    "groundNapM": 4.364,
+    "naveRidgeM": 9.12,
+    "transeptRidgeM": 7.88,
+    "dsmTopNapM": 16.014
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0088100000137791",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512350",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Egbert_(Schiermonnikoog)",
+    "https://www.monumenten.nl/monument/512350"
+  ],
+  "printFiles": [
+    "sint-egbertkapel-schiermonnikoog-1-1000.stl"
+  ]
+}
