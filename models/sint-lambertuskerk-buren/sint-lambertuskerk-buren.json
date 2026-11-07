@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Lambertuskerk Buren",
+  "origin": [
+    151352,
+    435865.5
+  ],
+  "xAxis": [
+    0.983,
+    0.184
+  ],
+  "groundHeight": 4.616,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0214100000015112"
+  ],
+  "description": "Gotische kerk met twee langsdaken, koor en vierkante westtoren met achtkantige renaissancebovenbouw en lantaarn; details geschat.",
+  "realWorld": {
+    "groundNapM": 4.616,
+    "highestPointM": 42.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0214100000015112",
+    "https://sintlambertusburen.nl/gebouw/",
+    "https://www.monumenten.nl/monument/11329",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Lambertuskerk_(Buren)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-lambertuskerk-buren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-buren-1-1000.stl"
+  ]
+}
