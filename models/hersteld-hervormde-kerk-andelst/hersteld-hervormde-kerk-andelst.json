@@ -1,0 +1,35 @@
+{
+  "name": "Hersteld Hervormde Kerk Andelst",
+  "origin": [
+    178450.8,
+    435297.6
+  ],
+  "xAxis": [
+    0.955,
+    0.297
+  ],
+  "groundHeight": 9.632,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1734101000027014"
+  ],
+  "description": "Vroegromaans schip met hoger gotisch driezijdig koor en westtoren; spitsuiteinde en geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 9.632,
+    "highestPointM": 27.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1734101000027014",
+    "https://www.monumenten.nl/monument/36730",
+    "https://www.monumenten.nl/monument/36729",
+    "https://commons.wikimedia.org/wiki/Category:NH_church_Andelst",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hersteld-hervormde-kerk-andelst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hersteld-hervormde-kerk-andelst-1-1000.stl"
+  ]
+}
