@@ -1,0 +1,36 @@
+{
+  "name": "Johannes de Doperkerk Echteld",
+  "origin": [
+    162700.2,
+    435617.4
+  ],
+  "xAxis": [
+    0.9992,
+    -0.0388
+  ],
+  "groundHeight": 7.416,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1740100000014412"
+  ],
+  "description": "Middeleeuwse zaalkerk met lager schip, gotisch koor, westtoren en vierkante spits.",
+  "realWorld": {
+    "groundNapM": 7.416,
+    "highestPointM": 22.12
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1740100000014412",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14267",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14268",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Echteld",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://voorstraat-echteld.nl/de-hervormde-kerk/"
+  ],
+  "file": "johannes-de-doperkerk-echteld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-de-doperkerk-echteld-1-1000.stl"
+  ]
+}
