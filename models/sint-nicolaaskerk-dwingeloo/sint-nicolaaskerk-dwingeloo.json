@@ -1,0 +1,78 @@
+{
+  "name": "Sint-Nicolaaskerk Dwingeloo",
+  "file": "sint-nicolaaskerk-dwingeloo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    220922,
+    539080
+  ],
+  "xAxis": [
+    0.98163,
+    0.19081
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -18.6,
+      0.4
+    ],
+    [
+      -6,
+      -7.2
+    ],
+    [
+      9,
+      -6.3
+    ],
+    [
+      18.8,
+      0.5
+    ],
+    [
+      9,
+      7.2
+    ],
+    [
+      -6,
+      8.4
+    ]
+  ],
+  "groundHeight": 51.73,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1701100000203584"
+  ],
+  "description": "Sint-Nicolaaskerk aan de Brink in Dwingeloo: eenbeukige gotische dorpskerk (XV) met een smaller koor en driezijdige sluiting onder één zadeldak (nok +15,75 m), steunberen met leien kapjes, spitsboogvensters, noordelijke aanbouw met afgewolfd zadeldak, dakkapel op het koordak, en de westtoren van drie geledingen met galmgaten en de uivormige spits ('siepel', 1631) tot +34,6 m. Oorsprong RD (220922; 539080) op de as van het schip op maaiveld (NAP +9,8 m), X-as langs de nok van toren naar koor onder 11 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "sint-nicolaaskerk-dwingeloo-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 34.41,
+    "widthM": 16.58,
+    "highestPointM": 34.6,
+    "built": "schip en koor XV (1450-1500), toren XV, spits 1631 (Rutger van den Boetzelaer), hersteld na de dorpsbrand van 1923 (Jans Boelens)",
+    "monument": [
+      14228,
+      14229
+    ],
+    "groundNapM": 9.8,
+    "naveRidgeM": 15.75,
+    "naveEaveSouthM": 7.38,
+    "choirEaveSouthM": 8.86,
+    "annexRidgeM": 11.3,
+    "towerRoofM": 22.15,
+    "bulbTopM": 33,
+    "towerTopM": 34.6,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Nicolaaskerk_(Dwingeloo)",
+    "https://reliwiki.nl/index.php/Dwingeloo,_Brink_29_-_Sint_Nicolaas",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14228 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14229 (toren)",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Nicolaaskerk_(Dwingeloo) (RCE 20065531, 20065532, 20065533, 20065541, 20065546, 20324951, 20326693; Dwingelo-NH-kerk 1-13; Dwingeloo St. Nicolaaskerk 2005)",
+    "BAG pand 1701100000203584 (voetafdruk) en 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
