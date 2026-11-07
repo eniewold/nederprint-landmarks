@@ -1,0 +1,66 @@
+{
+  "name": "Martinuskerk Gytsjerk",
+  "file": "martinuskerk-gytsjerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187786.94,
+    583970.85
+  ],
+  "xAxis": [
+    0.99756,
+    0.06976
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -13,
+      -4
+    ],
+    [
+      -13,
+      4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      12,
+      4
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000025602"
+  ],
+  "description": "Middeleeuwse zaalkerk met vijfzijdige sluiting en negentiende-eeuwse houten geveltoren. Oorsprong RD (187786,94, 583970,85), lengteas 4 graden, maaiveld circa NAP +1,9 m. Gevelvensters en galmgaten als blinde nissen voor 1:1000.",
+  "printFiles": [
+    "martinuskerk-gytsjerk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.84,
+    "widthM": 8.89,
+    "highestPointM": 22.3,
+    "monument": 35654,
+    "groundNapM": 1.9,
+    "naveRidgeM": 12,
+    "spireTopM": 22.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://www.pgtrynwalden.nl/index.php/p/11-martinuskerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35654",
+    "https://commons.wikimedia.org/wiki/Category:Martinuskerk,_Gytsjerk",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000025602",
+    "PDOK AHN4 DSM en DTM"
+  ]
+}
