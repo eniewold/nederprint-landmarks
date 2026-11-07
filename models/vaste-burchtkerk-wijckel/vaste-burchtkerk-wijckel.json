@@ -1,0 +1,60 @@
+{
+  "name": "Vaste Burchtkerk Wijckel",
+  "file": "vaste-burchtkerk-wijckel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    170977,
+    544690
+  ],
+  "xAxis": [
+    0.9863,
+    0.165
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      -5
+    ],
+    [
+      -5,
+      7
+    ],
+    [
+      5,
+      -6
+    ],
+    [
+      18,
+      -6
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      18,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0653100000148996"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting en forsere middeleeuwse zadeldaktoren, spitsboogvensters en drievoudige galmnissen.",
+  "realWorld": {
+    "groundNapM": 1.91,
+    "naveRidgeM": 12.7,
+    "towerRidgeM": 35.94
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0653100000148996",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15938",
+    "https://commons.wikimedia.org/wiki/Category:Vaste_Burchtkerk_(Wijckel)"
+  ],
+  "printFiles": [
+    "vaste-burchtkerk-wijckel-1-1000.stl"
+  ]
+}
