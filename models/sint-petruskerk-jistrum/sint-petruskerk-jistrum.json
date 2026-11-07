@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Petruskerk Jistrum",
+  "origin": [
+    200403.5,
+    580839.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 3.145,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000013860"
+  ],
+  "description": "Dertiende-eeuwse romaanse zaalkerk met halfrond koor en zadeldaktoren; vensters en galmgaten als blinde nissen.",
+  "realWorld": {
+    "groundNapM": 3.145,
+    "highestPointM": 19.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000013860",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35645",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petruskerk_(Jistrum)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-petruskerk-jistrum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petruskerk-jistrum-1-1000.stl"
+  ]
+}
