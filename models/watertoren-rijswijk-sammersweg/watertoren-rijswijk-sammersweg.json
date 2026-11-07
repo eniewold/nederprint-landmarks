@@ -1,0 +1,65 @@
+{
+  "name": "Watertoren Sammersweg Rijswijk",
+  "file": "watertoren-rijswijk-sammersweg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79897.73,
+    450806.92
+  ],
+  "xAxis": [
+    0.95106,
+    0.30902
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      -2.2,
+      2.2
+    ]
+  ],
+  "groundHeight": 44.74,
+  "replacesBuildings": [],
+  "description": "Oorsprong op het hart van de tuinderswatertoren op het maaiveld (NAP +1,45 m), X-as 18 graden linksom van RD-oost langs een zijde van de bak. Vier hoekpoten van 0,9 m die van 3,0 m in het vierkant op de grond naar 2,15 m onder de bak lopen, per zijde één doorgang van de grond tot 5,6 m met een spitse bovenkant (50 graden), vierkante ijzeren bak van 2,15 m van 6,0 tot 7,65 m. Ringen en trekstangen (dunner dan 0,9 m) weggelaten. Geen BAG-pand. Maten uit de AHN5-puntenwolk, voetspreiding uit foto en AHN.",
+  "realWorld": {
+    "built": null,
+    "use": "bevloeiing tuindersbedrijf, nu herinnering aan de kassenbouw",
+    "ahnGroundNapM": 1.45,
+    "ahnRing1NapM": 3.49,
+    "ahnRing2NapM": 5.5,
+    "ahnTankFloorNapM": 7.52,
+    "ahnRimNapM": 9.1,
+    "footSquareM": 3,
+    "tankSquareM": 2.15,
+    "ringsOmittedM": [
+      2.05,
+      4.05
+    ],
+    "tankBottomM": 6,
+    "topM": 7.65,
+    "legM": 0.9,
+    "minimumPartM": 0.9
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Watertoren_(Rijswijk_Sammersweg) (vierkante ijzeren bak op vier poten, tuindersbedrijf; bouwjaar, hoogte en inhoud onbekend)",
+    "https://commons.wikimedia.org/wiki/File:Rijswijk_-_Watertoren_Sammersweg.jpg (Quistnix, 2009, CC BY-SA 2.5)",
+    "https://commons.wikimedia.org/wiki/File:Watertoren_Sammersbrug.JPG (2015, CC BY-SA 4.0)",
+    "AHN5-puntenwolk 2023 (GeoTiles 30DZ2_25), PDOK BAG-WFS, 3D BAG (geen pand op de toren) en luchtfoto's 2016-2026 (Actueel_orthoHR en jaargangen), 2026-11-07"
+  ],
+  "printFiles": [
+    "watertoren-rijswijk-sammersweg-1-1000.stl"
+  ]
+}
