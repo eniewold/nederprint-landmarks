@@ -1,0 +1,34 @@
+{
+  "name": "Voormalig Evangelisch-Lutherse kerk Arnhem",
+  "origin": [
+    191160.5,
+    444148.5
+  ],
+  "xAxis": [
+    0.329,
+    -0.94433
+  ],
+  "groundHeight": 18.165,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0202100000215121"
+  ],
+  "description": "Neogotische zaalkerk met halfronde apsis, geveltoren met ingesnoerde spits, dakruiter en aanliggende kosterswoning. Details en spitstop geschat.",
+  "realWorld": {
+    "groundNapM": 18.165,
+    "highestPointM": 44.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0202100000215121",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516875",
+    "https://commons.wikimedia.org/wiki/Category:Evangelisch-Lutherse_Kerk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "voormalig-evangelisch-lutherse-kerk-arnhem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "voormalig-evangelisch-lutherse-kerk-arnhem-1-1000.stl"
+  ]
+}
