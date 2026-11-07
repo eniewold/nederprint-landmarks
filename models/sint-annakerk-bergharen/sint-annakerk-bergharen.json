@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Annakerk Bergharen",
+  "origin": [
+    174173.5,
+    429102
+  ],
+  "xAxis": [
+    0.833,
+    0.553
+  ],
+  "groundHeight": 7.268,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000026166"
+  ],
+  "description": "Neogotische kruisbasiliek met vieringtoren, hoofdspits, vier hoekspitsen en twee ronde ingangstorentjes; details geschat.",
+  "realWorld": {
+    "groundNapM": 7.268,
+    "highestPointM": 46
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0296100000026166",
+    "https://www.kerkramentussenmaasenwaal.nl/kerken/bergharen-annakerk/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Annakerk,_Bergharen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-annakerk-bergharen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakerk-bergharen-1-1000.stl"
+  ]
+}
