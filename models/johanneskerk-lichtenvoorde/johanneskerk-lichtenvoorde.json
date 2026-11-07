@@ -1,0 +1,35 @@
+{
+  "name": "Johanneskerk Lichtenvoorde",
+  "origin": [
+    236183,
+    445087
+  ],
+  "xAxis": [
+    0.9965,
+    -0.083
+  ],
+  "groundHeight": 20.229,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1586100000022893"
+  ],
+  "description": "Zaalkerk met gotisch koor, hoge spits en aangesloten kerkcentrum Johanneshof.",
+  "realWorld": {
+    "groundNapM": 20.229,
+    "highestPointM": 35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1586100000022893",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25819",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk,_Lichtenvoorde",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.achterhoeknieuws.nl/nieuws/religie/528139/winnares-donateursactie-plaatst-gerestaureerde-windhaan-op-ke"
+  ],
+  "file": "johanneskerk-lichtenvoorde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johanneskerk-lichtenvoorde-1-1000.stl"
+  ]
+}
