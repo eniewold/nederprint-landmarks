@@ -1,0 +1,62 @@
+{
+  "name": "Van Harenskerk St.-Annaparochie",
+  "file": "van-harenskerk-st-annaparochie.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    173039.1,
+    587847.7
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -11,
+      -9
+    ],
+    [
+      0,
+      -11
+    ],
+    [
+      11,
+      -9
+    ],
+    [
+      11,
+      7
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      -11,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0063100000004179"
+  ],
+  "description": "Achtzijdige centraalbouw met achtvlaks tentdak, bakstenen onderbouw en achthoekige klokkenlantaarn met koepeldak; aan de noordzijde de achtkantige Van Harenskapel en drie ingangen in de zuidzijde, met blinde spitsboogvensters voor 1:1000.",
+  "realWorld": {
+    "groundNapM": 1.431,
+    "eavesNapM": 10.68,
+    "towerTopM": 26.65,
+    "ahnMaxNapM": 28.78
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0063100000004179",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9495",
+    "https://commons.wikimedia.org/wiki/Category:Van_Harenskerk_(Sint_Annaparochie)",
+    "https://aldefrysketsjerken.nl/annaparochie"
+  ],
+  "printFiles": [
+    "van-harenskerk-st-annaparochie-1-1000.stl"
+  ]
+}
