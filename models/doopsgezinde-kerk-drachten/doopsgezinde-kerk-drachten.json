@@ -1,0 +1,34 @@
+{
+  "name": "Doopsgezinde Kerk Drachten",
+  "origin": [
+    202594.2,
+    568991.4
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 0.986,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0090100000585438"
+  ],
+  "description": "Zaalkerk met schilddak, raamvelden en een omlijst portaal; de lage aanbouw valt binnen hetzelfde BAG-pand. Detail en blinde nissen zijn voor 1:1000 vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 0.986,
+    "highestPointM": 13.34
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0090100000585438",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33977",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_kerk,_Drachten",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "doopsgezinde-kerk-drachten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "doopsgezinde-kerk-drachten-1-1000.stl"
+  ]
+}
