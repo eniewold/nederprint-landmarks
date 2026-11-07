@@ -1,0 +1,34 @@
+{
+  "name": "Godeharduskerk Marrum",
+  "origin": [
+    182638,
+    592958.2
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 4.799,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000005415"
+  ],
+  "description": "Middeleeuwse zaalkerk met vijfzijdig koor, ingebouwde westtoren en lage kooraanbouw. Gevelindeling geschat naar foto's.",
+  "realWorld": {
+    "groundNapM": 4.799,
+    "highestPointM": 26.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000005415",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15634",
+    "https://commons.wikimedia.org/wiki/Category:Godeharduskerk,_Marrum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "godeharduskerk-marrum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "godeharduskerk-marrum-1-1000.stl"
+  ]
+}
