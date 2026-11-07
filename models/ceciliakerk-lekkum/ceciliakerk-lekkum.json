@@ -1,0 +1,34 @@
+{
+  "name": "Ceciliakerk Lekkum",
+  "origin": [
+    183847.5,
+    582293
+  ],
+  "xAxis": [
+    0.99296,
+    -0.1184
+  ],
+  "groundHeight": 3.195,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000366579"
+  ],
+  "description": "Zaalkerk met driezijdige koorsluiting en westtoren met vierkante spits; lokale X langs het schip oostwaarts.",
+  "realWorld": {
+    "groundNapM": 3.195,
+    "highestPointM": 25.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000366579",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24513",
+    "https://www.ghardeman.nl/fotos600p/lekkum.htm",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "ceciliakerk-lekkum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "ceciliakerk-lekkum-1-1000.stl"
+  ]
+}
