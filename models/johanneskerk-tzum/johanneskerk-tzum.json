@@ -1,0 +1,35 @@
+{
+  "name": "Johanneskerk Tzum",
+  "origin": [
+    166765,
+    574695
+  ],
+  "xAxis": [
+    0.9788,
+    -0.2048
+  ],
+  "groundHeight": 3.164,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000318527"
+  ],
+  "description": "Zaalkerk met driezijdig koor, zuidelijke consistorie en hoge westtoren met achtzijdige naaldspits. BAG, 3D BAG en AHN bepalen positie en maten; gevelnissen zijn naar foto's geschat. Balustrade en windvaan zijn wegens schaal weggelaten.",
+  "realWorld": {
+    "groundNapM": 3.164,
+    "highestPointM": 69
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000318527",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15869",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk,_Tzum",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://tsjerkepaad.nl/overzicht-kerken/tzum-johannes-kerk"
+  ],
+  "file": "johanneskerk-tzum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johanneskerk-tzum-1-1000.stl"
+  ]
+}
