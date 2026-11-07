@@ -1,0 +1,34 @@
+{
+  "name": "Waalse kerk Leeuwarden",
+  "origin": [
+    182343.6,
+    579701.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 4.261,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000362152"
+  ],
+  "description": "Langgerekte stadskapel met zadeldak, voorgevel en achthoekige dakruiter; open klokkenhuis vereenvoudigd tot blinde nissen.",
+  "realWorld": {
+    "groundNapM": 4.261,
+    "highestPointM": 15.97
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000362152",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/24205",
+    "https://commons.wikimedia.org/wiki/Category:Waalse_Kerk_(Leeuwarden)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "waalse-kerk-leeuwarden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "waalse-kerk-leeuwarden-1-1000.stl"
+  ]
+}
