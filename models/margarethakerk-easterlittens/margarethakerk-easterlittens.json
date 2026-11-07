@@ -1,0 +1,67 @@
+{
+  "name": "Margarethakerk Easterlittens",
+  "file": "margarethakerk-easterlittens.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172565,
+    572154.8
+  ],
+  "xAxis": [
+    0.99919,
+    0.04013
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -14,
+      -4
+    ],
+    [
+      -14,
+      4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000167404"
+  ],
+  "description": "Twaalfde-eeuwse zaalkerk met halfronde koorsluiting en westtoren uit 1854; schip onder zadeldak, drie vensters per zijde, zuidportaal, drie torengeledingen en ingesnoerde achtkante spits. Oorsprong RD (172565, 572154,8), X-as 2,3 graden naar het noordoosten, maaiveld NAP circa +2,65 m. Vensters en galmgaten als blinde spitsnissen voor 1:1000.",
+  "printFiles": [
+    "margarethakerk-easterlittens-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 34.9,
+    "widthM": 14.6,
+    "highestPointM": 32.9,
+    "monument": 8506,
+    "groundNapM": 2.65,
+    "naveRidgeM": 13.4,
+    "naveEaveM": 7.394,
+    "towerTopM": 32.9,
+    "baseM": -1
+  },
+  "sources": [
+    "https://www.friesland.nl/nl/locaties/1703698807/sint-margaretakerk-1",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8506",
+    "https://commons.wikimedia.org/wiki/Category:Margarethakerk,_Easterlittens",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0140100000167404",
+    "PDOK AHN4 DSM en DTM"
+  ]
+}
