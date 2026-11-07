@@ -1,0 +1,97 @@
+{
+  "name": "Doopsgezinde kerk Berltsum",
+  "file": "doopsgezinde-kerk-berltsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    172622.26,
+    584228.02
+  ],
+  "xAxis": [
+    0.96771,
+    0.25207
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -11,
+      -4
+    ],
+    [
+      -11,
+      0
+    ],
+    [
+      -11,
+      4
+    ],
+    [
+      -6,
+      -5.6
+    ],
+    [
+      0,
+      -5.6
+    ],
+    [
+      6,
+      -5.6
+    ],
+    [
+      15,
+      -4.8
+    ],
+    [
+      22,
+      -3
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      -9.5,
+      7.5
+    ],
+    [
+      -3,
+      -7.8
+    ]
+  ],
+  "groundHeight": 44.94,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0083100000000052",
+    "NL.IMBAG.Pand.0083100000000062"
+  ],
+  "description": "Doopsgezinde kerk aan de Vermaningsstrjitte in Berltsum: zaalkerk uit 1841 met ingebouwde kosterswoning onder een steil schilddak (nok +11,9 m) met driezijdige achterkant, voorgevel op het westen met kroonlijst, hoeklisenen, ingang met pilasters en segmentboogbekroning, vensters met lunetten en een dakkapel met koepeltje, rondboogvensters in de zijgevels, een lage aanbouw aan de noordkant, een aanbouw met plat dak achter en de toegangspoort aan de zuidkant. Oorsprong RD (172622,26; 584228,02) op de nok boven de voorgevel-as, op het laagste maaiveld (NAP +3,70 m), X-as langs de nok van de voorgevel naar achteren onder 14,6 graden. Vensters en deuren als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "doopsgezinde-kerk-berltsum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.39,
+    "widthM": 15.96,
+    "highestPointM": 11.89,
+    "built": "1841 (zaalkerk met ingebouwde kosterswoning); orgel L. van Dam & Zonen 1916",
+    "monument": 28577,
+    "groundNapM": 3.7,
+    "ridgeM": 11.89,
+    "eaveM": 5.6,
+    "sidePitchDeg": 52.9,
+    "frontPitchDeg": 55.4,
+    "rearPitchDeg": 56.1,
+    "dormerDomeTopM": 8.7,
+    "rearAnnexTopM": 4.3,
+    "northAnnexTopM": 2.7,
+    "gatePeakM": 3.85,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28577",
+    "https://www.reliwiki.nl/index.php/Berltsum,_Vermaningsstrjitte_3_-_Doopsgezinde_Kerk",
+    "https://www.openstreetmap.org/way/302811841",
+    "https://commons.wikimedia.org (Doopsgezinde_kerk.jpg; Doopsgezinde kerk te Berlikum - 20033984 - RCE; Voormalige Doopsgezinde kerk in Berlikum, signatuur 54478; Religieus erfgoed in Berlikum Doopsgezinde kerk, signatuur 54479; Fermanje, Berltsum.jpg)",
+    "BAG panden 0083100000000052 en 0083100000000062 (voetafdruk)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
