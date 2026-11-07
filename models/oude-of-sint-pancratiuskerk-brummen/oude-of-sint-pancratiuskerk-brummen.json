@@ -1,0 +1,36 @@
+{
+  "name": "Oude of Sint-Pancratiuskerk Brummen",
+  "origin": [
+    207871,
+    455682
+  ],
+  "xAxis": [
+    0.99733,
+    0.07302
+  ],
+  "groundHeight": 10.347,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0213100000079251",
+    "NL.IMBAG.Pand.0213100000079204"
+  ],
+  "description": "Laatgotische kerk met driezijdig koor, zuidbeuk uit 1937 en afzonderlijk geregistreerde westtoren met afgeknotte achtkante spits. Details geschat naar AHN en foto's.",
+  "realWorld": {
+    "groundNapM": 10.347,
+    "highestPointM": 39.08
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0213100000079251",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0213100000079204",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/11231",
+    "https://commons.wikimedia.org/wiki/Category:Oude-_of_Sint-Pancratiuskerk,_Brummen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "oude-of-sint-pancratiuskerk-brummen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-of-sint-pancratiuskerk-brummen-1-1000.stl"
+  ]
+}
