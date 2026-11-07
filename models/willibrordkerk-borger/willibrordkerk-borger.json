@@ -1,0 +1,92 @@
+{
+  "name": "Willibrordkerk Borger",
+  "file": "willibrordkerk-borger.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    249387.89,
+    549516.38
+  ],
+  "xAxis": [
+    0.96,
+    0.28
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -18.6,
+      0
+    ],
+    [
+      -13.3,
+      -4.6
+    ],
+    [
+      -13.3,
+      4.8
+    ],
+    [
+      -8,
+      -5.6
+    ],
+    [
+      -8,
+      5.6
+    ],
+    [
+      2,
+      -5.6
+    ],
+    [
+      2,
+      5.6
+    ],
+    [
+      12,
+      -5.6
+    ],
+    [
+      12,
+      5.6
+    ],
+    [
+      17.4,
+      0
+    ]
+  ],
+  "groundHeight": 59.65,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1681100000012160"
+  ],
+  "description": "Willibrordkerk aan de Hoofdstraat in Borger: zaalkerk van 1826 (Waterstaatskerk) met driezijdige oostsluiting, zadeldak met schild over de sluiting (goot +7,15, nok +13,2 m), houten gootlijst, lisenen en vijf rondboogvensters per langsgevel, ingang in de zuidgevel, en de veertiende-eeuwse westtoren van twee geledingen op veldkeien met galmnissen, rondboogingang en een tentdak met makelaar tot +27,2 m. Oorsprong RD (249387,89; 549516,38) op de nok van het schip op maaiveld aan de oostkant (NAP +18,05 m), X-as langs de nok van toren naar koor onder 16,26 graden. Vensters als blinde nissen met spitse top voor print op 1:1000.",
+  "printFiles": [
+    "willibrordkerk-borger-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 34.57,
+    "widthM": 11.25,
+    "highestPointM": 27.2,
+    "built": "toren begin XIV (kloostermoppen op veldkeien), zaalkerk 1826 na afbraak van de middeleeuwse kerk",
+    "monument": [
+      9897,
+      9898
+    ],
+    "groundNapM": 18.05,
+    "naveEaveM": 7.15,
+    "naveRidgeM": 13.2,
+    "towerLedgeM": 12.3,
+    "towerEaveM": 19.35,
+    "towerApexM": 25.8,
+    "towerTopM": 27.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Willibrordkerk_(Borger)",
+    "https://reliwiki.nl/index.php/Borger,_Hoofdstraat_34_-_Willibrordkerk (foto's Anton van Daal en Hans Bouma 2016)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9897 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9898 (toren)",
+    "BAG pand 1681100000012160 (voetafdruk) en 3D BAG LoD2.2",
+    "PDOK AHN dsm_05m/dtm_05m en PDOK-terreintegels"
+  ]
+}
