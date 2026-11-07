@@ -1,0 +1,34 @@
+{
+  "name": "Kerk op de Hoogte Wolvega",
+  "origin": [
+    196073.55,
+    543368.2
+  ],
+  "xAxis": [
+    0.99998,
+    -0.006
+  ],
+  "groundHeight": 3.655,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0098100000023148"
+  ],
+  "description": "Zaalkerk met driezijdig koor, lage westelijke aanbouw en vierkante toren met terugliggende houten bovenbouw en ingesnoerde naaldspits; geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 3.655,
+    "highestPointM": 39.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0098100000023148",
+    "https://www.monumenten.nl/monument/38881",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_op_de_Hoogte",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerk-op-de-hoogte-wolvega.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-op-de-hoogte-wolvega-1-1000.stl"
+  ]
+}
