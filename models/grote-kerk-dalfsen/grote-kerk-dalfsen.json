@@ -1,0 +1,84 @@
+{
+  "name": "Grote Kerk Dalfsen",
+  "file": "grote-kerk-dalfsen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    214349.5,
+    502259
+  ],
+  "xAxis": [
+    0.99974,
+    0.02269
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -27,
+      0
+    ],
+    [
+      0,
+      12.5
+    ],
+    [
+      0,
+      -12.5
+    ],
+    [
+      -17,
+      -9
+    ],
+    [
+      -17,
+      9
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      17,
+      -7
+    ],
+    [
+      10,
+      12.5
+    ]
+  ],
+  "groundHeight": 47.28,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0148100000025043"
+  ],
+  "description": "Grote Kerk (Hervormde kerk, voorheen Sint-Cyriacus) aan het Kerkplein in Dalfsen: laatgotische pseudobasiliek met schip en zijbeuken onder één kap (nok +20,6 m, flauwere zijbeukdaken), steunberen, laatgotisch koor van ca. 1455 met driezijdige sluiting en schild, sacristie, en de onvoltooide westtoren met tufstenen onderbouw, drie geledingen met blinde spitsboognissen en een tentdak tot +40,2 m. Oorsprong RD (214349,5; 502259,0) midden in het schip op maaiveld (NAP +4,5 m), X-as langs de nok onder 1,3 graden. Vensters en nissen als blinde nissen voor print op 1:1000.",
+  "printFiles": [
+    "grote-kerk-dalfsen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 48.47,
+    "widthM": 22.35,
+    "highestPointM": 40.2,
+    "built": "zijbeuken 14e eeuw, koor ca. 1455, schip 2e helft 15e eeuw en na de brand van 1517, toren 16e eeuw (onvoltooid)",
+    "monument": [
+      11653,
+      11654
+    ],
+    "groundNapM": 4.5,
+    "naveRidgeM": 20.6,
+    "aisleEaveM": 7.7,
+    "choirEaveM": 13.64,
+    "towerEaveM": 31,
+    "towerTopM": 40.2,
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11653 (kerk: koor 1455, pseudobasilicaal schip, grafkapel Van Rechteren)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11654 (toren)",
+    "https://www.dbnl.org/tekst/sten009monu03_01/sten009monu03_01_0023.php (Monumenten in Nederland, Overijssel: Dalfsen, Herv. kerk)",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Dalfsen",
+    "https://commons.wikimedia.org/wiki/Category:Tower_of_Grote_Kerk,_Dalfsen",
+    "BAG pand 0148100000025043 (voetafdruk, steunberen), 3D BAG LoD2.2 (dakvlakken)",
+    "PDOK AHN DSM/DTM 0,5 m en actuele luchtfoto; PDOK-terreintegels voor groundHeight"
+  ]
+}
