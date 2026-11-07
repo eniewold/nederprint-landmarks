@@ -1,0 +1,90 @@
+{
+  "name": "Grote Kerk Gorinchem",
+  "file": "grote-kerk-gorinchem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    126460.88,
+    426854.41
+  ],
+  "xAxis": [
+    0.999848,
+    0.017452
+  ],
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -46.5,
+      0
+    ],
+    [
+      -38,
+      9
+    ],
+    [
+      -38,
+      -10.5
+    ],
+    [
+      -10,
+      17
+    ],
+    [
+      10,
+      17
+    ],
+    [
+      -10,
+      -17
+    ],
+    [
+      10,
+      -17
+    ],
+    [
+      27,
+      0
+    ]
+  ],
+  "groundHeight": 45.46,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0512100000038532"
+  ],
+  "description": "Grote Kerk (Warnsinck, 1849-1851) met de laatgotische Grote of Sint-Janstoren in één BAG-pand: basiliek met middenschip (nok +24,9 m) en lichtbeuk, zijbeuken met lessenaarsdaken, zeven traveeën met lisenen, kroonlijsten, rondboogvensters en oculi als nissen, oost- en westgevel met topgevel, roosvenster en oostportaal met fronton, het tussenlid (consistorie), en de toren met paarsgewijze hoeksteunberen, drie geledingen met spitsboognissen, omgang, borstwering met hoekpinakels, traptorentje en achtkante spits tot +59,3 m, scheef zoals in het AHN (circa 1,4 m op de borstwering). Oorsprong RD (126460,88; 426854,41) midden in de kerk op het laagste maaiveld (NAP +1,88 m), X-as langs de nok naar het oosten onder 1,0 graad.",
+  "printFiles": [
+    "grote-kerk-gorinchem-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 70.17,
+    "widthM": 31.14,
+    "highestPointM": 59.3,
+    "built": "toren circa 1450, spits 1517 (scheef door verzakking tijdens de bouw); kerk 1849-1851 naar ontwerp van I. Warnsinck",
+    "monument": [
+      381885,
+      16634
+    ],
+    "groundNapM": 1.88,
+    "aisleEaveM": 11.55,
+    "naveEaveM": 21.8,
+    "naveRidgeM": 24.92,
+    "porticoRidgeM": 10.9,
+    "linkRidgeM": 23.8,
+    "towerParapetM": 45.1,
+    "stairTurretTopM": 50.1,
+    "towerTopM": 59.3,
+    "towerLeanM": [
+      -0.57,
+      -1.33
+    ],
+    "baseM": -0.4
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Grote_Kerk_(Gorinchem)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/381885 (kerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16634 (toren)",
+    "https://commons.wikimedia.org/wiki/Category:Grote_Kerk,_Gorinchem (RCE 20299979, 20268339, 20080445, 20276775, 20268336, 20415511; P1170836, P1170840, P1170848; rijksmonument 381885 en 16634 20120311; IMG 3578 2018)",
+    "BAG pand 0512100000038532 (voetafdruk van kerk, tussenlid en toren)",
+    "PDOK AHN dsm_05m/dtm_05m en actuele luchtfoto"
+  ]
+}
