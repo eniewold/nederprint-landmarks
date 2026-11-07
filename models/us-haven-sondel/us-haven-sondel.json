@@ -1,0 +1,61 @@
+{
+  "name": "Us Haven Sondel",
+  "file": "us-haven-sondel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169178.5,
+    542688.95
+  ],
+  "xAxis": [
+    0.996187,
+    0.087243
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -12,
+      -6
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      12,
+      -6
+    ],
+    [
+      -12,
+      6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0653100000148978"
+  ],
+  "description": "Zaalkerk met driezijdig koor, langs zadeldak en vierkante dakruiter met ingesnoerde spits; vensters en galmgaten als blinde nissen.",
+  "realWorld": {
+    "groundNapM": 4.713,
+    "ahnTopNapM": 21.36,
+    "modelTopM": 17
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0653100000148978",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15935",
+    "https://commons.wikimedia.org/wiki/Category:De_Haven,_Sondel",
+    "https://pkn-ons.nl/kerkgebouwen.htm"
+  ],
+  "printFiles": [
+    "us-haven-sondel-1-1000.stl"
+  ]
+}
