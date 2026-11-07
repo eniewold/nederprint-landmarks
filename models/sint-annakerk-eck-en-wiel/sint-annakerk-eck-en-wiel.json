@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Annakerk Eck en Wiel",
+  "origin": [
+    159827.3,
+    442455
+  ],
+  "xAxis": [
+    0.94,
+    -0.342
+  ],
+  "groundHeight": 6.816,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0214100000017062"
+  ],
+  "description": "Pseudobasiliek met lagere zijbeuken, driezijdig koor, ingebouwde westtoren en korte ingesnoerde spits; details geschat.",
+  "realWorld": {
+    "groundNapM": 6.816,
+    "highestPointM": 24.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0214100000017062",
+    "https://www.monumenten.nl/monument/28303",
+    "https://www.kerkeckenwiel.nl/index.php?page=page&page_id=12",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Eck_en_Wiel",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-annakerk-eck-en-wiel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakerk-eck-en-wiel-1-1000.stl"
+  ]
+}
