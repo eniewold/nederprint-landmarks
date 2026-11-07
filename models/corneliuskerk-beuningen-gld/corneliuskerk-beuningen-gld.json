@@ -1,0 +1,61 @@
+{
+  "name": "Corneliuskerk Beuningen Gld",
+  "file": "corneliuskerk-beuningen-gld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181568,
+    430646
+  ],
+  "xAxis": [
+    0.976,
+    -0.219
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      -5
+    ],
+    [
+      -5,
+      6
+    ],
+    [
+      12,
+      -11
+    ],
+    [
+      30,
+      -11
+    ],
+    [
+      49,
+      8
+    ],
+    [
+      20,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0209100000011088"
+  ],
+  "description": "Neogotische basiliek met twee zijbeuken, veelhoekig koor, kleine dakruiter en westtoren met ingesnoerde naaldspits.",
+  "realWorld": {
+    "groundNapM": 9.093,
+    "naveRidgeM": 19.84,
+    "towerTopM": 50.76,
+    "roofTurretTopM": 29.37
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0209100000011088",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.monumenten.nl/monument/523147",
+    "https://commons.wikimedia.org/wiki/Category:Corneliuskerk,_Beuningen"
+  ],
+  "printFiles": [
+    "corneliuskerk-beuningen-gld-1-1000.stl"
+  ]
+}
