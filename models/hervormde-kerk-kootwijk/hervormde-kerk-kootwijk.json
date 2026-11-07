@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde kerk Kootwijk",
+  "origin": [
+    181190.4,
+    466307.7
+  ],
+  "xAxis": [
+    0.998,
+    0.065
+  ],
+  "groundHeight": 30.667,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0203100000321101",
+    "NL.IMBAG.Pand.0203100000435554"
+  ],
+  "description": "Laatgotische zaalkerk met driezijdig koor, steunberen, zware toren en zeshoekige traptoren; details geschat.",
+  "realWorld": {
+    "groundNapM": 30.667,
+    "highestPointM": 16.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0203100000321101",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0203100000435554",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8624",
+    "https://pknkwb.nl/locatie/hervormde-kerk-kootwijk",
+    "https://commons.wikimedia.org/wiki/Category:NH_Kerk_Kootwijk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-kootwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-kootwijk-1-1000.stl"
+  ]
+}
