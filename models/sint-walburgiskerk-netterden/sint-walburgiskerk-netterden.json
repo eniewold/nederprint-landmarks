@@ -1,0 +1,39 @@
+{
+  "name": "Sint-Walburgiskerk Netterden",
+  "origin": [
+    218785,
+    430170.4
+  ],
+  "xAxis": [
+    0.99912,
+    -0.04182
+  ],
+  "groundHeight": 15.75,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1509100000203686"
+  ],
+  "description": "Neogotische pseudobasiliek van Cuypers (1868) met dwarse topgevels per travee, toren met ingesnoerde naaldspits, dakruiter en traptorens; details geschat.",
+  "realWorld": {
+    "groundNapM": 15.75,
+    "ridgeM": 14.05,
+    "towerTopM": 21.5,
+    "spireTipM": 41,
+    "highestPointM": 41
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1509100000203686",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16072",
+    "https://nl.wikipedia.org/wiki/Sint-Walburgiskerk_(Netterden)",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Walburgiskerk_(Netterden)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.openstreetmap.org/way/270936402"
+  ],
+  "file": "sint-walburgiskerk-netterden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-walburgiskerk-netterden-1-1000.stl"
+  ]
+}
