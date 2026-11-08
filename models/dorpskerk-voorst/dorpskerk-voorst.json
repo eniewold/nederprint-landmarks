@@ -1,0 +1,35 @@
+{
+  "name": "Dorpskerk Voorst",
+  "origin": [
+    207007.97175,
+    465024.51825
+  ],
+  "xAxis": [
+    0.94197996,
+    0.33566911
+  ],
+  "groundHeight": 7.919,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0285100000107390"
+  ],
+  "description": "Laatgotische kerk met romaanse westtoren en hoge spits. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 7.919,
+    "highestPointM": 45.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0285100000107390",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38044",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38045",
+    "https://commons.wikimedia.org/wiki/File:Voorst-38044.JPG",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-voorst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-voorst-1-1000.stl"
+  ]
+}
