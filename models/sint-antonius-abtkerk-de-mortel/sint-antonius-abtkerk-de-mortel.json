@@ -1,0 +1,36 @@
+{
+  "name": "Sint Antonius Abtkerk De Mortel",
+  "origin": [
+    177291.75,
+    394720.75
+  ],
+  "xAxis": [
+    0.93,
+    0.37
+  ],
+  "groundHeight": 18.45,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1652100000000980"
+  ],
+  "description": "Neogotische kruiskerk met westtoren, dakruiter en zevenzijdig koor.",
+  "realWorld": {
+    "groundNapM": 18.45,
+    "towerHeightM": 45.05,
+    "highestPointM": 45.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1652100000000980",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518089",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Antonius_Abt_kerk,_De_Mortel"
+  ],
+  "file": "sint-antonius-abtkerk-de-mortel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abtkerk-de-mortel-1-100.stl"
+  ]
+}
