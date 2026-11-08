@@ -1,0 +1,36 @@
+{
+  "name": "Heilige Maria Hemelvaartkerk Bavel",
+  "origin": [
+    116352,
+    397541
+  ],
+  "xAxis": [
+    0.866,
+    -0.5
+  ],
+  "groundHeight": 6.8,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000070064"
+  ],
+  "description": "Neogotische kruisbasiliek met westtoren, naaldspits en dakruiter.",
+  "realWorld": {
+    "groundNapM": 6.8,
+    "towerHeightM": 55.6,
+    "highestPointM": 55.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000070064",
+    "https://www.ahn.nl/dataroom",
+    "https://kunstinbreda.nl/religieus/kerken/bavel/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30494"
+  ],
+  "file": "heilige-maria-hemelvaartkerk-bavel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-maria-hemelvaartkerk-bavel-1-100.stl",
+    "heilige-maria-hemelvaartkerk-bavel-1-1000.stl"
+  ]
+}
