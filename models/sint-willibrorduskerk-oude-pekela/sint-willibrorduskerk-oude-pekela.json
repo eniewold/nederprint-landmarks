@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Willibrorduskerk Oude Pekela",
+  "origin": [
+    262721.5,
+    569247
+  ],
+  "xAxis": [
+    -0.65,
+    0.76
+  ],
+  "groundHeight": 1.625,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0765100000005497"
+  ],
+  "description": "Neogotische kruisbasiliek met vijfzijdig koor, smalle zijbeuken, doopkapel, dakruiter en spitse westtoren.",
+  "realWorld": {
+    "groundNapM": 1.625,
+    "towerHeightM": 68,
+    "highestPointM": 67.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0765100000005497",
+    "https://www.heiligenorbertusparochie.nl/oude-pekela/kerkgemeenschap/kerkgebouw/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk_(Oude_Pekela)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-willibrorduskerk-oude-pekela.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-oude-pekela-1-1000.stl"
+  ]
+}
