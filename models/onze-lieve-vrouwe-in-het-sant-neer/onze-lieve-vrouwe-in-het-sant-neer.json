@@ -1,0 +1,36 @@
+{
+  "name": "Onze Lieve Vrouwe in het Sant Neer",
+  "origin": [
+    196141,
+    363361
+  ],
+  "xAxis": [
+    0.996,
+    -0.09
+  ],
+  "groundHeight": 25.454,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1640100000027882"
+  ],
+  "description": "Driezijdig gesloten kapel met dakruiter, toegang en oculus.",
+  "realWorld": {
+    "groundNapM": 25.454,
+    "ahnRoofNapM": 33.3,
+    "highestPointM": 9.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1640100000027882",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/neer/mariakapel-neer",
+    "https://commons.wikimedia.org/wiki/Category:Onze-Lieve-Vrouwe-in-het-Santkapel_(Neer)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "onze-lieve-vrouwe-in-het-sant-neer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouwe-in-het-sant-neer-1-100.stl",
+    "onze-lieve-vrouwe-in-het-sant-neer-1-1000.stl"
+  ]
+}
