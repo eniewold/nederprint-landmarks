@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Caeciliakerk Berkel-Enschot",
+  "origin": [
+    137555,
+    398848
+  ],
+  "xAxis": [
+    0.292,
+    -0.956
+  ],
+  "groundHeight": 12.24,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000647781"
+  ],
+  "description": "Neogotische kruisbasiliek met westtoren, dakruiter en aangebouwde pastorie.",
+  "realWorld": {
+    "groundNapM": 12.24,
+    "towerHeightM": 47,
+    "highestPointM": 47
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000647781",
+    "https://www.ahn.nl/dataroom",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526156",
+    "https://www.openmonumentendag.nl/wp-content/uploads/2019/01/20-403-RUI-Uitingen-OMD-def-low-5aug_Corr.pdf"
+  ],
+  "file": "sint-caeciliakerk-berkel-enschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-caeciliakerk-berkel-enschot-1-100.stl",
+    "sint-caeciliakerk-berkel-enschot-1-1000.stl"
+  ]
+}
