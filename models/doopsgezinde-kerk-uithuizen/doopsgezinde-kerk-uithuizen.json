@@ -1,0 +1,37 @@
+{
+  "name": "Doopsgezinde kerk Uithuizen",
+  "origin": [
+    240323,
+    603265
+  ],
+  "xAxis": [
+    0.9724,
+    -0.2334
+  ],
+  "groundHeight": 2.154,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000010336"
+  ],
+  "description": "Driezijdig gesloten vermaning met schoudergevel en twee lage zijruimten.",
+  "realWorld": {
+    "groundNapM": 2.154,
+    "roofRidgeNapM": 12.38,
+    "highestPointM": 10.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000010336",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515328",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_Kerk_(Uithuizen)",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/515328"
+  ],
+  "file": "doopsgezinde-kerk-uithuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "doopsgezinde-kerk-uithuizen-1-1000.stl",
+    "doopsgezinde-kerk-uithuizen-1-100.stl"
+  ]
+}
