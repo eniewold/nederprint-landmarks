@@ -1,0 +1,42 @@
+{
+  "name": "Mariënburgkapel Nijmegen",
+  "origin": [
+    188023.94,
+    428622.31
+  ],
+  "xAxis": [
+    0.9461,
+    -0.3239
+  ],
+  "groundHeight": 31.65,
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000002938"
+  ],
+  "description": "Gotische kloosterkapel (circa 1431) met steil leien zadeldak, driezijdige koorsluiting, steunberen, traptoren aan de zuidzijde en slanke dakruiter; X van de westgevel naar het koor, +Y naar het noorden.",
+  "realWorld": {
+    "groundNapM": 31.65,
+    "lengthM": 32.35,
+    "widthM": 10.6,
+    "eaveM": 13.66,
+    "ridgeM": 23.43,
+    "roofPitchDeg": 60,
+    "turretTopM": 20.95,
+    "roofTurretTopM": 35.5,
+    "highestPointM": 35.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Mari%C3%ABnburgkapel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31158",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000002938",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Mari%C3%ABnburgkapel"
+  ],
+  "file": "marienburgkapel-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "marienburgkapel-nijmegen-1-1000.stl"
+  ]
+}
