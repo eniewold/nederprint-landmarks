@@ -1,0 +1,36 @@
+{
+  "name": "Petruskerk Woldendorp",
+  "origin": [
+    264370.5,
+    588717
+  ],
+  "xAxis": [
+    0.952,
+    0.306
+  ],
+  "groundHeight": 2.023,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0010100000007020"
+  ],
+  "description": "Zaalkerk met schilddak, oostelijke apsis en lage naoorlogse toren met tentdak.",
+  "realWorld": {
+    "groundNapM": 2.023,
+    "ahnTopNapM": 24.62,
+    "highestPointM": 22.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0010100000007020",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35008",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumentkenmerken/35008",
+    "https://commons.wikimedia.org/wiki/File:Petruskerk_Woldendorp.jpg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "petruskerk-woldendorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petruskerk-woldendorp-1-1000.stl"
+  ]
+}
