@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde Kerk Oude Pekela",
+  "origin": [
+    263743.5,
+    569624
+  ],
+  "xAxis": [
+    0.942,
+    0.336
+  ],
+  "groundHeight": 2.22,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0765100000006826"
+  ],
+  "description": "Zaalkerk met schilddak, aanbouw en achtzijdig bekroonde toren.",
+  "realWorld": {
+    "groundNapM": 2.22,
+    "ahnPeakNapM": 24.87,
+    "highestPointM": 22.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0765100000006826",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31949",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Oude_Pekela_NH-kerk_zuidgevel.JPG"
+  ],
+  "file": "hervormde-kerk-oude-pekela.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-oude-pekela-1-1000.stl"
+  ]
+}
