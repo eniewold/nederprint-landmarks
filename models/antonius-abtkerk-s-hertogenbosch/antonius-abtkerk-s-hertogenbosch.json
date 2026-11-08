@@ -1,0 +1,35 @@
+{
+  "name": "Antonius Abtkerk Bokhoven",
+  "origin": [
+    144359.4,
+    416499.4
+  ],
+  "xAxis": [
+    0.993,
+    0.117
+  ],
+  "groundHeight": 5.4,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000260670"
+  ],
+  "description": "Laatgotische kruiskerk met westtoren en slanke dakruiter.",
+  "realWorld": {
+    "groundNapM": 5.4,
+    "towerHeightM": 24.7,
+    "highestPointM": 24.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0796100000260670",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.bhic.nl/ontdekken/verhalen/de-h-antonius-abtkerk-in-bokhoven",
+    "https://commons.wikimedia.org/wiki/Category:Antonius_Abtkerk_(Bokhoven)"
+  ],
+  "file": "antonius-abtkerk-s-hertogenbosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "antonius-abtkerk-s-hertogenbosch-1-100.stl"
+  ]
+}
