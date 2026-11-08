@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Kerk Adorp",
+  "origin": [
+    231508.5,
+    588164.7
+  ],
+  "xAxis": [
+    0.984,
+    0.178
+  ],
+  "groundHeight": 1.524,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000000965"
+  ],
+  "description": "Middeleeuwse zaalkerk met dakruiter op de westgevel.",
+  "realWorld": {
+    "groundNapM": 1.524,
+    "ahnTopNapM": 21.5,
+    "highestPointM": 19.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000000965",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7065",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Adorp",
+    "https://adorp.com/verenigingen/kerk-adorp/historie/",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-adorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-adorp-1-1000.stl"
+  ]
+}
