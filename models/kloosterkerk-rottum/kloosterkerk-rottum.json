@@ -1,0 +1,73 @@
+{
+  "name": "Kloosterkerk Rottum",
+  "origin": [
+    237099.979,
+    600373.032
+  ],
+  "xAxis": [
+    0.954721,
+    0.297504
+  ],
+  "groundHeight": 4.3,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -13,
+      -5
+    ],
+    [
+      -8,
+      -6
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      -8,
+      6
+    ],
+    [
+      -13,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000009942"
+  ],
+  "description": "Zaalkerk met afgeschuinde koorsluiting en dakruiter met spits.",
+  "realWorld": {
+    "groundNapM": 4.3,
+    "naveRidgeM": 10,
+    "turretRoofApproxM": 16.5,
+    "highestPointM": 16.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000009942",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515316"
+  ],
+  "file": "kloosterkerk-rottum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kloosterkerk-rottum-1-1000.stl"
+  ]
+}
