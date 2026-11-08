@@ -1,0 +1,39 @@
+{
+  "name": "Dorpskerk Vorden",
+  "origin": [
+    218452.5,
+    457700.8
+  ],
+  "xAxis": [
+    0.9975,
+    -0.071
+  ],
+  "groundHeight": 12.923,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000016214"
+  ],
+  "description": "Tweebeukige dorpskerk met driezijdig koor en middeleeuwse toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 12.923,
+    "publishedTowerHeightM": 44,
+    "publishedTowerAndWeathervaneM": 46,
+    "ahnTopNapM": 57.7,
+    "highestPointM": 43.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000016214",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38120",
+    "https://commons.wikimedia.org/wiki/Category:Antoniuskerk,_Vorden",
+    "https://pgvorden.nl/kerk-in-vorden/historie-dorpskerk",
+    "https://geldersekerken.nl/flipbook/Venster%202025-1/PDF.pdf",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "dorpskerk-vorden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-vorden-1-1000.stl"
+  ]
+}
