@@ -1,0 +1,36 @@
+{
+  "name": "Kerk van Rozendaal",
+  "origin": [
+    194559,
+    446720
+  ],
+  "xAxis": [
+    0.93,
+    0.366
+  ],
+  "groundHeight": 40.424,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0277100000000830"
+  ],
+  "description": "Torenloze achttiende-eeuwse zaalkerk met aangebouwde pastorie onder afgeplat schilddak.",
+  "realWorld": {
+    "groundNapM": 40.424,
+    "ahnRoofNapM": 56.64,
+    "highestPointM": 17.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0277100000000830",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32951",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Rozendaal",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dekerkvanrozendaal.nl/kerkgebouw/geschiedenis"
+  ],
+  "file": "kerk-van-rozendaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-rozendaal-1-1000.stl"
+  ]
+}
