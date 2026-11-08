@@ -1,0 +1,37 @@
+{
+  "name": "Ledevaertkerk Chaam",
+  "origin": [
+    118684,
+    390658
+  ],
+  "xAxis": [
+    0.97589,
+    -0.21827
+  ],
+  "groundHeight": 13.199,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1723100000005082"
+  ],
+  "description": "Gotische kruiskerk met koorsluiting, consistorie en dakruiter; de oude toren is in 1944 verdwenen.",
+  "realWorld": {
+    "groundNapM": 13.199,
+    "ahn4RoofNapM": 28.73,
+    "ahn4SpireNapM": 35,
+    "highestPointM": 22.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1723100000005082",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11479",
+    "https://commons.wikimedia.org/wiki/Category:Ledevaertkerk,_Chaam",
+    "https://alphenserfgoed.nl/ledevaertkerk/"
+  ],
+  "file": "ledevaertkerk-chaam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "ledevaertkerk-chaam-1-100.stl",
+    "ledevaertkerk-chaam-1-1000.stl"
+  ]
+}
