@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Jozefkapel Smakt",
+  "origin": [
+    197735.82,
+    397930.63
+  ],
+  "xAxis": [
+    0.9986,
+    -0.0527
+  ],
+  "groundHeight": 17.246,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0984100000409510"
+  ],
+  "description": "Kleine eenbeukige kapel met driezijdig koor en dakruiter.",
+  "realWorld": {
+    "groundNapM": 17.246,
+    "towerHeightM": 9.9,
+    "highestPointM": 9.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0984100000409510",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://historischerfgoedsmakt.nl/smakt/st-jozeflaan/st-jozefkapel/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Jozefkapel_(Smakt)"
+  ],
+  "file": "sint-jozefkapel-smakt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jozefkapel-smakt-1-100.stl"
+  ]
+}
