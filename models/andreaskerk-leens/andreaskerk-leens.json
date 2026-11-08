@@ -1,0 +1,38 @@
+{
+  "name": "Andreaskerk Leens",
+  "origin": [
+    221104,
+    597618.5
+  ],
+  "xAxis": [
+    -0.213,
+    0.977
+  ],
+  "groundHeight": 1.263,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1663100000002420"
+  ],
+  "description": "Zaalkerk met driezijdig koor, ingebouwde vierkante toren en ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 1.263,
+    "ahnPeakNapM": 27.04,
+    "ahnAdjacentNapM": 24.15,
+    "publishedTowerHeightM": 25,
+    "highestPointM": 23.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1663100000002420",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/477378",
+    "https://commons.wikimedia.org/wiki/Category:Gereformeerde_Kerk_(Leens)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://leens-mensingeweer.protestantsekerk.net/andreaskerk"
+  ],
+  "file": "andreaskerk-leens.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "andreaskerk-leens-1-1000.stl"
+  ]
+}
