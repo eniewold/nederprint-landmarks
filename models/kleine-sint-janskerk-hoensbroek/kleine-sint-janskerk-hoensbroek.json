@@ -1,0 +1,36 @@
+{
+  "name": "Kleine Sint-Janskerk Hoensbroek",
+  "origin": [
+    192760,
+    326081
+  ],
+  "xAxis": [
+    0.897,
+    0.442
+  ],
+  "groundHeight": 80.795,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0917100000001478"
+  ],
+  "description": "Kleine pseudobasiliek met lagere zijbeuken, koor, sacristie en ingesnoerde torenspits.",
+  "realWorld": {
+    "groundNapM": 80.795,
+    "ahnTopNapM": 105.55,
+    "highestPointM": 24.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0917100000001478",
+    "https://www.kerkramenindemijnstreek.nl/kerken/hoensbroek-kleine-st-jankerk/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Janskerk_(Hoensbroek)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kleine-sint-janskerk-hoensbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kleine-sint-janskerk-hoensbroek-1-100.stl",
+    "kleine-sint-janskerk-hoensbroek-1-1000.stl"
+  ]
+}
