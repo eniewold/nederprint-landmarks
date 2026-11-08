@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Gemeente Waardenburg-Neerijnen Waardenburg",
+  "origin": [
+    146048,
+    426703
+  ],
+  "xAxis": [
+    0.899,
+    0.438
+  ],
+  "groundHeight": 5.9,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0304100000004410"
+  ],
+  "description": "Witgepleisterde neoclassicistische kruiskerk met toren en achtzijdige spits.",
+  "realWorld": {
+    "groundNapM": 5.9,
+    "roofRidgeM": 13.4,
+    "towerHeightM": 24.7,
+    "highestPointM": 24.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0304100000004410",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30364",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Waardenburg"
+  ],
+  "file": "hervormde-gemeente-waardenburg-neerijnen-2.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-gemeente-waardenburg-neerijnen-2-1-1000.stl"
+  ]
+}
