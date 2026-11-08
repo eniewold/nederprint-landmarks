@@ -1,0 +1,60 @@
+{
+  "name": "Andreaskerk Spijk",
+  "origin": [
+    251445.75,
+    601414.25
+  ],
+  "xAxis": [
+    0.989,
+    0.145
+  ],
+  "groundHeight": 3.57,
+  "groundOffsetMetres": -0.4,
+  "groundSamplePoints": [
+    [
+      1,
+      -5
+    ],
+    [
+      10,
+      -5
+    ],
+    [
+      19,
+      -5
+    ],
+    [
+      20,
+      5
+    ],
+    [
+      7,
+      12.8
+    ],
+    [
+      17,
+      12.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0010100000018647"
+  ],
+  "description": "T-vormige witgepleisterde zaalkerk met driezijdig koor en westtoren met twee achthoekige lantaarns.",
+  "realWorld": {
+    "groundNapM": 3.57,
+    "highestPointM": 26.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0010100000018647",
+    "https://www.kerkspijk.nl/historie",
+    "https://commons.wikimedia.org/wiki/Category:Andreaskerk_(Spijk)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "andreaskerk-spijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "andreaskerk-spijk-1-1000.stl"
+  ]
+}
