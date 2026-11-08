@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Bergeijk",
+  "origin": [
+    153258.5,
+    370405.3
+  ],
+  "xAxis": [
+    0.998,
+    -0.05
+  ],
+  "groundHeight": 30.386,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1724100000003492"
+  ],
+  "description": "Achtkantig zaalkerkje met schilddak en open dakruiter.",
+  "realWorld": {
+    "groundNapM": 30.386,
+    "towerHeightM": 15.05,
+    "highestPointM": 15.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1724100000003492",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.bergeijk.nl/domineestraat-10",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Bergeijk)"
+  ],
+  "file": "nederlands-hervormde-kerk-bergeijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-bergeijk-1-100.stl"
+  ]
+}
