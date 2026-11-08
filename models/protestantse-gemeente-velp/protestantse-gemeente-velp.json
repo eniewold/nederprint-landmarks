@@ -1,0 +1,34 @@
+{
+  "name": "Protestantse Gemeente Velp",
+  "origin": [
+    195666,
+    445059
+  ],
+  "xAxis": [
+    0.91585705,
+    0.4015045
+  ],
+  "groundHeight": 14.317,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000008585"
+  ],
+  "description": "T-vormige Grote Kerk met neoclassicistische ingang en het halfronde Rondeel; +X richting de voorgevel.",
+  "realWorld": {
+    "groundNapM": 14.317,
+    "highestPointM": 16.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0275100000008585",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/504520",
+    "https://commons.wikimedia.org/wiki/Category:Waterstaatskerk_(Velp)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-gemeente-velp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-gemeente-velp-1-1000.stl"
+  ]
+}
