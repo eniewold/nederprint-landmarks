@@ -1,0 +1,38 @@
+{
+  "name": "Heilige Maria Presentatiekerk Asten",
+  "origin": [
+    179829,
+    379349
+  ],
+  "xAxis": [
+    0.5593,
+    0.82896
+  ],
+  "groundHeight": 25.693,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0743100000001594"
+  ],
+  "description": "Driebeukige kruisbasiliek met kooromgang, dakruiter en 75 m hoge toren met vier hoektorens.",
+  "realWorld": {
+    "groundNapM": 25.693,
+    "ahn4TopNapM": 95.31,
+    "ahn5TopNapM": 100.07,
+    "towerM": 75,
+    "highestPointM": 75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0743100000001594",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8443",
+    "https://www.rkfranciscus.nl/docs/2016/Geschiedenis_Asten.pdf",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "heilige-maria-presentatiekerk-asten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-maria-presentatiekerk-asten-1-100.stl",
+    "heilige-maria-presentatiekerk-asten-1-1000.stl"
+  ]
+}
