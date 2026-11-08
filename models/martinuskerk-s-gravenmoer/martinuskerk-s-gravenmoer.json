@@ -1,0 +1,36 @@
+{
+  "name": "Martinuskerk 's Gravenmoer",
+  "origin": [
+    123939.6,
+    407767.9
+  ],
+  "xAxis": [
+    0.996,
+    0.089
+  ],
+  "groundHeight": 2,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0766100000009313"
+  ],
+  "description": "Gotisch schip en koor met vierkante westtoren en achtkantige spits.",
+  "realWorld": {
+    "groundNapM": 2,
+    "towerHeightM": 29.4,
+    "highestPointM": 29.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0766100000009313",
+    "https://www.ahn.nl/dataroom",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18148",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Martinuskerk_(%27s_Gravenmoer)"
+  ],
+  "file": "martinuskerk-s-gravenmoer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "martinuskerk-s-gravenmoer-1-100.stl",
+    "martinuskerk-s-gravenmoer-1-1000.stl"
+  ]
+}
