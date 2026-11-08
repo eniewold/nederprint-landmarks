@@ -1,0 +1,34 @@
+{
+  "name": "Voormalige synagoge Winschoten",
+  "origin": [
+    265283.42,
+    574218.5
+  ],
+  "xAxis": [
+    -0.26,
+    -0.966
+  ],
+  "groundHeight": 2.584,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1895100000005683"
+  ],
+  "description": "Neoclassicistische synagoge met schilddak, vier pilasters en fronton; achteraanbouw en vensternissen vereenvoudigd.",
+  "realWorld": {
+    "groundNapM": 2.584,
+    "highestPointM": 11.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1895100000005683",
+    "https://www.monumenten.nl/monument/39008",
+    "https://commons.wikimedia.org/wiki/Category:Synagoge,_Winschoten",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "voormalige-synagoge-winschoten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "voormalige-synagoge-winschoten-1-1000.stl"
+  ]
+}
