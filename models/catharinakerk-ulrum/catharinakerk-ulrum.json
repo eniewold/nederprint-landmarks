@@ -1,0 +1,39 @@
+{
+  "name": "Catharinakerk Ulrum",
+  "origin": [
+    217841.5,
+    597330.4
+  ],
+  "xAxis": [
+    0.99998,
+    -0.0063
+  ],
+  "groundHeight": 3.39,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1663100000007201"
+  ],
+  "description": "Eenbeukige kerk met ingesnoerde achthoekige torenspits en rechte koorsluiting.",
+  "realWorld": {
+    "groundNapM": 3.39,
+    "ahnPeakNapM": 43.7,
+    "ahnAdjacentNapM": 40.62,
+    "publishedTowerHeightM": 41,
+    "highestPointM": 39.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1663100000007201",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35863",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.digibron.nl/viewer/collectie/Digibron/id/tag:RD.nl,20210701:newsml_pr17264967",
+    "https://www.pknulrum.nl/catharinakerk.html",
+    "https://commons.wikimedia.org/wiki/File:HVKerkUlrum.jpg"
+  ],
+  "file": "catharinakerk-ulrum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "catharinakerk-ulrum-1-1000.stl"
+  ]
+}
