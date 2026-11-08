@@ -1,0 +1,35 @@
+{
+  "name": "Onze-Lieve-Vrouw Visitatiekerk Budel",
+  "origin": [
+    168119.75,
+    365213.75
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 31.522,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1706100000059496"
+  ],
+  "description": "Neogotische kruiskerk met westtoren, vier hoektorens en dakruiter.",
+  "realWorld": {
+    "groundNapM": 31.522,
+    "towerHeightM": 68.7,
+    "highestPointM": 68.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1706100000059496",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.visitbrabant.com/nl/locaties/775672556/kerk-onze-lieve-vrouw-visitatie-budel",
+    "https://commons.wikimedia.org/wiki/File:Budel_-_Kerkstraat_10_5_O.L._Vrouw_Visitatie_kerk_(1).JPG"
+  ],
+  "file": "onze-lieve-vrouw-visitatiekerk-budel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouw-visitatiekerk-budel-1-100.stl"
+  ]
+}
