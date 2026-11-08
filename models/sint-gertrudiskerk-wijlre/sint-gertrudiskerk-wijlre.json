@@ -1,0 +1,78 @@
+{
+  "name": "Sint-Gertrudiskerk Wijlre",
+  "origin": [
+    190744,
+    315870
+  ],
+  "xAxis": [
+    0.96825,
+    0.25
+  ],
+  "groundHeight": 93.853,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      -24,
+      -11
+    ],
+    [
+      -18,
+      -11
+    ],
+    [
+      -8,
+      -11
+    ],
+    [
+      0,
+      -16
+    ],
+    [
+      10,
+      -16
+    ],
+    [
+      18,
+      -15
+    ],
+    [
+      14,
+      11
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      -8,
+      5
+    ],
+    [
+      -25,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1729100001055557"
+  ],
+  "description": "Kruiskerk met ronde koorsluiting, zijdelingse toren en knobbelspits.",
+  "realWorld": {
+    "groundNapM": 93.853,
+    "ahnTopNapM": 139.947,
+    "highestPointM": 45.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1729100001055557",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/39736",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/wijlre/gertrudis",
+    "https://www.ahn.nl/"
+  ],
+  "file": "sint-gertrudiskerk-wijlre.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gertrudiskerk-wijlre-1-100.stl",
+    "sint-gertrudiskerk-wijlre-1-1000.stl"
+  ]
+}
