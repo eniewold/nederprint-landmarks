@@ -1,0 +1,35 @@
+{
+  "name": "Nieuwe Kerk Groningen",
+  "origin": [
+    233440.1,
+    582488.6
+  ],
+  "xAxis": [
+    0.8367,
+    0.5477
+  ],
+  "groundHeight": 5.471,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010921060"
+  ],
+  "description": "Kruiskerk met vier zadeldaken en centrale tweedelige vieringtoren. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 5.471,
+    "highestPointM": 44.32
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010921060",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18583",
+    "https://nieuwekerkgroningen.nl/geschiedenis-van-het-gebouw/",
+    "https://commons.wikimedia.org/wiki/Category:Nieuwe_Kerk_(Groningen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nieuwe-kerk-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nieuwe-kerk-groningen-1-1000.stl"
+  ]
+}
