@@ -1,0 +1,36 @@
+{
+  "name": "Protestantse gemeente Hoogkerk Groningen",
+  "origin": [
+    229388.3,
+    581663.4
+  ],
+  "xAxis": [
+    0.999,
+    0.04
+  ],
+  "groundHeight": 1.237,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010911095"
+  ],
+  "description": "Romaanse zaalkerk met smaller koor en achtkante dakruiter.",
+  "realWorld": {
+    "groundNapM": 1.237,
+    "ahnPeakNapM": 22,
+    "highestPointM": 19.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010911095",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18750",
+    "https://commons.wikimedia.org/wiki/Category:De_Olle_Kerk",
+    "https://www.dewesterkrant.nl/cultuur/cultuur/81821/deze-drie-pareltjes-zijn-te-bewonderen-op-open-monumentendag",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-gemeente-hoogkerk-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-gemeente-hoogkerk-groningen-1-1000.stl"
+  ]
+}
