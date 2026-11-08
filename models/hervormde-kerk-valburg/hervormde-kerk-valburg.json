@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde Kerk Valburg",
+  "origin": [
+    182675.543375,
+    435860.59725
+  ],
+  "xAxis": [
+    0.98117369,
+    0.19312737
+  ],
+  "groundHeight": 10.847,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1734101000026739"
+  ],
+  "description": "Romaanse toren met lager schip en hoger gotisch koor met zijkapellen; +X naar het oosten.",
+  "realWorld": {
+    "groundNapM": 10.847,
+    "highestPointM": 21.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1734101000026739",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36722",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36723",
+    "https://commons.wikimedia.org/wiki/Category:Christoffel,_Valburg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-valburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-valburg-1-1000.stl"
+  ]
+}
