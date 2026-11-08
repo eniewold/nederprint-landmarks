@@ -1,0 +1,81 @@
+{
+  "name": "Bartholomeuskerk Stedum",
+  "origin": [
+    242064.752,
+    593661.263
+  ],
+  "xAxis": [
+    -0.955527,
+    -0.294904
+  ],
+  "groundHeight": 2,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -23,
+      -8
+    ],
+    [
+      -15,
+      -17
+    ],
+    [
+      -3,
+      -17
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      20,
+      -8
+    ],
+    [
+      30,
+      -8
+    ],
+    [
+      30,
+      8
+    ],
+    [
+      15,
+      9
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      -15,
+      15
+    ],
+    [
+      -25,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0024100000145896"
+  ],
+  "description": "Romanogotische kruiskerk met koorsluiting en forse zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 2,
+    "naveRidgeM": 17.9,
+    "towerRidgeM": 38.3,
+    "highestPointM": 38.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0024100000145896",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34504"
+  ],
+  "file": "bartholomeuskerk-stedum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "bartholomeuskerk-stedum-1-1000.stl"
+  ]
+}
