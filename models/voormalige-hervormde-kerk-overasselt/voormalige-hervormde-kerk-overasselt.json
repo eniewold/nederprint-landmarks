@@ -1,0 +1,35 @@
+{
+  "name": "Voormalige Hervormde Kerk Overasselt",
+  "origin": [
+    182983.284,
+    419085.3105
+  ],
+  "xAxis": [
+    0.971222,
+    -0.238176
+  ],
+  "groundHeight": 10.391,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0252100000018390"
+  ],
+  "description": "Het resterende gotische koor met driezijdige sluiting; oorsprong bij de westgevel, +X naar het koor.",
+  "realWorld": {
+    "groundNapM": 10.391,
+    "highestPointM": 16.87
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0252100000018390",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32125",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Overasselt",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "voormalige-hervormde-kerk-overasselt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "voormalige-hervormde-kerk-overasselt-1-1000.stl",
+    "voormalige-hervormde-kerk-overasselt-1-100.stl"
+  ]
+}
