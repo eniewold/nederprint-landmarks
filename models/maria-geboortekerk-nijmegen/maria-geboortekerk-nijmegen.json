@@ -1,0 +1,65 @@
+{
+  "name": "Maria Geboortekerk Nijmegen",
+  "origin": [
+    188482.4,
+    428281.4
+  ],
+  "xAxis": [
+    0.3859,
+    0.9225
+  ],
+  "groundHeight": 32.6,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23.5,
+      0
+    ],
+    [
+      -24,
+      10
+    ],
+    [
+      44,
+      16.5
+    ],
+    [
+      46,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000002755"
+  ],
+  "description": "Neogotische kruisbasiliek (J. en J. Kayser, 1901 en 1924) met luchtbogen, dwarsschip, kapellen, lagere vijfzijdige apsis, dakruiter met naald en twee traptorens aan de voorgevel; met sacristie en pastorie op hetzelfde BAG-pand. X van het koor naar de voorgevel, z = 0 op NAP +32,6 m.",
+  "realWorld": {
+    "groundNapM": 32.6,
+    "frontSquareNapM": 35.1,
+    "naveEaveNapM": 56,
+    "naveRidgeNapM": 65.4,
+    "apseRidgeNapM": 60.8,
+    "stairTowerTopNapM": 68.1,
+    "flecheTopNapM": 82.1,
+    "churchLengthM": 65.9,
+    "complexLengthM": 86.8,
+    "transeptWidthM": 27.8,
+    "highestPointM": 49.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000002755",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/522947",
+    "https://nl.wikipedia.org/wiki/Maria_Geboortekerk_(Nijmegen)",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Geboortekerk_(Nijmegen)",
+    "https://commons.wikimedia.org/wiki/File:Zuid-oost_gevel_-_Nijmegen_-_20167856_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Westgevel_-_Nijmegen_-_20167853_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nijmegen_Rijksmonument_522947_kerk_Berg_en_Dalseweg_42_achterzijde.JPG",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "maria-geboortekerk-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maria-geboortekerk-nijmegen-1-1000.stl"
+  ]
+}
