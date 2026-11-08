@@ -1,0 +1,37 @@
+{
+  "name": "Waalse Kerk Breda",
+  "origin": [
+    112828,
+    400269
+  ],
+  "xAxis": [
+    0.9998,
+    -0.02
+  ],
+  "groundHeight": 3.075,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000000403"
+  ],
+  "description": "Gotische kapel met lager koor, straatvleugel en dakruiter.",
+  "realWorld": {
+    "groundNapM": 3.075,
+    "ahn5RoofNapM": 22.14,
+    "ahn5SpireNapM": 34.88,
+    "highestPointM": 31.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000000403",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10118",
+    "https://commons.wikimedia.org/wiki/Category:Waalse_kerk_(Breda)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "waalse-kerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "waalse-kerk-breda-1-100.stl",
+    "waalse-kerk-breda-1-1000.stl"
+  ]
+}
