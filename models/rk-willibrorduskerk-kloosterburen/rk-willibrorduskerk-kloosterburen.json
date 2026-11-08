@@ -1,0 +1,66 @@
+{
+  "name": "R.K. Willibrorduskerk Kloosterburen",
+  "origin": [
+    221974.285,
+    600530.664
+  ],
+  "xAxis": [
+    0.264396,
+    0.964414
+  ],
+  "groundHeight": 1.4,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -19,
+      6
+    ],
+    [
+      -12,
+      10
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      14,
+      9
+    ],
+    [
+      23,
+      5
+    ],
+    [
+      23,
+      -6
+    ],
+    [
+      5,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1663100000000360"
+  ],
+  "description": "Neogotische kruiskerk met vijfzijdig koor en toren met achtkante spits.",
+  "realWorld": {
+    "groundNapM": 1.4,
+    "naveRidgeM": 15.9,
+    "towerRoofApproxM": 52,
+    "highestPointM": 52
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1663100000000360",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://groningen.erfgoedcms.nl/FY/lemma/kloosterburen",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509515"
+  ],
+  "file": "rk-willibrorduskerk-kloosterburen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "rk-willibrorduskerk-kloosterburen-1-1000.stl"
+  ]
+}
