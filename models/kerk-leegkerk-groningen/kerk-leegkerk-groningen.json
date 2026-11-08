@@ -1,0 +1,36 @@
+{
+  "name": "Kerk Leegkerk Groningen",
+  "origin": [
+    228654,
+    583152.8
+  ],
+  "xAxis": [
+    0.998,
+    -0.06
+  ],
+  "groundHeight": 1.058,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010910948"
+  ],
+  "description": "Middeleeuwse zaalkerk met koor, steunberen en dakruiter.",
+  "realWorld": {
+    "groundNapM": 1.058,
+    "ahnTopNapM": 19.65,
+    "highestPointM": 18.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010910948",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18755",
+    "https://commons.wikimedia.org/wiki/Category:Church_of_Leegkerk",
+    "https://www.groningerkerken.nl/downloads/leegkerk_kerkbeschrijving_2021_herz_versie.pdf",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerk-leegkerk-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-leegkerk-groningen-1-1000.stl"
+  ]
+}
