@@ -1,0 +1,41 @@
+{
+  "name": "Kerk van Meeden",
+  "origin": [
+    258385,
+    573637
+  ],
+  "xAxis": [
+    0.99997,
+    0.0079
+  ],
+  "groundHeight": 1.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1987100000001687",
+    "NL.IMBAG.Pand.1987100000001686"
+  ],
+  "description": "Zaalkerk en losstaande zadeldaktoren, met apart portaal en vensternissen.",
+  "realWorld": {
+    "groundNapM": 1.2,
+    "towerRoofHeightM": 20.6,
+    "publishedTowerRidgeAboveFloorM": 19.88,
+    "ahnRoofNapM": 21.98,
+    "highestPointM": 20.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1987100000001687",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1987100000001686",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28421",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Meeden",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dbnl.org/tekst/ozin001oost01_01/ozin001oost01_01_0011.php"
+  ],
+  "file": "kerk-van-meeden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-meeden-1-1000.stl",
+    "kerk-van-meeden-grondplaat-1-1000.stl"
+  ]
+}
