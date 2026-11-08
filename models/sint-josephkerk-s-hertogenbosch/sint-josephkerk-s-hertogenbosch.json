@@ -1,0 +1,35 @@
+{
+  "name": "Sint Josephkerk 's-Hertogenbosch",
+  "origin": [
+    149532.7,
+    411290.7
+  ],
+  "xAxis": [
+    0.9999,
+    -0.015
+  ],
+  "groundHeight": 4.901,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000239427"
+  ],
+  "description": "Voormalige Sint-Josephkerk met brede neogotische voorgevel en vieringsbekroning.",
+  "realWorld": {
+    "groundNapM": 4.901,
+    "towerHeightM": 32.3,
+    "highestPointM": 32.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0796100000239427",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21845",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Josephkerk,_'s_Hertogenbosch"
+  ],
+  "file": "sint-josephkerk-s-hertogenbosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-josephkerk-s-hertogenbosch-1-100.stl"
+  ]
+}
