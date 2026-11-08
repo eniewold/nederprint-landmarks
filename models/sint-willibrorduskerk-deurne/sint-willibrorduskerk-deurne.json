@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Willibrorduskerk Deurne",
+  "origin": [
+    183340,
+    386232
+  ],
+  "xAxis": [
+    0.8,
+    0.6
+  ],
+  "groundHeight": 26.434,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0762100000018832"
+  ],
+  "description": "Gotische kruisbasiliek met westtoren, vijfzijdig koor en twee lage geveltorens.",
+  "realWorld": {
+    "groundNapM": 26.434,
+    "ahn5RoofNapM": 53.8,
+    "ahn5TowerNapM": 84.06,
+    "highestPointM": 57.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0762100000018832",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12372",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk_(Deurne)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-willibrorduskerk-deurne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-deurne-1-100.stl",
+    "sint-willibrorduskerk-deurne-1-1000.stl"
+  ]
+}
