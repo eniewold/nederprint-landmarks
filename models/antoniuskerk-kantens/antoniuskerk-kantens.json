@@ -1,0 +1,37 @@
+{
+  "name": "Antoniuskerk Kantens",
+  "origin": [
+    237965,
+    598409.5
+  ],
+  "xAxis": [
+    0.9935,
+    0.114
+  ],
+  "groundHeight": 4.86,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000012616"
+  ],
+  "description": "Eenbeukige kerk met achtkante toren en westelijke boogsteunbeer op de wierde.",
+  "realWorld": {
+    "groundNapM": 4.86,
+    "ahnPeakNapM": 43.47,
+    "ahnAdjacentNapM": 41.45,
+    "highestPointM": 36.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000012616",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23456",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Kantens",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.pgksr.nl/antoniuskerk"
+  ],
+  "file": "antoniuskerk-kantens.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "antoniuskerk-kantens-1-1000.stl"
+  ]
+}
