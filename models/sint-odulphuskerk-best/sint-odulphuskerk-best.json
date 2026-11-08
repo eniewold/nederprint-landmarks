@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Odulphuskerk Best",
+  "origin": [
+    155287,
+    391391.5
+  ],
+  "xAxis": [
+    0.45,
+    -0.893
+  ],
+  "groundHeight": 15.91,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0753100000002070"
+  ],
+  "description": "Neogotische kruisbasiliek met toren, achthoekige spits en dakruiter.",
+  "realWorld": {
+    "groundNapM": 15.91,
+    "towerHeightM": 64.6,
+    "highestPointM": 64.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0753100000002070",
+    "https://www.ahn.nl/dataroom",
+    "https://www.sbodulphus.nl/index.php?cat=5&site=www.sbodulphus.nl&subcat=39",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512321"
+  ],
+  "file": "sint-odulphuskerk-best.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-odulphuskerk-best-1-100.stl",
+    "sint-odulphuskerk-best-1-1000.stl"
+  ]
+}
