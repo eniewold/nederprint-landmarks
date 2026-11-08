@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Martinuskerk Zaltbommel",
+  "origin": [
+    145388,
+    424862
+  ],
+  "xAxis": [
+    0.875,
+    0.484
+  ],
+  "groundHeight": 5.7,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0297100000004579"
+  ],
+  "description": "Waterstaatskerk met fronton en koepeltorentje.",
+  "realWorld": {
+    "groundNapM": 5.7,
+    "roofRidgeM": 16.1,
+    "towerHeightM": 20.8,
+    "highestPointM": 20.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0297100000004579",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40249",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinus_(Zaltbommel)"
+  ],
+  "file": "sint-martinuskerk-zaltbommel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-zaltbommel-1-1000.stl"
+  ]
+}
