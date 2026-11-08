@@ -1,0 +1,35 @@
+{
+  "name": "Onze Lieve Vrouw Presentatie Aarle-Rixtel",
+  "origin": [
+    172465.25,
+    391284.25
+  ],
+  "xAxis": [
+    -0.214,
+    0.977
+  ],
+  "groundHeight": 16.151,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1659100000007829"
+  ],
+  "description": "Waterstaatskerk met breed schip en koepelvormige open torenlantaarn.",
+  "realWorld": {
+    "groundNapM": 16.151,
+    "towerHeightM": 38,
+    "highestPointM": 38
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1659100000007829",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.bhic.nl/ontdekken/verhalen/de-kerk-van-onze-lieve-vrouwe-presentatie-in-aarle-rixtel",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Onze_Lieve_Vrouw_Presentatie,_Aarle-Rixtel"
+  ],
+  "file": "kerk-onze-lieve-vrouw-presentatie-aarle-rixtel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-onze-lieve-vrouw-presentatie-aarle-rixtel-1-100.stl"
+  ]
+}
