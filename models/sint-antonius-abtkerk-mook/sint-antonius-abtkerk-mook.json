@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Antonius Abtkerk Mook",
+  "origin": [
+    189098.3,
+    418085.8
+  ],
+  "xAxis": [
+    0.93,
+    0.367
+  ],
+  "groundHeight": 12.5,
+  "groundOffsetMetres": -0.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0944100000200554"
+  ],
+  "description": "Kerk met dubbel dwarsschip, driezijdig koor en middeleeuwse toren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 12.5,
+    "spireHeightM": 26.7,
+    "highestPointM": 26.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0944100000200554",
+    "https://www.ahn.nl/dataroom",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30073",
+    "https://commons.wikimedia.org/wiki/Category:Antonius_Abtkerk,_Mook"
+  ],
+  "file": "sint-antonius-abtkerk-mook.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abtkerk-mook-1-100.stl",
+    "sint-antonius-abtkerk-mook-1-1000.stl"
+  ]
+}
