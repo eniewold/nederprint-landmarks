@@ -1,0 +1,46 @@
+{
+  "name": "Sint-Hubertuskerk Maastricht",
+  "origin": [
+    176210,
+    319271
+  ],
+  "xAxis": [
+    0.974,
+    0.226
+  ],
+  "groundHeight": 45.82,
+  "groundOffsetMetres": -0.1,
+  "groundSamplePoints": [
+    [
+      -10,
+      12
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0935100000017601"
+  ],
+  "description": "Expressionistische kruiskerk met taps toelopende toren, hoge kappen en versmallend koor.",
+  "realWorld": {
+    "groundNapM": 45.82,
+    "ahnTopNapM": 87.61,
+    "highestPointM": 41.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0935100000017601",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/506627",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Hubertuskerk_(Maastricht)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-hubertuskerk-maastricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-hubertuskerk-maastricht-1-100.stl",
+    "sint-hubertuskerk-maastricht-1-1000.stl"
+  ]
+}
