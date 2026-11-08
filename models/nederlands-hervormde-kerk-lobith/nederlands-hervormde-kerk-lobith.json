@@ -1,0 +1,40 @@
+{
+  "name": "Nederlands Hervormde Kerk Lobith",
+  "origin": [
+    205513.53,
+    430515.18
+  ],
+  "xAxis": [
+    -0.5335,
+    -0.8458
+  ],
+  "groundHeight": 15.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0196100000342619"
+  ],
+  "description": "Zaalkerkje uit 1660 met driezijdige sluiting, hoog schilddak, puntgevel tegen de buurbebouwing en zeszijdig koepeltorentje; X van de puntgevel naar de sluiting, +Y naar de Markt.",
+  "realWorld": {
+    "groundNapM": 15.2,
+    "lengthM": 16.95,
+    "widthM": 11,
+    "eaveM": 6.23,
+    "ridgeM": 14.3,
+    "roofPitchDeg": 54.1,
+    "highestPointM": 19.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21963",
+    "https://reliwiki.nl/index.php/Lobith,_Markt_13_-_Ned._Hervormde_Kerk",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0196100000342619",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Lobith"
+  ],
+  "file": "nederlands-hervormde-kerk-lobith.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-lobith-1-1000.stl"
+  ]
+}
