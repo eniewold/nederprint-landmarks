@@ -1,0 +1,36 @@
+{
+  "name": "Heilige Naam Jezuskerk Broekhuizenvorst",
+  "origin": [
+    208484.8,
+    389855.1
+  ],
+  "xAxis": [
+    0.967,
+    0.255
+  ],
+  "groundHeight": 17.3,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1507100000009631"
+  ],
+  "description": "Tweebeukige gotische kruiskerk met voorgebouwde toren, ingesnoerde achthoekige spits, twee kruisarmen en lager koor met driezijdige sluiting.",
+  "realWorld": {
+    "groundNapM": 17.3,
+    "towerHeightM": 47,
+    "highestPointM": 46.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1507100000009631",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.lgogterhorst.nl/info_lgog/INFOLGOG%20no%2057.pdf",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/broekhuizenvorst/h-naam-jezus",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Naam_Jezuskerk_(Broekhuizenvorst)"
+  ],
+  "file": "heilige-naam-jezuskerk-broekhuizenvorst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-naam-jezuskerk-broekhuizenvorst-1-1000.stl"
+  ]
+}
