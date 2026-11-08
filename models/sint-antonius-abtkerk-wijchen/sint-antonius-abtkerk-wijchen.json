@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Antonius Abtkerk Wijchen",
+  "origin": [
+    178386.3,
+    424254.2
+  ],
+  "xAxis": [
+    0.017,
+    -0.999855
+  ],
+  "groundHeight": 10.221,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0296100000000860"
+  ],
+  "description": "Neoclassicistische hallenkerk met ingebouwde toren, zijkapellen en sacristie.",
+  "realWorld": {
+    "groundNapM": 10.221,
+    "ahnTopNapM": 47.3,
+    "highestPointM": 36.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0296100000000860",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39631",
+    "https://commons.wikimedia.org/wiki/Category:Antonius_Abtkerk,_Wijchen",
+    "https://detwaalfapostelen.nl/gemeenschappen/h-antonius-abt-wijchen/",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-antonius-abtkerk-wijchen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abtkerk-wijchen-1-1000.stl"
+  ]
+}
