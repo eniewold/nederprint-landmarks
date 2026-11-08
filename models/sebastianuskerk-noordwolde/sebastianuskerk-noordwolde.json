@@ -1,0 +1,37 @@
+{
+  "name": "Sebastianuskerk Noordwolde",
+  "origin": [
+    235098,
+    587918.5
+  ],
+  "xAxis": [
+    0.9987,
+    0.0516
+  ],
+  "groundHeight": 0.069,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0005100000003518"
+  ],
+  "description": "Romaans-gotische zaalkerk met toren, gedrongen uivormige bekroning en steunberen.",
+  "realWorld": {
+    "groundNapM": 0.069,
+    "ahnPeakNapM": 30.27,
+    "ahnAdjacentNapM": 28.26,
+    "highestPointM": 27.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0005100000003518",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8731",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Noordwolde,_Groningen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.orgelshogeland.nl/?page_id=1084"
+  ],
+  "file": "sebastianuskerk-noordwolde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sebastianuskerk-noordwolde-1-1000.stl"
+  ]
+}
