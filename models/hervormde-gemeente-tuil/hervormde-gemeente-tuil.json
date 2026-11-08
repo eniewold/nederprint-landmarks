@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Gemeente Tuil",
+  "origin": [
+    144789.73725,
+    426013.11
+  ],
+  "xAxis": [
+    0.96796921,
+    0.25106894
+  ],
+  "groundHeight": 4.469,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0304100000009486"
+  ],
+  "description": "Zaalkerk met middeleeuwse toren, driezijdige sluiting en lagere consistorie; +X naar het oosten.",
+  "realWorld": {
+    "groundNapM": 4.469,
+    "highestPointM": 24.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0304100000009486",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30342",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30343",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/522051",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Tuil)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-gemeente-tuil.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-gemeente-tuil-1-1000.stl"
+  ]
+}
