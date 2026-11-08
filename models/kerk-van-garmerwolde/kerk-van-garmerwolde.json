@@ -1,0 +1,36 @@
+{
+  "name": "Kerk van Garmerwolde",
+  "origin": [
+    239129.5,
+    585357.5
+  ],
+  "xAxis": [
+    0.9901,
+    0.1404
+  ],
+  "groundHeight": -0.05,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0009100007677186",
+    "NL.IMBAG.Pand.0009100007680336"
+  ],
+  "description": "Romano-gotische kerk met kruisvormig resterend gebouw en vrijstaande zadeldaktoren. Gevelreli�f naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.05,
+    "highestPointM": 19.85
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0009100007677186",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0009100007680336",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9780",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Garmerwolde)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerk-van-garmerwolde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-garmerwolde-1-1000.stl"
+  ]
+}
