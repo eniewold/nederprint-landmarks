@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Dominicuskerk Tiel",
+  "origin": [
+    158026,
+    433128
+  ],
+  "xAxis": [
+    0.749,
+    0.663
+  ],
+  "groundHeight": 6,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0281100000019337"
+  ],
+  "description": "Driebeukige kerk met hoger dwarsbouwdeel en vierkante toren onder vlak tentdak.",
+  "realWorld": {
+    "groundNapM": 6,
+    "towerHeightM": 40,
+    "highestPointM": 40.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0281100000019337",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520655",
+    "https://www.raadvanstate.nl/uitspraken/%4050698/200905155-1-r2/",
+    "https://suitbertusparochie.nl/blog/portfolio/h-dominicuskerk-tiel/"
+  ],
+  "file": "sint-dominicuskerk-tiel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-dominicuskerk-tiel-1-1000.stl"
+  ]
+}
