@@ -1,0 +1,35 @@
+{
+  "name": "Antonius van Paduakerk Ulft",
+  "origin": [
+    222931,
+    435267
+  ],
+  "xAxis": [
+    0.77,
+    0.638
+  ],
+  "groundHeight": 14.52,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1509100000203444"
+  ],
+  "description": "Neoromaanse kruisbasiliek met twee torens, dakruiter en halfronde apsis.",
+  "realWorld": {
+    "groundNapM": 14.52,
+    "ahnTopNapM": 38.756,
+    "highestPointM": 23.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1509100000203444",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523685",
+    "https://commons.wikimedia.org/wiki/Category:Antonius,_Ulft",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "antonius-van-paduakerk-ulft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "antonius-van-paduakerk-ulft-1-1000.stl"
+  ]
+}
