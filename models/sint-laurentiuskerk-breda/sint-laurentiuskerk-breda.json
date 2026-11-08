@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Laurentiuskerk Breda",
+  "origin": [
+    113251,
+    397879
+  ],
+  "xAxis": [
+    0.9659,
+    0.2588
+  ],
+  "groundHeight": 3.61,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000014207"
+  ],
+  "description": "Kruisbasiliek met achthoekige vieringtoren en vier hoektorentjes.",
+  "realWorld": {
+    "groundNapM": 3.61,
+    "towerHeightM": 60.6,
+    "highestPointM": 60.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000014207",
+    "https://www.ahn.nl/dataroom",
+    "https://kunstinbreda.nl/religieus/kerken/breda/st-laurentiuskerk-ginnekenweg/",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Sint-Laurentiuskerk_(Ginneken)"
+  ],
+  "file": "sint-laurentiuskerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-laurentiuskerk-breda-1-100.stl",
+    "sint-laurentiuskerk-breda-1-1000.stl"
+  ]
+}
