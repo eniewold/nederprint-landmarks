@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Willibrorduskerk Berkel-Enschot",
+  "origin": [
+    138100.75,
+    400183.75
+  ],
+  "xAxis": [
+    0.955,
+    0.296
+  ],
+  "groundHeight": 12.383,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000703581"
+  ],
+  "description": "Basilicale kerk met voorgelegen toren en dwarsgeplaatste zijbeukkappen.",
+  "realWorld": {
+    "groundNapM": 12.383,
+    "towerHeightM": 38.05,
+    "highestPointM": 38.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000703581",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.bhic.nl/ontdekken/verhalen/de-h-willibrorduskerk-in-berkel",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk,_Berkel-Enschot"
+  ],
+  "file": "sint-willibrorduskerk-berkel-enschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-berkel-enschot-1-100.stl"
+  ]
+}
