@@ -1,0 +1,35 @@
+{
+  "name": "Kapel Onze-Lieve-Vrouw in 't Zand Aarle-Rixtel",
+  "origin": [
+    172355,
+    391006
+  ],
+  "xAxis": [
+    0.9962,
+    -0.087
+  ],
+  "groundHeight": 17.025,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1659100000008834"
+  ],
+  "description": "Eenbeukige kapel met driezijdig koor, steunberen en dakruiter.",
+  "realWorld": {
+    "groundNapM": 17.025,
+    "ahnTopNapM": 33.02,
+    "highestPointM": 16
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1659100000008834",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6938",
+    "https://www.ahn.nl/"
+  ],
+  "file": "kapel-van-onze-lieve-vrouw-in-t-zand-aarle-rixtel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kapel-van-onze-lieve-vrouw-in-t-zand-aarle-rixtel-1-100.stl",
+    "kapel-van-onze-lieve-vrouw-in-t-zand-aarle-rixtel-1-1000.stl"
+  ]
+}
