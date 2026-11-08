@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Johannes de Doperkerk Merselo",
+  "origin": [
+    192676.25,
+    393548.35
+  ],
+  "xAxis": [
+    0.998,
+    -0.065
+  ],
+  "groundHeight": 25.776,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0984100000410749"
+  ],
+  "description": "Eenbeukige kerk met een opvallende trapgevel, lager driezijdig koor en slanke achthoekige zijtoren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 25.776,
+    "towerHeightM": 32.8,
+    "highestPointM": 32.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0984100000410749",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/merselo/johannes-de-doper",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Johannes_de_Doperkerk_(Merselo)"
+  ],
+  "file": "sint-johannes-de-doperkerk-merselo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-johannes-de-doperkerk-merselo-1-1000.stl"
+  ]
+}
