@@ -1,0 +1,35 @@
+{
+  "name": "Heilig Hartkerk Breda",
+  "origin": [
+    112690.25,
+    398955.25
+  ],
+  "xAxis": [
+    -0.95,
+    0.31
+  ],
+  "groundHeight": 1.54,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000039086"
+  ],
+  "description": "Neogotische kruiskerk met asymmetrische toren en naaldspits.",
+  "realWorld": {
+    "groundNapM": 1.54,
+    "towerHeightM": 57.95,
+    "highestPointM": 57.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000039086",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.skydb.net/overview/908956617/breda/",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Hart_(Breda)"
+  ],
+  "file": "heilig-hartkerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilig-hartkerk-breda-1-100.stl"
+  ]
+}
