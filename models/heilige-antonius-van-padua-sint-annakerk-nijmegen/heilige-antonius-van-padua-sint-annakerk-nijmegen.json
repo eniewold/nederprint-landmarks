@@ -1,0 +1,41 @@
+{
+  "name": "Heilige Antonius van Padua-Sint Annakerk (Groenestraatkerk), Nijmegen",
+  "origin": [
+    186741.73,
+    427039.77
+  ],
+  "xAxis": [
+    -0.1305,
+    -0.9914
+  ],
+  "groundHeight": 23.47,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000013467"
+  ],
+  "description": "Neogotische kruisbasiliek van Albert Margry (1909-1910) met twee ongelijke torens aan de Groenestraat; oorsprong op de kerkas in de voorgevel, x naar het koor (zuid).",
+  "realWorld": {
+    "groundNapM": 23.47,
+    "naveRidgeM": 24.3,
+    "naveEaveM": 17.6,
+    "naveWidthM": 11,
+    "transeptLengthM": 30.7,
+    "eastTowerM": 56,
+    "westTowerM": 34,
+    "highestPointM": 56
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Groenestraatkerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/524836",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000013467",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Groenestraatkerk_(Nijmegen)"
+  ],
+  "file": "heilige-antonius-van-padua-sint-annakerk-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-antonius-van-padua-sint-annakerk-nijmegen-1-1000.stl"
+  ]
+}
