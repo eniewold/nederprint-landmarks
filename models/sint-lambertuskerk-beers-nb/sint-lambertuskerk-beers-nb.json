@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Lambertuskerk Beers NB",
+  "origin": [
+    185365,
+    415340
+  ],
+  "xAxis": [
+    0.87696,
+    -0.48056
+  ],
+  "groundHeight": 11.082,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1684100000001883"
+  ],
+  "description": "Neogotische kruisbasiliek met middeleeuwse toren, naaldspits en roosvensters.",
+  "realWorld": {
+    "groundNapM": 11.082,
+    "ahn4TopNapM": 43.97,
+    "ahn5TopNapM": 57.4,
+    "highestPointM": 46.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1684100000001883",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8855",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8856",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-lambertuskerk-beers-nb.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-beers-nb-1-100.stl",
+    "sint-lambertuskerk-beers-nb-1-1000.stl"
+  ]
+}
