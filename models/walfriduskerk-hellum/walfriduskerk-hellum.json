@@ -1,0 +1,58 @@
+{
+  "name": "Walfriduskerk Hellum",
+  "origin": [
+    251885,
+    584479
+  ],
+  "xAxis": [
+    0.994,
+    0.11
+  ],
+  "groundHeight": 2.6,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -6
+    ],
+    [
+      -8,
+      -5
+    ],
+    [
+      8,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      8,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0040100000014587"
+  ],
+  "description": "Middeleeuwse zaalkerk met ronde koorsluiting en aangebouwde toren.",
+  "realWorld": {
+    "groundNapM": 2.6,
+    "roofRidgeM": 13.75,
+    "towerRoofApproxM": 26.2,
+    "highestPointM": 26.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0040100000014587",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/94037eea-4196-48db-9f83-0ef330a7655e?request=getCapabilities&version=1.0.0&requestedEpsg=28992",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33810"
+  ],
+  "file": "walfriduskerk-hellum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "walfriduskerk-hellum-1-1000.stl"
+  ]
+}
