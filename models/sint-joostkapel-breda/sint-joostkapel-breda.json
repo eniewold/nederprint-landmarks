@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Joostkapel Breda",
+  "origin": [
+    112700,
+    399769
+  ],
+  "xAxis": [
+    0.97594,
+    0.218
+  ],
+  "groundHeight": 3.61,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000015923"
+  ],
+  "description": "Laatmiddeleeuwse kapel met ingebouwde westtoren, koorsluiting en naaldspits.",
+  "realWorld": {
+    "groundNapM": 3.61,
+    "ahn4TopNapM": 34.57,
+    "ahn5TopNapM": 36.79,
+    "highestPointM": 33.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000015923",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10143",
+    "https://erfgoed.breda.nl/nieuws/sint-joostkapel-in-de-steigers",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-joostkapel-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-joostkapel-breda-1-100.stl",
+    "sint-joostkapel-breda-1-1000.stl"
+  ]
+}
