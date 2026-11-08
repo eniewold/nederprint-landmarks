@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Rossum",
+  "origin": [
+    152095.85,
+    423442.8
+  ],
+  "xAxis": [
+    0.98580282,
+    0.16790711
+  ],
+  "groundHeight": 6.657,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0263100000004374"
+  ],
+  "description": "Zaalkerk met romaanse toren en vijfzijdige koorsluiting; +X van toren naar koor.",
+  "realWorld": {
+    "groundNapM": 6.657,
+    "highestPointM": 26.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0263100000004374",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32725",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32726",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Rossum,_Gelderland",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "nederlands-hervormde-kerk-rossum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-rossum-1-1000.stl"
+  ]
+}
