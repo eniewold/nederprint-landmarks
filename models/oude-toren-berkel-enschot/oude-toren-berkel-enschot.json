@@ -1,0 +1,36 @@
+{
+  "name": "Oude Toren Berkel-Enschot",
+  "origin": [
+    137764.1,
+    398633
+  ],
+  "xAxis": [
+    0.9998,
+    0.02
+  ],
+  "groundHeight": 12.425,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000473011"
+  ],
+  "description": "Middeleeuwse toren met korte zijbeukrestanten, steunberen en ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 12.425,
+    "ahn4TopNapM": 36.523,
+    "ahn5TopNapM": 37.244,
+    "highestPointM": 24.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000473011",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9340",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oude-toren-berkel-enschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-toren-berkel-enschot-1-100.stl",
+    "oude-toren-berkel-enschot-1-1000.stl"
+  ]
+}
