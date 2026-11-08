@@ -1,0 +1,35 @@
+{
+  "name": "Titus Brandsma Gedachteniskerk Nijmegen",
+  "origin": [
+    187501.5,
+    428106.5
+  ],
+  "xAxis": [
+    0.9755,
+    -0.22
+  ],
+  "groundHeight": 30.012,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000019937"
+  ],
+  "description": "Kruisbasiliek met vieringtoren, zijbeuken en apsissen; oorsprong bij de viering, lokale +Y naar de hoofdgevel.",
+  "realWorld": {
+    "groundNapM": 30.012,
+    "highestPointM": 37.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000019937",
+    "https://commons.wikimedia.org/wiki/Category:Titus_Brandsma_Memorial",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/522992",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "file": "titus-brandsma-gedachteniskerk-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "titus-brandsma-gedachteniskerk-nijmegen-1-1000.stl"
+  ]
+}
