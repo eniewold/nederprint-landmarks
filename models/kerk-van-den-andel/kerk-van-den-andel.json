@@ -1,0 +1,64 @@
+{
+  "name": "Kerk van Den Andel",
+  "origin": [
+    229727.24,
+    600460.18
+  ],
+  "xAxis": [
+    0.987,
+    0.16
+  ],
+  "groundHeight": 2.4,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -5
+    ],
+    [
+      -6,
+      -5
+    ],
+    [
+      6,
+      -5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      15,
+      -7
+    ],
+    [
+      18,
+      -11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000007247",
+    "NL.IMBAG.Pand.0053100000007207"
+  ],
+  "description": "Middeleeuwse zaalkerk en vrijstaande toren op de wierde.",
+  "realWorld": {
+    "churchGroundNapM": 2.4,
+    "towerGroundNapM": 2.1,
+    "roofRidgeM": 10.6,
+    "highestPointM": 16.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000007247",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000007207",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8582",
+    "https://www.groningerkerken.nl/downloads/den_andel_kerkbeschrijving_tz_sw2025.pdf"
+  ],
+  "file": "kerk-van-den-andel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-den-andel-1-1000.stl"
+  ]
+}
