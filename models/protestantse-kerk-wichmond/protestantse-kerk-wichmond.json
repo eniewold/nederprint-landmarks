@@ -1,0 +1,37 @@
+{
+  "name": "Protestantse Kerk Wichmond",
+  "origin": [
+    214634,
+    456008
+  ],
+  "xAxis": [
+    -0.94,
+    -0.342
+  ],
+  "groundHeight": 9,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000012618"
+  ],
+  "description": "Kerk uit 1856 met gemetselde toren uit 1930 en aansluitende zaal Withmundi.",
+  "realWorld": {
+    "groundNapM": 9,
+    "roofRidgeM": 10.6,
+    "towerHeightM": 21.4,
+    "highestPointM": 21.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000012618",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/476726",
+    "https://wichmond.protestantsekerk.net/beleidsplan_protestantse_gemeente_te_wichmond__2022_tot_2026/",
+    "https://commons.wikimedia.org/wiki/File:Wichmond,_kerk_foto3_2010-07-20_13.09.JPG"
+  ],
+  "file": "protestantse-kerk-wichmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-wichmond-1-1000.stl"
+  ]
+}
