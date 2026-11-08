@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Opijnen",
+  "origin": [
+    149034,
+    426616
+  ],
+  "xAxis": [
+    0.99972,
+    -0.0237
+  ],
+  "groundHeight": 4,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0304100000002758"
+  ],
+  "description": "Witgepleisterde zaalkerk met westtoren, spits en steunberen.",
+  "realWorld": {
+    "groundNapM": 4,
+    "highestPointM": 24.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0304100000002758",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30337",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30338",
+    "https://www.kerkopijnen.nl/historie"
+  ],
+  "file": "nederlands-hervormde-kerk-opijnen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-opijnen-1-1000.stl"
+  ]
+}
