@@ -1,0 +1,73 @@
+{
+  "name": "Onze Lieve Vrouwe Kerk Tinallinge",
+  "origin": [
+    231381.429,
+    597296.291
+  ],
+  "xAxis": [
+    -0.999628,
+    -0.027267
+  ],
+  "groundHeight": 3.53,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -12,
+      -6
+    ],
+    [
+      -6,
+      -7
+    ],
+    [
+      0,
+      -7
+    ],
+    [
+      6,
+      -7
+    ],
+    [
+      12,
+      -6
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      -5,
+      7
+    ],
+    [
+      -12,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000001247"
+  ],
+  "description": "Rechtgesloten kerk met schilddak en houten torentje met achtzijdige spits.",
+  "realWorld": {
+    "groundNapM": 3.53,
+    "naveRidgeM": 11.5,
+    "turretRoofApproxM": 20,
+    "highestPointM": 20
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000001247",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8589"
+  ],
+  "file": "onze-lieve-vrouwe-kerk-tinallinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouwe-kerk-tinallinge-1-1000.stl"
+  ]
+}
