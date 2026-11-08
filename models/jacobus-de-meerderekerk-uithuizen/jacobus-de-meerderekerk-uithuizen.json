@@ -1,0 +1,34 @@
+{
+  "name": "Jacobus de Meerderekerk Uithuizen",
+  "origin": [
+    240121,
+    603177
+  ],
+  "xAxis": [
+    -0.239,
+    -0.971
+  ],
+  "groundHeight": 2.366,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000004057"
+  ],
+  "description": "Neogotische kruiskerk met lagere zijbeuken, koor, sacristie en vierkant torentje met naaldspits en hoekpinakels.",
+  "realWorld": {
+    "groundNapM": 2.366,
+    "highestPointM": 31.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000004057",
+    "https://liudgerparochie.nl/jacobus-de-meerderekerk-uithuizen/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Jacobus_de_Meerdere,_Uithuizen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "jacobus-de-meerderekerk-uithuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobus-de-meerderekerk-uithuizen-1-1000.stl"
+  ]
+}
