@@ -1,0 +1,41 @@
+{
+  "name": "Evangelisch-Lutherse Kerk Nijmegen",
+  "origin": [
+    188304.18,
+    428253.09
+  ],
+  "xAxis": [
+    0.4958,
+    0.8684
+  ],
+  "groundHeight": 32.7,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000002585"
+  ],
+  "description": "Lutherse kerk (Derk Semmelink, 1896) aan de Prins Hendrikstraat met zaal onder schilddak, zijkapellen, toren uit 1929 met tentdak, achtervleugel en kosterswoning; oorsprong midden in de zaal, X van de toren naar achteren.",
+  "realWorld": {
+    "groundNapM": 32.7,
+    "hallRidgeM": 14.75,
+    "towerEaveM": 14.5,
+    "towerRoofTopM": 18.3,
+    "windvaneAhnM": 21.3,
+    "highestPointM": 18.3
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Lutherse_kerk_(Nijmegen)",
+    "https://www.wikidata.org/wiki/Q2225820",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/476729",
+    "https://www.openstreetmap.org/way/279900610",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000002585",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Lutherse_Kerk_(Nijmegen)"
+  ],
+  "file": "evangelisch-lutherse-kerk-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "evangelisch-lutherse-kerk-nijmegen-1-1000.stl"
+  ]
+}
