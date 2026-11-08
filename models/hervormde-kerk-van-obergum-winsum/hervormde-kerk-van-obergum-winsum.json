@@ -1,0 +1,78 @@
+{
+  "name": "Hervormde kerk van Obergum Winsum",
+  "origin": [
+    230048.106,
+    594711.07
+  ],
+  "xAxis": [
+    -0.9984,
+    -0.056
+  ],
+  "groundHeight": 5.15,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -15,
+      -6
+    ],
+    [
+      -8,
+      -8
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      8,
+      -8
+    ],
+    [
+      18,
+      -6
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      -7,
+      7
+    ],
+    [
+      -16,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000006263"
+  ],
+  "description": "Zaalkerk met driezijdig koor en zadeldaktoren op een wierde.",
+  "realWorld": {
+    "groundNapM": 5.15,
+    "naveRidgeM": 11.55,
+    "towerRidgeM": 18.85,
+    "highestPointM": 18.85
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000006263",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.winshem.nl/wp-content/uploads/Info-2005-nr3.pdf",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39042"
+  ],
+  "file": "hervormde-kerk-van-obergum-winsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-van-obergum-winsum-1-1000.stl"
+  ]
+}
