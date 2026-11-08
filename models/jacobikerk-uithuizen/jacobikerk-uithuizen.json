@@ -1,0 +1,74 @@
+{
+  "name": "Jacobikerk Uithuizen",
+  "origin": [
+    240554.771,
+    603105.223
+  ],
+  "xAxis": [
+    -0.988804,
+    0.149217
+  ],
+  "groundHeight": 2.8,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -24,
+      -8
+    ],
+    [
+      -15,
+      -12
+    ],
+    [
+      -5,
+      -12
+    ],
+    [
+      17,
+      -11
+    ],
+    [
+      28,
+      8
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      -10,
+      11
+    ],
+    [
+      -24,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000010395"
+  ],
+  "description": "Kerk met polygonale koorsluiting, noordbeuk en toren met tentdak en lantaarn.",
+  "realWorld": {
+    "groundNapM": 2.8,
+    "naveRidgeM": 15.2,
+    "towerLanternApproxM": 28.5,
+    "highestPointM": 28.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000010395",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.orgelshogeland.nl/?page_id=17",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21303"
+  ],
+  "file": "jacobikerk-uithuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobikerk-uithuizen-1-1000.stl"
+  ]
+}
