@@ -1,0 +1,35 @@
+{
+  "name": "Synagoge Groningen",
+  "origin": [
+    233700.2,
+    581550.5
+  ],
+  "xAxis": [
+    0.9635,
+    0.2677
+  ],
+  "groundHeight": 2.837,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010937344"
+  ],
+  "description": "Synagoge met twee ronde hoektorens en lage koepels aan de Folkingestraat. Gevelreli�f naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 2.837,
+    "highestPointM": 19.23
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010937344",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18452",
+    "https://www.synagogegroningen.nl/het-gebouw",
+    "https://commons.wikimedia.org/wiki/Category:Synagogue,_Groningen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "synagoge-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "synagoge-groningen-1-1000.stl"
+  ]
+}
