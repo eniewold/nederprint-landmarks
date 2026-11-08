@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Petruskerk Gulpen",
+  "origin": [
+    190355.25,
+    314001.25
+  ],
+  "xAxis": [
+    0.936,
+    -0.352
+  ],
+  "groundHeight": 95,
+  "groundOffsetMetres": -0.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1729100001035357"
+  ],
+  "description": "Neoromaanse kruisbasiliek met drie apsissen en westtoren met ruitdak.",
+  "realWorld": {
+    "groundNapM": 95,
+    "towerHeightM": 47.8,
+    "highestPointM": 47.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1729100001035357",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/491684",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petruskerk_(Gulpen)"
+  ],
+  "file": "sint-petruskerk-gulpen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petruskerk-gulpen-1-100.stl",
+    "sint-petruskerk-gulpen-1-1000.stl"
+  ]
+}
