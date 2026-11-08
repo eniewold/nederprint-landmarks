@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Annakerk Breda",
+  "origin": [
+    111743.75,
+    399754.25
+  ],
+  "xAxis": [
+    0.1,
+    -0.995
+  ],
+  "groundHeight": 2.301,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000009752"
+  ],
+  "description": "Neogotische kruiskerk met polygonale dakruiter; geplande toren is nooit gebouwd.",
+  "realWorld": {
+    "groundNapM": 2.301,
+    "towerHeightM": 41.6,
+    "highestPointM": 41.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000009752",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10191",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_-_Breda_-_20040570_-_RCE.jpg"
+  ],
+  "file": "sint-annakerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakerk-breda-1-100.stl"
+  ]
+}
