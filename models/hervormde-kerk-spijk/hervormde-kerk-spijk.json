@@ -1,0 +1,39 @@
+{
+  "name": "Hervormde Kerk Spijk",
+  "origin": [
+    128899,
+    429859
+  ],
+  "xAxis": [
+    0.9887,
+    0.15
+  ],
+  "groundHeight": 3.059,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0733100000007251",
+    "NL.IMBAG.Pand.0733100000008661"
+  ],
+  "description": "Pseudobasilicale kerk met puntgevels en dwarskappen, driezijdig koor en afzonderlijke westtoren.",
+  "realWorld": {
+    "groundNapM": 3.059,
+    "ahnTopNapM": 39.604,
+    "highestPointM": 33.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0733100000007251",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22001",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22002",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Spijk_(Lingewaal)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dbnl.org/tekst/sten009monu05_01/sten009monu05_01_0189.php",
+    "https://www.dbnl.org/tekst/gron052vijf01_01/gron052vijf01ill0513.gif"
+  ],
+  "file": "hervormde-kerk-spijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-spijk-1-1000.stl"
+  ]
+}
