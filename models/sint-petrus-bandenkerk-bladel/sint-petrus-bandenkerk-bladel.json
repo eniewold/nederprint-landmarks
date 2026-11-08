@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Petrus Bandenkerk Bladel",
+  "origin": [
+    143405.25,
+    375456
+  ],
+  "xAxis": [
+    -0.19,
+    0.982
+  ],
+  "groundHeight": 31.038,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1728100000000183"
+  ],
+  "description": "Kruiskerk met twee korte fronttorens en open vieringtoren met koepel.",
+  "realWorld": {
+    "groundNapM": 31.038,
+    "towerHeightM": 30.5,
+    "highestPointM": 30.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1728100000000183",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.parochiepetruspaulus.nl/kerken/bladel-2/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petrus%27_Bandenkerk_(Bladel)"
+  ],
+  "file": "sint-petrus-bandenkerk-bladel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petrus-bandenkerk-bladel-1-100.stl"
+  ]
+}
