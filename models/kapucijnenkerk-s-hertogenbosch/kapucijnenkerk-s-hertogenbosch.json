@@ -1,0 +1,36 @@
+{
+  "name": "Kapucijnenkerk 's-Hertogenbosch",
+  "origin": [
+    148782,
+    411161
+  ],
+  "xAxis": [
+    0.974,
+    -0.22655
+  ],
+  "groundHeight": 6.388,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000238773"
+  ],
+  "description": "Zaalkerk met zadeldak, aanbouwen, topgevel en dakruiter.",
+  "realWorld": {
+    "groundNapM": 6.388,
+    "ahnTopNapM": 37.3,
+    "highestPointM": 31
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0796100000238773",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21597",
+    "https://beta.bhic.nl/verhalen/kapucijnenkerk-h-hart-van-jezus-in-s-hertogenbosch",
+    "https://www.ahn.nl/"
+  ],
+  "file": "kapucijnenkerk-s-hertogenbosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kapucijnenkerk-s-hertogenbosch-1-100.stl",
+    "kapucijnenkerk-s-hertogenbosch-1-1000.stl"
+  ]
+}
