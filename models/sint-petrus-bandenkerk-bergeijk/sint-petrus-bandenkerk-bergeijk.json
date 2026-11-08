@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Petrus' Bandenkerk Bergeijk",
+  "origin": [
+    153012,
+    370230
+  ],
+  "xAxis": [
+    0.999,
+    0.04
+  ],
+  "groundHeight": 32.3,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1724100000000528"
+  ],
+  "description": "Gotische kruiskerk zonder westtoren met dakruiter en veelhoekig koor.",
+  "realWorld": {
+    "groundNapM": 32.3,
+    "topHeightM": 24.35,
+    "highestPointM": 24.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1724100000000528",
+    "https://www.ahn.nl/dataroom",
+    "https://www.openmonumentendag.nl/monument/hofkerk-3/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9258"
+  ],
+  "file": "sint-petrus-bandenkerk-bergeijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petrus-bandenkerk-bergeijk-1-100.stl",
+    "sint-petrus-bandenkerk-bergeijk-1-1000.stl"
+  ]
+}
