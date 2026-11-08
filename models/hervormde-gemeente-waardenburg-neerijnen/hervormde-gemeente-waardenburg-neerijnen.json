@@ -1,0 +1,42 @@
+{
+  "name": "Hervormde kerk Neerijnen",
+  "origin": [
+    147552,
+    427024
+  ],
+  "xAxis": [
+    0.9266,
+    0.3761
+  ],
+  "groundHeight": 4.6,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0304100000004453"
+  ],
+  "description": "Neogotische kruiskerk (A.M.A. Gulden, 1865) met westtoren van twee geledingen en naaldspits, lage oostbouw en aanbouwen; as langs de BAG-gevels, hoogtes uit AHN en foto's.",
+  "realWorld": {
+    "groundNapM": 4.6,
+    "ridgeM": 13.95,
+    "eaveM": 8.77,
+    "towerTopM": 30,
+    "lengthM": 30.15,
+    "transeptWidthM": 16.34,
+    "highestPointM": 30
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30371",
+    "https://reliwiki.nl/index.php?curid=13110",
+    "https://www.wikidata.org/wiki/Q17437114",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Neerijnen",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0304100000004453",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.openstreetmap.org/way/273714185"
+  ],
+  "file": "hervormde-gemeente-waardenburg-neerijnen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-gemeente-waardenburg-neerijnen-1-1000.stl"
+  ]
+}
