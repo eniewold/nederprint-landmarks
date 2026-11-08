@@ -1,0 +1,36 @@
+{
+  "name": "Synagoge Bergen op Zoom",
+  "origin": [
+    78819.55,
+    390026.9
+  ],
+  "xAxis": [
+    0.813,
+    -0.582
+  ],
+  "groundHeight": 7.07,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0748100000002259"
+  ],
+  "description": "Voormalige synagoge met hoog schilddak en drie hoge straatvensters.",
+  "realWorld": {
+    "groundNapM": 7.07,
+    "ridgeHeightM": 12.4,
+    "highestPointM": 12.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0748100000002259",
+    "https://www.ahn.nl/dataroom",
+    "https://www.openmonumentendag.nl/monument/synagoge-5/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9181"
+  ],
+  "file": "synagoge-bergen-op-zoom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "synagoge-bergen-op-zoom-1-100.stl",
+    "synagoge-bergen-op-zoom-1-1000.stl"
+  ]
+}
