@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Ludgerkerk Garnwerd",
+  "origin": [
+    228554.9,
+    591480.8
+  ],
+  "xAxis": [
+    0.984,
+    0.177
+  ],
+  "groundHeight": 2.337,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000007921"
+  ],
+  "description": "Romaans-gotische zaalkerk met vijfzijdig koor en zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 2.337,
+    "ahnRoofNapM": 28.8,
+    "highestPointM": 26.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000007921",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15559",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Ludgerkerk_(Garnwerd)",
+    "https://www.groningerkerken.nl/downloads/sogk_folder_kerk_garnwerd_lr.pdf",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-ludgerkerk-garnwerd.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-ludgerkerk-garnwerd-1-1000.stl"
+  ]
+}
