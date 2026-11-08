@@ -1,0 +1,36 @@
+{
+  "name": "Heilig Hartkerk Boxtel",
+  "origin": [
+    150135,
+    400084
+  ],
+  "xAxis": [
+    0.87,
+    0.493
+  ],
+  "groundHeight": 8.1,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0757100001429688"
+  ],
+  "description": "Neogotische kruisbasiliek met twee hoektorentjes, dakruiter en verbonden pastorie.",
+  "realWorld": {
+    "groundNapM": 8.1,
+    "topHeightM": 39.5,
+    "highestPointM": 39.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0757100001429688",
+    "https://www.ahn.nl/dataroom",
+    "https://www.openmonumentendag.nl/monument/heilig-hartkerk-voormalig/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516624"
+  ],
+  "file": "heilig-hartkerk-boxtel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilig-hartkerk-boxtel-1-100.stl",
+    "heilig-hartkerk-boxtel-1-1000.stl"
+  ]
+}
