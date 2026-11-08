@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Aldegundiskerk Buggenum",
+  "origin": [
+    196449.6,
+    360424.6
+  ],
+  "xAxis": [
+    0.9998,
+    0.022
+  ],
+  "groundHeight": 18.938,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1640100000035611"
+  ],
+  "description": "Naoorlogse driebeukige kerk met behouden driezijdig koor en een toren met hoge piramidespits.",
+  "realWorld": {
+    "groundNapM": 18.938,
+    "towerHeightM": 46.7,
+    "highestPointM": 46.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1640100000035611",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/buggenum/aldegundis",
+    "https://www.dbnl.org/tekst/sten009monu08_01/sten009monu08_01_0032.php"
+  ],
+  "file": "sint-aldegundiskerk-buggenum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-aldegundiskerk-buggenum-1-1000.stl"
+  ]
+}
