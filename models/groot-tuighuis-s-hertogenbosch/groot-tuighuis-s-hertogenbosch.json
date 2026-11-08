@@ -1,0 +1,36 @@
+{
+  "name": "Groot Tuighuis 's-Hertogenbosch",
+  "origin": [
+    149890,
+    410924
+  ],
+  "xAxis": [
+    0.9999,
+    0.012
+  ],
+  "groundHeight": 5.64,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000227151"
+  ],
+  "description": "Voormalige Sint-Jacobskerk met basilicale doorsnede en driezijdige koorsluiting.",
+  "realWorld": {
+    "groundNapM": 5.64,
+    "ridgeHeightM": 23.5,
+    "highestPointM": 23.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0796100000227151",
+    "https://www.ahn.nl/dataroom",
+    "https://www.erfgoedshertogenbosch.nl/verhalen/geschiedenis-van-het-groot-tuighuis",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21585"
+  ],
+  "file": "groot-tuighuis-s-hertogenbosch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "groot-tuighuis-s-hertogenbosch-1-100.stl",
+    "groot-tuighuis-s-hertogenbosch-1-1000.stl"
+  ]
+}
