@@ -1,0 +1,60 @@
+{
+  "name": "Sint-Lambertuskerk Maasbommel",
+  "origin": [
+    165161,
+    425690
+  ],
+  "xAxis": [
+    -0.0105,
+    1
+  ],
+  "groundHeight": 8.55,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      9.2
+    ],
+    [
+      0,
+      -9.8
+    ],
+    [
+      -17.5,
+      -0.15
+    ],
+    [
+      23.5,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0668100000004445"
+  ],
+  "description": "Neogotische basiliek (C. van Dijk, 1868-1869) met zijbeuken, driezijdig koor, kapellen en sacristie; toren met wimbergen, pinakels en naaldspits aan de dijk. X van toren naar koor, z = 0 op NAP +8,55 m.",
+  "realWorld": {
+    "groundNapM": 8.55,
+    "naveRidgeNapM": 29.35,
+    "towerWallNapM": 37.5,
+    "spireTopNapM": 55,
+    "lengthM": 37,
+    "widthM": 15.4,
+    "highestPointM": 46.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0668100000004445",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/523092",
+    "https://dbnl.org/tekst/sten009monu05_01/sten009monu05_01_0144.php",
+    "https://commons.wikimedia.org/wiki/File:Maasbommel,_de_Sint-Lambertuskerk_RM523092_IMG_4122_2018-06-06_13.43.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maasbommel_Rijksmonument_523092_RK_kerk_van_opzij.JPG",
+    "https://commons.wikimedia.org/wiki/File:Maasbommel_Rijksmonument_523092_RK_kerk_achteraanzicht.JPG",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-lambertuskerk-maasbommel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-maasbommel-1-1000.stl"
+  ]
+}
