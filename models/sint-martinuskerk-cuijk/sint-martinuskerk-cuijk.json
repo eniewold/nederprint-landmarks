@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Martinuskerk Cuijk",
+  "origin": [
+    189234,
+    415695.5
+  ],
+  "xAxis": [
+    0.965,
+    0.262
+  ],
+  "groundHeight": 13.3,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1684100000010833"
+  ],
+  "description": "Neogotische kruisbasiliek met twee torens; de losstaande historische toren blijft behouden.",
+  "realWorld": {
+    "groundNapM": 13.3,
+    "towerHeightM": 65,
+    "highestPointM": 64.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1684100000010833",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.verrassendplattelandvancuijk.nl/wp-content/uploads/2024/04/VPvC_brochure_2024_lr.pdf",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11623",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Martinuskerk,_Cuijk"
+  ],
+  "file": "sint-martinuskerk-cuijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-cuijk-1-100.stl"
+  ]
+}
