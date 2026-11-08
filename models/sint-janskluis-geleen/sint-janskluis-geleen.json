@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Janskluis Geleen",
+  "origin": [
+    186309.225,
+    330142.375
+  ],
+  "xAxis": [
+    0.392,
+    0.92
+  ],
+  "groundHeight": 62.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1883100000039236"
+  ],
+  "description": "Bakstenen kluis met lang zadeldak, driezijdige sluiting en vierkante dakruiter met naaldspits.",
+  "realWorld": {
+    "groundNapM": 62.2,
+    "highestPointM": 11.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1883100000039236",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16045",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/geleen/st-janskluis",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Janskluis,_Geleen"
+  ],
+  "file": "sint-janskluis-geleen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-janskluis-geleen-1-1000.stl"
+  ]
+}
