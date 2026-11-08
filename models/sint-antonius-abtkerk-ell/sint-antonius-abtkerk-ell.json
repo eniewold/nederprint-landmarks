@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Antonius Abtkerk Ell",
+  "origin": [
+    183449.27,
+    359033.52
+  ],
+  "xAxis": [
+    0.793,
+    -0.608
+  ],
+  "groundHeight": 29.6,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1640100000057008"
+  ],
+  "description": "Driebeukige basiliek met rond koor, lage zijbeuken en vierkante noordelijke toren met tentdak.",
+  "realWorld": {
+    "groundNapM": 29.6,
+    "towerHeightM": 27.8,
+    "highestPointM": 27.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1640100000057008",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://cuatro.sim-cdn.nl/leudal/uploads/rapportage-_kerkenvisie_gemeente_leudal.pdf",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Antonius_Abtkerk_(Ell_(Limburg))"
+  ],
+  "file": "sint-antonius-abtkerk-ell.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abtkerk-ell-1-100.stl",
+    "sint-antonius-abtkerk-ell-1-1000.stl"
+  ]
+}
