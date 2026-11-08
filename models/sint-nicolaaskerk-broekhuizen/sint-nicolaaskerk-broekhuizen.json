@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Nicolaaskerk Broekhuizen",
+  "origin": [
+    208955.7,
+    388835.5
+  ],
+  "xAxis": [
+    0.99875,
+    -0.04998
+  ],
+  "groundHeight": 18.8,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1507100000016898"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor, sacristie, portaal en dubbele dakruiter.",
+  "realWorld": {
+    "groundNapM": 18.8,
+    "ahnTopNapM": 43.1,
+    "highestPointM": 24.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1507100000016898",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11091",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/broekhuizen/nicolaas",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Nicolaaskerk,_Broekhuizen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-nicolaaskerk-broekhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-nicolaaskerk-broekhuizen-1-100.stl",
+    "sint-nicolaaskerk-broekhuizen-1-1000.stl"
+  ]
+}
