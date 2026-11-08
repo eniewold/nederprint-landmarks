@@ -1,0 +1,36 @@
+{
+  "name": "Oude Sint-Salviuskerk Limbricht",
+  "origin": [
+    186694,
+    336328
+  ],
+  "xAxis": [
+    0.973,
+    -0.23
+  ],
+  "groundHeight": 40.04,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1883100000026544"
+  ],
+  "description": "Tweebeukige kerk met twee trapgevels, lager romaans koor en torenspits.",
+  "realWorld": {
+    "groundNapM": 40.04,
+    "ahnTopNapM": 69.72,
+    "highestPointM": 29.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1883100000026544",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/limbricht/salvius-oude-kerk",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Salviuskerk_(Limbricht)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "oude-sint-salviuskerk-limbricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-sint-salviuskerk-limbricht-1-100.stl",
+    "oude-sint-salviuskerk-limbricht-1-1000.stl"
+  ]
+}
