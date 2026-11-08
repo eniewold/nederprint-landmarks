@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Kerk Oene",
+  "origin": [
+    199974,
+    484226
+  ],
+  "xAxis": [
+    0.9915,
+    -0.13
+  ],
+  "groundHeight": 4.929,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0232100000000509"
+  ],
+  "description": "Dorpskerk met romaanse westtoren, driebeukig schip, koor en noordelijke dwarsvleugel.",
+  "realWorld": {
+    "groundNapM": 4.929,
+    "ahnTopNapM": 29.196,
+    "highestPointM": 24.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0232100000000509",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15349",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Oene)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dbnl.org/tekst/sten009monu05_01/sten009monu05_01_0160.php"
+  ],
+  "file": "hervormde-kerk-oene.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-oene-1-1000.stl"
+  ]
+}
