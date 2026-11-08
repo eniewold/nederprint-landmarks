@@ -1,0 +1,58 @@
+{
+  "name": "Sint-Mauritiuskerk Schin op Geul",
+  "origin": [
+    189074,
+    318485
+  ],
+  "xAxis": [
+    0.99,
+    -0.14
+  ],
+  "groundHeight": 90.7,
+  "groundOffsetMetres": -0.9,
+  "groundSamplePoints": [
+    [
+      -4,
+      0
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      15,
+      -9
+    ],
+    [
+      35,
+      -9
+    ],
+    [
+      40,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0994100002017570"
+  ],
+  "description": "Middeleeuws schip met 18e-eeuwse toren, ronde koorsluiting en 20e-eeuwse kruisuitbreiding.",
+  "realWorld": {
+    "groundNapM": 90.7,
+    "spireHeightM": 22.7,
+    "highestPointM": 22.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0994100002017570",
+    "https://www.ahn.nl/dataroom",
+    "https://kerkschinopgeul.nl/historie/",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Sint-Mauritiuskerk_(Schin_op_Geul)"
+  ],
+  "file": "sint-mauritiuskerk-schin-op-geul.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-mauritiuskerk-schin-op-geul-1-100.stl",
+    "sint-mauritiuskerk-schin-op-geul-1-1000.stl"
+  ]
+}
