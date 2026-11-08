@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Pieterskerk Tricht",
+  "origin": [
+    146941.5,
+    433421.5
+  ],
+  "xAxis": [
+    0.978,
+    0.21
+  ],
+  "groundHeight": 4.097,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000020884"
+  ],
+  "description": "Driebeukige kerk met gemeenschappelijk dak, driezijdig koor, doopkapel en vierzijdige torenspits.",
+  "realWorld": {
+    "groundNapM": 4.097,
+    "ahnTopNapM": 32.515,
+    "highestPointM": 26.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000020884",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16521",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16522",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Tricht",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://maranatha-tricht.nl/historie-van-het-kerkgebouw/"
+  ],
+  "file": "sint-pieterskerk-tricht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-pieterskerk-tricht-1-1000.stl"
+  ]
+}
