@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Budel",
+  "origin": [
+    168166,
+    365070
+  ],
+  "xAxis": [
+    0.3,
+    -0.954
+  ],
+  "groundHeight": 31.668,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1706100000058849"
+  ],
+  "description": "Driezijdig gesloten zaalkerk met aanbouw; dakruiter in 2020 verwijderd en restauratie uitgesteld.",
+  "realWorld": {
+    "groundNapM": 31.668,
+    "ridgeNapM": 43.204,
+    "highestPointM": 11.54
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1706100000058849",
+    "https://www.hetkerkjebudel.nl/nieuws",
+    "https://www.hetkerkjebudel.nl/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11269"
+  ],
+  "file": "nederlands-hervormde-kerk-budel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-budel-1-100.stl"
+  ]
+}
