@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Joriskerk Venlo",
+  "origin": [
+    209500,
+    375940
+  ],
+  "xAxis": [
+    0.99863,
+    -0.05234
+  ],
+  "groundHeight": 18.33,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0983100000006052"
+  ],
+  "description": "Laatmiddeleeuwse gasthuiskapel met haakse uitbreiding uit 1719 en achtkante dakruiter.",
+  "realWorld": {
+    "groundNapM": 18.33,
+    "towerHeightM": 22.6,
+    "highestPointM": 22.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0983100000006052",
+    "https://www.ahn.nl/dataroom",
+    "https://www.visitnoordlimburg.nl/nl/joriskerk",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Joriskerk,_Venlo"
+  ],
+  "file": "sint-joriskerk-venlo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-joriskerk-venlo-1-100.stl",
+    "sint-joriskerk-venlo-1-1000.stl"
+  ]
+}
