@@ -1,0 +1,37 @@
+{
+  "name": "Jacobus de Meerderekerk Bocholtz",
+  "origin": [
+    198644.25,
+    314432.75
+  ],
+  "xAxis": [
+    0.903,
+    0.4296
+  ],
+  "groundHeight": 166.7,
+  "groundOffsetMetres": -0.6,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0965100000802486"
+  ],
+  "description": "Neogotische kruisbasiliek met twee dwarsschepen, veelhoekig koor, lagere zijbeuken, sacristie en westtoren met achtkantige spits.",
+  "realWorld": {
+    "groundNapM": 166.7,
+    "towerHeightM": 58,
+    "highestPointM": 57.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0965100000802486",
+    "https://www.dolmans.com/nieuws/mvl-groep-herstelt-torenspits-van-kerk-in-bocholtz/",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/bocholtz/jacobus-de-meerdere",
+    "https://commons.wikimedia.org/wiki/Category:Jacobus_de_Merderekerk_(Bocholtz)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "jacobus-de-meerderekerk-bocholtz.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobus-de-meerderekerk-bocholtz-1-100.stl",
+    "jacobus-de-meerderekerk-bocholtz-1-1000.stl"
+  ]
+}
