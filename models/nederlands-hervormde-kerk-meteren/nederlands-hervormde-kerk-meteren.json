@@ -1,0 +1,47 @@
+{
+  "name": "Nederlands Hervormde Kerk Meteren",
+  "origin": [
+    147800.44,
+    430615.01
+  ],
+  "xAxis": [
+    0.9141,
+    0.4055
+  ],
+  "groundHeight": 4.42,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000008970"
+  ],
+  "description": "Middeleeuwse dorpskerk, verbouwd in 1837 en rond 1875: toren met tentdak, zaalkerk met zadeldak, driezijdig gesloten koor met schilddak en een noordelijke aanbouw; X langs de nok naar het koor, maten uit BAG, 3DBAG en AHN, details geschat van foto's.",
+  "realWorld": {
+    "groundNapM": 4.42,
+    "naveRidgeM": 12.6,
+    "naveEavesM": 6.3,
+    "choirRidgeM": 8.75,
+    "towerEavesM": 16.35,
+    "towerApexM": 25.3,
+    "highestPointM": 25.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000008970",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16509",
+    "https://www.dbnl.org/tekst/sten009monu05_01/sten009monu05_01_0148.php",
+    "https://www.wikidata.org/wiki/Q17374086",
+    "https://www.openstreetmap.org/way/274830706",
+    "https://commons.wikimedia.org/wiki/File:Meteren,_de_Nederlands_Hervormde_kerk_RM16509_foto6_2015-08-06_12.00.jpg",
+    "https://commons.wikimedia.org/wiki/File:Meteren_NH_Kerk.jpg",
+    "https://commons.wikimedia.org/wiki/File:N-H_kerk_Meteren.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_van_kerk_en_kerktoren_met_tentdak,_vanuit_het_zuidwesten_-_Meteren_-_20409696_-_RCE.jpg"
+  ],
+  "file": "nederlands-hervormde-kerk-meteren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-meteren-1-1000.stl"
+  ]
+}
