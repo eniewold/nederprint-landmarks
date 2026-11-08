@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Gertrudiskerk Bergen op Zoom",
+  "origin": [
+    78694,
+    390066
+  ],
+  "xAxis": [
+    0.99755,
+    -0.07
+  ],
+  "groundHeight": 9.948,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0748100000009084"
+  ],
+  "description": "Grote historische kerk met twee dwarsdelen en de Peperbus als torenbekroning.",
+  "realWorld": {
+    "groundNapM": 9.948,
+    "ahn4TopNapM": 69.25,
+    "ahn5TopNapM": 71.23,
+    "towerM": 62.1,
+    "highestPointM": 62.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0748100000009084",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9116",
+    "https://misrooster.nl/kerk/bergen-op-zoom/grote-of-st-gertrudiskerk",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-gertrudiskerk-bergen-op-zoom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gertrudiskerk-bergen-op-zoom-1-100.stl",
+    "sint-gertrudiskerk-bergen-op-zoom-1-1000.stl"
+  ]
+}
