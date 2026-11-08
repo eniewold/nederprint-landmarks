@@ -1,0 +1,36 @@
+{
+  "name": "Protestantse Kerk Gennep",
+  "origin": [
+    195184,
+    412672
+  ],
+  "xAxis": [
+    0.8,
+    0.6
+  ],
+  "groundHeight": 13.58,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0907100000022021"
+  ],
+  "description": "Zaalkerk met driezijdige sluiting, consistorie en achthoekige dubbele dakruiter.",
+  "realWorld": {
+    "groundNapM": 13.58,
+    "ahnTopNapM": 41.21,
+    "highestPointM": 27.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0907100000022021",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/gennep/hervormde-kerk-gennep",
+    "https://commons.wikimedia.org/wiki/Category:Protestantse_Kerk_(Gennep)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "protestantse-kerk-gennep.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-gennep-1-100.stl",
+    "protestantse-kerk-gennep-1-1000.stl"
+  ]
+}
