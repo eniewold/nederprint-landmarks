@@ -1,0 +1,37 @@
+{
+  "name": "Oude Jan Velp",
+  "origin": [
+    195741,
+    444910
+  ],
+  "xAxis": [
+    0.955,
+    0.294
+  ],
+  "groundHeight": 13.864,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000009021"
+  ],
+  "description": "Romaanse zaalkerk met rechthoekig koor, noordkapel en middeleeuwse toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 13.864,
+    "publishedTowerHeightM": 35,
+    "ahnTopNapM": 36.79,
+    "highestPointM": 34.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0275100000009021",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42149",
+    "https://commons.wikimedia.org/wiki/Category:Oude_kerk,_Velp",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://pgvelp.nl/beheren-geschiedenis-oude-jan/"
+  ],
+  "file": "oude-jan-velp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-jan-velp-1-1000.stl"
+  ]
+}
