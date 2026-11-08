@@ -1,0 +1,36 @@
+{
+  "name": "Parochiekerk St. Catharina Lemiers",
+  "origin": [
+    197674,
+    310910
+  ],
+  "xAxis": [
+    0.667,
+    0.745
+  ],
+  "groundHeight": 153.02,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0981100000015381"
+  ],
+  "description": "Basilicale kruiskerk met twee achthoekige torenspitsen.",
+  "realWorld": {
+    "groundNapM": 153.02,
+    "ahnTopNapM": 178.19,
+    "highestPointM": 24.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0981100000015381",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/lemiers/catharina-van-alexandrie",
+    "https://kerkfotografie.nl/heilige-catharina-van-alexandrie-lemiers/",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "parochiekerk-st-catharina-lemiers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "parochiekerk-st-catharina-lemiers-1-100.stl",
+    "parochiekerk-st-catharina-lemiers-1-1000.stl"
+  ]
+}
