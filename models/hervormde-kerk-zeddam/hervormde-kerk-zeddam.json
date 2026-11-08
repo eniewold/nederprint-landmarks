@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde Kerk Zeddam",
+  "origin": [
+    214731.5,
+    435358.3
+  ],
+  "xAxis": [
+    -0.222,
+    0.975
+  ],
+  "groundHeight": 25.501,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1955100000008598"
+  ],
+  "description": "Eenvoudige zaalkerk met afgewolfd dak, portaal en achthoekige dakruiter.",
+  "realWorld": {
+    "groundNapM": 25.501,
+    "ahnTopNapM": 39.436,
+    "highestPointM": 14.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1955100000008598",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/476730",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Zeddam)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "hervormde-kerk-zeddam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-zeddam-1-1000.stl"
+  ]
+}
