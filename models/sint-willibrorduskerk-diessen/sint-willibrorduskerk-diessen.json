@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Willibrorduskerk Diessen",
+  "origin": [
+    140290,
+    387374
+  ],
+  "xAxis": [
+    0.9798,
+    0.2
+  ],
+  "groundHeight": 17.696,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0798100000006301"
+  ],
+  "description": "Driebeukige gotische kerk met laag dwarsschip, koor en rijke westtoren.",
+  "realWorld": {
+    "groundNapM": 17.696,
+    "ahn5RoofNapM": 35.17,
+    "ahn5TowerNapM": 76.15,
+    "highestPointM": 58.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0798100000006301",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12898",
+    "https://commons.wikimedia.org/wiki/Category:Willibrordus,_Diessen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-willibrorduskerk-diessen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-diessen-1-100.stl",
+    "sint-willibrorduskerk-diessen-1-1000.stl"
+  ]
+}
