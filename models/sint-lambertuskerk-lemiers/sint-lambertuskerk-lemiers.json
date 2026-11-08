@@ -1,0 +1,58 @@
+{
+  "name": "Sint-Lambertuskerk Lemiers",
+  "origin": [
+    197324.25,
+    309653.25
+  ],
+  "xAxis": [
+    0.975,
+    0.222
+  ],
+  "groundHeight": 195.8,
+  "groundOffsetMetres": -0.8,
+  "groundSamplePoints": [
+    [
+      -4,
+      -5
+    ],
+    [
+      8,
+      -5
+    ],
+    [
+      20,
+      -5
+    ],
+    [
+      20,
+      8
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0981100000015856"
+  ],
+  "description": "Kerk van Lambertus en Genoveva in Holset, met drie verspringende dakvolumes en naaldspits op de westtoren.",
+  "realWorld": {
+    "groundNapM": 195.8,
+    "spireHeightM": 25.7,
+    "highestPointM": 25.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0981100000015856",
+    "https://www.ahn.nl/dataroom",
+    "https://bedevaart.meertens.knaw.nl/plaats/343",
+    "https://commons.wikimedia.org/wiki/Category:HH._Lambertus_en_Genovevakerk"
+  ],
+  "file": "sint-lambertuskerk-lemiers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-lemiers-1-100.stl",
+    "sint-lambertuskerk-lemiers-1-1000.stl"
+  ]
+}
