@@ -1,0 +1,37 @@
+{
+  "name": "Samen-op-Wegkerk Berlicum",
+  "origin": [
+    154915,
+    410603
+  ],
+  "xAxis": [
+    0.99499,
+    -0.1
+  ],
+  "groundHeight": 6.657,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0845100000012674"
+  ],
+  "description": "Herbouwde kerktoren met naaldspits, historisch schip en lage moderne aanbouw.",
+  "realWorld": {
+    "groundNapM": 6.657,
+    "ahn4TopNapM": 31.23,
+    "ahn5TopNapM": 32.82,
+    "highestPointM": 26.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0845100000012674",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9428",
+    "https://beta.bhic.nl/verhalen/het-protestantse-kerkje",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "samen-op-weg-kerk-berlicum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "samen-op-weg-kerk-berlicum-1-100.stl",
+    "samen-op-weg-kerk-berlicum-1-1000.stl"
+  ]
+}
