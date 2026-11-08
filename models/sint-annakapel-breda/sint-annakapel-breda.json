@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Annakapel Breda",
+  "origin": [
+    115685.63,
+    400272.81
+  ],
+  "xAxis": [
+    0.9964,
+    0.0848
+  ],
+  "groundHeight": 4.47,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000022260"
+  ],
+  "description": "Driezijdig gesloten kapel met klokkenstoel aan de westgevel.",
+  "realWorld": {
+    "groundNapM": 4.47,
+    "towerHeightM": 13.43,
+    "highestPointM": 13.43
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000022260",
+    "https://www.ahn.nl/dataroom",
+    "https://augustinusparochiebreda.nl/kerken/annakapel/",
+    "https://commons.wikimedia.org/wiki/Category:St._Annakapel_(Breda)"
+  ],
+  "file": "sint-annakapel-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakapel-breda-1-100.stl",
+    "sint-annakapel-breda-1-1000.stl"
+  ]
+}
