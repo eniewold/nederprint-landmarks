@@ -1,0 +1,38 @@
+{
+  "name": "Kloosterkerk Ten Boer",
+  "origin": [
+    242010,
+    588532.5
+  ],
+  "xAxis": [
+    0.9994,
+    0.0355
+  ],
+  "groundHeight": 1.614,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0009100007678505"
+  ],
+  "description": "Romaans-gotische kloosterkerk met dakruiter, traptoren en zuidelijke aanbouw.",
+  "realWorld": {
+    "groundNapM": 1.614,
+    "publishedRidgeM": 17.8,
+    "publishedTowerM": 28,
+    "ahnPeakNapM": 27.16,
+    "highestPointM": 25.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0009100007678505",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9779",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.pkntenboer.nl/hervormde/de-kloosterkerk-van-ten-boer/",
+    "https://commons.wikimedia.org/wiki/File:Romanogotische_kloosterkerk_van_Ten_Boer.jpg"
+  ],
+  "file": "kloosterkerk-ten-boer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kloosterkerk-ten-boer-1-1000.stl"
+  ]
+}
