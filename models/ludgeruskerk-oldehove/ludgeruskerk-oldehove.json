@@ -1,0 +1,69 @@
+{
+  "name": "Ludgeruskerk Oldehove",
+  "origin": [
+    222091.268,
+    591308.816
+  ],
+  "xAxis": [
+    -0.994559,
+    -0.104174
+  ],
+  "groundHeight": 2.1,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -22,
+      -7
+    ],
+    [
+      -12,
+      -8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      7,
+      -7
+    ],
+    [
+      15,
+      -5
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      -12,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0056100000002126"
+  ],
+  "description": "Rechtgesloten zaalkerk met forse toren en zadeldak.",
+  "realWorld": {
+    "groundNapM": 2.1,
+    "naveRidgeM": 14.7,
+    "towerRidgeM": 28.9,
+    "highestPointM": 28.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0056100000002126",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31395"
+  ],
+  "file": "ludgeruskerk-oldehove.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "ludgeruskerk-oldehove-1-1000.stl"
+  ]
+}
