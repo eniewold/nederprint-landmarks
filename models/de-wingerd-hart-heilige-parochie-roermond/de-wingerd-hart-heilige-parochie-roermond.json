@@ -1,0 +1,36 @@
+{
+  "name": "Heilig Hart van Jezuskerk Roermond",
+  "origin": [
+    197801.75,
+    355886.75
+  ],
+  "xAxis": [
+    0.906,
+    0.423
+  ],
+  "groundHeight": 27.415,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0957100000260553"
+  ],
+  "description": "Kruiskerk met achthoekige vieringtoren, koepel en vier hoektorens.",
+  "realWorld": {
+    "groundNapM": 27.415,
+    "ahn5TopNapM": 75.986,
+    "highestPointM": 48.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0957100000260553",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520535",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/roermond/h-hart-van-jezus",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "de-wingerd-hart-heilige-parochie-roermond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-wingerd-hart-heilige-parochie-roermond-1-100.stl",
+    "de-wingerd-hart-heilige-parochie-roermond-1-1000.stl"
+  ]
+}
