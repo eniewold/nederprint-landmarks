@@ -1,0 +1,66 @@
+{
+  "name": "Margaretha Hardenbergkerk Wildervank",
+  "origin": [
+    253688.234,
+    566429.996
+  ],
+  "xAxis": [
+    -0.944,
+    0.33
+  ],
+  "groundHeight": 3.4,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -15,
+      -10
+    ],
+    [
+      5,
+      -20
+    ],
+    [
+      12,
+      -10
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      12,
+      10
+    ],
+    [
+      5,
+      20
+    ],
+    [
+      -18,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0047100000268724"
+  ],
+  "description": "Kruiskerk met schilddaken en een houten lantaarn met peerkoepel.",
+  "realWorld": {
+    "groundNapM": 3.4,
+    "naveRidgeM": 17.4,
+    "towerDomeApproxM": 24.1,
+    "highestPointM": 24.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0047100000268724",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://margarethahardenbergcultuurcentrum.nl/geschiedenis/geschiedenis-van-de-bouw/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36883"
+  ],
+  "file": "margaretha-hardenbergkerk-wildervank.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "margaretha-hardenbergkerk-wildervank-1-1000.stl"
+  ]
+}
