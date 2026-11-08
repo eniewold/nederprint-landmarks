@@ -1,0 +1,36 @@
+{
+  "name": "Romboutstoren Andel",
+  "origin": [
+    131978.3,
+    421748.05
+  ],
+  "xAxis": [
+    0.985,
+    0.174
+  ],
+  "groundHeight": 2.2,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0874100000007662"
+  ],
+  "description": "Vrijstaande laatmiddeleeuwse toren met bakstenen spits en ruïnemuur.",
+  "realWorld": {
+    "groundNapM": 2.2,
+    "topHeightM": 23.5,
+    "highestPointM": 23.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0874100000007662",
+    "https://www.ahn.nl/dataroom",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39622",
+    "https://www.tankens.nl/over-tankens/actueel/romboutstoren-andel"
+  ],
+  "file": "romboutstoren-andel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "romboutstoren-andel-1-100.stl",
+    "romboutstoren-andel-1-1000.stl"
+  ]
+}
