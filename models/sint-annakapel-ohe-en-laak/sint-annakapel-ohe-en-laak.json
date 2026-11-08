@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Annakapel Ohé en Laak",
+  "origin": [
+    185956,
+    348161
+  ],
+  "xAxis": [
+    0.98,
+    0.2
+  ],
+  "groundHeight": 24.597,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1641100001092842"
+  ],
+  "description": "Neogotische kapel met koorsluiting, steunberen en naalddakruiter.",
+  "realWorld": {
+    "groundNapM": 24.597,
+    "ahnTopNapM": 37.65,
+    "highestPointM": 13.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1641100001092842",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/522195",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/ohe-en-laak/annakapel-ohe-en-laak",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-annakapel-ohe-en-laak.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakapel-ohe-en-laak-1-100.stl",
+    "sint-annakapel-ohe-en-laak-1-1000.stl"
+  ]
+}
