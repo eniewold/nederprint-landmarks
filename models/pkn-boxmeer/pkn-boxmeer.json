@@ -1,0 +1,37 @@
+{
+  "name": "Protestantse kerk Boxmeer",
+  "origin": [
+    194302.5,
+    407136
+  ],
+  "xAxis": [
+    0.02,
+    0.9998
+  ],
+  "groundHeight": 13.14,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0756100000003700"
+  ],
+  "description": "Waterstaatskerk met puntgevel, gebogen vensters en slanke dakruiter.",
+  "realWorld": {
+    "groundNapM": 13.14,
+    "ahn4TopNapM": 26.93,
+    "ahn5TopNapM": 29.595,
+    "highestPointM": 16.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000003700",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10042",
+    "https://www.pgmaasenpeel.nl/boxmeer",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "pkn-boxmeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "pkn-boxmeer-1-100.stl",
+    "pkn-boxmeer-1-1000.stl"
+  ]
+}
