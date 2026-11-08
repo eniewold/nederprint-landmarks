@@ -1,0 +1,58 @@
+{
+  "name": "Kerk Engelbert Groningen",
+  "origin": [
+    239209,
+    580983
+  ],
+  "xAxis": [
+    0.866,
+    0.5
+  ],
+  "groundHeight": -0.5,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -5
+    ],
+    [
+      -8,
+      -5
+    ],
+    [
+      8,
+      -5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      8,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0014100010903985"
+  ],
+  "description": "Middeleeuwse zaalkerk met driezijdig koor en vierzijdige dakruiter.",
+  "realWorld": {
+    "groundNapM": -0.5,
+    "roofRidgeM": 9.35,
+    "spireRoofEstimatedM": 15.1,
+    "highestPointM": 15.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0014100010903985",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18761",
+    "https://www.kerkengelbert.nl/historie"
+  ],
+  "file": "kerk-engelbert-groningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-engelbert-groningen-1-1000.stl"
+  ]
+}
