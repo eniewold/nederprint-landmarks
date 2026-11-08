@@ -1,0 +1,36 @@
+{
+  "name": "RK Kerk Onze Lieve Vrouw Visitatie Velp",
+  "origin": [
+    195242,
+    445294.5
+  ],
+  "xAxis": [
+    0.973,
+    0.23
+  ],
+  "groundHeight": 16.4,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0275100000005784"
+  ],
+  "description": "Neogotische kruisbasiliek met toren, hoge naaldspits en vieringruiter.",
+  "realWorld": {
+    "groundNapM": 16.4,
+    "towerHeightM": 63,
+    "highestPointM": 63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0275100000005784",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42147",
+    "https://www.skyscrapercenter.com/building/rk-kerk-onze-lieve-vrouw-visitatie/6294",
+    "https://kennis.cultureelerfgoed.nl/index.php/Complexen/519335"
+  ],
+  "file": "rk-kerk-onze-lieve-vrouw-visitatie-velp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "rk-kerk-onze-lieve-vrouw-visitatie-velp-1-1000.stl"
+  ]
+}
