@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Lambertuskerk Neeritter",
+  "origin": [
+    184204,
+    352736.5
+  ],
+  "xAxis": [
+    0.999,
+    0.045
+  ],
+  "groundHeight": 28.742,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1640100000053033"
+  ],
+  "description": "Gotische kerk met lagere zijbeuken en een romaanse westtoren met opvallende achthoekige peperbusbekroning.",
+  "realWorld": {
+    "groundNapM": 28.742,
+    "towerHeightM": 33.15,
+    "highestPointM": 33.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1640100000053033",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/neeritter/lambertus",
+    "https://commons.wikimedia.org/wiki/Category:Lambertus,_Neeritter"
+  ],
+  "file": "sint-lambertuskerk-neeritter.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-neeritter-1-NaN.stl"
+  ]
+}
