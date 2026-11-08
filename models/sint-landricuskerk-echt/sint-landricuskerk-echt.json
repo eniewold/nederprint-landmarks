@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Landricuskerk Echt",
+  "origin": [
+    188632,
+    346503
+  ],
+  "xAxis": [
+    0.995,
+    -0.1
+  ],
+  "groundHeight": 29.23,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1711100000004021"
+  ],
+  "description": "Driebeukige hallenkerk met driezijdig koor en moderne gesloten torenbekroning met nissen.",
+  "realWorld": {
+    "groundNapM": 29.23,
+    "ahnTopNapM": 84.69,
+    "highestPointM": 53.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1711100000004021",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/echt/landricus",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Landricuskerk,_Echt,_Limburg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-landricuskerk-echt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-landricuskerk-echt-1-100.stl",
+    "sint-landricuskerk-echt-1-1000.stl"
+  ]
+}
