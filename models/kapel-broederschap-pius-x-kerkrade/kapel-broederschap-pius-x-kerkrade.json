@@ -1,0 +1,36 @@
+{
+  "name": "Kapel Broederschap Pius X Kerkrade",
+  "origin": [
+    203199.4,
+    317876.7
+  ],
+  "xAxis": [
+    0.705,
+    -0.709
+  ],
+  "groundHeight": 165.2,
+  "groundOffsetMetres": -0.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0928100000116638"
+  ],
+  "description": "Kloosterkapel met vijfzijdig koor, dakruiter en haakse kloostervleugel.",
+  "realWorld": {
+    "groundNapM": 165.2,
+    "spireHeightM": 31.4,
+    "highestPointM": 31.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0928100000116638",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/bleijerheide/kloosterkapel-broeders-franciscanen-thans-kerk-st-maria-ter-engelen",
+    "https://commons.wikimedia.org/wiki/Category:Klooster_der_Broeders_Franciscanen_(Kerkrade)"
+  ],
+  "file": "kapel-broederschap-pius-x-kerkrade.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kapel-broederschap-pius-x-kerkrade-1-100.stl",
+    "kapel-broederschap-pius-x-kerkrade-1-1000.stl"
+  ]
+}
