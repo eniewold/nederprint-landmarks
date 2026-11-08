@@ -1,0 +1,35 @@
+{
+  "name": "Magnuskerk Bellingwolde",
+  "origin": [
+    274081.62,
+    571865.07
+  ],
+  "xAxis": [
+    0.99463,
+    0.10349
+  ],
+  "groundHeight": 1.439,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0007100000002920",
+    "NL.IMBAG.Pand.0007100000002921"
+  ],
+  "description": "Laatgotische kerk met vrijstaande klokkentoren met lantaarn en spits. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.439,
+    "highestPointM": 27.51
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0007100000002920",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8898",
+    "https://commons.wikimedia.org/wiki/Category:Magnuskerk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "magnuskerk-bellingwolde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "magnuskerk-bellingwolde-1-1000.stl"
+  ]
+}
