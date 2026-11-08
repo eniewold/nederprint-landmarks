@@ -1,0 +1,36 @@
+{
+  "name": "Kerk van Den Ham",
+  "origin": [
+    224369.4,
+    587573.5
+  ],
+  "xAxis": [
+    0.994,
+    0.109
+  ],
+  "groundHeight": 1.801,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0056100000002008"
+  ],
+  "description": "Zaalkerk op wierde met driezijdige sluiting en houten dakruiter.",
+  "realWorld": {
+    "groundNapM": 1.801,
+    "ahnTopNapM": 20.3,
+    "highestPointM": 18.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0056100000002008",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7081",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Den_Ham,_Zuidhorn)",
+    "https://www.kerkdenham.nl/historie",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerk-van-den-ham.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-den-ham-1-1000.stl"
+  ]
+}
