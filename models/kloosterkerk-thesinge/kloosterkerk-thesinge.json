@@ -1,0 +1,34 @@
+{
+  "name": "Kloosterkerk Thesinge",
+  "origin": [
+    239231.4,
+    587559.5
+  ],
+  "xAxis": [
+    0.9998,
+    0.017
+  ],
+  "groundHeight": 0.047,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0009100007678907"
+  ],
+  "description": "Overgebleven koor van de kloosterkerk met halfronde sluiting, schilddak en kleine houten dakruiter.",
+  "realWorld": {
+    "groundNapM": 0.047,
+    "highestPointM": 19.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0009100007678907",
+    "https://www.groningerkerken.nl/downloads/sogk_folder_kerk_thesinge.pdf",
+    "https://commons.wikimedia.org/wiki/Category:Kloosterkerk,_Thesinge",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kloosterkerk-thesinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kloosterkerk-thesinge-1-1000.stl"
+  ]
+}
