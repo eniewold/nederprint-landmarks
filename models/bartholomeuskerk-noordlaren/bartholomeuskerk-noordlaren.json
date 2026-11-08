@@ -1,0 +1,69 @@
+{
+  "name": "Bartholomeuskerk Noordlaren",
+  "origin": [
+    240786.805,
+    571250.947
+  ],
+  "xAxis": [
+    0.994776,
+    0.102082
+  ],
+  "groundHeight": 3.5,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -13,
+      -4
+    ],
+    [
+      -8,
+      -7
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      8,
+      -6
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      -8,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0017100000007055"
+  ],
+  "description": "Romaanse zaalkerk met versmald koor en zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 3.5,
+    "naveRidgeM": 13.4,
+    "towerRidgeM": 22.55,
+    "highestPointM": 22.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0017100000007055",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20292"
+  ],
+  "file": "bartholomeuskerk-noordlaren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "bartholomeuskerk-noordlaren-1-1000.stl"
+  ]
+}
