@@ -1,0 +1,36 @@
+{
+  "name": "Oude Kerk Dongen",
+  "origin": [
+    123717,
+    403918.5
+  ],
+  "xAxis": [
+    0.998,
+    -0.067
+  ],
+  "groundHeight": 5.935,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0766100000016975",
+    "NL.IMBAG.Pand.0766100000016890"
+  ],
+  "description": "Ruïnekerk met open schip, arcade, bewaard dwarspand en middeleeuwse toren.",
+  "realWorld": {
+    "groundNapM": 5.935,
+    "towerHeightM": 41.85,
+    "highestPointM": 41.85
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0766100000016975",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://oudekerkdongen.nl/historie/",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_of_Oude_Kerk,_Dongen"
+  ],
+  "file": "oude-kerk-dongen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-kerk-dongen-1-100.stl"
+  ]
+}
