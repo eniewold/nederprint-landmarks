@@ -1,0 +1,68 @@
+{
+  "name": "Laurentiuskerk Ginneken Breda",
+  "origin": [
+    113251,
+    397716
+  ],
+  "xAxis": [
+    0.98081,
+    0.195
+  ],
+  "groundHeight": 4.196,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -10
+    ],
+    [
+      6,
+      -14
+    ],
+    [
+      23,
+      -6
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      14,
+      7
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      -10,
+      7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0758100000007007"
+  ],
+  "description": "Laatgotische protestantse kruiskerk met ingebouwde westtoren en dakruiter.",
+  "realWorld": {
+    "groundNapM": 4.196,
+    "ahn4TopNapM": 32.63,
+    "ahn5TopNapM": 33.239,
+    "ahn5CrossingNapM": 30.019,
+    "highestPointM": 29
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000007007",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10355",
+    "https://protestantsegemeenteginneken.nl/geschiedenis.html",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "laurentiuskerk-breda.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "laurentiuskerk-breda-1-100.stl",
+    "laurentiuskerk-breda-1-1000.stl"
+  ]
+}
