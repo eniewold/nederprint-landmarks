@@ -1,0 +1,34 @@
+{
+  "name": "Hervormde kerk Ressen",
+  "origin": [
+    188112,
+    433611
+  ],
+  "xAxis": [
+    0.9981,
+    0.0613
+  ],
+  "groundHeight": 10.45,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1705100000001213"
+  ],
+  "description": "Romaanse toren en schip met hoger driezijdig koor en zuidkapel.",
+  "realWorld": {
+    "groundNapM": 10.45,
+    "highestPointM": 19.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1705100000001213",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://mijngelderland.nl/inhoud/routes/ommetje-ressen/kerk-en-kosterij",
+    "https://www.archimon.nl/gelderland/ressenherv.html"
+  ],
+  "file": "hervormde-kerk-ressen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-ressen-1-1000.stl"
+  ]
+}
