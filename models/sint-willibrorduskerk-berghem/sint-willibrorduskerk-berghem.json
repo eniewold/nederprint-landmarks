@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Willibrorduskerk Berghem",
+  "origin": [
+    167410.25,
+    420155.25
+  ],
+  "xAxis": [
+    -0.996,
+    -0.09
+  ],
+  "groundHeight": 8.057,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001484075"
+  ],
+  "description": "Grote kruiskerk met oude westtoren en ranke vieringsruiter.",
+  "realWorld": {
+    "groundNapM": 8.057,
+    "towerHeightM": 71.7,
+    "highestPointM": 71.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001484075",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://beta.bhic.nl/verhalen/de-h-willibrorduskerk-in-berghem",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk_(Berghem)"
+  ],
+  "file": "sint-willibrorduskerk-berghem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-berghem-1-100.stl"
+  ]
+}
