@@ -1,0 +1,69 @@
+{
+  "name": "Kerk van Marum",
+  "origin": [
+    212922.458,
+    573520.971
+  ],
+  "xAxis": [
+    -0.9559,
+    -0.2937
+  ],
+  "groundHeight": 3.2,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -10,
+      -4
+    ],
+    [
+      -5,
+      -5
+    ],
+    [
+      2,
+      -6
+    ],
+    [
+      7,
+      -6
+    ],
+    [
+      10,
+      -4
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      -7,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0025100000007244"
+  ],
+  "description": "Romaanse kerk met versmald koor, vijfzijdige koorsluiting en toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 3.2,
+    "naveRidgeM": 11.05,
+    "towerRoofApproxM": 24.65,
+    "highestPointM": 24.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0025100000007244",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28286"
+  ],
+  "file": "de-protestantse-gemeente-marum-noordwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-protestantse-gemeente-marum-noordwijk-1-1000.stl"
+  ]
+}
