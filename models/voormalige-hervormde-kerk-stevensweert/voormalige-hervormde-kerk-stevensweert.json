@@ -1,0 +1,36 @@
+{
+  "name": "Voormalige Hervormde kerk Stevensweert",
+  "origin": [
+    187014.7,
+    349218.7
+  ],
+  "xAxis": [
+    -0.99,
+    -0.13
+  ],
+  "groundHeight": 25.23,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1641100001080817"
+  ],
+  "description": "Driezijdig gesloten zaalkerk uit 1819 met houten geveltoren.",
+  "realWorld": {
+    "groundNapM": 25.23,
+    "towerHeightM": 15.1,
+    "highestPointM": 15.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1641100001080817",
+    "https://www.ahn.nl/dataroom",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/stevensweert/hervormde-kerk-voormalige",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Stevensweert)"
+  ],
+  "file": "voormalige-hervormde-kerk-stevensweert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "voormalige-hervormde-kerk-stevensweert-1-100.stl",
+    "voormalige-hervormde-kerk-stevensweert-1-1000.stl"
+  ]
+}
