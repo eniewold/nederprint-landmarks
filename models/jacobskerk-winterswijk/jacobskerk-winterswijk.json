@@ -1,0 +1,36 @@
+{
+  "name": "Jacobskerk Winterswijk",
+  "origin": [
+    246596.2,
+    443465.8
+  ],
+  "xAxis": [
+    0.99845,
+    0.05567
+  ],
+  "groundHeight": 34.481,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0294100000414172"
+  ],
+  "description": "Gotische kerk met hoger koor, grote westtoren en ingesnoerde spits. Geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 34.481,
+    "highestPointM": 57
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0294100000414172",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39053",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39054",
+    "https://www.jacobskerkwinterswijk.nl/",
+    "https://commons.wikimedia.org/wiki/Category:Jacobskerk_(Winterswijk)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "jacobskerk-winterswijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobskerk-winterswijk-1-1000.stl"
+  ]
+}
