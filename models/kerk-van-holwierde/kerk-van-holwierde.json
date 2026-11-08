@@ -1,0 +1,35 @@
+{
+  "name": "Kerk van Holwierde",
+  "origin": [
+    253749.75,
+    597820.25
+  ],
+  "xAxis": [
+    0.99993,
+    0.01184
+  ],
+  "groundHeight": 1.235,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0010100000017534"
+  ],
+  "description": "Kruiskerk met veelhoekig koor en negentiende-eeuwse dakruiter. De historische vrijstaande toren is niet meer aanwezig.",
+  "realWorld": {
+    "groundNapM": 1.235,
+    "highestPointM": 30.04
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0010100000017534",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9474",
+    "https://www.kerkholwierde.nl/historie",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Holwierde",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "kerk-van-holwierde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-holwierde-1-1000.stl"
+  ]
+}
