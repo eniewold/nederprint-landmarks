@@ -1,0 +1,37 @@
+{
+  "name": "Koepelkerk Sappemeer",
+  "origin": [
+    248995.15,
+    576334.35
+  ],
+  "xAxis": [
+    0.99977,
+    0.0214
+  ],
+  "groundHeight": 1.843,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0018100000110505"
+  ],
+  "description": "Achthoekige zaalkerk met gebogen koepeldak, portaal en gesloten lantaarn.",
+  "realWorld": {
+    "groundNapM": 1.843,
+    "ahnPeakNapM": 30.01,
+    "ahnCentralSurroundingNapM": 27.8,
+    "highestPointM": 25.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0018100000110505",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22269",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Sappemeer_-_Koepelkerk_1.jpg",
+    "https://www.koepelkerksappemeer.nl/de-koepelkerk/"
+  ],
+  "file": "koepelkerk-sappemeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "koepelkerk-sappemeer-1-1000.stl"
+  ]
+}
