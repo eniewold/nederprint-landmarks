@@ -1,0 +1,53 @@
+{
+  "name": "Nederlands Hervormde Kerk Rumpt",
+  "origin": [
+    140534.48,
+    432918.95
+  ],
+  "xAxis": [
+    0.9849,
+    0.1734
+  ],
+  "groundHeight": 3.5,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      8.8
+    ],
+    [
+      -12,
+      8.8
+    ],
+    [
+      9,
+      5.3
+    ],
+    [
+      -10,
+      -8.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0236100000008578"
+  ],
+  "description": "Driebeukige kerk met ingebouwde toren, hoger koor en zuidelijke kapel.",
+  "realWorld": {
+    "groundNapM": 3.5,
+    "highestPointM": 26.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0236100000008578",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16515",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16516",
+    "https://www.archimon.nl/gelderland/rumptherv.html"
+  ],
+  "file": "nederlands-hervormde-kerk-rumpt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-rumpt-1-1000.stl"
+  ]
+}
