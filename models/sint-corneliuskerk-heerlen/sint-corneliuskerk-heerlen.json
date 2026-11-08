@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Corneliuskerk Heerlen",
+  "origin": [
+    195074.5,
+    325344.7
+  ],
+  "xAxis": [
+    0.9894,
+    0.145
+  ],
+  "groundHeight": 96.33,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0917100000018184"
+  ],
+  "description": "Neoromaanse kruisbasiliek met tweelingtorens onder tentdaken en een halfronde apsis.",
+  "realWorld": {
+    "groundNapM": 96.33,
+    "towerHeightM": 30.55,
+    "highestPointM": 30.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0917100000018184",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.kerkgebouwen-in-limburg.nl/kerken/heerlerheide/cornelius",
+    "https://www.kerkramenindemijnstreek.nl/kerken/heerlerheide-corneliuskerk/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Corneliuskerk,_Heerlen"
+  ],
+  "file": "sint-corneliuskerk-heerlen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-corneliuskerk-heerlen-1-1000.stl"
+  ]
+}
