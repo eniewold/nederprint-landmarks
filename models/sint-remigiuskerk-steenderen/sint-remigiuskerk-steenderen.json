@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Remigiuskerk Steenderen",
+  "origin": [
+    209849.4,
+    453024.3
+  ],
+  "xAxis": [
+    0.99459663,
+    0.10381491
+  ],
+  "groundHeight": 10.293,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000016632"
+  ],
+  "description": "Pseudobasiliek met breed schip, driezijdig koor en stevige westtoren; +X loopt van toren naar koor.",
+  "realWorld": {
+    "groundNapM": 10.293,
+    "highestPointM": 42.06
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000016632",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34521",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Remigiuskerk,_Steenderen",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-remigiuskerk-steenderen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-remigiuskerk-steenderen-1-1000.stl"
+  ]
+}
