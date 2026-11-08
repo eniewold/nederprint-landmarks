@@ -1,0 +1,53 @@
+{
+  "name": "Johannes de Doper Zandeweer",
+  "origin": [
+    241126.977,
+    600924.28
+  ],
+  "xAxis": [
+    -0.999513,
+    -0.031219
+  ],
+  "groundHeight": 1.4,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      28,
+      21
+    ],
+    [
+      22,
+      21
+    ],
+    [
+      31,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1651100000009258",
+    "NL.IMBAG.Pand.1651100000009271"
+  ],
+  "description": "Zaalkerk met halfrond koor en vrijstaande zadeldaktoren op lager terrein.",
+  "realWorld": {
+    "churchGroundNapM": 2.7,
+    "towerGroundNapM": 1.4,
+    "naveRidgeM": 15.6,
+    "towerRoofApproxM": 24,
+    "highestPointM": 24
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000009258",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1651100000009271",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23471"
+  ],
+  "file": "johannes-de-doper-zandeweer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-de-doper-zandeweer-1-1000.stl",
+    "johannes-de-doper-zandeweer-grondplaat-1-1000.stl"
+  ]
+}
