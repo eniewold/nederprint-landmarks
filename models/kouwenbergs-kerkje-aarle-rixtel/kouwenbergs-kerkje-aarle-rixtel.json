@@ -1,0 +1,36 @@
+{
+  "name": "Kouwenbergs Kerkje Aarle-Rixtel",
+  "origin": [
+    172295.3,
+    391189.15
+  ],
+  "xAxis": [
+    -0.3907,
+    0.92052
+  ],
+  "groundHeight": 16.327,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1659100000008827"
+  ],
+  "description": "Rechthoekig zaalkerkje met topgevel en houten klokruiter.",
+  "realWorld": {
+    "groundNapM": 16.327,
+    "ahn4TopNapM": 27.97,
+    "ahn5TopNapM": 29.05,
+    "highestPointM": 12.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1659100000008827",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6943",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kouwenbergs-kerkje-aarle-rixtel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kouwenbergs-kerkje-aarle-rixtel-1-100.stl",
+    "kouwenbergs-kerkje-aarle-rixtel-1-1000.stl"
+  ]
+}
