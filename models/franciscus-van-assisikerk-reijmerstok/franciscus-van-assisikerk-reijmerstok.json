@@ -1,0 +1,37 @@
+{
+  "name": "Franciscus van Assisikerk Reijmerstok",
+  "origin": [
+    186829,
+    312388
+  ],
+  "xAxis": [
+    0.707,
+    -0.707
+  ],
+  "groundHeight": 171.5,
+  "groundOffsetMetres": -0.7,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1729100001032685"
+  ],
+  "description": "Eenbeukige kruiskerk met lagere dwarsarmen en dominante zadeldaktoren van Jos Wielders.",
+  "realWorld": {
+    "groundNapM": 171.5,
+    "towerHeightM": 22.95,
+    "highestPointM": 22.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1729100001032685",
+    "https://www.ahn.nl/dataroom",
+    "https://www.monumenten.nl/monument/491690",
+    "https://bisdom-roermond.org/Eeuwfeest-nieuwe-kerk-Reijmerstok",
+    "https://commons.wikimedia.org/wiki/Category:Franciscus_van_Assisikerk_(Reijmerstok)"
+  ],
+  "file": "franciscus-van-assisikerk-reijmerstok.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "franciscus-van-assisikerk-reijmerstok-1-100.stl",
+    "franciscus-van-assisikerk-reijmerstok-1-1000.stl"
+  ]
+}
