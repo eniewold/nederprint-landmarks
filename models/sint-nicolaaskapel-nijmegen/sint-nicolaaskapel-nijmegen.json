@@ -1,0 +1,56 @@
+{
+  "name": "Sint-Nicolaaskapel Nijmegen",
+  "origin": [
+    188248.63,
+    428948.18
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 32.782,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      -3,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      -3
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0268100000045513"
+  ],
+  "description": "Zestienzijdige kapel met achtzijdige kern, hellende daken en ingangsrisaliet op de Valkhofheuvel.",
+  "realWorld": {
+    "groundNapM": 32.782,
+    "highestPointM": 20
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0268100000045513",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31192",
+    "https://sint-nicolaas.eu/nijmegen/",
+    "https://www.brugnijmegen.nl/nieuws/algemeen/149537/open-monumentendag-nijmegen"
+  ],
+  "file": "sint-nicolaaskapel-nijmegen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-nicolaaskapel-nijmegen-1-100.stl"
+  ]
+}
