@@ -1,0 +1,40 @@
+{
+  "name": "Marktpleinkerk Winschoten",
+  "origin": [
+    265556,
+    574127
+  ],
+  "xAxis": [
+    0.9906,
+    0.1368
+  ],
+  "groundHeight": 2.85,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1895100000007017",
+    "NL.IMBAG.Pand.1895100000006739"
+  ],
+  "description": "Romaans-gotische zaalkerk en de vrijstaande achthoekig bekroonde toren d'Olle Witte.",
+  "realWorld": {
+    "groundNapM": 2.85,
+    "publishedTowerHeightM": 41,
+    "ahnPeakNapM": 46,
+    "highestPointM": 41
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1895100000007017",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1895100000006739",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39011",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39012",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.openmonumentendag.nl/wp-content/uploads/2019/01/Brochure_afdrukversie.pdf"
+  ],
+  "file": "marktpleinkerk-winschoten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "marktpleinkerk-winschoten-1-1000.stl",
+    "marktpleinkerk-winschoten-grondplaat-1-1000.stl"
+  ]
+}
