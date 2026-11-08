@@ -1,0 +1,35 @@
+{
+  "name": "Sint Willibrorduskerk Vierakker",
+  "origin": [
+    214440.8,
+    456447.2
+  ],
+  "xAxis": [
+    0.764,
+    0.645
+  ],
+  "groundHeight": 9.235,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1876100000012623"
+  ],
+  "description": "Neogotische driebeukige hallenkerk met koorsluiting, toren en aangebouwde pastorie.",
+  "realWorld": {
+    "groundNapM": 9.235,
+    "ahnTopNapM": 52.313,
+    "highestPointM": 42.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1876100000012623",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38333",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Willibrorduskerk,_Vierakker",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-willibrorduskerk-vierakker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-vierakker-1-1000.stl"
+  ]
+}
