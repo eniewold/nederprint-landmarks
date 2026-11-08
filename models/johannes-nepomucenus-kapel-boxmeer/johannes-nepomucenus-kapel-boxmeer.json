@@ -1,0 +1,36 @@
+{
+  "name": "Johannes Nepomucenus Kapel Boxmeer",
+  "origin": [
+    194340,
+    407148
+  ],
+  "xAxis": [
+    0.967,
+    0.256
+  ],
+  "groundHeight": 12.95,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0756100000006877"
+  ],
+  "description": "Zaalkapel uit 1737 met halsgevel, driezijdige sluiting en kleine dakruiter.",
+  "realWorld": {
+    "groundNapM": 12.95,
+    "topHeightM": 12.25,
+    "highestPointM": 12.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000006877",
+    "https://www.ahn.nl/dataroom",
+    "https://www.nepomukboxmeer.nl/home/de-nepomukkapel/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10041"
+  ],
+  "file": "johannes-nepomucenus-kapel-boxmeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-nepomucenus-kapel-boxmeer-1-100.stl",
+    "johannes-nepomucenus-kapel-boxmeer-1-1000.stl"
+  ]
+}
