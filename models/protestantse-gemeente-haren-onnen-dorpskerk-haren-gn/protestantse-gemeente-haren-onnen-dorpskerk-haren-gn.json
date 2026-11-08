@@ -1,0 +1,38 @@
+{
+  "name": "Dorpskerk Haren",
+  "origin": [
+    236422.5,
+    576896.5
+  ],
+  "xAxis": [
+    0.9039,
+    0.4278
+  ],
+  "groundHeight": 6.644,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0017100000005271"
+  ],
+  "description": "Dorpskerk met vierzijdige torenspits, schip, koor en consistorie.",
+  "realWorld": {
+    "groundNapM": 6.644,
+    "ahnPeakNapM": 53.72,
+    "ahnSurroundingRoofNapM": 48.84,
+    "publishedTowerHeightM": 42,
+    "highestPointM": 42
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0017100000005271",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20272",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk_(Haren,_Groningen)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.harendekrant.nl/nieuws/skyline-van-haren-wordt-gerepareerd/"
+  ],
+  "file": "protestantse-gemeente-haren-onnen-dorpskerk-haren-gn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-gemeente-haren-onnen-dorpskerk-haren-gn-1-1000.stl"
+  ]
+}
