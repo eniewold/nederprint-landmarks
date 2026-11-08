@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Pauluskerk Vaals",
+  "origin": [
+    199824,
+    309132
+  ],
+  "xAxis": [
+    0.53,
+    0.85
+  ],
+  "groundHeight": 205.585,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0981100000001113"
+  ],
+  "description": "Neogotische kruisbasiliek met zijdelingse toren en achtkantige naaldspits.",
+  "realWorld": {
+    "groundNapM": 205.585,
+    "ahn5TopNapM": 270.62,
+    "towerM": 63,
+    "highestPointM": 63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0981100000001113",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/36620",
+    "https://www.visitzuidlimburg.nl/te-doen-in-zuid-limburg/attracties-bezienswaardigheden/detail/sint-pauluskerk/393259/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "st-pauluskerk-vaals.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "st-pauluskerk-vaals-1-100.stl",
+    "st-pauluskerk-vaals-1-1000.stl"
+  ]
+}
