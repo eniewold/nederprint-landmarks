@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Martinuskerk Linne",
+  "origin": [
+    193413.25,
+    352198.5
+  ],
+  "xAxis": [
+    0.998,
+    0.065
+  ],
+  "groundHeight": 27.7,
+  "groundOffsetMetres": -0.8,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1641100001084157"
+  ],
+  "description": "Neoromaanse driebeukige basiliek met ronde apsis en toren met frontalen en achtkante spits.",
+  "realWorld": {
+    "groundNapM": 27.7,
+    "spireHeightM": 42.8,
+    "highestPointM": 42.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1641100001084157",
+    "https://www.ahn.nl/dataroom",
+    "https://www.monumenten.nl/monument/522193",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Martinuskerk,_Linne"
+  ],
+  "file": "sint-martinuskerk-linne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-linne-1-100.stl",
+    "sint-martinuskerk-linne-1-1000.stl"
+  ]
+}
