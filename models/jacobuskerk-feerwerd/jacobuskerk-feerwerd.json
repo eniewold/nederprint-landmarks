@@ -1,0 +1,58 @@
+{
+  "name": "Jacobuskerk Feerwerd",
+  "origin": [
+    226872.7,
+    591652
+  ],
+  "xAxis": [
+    0.99,
+    0.14
+  ],
+  "groundHeight": 2.9,
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      0,
+      -6
+    ],
+    [
+      -8,
+      -5
+    ],
+    [
+      8,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      8,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0053100000008268"
+  ],
+  "description": "Middeleeuwse zaalkerk met scheefstaande westtoren uit 1859.",
+  "realWorld": {
+    "groundNapM": 2.9,
+    "roofRidgeM": 9.35,
+    "towerHeightM": 17.15,
+    "highestPointM": 17.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0053100000008268",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15553",
+    "https://www.groningerkerken.nl/downloads/feerwerd_kerkbeschrijving_herz_versie_2021.pdf"
+  ],
+  "file": "jacobuskerk-feerwerd.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobuskerk-feerwerd-1-1000.stl"
+  ]
+}
