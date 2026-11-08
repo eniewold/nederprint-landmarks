@@ -1,0 +1,36 @@
+{
+  "name": "Oude Kerk Oosterbeek",
+  "origin": [
+    185946.5,
+    443378
+  ],
+  "xAxis": [
+    0.972,
+    0.233
+  ],
+  "groundHeight": 13.194,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0274100000000610"
+  ],
+  "description": "Romaanse zaalkerk met versmald koor en ronde apsis, westtoren en lage aanbouwen.",
+  "realWorld": {
+    "groundNapM": 13.194,
+    "ahnTopNapM": 37.839,
+    "highestPointM": 23.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0274100000000610",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/32432",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk,_Oosterbeek",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.oudekerkoosterbeek.nl/architectuur/"
+  ],
+  "file": "oude-kerk-oosterbeek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-kerk-oosterbeek-1-1000.stl"
+  ]
+}
