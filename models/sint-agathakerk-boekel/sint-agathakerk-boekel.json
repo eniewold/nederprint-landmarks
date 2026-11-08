@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Agathakerk Boekel",
+  "origin": [
+    174923,
+    401613
+  ],
+  "xAxis": [
+    0.99849,
+    -0.055
+  ],
+  "groundHeight": 16.097,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0755100000003612"
+  ],
+  "description": "Driebeukige kerk met zijtoren en karakteristieke parabolische spits.",
+  "realWorld": {
+    "groundNapM": 16.097,
+    "ahn4TopNapM": 57.27,
+    "ahn5TopNapM": 59.326,
+    "highestPointM": 43.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0755100000003612",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518257",
+    "https://www.heemkundekringboekel.nl/sint-agathakerk/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-agathakerk-boekel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-agathakerk-boekel-1-100.stl",
+    "sint-agathakerk-boekel-1-1000.stl"
+  ]
+}
