@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde Kerk Besoijen Waalwijk",
+  "origin": [
+    131805,
+    411152
+  ],
+  "xAxis": [
+    0.991,
+    0.129
+  ],
+  "groundHeight": 1.633,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0867100000044532",
+    "NL.IMBAG.Pand.0867100000044533"
+  ],
+  "description": "Zaalkerk met dakruiter, grafkapel en aangebouwde pastorie.",
+  "realWorld": {
+    "groundNapM": 1.633,
+    "ahn5TopNapM": 22.166,
+    "highestPointM": 20.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0867100000044532",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0867100000044533",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_Besoyen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-waalwijk-2.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-waalwijk-2-1-100.stl",
+    "hervormde-kerk-waalwijk-2-1-1000.stl"
+  ]
+}
