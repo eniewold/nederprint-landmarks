@@ -1,0 +1,40 @@
+{
+  "name": "Theaterkerk Wadway Spanbroek",
+  "origin": [
+    127540,
+    522825
+  ],
+  "xAxis": [
+    0.99965,
+    -0.0264
+  ],
+  "groundHeight": -0.014,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0432100000000295"
+  ],
+  "description": "Laatgotische theaterkerk met laag bekroonde toren en gedraaide moderne foyer.",
+  "realWorld": {
+    "groundNapM": -0.014,
+    "shipRidgeNapM": 9.5,
+    "choirRidgeNapM": 10.65,
+    "towerRoofNapM": 16.4,
+    "foyerRidgeNapM": 7.34,
+    "highestPointM": 16.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0432100000000295",
+    "https://commons.wikimedia.org/wiki/Category:Wadway_Theaterchurch",
+    "https://studioarchitectura.nl/portfolio-item/langebuurt-4-3-3/",
+    "https://witwognum.nl/projecten/uitbreiding-foyer-theaterkerk-wadway/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31802",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "theaterkerk-wadway-spanbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "theaterkerk-wadway-spanbroek-1-100.stl"
+  ]
+}
