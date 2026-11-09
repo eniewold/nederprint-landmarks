@@ -1,0 +1,38 @@
+{
+  "name": "Sint Servatiuskerk Westerhoven",
+  "origin": [
+    155786.5,
+    371383.2
+  ],
+  "xAxis": [
+    -0.197,
+    0.98
+  ],
+  "groundHeight": 27,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1724100000000605"
+  ],
+  "description": "Neogotische kerk met toren, vieringruiter, koor en schilddaken.",
+  "realWorld": {
+    "groundNapM": 27,
+    "ahn5NaveNapM": 45.1,
+    "ahn5TowerNapM": 67.48,
+    "highestPointM": 41
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1724100000000605",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517910",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Servatiuskerk,_Westerhoven",
+    "https://www.bergeijk.nl/dorpstraat-22-en-24",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-servatiuskerk-westerhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-servatiuskerk-westerhoven-1-100.stl",
+    "sint-servatiuskerk-westerhoven-1-1000.stl"
+  ]
+}
