@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Servatiuskerk Erp",
+  "origin": [
+    170193.2,
+    401252.7
+  ],
+  "xAxis": [
+    0.9973,
+    -0.0735
+  ],
+  "groundHeight": 11.71,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0860100002601923"
+  ],
+  "description": "Neoclassicistische hallenkerk met Cuypers-torenspits uit 1897.",
+  "realWorld": {
+    "groundNapM": 11.71,
+    "towerHeightM": 48.9,
+    "highestPointM": 48.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0860100002601923",
+    "https://www.ahn.nl/dataroom",
+    "https://franciscusparochiemeierijstad.nl/algemeen/geschiedenis/st-servatiuskerk-erp/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Servatiuskerk_(Erp)"
+  ],
+  "file": "sint-servatiuskerk-erp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-servatiuskerk-erp-1-100.stl",
+    "sint-servatiuskerk-erp-1-1000.stl"
+  ]
+}
