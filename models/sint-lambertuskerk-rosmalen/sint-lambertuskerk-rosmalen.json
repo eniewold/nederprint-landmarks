@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Lambertuskerk Rosmalen",
+  "origin": [
+    153363,
+    414428
+  ],
+  "xAxis": [
+    0.99015,
+    0.14001
+  ],
+  "groundHeight": 6.75,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0796100000236649"
+  ],
+  "description": "Kerk met dubbel dwarsschip, koor, sacristie, Mariakapel en toren.",
+  "realWorld": {
+    "groundNapM": 6.75,
+    "ahn4TopNapM": 37.3,
+    "ahn5TopNapM": 37.03,
+    "towerTopM": 31.5,
+    "highestPointM": 31.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0796100000236649",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Lambertuskerk_(Rosmalen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32720",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-lambertuskerk-rosmalen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-rosmalen-1-1000.stl"
+  ]
+}
