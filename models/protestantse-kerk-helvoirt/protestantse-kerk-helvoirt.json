@@ -1,0 +1,37 @@
+{
+  "name": "Protestantse Kerk Helvoirt",
+  "origin": [
+    144500,
+    404802
+  ],
+  "xAxis": [
+    0.946,
+    0.324
+  ],
+  "groundHeight": 7.95,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0788100000000666"
+  ],
+  "description": "Gotische dorpskerk met westtoren, transept en veelzijdig gesloten koor.",
+  "realWorld": {
+    "groundNapM": 7.95,
+    "ahn5RoofNapM": 22.4,
+    "ahn5TowerNapM": 52.69,
+    "highestPointM": 44.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0788100000000666",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21463",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Helvoirt",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "protestantse-kerk-helvoirt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-helvoirt-1-100.stl",
+    "protestantse-kerk-helvoirt-1-1000.stl"
+  ]
+}
