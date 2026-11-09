@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Laurentiuskerk Alkmaar",
+  "origin": [
+    112010,
+    516004
+  ],
+  "xAxis": [
+    0.371,
+    0.92864
+  ],
+  "groundHeight": 0.55,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000104663"
+  ],
+  "description": "Cuyperskerk met basilicaal schip, driezijdig koor, dwarsbeuk en dakruiter.",
+  "realWorld": {
+    "groundNapM": 0.55,
+    "roofRidgeNapM": 22.45,
+    "ahn5SpireNapM": 33.65,
+    "highestPointM": 33.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0361100000104663",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Laurentiuskerk_(Alkmaar)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7433",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-laurentiuskerk-alkmaar.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-laurentiuskerk-alkmaar-1-1000.stl"
+  ]
+}
