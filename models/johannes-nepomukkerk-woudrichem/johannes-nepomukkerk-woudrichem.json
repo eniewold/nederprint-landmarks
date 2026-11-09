@@ -1,0 +1,37 @@
+{
+  "name": "Johannes Nepomukkerk Woudrichem",
+  "origin": [
+    128645.095,
+    425462.715
+  ],
+  "xAxis": [
+    0.8532,
+    -0.5216
+  ],
+  "groundHeight": 3.141,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0874100000001296"
+  ],
+  "description": "Neoclassicistische zaalkerk met lager achtergebouw en gekoepelde dakruiter; as en dakvlakken uit BAG en AHN, geveldetails geschat op foto.",
+  "realWorld": {
+    "groundNapM": 3.141,
+    "ahn5RidgeNapM": 16,
+    "ahn5LanternTopNapM": 22.1,
+    "highestPointM": 18.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0874100000001296",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Johannes_Nepomuk_(Woudrichem)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39587",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "johannes-nepomukkerk-woudrichem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-nepomukkerk-woudrichem-1-100.stl",
+    "johannes-nepomukkerk-woudrichem-1-1000.stl"
+  ]
+}
