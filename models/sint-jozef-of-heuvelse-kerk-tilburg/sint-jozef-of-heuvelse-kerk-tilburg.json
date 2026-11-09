@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Jozef of Heuvelse kerk Tilburg",
+  "origin": [
+    134495,
+    396587
+  ],
+  "xAxis": [
+    0.957,
+    0.29
+  ],
+  "groundHeight": 14.763,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000306086"
+  ],
+  "description": "Neogotische kruisbasiliek met twee 72 meter hoge torens, kooromgang en dwarsarmen.",
+  "realWorld": {
+    "groundNapM": 14.763,
+    "ahn4TopNapM": 86.56,
+    "publishedTowerHeightM": 72,
+    "highestPointM": 71.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000306086",
+    "https://commons.wikimedia.org/wiki/Category:Heuvelse_kerk",
+    "https://bhic.nl/ontdekken/verhalen/de-heuvelkerk-in-tilburg",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-jozef-of-heuvelse-kerk-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jozef-of-heuvelse-kerk-tilburg-1-100.stl",
+    "sint-jozef-of-heuvelse-kerk-tilburg-1-1000.stl"
+  ]
+}
