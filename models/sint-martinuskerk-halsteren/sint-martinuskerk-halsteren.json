@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Martinuskerk Halsteren",
+  "origin": [
+    77292,
+    393939
+  ],
+  "xAxis": [
+    0.9995,
+    0.03
+  ],
+  "groundHeight": 9.685,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0748100000000809"
+  ],
+  "description": "Basilicale kerk met vierkante toren, zijbeuken, lagere kruisarmen en koor.",
+  "realWorld": {
+    "groundNapM": 9.685,
+    "ahn5TowerNapM": 45.01,
+    "ahn5RoofNapM": 28,
+    "highestPointM": 35.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0748100000000809",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Halsteren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19987",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-martinuskerk-halsteren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-halsteren-1-100.stl",
+    "sint-martinuskerk-halsteren-1-1000.stl"
+  ]
+}
