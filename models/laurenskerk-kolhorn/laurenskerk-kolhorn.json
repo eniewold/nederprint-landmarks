@@ -1,0 +1,37 @@
+{
+  "name": "Laurenskerk Kolhorn",
+  "origin": [
+    121583.8,
+    534169.15
+  ],
+  "xAxis": [
+    0.9983,
+    0.059
+  ],
+  "groundHeight": -0.157,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0412100000570105"
+  ],
+  "description": "Halve kruiskerk met driezijdige koorsluiting en negentiende-eeuwse toren.",
+  "realWorld": {
+    "groundNapM": -0.157,
+    "ahn5TowerNapM": 28.72,
+    "highestPointM": 28.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0412100000570105",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8679",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8680",
+    "https://commons.wikimedia.org/wiki/Category:Laurenskerk_(Kolhorn)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "laurenskerk-kolhorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "laurenskerk-kolhorn-1-100.stl",
+    "laurenskerk-kolhorn-1-1000.stl"
+  ]
+}
