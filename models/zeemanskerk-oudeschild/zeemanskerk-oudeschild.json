@@ -1,0 +1,38 @@
+{
+  "name": "Zeemanskerk Oudeschild",
+  "origin": [
+    118600.7,
+    561006.4
+  ],
+  "xAxis": [
+    0.99994,
+    -0.0112
+  ],
+  "groundHeight": 0.688,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000007580"
+  ],
+  "description": "Witte zaalkerk met noordelijke dwarsvleugel en groene dakruiter met naaldspits.",
+  "realWorld": {
+    "groundNapM": 0.688,
+    "roofRidgeNapM": 13.5,
+    "annexRidgeNapM": 11.73,
+    "spireAhn4NapM": 21.62,
+    "highestPointM": 20.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000007580",
+    "https://commons.wikimedia.org/wiki/Category:Zeemanskerk,_Oudeschild",
+    "https://www.waddengemeente.nl/zeemanskerk.html",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35170",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "zeemanskerk-oudeschild.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "zeemanskerk-oudeschild-1-100.stl"
+  ]
+}
