@@ -1,0 +1,36 @@
+{
+  "name": "St. Petrus Banden Macharen",
+  "origin": [
+    165878.25,
+    423972.75
+  ],
+  "xAxis": [
+    0.99,
+    -0.141
+  ],
+  "groundHeight": 6.731,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001497221"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor en laatgotische westtoren.",
+  "realWorld": {
+    "groundNapM": 6.731,
+    "towerHeightM": 43.37,
+    "highestPointM": 43.37
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001497221",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28516",
+    "https://kerkfotografie.nl/sint-petrus-banden-macharen/",
+    "https://www.waymarking.com/waymarks/wm1A3YN_RM_28546_Kerktoren_Macharen"
+  ],
+  "file": "st-petrus-banden-macharen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "st-petrus-banden-macharen-1-100.stl",
+    "st-petrus-banden-macharen-1-1000.stl"
+  ]
+}
