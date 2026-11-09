@@ -1,0 +1,37 @@
+{
+  "name": "Johannes de Doperkerk Kaatsheuvel",
+  "origin": [
+    130595,
+    408060
+  ],
+  "xAxis": [
+    -0.2,
+    -0.98
+  ],
+  "groundHeight": 5.686,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0809100000017222"
+  ],
+  "description": "Neogotische kruiskerk met dubbeltorenfront, kooromgang en dakruiter.",
+  "realWorld": {
+    "groundNapM": 5.686,
+    "ahn5NaveNapM": 30.2,
+    "ahn5TowerNapM": 67,
+    "highestPointM": 60.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0809100000017222",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/525704",
+    "https://commons.wikimedia.org/wiki/Category:Johannes_de_Doperkerk_(Kaatsheuvel)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "johannes-de-doperkerk-kaatsheuvel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-de-doperkerk-kaatsheuvel-1-100.stl",
+    "johannes-de-doperkerk-kaatsheuvel-1-1000.stl"
+  ]
+}
