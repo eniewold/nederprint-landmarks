@@ -1,0 +1,37 @@
+{
+  "name": "Koepelkerk Willemstad",
+  "origin": [
+    89362.56,
+    411892.4
+  ],
+  "xAxis": [
+    0.813,
+    -0.582
+  ],
+  "groundHeight": 1.479,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1709100000001770"
+  ],
+  "description": "Achtzijdige kerk met tentdak, daklantaarn, onvoltooide toren en lage consistorie.",
+  "realWorld": {
+    "groundNapM": 1.479,
+    "roofPeakNapM": 29.4,
+    "lanternTopNapM": 32.44,
+    "highestPointM": 30.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1709100000001770",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Koepelkerk_(Willemstad)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38956",
+    "https://www.pgwillemstad.nl/koepelkerk/de-bouw/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "koepelkerk-willemstad.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "koepelkerk-willemstad-1-1000.stl"
+  ]
+}
