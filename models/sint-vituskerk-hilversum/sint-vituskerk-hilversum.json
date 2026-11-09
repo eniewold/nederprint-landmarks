@@ -1,0 +1,39 @@
+{
+  "name": "Sint-Vituskerk Hilversum",
+  "origin": [
+    140760,
+    470448
+  ],
+  "xAxis": [
+    0.95,
+    0.312
+  ],
+  "groundHeight": 4.629,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0402100001490401"
+  ],
+  "description": "Neogotische basiliek met toren, zijkapellen, dwarsschip, kooromgang, sacristie en aangebouwd parochiehuis.",
+  "realWorld": {
+    "groundNapM": 4.629,
+    "roofRidgeNapM": 33.37,
+    "ahn4TowerNapM": 96.21,
+    "sourceTowerHeightM": 98.3,
+    "highestPointM": 96.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0402100001490401",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Vituskerk_(Hilversum)",
+    "https://steengoedhilversum.nl/monumenten/sint-vituskerk/",
+    "https://tgooi.info/kerken/rkvituskerk.php",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22159",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-vituskerk-hilversum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-vituskerk-hilversum-1-100.stl"
+  ]
+}
