@@ -1,0 +1,37 @@
+{
+  "name": "Oosterkerk Amsterdam",
+  "origin": [
+    123134.1,
+    487003.7
+  ],
+  "xAxis": [
+    0.714,
+    0.7
+  ],
+  "groundHeight": 1.872,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012170274"
+  ],
+  "description": "Zeventiende-eeuwse centraalbouw met vier schilddakarmen, lage hoekruimten en achthoekige dakruiter.",
+  "realWorld": {
+    "groundNapM": 1.872,
+    "roofRidgeNapM": 34.52,
+    "ahn5TopNapM": 48.94,
+    "highestPointM": 45.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012170274",
+    "https://commons.wikimedia.org/wiki/Category:Oosterkerk_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6444",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oosterkerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oosterkerk-amsterdam-1-100.stl",
+    "oosterkerk-amsterdam-1-1000.stl"
+  ]
+}
