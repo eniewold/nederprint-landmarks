@@ -1,0 +1,36 @@
+{
+  "name": "Kerk aan de Haven Waalwijk",
+  "origin": [
+    132239.66,
+    411276.05
+  ],
+  "xAxis": [
+    0.966,
+    0.26
+  ],
+  "groundHeight": 2.304,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0867100000011178"
+  ],
+  "description": "Gotische kruiskerk met lage zijbeuken, veelhoekig koor en peervormige vieringtoren.",
+  "realWorld": {
+    "groundNapM": 2.304,
+    "roofRidgeNapM": 22.14,
+    "towerTopNapM": 34.9,
+    "highestPointM": 32.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0867100000011178",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_aan_de_Haven,_Waalwijk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38193",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kerk-aan-de-haven-waalwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-aan-de-haven-waalwijk-1-1000.stl"
+  ]
+}
