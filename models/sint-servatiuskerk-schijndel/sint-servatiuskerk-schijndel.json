@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Servatiuskerk Schijndel",
+  "origin": [
+    158313.7,
+    403398.7
+  ],
+  "xAxis": [
+    0.9853,
+    0.1708
+  ],
+  "groundHeight": 10.1,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0844100000033048"
+  ],
+  "description": "Basilicale kerk met koorsluiting, lage achteraanbouw, toren en traptoren.",
+  "realWorld": {
+    "groundNapM": 10.1,
+    "ahn4TopNapM": 47.37,
+    "ahn5TopNapM": 47.99,
+    "towerTopM": 37.95,
+    "highestPointM": 37.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0844100000033048",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Servatiuskerk,_Schijndel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33568",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-servatiuskerk-schijndel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-servatiuskerk-schijndel-1-1000.stl"
+  ]
+}
