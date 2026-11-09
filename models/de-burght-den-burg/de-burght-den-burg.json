@@ -1,0 +1,36 @@
+{
+  "name": "De Burght Den Burg",
+  "origin": [
+    115466.25,
+    563261.25
+  ],
+  "xAxis": [
+    0.99585,
+    0.091
+  ],
+  "groundHeight": 3.715,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000007687"
+  ],
+  "description": "Driebeukige laatgotische kerk met ingebouwde westtoren en rechte koorsluiting.",
+  "realWorld": {
+    "groundNapM": 3.715,
+    "ahn5TowerNapM": 40.17,
+    "highestPointM": 36.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000007687",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35327",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Den_Burg",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "de-burght-den-burg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-burght-den-burg-1-100.stl",
+    "de-burght-den-burg-1-1000.stl"
+  ]
+}
