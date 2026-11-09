@@ -1,0 +1,58 @@
+{
+  "name": "Stompe Toren Spaarndam",
+  "origin": [
+    107810.8,
+    490974
+  ],
+  "xAxis": [
+    0.997,
+    -0.073
+  ],
+  "groundHeight": 1.267,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -7
+    ],
+    [
+      7,
+      -7
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      17,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0393100000001846"
+  ],
+  "description": "Spaarnwoudse zaalkerk met ingekorte romaanse toren en tentdak.",
+  "realWorld": {
+    "groundNapM": 1.267,
+    "ahn5TowerNapM": 21.16,
+    "highestPointM": 19.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0393100000001846",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19912",
+    "https://commons.wikimedia.org/wiki/Category:Stompe_toren,_Spaarnwoude",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "stompe-toren-spaarndam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "stompe-toren-spaarndam-1-100.stl",
+    "stompe-toren-spaarndam-1-1000.stl"
+  ]
+}
