@@ -1,0 +1,37 @@
+{
+  "name": "Oude Kerk Spaarndam",
+  "origin": [
+    106676.5,
+    492090.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 0.985,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000059876"
+  ],
+  "description": "Zeventiende-eeuwse kerk met haakse vleugel, afgeschuinde eindgevels en dakruiter.",
+  "realWorld": {
+    "groundNapM": 0.985,
+    "roofRidgeNapM": 14.882,
+    "ahnTowerTopNapM": 21.717,
+    "highestPointM": 20.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0392100000059876",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk_(Spaarndam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19877",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oude-kerk-spaarndam-gem-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-kerk-spaarndam-gem-haarlem-1-100.stl",
+    "oude-kerk-spaarndam-gem-haarlem-1-1000.stl"
+  ]
+}
