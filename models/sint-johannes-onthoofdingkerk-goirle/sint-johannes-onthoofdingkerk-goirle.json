@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Johannes Onthoofdingkerk Goirle",
+  "origin": [
+    132873.9,
+    392181.9
+  ],
+  "xAxis": [
+    0.49,
+    -0.87
+  ],
+  "groundHeight": 15.317,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0785100000012716"
+  ],
+  "description": "Kruiskerk met vrijstaande oude hoektoren en naaldspits; AHN-hoogte wijkt af van lokale bronnen.",
+  "realWorld": {
+    "groundNapM": 15.317,
+    "ahn4TopNapM": 72.47,
+    "ahn5TopNapM": 70.84,
+    "localSourceHeightM": 71,
+    "highestPointM": 55.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0785100000012716",
+    "https://visitgoirle.com/gools-geheim/kerk-st-jan/",
+    "https://www.sintjorisgoirle.nl/assets/files/Canon-GildeSintJorisGoirle.pdf",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Johannes_Onthoofdingkerk,_Goirle",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-johannes-onthoofdingkerk-goirle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-johannes-onthoofdingkerk-goirle-1-1000.stl"
+  ]
+}
