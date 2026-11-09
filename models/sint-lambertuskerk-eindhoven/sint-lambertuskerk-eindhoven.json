@@ -1,0 +1,44 @@
+{
+  "name": "Sint-Lambertuskerk Eindhoven",
+  "origin": [
+    160324.54,
+    381796.85
+  ],
+  "xAxis": [
+    -0.9455,
+    0.3256
+  ],
+  "groundHeight": 18.7,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000271465"
+  ],
+  "description": "Neogotische kruisbasiliek in Gestel (Wolter te Riele, 1910-11): ingangstoren met hoekpinakels en achtkantige spits, schip en dwarsschip onder één nok, koor met achtzijdige sluiting en dakruiter, trapsgewijs bredere zijbeuken en kapellen; oorsprong in het hart van de viering, X naar de toren aan de Hoogstraat.",
+  "realWorld": {
+    "groundNapM": 18.7,
+    "ridgeM": 26.2,
+    "naveEaveM": 16.95,
+    "choirRidgeM": 23.6,
+    "towerShaftM": 36.3,
+    "towerSpireM": 60.8,
+    "ahnTowerTopM": 60.1,
+    "ridgeTurretM": 43,
+    "highestPointM": 60.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000271465",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/356432",
+    "https://nl.wikipedia.org/wiki/Sint-Lambertuskerk_(Eindhoven)",
+    "https://reliwiki.nl/index.php/Eindhoven,_Hoogstraat_299_-_Lambertus",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Lambertuskerk,_Eindhoven"
+  ],
+  "file": "sint-lambertuskerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-eindhoven-1-100.stl",
+    "sint-lambertuskerk-eindhoven-1-1000.stl"
+  ]
+}
