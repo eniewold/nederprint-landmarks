@@ -1,0 +1,36 @@
+{
+  "name": "Kapel van de Heilige Eik Oirschot",
+  "origin": [
+    146486.1,
+    390410.54
+  ],
+  "xAxis": [
+    0.993,
+    0.115
+  ],
+  "groundHeight": 14.1,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0823100000005517"
+  ],
+  "description": "Kapel met trapgevel, open portaal en driezijdig koor.",
+  "realWorld": {
+    "groundNapM": 14.1,
+    "bagAreaM2": 92.54,
+    "ridgeM": 7.25,
+    "highestPointM": 7.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0823100000005517",
+    "https://commons.wikimedia.org/wiki/Category:Kapel_van_de_Heilige_Eik,_Oirschot",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31352",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kapel-van-de-heilige-eik-oirschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kapel-van-de-heilige-eik-oirschot-1-1000.stl"
+  ]
+}
