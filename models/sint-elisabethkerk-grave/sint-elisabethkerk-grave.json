@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Elisabethkerk Grave",
+  "origin": [
+    179390,
+    419095
+  ],
+  "xAxis": [
+    0.982,
+    -0.19
+  ],
+  "groundHeight": 10.611,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0786100000008103"
+  ],
+  "description": "Ingekorte kruiskerk met koor, renaissancegevels, dakruiter en zijkapellen.",
+  "realWorld": {
+    "groundNapM": 10.611,
+    "ahn5LanternNapM": 53.59,
+    "ahn5RoofNapM": 41.55,
+    "highestPointM": 42.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0786100000008103",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Elisabethskerk,_Grave",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17255",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-elisabethkerk-grave.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-elisabethkerk-grave-1-100.stl",
+    "sint-elisabethkerk-grave-1-1000.stl"
+  ]
+}
