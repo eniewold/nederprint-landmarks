@@ -1,0 +1,40 @@
+{
+  "name": "Sint Urbanus Ouderkerk aan de Amstel",
+  "origin": [
+    121870,
+    478637
+  ],
+  "xAxis": [
+    0.9798,
+    0.2
+  ],
+  "groundHeight": -1.266,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0437100000002180",
+    "NL.IMBAG.Pand.0437100000002181"
+  ],
+  "description": "Kruisbasiliek met naastgelegen toren, sacristie en aangebouwde pastorie.",
+  "realWorld": {
+    "groundNapM": -1.266,
+    "roofRidgeNapM": 19.605,
+    "ahnTowerTopNapM": 51.881,
+    "highestPointM": 53.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0437100000002180",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0437100000002181",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511287",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511288",
+    "https://www.amstelveen.nl/sites/default/files/2026-03/verantwoordingsdocument-gba-v20260312.pdf",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-urbanus-ouderkerk-aan-de-amstel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-urbanus-ouderkerk-aan-de-amstel-1-100.stl",
+    "sint-urbanus-ouderkerk-aan-de-amstel-1-1000.stl"
+  ]
+}
