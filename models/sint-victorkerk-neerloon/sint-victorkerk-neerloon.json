@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Victorkerk Neerloon",
+  "origin": [
+    175004.6,
+    422375.13
+  ],
+  "xAxis": [
+    0.98,
+    0.2
+  ],
+  "groundHeight": 8.5,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001487853"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor, middeleeuwse toren en sacristie.",
+  "realWorld": {
+    "groundNapM": 8.5,
+    "ahn4TopNapM": 26.27,
+    "ahn5TopNapM": 28.42,
+    "towerRoofTopM": 18.15,
+    "highestPointM": 18.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001487853",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Victorkerk_(Neerloon)",
+    "https://erfgoedbrabantverhalen.nl/religieuze-gebouwen/sint-victorkerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32400",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-victorkerk-neerloon.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-victorkerk-neerloon-1-1000.stl"
+  ]
+}
