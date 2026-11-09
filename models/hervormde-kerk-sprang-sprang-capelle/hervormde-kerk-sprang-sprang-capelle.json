@@ -1,0 +1,38 @@
+{
+  "name": "Hervormde Kerk Sprang Sprang-Capelle",
+  "origin": [
+    131678.32,
+    409075.42
+  ],
+  "xAxis": [
+    0.9703,
+    0.2419
+  ],
+  "groundHeight": 5.28,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0867100000009948"
+  ],
+  "description": "Middeleeuwse kerk met hoog en laag schip, twee ongelijke kruisarmen, koor en brede westtoren.",
+  "realWorld": {
+    "groundNapM": 5.28,
+    "ahn4TopNapM": 40.82,
+    "ahn5TopNapM": 42.11,
+    "towerTopM": 36.5,
+    "highestPointM": 36.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0867100000009948",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Sprang",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34133",
+    "https://www.ahn.nl/dataroom",
+    "https://heemkundesprangcapelle.nl/1989/december-2001/bouwgeschiedenis-van-de-ned-herv-kerk-van-sprang"
+  ],
+  "file": "hervormde-kerk-sprang-sprang-capelle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-sprang-sprang-capelle-1-1000.stl"
+  ]
+}
