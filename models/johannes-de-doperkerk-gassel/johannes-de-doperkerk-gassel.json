@@ -1,0 +1,35 @@
+{
+  "name": "Johannes de Doperkerk Gassel",
+  "origin": [
+    182158.25,
+    416972.25
+  ],
+  "xAxis": [
+    0.121,
+    0.993
+  ],
+  "groundHeight": 10.06,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0786100000005428"
+  ],
+  "description": "Driebeukige kerk met vierkante toren, galmgaten en korte spits.",
+  "realWorld": {
+    "groundNapM": 10.06,
+    "towerRoofHeightM": 36.4,
+    "highestPointM": 36.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0786100000005428",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526041",
+    "https://commons.wikimedia.org/wiki/Category:Saint_John_the_Baptist_Church_(Gassel)"
+  ],
+  "file": "johannes-de-doperkerk-gassel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johannes-de-doperkerk-gassel-1-1000.stl"
+  ]
+}
