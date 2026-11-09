@@ -1,0 +1,35 @@
+{
+  "name": "Nederlands Hervormde Kerk Heeze",
+  "origin": [
+    168433,
+    377112
+  ],
+  "xAxis": [
+    -0.991,
+    -0.132
+  ],
+  "groundHeight": 23.14,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1658100000016569"
+  ],
+  "description": "Zaalkerk met dakruiter, rozet en driezijdig koor.",
+  "realWorld": {
+    "groundNapM": 23.14,
+    "towerHeightM": 23.84,
+    "highestPointM": 23.84
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1658100000016569",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/21291",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Heeze)"
+  ],
+  "file": "nederlands-hervormde-kerk-heeze.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-heeze-1-100.stl",
+    "nederlands-hervormde-kerk-heeze-1-1000.stl"
+  ]
+}
