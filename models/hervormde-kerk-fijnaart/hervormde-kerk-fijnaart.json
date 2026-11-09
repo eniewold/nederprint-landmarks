@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde Kerk Fijnaart",
+  "origin": [
+    91411.25,
+    405634.75
+  ],
+  "xAxis": [
+    0.764,
+    0.645
+  ],
+  "groundHeight": 1.498,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1709100000006042"
+  ],
+  "description": "Kruiskerk met vierkante toren, achthoekige lantaarn en spits.",
+  "realWorld": {
+    "groundNapM": 1.498,
+    "towerHeightM": 32.5,
+    "highestPointM": 32.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1709100000006042",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521720",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Fijnaart)"
+  ],
+  "file": "hervormde-kerk-fijnaart.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-fijnaart-1-1000.stl"
+  ]
+}
