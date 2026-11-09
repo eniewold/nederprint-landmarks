@@ -1,0 +1,36 @@
+{
+  "name": "Witte Kerkje Den Hoorn",
+  "origin": [
+    112307,
+    560145
+  ],
+  "xAxis": [
+    0.9987,
+    -0.05098
+  ],
+  "groundHeight": 3.69,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000009376"
+  ],
+  "description": "Eenbeukige kerk met ingebouwde witte toren en lage consistorie.",
+  "realWorld": {
+    "groundNapM": 3.69,
+    "roofRidgeNapM": 21.87,
+    "ahn5SpireNapM": 41.5,
+    "highestPointM": 37.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000009376",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Den_Hoorn_(T)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35239",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "witte-kerkje-den-hoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "witte-kerkje-den-hoorn-1-1000.stl"
+  ]
+}
