@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Catharinakerk Zevenbergen",
+  "origin": [
+    101007,
+    406534
+  ],
+  "xAxis": [
+    -0.993,
+    -0.119
+  ],
+  "groundHeight": 3.55,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1709100000035597"
+  ],
+  "description": "Gotische kruiskerk met Joriskapel en herbouwde toren met dubbele lantaarn.",
+  "realWorld": {
+    "groundNapM": 3.55,
+    "ahn5TowerNapM": 41.75,
+    "ahn3RidgeNapM": 22.85,
+    "highestPointM": 38.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1709100000035597",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40443",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Catharinakerk,_Zevenbergen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-catharinakerk-zevenbergen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-catharinakerk-zevenbergen-1-100.stl",
+    "sint-catharinakerk-zevenbergen-1-1000.stl"
+  ]
+}
