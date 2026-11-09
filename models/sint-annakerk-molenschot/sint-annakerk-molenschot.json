@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Annakerk Molenschot",
+  "origin": [
+    119980.75,
+    398348.75
+  ],
+  "xAxis": [
+    0.127,
+    -0.992
+  ],
+  "groundHeight": 7.926,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0784100000000513"
+  ],
+  "description": "Kruiskerk met zijbeuken en ingekorte noordtoren.",
+  "realWorld": {
+    "groundNapM": 7.926,
+    "towerHeightM": 31.96,
+    "highestPointM": 31.96
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0784100000000513",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516948",
+    "https://www.parochieheiligegeest.nl/samenleven-en-de-kerk/gebouwen/annakerk/",
+    "https://argusvlinder.com/2008/03/02/annakerk-en-annakapel-in-molenschot/"
+  ],
+  "file": "sint-annakerk-molenschot.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakerk-molenschot-1-100.stl",
+    "sint-annakerk-molenschot-1-1000.stl"
+  ]
+}
