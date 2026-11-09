@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Lambertuskerk Escharen",
+  "origin": [
+    179723.75,
+    417288.75
+  ],
+  "xAxis": [
+    0.998,
+    0.065
+  ],
+  "groundHeight": 9.987,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0786100000004188"
+  ],
+  "description": "Neogotische kerk met westtoren, polygonale kapel en lage noordelijke uitbreiding.",
+  "realWorld": {
+    "groundNapM": 9.987,
+    "towerHeightM": 35.35,
+    "highestPointM": 35.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0786100000004188",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://www.openmonumentendag.nl/monument/sint-lambertuskerk-escharen/",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Lambertus_Church_(Escharen)"
+  ],
+  "file": "sint-lambertuskerk-escharen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-escharen-1-100.stl"
+  ]
+}
