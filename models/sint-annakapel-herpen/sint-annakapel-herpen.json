@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Annakapel Herpen",
+  "origin": [
+    170193.25,
+    420082.75
+  ],
+  "xAxis": [
+    0.991,
+    -0.139
+  ],
+  "groundHeight": 8.03,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001503272"
+  ],
+  "description": "Driebeukige kapel met driezijdige koorsluiting, torentje en sacristie.",
+  "realWorld": {
+    "groundNapM": 8.03,
+    "ahn4TopNapM": 20.533,
+    "ahn5TopNapM": 20.384,
+    "roofRidgeNapM": 16.674,
+    "highestPointM": 12.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001503272",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Annakapel,_Koolwijk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32390",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-annakapel-herpen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-annakapel-herpen-1-1000.stl"
+  ]
+}
