@@ -1,0 +1,37 @@
+{
+  "name": "Doopsgezinde Vermaning Oost-Graftdijk",
+  "origin": [
+    115999.0265,
+    506591.0225
+  ],
+  "xAxis": [
+    0.443,
+    0.897
+  ],
+  "groundHeight": -1.092,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0365100000002334"
+  ],
+  "description": "Doopsgezinde zaalkerk met voorgevel, zadeldak en lagere consistorie onder lessenaarsdak.",
+  "realWorld": {
+    "groundNapM": -1.092,
+    "mainRidgeNapM": 8.44,
+    "mainEaveNapM": 5.2,
+    "annexRearEaveNapM": 2.81,
+    "highestPointM": 10.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0365100000002334",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/506495",
+    "https://www.klavermakelaardij.nl/landelijk-wonen/vrijstaande-woning/oost-graftdijk/oostgraftdijk-27",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "doopsgezinde-vermaning-oost-graftdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "doopsgezinde-vermaning-oost-graftdijk-1-100.stl"
+  ]
+}
