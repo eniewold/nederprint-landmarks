@@ -1,0 +1,44 @@
+{
+  "name": "Sint-Catharinakerk Eindhoven",
+  "origin": [
+    161395.91,
+    383089.62
+  ],
+  "xAxis": [
+    0.7997,
+    0.6004
+  ],
+  "groundHeight": 17.26,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000282608"
+  ],
+  "description": "Neogotische kruisbasiliek van Cuypers (1867) met dubbeltorenfront naar het Catharinaplein (+X), kooromgang met drie straalkapellen naar het zuidwesten; oorsprong op de viering.",
+  "realWorld": {
+    "groundNapM": 17.26,
+    "ridgeNapM": 47.85,
+    "crossingTurretNapM": 65.7,
+    "towerHeightM": 73,
+    "ahnTowerTopNapM": [
+      92.7,
+      93.45
+    ],
+    "highestPointM": 73
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Catharinakerk_(Eindhoven)",
+    "https://www.reliwiki.nl/index.php/Eindhoven,_Catharinaplein_1_-_Catharina",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14635",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000282608",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Catharinakerk_(Eindhoven)"
+  ],
+  "file": "sint-catharinakerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-catharinakerk-eindhoven-1-100.stl",
+    "sint-catharinakerk-eindhoven-1-1000.stl"
+  ]
+}
