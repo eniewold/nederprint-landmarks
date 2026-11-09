@@ -1,0 +1,37 @@
+{
+  "name": "Waddenkerk De Cocksdorp",
+  "origin": [
+    120749.5,
+    574685.7
+  ],
+  "xAxis": [
+    0.943,
+    0.333
+  ],
+  "groundHeight": 0.782,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000001863"
+  ],
+  "description": "Neoclassicistische zaalkerk met schilddak, fronton en vierkante dakruiter; afmetingen uit BAG en AHN5.",
+  "realWorld": {
+    "groundNapM": 0.782,
+    "roofRidgeNapM": 11.4,
+    "ahn5TopNapM": 19.55,
+    "highestPointM": 18.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000001863",
+    "https://commons.wikimedia.org/wiki/Category:Waddenkerk,_De_Cocksdorp",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35281",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "waddenkerk-de-cocksdorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "waddenkerk-de-cocksdorp-1-100.stl",
+    "waddenkerk-de-cocksdorp-1-1000.stl"
+  ]
+}
