@@ -1,0 +1,37 @@
+{
+  "name": "Oude Sint-Clemenskerk Gerwen",
+  "origin": [
+    167332,
+    388900
+  ],
+  "xAxis": [
+    0.966,
+    0.259
+  ],
+  "groundHeight": 17.327,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0820100000005871"
+  ],
+  "description": "Middeleeuwse kruiskerk met toren, koor en sacristie�n.",
+  "realWorld": {
+    "groundNapM": 17.327,
+    "ahn5TopNapM": 45.42,
+    "ridgeM": 14.3,
+    "highestPointM": 28.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0820100000005871",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30824",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Clemenskerk,_Gerwen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oude-sint-clemenskerk-nuenen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-sint-clemenskerk-nuenen-1-100.stl",
+    "oude-sint-clemenskerk-nuenen-1-1000.stl"
+  ]
+}
