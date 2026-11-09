@@ -1,0 +1,37 @@
+{
+  "name": "Protestantse Kerk Oisterwijk",
+  "origin": [
+    141170,
+    398980.9
+  ],
+  "xAxis": [
+    -0.4,
+    0.916
+  ],
+  "groundHeight": 11.8,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0824100000017280"
+  ],
+  "description": "Zaalkerk met schilddak, dakruiter en lagere kooraanbouw.",
+  "realWorld": {
+    "groundNapM": 11.8,
+    "ahn4TopNapM": 26.25,
+    "ahn5TopNapM": 28.41,
+    "towerTopM": 16.55,
+    "highestPointM": 16.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0824100000017280",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Oisterwijk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42119",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "protestantse-kerk-oisterwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-oisterwijk-1-1000.stl"
+  ]
+}
