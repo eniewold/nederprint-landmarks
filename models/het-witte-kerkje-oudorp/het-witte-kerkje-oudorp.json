@@ -1,0 +1,54 @@
+{
+  "name": "Het Witte Kerkje Oudorp",
+  "origin": [
+    113444.91,
+    516050
+  ],
+  "xAxis": [
+    0.99999,
+    0.0043
+  ],
+  "groundHeight": 1.965,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -6
+    ],
+    [
+      10,
+      -6
+    ],
+    [
+      24,
+      -4
+    ],
+    [
+      24,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000013037"
+  ],
+  "description": "Zaalkerk De Terp met geveltorentje en naaldspits.",
+  "realWorld": {
+    "groundNapM": 1.965,
+    "ahn5TowerNapM": 25.84,
+    "highestPointM": 23.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0361100000013037",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7474",
+    "https://commons.wikimedia.org/wiki/Category:De_Terp",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "het-witte-kerkje-oudorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "het-witte-kerkje-oudorp-1-100.stl",
+    "het-witte-kerkje-oudorp-1-1000.stl"
+  ]
+}
