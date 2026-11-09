@@ -1,0 +1,38 @@
+{
+  "name": "Martinuskerk Schellinkhout",
+  "origin": [
+    136999.3,
+    516359.7
+  ],
+  "xAxis": [
+    0.9999,
+    -0.012
+  ],
+  "groundHeight": 0.191,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0498100000005523"
+  ],
+  "description": "Middeleeuwse kruiskerk met driezijdig koor en ingebouwde toren met spits.",
+  "realWorld": {
+    "groundNapM": 0.191,
+    "roofRidgeNapM": 15.742,
+    "ahnTowerTopNapM": 37.4,
+    "highestPointM": 37.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0498100000005523",
+    "https://commons.wikimedia.org/wiki/Category:Martinuskerk,_Schellinkhout",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37139",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37140",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "martiukerk-schellinkhout.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "martiukerk-schellinkhout-1-100.stl",
+    "martiukerk-schellinkhout-1-1000.stl"
+  ]
+}
