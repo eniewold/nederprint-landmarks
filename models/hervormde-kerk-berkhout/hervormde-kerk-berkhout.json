@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde Kerk Berkhout",
+  "origin": [
+    128515,
+    516982.75
+  ],
+  "xAxis": [
+    0.9954,
+    0.0957
+  ],
+  "groundHeight": -1.266,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1598100000013905"
+  ],
+  "description": "T-vormige zaalkerk met straatrisaliet en ge�ntegreerde toren, maten uit BAG en AHN5.",
+  "realWorld": {
+    "groundNapM": -1.266,
+    "roofRidgeNapM": 16.76,
+    "ahn5TowerNapM": 36.58,
+    "highestPointM": 37.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1598100000013905",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Berkhout)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/502457",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-berkhout.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-berkhout-1-100.stl",
+    "hervormde-kerk-berkhout-1-1000.stl"
+  ]
+}
