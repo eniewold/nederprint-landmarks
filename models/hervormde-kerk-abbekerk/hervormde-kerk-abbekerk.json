@@ -1,0 +1,38 @@
+{
+  "name": "Hervormde Kerk Abbekerk",
+  "origin": [
+    130163.765,
+    527299.025
+  ],
+  "xAxis": [
+    0.9705,
+    0.241
+  ],
+  "groundHeight": 0.373,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0420100000011815"
+  ],
+  "description": "Witgepleisterde zaalkerk met vijfzijdig koor en gemetselde toren; BAG en AHN5 geven plattegrond en dakhoogten.",
+  "realWorld": {
+    "groundNapM": 0.373,
+    "roofRidgeNapM": 13.35,
+    "ahn5TowerTopNapM": 34.93,
+    "highestPointM": 34.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0420100000011815",
+    "https://commons.wikimedia.org/wiki/Category:Protestantse_Kerk_(Abbekerk)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30655",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30656",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-abbekerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-abbekerk-1-100.stl",
+    "hervormde-kerk-abbekerk-1-1000.stl"
+  ]
+}
