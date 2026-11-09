@@ -1,0 +1,37 @@
+{
+  "name": "Janskerk Haarlem",
+  "origin": [
+    103952,
+    488643
+  ],
+  "xAxis": [
+    0.975,
+    -0.222
+  ],
+  "groundHeight": 2.242,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0392100000064921"
+  ],
+  "description": "Middeleeuwse Janskerk met vijfzijdig koor, zuidkapel, historische kosterswoning en dakruiter.",
+  "realWorld": {
+    "groundNapM": 2.242,
+    "roofRidgeNapM": 24.1,
+    "ahn5TowerNapM": 35.2,
+    "highestPointM": 32.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0392100000064921",
+    "https://commons.wikimedia.org/wiki/Category:Janskerk,_Haarlem",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/19332",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "janskerk-haarlem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "janskerk-haarlem-1-100.stl",
+    "janskerk-haarlem-1-1000.stl"
+  ]
+}
