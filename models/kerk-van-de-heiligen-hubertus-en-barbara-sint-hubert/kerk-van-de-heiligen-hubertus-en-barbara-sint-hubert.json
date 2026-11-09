@@ -1,0 +1,36 @@
+{
+  "name": "Kerk van de Heiligen Hubertus en Barbara Sint Hubert",
+  "origin": [
+    184209,
+    410018
+  ],
+  "xAxis": [
+    0.992,
+    -0.123
+  ],
+  "groundHeight": 12.048,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0815100000000488"
+  ],
+  "description": "Kruiskerk met zadeldaken, koorsluiting en westtoren met vierkante spits.",
+  "realWorld": {
+    "groundNapM": 12.048,
+    "ahn5TopNapM": 37.53,
+    "highestPointM": 25.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0815100000000488",
+    "https://commons.wikimedia.org/wiki/Category:Hubertus_en_Barbarakerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29935",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kerk-van-de-heiligen-hubertus-en-barbara-sint-hubert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-van-de-heiligen-hubertus-en-barbara-sint-hubert-1-100.stl",
+    "kerk-van-de-heiligen-hubertus-en-barbara-sint-hubert-1-1000.stl"
+  ]
+}
