@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Lambertuskerk Huisseling",
+  "origin": [
+    172512,
+    422143
+  ],
+  "xAxis": [
+    0.986,
+    0.168
+  ],
+  "groundHeight": 7.472,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001486269"
+  ],
+  "description": "Zaalkerk met veelhoekig koor en zijdelingse toren.",
+  "realWorld": {
+    "groundNapM": 7.472,
+    "towerHeightM": 30.82,
+    "highestPointM": 30.82
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001486269",
+    "https://www.huisseling.nl/sint-lambertuskerk/",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Lambertuskerk_(Huisseling)"
+  ],
+  "file": "sint-lambertuskerk-huisseling.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-huisseling-1-100.stl",
+    "sint-lambertuskerk-huisseling-1-1000.stl"
+  ]
+}
