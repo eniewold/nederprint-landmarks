@@ -1,0 +1,35 @@
+{
+  "name": "voormalige Sint-Catharinakerk Ledeacker",
+  "origin": [
+    188662,
+    405342
+  ],
+  "xAxis": [
+    0.976,
+    0.218
+  ],
+  "groundHeight": 16.097,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1702100000001512"
+  ],
+  "description": "Voormalige kerk met toren, vijfzijdig koor en vier lage dakkappen.",
+  "realWorld": {
+    "groundNapM": 16.097,
+    "towerHeightM": 24.61,
+    "highestPointM": 24.61
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1702100000001512",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31776",
+    "https://commons.wikimedia.org/wiki/Category:Catharinakerk_(Ledeacker)"
+  ],
+  "file": "voormalige-sint-catharinakerk-ledeacker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "voormalige-sint-catharinakerk-ledeacker-1-100.stl",
+    "voormalige-sint-catharinakerk-ledeacker-1-1000.stl"
+  ]
+}
