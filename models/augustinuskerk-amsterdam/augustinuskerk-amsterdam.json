@@ -1,0 +1,36 @@
+{
+  "name": "Augustinuskerk Amsterdam",
+  "origin": [
+    124242.5,
+    489393
+  ],
+  "xAxis": [
+    0.26,
+    0.966
+  ],
+  "groundHeight": -1.11,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012120986"
+  ],
+  "description": "Neogotische Augustinuskerk Nieuwendam met fronttoren, zijbeuken en driezijdige transepten.",
+  "realWorld": {
+    "groundNapM": -1.11,
+    "ahn5TowerNapM": 42.16,
+    "highestPointM": 43.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012120986",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508533",
+    "https://commons.wikimedia.org/wiki/Category:Augustinuskerk_(Amsterdam-Noord)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "augustinuskerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "augustinuskerk-amsterdam-1-100.stl",
+    "augustinuskerk-amsterdam-1-1000.stl"
+  ]
+}
