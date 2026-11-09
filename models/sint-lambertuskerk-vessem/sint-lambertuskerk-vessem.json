@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Lambertuskerk Vessem",
+  "origin": [
+    148196.8,
+    380903.4
+  ],
+  "xAxis": [
+    0.881,
+    0.473
+  ],
+  "groundHeight": 25.26,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0770100000000880"
+  ],
+  "description": "Neogotische kerk met laatmiddeleeuwse westtoren, zijbeuken en koor.",
+  "realWorld": {
+    "groundNapM": 25.26,
+    "ahn5RoofNapM": 40.9,
+    "ahn5TowerNapM": 63.88,
+    "highestPointM": 39
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0770100000000880",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37240",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Lambertuskerk_(Vessem)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-lambertuskerk-vessem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-vessem-1-100.stl",
+    "sint-lambertuskerk-vessem-1-1000.stl"
+  ]
+}
