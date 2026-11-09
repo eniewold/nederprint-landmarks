@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde Kerk Schijndel",
+  "origin": [
+    158404.1,
+    403241.3
+  ],
+  "xAxis": [
+    0.56,
+    0.829
+  ],
+  "groundHeight": 10.028,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0844100000029386"
+  ],
+  "description": "Langwerpige achthoekige zaalkerk met portiek, dakruiter en achteraanbouw.",
+  "realWorld": {
+    "groundNapM": 10.028,
+    "ahn5TopNapM": 27.72,
+    "highestPointM": 17.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0844100000029386",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Schijndel",
+    "https://www.fundainbusiness.nl/kantoor/verhuurd/schijndel/object-43843857-hoofdstraat-150/",
+    "https://www.mooischijndel.nl/nieuws/historie/30802/historische-foto-napoleonskerkje",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-schijndel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-schijndel-1-100.stl",
+    "hervormde-kerk-schijndel-1-1000.stl"
+  ]
+}
