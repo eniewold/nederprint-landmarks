@@ -1,0 +1,38 @@
+{
+  "name": "Pancratius Oosterblokker",
+  "origin": [
+    136928,
+    520321.4
+  ],
+  "xAxis": [
+    0.984,
+    0.179
+  ],
+  "groundHeight": 0.411,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0498100000000112"
+  ],
+  "description": "Eenbeukige kruiskerk met zadeldaken, vijfzijdig koor en toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 0.411,
+    "roofRidgeNapM": 17.814,
+    "ahnTowerTopNapM": 43.929,
+    "highestPointM": 43.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0498100000000112",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Oosterblokker",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14055",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14056",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "pancratius-oosterblokker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "pancratius-oosterblokker-1-100.stl",
+    "pancratius-oosterblokker-1-1000.stl"
+  ]
+}
