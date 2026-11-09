@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Willibrorduskerk Esch",
+  "origin": [
+    148405,
+    402523
+  ],
+  "xAxis": [
+    0.9798,
+    0.2
+  ],
+  "groundHeight": 7.452,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0788100000000402"
+  ],
+  "description": "Kruiskerk met oude toren naast de voorgevel, roosvenster en dakruiter.",
+  "realWorld": {
+    "groundNapM": 7.452,
+    "ahn5TowerNapM": 34.32,
+    "ahn5RoofNapM": 26.3,
+    "highestPointM": 26.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0788100000000402",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk_(Esch)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-willibrorduskerk-esch.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-esch-1-100.stl",
+    "sint-willibrorduskerk-esch-1-1000.stl"
+  ]
+}
