@@ -1,0 +1,38 @@
+{
+  "name": "Witte Kerk Steenbergen",
+  "origin": [
+    81153.2,
+    400416.4
+  ],
+  "xAxis": [
+    0.947,
+    0.321
+  ],
+  "groundHeight": 3.97,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0851100000009837"
+  ],
+  "description": "Hallenkerk met klassiek fronton, pilasters, toren en zadeldak.",
+  "realWorld": {
+    "groundNapM": 3.97,
+    "roofRidgeNapM": 23.41,
+    "ahn4TopNapM": 50.28,
+    "ahn5TopNapM": 48.33,
+    "towerTopM": 43.7,
+    "highestPointM": 43.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0851100000009837",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Steenbergen",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34517",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "witte-kerk-steenbergen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "witte-kerk-steenbergen-1-1000.stl"
+  ]
+}
