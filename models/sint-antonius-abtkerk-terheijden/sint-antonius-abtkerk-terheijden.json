@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Antonius Abtkerk Terheijden",
+  "origin": [
+    111054,
+    406185
+  ],
+  "xAxis": [
+    0.9659,
+    0.2588
+  ],
+  "groundHeight": 2.515,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1719100000002500"
+  ],
+  "description": "Gotische kruiskerk met sacristie, zijbeuken, vieringtoren en westtoren; gemeten dakvlakken en geschatte spits.",
+  "realWorld": {
+    "groundNapM": 2.515,
+    "ahn5TopNapM": 58.5,
+    "publishedTowerHeightM": 63,
+    "highestPointM": 62.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1719100000002500",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Sint-Antonius_Abtkerk,_Terheijden",
+    "https://www.kijkopdrimmelen.nl/bezit-herstel-en-eerste-restauratie-van-de-antonius-abt-kerk-terheijden/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-antonius-abtkerk-terheijden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abtkerk-terheijden-1-100.stl",
+    "sint-antonius-abtkerk-terheijden-1-1000.stl"
+  ]
+}
