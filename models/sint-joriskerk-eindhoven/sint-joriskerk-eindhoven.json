@@ -1,0 +1,42 @@
+{
+  "name": "Sint-Joriskerk Eindhoven",
+  "origin": [
+    162014.9,
+    382325.06
+  ],
+  "xAxis": [
+    0.9851,
+    0.1719
+  ],
+  "groundHeight": 18.317,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000277589"
+  ],
+  "description": "Neogotische kruisbasiliek (Van Tulder, 1885) met westtoren van Van Gils (1911); oorsprong in de viering, X-as langs het schip naar het koor.",
+  "realWorld": {
+    "groundNapM": 18.317,
+    "ridgeNapM": 50.37,
+    "towerParapetNapM": 63.22,
+    "ahnSpireNapM": 102.77,
+    "lengthM": 82.7,
+    "transeptM": 37.2,
+    "wikipediaTowerM": 88,
+    "highestPointM": 85
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Joriskerk_(Eindhoven)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14646",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000277589",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (dsm_05m, dtm_05m)",
+    "https://commons.wikimedia.org/wiki/Category:St._Joriskerk_(Eindhoven)"
+  ],
+  "file": "sint-joriskerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-joriskerk-eindhoven-1-100.stl",
+    "sint-joriskerk-eindhoven-1-1000.stl"
+  ]
+}
