@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Quirinuskerk Halsteren",
+  "origin": [
+    77400,
+    393755
+  ],
+  "xAxis": [
+    0.91,
+    0.415
+  ],
+  "groundHeight": 9.335,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0748100000025593"
+  ],
+  "description": "Kruisbasiliek met twee voortorens, vieringtoren en veelhoekig koor.",
+  "realWorld": {
+    "groundNapM": 9.335,
+    "towerHeightM": 35.7,
+    "highestPointM": 35.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0748100000025593",
+    "https://www.sint-christoffel.nl/quirinuskerk",
+    "https://www.kerk-en-orgel.nl/record.php?action=display&id=3128",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Quirinuskerk,_Halsteren"
+  ],
+  "file": "sint-quirinuskerk-halsteren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-quirinuskerk-halsteren-1-100.stl",
+    "sint-quirinuskerk-halsteren-1-1000.stl"
+  ]
+}
