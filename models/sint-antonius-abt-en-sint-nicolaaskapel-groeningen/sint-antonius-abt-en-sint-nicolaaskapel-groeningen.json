@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Antonius Abt en Sint-Nicolaaskapel Groeningen",
+  "origin": [
+    197372.75,
+    402182.25
+  ],
+  "xAxis": [
+    0.993,
+    0.12
+  ],
+  "groundHeight": 14.632,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0756100000005424"
+  ],
+  "description": "Kapel met smaller koor en achtzijdige dakruiter.",
+  "realWorld": {
+    "groundNapM": 14.632,
+    "roofRidgeM": 11.05,
+    "highestPointM": 16.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0756100000005424",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37401",
+    "https://commons.wikimedia.org/wiki/Category:St._Antonius_en_Nicolaas_Kapel,_Groeningen"
+  ],
+  "file": "sint-antonius-abt-en-sint-nicolaaskapel-groeningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-antonius-abt-en-sint-nicolaaskapel-groeningen-1-1000.stl"
+  ]
+}
