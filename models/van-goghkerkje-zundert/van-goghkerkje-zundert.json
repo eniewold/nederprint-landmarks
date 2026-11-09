@@ -1,0 +1,35 @@
+{
+  "name": "Van Goghkerkje Zundert",
+  "origin": [
+    104914,
+    387314
+  ],
+  "xAxis": [
+    0.97435,
+    0.22504
+  ],
+  "groundHeight": 10.83,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0879100000007408"
+  ],
+  "description": "Bakstenen zaalkerk met zadeldak, dakruiter en lage aangebouwde consistorie.",
+  "realWorld": {
+    "groundNapM": 10.83,
+    "roofRidgeNapM": 23.46,
+    "highestPointM": 16.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0879100000007408",
+    "https://commons.wikimedia.org/wiki/Category:Van_Goghkerkje",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41125",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "van-goghkerkje-zundert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "van-goghkerkje-zundert-1-1000.stl"
+  ]
+}
