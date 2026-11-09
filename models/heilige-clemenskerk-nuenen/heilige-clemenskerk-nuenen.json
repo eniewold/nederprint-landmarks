@@ -1,0 +1,36 @@
+{
+  "name": "Heilige Clemenskerk Nuenen",
+  "origin": [
+    166301.75,
+    387181.25
+  ],
+  "xAxis": [
+    0.95,
+    -0.312
+  ],
+  "groundHeight": 17.381,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0820100000003149"
+  ],
+  "description": "Kruisbasiliek met driezijdige transeptarmen en kooromgang.",
+  "realWorld": {
+    "groundNapM": 17.381,
+    "towerHeightM": 52.63,
+    "highestPointM": 52.63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0820100000003149",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517999",
+    "https://ronddelinde.nl/wp-content/uploads/2023/03/2020_week_16.pdf",
+    "https://beeldbanknuenen.nl/boeken/pdf/2694.pdf"
+  ],
+  "file": "heilige-clemenskerk-nuenen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-clemenskerk-nuenen-1-100.stl",
+    "heilige-clemenskerk-nuenen-1-1000.stl"
+  ]
+}
