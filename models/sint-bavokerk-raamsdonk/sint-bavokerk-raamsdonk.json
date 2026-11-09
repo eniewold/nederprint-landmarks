@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Bavokerk Raamsdonk",
+  "origin": [
+    121754.75,
+    411067.75
+  ],
+  "xAxis": [
+    0.951,
+    0.309
+  ],
+  "groundHeight": 1.348,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0779100000000198"
+  ],
+  "description": "Neoromaanse drieapsidale kerk met achtkante vieringkoepel en twee onvoltooide westtorens.",
+  "realWorld": {
+    "groundNapM": 1.348,
+    "ahn5TopNapM": 52.29,
+    "highestPointM": 50.95
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0779100000000198",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Bavokerk_(Raamsdonk)",
+    "https://wiki-raamsdonk.nl/images/6/6e/SRH-02580.jpg",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-bavokerk-raamsdonk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-bavokerk-raamsdonk-1-100.stl",
+    "sint-bavokerk-raamsdonk-1-1000.stl"
+  ]
+}
