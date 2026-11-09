@@ -1,0 +1,37 @@
+{
+  "name": "Garnizoenskerk Ravenstein",
+  "origin": [
+    173277,
+    423142
+  ],
+  "xAxis": [
+    0.782,
+    0.623
+  ],
+  "groundHeight": 8.6,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001484074"
+  ],
+  "description": "Eenbeukige garnizoenskerk met blinde voorgevelramen, dakruiter en koorsluiting.",
+  "realWorld": {
+    "groundNapM": 8.6,
+    "ahn4TopNapM": 28.07,
+    "ahn5TopNapM": 29.48,
+    "towerTopM": 20,
+    "highestPointM": 20
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001484074",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Ravenstein",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32365",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "garnizoenskerk-ravenstein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "garnizoenskerk-ravenstein-1-1000.stl"
+  ]
+}
