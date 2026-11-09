@@ -1,0 +1,39 @@
+{
+  "name": "Sint-Petrus-Bandenkerk Hilvarenbeek",
+  "origin": [
+    137590,
+    388500
+  ],
+  "xAxis": [
+    0.954,
+    0.3
+  ],
+  "groundHeight": 17.469,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0798100000006247"
+  ],
+  "description": "Gotische kruiskerk met geprofileerde Beekse toren.",
+  "realWorld": {
+    "groundNapM": 17.469,
+    "ahn5RoofNapM": 36.95,
+    "ahn5TowerNapM": 84.49,
+    "towerHeightM": 74.5,
+    "highestPointM": 73
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0798100000006247",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22152",
+    "https://www.beeksetoren.nl/nl",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petrus%27_Bandenkerk_(Hilvarenbeek)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-petrus-bandenkerk-hilvarenbeek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petrus-bandenkerk-hilvarenbeek-1-100.stl",
+    "sint-petrus-bandenkerk-hilvarenbeek-1-1000.stl"
+  ]
+}
