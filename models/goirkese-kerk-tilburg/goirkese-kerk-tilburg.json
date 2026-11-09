@@ -1,0 +1,37 @@
+{
+  "name": "Goirkese Kerk Tilburg",
+  "origin": [
+    133815,
+    398234
+  ],
+  "xAxis": [
+    0.956,
+    -0.294
+  ],
+  "groundHeight": 13.65,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000019067"
+  ],
+  "description": "Basilicale kerk met dwarsbeuken en vieringtoren uit 1938.",
+  "realWorld": {
+    "groundNapM": 13.65,
+    "ahn5TowerNapM": 65.66,
+    "highestPointM": 52.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000019067",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521052",
+    "https://commons.wikimedia.org/wiki/Category:Goirkese_kerk",
+    "https://www.openmonumentendag.nl/monument/goirkese-kerk/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "goirkese-kerk-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "goirkese-kerk-tilburg-1-100.stl",
+    "goirkese-kerk-tilburg-1-1000.stl"
+  ]
+}
