@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Brigidakerk Geldrop",
+  "origin": [
+    166843.5,
+    381455
+  ],
+  "xAxis": [
+    0.914,
+    0.406
+  ],
+  "groundHeight": 20.032,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1771100000002789"
+  ],
+  "description": "Tweelingtorens en achtzijdige vieringkoepel met drie apsissen.",
+  "realWorld": {
+    "groundNapM": 20.032,
+    "towerHeightM": 64.25,
+    "domeHeightM": 46,
+    "highestPointM": 64.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1771100000002789",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16034",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Brigidakerk_(Geldrop)"
+  ],
+  "file": "sint-brigidakerk-geldrop.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-brigidakerk-geldrop-1-1000.stl"
+  ]
+}
