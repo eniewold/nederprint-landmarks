@@ -1,0 +1,36 @@
+{
+  "name": "Protestantse Kerk Vlijmen",
+  "origin": [
+    143791.5,
+    411683.6
+  ],
+  "xAxis": [
+    0.995,
+    -0.099
+  ],
+  "groundHeight": 4.351,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0797100000009993"
+  ],
+  "description": "Zaalkerk met middeleeuwse gemeentetoren en achthoekige spits, aansluitend op de afzonderlijke pastorie.",
+  "realWorld": {
+    "groundNapM": 4.351,
+    "roofRidgeNapM": 18.21,
+    "towerHeightM": 35.3,
+    "highestPointM": 35.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0797100000009993",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Vlijmen)",
+    "https://heusden.nieuws.nl/historisch-heusden/historisch-heusden-de-gemeentetoren-en-klokken-bij-de-nh-kerk-in-vlijmen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "protestantse-kerk-vlijmen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-vlijmen-1-1000.stl"
+  ]
+}
