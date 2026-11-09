@@ -1,0 +1,38 @@
+{
+  "name": "DePetrus Vught",
+  "origin": [
+    148832,
+    407706
+  ],
+  "xAxis": [
+    0.88,
+    0.475
+  ],
+  "groundHeight": 5.52,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0865100000009197"
+  ],
+  "description": "Neoromaanse kruiskoepelkerk met vieringtoren, rond gesloten koor en zijpaviljoens.",
+  "realWorld": {
+    "groundNapM": 5.52,
+    "towerHeightM": 57.9,
+    "ahn5NaveNapM": 38,
+    "highestPointM": 57.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0865100000009197",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521327",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Petrus,_Vught",
+    "https://www.depetrus.nl/praktische-informatie/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "depetrus-vught.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "depetrus-vught-1-100.stl",
+    "depetrus-vught-1-1000.stl"
+  ]
+}
