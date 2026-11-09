@@ -1,0 +1,39 @@
+{
+  "name": "Sint-Petruskerk Eindhoven",
+  "origin": [
+    160898.64,
+    384957.33
+  ],
+  "xAxis": [
+    0.9641,
+    0.2656
+  ],
+  "groundHeight": 19.4,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000308080"
+  ],
+  "description": "Neogotische kruisbasiliek van H.J. van Tulder (1880) in Woensel met westtoren van L.P.J. Kooken (1912): vierkante schacht, klokverdieping met wimbergen en achtkante spits met kroon; oorsprong in de viering op de nokas, X langs de nok naar het koor (oost).",
+  "realWorld": {
+    "groundNapM": 19.4,
+    "ahn5RidgeNapM": 46.95,
+    "ahn5SpireNapM": 91.43,
+    "towerHeightWikipediaM": 76,
+    "highestPointM": 72
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Petruskerk_(Eindhoven)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14653",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000308080",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Petruskerk_(Eindhoven)"
+  ],
+  "file": "sint-petruskerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petruskerk-eindhoven-1-100.stl",
+    "sint-petruskerk-eindhoven-1-1000.stl"
+  ]
+}
