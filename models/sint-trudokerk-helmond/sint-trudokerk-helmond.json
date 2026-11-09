@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Trudokerk Helmond",
+  "origin": [
+    171043.6,
+    388611.2
+  ],
+  "xAxis": [
+    -0.59,
+    -0.807
+  ],
+  "groundHeight": 17.745,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000403545"
+  ],
+  "description": "Kruisbasiliek met vier hoektorentjes en vijf straalkapellen.",
+  "realWorld": {
+    "groundNapM": 17.745,
+    "towerHeightM": 61,
+    "highestPointM": 61
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0794100000403545",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21456",
+    "https://damiaanhelmond.nl/images/parochiekrant/2024/damiaan-04-2024.pdf",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Trudokerk_(Stiphout)"
+  ],
+  "file": "sint-trudokerk-helmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-trudokerk-helmond-1-100.stl",
+    "sint-trudokerk-helmond-1-1000.stl"
+  ]
+}
