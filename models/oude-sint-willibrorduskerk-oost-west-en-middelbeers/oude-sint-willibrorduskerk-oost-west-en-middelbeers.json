@@ -1,0 +1,37 @@
+{
+  "name": "Oude Sint-Willibrorduskerk Middelbeers",
+  "origin": [
+    145170,
+    386133
+  ],
+  "xAxis": [
+    0.987,
+    0.16
+  ],
+  "groundHeight": 19.393,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0823100000001198"
+  ],
+  "description": "Middeleeuwse kruiskerk met lagere koorsluiting en hoge westtoren.",
+  "realWorld": {
+    "groundNapM": 19.393,
+    "ahn5TopNapM": 59.075,
+    "ridgeM": 14.4,
+    "highestPointM": 39.63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0823100000001198",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31597",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Sint-Willibrorduskerk,_Middelbeers",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oude-sint-willibrorduskerk-oost-west-en-middelbeers.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-sint-willibrorduskerk-oost-west-en-middelbeers-1-100.stl",
+    "oude-sint-willibrorduskerk-oost-west-en-middelbeers-1-1000.stl"
+  ]
+}
