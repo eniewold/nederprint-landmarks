@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Servatiuskerk Megen",
+  "origin": [
+    167167.7,
+    426018
+  ],
+  "xAxis": [
+    -0.006,
+    1
+  ],
+  "groundHeight": 7.5,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001486272"
+  ],
+  "description": "Driebeukige neogotische kerk met toren, koor en oostelijke aanbouw.",
+  "realWorld": {
+    "groundNapM": 7.5,
+    "ahn4TopNapM": 52,
+    "ahn5TopNapM": 50.23,
+    "towerTopM": 44.05,
+    "highestPointM": 44.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001486272",
+    "https://commons.wikimedia.org/wiki/Category:St._Servatiuskerk,_Megen",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28540",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-servatiuskerk-megen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-servatiuskerk-megen-1-1000.stl"
+  ]
+}
