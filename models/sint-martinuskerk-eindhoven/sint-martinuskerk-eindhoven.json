@@ -1,0 +1,46 @@
+{
+  "name": "Sint-Martinuskerk Eindhoven",
+  "origin": [
+    164133.3,
+    384365.87
+  ],
+  "xAxis": [
+    0.9239,
+    0.3827
+  ],
+  "groundHeight": 18.3,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000302308"
+  ],
+  "description": "Neogotische kruisbasiliek van Emmanuel Corbey (1888-1891) in Tongelre met twee onvoltooide torens en de pastorie in hetzelfde BAG-pand; oorsprong in de viering, X-as van de voorgevel naar het koor.",
+  "realWorld": {
+    "groundNapM": 18.3,
+    "ahn5NaveRidgeNapM": 38.65,
+    "ahn5RoofTurretNapM": 47.85,
+    "naveRidgeM": 20.35,
+    "naveEaveM": 14.65,
+    "roofPitchDeg": 56.7,
+    "towerWallM": 21.3,
+    "towerTentRoofM": 23.6,
+    "apseRidgeM": 18.3,
+    "pastorieRidgeM": 14.2,
+    "highestPointM": 30.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Martinuskerk_(Tongelre)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518790",
+    "https://www.openstreetmap.org/way/272118491",
+    "https://www.wikidata.org/wiki/Q2492219",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Martinuskerk,_Eindhoven",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-martinuskerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-eindhoven-1-100.stl",
+    "sint-martinuskerk-eindhoven-1-1000.stl"
+  ]
+}
