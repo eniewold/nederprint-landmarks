@@ -1,0 +1,36 @@
+{
+  "name": "Oude Kerk Huizen",
+  "origin": [
+    144485.95,
+    478870.25
+  ],
+  "xAxis": [
+    0.9996,
+    0.027
+  ],
+  "groundHeight": 6.901,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0406100000005818"
+  ],
+  "description": "Middeleeuwse kerk met ingebouwde toren, noordelijke kruisarm en zuidelijke veelhoekige uitbouw.",
+  "realWorld": {
+    "groundNapM": 6.901,
+    "ahn5TowerNapM": 41.34,
+    "highestPointM": 34.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0406100000005818",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22719",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk_(Huizen)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "oude-kerk-huizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "oude-kerk-huizen-1-100.stl",
+    "oude-kerk-huizen-1-1000.stl"
+  ]
+}
