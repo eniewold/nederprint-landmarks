@@ -1,0 +1,67 @@
+{
+  "name": "Hippolytuskerk Hippolytushoef",
+  "origin": [
+    126392.5,
+    546782
+  ],
+  "xAxis": [
+    0.9924,
+    0.123
+  ],
+  "groundHeight": 4.102,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      15,
+      -7
+    ],
+    [
+      15,
+      7
+    ],
+    [
+      30,
+      -7
+    ],
+    [
+      30,
+      7
+    ],
+    [
+      40,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0462100000002300"
+  ],
+  "description": "Zaalkerk met vijfzijdig koor en vierkante middeleeuwse toren met gemetselde spits op een kerkterp.",
+  "realWorld": {
+    "groundNapM": 4.102,
+    "roofRidgeNapM": 20.524,
+    "towerTopNapM": 34.15,
+    "highestPointM": 30
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0462100000002300",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Hippolytushoef",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38921",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hippolytuskerk-hippolytushoef.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hippolytuskerk-hippolytushoef-1-100.stl",
+    "hippolytuskerk-hippolytushoef-1-1000.stl"
+  ]
+}
