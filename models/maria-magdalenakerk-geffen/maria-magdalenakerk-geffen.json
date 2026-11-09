@@ -1,0 +1,37 @@
+{
+  "name": "Maria Magdalenakerk Geffen",
+  "origin": [
+    160185,
+    417130.5
+  ],
+  "xAxis": [
+    0.998,
+    0.063
+  ],
+  "groundHeight": 6.306,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1671100000001323"
+  ],
+  "description": "Gotische kruisbasiliek met lage zijbeuken, dakruiter en brede toren met tentdak.",
+  "realWorld": {
+    "groundNapM": 6.306,
+    "ahn5TowerNapM": 48.3,
+    "ahn5RoofNapM": 28.2,
+    "highestPointM": 41.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1671100000001323",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Magdalenakerk,_Geffen",
+    "https://www.trefhetinoss.nl/bij-ons-om-de-hoek/bij-ons-om-de-hoek-blog/maria-magdalena-kerk-geffen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "maria-magdalenakerk-geffen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maria-magdalenakerk-geffen-1-100.stl",
+    "maria-magdalenakerk-geffen-1-1000.stl"
+  ]
+}
