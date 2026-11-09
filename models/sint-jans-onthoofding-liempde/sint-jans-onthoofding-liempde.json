@@ -1,0 +1,37 @@
+{
+  "name": "Sint Jans Onthoofding Liempde",
+  "origin": [
+    154042.75,
+    397974.75
+  ],
+  "xAxis": [
+    0.989,
+    0.15
+  ],
+  "groundHeight": 10.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0757100001439109"
+  ],
+  "description": "Driebeukige kruiskerk met westtoren, vieringruiter en sacristie�n.",
+  "realWorld": {
+    "groundNapM": 10.2,
+    "ahn4TowerNapM": 70.714,
+    "ahn5TowerNapM": 70.127,
+    "ahn5RiderNapM": 38.024,
+    "highestPointM": 59.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0757100001439109",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Jans_Onthoofdingkerk_(Liempde)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516630",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-jans-onthoofding-liempde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jans-onthoofding-liempde-1-1000.stl"
+  ]
+}
