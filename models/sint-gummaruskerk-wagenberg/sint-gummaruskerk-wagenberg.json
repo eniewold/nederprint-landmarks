@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Gummaruskerk Wagenberg",
+  "origin": [
+    110696.25,
+    408693.25
+  ],
+  "xAxis": [
+    0.66,
+    -0.751
+  ],
+  "groundHeight": 1.62,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1719100000005973"
+  ],
+  "description": "Neogotische kruiskerk met hoge westtoren en vieringruiter.",
+  "realWorld": {
+    "groundNapM": 1.62,
+    "ahn5NaveNapM": 24.3,
+    "towerHeightM": 67,
+    "highestPointM": 67
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1719100000005973",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521492",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Sint-Gummaruskerk,_Wagenberg",
+    "https://naardekerk.nl/wie-zijn-wij/informatie/kerken/267-h-gummaruskerk-wagenberg.html",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-gummaruskerk-wagenberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gummaruskerk-wagenberg-1-100.stl",
+    "sint-gummaruskerk-wagenberg-1-1000.stl"
+  ]
+}
