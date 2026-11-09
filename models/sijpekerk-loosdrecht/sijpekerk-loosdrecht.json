@@ -1,0 +1,39 @@
+{
+  "name": "Sijpekerk Loosdrecht",
+  "origin": [
+    136800,
+    467217
+  ],
+  "xAxis": [
+    0.967,
+    0.255
+  ],
+  "groundHeight": 0.836,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1696100000017344"
+  ],
+  "description": "Laatgotische pseudobasiliek met vijfzijdig koor, consistorie en hoge toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 0.836,
+    "shipRidgeNapM": 15.3,
+    "choirRidgeNapM": 16.32,
+    "ahn4SpireNapM": 47.1,
+    "highestPointM": 46.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1696100000017344",
+    "https://commons.wikimedia.org/wiki/Category:Sypekerk,_Nieuw-Loosdrecht",
+    "https://sijpekerk.nl/historie/",
+    "https://sijpekerk.nl/algemeen-gebouw-sijpekerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/26185",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sijpekerk-loosdrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sijpekerk-loosdrecht-1-100.stl"
+  ]
+}
