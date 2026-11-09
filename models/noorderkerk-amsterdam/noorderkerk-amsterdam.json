@@ -1,0 +1,39 @@
+{
+  "name": "Noorderkerk Amsterdam",
+  "origin": [
+    120902.8,
+    488095.3
+  ],
+  "xAxis": [
+    0.972,
+    0.235
+  ],
+  "groundHeight": 0.986,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012177304",
+    "NL.IMBAG.Pand.0363100012176942",
+    "NL.IMBAG.Pand.0363100012176956",
+    "NL.IMBAG.Pand.0363100012177303"
+  ],
+  "description": "Noorderkerk met Griekse kruisvorm, vier hoekaanbouwen en centrale dakruiter.",
+  "realWorld": {
+    "groundNapM": 0.986,
+    "ahn5TowerNapM": 42.43,
+    "highestPointM": 41.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012177304",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/3923",
+    "https://commons.wikimedia.org/wiki/Category:Noorderkerk_(Amsterdam)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "noorderkerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "noorderkerk-amsterdam-1-100.stl",
+    "noorderkerk-amsterdam-1-1000.stl"
+  ]
+}
