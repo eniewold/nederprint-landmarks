@@ -1,0 +1,41 @@
+{
+  "name": "Hervormde kerk Drimmelen",
+  "origin": [
+    114616.3,
+    413372.25
+  ],
+  "xAxis": [
+    0.628,
+    -0.778
+  ],
+  "groundHeight": 0.547,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1719100000018980"
+  ],
+  "description": "Achthoekige zaalkerk uit 1792 onder hoog leien schilddak met dakruiter en consistoriekamer; oorsprong in het hart van de zaal, X naar de ingang (zuidoost).",
+  "realWorld": {
+    "groundNapM": 0.547,
+    "eaveNapM": 6.9,
+    "ridgeNapM": 13.75,
+    "turretCapNapM": 17.9,
+    "hallLengthM": 17.38,
+    "hallWidthM": 10.26,
+    "highestPointM": 19.7
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Hervormde_kerk_(Drimmelen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28096",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1719100000018980",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Drimmelen)"
+  ],
+  "file": "hervormde-kerk-drimmelen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-drimmelen-1-100.stl",
+    "hervormde-kerk-drimmelen-1-1000.stl"
+  ]
+}
