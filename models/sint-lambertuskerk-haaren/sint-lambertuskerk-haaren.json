@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Lambertuskerk Haaren",
+  "origin": [
+    143957.75,
+    401497.75
+  ],
+  "xAxis": [
+    0.93,
+    0.37
+  ],
+  "groundHeight": 7.494,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0788100000000161"
+  ],
+  "description": "Kruisbasiliek met gesloten transeptarmen, ingesnoerde westspits en vieringtoren.",
+  "realWorld": {
+    "groundNapM": 7.494,
+    "ahn4TopNapM": 70.03,
+    "ahn5TopNapM": 70.67,
+    "highestPointM": 63.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0788100000000161",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Lambertuskerk,_Haaren",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517024",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://assets.plaece.nl/kuma-oisterwijk/uploads/media/6315cf6e52b59/20220815-boekje-open-monumentendag-2022.pdf"
+  ],
+  "file": "sint-lambertuskerk-haaren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-haaren-1-1000.stl"
+  ]
+}
