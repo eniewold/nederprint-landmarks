@@ -1,0 +1,36 @@
+{
+  "name": "Nederlands Hervormde Kerk Spanbroek",
+  "origin": [
+    125009.3,
+    523479.2
+  ],
+  "xAxis": [
+    0.999,
+    -0.043
+  ],
+  "groundHeight": 0.819,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0432100000000575"
+  ],
+  "description": "Voormalige hervormde kerk met lange steunberengevel, driezijdig koor en ingesnoerde torenspits.",
+  "realWorld": {
+    "groundNapM": 0.819,
+    "ahn5TowerNapM": 40.88,
+    "highestPointM": 40
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0432100000000575",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31798",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Spanbroek",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "nederlands-hervormde-kerk-spanbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-spanbroek-1-100.stl",
+    "nederlands-hervormde-kerk-spanbroek-1-1000.stl"
+  ]
+}
