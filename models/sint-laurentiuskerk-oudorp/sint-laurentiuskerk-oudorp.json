@@ -1,0 +1,39 @@
+{
+  "name": "Sint-Laurentiuskerk Oudorp",
+  "origin": [
+    113483,
+    516630
+  ],
+  "xAxis": [
+    0.98728,
+    -0.15899
+  ],
+  "groundHeight": 0.24,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0361100000100864"
+  ],
+  "description": "Neogotische pseudobasiliek met toren, pastorie en lage verbindingsvleugel.",
+  "realWorld": {
+    "groundNapM": 0.24,
+    "churchRidgeNapM": 18.03,
+    "houseRidgeNapM": 13.8,
+    "spireAhn4NapM": 48.66,
+    "highestPointM": 48.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0361100000100864",
+    "https://commons.wikimedia.org/wiki/Category:St._Laurentius_(Oudorp)",
+    "https://www.erfgoedalkmaar.nl/monumenten/fotogalerij-sint-laurentiuskerk-oudorp/",
+    "https://www.monumenten.nl/monument/524949",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/524948",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-laurentiuskerk-oudorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-laurentiuskerk-oudorp-1-100.stl"
+  ]
+}
