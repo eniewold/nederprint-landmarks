@@ -1,0 +1,36 @@
+{
+  "name": "Heilige Antonius Abtkerk Riel",
+  "origin": [
+    129755,
+    392839
+  ],
+  "xAxis": [
+    0.971,
+    -0.238
+  ],
+  "groundHeight": 15.75,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0785100000014115"
+  ],
+  "description": "Neogotische pseudobasilicale kruiskerk met dubbel transept en westtoren.",
+  "realWorld": {
+    "groundNapM": 15.75,
+    "ahn5TopNapM": 60.18,
+    "highestPointM": 44.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0785100000014115",
+    "https://commons.wikimedia.org/wiki/Category:Antonius_Abt-kerk,_Riel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/516998",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "heilige-antonius-abtkerk-riel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-antonius-abtkerk-riel-1-100.stl",
+    "heilige-antonius-abtkerk-riel-1-1000.stl"
+  ]
+}
