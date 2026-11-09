@@ -1,0 +1,38 @@
+{
+  "name": "Westerkerk Enkhuizen",
+  "origin": [
+    148165,
+    524005
+  ],
+  "xAxis": [
+    0.998,
+    0.062
+  ],
+  "groundHeight": 0.109,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0388100000229515",
+    "NL.IMBAG.Pand.0388100000205175",
+    "NL.IMBAG.Pand.0388100000209195"
+  ],
+  "description": "Driebeukige Westerkerk met drie langskappen, librije, kosterswoning en houten klokkenhuis.",
+  "realWorld": {
+    "groundNapM": 0.109,
+    "ahn5TowerNapM": 27.89,
+    "highestPointM": 27.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0388100000229515",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15211",
+    "https://commons.wikimedia.org/wiki/Category:Westerkerk_(Enkhuizen)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "westerkerk-enkhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "westerkerk-enkhuizen-1-100.stl",
+    "westerkerk-enkhuizen-1-1000.stl"
+  ]
+}
