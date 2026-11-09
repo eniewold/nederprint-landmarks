@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Jans Onthoofdingkerk Gemert",
+  "origin": [
+    175345,
+    396275
+  ],
+  "xAxis": [
+    0.9992,
+    -0.04
+  ],
+  "groundHeight": 15.17,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1652100000000307"
+  ],
+  "description": "Driebeukige kerk met neogotische toren, naaldspits, hoektorentjes en verbonden aanbouw.",
+  "realWorld": {
+    "groundNapM": 15.17,
+    "ahn5TowerNapM": 72.43,
+    "ahn5RoofNapM": 40.3,
+    "highestPointM": 56.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1652100000000307",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_van_Sint-Jans_Onthoofding,_Gemert",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16050",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-jans-onthoofdingkerk-gemert.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jans-onthoofdingkerk-gemert-1-100.stl",
+    "sint-jans-onthoofdingkerk-gemert-1-1000.stl"
+  ]
+}
