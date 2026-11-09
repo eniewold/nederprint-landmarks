@@ -1,0 +1,37 @@
+{
+  "name": "Hasseltse Kapel Tilburg",
+  "origin": [
+    132613.5,
+    398639.8
+  ],
+  "xAxis": [
+    0.994,
+    -0.11
+  ],
+  "groundHeight": 12.835,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0855100000144292"
+  ],
+  "description": "Kapel met vloeiend oplopende torengevel en lage koorsluiting.",
+  "realWorld": {
+    "groundNapM": 12.835,
+    "roofRidgeNapM": 21.5,
+    "ahn5TopNapM": 27.08,
+    "towerTopM": 14.35,
+    "highestPointM": 14.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0855100000144292",
+    "https://commons.wikimedia.org/wiki/Category:Hasseltse_kapel_(Tilburg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35700",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hasseltse-kapel-tilburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hasseltse-kapel-tilburg-1-1000.stl"
+  ]
+}
