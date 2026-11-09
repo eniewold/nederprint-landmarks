@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Sebastianuskerk Herpen",
+  "origin": [
+    172525.5,
+    420438
+  ],
+  "xAxis": [
+    1,
+    -0.01
+  ],
+  "groundHeight": 8.616,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001484077"
+  ],
+  "description": "Driebeukige kerk met middeleeuws koor en toren.",
+  "realWorld": {
+    "groundNapM": 8.616,
+    "towerHeightM": 49.17,
+    "highestPointM": 49.17
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001484077",
+    "https://www.bhic.nl/ontdekken/verhalen/herpen-in-vogelvlucht",
+    "https://verhalenopglasinlood.nl/herpen_sebastianus/gebouw.html",
+    "https://commons.wikimedia.org/wiki/Category:Sebastianuskerk_(Herpen)"
+  ],
+  "file": "sint-sebastianuskerk-herpen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-sebastianuskerk-herpen-1-100.stl",
+    "sint-sebastianuskerk-herpen-1-1000.stl"
+  ]
+}
