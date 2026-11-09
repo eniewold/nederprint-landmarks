@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Luciakerk Helmond",
+  "origin": [
+    172158.25,
+    386476.25
+  ],
+  "xAxis": [
+    -0.954,
+    -0.317
+  ],
+  "groundHeight": 18.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000390849"
+  ],
+  "description": "Driebeukige kruisbasiliek met kooromgang, westtoren en vieringruiter.",
+  "realWorld": {
+    "groundNapM": 18.2,
+    "ahn4TopNapM": 62.529,
+    "ahn5TopNapM": 71.218,
+    "ahn5VieringNapM": 49.313,
+    "highestPointM": 53
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0794100000390849",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Luciakerk_(Mierlo-Hout)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513046",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-luciakerk-helmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-luciakerk-helmond-1-1000.stl"
+  ]
+}
