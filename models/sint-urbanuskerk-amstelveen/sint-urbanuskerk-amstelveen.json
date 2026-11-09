@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Urbanuskerk Amstelveen",
+  "origin": [
+    119882.5,
+    474925.5
+  ],
+  "xAxis": [
+    0.999,
+    -0.04
+  ],
+  "groundHeight": -1.293,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0362100001091256"
+  ],
+  "description": "Sint-Urbanuskerk Nes aan de Amstel met vieringtoren, dwarsschip, vijf zijbeukdaken en schuin aangebouwde pastorie.",
+  "realWorld": {
+    "groundNapM": -1.293,
+    "ahn5RoofNapM": 18.86,
+    "ahn5TowerNapM": 49.15,
+    "highestPointM": 50.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0362100001091256",
+    "https://commons.wikimedia.org/wiki/Category:St-Urbanuskerk_(Nes_aan_de_Amstel)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8142",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-urbanuskerk-amstelveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-urbanuskerk-amstelveen-1-100.stl",
+    "sint-urbanuskerk-amstelveen-1-1000.stl"
+  ]
+}
