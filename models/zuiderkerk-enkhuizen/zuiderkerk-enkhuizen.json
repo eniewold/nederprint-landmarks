@@ -1,0 +1,39 @@
+{
+  "name": "Zuiderkerk Enkhuizen",
+  "origin": [
+    148630,
+    524048
+  ],
+  "xAxis": [
+    0.99994,
+    0.01074
+  ],
+  "groundHeight": 0.17,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0388100000229269"
+  ],
+  "description": "Tweebeukige hallenkerk met vijfzijdige koren, kruisbeuk en hoge Zuidertoren.",
+  "realWorld": {
+    "groundNapM": 0.17,
+    "roofRidgeNapM": 16.3,
+    "ahn4TowerNapM": 61.6,
+    "sourceTowerHeightM": 75,
+    "highestPointM": 74.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0388100000229269",
+    "https://commons.wikimedia.org/wiki/Category:Zuiderkerk_(Enkhuizen)",
+    "https://commons.wikimedia.org/wiki/Category:Zuidertoren_(Enkhuizen)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15268",
+    "https://enkhuizen.net/wat-te-doen/zuiderkerk",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "zuiderkerk-enkhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "zuiderkerk-enkhuizen-1-1000.stl"
+  ]
+}
