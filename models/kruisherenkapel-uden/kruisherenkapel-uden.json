@@ -1,0 +1,36 @@
+{
+  "name": "Kruisherenkapel Uden",
+  "origin": [
+    170405,
+    408068.8
+  ],
+  "xAxis": [
+    0.9986,
+    -0.0523
+  ],
+  "groundHeight": 16.8,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0856100000342675"
+  ],
+  "description": "Kruisherenkapel met zijbeuken, koorsluiting, traptorens en aanbouwen.",
+  "realWorld": {
+    "groundNapM": 16.8,
+    "ahn5RoofNapM": 37.8,
+    "highestPointM": 30.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0856100000342675",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512971",
+    "https://commons.wikimedia.org/wiki/Category:Kruisherenkapel,_Uden",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kruisherenkapel-uden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kruisherenkapel-uden-1-100.stl",
+    "kruisherenkapel-uden-1-1000.stl"
+  ]
+}
