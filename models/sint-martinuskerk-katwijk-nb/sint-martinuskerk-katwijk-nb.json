@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Martinuskerk Katwijk NB",
+  "origin": [
+    188411.25,
+    418129.25
+  ],
+  "xAxis": [
+    0.96,
+    0.278
+  ],
+  "groundHeight": 11.7,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1684100000000177"
+  ],
+  "description": "Kruiskerk met westtoren, vieringruiter en sacristie.",
+  "realWorld": {
+    "groundNapM": 11.7,
+    "ahn4TowerNapM": 52.725,
+    "ahn5TowerNapM": 52.62,
+    "ahn5RiderNapM": 36.684,
+    "highestPointM": 40.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1684100000000177",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Martinuskerk_(Katwijk,_North_Brabant)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11632",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-martinuskerk-katwijk-nb.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-katwijk-nb-1-1000.stl"
+  ]
+}
