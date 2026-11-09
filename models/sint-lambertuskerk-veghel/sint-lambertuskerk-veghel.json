@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Lambertuskerk Veghel",
+  "origin": [
+    165724,
+    403233
+  ],
+  "xAxis": [
+    0.178,
+    0.984
+  ],
+  "groundHeight": 9.2,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0860100001910490"
+  ],
+  "description": "Neogotische kruisbasiliek met hoge westtoren, kooromgang en sacristie.",
+  "realWorld": {
+    "groundNapM": 9.2,
+    "ahn5TopNapM": 87.728,
+    "publishedTowerHeightM": 83.5,
+    "highestPointM": 82.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0860100001910490",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Lambertuskerk_(Veghel)",
+    "https://www.vriendenvandeeerdsekerk.nl/wp-content/uploads/2016/11/2016-09-11-Open-Monumentendag-Boekje2.compressed.pdf",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-lambertuskerk-veghel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-veghel-1-100.stl",
+    "sint-lambertuskerk-veghel-1-1000.stl"
+  ]
+}
