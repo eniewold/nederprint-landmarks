@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Benedictuskerk Teeffelen",
+  "origin": [
+    162128.5,
+    423336
+  ],
+  "xAxis": [
+    0.9837,
+    0.1796
+  ],
+  "groundHeight": 6.22,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001452929"
+  ],
+  "description": "Eenbeukige kerk met toren en noordelijke sacristie; gemeten in BAG en AHN5.",
+  "realWorld": {
+    "groundNapM": 6.22,
+    "ahn5TowerNapM": 29.62,
+    "highestPointM": 23.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001452929",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25917",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Benedictuskerk_(Teeffelen)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-benedictuskerk-teeffelen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-benedictuskerk-teeffelen-1-100.stl",
+    "sint-benedictuskerk-teeffelen-1-1000.stl"
+  ]
+}
