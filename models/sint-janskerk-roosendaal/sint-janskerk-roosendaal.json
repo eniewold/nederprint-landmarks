@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Janskerk Roosendaal",
+  "origin": [
+    90479,
+    394233
+  ],
+  "xAxis": [
+    0.9998,
+    0.0175
+  ],
+  "groundHeight": 3.687,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1674100001071286"
+  ],
+  "description": "Classicistische kruiskerk met halfronde sluitingen en oudere toren met achtkante lantaarn.",
+  "realWorld": {
+    "groundNapM": 3.687,
+    "ahn5TopNapM": 44.51,
+    "towerHeightPublishedM": 57.1,
+    "highestPointM": 40.82
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1674100001071286",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Jan_de_Doper,_Roosendaal",
+    "https://tongerlohuys.nl/wp-content/uploads/Jaarboek-33-1973-Artikel-3.pdf",
+    "https://www.erfgoedroosendaal.nl/htmlpag/glaskunst/roosendaalmarkt002_sintjanskerk.pdf",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-janskerk-roosendaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-janskerk-roosendaal-1-100.stl",
+    "sint-janskerk-roosendaal-1-1000.stl"
+  ]
+}
