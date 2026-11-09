@@ -1,0 +1,35 @@
+{
+  "name": "Heiligen Maria en Brigidakerk Geldrop",
+  "origin": [
+    165795.25,
+    381062.25
+  ],
+  "xAxis": [
+    0.974,
+    0.227
+  ],
+  "groundHeight": 19.666,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1771100000020423"
+  ],
+  "description": "Driebeukige kruiskerk met vierkante toren en achtzijdige naaldspits.",
+  "realWorld": {
+    "groundNapM": 19.666,
+    "towerHeightM": 57.25,
+    "highestPointM": 57.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1771100000020423",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515927",
+    "https://commons.wikimedia.org/wiki/Category:H.H._Maria_en_Brigidakerk_(Zesgehuchten)"
+  ],
+  "file": "heiligen-maria-en-brigidakerk-geldrop.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heiligen-maria-en-brigidakerk-geldrop-1-1000.stl"
+  ]
+}
