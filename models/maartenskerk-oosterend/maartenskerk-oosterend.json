@@ -1,0 +1,37 @@
+{
+  "name": "Maartenskerk Oosterend",
+  "origin": [
+    120548,
+    566491
+  ],
+  "xAxis": [
+    0.99688,
+    0.07893
+  ],
+  "groundHeight": 3.241,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000004861"
+  ],
+  "description": "Kruiskerk met romaanse bouwdelen, dwarsschip, oostelijk ingangshuis en toren met lage kap.",
+  "realWorld": {
+    "groundNapM": 3.241,
+    "shipRidgeNapM": 15,
+    "towerRoofNapM": 26.3,
+    "highestPointM": 23.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000004861",
+    "https://commons.wikimedia.org/wiki/Category:Maartenskerk,_Oosterend",
+    "https://www.maartenskerktexel.nl/de-maartenskerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35221",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "maartenskerk-oosterend.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maartenskerk-oosterend-1-100.stl"
+  ]
+}
