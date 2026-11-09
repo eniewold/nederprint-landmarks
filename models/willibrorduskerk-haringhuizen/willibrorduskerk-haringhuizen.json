@@ -1,0 +1,37 @@
+{
+  "name": "Willibrorduskerk Haringhuizen",
+  "origin": [
+    117295.75,
+    532053.25
+  ],
+  "xAxis": [
+    0.9961,
+    -0.088
+  ],
+  "groundHeight": 0.173,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0412100000569933"
+  ],
+  "description": "Rechtgesloten laatgotische zaalkerk met ingekorte toren en achthoekige spits.",
+  "realWorld": {
+    "groundNapM": 0.173,
+    "ahn5TowerNapM": 26.66,
+    "highestPointM": 26.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0412100000569933",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8674",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/8675",
+    "https://commons.wikimedia.org/wiki/Category:Willibrorduskerk,_Haringhuizen",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "willibrorduskerk-haringhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "willibrorduskerk-haringhuizen-1-100.stl",
+    "willibrorduskerk-haringhuizen-1-1000.stl"
+  ]
+}
