@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Jozefkerk Helmond",
+  "origin": [
+    174575,
+    388151
+  ],
+  "xAxis": [
+    0.8969,
+    -0.4422
+  ],
+  "groundHeight": 17.441,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0794100000384713"
+  ],
+  "description": "Basilicale kerk met westtoren, achtkantige spits, zijbeuken en koorsluiting.",
+  "realWorld": {
+    "groundNapM": 17.441,
+    "ahn5RoofNapM": 38.5,
+    "ahn5TowerNapM": 63.2,
+    "highestPointM": 45.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0794100000384713",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/513030",
+    "https://www.youtube.com/watch?v=SNDFpk5pLjg",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-jozefkerk-helmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jozefkerk-helmond-1-100.stl",
+    "sint-jozefkerk-helmond-1-1000.stl"
+  ]
+}
