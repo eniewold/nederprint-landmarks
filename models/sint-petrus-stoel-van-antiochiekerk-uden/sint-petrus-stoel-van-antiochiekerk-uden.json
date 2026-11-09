@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Petrus Stoel van Antiochiëkerk Uden",
+  "origin": [
+    170540,
+    407864
+  ],
+  "xAxis": [
+    0.931,
+    0.365
+  ],
+  "groundHeight": 16.496,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0856100000342681"
+  ],
+  "description": "Koepelkerk met twee achthoekige westtorens, drie ronde sluitingen en sacristie.",
+  "realWorld": {
+    "groundNapM": 16.496,
+    "ahn4TopNapM": 75.9365,
+    "ahnDomeHeightM": 47.9,
+    "highestPointM": 59.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0856100000342681",
+    "https://commons.wikimedia.org/wiki/Category:St._Petrus_Stoel_te_Antiochi%C3%AB,_Uden",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.parochiesintpetrus.nl/actueel/rondleidingen-in-de-kerk/"
+  ],
+  "file": "sint-petrus-stoel-van-antiochiekerk-uden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petrus-stoel-van-antiochiekerk-uden-1-100.stl",
+    "sint-petrus-stoel-van-antiochiekerk-uden-1-1000.stl"
+  ]
+}
