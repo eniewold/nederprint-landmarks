@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Lambertuskerk Haren",
+  "origin": [
+    168671.5,
+    423358.75
+  ],
+  "xAxis": [
+    0.999,
+    -0.048
+  ],
+  "groundHeight": 7.468,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0828100001486273"
+  ],
+  "description": "Pseudobasiliek met westtoren en veelhoekige koorsluiting.",
+  "realWorld": {
+    "groundNapM": 7.468,
+    "ahn4TopNapM": 48.6,
+    "ahn5TopNapM": 46.34,
+    "highestPointM": 41.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0828100001486273",
+    "https://commons.wikimedia.org/wiki/Category:Lambertuskerk_(Haren)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28515",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "sint-lambertuskerk-haren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-lambertuskerk-haren-1-1000.stl"
+  ]
+}
