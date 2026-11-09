@@ -1,0 +1,37 @@
+{
+  "name": "Sint-Pancratiuskerk Hoogeloon",
+  "origin": [
+    146737.75,
+    378630.75
+  ],
+  "xAxis": [
+    0.982,
+    -0.189
+  ],
+  "groundHeight": 26.74,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1728100000000475"
+  ],
+  "description": "Kruiskerk met achthoekige vieringkoepel; de oude vrijstaande toren is een ander monument.",
+  "realWorld": {
+    "groundNapM": 26.74,
+    "ahn4TopNapM": 58.986,
+    "ahn5TopNapM": 60.645,
+    "domeM": 30,
+    "highestPointM": 29.9
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1728100000000475",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Pancratiuskerk,_Hoogeloon",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514903",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-pancratiuskerk-hoogeloon.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-pancratiuskerk-hoogeloon-1-1000.stl"
+  ]
+}
