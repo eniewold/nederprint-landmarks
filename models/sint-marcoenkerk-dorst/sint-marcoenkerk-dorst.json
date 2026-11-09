@@ -1,0 +1,42 @@
+{
+  "name": "Sint-Marcoenkerk Dorst",
+  "origin": [
+    118215,
+    400303.4
+  ],
+  "xAxis": [
+    0.448,
+    0.894
+  ],
+  "groundHeight": 6.4,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0826100000018085"
+  ],
+  "description": "Pseudobasilicale kruiskerk van Jos Cuypers (1911-1912), koor op het noorden; oorsprong in de kruising, X-as van de voorgevel naar het koor.",
+  "realWorld": {
+    "groundNapM": 6.4,
+    "ahn5NaveRidgeNapM": 19.8,
+    "ahn5TowerNapM": 37.88,
+    "naveRidgeM": 13.4,
+    "transeptRidgeM": 11.8,
+    "choirRidgeM": 12.4,
+    "towerCorniceM": 16,
+    "highestPointM": 32.6
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Sint-Marculphuskerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520024",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0826100000018085",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Marculphuskerk",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-marcoenkerk-dorst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-marcoenkerk-dorst-1-100.stl",
+    "sint-marcoenkerk-dorst-1-1000.stl"
+  ]
+}
