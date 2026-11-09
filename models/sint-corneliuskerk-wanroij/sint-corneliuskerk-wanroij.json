@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Corneliuskerk Wanroij",
+  "origin": [
+    184900,
+    407632
+  ],
+  "xAxis": [
+    0.756,
+    0.654
+  ],
+  "groundHeight": 14.17,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1702100000000991"
+  ],
+  "description": "Neogotische kruisbasiliek met hoge toren, dakruiter, sacristie en vijfzijdig koor.",
+  "realWorld": {
+    "groundNapM": 14.17,
+    "ahn5TopNapM": 71.739,
+    "highestPointM": 57.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1702100000000991",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Corneliuskerk_(Wanroij)",
+    "https://www.landvancuijk.nl/toerisme-en-recreatie/sintcorneliuskerk/",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-corneliuskerk-wanroij.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-corneliuskerk-wanroij-1-100.stl",
+    "sint-corneliuskerk-wanroij-1-1000.stl"
+  ]
+}
