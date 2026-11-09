@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Agathakerk Beverwijk",
+  "origin": [
+    105540,
+    499574
+  ],
+  "xAxis": [
+    0.751,
+    0.6605
+  ],
+  "groundHeight": 2.3,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0375100000019150"
+  ],
+  "description": "Achthoekige centraalbouw met hoofdkoepel, kapellenkrans en lantaarn.",
+  "realWorld": {
+    "groundNapM": 2.3,
+    "domeNapM": 33,
+    "ahn5LanternNapM": 40.9,
+    "highestPointM": 37.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0375100000019150",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Agathakerk,_Beverwijk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/492352",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-agathakerk-beverwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-agathakerk-beverwijk-1-1000.stl"
+  ]
+}
