@@ -1,0 +1,37 @@
+{
+  "name": "Catharinakerk Etten-Leur",
+  "origin": [
+    102866,
+    398088
+  ],
+  "xAxis": [
+    0.99734,
+    0.0729
+  ],
+  "groundHeight": 8.927,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0777100000151750"
+  ],
+  "description": "Eenbeukig gotisch koor met klassieke toren en achtkante lantaarn uit 1771.",
+  "realWorld": {
+    "groundNapM": 8.927,
+    "ahn5RoofNapM": 27.65,
+    "ahn5TowerNapM": 58.89,
+    "highestPointM": 49.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0777100000151750",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15401",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Catharinakerk_(Etten-Leur)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "catharinakerk-etten-leur.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "catharinakerk-etten-leur-1-100.stl",
+    "catharinakerk-etten-leur-1-1000.stl"
+  ]
+}
