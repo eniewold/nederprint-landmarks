@@ -1,0 +1,37 @@
+{
+  "name": "Heilige Nicolaaskerk Helvoirt",
+  "origin": [
+    144072.5,
+    405040.5
+  ],
+  "xAxis": [
+    0.773,
+    0.634
+  ],
+  "groundHeight": 8.15,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0788100000000210"
+  ],
+  "description": "Driebeukige kruisbasiliek met westtoren, sacristie en vieringruiter.",
+  "realWorld": {
+    "groundNapM": 8.15,
+    "ahn4TopNapM": 66.166,
+    "ahn5TopNapM": 66.245,
+    "ahn5VieringNapM": 45.064,
+    "highestPointM": 58
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0788100000000210",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Nicolaaskerk,_Helvoirt",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21465",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "heilige-nicolaaskerk-helvoirt.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilige-nicolaaskerk-helvoirt-1-1000.stl"
+  ]
+}
