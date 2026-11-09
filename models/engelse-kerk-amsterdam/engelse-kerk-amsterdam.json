@@ -1,0 +1,36 @@
+{
+  "name": "Engelse Kerk Amsterdam",
+  "origin": [
+    121148,
+    486945
+  ],
+  "xAxis": [
+    0.96695,
+    0.25497
+  ],
+  "groundHeight": 0.11,
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012168141"
+  ],
+  "description": "Begijnhofkapel met asymmetrische kap, aangebouwde zuidbeuk en toren met spits.",
+  "realWorld": {
+    "groundNapM": 0.11,
+    "roofRidgeNapM": 15.56,
+    "ahn5SpireNapM": 30.23,
+    "highestPointM": 30.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012168141",
+    "https://commons.wikimedia.org/wiki/Category:English_Reformed_Church_(Amsterdam)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/384",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "engelse-kerk-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "engelse-kerk-amsterdam-1-1000.stl"
+  ]
+}
