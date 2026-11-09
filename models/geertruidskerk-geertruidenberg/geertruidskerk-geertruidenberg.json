@@ -1,0 +1,35 @@
+{
+  "name": "Geertruidskerk Geertruidenberg",
+  "origin": [
+    118746,
+    412542
+  ],
+  "xAxis": [
+    0.9998,
+    -0.018
+  ],
+  "groundHeight": 3.45,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0779100000000146"
+  ],
+  "description": "Hallenkerk met drie kappen, verhoogd koor en stompe toren.",
+  "realWorld": {
+    "groundNapM": 3.45,
+    "towerHeightM": 37,
+    "highestPointM": 38.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0779100000000146",
+    "https://www.monumenten.nl/monument/15950",
+    "https://commons.wikimedia.org/wiki/Category:Geertruidskerk",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "geertruidskerk-geertruidenberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "geertruidskerk-geertruidenberg-1-1000.stl"
+  ]
+}
