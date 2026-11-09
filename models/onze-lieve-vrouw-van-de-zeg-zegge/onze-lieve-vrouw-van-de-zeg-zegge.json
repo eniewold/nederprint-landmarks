@@ -1,0 +1,37 @@
+{
+  "name": "Onze-Lieve-Vrouw van de Zeg Zegge",
+  "origin": [
+    94615.5,
+    396698.1
+  ],
+  "xAxis": [
+    0.971,
+    -0.239
+  ],
+  "groundHeight": 5.072,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0840100000276123"
+  ],
+  "description": "Neogotische bedevaartskapel met torentje en brede veelhoekige koorsluiting, dakvlakken uit 3D BAG en AHN5.",
+  "realWorld": {
+    "groundNapM": 5.072,
+    "roofRidgeNapM": 11.89,
+    "groundAreaM2": 92.82,
+    "highestPointM": 11.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0840100000276123",
+    "https://commons.wikimedia.org/wiki/Category:O.L._Vrouw_van_Zegge_kapel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517057",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "onze-lieve-vrouw-van-de-zeg-zegge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouw-van-de-zeg-zegge-1-100.stl",
+    "onze-lieve-vrouw-van-de-zeg-zegge-1-1000.stl"
+  ]
+}
