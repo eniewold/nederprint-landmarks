@@ -1,0 +1,38 @@
+{
+  "name": "Hervormde Kerk Meeuwen",
+  "origin": [
+    128850,
+    415595.5
+  ],
+  "xAxis": [
+    0.9988,
+    -0.048
+  ],
+  "groundHeight": 1.547,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0738100000002678"
+  ],
+  "description": "Middeleeuwse toren met tentdak en wederopbouwkerk uit 1953.",
+  "realWorld": {
+    "groundNapM": 1.547,
+    "ahn5NaveNapM": 16.43,
+    "ahn5TowerNapM": 28.04,
+    "highestPointM": 26.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0738100000002678",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6819",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Meeuwen,_Netherlands)",
+    "https://open.gemeentealtena.nl/fileadmin/Altena_bestanden/woo/Actief_openbare_informatie/Onderzoeken/Altena_KerkenPaspoort_klein.pdf",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-meeuwen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-meeuwen-1-100.stl",
+    "hervormde-kerk-meeuwen-1-1000.stl"
+  ]
+}
