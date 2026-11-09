@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Odulphuskerk Assendelft",
+  "origin": [
+    111441,
+    498766
+  ],
+  "xAxis": [
+    0.5,
+    0.8660254
+  ],
+  "groundHeight": -0.795,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000000550"
+  ],
+  "description": "Neoromaanse kruiskerk met zijtoren, ronde apsiden en verbonden pastorie.",
+  "realWorld": {
+    "groundNapM": -0.795,
+    "ahn5TowerNapM": 51.01,
+    "highestPointM": 51.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0479100000000550",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39923",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Odulphuskerk_(Assendelft)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-odulphuskerk-assendelft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-odulphuskerk-assendelft-1-100.stl",
+    "sint-odulphuskerk-assendelft-1-1000.stl"
+  ]
+}
