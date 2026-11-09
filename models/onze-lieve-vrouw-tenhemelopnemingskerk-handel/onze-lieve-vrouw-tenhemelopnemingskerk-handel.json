@@ -1,0 +1,37 @@
+{
+  "name": "Onze-Lieve-Vrouw-Tenhemelopnemingskerk Handel",
+  "origin": [
+    177656,
+    399000
+  ],
+  "xAxis": [
+    0.996,
+    -0.088
+  ],
+  "groundHeight": 20.812,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1652100000000787"
+  ],
+  "description": "Bedevaartkerk met hoge westtoren, naaldspits, lagere zijvleugels en veelhoekig koor.",
+  "realWorld": {
+    "groundNapM": 20.812,
+    "ahn5TowerNapM": 63.09,
+    "ahn5RoofNapM": 36.01,
+    "highestPointM": 42.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1652100000000787",
+    "https://commons.wikimedia.org/wiki/Category:Onze_Lieve_Vrouwe_ten_Hemelopneming,_Handel",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16059",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "onze-lieve-vrouw-tenhemelopnemingskerk-handel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouw-tenhemelopnemingskerk-handel-1-100.stl",
+    "onze-lieve-vrouw-tenhemelopnemingskerk-handel-1-1000.stl"
+  ]
+}
