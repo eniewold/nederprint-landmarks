@@ -1,0 +1,36 @@
+{
+  "name": "Doopsgezinde kerk Oosterend",
+  "origin": [
+    120697,
+    566588
+  ],
+  "xAxis": [
+    0.361,
+    -0.933
+  ],
+  "groundHeight": 1.756,
+  "groundOffsetMetres": -0.4,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0448100000005078"
+  ],
+  "description": "T-vormige voormalige vermaning met twee aaneengesloten schilddaken.",
+  "realWorld": {
+    "groundNapM": 1.756,
+    "ahn5RidgeNapM": 11.33,
+    "highestPointM": 9.57
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0448100000005078",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35200",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_Kerk_(Oosterend,_Texel)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "doopsgezinde-kerk-oosterend.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "doopsgezinde-kerk-oosterend-1-100.stl",
+    "doopsgezinde-kerk-oosterend-1-1000.stl"
+  ]
+}
