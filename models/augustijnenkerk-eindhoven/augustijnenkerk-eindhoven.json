@@ -1,0 +1,40 @@
+{
+  "name": "Augustijnenkerk Eindhoven",
+  "origin": [
+    161738,
+    383231
+  ],
+  "xAxis": [
+    0.9063,
+    -0.4226
+  ],
+  "groundHeight": 15.942,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000285555"
+  ],
+  "description": "Neogotische driebeukige kruiskerk (Paterskerk, 1897-1898) met zeshoekige westtoren, doopkapel, dakruiter en koor met achtzijdige sluiting; oorsprong in de viering, X langs de nok naar het oosten.",
+  "realWorld": {
+    "groundNapM": 15.942,
+    "ahn5RidgeNapM": 40.8,
+    "ahn5FlecheNapM": 56.4,
+    "ahn5SpireNapM": 76.52,
+    "towerHeightWikipediaM": 66,
+    "highestPointM": 65
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Augustijnenkerk_(Eindhoven)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518826",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000285555",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Paterskerk_(Eindhoven)"
+  ],
+  "file": "augustijnenkerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "augustijnenkerk-eindhoven-1-100.stl",
+    "augustijnenkerk-eindhoven-1-1000.stl"
+  ]
+}
