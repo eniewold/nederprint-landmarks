@@ -1,0 +1,37 @@
+{
+  "name": "Jacobus de Meerderekerk Zeeland",
+  "origin": [
+    174816,
+    412123.5
+  ],
+  "xAxis": [
+    -0.984,
+    0.178
+  ],
+  "groundHeight": 19.68,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1685100000141140"
+  ],
+  "description": "Neogotische kerk met zeszijdige torenspits, dwarsbeuken en koor.",
+  "realWorld": {
+    "groundNapM": 19.68,
+    "ahn5NaveNapM": 44.3,
+    "ahn5TowerNapM": 77.63,
+    "highestPointM": 61.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1685100000141140",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/519138",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Jacobus_de_Meerdere,_Zeeland",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "jacobus-de-meerderekerk-zeeland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobus-de-meerderekerk-zeeland-1-100.stl",
+    "jacobus-de-meerderekerk-zeeland-1-1000.stl"
+  ]
+}
