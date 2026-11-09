@@ -1,0 +1,43 @@
+{
+  "name": "Steentjeskerk Eindhoven",
+  "origin": [
+    160631.88,
+    383381.29
+  ],
+  "xAxis": [
+    0.99572,
+    0.09237
+  ],
+  "groundHeight": 17.143,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0772100000288003"
+  ],
+  "description": "Driebeukige basilicale kerk in Kunradersteen (Sint-Antonius van Paduakerk, H. van Groenendael, 1917-1919) met vierkante westtoren, voorportaal, doopkapel en halfronde apsis; oorsprong op de nok van het schip, X langs de nok naar het koor (oost).",
+  "realWorld": {
+    "groundNapM": 17.143,
+    "ahnNaveRidgeNapM": 36.54,
+    "ahnTowerRoofNapM": 50.71,
+    "ahnApseRoofNapM": 31.5,
+    "ahnChimneyNapM": 39.5,
+    "interiorLengthWikipediaM": 50,
+    "interiorWidthWikipediaM": 20,
+    "naveHeightWikipediaM": 15,
+    "highestPointM": 33.55
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Steentjeskerk",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/518710",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0772100000288003",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Steentjeskerk_(Eindhoven)"
+  ],
+  "file": "steentjeskerk-eindhoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "steentjeskerk-eindhoven-1-100.stl",
+    "steentjeskerk-eindhoven-1-1000.stl"
+  ]
+}
