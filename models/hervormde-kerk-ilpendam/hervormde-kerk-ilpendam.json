@@ -1,0 +1,40 @@
+{
+  "name": "Hervormde Kerk Ilpendam",
+  "origin": [
+    125379.14,
+    497372.9
+  ],
+  "xAxis": [
+    0.9997,
+    0.024
+  ],
+  "groundHeight": 0.304,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0852100000002259",
+    "NL.IMBAG.Pand.0852100000002258"
+  ],
+  "description": "Zaalkerk met vijfzijdig koor, geveltoren en aangebouwd voormalig raadhuis.",
+  "realWorld": {
+    "groundNapM": 0.304,
+    "roofRidgeNapM": 18.411,
+    "ahnTowerTopNapM": 34.593,
+    "highestPointM": 34.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0852100000002259",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0852100000002258",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Ilpendam",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22938",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22939",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "hervormde-kerk-ilpendam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-ilpendam-1-100.stl",
+    "hervormde-kerk-ilpendam-1-1000.stl"
+  ]
+}
