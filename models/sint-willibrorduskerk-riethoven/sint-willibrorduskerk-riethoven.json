@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Willibrorduskerk Riethoven",
+  "origin": [
+    154955,
+    373759
+  ],
+  "xAxis": [
+    0.991,
+    0.13
+  ],
+  "groundHeight": 28,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1724100000000645"
+  ],
+  "description": "Kruiskerk met zijbeuken, zijkapellen en torenspits; hoogte en detaillering geschat uit AHN5 en foto's.",
+  "realWorld": {
+    "groundNapM": 28,
+    "highestPointM": 39.72
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1724100000000645",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Willibrordkerk_(Riethoven)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20130",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec"
+  ],
+  "file": "sint-willibrorduskerk-riethoven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-riethoven-1-1000.stl"
+  ]
+}
