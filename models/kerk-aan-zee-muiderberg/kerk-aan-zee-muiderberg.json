@@ -1,0 +1,64 @@
+{
+  "name": "Kerk aan Zee Muiderberg",
+  "origin": [
+    136381.5,
+    482374.5
+  ],
+  "xAxis": [
+    0.9959,
+    -0.0904
+  ],
+  "groundHeight": 7.189,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      10,
+      -6
+    ],
+    [
+      10,
+      6
+    ],
+    [
+      20,
+      -5
+    ],
+    [
+      20,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0424100000000664"
+  ],
+  "description": "Kerk met lager gesloten koor en de karakteristieke stompe toren met kantelen op de Muiderberg.",
+  "realWorld": {
+    "groundNapM": 7.189,
+    "roofRidgeNapM": 20.382,
+    "towerTopNapM": 28.087,
+    "highestPointM": 21
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0424100000000664",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_aan_Zee_(Muiderberg)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30139",
+    "https://www.tgooi.info/muiden/kerk_aan_zee.php",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "kerk-aan-zee-muiderberg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kerk-aan-zee-muiderberg-1-100.stl",
+    "kerk-aan-zee-muiderberg-1-1000.stl"
+  ]
+}
