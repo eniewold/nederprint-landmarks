@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Petruskerk Etten-Leur",
+  "origin": [
+    104403.5,
+    399962
+  ],
+  "xAxis": [
+    0.27,
+    -0.963
+  ],
+  "groundHeight": 2.682,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0777100000142218"
+  ],
+  "description": "Neogotische kruisbasiliek met twee achthoekige spitsen en roosvenster.",
+  "realWorld": {
+    "groundNapM": 2.682,
+    "towerHeightM": 52.25,
+    "highestPointM": 52.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0777100000142218",
+    "https://api.ellipsis-drive.com/v3/ogc/wcs/a4a8a27b-e36e-4dd5-a75b-f7b6c18d33ec",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14676",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Petruskerk_(Etten-Leur)"
+  ],
+  "file": "sint-petruskerk-etten-leur.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-petruskerk-etten-leur-1-1000.stl"
+  ]
+}
