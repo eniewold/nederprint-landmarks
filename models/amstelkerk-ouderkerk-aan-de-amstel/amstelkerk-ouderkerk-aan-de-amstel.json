@@ -1,0 +1,54 @@
+{
+  "name": "Amstelkerk Ouderkerk aan de Amstel",
+  "origin": [
+    121916.4,
+    478746.8
+  ],
+  "xAxis": [
+    0.981,
+    0.195
+  ],
+  "groundHeight": 0.676,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      -15,
+      -8
+    ],
+    [
+      -8,
+      -15
+    ],
+    [
+      8,
+      -15
+    ],
+    [
+      15,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0437100000001261"
+  ],
+  "description": "Classicistische kerk op Grieks kruis met centrale vierkante klokkenlantaarn.",
+  "realWorld": {
+    "groundNapM": 0.676,
+    "ahn5TowerNapM": 30.13,
+    "highestPointM": 29.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0437100000001261",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31968",
+    "https://commons.wikimedia.org/wiki/Category:Amstelkerk_(Ouderkerk)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "amstelkerk-ouderkerk-aan-de-amstel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "amstelkerk-ouderkerk-aan-de-amstel-1-100.stl",
+    "amstelkerk-ouderkerk-aan-de-amstel-1-1000.stl"
+  ]
+}
