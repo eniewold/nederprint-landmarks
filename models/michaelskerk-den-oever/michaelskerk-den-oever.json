@@ -1,0 +1,59 @@
+{
+  "name": "Michaelskerk Den Oever",
+  "origin": [
+    129670.8,
+    549434.75
+  ],
+  "xAxis": [
+    0.979,
+    0.203
+  ],
+  "groundHeight": 7.001,
+  "groundOffsetMetres": -0.5,
+  "groundSamplePoints": [
+    [
+      0,
+      -8
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      15,
+      -8
+    ],
+    [
+      15,
+      8
+    ],
+    [
+      30,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0462100000005002"
+  ],
+  "description": "Twaalfde-eeuwse romaanse kerk van Oosterland met halfronde apsis en gemetselde torenspits op een wierde.",
+  "realWorld": {
+    "groundNapM": 7.001,
+    "roofRidgeNapM": 21.29,
+    "ahn5TowerNapM": 41.35,
+    "highestPointM": 34.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0462100000005002",
+    "https://commons.wikimedia.org/wiki/Category:Micha%C3%ABlskerk_(Oosterland)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38933",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "michaelskerk-den-oever.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "michaelskerk-den-oever-1-100.stl",
+    "michaelskerk-den-oever-1-1000.stl"
+  ]
+}
