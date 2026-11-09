@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Vituskerk Naarden",
+  "origin": [
+    139653.7,
+    478660.5
+  ],
+  "xAxis": [
+    0.998,
+    0.063
+  ],
+  "groundHeight": 2.143,
+  "groundOffsetMetres": -0.5,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0425100000011484"
+  ],
+  "description": "Laatgotische kruisbasiliek met kooromgang, ingebouwde toren en dakruiter.",
+  "realWorld": {
+    "groundNapM": 2.143,
+    "ahn5TowerNapM": 63.82,
+    "highestPointM": 61.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0425100000011484",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30227",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Grote_of_Sint-Vituskerk_(Naarden)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-vituskerk-naarden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-vituskerk-naarden-1-100.stl",
+    "sint-vituskerk-naarden-1-1000.stl"
+  ]
+}
