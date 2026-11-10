@@ -1,0 +1,47 @@
+{
+  "name": "Orpheus",
+  "file": "orpheus-apeldoorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    193650,
+    470325
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      70,
+      0
+    ],
+    [
+      0,
+      -65
+    ],
+    [
+      -75,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0200100000700144"
+  ],
+  "description": "Theater Orpheus met gebogen kap van de westelijke grote zaal, toneelhuis, oudere zaal en lage foyers.",
+  "realWorld": {
+    "groundNapM": 17.11
+  },
+  "sources": [
+    "PDOK AHN DSM 0,5m en ortho, 10 november 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0200100000700144",
+    "https://www.architectuur.org/bouwwerk/266/Theater_Orpheus.html",
+    "https://commons.wikimedia.org/wiki/Category:Schouwburg_Orpheus,_Apeldoorn",
+    "https://quadrat.nl/buitenruimte/orpheus-apeldoorn.html"
+  ],
+  "printFiles": [
+    "orpheus-apeldoorn-1-1000.stl"
+  ]
+}
