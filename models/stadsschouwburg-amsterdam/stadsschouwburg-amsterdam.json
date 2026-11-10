@@ -1,0 +1,33 @@
+{
+  "name": "Stadsschouwburg Amsterdam",
+  "file": "stadsschouwburg-amsterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    120600,
+    486350
+  ],
+  "xAxis": [
+    0.7986355100472928,
+    0.6018150231520483
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012168738"
+  ],
+  "description": "Historische Stadsschouwburg Amsterdam; Rabozaal op aangrenzend BAG-pand wordt door Melkweg-landmark geleverd. Lokaal +Y naar achteren.",
+  "realWorld": {
+    "groundNapM": 1.269
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012168738",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012173457",
+    "PDOK AHN DSM 0,5 m en Actueel_orthoHR",
+    "https://commons.wikimedia.org/wiki/Category:Stadsschouwburg_Amsterdam",
+    "https://arcam.nl/architectuur-gids/rabozaal-melkweg/"
+  ],
+  "printFiles": [
+    "stadsschouwburg-amsterdam-1-1000.stl"
+  ]
+}
