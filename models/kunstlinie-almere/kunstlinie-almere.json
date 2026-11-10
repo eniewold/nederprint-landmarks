@@ -1,0 +1,45 @@
+{
+  "name": "Kunstlinie",
+  "file": "kunstlinie-almere.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    143502.801,
+    486617.075
+  ],
+  "xAxis": [
+    0.971292,
+    0.237888
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -3,
+      -5
+    ],
+    [
+      45,
+      3
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0034100000069262"
+  ],
+  "description": "Glazen cultuurcentrum aan het Weerwater, met drie zaalvolumes, platte daken en open binnenhoven. Lokale -Y naar het water; nulpunt is de noordwesthoek, maaiveld circa NAP -4,4 m.",
+  "realWorld": {
+    "groundNapM": -4.4,
+    "roofNapM": 0.24,
+    "groteZaalNapM": 21.35,
+    "middenzaalNapM": 14.9,
+    "kleineZaalNapM": 8.24
+  },
+  "sources": [
+    "PDOK BAG pand 0034100000069262 en AHN DSM 0,5 m, geraadpleegd 10 november 2026",
+    "https://www.architectuurgidsalmere.nl/almere/schouwburg-kaf",
+    "https://www.visitalmere.com/en/locations/1119861943/art-line-almere-flevoland"
+  ],
+  "printFiles": [
+    "kunstlinie-almere-1-1000.stl"
+  ]
+}
