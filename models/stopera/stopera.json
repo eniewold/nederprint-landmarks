@@ -1,0 +1,50 @@
+{
+  "name": "Stopera",
+  "file": "stopera.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121875,
+    486775
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -101,
+      -12
+    ],
+    [
+      -82,
+      -48
+    ],
+    [
+      108,
+      -25
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012186092"
+  ],
+  "description": "Stadhuis en muziektheater aan de Amstel, met L-vormige stadhuisvleugel, toneeltoren en gebogen foyer met raamvlakken. Lokale X en Y liggen langs RD-oost en RD-noord; z=0 is maaiveld NAP +0,871 m.",
+  "realWorld": {
+    "groundNapM": 0.871,
+    "stadhuisDakNapM": 23.82,
+    "foyerDakNapM": 16.07,
+    "zaalDakNapM": 23.13,
+    "toneeltorenNapM": 32.64
+  },
+  "sources": [
+    "PDOK BAG pand 0363100012186092 en AHN5 DSM 0,5 m, geraadpleegd 10 november 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012186092",
+    "https://arcam.nl/architectuur-gids/stopera/",
+    "https://commons.wikimedia.org/wiki/Category:Stopera"
+  ],
+  "printFiles": [
+    "stopera-1-1000.stl"
+  ]
+}
