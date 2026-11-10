@@ -1,0 +1,49 @@
+{
+  "name": "Agoratheater",
+  "file": "agora-lelystad.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    161050,
+    502590
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.2,
+  "groundSamplePoints": [
+    [
+      -30,
+      35
+    ],
+    [
+      0,
+      40
+    ],
+    [
+      23,
+      38
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0995100000739215"
+  ],
+  "description": "Bouwvolume met de gevouwen dakvlakken van het theater, het hoge toneelhuis, de foyer en de lage dienstaanbouw. Lokale X naar het oosten, Y naar het noorden; grond op NAP -3,25 m.",
+  "realWorld": {
+    "groundNapM": -3.25,
+    "highRoofNapM": 22.1,
+    "foyerRoofNapM": 14.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0995100000739215",
+    "PDOK AHN5 DSM en DTM 0,5 m",
+    "PDOK Actueel orthoHR",
+    "https://commons.wikimedia.org/wiki/Category:Agoratheater",
+    "https://www.unstudio.com/projects/further/theatre-agora/"
+  ],
+  "printFiles": [
+    "agora-lelystad-1-1000.stl"
+  ]
+}
