@@ -1,0 +1,38 @@
+{
+  "name": "AFAS Circustheater",
+  "file": "circustheater-scheveningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    79343.7,
+    458632.3
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.25,
+  "groundSamplePoints": [
+    [
+      45,
+      15
+    ],
+    [
+      50,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000211276"
+  ],
+  "description": "Circustheater met circuskoepel, lantaarn en toneeltoren.",
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000211276",
+    "PDOK AHN5 DSM 0,5m",
+    "https://commons.wikimedia.org/wiki/File:Afas_Circustheater-Scheveningen.jpg"
+  ],
+  "printFiles": [
+    "circustheater-scheveningen-1-1000.stl"
+  ]
+}
