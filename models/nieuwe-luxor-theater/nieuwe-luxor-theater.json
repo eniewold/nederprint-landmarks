@@ -1,0 +1,47 @@
+{
+  "name": "Nieuwe Luxor Theater",
+  "file": "nieuwe-luxor-theater.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93335,
+    435755
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": -0.2,
+  "groundSamplePoints": [
+    [
+      -40,
+      0
+    ],
+    [
+      -35,
+      -25
+    ],
+    [
+      -20,
+      -45
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000702518"
+  ],
+  "description": "Nieuwe Luxor Theater: gebogen foyer, schuine zaalkap en rechthoekig toneelhuis. X oost, Y noord, Z=0 maaiveld NAP +3,366 m.",
+  "realWorld": {
+    "groundNapM": 3.366,
+    "towerNapM": 39.92
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000702518",
+    "PDOK AHN5 DSM 0,5 m en actuele luchtfoto",
+    "https://bolles-wilson.com/project/luxor-theatre/",
+    "https://commons.wikimedia.org/wiki/Category:Luxor_Rotterdam_(2001)"
+  ],
+  "printFiles": [
+    "nieuwe-luxor-theater-1-1000.stl"
+  ]
+}
