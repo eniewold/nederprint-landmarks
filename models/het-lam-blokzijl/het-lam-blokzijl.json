@@ -1,0 +1,36 @@
+{
+  "name": "Het Lam Blokzijl",
+  "origin": [
+    193743.83475,
+    526837.025
+  ],
+  "xAxis": [
+    -0.54767,
+    0.8367
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000016185"
+  ],
+  "description": "Zaalkerk met wolfseinden achter de rechte voorgevel en aan de achterzijde, lage dwarsaanbouw, blinde vensternissen en portaal. Positie en dak uit BAG, 3D BAG en AHN; geveldetails naar foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.8565,
+    "ridgeNapM": 14.87,
+    "eavesM": 6.65,
+    "highestPointM": 14.01
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1708100000016185",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507462",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_kerk_(Blokzijl)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (AHN4 DSM 0,5 m)"
+  ],
+  "file": "het-lam-blokzijl.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "het-lam-blokzijl-1-100.stl",
+    "het-lam-blokzijl-1-1000.stl"
+  ]
+}
