@@ -1,0 +1,57 @@
+{
+  "name": "Oude Kerk Veenendaal",
+  "file": "oude-kerk-veenendaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    166408,
+    448636
+  ],
+  "xAxis": [
+    0.99253,
+    -0.122
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -17
+    ],
+    [
+      -24,
+      17
+    ],
+    [
+      25,
+      -17
+    ],
+    [
+      25,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0345100002004401"
+  ],
+  "description": "Oude Kerk Veenendaal: kruisvormige kerk met dwarskappen, koor en massief vereenvoudigde klokkenruiter. Oorsprong RD (166408,448636), maaiveld NAP +11,63 m.",
+  "printFiles": [
+    "oude-kerk-veenendaal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.5,
+    "widthM": 29.2,
+    "highestPointM": 20.42,
+    "groundNapM": 11.63,
+    "naveRidgeM": 14.77,
+    "towerTopM": 20.42,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36887",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0345100002004401",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk_(Veenendaal)",
+    "https://www.ditisveenendaal.nl/ontdekken/monumenten/oude-kerk-op-de-markt"
+  ]
+}
