@@ -1,0 +1,36 @@
+{
+  "name": "Sint Rochuskapel Amersfoort",
+  "origin": [
+    155471.3,
+    463370
+  ],
+  "xAxis": [
+    0.1184,
+    -0.99297
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000321277"
+  ],
+  "description": "Kapel met driezijdig gesloten koor en geschematiseerde dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 2.814,
+    "roofRidgeM": 11.7,
+    "bellTurretM": 15.2,
+    "highestPointM": 15.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0307100000321277",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/324416",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Rochuskapel_(Amersfoort)"
+  ],
+  "file": "sint-rochuskapel-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-rochuskapel-amersfoort-1-100.stl",
+    "sint-rochuskapel-amersfoort-1-1000.stl"
+  ]
+}
