@@ -1,0 +1,62 @@
+{
+  "name": "Sint-Janskerk Wijk bij Duurstede",
+  "file": "sint-janskerk-wijk-bij-duurstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    152166,
+    442690
+  ],
+  "xAxis": [
+    0.988,
+    -0.153
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -40,
+      -15
+    ],
+    [
+      -40,
+      15
+    ],
+    [
+      -15,
+      20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      20,
+      20
+    ],
+    [
+      30,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0352100000012296"
+  ],
+  "description": "Onvoltooide vlakke westtoren, schip en resterend dwarspand; het verdwenen koor is niet gereconstrueerd.",
+  "printFiles": [
+    "sint-janskerk-wijk-bij-duurstede-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 68.01,
+    "widthM": 36.08,
+    "highestPointM": 38.4,
+    "groundNapM": 5.502,
+    "towerTopM": 38.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39695",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0352100000012296",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Johannes_de_Doperkerk_(Wijk_bij_Duurstede)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
