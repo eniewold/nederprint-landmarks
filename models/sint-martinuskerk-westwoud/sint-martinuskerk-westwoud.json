@@ -1,0 +1,48 @@
+{
+  "name": "Sint-Martinuskerk Westwoud",
+  "origin": [
+    138610,
+    522198
+  ],
+  "xAxis": [
+    0.8937,
+    0.4487
+  ],
+  "groundHeight": 0.1,
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0498100000006516"
+  ],
+  "description": "Oorsprong RD (138610, 522198) op de kruising van de nokken, X langs de nok van schip en koor (oostnoordoost); waterstaatskerk van Molkenboer (1851) met driezijdig gesloten koor en westtoren met houten klokkengeleding, torengeledingen en nissen uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.1,
+    "naveEavesNapM": 10.5,
+    "naveRidgeNapM": 17.1,
+    "transeptRidgeNapM": 17.35,
+    "choirRidgeNapM": 17,
+    "frontCorniceNapM": 11.6,
+    "towerCorniceNapM": 24.5,
+    "belfryCorniceNapM": 30.2,
+    "spireTopNapM": 42.45,
+    "naveWidthM": 16.4,
+    "transeptLengthM": 17.8,
+    "lengthM": 43.8,
+    "highestPointM": 42.35
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0498100000006516",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14065",
+    "https://nl.wikipedia.org/wiki/Sint-Martinuskerk_(Westwoud)",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Martinuskerk,_Westwoud",
+    "https://www.openstreetmap.org/way/275130540",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "sint-martinuskerk-westwoud.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-martinuskerk-westwoud-1-100.stl",
+    "sint-martinuskerk-westwoud-1-1000.stl"
+  ]
+}
