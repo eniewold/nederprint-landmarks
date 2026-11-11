@@ -1,0 +1,83 @@
+{
+  "name": "Koogerkerk Zuid-Scharwoude",
+  "origin": [
+    116251.977,
+    523157.569
+  ],
+  "xAxis": [
+    0.99805,
+    0.06238
+  ],
+  "groundHeight": 0.4,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14.2,
+      0
+    ],
+    [
+      -12.8,
+      -6
+    ],
+    [
+      -12.8,
+      6
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      12,
+      -6
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      18,
+      -3.5
+    ],
+    [
+      18,
+      3.8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0416100000203769"
+  ],
+  "description": "Oorsprong RD (116251.977, 523157.569) midden in het schip, X langs de nok naar het oosten (3,6 graden); kerk uit 1819 met driezijdige koorsluiting, geveltoren met naaldspits uit 1905 en oostelijke aanbouw, torengeledingen en nissen uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.4,
+    "eavesNapM": 9,
+    "ridgeNapM": 14.35,
+    "towerCorniceNapM": 19.55,
+    "gabletTopNapM": 21.15,
+    "spireTopNapM": 29.6,
+    "naveWidthM": 9.73,
+    "lengthM": 29.5,
+    "annexRidgeNapM": 6.57,
+    "highestPointM": 29.19
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0416100000203769",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23928",
+    "https://commons.wikimedia.org/wiki/File:Nederlands_Hervormde_Kerk,_Zuid-Scharwoude.jpg",
+    "https://commons.wikimedia.org/wiki/File:Toren_-_Zuid-Scharwoude_-_20225773_-_RCE.jpg",
+    "https://www.openstreetmap.org/way/51226423",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "koogerkerk-zuid-scharwoude.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "koogerkerk-zuid-scharwoude-1-100.stl",
+    "koogerkerk-zuid-scharwoude-1-1000.stl"
+  ]
+}
