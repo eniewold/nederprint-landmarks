@@ -1,0 +1,76 @@
+{
+  "name": "Sint-Joriskerk Amersfoort",
+  "file": "sint-joriskerk-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    155220,
+    463166
+  ],
+  "xAxis": [
+    0.985,
+    -0.173
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38,
+      -20
+    ],
+    [
+      -38,
+      15
+    ],
+    [
+      -20,
+      20
+    ],
+    [
+      0,
+      19
+    ],
+    [
+      23,
+      15
+    ],
+    [
+      40,
+      0
+    ],
+    [
+      35,
+      -12
+    ],
+    [
+      0,
+      -23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000319369",
+    "NL.IMBAG.Pand.0307100000332458",
+    "NL.IMBAG.Pand.0307100000310421",
+    "NL.IMBAG.Pand.0307100000536569",
+    "NL.IMBAG.Pand.0307100000313239"
+  ],
+  "description": "Driebeukige hallenkerk met ingebouwde toren, drie zadeldaken en vijfzijdig koor.",
+  "printFiles": [
+    "sint-joriskerk-amersfoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 77.92,
+    "widthM": 50.7,
+    "highestPointM": 53,
+    "groundNapM": 3.29,
+    "naveRidgeM": 26.5,
+    "towerTopM": 53
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7882",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0307100000319369",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Joriskerk_(Amersfoort)",
+    "https://www.dbnl.org/tekst/sten009monu01_01/sten009monu01_01_0011.php",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
