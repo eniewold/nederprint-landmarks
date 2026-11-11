@@ -1,0 +1,64 @@
+{
+  "name": "Hervormde Kerk Lexmond",
+  "file": "hervormde-kerk-lexmond.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    130930,
+    441688
+  ],
+  "xAxis": [
+    0.99968765,
+    0.02499219
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -7
+    ],
+    [
+      -25,
+      5
+    ],
+    [
+      -12,
+      -10
+    ],
+    [
+      -10,
+      9
+    ],
+    [
+      15,
+      10
+    ],
+    [
+      25,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0707100000379314"
+  ],
+  "description": "RD (130930,441688), +X langs het schip naar het koor; eenbeukige kruiskerk met driezijdig gesloten koor, zuidelijke aanbouw en westtoren. Maaiveld circa NAP +2,14 m.",
+  "printFiles": [
+    "hervormde-kerk-lexmond-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 47.95,
+    "widthM": 28.39,
+    "highestPointM": 39.65,
+    "groundNapM": 2.143,
+    "naveRidgeM": 16.55,
+    "towerTopM": 39.65
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25809",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0707100000379314",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Hervormde_kerk,_Lexmond",
+    "https://www.dbnl.org/tekst/gron052vijf01_01/gron052vijf01_01_0022.php",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
