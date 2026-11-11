@@ -1,0 +1,61 @@
+{
+  "name": "Sint-Adriaanskerk Dreischor",
+  "origin": [
+    57912,
+    412103
+  ],
+  "xAxis": [
+    0.998,
+    -0.061
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -4,
+      -11
+    ],
+    [
+      -3,
+      12
+    ],
+    [
+      20,
+      -11
+    ],
+    [
+      24,
+      15
+    ],
+    [
+      43,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000428646"
+  ],
+  "description": "Tweebeukige hallenkerk met westtoren en grafkapel; vaste monsterpunten op de terp, onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.115,
+    "naveRidgesM": [
+      14.9,
+      16.4
+    ],
+    "towerTopM": 39.65,
+    "highestPointM": 39.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000428646",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11162",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Adriaanskerk_(Dreischor)"
+  ],
+  "file": "sint-adriaanskerk-dreischor.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-adriaanskerk-dreischor-1-100.stl",
+    "sint-adriaanskerk-dreischor-1-1000.stl"
+  ]
+}
