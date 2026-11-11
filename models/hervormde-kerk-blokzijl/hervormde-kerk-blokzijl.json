@@ -1,0 +1,52 @@
+{
+  "name": "Hervormde Kerk Blokzijl",
+  "origin": [
+    193751.7,
+    526779.1
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundHeight": 1.75,
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000017874"
+  ],
+  "description": "Oorsprong RD (193751.7, 526779.1) op de kruising van de nokken, X naar het oosten; kruiskerk (1609, 17e eeuw uitgebouwd) met schilden achter rechte gevels met segmenttop en de toren van 1630 in de noordarm; torenbekroning, vensters en portaal uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 1.75,
+    "eavesNapM": 11.9,
+    "ridgeNapM": 17.4,
+    "hipPitchDeg": 53,
+    "gableShoulderNapM": 14.2,
+    "gableTopNapM": 16.3,
+    "towerCorniceNapM": 22.8,
+    "bellRoofTopNapM": 25.4,
+    "lanternTopNapM": 28,
+    "capTopNapM": 30.2,
+    "spireTopNapM": 35,
+    "naveLengthM": 29.4,
+    "armLengthM": 27.25,
+    "naveWidthM": 11.95,
+    "armWidthM": 11.7,
+    "highestPointM": 33.25
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (pand 1708100000017874)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1708100000017874",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10448",
+    "https://nl.wikipedia.org/wiki/Hervormde_kerk_(Blokzijl)",
+    "https://commons.wikimedia.org/w/index.php?search=Blokzijl+kerk&ns6=1",
+    "https://www.openstreetmap.org/way/267114635",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (dsm_05m, dtm_05m)"
+  ],
+  "file": "hervormde-kerk-blokzijl.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-blokzijl-1-100.stl",
+    "hervormde-kerk-blokzijl-1-1000.stl"
+  ]
+}
