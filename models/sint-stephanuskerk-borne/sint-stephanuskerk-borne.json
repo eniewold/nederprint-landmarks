@@ -1,0 +1,38 @@
+{
+  "name": "Sint-Stephanuskerk Borne",
+  "file": "sint-stephanuskerk-borne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    248260,
+    480090
+  ],
+  "xAxis": [
+    0.656059,
+    0.75471
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0147100000013192"
+  ],
+  "description": "Oorsprong RD (248260,480090); +X langs de kerkas naar de voorgevel; dakvlakken uit 3D BAG en AHN, toren en geveldetails naar foto's. Bevat ook de pastorie en het aanpalende parochiegebouw van hetzelfde BAG-pand.",
+  "printFiles": [
+    "sint-stephanuskerk-borne-1-1000.stl",
+    "sint-stephanuskerk-borne-grondplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 75.75,
+    "widthM": 55.7,
+    "highestPointM": 49.6,
+    "groundNapM": 15.2,
+    "roofRidgeM": 17.5,
+    "towerTopM": 49.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0147100000013192",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9920",
+    "https://commons.wikimedia.org/wiki/Category:Stephanuskerk_(Borne)",
+    "PDOK AHN DSM 0,5 m en luchtfoto"
+  ]
+}
