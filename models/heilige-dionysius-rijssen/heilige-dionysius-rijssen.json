@@ -1,0 +1,72 @@
+{
+  "name": "Heilige Dionysius Rijssen",
+  "file": "heilige-dionysius-rijssen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    232500,
+    480640
+  ],
+  "xAxis": [
+    0.99965,
+    0.0264
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      2
+    ],
+    [
+      -13,
+      12
+    ],
+    [
+      -3,
+      15
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      17,
+      7
+    ],
+    [
+      18,
+      -7
+    ],
+    [
+      2,
+      -15
+    ],
+    [
+      -19,
+      -24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1742100000000653"
+  ],
+  "description": "Kruiskerk met zeszijdig koor, toren met vier topgevels en spits, aanbouwen en aangrenzende pastorie. Hoogte van de spits geschat naar foto�s.",
+  "printFiles": [
+    "heilige-dionysius-rijssen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.2,
+    "widthM": 40.6,
+    "highestPointM": 45,
+    "groundNapM": 13,
+    "naveRidgeM": 19.7,
+    "towerTopM": 45
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508555",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1742100000000653",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Dionysiuskerk,_Rijssen",
+    "https://www.dbnl.org/tekst/sten009monu03_01/sten009monu03_01_0087.php",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
