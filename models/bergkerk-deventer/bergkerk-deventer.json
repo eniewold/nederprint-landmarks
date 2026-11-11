@@ -1,0 +1,54 @@
+{
+  "name": "Bergkerk Deventer",
+  "origin": [
+    207989,
+    474058
+  ],
+  "xAxis": [
+    0.898,
+    0.44
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -15
+    ],
+    [
+      -10,
+      -15
+    ],
+    [
+      0,
+      -23
+    ],
+    [
+      15,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0150100000000704"
+  ],
+  "description": "Bergkerk: twee romaanse westtorens met spitsen, langsschip, zijbeuken, dwarsschip en gesloten kooromgang; geometrische dakvlakken en blinde vensternissen.",
+  "realWorld": {
+    "groundNapM": 12.897,
+    "naveRidgeM": 29,
+    "towerTopM": 49.65,
+    "highestPointM": 49.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0150100000000704",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12416",
+    "https://commons.wikimedia.org/wiki/Category:Bergkerk_(Deventer)",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "bergkerk-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "bergkerk-deventer-1-100.stl",
+    "bergkerk-deventer-1-1000.stl"
+  ]
+}
