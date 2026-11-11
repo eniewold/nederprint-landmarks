@@ -1,0 +1,36 @@
+{
+  "name": "Petrus en Pauluskerk Soest",
+  "origin": [
+    149354.5,
+    465955
+  ],
+  "xAxis": [
+    0.41,
+    -0.9121
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0342100000025234"
+  ],
+  "description": "Neoclassicistische voorgevel en toren met huidige kerkzaal en achtervleugel; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 5.668,
+    "hallRidgeM": 14.6,
+    "towerTopM": 32.7,
+    "highestPointM": 32.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0342100000025234",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34105",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Petrus_en_Pauluskerk,_Soest"
+  ],
+  "file": "petrus-en-pauluskerk-soest.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petrus-en-pauluskerk-soest-1-100.stl",
+    "petrus-en-pauluskerk-soest-1-1000.stl"
+  ]
+}
