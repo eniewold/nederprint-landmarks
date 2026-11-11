@@ -1,0 +1,86 @@
+{
+  "name": "Nicolaaskerk Wesepe",
+  "file": "nicolaaskerk-wesepe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    211502,
+    482764.5
+  ],
+  "xAxis": [
+    0.99504,
+    0.0995
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      4
+    ],
+    [
+      -12,
+      7
+    ],
+    [
+      -3,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      20,
+      -3
+    ],
+    [
+      9,
+      -8
+    ],
+    [
+      0,
+      -8
+    ],
+    [
+      -10,
+      -8
+    ],
+    [
+      1,
+      27
+    ],
+    [
+      18,
+      21
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1773100000007883"
+  ],
+  "description": "Eenbeukig schip, hoger gesloten koor, westtoren met tentdak en noorder aanbouwen.",
+  "printFiles": [
+    "nicolaaskerk-wesepe-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.3,
+    "widthM": 32.31,
+    "highestPointM": 19.5,
+    "groundNapM": 5.08,
+    "naveRidgeM": 12.25,
+    "choirRidgeM": 14.85,
+    "towerTopM": 19.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31455",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31456",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1773100000007883",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk_(Wesepe)",
+    "https://wesepe.protestantsekerk.net/het_kerkgebouw",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
