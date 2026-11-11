@@ -1,0 +1,63 @@
+{
+  "name": "Buurkerk Utrecht",
+  "file": "buurkerk-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136645,
+    455845
+  ],
+  "xAxis": [
+    0.966,
+    0.259
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38,
+      -8
+    ],
+    [
+      -38,
+      14
+    ],
+    [
+      -20,
+      -18
+    ],
+    [
+      0,
+      -24
+    ],
+    [
+      30,
+      -25
+    ],
+    [
+      34,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000046743"
+  ],
+  "description": "RD (136645,455845), +X van toren naar oostgevel; brede hallenkerk met parallelle kappen en westtoren met lantaarn. Maaiveld NAP circa +5,02 m.",
+  "printFiles": [
+    "buurkerk-utrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 67.74,
+    "widthM": 51.66,
+    "highestPointM": 52.77,
+    "groundNapM": 5.016,
+    "towerTopM": 52.77
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18353",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000046743",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Buurkerk,_Utrecht",
+    "https://www.openmonumentendagutrecht.nl/openstellingen/buurkerk-museum-speelklok/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
