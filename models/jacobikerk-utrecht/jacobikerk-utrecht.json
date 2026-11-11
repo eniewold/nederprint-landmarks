@@ -1,0 +1,57 @@
+{
+  "name": "Jacobikerk Utrecht",
+  "file": "jacobikerk-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    136365,
+    456345
+  ],
+  "xAxis": [
+    0.99001,
+    0.141
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -42,
+      -21
+    ],
+    [
+      -41,
+      20
+    ],
+    [
+      42,
+      -22
+    ],
+    [
+      42,
+      23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000027479"
+  ],
+  "description": "Jacobikerk Utrecht: driebeukige hallenkerk met dwarsschip, koren en ingebouwde toren. Oorsprong RD (136365,456345), maaiveld NAP +4,04 m.",
+  "printFiles": [
+    "jacobikerk-utrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 69.7,
+    "widthM": 38.1,
+    "highestPointM": 66.62,
+    "groundNapM": 4.04,
+    "naveRidgeM": 22.5,
+    "towerTopM": 66.62,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/36148",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000027479",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Jacobikerk,_Utrecht",
+    "https://erfgoed.utrecht.nl/verhalen/jacobitoren"
+  ]
+}
