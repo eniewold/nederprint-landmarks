@@ -1,0 +1,36 @@
+{
+  "name": "Sint Nicolaaskerk Brouwershaven",
+  "origin": [
+    52927,
+    416269.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000442681"
+  ],
+  "description": "Hallenkerk met straalkapellen en vereenvoudigde vieringruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 0.104,
+    "naveRidgeM": 24.7,
+    "towerTopEstimatedM": 37,
+    "highestPointM": 37
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000442681",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11122",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Nicolaaskerk_(Brouwershaven)"
+  ],
+  "file": "sint-nicolaaskerk-brouwershaven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-nicolaaskerk-brouwershaven-1-100.stl",
+    "sint-nicolaaskerk-brouwershaven-1-1000.stl"
+  ]
+}
