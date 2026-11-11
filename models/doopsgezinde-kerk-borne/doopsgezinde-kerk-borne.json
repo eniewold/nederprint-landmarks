@@ -1,0 +1,53 @@
+{
+  "name": "Doopsgezinde kerk Borne",
+  "origin": [
+    248711.116,
+    480017.536
+  ],
+  "xAxis": [
+    -0.94182,
+    0.33611
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      -5
+    ],
+    [
+      -2,
+      -5
+    ],
+    [
+      4,
+      -5
+    ],
+    [
+      8,
+      -5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0147100000011150"
+  ],
+  "description": "Zaalkerk met schilddak, verhoogde lijstgevel, toegang en spitsboogvensters; maatvoering op basis van BAG en AHN, details geschat naar foto's.",
+  "realWorld": {
+    "groundNapM": 14.505,
+    "ridgeM": 9.88,
+    "highestPointM": 9.88
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0147100000011150",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9921",
+    "https://commons.wikimedia.org/wiki/Category:Doopsgezinde_kerk,_Borne",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "doopsgezinde-kerk-borne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "doopsgezinde-kerk-borne-1-100.stl",
+    "doopsgezinde-kerk-borne-1-1000.stl"
+  ]
+}
