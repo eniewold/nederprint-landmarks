@@ -1,0 +1,38 @@
+{
+  "name": "Nederlands Hervormde Kerk Wanneperveen",
+  "origin": [
+    203784,
+    523783
+  ],
+  "xAxis": [
+    0.99589648,
+    0.09049968
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000025507"
+  ],
+  "description": "Kerk met schilddak en consistorie; een aparte, schematische klokkenstoel ten zuidwesten. Onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 0.328,
+    "naveRidgeM": 14.63,
+    "bellstandTopM": 7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1708100000025507",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10584",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507464",
+    "https://www.openstreetmap.org/node/9014769874",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Wanneperveen)"
+  ],
+  "file": "nederlands-hervormde-kerk-wanneperveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-wanneperveen-1-100.stl",
+    "nederlands-hervormde-kerk-wanneperveen-grondplaat-1-100.stl",
+    "nederlands-hervormde-kerk-wanneperveen-1-1000.stl",
+    "nederlands-hervormde-kerk-wanneperveen-grondplaat-1-1000.stl"
+  ]
+}
