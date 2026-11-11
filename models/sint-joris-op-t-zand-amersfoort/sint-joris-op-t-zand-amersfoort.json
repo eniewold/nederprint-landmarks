@@ -1,0 +1,76 @@
+{
+  "name": "Sint Joris op 't Zand Amersfoort",
+  "file": "sint-joris-op-t-zand-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    155105,
+    463374
+  ],
+  "xAxis": [
+    -0.05,
+    0.99875
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      9
+    ],
+    [
+      -19,
+      3
+    ],
+    [
+      -17,
+      -5
+    ],
+    [
+      -5,
+      -7
+    ],
+    [
+      6,
+      -11
+    ],
+    [
+      17,
+      -12
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      18,
+      7
+    ],
+    [
+      0,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000373571"
+  ],
+  "description": "Amsterdamse-Schoolzaalkerk met toren, getrapte zadeldaken en aanbouwen.",
+  "printFiles": [
+    "sint-joris-op-t-zand-amersfoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.9,
+    "widthM": 25.5,
+    "highestPointM": 19.65,
+    "groundNapM": 2.61,
+    "naveRidgeM": 15.1,
+    "towerTopM": 19.65
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/517741",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0307100000373571",
+    "https://items.amsterdamse-school.nl/details/objects/1090",
+    "https://amersfoort.oudkatholiek.nl/wie-zijn-wij/kerkgebouw/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
