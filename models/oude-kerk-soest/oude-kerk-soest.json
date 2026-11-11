@@ -1,0 +1,64 @@
+{
+  "name": "Oude Kerk Soest",
+  "file": "oude-kerk-soest.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    149868,
+    465043
+  ],
+  "xAxis": [
+    0.9998,
+    -0.02
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      0
+    ],
+    [
+      -23,
+      8
+    ],
+    [
+      -10,
+      -9
+    ],
+    [
+      0,
+      -9
+    ],
+    [
+      20,
+      -5
+    ],
+    [
+      18,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0342100000013337"
+  ],
+  "description": "RD (149868,465043), +X langs het schip naar het koor; gotische kerk met veelhoekig koor, noordelijke aanbouw en westtoren. Maaiveld circa NAP +9,51 m.",
+  "printFiles": [
+    "oude-kerk-soest-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 42.25,
+    "widthM": 20.13,
+    "highestPointM": 48.37,
+    "groundNapM": 9.509,
+    "naveRidgeM": 14.59,
+    "towerTopM": 48.37
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34107",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0342100000013337",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk_(Soest)",
+    "https://kerkencultuursoest.nl/oude-kerk-soest/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
