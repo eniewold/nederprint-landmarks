@@ -1,0 +1,59 @@
+{
+  "name": "Kapel van Sint Maarten Grijpskerke",
+  "file": "kapel-van-sint-maarten-grijpskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    28220,
+    392442
+  ],
+  "xAxis": [
+    0.989,
+    -0.15
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -13,
+      -10
+    ],
+    [
+      -12,
+      9
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      13,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000004330"
+  ],
+  "description": "Kapel van Hoogelande met driezijdige sluiting, zadeldak en gemetselde klokkengevel.",
+  "printFiles": [
+    "kapel-van-sint-maarten-grijpskerke-1-1000.stl",
+    "kapel-van-sint-maarten-grijpskerke-1-100.stl"
+  ],
+  "realWorld": {
+    "lengthM": 13.58,
+    "widthM": 12.35,
+    "highestPointM": 17.3,
+    "groundNapM": -0.462,
+    "towerTopM": 17.3
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28112",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000004330",
+    "https://commons.wikimedia.org/wiki/Category:Kapel_(Hoogelande)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
