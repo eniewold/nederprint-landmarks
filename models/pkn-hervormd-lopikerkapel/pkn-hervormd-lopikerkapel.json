@@ -1,0 +1,37 @@
+{
+  "name": "PKN Hervormd Lopikerkapel",
+  "origin": [
+    131560,
+    444945
+  ],
+  "xAxis": [
+    0.981,
+    -0.194
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0331100000259104"
+  ],
+  "description": "Eenbeukig schip, hoger vijfzijdig koor, zijportaal en dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.966,
+    "naveRidgeM": 12,
+    "choirRidgeM": 12.8,
+    "towerTopM": 17.3,
+    "highestPointM": 17.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0331100000259104",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/26263",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:LOPIKERKAPEL_HERVORMDE_KERK_01.jpg"
+  ],
+  "file": "pkn-hervormd-lopikerkapel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "pkn-hervormd-lopikerkapel-1-100.stl",
+    "pkn-hervormd-lopikerkapel-1-1000.stl"
+  ]
+}
