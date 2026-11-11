@@ -1,0 +1,71 @@
+{
+  "name": "Grote of Sint-Laurenskerk Weesp",
+  "origin": [
+    131499.37,
+    479985.42
+  ],
+  "xAxis": [
+    0.96727,
+    0.25376
+  ],
+  "groundOffsetMetres": -0.3,
+  "groundSamplePoints": [
+    [
+      -33,
+      0
+    ],
+    [
+      0,
+      13.5
+    ],
+    [
+      -5,
+      -18.5
+    ],
+    [
+      36,
+      0
+    ],
+    [
+      22,
+      -12.5
+    ],
+    [
+      22,
+      10.5
+    ]
+  ],
+  "groundHeight": 44,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0457100000054845"
+  ],
+  "description": "Oorsprong op de as van het schip, X naar het koor (oost, 75,3 graden), z = 0 op NAP +1,0 m; basilicaal schip met doorlopend dak over het driezijdig gesloten koor, westtoren met achtkante spits, lantaarn en kroon, dakruiter, traptorens en de aanbouwen aan de zuidzijde.",
+  "realWorld": {
+    "groundNapM": 1,
+    "naveEaveNapM": 19.35,
+    "naveRidgeNapM": 28.01,
+    "aisleEaveNapM": 10.45,
+    "towerTopNapM": 25.2,
+    "crownTopNapM": 42,
+    "ahnTowerMaxNapM": 41.7,
+    "lengthM": 64.9,
+    "widthM": 22.2,
+    "highestPointM": 41
+  },
+  "sources": [
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (pand 0457100000054845)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0457100000054845",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (dsm_05m)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR)",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38550",
+    "https://nl.wikipedia.org/wiki/Grote_of_Laurenskerk_(Weesp)",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Laurenskerk_(Weesp)"
+  ],
+  "file": "laurenskerk-weesp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "laurenskerk-weesp-1-1000.stl"
+  ]
+}
