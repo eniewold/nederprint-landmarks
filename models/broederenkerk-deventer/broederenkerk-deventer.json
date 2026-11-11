@@ -1,0 +1,57 @@
+{
+  "name": "Broederenkerk Deventer",
+  "file": "broederenkerk-deventer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    207573,
+    474333
+  ],
+  "xAxis": [
+    0.8557,
+    0.5175
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -35,
+      -20
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      30,
+      -17
+    ],
+    [
+      0,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0150100000000977"
+  ],
+  "description": "Tweebeukige Broederenkerk met twee zadeldaken, koorsluitingen, steunberen, westportaal en dakruiter; oorsprong RD (207573,474333), +X langs de nok in oostelijke richting. GLB in meters, Y omhoog.",
+  "printFiles": [
+    "broederenkerk-deventer-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 63.2,
+    "widthM": 22.95,
+    "highestPointM": 45.8,
+    "groundNapM": 8.39,
+    "southRidgeM": 28,
+    "northRidgeM": 24.8,
+    "turretTopM": 45.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12543",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0150100000000977",
+    "PDOK AHN DSM 0,5 m, EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Broederenkerk,_Deventer"
+  ]
+}
