@@ -1,0 +1,39 @@
+{
+  "name": "Nicolaaskerk Kortgene",
+  "origin": [
+    45068.4,
+    397477
+  ],
+  "xAxis": [
+    0.999176,
+    0.040566
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1695100000000674",
+    "NL.IMBAG.Pand.1695100000000662"
+  ],
+  "description": "Kerk met zadeldak, steunberen en afzonderlijk geregistreerde westtoren met achtzijdige spits.",
+  "realWorld": {
+    "groundNapM": 1.24,
+    "naveRidgeM": 17.7,
+    "towerTopM": 33.5,
+    "highestPointM": 33.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1695100000000674",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1695100000000662",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23770",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23769",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk_(Kortgene)"
+  ],
+  "file": "nicolaaskerk-kortgene.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nicolaaskerk-kortgene-1-100.stl",
+    "nicolaaskerk-kortgene-1-1000.stl"
+  ]
+}
