@@ -1,0 +1,63 @@
+{
+  "name": "Michael- en Johannes de Doperkerk Oudewater",
+  "file": "michael-en-johannes-de-doperkerk-oudewater.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119650,
+    448480
+  ],
+  "xAxis": [
+    0.8139,
+    0.581
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -13,
+      -2
+    ],
+    [
+      -13,
+      1
+    ],
+    [
+      15,
+      -2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      -6,
+      5
+    ],
+    [
+      4,
+      -6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0589100000255663"
+  ],
+  "description": "RD (119650,448480), +X langs de kerkzaal van voorgevel naar achterbouw; torenloze kerk met rijk gelede neo-romaanse straatgevel. Maaiveld NAP circa +2,21 m.",
+  "printFiles": [
+    "michael-en-johannes-de-doperkerk-oudewater-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.23,
+    "widthM": 8.36,
+    "highestPointM": 11.3,
+    "groundNapM": 2.213,
+    "naveRidgeM": 11.3
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32055",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0589100000255663",
+    "https://commons.wikimedia.org/wiki/Category:Oudkatholieke_Kerk_Oudewater",
+    "https://oudewater.oudkatholiek.nl/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
