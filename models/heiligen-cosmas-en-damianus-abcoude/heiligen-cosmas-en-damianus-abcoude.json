@@ -1,0 +1,36 @@
+{
+  "name": "Heiligen Cosmas en Damianus Abcoude",
+  "origin": [
+    126965,
+    476184
+  ],
+  "xAxis": [
+    0.93087,
+    0.36536
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0305100000000811"
+  ],
+  "description": "Driebeukige kruisbasiliek met veelhoekige transepten en hoge westtoren; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": -0.936,
+    "naveRidgeM": 24,
+    "towerTopM": 54.1,
+    "highestPointM": 54.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0305100000000811",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6978",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Cosmas_en_Damianus,_Abcoude"
+  ],
+  "file": "heiligen-cosmas-en-damianus-abcoude.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heiligen-cosmas-en-damianus-abcoude-1-100.stl",
+    "heiligen-cosmas-en-damianus-abcoude-1-1000.stl"
+  ]
+}
