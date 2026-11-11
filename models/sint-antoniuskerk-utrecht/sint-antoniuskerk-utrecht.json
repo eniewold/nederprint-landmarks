@@ -1,0 +1,63 @@
+{
+  "name": "Sint-Antoniuskerk Utrecht",
+  "file": "sint-antoniuskerk-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135073,
+    455863
+  ],
+  "xAxis": [
+    0.859,
+    0.512
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      10
+    ],
+    [
+      -24,
+      25
+    ],
+    [
+      -5,
+      32
+    ],
+    [
+      30,
+      -8
+    ],
+    [
+      30,
+      12
+    ],
+    [
+      5,
+      -22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000001779"
+  ],
+  "description": "RD (135073,455863), +X langs het schip; Antoniuskerk met zijdelingse Italiaanse toren, veelhoekige absis en pastorie. Maaiveld NAP circa +1,81 m.",
+  "printFiles": [
+    "sint-antoniuskerk-utrecht-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 50.71,
+    "widthM": 47.94,
+    "highestPointM": 41.11,
+    "groundNapM": 1.814,
+    "towerTopM": 41.11
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/514178",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000001779",
+    "https://commons.wikimedia.org/wiki/Category:Antoniuskerk_(Utrecht)",
+    "https://www.monumenten.nl/monument/514178",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
