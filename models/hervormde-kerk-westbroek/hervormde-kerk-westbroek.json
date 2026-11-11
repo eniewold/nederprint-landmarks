@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Kerk Westbroek",
+  "file": "hervormde-kerk-westbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137131,
+    462609
+  ],
+  "xAxis": [
+    0.97319,
+    0.23
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -13
+    ],
+    [
+      -27,
+      13
+    ],
+    [
+      29,
+      -12
+    ],
+    [
+      28,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0310100000670299"
+  ],
+  "description": "Hervormde Kerk Westbroek: schip, hoger koor, noordelijke grafkapel en westtoren. Oorsprong RD (137131,462609), maaiveld NAP +0,64 m.",
+  "printFiles": [
+    "hervormde-kerk-westbroek-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 45.5,
+    "widthM": 20.8,
+    "highestPointM": 41.04,
+    "groundNapM": 0.64,
+    "naveRidgeM": 19.25,
+    "towerTopM": 41.04,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/26509",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0310100000670299",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Westbroek",
+    "https://www.hervormdwestbroek.nl/Gebouwen/Kerk-en-toren/"
+  ]
+}
