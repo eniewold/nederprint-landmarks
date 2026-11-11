@@ -1,0 +1,58 @@
+{
+  "name": "Andrieskerk Amerongen",
+  "file": "andrieskerk-amerongen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    160108,
+    445513
+  ],
+  "xAxis": [
+    0.891,
+    0.454
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -8
+    ],
+    [
+      -10,
+      -11
+    ],
+    [
+      24,
+      -8
+    ],
+    [
+      24,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1581100000018529"
+  ],
+  "description": "Laatgotische Andrieskerk met hogere vijfzijdige koorsluiting en westtoren; oorsprong RD (160108,445513), maaiveld circa NAP +14,16 m.",
+  "printFiles": [
+    "andrieskerk-amerongen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44.85,
+    "widthM": 17.3,
+    "highestPointM": 54.8,
+    "groundNapM": 14.16,
+    "naveRidgeM": 16.7,
+    "choirRidgeM": 19.7,
+    "towerTopM": 54.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7755",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7756",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1581100000018529",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Andrieskerk_(Amerongen)",
+    "https://kerkfotografie.nl/andrieskerk-amerongen/nggallery/slideshow"
+  ]
+}
