@@ -1,0 +1,57 @@
+{
+  "name": "Grote- of Sint-MichaÃƒÂ«lskerk Oudewater",
+  "file": "grote-of-sint-michaelskerk-oudewater.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    119516,
+    448348
+  ],
+  "xAxis": [
+    0.99939,
+    0.035
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -34,
+      -11
+    ],
+    [
+      -32,
+      12
+    ],
+    [
+      30,
+      -19
+    ],
+    [
+      30,
+      24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0589100000255090"
+  ],
+  "description": "Grote- of Sint-MichaÃƒÂ«lskerk Oudewater: hallenkerk met drie kappen en een middeleeuwse zadeldaktoren. Oorsprong RD (119516,448348), maaiveld NAP +1,86 m.",
+  "printFiles": [
+    "grote-of-sint-michaelskerk-oudewater-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 59.5,
+    "widthM": 36.25,
+    "highestPointM": 40.42,
+    "groundNapM": 1.86,
+    "naveRidgeM": 19.4,
+    "towerTopM": 40.42,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32067",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0589100000255090",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Sint-Micha%C3%ABlskerk_(Oudewater)",
+    "https://rhcrijnstreek.nl/bronnen/lokale-historie/oudewater/oudewater/grote-of-sint-michaelskerk/"
+  ]
+}
