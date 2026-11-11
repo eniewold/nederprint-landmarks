@@ -1,0 +1,57 @@
+{
+  "name": "Petruskerk 's-Heer Arendskerke",
+  "file": "petruskerk-s-heer-arendskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    46396,
+    390362
+  ],
+  "xAxis": [
+    0.992157,
+    0.125
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -10
+    ],
+    [
+      -24,
+      10
+    ],
+    [
+      24,
+      -10
+    ],
+    [
+      24,
+      11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000023361"
+  ],
+  "description": "Petruskerk 's-Heer Arendskerke: eenbeukig schip, oostelijke consistorie en middeleeuwse toren met kleine centrale spits. Oorsprong RD (46396,390362), maaiveld NAP +1,78 m.",
+  "printFiles": [
+    "petruskerk-s-heer-arendskerke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.7,
+    "widthM": 14.2,
+    "highestPointM": 40.77,
+    "groundNapM": 1.78,
+    "naveRidgeM": 17.77,
+    "towerTopM": 40.77,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16399",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000023361",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Petruskerk,_%27s-Heer_Arendskerke",
+    "https://www.hetvierhuis.nl/nieuw_menu-item_2"
+  ]
+}
