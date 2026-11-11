@@ -1,0 +1,38 @@
+{
+  "name": "Geerteskerk Kloetinge",
+  "origin": [
+    52822,
+    390962
+  ],
+  "xAxis": [
+    0.998,
+    -0.06
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000019388",
+    "NL.IMBAG.Pand.0664100000019592"
+  ],
+  "description": "Gotische kerk met koor, kapellen en westtoren; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 3.081,
+    "naveRidgeM": 20.4,
+    "towerTopM": 54.7,
+    "highestPointM": 54.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000019388",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000019592",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16426",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Geerteskerk_(Kloetinge)"
+  ],
+  "file": "geerteskerk-kloetinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "geerteskerk-kloetinge-1-100.stl",
+    "geerteskerk-kloetinge-1-1000.stl"
+  ]
+}
