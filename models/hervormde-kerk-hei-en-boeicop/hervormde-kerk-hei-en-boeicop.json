@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde kerk Hei- en Boeicop",
+  "origin": [
+    133988,
+    439653
+  ],
+  "xAxis": [
+    0.99887,
+    -0.04745
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0707100000374815"
+  ],
+  "description": "Kerk met dwarskap, lage bijbouw en schematische dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.042,
+    "naveRidgeM": 16.3,
+    "bellTurretM": 26.1,
+    "highestPointM": 26.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0707100000374815",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21330",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Hei-_en_Boeicop"
+  ],
+  "file": "hervormde-kerk-hei-en-boeicop.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-hei-en-boeicop-1-100.stl",
+    "hervormde-kerk-hei-en-boeicop-1-1000.stl"
+  ]
+}
