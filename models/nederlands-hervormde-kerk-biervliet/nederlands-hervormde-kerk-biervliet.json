@@ -1,0 +1,56 @@
+{
+  "name": "Nederlands Hervormde Kerk Biervliet",
+  "file": "nederlands-hervormde-kerk-biervliet.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    36547,
+    372549
+  ],
+  "xAxis": [
+    0.09,
+    0.995942
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      8
+    ],
+    [
+      -15,
+      -8
+    ],
+    [
+      15,
+      8
+    ],
+    [
+      15,
+      -8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000033818"
+  ],
+  "description": "Zaalkerk met schilddak, zuidportaal, traptoren en vereenvoudigde dakruiter. RD (36547,372549), maaiveld NAP +5,66 m.",
+  "printFiles": [
+    "nederlands-hervormde-kerk-biervliet-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.2,
+    "widthM": 13.8,
+    "highestPointM": 23.44,
+    "groundNapM": 5.66,
+    "naveRidgeM": 15.5,
+    "towerTopM": 23.44,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35015",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0715100000033818",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Protestantse_Kerk_(Biervliet)"
+  ]
+}
