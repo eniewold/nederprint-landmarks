@@ -1,0 +1,56 @@
+{
+  "name": "Protestantse gemeente Kerkwerve",
+  "file": "protestantse-gemeente-kerkwerve.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    52136,
+    411910.7
+  ],
+  "xAxis": [
+    0.9986,
+    0.0529
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -15
+    ],
+    [
+      -30,
+      15
+    ],
+    [
+      16,
+      -15
+    ],
+    [
+      16,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000435151"
+  ],
+  "description": "Zaalkerk met houten geveltoren, schild aan de achterzijde en aangebouwde kerkzaal. RD (52136,411910,7), maaiveld NAP +0,10 m.",
+  "printFiles": [
+    "protestantse-gemeente-kerkwerve-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.2,
+    "widthM": 21.37,
+    "highestPointM": 25.02,
+    "groundNapM": 0.1,
+    "naveRidgeM": 15.55,
+    "towerTopM": 25.02,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29913",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000435151",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Kerkwerve"
+  ]
+}
