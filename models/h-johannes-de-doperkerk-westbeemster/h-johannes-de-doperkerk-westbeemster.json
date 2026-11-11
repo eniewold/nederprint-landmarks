@@ -1,0 +1,98 @@
+{
+  "name": "H. Johannes de Doperkerk Westbeemster",
+  "origin": [
+    121909.24,
+    509860.66
+  ],
+  "xAxis": [
+    0.93728,
+    -0.34857
+  ],
+  "groundHeight": 39.68,
+  "groundSamplePoints": [
+    [
+      -23.2,
+      0
+    ],
+    [
+      -26.6,
+      -4.5
+    ],
+    [
+      -18,
+      -11.6
+    ],
+    [
+      -17,
+      9.2
+    ],
+    [
+      -6.9,
+      10.9
+    ],
+    [
+      5,
+      9.8
+    ],
+    [
+      5,
+      -9.8
+    ],
+    [
+      -6.9,
+      -10.9
+    ],
+    [
+      18,
+      -12.9
+    ],
+    [
+      28.6,
+      0
+    ],
+    [
+      27.8,
+      -4.6
+    ],
+    [
+      23.2,
+      6.2
+    ]
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0370100000002738"
+  ],
+  "description": "Neogotische kruisbasiliek (H. Bijvoets, 1878-1879); oorsprong op de as ter hoogte van de zijbeuken, +X oost naar de voortoren aan de Jisperweg; nokken uit 3D BAG, spits uit AHN4, opstand van RCE-foto's.",
+  "realWorld": {
+    "groundNapM": -3.13,
+    "ridgeM": 20.2,
+    "naveEaveM": 13,
+    "aisleEaveM": 8.4,
+    "towerShaftM": 19.6,
+    "belfryM": 29.3,
+    "gablesM": 34.8,
+    "spireTipM": 55.9,
+    "ahnSpireNapM": 52.83,
+    "flecheM": 30,
+    "lengthM": 49.5,
+    "widthM": 16.8,
+    "highestPointM": 55.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/511342",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (pand 0370100000002738)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0370100000002738",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (dsm_05m, dtm_05m)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Johannes_de_Doper_(Westbeemster)",
+    "https://www.wikidata.org/wiki/Q17462935"
+  ],
+  "file": "h-johannes-de-doperkerk-westbeemster.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "h-johannes-de-doperkerk-westbeemster-1-1000.stl"
+  ]
+}
