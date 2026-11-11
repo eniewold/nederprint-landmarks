@@ -1,0 +1,62 @@
+{
+  "name": "Mauritskerk IJzendijke",
+  "file": "mauritskerk-ijzendijke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    31475,
+    371800
+  ],
+  "xAxis": [
+    0.947,
+    0.32
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -12
+    ],
+    [
+      -22,
+      12
+    ],
+    [
+      -4,
+      14
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      23,
+      10
+    ],
+    [
+      18,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000723117"
+  ],
+  "description": "Langgerekte kerk met veelhoekige sluitingen, zuidelijke aanbouw en achtzijdige dakruiter met bolbekroning.",
+  "printFiles": [
+    "mauritskerk-ijzendijke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 32.61,
+    "widthM": 26.31,
+    "highestPointM": 28.05,
+    "groundNapM": 2.238,
+    "towerTopM": 28.05
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31532",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000723117",
+    "https://commons.wikimedia.org/wiki/Category:Mauritskerk,_IJzendijke",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
