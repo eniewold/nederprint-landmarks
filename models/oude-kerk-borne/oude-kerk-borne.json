@@ -1,0 +1,57 @@
+{
+  "name": "Oude Kerk Borne",
+  "file": "oude-kerk-borne.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    248600,
+    480043
+  ],
+  "xAxis": [
+    0.987116,
+    -0.16
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -8
+    ],
+    [
+      -5,
+      -10
+    ],
+    [
+      15,
+      -8
+    ],
+    [
+      20,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0147100000012207"
+  ],
+  "description": "Oude Kerk Borne: schip onder zadeldak, koor met veelhoekige sluiting, steunberen en toren met ingesnoerde achtzijdige spits. Oorsprong RD (248600, 480043), +X langs de nok naar het oosten; maaiveld NAP +14,38 m. GLB in meters, Y omhoog.",
+  "printFiles": [
+    "oude-kerk-borne-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.2,
+    "widthM": 15.92,
+    "highestPointM": 47.9,
+    "groundNapM": 14.38,
+    "naveRidgeM": 16.16,
+    "towerTopM": 47.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9929",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0147100000012207",
+    "PDOK AHN DSM 0,5 m, EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Borne",
+    "https://www.visitborne.nl/wat-te-doen/cultuur-historische-waardekaart/"
+  ]
+}
