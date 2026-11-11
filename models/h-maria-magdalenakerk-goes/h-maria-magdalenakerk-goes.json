@@ -1,0 +1,56 @@
+{
+  "name": "H. Maria Magdalenakerk Goes",
+  "file": "h-maria-magdalenakerk-goes.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    50996,
+    391509
+  ],
+  "xAxis": [
+    0.982,
+    0.188889
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -20
+    ],
+    [
+      -27,
+      20
+    ],
+    [
+      31,
+      -20
+    ],
+    [
+      31,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000018251"
+  ],
+  "description": "Neogotische kruisbasiliek met zijtoren, vijfzijdig koor en vieringslantaarn. RD (50996,391509), maaiveld NAP +1,02 m.",
+  "printFiles": [
+    "h-maria-magdalenakerk-goes-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 48.2,
+    "widthM": 33.5,
+    "highestPointM": 52.18,
+    "groundNapM": 1.02,
+    "naveRidgeM": 21,
+    "towerTopM": 52.18,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507881",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000018251",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Maria_Magdalenakerk"
+  ]
+}
