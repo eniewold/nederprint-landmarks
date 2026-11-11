@@ -1,0 +1,37 @@
+{
+  "name": "H.H. Simon en Judaskerk Lattrop",
+  "origin": [
+    263148.8,
+    494501
+  ],
+  "xAxis": [
+    0.75114987,
+    0.66013171
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1774100000242228"
+  ],
+  "description": "Kruisbasiliek met dwarskappen, vijfzijdig gesloten koor, twee sacristieën en achtzijdige torenspits; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 20.77,
+    "naveRidgeM": 15.95,
+    "towerTopM": 30.5,
+    "highestPointM": 30.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1774100000242228",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508960",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Noordwest-gevel_-_Lattrop_-_20129462_-_RCE.jpg",
+    "https://commons.wikimedia.org/wiki/File:Oostgevel_-_Lattrop_-_20129463_-_RCE.jpg"
+  ],
+  "file": "heilig-hart-simon-en-judaskerk-lattrop-breklenkamp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "heilig-hart-simon-en-judaskerk-lattrop-breklenkamp-1-100.stl",
+    "heilig-hart-simon-en-judaskerk-lattrop-breklenkamp-1-1000.stl"
+  ]
+}
