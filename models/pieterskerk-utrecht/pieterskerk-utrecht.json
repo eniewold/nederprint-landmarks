@@ -1,0 +1,36 @@
+{
+  "name": "Pieterskerk Utrecht",
+  "origin": [
+    136968,
+    455919
+  ],
+  "xAxis": [
+    0.95099,
+    0.30922
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0344100000023250"
+  ],
+  "description": "Romaanse basiliek met dwarsschip, hoge koorsluiting, zijkapel en schematische vieringruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 4.128,
+    "naveRidgeM": 22.7,
+    "riderTopM": 29.3,
+    "highestPointM": 29.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0344100000023250",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18297",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Pieterskerk,_Utrecht"
+  ],
+  "file": "pieterskerk-utrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "pieterskerk-utrecht-1-100.stl",
+    "pieterskerk-utrecht-1-1000.stl"
+  ]
+}
