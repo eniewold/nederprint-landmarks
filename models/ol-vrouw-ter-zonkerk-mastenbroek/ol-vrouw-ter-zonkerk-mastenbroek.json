@@ -1,0 +1,62 @@
+{
+  "name": "Onze Lieve Vrouw ter Zonkerk Mastenbroek",
+  "file": "ol-vrouw-ter-zonkerk-mastenbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    198163,
+    509846
+  ],
+  "xAxis": [
+    0.984808,
+    0.173648
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -16,
+      -7
+    ],
+    [
+      -10,
+      -11
+    ],
+    [
+      -4,
+      -11
+    ],
+    [
+      2,
+      -11
+    ],
+    [
+      -8,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1896100000013742"
+  ],
+  "description": "RD-oorsprong (198163,509846), +X langs de nok naar het koor; schip en smaller driezijdig koor onder vlakke dakvlakken, consistorie en toren met achtzijdige spits. Maaiveld op de kerkverhoging NAP circa +1,6 m.",
+  "printFiles": [
+    "ol-vrouw-ter-zonkerk-mastenbroek-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33.4,
+    "widthM": 18.48,
+    "highestPointM": 28.6,
+    "groundNapM": 1.6,
+    "naveRidgeM": 13.8,
+    "choirRidgeM": 12.56,
+    "towerTopM": 28.6
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20925",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20926",
+    "https://www.dbnl.org/tekst/sten009monu03_01/sten009monu03_01_0071.php",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1896100000013742",
+    "https://commons.wikimedia.org/wiki/Category:Onze_Lieve_Vrouw_ter_Zon_(Mastenbroek)",
+    "PDOK AHN DSM/DTM 0,5 m en actuele luchtfoto"
+  ]
+}
