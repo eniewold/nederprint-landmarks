@@ -1,0 +1,78 @@
+{
+  "name": "Protestantse kerk Blankenham",
+  "origin": [
+    189456.97,
+    531036.05
+  ],
+  "xAxis": [
+    0.98618,
+    0.16568
+  ],
+  "groundHeight": 0.85,
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -11.8,
+      -6.2
+    ],
+    [
+      -11.8,
+      6.2
+    ],
+    [
+      -4,
+      -6.4
+    ],
+    [
+      -4,
+      6.4
+    ],
+    [
+      5,
+      -6.4
+    ],
+    [
+      5,
+      6.4
+    ],
+    [
+      12.6,
+      -3
+    ],
+    [
+      12.6,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000027665"
+  ],
+  "description": "Oorsprong RD (189456.97, 531036.05) midden in de zaal, X langs de nok naar het oosten; zaalkerk van 1892 met driezijdige koorsluiting onder een schilddak en een westtorentje met houten klokkenverdieping en achtzijdige spits; torengeledingen en nissen uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": 0.85,
+    "wallTopNapM": 8.55,
+    "ridgeNapM": 13.95,
+    "roofPitchDeg": 46.3,
+    "towerBrickNapM": 13.6,
+    "belfryCorniceNapM": 17.45,
+    "spireTopNapM": 24.5,
+    "widthM": 10.33,
+    "lengthM": 21.94,
+    "highestPointM": 23.64
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1708100000027665",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/387546",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT,_WESTGEVEL,_ZUIDGEVEL_-_Blankenham_-_20277084_-_RCE.jpg",
+    "https://www.openstreetmap.org/way/267317784",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "protestantse-kerk-blankenham.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-blankenham-1-100.stl",
+    "protestantse-kerk-blankenham-1-1000.stl"
+  ]
+}
