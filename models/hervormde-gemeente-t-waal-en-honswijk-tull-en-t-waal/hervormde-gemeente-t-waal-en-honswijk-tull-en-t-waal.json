@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde gemeente 't Waal en Honswijk",
+  "file": "hervormde-gemeente-t-waal-en-honswijk-tull-en-t-waal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    137540,
+    445974
+  ],
+  "xAxis": [
+    0.992157,
+    0.125
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -13,
+      -8
+    ],
+    [
+      -13,
+      8
+    ],
+    [
+      14,
+      -8
+    ],
+    [
+      14,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0321100000001766"
+  ],
+  "description": "Hervormde gemeente 't Waal en Honswijk: zaalkerk met driezijdige consistorie en westtoren met vereenvoudigde open lantaarn. Oorsprong RD (137540,445974), maaiveld NAP +2,29 m.",
+  "printFiles": [
+    "hervormde-gemeente-t-waal-en-honswijk-tull-en-t-waal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 18.5,
+    "widthM": 10.6,
+    "highestPointM": 14.9,
+    "groundNapM": 2.29,
+    "naveRidgeM": 9.4,
+    "towerTopM": 14.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/398785",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0321100000001766",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk,_Tull_en_%27t_Waal",
+    "https://www.leefbaarheidtullentwaal.nl/nederlands-hervormde-kerk/"
+  ]
+}
