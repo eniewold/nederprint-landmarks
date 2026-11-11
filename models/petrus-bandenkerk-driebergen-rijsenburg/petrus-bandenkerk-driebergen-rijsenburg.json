@@ -1,0 +1,36 @@
+{
+  "name": "Petrus' Bandenkerk Driebergen-Rijsenburg",
+  "origin": [
+    147366,
+    451879
+  ],
+  "xAxis": [
+    -0.7538,
+    -0.6571
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1581100000009695"
+  ],
+  "description": "Classicistische kerk met zuilenportiek, dwarskappen en achtkantige koepeltoren; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 4.482,
+    "naveRidgeM": 13.9,
+    "towerTopM": 24,
+    "highestPointM": 24
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1581100000009695",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14099",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Petrus%27_Banden_(Driebergen-Rijsenburg)"
+  ],
+  "file": "petrus-bandenkerk-driebergen-rijsenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petrus-bandenkerk-driebergen-rijsenburg-1-100.stl",
+    "petrus-bandenkerk-driebergen-rijsenburg-1-1000.stl"
+  ]
+}
