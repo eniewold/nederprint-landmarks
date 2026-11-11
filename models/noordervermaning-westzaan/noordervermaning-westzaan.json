@@ -1,0 +1,46 @@
+{
+  "name": "Noordervermaning Westzaan",
+  "origin": [
+    113205.6,
+    497261
+  ],
+  "xAxis": [
+    0.97887,
+    0.2045
+  ],
+  "groundHeight": -0.7,
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0479100000002310"
+  ],
+  "description": "Oorsprong RD (113205.6, 497261.0) midden in de zaal, X langs de nok naar de bakstenen voorgevel (oost); houten zaalkerk uit 1695 met schilddak en neogotische voorgevel met pinakels, gevelindeling en pinakels uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.7,
+    "eavesNapM": 6.68,
+    "ridgeNapM": 11.63,
+    "roofPitchDeg": 44.4,
+    "hipPitchDeg": 50,
+    "lengthM": 20.76,
+    "widthM": 10.1,
+    "annexRidgeNapM": 4.62,
+    "frontPinnacleNapM": 14.03,
+    "highestPointM": 14.72
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0479100000002310",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39982",
+    "https://nl.wikipedia.org/wiki/Noordervermaning_(Westzaan)",
+    "https://reliwiki.nl/index.php/Westzaan,_J.J._Allanstraat_463_-_Noordervermaning",
+    "https://commons.wikimedia.org/wiki/Category:Noordervermaning_(Westzaan)",
+    "https://www.openstreetmap.org/way/285093882",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "noordervermaning-westzaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "noordervermaning-westzaan-1-100.stl",
+    "noordervermaning-westzaan-1-1000.stl"
+  ]
+}
