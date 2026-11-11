@@ -1,0 +1,63 @@
+{
+  "name": "Onze Lieve Vrouwe ten Hemelopneming Houten",
+  "file": "onze-lieve-vrouwe-ten-hemelopneming-houten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    139684,
+    448745
+  ],
+  "xAxis": [
+    0.929,
+    0.37
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      0
+    ],
+    [
+      -30,
+      12
+    ],
+    [
+      -15,
+      18
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      20,
+      8
+    ],
+    [
+      26,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0321100000006826"
+  ],
+  "description": "RD (139684,448745), +X langs schip naar koor; neogotische kruiskerk met vieringtoren, afzonderlijk westelijk traptorentje en zuidelijke aanbouwen. Maaiveld circa NAP +2,87 m.",
+  "printFiles": [
+    "onze-lieve-vrouwe-ten-hemelopneming-houten-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 58.98,
+    "widthM": 49.93,
+    "highestPointM": 39.45,
+    "groundNapM": 2.872,
+    "towerTopM": 39.45
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22665",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0321100000006826",
+    "https://commons.wikimedia.org/wiki/Category:Onze_Lieve_Vrouwe_ten_Hemelopneming,_Houten",
+    "https://www.oudhouten.nl/recente-tijd/19e-eeuw/rk-kerk-houten/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
