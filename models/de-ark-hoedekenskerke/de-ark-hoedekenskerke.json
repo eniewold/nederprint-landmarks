@@ -1,0 +1,37 @@
+{
+  "name": "de Ark Hoedekenskerke",
+  "origin": [
+    52434,
+    382651
+  ],
+  "xAxis": [
+    0.992,
+    0.125
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000069235"
+  ],
+  "description": "Overgebleven veelhoekig koor met zijaanbouw en printbaar vereenvoudigde dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.39,
+    "choirRidgeM": 18.8,
+    "riderTopEstimatedM": 27.5,
+    "highestPointM": 27.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000069235",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9995",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://hoedekenskerkeprotestantsekerk.nl/geschiedenis-van-de-kerk/",
+    "https://commons.wikimedia.org/wiki/Category:St._Joriskerk_(Hoedekenskerke)"
+  ],
+  "file": "de-ark-hoedekenskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "de-ark-hoedekenskerke-1-100.stl",
+    "de-ark-hoedekenskerke-1-1000.stl"
+  ]
+}
