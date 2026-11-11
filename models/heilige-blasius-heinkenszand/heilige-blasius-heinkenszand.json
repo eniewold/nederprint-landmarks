@@ -1,0 +1,63 @@
+{
+  "name": "Heilige Blasius Heinkenszand",
+  "file": "heilige-blasius-heinkenszand.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    46026,
+    388225
+  ],
+  "xAxis": [
+    0.76,
+    0.65
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -11
+    ],
+    [
+      -25,
+      10
+    ],
+    [
+      -4,
+      15
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      25,
+      10
+    ],
+    [
+      25,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000046309"
+  ],
+  "description": "Pseudobasiliek met twee achtkantige westtorens, koor, zijapsiden en sacristie.",
+  "printFiles": [
+    "heilige-blasius-heinkenszand-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.99,
+    "widthM": 17.65,
+    "highestPointM": 19.15,
+    "groundNapM": 1.3,
+    "towerTopM": 19.15
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9991",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000046309",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0041.php",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Blasiuskerk,_Heinkenszand",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
