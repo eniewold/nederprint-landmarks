@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Kerk Kapelle",
+  "file": "hervormde-kerk-kapelle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    55740,
+    389572
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -37,
+      -19
+    ],
+    [
+      -37,
+      19
+    ],
+    [
+      30,
+      -19
+    ],
+    [
+      30,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0678100000005228",
+    "NL.IMBAG.Pand.0678100000005205"
+  ],
+  "description": "Gotische pseudobasiliek met twee koorsluitingen en westtoren met vier hoektorentjes en bakstenen spits. RD (55740,389572), maaiveld NAP +2,17 m.",
+  "printFiles": [
+    "hervormde-kerk-kapelle-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 55.8,
+    "widthM": 27.2,
+    "highestPointM": 60.65,
+    "groundNapM": 2.17,
+    "naveRidgeM": 21.23,
+    "towerTopM": 60.65,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23482",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0678100000005228",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Kapelle"
+  ]
+}
