@@ -1,0 +1,62 @@
+{
+  "name": "Mariakerk Cadzand",
+  "file": "mariakerk-cadzand.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    17234,
+    377348
+  ],
+  "xAxis": [
+    0.973,
+    0.23
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -14
+    ],
+    [
+      -18,
+      14
+    ],
+    [
+      -5,
+      18
+    ],
+    [
+      10,
+      18
+    ],
+    [
+      20,
+      10
+    ],
+    [
+      20,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000731656"
+  ],
+  "description": "Tweebeukige hallenkerk met twee evenwijdige zadeldaken, westelijke dakruiter en lage aanbouw.",
+  "printFiles": [
+    "mariakerk-cadzand-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 21.33,
+    "widthM": 27.21,
+    "highestPointM": 26.8,
+    "groundNapM": 1.602,
+    "towerTopM": 26.8
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31509",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000731656",
+    "https://commons.wikimedia.org/wiki/Category:Mariakerk_(Cadzand)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
