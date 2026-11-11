@@ -1,0 +1,62 @@
+{
+  "name": "Sint Bonifatiuskerk Kwadendamme",
+  "file": "sint-bonifatiuskerk-kwadendamme.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    49914,
+    383722
+  ],
+  "xAxis": [
+    0.5,
+    -0.866
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -12
+    ],
+    [
+      -28,
+      10
+    ],
+    [
+      -6,
+      16
+    ],
+    [
+      12,
+      17
+    ],
+    [
+      30,
+      8
+    ],
+    [
+      25,
+      -18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000037605"
+  ],
+  "description": "Eenbeukige neogotische kruiskerk met vijfzijdig koor, westtoren met naaldspits en dakruiter.",
+  "printFiles": [
+    "sint-bonifatiuskerk-kwadendamme-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 50.05,
+    "widthM": 27.66,
+    "highestPointM": 44.5,
+    "groundNapM": 1.54,
+    "towerTopM": 44.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9999",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000037605",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Bonifatiuskerk_(Kwadendamme)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
