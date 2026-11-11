@@ -1,0 +1,56 @@
+{
+  "name": "Heilige Geestkapel Vollenhove",
+  "file": "heilige-geestkapel-vollenhove.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    193176,
+    521737
+  ],
+  "xAxis": [
+    0.9899,
+    0.1418
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14,
+      -6
+    ],
+    [
+      -3,
+      -6
+    ],
+    [
+      12,
+      -5
+    ],
+    [
+      12,
+      5
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1708100000014817"
+  ],
+  "description": "Eenbeukige Heilige Geestkapel met recht gesloten koor, zadeldak en zeszijdige dakruiter; aansluitende voormalige pastorie. Oorsprong RD (193176, 521737); maaiveld circa NAP +2,93 m.",
+  "printFiles": [
+    "heilige-geestkapel-vollenhove-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 26.75,
+    "widthM": 9.33,
+    "highestPointM": 18.8,
+    "groundNapM": 2.93,
+    "naveRidgeM": 12.4,
+    "towerTopM": 18.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10551",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1708100000014817",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Geestkapel_of_Gasthuiskapel",
+    "https://stadvollenhove.nl/index.php/gebouwen/kerken/heilige-geestkapel"
+  ]
+}
