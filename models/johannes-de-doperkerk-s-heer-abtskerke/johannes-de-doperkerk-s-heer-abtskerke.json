@@ -1,0 +1,63 @@
+{
+  "name": "Johannes de Doperkerk 's-Heer Abtskerke",
+  "file": "johannes-de-doperkerk-s-heer-abtskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    50365,
+    387948
+  ],
+  "xAxis": [
+    0.988,
+    0.156
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -9
+    ],
+    [
+      -20,
+      9
+    ],
+    [
+      -8,
+      12
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      12,
+      10
+    ],
+    [
+      22,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000027577"
+  ],
+  "description": "Kruiskerk met schip, driezijdig gesloten koor, dwarspand, lage aanbouw en westtoren met achthoekige spits.",
+  "printFiles": [
+    "johannes-de-doperkerk-s-heer-abtskerke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39,
+    "widthM": 19.89,
+    "highestPointM": 31.5,
+    "groundNapM": 1.3,
+    "towerTopM": 31.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9974",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000027577",
+    "https://www.kerksheerabtskerke.nl/kerkgebouw.php",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_Johannes_de_Doper_(%27s-Heer_Abtskerke)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
