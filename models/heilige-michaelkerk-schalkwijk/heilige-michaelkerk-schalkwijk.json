@@ -1,0 +1,57 @@
+{
+  "name": "Heilige MichaÃƒÂ«lkerk Schalkwijk",
+  "file": "heilige-michaelkerk-schalkwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    141080,
+    445165
+  ],
+  "xAxis": [
+    0.75,
+    0.661438
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -32,
+      -10
+    ],
+    [
+      -29,
+      15
+    ],
+    [
+      32,
+      -17
+    ],
+    [
+      32,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0321100000000587"
+  ],
+  "description": "Heilige MichaÃƒÂ«lkerk Schalkwijk: neogotische kruisbasiliek met koor, traptoren en hoge westtoren. Oorsprong RD (141080,445165), maaiveld NAP +1,59 m.",
+  "printFiles": [
+    "heilige-michaelkerk-schalkwijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.3,
+    "widthM": 38.6,
+    "highestPointM": 58.2,
+    "groundNapM": 1.59,
+    "naveRidgeM": 22.9,
+    "towerTopM": 58.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22704",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0321100000000587",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Michael,_Schalkwijk",
+    "https://www.tussenrijnenlek.nl/geschiedenis/geschiedenis-schalkwijk/sint-michaelkerk-schalkwijk/"
+  ]
+}
