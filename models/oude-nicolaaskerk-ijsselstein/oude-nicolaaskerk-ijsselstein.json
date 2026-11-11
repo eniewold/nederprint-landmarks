@@ -1,0 +1,57 @@
+{
+  "name": "Oude Nicolaaskerk IJsselstein",
+  "file": "oude-nicolaaskerk-ijsselstein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    131530,
+    448133
+  ],
+  "xAxis": [
+    0.99995,
+    -0.01
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -35,
+      -12
+    ],
+    [
+      -29,
+      11
+    ],
+    [
+      5,
+      -22
+    ],
+    [
+      36,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0353100000008292"
+  ],
+  "description": "Oude Nicolaaskerk IJsselstein: schip, dwarsbeuk, kooromgang met steekkappen en de renaissance-toren van Pasqualini. Oorsprong RD (131530,448133), maaiveld NAP +2,84 m.",
+  "printFiles": [
+    "oude-nicolaaskerk-ijsselstein-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 61.9,
+    "widthM": 34.35,
+    "highestPointM": 46.66,
+    "groundNapM": 2.84,
+    "naveRidgeM": 18.35,
+    "towerTopM": 46.66,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/20129",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0353100000008292",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Nicolaaskerk_(IJsselstein)",
+    "https://rhcrijnstreek.nl/bronnen/lokale-historie/ijsselstein/ijsselstein/nederlands-hervormde-of-oude-nicolaaskerk/"
+  ]
+}
