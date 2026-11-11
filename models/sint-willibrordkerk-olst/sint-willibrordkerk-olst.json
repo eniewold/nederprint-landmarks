@@ -1,0 +1,56 @@
+{
+  "name": "Sint-Willibrordkerk Olst",
+  "file": "sint-willibrordkerk-olst.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205640,
+    482890
+  ],
+  "xAxis": [
+    0.9903,
+    0.139
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -15
+    ],
+    [
+      -25,
+      8
+    ],
+    [
+      18,
+      -16
+    ],
+    [
+      38,
+      23
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1773100000005941"
+  ],
+  "description": "Willibrorduskerk Boskamp: kruisvormig schip met dwarskap, vijfzijdig koor, lage aanbouwen, westtoren en zeskantige lantaarn met spits, met aangesloten pastorie in hetzelfde BAG-pand; oorsprong RD (205640,482890), +X oostwaarts langs de nok. GLB in meters, Y omhoog.",
+  "printFiles": [
+    "sint-willibrordkerk-olst-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.7,
+    "widthM": 33.6,
+    "highestPointM": 35,
+    "groundNapM": 4.05,
+    "ridgeM": 16.2,
+    "towerTopM": 35,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508567",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1773100000005941",
+    "PDOK AHN DSM 0,5 m, EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Willibrorduskerk_(Boskamp)"
+  ]
+}
