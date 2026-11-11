@@ -1,0 +1,36 @@
+{
+  "name": "St. Martinuskerk 's-Gravenpolder",
+  "origin": [
+    51554,
+    386448.5
+  ],
+  "xAxis": [
+    0.982,
+    0.19
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000028768"
+  ],
+  "description": "Kruiskerk met ingebouwde octogonale toren, kap en vereenvoudigde lantaarn; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.18,
+    "choirRidgeM": 12,
+    "towerTopM": 23.17,
+    "highestPointM": 23.17
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000028768",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9968",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.openmonumentendag.nl/monument/maartenskerk-8/"
+  ],
+  "file": "st-martinuskerk-s-gravenpolder.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "st-martinuskerk-s-gravenpolder-1-100.stl",
+    "st-martinuskerk-s-gravenpolder-1-1000.stl"
+  ]
+}
