@@ -1,0 +1,55 @@
+{
+  "name": "Lutherse Kerk Groede",
+  "file": "lutherse-kerk-groede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    23919,
+    378376
+  ],
+  "xAxis": [
+    0.036,
+    0.999352
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -13,
+      -8
+    ],
+    [
+      -13,
+      8
+    ],
+    [
+      19,
+      -8
+    ],
+    [
+      19,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000718104"
+  ],
+  "description": "Achttiende-eeuwse Lutherse zaalkerk met schilddak, straatgevel met drie vensters en lage achteraanbouw. RD (23919,378376), maaiveld NAP +1,76 m.",
+  "printFiles": [
+    "lutherse-kerk-groede-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.35,
+    "widthM": 9.2,
+    "highestPointM": 12.33,
+    "groundNapM": 1.76,
+    "naveRidgeM": 12.33,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31514",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000718104",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Lutherse_Kerk_(Groede)"
+  ]
+}
