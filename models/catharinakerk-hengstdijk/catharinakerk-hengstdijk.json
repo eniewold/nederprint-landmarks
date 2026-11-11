@@ -1,0 +1,56 @@
+{
+  "name": "Catharinakerk Hengstdijk",
+  "file": "catharinakerk-hengstdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    58102,
+    373708.5
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -16
+    ],
+    [
+      -27,
+      16
+    ],
+    [
+      24,
+      -16
+    ],
+    [
+      24,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000598072"
+  ],
+  "description": "Neogotische kruiskerk met polygonale koorsluiting, sacristie en westtoren met geknikte naaldkap. RD (58102,373708,5), maaiveld NAP +1,07 m.",
+  "printFiles": [
+    "catharinakerk-hengstdijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.8,
+    "widthM": 23.3,
+    "highestPointM": 43.06,
+    "groundNapM": 1.07,
+    "naveRidgeM": 16.75,
+    "towerTopM": 43.06,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22219",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000598072",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Catharinakerk_(Hengstdijk)"
+  ]
+}
