@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde kerk Schalkwijk",
+  "origin": [
+    141647.5,
+    444725.5
+  ],
+  "xAxis": [
+    0.9921,
+    0.1255
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0321100000002002"
+  ],
+  "description": "Oude westtoren met spits, lager schip en koorsluiting; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 2.601,
+    "naveRidgeM": 10.35,
+    "towerTopM": 33.1,
+    "highestPointM": 33.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0321100000002002",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22687",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Schalkwijk"
+  ],
+  "file": "hervormde-kerk-schalkwijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-schalkwijk-1-100.stl",
+    "hervormde-kerk-schalkwijk-1-1000.stl"
+  ]
+}
