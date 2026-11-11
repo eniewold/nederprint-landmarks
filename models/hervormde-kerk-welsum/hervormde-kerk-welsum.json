@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Kerk Welsum",
+  "file": "hervormde-kerk-welsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    203009,
+    483345
+  ],
+  "xAxis": [
+    0.9915,
+    -0.1301
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14,
+      -6
+    ],
+    [
+      -3,
+      -6
+    ],
+    [
+      12,
+      -5
+    ],
+    [
+      12,
+      6
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1773100000002860"
+  ],
+  "description": "Zaalkerk met ingebouwde middeleeuwse zadeldaktoren en lagere consistorie. Oorsprong RD (203009,483345); maaiveld circa NAP +4,71 m.",
+  "printFiles": [
+    "hervormde-kerk-welsum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.7,
+    "widthM": 8.84,
+    "highestPointM": 15.52,
+    "groundNapM": 4.71,
+    "naveRidgeM": 10.96,
+    "towerTopM": 15.52,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31450",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31451",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1773100000002860",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Welsum)",
+    "https://www.kerkwelsum.nl/historie/kerkgebouw"
+  ]
+}
