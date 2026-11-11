@@ -1,0 +1,76 @@
+{
+  "name": "Sint Willibrorduskerk Wijhe",
+  "file": "sint-willibrorduskerk-wijhe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    207035,
+    487734
+  ],
+  "xAxis": [
+    0.9343,
+    -0.3565
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -21,
+      5
+    ],
+    [
+      -18,
+      11
+    ],
+    [
+      -10,
+      11
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      20,
+      5
+    ],
+    [
+      20,
+      -4
+    ],
+    [
+      13,
+      -16
+    ],
+    [
+      0,
+      -18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1773100000013109"
+  ],
+  "description": "Driebeukige kruisbasiliek met koor, doopkapel, lage aanbouwen en toren met spits en hoektorens.",
+  "printFiles": [
+    "sint-willibrorduskerk-wijhe-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38,
+    "widthM": 25.4,
+    "highestPointM": 48,
+    "groundNapM": 3,
+    "naveRidgeM": 19.5,
+    "towerTopM": 48
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/521739",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1773100000013109",
+    "https://commons.wikimedia.org/wiki/Category:Willibrorduskerk_(Boerhaar)",
+    "https://www.openmonumentendag.nl/monument/heilige-willibrordus-boerhaar/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
