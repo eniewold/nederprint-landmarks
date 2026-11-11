@@ -1,0 +1,56 @@
+{
+  "name": "Maartenskerk Doorn",
+  "file": "maartenskerk-doorn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    152101,
+    449427
+  ],
+  "xAxis": [
+    0.998198,
+    0.06
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -8
+    ],
+    [
+      -18,
+      10
+    ],
+    [
+      4,
+      -13
+    ],
+    [
+      21,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1581100000010503"
+  ],
+  "description": "Maartenskerk Doorn: schip, zuidelijk zijschip, koorsluiting, westtoren en dakruiter. Oorsprong RD (152101,449427), +X naar het oosten; maaiveld NAP +7,51 m.",
+  "printFiles": [
+    "maartenskerk-doorn-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 37.9,
+    "widthM": 17.6,
+    "highestPointM": 35.8,
+    "groundNapM": 7.51,
+    "naveRidgeM": 14.18,
+    "towerTopM": 35.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/13271",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1581100000010503",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Doorn"
+  ]
+}
