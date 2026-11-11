@@ -1,0 +1,56 @@
+{
+  "name": "Johanneskerk Kruiningen",
+  "file": "johanneskerk-kruiningen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    60990,
+    385351
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -20
+    ],
+    [
+      -20,
+      22
+    ],
+    [
+      22,
+      -20
+    ],
+    [
+      22,
+      22
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0703100000014221"
+  ],
+  "description": "Pseudobasilicaal schip zonder koor, noordelijke dwarsarm en zijdelingse toren. RD (60990,385351), maaiveld NAP +1,44 m.",
+  "printFiles": [
+    "johanneskerk-kruiningen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31,
+    "widthM": 32.1,
+    "highestPointM": 44.28,
+    "groundNapM": 1.44,
+    "naveRidgeM": 20.25,
+    "towerTopM": 44.28,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32417",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0703100000014221",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk_(Kruiningen)"
+  ]
+}
