@@ -1,0 +1,63 @@
+{
+  "name": "Protestantse Kerk Domburg",
+  "file": "protestantse-kerk-domburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    23928,
+    398825
+  ],
+  "xAxis": [
+    0.966,
+    0.26
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -11
+    ],
+    [
+      -25,
+      10
+    ],
+    [
+      -4,
+      15
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      23,
+      10
+    ],
+    [
+      23,
+      -14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000003141"
+  ],
+  "description": "Eenbeukige kerk met lage aanbouwen en middeleeuwse westtoren met traptoren en spits.",
+  "printFiles": [
+    "protestantse-kerk-domburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.21,
+    "widthM": 23.39,
+    "highestPointM": 29.6,
+    "groundNapM": 4.252,
+    "towerTopM": 29.6
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/13203",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/13205",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000003141",
+    "https://commons.wikimedia.org/wiki/Category:Kerk_Domburg",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
