@@ -1,0 +1,72 @@
+{
+  "name": "Nederlands Hervormde Kerk Everdingen",
+  "file": "nederlands-hervormde-kerk-everdingen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    139084,
+    441907
+  ],
+  "xAxis": [
+    0.964,
+    0.267
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -10,
+      -6
+    ],
+    [
+      -10,
+      6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      12,
+      18
+    ],
+    [
+      19,
+      15
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      4,
+      -7
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0620100000006338"
+  ],
+  "description": "Laatgotisch koor met westgevel, dakruiter en aangrenzende schuine vleugel.",
+  "printFiles": [
+    "nederlands-hervormde-kerk-everdingen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.8,
+    "widthM": 22.55,
+    "highestPointM": 20.9,
+    "groundNapM": 2.8,
+    "naveRidgeM": 13.7,
+    "towerTopM": 20.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15435",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0620100000006338",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Everdingen",
+    "https://www.dbnl.org/tekst/gron052vijf01_01/gron052vijf01_01_0015.php",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
