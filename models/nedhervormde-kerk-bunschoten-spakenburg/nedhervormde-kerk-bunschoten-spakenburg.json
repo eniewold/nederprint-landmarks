@@ -1,0 +1,36 @@
+{
+  "name": "Ned. Hervormde Kerk Bunschoten-Spakenburg",
+  "origin": [
+    154146.8,
+    472629.7
+  ],
+  "xAxis": [
+    0.99095,
+    -0.13423
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0313100000188820"
+  ],
+  "description": "Eenbeukig schip met aanbouw, zware toren en spits; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 0.842,
+    "naveRidgeM": 17.9,
+    "towerTopM": 38.6,
+    "highestPointM": 38.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0313100000188820",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11295",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Bunschoten"
+  ],
+  "file": "nedhervormde-kerk-bunschoten-spakenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nedhervormde-kerk-bunschoten-spakenburg-1-100.stl",
+    "nedhervormde-kerk-bunschoten-spakenburg-1-1000.stl"
+  ]
+}
