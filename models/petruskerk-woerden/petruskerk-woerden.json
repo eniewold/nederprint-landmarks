@@ -1,0 +1,36 @@
+{
+  "name": "Petruskerk Woerden",
+  "origin": [
+    120483,
+    455422
+  ],
+  "xAxis": [
+    0.968,
+    0.251
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0632100000012957"
+  ],
+  "description": "Pseudobasiliek met ingebouwde toren, transept en vijfzijdige kooromgang; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 2.304,
+    "naveRidgeM": 19.8,
+    "towerTopM": 48.48,
+    "highestPointM": 48.48
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0632100000012957",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39296",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Peter_Church_(Woerden)"
+  ],
+  "file": "petruskerk-woerden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "petruskerk-woerden-1-100.stl",
+    "petruskerk-woerden-1-1000.stl"
+  ]
+}
