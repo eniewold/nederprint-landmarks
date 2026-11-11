@@ -1,0 +1,56 @@
+{
+  "name": "Sint Martinuskerk Kloosterzande",
+  "file": "sint-martinuskerk-kloosterzande.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    58933,
+    376625
+  ],
+  "xAxis": [
+    0.993,
+    -0.118118
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -20
+    ],
+    [
+      -30,
+      20
+    ],
+    [
+      35,
+      -20
+    ],
+    [
+      35,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000597294"
+  ],
+  "description": "Neogotische kruisbasiliek met koor, traptorens, fronttoren en vieringsruiter. RD (58933,376625), maaiveld NAP +1,15 m.",
+  "printFiles": [
+    "sint-martinuskerk-kloosterzande-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 54.5,
+    "widthM": 30,
+    "highestPointM": 48.53,
+    "groundNapM": 1.15,
+    "naveRidgeM": 21.51,
+    "towerTopM": 48.53,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509218",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000597294",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Martinuskerk_(Kloosterzande)"
+  ]
+}
