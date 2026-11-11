@@ -1,0 +1,66 @@
+{
+  "name": "Dorpskerk IJsselmuiden",
+  "file": "dorpskerk-herv-gem-ijsselmuiden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    191697,
+    508776
+  ],
+  "xAxis": [
+    0.953717,
+    0.300706
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -13,
+      -4
+    ],
+    [
+      -10,
+      -5
+    ],
+    [
+      -6,
+      -16
+    ],
+    [
+      8,
+      -15
+    ],
+    [
+      10,
+      5
+    ],
+    [
+      8,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0166100000019872"
+  ],
+  "description": "Oorsprong RD (191697,508776), +X langs de nok richting koor. Schip, dwarsschip, koorsluiting en romaanse toren met ingesnoerde spits als gesloten bouwdelen; torenhoogte 25,75 m boven NAP +3,72 m.",
+  "printFiles": [
+    "dorpskerk-herv-gem-ijsselmuiden-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.78,
+    "widthM": 35.8,
+    "highestPointM": 25.75,
+    "groundNapM": 3.72,
+    "naveRidgeM": 12.23,
+    "transeptRidgeM": 13.65,
+    "towerTopM": 25.75
+  },
+  "sources": [
+    "https://dorpskerkijsselmuiden.nl/een-stenen-kerk/",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39906",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/39907",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0166100000019872",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Crispijnkerk_(IJsselmuiden)",
+    "PDOK AHN DSM/DTM 0,5 m en actuele luchtfoto"
+  ]
+}
