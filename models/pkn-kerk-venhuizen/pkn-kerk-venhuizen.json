@@ -1,0 +1,44 @@
+{
+  "name": "PKN-kerk Venhuizen",
+  "origin": [
+    143395,
+    520066
+  ],
+  "xAxis": [
+    0.99988,
+    -0.01571
+  ],
+  "groundHeight": -0.11,
+  "groundOffsetMetres": -0.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0498100000007309"
+  ],
+  "description": "Oorsprong RD (143395, 520066) bij de viering, X langs de nok van schip en koor (oost); laatgotische kruiskerk met vijfzijdig koor en half ingebouwde toren uit 1875, torengeledingen en nissen uit foto's geschat.",
+  "realWorld": {
+    "groundNapM": -0.11,
+    "eavesNapM": 8.4,
+    "naveRidgeNapM": 17.05,
+    "transeptRidgeNapM": 17.25,
+    "towerCorniceNapM": 22.7,
+    "spireTopNapM": 37.2,
+    "naveWidthM": 12.7,
+    "transeptLengthM": 26.45,
+    "lengthM": 39.35,
+    "highestPointM": 37.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0498100000007309",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37126",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Venhuizen",
+    "https://www.openstreetmap.org/way/275529242",
+    "https://www.ahn.nl/dataroom"
+  ],
+  "file": "pkn-kerk-venhuizen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "pkn-kerk-venhuizen-1-100.stl",
+    "pkn-kerk-venhuizen-1-1000.stl"
+  ]
+}
