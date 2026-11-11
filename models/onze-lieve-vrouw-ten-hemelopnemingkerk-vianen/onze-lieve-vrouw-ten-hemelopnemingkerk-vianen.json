@@ -1,0 +1,36 @@
+{
+  "name": "Onze-Lieve-Vrouw-ten-Hemelopnemingkerk Vianen",
+  "origin": [
+    134608.28,
+    445184.54
+  ],
+  "xAxis": [
+    0.97755,
+    0.21072
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0620100000006843"
+  ],
+  "description": "Driebeukige hallenkerk met drie kappen, koorsluiting, lage aanbouw en kleine hoektoren; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 3.357,
+    "naveRidgeM": 20.5,
+    "towerTopEstimatedM": 25.3,
+    "highestPointM": 25.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0620100000006843",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520869",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Vianen_RM_RK_Kerk_(1).jpg"
+  ],
+  "file": "onze-lieve-vrouw-ten-hemelopnemingkerk-vianen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouw-ten-hemelopnemingkerk-vianen-1-100.stl",
+    "onze-lieve-vrouw-ten-hemelopnemingkerk-vianen-1-1000.stl"
+  ]
+}
