@@ -1,0 +1,63 @@
+{
+  "name": "Dorpskerk Aagtekerke",
+  "file": "dorpskerk-aagtekerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    24818,
+    396978
+  ],
+  "xAxis": [
+    0.832,
+    0.555
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -9
+    ],
+    [
+      -20,
+      10
+    ],
+    [
+      -5,
+      12
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      25,
+      10
+    ],
+    [
+      25,
+      -10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000021200"
+  ],
+  "description": "Eenbeukig schip met zuidportiek, oostelijke consistorie en oudere westtoren met traptorentje en achtkantige spits.",
+  "printFiles": [
+    "dorpskerk-aagtekerke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 41.32,
+    "widthM": 13.26,
+    "highestPointM": 27.4,
+    "groundNapM": 1.17,
+    "towerTopM": 27.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28105",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28106",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000021200",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Aagtekerke",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
