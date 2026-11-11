@@ -1,0 +1,45 @@
+{
+  "name": "Engelmunduskerk Velsen-Zuid",
+  "origin": [
+    104702.7,
+    497309.9
+  ],
+  "xAxis": [
+    0.99635,
+    0.08542
+  ],
+  "groundHeight": 2.95,
+  "groundOffsetMetres": 0.2,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0453100000025845"
+  ],
+  "description": "Romaanse eenbeukige kerk met westtoren onder tentdak, gebogen steunberen, noordelijke aanbouw en consistorie (1966-69); oorsprong midden in het schip, x langs de nok (4,9 graden), z boven maaiveld NAP +2,95 m.",
+  "realWorld": {
+    "groundNapM": 2.95,
+    "naveEaveNapM": 9.9,
+    "naveRidgeNapM": 16.4,
+    "towerEaveNapM": 24,
+    "towerTopNapM": 27.8,
+    "ahnTowerTopNapM": 27.89,
+    "naveLengthM": 31,
+    "naveWidthM": 10.94,
+    "towerWidthM": 4.63,
+    "highestPointM": 24.85
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0453100000025845",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0",
+    "https://commons.wikimedia.org/wiki/Category:Engelmunduskerk,_Velsen-Zuid",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37067",
+    "https://nl.wikipedia.org/wiki/Engelmunduskerk_(Velsen-Zuid)",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "file": "engelmunduskerk-velsen-zuid.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "engelmunduskerk-velsen-zuid-1-100.stl",
+    "engelmunduskerk-velsen-zuid-1-1000.stl"
+  ]
+}
