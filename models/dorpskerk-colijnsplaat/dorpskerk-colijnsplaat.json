@@ -1,0 +1,57 @@
+{
+  "name": "Dorpskerk Colijnsplaat",
+  "file": "dorpskerk-colijnsplaat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    48351,
+    402257
+  ],
+  "xAxis": [
+    0.9935,
+    0.1138
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -15
+    ],
+    [
+      -15,
+      15
+    ],
+    [
+      20,
+      -15
+    ],
+    [
+      20,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1695100000009563",
+    "NL.IMBAG.Pand.1695100000011061"
+  ],
+  "description": "Zaalkerk met twee schilddaken, consistorie en witgepleisterde toren. RD (48351,402257), maaiveld NAP +1,81 m.",
+  "printFiles": [
+    "dorpskerk-colijnsplaat-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 26.4,
+    "widthM": 20.7,
+    "highestPointM": 18.66,
+    "groundNapM": 1.81,
+    "naveRidgeM": 13.28,
+    "towerTopM": 18.66,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23775",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1695100000009563",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Colijnsplaat"
+  ]
+}
