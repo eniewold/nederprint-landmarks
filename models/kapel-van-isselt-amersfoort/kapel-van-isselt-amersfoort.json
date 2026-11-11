@@ -1,0 +1,36 @@
+{
+  "name": "Kapel van Isselt Amersfoort",
+  "origin": [
+    152860,
+    464259
+  ],
+  "xAxis": [
+    0.1405,
+    0.99008
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0307100000322798"
+  ],
+  "description": "Boerderij met middeleeuwse kapelsluiting, lage uitbouw en geschematiseerde dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.884,
+    "roofRidgeM": 8.01,
+    "bellTurretM": 10.25,
+    "highestPointM": 10.25
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0307100000322798",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/7900",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Kapel_van_Isselt"
+  ],
+  "file": "kapel-van-isselt-amersfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "kapel-van-isselt-amersfoort-1-100.stl",
+    "kapel-van-isselt-amersfoort-1-1000.stl"
+  ]
+}
