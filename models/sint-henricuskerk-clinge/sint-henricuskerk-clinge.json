@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Henricuskerk Clinge",
+  "origin": [
+    64454,
+    365250
+  ],
+  "xAxis": [
+    0.999,
+    0.037
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000604391"
+  ],
+  "description": "Neoromaanse kruisbasiliek met westtoren en achtzijdige spits; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 2.254,
+    "naveRidgeM": 17.2,
+    "towerTopM": 36,
+    "highestPointM": 36
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000604391",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509696",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Heilige_Henricuskerk_(Clinge)"
+  ],
+  "file": "sint-henricuskerk-clinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-henricuskerk-clinge-1-100.stl",
+    "sint-henricuskerk-clinge-1-1000.stl"
+  ]
+}
