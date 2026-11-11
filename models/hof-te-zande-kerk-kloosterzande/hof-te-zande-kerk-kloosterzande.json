@@ -1,0 +1,62 @@
+{
+  "name": "Hof te Zande Kerk Kloosterzande",
+  "file": "hof-te-zande-kerk-kloosterzande.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    59696,
+    375975
+  ],
+  "xAxis": [
+    0.97,
+    -0.24
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -12
+    ],
+    [
+      -18,
+      11
+    ],
+    [
+      -3,
+      13
+    ],
+    [
+      13,
+      12
+    ],
+    [
+      19,
+      7
+    ],
+    [
+      16,
+      -13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000599181"
+  ],
+  "description": "Eenbeukige voormalige kloosterkapel met lagere dwarsaanbouw en achthoekige dakruiter.",
+  "printFiles": [
+    "hof-te-zande-kerk-kloosterzande-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.31,
+    "widthM": 17.03,
+    "highestPointM": 19.4,
+    "groundNapM": 2.347,
+    "towerTopM": 19.4
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22226",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000599181",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Kloosterzande",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
