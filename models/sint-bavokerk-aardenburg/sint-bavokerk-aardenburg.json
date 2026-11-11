@@ -1,0 +1,39 @@
+{
+  "name": "Sint Bavokerk Aardenburg",
+  "origin": [
+    19680,
+    366648
+  ],
+  "xAxis": [
+    0.94,
+    -0.342
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000732699",
+    "NL.IMBAG.Pand.1714100000732700"
+  ],
+  "description": "Scheldegotische basiliek met hallenkoor, westtoren en vieringruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 3.599,
+    "choirRidgeM": 23.5,
+    "westTowerTopM": 49.5,
+    "crossingRiderM": 37.05,
+    "highestPointM": 49.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000732699",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000732700",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6880",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Baafskerk_(Aardenburg)"
+  ],
+  "file": "sint-bavokerk-aardenburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-bavokerk-aardenburg-1-100.stl",
+    "sint-bavokerk-aardenburg-1-1000.stl"
+  ]
+}
