@@ -1,0 +1,80 @@
+{
+  "name": "Dorpskerk Abcoude",
+  "file": "dorpskerk-abcoude.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    126822,
+    476114
+  ],
+  "xAxis": [
+    0.999,
+    0.0447
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -12
+    ],
+    [
+      -10,
+      -12
+    ],
+    [
+      0,
+      -12
+    ],
+    [
+      11,
+      -10
+    ],
+    [
+      25,
+      -8
+    ],
+    [
+      32,
+      -3
+    ],
+    [
+      31,
+      6
+    ],
+    [
+      16,
+      11
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      -17,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0305100000001693"
+  ],
+  "description": "Laatgotische kruiskerk met driebeukig schip, koor, grafkapel en toren met ingesnoerde spits.",
+  "printFiles": [
+    "dorpskerk-abcoude-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 52.1,
+    "widthM": 21.5,
+    "highestPointM": 49.5,
+    "groundNapM": 0.4,
+    "naveRidgeM": 19.2,
+    "towerTopM": 49.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/6976",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0305100000001693",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Abcoude",
+    "https://www.openmonumentendag.nl/monument/dorpskerk-abcoude-geopend-met-open-monumentendag-2024/",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
