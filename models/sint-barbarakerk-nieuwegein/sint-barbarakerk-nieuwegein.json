@@ -1,0 +1,63 @@
+{
+  "name": "Sint-Barbarakerk Nieuwegein",
+  "file": "sint-barbarakerk-nieuwegein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    134963,
+    446562
+  ],
+  "xAxis": [
+    0.211,
+    0.977
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      0
+    ],
+    [
+      -20,
+      18
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      28,
+      5
+    ],
+    [
+      28,
+      -25
+    ],
+    [
+      0,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0356100000083786"
+  ],
+  "description": "RD (134963,446562), +X langs koor naar toren; neogotische kruiskerk met noordtoren, dakruiter en aangebouwde pastorie. Maaiveld NAP circa +1,90 m.",
+  "printFiles": [
+    "sint-barbarakerk-nieuwegein-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 46.4,
+    "widthM": 39.61,
+    "highestPointM": 43.37,
+    "groundNapM": 1.901,
+    "towerTopM": 43.37
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/526657",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0356100000083786",
+    "https://commons.wikimedia.org/wiki/Category:Barbarakerk,_Nieuwegein",
+    "https://www.dbnl.org/tekst/sten009monu01_01/sten009monu01_01_0058.php",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
