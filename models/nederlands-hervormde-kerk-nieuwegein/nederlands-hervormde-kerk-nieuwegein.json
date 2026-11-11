@@ -1,0 +1,36 @@
+{
+  "name": "Nederlands Hervormde Kerk Nieuwegein",
+  "origin": [
+    134844,
+    449958
+  ],
+  "xAxis": [
+    0.97756,
+    -0.21065
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0356100000079618"
+  ],
+  "description": "Dorpskerk Jutphaas met schilddaken, zijportaal en geschematiseerde dakruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.838,
+    "naveRidgeM": 13.05,
+    "towerTopM": 23,
+    "highestPointM": 23
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0356100000079618",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30404",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk_(Jutphaas)"
+  ],
+  "file": "nederlands-hervormde-kerk-nieuwegein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-nieuwegein-1-100.stl",
+    "nederlands-hervormde-kerk-nieuwegein-1-1000.stl"
+  ]
+}
