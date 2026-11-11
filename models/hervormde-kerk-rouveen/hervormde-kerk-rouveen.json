@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Kerk Rouveen",
+  "file": "hervormde-kerk-rouveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    209173,
+    514472
+  ],
+  "xAxis": [
+    0.99896,
+    -0.0456
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -10
+    ],
+    [
+      -25,
+      10
+    ],
+    [
+      25,
+      -10
+    ],
+    [
+      25,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0180100000006906"
+  ],
+  "description": "Hervormde Kerk Rouveen: zaalkerk met schilddak, steunberen, lage aanbouw en vierkante westtoren met tentdak. RD-oorsprong (209173,514472), +X langs de nok oostwaarts; GLB in meters met Y omhoog.",
+  "printFiles": [
+    "hervormde-kerk-rouveen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.3,
+    "widthM": 17.1,
+    "highestPointM": 26.45,
+    "groundNapM": 1.243,
+    "ridgeM": 14.55,
+    "towerTopM": 26.45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/47070",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34405",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0180100000006906",
+    "PDOK AHN DSM 0,5 m, EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Rouveen)"
+  ]
+}
