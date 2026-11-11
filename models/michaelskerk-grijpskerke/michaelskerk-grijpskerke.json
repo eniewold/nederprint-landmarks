@@ -1,0 +1,36 @@
+{
+  "name": "Michaëlskerk Grijpskerke",
+  "origin": [
+    28344,
+    395493
+  ],
+  "xAxis": [
+    -0.04,
+    0.999
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000001826"
+  ],
+  "description": "Tweebeukige kerk met schilddak, portaal en vereenvoudigde klokkenruiter; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 2.248,
+    "mainRidgeM": 14.3,
+    "riderTopM": 26.23,
+    "highestPointM": 26.23
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000001826",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28113",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Micha%C3%ABlskerk_(Grijpskerke)"
+  ],
+  "file": "michaelskerk-grijpskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "michaelskerk-grijpskerke-1-100.stl",
+    "michaelskerk-grijpskerke-1-1000.stl"
+  ]
+}
