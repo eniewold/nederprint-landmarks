@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Pleinkerk Houten",
+  "file": "hervormde-pleinkerk-houten.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    139524,
+    448829
+  ],
+  "xAxis": [
+    0.996714,
+    0.081
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -8
+    ],
+    [
+      -22,
+      9
+    ],
+    [
+      2,
+      -12
+    ],
+    [
+      23,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0321100000006718"
+  ],
+  "description": "Hervormde Pleinkerk Houten: schip, koor, consistorie en laatgotische westtoren met vier pinakels en achtzijdige spits. RD oorsprong (139524,448829), maaiveld NAP +3,91 m.",
+  "printFiles": [
+    "hervormde-pleinkerk-houten-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.67,
+    "widthM": 14.21,
+    "highestPointM": 48.05,
+    "groundNapM": 3.91,
+    "naveRidgeM": 12.86,
+    "towerTopM": 48.05,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22662",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0321100000006718",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Houten",
+    "https://www.oudhouten.nl/nieuwe-tijd/geloof-in-houten/de-kerk-van-houten/"
+  ]
+}
