@@ -1,0 +1,57 @@
+{
+  "name": "Sint Nicolaaskerk Nieuwegein",
+  "file": "sint-nicolaaskerk-nieuwegein.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    135028,
+    450192
+  ],
+  "xAxis": [
+    0.915,
+    -0.403
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -12
+    ],
+    [
+      -20,
+      12
+    ],
+    [
+      18,
+      -15
+    ],
+    [
+      10,
+      37
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0356100000070858"
+  ],
+  "description": "Sint Nicolaaskerk Nieuwegein: middenschip, zijbeuken, kruisbeuk, koor, vieringruiter, westtoren en aangebouwde gang. Oorsprong RD (135028,450192), maaiveld NAP +1,99 m.",
+  "printFiles": [
+    "sint-nicolaaskerk-nieuwegein-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 41.1,
+    "widthM": 43.8,
+    "highestPointM": 49.7,
+    "groundNapM": 1.99,
+    "naveRidgeM": 18.4,
+    "towerTopM": 49.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30422",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0356100000070858",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Nicolaaskerk,_Nieuwegein",
+    "https://www.openmonumentendag.nl/monument/de-sint-nicolaaskerk/"
+  ]
+}
