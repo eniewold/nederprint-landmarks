@@ -1,0 +1,63 @@
+{
+  "name": "Geboorte van de Heilige Johannes de Doper Montfoort",
+  "file": "geboorte-van-de-heilige-johannes-de-doper-montfoort.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    124735,
+    450820
+  ],
+  "xAxis": [
+    0.932,
+    0.362
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -20
+    ],
+    [
+      -30,
+      10
+    ],
+    [
+      -10,
+      18
+    ],
+    [
+      10,
+      20
+    ],
+    [
+      30,
+      -12
+    ],
+    [
+      0,
+      -20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0335100000319913"
+  ],
+  "description": "RD (124735,450820), +X langs het schip naar koor; neogotische kruiskerk met vieringtoren, veelhoekig koor en aanbouwen. Maaiveld NAP circa +2,14 m.",
+  "printFiles": [
+    "geboorte-van-de-heilige-johannes-de-doper-montfoort-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.41,
+    "widthM": 37.99,
+    "highestPointM": 41.12,
+    "groundNapM": 2.139,
+    "towerTopM": 41.12
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/512115",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0335100000319913",
+    "https://commons.wikimedia.org/wiki/Category:Geboorte_van_de_Heilige_Johannes_de_Doper",
+    "https://www.stichtingvriendenvanjohannesdedoperkerkmontfoort.nl/historie/100-jarig-kerkgebouw-1925/rijksmonument",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
