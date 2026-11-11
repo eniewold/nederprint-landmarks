@@ -1,0 +1,63 @@
+{
+  "name": "Nicolaaskerk 's-Heer Hendrikskinderen",
+  "file": "nicolaaskerk-s-heer-hendrikskinderen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    49183,
+    391431
+  ],
+  "xAxis": [
+    0.995,
+    0.1
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -9
+    ],
+    [
+      -20,
+      10
+    ],
+    [
+      -5,
+      12
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      22,
+      9
+    ],
+    [
+      22,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000023794"
+  ],
+  "description": "Zaalkerk met lager oostelijk bouwdeel, zware middeleeuwse toren met steunberen en achtzijdige lantaarn.",
+  "printFiles": [
+    "nicolaaskerk-s-heer-hendrikskinderen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.23,
+    "widthM": 10.48,
+    "highestPointM": 25.8,
+    "groundNapM": 1.24,
+    "towerTopM": 25.8
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16404",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16405",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000023794",
+    "https://commons.wikimedia.org/wiki/Category:Nicolaaskerk,_%27s_Heer_Hendrikskinderen",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
