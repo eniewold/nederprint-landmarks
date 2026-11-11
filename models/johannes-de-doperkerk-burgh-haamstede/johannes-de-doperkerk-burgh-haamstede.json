@@ -1,0 +1,56 @@
+{
+  "name": "Johannes de Doperkerk Burgh-Haamstede",
+  "file": "johannes-de-doperkerk-burgh-haamstede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    41365,
+    413388
+  ],
+  "xAxis": [
+    0.9933,
+    0.115565
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -20
+    ],
+    [
+      -25,
+      20
+    ],
+    [
+      25,
+      -20
+    ],
+    [
+      25,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000459510"
+  ],
+  "description": "Pseudobasilicale kruiskerk zonder grote toren, met drie langsbeuken, dwarsschip en dakruiter. RD (41365,413388), maaiveld NAP +3,18 m.",
+  "printFiles": [
+    "johannes-de-doperkerk-burgh-haamstede-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.5,
+    "widthM": 34.6,
+    "highestPointM": 34.01,
+    "groundNapM": 3.18,
+    "naveRidgeM": 25.2,
+    "towerTopM": 34.01,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38790",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000459510",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Johannes_de_Doperkerk_(Haamstede)"
+  ]
+}
