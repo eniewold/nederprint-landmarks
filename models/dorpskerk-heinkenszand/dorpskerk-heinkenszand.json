@@ -1,0 +1,36 @@
+{
+  "name": "Dorpskerk Heinkenszand",
+  "origin": [
+    45873,
+    388244
+  ],
+  "xAxis": [
+    0.688,
+    0.726
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000029608"
+  ],
+  "description": "Waterstaatskerk met ingebouwde toren en aangebouwde consistorie; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.88,
+    "naveRidgeM": 11.48,
+    "towerTopM": 27.87,
+    "highestPointM": 27.87
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000029608",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9985",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk_(Heinkenszand)"
+  ],
+  "file": "dorpskerk-heinkenszand.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-heinkenszand-1-100.stl",
+    "dorpskerk-heinkenszand-1-1000.stl"
+  ]
+}
