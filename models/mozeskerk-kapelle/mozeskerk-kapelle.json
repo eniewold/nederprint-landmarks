@@ -1,0 +1,36 @@
+{
+  "name": "Mozeskerk Kapelle",
+  "origin": [
+    56068.8,
+    388316.5
+  ],
+  "xAxis": [
+    0.999,
+    0.045
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0678100000003370"
+  ],
+  "description": "Zaalkerk met neogotische fronttoren en latere aanbouwen; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.146,
+    "naveRidgeM": 13.7,
+    "towerTopM": 31.3,
+    "highestPointM": 31.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0678100000003370",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508048",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Biezelinge)"
+  ],
+  "file": "mozeskerk-kapelle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "mozeskerk-kapelle-1-100.stl",
+    "mozeskerk-kapelle-1-1000.stl"
+  ]
+}
