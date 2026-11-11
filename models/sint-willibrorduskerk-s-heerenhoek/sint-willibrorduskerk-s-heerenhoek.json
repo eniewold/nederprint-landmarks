@@ -1,0 +1,36 @@
+{
+  "name": "Sint-Willibrorduskerk 's-Heerenhoek",
+  "origin": [
+    42572,
+    386254
+  ],
+  "xAxis": [
+    0.984,
+    0.178
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000034922"
+  ],
+  "description": "Neogotische kruisbasiliek met ingebouwde westtoren en achtkante spits; onderkant 0,5 m onder maaiveld.",
+  "realWorld": {
+    "groundNapM": 1.66,
+    "naveRidgeM": 20.65,
+    "towerTopM": 52.8,
+    "highestPointM": 52.8
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000034922",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9981",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Willibrorduskerk_(%27s-Heerenhoek)"
+  ],
+  "file": "sint-willibrorduskerk-s-heerenhoek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-s-heerenhoek-1-100.stl",
+    "sint-willibrorduskerk-s-heerenhoek-1-1000.stl"
+  ]
+}
