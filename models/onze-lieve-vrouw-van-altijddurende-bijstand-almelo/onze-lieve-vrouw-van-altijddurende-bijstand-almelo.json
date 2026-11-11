@@ -1,0 +1,47 @@
+{
+  "name": "Onze Lieve Vrouw van Altijddurende Bijstand Almelo",
+  "origin": [
+    244769.74,
+    488559.85
+  ],
+  "xAxis": [
+    0.77834,
+    0.62784
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0141100000039905"
+  ],
+  "description": "Neogotische pseudobasilicale kruiskerk van J. Stuyt (1918 en 1923) in Mariaparochie met pastorie en sacristie (één BAG-pand); oorsprong op de viering, +X noordoost naar het koor; nokken uit 3D BAG en AHN4, toren uit de AHN-omhullende, opstand van foto's.",
+  "realWorld": {
+    "groundNapM": 11.7,
+    "ridgeM": 17,
+    "naveEaveM": 10.6,
+    "aisleEaveM": 8.35,
+    "aisleRidgeM": 10.3,
+    "towerShaftM": 20,
+    "gablesM": 28.8,
+    "spireTipM": 45.6,
+    "ahnSpireNapM": 57.21,
+    "flecheM": 27.5,
+    "lengthM": 45.4,
+    "widthM": 23,
+    "highestPointM": 45.6
+  },
+  "sources": [
+    "https://www.openstreetmap.org/way/288518499",
+    "https://archimon.nl/overijssel/mariaparochieolv.html",
+    "https://dbnl.org/tekst/sten009monu03_01/sten009monu03_01_0068.php",
+    "https://service.pdok.nl/lv/bag/wfs/v2_0 (pand 0141100000039905)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0141100000039905",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0 (dsm_05m, dtm_05m)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0"
+  ],
+  "file": "onze-lieve-vrouw-van-altijddurende-bijstand-almelo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "onze-lieve-vrouw-van-altijddurende-bijstand-almelo-1-1000.stl"
+  ]
+}
