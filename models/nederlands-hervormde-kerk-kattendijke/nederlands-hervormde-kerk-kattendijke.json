@@ -1,0 +1,62 @@
+{
+  "name": "Nederlands Hervormde Kerk Kattendijke",
+  "file": "nederlands-hervormde-kerk-kattendijke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    54893,
+    393729
+  ],
+  "xAxis": [
+    0.997,
+    0.085
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -9
+    ],
+    [
+      -17,
+      10
+    ],
+    [
+      -4,
+      12
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      18,
+      8
+    ],
+    [
+      18,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0664100000010133"
+  ],
+  "description": "Eenbeukige kerk met consistorie en achthoekige toren met peerbekroning.",
+  "printFiles": [
+    "nederlands-hervormde-kerk-kattendijke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.56,
+    "widthM": 13.46,
+    "highestPointM": 23.1,
+    "groundNapM": 1.212,
+    "towerTopM": 23.1
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/16407",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0664100000010133",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Kattendijke)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
