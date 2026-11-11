@@ -1,0 +1,63 @@
+{
+  "name": "St. Maarten Baarland",
+  "file": "st-maarten-baarland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    50553,
+    380980
+  ],
+  "xAxis": [
+    0.995,
+    -0.1
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -12
+    ],
+    [
+      -25,
+      10
+    ],
+    [
+      -5,
+      12
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      25,
+      10
+    ],
+    [
+      25,
+      -15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000022396"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor, aanbouwen en westtoren met spits en achthoekige traptoren.",
+  "printFiles": [
+    "st-maarten-baarland-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 43.78,
+    "widthM": 18.9,
+    "highestPointM": 31.3,
+    "groundNapM": 1.98,
+    "towerTopM": 31.3
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9958",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9962",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000022396",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Maarten_(Baarland)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
