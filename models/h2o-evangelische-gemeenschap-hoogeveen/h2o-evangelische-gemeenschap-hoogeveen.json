@@ -1,0 +1,36 @@
+{
+  "name": "H2O Evangelische Gemeenschap Hoogeveen",
+  "file": "h2o-evangelische-gemeenschap-hoogeveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    228615,
+    527520
+  ],
+  "xAxis": [
+    0.9998,
+    0.02
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0118100000038775"
+  ],
+  "description": "Voormalig kantongerecht uit 1900 met middenrisaliet, entree en gekoppelde achtervleugel.",
+  "realWorld": {
+    "groundNapM": 10.529,
+    "ridgeNapM": 22.1,
+    "flatRoofNapM": 14.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0118100000038775",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Voormalig_kantongerecht_Hoogeveen.jpg",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0049.php",
+    "https://www.h2ohoogeveen.nl/contact/"
+  ],
+  "printFiles": [
+    "h2o-evangelische-gemeenschap-hoogeveen-1-100.stl",
+    "h2o-evangelische-gemeenschap-hoogeveen-1-1000.stl"
+  ]
+}
