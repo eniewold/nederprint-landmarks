@@ -1,0 +1,35 @@
+{
+  "name": "Martinikerk Bolsward",
+  "file": "martinikerk-bolsward.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    164330,
+    564213
+  ],
+  "xAxis": [
+    0.9975,
+    0.071
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0064100000128122"
+  ],
+  "description": "Gotische pseudobasiliek met lagere zijbeuken, veelhoekig koor en monumentale zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 1.645,
+    "naveRidgeNapM": 26.6,
+    "towerRidgeNapM": 51.7
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/9812",
+    "https://www.bolsward.nl/martinikerk/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0064100000128122",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "martinikerk-bolsward-1-1000.stl",
+    "martinikerk-bolsward-1-100.stl"
+  ]
+}
