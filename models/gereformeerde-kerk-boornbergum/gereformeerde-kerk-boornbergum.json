@@ -1,0 +1,35 @@
+{
+  "name": "Gereformeerde Kerk Boornbergum",
+  "file": "gereformeerde-kerk-boornbergum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    199506.5,
+    566529
+  ],
+  "xAxis": [
+    0.307,
+    -0.951
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0090100000600459"
+  ],
+  "description": "Zaalkerk met geveltoren en naaldspits, met gekoppelde achterbouwen.",
+  "realWorld": {
+    "groundNapM": 0.608,
+    "towerTopNapM": 23.546
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0090100000600459",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://gk-boornbergum.wixsite.com/gk-boornbergum/kerkgebouw",
+    "https://www.boornbergum-kortehemmen.nl/onze-dorpen/historie",
+    "https://www.planviewer.nl/imro/files/NL.IMRO.0090.BP2010DPW001-0401/t_NL.IMRO.0090.BP2010DPW001-0401_index.pdf"
+  ],
+  "printFiles": [
+    "gereformeerde-kerk-boornbergum-1-100.stl",
+    "gereformeerde-kerk-boornbergum-1-1000.stl"
+  ]
+}
