@@ -1,0 +1,57 @@
+{
+  "name": "Heilige Willibrorduskerk",
+  "file": "heilige-willibrorduskerk-coevorden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    246378,
+    520173.5
+  ],
+  "xAxis": [
+    0.986528,
+    0.163592
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -12
+    ],
+    [
+      -18,
+      12
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      19,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000022834"
+  ],
+  "description": "Driebeukige Sint-Willibrorduskerk in Coevorden met driezijdige koorsluiting, voorgeveltoren, spits, zijbeuken en sacristie; +X langs de kerk naar het koor.",
+  "printFiles": [
+    "heilige-willibrorduskerk-coevorden-1-1000.stl",
+    "heilige-willibrorduskerk-coevorden-1-100.stl"
+  ],
+  "realWorld": {
+    "lengthM": 37.2,
+    "widthM": 28.7,
+    "highestPointM": 30.7,
+    "groundNapM": 11.1,
+    "baseM": -0.5,
+    "towerTopM": 30.7,
+    "naveRidgeM": 15.3
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/468607",
+    "https://www.immanuelparochie.nl/beheer/uploads/file/2023/rapport_publicatie_06-02-2023_compressed-website.pdf",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0109100000022834",
+    "PDOK AHN5 DSM 0,5 m via WCS"
+  ]
+}
