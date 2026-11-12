@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde Kerk Scherpenisse",
+  "file": "hervormde-kerk-scherpenisse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    66164,
+    396044
+  ],
+  "xAxis": [
+    0.99776,
+    0.06685
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -28,
+      -19
+    ],
+    [
+      -28,
+      19
+    ],
+    [
+      26,
+      -19
+    ],
+    [
+      26,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000070776"
+  ],
+  "description": "Driebeukige kerk met lage zijbeuken, steunberen en onvoltooide westtoren met kleine kap. RD (66164,396044), maaiveld NAP +0,79 m.",
+  "printFiles": [
+    "hervormde-kerk-scherpenisse-1-100.stl",
+    "hervormde-kerk-scherpenisse-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.45,
+    "widthM": 24.7,
+    "highestPointM": 22.6,
+    "groundNapM": 0.791,
+    "naveRidgeM": 20.3,
+    "towerTopM": 22.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35397",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000070776",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Scherpenisse)",
+    "https://www.erfgoedzeeland.nl/media/3xnnaw2g/kerkenvisie-tholen-aangepast-20042023.pdf"
+  ]
+}
