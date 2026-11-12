@@ -1,0 +1,37 @@
+{
+  "name": "Nederlands Hervormde Kerk Middelharnis",
+  "origin": [
+    70613.87,
+    419492.54
+  ],
+  "xAxis": [
+    0.998,
+    0.0648
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0559100000010478"
+  ],
+  "description": "Kruiskerk met vijfzijdige koorsluiting en vlak afgedekte toren.",
+  "realWorld": {
+    "groundNapM": 0.89,
+    "naveRidgeM": 18.3,
+    "towerTopM": 31.55,
+    "highestPointM": 31.55
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0559100000010478",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29750",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29751",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Middelharnis"
+  ],
+  "file": "nederlands-hervormde-kerk-middelharnis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-middelharnis-1-100.stl",
+    "nederlands-hervormde-kerk-middelharnis-1-1000.stl"
+  ]
+}
