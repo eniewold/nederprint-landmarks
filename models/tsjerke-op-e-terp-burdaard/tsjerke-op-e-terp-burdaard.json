@@ -1,0 +1,34 @@
+{
+  "name": "Tsjerke op 'e Terp Burdaard",
+  "file": "tsjerke-op-e-terp-burdaard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187945,
+    589772.2
+  ],
+  "xAxis": [
+    0.9986,
+    0.052
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000002896"
+  ],
+  "description": "Zaalkerk uit 1851 met driezijdig koor en fronttoren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 3.987,
+    "naveRidgeNapM": 14.052,
+    "towerPeakNapM": 23.139
+  },
+  "sources": [
+    "https://www.kerkburdaard.nl/tsjerke-terp/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000002896",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "tsjerke-op-e-terp-burdaard-1-1000.stl",
+    "tsjerke-op-e-terp-burdaard-1-100.stl"
+  ]
+}
