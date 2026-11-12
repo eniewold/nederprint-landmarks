@@ -1,0 +1,57 @@
+{
+  "name": "Doopsgezinde Gemeente Hallum",
+  "file": "doopsgezinde-gemeente-hallum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181350,
+    591276
+  ],
+  "xAxis": [
+    0.78,
+    -0.625
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -10
+    ],
+    [
+      -19,
+      9
+    ],
+    [
+      14,
+      -10
+    ],
+    [
+      14,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000005087"
+  ],
+  "description": "Torenloze vermaning met voorportaal en achteraanbouw. RD (181350,591276), maaiveld NAP 1,44 m.",
+  "printFiles": [
+    "doopsgezinde-gemeente-hallum-1-100.stl",
+    "doopsgezinde-gemeente-hallum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.73,
+    "widthM": 11.9,
+    "highestPointM": 10.06,
+    "groundNapM": 1.437,
+    "naveRidgeM": 10.06,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000005087",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://tsjerkepaad.nl/overzicht-kerken/hallum-doopsgezinde-kerk",
+    "https://commons.wikimedia.org/wiki/File:20220808_Hallumer_fermanje.jpg",
+    "https://www.dbnl.org/tekst/berg229noor01_01/berg229noor01_01_0013.php"
+  ]
+}
