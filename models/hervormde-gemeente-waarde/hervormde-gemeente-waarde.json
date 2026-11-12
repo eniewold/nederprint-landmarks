@@ -1,0 +1,57 @@
+{
+  "name": "Hervormde Gemeente Waarde",
+  "file": "hervormde-gemeente-waarde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    63241,
+    381875
+  ],
+  "xAxis": [
+    0.9993,
+    0.037
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -19
+    ],
+    [
+      -23,
+      19
+    ],
+    [
+      24,
+      -19
+    ],
+    [
+      24,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0703100000016030"
+  ],
+  "description": "Restant van de middeleeuwse hallenkerk met schip, dwarsarm en zijdelings geplaatste toren. RD (63241,381875), maaiveld NAP +1,09 m.",
+  "printFiles": [
+    "hervormde-gemeente-waarde-1-100.stl",
+    "hervormde-gemeente-waarde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 30.5,
+    "widthM": 21.95,
+    "highestPointM": 32,
+    "groundNapM": 1.085,
+    "naveRidgeM": 12.3,
+    "towerTopM": 32,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32425",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0703100000016030",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Onze-Lieve-Vrouwekerk_(Waarde)"
+  ]
+}
