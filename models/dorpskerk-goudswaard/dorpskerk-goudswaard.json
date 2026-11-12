@@ -1,0 +1,57 @@
+{
+  "name": "Dorpskerk Goudswaard",
+  "file": "dorpskerk-goudswaard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    78242,
+    423542
+  ],
+  "xAxis": [
+    0.993,
+    -0.117
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -14
+    ],
+    [
+      -23,
+      14
+    ],
+    [
+      22,
+      -14
+    ],
+    [
+      22,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0588100001019137"
+  ],
+  "description": "Rechthoekige zaalkerk met wolfseind, naaldspits en kleine achteraanbouw. RD (78242,423542), maaiveld NAP +1,01 m.",
+  "printFiles": [
+    "dorpskerk-goudswaard-1-100.stl",
+    "dorpskerk-goudswaard-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 27.9,
+    "widthM": 10.6,
+    "highestPointM": 23,
+    "groundNapM": 1.005,
+    "naveRidgeM": 12.3,
+    "towerTopM": 23,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17050",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0588100001019137",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk_(Goudswaard)"
+  ]
+}
