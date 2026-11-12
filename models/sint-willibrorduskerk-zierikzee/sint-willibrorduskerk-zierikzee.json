@@ -1,0 +1,58 @@
+{
+  "name": "Sint Willibrorduskerk Zierikzee",
+  "file": "sint-willibrorduskerk-zierikzee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    53764,
+    407750
+  ],
+  "xAxis": [
+    0.1,
+    0.9949874
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -16
+    ],
+    [
+      -30,
+      16
+    ],
+    [
+      28,
+      -16
+    ],
+    [
+      28,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000433862"
+  ],
+  "description": "Neoclassicistische zaalkerk met schilddak en dakruiter. RD (53764,407750), maaiveld NAP +1,08 m.",
+  "printFiles": [
+    "sint-willibrorduskerk-zierikzee-1-100.stl",
+    "sint-willibrorduskerk-zierikzee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 43,
+    "widthM": 16.8,
+    "highestPointM": 19.9,
+    "groundNapM": 1.075,
+    "naveRidgeM": 14.49,
+    "towerTopM": 19.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40611",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000433862",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:St._Willibrordus_(Zierikzee)",
+    "https://kerkeninzierikzee.nl/rk-st-willibrorduskerk"
+  ]
+}
