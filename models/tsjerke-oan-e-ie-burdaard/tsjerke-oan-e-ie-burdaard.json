@@ -1,0 +1,57 @@
+{
+  "name": "Tsjerke Oan'e Ie Burdaard",
+  "file": "tsjerke-oan-e-ie-burdaard.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    187754,
+    589892
+  ],
+  "xAxis": [
+    -0.52,
+    0.854
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -8,
+      -10
+    ],
+    [
+      -8,
+      10
+    ],
+    [
+      39,
+      -10
+    ],
+    [
+      39,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000002813"
+  ],
+  "description": "Zaalkerk met geveltoren, voorportaal en achteraanbouw. RD (187754,589892), maaiveld NAP 0,67 m.",
+  "printFiles": [
+    "tsjerke-oan-e-ie-burdaard-1-100.stl",
+    "tsjerke-oan-e-ie-burdaard-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.98,
+    "widthM": 12,
+    "highestPointM": 24.3,
+    "groundNapM": 0.668,
+    "naveRidgeM": 12.3,
+    "towerTopM": 24.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000002813",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.kerkburdaard.nl/tsjerke-ie/",
+    "https://religiana.com/web/tsjerke-oane-ie"
+  ]
+}
