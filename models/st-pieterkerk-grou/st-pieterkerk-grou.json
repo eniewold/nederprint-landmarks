@@ -1,0 +1,35 @@
+{
+  "name": "Sint Piterkerk Grou",
+  "file": "st-pieterkerk-grou.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    185333,
+    567933
+  ],
+  "xAxis": [
+    0.996,
+    -0.089
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0055100000254258"
+  ],
+  "description": "Romaanse kerk met apsis, dakruiter en middeleeuwse zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 1.128,
+    "naveRidgeNapM": 17.1,
+    "towerRidgeNapM": 28.72
+  },
+  "sources": [
+    "https://www.dorpsarchiefgrou.nl/bouwwerken/kerken/sint-piterkerk/",
+    "https://www.tsjerkepaad.nl/overzicht-kerken/grou-sint-piter-kerk",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0055100000254258",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "st-pieterkerk-grou-1-1000.stl",
+    "st-pieterkerk-grou-1-100.stl"
+  ]
+}
