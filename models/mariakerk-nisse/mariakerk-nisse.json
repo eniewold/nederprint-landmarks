@@ -1,0 +1,58 @@
+{
+  "name": "Mariakerk Nisse",
+  "file": "mariakerk-nisse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    48270,
+    386242.3
+  ],
+  "xAxis": [
+    0.9986,
+    0.0529
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -32,
+      -17
+    ],
+    [
+      -32,
+      17
+    ],
+    [
+      32,
+      -17
+    ],
+    [
+      32,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000030364"
+  ],
+  "description": "Kruiskerk met polygonale koorsluiting, zadeldaken, aanbouwen en westtoren. RD (48270,386242,3), maaiveld NAP +1,89 m.",
+  "printFiles": [
+    "mariakerk-nisse-1-100.stl",
+    "mariakerk-nisse-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.6,
+    "widthM": 26.5,
+    "highestPointM": 47.6,
+    "groundNapM": 1.89,
+    "naveRidgeM": 16.6,
+    "towerTopM": 47.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10008",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000030364",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Mariakerk_(Nisse)",
+    "https://www.mariakerk-nisse.nl/de-kerk/exterieur/"
+  ]
+}
