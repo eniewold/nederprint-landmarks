@@ -1,0 +1,39 @@
+{
+  "name": "Sint Jodocuskerk Oosterland",
+  "origin": [
+    61440,
+    407427
+  ],
+  "xAxis": [
+    0.989,
+    0.148
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000457422",
+    "NL.IMBAG.Pand.1676100000427954"
+  ],
+  "description": "Laatgotisch koor met vijfzijdige sluiting en zuidbijbouw; afzonderlijke vierkante toren met zadeldak.",
+  "realWorld": {
+    "groundNapM": 0.3,
+    "naveRidgeM": 15.5,
+    "towerTopM": 20.7,
+    "highestPointM": 20.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000457422",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000427954",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14160",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14162",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Jodocus,_Oosterland"
+  ],
+  "file": "sint-jodocuskerk-oosterland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-jodocuskerk-oosterland-1-100.stl",
+    "sint-jodocuskerk-oosterland-1-1000.stl"
+  ]
+}
