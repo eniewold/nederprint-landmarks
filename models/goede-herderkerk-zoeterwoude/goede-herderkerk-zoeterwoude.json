@@ -1,0 +1,55 @@
+{
+  "name": "Goede Herderkerk",
+  "file": "goede-herderkerk-zoeterwoude.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    95906.25,
+    462239.75
+  ],
+  "xAxis": [
+    0.5299193,
+    -0.8480481
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      0,
+      -17
+    ],
+    [
+      15,
+      12
+    ],
+    [
+      20,
+      12
+    ],
+    [
+      28,
+      0
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0638100000364404"
+  ],
+  "description": "Goede Herderkerk Zoeterwoude, uit bouwdelen en dakvlakken. Lokale +X richting zuidoost langs het schip; achtkantige vieringtoren, twee westtorens, dwarsbeuken en zijbeuken.",
+  "printFiles": [
+    "goede-herderkerk-zoeterwoude-1-1000.stl",
+    "goede-herderkerk-zoeterwoude-1-100.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.7,
+    "widthM": 27.5,
+    "highestPointM": 41,
+    "groundNapM": 0.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://nl.wikipedia.org/wiki/Goede_Herderkerk_(Zoeterwoude)",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0638100000364404",
+    "PDOK AHN5 DSM 0,5 m via WCS",
+    "https://commons.wikimedia.org/wiki/Category:Goede_Herderkerk,_Zoeterwoude"
+  ]
+}
