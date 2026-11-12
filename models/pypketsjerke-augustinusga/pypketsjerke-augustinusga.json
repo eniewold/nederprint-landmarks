@@ -1,0 +1,34 @@
+{
+  "name": "Pypketsjerke Augustinusga",
+  "file": "pypketsjerke-augustinusga.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    207143.75,
+    580985.6
+  ],
+  "xAxis": [
+    0.181,
+    -0.983
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000824880"
+  ],
+  "description": "Voormalige kerk met kruisende zadeldaken en lage aanbouw; de toren is in 1971 verwijderd.",
+  "realWorld": {
+    "groundNapM": 1.547,
+    "ridgeNapM": 12.961
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000824880",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://gereformeerdekerken.info/2023/10/19/v-m-kerk-augustinusga-herbergt-oekrainers/",
+    "https://gereformeerdekerken.info/2016/01/22/laatste-kerkdienst-in-pypketsjerke-augustinusgasurhuizum/"
+  ],
+  "printFiles": [
+    "pypketsjerke-augustinusga-1-100.stl",
+    "pypketsjerke-augustinusga-1-1000.stl"
+  ]
+}
