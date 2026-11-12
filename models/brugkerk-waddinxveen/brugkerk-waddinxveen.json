@@ -1,0 +1,36 @@
+{
+  "name": "Brugkerk Waddinxveen",
+  "file": "brugkerk-waddinxveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104989,
+    450929
+  ],
+  "xAxis": [
+    0.9762,
+    -0.2169
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0627100000010577"
+  ],
+  "description": "Neoclassicistische kruiskerk met schilddaken, voorportaal, klokkentoren en latere achtervleugel.",
+  "realWorld": {
+    "groundNapM": -1.557,
+    "ridgeNapM": 14.78,
+    "towerTopNapM": 24.79
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0627100000010577",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38202",
+    "https://commons.wikimedia.org/wiki/File:Brugkerk_Waddinxveen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Overzicht_-_Waddinxveen_-_20248555_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "brugkerk-waddinxveen-1-100.stl",
+    "brugkerk-waddinxveen-1-1000.stl"
+  ]
+}
