@@ -1,0 +1,34 @@
+{
+  "name": "Mariakerk Gorredijk",
+  "file": "mariakerk-gorredijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    200533.21,
+    556157.88
+  ],
+  "xAxis": [
+    0.9383,
+    0.3458
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0086100000350800"
+  ],
+  "description": "Zaalkerk met driezijdig koor en houten gevelruiter.",
+  "realWorld": {
+    "groundNapM": 1.534,
+    "spireTopNapM": 20.902
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0086100000350800",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.opsterland.nl/8-mariakerk",
+    "https://www.friesland.nl/nl/locaties/1958243273/mariakerk"
+  ],
+  "printFiles": [
+    "mariakerk-gorredijk-1-100.stl",
+    "mariakerk-gorredijk-1-1000.stl"
+  ]
+}
