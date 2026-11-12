@@ -1,0 +1,57 @@
+{
+  "name": "Nederlands Hervormde Kerk Strijen",
+  "file": "nederlands-hervormde-kerk-strijen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    96997.5,
+    420790.4
+  ],
+  "xAxis": [
+    0.99974,
+    -0.0228
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -8
+    ],
+    [
+      -15,
+      8
+    ],
+    [
+      15,
+      -8
+    ],
+    [
+      15,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0617100000714864"
+  ],
+  "description": "Hervormde kerk van Cillaarshoek: zaalkerk met zadeldak en slanke dakruiter. RD (96997,5,420790,4), maaiveld NAP -0,43 m.",
+  "printFiles": [
+    "nederlands-hervormde-kerk-strijen-1-1000.stl",
+    "nederlands-hervormde-kerk-strijen-1-100.stl"
+  ],
+  "realWorld": {
+    "lengthM": 21.8,
+    "widthM": 8.4,
+    "highestPointM": 21.8,
+    "groundNapM": -0.43,
+    "naveRidgeM": 12.1,
+    "towerTopM": 21.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/26549",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0617100000714864",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Cillaarshoek"
+  ]
+}
