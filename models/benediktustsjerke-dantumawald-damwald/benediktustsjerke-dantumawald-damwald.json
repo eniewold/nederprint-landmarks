@@ -1,0 +1,35 @@
+{
+  "name": "Benediktustsjerke Dantumawâld Damwâld",
+  "file": "benediktustsjerke-dantumawald-damwald.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    196691,
+    589510.2
+  ],
+  "xAxis": [
+    0.99955,
+    0.03
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001629849"
+  ],
+  "description": "Middeleeuwse zaalkerk met driezijdig koor en ingebouwde zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 2.749,
+    "naveRidgeNapM": 13.45,
+    "towerRidgeNapM": 22.65
+  },
+  "sources": [
+    "https://www.benedictuskerk.nl/?pagina=toren",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0039.php",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001629849",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "benediktustsjerke-dantumawald-damwald-1-1000.stl",
+    "benediktustsjerke-dantumawald-damwald-1-100.stl"
+  ]
+}
