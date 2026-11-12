@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde kerk Waterlandkerkje",
+  "file": "hervormde-kerk-waterlandkerkje.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    27294,
+    371373.5
+  ],
+  "xAxis": [
+    0.9992,
+    0.04
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -13
+    ],
+    [
+      -20,
+      13
+    ],
+    [
+      20,
+      -13
+    ],
+    [
+      20,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000733654"
+  ],
+  "description": "Zaalkerk met schilddak, lage consistorie en houten dakruiter. RD (27294,371373.5), maaiveld NAP +1,50 m.",
+  "printFiles": [
+    "hervormde-kerk-waterlandkerkje-1-100.stl",
+    "hervormde-kerk-waterlandkerkje-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 20.45,
+    "widthM": 10.4,
+    "highestPointM": 16.13,
+    "groundNapM": 1.504,
+    "naveRidgeM": 9.96,
+    "towerTopM": 16.13,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31548",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000733654",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Waterlandkerkje",
+    "https://zeeuwsekerken.nl/wp/waterlandkerkje-2/"
+  ]
+}
