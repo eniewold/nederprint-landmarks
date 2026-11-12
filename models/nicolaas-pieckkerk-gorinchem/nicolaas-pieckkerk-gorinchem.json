@@ -1,0 +1,58 @@
+{
+  "name": "Nicolaas Pieckkerk Gorinchem",
+  "file": "nicolaas-pieckkerk-gorinchem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    126416,
+    427028
+  ],
+  "xAxis": [
+    0.954,
+    -0.2998
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -30,
+      -18
+    ],
+    [
+      -30,
+      18
+    ],
+    [
+      27,
+      -18
+    ],
+    [
+      27,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0512100000038380"
+  ],
+  "description": "Voormalige waterstaatskerk met lang zadeldak, ronde achteruitbouw en kleine fronttoren; thans herbestemd tot appartementen. RD (126416,427028), maaiveld NAP +1,55 m.",
+  "printFiles": [
+    "nicolaas-pieckkerk-gorinchem-1-100.stl",
+    "nicolaas-pieckkerk-gorinchem-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 42.8,
+    "widthM": 23.9,
+    "highestPointM": 37.1,
+    "groundNapM": 1.549,
+    "naveRidgeM": 23.8,
+    "towerTopM": 37.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/354418",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0512100000038380",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Waterstaatskerk_Gorinchem",
+    "https://www.openmonumentendag.nl/monument/nicolaas-pieckkerk/"
+  ]
+}
