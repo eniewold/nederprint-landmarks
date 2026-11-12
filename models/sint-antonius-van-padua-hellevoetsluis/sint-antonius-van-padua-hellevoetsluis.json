@@ -1,0 +1,58 @@
+{
+  "name": "Sint-Antonius van Padua Hellevoetsluis",
+  "file": "sint-antonius-van-padua-hellevoetsluis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    68452,
+    427223
+  ],
+  "xAxis": [
+    0.974,
+    -0.22654
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -18
+    ],
+    [
+      -20,
+      20
+    ],
+    [
+      22,
+      -18
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0530100002227426"
+  ],
+  "description": "Eenbeukige kerk met kleine gevelruiter, lager koor en aangrenzende bouwmassa. RD (68452,427223), maaiveld NAP +1,93 m.",
+  "printFiles": [
+    "sint-antonius-van-padua-hellevoetsluis-1-100.stl",
+    "sint-antonius-van-padua-hellevoetsluis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 27.7,
+    "widthM": 24.1,
+    "highestPointM": 23.85,
+    "groundNapM": 1.931,
+    "naveRidgeM": 16.15,
+    "towerTopM": 23.85,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/520810",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0530100002227426",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Antonius_van_Paduakerk_(Hellevoetsluis)",
+    "https://www.dbnl.org/tekst/don_003voor01_01/don_003voor01_01_0008.php"
+  ]
+}
