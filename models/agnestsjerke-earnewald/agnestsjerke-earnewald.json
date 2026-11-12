@@ -1,0 +1,36 @@
+{
+  "name": "Agnestsjerke Earnewâld",
+  "file": "agnestsjerke-earnewald.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    192161.04,
+    571793.57
+  ],
+  "xAxis": [
+    0.9977,
+    0.0677
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000022684"
+  ],
+  "description": "Zaalkerk met driezijdige sluiting en westtoren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 0.688,
+    "ridgeNapM": 11.134,
+    "towerTopNapM": 20.903
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000022684",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://tsjerkepaad.nl/overzicht-kerken",
+    "https://www.kerk-en-orgel.nl/record.php?action=display_ordered&id=2159&item=818&province=fr",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Earnewâld"
+  ],
+  "printFiles": [
+    "agnestsjerke-earnewald-1-100.stl",
+    "agnestsjerke-earnewald-1-1000.stl"
+  ]
+}
