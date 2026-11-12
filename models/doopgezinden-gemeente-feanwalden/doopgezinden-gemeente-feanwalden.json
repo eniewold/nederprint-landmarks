@@ -1,0 +1,33 @@
+{
+  "name": "Doopgezinden gemeente Feanwalden",
+  "file": "doopgezinden-gemeente-feanwalden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    194936.88,
+    583069.73
+  ],
+  "xAxis": [
+    -0.195,
+    -0.9808
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001636893"
+  ],
+  "description": "Doopsgezinde zaalkerk met gevelruiter en aangebouwde lage dwarsvleugel.",
+  "realWorld": {
+    "groundNapM": 1.896,
+    "roofRidgeNapM": 11.496
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001636893",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.dbnl.org/tekst/berg229noor03_01/berg229noor03_01_0017.php"
+  ],
+  "printFiles": [
+    "doopgezinden-gemeente-feanwalden-1-100.stl",
+    "doopgezinden-gemeente-feanwalden-1-1000.stl"
+  ]
+}
