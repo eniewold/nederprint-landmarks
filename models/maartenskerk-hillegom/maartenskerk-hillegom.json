@@ -1,0 +1,37 @@
+{
+  "name": "Maartenskerk Hillegom",
+  "origin": [
+    99781.49,
+    478459.4
+  ],
+  "xAxis": [
+    0.9729,
+    0.2312
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0534100000001714"
+  ],
+  "description": "Kruiskerk met middeleeuwse westtoren, slanke naald en laag aangebouwd deel.",
+  "realWorld": {
+    "groundNapM": 3.2,
+    "naveRidgeM": 15.2,
+    "towerTopM": 35.6,
+    "highestPointM": 35.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0534100000001714",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22136",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Maartenskerk_(Hillegom)",
+    "https://pghillegom.nl/maartenskerk/"
+  ],
+  "file": "maartenskerk-hillegom.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maartenskerk-hillegom-1-100.stl",
+    "maartenskerk-hillegom-1-1000.stl"
+  ]
+}
