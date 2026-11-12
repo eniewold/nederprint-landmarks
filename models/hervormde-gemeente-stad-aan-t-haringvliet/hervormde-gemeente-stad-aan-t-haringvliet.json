@@ -1,0 +1,61 @@
+{
+  "name": "Hervormde Gemeente Stad aan 't Haringvliet",
+  "file": "hervormde-gemeente-stad-aan-t-haringvliet.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    75872,
+    417314
+  ],
+  "xAxis": [
+    0.9972,
+    -0.0749
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -13
+    ],
+    [
+      -19,
+      16
+    ],
+    [
+      19,
+      -13
+    ],
+    [
+      19,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0559100000009002",
+    "NL.IMBAG.Pand.0559100000009001"
+  ],
+  "description": "Eenbeukige kerk met driezijdig koor, smalle westtoren en noordelijke consistorie.",
+  "printFiles": [
+    "hervormde-gemeente-stad-aan-t-haringvliet-1-100.stl",
+    "hervormde-gemeente-stad-aan-t-haringvliet-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 24.95,
+    "widthM": 15.8,
+    "highestPointM": 19.78,
+    "groundNapM": 0.408,
+    "naveRidgeM": 13.8,
+    "towerTopM": 19.78,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29878",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29879",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0559100000009002",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0559100000009001",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_Kerk_(Stad_aan_%27t_Haringvliet)",
+    "https://www.dbnl.org/tekst/sten009monu10_01/sten009monu10_01_0164.php"
+  ]
+}
