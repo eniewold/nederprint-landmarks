@@ -1,0 +1,35 @@
+{
+  "name": "Zuiderkerk Assen",
+  "file": "zuiderkerk-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233871,
+    556725
+  ],
+  "xAxis": [
+    0.9988,
+    -0.0486
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000000646"
+  ],
+  "description": "Interbellum kerk met kruisende zadeldaken, gemetselde entree en vierkante toren met tentdak.",
+  "realWorld": {
+    "groundNapM": 9.827,
+    "ridgeNapM": 26.42,
+    "towerTopNapM": 32.63
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0106100000000646",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/469336",
+    "https://commons.wikimedia.org/wiki/Category:Zuiderkerk_(Assen)"
+  ],
+  "printFiles": [
+    "zuiderkerk-assen-1-100.stl",
+    "zuiderkerk-assen-1-1000.stl"
+  ]
+}
