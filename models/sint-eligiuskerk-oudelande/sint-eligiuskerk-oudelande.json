@@ -1,0 +1,58 @@
+{
+  "name": "Sint Eligiuskerk Oudelande",
+  "file": "sint-eligiuskerk-oudelande.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    48310,
+    381075
+  ],
+  "xAxis": [
+    0.99998,
+    0.00622
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -18
+    ],
+    [
+      -23,
+      12
+    ],
+    [
+      20,
+      -18
+    ],
+    [
+      20,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000023310"
+  ],
+  "description": "Eenbeukige kerk met zuiddwarsarm, consistorie, toren en haakse steunberen. RD (48310,381075), maaiveld NAP +1,89 m.",
+  "printFiles": [
+    "sint-eligiuskerk-oudelande-1-100.stl",
+    "sint-eligiuskerk-oudelande-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 29.7,
+    "widthM": 17.5,
+    "highestPointM": 34.48,
+    "groundNapM": 1.895,
+    "naveRidgeM": 13.6,
+    "towerTopM": 34.48,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10015",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000023310",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Eligiuskerk_(Oudelande)",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0073.php"
+  ]
+}
