@@ -1,0 +1,37 @@
+{
+  "name": "Witte Kerkje van Simonshaven",
+  "origin": [
+    79434.43,
+    426738
+  ],
+  "xAxis": [
+    0.998,
+    0.063
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0568100000100798"
+  ],
+  "description": "Witte zaalkerk met westelijke torenlantaarn.",
+  "realWorld": {
+    "groundNapM": -0.1,
+    "naveRidgeM": 10.85,
+    "towerTopM": 19.18,
+    "highestPointM": 19.18
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0568100000100798",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9410",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Simonshaven",
+    "https://www.kerksimonshaven.nl/"
+  ],
+  "file": "witte-kerkje-van-simonshaven.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "witte-kerkje-van-simonshaven-1-100.stl",
+    "witte-kerkje-van-simonshaven-1-1000.stl"
+  ]
+}
