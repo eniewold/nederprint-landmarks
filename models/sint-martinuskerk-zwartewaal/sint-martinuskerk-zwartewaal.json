@@ -1,0 +1,59 @@
+{
+  "name": "Sint Martinuskerk Zwartewaal",
+  "file": "sint-martinuskerk-zwartewaal.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    74860,
+    433463
+  ],
+  "xAxis": [
+    0.9949874,
+    -0.1
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -10
+    ],
+    [
+      -23,
+      10
+    ],
+    [
+      25,
+      -10
+    ],
+    [
+      25,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0501100001988185"
+  ],
+  "description": "Eenbeukig schip met hoger vijfzijdig koor en ingebouwde toren. RD (74860,433463), maaiveld NAP -0,36 m.",
+  "printFiles": [
+    "sint-martinuskerk-zwartewaal-1-100.stl",
+    "sint-martinuskerk-zwartewaal-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.9,
+    "widthM": 13.7,
+    "highestPointM": 25.1,
+    "groundNapM": -0.356,
+    "naveRidgeM": 14.5,
+    "choirRidgeM": 17.75,
+    "towerTopM": 25.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/41506",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0501100001988185",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.dbnl.org/tekst/don_003voor01_01/don_003voor01_01_0008.php",
+    "https://commons.wikimedia.org/wiki/Category:Martinuskerk,_Zwartewaal"
+  ]
+}
