@@ -1,0 +1,34 @@
+{
+  "name": "Warmoltskerk - Gereformeerde Kerk Harkema",
+  "file": "warmoltskerk-gereformeerde-kerk-harkema.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205181.2,
+    577839.4
+  ],
+  "xAxis": [
+    -0.396,
+    0.91825
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000825617"
+  ],
+  "description": "T-vormige kerk met geveltoren en lagere achterbouw.",
+  "realWorld": {
+    "groundNapM": 2.493,
+    "spireTopNapM": 21.62
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000825617",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://lokaleregelgeving.overheid.nl/CVDR723347/1",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01.pdf"
+  ],
+  "printFiles": [
+    "warmoltskerk-gereformeerde-kerk-harkema-1-100.stl",
+    "warmoltskerk-gereformeerde-kerk-harkema-1-1000.stl"
+  ]
+}
