@@ -1,0 +1,58 @@
+{
+  "name": "Dorpskerk Eelde",
+  "file": "dorpskerk-eelde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233754,
+    572450
+  ],
+  "xAxis": [
+    0.964,
+    0.266
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -9
+    ],
+    [
+      -19,
+      10
+    ],
+    [
+      19,
+      -9
+    ],
+    [
+      19,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1730100000003403"
+  ],
+  "description": "Middeleeuwse zaalkerk met driezijdig koor, steunberen en westelijke dakruiter. RD (233754,572450), maaiveld NAP +4,28 m.",
+  "printFiles": [
+    "dorpskerk-eelde-1-100.stl",
+    "dorpskerk-eelde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.8,
+    "widthM": 12.8,
+    "highestPointM": 19.8,
+    "groundNapM": 4.282,
+    "naveRidgeM": 14,
+    "turretTopM": 19.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14491",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1730100000003403",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk_(Eelde)",
+    "https://drenthe.erfgoedcms.nl/bezienswaardigheden/eelde"
+  ]
+}
