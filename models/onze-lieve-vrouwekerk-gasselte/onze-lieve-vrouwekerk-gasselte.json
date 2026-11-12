@@ -1,0 +1,35 @@
+{
+  "name": "Onze-Lieve-Vrouwekerk Gasselte",
+  "file": "onze-lieve-vrouwekerk-gasselte.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    249104.5,
+    554824.7
+  ],
+  "xAxis": [
+    0.982,
+    0.189
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1680100000015525"
+  ],
+  "description": "Het Witte Kerkje met gesloten koor en vierkante houten dakruiter met tentdak.",
+  "realWorld": {
+    "groundNapM": 17.783,
+    "ridgeNapM": 28.23,
+    "towerTopNapM": 35.18
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1680100000015525",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.vriendenwittekerkjegasselte.nl/",
+    "https://commons.wikimedia.org/wiki/Category:Onze-Lieve-Vrouwekerk_(Gasselte)"
+  ],
+  "printFiles": [
+    "onze-lieve-vrouwekerk-gasselte-1-100.stl",
+    "onze-lieve-vrouwekerk-gasselte-1-1000.stl"
+  ]
+}
