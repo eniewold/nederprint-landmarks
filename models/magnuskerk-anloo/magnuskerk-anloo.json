@@ -1,0 +1,37 @@
+{
+  "name": "Magnuskerk Anloo",
+  "file": "magnuskerk-anloo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    242905.8,
+    562599.7
+  ],
+  "xAxis": [
+    0.99999,
+    0.003
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1680100000008375"
+  ],
+  "description": "Romaanse kerk met lager driezijdig gesloten koor en zadeldaktoren met twee trapgevels en dakruiter.",
+  "realWorld": {
+    "groundNapM": 14.198,
+    "naveRidgeNapM": 28.1,
+    "choirRidgeNapM": 27.1,
+    "towerRidgeNapM": 37.9,
+    "towerSpireNapM": 44.15
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1680100000008375",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.drentscheaa.nl/drentsche-aa-verhaal/mens-landschap/kerktorens-bakens/",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Anloo"
+  ],
+  "printFiles": [
+    "magnuskerk-anloo-1-1000.stl",
+    "magnuskerk-anloo-1-100.stl"
+  ]
+}
