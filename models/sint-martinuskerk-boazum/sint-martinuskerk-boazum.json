@@ -1,0 +1,35 @@
+{
+  "name": "Sint-Martinuskerk Boazum",
+  "file": "sint-martinuskerk-boazum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    175710,
+    567059.15
+  ],
+  "xAxis": [
+    0.99995,
+    0.01
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000169734"
+  ],
+  "description": "Romaanse zaalkerk met rond koor en middeleeuwse zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 1.64,
+    "naveRidgeNapM": 16.04,
+    "towerRidgeNapM": 28.06
+  },
+  "sources": [
+    "https://www.kerkboazum.nl/geschiedenis/",
+    "https://www.kerkboazum.nl/kerktoren/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0140100000169734",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "sint-martinuskerk-boazum-1-1000.stl",
+    "sint-martinuskerk-boazum-1-100.stl"
+  ]
+}
