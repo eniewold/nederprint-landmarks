@@ -1,0 +1,36 @@
+{
+  "name": "Nieuwe Kerk Zierikzee",
+  "origin": [
+    53138,
+    407859
+  ],
+  "xAxis": [
+    0.99955,
+    0.0296
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000432167"
+  ],
+  "description": "Neoclassicistische zaalkerk met schilddak, zuilenfront en fronton; de vrijstaande Sint-Lievensmonstertoren blijft afzonderlijk.",
+  "realWorld": {
+    "groundNapM": 2.6,
+    "naveRidgeM": 27.65,
+    "highestPointM": 27.65
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000432167",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40634",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Nieuwe_Kerk_Zierikzee",
+    "https://architectuurzeeland.nl/nieuwe-kerk-zierikzee/"
+  ],
+  "file": "nieuwe-kerk-zierikzee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nieuwe-kerk-zierikzee-1-100.stl",
+    "nieuwe-kerk-zierikzee-1-1000.stl"
+  ]
+}
