@@ -1,0 +1,34 @@
+{
+  "name": "Sint-Antoniuskerk Zwartemeer",
+  "file": "sint-antoniuskerk-zwartemeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    267017,
+    525289
+  ],
+  "xAxis": [
+    0.9995,
+    -0.0316
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000233666"
+  ],
+  "description": "Neogotische kruiskerk met dwarskappen, veelhoekig koor en sacristie; dakruiter is verwijderd.",
+  "realWorld": {
+    "groundNapM": 17.61,
+    "naveRidgeNapM": 35.03
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/510943",
+    "https://www.openmonumentendag.nl/monument/oude-of-sint-antoniuskerk/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0114100000233666",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "sint-antoniuskerk-zwartemeer-1-1000.stl",
+    "sint-antoniuskerk-zwartemeer-1-100.stl"
+  ]
+}
