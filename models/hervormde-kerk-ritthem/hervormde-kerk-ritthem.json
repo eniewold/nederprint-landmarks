@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde kerk Ritthem",
+  "file": "hervormde-kerk-ritthem.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    32590,
+    386284
+  ],
+  "xAxis": [
+    0.9991,
+    -0.042
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -15
+    ],
+    [
+      -22,
+      15
+    ],
+    [
+      22,
+      -15
+    ],
+    [
+      22,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0718100000005111"
+  ],
+  "description": "Eenbeukige kerk met consistorie, toren en ronde traptoren. RD (32590,386284), maaiveld NAP +1,40 m.",
+  "printFiles": [
+    "hervormde-kerk-ritthem-1-100.stl",
+    "hervormde-kerk-ritthem-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33,
+    "widthM": 11.8,
+    "highestPointM": 24.88,
+    "groundNapM": 1.399,
+    "naveRidgeM": 13.43,
+    "towerTopM": 24.88,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37848",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0718100000005111",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Protestantse_Kerk_(Ritthem)",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0082.php"
+  ]
+}
