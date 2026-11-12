@@ -1,0 +1,57 @@
+{
+  "name": "Dorpskerk Boijl",
+  "file": "dorpskerk-boijl.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    209713,
+    547301
+  ],
+  "xAxis": [
+    1,
+    0.02
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14,
+      -10
+    ],
+    [
+      -14,
+      10
+    ],
+    [
+      15,
+      -10
+    ],
+    [
+      15,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0098100000013138"
+  ],
+  "description": "Kleine zaalkerk met driezijdig koor en steunberen. RD (209713,547301), maaiveld NAP 5,88 m.",
+  "printFiles": [
+    "dorpskerk-boijl-1-100.stl",
+    "dorpskerk-boijl-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 18.5,
+    "widthM": 9.1,
+    "highestPointM": 10.4,
+    "groundNapM": 5.883,
+    "naveRidgeM": 10.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38860",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0098100000013138",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://boijl.com/kerk-en-klokkenstoel/",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Boijl"
+  ]
+}
