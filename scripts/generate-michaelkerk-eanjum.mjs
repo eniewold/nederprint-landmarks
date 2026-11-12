@@ -1,0 +1,15 @@
+import {union,hull,prism,rect,writeLandmark,scale} from './efteling-kit.mjs';
+import {readFile,writeFile} from 'node:fs/promises';import path from 'node:path';
+const slug='michaelkerk-eanjum',B=-.3,O=[204063,598963.5],axis=[.989,-.148];
+const roofed=(poly,planes,z=35)=>{let s=prism(poly,B,z);for(const [a,b,c] of planes){const n=Math.hypot(a,b,1);s=s.trimByPlane([a/n,b/n,-1/n],-c/n)}return s};
+// Zaalkerk met vijfzijdige sluiting en westwerk, geïntegreerde toren en ingesnoerde naaldspits.
+const nave=roofed(rect(-20.7,-6,16,7),[[0,1.05,16.1],[0,-1.05,16.1]]);
+const choir=roofed([[15.9,-7],[19.7,-6.1],[22.5,-2.7],[22.6,1.65],[20.1,5.17],[16,7]],[[0,1.05,16.1],[0,-1.05,16.1],[-1.2,0,35.3]]);
+const tower=prism(rect(-20.7,-1.7,-16.7,2.3),B,25.5);
+const steeple=hull([[-20.7,-1.7,25.3],[-16.7,-1.7,25.3],[-16.7,2.3,25.3],[-20.7,2.3,25.3],[-18.7,.3,31.2]]);
+let solid=union([nave,choir,tower,steeple]);
+const niche=(x,y,w,z0,z1,angle=0,depth=.8)=>{const r=w/2,p=[];for(const [a,b] of [[-r,z0],[r,z0],[r,z1-r],[0,z1],[-r,z1-r]])for(const d of [0,depth])p.push([a,d,b]);return hull(p).rotate([0,0,angle]).translate([x,y,0])};
+const cuts=[];for(const x of [-14,-9,-4,1,6,11,15])cuts.push(niche(x,-6.1,1.1,3,8.8));for(const x of [-10,-3,4,11])cuts.push(niche(x,6.3,1,3,8));cuts.push(niche(-21.3,0,1.1,.1,3,-90));for(const z of [19,22])cuts.push(niche(-21.3,.3,1,z,z+2,-90));solid=solid.subtract(union(cuts));
+if(process.argv.includes('--components'))for(const c of solid.decompose())console.log('component',c.volume(),c.boundingBox());
+await writeLandmark({slug,base:B,nodes:[['building:kerk',solid]],catalog:{name:'Michaëlkerk Eanjum',origin:O,xAxis:axis,groundOffsetMetres:-.3,replacesBuildings:['NL.IMBAG.Pand.0058100000205148'],description:'Eenbeukige kerk met vijfzijdig koor en geïntegreerde toren met ingesnoerde spits.',realWorld:{groundNapM:4.668,naveRidgeNapM:20.8,towerPeakNapM:35.9},sources:['https://www.openmonumentendag.nl/monument/michaelkerk-anjum/','https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0014.php','https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000205148','https://service.pdok.nl/rws/ahn/wcs/v1_0']}});
+const i=process.argv.indexOf('--out'),root=i>=0&&process.argv[i+1]?path.resolve(process.argv[i+1]):path.join(import.meta.dirname,'../models'),dir=path.join(root,slug),input=await readFile(path.join(dir,`${slug}-1-${scale}.stl`)),n=input.readUInt32LE(80);for(const target of [1000,100]){if(target===scale)continue;const result=Buffer.from(input);result.fill(0,0,80);result.write(`NederPrint ${slug} 1:${target} mm Z-up`.slice(0,79),0,80,'ascii');for(let t=0;t<n;t++)for(let k=0;k<9;k++){const off=84+t*50+12+k*4;result.writeFloatLE(input.readFloatLE(off)*scale/target,off)}await writeFile(path.join(dir,`${slug}-1-${target}.stl`),result)}const mf=path.join(dir,`${slug}.json`),j=JSON.parse(await readFile(mf,'utf8'));j.printFiles=[...new Set([`${slug}-1-${scale}.stl`,`${slug}-1-1000.stl`,`${slug}-1-100.stl`])];await writeFile(mf,JSON.stringify(j,null,2));

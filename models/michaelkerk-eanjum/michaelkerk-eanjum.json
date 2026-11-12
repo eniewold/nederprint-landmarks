@@ -1,0 +1,35 @@
+{
+  "name": "Micha�lkerk Eanjum",
+  "file": "michaelkerk-eanjum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    204063,
+    598963.5
+  ],
+  "xAxis": [
+    0.989,
+    -0.148
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0058100000205148"
+  ],
+  "description": "Eenbeukige kerk met vijfzijdig koor en ge�ntegreerde toren met ingesnoerde spits.",
+  "realWorld": {
+    "groundNapM": 4.668,
+    "naveRidgeNapM": 20.8,
+    "towerPeakNapM": 35.9
+  },
+  "sources": [
+    "https://www.openmonumentendag.nl/monument/michaelkerk-anjum/",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0014.php",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0058100000205148",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "michaelkerk-eanjum-1-1000.stl",
+    "michaelkerk-eanjum-1-100.stl"
+  ]
+}
