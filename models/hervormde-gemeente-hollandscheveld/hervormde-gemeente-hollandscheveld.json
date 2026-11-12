@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde Gemeente Hollandscheveld",
+  "file": "hervormde-gemeente-hollandscheveld.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    232935,
+    524982
+  ],
+  "xAxis": [
+    0.99885,
+    -0.048
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -12
+    ],
+    [
+      -18,
+      17
+    ],
+    [
+      47,
+      -12
+    ],
+    [
+      47,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0118100000126326"
+  ],
+  "description": "Neoclassicistische zaalkerk met geveltoren en aangesloten achtercomplex. RD (232935,524982), maaiveld NAP +13,40 m.",
+  "printFiles": [
+    "hervormde-gemeente-hollandscheveld-1-100.stl",
+    "hervormde-gemeente-hollandscheveld-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 56.5,
+    "widthM": 22,
+    "highestPointM": 24.45,
+    "groundNapM": 13.398,
+    "naveRidgeM": 14.65,
+    "towerTopM": 24.45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22262",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0118100000126326",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/File:Hervormde_kerk_van_Hollandscheveld.jpg",
+    "https://drenthe.erfgoedcms.nl/drenthe/plaats/hollandscheveld"
+  ]
+}
