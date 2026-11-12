@@ -1,0 +1,36 @@
+{
+  "name": "Sint Maartenskerk Heenvliet",
+  "origin": [
+    76250,
+    431267
+  ],
+  "xAxis": [
+    0.9732,
+    -0.2299
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0568100000100348"
+  ],
+  "description": "Zaalkerk met lage noordbeuk, vijfzijdige koorsluiting en slanke westelijke toren.",
+  "realWorld": {
+    "groundNapM": -0.58,
+    "naveRidgeM": 16.1,
+    "towerTopM": 27.6,
+    "highestPointM": 27.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0568100000100348",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/9381",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Heenvliet"
+  ],
+  "file": "sint-maartenskerk-heenvliet.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-maartenskerk-heenvliet-1-100.stl",
+    "sint-maartenskerk-heenvliet-1-1000.stl"
+  ]
+}
