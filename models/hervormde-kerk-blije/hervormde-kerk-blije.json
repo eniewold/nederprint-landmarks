@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde kerk Blije",
+  "file": "hervormde-kerk-blije.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    186528,
+    596208
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -12
+    ],
+    [
+      -25,
+      12
+    ],
+    [
+      25,
+      -12
+    ],
+    [
+      25,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000003175"
+  ],
+  "description": "Sint-Nicolaastsjerke met vijfzijdig koor en zadeldaktoren. RD (186528,596208), maaiveld NAP 2,15 m.",
+  "printFiles": [
+    "hervormde-kerk-blije-1-100.stl",
+    "hervormde-kerk-blije-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 39.1,
+    "widthM": 15.2,
+    "highestPointM": 27.5,
+    "groundNapM": 2.146,
+    "naveRidgeM": 18.2,
+    "towerTopM": 27.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/15592",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000003175",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.dbnl.org/tekst/berg229noor01_01/berg229noor01_01_0010.php",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_naar_het_noorden_-_Blija_-_20035615_-_RCE.jpg"
+  ]
+}
