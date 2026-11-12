@@ -1,0 +1,59 @@
+{
+  "name": "Dorpskerk Oostkapelle",
+  "file": "dorpskerk-oostkapelle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    27685,
+    399007
+  ],
+  "xAxis": [
+    0.99996,
+    -0.00836
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -12
+    ],
+    [
+      -25,
+      12
+    ],
+    [
+      30,
+      -12
+    ],
+    [
+      30,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000002896"
+  ],
+  "description": "Zaalkerk met grote westtoren en nieuwe consistorie van 2026. RD (27685,399007), maaiveld NAP +1,79 m; nieuwbouw is geschat uit bouwfoto's.",
+  "printFiles": [
+    "dorpskerk-oostkapelle-1-100.stl",
+    "dorpskerk-oostkapelle-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.55,
+    "widthM": 11.25,
+    "highestPointM": 48.3,
+    "groundNapM": 1.79,
+    "naveRidgeM": 10.92,
+    "towerTopM": 48.3,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/42167",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000002896",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Oostkapelle",
+    "https://www.pgoostkapelle.nl/fotogalerij/2026/nieuwbouw-consistorie-dorpskerk",
+    "https://kennis.cultureelerfgoed.nl/images/rce/5/5e/RCE_advies_1808086_Waterstraat_4%2C_4356BJ_Oostkapelle_42167_42166.pdf"
+  ]
+}
