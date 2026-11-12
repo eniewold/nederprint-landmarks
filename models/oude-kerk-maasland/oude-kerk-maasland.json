@@ -1,0 +1,58 @@
+{
+  "name": "Oude Kerk Maasland",
+  "file": "oude-kerk-maasland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    78310,
+    439235
+  ],
+  "xAxis": [
+    0.9994,
+    -0.035
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -32,
+      -20
+    ],
+    [
+      -32,
+      20
+    ],
+    [
+      35,
+      -20
+    ],
+    [
+      35,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1842100000007187"
+  ],
+  "description": "Tweebeukige kerk met parallelle kappen en koren, ingebouwde westtoren, doopkapel en sacristie.",
+  "printFiles": [
+    "oude-kerk-maasland-1-100.stl",
+    "oude-kerk-maasland-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 53.17,
+    "widthM": 27.9,
+    "highestPointM": 47.6,
+    "groundNapM": 0.269,
+    "naveRidgeM": 17.55,
+    "towerTopM": 47.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/26585",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1842100000007187",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Maasland",
+    "https://www.dbnl.org/tekst/sten009monu10_01/sten009monu10_01_0093.php"
+  ]
+}
