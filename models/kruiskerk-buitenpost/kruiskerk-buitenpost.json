@@ -1,0 +1,33 @@
+{
+  "name": "Kruiskerk Buitenpost",
+  "file": "kruiskerk-buitenpost.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205300,
+    585553
+  ],
+  "xAxis": [
+    -0.333,
+    0.9429
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000821712"
+  ],
+  "description": "Voormalige gereformeerde zaalkerk met zadeldak en lagere aanbouwen.",
+  "realWorld": {
+    "groundNapM": 1.476,
+    "naveRidgeNapM": 14.89
+  },
+  "sources": [
+    "https://gereformeerdekerken.info/2022/07/05/de-gereformeerde-kerk-te-buitenpost-2/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000821712",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "kruiskerk-buitenpost-1-1000.stl",
+    "kruiskerk-buitenpost-1-100.stl"
+  ]
+}
