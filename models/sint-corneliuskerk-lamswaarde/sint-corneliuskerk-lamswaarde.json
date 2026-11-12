@@ -1,0 +1,57 @@
+{
+  "name": "Sint-Corneliuskerk Lamswaarde",
+  "file": "sint-corneliuskerk-lamswaarde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    62218,
+    373692
+  ],
+  "xAxis": [
+    0.966,
+    0.2585
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -26,
+      -15
+    ],
+    [
+      -26,
+      15
+    ],
+    [
+      28,
+      -15
+    ],
+    [
+      28,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000602254"
+  ],
+  "description": "Neogotische pseudobasilicale kruiskerk met zijkapellen, westtoren en vieringsruiter. RD (62218,373692), maaiveld circa NAP -0,24 m.",
+  "printFiles": [
+    "sint-corneliuskerk-lamswaarde-1-100.stl",
+    "sint-corneliuskerk-lamswaarde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44,
+    "widthM": 23.1,
+    "highestPointM": 42,
+    "groundNapM": -0.239,
+    "naveRidgeM": 17.84,
+    "towerTopM": 42,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/509223",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000602254",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Corneliuskerk_(Lamswaarde)"
+  ]
+}
