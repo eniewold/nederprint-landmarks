@@ -1,0 +1,57 @@
+{
+  "name": "Nederlands Hervormde Kerk Hellevoetsluis",
+  "file": "nederlands-hervormde-kerk-hellevoetsluis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    68315,
+    426810
+  ],
+  "xAxis": [
+    0.98216,
+    -0.18804
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -16
+    ],
+    [
+      -23,
+      16
+    ],
+    [
+      25,
+      -16
+    ],
+    [
+      25,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0530100002226402"
+  ],
+  "description": "Zaalkerk met toren, lantaarn en oostelijke consistorie. RD (68315,426810), maaiveld NAP +2,70 m.",
+  "printFiles": [
+    "nederlands-hervormde-kerk-hellevoetsluis-1-100.stl",
+    "nederlands-hervormde-kerk-hellevoetsluis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 35.4,
+    "widthM": 14.7,
+    "highestPointM": 24.1,
+    "groundNapM": 2.704,
+    "naveRidgeM": 15.2,
+    "towerTopM": 24.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/21414",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0530100002226402",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Hellevoetsluis"
+  ]
+}
