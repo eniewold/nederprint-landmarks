@@ -65,6 +65,32 @@ for(const index of [33,34,35]) {
  alongWall+=len;
 }
 body=union([body,...bands]);
+const serviceStairs = [];
+for (const v of [-43,-38,-33]) {
+ const wallU = 32.51 + (v + 44.82) * (27.63 - 32.51) / (-23.47 + 44.82);
+ for (const [distance,top] of [[5,.9],[3.35,1.8],[1.7,2.7]]) {
+  const pts=[]; for(const vv of [v-.6,v+.6]) for(const u of [wallU-.5,wallU+distance]) for(const z of [BASE,top]) pts.push([u,vv,z]);
+  serviceStairs.push(hull(pts));
+ }
+}
+// Provisional rear galleries: rails omitted; outward projection supplied on a 45-degree fillet.
+const p=FOOT[37],q=FOOT[38],dx=q[0]-p[0],dy=q[1]-p[1],len=Math.hypot(dx,dy),d=[dx/len,dy/len],n=[-d[1],d[0]];
+const galleries=[];
+for(const top of [4.5,7.5,10.5]) {
+ const pts=[]; for(const t of [.35,len-.35]) for(const [depth,z] of [[.4,top-1.5],[-1,top-.1],[-1,top+.6],[.4,top+.6]]) pts.push([p[0]+d[0]*t+n[0]*depth,p[1]+d[1]*t+n[1]*depth,z]);
+ galleries.push(hull(pts));
+}
+// Upper escape stairs: three descending, facade-attached ramps joining the
+// gallery end; slope, height, and locations are estimated from 2015 photos.
+const upperStairs=[];
+for(const high of [4.5,7.5,10.5]) {
+ const pts=[];
+ for(const [v,z] of [[-58.35,high],[-50.25,high-3]]) {
+  for(const [u,dz] of [[21.55,-2.2],[23.0,-.05],[23.0,.65],[21.55,.65]]) pts.push([u,v,Math.max(BASE,z+dz)]);
+ }
+ upperStairs.push(hull(pts));
+}
+body = union([body,...serviceStairs,...galleries,...upperStairs]);
 if(body.status()!=='NoError' ||body.decompose().length!==1)throw Error('Chassé is niet één gesloten volume');
 console.log('STATUS',body.status(),body.decompose().length,body.boundingBox());
-await writeLandmark({slug:'chasse-theater',base:BASE,nodes:[['building:theater',body]],catalog:{name:'Chassé Theater',origin:O,xAxis:A,groundOffsetMetres:-.3,groundSamplePoints:[[45,-65],[-75,20],[45,70]],replacesBuildings:['NL.IMBAG.Pand.0758100000069483'],description:'Chassé Theater met gemeten golvende kappen, foyer en blinde gevelnissen; onderbouw vereenvoudigd voor steunloos printen.',realWorld:{groundNapM:G,roofMaxNapM:34.46},sources:['PDOK AHN5 DSM 0,5 m en luchtfoto, 10 november 2026','https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000069483','https://commons.wikimedia.org/wiki/Category:Chass%C3%A9_Theater','https://architecture-history.org/architects/architects/HERTZBERGER/OBJ/1992-1995,%20Chass%C3%A9%20Theater,%20Breda,%20Netherlands.html']}});
+await writeLandmark({slug:'chasse-theater',base:BASE,nodes:[['building:theater',body]],catalog:{name:'Chassé Theater',origin:O,xAxis:A,groundOffsetMetres:-.3,groundSamplePoints:[[45,-65],[-75,20],[45,70]],replacesBuildings:['NL.IMBAG.Pand.0758100000069483'],description:'Chassé Theater met gemeten golvende kappen, foyer en blinde gevelnissen; onderbouw vereenvoudigd voor steunloos printen.',realWorld:{groundNapM:G,roofMaxNapM:34.46},sources:['https://www.caparol.nl/referenties/sportvrije-tijd/chasse-theater-breda','PDOK AHN5 DSM 0,5 m en luchtfoto, 10 november 2026','https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0758100000069483','https://commons.wikimedia.org/wiki/Category:Chass%C3%A9_Theater','https://architecture-history.org/architects/architects/HERTZBERGER/OBJ/1992-1995,%20Chass%C3%A9%20Theater,%20Breda,%20Netherlands.html']}});
