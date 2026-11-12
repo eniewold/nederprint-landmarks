@@ -1,0 +1,58 @@
+{
+  "name": "Walburgakerk Drogeham",
+  "file": "walburgakerk-drogeham.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    203307,
+    579761.8
+  ],
+  "xAxis": [
+    0.992,
+    0.128
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -17,
+      -9
+    ],
+    [
+      -17,
+      9
+    ],
+    [
+      16,
+      -9
+    ],
+    [
+      16,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000828442"
+  ],
+  "description": "Negentiende-eeuwse zaalkerk met ronde koorsluiting en middeleeuwse zadeldaktoren. RD (203307,579761,8), maaiveld NAP 4,53 m.",
+  "printFiles": [
+    "walburgakerk-drogeham-1-100.stl",
+    "walburgakerk-drogeham-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 25.77,
+    "widthM": 8.5,
+    "highestPointM": 19.38,
+    "groundNapM": 4.529,
+    "naveRidgeM": 11.97,
+    "towerRidgeM": 19.38,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000828442",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/7042",
+    "https://www.friesland.nl/nl/locaties/311120353/walburga-tsjerke",
+    "https://commons.wikimedia.org/wiki/Category:Walburgakerk,_Drogeham"
+  ]
+}
