@@ -1,0 +1,59 @@
+{
+  "name": "Sint-Wirokerk Easterwierrum",
+  "file": "wiro-easterwierrum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    178200,
+    569249
+  ],
+  "xAxis": [
+    0.75,
+    -0.66
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -17,
+      -12
+    ],
+    [
+      -17,
+      11
+    ],
+    [
+      17,
+      -12
+    ],
+    [
+      17,
+      11
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0140100000166101"
+  ],
+  "description": "Laat-neogotische pseudobasiliek met koor en achtkantige torenspits. RD (178200,569249), maaiveld NAP 0,53 m.",
+  "printFiles": [
+    "wiro-easterwierrum-1-100.stl",
+    "wiro-easterwierrum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 26.6,
+    "widthM": 15.81,
+    "highestPointM": 27.38,
+    "groundNapM": 0.532,
+    "naveRidgeM": 14.06,
+    "towerTopM": 27.38,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0140100000166101",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.easterwierrum.nl/bou-r-k-tsjerke-h-wiro/",
+    "https://www.friesland.nl/nl/locaties/1378773406/easterwierrum-oosterwierum",
+    "https://commons.wikimedia.org/wiki/File:20190515_Sint-Wirokerk1_Oosterwierum.jpg",
+    "https://commons.wikimedia.org/wiki/File:20190515_Sint-Wirokerk2_Oosterwierum.jpg"
+  ]
+}
