@@ -1,0 +1,57 @@
+{
+  "name": "Eben Haëzerkerk Earnewâld",
+  "file": "gereformeerde-kerk-earnewald.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    192060,
+    571780
+  ],
+  "xAxis": [
+    0.53,
+    -0.848
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -10
+    ],
+    [
+      -15,
+      8
+    ],
+    [
+      19,
+      -10
+    ],
+    [
+      19,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000022700"
+  ],
+  "description": "Zaalkerk met geveltorentje, korte dwarsarmen en achteraanbouw. RD (192060,571780), maaiveld NAP -0,54 m.",
+  "printFiles": [
+    "gereformeerde-kerk-earnewald-1-100.stl",
+    "gereformeerde-kerk-earnewald-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 26.28,
+    "widthM": 11.42,
+    "highestPointM": 12.18,
+    "groundNapM": -0.542,
+    "naveRidgeM": 10.03,
+    "towerTopM": 12.18,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000022700",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.friesland.nl/nl/locaties/1372100899/eben-haezerkerk",
+    "https://commons.wikimedia.org/wiki/Category:Eben-Ha%C3%ABzerkerk_(Earnew%C3%A2ld)"
+  ]
+}
