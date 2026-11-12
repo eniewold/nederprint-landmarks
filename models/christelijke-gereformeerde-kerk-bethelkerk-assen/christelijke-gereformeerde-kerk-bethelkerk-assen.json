@@ -1,0 +1,58 @@
+{
+  "name": "Bethelkerk Assen",
+  "file": "christelijke-gereformeerde-kerk-bethelkerk-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234000,
+    557267
+  ],
+  "xAxis": [
+    0.9857,
+    -0.1685
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -16,
+      -9
+    ],
+    [
+      -16,
+      9
+    ],
+    [
+      39,
+      -9
+    ],
+    [
+      39,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000000974"
+  ],
+  "description": "Voormalige synagoge van 1901 met gevelrisaliet, zadeldak en lage achteraanbouw. RD (234000,557267), maaiveld NAP +10,86 m.",
+  "printFiles": [
+    "christelijke-gereformeerde-kerk-bethelkerk-assen-1-100.stl",
+    "christelijke-gereformeerde-kerk-bethelkerk-assen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 44.25,
+    "widthM": 12.25,
+    "highestPointM": 17.7,
+    "groundNapM": 10.863,
+    "ridgeM": 14.98,
+    "facadeTopM": 17.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/469365",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0106100000000974",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Bethelkerk_(Assen)",
+    "https://cgk-assen.nl/geschiedenis/"
+  ]
+}
