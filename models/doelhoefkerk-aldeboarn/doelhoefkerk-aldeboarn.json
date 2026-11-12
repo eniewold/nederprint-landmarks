@@ -1,0 +1,59 @@
+{
+  "name": "Doelhoefkerk Aldeboarn",
+  "file": "doelhoefkerk-aldeboarn.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    189008,
+    562389
+  ],
+  "xAxis": [
+    0.993,
+    0.12
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -22,
+      -10
+    ],
+    [
+      -22,
+      10
+    ],
+    [
+      22,
+      -10
+    ],
+    [
+      22,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0055100000254287"
+  ],
+  "description": "Zaalkerk met driezijdig koor en klassieke toren met dubbele lantaarn. RD (189008,562389), maaiveld NAP 1,47 m.",
+  "printFiles": [
+    "doelhoefkerk-aldeboarn-1-100.stl",
+    "doelhoefkerk-aldeboarn-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 32.65,
+    "widthM": 12.3,
+    "highestPointM": 45,
+    "groundNapM": 1.472,
+    "naveRidgeM": 16.5,
+    "towerTopM": 45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35951",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35950",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0055100000254287",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.klokkenwiki.nl/Aldeboarn_gem._Heerenveen_-_Hervormde_Kerk.",
+    "https://www.friesland.nl/nl/locaties/3317493221/doelhofkerk"
+  ]
+}
