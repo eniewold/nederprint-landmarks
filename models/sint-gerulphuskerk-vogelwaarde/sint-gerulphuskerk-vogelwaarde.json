@@ -1,0 +1,37 @@
+{
+  "name": "Sint Gerulphuskerk Vogelwaarde",
+  "origin": [
+    57315,
+    371377
+  ],
+  "xAxis": [
+    -0.9892,
+    0.1465
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000597789"
+  ],
+  "description": "Neogotische kerk met koorsluiting en half ingebouwde toren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 1.7,
+    "naveRidgeM": 15.45,
+    "towerTopM": 34.1,
+    "highestPointM": 34.1
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000597789",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22231",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Gerulphuskerk,_Vogelwaarde",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/22231"
+  ],
+  "file": "sint-gerulphuskerk-vogelwaarde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-gerulphuskerk-vogelwaarde-1-100.stl",
+    "sint-gerulphuskerk-vogelwaarde-1-1000.stl"
+  ]
+}
