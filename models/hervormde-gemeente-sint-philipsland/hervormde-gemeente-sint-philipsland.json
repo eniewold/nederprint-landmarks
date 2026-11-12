@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde Gemeente Sint Philipsland",
+  "file": "hervormde-gemeente-sint-philipsland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    70452,
+    403839.3
+  ],
+  "xAxis": [
+    0.996,
+    0.09
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -13
+    ],
+    [
+      -18,
+      13
+    ],
+    [
+      18,
+      -13
+    ],
+    [
+      18,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000002607"
+  ],
+  "description": "Achthoekige zaalkerk met schilddak en dakruiter. RD (70452,403839.3), maaiveld NAP +0,85 m.",
+  "printFiles": [
+    "hervormde-gemeente-sint-philipsland-1-100.stl",
+    "hervormde-gemeente-sint-philipsland-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 18,
+    "widthM": 8.8,
+    "highestPointM": 16.83,
+    "groundNapM": 0.846,
+    "naveRidgeM": 12.03,
+    "towerTopM": 16.83,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33666",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000002607",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Sint_Philipsland",
+    "https://encyclopedievanzeeland.nl/St._Philipsland_(Philipskercke)"
+  ]
+}
