@@ -1,0 +1,35 @@
+{
+  "name": "Gereformeerde Kerk Ruinerwold-Koekange",
+  "file": "gereformeerde-kerk-ruinerwold-koekange.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    215929,
+    525411.5
+  ],
+  "xAxis": [
+    0.857,
+    0.515
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1690100000004885"
+  ],
+  "description": "Kerk in Berghuizen met een dwarsvleugel, ingangsportaal en dakruiter.",
+  "realWorld": {
+    "groundNapM": 3.947,
+    "ridgeNapM": 15.472
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1690100000004885",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://middelpuntberghuizen.nl/berghuizen-in-beeld/",
+    "https://middelpuntberghuizen.nl/wp-content/uploads/2021/07/informatiebord_kerk_berghuizen_lr_3-22.pdf",
+    "https://acc.digitaleplannen.nl/1690/6CE08C43-AFAC-4AA6-BE8D-075AB361574F/t_NL.IMRO.1690.2023BP2008001-ON01.html"
+  ],
+  "printFiles": [
+    "gereformeerde-kerk-ruinerwold-koekange-1-100.stl",
+    "gereformeerde-kerk-ruinerwold-koekange-1-1000.stl"
+  ]
+}
