@@ -1,0 +1,57 @@
+{
+  "name": "Protestantse Gemeente Middelburg",
+  "file": "protestantse-gemeente-middelburg.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    31205,
+    394797
+  ],
+  "xAxis": [
+    0.9889,
+    0.1486
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -10
+    ],
+    [
+      -18,
+      10
+    ],
+    [
+      18,
+      -10
+    ],
+    [
+      18,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0687100000028318"
+  ],
+  "description": "Zaalkerk in Sint Laurens met schilddak, dakruiter, steunberen, portaal en consistorie. RD (31205,394797), maaiveld NAP +1,24 m.",
+  "printFiles": [
+    "protestantse-gemeente-middelburg-1-100.stl",
+    "protestantse-gemeente-middelburg-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 28.77,
+    "widthM": 12.68,
+    "highestPointM": 24.4,
+    "groundNapM": 1.24,
+    "naveRidgeM": 15.45,
+    "towerTopM": 24.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/29734",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0687100000028318",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Sint_Laurens"
+  ]
+}
