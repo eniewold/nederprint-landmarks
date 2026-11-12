@@ -1,0 +1,59 @@
+{
+  "name": "Koepelkerk Smilde",
+  "file": "koepelkerk-smilde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    226196.5,
+    551905
+  ],
+  "xAxis": [
+    0.842,
+    -0.539
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -20
+    ],
+    [
+      -20,
+      20
+    ],
+    [
+      20,
+      -20
+    ],
+    [
+      20,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1731100000027473"
+  ],
+  "description": "Achtkante kerk met tentdak en lantaarn. RD (226196,5,551905), maaiveld NAP 14,20 m.",
+  "printFiles": [
+    "koepelkerk-smilde-1-100.stl",
+    "koepelkerk-smilde-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 28,
+    "widthM": 28,
+    "highestPointM": 36.6,
+    "groundNapM": 14.205,
+    "eaveM": 15,
+    "roofPlatformM": 25.2,
+    "towerTopM": 36.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/34003",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1731100000027473",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://koepelkerk.nl/over-ons/koepelkerk-het-gebouw/kerkgebouw-en-geschiedenis/architectuur-koepelkerk/",
+    "https://commons.wikimedia.org/wiki/Category:Koepelkerk_(Smilde)"
+  ]
+}
