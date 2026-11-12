@@ -1,0 +1,58 @@
+{
+  "name": "Maartenskerk Sint-Maartensdijk",
+  "file": "maartenskerk-sint-maartensdijk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    64153,
+    396400
+  ],
+  "xAxis": [
+    0.9982,
+    0.05996
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -31,
+      -19
+    ],
+    [
+      -31,
+      19
+    ],
+    [
+      32,
+      -19
+    ],
+    [
+      32,
+      19
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000177131"
+  ],
+  "description": "Pseudobasilicale kerk met zijbeuken, vijfzijdig koor, noordkapel en westtoren met lantaarn. RD (64153,396400), maaiveld NAP +1,28 m.",
+  "printFiles": [
+    "maartenskerk-sint-maartensdijk-1-100.stl",
+    "maartenskerk-sint-maartensdijk-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 48.75,
+    "widthM": 23.5,
+    "highestPointM": 40.9,
+    "groundNapM": 1.28,
+    "naveRidgeM": 21.1,
+    "towerTopM": 40.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35410",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000177131",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Maartenskerk_(Sint_Maartensdijk)",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0094.php"
+  ]
+}
