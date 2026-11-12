@@ -1,0 +1,58 @@
+{
+  "name": "Grote Kerk of Mariakerk Meppel",
+  "file": "grote-kerk-of-mariakerk-meppel.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    209275,
+    523624
+  ],
+  "xAxis": [
+    0.984,
+    -0.178
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -28,
+      -12
+    ],
+    [
+      -28,
+      15
+    ],
+    [
+      32,
+      -12
+    ],
+    [
+      32,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0119100000000319"
+  ],
+  "description": "Tweebeukige kerk met bakstenen toren en lantaarn. RD (209275,523624), maaiveld NAP 1,74 m.",
+  "printFiles": [
+    "grote-kerk-of-mariakerk-meppel-1-100.stl",
+    "grote-kerk-of-mariakerk-meppel-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 51.2,
+    "widthM": 24.9,
+    "highestPointM": 45,
+    "groundNapM": 1.735,
+    "naveRidgeM": 15.1,
+    "towerTopM": 45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28632",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0119100000000319",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://grotemariakerk.nl/over/",
+    "https://commons.wikimedia.org/wiki/Category:Grote_of_Mariakerk_(Meppel)"
+  ]
+}
