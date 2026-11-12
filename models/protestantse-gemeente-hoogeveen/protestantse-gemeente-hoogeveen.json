@@ -1,0 +1,34 @@
+{
+  "name": "Protestantse Gemeente Hoogeveen",
+  "file": "protestantse-gemeente-hoogeveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    228724.5,
+    526911.75
+  ],
+  "xAxis": [
+    0.99949,
+    0.0318
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0118100000129129"
+  ],
+  "description": "Hoofdstraatkerk met zadeldak, voorportaal, twee hoekpinakels en centrale dakruiter.",
+  "realWorld": {
+    "groundNapM": 12.28,
+    "naveRidgeNapM": 34.45,
+    "spireTopNapM": 44.62
+  },
+  "sources": [
+    "https://gereformeerdekerken.info/2017/08/26/de-hoofdstraatkerk-te-hoogeveen/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0118100000129129",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "protestantse-gemeente-hoogeveen-1-1000.stl",
+    "protestantse-gemeente-hoogeveen-1-100.stl"
+  ]
+}
