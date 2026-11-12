@@ -1,0 +1,35 @@
+{
+  "name": "Kruiskerk Burgum",
+  "file": "kruiskerk-burgum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    196049.55,
+    579009.25
+  ],
+  "xAxis": [
+    0.994,
+    0.11
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0737100000015999"
+  ],
+  "description": "Driebeukige kruiskerk met dwarspanden, vijfzijdig koor en ingesnoerde torenspits.",
+  "realWorld": {
+    "groundNapM": 2.477,
+    "towerTopNapM": 36.537
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000015999",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.friesland.nl/nl/routes/1118250434/cultuurhistorische-wandelroute-burgum",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0036.php",
+    "https://rijksmonumenten.nl/monument/35634/kruiskerk-hervormde-kerk/burgum/"
+  ],
+  "printFiles": [
+    "kruiskerk-burgum-1-100.stl",
+    "kruiskerk-burgum-1-1000.stl"
+  ]
+}

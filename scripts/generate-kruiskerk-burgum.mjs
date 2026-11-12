@@ -1,0 +1,22 @@
+import {union,hull,prism,rect,writeLandmark} from './efteling-kit.mjs';
+const B=-.3,origin=[196049.55,579009.25],axis=[.994,.11],ground=2.477;
+const roofed=(poly,planes)=>{let s=prism(poly,B,40);for(const [a,b,c] of planes){const n=Math.hypot(a,b,1);s=s.trimByPlane([a/n,b/n,-1/n],-c/n)}return s};
+const loft=(a,z,b,z2)=>hull([...a.map(([x,y])=>[x,y,z]),...b.map(([x,y])=>[x,y,z2])]);
+const oct=(cx,cy,r)=>Array.from({length:8},(_,i)=>[cx+r*Math.cos(Math.PI/8+i*Math.PI/4),cy+r*Math.sin(Math.PI/8+i*Math.PI/4)]);
+// Driebeukig schip, dwarspand en vijfzijdig koor zijn dakvlakken en bouwdelen.
+const nave=roofed(rect(1.7,-5.2,20,5.2),[[0,1.15,17.12],[0,-1.15,17.12]]);
+const south=roofed(rect(1.7,-8.7,20,-5),[[0,.7,12.3]]);
+const north=roofed(rect(1.7,5,20,8.7),[[0,-.7,12.3]]);
+const cross=roofed(rect(19.4,-11.2,28.65,11.1),[[1.05,0,17.2-1.05*24.1],[-1.05,0,17.2+1.05*24.1]]);
+const choir=roofed([[28.5,-4.65],[34,-4.75],[37,-3.55],[38.55,-1.2],[38.35,1.2],[36.7,3.6],[33.9,4.7],[28.5,4.42]],[[0,1.13,17.12],[0,-1.13,17.12],[-1.05,0,17.12+1.05*34]]);
+const tower=prism(rect(-1.98,-2.08,1.78,2.5),B,21.8);
+const spire=loft(oct(-.1,.21,2.02),21.75,oct(-.1,.21,.49),34.06);
+let all=union([nave,south,north,cross,choir,tower,spire]);
+const niche=(x,y,w,z0,z1,angle=0,depth=.4)=>{const r=w/2,pts=[];for(const [a,b] of [[-r,z0],[r,z0],[r,z1-r],[0,z1],[-r,z1-r]])for(const d of [0,depth])pts.push([a,d,b]);return hull(pts).rotate([0,0,angle]).translate([x,y,0])};
+const cuts=[];for(const x of [4.8,8.3,11.8,15.3,18.1])cuts.push(niche(x,-8.76,1.1,1.7,5.8),niche(x,8.76,1.1,1.7,5.8,180));
+cuts.push(niche(-2.04,.2,1.1,0,3,-90),niche(-.1,-2.14,1,17.7,20.4),niche(-.1,2.56,1,17.7,20.4,180));
+all=all.subtract(union(cuts));
+await writeLandmark({slug:'kruiskerk-burgum',base:B,nodes:[['building:kerk',all]],catalog:{name:'Kruiskerk Burgum',origin,xAxis:axis,groundOffsetMetres:-.3,replacesBuildings:['NL.IMBAG.Pand.0737100000015999'],description:'Driebeukige kruiskerk met dwarspanden, vijfzijdig koor en ingesnoerde torenspits.',realWorld:{groundNapM:ground,towerTopNapM:36.537},sources:['https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0737100000015999','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://www.friesland.nl/nl/routes/1118250434/cultuurhistorische-wandelroute-burgum','https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0036.php','https://rijksmonumenten.nl/monument/35634/kruiskerk-hervormde-kerk/burgum/']}});
+const {readFile,writeFile}=await import('node:fs/promises');const {default:path}=await import('node:path');
+const args=process.argv.slice(2),i=args.indexOf('--out'),dir=path.resolve(i>=0&&args[i+1]?args[i+1]:path.join(import.meta.dirname,'../models'),'kruiskerk-burgum');
+const file=path.join(dir,'kruiskerk-burgum.json'),json=JSON.parse(await readFile(file,'utf8'));json.printFiles=['kruiskerk-burgum-1-100.stl','kruiskerk-burgum-1-1000.stl'];await writeFile(file,JSON.stringify(json,null,2)+String.fromCharCode(10));
