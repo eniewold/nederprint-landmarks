@@ -1,0 +1,34 @@
+{
+  "name": "De Hoeksteen Hallum",
+  "file": "de-hoeksteen-hallum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181488.25,
+    591125.25
+  ],
+  "xAxis": [
+    0.99664,
+    0.0819
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1722100000005107"
+  ],
+  "description": "Zaalkerk met twee dwarsbeuken en naastgelegen toren.",
+  "realWorld": {
+    "groundNapM": 1.699,
+    "spireTopNapM": 28.45
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1722100000005107",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://gereformeerdekerken.info/2023/01/21/onderzoek-naar-keuze-kerkgebouwen-hallum/",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01.pdf"
+  ],
+  "printFiles": [
+    "de-hoeksteen-hallum-1-100.stl",
+    "de-hoeksteen-hallum-1-1000.stl"
+  ]
+}
