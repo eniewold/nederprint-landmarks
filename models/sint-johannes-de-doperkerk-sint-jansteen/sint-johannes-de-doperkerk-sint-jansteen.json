@@ -1,0 +1,57 @@
+{
+  "name": "Sint Johannes de Doperkerk Sint Jansteen",
+  "file": "sint-johannes-de-doperkerk-sint-jansteen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    61878,
+    364467
+  ],
+  "xAxis": [
+    0.75,
+    0.661438
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -32,
+      -25
+    ],
+    [
+      -32,
+      24
+    ],
+    [
+      27,
+      -25
+    ],
+    [
+      27,
+      24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0677100000615104"
+  ],
+  "description": "Driebeukige hallenkerk met dubbele dwarskapellen, veelhoekig koor en westtoren met achtkant en naaldspits. RD (61878,364467), maaiveld NAP +2,68 m.",
+  "printFiles": [
+    "sint-johannes-de-doperkerk-sint-jansteen-1-100.stl",
+    "sint-johannes-de-doperkerk-sint-jansteen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 45.8,
+    "widthM": 34.3,
+    "highestPointM": 45.65,
+    "groundNapM": 2.683,
+    "naveRidgeM": 18,
+    "towerTopM": 45.65,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/22796",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0677100000615104",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Joannes_De_Doperkerk,_Sint_Jansteen"
+  ]
+}
