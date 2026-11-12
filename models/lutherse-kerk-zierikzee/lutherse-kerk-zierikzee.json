@@ -1,0 +1,56 @@
+{
+  "name": "Lutherse Kerk Zierikzee",
+  "file": "lutherse-kerk-zierikzee.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    53241,
+    407669
+  ],
+  "xAxis": [
+    0.93,
+    0.367559
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -14
+    ],
+    [
+      -19,
+      14
+    ],
+    [
+      18,
+      -14
+    ],
+    [
+      18,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000454340"
+  ],
+  "description": "Compacte zaalkerk met schilddak en lagere achteraanbouw. RD (53241,407669), maaiveld NAP +0,20 m.",
+  "printFiles": [
+    "lutherse-kerk-zierikzee-1-100.stl",
+    "lutherse-kerk-zierikzee-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.5,
+    "widthM": 11.2,
+    "highestPointM": 14.4,
+    "groundNapM": 0.201,
+    "naveRidgeM": 14.4,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/40554",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000454340",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Lutherse_Kerk_Zierikzee"
+  ]
+}
