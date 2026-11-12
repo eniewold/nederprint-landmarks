@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde Gemeente Monster",
+  "file": "hervormde-gemeente-monster.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    71580,
+    448880
+  ],
+  "xAxis": [
+    0.946,
+    0.324
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -36,
+      -20
+    ],
+    [
+      -36,
+      20
+    ],
+    [
+      40,
+      -20
+    ],
+    [
+      40,
+      20
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1783100000005167"
+  ],
+  "description": "Driebeukige hallenkerk met drie koorsluitingen en forse westtoren met lage piramidedakbekroning.",
+  "printFiles": [
+    "hervormde-gemeente-monster-1-100.stl",
+    "hervormde-gemeente-monster-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 61.85,
+    "widthM": 27.05,
+    "highestPointM": 44.33,
+    "groundNapM": 2.747,
+    "naveRidgeM": 15.35,
+    "towerTopM": 44.33,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30044",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1783100000005167",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dutch_Reformed_Church,_Monster",
+    "https://www.hervormdmonster.nl/historie/kerk-en-toren/"
+  ]
+}
