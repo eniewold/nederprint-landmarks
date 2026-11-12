@@ -1,0 +1,59 @@
+{
+  "name": "Johanneskerk Serooskerke",
+  "file": "johanneskerk-serooskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    30765,
+    397209
+  ],
+  "xAxis": [
+    0.97,
+    0.243
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -18
+    ],
+    [
+      -23,
+      18
+    ],
+    [
+      28,
+      -18
+    ],
+    [
+      28,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000022853",
+    "NL.IMBAG.Pand.0717100000022854"
+  ],
+  "description": "Eenbeukige kerk met consistorie en forse onvoltooide toren. RD (30765,397209), maaiveld NAP +1,77 m.",
+  "printFiles": [
+    "johanneskerk-serooskerke-1-100.stl",
+    "johanneskerk-serooskerke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.7,
+    "widthM": 22.15,
+    "highestPointM": 26.36,
+    "groundNapM": 1.767,
+    "naveRidgeM": 15.47,
+    "towerTopM": 26.36,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37028",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000022853",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Johanneskerk_(Serooskerke)",
+    "https://www.serooskerke.nu/over/geschiedenis/"
+  ]
+}
