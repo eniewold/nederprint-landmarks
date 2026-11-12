@@ -1,0 +1,58 @@
+{
+  "name": "Sint-Bonifatiuskerk Damwâld",
+  "file": "hervormde-kerk-damwald.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    195667,
+    589501.6
+  ],
+  "xAxis": [
+    0.997,
+    0.078
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -15,
+      -8
+    ],
+    [
+      -15,
+      9
+    ],
+    [
+      16,
+      -8
+    ],
+    [
+      16,
+      17
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1891100001634590"
+  ],
+  "description": "Romaanse kerk met zadeldaktoren en noordelijke dwarsaanbouw. RD (195667,589501,6), maaiveld NAP 2,07 m.",
+  "printFiles": [
+    "hervormde-kerk-damwald-1-100.stl",
+    "hervormde-kerk-damwald-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 23.35,
+    "widthM": 16.6,
+    "highestPointM": 18.17,
+    "groundNapM": 2.071,
+    "naveRidgeM": 10.86,
+    "towerRidgeM": 18.17,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1891100001634590",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11675",
+    "https://www.friesland.nl/nl/locaties/4226348244/sint-bonifatiuskerk-1",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Bonifatiuskerk_(Damw%C3%A2ld)"
+  ]
+}
