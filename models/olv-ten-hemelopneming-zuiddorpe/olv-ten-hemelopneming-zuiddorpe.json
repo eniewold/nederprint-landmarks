@@ -1,0 +1,57 @@
+{
+  "name": "O.L.V. ten Hemelopneming Zuiddorpe",
+  "file": "olv-ten-hemelopneming-zuiddorpe.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    51485,
+    361718
+  ],
+  "xAxis": [
+    0.833,
+    0.553175
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -26,
+      -18
+    ],
+    [
+      -26,
+      18
+    ],
+    [
+      25,
+      -18
+    ],
+    [
+      25,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000008194"
+  ],
+  "description": "Neogotische kruisbasiliek met zijdelingse toren, traptoren en recht gesloten koor. RD (51485,361718), maaiveld NAP +2,70 m.",
+  "printFiles": [
+    "olv-ten-hemelopneming-zuiddorpe-1-100.stl",
+    "olv-ten-hemelopneming-zuiddorpe-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.3,
+    "widthM": 16.6,
+    "highestPointM": 37.7,
+    "groundNapM": 2.695,
+    "naveRidgeM": 15.4,
+    "towerTopM": 37.7,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/508091",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0715100000008194",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Hemelvaartkerk_(Zuiddorpe)"
+  ]
+}
