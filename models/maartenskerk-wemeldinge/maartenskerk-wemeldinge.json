@@ -1,0 +1,37 @@
+{
+  "name": "Maartenskerk Wemeldinge",
+  "origin": [
+    57626.8,
+    392863.1
+  ],
+  "xAxis": [
+    0.95,
+    0.3122
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0678100000007555"
+  ],
+  "description": "Tweebeukige Maartenskerk met vijfzijdig koor en oudere toren met achtzijdige naald.",
+  "realWorld": {
+    "groundNapM": 1.85,
+    "naveRidgeM": 17.55,
+    "towerTopM": 38.05,
+    "highestPointM": 38.05
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0678100000007555",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/23507",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Maarten_(Wemeldinge)",
+    "https://de.wikipedia.org/wiki/Maartenskerk_(Wemeldinge)"
+  ],
+  "file": "maartenskerk-wemeldinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "maartenskerk-wemeldinge-1-100.stl",
+    "maartenskerk-wemeldinge-1-1000.stl"
+  ]
+}
