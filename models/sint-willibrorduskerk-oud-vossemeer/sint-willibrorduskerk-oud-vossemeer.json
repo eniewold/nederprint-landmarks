@@ -1,0 +1,36 @@
+{
+  "name": "Sint Willibrorduskerk Oud-Vossemeer",
+  "origin": [
+    72488,
+    398805
+  ],
+  "xAxis": [
+    -0.071,
+    0.9975
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000072954"
+  ],
+  "description": "Zaalkerk met lage zijaanbouw, portaal en houten geveltorentje; pastorie is afzonderlijk BAG-pand.",
+  "realWorld": {
+    "groundNapM": 0.5,
+    "naveRidgeM": 11.55,
+    "towerTopM": 16.75,
+    "highestPointM": 16.75
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000072954",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35368",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Willibrorduskerk_(Oud-Vossemeer)"
+  ],
+  "file": "sint-willibrorduskerk-oud-vossemeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-willibrorduskerk-oud-vossemeer-1-100.stl",
+    "sint-willibrorduskerk-oud-vossemeer-1-1000.stl"
+  ]
+}
