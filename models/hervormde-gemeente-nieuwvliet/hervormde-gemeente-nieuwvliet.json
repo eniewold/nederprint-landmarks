@@ -1,0 +1,63 @@
+{
+  "name": "Hervormde Gemeente Nieuwvliet",
+  "file": "hervormde-gemeente-nieuwvliet.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    21690,
+    377615
+  ],
+  "xAxis": [
+    0.625,
+    -0.7806
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -17,
+      -9
+    ],
+    [
+      -17,
+      10
+    ],
+    [
+      -3,
+      10
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      17,
+      8
+    ],
+    [
+      17,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000717682"
+  ],
+  "description": "Eenbeukige zaalkerk met schilddak, lage oostelijke aanbouw en vierkante dakruiter.",
+  "printFiles": [
+    "hervormde-gemeente-nieuwvliet-1-100.stl",
+    "hervormde-gemeente-nieuwvliet-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 22.05,
+    "widthM": 10.65,
+    "highestPointM": 16.83,
+    "groundNapM": 2.045,
+    "towerTopM": 16.83
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31527",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000717682",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Nieuwvliet",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
