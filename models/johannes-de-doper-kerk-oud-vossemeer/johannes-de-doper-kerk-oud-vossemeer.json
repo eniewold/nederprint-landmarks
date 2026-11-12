@@ -1,0 +1,57 @@
+{
+  "name": "Johannes de Doper kerk Oud-Vossemeer",
+  "file": "johannes-de-doper-kerk-oud-vossemeer.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    72531,
+    398624
+  ],
+  "xAxis": [
+    0.9947,
+    -0.102
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -18
+    ],
+    [
+      -23,
+      18
+    ],
+    [
+      24,
+      -18
+    ],
+    [
+      24,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000212487"
+  ],
+  "description": "Kruiskerk met kleine westtoren, dwarsschip en koorsluiting. RD (72531,398624), maaiveld NAP +0,40 m.",
+  "printFiles": [
+    "johannes-de-doper-kerk-oud-vossemeer-1-100.stl",
+    "johannes-de-doper-kerk-oud-vossemeer-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 30.5,
+    "widthM": 26.4,
+    "highestPointM": 23.67,
+    "groundNapM": 0.402,
+    "naveRidgeM": 13.98,
+    "towerTopM": 23.67,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35374",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000212487",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Oud-Vossemeer)"
+  ]
+}
