@@ -1,0 +1,37 @@
+{
+  "name": "Protestantse kerk Zaamslag",
+  "origin": [
+    52228.5,
+    370273
+  ],
+  "xAxis": [
+    0.9981,
+    -0.061
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0715100000038515"
+  ],
+  "description": "Neoromaanse kerkzaal met oudere, zijdelings aangesloten toren en achtkantige spits.",
+  "realWorld": {
+    "groundNapM": 3,
+    "naveRidgeM": 16.75,
+    "towerTopM": 35.4,
+    "highestPointM": 35.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0715100000038515",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35026",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Zaamslag",
+    "https://www.openmonumentendag.nl/monument/protestantse-kerk-10/"
+  ],
+  "file": "protestantse-kerk-zaamslag.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "protestantse-kerk-zaamslag-1-100.stl",
+    "protestantse-kerk-zaamslag-1-1000.stl"
+  ]
+}
