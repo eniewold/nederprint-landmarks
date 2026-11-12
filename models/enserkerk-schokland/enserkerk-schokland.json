@@ -1,0 +1,58 @@
+{
+  "name": "Enserkerk Schokland",
+  "file": "enserkerk-schokland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    181453,
+    516351
+  ],
+  "xAxis": [
+    0.949,
+    -0.316
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -16,
+      -10
+    ],
+    [
+      -16,
+      10
+    ],
+    [
+      15,
+      -10
+    ],
+    [
+      15,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0171100000001277"
+  ],
+  "description": "Kerkzaal met aangebouwde pastorie, klokkenruiter en schoorsteen op de Middelbuurt. RD (181453,516351), maaiveld NAP 1,83 m.",
+  "printFiles": [
+    "enserkerk-schokland-1-100.stl",
+    "enserkerk-schokland-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 21.6,
+    "widthM": 11.5,
+    "highestPointM": 13.6,
+    "groundNapM": 1.826,
+    "naveRidgeM": 9.7,
+    "towerTopM": 13.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30727",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0171100000001277",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.dbnl.org/tekst/sten009monu12_01/sten009monu12_01_0021.php",
+    "https://commons.wikimedia.org/wiki/Category:Enserkerk_(Schokland)"
+  ]
+}
