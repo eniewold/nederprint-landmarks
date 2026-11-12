@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde Kerk Stavenisse",
+  "origin": [
+    59708.65,
+    400602.27
+  ],
+  "xAxis": [
+    0.9798,
+    -0.2
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0716100000283519"
+  ],
+  "description": "T-vormige kerk met oudere westtoren, achtkantige lantaarn en oostelijke grafkapel.",
+  "realWorld": {
+    "groundNapM": 1.05,
+    "naveRidgeM": 14.55,
+    "towerTopM": 24,
+    "highestPointM": 24
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0716100000283519",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/35407",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Stavenisse",
+    "https://www.hervormdstavenisse.nl/geschiedenis/kerkgebouw"
+  ],
+  "file": "hervormde-kerk-stavenisse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-stavenisse-1-100.stl",
+    "hervormde-kerk-stavenisse-1-1000.stl"
+  ]
+}
