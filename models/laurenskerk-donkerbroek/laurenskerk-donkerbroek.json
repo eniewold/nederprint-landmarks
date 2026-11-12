@@ -1,0 +1,35 @@
+{
+  "name": "Laurenskerk Donkerbroek",
+  "file": "laurenskerk-donkerbroek.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    211779.91,
+    559231.18
+  ],
+  "xAxis": [
+    0.9977,
+    -0.0683
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0085100000003581"
+  ],
+  "description": "Laurenskerk met afgeschuind koor en houten geveltoren met naaldspits.",
+  "realWorld": {
+    "groundNapM": 5.259,
+    "ridgeNapM": 16.565,
+    "towerTopNapM": 27.005
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0085100000003581",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.begraafplaats.nl/begraafplaatsen/kerkhof-donkerbroek-36/",
+    "https://www.kerkenvisieonline.nl/pdf-download/"
+  ],
+  "printFiles": [
+    "laurenskerk-donkerbroek-1-100.stl",
+    "laurenskerk-donkerbroek-1-1000.stl"
+  ]
+}
