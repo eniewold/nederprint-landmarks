@@ -1,0 +1,57 @@
+{
+  "name": "Corneliuskerk Noordwelle",
+  "file": "corneliuskerk-noordwelle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    44818,
+    415615
+  ],
+  "xAxis": [
+    0.996,
+    0.089
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -15
+    ],
+    [
+      -25,
+      15
+    ],
+    [
+      26,
+      -15
+    ],
+    [
+      26,
+      15
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000433785"
+  ],
+  "description": "Eenbeukige kerk met lager driezijdig koor, steunberen en toren met achtkantige klokkamer. RD (44818,415615), maaiveld NAP +1,23 m.",
+  "printFiles": [
+    "corneliuskerk-noordwelle-1-100.stl",
+    "corneliuskerk-noordwelle-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 40.25,
+    "widthM": 13.6,
+    "highestPointM": 26.8,
+    "groundNapM": 1.228,
+    "naveRidgeM": 14.85,
+    "towerTopM": 26.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38818",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000433785",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Corneliuskerk,_Noordwelle"
+  ]
+}
