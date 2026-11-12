@@ -1,0 +1,37 @@
+{
+  "name": "Dorpskerk Leiderdorp",
+  "origin": [
+    95878.18,
+    462880.23
+  ],
+  "xAxis": [
+    0.9891,
+    0.1471
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0547100000288641"
+  ],
+  "description": "Rechthoekige dorpskerk met grote kap en kleine dakruiter.",
+  "realWorld": {
+    "groundNapM": 0.94,
+    "naveRidgeM": 17.08,
+    "towerTopM": 26.3,
+    "highestPointM": 26.3
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0547100000288641",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/25693",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Leiderdorp",
+    "https://centraalplus.nl/2026/09/22/27-jaar-restaureren-de-bijzondere-geschiedenis-van-de-dorpskerk-in-leiderdorp/"
+  ],
+  "file": "dorpskerk-leiderdorp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-leiderdorp-1-100.stl",
+    "dorpskerk-leiderdorp-1-1000.stl"
+  ]
+}
