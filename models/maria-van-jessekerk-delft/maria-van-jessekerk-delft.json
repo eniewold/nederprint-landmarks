@@ -1,0 +1,58 @@
+{
+  "name": "Maria van Jessekerk Delft",
+  "file": "maria-van-jessekerk-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    84538,
+    447516
+  ],
+  "xAxis": [
+    -0.589,
+    0.808135
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -42,
+      -24
+    ],
+    [
+      -42,
+      24
+    ],
+    [
+      38,
+      -24
+    ],
+    [
+      38,
+      24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000028802"
+  ],
+  "description": "Driebeukige kruisbasiliek met koor en twee verschillende torens. RD (84538,447516), maaiveld NAP +0,06 m.",
+  "printFiles": [
+    "maria-van-jessekerk-delft-1-100.stl",
+    "maria-van-jessekerk-delft-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 63.7,
+    "widthM": 40.05,
+    "highestPointM": 71.5,
+    "groundNapM": 0.056,
+    "naveRidgeM": 28.65,
+    "towerTopM": 71.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/18279",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0503100000028802",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Maria_van_Jessekerk_(Delft)",
+    "https://www.skyscrapercenter.com/building/maria-van-jessekerk/7806"
+  ]
+}
