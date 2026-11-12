@@ -1,0 +1,58 @@
+{
+  "name": "Hervormde Kerk Sluis",
+  "file": "hervormde-kerk-sluis.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    13881.5,
+    371475
+  ],
+  "xAxis": [
+    0.06,
+    0.9982
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -21,
+      -14
+    ],
+    [
+      -21,
+      14
+    ],
+    [
+      21,
+      -14
+    ],
+    [
+      21,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1714100000732958"
+  ],
+  "description": "Kerk van Sint Anna ter Muiden met massieve kruisingstoren en kort schip. RD (13881.5,371475), maaiveld NAP +2,21 m.",
+  "printFiles": [
+    "hervormde-kerk-sluis-1-100.stl",
+    "hervormde-kerk-sluis-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 26.85,
+    "widthM": 13.1,
+    "highestPointM": 33.1,
+    "groundNapM": 2.211,
+    "naveRidgeM": 14.3,
+    "towerTopM": 33.1,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/33961",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1714100000732958",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk,_Sint_Anna_ter_Muiden",
+    "https://www.monumentenportaal.nl/locatieverhuur/sint-anna-ter-muiden"
+  ]
+}
