@@ -1,0 +1,36 @@
+{
+  "name": "De Kandelaar Assen",
+  "file": "de-kandelaar-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233865,
+    557260
+  ],
+  "xAxis": [
+    0.941,
+    -0.339
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000000328"
+  ],
+  "description": "Historisch kerkgebouw met kruisende zadeldaken, lagere straatvleugel en zalencomplex met vier lichtkappen.",
+  "realWorld": {
+    "groundNapM": 10.611,
+    "ridgeNapM": 24.26,
+    "annexRoofNapM": 14.31,
+    "skylightTopNapM": 16.51
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0106100000000328",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Kandelaarkerk_Assen.jpg",
+    "https://drenthe.erfgoedcms.nl/lemma/assen"
+  ],
+  "printFiles": [
+    "de-kandelaar-assen-1-100.stl",
+    "de-kandelaar-assen-1-1000.stl"
+  ]
+}
