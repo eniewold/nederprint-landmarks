@@ -1,0 +1,36 @@
+{
+  "name": "Dorpskerk Zuidlaren",
+  "file": "dorpskerk-zuidlaren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    242087.9,
+    568485.1
+  ],
+  "xAxis": [
+    0.958,
+    0.286
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1730100000008006"
+  ],
+  "description": "Middeleeuwse dorpskerk met hoog driezijdig koor, steunberen en ingesnoerde torenspits.",
+  "realWorld": {
+    "groundNapM": 5.021,
+    "ridgeNapM": 20.093,
+    "towerTopNapM": 43.06
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1730100000008006",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kerkfotografie.nl/dorpskerk-zuidlaren/",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/41091",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0107.php"
+  ],
+  "printFiles": [
+    "dorpskerk-zuidlaren-1-100.stl",
+    "dorpskerk-zuidlaren-1-1000.stl"
+  ]
+}
