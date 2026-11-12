@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde Kerk Ooltgensplaat",
+  "origin": [
+    83253,
+    411041.4
+  ],
+  "xAxis": [
+    0.12,
+    0.9928
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0580100000248384"
+  ],
+  "description": "Kerk met haakse zijvleugel en klassieke geveltoren.",
+  "realWorld": {
+    "groundNapM": 0.45,
+    "naveRidgeM": 13.62,
+    "towerTopM": 24.7,
+    "highestPointM": 24.7
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0580100000248384",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31697",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Ooltgensplaat"
+  ],
+  "file": "hervormde-kerk-ooltgensplaat.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-ooltgensplaat-1-100.stl",
+    "hervormde-kerk-ooltgensplaat-1-1000.stl"
+  ]
+}
