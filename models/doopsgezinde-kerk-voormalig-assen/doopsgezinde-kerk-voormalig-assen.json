@@ -1,0 +1,54 @@
+{
+  "name": "Doopsgezinde kerk (voormalig)",
+  "file": "doopsgezinde-kerk-voormalig-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    234233,
+    557040.7
+  ],
+  "xAxis": [
+    0.99865,
+    0.052
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -5,
+      -15
+    ],
+    [
+      6,
+      -15
+    ],
+    [
+      -8,
+      0
+    ],
+    [
+      9,
+      1
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000001577"
+  ],
+  "description": "Voormalige Doopsgezinde kerk Assen, met afgeknot schilddak, entree met topgevel, hoekvolumes met tentdaken, zijvensters en achterbouw; +X ongeveer oostwaarts, +Y richting achterzijde.",
+  "printFiles": [
+    "doopsgezinde-kerk-voormalig-assen-1-1000.stl",
+    "doopsgezinde-kerk-voormalig-assen-1-100.stl"
+  ],
+  "realWorld": {
+    "lengthM": 14.1,
+    "widthM": 27.6,
+    "highestPointM": 9.5,
+    "groundNapM": 9.8,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://www.assenstad.nl/woningen/5691-te-koop-in-assen-beeldbepalend-kerk-gebouw",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0106100000001577",
+    "PDOK AHN5 DSM 0,5 m via WCS"
+  ]
+}
