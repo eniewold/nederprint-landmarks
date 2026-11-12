@@ -1,0 +1,34 @@
+{
+  "name": "De Voorhof Franeker",
+  "file": "de-voorhof-franeker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    165198,
+    577749
+  ],
+  "xAxis": [
+    0.0995,
+    0.995
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0070100000322628"
+  ],
+  "description": "Stedelijk kerkgebouw met afgeschuinde dakvlakken en lage zijvleugel.",
+  "realWorld": {
+    "groundNapM": 0.992,
+    "roofNapM": 11.7
+  },
+  "sources": [
+    "https://www.kerkinfraneker.nl/",
+    "https://www.kerkinfraneker.nl/wp-content/uploads/2013/11/KerkinFraneker.jpg",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0070100000322628",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "de-voorhof-franeker-1-1000.stl",
+    "de-voorhof-franeker-1-100.stl"
+  ]
+}
