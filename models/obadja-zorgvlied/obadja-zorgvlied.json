@@ -1,0 +1,35 @@
+{
+  "name": "Obadja Zorgvlied",
+  "file": "obadja-zorgvlied.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    213501.85,
+    548475.22
+  ],
+  "xAxis": [
+    0.7205,
+    0.6935
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1701100000205872"
+  ],
+  "description": "Houten kapel met zadeldak, achterschild en smalle gevelruiter.",
+  "realWorld": {
+    "groundNapM": 8.12,
+    "naveRidgeNapM": 14.65,
+    "towerTopEstimatedNapM": 16.92
+  },
+  "sources": [
+    "https://www.gemeentediever.nl/religie/hervormde-evangelisatievereniging-obadja/index.html",
+    "https://www.inwesterveld.nl/obadja-kapel-in-zorgvlied/",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1701100000205872",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "obadja-zorgvlied-1-1000.stl",
+    "obadja-zorgvlied-1-100.stl"
+  ]
+}
