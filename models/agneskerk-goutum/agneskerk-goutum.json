@@ -1,0 +1,58 @@
+{
+  "name": "Agneskerk Goutum",
+  "file": "agneskerk-goutum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    183055,
+    576953.5
+  ],
+  "xAxis": [
+    0.986,
+    -0.166
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -9
+    ],
+    [
+      -23,
+      9
+    ],
+    [
+      23,
+      -9
+    ],
+    [
+      23,
+      9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0080100000350006"
+  ],
+  "description": "Middeleeuwse zaalkerk met vijfzijdig koor en zadeldaktoren. RD (183055,576953,5), maaiveld NAP 2,36 m.",
+  "printFiles": [
+    "agneskerk-goutum-1-100.stl",
+    "agneskerk-goutum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 38.7,
+    "widthM": 11.5,
+    "highestPointM": 30.95,
+    "groundNapM": 2.356,
+    "naveRidgeM": 14.45,
+    "towerRidgeM": 30.95,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0080100000350006",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/24509",
+    "https://www.friesland.nl/nl/locaties/2976227454/agneskerk",
+    "https://tsjerkepaad.nl/ckfinder/userfiles/images/Goutum%20NH%20ext4.JPG"
+  ]
+}
