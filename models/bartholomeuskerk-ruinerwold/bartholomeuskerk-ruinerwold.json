@@ -1,0 +1,58 @@
+{
+  "name": "Bartholomeüskerk Ruinerwold",
+  "file": "bartholomeuskerk-ruinerwold.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    213278,
+    525339
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -13
+    ],
+    [
+      -23,
+      12
+    ],
+    [
+      22,
+      -13
+    ],
+    [
+      22,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1690100000005192"
+  ],
+  "description": "Middeleeuwse kerk met lagere zijbeuk, koorsluiting en vierkante westtoren. RD (213278,525339), maaiveld NAP 2,67 m.",
+  "printFiles": [
+    "bartholomeuskerk-ruinerwold-1-100.stl",
+    "bartholomeuskerk-ruinerwold-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 32.8,
+    "widthM": 16.25,
+    "highestPointM": 26.9,
+    "groundNapM": 2.672,
+    "naveRidgeM": 15.3,
+    "towerTopM": 26.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32983",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1690100000005192",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://drenthe.erfgoedcms.nl/bezienswaardigheden/ruinerwold",
+    "https://commons.wikimedia.org/wiki/File:De_Wolden_-_Blijdenstein_-_Bartholomeus.jpg"
+  ]
+}
