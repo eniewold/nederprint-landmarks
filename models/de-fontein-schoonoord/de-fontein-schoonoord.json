@@ -1,0 +1,35 @@
+{
+  "name": "De Fontein Schoonoord",
+  "file": "de-fontein-schoonoord.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    247476.7,
+    540837.9
+  ],
+  "xAxis": [
+    0.797,
+    0.604
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000015114"
+  ],
+  "description": "Voormalige Waterstaatskerk met schilddak, middenrisaliet en verplaatste dakruiter.",
+  "realWorld": {
+    "groundNapM": 19.205,
+    "naveRidgeNapM": 31.735,
+    "towerTopNapM": 37.469
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/33785",
+    "https://www.geheugenvandrenthe.nl/encyclopedie-drenthe/schoonoord",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0109100000015114",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "de-fontein-schoonoord-1-1000.stl",
+    "de-fontein-schoonoord-1-100.stl"
+  ]
+}
