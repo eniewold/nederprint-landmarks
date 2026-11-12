@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde kerk Coevorden",
+  "file": "hervormde-kerk-coevorden.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    246499.9,
+    520085.8
+  ],
+  "xAxis": [
+    0.515,
+    0.857
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0109100000005874"
+  ],
+  "description": "Zeventiende-eeuwse kruiskerk met vier kruisarmen, lage hoekaanbouwen en achtkante dakruiter met spits.",
+  "realWorld": {
+    "groundNapM": 11.155,
+    "ridgeNapM": 32.3,
+    "towerTopM": 44.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0109100000005874",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/11490",
+    "https://commons.wikimedia.org/wiki/Category:Kruiskerk_(Coevorden)",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0019.php"
+  ],
+  "printFiles": [
+    "hervormde-kerk-coevorden-1-100.stl",
+    "hervormde-kerk-coevorden-1-1000.stl"
+  ]
+}
