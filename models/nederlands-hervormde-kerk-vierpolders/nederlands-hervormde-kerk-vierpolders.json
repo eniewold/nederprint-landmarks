@@ -1,0 +1,36 @@
+{
+  "name": "Nederlands Hervormde Kerk Vierpolders",
+  "origin": [
+    71875.04,
+    433031.78
+  ],
+  "xAxis": [
+    0.583,
+    0.812
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0501100001988682"
+  ],
+  "description": "Witte zaalkerk met dakruiter, wolfdak en lage aanbouwen.",
+  "realWorld": {
+    "groundNapM": 1.007,
+    "naveRidgeM": 8.62,
+    "towerTopM": 14.5,
+    "highestPointM": 14.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0501100001988682",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/37404",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Vierpolders"
+  ],
+  "file": "nederlands-hervormde-kerk-vierpolders.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "nederlands-hervormde-kerk-vierpolders-1-100.stl",
+    "nederlands-hervormde-kerk-vierpolders-1-1000.stl"
+  ]
+}
