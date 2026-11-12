@@ -1,0 +1,58 @@
+{
+  "name": "Sint-Vituskerk Feinsum",
+  "file": "sint-vituskerk-feinsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    179558,
+    588044.5
+  ],
+  "xAxis": [
+    1,
+    0.02
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -19,
+      -8
+    ],
+    [
+      -19,
+      8
+    ],
+    [
+      18,
+      -8
+    ],
+    [
+      18,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0081100000005276"
+  ],
+  "description": "Romaanse zaalkerk met rechte koorsluiting en zadeldaktoren. RD (179558,588044,5), maaiveld NAP 1,45 m.",
+  "printFiles": [
+    "sint-vituskerk-feinsum-1-100.stl",
+    "sint-vituskerk-feinsum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 29,
+    "widthM": 8.6,
+    "highestPointM": 19.2,
+    "groundNapM": 1.445,
+    "naveRidgeM": 10.85,
+    "towerRidgeM": 19.2,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0081100000005276",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.monumenten.nl/monument/24529",
+    "https://stichtingmonumentenzorgleeuwarderadeel.nl/feinsum",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Vituskerk,_Feinsum"
+  ]
+}
