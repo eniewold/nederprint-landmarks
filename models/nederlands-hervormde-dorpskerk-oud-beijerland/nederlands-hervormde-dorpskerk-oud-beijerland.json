@@ -1,0 +1,59 @@
+{
+  "name": "Nederlands Hervormde Dorpskerk Oud-Beijerland",
+  "file": "nederlands-hervormde-dorpskerk-oud-beijerland.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    87742,
+    426661
+  ],
+  "xAxis": [
+    0.998,
+    -0.055
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -25,
+      -23
+    ],
+    [
+      -25,
+      24
+    ],
+    [
+      24,
+      -23
+    ],
+    [
+      24,
+      24
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0584100001272754"
+  ],
+  "description": "Kruisvormige dorpskerk met westtoren, naaldspits en zuidwestelijke consistorie.",
+  "printFiles": [
+    "nederlands-hervormde-dorpskerk-oud-beijerland-1-100.stl",
+    "nederlands-hervormde-dorpskerk-oud-beijerland-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33.05,
+    "widthM": 32.9,
+    "highestPointM": 39.03,
+    "groundNapM": 0.282,
+    "naveRidgeM": 15.9,
+    "towerTopM": 39.03,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31920",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/31921",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0584100001272754",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Oud-Beijerland",
+    "https://hervormdoudbeijerland.nl/historie/dorpskerk/"
+  ]
+}
