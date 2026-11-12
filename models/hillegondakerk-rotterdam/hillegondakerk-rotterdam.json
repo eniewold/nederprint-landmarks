@@ -1,0 +1,59 @@
+{
+  "name": "Hillegondakerk Rotterdam",
+  "file": "hillegondakerk-rotterdam.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    93552,
+    441267
+  ],
+  "xAxis": [
+    0.9856,
+    0.1692
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -14
+    ],
+    [
+      -24,
+      16
+    ],
+    [
+      25,
+      -14
+    ],
+    [
+      25,
+      16
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0599100000641495"
+  ],
+  "description": "Driebeukige kerk met driezijdig gesloten koor, westtoren met naaldspits en kleine dakruiter.",
+  "printFiles": [
+    "hillegondakerk-rotterdam-1-100.stl",
+    "hillegondakerk-rotterdam-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.05,
+    "widthM": 22.45,
+    "highestPointM": 33.84,
+    "groundNapM": 1.549,
+    "naveRidgeM": 16.25,
+    "towerTopM": 33.84,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32899",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32900",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0599100000641495",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hillegondakerk_(Rotterdam)",
+    "https://www.shhs.nl/verwijzingen/hillegondakerk/"
+  ]
+}
