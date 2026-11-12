@@ -1,0 +1,35 @@
+{
+  "name": "protestantse kerk Nieuw-Weerdinge",
+  "file": "protestantse-kerk-nieuw-weerdinge.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    262657,
+    542197
+  ],
+  "xAxis": [
+    0.5598,
+    -0.8286
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0114100000207643"
+  ],
+  "description": "Voormalige hervormde zaalkerk Het Anker met zadeldak, gevelruiter en achtergebouw.",
+  "realWorld": {
+    "groundNapM": 11.97,
+    "naveRidgeNapM": 23.7,
+    "spireTopNapM": 29.62
+  },
+  "sources": [
+    "https://www.orgelsindrenthe.nl/nederlands/nwweerhk.html",
+    "https://www.ensie.nl/monumenten-in-drenthe/kerken-in-nieuw-weerdinge",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0114100000207643",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "protestantse-kerk-nieuw-weerdinge-1-1000.stl",
+    "protestantse-kerk-nieuw-weerdinge-1-100.stl"
+  ]
+}
