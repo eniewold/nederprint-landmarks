@@ -1,0 +1,37 @@
+{
+  "name": "Sint Hippolytuskapel Delft",
+  "origin": [
+    84242.34,
+    447481.21
+  ],
+  "xAxis": [
+    0.8997,
+    0.4365
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0503100000022708"
+  ],
+  "description": "Eenbeukige kapel met langsdak en zeskantige geveltoren.",
+  "realWorld": {
+    "groundNapM": 1.3,
+    "naveRidgeM": 13.25,
+    "towerTopM": 19.28,
+    "highestPointM": 19.28
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0503100000022708",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/12090",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Hippolytuskapel_(Delft)",
+    "https://www.hippolytuskapel.nl/geschiedenis/"
+  ],
+  "file": "sint-hippolytuskapel-delft.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "sint-hippolytuskapel-delft-1-100.stl",
+    "sint-hippolytuskapel-delft-1-1000.stl"
+  ]
+}
