@@ -1,0 +1,36 @@
+{
+  "name": "Martelaren van Gorcumkerk Brielle",
+  "origin": [
+    70803.89,
+    435476.83
+  ],
+  "xAxis": [
+    0.8718,
+    -0.4898
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0501100001988075"
+  ],
+  "description": "Waterstaatskerk aan de Nobelstraat met classicistische voorgevel en achteraanbouw.",
+  "realWorld": {
+    "groundNapM": 2.7,
+    "naveRidgeM": 14.4,
+    "highestPointM": 14.4
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0501100001988075",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10826",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Martelaren_van_Gorcum,_Brielle",
+    "https://hhnicolaaspieckengezellen.nl/kerken/brielle/"
+  ],
+  "file": "martelaren-van-gorcumkerk-brielle.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "martelaren-van-gorcumkerk-brielle-1-100.stl",
+    "martelaren-van-gorcumkerk-brielle-1-1000.stl"
+  ]
+}
