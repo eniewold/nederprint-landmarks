@@ -1,0 +1,37 @@
+{
+  "name": "Hervormde kerk Serooskerke (Schouwen)",
+  "origin": [
+    46317,
+    413755
+  ],
+  "xAxis": [
+    0.9986,
+    -0.053
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000525850"
+  ],
+  "description": "Sint-Alardskerk met westtoren, schip en lagere consistorie aan de oostzijde.",
+  "realWorld": {
+    "groundNapM": 0.65,
+    "naveRidgeM": 10.5,
+    "towerTopM": 21.2,
+    "highestPointM": 21.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000525850",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38841",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Alardskerk,_Serooskerke_(Schouwen-Duiveland)",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0088.php"
+  ],
+  "file": "hervormde-kerk-serooskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "hervormde-kerk-serooskerke-1-100.stl",
+    "hervormde-kerk-serooskerke-1-1000.stl"
+  ]
+}
