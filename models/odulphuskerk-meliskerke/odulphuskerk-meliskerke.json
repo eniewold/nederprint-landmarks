@@ -1,0 +1,63 @@
+{
+  "name": "Odulphuskerk Meliskerke",
+  "file": "odulphuskerk-meliskerke.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    24790,
+    393525
+  ],
+  "xAxis": [
+    0.99,
+    0.141
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -18,
+      -9
+    ],
+    [
+      -18,
+      10
+    ],
+    [
+      -4,
+      11
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      21,
+      8
+    ],
+    [
+      21,
+      -9
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0717100000000255"
+  ],
+  "description": "Scheve vierkante toren met tentdak, eenbeukig schip en twee gebogen moderne oostelijke aanbouwen.",
+  "printFiles": [
+    "odulphuskerk-meliskerke-1-100.stl",
+    "odulphuskerk-meliskerke-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 36.48,
+    "widthM": 15.1,
+    "highestPointM": 22.9,
+    "groundNapM": 1.415,
+    "towerTopM": 22.9
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/28118",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0717100000000255",
+    "https://commons.wikimedia.org/wiki/Category:Odulphuskerk_(Meliskerke)",
+    "PDOK AHN DSM/DTM 0,5 m"
+  ]
+}
