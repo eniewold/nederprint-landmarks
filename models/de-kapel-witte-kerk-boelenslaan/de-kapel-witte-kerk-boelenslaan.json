@@ -1,0 +1,34 @@
+{
+  "name": "De Kapel (Witte kerk) Boelenslaan",
+  "file": "de-kapel-witte-kerk-boelenslaan.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    205703.055,
+    575311.375
+  ],
+  "xAxis": [
+    0.9355,
+    0.353
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000834625"
+  ],
+  "description": "Torenloze witte kapel met zadeldak en kleinere achterbouwen.",
+  "realWorld": {
+    "groundNapM": 3.681,
+    "ridgeNapM": 10.363
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000834625",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://gereformeerdekerken.info/2016/01/01/het-ontstaan-van-de-voortgezette-gereformeerde-kerken-in-nederland-vgkn/",
+    "https://www.kerk-en-orgel.nl/record.php?action=display_ordered&id=18829"
+  ],
+  "printFiles": [
+    "de-kapel-witte-kerk-boelenslaan-1-100.stl",
+    "de-kapel-witte-kerk-boelenslaan-1-1000.stl"
+  ]
+}
