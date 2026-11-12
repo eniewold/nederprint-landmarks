@@ -1,0 +1,36 @@
+{
+  "name": "Hervormde kerk Grolloo",
+  "file": "hervormde-kerk-grolloo.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    241517,
+    550496
+  ],
+  "xAxis": [
+    0.9755,
+    0.2199
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1680100000003506"
+  ],
+  "description": "Waterstaatskerk met zadeldak en houten geveltoren met achthoekige lantaarn en spits.",
+  "realWorld": {
+    "groundNapM": 18.064,
+    "ridgeNapM": 27.591,
+    "towerTopNapM": 36.974
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1680100000003506",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/482937",
+    "https://commons.wikimedia.org/wiki/Category:Hervormde_kerk_(Grolloo)",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0044.php"
+  ],
+  "printFiles": [
+    "hervormde-kerk-grolloo-1-100.stl",
+    "hervormde-kerk-grolloo-1-1000.stl"
+  ]
+}
