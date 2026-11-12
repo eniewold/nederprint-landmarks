@@ -1,0 +1,36 @@
+{
+  "name": "Dorpskerk Moordrecht",
+  "origin": [
+    105793.5,
+    444486.8
+  ],
+  "xAxis": [
+    0.9863,
+    0.1647
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1892100000644736"
+  ],
+  "description": "Kruiskerk met westtoren, torenspits en kleine dakruiter.",
+  "realWorld": {
+    "groundNapM": -0.67,
+    "naveRidgeM": 17.47,
+    "towerTopM": 35.6,
+    "highestPointM": 35.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1892100000644736",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/30093",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Nederlands_Hervormde_Kerk,_Moordrecht"
+  ],
+  "file": "dorpskerk-moordrecht.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-moordrecht-1-100.stl",
+    "dorpskerk-moordrecht-1-1000.stl"
+  ]
+}
