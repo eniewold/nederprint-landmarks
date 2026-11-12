@@ -1,0 +1,36 @@
+{
+  "name": "Jacobuskerk Rolde",
+  "file": "jacobuskerk-rolde.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    239516,
+    556506.4
+  ],
+  "xAxis": [
+    0.9946,
+    0.104
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1680100000003235"
+  ],
+  "description": "Vijftiende-eeuwse zaalkerk met veelhoekig koor, steunberen, toren met naaldspits en sacristie.",
+  "realWorld": {
+    "groundNapM": 16.32,
+    "naveRidgeNapM": 33.99,
+    "towerHeightM": 52.75,
+    "ahnSpireMaxNapM": 63.02
+  },
+  "sources": [
+    "https://www.jacobuskerkrolde.nl/gebouw_2/",
+    "https://www.rolde.nl/hoogtepunten/gebouwen/jacobuskerk",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1680100000003235",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "jacobuskerk-rolde-1-1000.stl",
+    "jacobuskerk-rolde-1-100.stl"
+  ]
+}
