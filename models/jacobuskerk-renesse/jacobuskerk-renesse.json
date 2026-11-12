@@ -1,0 +1,38 @@
+{
+  "name": "Jacobuskerk Renesse",
+  "origin": [
+    43603.7,
+    417209.33
+  ],
+  "xAxis": [
+    0.9954,
+    0.0958
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000440194",
+    "NL.IMBAG.Pand.1676100000440182"
+  ],
+  "description": "Eenbeukige Jacobuskerk met oostelijke aanbouw, westtoren en achtkantige traptoren.",
+  "realWorld": {
+    "groundNapM": 3.8,
+    "naveRidgeM": 18.5,
+    "towerTopM": 30.2,
+    "highestPointM": 30.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000440194",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000440182",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Jacobus_(Renesse)",
+    "https://www.dbnl.org/tekst/sten009monu09_01/sten009monu09_01_0079.php"
+  ],
+  "file": "jacobuskerk-renesse.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "jacobuskerk-renesse-1-100.stl",
+    "jacobuskerk-renesse-1-1000.stl"
+  ]
+}
