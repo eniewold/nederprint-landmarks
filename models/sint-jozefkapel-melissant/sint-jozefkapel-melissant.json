@@ -1,0 +1,57 @@
+{
+  "name": "Sint Jozefkapel Melissant",
+  "file": "sint-jozefkapel-melissant.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    64484,
+    421335
+  ],
+  "xAxis": [
+    0.43,
+    -0.902829
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -14,
+      -16
+    ],
+    [
+      -14,
+      14
+    ],
+    [
+      16,
+      -16
+    ],
+    [
+      16,
+      14
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0504100001641268"
+  ],
+  "description": "Zaalkapel met aangebouwde pastorie en portaal. RD (64484,421335), maaiveld NAP +0,63 m.",
+  "printFiles": [
+    "sint-jozefkapel-melissant-1-100.stl",
+    "sint-jozefkapel-melissant-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 15.2,
+    "widthM": 14.3,
+    "highestPointM": 9.25,
+    "groundNapM": 0.631,
+    "naveRidgeM": 9.25,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/525003",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0504100001641268",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint-Josephkapel_(Melissant)",
+    "https://deheiligefamilie.nl/kerkwijken/xst-jozef-melissant/"
+  ]
+}
