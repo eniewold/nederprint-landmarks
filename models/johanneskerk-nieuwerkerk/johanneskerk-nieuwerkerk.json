@@ -1,0 +1,39 @@
+{
+  "name": "Johanneskerk Nieuwerkerk",
+  "origin": [
+    59060,
+    407649
+  ],
+  "xAxis": [
+    0.9994,
+    -0.034
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1676100000432074",
+    "NL.IMBAG.Pand.1676100000462578"
+  ],
+  "description": "Vijfzijdig gesloten koor met sacristie en kerkzaal; vrijstaande zeshoekige toren op eigen fundament.",
+  "realWorld": {
+    "groundNapM": 1,
+    "naveRidgeM": 19.55,
+    "towerTopM": 32.2,
+    "highestPointM": 32.2
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000432074",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1676100000462578",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14164",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/14165",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Johannes_Evangelist_(Nieuwerkerk)"
+  ],
+  "file": "johanneskerk-nieuwerkerk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "johanneskerk-nieuwerkerk-1-100.stl",
+    "johanneskerk-nieuwerkerk-1-1000.stl"
+  ]
+}
