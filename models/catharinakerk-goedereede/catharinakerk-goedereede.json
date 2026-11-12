@@ -1,0 +1,38 @@
+{
+  "name": "Catharinakerk Goedereede",
+  "origin": [
+    57717,
+    426478
+  ],
+  "xAxis": [
+    1,
+    0
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0511100001944595",
+    "NL.IMBAG.Pand.0511100001945109"
+  ],
+  "description": "Zaalkerk met vijfzijdige sluitingen, noordkapel en losstaande stompe toren.",
+  "realWorld": {
+    "groundNapM": 1.5,
+    "naveRidgeM": 18.6,
+    "towerTopM": 39.5,
+    "highestPointM": 39.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0511100001944595",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0511100001945109",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Exterior_of_Catharinakerk_(Goedereede)",
+    "https://commons.wikimedia.org/wiki/Category:Toren_van_Goedereede"
+  ],
+  "file": "catharinakerk-goedereede.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "catharinakerk-goedereede-1-100.stl",
+    "catharinakerk-goedereede-1-1000.stl"
+  ]
+}
