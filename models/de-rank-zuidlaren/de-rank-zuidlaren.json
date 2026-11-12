@@ -1,0 +1,58 @@
+{
+  "name": "De Rank Zuidlaren",
+  "file": "de-rank-zuidlaren.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    241590,
+    568162
+  ],
+  "xAxis": [
+    0.928,
+    0.373
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -27,
+      -12
+    ],
+    [
+      -27,
+      12
+    ],
+    [
+      27,
+      -12
+    ],
+    [
+      27,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1730100000010602"
+  ],
+  "description": "Voormalige hervormde kapel met steil zadeldak, gekoppelde zaal en entree. RD (241590,568162), maaiveld NAP 8,37 m.",
+  "printFiles": [
+    "de-rank-zuidlaren-1-100.stl",
+    "de-rank-zuidlaren-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 42.5,
+    "widthM": 13,
+    "highestPointM": 9.7,
+    "groundNapM": 8.374,
+    "naveRidgeM": 9.7,
+    "annexRidgeM": 7.6,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1730100000010602",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://www.orgelsindrenthe.nl/nederlands/zuidl06.html",
+    "https://www.kerk-en-orgel.nl/record.php?action=display_ordered&direction=asc&id=18135&item=555&page_num=28&province=dr&sort=city",
+    "https://kerkatlas.nl/gemeenten/christelijke-gereformeerde-kerk-zuidlaren/"
+  ]
+}
