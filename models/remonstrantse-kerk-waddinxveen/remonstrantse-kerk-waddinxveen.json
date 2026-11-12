@@ -1,0 +1,57 @@
+{
+  "name": "Remonstrantse Kerk Waddinxveen",
+  "file": "remonstrantse-kerk-waddinxveen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    104980.15,
+    450337.8
+  ],
+  "xAxis": [
+    -0.013,
+    0.9999155
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -11,
+      -8
+    ],
+    [
+      -11,
+      8
+    ],
+    [
+      12,
+      -8
+    ],
+    [
+      12,
+      8
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0627100000008601"
+  ],
+  "description": "Torenloze neoclassicistische zaalkerk met schilddak en lage aanbouwen. RD (104980,450338), maaiveld NAP -0,28 m.",
+  "printFiles": [
+    "remonstrantse-kerk-waddinxveen-1-100.stl",
+    "remonstrantse-kerk-waddinxveen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 17.2,
+    "widthM": 11.4,
+    "highestPointM": 10.45,
+    "groundNapM": -0.277,
+    "naveRidgeM": 10.45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/38203",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0627100000008601",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Remonstrantse_Kerk,_Waddinxveen",
+    "https://www.dbnl.org/tekst/sten009monu10_01/sten009monu10_01_0180.php"
+  ]
+}
