@@ -1,0 +1,43 @@
+{
+  "name": "Koninklijk Theater Tuschinski",
+  "file": "tuschinski.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    121440,
+    486600
+  ],
+  "xAxis": [
+    0.8746,
+    -0.4848
+  ],
+  "groundOffsetMetres": -0.25,
+  "groundSamplePoints": [
+    [
+      -3,
+      35
+    ],
+    [
+      5,
+      35
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0363100012168188"
+  ],
+  "description": "Tuschinski met tweelingtorens, gevelerker, gebogen zaalkap en toneelgebouw. +Y wijst naar de Reguliersbreestraat.",
+  "realWorld": {
+    "groundNapM": 0.754
+  },
+  "sources": [
+    "PDOK AHN5 DSM 0,5m en actuele ortho, 10 november 2026",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0363100012168188",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/4828",
+    "https://commons.wikimedia.org/wiki/File:Tuschinski_Theater_Amsterdam-msu-9124-.jpg",
+    "https://www.amsterdam-monumentenstad.nl/database/grachtenboek_objecten.php?id=5645"
+  ],
+  "printFiles": [
+    "tuschinski-1-1000.stl"
+  ]
+}
