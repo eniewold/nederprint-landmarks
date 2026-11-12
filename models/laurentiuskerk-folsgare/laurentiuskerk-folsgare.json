@@ -1,0 +1,58 @@
+{
+  "name": "Laurentiuskerk Folsgare",
+  "file": "laurentiuskerk-folsgare.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169609,
+    561204
+  ],
+  "xAxis": [
+    0.998,
+    0.065
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -20,
+      -10
+    ],
+    [
+      -20,
+      10
+    ],
+    [
+      18,
+      -10
+    ],
+    [
+      18,
+      10
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0683100000290393"
+  ],
+  "description": "Zaalkerk met driezijdig koor en middeleeuwse zadeldaktoren. RD (169609,561204), maaiveld NAP 1,06 m.",
+  "printFiles": [
+    "laurentiuskerk-folsgare-1-100.stl",
+    "laurentiuskerk-folsgare-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 31.5,
+    "widthM": 11.3,
+    "highestPointM": 22.5,
+    "groundNapM": 1.055,
+    "naveRidgeM": 13.05,
+    "towerRidgeM": 22.5,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0683100000290393",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/39762",
+    "https://www.stichtingmonumentenswf.nl/monumenten/kerktoren-folsgare/Kerktoren%20Folsgare",
+    "https://www.protestantsegemeenteoosthemcs.nl/kerken/laurentius-kerk-folsgare/"
+  ]
+}
