@@ -1,0 +1,59 @@
+{
+  "name": "Oude Kerk Scheveningen",
+  "file": "oude-kerk-s-gravenhage.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    78680,
+    458205
+  ],
+  "xAxis": [
+    0.989,
+    0.147919
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -38,
+      -24
+    ],
+    [
+      -38,
+      18
+    ],
+    [
+      36,
+      -24
+    ],
+    [
+      36,
+      18
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0518100000275768"
+  ],
+  "description": "Pseudobasilicale kerk met hoger vijfzijdig koor, straatzijdige aanbouw en achtkantige toren met spits. RD (78680,458205), maaiveld NAP +3,11 m.",
+  "printFiles": [
+    "oude-kerk-s-gravenhage-1-100.stl",
+    "oude-kerk-s-gravenhage-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 58.35,
+    "widthM": 29.7,
+    "highestPointM": 42.37,
+    "groundNapM": 3.111,
+    "naveRidgeM": 17.1,
+    "choirRidgeM": 18.6,
+    "towerTopM": 42.37,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/17617",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0518100000275768",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Oude_Kerk,_Scheveningen",
+    "https://haagsorgelkontakt.nl/kerk/oude-kerk-scheveningen/"
+  ]
+}
