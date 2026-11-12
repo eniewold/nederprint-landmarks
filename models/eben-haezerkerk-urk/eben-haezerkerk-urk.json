@@ -1,0 +1,34 @@
+{
+  "name": "Eben-Haëzerkerk Urk",
+  "file": "eben-haezerkerk-urk.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    169040.9,
+    519484.07
+  ],
+  "xAxis": [
+    0.4228,
+    0.9062
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0184100000002499"
+  ],
+  "description": "Voormalige Eben-Haëzerkerk uit 1895, een torenloze zaalkerk met zadeldak en rondboogvensters.",
+  "realWorld": {
+    "groundNapM": 5.787,
+    "naveRidgeNapM": 16.121
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/515909",
+    "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/urk-3/voormalige-eben-haezerkerk.html",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0184100000002499",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "eben-haezerkerk-urk-1-1000.stl",
+    "eben-haezerkerk-urk-1-100.stl"
+  ]
+}
