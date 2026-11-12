@@ -1,0 +1,34 @@
+{
+  "name": "Sint Nicolaaskerk Gauw",
+  "file": "sint-nicolaaskerk-gauw.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    176890.4,
+    563582.65
+  ],
+  "xAxis": [
+    0.99971,
+    0.024
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0683100000295190"
+  ],
+  "description": "Zaalkerk met driezijdig koor en zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 0.701,
+    "towerRidgeNapM": 20.879
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0683100000295190",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://kennis.cultureelerfgoed.nl/index.php/Monumenten/39767",
+    "https://www.stichtingmonumentenswf.nl/monumenten/Toren%20Gau/Kerktoren%20Gauw"
+  ],
+  "printFiles": [
+    "sint-nicolaaskerk-gauw-1-100.stl",
+    "sint-nicolaaskerk-gauw-1-1000.stl"
+  ]
+}

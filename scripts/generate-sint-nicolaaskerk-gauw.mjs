@@ -1,0 +1,11 @@
+import {union,hull,prism,rect,writeLandmark} from './efteling-kit.mjs';
+const B=-.3,origin=[176890.4,563582.65],axis=[.99971,.024],ground=.701;
+const roofed=(poly,planes)=>{let s=prism(poly,B,25);for(const [a,b,c] of planes){const n=Math.hypot(a,b,1);s=s.trimByPlane([a/n,b/n,-1/n],-c/n)}return s};
+// Eenbeukige zaalkerk met driezijdig koor en zadeldaktoren.
+const hall=roofed([[2,-3.45],[15.6,-3.45],[18.6,-2],[18.7,1.4],[16,3.4],[2,3.4]],[[0,.8,9.1],[0,-.8,9.1],[-.8,0,9.1+.8*16]]);
+const tower=roofed(rect(-2.04,-2.25,2.04,2.25),[[0,1.65,20.18],[0,-1.65,20.18]]);
+let all=union([hall,tower]);
+const niche=(x,y,w,z0,z1,angle=0,depth=.3)=>{const r=w/2,pts=[];for(const [a,b] of [[-r,z0],[r,z0],[r,z1-r],[0,z1+.04],[-r,z1-r]])for(const d of [0,depth])pts.push([a,d,b]);return hull(pts).rotate([0,0,angle]).translate([x,y,0])};
+const cuts=[];for(const x of [4.6,8.4,12.4,15.6])cuts.push(niche(x,-3.5,.9,1.7,5.4),niche(x,3.45,.9,1.7,5.4,180));for(const x of [-.65,.65])cuts.push(niche(x,-2.31,.65,12.1,14.3),niche(x,2.31,.65,12.1,14.3,180));cuts.push(niche(-2.1,0,1,0,2.8,-90));all=all.subtract(union(cuts));
+await writeLandmark({slug:'sint-nicolaaskerk-gauw',base:B,nodes:[['building:kerk',all]],catalog:{name:'Sint Nicolaaskerk Gauw',origin,xAxis:axis,groundOffsetMetres:-.3,replacesBuildings:['NL.IMBAG.Pand.0683100000295190'],description:'Zaalkerk met driezijdig koor en zadeldaktoren.',realWorld:{groundNapM:ground,towerRidgeNapM:20.879},sources:['https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0683100000295190','https://service.pdok.nl/rws/ahn/wcs/v1_0','https://kennis.cultureelerfgoed.nl/index.php/Monumenten/39767','https://www.stichtingmonumentenswf.nl/monumenten/Toren%20Gau/Kerktoren%20Gauw']}});
+const {readFile,writeFile}=await import('node:fs/promises');const {default:path}=await import('node:path');const args=process.argv.slice(2),i=args.indexOf('--out'),dir=path.resolve(i>=0&&args[i+1]?args[i+1]:path.join(import.meta.dirname,'../models'),'sint-nicolaaskerk-gauw');const file=path.join(dir,'sint-nicolaaskerk-gauw.json'),json=JSON.parse(await readFile(file,'utf8'));json.printFiles=['sint-nicolaaskerk-gauw-1-100.stl','sint-nicolaaskerk-gauw-1-1000.stl'];await writeFile(file,JSON.stringify(json,null,2)+String.fromCharCode(10));
