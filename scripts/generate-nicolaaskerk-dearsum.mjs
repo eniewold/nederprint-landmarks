@@ -1,0 +1,14 @@
+import {union,hull,prism,rect,writeLandmark,scale} from './efteling-kit.mjs';
+import {readFile,writeFile} from 'node:fs/promises';import path from 'node:path';
+const slug='nicolaaskerk-dearsum',B=-.3,O=[177021,566718.6],axis=[.9834,.1815];
+const roofed=(poly,planes,z=30)=>{let s=prism(poly,B,z);for(const [a,b,c] of planes){const n=Math.hypot(a,b,1);s=s.trimByPlane([a/n,b/n,-1/n],-c/n)}return s};
+// Middeleeuwse zaalkerk met driezijdig koor en deels ingebouwde zadeldaktoren.
+const nave=roofed(rect(-8.9,-4,8.3,4),[[0,1.2,11.7],[0,-1.2,11.7]]);
+const choir=roofed([[8.2,-4],[10.53,-3.36],[11.92,-1.33],[11.93,1.11],[10.54,3.14],[8.2,4]],[[0,1.2,11.7],[0,-1.2,11.7],[-1.3,0,22.45]]);
+const tower=roofed(rect(-11.4,-2,-8.3,1.85),[[0,1,19.75],[0,-1,19.75]]);
+let solid=union([nave,choir,tower]);const niche=(x,y,w,z0,z1,angle=0,depth=.75)=>{const r=w/2,p=[];for(const [a,b] of [[-r,z0],[r,z0],[r,z1-r],[0,z1],[-r,z1-r]])for(const d of [0,depth])p.push([a,d,b]);return hull(p).rotate([0,0,angle]).translate([x,y,0])};
+const cuts=[];for(const x of [-5.7,-1.2,3.3,7])cuts.push(niche(x,-4.1,1,2.4,5.9));cuts.push(niche(1,3.4,1,3.2,5));cuts.push(niche(-12.0,0,1.2,.1,3.0,-90));for(const z of [12.5,16])cuts.push(niche(-12.0,0,1,z,z+1.8,-90));solid=solid.subtract(union(cuts));
+if(process.argv.includes('--components'))for(const c of solid.decompose())console.log('component',c.volume(),c.boundingBox());
+await writeLandmark({slug,base:B,nodes:[['building:kerk',solid]],catalog:{name:'Benediktustsjerke Dantumawâld Damwâld',origin:O,xAxis:axis,groundOffsetMetres:-.3,replacesBuildings:['NL.IMBAG.Pand.0055100000253490'],description:'Middeleeuwse zaalkerk met driezijdig koor en ingebouwde zadeldaktoren.',realWorld:{groundNapM:1.05,naveRidgeNapM:12.75,towerRidgeNapM:20.8},sources:['https://monumentenregister.cultureelerfgoed.nl/monumenten/32301','https://www.friesland.nl/nl/locaties/2364523586/sint-nicolaaskerk-dearsum','https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0055100000253490','https://service.pdok.nl/rws/ahn/wcs/v1_0']}});
+const i=process.argv.indexOf('--out'),root=i>=0&&process.argv[i+1]?path.resolve(process.argv[i+1]):path.join(import.meta.dirname,'../models'),dir=path.join(root,slug),input=await readFile(path.join(dir,`${slug}-1-${scale}.stl`)),n=input.readUInt32LE(80);for(const target of [1000,100]){if(target===scale)continue;const result=Buffer.from(input);result.fill(0,0,80);result.write(`NederPrint ${slug} 1:${target} mm Z-up`.slice(0,79),0,80,'ascii');for(let t=0;t<n;t++)for(let k=0;k<9;k++){const off=84+t*50+12+k*4;result.writeFloatLE(input.readFloatLE(off)*scale/target,off)}await writeFile(path.join(dir,`${slug}-1-${target}.stl`),result)}const mf=path.join(dir,`${slug}.json`),j=JSON.parse(await readFile(mf,'utf8'));j.printFiles=[...new Set([`${slug}-1-${scale}.stl`,`${slug}-1-1000.stl`,`${slug}-1-100.stl`])];await writeFile(mf,JSON.stringify(j,null,2));
+

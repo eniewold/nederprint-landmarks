@@ -1,0 +1,35 @@
+{
+  "name": "Benediktustsjerke Dantumawâld Damwâld",
+  "file": "nicolaaskerk-dearsum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    177021,
+    566718.6
+  ],
+  "xAxis": [
+    0.9834,
+    0.1815
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0055100000253490"
+  ],
+  "description": "Middeleeuwse zaalkerk met driezijdig koor en ingebouwde zadeldaktoren.",
+  "realWorld": {
+    "groundNapM": 1.05,
+    "naveRidgeNapM": 12.75,
+    "towerRidgeNapM": 20.8
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32301",
+    "https://www.friesland.nl/nl/locaties/2364523586/sint-nicolaaskerk-dearsum",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0055100000253490",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "nicolaaskerk-dearsum-1-1000.stl",
+    "nicolaaskerk-dearsum-1-100.stl"
+  ]
+}
