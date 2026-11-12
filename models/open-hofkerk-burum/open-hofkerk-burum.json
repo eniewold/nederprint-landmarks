@@ -1,0 +1,56 @@
+{
+  "name": "Open Hofkerk Burum",
+  "file": "open-hofkerk-burum.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    211360,
+    587910
+  ],
+  "xAxis": [
+    -0.627,
+    0.779
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -26,
+      -11
+    ],
+    [
+      -26,
+      12
+    ],
+    [
+      19,
+      -11
+    ],
+    [
+      19,
+      12
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0079100000357789"
+  ],
+  "description": "Zaalkerk met zadeldak en aanbouw. RD (211360,587910), maaiveld NAP 1,36 m.",
+  "printFiles": [
+    "open-hofkerk-burum-1-100.stl",
+    "open-hofkerk-burum-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 37.99,
+    "widthM": 15.19,
+    "highestPointM": 12.19,
+    "groundNapM": 1.361,
+    "naveRidgeM": 12.19,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0079100000357789",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://gereformeerdekerken.info/2018/12/29/de-geref-kerk-te-burum-de-eerste-in-friesland-2/",
+    "https://gereformeerdekerken.info/2019/01/01/de-geref-kerk-te-burum-de-eerste-in-friesland-3/"
+  ]
+}
