@@ -1,0 +1,58 @@
+{
+  "name": "Wit Arjaentje Ovezande",
+  "file": "wit-arjaentje-ovezande.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    46182,
+    383312
+  ],
+  "xAxis": [
+    0.9895,
+    -0.1437
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -23,
+      -20
+    ],
+    [
+      -23,
+      13
+    ],
+    [
+      24,
+      -20
+    ],
+    [
+      24,
+      13
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0654100000003531"
+  ],
+  "description": "Voormalige kerk met wit gepleisterd schip, westtoren met spits en het dwars aangebouwde huis binnen hetzelfde BAG-pand. RD (46182,383312), maaiveld NAP +1,8 m.",
+  "printFiles": [
+    "wit-arjaentje-ovezande-1-100.stl",
+    "wit-arjaentje-ovezande-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 33,
+    "widthM": 17.4,
+    "highestPointM": 21.45,
+    "groundNapM": 1.8,
+    "naveRidgeM": 10.3,
+    "towerTopM": 21.45,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/10018",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0654100000003531",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Sint_Petrus_en_Paulus_(Ovezande)",
+    "https://www.borsele.nl/sites/borsele/files/2023-11/Kerkenvisie%20Borsele.pdf"
+  ]
+}
