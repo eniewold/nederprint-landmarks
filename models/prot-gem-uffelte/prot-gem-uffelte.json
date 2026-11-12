@@ -1,0 +1,36 @@
+{
+  "name": "Uffelter Kerk",
+  "file": "prot-gem-uffelte.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    215145.208,
+    533805.696
+  ],
+  "xAxis": [
+    0.9333,
+    0.3592
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1701100000208026"
+  ],
+  "description": "Zaalkerk met zadeldak en houten dakruiter in Uffelte.",
+  "realWorld": {
+    "groundNapM": 5.7,
+    "ridgeNapM": 14.352,
+    "towerTopNapM": 16.954
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1701100000208026",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://www.ghardeman.nl/fotos600p/uffeltesel.htm",
+    "https://uffelterkerk.nl/geschiedenis/",
+    "https://www.dbnl.org/tekst/sten009monu07_01/sten009monu07_01_0088.php"
+  ],
+  "printFiles": [
+    "prot-gem-uffelte-1-100.stl",
+    "prot-gem-uffelte-1-1000.stl"
+  ]
+}
