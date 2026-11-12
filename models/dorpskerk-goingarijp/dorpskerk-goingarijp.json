@@ -1,0 +1,36 @@
+{
+  "name": "Dorpskerk Goingarijp",
+  "file": "dorpskerk-goingarijp.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    180723,
+    558206
+  ],
+  "xAxis": [
+    0.99995,
+    0.01
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0051100001226614"
+  ],
+  "description": "Zaalkerk uit 1770 met vrijstaande houten klokkenstoel.",
+  "realWorld": {
+    "groundNapM": 0.303,
+    "naveRidgeNapM": 9.9,
+    "bellFrameTopNapM": 8.6
+  },
+  "sources": [
+    "https://www.tsjerkepaad.nl/overzicht-kerken/goingarijp-dorps-kerk",
+    "https://www.dbnl.org/tekst/sten009monu06_01/sten009monu06_01_0010.php",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0051100001226614",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "dorpskerk-goingarijp-1-1000.stl",
+    "dorpskerk-goingarijp-1-100.stl",
+    "dorpskerk-goingarijp-grondplaat-1-100.stl"
+  ]
+}
