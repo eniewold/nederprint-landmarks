@@ -1,0 +1,58 @@
+{
+  "name": "OLV-ten-Hemelopnemingkerk Assen",
+  "file": "olv-ten-hemelopnemingkerk-assen.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    233670,
+    556696
+  ],
+  "xAxis": [
+    0.49685,
+    -0.86784
+  ],
+  "groundOffsetMetres": 0,
+  "groundSamplePoints": [
+    [
+      -24,
+      -12
+    ],
+    [
+      -24,
+      39
+    ],
+    [
+      29,
+      -12
+    ],
+    [
+      29,
+      39
+    ]
+  ],
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0106100000000530"
+  ],
+  "description": "Traditionalistische zaalkerk uit 1933–1934 met zadeldaktoren en gekoppelde parochievleugel. RD (233670,556696), maaiveld NAP +11,01 m.",
+  "printFiles": [
+    "olv-ten-hemelopnemingkerk-assen-1-100.stl",
+    "olv-ten-hemelopnemingkerk-assen-1-1000.stl"
+  ],
+  "realWorld": {
+    "lengthM": 43.9,
+    "widthM": 44.4,
+    "highestPointM": 23.9,
+    "groundNapM": 11.012,
+    "naveRidgeM": 16.5,
+    "towerTopM": 23.9,
+    "baseM": -0.5
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/468967",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0106100000000530",
+    "PDOK AHN DSM 0,5 m EPSG:28992",
+    "https://commons.wikimedia.org/wiki/Category:Dr._Nassaulaan_3b,_Assen",
+    "https://www.franciscus-parochie.nl/historie"
+  ]
+}
