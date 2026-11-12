@@ -1,0 +1,35 @@
+{
+  "name": "Augustinitsjerke Augustinusga",
+  "file": "augustinitsjerke-augustinusga.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    206824.5,
+    581538.6
+  ],
+  "xAxis": [
+    0.9962,
+    0.087
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0059100000826086"
+  ],
+  "description": "Middeleeuwse zaalkerk met steunberen en dertiende-eeuwse toren met ingesnoerde achtkante spits.",
+  "realWorld": {
+    "groundNapM": 2,
+    "naveRidgeNapM": 18.2,
+    "towerPeakNapM": 29.62
+  },
+  "sources": [
+    "https://www.monumenten.nl/monument/7032",
+    "https://augustinusga.protestantsekerk.net/default.aspx?lIntEntityId=15970",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0059100000826086",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0"
+  ],
+  "printFiles": [
+    "augustinitsjerke-augustinusga-1-1000.stl",
+    "augustinitsjerke-augustinusga-1-100.stl"
+  ]
+}
