@@ -1,0 +1,39 @@
+{
+  "name": "Dorpskerk Pijnacker",
+  "origin": [
+    89501.72,
+    447628.91
+  ],
+  "xAxis": [
+    0.999,
+    -0.04
+  ],
+  "groundOffsetMetres": 0,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.1926100000478240",
+    "NL.IMBAG.Pand.1926100000488627"
+  ],
+  "description": "Neogotische kruiskerk en vrijstaande herbouwde toren.",
+  "realWorld": {
+    "groundNapM": -0.5,
+    "naveRidgeM": 17.2,
+    "towerTopM": 45.6,
+    "highestPointM": 45.6
+  },
+  "sources": [
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1926100000478240",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1926100000488627",
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/32257",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/Category:Dorpskerk,_Pijnacker",
+    "https://www.telstar-online.nl/nieuws/kerkbericht/168757/25-jaar-jubileum-nieuwe-scheve-toren-dorpskerk-pijnacker"
+  ],
+  "file": "dorpskerk-pijnacker.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "printFiles": [
+    "dorpskerk-pijnacker-1-100.stl",
+    "dorpskerk-pijnacker-1-1000.stl"
+  ]
+}
