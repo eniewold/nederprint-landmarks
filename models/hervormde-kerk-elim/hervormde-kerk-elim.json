@@ -1,0 +1,35 @@
+{
+  "name": "Hervormde kerk Elim",
+  "file": "hervormde-kerk-elim.glb",
+  "unitsPerMetre": 1,
+  "className": "building",
+  "crs": "EPSG:28992",
+  "origin": [
+    235733,
+    522134.5
+  ],
+  "xAxis": [
+    0.9981,
+    -0.0616
+  ],
+  "groundOffsetMetres": -0.3,
+  "replacesBuildings": [
+    "NL.IMBAG.Pand.0118100000184677"
+  ],
+  "description": "Zaalkerk met zadeldak, achtervleugel, zijportalen en vierkante toren met achtkante bekroning en tentdak.",
+  "realWorld": {
+    "groundNapM": 11.79,
+    "naveRidgeNapM": 25.45,
+    "towerTopNapM": 36.63
+  },
+  "sources": [
+    "https://monumentenregister.cultureelerfgoed.nl/monumenten/507295",
+    "https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.0118100000184677",
+    "https://service.pdok.nl/rws/ahn/wcs/v1_0",
+    "https://commons.wikimedia.org/wiki/File:Exterieur_overzicht_toren_en_kerk,_zuidwestgevel,_toren_met_achtkantige_bekroning_met_tentdak._-_Elim_-_20322391_-_RCE.jpg"
+  ],
+  "printFiles": [
+    "hervormde-kerk-elim-1-1000.stl",
+    "hervormde-kerk-elim-1-100.stl"
+  ]
+}
